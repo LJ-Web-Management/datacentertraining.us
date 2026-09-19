@@ -120,7 +120,7 @@ a { color: inherit; }
 .course-duration { font-size: 12px; color: var(--text-3); font-weight: 550; }
 
 /* ── Grid feature cards (who it's for) ── */
-.feature-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; }
+.feature-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
 .feature-card { background: var(--surface); border-radius: var(--r-card); box-shadow: var(--sh-card); padding: 22px; transition: transform .2s, box-shadow .2s; }
 .feature-card:hover { transform: translateY(-3px); box-shadow: var(--sh-lift); }
 .feature-icon { width: 40px; height: 40px; border-radius: var(--r-thumb); background: rgba(0,113,227,0.08); color: var(--accent); display: flex; align-items: center; justify-content: center; }
@@ -191,6 +191,7 @@ a { color: inherit; }
 @media (max-width: 900px) {
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .stat-row { grid-template-columns: repeat(2, 1fr); }
+  .feature-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 /* Nav collapses earlier than other content — 5 links + phone + CTA + logo need more
@@ -214,4 +215,5 @@ a { color: inherit; }
   .course-row { flex-direction: column; align-items: flex-start; gap: 12px; }
   .course-side { width: 100%; justify-content: space-between; }
   .stat-row { grid-template-columns: repeat(2, 1fr); }
+  .feature-grid { grid-template-columns: 1fr; }
 }
