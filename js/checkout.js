@@ -26,12 +26,12 @@ document.addEventListener('DOMContentLoaded', function () {
     try { return JSON.stringify(err); } catch (e) { return 'An unexpected error occurred during payment processing.'; }
   };
 
-  // Parse URL search params — ?item=<slug from DC_COURSES / DC_BUNDLES in config.js>
+  // Parse URL search params — ?item=<slug from DC_COURSES in config.js>
   var urlParams = new URLSearchParams(window.location.search);
-  var itemSlug = urlParams.get('item') || 'data-center-safety-bundle';
+  var itemSlug = urlParams.get('item') || (typeof DC_COURSES !== 'undefined' && DC_COURSES[0] ? DC_COURSES[0].slug : 'electrical-safety');
   var selected = (typeof findDcItem === 'function') ? findDcItem(itemSlug) : null;
   if (!selected) {
-    selected = { type: 'bundle', name: 'Data Center Safety Bundle', price: 69, courseId: null };
+    selected = { type: 'course', name: 'Data Center Electrical Safety Training', price: 44.99, courseId: 299 };
   }
 
   var basePrice = selected.price;
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var summaryTotalEl = document.getElementById('summaryTotal');
 
     if (summaryNameEl) summaryNameEl.textContent = selected.name;
-    if (summaryQtyEl) summaryQtyEl.textContent = selected.type === 'bundle' ? 'Bundle' : 'Qty: 1';
+    if (summaryQtyEl) summaryQtyEl.textContent = 'Qty: 1';
     if (summaryAmtEl) summaryAmtEl.textContent = '$' + fmt(basePrice);
     if (summarySubtotalEl) summarySubtotalEl.textContent = '$' + fmt(basePrice);
     if (summaryTotalEl) summaryTotalEl.textContent = '$' + fmt(basePrice);
