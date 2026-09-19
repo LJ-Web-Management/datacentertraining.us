@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
               '<div class="course-price">$' + formatMoney(c.msrp) + '</div>' +
               '<div class="course-duration">' + c.duration + '</div>' +
             '</div>' +
-            '<a class="btn btn-primary btn-sm" href="checkout.html?item=' + c.slug + '">Enroll</a>' +
+            '<a class="btn btn-primary btn-sm" href="checkout.html?item=' + c.slug + '" aria-label="Enroll in ' + c.name + '">Enroll</a>' +
           '</div>' +
         '</div>';
     }).join('');

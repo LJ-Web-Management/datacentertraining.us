@@ -12,7 +12,7 @@
   --text:      #1d1d1f;   /* primary text / titles */
   --text-body: #424245;   /* long-form body */
   --text-2:    #6e6e73;   /* secondary / summary / meta */
-  --text-3:    #86868b;   /* tertiary / captions */
+  --text-3:    #6e6e73;   /* tertiary / captions — darkened from #86868b to clear WCAG AA (4.5:1) at small sizes */
   --text-4:    #aeaeb2;   /* placeholder / quaternary */
   --faint:     #d2d2d7;   /* index numbers, arrows, dividers (very light) */
   --hairline:  rgba(0,0,0,0.07);   /* the divider line — used everywhere */
@@ -87,11 +87,12 @@ body {
   -webkit-backdrop-filter: blur(8px);
 }
 
-/* Live/online pulsing dot */
+/* Live/online pulsing dot — transform/opacity only, so it composites off the main thread.
+   Markup: <span class="dot"></span> with position:relative + a ::after ring (see style.css .eyebrow .dot). */
 @keyframes pulse-dot {
-  0%   { box-shadow: 0 0 0 0 rgba(48,209,88,0.5); }
-  70%  { box-shadow: 0 0 0 7px rgba(48,209,88,0); }
-  100% { box-shadow: 0 0 0 0 rgba(48,209,88,0); }
+  0%   { transform: scale(1); opacity: 0.5; }
+  70%  { transform: scale(3); opacity: 0; }
+  100% { transform: scale(3); opacity: 0; }
 }
 
 /* Motion easing (see motion.md) — spring-like curves, CSS-first */
