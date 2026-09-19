@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
   if (courseList && typeof DC_COURSES !== 'undefined') {
     courseList.innerHTML = DC_COURSES.map(function (c) {
       return '' +
-        '<a class="course-row" href="checkout.html?item=' + c.slug + '">' +
+        '<div class="course-row">' +
           '<div class="course-main">' +
             '<h3>' + c.name + '</h3>' +
             '<div class="course-meta">' +
@@ -29,8 +29,9 @@ document.addEventListener('DOMContentLoaded', function () {
               '<div class="course-price">$' + formatMoney(c.msrp) + '</div>' +
               '<div class="course-duration">' + c.duration + '</div>' +
             '</div>' +
+            '<a class="btn btn-primary btn-sm" href="checkout.html?item=' + c.slug + '">Enroll</a>' +
           '</div>' +
-        '</a>';
+        '</div>';
     }).join('');
   }
 

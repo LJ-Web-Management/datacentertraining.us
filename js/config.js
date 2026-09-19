@@ -48,7 +48,7 @@ var DC_BUNDLES = [
     slug: "data-center-it-infrastructure-bundle",
     name: "Data Center & IT Infrastructure Bundle",
     tier: "Complete",
-    scope: "22 courses — data center safety plus electrical, HVAC/R, facility & building maintenance, and emergency management fundamentals",
+    scope: "22 courses covering data center safety plus electrical, HVAC/R, facility & building maintenance, and emergency management fundamentals",
     totalCourses: 22,
     costSeparate: 1504.78,
     bundlePrice: 119,
