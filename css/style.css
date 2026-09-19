@@ -180,6 +180,13 @@ a { color: inherit; }
 .faq-row.open .faq-a { max-height: 320px; }
 .faq-a-inner { padding: 0 clamp(18px, 3vw, 28px) 20px; font-size: 14px; color: var(--text-2); line-height: 1.65; }
 
+/* Hover-to-preview on devices with a real pointer (mouse/trackpad); touch devices
+   keep the click-to-toggle behavior below since they have no hover state. */
+@media (hover: hover) and (pointer: fine) {
+  .faq-row:hover .faq-q .chev { transform: rotate(180deg); }
+  .faq-row:hover .faq-a { max-height: 320px; }
+}
+
 /* ── Colored CTA ── */
 .cta-block {
   position: relative; overflow: hidden; border-radius: var(--r-hero); padding: clamp(32px, 5vw, 52px);

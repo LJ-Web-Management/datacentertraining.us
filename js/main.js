@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-  // FAQ accordion
+  // FAQ accordion (click still toggles/pins open on touch + keyboard;
+  // hover-to-preview is handled purely in CSS for pointer-fine devices)
   document.querySelectorAll('.faq-row').forEach(function (row) {
     var q = row.querySelector('.faq-q');
     if (!q) return;
@@ -10,6 +11,28 @@ document.addEventListener('DOMContentLoaded', function () {
       if (!wasOpen) row.classList.add('open');
     });
   });
+
+  // FAQ "View More" toggle reveals the SEO long-tail questions
+  var faqViewMoreBtn = document.getElementById('faqViewMoreBtn');
+  if (faqViewMoreBtn) {
+    var faqExtras = document.querySelectorAll('.faq-extra');
+    faqViewMoreBtn.addEventListener('click', function () {
+      var expanded = faqViewMoreBtn.getAttribute('aria-expanded') === 'true';
+      faqExtras.forEach(function (row) {
+        if (expanded) {
+          row.hidden = true;
+          row.classList.remove('open');
+        } else {
+          row.hidden = false;
+        }
+      });
+      faqViewMoreBtn.setAttribute('aria-expanded', String(!expanded));
+      faqViewMoreBtn.querySelector('.btn-text').textContent = expanded ? 'View More Questions' : 'View Fewer Questions';
+      if (expanded) {
+        document.getElementById('faqPanel').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  }
 
   // Populate course list + bundle cards from config.js data (single source of truth)
   var courseList = document.getElementById('courseList');
