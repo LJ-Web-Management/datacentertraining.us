@@ -57,4 +57,35 @@ document.addEventListener('DOMContentLoaded', function () {
         '</div>';
     }).join('');
   }
+
+  // Hero card course snapshot — first 5 courses, matching the hero card's
+  // "see all 9 below" link for the rest
+  var heroCardCourses = document.getElementById('heroCardCourses');
+  if (heroCardCourses && typeof DC_COURSES !== 'undefined') {
+    heroCardCourses.innerHTML = DC_COURSES.slice(0, 5).map(function (c) {
+      return '' +
+        '<a class="hero-card-course" href="checkout.html?item=' + c.slug + '">' +
+          '<span class="hero-card-course-name">' + c.name.replace('Data Center ', '') + '</span>' +
+          '<span class="hero-card-course-price">$' + formatMoney(c.msrp) + '</span>' +
+        '</a>';
+    }).join('');
+  }
+
+  // "Which Courses Does Your Role Need?" role picker
+  document.querySelectorAll('.role-picker').forEach(function (picker) {
+    var buttons = picker.querySelectorAll('.role-picker-btn');
+    var resultsWrap = document.querySelector(picker.dataset.resultsTarget || '.role-picker-results');
+    if (!resultsWrap) return;
+    var results = resultsWrap.querySelectorAll('.role-picker-result');
+
+    buttons.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        buttons.forEach(function (b) { b.classList.toggle('active', b === btn); });
+        results.forEach(function (r) {
+          r.classList.toggle('active', r.dataset.role === btn.dataset.role);
+        });
+        resultsWrap.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      });
+    });
+  });
 });
