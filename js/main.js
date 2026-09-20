@@ -34,76 +34,10 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // Render one tier of the course list (comprehensive or modular) into a panel
-  var renderCourseRows = function (containerId, tier) {
-    var el = document.getElementById(containerId);
-    if (!el || typeof DC_COURSES === 'undefined') return;
-    el.innerHTML = DC_COURSES.filter(function (c) { return c.tier === tier; }).map(function (c) {
-      return '' +
-        '<div class="course-row">' +
-          '<div class="course-main">' +
-            '<h3><a href="courses/' + c.slug + '.html">' + c.name + '</a></h3>' +
-            '<div class="course-meta">' +
-              '<span>' + c.category + '</span>' +
-              (c.standard ? '<span class="sep">·</span><span>' + c.standard + '</span>' : '') +
-            '</div>' +
-          '</div>' +
-          '<div class="course-side">' +
-            '<div style="text-align:right;">' +
-              '<div class="course-price">$' + formatMoney(c.msrp) + '</div>' +
-              '<div class="course-duration">' + c.duration + '</div>' +
-            '</div>' +
-            '<a class="btn btn-primary btn-sm" href="checkout.html?item=' + c.slug + '" aria-label="Enroll in ' + c.name + '">Enroll</a>' +
-          '</div>' +
-        '</div>';
-    }).join('');
-  };
-  renderCourseRows('courseListComprehensive', 'comprehensive');
-  renderCourseRows('courseListModular', 'modular');
-
-  // Hero card course snapshot — a handful of featured courses across both tiers
-  var heroCardCourses = document.getElementById('heroCardCourses');
-  if (heroCardCourses && typeof DC_COURSES !== 'undefined') {
-    var featuredSlugs = ['data-center-design-fundamentals', 'power-systems-electrical-fundamentals', 'cooling-systems-design-optimization', 'security-compliance-data-centers', 'ups-operations-load-testing'];
-    heroCardCourses.innerHTML = featuredSlugs.map(function (slug) {
-      return DC_COURSES.find(function (c) { return c.slug === slug; });
-    }).filter(Boolean).map(function (c) {
-      return '' +
-        '<a class="hero-card-course" href="courses/' + c.slug + '.html">' +
-          '<span class="hero-card-course-name">' + c.name.replace('Data Center ', '') + '</span>' +
-          '<span class="hero-card-course-price">$' + formatMoney(c.msrp) + '</span>' +
-        '</a>';
-    }).join('');
-  }
-
-  // Bundle grid — themed packages priced below buying each course individually
-  var bundleGrid = document.getElementById('bundleGrid');
-  if (bundleGrid && typeof DC_BUNDLES !== 'undefined') {
-    bundleGrid.innerHTML = DC_BUNDLES.map(function (b) {
-      var listPrice = bundleListPrice(b);
-      var savingsPct = Math.round((1 - b.price / listPrice) * 100);
-      var courseNames = b.courses.map(function (slug) {
-        var c = DC_COURSES.find(function (x) { return x.slug === slug; });
-        return c ? c.name : '';
-      }).filter(Boolean);
-      var isComplete = b.slug === 'bundle-complete-catalog';
-      return '' +
-        '<div class="bundle-card' + (isComplete ? ' bundle-card-featured' : '') + '">' +
-          (isComplete ? '<div class="bundle-card-badge">Everything, One Price</div>' : '') +
-          '<h3>' + b.name + '</h3>' +
-          '<p class="bundle-card-desc">' + b.description + '</p>' +
-          '<ul class="bundle-card-courses">' +
-            courseNames.map(function (n) { return '<li>' + n + '</li>'; }).join('') +
-          '</ul>' +
-          '<div class="bundle-card-pricing">' +
-            '<span class="bundle-card-price">$' + formatMoney(b.price) + '</span>' +
-            '<span class="bundle-card-list-price">$' + formatMoney(listPrice) + '</span>' +
-            '<span class="bundle-card-savings">Save ' + savingsPct + '%</span>' +
-          '</div>' +
-          '<a class="btn btn-primary btn-block" href="checkout.html?item=' + b.slug + '" aria-label="Enroll in the ' + b.name + '">Enroll the Team</a>' +
-        '</div>';
-    }).join('');
-  }
+  // Course list, hero card snapshot, and bundle grid are pre-rendered as static
+  // HTML directly in index.html (generated from the same config.js data) so
+  // search engines and other non-JS-rendering crawlers can see and follow
+  // links to every course/bundle page without executing JavaScript.
 
   // "Which Courses Does Your Role Need?" role picker
   document.querySelectorAll('.role-picker').forEach(function (picker) {
