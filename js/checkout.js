@@ -31,10 +31,11 @@ document.addEventListener('DOMContentLoaded', function () {
   var itemSlug = urlParams.get('item') || (typeof DC_COURSES !== 'undefined' && DC_COURSES[0] ? DC_COURSES[0].slug : 'electrical-safety');
   var selected = (typeof findDcItem === 'function') ? findDcItem(itemSlug) : null;
   if (!selected) {
-    selected = { type: 'course', name: 'Data Center Electrical Safety Training', price: 44.99, courseId: 299 };
+    selected = { type: 'course', name: 'Data Center Design Fundamentals', price: 695, courseId: 401 };
   }
 
   var basePrice = selected.price;
+  var selectedCourseIds = selected.type === 'bundle' ? selected.courseIds : [selected.courseId];
 
   var getStripe = function () {
     if (stripe) return stripe;
@@ -60,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function () {
       itemSlug: itemSlug,
       name: selected.name,
       type: selected.type,
-      courseId: selected.courseId,
+      courseIds: selectedCourseIds,
       basePrice: basePrice,
       totalPrice: basePrice
     };
@@ -72,12 +73,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var summaryNameEl = document.getElementById('summaryCourseName');
     var summaryQtyEl = document.getElementById('summaryCourseQty');
+    var summaryIncludesEl = document.getElementById('summaryCourseIncludes');
     var summaryAmtEl = document.getElementById('summaryCourseAmount');
     var summarySubtotalEl = document.getElementById('summarySubtotal');
     var summaryTotalEl = document.getElementById('summaryTotal');
 
     if (summaryNameEl) summaryNameEl.textContent = selected.name;
-    if (summaryQtyEl) summaryQtyEl.textContent = 'Qty: 1';
+    if (summaryQtyEl) summaryQtyEl.textContent = selected.type === 'bundle' ? 'Bundle · 1 team seat' : 'Qty: 1';
+    if (summaryIncludesEl) {
+      if (selected.type === 'bundle' && selected.includedNames) {
+        summaryIncludesEl.hidden = false;
+        summaryIncludesEl.innerHTML = '<span>Includes:</span> ' + selected.includedNames.join(', ');
+      } else {
+        summaryIncludesEl.hidden = true;
+      }
+    }
     if (summaryAmtEl) summaryAmtEl.textContent = '$' + fmt(basePrice);
     if (summarySubtotalEl) summarySubtotalEl.textContent = '$' + fmt(basePrice);
     if (summaryTotalEl) summaryTotalEl.textContent = '$' + fmt(basePrice);
@@ -282,13 +292,13 @@ document.addEventListener('DOMContentLoaded', function () {
         shipping_state: state,
         shipping_postcode: zip,
         shipping_country: country,
-        courses: [
-          {
-            course_id: currentOrderDetails ? currentOrderDetails.courseId : null,
+        courses: (currentOrderDetails && currentOrderDetails.courseIds ? currentOrderDetails.courseIds : [null]).map(function (cid) {
+          return {
+            course_id: cid,
             quantity: 1,
             users: [ { first_name: firstName, last_name: lastName, email: userEmail, user_name: "" } ]
-          }
-        ]
+          };
+        })
       };
 
       var addOrderRes = await fetch(apiBaseUrl + '/add_order', {

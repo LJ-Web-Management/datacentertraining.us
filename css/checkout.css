@@ -56,6 +56,8 @@
 .summary-course-name { font-size: 14.5px; font-weight: 600; letter-spacing: -0.005em; }
 .summary-qty { font-size: 12px; color: var(--text-3); }
 .summary-amount { font-size: 14.5px; font-weight: 650; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.summary-includes { font-size: 12px; color: var(--text-2); line-height: 1.6; margin-top: -6px; padding-bottom: 14px; }
+.summary-includes span { font-weight: 650; color: var(--text); }
 .summary-divider { border: none; border-top: 1px solid var(--hairline); margin: 4px 0 14px; }
 .summary-row { display: flex; justify-content: space-between; font-size: 13.5px; color: var(--text-2); margin-bottom: 8px; }
 .summary-row.summary-total { font-size: 16px; font-weight: 700; color: var(--text); margin-top: 10px; padding-top: 14px; border-top: 1px solid var(--hairline); }
