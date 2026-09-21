@@ -83,7 +83,9 @@ document.addEventListener('DOMContentLoaded', function () {
     if (summaryIncludesEl) {
       if (selected.type === 'bundle' && selected.includedNames) {
         summaryIncludesEl.hidden = false;
-        summaryIncludesEl.innerHTML = '<span>Includes:</span> ' + selected.includedNames.join(', ');
+        var names = selected.includedNames;
+        var shown = names.length > 6 ? names.slice(0, 6).join(', ') + ', and ' + (names.length - 6) + ' more' : names.join(', ');
+        summaryIncludesEl.innerHTML = '<span>Includes ' + names.length + ' courses:</span> ' + shown;
       } else {
         summaryIncludesEl.hidden = true;
       }
