@@ -2,14 +2,18 @@
 
 > Data Center Training (datacentertraining.us) is a specialty training division of HAZWOPER-OSHA Training, LLC, an IACET-accredited provider of professional data center and safety compliance training. We offer 44 online courses (250 hours total) covering data center design, operations, power, cooling, security, and facilities management, self-paced with a certificate on completion.
 
-Courses are sold individually or as a complete catalog bundle for $1,999.99. Programs are grouped into Comprehensive Programs (12-18 hrs, full-discipline curriculum) and Modular Specializations (1-8 hrs, focused hands-on skills).
+Courses start at $99.99 each, or enroll the complete catalog bundle for $2,928.99. Programs are grouped into Comprehensive Programs (12-18 hrs, full-discipline curriculum) and Modular Specializations (1-8 hrs, focused hands-on skills).
 
 ## Key Pages
 
-- [Homepage](https://datacentertraining.us/): Full course catalog, role-based learning tracks, bundles, certifications, and FAQ.
-- [Course Catalog](https://datacentertraining.us/#courses): All 44 courses with duration, price, and standards alignment (ANSI/TIA-942, NFPA 70E, Uptime Institute Tier Framework, ASHRAE, SOC 2/ISO 27001, and more).
-- [Sitemap](https://datacentertraining.us/sitemap.xml): Complete list of course pages.
-- [llms-full.txt](https://datacentertraining.us/llms-full.txt): Full course catalog and details in Markdown.
+- [Homepage](https://datacentertraining.us/): Overview, hero, and links to every section of the site.
+- [Course Catalog](https://datacentertraining.us/courses.html): All 44 courses with search, sort, and filter by track, duration, or price.
+- [Bundles](https://datacentertraining.us/bundles.html): 7 role-based and complete-catalog bundles, up to 53% off.
+- [Who It's For](https://datacentertraining.us/who.html): Role-based course recommendations (electricians, HVAC techs, security officers, engineers, and more).
+- [Certifications & Accreditations](https://datacentertraining.us/certifications.html): IACET accreditation, BBB, Trustpilot, Google reviews, and credential transparency.
+- [FAQ](https://datacentertraining.us/faq.html): Common questions about programs, pricing, and certificates.
+- [Sitemap](https://datacentertraining.us/sitemap.xml): Complete list of pages.
+- [llms-full.txt](https://datacentertraining.us/llms-full.txt): Full course catalog and pricing in Markdown.
 
 ## Learning Tracks
 
@@ -34,71 +38,81 @@ Courses are sold individually or as a complete catalog bundle for $1,999.99. Pro
 - [Certificate Verification](https://hazwoper-osha.com/certificate-verification)
 # Data Center Training — Full Course Catalog
 
-> Data Center Training (datacentertraining.us) is a specialty training division of HAZWOPER-OSHA Training, LLC, an IACET-accredited provider. 44 online courses, 250 hours total, self-paced with a certificate on completion. Enroll individually or purchase the complete catalog bundle for $1,999.99.
+> Data Center Training (datacentertraining.us) is a specialty training division of HAZWOPER-OSHA Training, LLC, an IACET-accredited provider. 44 online courses, 250 hours total, self-paced with a certificate on completion. Courses start at $99.99 each, or enroll the complete catalog bundle for $2,928.99.
 
 ## Course Catalog by Discipline
 
 ### Design & Planning
 
-- [Data Center Design Fundamentals](https://datacentertraining.us/courses/data-center-design-fundamentals.html) — ANSI/TIA-942
-- [Tier Infrastructure Fundamentals](https://datacentertraining.us/courses/tier-infrastructure-fundamentals.html) — Uptime Institute Tier Framework
-- [Infrastructure Commissioning & Startup](https://datacentertraining.us/courses/infrastructure-commissioning-startup.html) — Commissioning Test Protocols
-- [Capacity Planning & Forecasting](https://datacentertraining.us/courses/capacity-planning-forecasting.html)
+- [Data Center Design Fundamentals](https://datacentertraining.us/courses/data-center-design-fundamentals.html) — 16 hrs, $312.99 — ANSI/TIA-942
+- [Tier Infrastructure Fundamentals](https://datacentertraining.us/courses/tier-infrastructure-fundamentals.html) — 14 hrs, $280.99 — Uptime Institute Tier Framework
+- [Infrastructure Commissioning & Startup](https://datacentertraining.us/courses/infrastructure-commissioning-startup.html) — 12 hrs, $267.99 — Commissioning Test Protocols
+- [Capacity Planning & Forecasting](https://datacentertraining.us/courses/capacity-planning-forecasting.html) — 3.5 hrs, $99.99
 
 ### Operations
 
-- [Data Center Operations Management](https://datacentertraining.us/courses/data-center-operations-management.html) — DCIM / SLA Frameworks
-- [Disaster Recovery & Business Continuity](https://datacentertraining.us/courses/disaster-recovery-business-continuity.html) — RTO/RPO Frameworks
-- [Preventive Maintenance Planning](https://datacentertraining.us/courses/preventive-maintenance-planning.html)
-- [Incident Response & Troubleshooting](https://datacentertraining.us/courses/incident-response-troubleshooting.html)
-- [Building Maintenance Fundamentals](https://datacentertraining.us/courses/building-maintenance-fundamentals.html)
-- [Business Continuity and Disaster Recovery Planning Training](https://datacentertraining.us/courses/business-continuity-disaster-recovery-planning.html) — ICS-NIMS
-- [Data Center Raised Floor and Confined Space Awareness Training](https://datacentertraining.us/courses/data-center-raised-floor-confined-space.html) — OSHA 1910.146
-- [Facility Management Fundamentals](https://datacentertraining.us/courses/facility-management-fundamentals.html)
-- [Roofing Systems Maintenance Fundamentals](https://datacentertraining.us/courses/roofing-systems-maintenance-fundamentals.html)
-- [Server Room Ergonomics and Manual Handling Training](https://datacentertraining.us/courses/server-room-ergonomics-manual-handling.html)
+- [Data Center Operations Management](https://datacentertraining.us/courses/data-center-operations-management.html) — 18 hrs, $325.99 — DCIM / SLA Frameworks
+- [Disaster Recovery & Business Continuity](https://datacentertraining.us/courses/disaster-recovery-business-continuity.html) — 17 hrs, $307.99 — RTO/RPO Frameworks
+- [Preventive Maintenance Planning](https://datacentertraining.us/courses/preventive-maintenance-planning.html) — 3 hrs, $99.99
+- [Incident Response & Troubleshooting](https://datacentertraining.us/courses/incident-response-troubleshooting.html) — 4 hrs, $99.99
+- [Building Maintenance Fundamentals](https://datacentertraining.us/courses/building-maintenance-fundamentals.html) — 4 hrs, $99.99
+- [Business Continuity and Disaster Recovery Planning Training](https://datacentertraining.us/courses/business-continuity-disaster-recovery-planning.html) — 8 hrs, $99.99 — ICS-NIMS
+- [Data Center Raised Floor and Confined Space Awareness Training](https://datacentertraining.us/courses/data-center-raised-floor-confined-space.html) — 1 hr, $99.99 — OSHA 1910.146
+- [Facility Management Fundamentals](https://datacentertraining.us/courses/facility-management-fundamentals.html) — 4 hrs, $99.99
+- [Roofing Systems Maintenance Fundamentals](https://datacentertraining.us/courses/roofing-systems-maintenance-fundamentals.html) — 2 hrs, $99.99
+- [Server Room Ergonomics and Manual Handling Training](https://datacentertraining.us/courses/server-room-ergonomics-manual-handling.html) — 1 hr, $99.99
 
 ### Security & Compliance
 
-- [Security & Compliance for Data Centers](https://datacentertraining.us/courses/security-compliance-data-centers.html) — SOC 2 / ISO 27001
-- [Facility Environmental Compliance](https://datacentertraining.us/courses/facility-environmental-compliance.html)
-- [Access Control & Physical Security](https://datacentertraining.us/courses/access-control-physical-security.html)
-- [Data Center Fire Suppression System Safety Training (Clean Agent Systems)](https://datacentertraining.us/courses/data-center-fire-suppression-safety.html) — NFPA 2001
-- [Data Center Physical Security and Access Control Training](https://datacentertraining.us/courses/data-center-physical-security-access-control.html)
+- [Security & Compliance for Data Centers](https://datacentertraining.us/courses/security-compliance-data-centers.html) — 16 hrs, $291.99 — SOC 2 / ISO 27001
+- [Facility Environmental Compliance](https://datacentertraining.us/courses/facility-environmental-compliance.html) — 3 hrs, $99.99
+- [Access Control & Physical Security](https://datacentertraining.us/courses/access-control-physical-security.html) — 3.5 hrs, $99.99
+- [Data Center Fire Suppression System Safety Training (Clean Agent Systems)](https://datacentertraining.us/courses/data-center-fire-suppression-safety.html) — 2 hrs, $99.99 — NFPA 2001
+- [Data Center Physical Security and Access Control Training](https://datacentertraining.us/courses/data-center-physical-security-access-control.html) — 1 hr, $99.99
 
 ### Power & Electrical
 
-- [Power Systems & Electrical Fundamentals](https://datacentertraining.us/courses/power-systems-electrical-fundamentals.html) — NFPA 70E
-- [UPS Operations & Load Testing](https://datacentertraining.us/courses/ups-operations-load-testing.html)
-- [Generator Operations & Maintenance](https://datacentertraining.us/courses/generator-operations-maintenance.html)
-- [Electrical Safety & Best Practices](https://datacentertraining.us/courses/electrical-safety-best-practices.html) — NFPA 70E
-- [Batteries and DC Circuits](https://datacentertraining.us/courses/batteries-dc-circuits.html)
-- [Data Center Arc Flash Safety Training](https://datacentertraining.us/courses/data-center-arc-flash-safety.html) — NFPA 70E
-- [Data Center Electrical Safety Training](https://datacentertraining.us/courses/data-center-electrical-safety.html)
-- [Data Center Emergency Power Off (EPO) Procedures Training](https://datacentertraining.us/courses/data-center-epo-procedures.html)
-- [Data Center UPS and Battery System Safety Training](https://datacentertraining.us/courses/data-center-ups-battery-safety.html)
-- [Emergency/Standby Power Systems Fundamentals](https://datacentertraining.us/courses/emergency-standby-power-systems-fundamentals.html)
-- [Generator Fundamentals](https://datacentertraining.us/courses/generator-fundamentals.html)
-- [Lithium-Ion Battery Thermal Runaway and Emergency Response Training](https://datacentertraining.us/courses/lithium-ion-thermal-runaway-emergency-response.html)
-- [OSHA Electrical Safety-Related Work Practices for Data Center Technicians](https://datacentertraining.us/courses/osha-electrical-safety-data-center-technicians.html) — NFPA 70E
-- [Power Distribution Systems Fundamentals](https://datacentertraining.us/courses/power-distribution-systems-fundamentals.html)
-- [UPS Systems Fundamentals](https://datacentertraining.us/courses/ups-systems-fundamentals.html)
+- [Power Systems & Electrical Fundamentals](https://datacentertraining.us/courses/power-systems-electrical-fundamentals.html) — 18 hrs, $303.99 — NFPA 70E
+- [UPS Operations & Load Testing](https://datacentertraining.us/courses/ups-operations-load-testing.html) — 4 hrs, $99.99
+- [Generator Operations & Maintenance](https://datacentertraining.us/courses/generator-operations-maintenance.html) — 3.5 hrs, $99.99
+- [Electrical Safety & Best Practices](https://datacentertraining.us/courses/electrical-safety-best-practices.html) — 3 hrs, $99.99 — NFPA 70E
+- [Batteries and DC Circuits](https://datacentertraining.us/courses/batteries-dc-circuits.html) — 2 hrs, $99.99
+- [Data Center Arc Flash Safety Training](https://datacentertraining.us/courses/data-center-arc-flash-safety.html) — 2 hrs, $99.99 — NFPA 70E
+- [Data Center Electrical Safety Training](https://datacentertraining.us/courses/data-center-electrical-safety.html) — 2 hrs, $99.99
+- [Data Center Emergency Power Off (EPO) Procedures Training](https://datacentertraining.us/courses/data-center-epo-procedures.html) — 1 hr, $99.99
+- [Data Center UPS and Battery System Safety Training](https://datacentertraining.us/courses/data-center-ups-battery-safety.html) — 2 hrs, $99.99
+- [Emergency/Standby Power Systems Fundamentals](https://datacentertraining.us/courses/emergency-standby-power-systems-fundamentals.html) — 4 hrs, $99.99
+- [Generator Fundamentals](https://datacentertraining.us/courses/generator-fundamentals.html) — 4 hrs, $99.99
+- [Lithium-Ion Battery Thermal Runaway and Emergency Response Training](https://datacentertraining.us/courses/lithium-ion-thermal-runaway-emergency-response.html) — 4 hrs, $99.99
+- [OSHA Electrical Safety-Related Work Practices for Data Center Technicians](https://datacentertraining.us/courses/osha-electrical-safety-data-center-technicians.html) — 2 hrs, $99.99 — NFPA 70E
+- [Power Distribution Systems Fundamentals](https://datacentertraining.us/courses/power-distribution-systems-fundamentals.html) — 4 hrs, $99.99
+- [UPS Systems Fundamentals](https://datacentertraining.us/courses/ups-systems-fundamentals.html) — 2 hrs, $99.99
 
 ### Cooling & Efficiency
 
-- [Cooling Systems Design & Optimization](https://datacentertraining.us/courses/cooling-systems-design-optimization.html) — PUE / ASHRAE Thermal Guidelines
-- [HVAC Systems Troubleshooting Essentials](https://datacentertraining.us/courses/hvac-troubleshooting-essentials.html)
-- [Energy Efficiency & PUE Optimization](https://datacentertraining.us/courses/energy-efficiency-pue-optimization.html) — PUE
-- [Mechanical Systems & Equipment Maintenance](https://datacentertraining.us/courses/mechanical-systems-maintenance.html)
-- [Building Envelope Fundamentals](https://datacentertraining.us/courses/building-envelope-fundamentals.html)
-- [Data Center Cooling System and Refrigerant Safety Training](https://datacentertraining.us/courses/data-center-cooling-refrigerant-safety.html) — EPA/OSHA
+- [Cooling Systems Design & Optimization](https://datacentertraining.us/courses/cooling-systems-design-optimization.html) — 16 hrs, $298.99 — PUE / ASHRAE Thermal Guidelines
+- [HVAC Systems Troubleshooting Essentials](https://datacentertraining.us/courses/hvac-troubleshooting-essentials.html) — 4 hrs, $99.99
+- [Energy Efficiency & PUE Optimization](https://datacentertraining.us/courses/energy-efficiency-pue-optimization.html) — 3 hrs, $99.99 — PUE
+- [Mechanical Systems & Equipment Maintenance](https://datacentertraining.us/courses/mechanical-systems-maintenance.html) — 4 hrs, $99.99
+- [Building Envelope Fundamentals](https://datacentertraining.us/courses/building-envelope-fundamentals.html) — 2 hrs, $99.99
+- [Data Center Cooling System and Refrigerant Safety Training](https://datacentertraining.us/courses/data-center-cooling-refrigerant-safety.html) — 2 hrs, $99.99 — EPA/OSHA
 
 ### Monitoring & Automation
 
-- [Monitoring, Automation & BMS Systems](https://datacentertraining.us/courses/monitoring-automation-bms-systems.html) — BMS / DCIM
-- [Fiber Optics & Network Cabling](https://datacentertraining.us/courses/fiber-optics-network-cabling.html) — ANSI/TIA-942
-- [DCIM Platform Fundamentals](https://datacentertraining.us/courses/dcim-platform-fundamentals.html) — DCIM
-- [Building Automation Systems (BAS) Fundamentals](https://datacentertraining.us/courses/building-automation-systems-fundamentals.html) — BMS/BAS
+- [Monitoring, Automation & BMS Systems](https://datacentertraining.us/courses/monitoring-automation-bms-systems.html) — 14 hrs, $276.99 — BMS / DCIM
+- [Fiber Optics & Network Cabling](https://datacentertraining.us/courses/fiber-optics-network-cabling.html) — 3.5 hrs, $99.99 — ANSI/TIA-942
+- [DCIM Platform Fundamentals](https://datacentertraining.us/courses/dcim-platform-fundamentals.html) — 5 hrs, $99.99 — DCIM
+- [Building Automation Systems (BAS) Fundamentals](https://datacentertraining.us/courses/building-automation-systems-fundamentals.html) — 6 hrs, $99.99 — BMS/BAS
+
+## Bundles
+
+- **Power & Electrical Systems Bundle** — 15 courses, $986.99 (list $1,703.85): https://datacentertraining.us/bundles.html
+- **Cooling & Facilities Efficiency Bundle** — 6 courses, $462.99 (list $798.94): https://datacentertraining.us/bundles.html
+- **Operations & Reliability Bundle** — 10 courses, $830.99 (list $1,433.90): https://datacentertraining.us/bundles.html
+- **Security & Compliance Bundle** — 5 courses, $400.99 (list $691.95): https://datacentertraining.us/bundles.html
+- **Design, Planning & Commissioning Bundle** — 4 courses, $557.99 (list $961.96): https://datacentertraining.us/bundles.html
+- **Monitoring & Smart Facility Bundle** — 4 courses, $333.99 (list $576.96): https://datacentertraining.us/bundles.html
+- **Complete Data Center Professional Bundle** — 44 courses, $2928.99 (list $6,167.56): https://datacentertraining.us/bundles.html
 
 ## Learning Tracks
 

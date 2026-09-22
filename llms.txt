@@ -2,14 +2,18 @@
 
 > Data Center Training (datacentertraining.us) is a specialty training division of HAZWOPER-OSHA Training, LLC, an IACET-accredited provider of professional data center and safety compliance training. We offer 44 online courses (250 hours total) covering data center design, operations, power, cooling, security, and facilities management, self-paced with a certificate on completion.
 
-Courses are sold individually or as a complete catalog bundle for $1,999.99. Programs are grouped into Comprehensive Programs (12-18 hrs, full-discipline curriculum) and Modular Specializations (1-8 hrs, focused hands-on skills).
+Courses start at $99.99 each, or enroll the complete catalog bundle for $2,928.99. Programs are grouped into Comprehensive Programs (12-18 hrs, full-discipline curriculum) and Modular Specializations (1-8 hrs, focused hands-on skills).
 
 ## Key Pages
 
-- [Homepage](https://datacentertraining.us/): Full course catalog, role-based learning tracks, bundles, certifications, and FAQ.
-- [Course Catalog](https://datacentertraining.us/#courses): All 44 courses with duration, price, and standards alignment (ANSI/TIA-942, NFPA 70E, Uptime Institute Tier Framework, ASHRAE, SOC 2/ISO 27001, and more).
-- [Sitemap](https://datacentertraining.us/sitemap.xml): Complete list of course pages.
-- [llms-full.txt](https://datacentertraining.us/llms-full.txt): Full course catalog and details in Markdown.
+- [Homepage](https://datacentertraining.us/): Overview, hero, and links to every section of the site.
+- [Course Catalog](https://datacentertraining.us/courses.html): All 44 courses with search, sort, and filter by track, duration, or price.
+- [Bundles](https://datacentertraining.us/bundles.html): 7 role-based and complete-catalog bundles, up to 53% off.
+- [Who It's For](https://datacentertraining.us/who.html): Role-based course recommendations (electricians, HVAC techs, security officers, engineers, and more).
+- [Certifications & Accreditations](https://datacentertraining.us/certifications.html): IACET accreditation, BBB, Trustpilot, Google reviews, and credential transparency.
+- [FAQ](https://datacentertraining.us/faq.html): Common questions about programs, pricing, and certificates.
+- [Sitemap](https://datacentertraining.us/sitemap.xml): Complete list of pages.
+- [llms-full.txt](https://datacentertraining.us/llms-full.txt): Full course catalog and pricing in Markdown.
 
 ## Learning Tracks
 

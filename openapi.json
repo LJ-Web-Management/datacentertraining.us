@@ -19,7 +19,72 @@
       "get": {
         "operationId": "getHomepage",
         "summary": "Homepage",
-        "description": "Full course catalog, role-based learning tracks, bundles, certifications, and FAQ, with EducationalOrganization/LocalBusiness/ItemList/FAQPage JSON-LD.",
+        "description": "Site overview and links to the course catalog, bundles, role guide, certifications, and FAQ, with EducationalOrganization/LocalBusiness/WebSite JSON-LD.",
+        "responses": {
+          "200": {
+            "description": "HTML document",
+            "content": { "text/html": {} }
+          }
+        }
+      }
+    },
+    "/courses.html": {
+      "get": {
+        "operationId": "getCourseCatalog",
+        "summary": "Course catalog",
+        "description": "All 44 courses with search, sort, and filter by track, tier, duration, or price. Includes ItemList JSON-LD.",
+        "responses": {
+          "200": {
+            "description": "HTML document",
+            "content": { "text/html": {} }
+          }
+        }
+      }
+    },
+    "/bundles.html": {
+      "get": {
+        "operationId": "getBundles",
+        "summary": "Course bundles",
+        "description": "7 role-based and complete-catalog bundles, up to 53% off individual course pricing.",
+        "responses": {
+          "200": {
+            "description": "HTML document",
+            "content": { "text/html": {} }
+          }
+        }
+      }
+    },
+    "/who.html": {
+      "get": {
+        "operationId": "getWhoItsFor",
+        "summary": "Role-based course guide",
+        "description": "Recommended course tracks by role: electricians, HVAC technicians, operations managers, security officers, engineers, and IT/network technicians.",
+        "responses": {
+          "200": {
+            "description": "HTML document",
+            "content": { "text/html": {} }
+          }
+        }
+      }
+    },
+    "/certifications.html": {
+      "get": {
+        "operationId": "getCertifications",
+        "summary": "Certifications & accreditations",
+        "description": "IACET accreditation, BBB, Trustpilot, and Google review links, plus what a certificate of completion does and doesn't mean.",
+        "responses": {
+          "200": {
+            "description": "HTML document",
+            "content": { "text/html": {} }
+          }
+        }
+      }
+    },
+    "/faq.html": {
+      "get": {
+        "operationId": "getFaq",
+        "summary": "Frequently asked questions",
+        "description": "Common questions about programs, pricing, bundles, and certificates. Includes FAQPage JSON-LD.",
         "responses": {
           "200": {
             "description": "HTML document",
