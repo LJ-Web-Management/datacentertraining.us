@@ -1,0 +1,71 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Data Center Training — Public Content API",
+    "description": "Read-only informational endpoints exposing Data Center Training's course catalog and AI-agent context documents. All resources are static, publicly readable, and require no authentication.",
+    "version": "1.0.0",
+    "contact": {
+      "email": "info@hazwoper-osha.com",
+      "url": "https://datacentertraining.us/"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://datacentertraining.us"
+    }
+  ],
+  "paths": {
+    "/": {
+      "get": {
+        "operationId": "getHomepage",
+        "summary": "Homepage",
+        "description": "Full course catalog, role-based learning tracks, bundles, certifications, and FAQ, with EducationalOrganization/LocalBusiness/ItemList/FAQPage JSON-LD.",
+        "responses": {
+          "200": {
+            "description": "HTML document",
+            "content": { "text/html": {} }
+          }
+        }
+      }
+    },
+    "/llms.txt": {
+      "get": {
+        "operationId": "getLlmsTxt",
+        "summary": "AI agent context summary",
+        "description": "Concise Markdown summary of the site for AI agents, per the llms.txt convention.",
+        "responses": {
+          "200": {
+            "description": "Markdown document",
+            "content": { "text/markdown": {} }
+          }
+        }
+      }
+    },
+    "/llms-full.txt": {
+      "get": {
+        "operationId": "getLlmsFullTxt",
+        "summary": "Full course catalog in Markdown",
+        "description": "Complete list of all 44 courses grouped by discipline, with links and standards alignment.",
+        "responses": {
+          "200": {
+            "description": "Markdown document",
+            "content": { "text/markdown": {} }
+          }
+        }
+      }
+    },
+    "/sitemap.xml": {
+      "get": {
+        "operationId": "getSitemap",
+        "summary": "XML sitemap",
+        "description": "Complete list of indexable course and site pages.",
+        "responses": {
+          "200": {
+            "description": "XML sitemap",
+            "content": { "application/xml": {} }
+          }
+        }
+      }
+    }
+  }
+}
