@@ -12,28 +12,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // FAQ "View More" toggle reveals the SEO long-tail questions
-  var faqViewMoreBtn = document.getElementById('faqViewMoreBtn');
-  if (faqViewMoreBtn) {
-    var faqExtras = document.querySelectorAll('.faq-extra');
-    faqViewMoreBtn.addEventListener('click', function () {
-      var expanded = faqViewMoreBtn.getAttribute('aria-expanded') === 'true';
-      faqExtras.forEach(function (row) {
-        if (expanded) {
-          row.hidden = true;
-          row.classList.remove('open');
-        } else {
-          row.hidden = false;
-        }
-      });
-      faqViewMoreBtn.setAttribute('aria-expanded', String(!expanded));
-      faqViewMoreBtn.querySelector('.btn-text').textContent = expanded ? 'View More Questions' : 'View Fewer Questions';
-      if (expanded) {
-        document.getElementById('faqPanel').scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-    });
-  }
-
   // Course list, hero card snapshot, and bundle grid are pre-rendered as static
   // HTML directly in index.html (generated from the same config.js data) so
   // search engines and other non-JS-rendering crawlers can see and follow
