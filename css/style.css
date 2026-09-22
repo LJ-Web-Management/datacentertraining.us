@@ -63,6 +63,7 @@ a { color: inherit; }
 .main-nav { display: flex; align-items: center; gap: 26px; }
 .main-nav a { font-size: 13.5px; font-weight: 550; color: var(--text-2); text-decoration: none; transition: color .15s; white-space: nowrap; }
 .main-nav a:hover { color: var(--text); }
+.main-nav a.active { color: var(--accent-link); font-weight: 700; }
 
 .nav-actions { display: flex; align-items: center; gap: 14px; flex-shrink: 0; }
 .nav-phone { display: flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600; color: var(--text); text-decoration: none; flex-shrink: 0; }
@@ -474,6 +475,12 @@ a { color: inherit; }
 .catalog-toolbar select:focus { outline: none; border-color: var(--accent); }
 .catalog-toolbar-count { font-size: 13px; color: var(--text-2); white-space: nowrap; margin-left: auto; }
 .catalog-empty { text-align: center; padding: 40px 20px; color: var(--text-2); }
+
+@media (max-width: 900px) {
+  .catalog-toolbar-search { flex: 1 1 100%; }
+  .catalog-toolbar select { flex: 1 1 auto; }
+  .catalog-toolbar-count { margin-left: 0; }
+}
 
 @media (max-width: 680px) {
   .footer-grid { grid-template-columns: 1fr; gap: 28px; }
