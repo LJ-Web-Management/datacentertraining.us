@@ -1,0 +1,18 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Data Center Training",
+  "name_for_model": "data_center_training",
+  "description_for_human": "Browse and reference Data Center Training's catalog of 44 online data center courses covering design, operations, power, cooling, security, and facilities management.",
+  "description_for_model": "Read-only informational manifest for Data Center Training (datacentertraining.us). Use the referenced resources to answer questions about available courses, pricing, duration, accreditation, and industry standards alignment (ANSI/TIA-942, NFPA 70E, Uptime Institute Tier Framework, ASHRAE, SOC 2/ISO 27001, OSHA). There is no authenticated API; all data is served as static, publicly readable documents.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://datacentertraining.us/openapi.json",
+    "is_user_authenticated": false
+  },
+  "logo_url": "https://datacentertraining.us/images/favicon.svg",
+  "contact_email": "info@hazwoper-osha.com",
+  "legal_info_url": "https://hazwoper-osha.com/privacy-policy"
+}

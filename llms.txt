@@ -1,0 +1,34 @@
+# Data Center Training
+
+> Data Center Training (datacentertraining.us) is a specialty training division of HAZWOPER-OSHA Training, LLC, an IACET-accredited provider of professional data center and safety compliance training. We offer 44 online courses (250 hours total) covering data center design, operations, power, cooling, security, and facilities management, self-paced with a certificate on completion.
+
+Courses are sold individually or as a complete catalog bundle for $1,999.99. Programs are grouped into Comprehensive Programs (12-18 hrs, full-discipline curriculum) and Modular Specializations (1-8 hrs, focused hands-on skills).
+
+## Key Pages
+
+- [Homepage](https://datacentertraining.us/): Full course catalog, role-based learning tracks, bundles, certifications, and FAQ.
+- [Course Catalog](https://datacentertraining.us/#courses): All 44 courses with duration, price, and standards alignment (ANSI/TIA-942, NFPA 70E, Uptime Institute Tier Framework, ASHRAE, SOC 2/ISO 27001, and more).
+- [Sitemap](https://datacentertraining.us/sitemap.xml): Complete list of course pages.
+- [llms-full.txt](https://datacentertraining.us/llms-full.txt): Full course catalog and details in Markdown.
+
+## Learning Tracks
+
+- Power & Electrical Systems Track
+- Cooling & Facilities Efficiency Track
+- Operations & Reliability Track
+- Security & Compliance Track
+- Design, Planning & Commissioning Track
+- Monitoring & Smart Facility Track
+
+## About
+
+- Accreditation: IACET Accredited Provider
+- Parent organization: HAZWOPER-OSHA Training, LLC (Industrial Certified Training, LLC), https://hazwoper-osha.com/
+- Contact: info@hazwoper-osha.com, 1-866-429-6742
+- Address: 11901 Santa Monica Blvd., Suite #414, Los Angeles, CA 90025
+
+## Optional
+
+- [Privacy Policy](https://hazwoper-osha.com/privacy-policy)
+- [Refund Policy](https://hazwoper-osha.com/refund-policy)
+- [Certificate Verification](https://hazwoper-osha.com/certificate-verification)
