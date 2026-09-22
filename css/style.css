@@ -324,7 +324,7 @@ a { color: inherit; }
 .cta-block > * { position: relative; z-index: 1; }
 .cta-block h2 { font-size: clamp(22px, 4vw, 32px); font-weight: 700; color: #fff; letter-spacing: -0.02em; }
 .cta-block p { margin: 12px auto 0; max-width: 480px; font-size: 15px; color: rgba(255,255,255,0.85); line-height: 1.6; }
-.cta-block .hero-ctas { margin-top: 24px; }
+.cta-block .hero-ctas { margin-top: 24px; justify-content: center; }
 .glass-chip { background: rgba(255,255,255,0.16); border: 1px solid rgba(255,255,255,0.22); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); color: #fff; }
 .glass-chip:hover { background: rgba(255,255,255,0.24); }
 
