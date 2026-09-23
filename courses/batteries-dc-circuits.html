@@ -84,6 +84,38 @@
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why do data center technicians need to learn DC theory?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "UPS batteries, many telecom systems and some rack power designs run on DC. Understanding series and parallel strings, voltage drop and internal resistance lets you interpret battery test results, spot a failing cell and work safely around stored energy that does not go away when AC power is switched off."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does this course cover lithium-ion as well as lead-acid batteries?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Battery Chemistry Basics module explains why different battery chemistries behave the way they do under load and during charging. For the specific hazards and emergency response for lithium-ion installations, see Lithium-Ion Battery Thermal Runaway and Emergency Response Training."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I take after this course?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most learners continue to UPS Systems Fundamentals and then UPS Operations & Load Testing. Anyone who will work in battery rooms should also take Data Center UPS and Battery System Safety Training."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -180,6 +212,11 @@
             </div>
         </div>
 
+        <!-- course-why -->
+        <h2>Why This Matters in a Data Center</h2>
+        <p class="course-why">Every UPS in a data center ends in a battery string, and every battery string is a DC circuit. When a technician misreads a string's voltage, misses a high-resistance connection or does not understand how temperature affects capacity, the result is a UPS that looks healthy on its display but cannot carry the load when utility power drops.</p>
+        <p class="course-why">DC behaves differently from the AC most electricians learn first. Strings are built from cells in series and parallel, stored energy is present even when the UPS is off, and internal resistance rises slowly as a battery ages. Heat is a major factor: a common rule of thumb for VRLA batteries is that service life roughly halves for every 8°C (about 15°F) above 25°C (77°F). This course builds that DC foundation so readings, alarms and test results make sense before you work on UPS and battery systems.</p>
+
         <h2>Who This Course Is For</h2>
         <p class="course-audience"><strong>Audience:</strong> Electricians and power technicians who need core DC theory before working on UPS or battery systems.</p>
 <h2>Course Details</h2>
@@ -191,6 +228,15 @@
 <li><span><strong>Included in:</strong> <a href="../bundles.html">Power &amp; Electrical Systems Bundle</a> and the <a href="../bundles.html">Complete Data Center Professional Bundle</a></span></li>
 <li><span><strong>Credential:</strong> Certificate of completion from HAZWOPER OSHA Training, LLC (<a href="../certifications.html">IACET-accredited provider</a>)</span></li>
 </ul>
+<h2>Frequently Asked Questions</h2>
+<div class="course-faq">
+<h3>Why do data center technicians need to learn DC theory?</h3>
+<p>UPS batteries, many telecom systems and some rack power designs run on DC. Understanding series and parallel strings, voltage drop and internal resistance lets you interpret battery test results, spot a failing cell and work safely around stored energy that does not go away when AC power is switched off.</p>
+<h3>Does this course cover lithium-ion as well as lead-acid batteries?</h3>
+<p>The Battery Chemistry Basics module explains why different battery chemistries behave the way they do under load and during charging. For the specific hazards and emergency response for lithium-ion installations, see <a href="lithium-ion-thermal-runaway-emergency-response.html">Lithium-Ion Battery Thermal Runaway and Emergency Response Training</a>.</p>
+<h3>What should I take after this course?</h3>
+<p>Most learners continue to <a href="ups-systems-fundamentals.html">UPS Systems Fundamentals</a> and then <a href="ups-operations-load-testing.html">UPS Operations &amp; Load Testing</a>. Anyone who will work in battery rooms should also take <a href="data-center-ups-battery-safety.html">Data Center UPS and Battery System Safety Training</a>.</p>
+</div>
 
       </div>
 

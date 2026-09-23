@@ -84,6 +84,38 @@
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a double-conversion UPS?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A double-conversion (online) UPS converts incoming AC power to DC and then back to clean AC for the load. The load is always fed by the inverter, so it is isolated from most utility disturbances, and there is no transfer time when utility power fails."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What do UPS modes like 'on bypass' and 'on battery' mean?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "'On battery' means the UPS is supplying the load from its batteries because input power is lost or out of tolerance. 'On bypass' means the load is fed directly from the bypass source, not the inverter, so it is not protected by the batteries. The Control Panel & Alarms module explains these states."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I take after this course?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "UPS Operations & Load Testing, the hands-on course on UPS operation, transfers and load-bank testing. Data Center UPS and Battery System Safety Training covers the hazards of working around UPS and battery installations."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -180,6 +212,11 @@
             </div>
         </div>
 
+        <!-- course-why -->
+        <h2>Why This Matters in a Data Center</h2>
+        <p class="course-why">The UPS is the piece of equipment most responsible for keeping IT load running through power problems, but its displays, modes and alarms can be confusing without the theory behind them. Technicians who understand how a UPS converts, conditions and stores power make better decisions during alarms and transfers.</p>
+        <p class="course-why">UPS systems come in three main topologies: standby (offline), line-interactive and double-conversion online. IEC 62040-3 classifies them by how well the output is protected from input problems. Large data centers almost always use double-conversion, which feeds the load from the inverter continuously. This course explains UPS topologies, how the UPS manages its batteries, how to read control panel status and alarms, and how that theory connects to load testing.</p>
+
         <h2>Who This Course Is For</h2>
         <p class="course-audience"><strong>Audience:</strong> Facilities technicians who need UPS theory before hands-on operations training.</p>
 <h2>Course Details</h2>
@@ -191,6 +228,15 @@
 <li><span><strong>Included in:</strong> <a href="../bundles.html">Power &amp; Electrical Systems Bundle</a> and the <a href="../bundles.html">Complete Data Center Professional Bundle</a></span></li>
 <li><span><strong>Credential:</strong> Certificate of completion from HAZWOPER OSHA Training, LLC (<a href="../certifications.html">IACET-accredited provider</a>)</span></li>
 </ul>
+<h2>Frequently Asked Questions</h2>
+<div class="course-faq">
+<h3>What is a double-conversion UPS?</h3>
+<p>A double-conversion (online) UPS converts incoming AC power to DC and then back to clean AC for the load. The load is always fed by the inverter, so it is isolated from most utility disturbances, and there is no transfer time when utility power fails.</p>
+<h3>What do UPS modes like 'on bypass' and 'on battery' mean?</h3>
+<p>'On battery' means the UPS is supplying the load from its batteries because input power is lost or out of tolerance. 'On bypass' means the load is fed directly from the bypass source, not the inverter, so it is not protected by the batteries. The Control Panel &amp; Alarms module explains these states.</p>
+<h3>What should I take after this course?</h3>
+<p><a href="ups-operations-load-testing.html">UPS Operations &amp; Load Testing</a>, the hands-on course on UPS operation, transfers and load-bank testing. <a href="data-center-ups-battery-safety.html">Data Center UPS and Battery System Safety Training</a> covers the hazards of working around UPS and battery installations.</p>
+</div>
 
       </div>
 

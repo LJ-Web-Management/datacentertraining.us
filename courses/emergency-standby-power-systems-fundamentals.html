@@ -84,6 +84,38 @@
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does an automatic transfer switch do?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "An ATS monitors the normal power source. When it fails, the ATS signals the generator to start and transfers the load once generator voltage and frequency are stable. When utility power returns, it transfers the load back and lets the generator cool down."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between open and closed transition transfer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Open transition briefly disconnects the load before connecting it to the other source (break-before-make). Closed transition briefly parallels the two sources so the load is not interrupted (make-before-break), which requires additional controls and utility approval in many cases."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often should standby generators be tested?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "NFPA 110 requires regular exercising and inspection, commonly monthly under load for Level 1 systems, plus periodic longer tests. The exact requirements depend on the system's classification and local rules, which the Maintenance for Readiness module explains."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -180,6 +212,11 @@
             </div>
         </div>
 
+        <!-- course-why -->
+        <h2>Why This Matters in a Data Center</h2>
+        <p class="course-why">When utility power fails, the UPS carries the load for minutes. Standby generators and automatic transfer switches (ATSs) keep the facility running beyond that. If a generator fails to start, a transfer switch sticks or the sequencing logic is wrong, the UPS batteries run down and the site goes dark.</p>
+        <p class="course-why">Standby power systems are covered by several standards. The National Electrical Code separates emergency systems (Article 700), legally required standby (Article 701) and optional standby (Article 702), and NFPA 110 covers the performance, testing and maintenance of emergency and standby power systems. This course covers how standby systems are laid out, how ATSs work, how sequencing and load coordination are set up, and the maintenance that keeps the system ready.</p>
+
         <h2>Who This Course Is For</h2>
         <p class="course-audience"><strong>Audience:</strong> Facilities technicians responsible for standby and emergency power systems.</p>
 <h2>Course Details</h2>
@@ -191,6 +228,15 @@
 <li><span><strong>Included in:</strong> <a href="../bundles.html">Power &amp; Electrical Systems Bundle</a> and the <a href="../bundles.html">Complete Data Center Professional Bundle</a></span></li>
 <li><span><strong>Credential:</strong> Certificate of completion from HAZWOPER OSHA Training, LLC (<a href="../certifications.html">IACET-accredited provider</a>)</span></li>
 </ul>
+<h2>Frequently Asked Questions</h2>
+<div class="course-faq">
+<h3>What does an automatic transfer switch do?</h3>
+<p>An ATS monitors the normal power source. When it fails, the ATS signals the generator to start and transfers the load once generator voltage and frequency are stable. When utility power returns, it transfers the load back and lets the generator cool down.</p>
+<h3>What is the difference between open and closed transition transfer?</h3>
+<p>Open transition briefly disconnects the load before connecting it to the other source (break-before-make). Closed transition briefly parallels the two sources so the load is not interrupted (make-before-break), which requires additional controls and utility approval in many cases.</p>
+<h3>How often should standby generators be tested?</h3>
+<p>NFPA 110 requires regular exercising and inspection, commonly monthly under load for Level 1 systems, plus periodic longer tests. The exact requirements depend on the system's classification and local rules, which the Maintenance for Readiness module explains.</p>
+</div>
 
       </div>
 

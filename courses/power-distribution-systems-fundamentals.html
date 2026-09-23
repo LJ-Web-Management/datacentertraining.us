@@ -84,6 +84,38 @@
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why should each side of an A/B power feed stay under 50%?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In a redundant design, if one feed fails, the other must carry the entire load of dual-corded equipment. If each side is loaded above 50% of its usable capacity, the surviving side can trip on overload and cause an outage instead of preventing one."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is phase balancing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Three-phase systems work best when load is spread evenly across the three phases. Unbalanced loads waste capacity, increase neutral current and can cause one phase to trip before the others. Load balancing is covered in its own module."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should I take after this course?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Power Systems & Electrical Fundamentals covers the full power chain from utility to PDU, including redundancy strategies. UPS Systems Fundamentals is a good next step for the UPS portion."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -180,6 +212,11 @@
             </div>
         </div>
 
+        <!-- course-why -->
+        <h2>Why This Matters in a Data Center</h2>
+        <p class="course-why">Between the UPS and the server power supply, electricity passes through switchboards, panelboards, power distribution units (PDUs), remote power panels and rack PDUs. Each step has breakers, ratings and limits. Mistakes here, such as an overloaded branch circuit, unbalanced phases or a dual-corded server plugged into the same feed twice, cause many avoidable outages.</p>
+        <p class="course-why">A key rule in data centers with A and B power feeds is that each side must be able to carry the full load if the other fails. That means each feed normally runs at well under half of its usable capacity. Breakers carrying continuous loads are also generally limited to 80% of their rating under the National Electrical Code. This course covers the distribution chain, panels and breaker sizing, load balancing and how these connect to PDU architecture.</p>
+
         <h2>Who This Course Is For</h2>
         <p class="course-audience"><strong>Audience:</strong> Electricians and technicians who need power distribution fundamentals before working on PDU systems.</p>
 <h2>Course Details</h2>
@@ -191,6 +228,15 @@
 <li><span><strong>Included in:</strong> <a href="../bundles.html">Power &amp; Electrical Systems Bundle</a> and the <a href="../bundles.html">Complete Data Center Professional Bundle</a></span></li>
 <li><span><strong>Credential:</strong> Certificate of completion from HAZWOPER OSHA Training, LLC (<a href="../certifications.html">IACET-accredited provider</a>)</span></li>
 </ul>
+<h2>Frequently Asked Questions</h2>
+<div class="course-faq">
+<h3>Why should each side of an A/B power feed stay under 50%?</h3>
+<p>In a redundant design, if one feed fails, the other must carry the entire load of dual-corded equipment. If each side is loaded above 50% of its usable capacity, the surviving side can trip on overload and cause an outage instead of preventing one.</p>
+<h3>What is phase balancing?</h3>
+<p>Three-phase systems work best when load is spread evenly across the three phases. Unbalanced loads waste capacity, increase neutral current and can cause one phase to trip before the others. Load balancing is covered in its own module.</p>
+<h3>What should I take after this course?</h3>
+<p><a href="power-systems-electrical-fundamentals.html">Power Systems &amp; Electrical Fundamentals</a> covers the full power chain from utility to PDU, including redundancy strategies. <a href="ups-systems-fundamentals.html">UPS Systems Fundamentals</a> is a good next step for the UPS portion.</p>
+</div>
 
       </div>
 
