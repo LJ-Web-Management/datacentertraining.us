@@ -406,6 +406,10 @@ a { color: inherit; }
 .course-details-list { margin: 0 0 8px; }
 .course-details-list li { font-size: 14.5px; line-height: 1.55; }
 .course-details-list a { color: var(--accent-link); }
+.course-why { font-size: 15.5px; line-height: 1.7; color: var(--text-body); margin: 0 0 14px; }
+.course-why a, .course-faq a { color: var(--accent-link); }
+.course-faq h3 { font-size: 16px; font-weight: 650; letter-spacing: -0.01em; line-height: 1.4; margin: 20px 0 6px; }
+.course-faq p { font-size: 15px; line-height: 1.65; color: var(--text-body); }
 
 .bundle-upsell {
   margin-top: 18px; background: var(--accent-tint); border-radius: var(--r-card); padding: 16px 18px; font-size: 13px; color: var(--text-body); line-height: 1.6;

@@ -84,6 +84,38 @@
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the difference between a CRAC and a CRAH?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A CRAC (computer room air conditioner) has its own compressor and refrigeration circuit. A CRAH (computer room air handler) uses chilled water from a central plant and a fan to move air across a coil. The choice affects efficiency, redundancy and how the rest of the plant is designed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is liquid cooling replacing air cooling?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not entirely. Liquid cooling is growing quickly for high-density racks, especially for AI hardware, but most facilities will run a mix of air and liquid cooling for years. The course covers both and how to decide which fits a given load."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does cooling design affect PUE?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "PUE is total facility energy divided by IT energy, and cooling is usually the largest non-IT load. Containment, higher supply temperatures and economizer hours can all lower cooling energy and PUE. The final module ties these choices to energy costs."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -191,6 +223,11 @@
             </div>
         </div>
 
+        <!-- course-why -->
+        <h2>Why This Matters in a Data Center</h2>
+        <p class="course-why">Cooling usually uses more energy than anything in a data center except the IT load itself, and it is changing fast. Higher rack densities from AI and HPC workloads are pushing air cooling to its limits, and direct-to-chip liquid cooling, rear-door heat exchangers and containment are now common. Decisions made today have to fit both current racks and the next generation of hardware.</p>
+        <p class="course-why">Good cooling design is about matching the system to the load: getting cold air to server inlets without mixing, running at the warmer inlet temperatures allowed by the ASHRAE thermal guidelines (a recommended range of 18–27°C, or 64.4–80.6°F, for most equipment) and using economizers when the climate allows. This program covers CRAC/CRAH fundamentals, liquid cooling, containment and airflow management, free cooling, thermal modeling and the energy economics that connect cooling choices to PUE and operating costs.</p>
+
         <h2>Who This Course Is For</h2>
         <p class="course-audience"><strong>Audience:</strong> HVAC technicians, facilities engineers, and anyone accountable for PUE.</p>
 <h2>Course Details</h2>
@@ -203,6 +240,15 @@
 <li><span><strong>Included in:</strong> <a href="../bundles.html">Cooling &amp; Facilities Efficiency Bundle</a> and the <a href="../bundles.html">Complete Data Center Professional Bundle</a></span></li>
 <li><span><strong>Credential:</strong> Certificate of completion from HAZWOPER OSHA Training, LLC (<a href="../certifications.html">IACET-accredited provider</a>)</span></li>
 </ul>
+<h2>Frequently Asked Questions</h2>
+<div class="course-faq">
+<h3>What is the difference between a CRAC and a CRAH?</h3>
+<p>A CRAC (computer room air conditioner) has its own compressor and refrigeration circuit. A CRAH (computer room air handler) uses chilled water from a central plant and a fan to move air across a coil. The choice affects efficiency, redundancy and how the rest of the plant is designed.</p>
+<h3>Is liquid cooling replacing air cooling?</h3>
+<p>Not entirely. Liquid cooling is growing quickly for high-density racks, especially for AI hardware, but most facilities will run a mix of air and liquid cooling for years. The course covers both and how to decide which fits a given load.</p>
+<h3>How does cooling design affect PUE?</h3>
+<p>PUE is total facility energy divided by IT energy, and cooling is usually the largest non-IT load. Containment, higher supply temperatures and economizer hours can all lower cooling energy and PUE. The final module ties these choices to energy costs.</p>
+</div>
 
       </div>
 

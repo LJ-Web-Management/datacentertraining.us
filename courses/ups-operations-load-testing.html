@@ -84,6 +84,38 @@
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the difference between static bypass and maintenance bypass?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Static bypass is an automatic, electronic path inside the UPS that transfers load to the bypass source if the inverter faults or is overloaded. Maintenance bypass is a manual switching arrangement that routes power around the UPS entirely so it can be serviced safely."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why load-bank test a UPS?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A load-bank test runs the UPS at a controlled load to confirm it can carry its rating and that the batteries provide the expected runtime. It finds weak cells, connection problems and thermal issues before a real outage does."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I take UPS Systems Fundamentals first?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It helps. UPS Systems Fundamentals covers topology types, battery interaction and control panels at a theory level, which makes the procedures in this hands-on course easier to follow."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -180,6 +212,11 @@
             </div>
         </div>
 
+        <!-- course-why -->
+        <h2>Why This Matters in a Data Center</h2>
+        <p class="course-why">A UPS carries the entire critical load through the seconds between a utility failure and generator pickup, and through every power disturbance in between. Most UPS failures during an outage come from problems that could have been found earlier: weak batteries, a bypass that was left in the wrong position or a system that was never tested at full load.</p>
+        <p class="course-why">Operating a UPS safely means understanding transfers between inverter, static bypass and maintenance bypass, and following a written procedure every time, because a wrong switch sequence can drop load. Load-bank testing proves the UPS and batteries can carry rated load for the expected runtime. This course covers UPS types and topologies, battery management and testing, load transfer procedures and load-bank testing and maintenance.</p>
+
         <h2>Who This Course Is For</h2>
         <p class="course-audience"><strong>Audience:</strong> Power technicians responsible for UPS operation and maintenance.</p>
 <h2>Course Details</h2>
@@ -191,6 +228,15 @@
 <li><span><strong>Included in:</strong> <a href="../bundles.html">Power &amp; Electrical Systems Bundle</a> and the <a href="../bundles.html">Complete Data Center Professional Bundle</a></span></li>
 <li><span><strong>Credential:</strong> Certificate of completion from HAZWOPER OSHA Training, LLC (<a href="../certifications.html">IACET-accredited provider</a>)</span></li>
 </ul>
+<h2>Frequently Asked Questions</h2>
+<div class="course-faq">
+<h3>What is the difference between static bypass and maintenance bypass?</h3>
+<p>Static bypass is an automatic, electronic path inside the UPS that transfers load to the bypass source if the inverter faults or is overloaded. Maintenance bypass is a manual switching arrangement that routes power around the UPS entirely so it can be serviced safely.</p>
+<h3>Why load-bank test a UPS?</h3>
+<p>A load-bank test runs the UPS at a controlled load to confirm it can carry its rating and that the batteries provide the expected runtime. It finds weak cells, connection problems and thermal issues before a real outage does.</p>
+<h3>Should I take <a href="ups-systems-fundamentals.html">UPS Systems Fundamentals</a> first?</h3>
+<p>It helps. <a href="ups-systems-fundamentals.html">UPS Systems Fundamentals</a> covers topology types, battery interaction and control panels at a theory level, which makes the procedures in this hands-on course easier to follow.</p>
+</div>
 
       </div>
 

@@ -84,6 +84,38 @@
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the difference between RTO and RPO?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "RTO is the maximum acceptable time to restore a service after a disruption. RPO is the maximum acceptable amount of data loss, measured as time since the last good copy. A service might have a four-hour RTO and a 15-minute RPO, for example."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are hot, warm and cold sites?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A hot site runs continuously and can take over almost immediately. A warm site has infrastructure in place but needs time to bring systems and data up to date. A cold site provides space and basic utilities only. Faster recovery costs more."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How often should a disaster recovery plan be tested?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most organizations test at least once a year and after significant changes, using a mix of tabletop exercises and technical failover tests. The DR Testing & Validation module covers how to design tests that show whether RTO and RPO targets are realistic."
+      }
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -191,6 +223,11 @@
             </div>
         </div>
 
+        <!-- course-why -->
+        <h2>Why This Matters in a Data Center</h2>
+        <p class="course-why">Disaster recovery depends on two numbers: the recovery time objective (RTO), how long a service can be down, and the recovery point objective (RPO), how much data can be lost. Many plans set these targets without testing whether the infrastructure, staff and vendors can actually meet them.</p>
+        <p class="course-why">Real events expose those gaps: a region-wide storm that affects both primary and backup sites, a vendor that cannot deliver fuel or parts, or a failover that works technically but was never practiced by the team on shift. This program covers RTO and RPO measurement, hot, warm and cold site strategies, failover and recovery procedures, geographically distributed infrastructure, DR testing and supply chain resilience.</p>
+
         <h2>Who This Course Is For</h2>
         <p class="course-audience"><strong>Audience:</strong> Operations and risk managers responsible for uptime commitments and DR planning.</p>
 <h2>Course Details</h2>
@@ -203,6 +240,15 @@
 <li><span><strong>Included in:</strong> <a href="../bundles.html">Operations &amp; Reliability Bundle</a> and the <a href="../bundles.html">Complete Data Center Professional Bundle</a></span></li>
 <li><span><strong>Credential:</strong> Certificate of completion from HAZWOPER OSHA Training, LLC (<a href="../certifications.html">IACET-accredited provider</a>)</span></li>
 </ul>
+<h2>Frequently Asked Questions</h2>
+<div class="course-faq">
+<h3>What is the difference between RTO and RPO?</h3>
+<p>RTO is the maximum acceptable time to restore a service after a disruption. RPO is the maximum acceptable amount of data loss, measured as time since the last good copy. A service might have a four-hour RTO and a 15-minute RPO, for example.</p>
+<h3>What are hot, warm and cold sites?</h3>
+<p>A hot site runs continuously and can take over almost immediately. A warm site has infrastructure in place but needs time to bring systems and data up to date. A cold site provides space and basic utilities only. Faster recovery costs more.</p>
+<h3>How often should a disaster recovery plan be tested?</h3>
+<p>Most organizations test at least once a year and after significant changes, using a mix of tabletop exercises and technical failover tests. The DR Testing &amp; Validation module covers how to design tests that show whether RTO and RPO targets are realistic.</p>
+</div>
 
       </div>
 
