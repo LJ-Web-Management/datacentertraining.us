@@ -1,6 +1,8 @@
 User-agent: *
 Allow: /
 Disallow: /checkout.html
+Disallow: /blog/uploads/
+Disallow: /blog/scripts/
 
 User-agent: GPTBot
 Allow: /
