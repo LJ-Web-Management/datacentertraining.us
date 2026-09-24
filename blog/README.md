@@ -18,6 +18,12 @@ The first line of the document becomes the title. Formatting shortcuts:
 `((caption))`, `[space]`, `- bullet` / `• bullet`, `1. numbered`, `---` divider,
 and a `Sources` line followed by name / URL pairs.
 
+## Daily automation
+
+`AUTOMATION.md` is the site block for the daily blog automation. It uploads one ZIP
+(one `.txt` + one 16:9 `.png`) to `blog/uploads/` on `main`; the workflow converts it,
+commits the post, and triggers a GitHub Pages rebuild.
+
 ## Running locally
 
 ```

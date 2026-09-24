@@ -2,9 +2,10 @@ name: Convert blog uploads (datacentertraining.us)
 
 # Dropping a .docx/.txt/.zip into blog/uploads/ triggers this. It converts the
 # doc into a post page + posts.json entry, updates sitemap.xml, commits the
-# result, and moves the source into blog/uploads/processed/. GitHub Pages then
-# publishes that commit like any other push to main.
+# result, moves the source into blog/uploads/processed/, and then asks GitHub
+# Pages to rebuild so the new post goes live without any manual step.
 on:
+  workflow_dispatch:
   push:
     branches: [main]
     paths:
@@ -18,6 +19,7 @@ concurrency:
 
 permissions:
   contents: write
+  pages: write
 
 jobs:
   convert:
@@ -41,6 +43,7 @@ jobs:
         run: node scripts/convert.js
 
       - name: Commit and push the generated post(s)
+        id: publish
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -63,4 +66,14 @@ jobs:
               echo "::error::Failed to push after 5 attempts - the converted post was committed locally but never reached origin/main."
               exit 1
             fi
+            echo "published=true" >> "$GITHUB_OUTPUT"
           fi
+
+      # Pages normally rebuilds on any push to main, but pushes made with the
+      # workflow's own token are not guaranteed to trigger it, so request the
+      # build explicitly.
+      - name: Request a GitHub Pages rebuild
+        if: steps.publish.outputs.published == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method POST "repos/${{ github.repository }}/pages/builds"
