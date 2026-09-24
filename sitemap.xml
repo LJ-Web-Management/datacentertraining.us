@@ -348,4 +348,10 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://datacentertraining.us/blog/posts/ups-maintenance-bypass-mistakes-that-can-cause-a-data-center-outage.html</loc>
+    <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>

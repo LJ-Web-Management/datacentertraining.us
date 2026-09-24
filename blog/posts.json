@@ -54,5 +54,13 @@
     "date": "2026-09-24",
     "dateDisplay": "September 24, 2026",
     "excerpt": "When a new data center area is declared “ready,” does the operations team have verified evidence that the equipment works together, the procedures are usable,…"
+  },
+  {
+    "title": "UPS Maintenance Bypass Mistakes That Can Cause a Data Center Outage",
+    "slug": "ups-maintenance-bypass-mistakes-that-can-cause-a-data-center-outage",
+    "image": "assets/img/posts/ups-maintenance-bypass-mistakes-that-can-cause-a-data-center-outage.png",
+    "date": "2026-09-24",
+    "dateDisplay": "September 24, 2026",
+    "excerpt": "When a UPS needs maintenance, can the team move the supported load through a maintenance bypass without creating an unexpected interruption, defeating…"
   }
 ]
