@@ -1,69 +1,105 @@
-Every day at the scheduled run time, create exactly 1 fresh, original blog post package for datacentertraining.us, upload it to the GitHub repository `LJ-Web-Management/datacentertraining.us`, and save the same package locally in the dated Blog Posts folder.
+Every day at the scheduled run time, create 1 fresh, original blog post package for datacentertraining.us, upload it to the GitHub repository `LJ-Web-Management/datacentertraining.us`, and save a local copy in the dated Blog Posts folder.
 
-The ZIP package must contain exactly one complete plain-text blog post file ending in `.txt` and one generated wide 16:9 `.png` cover image. Existing `.txt` files and ZIPs in the repo are for duplicate checks only and are not errors. This run's upload must be a ZIP, not a bare `.txt`.
+This automation runs once per day. Each run must create exactly 1 new blog post package.
 
-Use America/Chicago for all dates and times. Use `MM-DD-YYYY` for the local dated folder name.
+The new blog post package must be a `.zip` file. The ZIP package must contain exactly:
+- One complete blog post file ending in `.txt`.
+- One generated cover image for that specific blog post, saved as a wide 16:9 `.png` file.
 
-Website and customer context:
-- Website: https://datacentertraining.us/
-- The site sells 44 self-paced online data center courses (Comprehensive Programs of 12-18 hours and Modular Specializations of 1-8 hours) plus 7 bundles, delivered by HAZWOPER OSHA Training, LLC, an IACET-accredited provider. Learners receive a certificate of completion.
-- Course tracks: Power & Electrical; Cooling & Facilities Efficiency; Operations & Reliability; Security & Compliance; Design, Planning & Commissioning; Monitoring & Smart Facility.
-- Ideal readers and buyers: data center facility managers, critical facilities engineers, electricians, HVAC and mechanical technicians, operations managers, NOC and site reliability staff, EHS managers, security and compliance leads, commissioning agents, colocation and hyperscale contractors, and training coordinators building role-based plans.
+Existing `.txt` files and ZIP packages already in the repository are allowed and should be used for duplicate/title/topic inspection. Do not treat them as an error. The restriction is only that this run's new upload must be a ZIP package, not a bare `.txt` file.
 
-Content strategy:
-- Practical, search-friendly topics such as UPS and battery safety, generator operations and fuel, electrical safety and arc flash (NFPA 70E), EPO procedures, lithium-ion thermal runaway, cooling and refrigerant safety, PUE and energy efficiency, Uptime Institute Tier concepts, ANSI/TIA-942 design, commissioning and startup, preventive maintenance planning, incident response, disaster recovery and business continuity, DCIM and BMS monitoring, physical security and access control, SOC 2 / ISO 27001 compliance for facilities, fire suppression, raised floor and confined space work, capacity planning, and role-based training plans for new technicians.
-- Each article should naturally support enrolling in a relevant course or bundle. Do not write generic IT or cloud content; every post must connect to physical data center facilities, operations, safety, or training decisions.
-- Prefer evergreen topics. Browse and verify any current-event or standards-update claim before using it.
-- These are knowledge and best-practice courses, not certification exams. Never claim a course grants a regulatory certification, CEUs, or PDHs, and never imply OSHA, Uptime Institute, TIA, NFPA, or any other body certifies, approves, or endorses a course, learner, or employer. Use "standards-aligned", "certificate of completion", and "supports your training program".
+Use America/Chicago for all dates and times. Use the current run date, formatted as `MM-DD-YYYY`, for the local dated folder name.
 
 Repository workflow:
-- Repository: `https://github.com/LJ-Web-Management/datacentertraining.us`. Confirm write access with `gh repo view LJ-Web-Management/datacentertraining.us --json viewerPermission`; if it is missing, stop and report it rather than retrying.
-- All paths are relative to the repo root: `blog/posts.json`, `blog/posts/`, `blog/uploads/`, `blog/uploads/processed/`.
-- Use a workspace-local or temporary checkout. If one exists, run `git checkout main && git pull --rebase origin main`; otherwise clone fresh.
-- Before writing, inspect existing titles and topics in `blog/posts.json`, `blog/posts/`, `blog/uploads/`, `blog/uploads/processed/`, and inside existing ZIPs (read the included `.txt`) and the local dated folders. Do not repeat titles or substantially repeat recent topics.
-- Put the new ZIP in `blog/uploads/`. That folder is watched by `.github/workflows/blog-convert.yml` ("Convert blog uploads (datacentertraining.us)"). Do not upload a bare `.txt` or loose image, and do not place the ZIP in `uploads/processed/`.
-- Commit with a concise message including the current date and run hour.
-- Push: `git config http.postBuffer 524288000`, then `git pull --rebase origin main && git push origin main`. If it still fails, run `gh auth status` and report the exact error rather than retrying blindly. Last resort only, for a path that does not already exist remotely: `gh api --method PUT repos/LJ-Web-Management/datacentertraining.us/contents/blog/uploads/<URL-encoded filename> --input -` with a JSON payload containing `message`, `branch: main`, and base64 `content`.
-- After a successful push, wait about 90 seconds and check `gh run list --repo LJ-Web-Management/datacentertraining.us --limit 5` for successful runs of both "Convert blog uploads (datacentertraining.us)" and "pages build and deployment". Then `git pull` to fast-forward past the bot's follow-up commit (it moves the ZIP to `uploads/processed/`, updates `posts.json` and `sitemap.xml`, and adds the generated post). This is expected, not a conflict; do not force-push or create a second package.
-- Verify success at `https://datacentertraining.us/blog/posts/<slug>.html` returning 200. The slug is the title lowercased with every run of non-letters/digits replaced by a single hyphen; confirm it from the new `posts.json` entry.
+- Repository: https://github.com/LJ-Web-Management/datacentertraining.us. Confirm write access with `gh repo view LJ-Web-Management/datacentertraining.us --json viewerPermission`. If access is missing, stop and report it rather than retrying.
+- All blog paths are inside the `blog/` folder at the repo root: `blog/posts.json`, `blog/posts/`, `blog/uploads/`, `blog/uploads/processed/`.
+- Use a workspace-local or temporary checkout. If a suitable checkout exists, run `git checkout main && git pull --rebase origin main` before making changes. Otherwise clone the repo fresh.
+- Inspect existing titles and topics before writing anything. Check `blog/posts.json`, `blog/posts/`, `blog/uploads/`, and `blog/uploads/processed/`.
+- Open every existing ZIP package in `blog/uploads/`, `blog/uploads/processed/`, and the local dated Blog Posts folders. Read the `.txt` inside each one and use its title and topic for duplicate detection.
+- Do not repeat titles or substantially repeat recent topics, including titles/topics found only inside existing ZIP packages.
+- Put the new `.zip` in `blog/uploads/`. That is the intake folder watched by the repo's `.github/workflows/blog-convert.yml` GitHub Action ("Convert blog uploads (datacentertraining.us)").
+- Do not upload a bare `.txt` or a loose image to `blog/uploads/`, and do not place the ZIP directly in `blog/uploads/processed/`.
+- Commit the 1 new ZIP with a concise message that includes the current date and scheduled run hour.
+- Push: run `git config http.postBuffer 524288000` first (large ZIPs can otherwise fail with a misleading `HTTP 400` / `unexpected disconnect`), then `git pull --rebase origin main && git push origin main`. If it still fails, run `gh auth status` and report the exact error rather than retrying blindly.
+- Last resort only, for a path that does not already exist remotely: `gh api --method PUT repos/LJ-Web-Management/datacentertraining.us/contents/blog/uploads/<URL-encoded filename> --input -` with a JSON payload containing `message`, `branch: main`, and base64 `content`. Never overwrite an existing upload.
+- After a successful push, wait about 90 seconds and run `gh run list --repo LJ-Web-Management/datacentertraining.us --limit 5`. Confirm both "Convert blog uploads (datacentertraining.us)" and "pages build and deployment" succeeded.
+- Then `git pull` to fast-forward past the bot's follow-up commit. The bot moves the ZIP to `blog/uploads/processed/`, adds the post page to `blog/posts/`, and updates `blog/posts.json` and `sitemap.xml`. This is expected, not a conflict. Do not force-push or create a second package.
+- Verify the post is live: `https://datacentertraining.us/blog/posts/<slug>.html` must return 200. Take the slug from the new `blog/posts.json` entry (it is the title lowercased, with every run of characters other than letters and digits replaced by one hyphen).
 
 Local copy workflow:
-- Folder: `/Users/hp/Desktop/LJ Web Management/Websites/Hazwoper Osha/Landing Pages/Blog Posts/datacentertraining/MM-DD-YYYY`, creating it if needed. If Desktop access is blocked, use the task's `outputs/Blog Posts/datacentertraining/MM-DD-YYYY` and report the fallback.
-- Save the identical ZIP there and verify it matches the pushed package by hash. Preserve the full title in filenames, stripping only macOS-unsafe characters; use ` - Cover.png` for the image.
+- Create this folder if needed: `/Users/hp/Desktop/LJ Web Management/Websites/Hazwoper Osha/Landing Pages/Blog Posts/datacentertraining/MM-DD-YYYY`, replacing `MM-DD-YYYY` with the current America/Chicago date. If Desktop access is blocked, use the task's `outputs/Blog Posts/datacentertraining/MM-DD-YYYY` and report the fallback.
+- Save the same `.zip` package from this run into that folder. It must contain the same `.txt` and `.png` that were uploaded.
+- Preserve the full title in the `.txt`, `.png`, and `.zip` filenames, removing only characters that cannot be used in macOS filenames. Use ` - Cover.png` for the cover image.
 
-Cover image requirements: one original image specific to the article, in a professional critical-facilities style: server halls and hot/cold aisles, UPS and battery rooms, switchgear, generators, chillers and CRAH units, technicians in PPE, commissioning walkthroughs, monitoring dashboards without readable text. Wide 16:9, no logos, watermarks, or readable text, PNG inside the ZIP only.
+Website and business context:
+- Website: https://datacentertraining.us/
+- The site sells 44 self-paced online data center courses and 7 bundles, delivered by HAZWOPER OSHA Training, LLC, an IACET-accredited provider. Comprehensive Programs run 12-18 hours; Modular Specializations run 1-8 hours. Learners receive a certificate of completion immediately on finishing. Courses can be bought individually or in bundles, and teams can enroll together.
+- Course tracks: Power & Electrical; Cooling & Facilities Efficiency; Operations & Reliability; Security & Compliance; Design, Planning & Commissioning; Monitoring & Smart Facility.
+- Before choosing a topic, open https://datacentertraining.us/courses.html and https://datacentertraining.us/bundles.html and use the real course and bundle names. Do not invent courses, prices, or hours.
+- These are knowledge and best-practice courses, not certification exams. Never claim a course grants a regulatory certification, a license, CEUs, or PDHs. Never imply OSHA, Uptime Institute, TIA, NFPA, ASHRAE, or any other body certifies, approves, or endorses a course, learner, or employer. Use wording like "standards-aligned", "certificate of completion", and "supports your training program".
 
-Article requirements:
-- At least 1,500 words, a hard minimum. Fresh angle each day, with no repeated intros, structure, examples, or takeaways from recent posts.
-- No HTML, no Markdown links, no raw URLs in the body, no em dashes. Practical, technically accurate, buyer-aware tone with no scare tactics or legal overclaiming.
-- Use only these plain-text formatting shortcuts, which the site's converter turns into real formatting:
-  - `## Heading` for section headings, `### Subheading` for smaller ones
-  - `**bold**` and `*italic*`
-  - `- item` for bullets, `1. item` for numbered steps
-  - `> text` on its own line for a pull-quote or key note
-  - `((text))` for a small caption or aside
-  - `---` on its own line for a divider between sections
-- Do not use Unicode "math bold" characters for headings; use `##`.
+Topic selection and SEO strategy:
+- Write for data center facility managers, critical facilities engineers, electricians, HVAC and mechanical technicians, operations managers, NOC and site staff, EHS managers, security and compliance leads, commissioning agents, colocation and hyperscale contractors, career switchers entering data center work, and training coordinators building role-based plans.
+- Rotate deliberately across the six course tracks and these angles: electrical safety and arc flash (NFPA 70E), UPS and battery safety, generators and standby power, EPO procedures, lithium-ion thermal runaway, cooling and refrigerant safety, PUE and energy efficiency, Tier concepts, ANSI/TIA-942 design, commissioning and startup, preventive maintenance planning, incident response and troubleshooting, disaster recovery and business continuity, DCIM and BMS monitoring, physical security and access control, SOC 2 / ISO 27001 for facilities, fire suppression, raised floor and confined space work, capacity planning, onboarding new technicians, role-based training plans, and choosing between individual courses and bundles.
+- Do not write generic IT, cloud, or AI industry commentary. Every post must connect to physical data center facilities, operations, safety, or a training decision, and to at least one real course or bundle on the site.
+- Before picking a topic, list the last 20-30 titles/topics already used (from `blog/posts.json` and from `.txt` files inside existing ZIPs) and note the course track, target reader, and title pattern each used, so today's post deliberately differs.
+- Choose a narrow, specific problem or skill outcome rather than a broad theme. The title must name the equipment, task, role, or decision clearly enough that a technician or manager would understand it from search results.
+- Favor titles that match how people search, such as `What a New Data Center Technician Should Learn in the First 90 Days`, `UPS Maintenance Bypass Mistakes That Cause Outages`, `How to Build a Role-Based Training Plan for a Colocation Site`, or `Arc Flash Boundaries in Battery Rooms Explained`. Do not reuse these exact titles if they already exist.
+- Vary the title pattern day to day: how-to, beginner guide, checklist, mistakes to avoid, comparison, "what you learn in", role-based plan, and pre-task readiness framing.
+- Make the opening two or three sentences work as a search-result summary: the specific problem or decision, why it matters, and what the reader will understand after reading, in natural language without keyword stuffing.
+- Prefer evergreen topics. If making a current-events, statistic, or standards-update claim, browse and verify it first.
 
-Follow this `.txt` structure:
-1. Line 1: the complete title (plain text, no `##`).
-2. An opening section under `## The Operational Question`: the real-world problem and why it matters to the facility, the team, and uptime.
+Article format (important: this is what the site's converter turns into real formatting):
+- Line 1: the complete title as plain text. No `##`, no symbols.
+- Section headings: start the line with `## ` (for example `## Who This Affects`). Use `### ` for an occasional subheading. A heading written as plain text with no `##` will render as an ordinary paragraph, so every section heading needs `## `.
+- Divider between sections: a line containing only `---`.
+- Bullets: `- item`. Numbered steps: `1. item`, `2. item`.
+- Emphasis: `**bold**` and `*italic*`, used sparingly.
+- Optional: `> text` on its own line for a key safety note or pull-quote, and `((text))` for a small caption or aside.
+- Do not use HTML, markdown links, or raw URLs in the body (URLs are only allowed in the Sources section). Do not use em dashes. Do not use Unicode "math bold" characters or `━━━` lines.
+
+Follow this exact `.txt` structure:
+1. Line 1: complete title.
+2. `## The Operational Question`: the real-world problem or training decision, why it matters for safety, uptime, and the team, and what the reader will get from the post.
 3. `---` then `## Who This Affects`: the roles, site types (enterprise, colocation, hyperscale, edge), and situations most likely to face it.
 4. `---` then `## What Can Go Wrong`: safety, uptime, compliance, and cost consequences, with accurate standards context only.
 5. `---` then `## What Managers Should Check`: a practical checklist or decision framework using bullets or numbered steps.
-6. `---` then `## Which Training Fits This Situation`: connect helpfully to the most relevant courses or a bundle by name, and to a role-based training plan.
+6. `---` then `## Which Training Fits This Situation`: connect helpfully, not pushily, to the most relevant real courses or bundle by name, and to a role-based training plan.
 7. `---` then `## Common Mistakes to Avoid`.
-8. `---` then `## Key Takeaway`: a concise practical conclusion on getting the right people trained.
-9. `---` then a line reading exactly `Sources`, followed by each source name on one line and its URL on the next line (for example NFPA 70E, then its nfpa.org URL). The converter turns these into linked citations. Use 3-5 authoritative sources such as OSHA, NFPA, Uptime Institute, TIA, ASHRAE, NIST, or equipment-neutral industry references.
+8. `---` then `## Key Takeaway`: a concise practical conclusion ending with one specific action the reader could take this week.
+9. `---` then a line containing exactly `Sources` (no `##`), followed by each source name on one line and its URL on the next line. The converter turns these into linked citations. Include 3-5 authoritative sources (such as OSHA, NFPA, Uptime Institute, TIA, ASHRAE, NIST, or EPA) whenever the post references standards, regulations, or factual claims. Omit the section only if no sources were used.
 
-Verification before finishing:
-- Exactly 1 new ZIP pushed to `blog/uploads/` (or already moved to `blog/uploads/processed/` by the workflow).
+Content requirements:
+- The article must be at least 1,500 words. This is a hard minimum, not a target. If a draft is shorter, expand it with specific, useful, non-repetitive substance before packaging it.
+- Use a fresh angle each day. Before finalizing, compare the opening sentence, section examples, and closing sentence against the last several published posts and rewrite anything that reads like a close paraphrase.
+- Practical, technically accurate, buyer-aware tone. No scare tactics, no legal overclaiming, no filler.
+
+Writing style and engagement:
+- Keep paragraphs short and scannable. Break up any paragraph longer than about five sentences or 120 words.
+- Use bullet or numbered lists in at least two sections when presenting three or more related items, steps, or examples.
+- Use concrete detail instead of generalities: name plausible roles, equipment (switchgear, static transfer switches, VRLA and lithium-ion strings, CRAH units, chillers, generators, PDUs), procedures, and common mistakes.
+- Vary sentence length and structure. Do not reuse stock transitions, metaphors, or sentence templates from recent posts.
+- Vary the wording and focus of the closing action from post to post, for example auditing one procedure, walking one electrical room with a new technician, choosing a first course for a new hire, or scheduling a refresher for one team.
+- Publication-ready formatting: correct section order, no repeated boilerplate, no malformed bullets, no em dashes.
+
+Cover image requirements:
+- Generate one original cover image that matches the specific topic, not a generic server-rack stock image. Vary setting, subject, and composition based on the topic, for example a technician in arc-rated PPE at switchgear, a UPS and battery room, a generator yard, a chiller plant, hot and cold aisles, a commissioning walkthrough, a monitoring room, or a security checkpoint.
+- Professional, modern critical-facilities style, photo-realistic or clean editorial illustration, with an indigo and violet accent palette on neutral grey and white so images feel consistent with the site.
+- Wide 16:9. No logos, watermarks, or readable text.
+- Save as `.png` inside the ZIP only. Do not upload the image as a loose file.
+
+Verification before finishing each run:
+- Exactly 1 new `.zip` was pushed to `blog/uploads/` for this run (it may already have been moved to `blog/uploads/processed/` by the workflow).
 - The ZIP contains exactly one `.txt` and one `.png`.
-- The article is at least 1,500 words and follows the structure above.
-- The title does not duplicate anything in `posts.json`, existing `.txt`/ZIP filenames, or titles inside existing ZIPs.
+- The `.txt` is at least 1,500 words and follows the structure and formatting above: title on line 1, every section heading starting with `## `, `---` dividers, and `Sources` last.
+- The title does not duplicate anything in `blog/posts.json`, existing `.txt`/ZIP filenames, or titles inside existing ZIPs.
+- The title and course track differ from at least the last 2-3 published posts.
 - "Convert blog uploads (datacentertraining.us)" and "pages build and deployment" both succeeded.
-- `https://datacentertraining.us/blog/posts/<slug>.html` returns 200.
-- The local ZIP matches the pushed package by hash.
+- `https://datacentertraining.us/blog/posts/<slug>.html` returns 200 and shows real section headings (not headings rendered as plain paragraphs).
+- The local ZIP matches the pushed ZIP by hash.
 - `git status --short --branch` is clean and in sync with `origin/main`.
 
-Final response: brief. Include the title, commit hash, published post URL, and local folder path. If the upload fails, still save the local ZIP and report the failure and the exact next step.
+Final response:
+- Keep it brief.
+- Include the title, the Git commit hash, the published post URL, and the local dated folder path.
+- If pushing fails because of authentication, network, or permissions, still save the local ZIP and clearly report the failure and the exact next step (for example `gh auth login -h github.com` or granting write access to `LJ-Web-Management/datacentertraining.us`).
