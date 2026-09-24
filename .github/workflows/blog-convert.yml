@@ -1,0 +1,66 @@
+name: Convert blog uploads (datacentertraining.us)
+
+# Dropping a .docx/.txt/.zip into blog/uploads/ triggers this. It converts the
+# doc into a post page + posts.json entry, updates sitemap.xml, commits the
+# result, and moves the source into blog/uploads/processed/. GitHub Pages then
+# publishes that commit like any other push to main.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "blog/uploads/*.docx"
+      - "blog/uploads/*.txt"
+      - "blog/uploads/*.zip"
+
+concurrency:
+  group: blog-convert
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install converter dependencies
+        working-directory: blog
+        run: npm install --no-audit --no-fund
+
+      - name: Convert uploaded documents to posts
+        working-directory: blog
+        run: node scripts/convert.js
+
+      - name: Commit and push the generated post(s)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add sitemap.xml blog/posts blog/posts.json blog/assets/img/posts blog/uploads
+          if git diff --cached --quiet; then
+            echo "Nothing to commit."
+          else
+            git commit -m "Publish new datacentertraining.us blog post(s)"
+            pushed=false
+            for attempt in 1 2 3 4 5; do
+              if git push; then
+                pushed=true
+                break
+              fi
+              echo "Push rejected (attempt $attempt) - rebasing onto latest main and retrying..."
+              git pull --rebase origin main
+              sleep $((attempt * 3))
+            done
+            if [ "$pushed" != "true" ]; then
+              echo "::error::Failed to push after 5 attempts - the converted post was committed locally but never reached origin/main."
+              exit 1
+            fi
+          fi
