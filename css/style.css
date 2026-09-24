@@ -233,9 +233,10 @@ a { color: inherit; }
 .bundle-card-featured h3 { font-size: 24px; }
 .bundle-card-featured .bundle-card-hours { font-size: 30px; }
 .bundle-card-featured .bundle-card-desc { font-size: 14.5px; max-width: 640px; }
-.bundle-card-tracks { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; max-height: none; overflow: visible; }
-.bundle-card-tracks li {
-  display: flex; justify-content: space-between; gap: 8px; border-bottom: none;
+.bundle-card-courses.bundle-card-tracks { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; max-height: none; overflow: visible; }
+/* Doubled class so these chip styles beat the later .bundle-card-courses li rules */
+.bundle-card-courses.bundle-card-tracks li {
+  display: flex; justify-content: space-between; align-items: baseline; gap: 8px; border-bottom: none;
   background: rgba(255,255,255,0.1); border-radius: var(--r-thumb); padding: 10px 14px;
 }
 .bundle-track-name { font-size: 12.5px; font-weight: 600; }
@@ -280,12 +281,12 @@ a { color: inherit; }
 @media (max-width: 900px) {
   .bundle-grid { grid-template-columns: 1fr 1fr; }
   .bundle-card-featured { grid-column: span 2; }
-  .bundle-card-tracks { grid-template-columns: 1fr 1fr; }
+  .bundle-card-courses.bundle-card-tracks { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 680px) {
   .bundle-grid { grid-template-columns: 1fr; }
   .bundle-card-featured { grid-column: span 1; }
-  .bundle-card-tracks { grid-template-columns: 1fr; }
+  .bundle-card-courses.bundle-card-tracks { grid-template-columns: 1fr; }
 }
 
 /* ── Disclaimer box (legal/credential nuance) ── */
