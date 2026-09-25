@@ -86,5 +86,13 @@
     "date": "2026-09-24",
     "dateDisplay": "September 24, 2026",
     "excerpt": "Lithium-ion battery systems can support data center resilience, but a thermal runaway event requires a coordinated response that is different from ordinary UPS…"
+  },
+  {
+    "title": "Tier Infrastructure Review: What Facility Managers Should Verify Beyond the Label",
+    "slug": "tier-infrastructure-review-what-facility-managers-should-verify-beyond-the-label",
+    "image": "assets/img/posts/tier-infrastructure-review-what-facility-managers-should-verify-beyond-the-label.png",
+    "date": "2026-09-25",
+    "dateDisplay": "September 25, 2026",
+    "excerpt": "When a data center is described as Tier-aligned, resilient, or concurrently maintainable, what should a facility manager actually verify during a site review?…"
   }
 ]

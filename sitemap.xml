@@ -302,7 +302,7 @@
   </url>
   <url>
     <loc>https://datacentertraining.us/blog/</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -369,6 +369,12 @@
   <url>
     <loc>https://datacentertraining.us/blog/posts/lithium-ion-battery-thermal-runaway-what-data-center-teams-should-rehearse-before-an-incident.html</loc>
     <lastmod>2026-09-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://datacentertraining.us/blog/posts/tier-infrastructure-review-what-facility-managers-should-verify-beyond-the-label.html</loc>
+    <lastmod>2026-09-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
