@@ -94,5 +94,13 @@
     "date": "2026-09-25",
     "dateDisplay": "September 25, 2026",
     "excerpt": "When a data center is described as Tier-aligned, resilient, or concurrently maintainable, what should a facility manager actually verify during a site review?…"
+  },
+  {
+    "title": "Raised Floor and Confined Space Readiness: A Pre-Task Checklist for Data Center Maintenance Teams",
+    "slug": "raised-floor-and-confined-space-readiness-a-pre-task-checklist-for-data-center-maintenance-teams",
+    "image": "assets/img/posts/raised-floor-and-confined-space-readiness-a-pre-task-checklist-for-data-center-maintenance-teams.png",
+    "date": "2026-09-26",
+    "dateDisplay": "September 26, 2026",
+    "excerpt": "Before a technician lifts a raised-floor panel, enters an underfloor area, or reaches into a service opening, can the team explain what space is involved, what…"
   }
 ]
