@@ -2,113 +2,141 @@
   {
     "title": "What Cooling Technicians Should Verify Before Opening a Refrigerant Circuit",
     "slug": "what-cooling-technicians-should-verify-before-opening-a-refrigerant-circuit",
-    "image": "assets/img/posts/what-cooling-technicians-should-verify-before-opening-a-refrigerant-circuit.png",
+    "image": "assets/img/posts/what-cooling-technicians-should-verify-before-opening-a-refrigerant-circuit.jpg",
     "date": "2026-09-24",
     "dateDisplay": "September 24, 2026",
-    "excerpt": "When a data center cooling problem points toward a refrigerant circuit, should a technician open the system now, or first prove that the circuit, equipment,…"
+    "excerpt": "What data center cooling technicians should verify before opening a refrigerant circuit: isolation, refrigerant recovery, pressure checks, and PPE.",
+    "seoTitle": "Before Opening a Refrigerant Circuit: Technician Checks",
+    "description": "What data center cooling technicians should verify before opening a refrigerant circuit: isolation, refrigerant recovery, pressure checks, and PPE."
   },
   {
     "title": "Generator Maintenance Readiness: A Data Center Manager's Pre-Task Checklist",
     "slug": "generator-maintenance-readiness-a-data-center-manager-s-pre-task-checklist",
-    "image": "assets/img/posts/generator-maintenance-readiness-a-data-center-manager-s-pre-task-checklist.png",
+    "image": "assets/img/posts/generator-maintenance-readiness-a-data-center-manager-s-pre-task-checklist.jpg",
     "date": "2026-09-24",
     "dateDisplay": "September 24, 2026",
-    "excerpt": "When a standby generator is due for inspection, service, or load testing, is the site actually ready to take that equipment out of its normal operating…"
+    "excerpt": "A pre-task checklist for data center managers before generator inspection, service, or load testing: transfer plans, fuel, isolation, roles, and records.",
+    "seoTitle": "Generator Maintenance Readiness: Pre-Task Checklist",
+    "description": "A pre-task checklist for data center managers before generator inspection, service, or load testing: transfer plans, fuel, isolation, roles, and records."
   },
   {
     "title": "How Data Center Managers Should Test Physical Access During a Maintenance Window",
     "slug": "how-data-center-managers-should-test-physical-access-during-a-maintenance-window",
-    "image": "assets/img/posts/how-data-center-managers-should-test-physical-access-during-a-maintenance-window.png",
+    "image": "assets/img/posts/how-data-center-managers-should-test-physical-access-during-a-maintenance-window.jpg",
     "date": "2026-09-24",
     "dateDisplay": "September 24, 2026",
-    "excerpt": "When a contractor, commissioning agent, or internal technician needs to enter a controlled data center area for maintenance, how does the manager know that…"
+    "excerpt": "How data center managers can test physical access controls during a maintenance window, from badge scope and escorts to door alarms and audit logs.",
+    "seoTitle": "Testing Physical Access During Maintenance Windows",
+    "description": "How data center managers can test physical access controls during a maintenance window, from badge scope and escorts to door alarms and audit logs."
   },
   {
     "title": "Data Center Visitor Access: A Practical Checklist for Escorting Maintenance Contractors",
     "slug": "data-center-visitor-access-a-practical-checklist-for-escorting-maintenance-contractors",
-    "image": "assets/img/posts/data-center-visitor-access-a-practical-checklist-for-escorting-maintenance-contractors.png",
+    "image": "assets/img/posts/data-center-visitor-access-a-practical-checklist-for-escorting-maintenance-contractors.jpg",
     "date": "2026-09-24",
     "dateDisplay": "September 24, 2026",
-    "excerpt": "When a maintenance contractor arrives at a data center, can the site prove that the right person is entering, for the right task, during the right window, with…"
+    "excerpt": "A practical checklist for escorting maintenance contractors in a data center: identity checks, work scope, escort duties, restricted zones, and sign-out.",
+    "seoTitle": "Data Center Visitor Access: Contractor Escort Checklist",
+    "description": "A practical checklist for escorting maintenance contractors in a data center: identity checks, work scope, escort duties, restricted zones, and sign-out."
   },
   {
     "title": "How Data Center Security Leads Should Audit Contractor Access Controls",
     "slug": "how-data-center-security-leads-should-audit-contractor-access-controls",
-    "image": "assets/img/posts/how-data-center-security-leads-should-audit-contractor-access-controls.png",
+    "image": "assets/img/posts/how-data-center-security-leads-should-audit-contractor-access-controls.jpg",
     "date": "2026-09-24",
     "dateDisplay": "September 24, 2026",
-    "excerpt": "When a contractor needs to enter a data center for electrical, mechanical, construction, cleaning, or inspection work, can the security lead prove that the…"
+    "excerpt": "How data center security leads can audit contractor access: badge scope, approvals, escort records, access logs, and closing gaps before the next audit.",
+    "seoTitle": "How to Audit Contractor Access Controls in a Data Center",
+    "description": "How data center security leads can audit contractor access: badge scope, approvals, escort records, access logs, and closing gaps before the next audit."
   },
   {
     "title": "What Data Center Facility Managers Should Verify Before Commissioning Handover",
     "slug": "what-data-center-facility-managers-should-verify-before-commissioning-handover",
-    "image": "assets/img/posts/what-data-center-facility-managers-should-verify-before-commissioning-handover.png",
+    "image": "assets/img/posts/what-data-center-facility-managers-should-verify-before-commissioning-handover.jpg",
     "date": "2026-09-24",
     "dateDisplay": "September 24, 2026",
-    "excerpt": "When a new or upgraded data center system reaches the end of commissioning, is the facility actually ready for operations to own it? A system can pass an…"
+    "excerpt": "What data center facility managers should verify before accepting a commissioning handover: test results, documentation gaps, procedures, and training.",
+    "seoTitle": "What to Verify Before Commissioning Handover",
+    "description": "What data center facility managers should verify before accepting a commissioning handover: test results, documentation gaps, procedures, and training."
   },
   {
     "title": "Data Center Commissioning Handover Checklist: What Facilities Managers Should Verify Before Operations Takeover",
     "slug": "data-center-commissioning-handover-checklist-what-facilities-managers-should-verify-before-operations-takeover",
-    "image": "assets/img/posts/data-center-commissioning-handover-checklist-what-facilities-managers-should-verify-before-operations-takeover.png",
+    "image": "assets/img/posts/data-center-commissioning-handover-checklist-what-facilities-managers-should-verify-before-operations-takeover.jpg",
     "date": "2026-09-24",
     "dateDisplay": "September 24, 2026",
-    "excerpt": "When a new data center area is declared “ready,” does the operations team have verified evidence that the equipment works together, the procedures are usable,…"
+    "excerpt": "A commissioning handover checklist for data center facilities teams: integrated test evidence, documentation, trained staff, and open items before takeover.",
+    "seoTitle": "Data Center Commissioning Handover Checklist",
+    "description": "A commissioning handover checklist for data center facilities teams: integrated test evidence, documentation, trained staff, and open items before takeover."
   },
   {
     "title": "UPS Maintenance Bypass Mistakes That Can Cause a Data Center Outage",
     "slug": "ups-maintenance-bypass-mistakes-that-can-cause-a-data-center-outage",
-    "image": "assets/img/posts/ups-maintenance-bypass-mistakes-that-can-cause-a-data-center-outage.png",
+    "image": "assets/img/posts/ups-maintenance-bypass-mistakes-that-can-cause-a-data-center-outage.jpg",
     "date": "2026-09-24",
     "dateDisplay": "September 24, 2026",
-    "excerpt": "When a UPS needs maintenance, can the team move the supported load through a maintenance bypass without creating an unexpected interruption, defeating…"
+    "excerpt": "Common UPS maintenance bypass mistakes that can drop critical load, and the procedure checks, switching sequence, and training that help teams avoid them.",
+    "seoTitle": "UPS Maintenance Bypass Mistakes That Cause Outages",
+    "description": "Common UPS maintenance bypass mistakes that can drop critical load, and the procedure checks, switching sequence, and training that help teams avoid them."
   },
   {
     "title": "DCIM vs BMS Alarm Dashboards: What Data Center Operations Teams Should Verify",
     "slug": "dcim-vs-bms-alarm-dashboards-what-data-center-operations-teams-should-verify",
-    "image": "assets/img/posts/dcim-vs-bms-alarm-dashboards-what-data-center-operations-teams-should-verify.png",
+    "image": "assets/img/posts/dcim-vs-bms-alarm-dashboards-what-data-center-operations-teams-should-verify.jpg",
     "date": "2026-09-24",
     "dateDisplay": "September 24, 2026",
-    "excerpt": "When a data center operator sees a high-temperature, power-quality, or equipment-fault alarm, which dashboard should guide the next action: the building…"
+    "excerpt": "DCIM vs BMS alarm dashboards: what data center operations teams should verify about naming, priorities, and escalation so each alarm gets the right response.",
+    "seoTitle": "DCIM vs BMS Alarm Dashboards: What to Verify",
+    "description": "DCIM vs BMS alarm dashboards: what data center operations teams should verify about naming, priorities, and escalation so each alarm gets the right response."
   },
   {
     "title": "How to Build a Role-Based Training Matrix for a Colocation Facility",
     "slug": "how-to-build-a-role-based-training-matrix-for-a-colocation-facility",
-    "image": "assets/img/posts/how-to-build-a-role-based-training-matrix-for-a-colocation-facility.png",
+    "image": "assets/img/posts/how-to-build-a-role-based-training-matrix-for-a-colocation-facility.jpg",
     "date": "2026-09-24",
     "dateDisplay": "September 24, 2026",
-    "excerpt": "In a colocation facility, the question is not simply whether the team has completed training. The useful question is whether each person is prepared for the…"
+    "excerpt": "How to build a role-based training matrix for a colocation facility: map roles to tasks and risks, assign courses, track completion, and plan refreshers.",
+    "seoTitle": "Role-Based Training Matrix for a Colocation Facility",
+    "description": "How to build a role-based training matrix for a colocation facility: map roles to tasks and risks, assign courses, track completion, and plan refreshers."
   },
   {
     "title": "Lithium-Ion Battery Thermal Runaway: What Data Center Teams Should Rehearse Before an Incident",
     "slug": "lithium-ion-battery-thermal-runaway-what-data-center-teams-should-rehearse-before-an-incident",
-    "image": "assets/img/posts/lithium-ion-battery-thermal-runaway-what-data-center-teams-should-rehearse-before-an-incident.png",
+    "image": "assets/img/posts/lithium-ion-battery-thermal-runaway-what-data-center-teams-should-rehearse-before-an-incident.jpg",
     "date": "2026-09-24",
     "dateDisplay": "September 24, 2026",
-    "excerpt": "Lithium-ion battery systems can support data center resilience, but a thermal runaway event requires a coordinated response that is different from ordinary UPS…"
+    "excerpt": "What data center teams should rehearse before a lithium-ion battery thermal runaway incident: detection, isolation, evacuation, and responder coordination.",
+    "seoTitle": "Lithium-Ion Thermal Runaway: What Teams Should Rehearse",
+    "description": "What data center teams should rehearse before a lithium-ion battery thermal runaway incident: detection, isolation, evacuation, and responder coordination."
   },
   {
     "title": "Tier Infrastructure Review: What Facility Managers Should Verify Beyond the Label",
     "slug": "tier-infrastructure-review-what-facility-managers-should-verify-beyond-the-label",
-    "image": "assets/img/posts/tier-infrastructure-review-what-facility-managers-should-verify-beyond-the-label.png",
+    "image": "assets/img/posts/tier-infrastructure-review-what-facility-managers-should-verify-beyond-the-label.jpg",
     "date": "2026-09-25",
     "dateDisplay": "September 25, 2026",
-    "excerpt": "When a data center is described as Tier-aligned, resilient, or concurrently maintainable, what should a facility manager actually verify during a site review?…"
+    "excerpt": "What facility managers should verify when a data center claims Tier alignment: redundancy paths, concurrent maintainability, procedures, and test records.",
+    "seoTitle": "Tier Infrastructure Review: Verify Beyond the Label",
+    "description": "What facility managers should verify when a data center claims Tier alignment: redundancy paths, concurrent maintainability, procedures, and test records."
   },
   {
     "title": "Raised Floor and Confined Space Readiness: A Pre-Task Checklist for Data Center Maintenance Teams",
     "slug": "raised-floor-and-confined-space-readiness-a-pre-task-checklist-for-data-center-maintenance-teams",
-    "image": "assets/img/posts/raised-floor-and-confined-space-readiness-a-pre-task-checklist-for-data-center-maintenance-teams.png",
+    "image": "assets/img/posts/raised-floor-and-confined-space-readiness-a-pre-task-checklist-for-data-center-maintenance-teams.jpg",
     "date": "2026-09-26",
     "dateDisplay": "September 26, 2026",
-    "excerpt": "Before a technician lifts a raised-floor panel, enters an underfloor area, or reaches into a service opening, can the team explain what space is involved, what…"
+    "excerpt": "A pre-task checklist for raised floor and confined space work in data centers: space classification, atmosphere, panel handling, cabling, and rescue plans.",
+    "seoTitle": "Raised Floor & Confined Space Pre-Task Checklist",
+    "description": "A pre-task checklist for raised floor and confined space work in data centers: space classification, atmosphere, panel handling, cabling, and rescue plans."
   },
   {
     "title": "Clean-Agent Fire Suppression Release Procedures: What Data Center Teams Should Practice Before an Alarm",
     "slug": "clean-agent-fire-suppression-release-procedures-what-data-center-teams-should-practice-before-an-alarm",
-    "image": "assets/img/posts/clean-agent-fire-suppression-release-procedures-what-data-center-teams-should-practice-before-an-alarm.png",
+    "image": "assets/img/posts/clean-agent-fire-suppression-release-procedures-what-data-center-teams-should-practice-before-an-alarm.jpg",
     "date": "2026-09-27",
     "dateDisplay": "September 27, 2026",
-    "excerpt": "When a clean-agent fire suppression system enters pre-alarm or release sequence, can the data center team recognize what is happening, protect people,…"
+    "excerpt": "Clean-agent fire suppression release procedures data center teams should practice before an alarm: pre-alarm actions, abort use, evacuation, and re-entry.",
+    "seoTitle": "Clean-Agent Fire Suppression Release Procedures",
+    "description": "Clean-agent fire suppression release procedures data center teams should practice before an alarm: pre-alarm actions, abort use, evacuation, and re-entry."
   }
 ]
