@@ -138,5 +138,15 @@
     "excerpt": "Clean-agent fire suppression release procedures data center teams should practice before an alarm: pre-alarm actions, abort use, evacuation, and re-entry.",
     "seoTitle": "Clean-Agent Fire Suppression Release Procedures",
     "description": "Clean-agent fire suppression release procedures data center teams should practice before an alarm: pre-alarm actions, abort use, evacuation, and re-entry."
+  },
+  {
+    "title": "How Facilities Managers Can Use PUE Trends to Separate Cooling Waste from IT Load Growth",
+    "slug": "how-facilities-managers-can-use-pue-trends-to-separate-cooling-waste-from-it-load-growth",
+    "seoTitle": "How Facilities Managers Can Use PUE Trends to Separate",
+    "description": "When a data center's power bill rises, the first explanation is often that the IT load grew. That explanation may be right, but it can also hide a cooling…",
+    "image": "assets/img/posts/how-facilities-managers-can-use-pue-trends-to-separate-cooling-waste-from-it-load-growth.jpg",
+    "date": "2026-09-28",
+    "dateDisplay": "September 28, 2026",
+    "excerpt": "When a data center's power bill rises, the first explanation is often that the IT load grew. That explanation may be right, but it can also hide a cooling…"
   }
 ]

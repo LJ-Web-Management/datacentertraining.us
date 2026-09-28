@@ -302,7 +302,7 @@
   </url>
   <url>
     <loc>https://datacentertraining.us/blog/</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -387,6 +387,12 @@
   <url>
     <loc>https://datacentertraining.us/blog/posts/clean-agent-fire-suppression-release-procedures-what-data-center-teams-should-practice-before-an-alarm.html</loc>
     <lastmod>2026-09-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://datacentertraining.us/blog/posts/how-facilities-managers-can-use-pue-trends-to-separate-cooling-waste-from-it-load-growth.html</loc>
+    <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
