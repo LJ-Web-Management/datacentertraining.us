@@ -390,16 +390,6 @@ function buildBodyHtml(blocks) {
   return output.join("\n");
 }
 
-function excerptFromHtml(html, maxLen) {
-  const match = html.match(/<p[^>]*>([\s\S]*?)<\/p>/i);
-  const source = match ? match[1] : html;
-  const text = decodeEntities(source.replace(/<[^>]+>/g, " "))
-    .replace(/\s+/g, " ")
-    .trim();
-  if (text.length <= maxLen) return text;
-  return text.slice(0, maxLen).replace(/\s+\S*$/, "") + "…";
-}
-
 // ---------------------------------------------------------------------------
 // Page template + post index
 //
@@ -480,25 +470,240 @@ function uniqueSlug(baseSlug, existingSlugs) {
   return slug;
 }
 
-function buildPostPage(title, dateDisplay, isoDate, bodyHtml, imagePath, slug, description) {
+// ---------------------------------------------------------------------------
+// SEO metadata
+//
+// Search engines truncate titles past ~60 characters and descriptions past
+// ~160, and flag descriptions under ~110 as too short. A post may set these
+// explicitly with "SEO Title:" / "Meta Description:" lines right after the
+// title; otherwise they are derived from the title and opening paragraphs.
+// ---------------------------------------------------------------------------
+
+const SEO_TITLE_MAX = 60;
+const DESC_MIN = 110;
+const DESC_MAX = 160;
+const TITLE_SUFFIX = " | Data Center Training";
+const TRAILING_STOPWORDS = /\s+(a|an|and|or|the|of|for|to|in|on|at|by|with|before|after|what|how|vs)$/i;
+
+function truncateWords(text, max) {
+  if (text.length <= max) return text;
+  let cut = text.slice(0, max + 1).replace(/\s+\S*$/, "");
+  while (TRAILING_STOPWORDS.test(cut)) cut = cut.replace(TRAILING_STOPWORDS, "");
+  return cut.replace(/[\s,:;\-–]+$/, "");
+}
+
+function deriveSeoTitle(title) {
+  let base = title;
+  if (base.length > SEO_TITLE_MAX) {
+    const lead = base.split(/:\s+/)[0];
+    base = lead !== base && lead.length >= 30 && lead.length <= SEO_TITLE_MAX
+      ? lead
+      : truncateWords(base, SEO_TITLE_MAX);
+  }
+  return base.length + TITLE_SUFFIX.length <= SEO_TITLE_MAX ? base + TITLE_SUFFIX : base;
+}
+
+function plainTextParagraphs(bodyHtml) {
+  return (bodyHtml.match(/<p[^>]*>[\s\S]*?<\/p>/gi) || [])
+    .map((p) => decodeEntities(p.replace(/<[^>]+>/g, " ")).replace(/\s+/g, " ").trim())
+    .filter((t) => t.length > 40);
+}
+
+function deriveDescription(bodyHtml, title) {
+  const text = plainTextParagraphs(bodyHtml).join(" ");
+  if (!text) return truncateWords(title + ". Practical guidance from Data Center Training for facility and operations teams.", DESC_MAX);
+  const sentences = text.match(/[^.!?]+[.!?]+(\s|$)/g) || [text];
+  let desc = "";
+  for (const raw of sentences) {
+    const next = (desc + " " + raw.trim()).trim();
+    if (next.length > DESC_MAX) break;
+    desc = next;
+    if (desc.length >= DESC_MIN) break;
+  }
+  if (desc.length < DESC_MIN) desc = truncateWords(text, DESC_MAX - 1) + "…";
+  return desc;
+}
+
+function extractMetaLines(blocks) {
+  const meta = {};
+  let i = 0;
+  while (i < blocks.length && i < 3 && blocks[i].type === "text") {
+    const m = blocks[i].text.trim().match(/^(SEO Title|Meta Description)\s*:\s*(.+)$/i);
+    if (!m) break;
+    meta[m[1].toLowerCase().startsWith("seo") ? "seoTitle" : "description"] = plainNormalize(m[2]);
+    i++;
+  }
+  return { meta, rest: blocks.slice(i) };
+}
+
+// ---------------------------------------------------------------------------
+// Cover images: resized and recompressed so pages stay fast (~100 KB or less
+// instead of multi-MB PNGs straight out of an image generator).
+// ---------------------------------------------------------------------------
+
+const COVER_WIDTH = 1200;
+const COVER_HEIGHT = 675;
+const COVER_MAX_BYTES = 100 * 1024;
+
+async function writeCoverImage(input, slug) {
+  const sharp = require("sharp");
+  fs.mkdirSync(POST_IMAGES_DIR, { recursive: true });
+  // Step quality down first, then size, until the image fits the budget.
+  let out;
+  attempts: for (const scale of [1, 0.8, 0.64]) {
+    for (const quality of [74, 66, 58, 50]) {
+      out = await sharp(input)
+        .resize(Math.round(COVER_WIDTH * scale), Math.round(COVER_HEIGHT * scale), { fit: "cover" })
+        .jpeg({ quality, mozjpeg: true, progressive: true })
+        .toBuffer();
+      if (out.length <= COVER_MAX_BYTES) break attempts;
+    }
+  }
+  const imagePath = "assets/img/posts/" + slug + ".jpg";
+  fs.writeFileSync(path.join(ROOT, imagePath), out);
+  return imagePath;
+}
+
+// ---------------------------------------------------------------------------
+// Page rendering
+//
+// Every run re-renders all post pages and the blog index from posts.json, so
+// template changes, "More from the blog" links, and the pre-rendered index
+// list stay current for every post, not just the newest one. Each post's body
+// is read back out of its existing page.
+// ---------------------------------------------------------------------------
+
+const INDEX_FILE = path.join(ROOT, "index.html");
+const INDEX_START = "<!-- POSTS:START -->";
+const INDEX_END = "<!-- POSTS:END -->";
+const BODY_START = '<article class="post-content">\n';
+const BODY_END = "\n  </article>";
+
+function sortNewestFirst(posts) {
+  return posts
+    .map((p, i) => ({ p, i }))
+    .sort((a, b) => (b.p.date || "").localeCompare(a.p.date || "") || b.i - a.i)
+    .map((x) => x.p);
+}
+
+function postCardHtml(post, hrefPrefix, imgPrefix, headingTag) {
+  const thumb = post.image
+    ? '<img class="post-card-thumb" src="' + imgPrefix + escapeHtml(post.image) + '" alt="' + escapeHtml(post.title) + '" width="1200" height="675" loading="lazy">'
+    : "";
+  return (
+    '<a class="post-card" href="' + hrefPrefix + encodeURIComponent(post.slug) + '.html">' +
+    thumb +
+    '<div class="post-card-body">' +
+    '<div class="post-date">' + escapeHtml(post.dateDisplay || post.date) + "</div>" +
+    "<" + headingTag + ">" + escapeHtml(post.title) + "</" + headingTag + ">" +
+    "</div></a>"
+  );
+}
+
+// Neighbours in date order plus the newest post, so links spread across the
+// whole archive instead of every page pointing at the same three posts.
+function relatedPosts(sorted, slug, count) {
+  const idx = sorted.findIndex((p) => p.slug === slug);
+  const picks = [sorted[idx - 1], sorted[idx + 1], sorted[idx + 2], sorted[idx - 2], sorted[0], sorted[1], sorted[2]];
+  const seen = new Set([slug]);
+  const out = [];
+  for (const p of picks) {
+    if (p && !seen.has(p.slug)) {
+      seen.add(p.slug);
+      out.push(p);
+      if (out.length === count) break;
+    }
+  }
+  return out;
+}
+
+function relatedHtml(related) {
+  if (!related.length) return "";
+  return (
+    '  <section class="related-posts" aria-labelledby="related-heading">\n' +
+    '    <h2 id="related-heading">More from the blog</h2>\n' +
+    '    <div class="related-grid">' +
+    related.map((p) => postCardHtml(p, "", "../", "h3")).join("") +
+    "</div>\n" +
+    '    <a class="related-all" href="../">View all posts &rarr;</a>\n' +
+    "  </section>"
+  );
+}
+
+function buildPostPage(post, bodyHtml, related) {
   const template = fs.readFileSync(TEMPLATE_FILE, "utf8");
-  const shareImageUrl = imagePath ? SITE_URL + "/blog/" + imagePath : SITE_URL + "/images/favicon.svg";
-  const canonicalUrl = BLOG_URL + "/posts/" + slug + ".html";
-  // Posts uploaded without an image skip the featured-image block entirely
-  // rather than rendering an <img> with an empty src.
-  const featuredImage = imagePath
-    ? '  <div class="post-featured-image">\n    <img src="../' + imagePath + '" alt="' + escapeHtml(title) + '" loading="eager">\n  </div>'
+  const shareImageUrl = post.image ? BLOG_URL + "/" + post.image : SITE_URL + "/images/og-image.jpg";
+  const canonicalUrl = BLOG_URL + "/posts/" + post.slug + ".html";
+  const featuredImage = post.image
+    ? '  <div class="post-featured-image">\n    <img src="../' + post.image + '" alt="' + escapeHtml(post.title) + '" width="1200" height="675" loading="eager">\n  </div>'
     : "";
 
   return template
+    .split("__SEO_TITLE__").join(escapeHtml(post.seoTitle))
     .split("__SHARE_IMAGE_URL__").join(shareImageUrl)
     .split("__CANONICAL_URL__").join(canonicalUrl)
     .split("__FEATURED_IMAGE__").join(featuredImage)
-    .split("__DESCRIPTION__").join(escapeHtml(description))
-    .split("__TITLE__").join(title)
-    .split("__ISO_DATE__").join(isoDate)
-    .split("__DATE_DISPLAY__").join(dateDisplay)
+    .split("__DESCRIPTION__").join(escapeHtml(post.description))
+    .split("__TITLE__").join(escapeHtml(post.title))
+    .split("__ISO_DATE__").join(post.date)
+    .split("__DATE_DISPLAY__").join(post.dateDisplay)
+    .split("__RELATED__").join(relatedHtml(related))
     .split("__BODY__").join(bodyHtml);
+}
+
+function readPostBody(slug) {
+  const file = path.join(POSTS_DIR, slug + ".html");
+  if (!fs.existsSync(file)) return null;
+  const html = fs.readFileSync(file, "utf8");
+  const start = html.indexOf(BODY_START);
+  const end = html.indexOf(BODY_END, start);
+  if (start === -1 || end === -1) return null;
+  return html.slice(start + BODY_START.length, end);
+}
+
+function updateIndex(sorted) {
+  if (!fs.existsSync(INDEX_FILE)) return;
+  const html = fs.readFileSync(INDEX_FILE, "utf8");
+  const start = html.indexOf(INDEX_START);
+  const end = html.indexOf(INDEX_END);
+  if (start === -1 || end === -1) return;
+  const cards = sorted.length
+    ? sorted.map((p) => "    " + postCardHtml(p, "posts/", "", "h2")).join("\n")
+    : '    <div class="empty-state">No blog posts found.</div>';
+  fs.writeFileSync(INDEX_FILE, html.slice(0, start + INDEX_START.length) + "\n" + cards + "\n    " + html.slice(end));
+}
+
+// Recompresses covers that are missing the optimized .jpg form or are over
+// the size budget (older posts, or an image committed by hand).
+async function optimizeCover(post) {
+  if (!post.image) return;
+  const current = path.join(ROOT, post.image);
+  if (!fs.existsSync(current)) return;
+  const optimized = post.image.endsWith(".jpg") && fs.statSync(current).size <= COVER_MAX_BYTES;
+  if (optimized) return;
+  const input = fs.readFileSync(current);
+  const newPath = await writeCoverImage(input, post.slug);
+  if (newPath !== post.image) fs.unlinkSync(current);
+  console.log("  optimized cover for " + post.slug);
+  post.image = newPath;
+}
+
+async function rebuildAll(posts, bodies) {
+  for (const post of posts) await optimizeCover(post);
+  const sorted = sortNewestFirst(posts);
+  for (const post of posts) {
+    const body = bodies[post.slug] || readPostBody(post.slug);
+    if (body === null || body === undefined) {
+      console.warn("  ! could not read body for " + post.slug + ", leaving page untouched");
+      continue;
+    }
+    if (!post.seoTitle) post.seoTitle = deriveSeoTitle(post.title);
+    if (!post.description) post.description = deriveDescription(body, post.title);
+    post.excerpt = post.description;
+    const page = buildPostPage(post, body, relatedPosts(sorted, post.slug, 3));
+    fs.writeFileSync(path.join(POSTS_DIR, post.slug + ".html"), page);
+  }
+  updateIndex(sorted);
 }
 
 // ---------------------------------------------------------------------------
@@ -575,87 +780,72 @@ function convertFile(filePath, filename) {
   return Promise.reject(new Error("Unsupported file type: " + ext));
 }
 
-function main() {
-  if (!fs.existsSync(UPLOADS_DIR)) {
-    console.log("No uploads directory found, nothing to do.");
-    return;
-  }
-  fs.mkdirSync(PROCESSED_DIR, { recursive: true });
+async function main() {
   fs.mkdirSync(POSTS_DIR, { recursive: true });
+  const posts = loadPosts();
+  const existingSlugs = new Set(posts.map((p) => p.slug));
+  const bodies = {};
 
-  const files = fs
-    .readdirSync(UPLOADS_DIR)
-    .filter((f) => SUPPORTED_EXTENSIONS.includes(path.extname(f).toLowerCase()));
+  const files = fs.existsSync(UPLOADS_DIR)
+    ? fs.readdirSync(UPLOADS_DIR).filter((f) => SUPPORTED_EXTENSIONS.includes(path.extname(f).toLowerCase()))
+    : [];
+  if (files.length) fs.mkdirSync(PROCESSED_DIR, { recursive: true });
 
-  if (files.length === 0) {
+  const now = new Date();
+  const chicago = new Intl.DateTimeFormat("en-CA", { timeZone: "America/Chicago" }).format(now); // YYYY-MM-DD
+  const dateDisplay = new Date(chicago + "T12:00:00Z").toLocaleDateString("en-US", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+    timeZone: "UTC",
+  });
+
+  for (const filename of files) {
+    const filePath = path.join(UPLOADS_DIR, filename);
+    console.log("Converting " + filename + " ...");
+    const { blocks, image } = await convertFile(filePath, filename);
+    const { title, rest: afterTitle } = extractTitle(blocks, titleFromFilename(filename));
+    const { meta, rest } = extractMetaLines(afterTitle);
+    const bodyHtml = buildBodyHtml(rest);
+
+    const slug = uniqueSlug(slugify(title), existingSlugs);
+    existingSlugs.add(slug);
+
+    const imagePath = image ? await writeCoverImage(image.buffer, slug) : null;
+
+    posts.push({
+      title: title,
+      slug: slug,
+      seoTitle: meta.seoTitle ? truncateWords(meta.seoTitle, SEO_TITLE_MAX) : deriveSeoTitle(title),
+      description: meta.description ? truncateWords(meta.description, DESC_MAX) : deriveDescription(bodyHtml, title),
+      image: imagePath,
+      date: chicago,
+      dateDisplay: dateDisplay,
+    });
+    bodies[slug] = bodyHtml;
+
+    fs.renameSync(filePath, path.join(PROCESSED_DIR, filename));
+    console.log("  -> posts/" + slug + ".html");
+  }
+
+  // --rebuild re-renders every existing post even when nothing was uploaded,
+  // e.g. after a template change.
+  if (!files.length && !process.argv.includes("--rebuild")) {
     console.log("No new documents to convert.");
     return;
   }
 
-  const posts = loadPosts();
-  const existingSlugs = new Set(posts.map((p) => p.slug));
-
-  const today = new Date();
-  const isoDate = [today.getFullYear(), String(today.getMonth() + 1).padStart(2, "0"), String(today.getDate()).padStart(2, "0")].join("-");
-  const dateDisplay = today.toLocaleDateString("en-US", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  });
-
-  files
-    .reduce((chain, filename) => {
-      return chain.then(() => {
-        const filePath = path.join(UPLOADS_DIR, filename);
-        console.log("Converting " + filename + " ...");
-        return convertFile(filePath, filename).then(({ blocks, image }) => {
-          const { title, rest } = extractTitle(blocks, titleFromFilename(filename));
-          const bodyHtml = buildBodyHtml(rest);
-
-          const baseSlug = slugify(title);
-          const slug = uniqueSlug(baseSlug, existingSlugs);
-          existingSlugs.add(slug);
-
-          let imagePath = null;
-          if (image) {
-            fs.mkdirSync(POST_IMAGES_DIR, { recursive: true });
-            const imgExt = image.ext === ".jpeg" ? ".jpg" : image.ext;
-            imagePath = "assets/img/posts/" + slug + imgExt;
-            fs.writeFileSync(path.join(ROOT, imagePath), image.buffer);
-          }
-
-          const excerpt = excerptFromHtml(bodyHtml, 160);
-          const description = title + " - Data Center Training Blog.";
-          const pageHtml = buildPostPage(title, dateDisplay, isoDate, bodyHtml, imagePath, slug, description);
-          fs.writeFileSync(path.join(POSTS_DIR, slug + ".html"), pageHtml);
-
-          posts.push({
-            title: title,
-            slug: slug,
-            image: imagePath,
-            date: isoDate,
-            dateDisplay: dateDisplay,
-            excerpt: excerpt,
-          });
-
-          fs.renameSync(filePath, path.join(PROCESSED_DIR, filename));
-          console.log("  -> posts/" + slug + ".html");
-        });
-      });
-    }, Promise.resolve())
-    .then(() => {
-      savePosts(posts);
-      updateSitemap(posts);
-      console.log("Done. " + files.length + " post(s) published.");
-    })
-    .catch((err) => {
-      console.error(err);
-      process.exit(1);
-    });
+  await rebuildAll(posts, bodies);
+  savePosts(posts);
+  updateSitemap(posts);
+  console.log("Done. " + files.length + " new post(s), " + posts.length + " page(s) rebuilt.");
 }
 
 if (require.main === module) {
-  main();
+  main().catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });
 }
 
-module.exports = { buildPostPage, updateSitemap, loadPosts };
+module.exports = { buildPostPage, updateSitemap, loadPosts, deriveSeoTitle, deriveDescription };

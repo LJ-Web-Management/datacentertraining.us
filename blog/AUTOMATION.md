@@ -23,7 +23,7 @@ Repository workflow:
 - Push: run `git config http.postBuffer 524288000` first (large ZIPs can otherwise fail with a misleading `HTTP 400` / `unexpected disconnect`), then `git pull --rebase origin main && git push origin main`. If it still fails, run `gh auth status` and report the exact error rather than retrying blindly.
 - Last resort only, for a path that does not already exist remotely: `gh api --method PUT repos/LJ-Web-Management/datacentertraining.us/contents/blog/uploads/<URL-encoded filename> --input -` with a JSON payload containing `message`, `branch: main`, and base64 `content`. Never overwrite an existing upload.
 - After a successful push, wait about 90 seconds and run `gh run list --repo LJ-Web-Management/datacentertraining.us --limit 5`. Confirm both "Convert blog uploads (datacentertraining.us)" and "pages build and deployment" succeeded.
-- Then `git pull` to fast-forward past the bot's follow-up commit. The bot moves the ZIP to `blog/uploads/processed/`, adds the post page to `blog/posts/`, and updates `blog/posts.json` and `sitemap.xml`. This is expected, not a conflict. Do not force-push or create a second package.
+- Then `git pull` to fast-forward past the bot's follow-up commit. The bot moves the ZIP to `blog/uploads/processed/`, adds the post page to `blog/posts/`, adds a compressed cover image, re-renders the other posts' "More from the blog" links and the blog index, and updates `blog/posts.json` and `sitemap.xml`. This is expected, not a conflict. Do not force-push or create a second package.
 - Verify the post is live: `https://datacentertraining.us/blog/posts/<slug>.html` must return 200. Take the slug from the new `blog/posts.json` entry (it is the title lowercased, with every run of characters other than letters and digits replaced by one hyphen).
 
 Local copy workflow:
@@ -60,6 +60,8 @@ Article format (important: this is what the site's converter turns into real for
 
 Follow this exact `.txt` structure:
 1. Line 1: complete title.
+   Line 2: `SEO Title: ` followed by a search title of 60 characters or fewer (for example `SEO Title: UPS Maintenance Bypass Mistakes That Cause Outages`). It becomes the page's <title>; the full title above stays as the on-page headline.
+   Line 3: `Meta Description: ` followed by a 120-155 character summary of what the post covers. It becomes the search-result description. Only name topics the article actually covers.
 2. `## The Operational Question`: the real-world problem or training decision, why it matters for safety, uptime, and the team, and what the reader will get from the post.
 3. `---` then `## Who This Affects`: the roles, site types (enterprise, colocation, hyperscale, edge), and situations most likely to face it.
 4. `---` then `## What Can Go Wrong`: safety, uptime, compliance, and cost consequences, with accurate standards context only.
@@ -86,12 +88,12 @@ Cover image requirements:
 - Generate one original cover image that matches the specific topic, not a generic server-rack stock image. Vary setting, subject, and composition based on the topic, for example a technician in arc-rated PPE at switchgear, a UPS and battery room, a generator yard, a chiller plant, hot and cold aisles, a commissioning walkthrough, a monitoring room, or a security checkpoint.
 - Professional, modern critical-facilities style, photo-realistic or clean editorial illustration, with an indigo and violet accent palette on neutral grey and white so images feel consistent with the site.
 - Wide 16:9. No logos, watermarks, or readable text.
-- Save as `.png` inside the ZIP only. Do not upload the image as a loose file.
+- Save as `.png` inside the ZIP only. Do not upload the image as a loose file. The workflow resizes it to a compressed 1200x675 JPEG for the site, so the PNG's file size does not matter.
 
 Verification before finishing each run:
 - Exactly 1 new `.zip` was pushed to `blog/uploads/` for this run (it may already have been moved to `blog/uploads/processed/` by the workflow).
 - The ZIP contains exactly one `.txt` and one `.png`.
-- The `.txt` is at least 1,500 words and follows the structure and formatting above: title on line 1, every section heading starting with `## `, `---` dividers, and `Sources` last.
+- The `.txt` is at least 1,500 words and follows the structure and formatting above: title on line 1, `SEO Title:` (60 characters or fewer) on line 2, `Meta Description:` (120-155 characters) on line 3, every section heading starting with `## `, `---` dividers, and `Sources` last.
 - The title does not duplicate anything in `blog/posts.json`, existing `.txt`/ZIP filenames, or titles inside existing ZIPs.
 - The title and course track differ from at least the last 2-3 published posts.
 - "Convert blog uploads (datacentertraining.us)" and "pages build and deployment" both succeeded.
