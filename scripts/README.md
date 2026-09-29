@@ -56,8 +56,8 @@ Edit the **sources**, never the generated files. To change a price, edit
 ## Why analytics load late
 
 Google Analytics, Ahrefs Analytics, Microsoft Clarity, and Tawk.to load on the
-visitor's first interaction (scroll, tap, key, mouse move) or 6 seconds after
-page load, whichever comes first. Loading them up front blocks the main
-thread during PageSpeed's mobile test (Total Blocking Time) and triggers
-third-party-cookie and console warnings in Best Practices. Visitors who leave within 6 seconds without touching the page are
-not counted.
+visitor's first interaction (scroll, tap, key press, or mouse move). Loading
+them up front blocks the main thread during PageSpeed's mobile test (Total
+Blocking Time) and triggers third-party-cookie and console warnings in Best
+Practices. Visitors who leave without interacting with the page are not
+counted in analytics and never see the chat widget.

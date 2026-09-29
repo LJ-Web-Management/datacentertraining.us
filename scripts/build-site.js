@@ -1108,7 +1108,7 @@ function writeLlms(d, courses, updated) {
 // ---------------------------------------------------------------------------
 
 const THIRD_PARTY = `<script>
-/* Analytics and chat load on first interaction (or 6 s after load) so they never delay rendering. */
+/* Analytics and chat load on the first interaction (scroll, tap, key, mouse move) so they never delay rendering. */
 (function(w,d){
   w.dataLayer=w.dataLayer||[];w.gtag=function(){w.dataLayer.push(arguments);};w.gtag('js',new Date());w.gtag('config','G-Z3T42KYK64');
   w.clarity=w.clarity||function(){(w.clarity.q=w.clarity.q||[]).push(arguments);};
@@ -1122,7 +1122,6 @@ const THIRD_PARTY = `<script>
     w.Tawk_LoadStart=new Date();add('https://embed.tawk.to/6a5a95a2096ab21d402a762c/1jtoth11r',{charset:'UTF-8',crossorigin:'*'});
   }
   ev.forEach(function(e){w.addEventListener(e,go,{passive:true});});
-  w.addEventListener('load',function(){setTimeout(go,6000);});
 })(window,document);
 if(navigator.modelContext){var m=document.createElement('script');m.src='/js/webmcp.js';m.defer=true;document.head.appendChild(m);}
 </script>`;
