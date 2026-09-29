@@ -148,5 +148,15 @@
     "date": "2026-09-28",
     "dateDisplay": "September 28, 2026",
     "excerpt": "When a data center's power bill rises, the first explanation is often that the IT load grew. That explanation may be right, but it can also hide a cooling…"
+  },
+  {
+    "title": "Emergency Power Off (EPO) Drill Readiness: What Data Center Operations Teams Should Verify Before Testing",
+    "slug": "emergency-power-off-epo-drill-readiness-what-data-center-operations-teams-should-verify-before-testing",
+    "seoTitle": "Emergency Power Off (EPO) Drill Readiness",
+    "description": "An Emergency Power Off (EPO) circuit is intended for a serious emergency, but a data center team still has to prove that the response is understood…",
+    "image": "assets/img/posts/emergency-power-off-epo-drill-readiness-what-data-center-operations-teams-should-verify-before-testing.jpg",
+    "date": "2026-09-29",
+    "dateDisplay": "September 29, 2026",
+    "excerpt": "An Emergency Power Off (EPO) circuit is intended for a serious emergency, but a data center team still has to prove that the response is understood…"
   }
 ]
