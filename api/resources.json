@@ -2,7 +2,7 @@
   "publisher": "Data Center Training (datacentertraining.us)",
   "last_updated": "2026-09-29",
   "license": "Public information; quote with attribution and a link to the source URL.",
-  "count": 27,
+  "count": 28,
   "resources": [
     {
       "source": "Data Center Training (first party)",
@@ -163,6 +163,16 @@
       "audience": [
         "hvac"
       ]
+    },
+    {
+      "type": "blog_post",
+      "title": "Emergency Power Off (EPO) Drill Readiness: What Data Center Operations Teams Should Verify Before Testing",
+      "url": "https://datacentertraining.us/blog/posts/emergency-power-off-epo-drill-readiness-what-data-center-operations-teams-should-verify-before-testing.html",
+      "description": "An Emergency Power Off (EPO) circuit is intended for a serious emergency, but a data center team still has to prove that the response is understood…",
+      "topics": [],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-09-29"
     },
     {
       "type": "blog_post",
