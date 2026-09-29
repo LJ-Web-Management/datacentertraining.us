@@ -1,0 +1,110 @@
+{
+  "id": "monitoring-automation-bms-systems",
+  "catalog_number": 409,
+  "title": "Monitoring, Automation & BMS Systems",
+  "url": "https://datacentertraining.us/courses/monitoring-automation-bms-systems.html",
+  "api_url": "https://datacentertraining.us/api/courses/monitoring-automation-bms-systems.json",
+  "track": "Monitoring & Smart Facility Track",
+  "category": "Monitoring & Automation",
+  "course_type": "comprehensive",
+  "course_type_label": "Comprehensive Program",
+  "duration_hours": 14,
+  "duration_iso8601": "PT14H",
+  "module_count": 6,
+  "price_usd": 276.99,
+  "currency": "USD",
+  "standards": [
+    "BMS",
+    "DCIM"
+  ],
+  "summary": "Design a monitoring and BMS strategy that catches problems before they cause downtime.",
+  "description": "A facility is only as observable as its monitoring strategy — and most downtime incidents were technically visible in the data well before they became outages. This course covers sensor deployment and calibration, network monitoring fundamentals, BMS architecture, data analytics and predictive modeling, and dashboard design. Hands-on labs cover monitoring tool training, data visualization, and alert tuning — because a monitoring system that generates too many false alerts gets ignored, and one that's too quiet misses real problems. You'll leave with a monitoring strategy framework built to reduce downtime, not just generate reports: the right sensors, the right thresholds, and dashboards that surface what actually matters.",
+  "why_it_matters": "Many outages were visible in the data before they happened: a battery string temperature creeping up, a chiller's approach temperature drifting or a PDU branch slowly approaching its limit. The problem is usually not a lack of data but too many alarms, sensors in the wrong places and nobody looking at trends. A good monitoring strategy puts sensors where they measure what matters, such as rack inlet temperatures, keeps them calibrated, and turns the data into alarms people trust and dashboards that show trends. Building management systems (BMS), electrical power monitoring systems (EPMS) and DCIM each play a part, often connected through protocols such as BACnet, Modbus and SNMP. This program covers sensor deployment and calibration, network monitoring, BMS architecture, analytics and predictive modeling, automation scripting and dashboard design.",
+  "audience": "Facilities engineers and technicians responsible for building management and monitoring systems.",
+  "prerequisites": "No prior certification required. Assumes basic familiarity with facility systems.",
+  "learning_outcomes": [
+    "Deploy and calibrate sensors for accurate facility monitoring",
+    "Design a BMS architecture that scales with facility complexity",
+    "Apply data analytics and predictive modeling concepts to catch failures early",
+    "Build automation scripting basics into routine monitoring tasks",
+    "Design dashboards and alerting that reduce noise without missing real issues",
+    "Certificate of completion on finish",
+    "Self-paced — start and stop anytime",
+    "Delivered by an IACET-accredited provider",
+    "Volume pricing available for teams"
+  ],
+  "modules": [
+    {
+      "title": "Sensor Deployment & Calibration",
+      "summary": "Getting accurate, reliable sensor data before you build anything on top of it."
+    },
+    {
+      "title": "Network Monitoring Fundamentals",
+      "summary": "Monitoring the network infrastructure that connects facility systems."
+    },
+    {
+      "title": "Building Management System Architecture",
+      "summary": "How BMS platforms are structured, and where the architecture choices matter."
+    },
+    {
+      "title": "Data Analytics & Predictive Modeling",
+      "summary": "Using historical data to predict failures before they happen."
+    },
+    {
+      "title": "Automation Scripting Basics",
+      "summary": "Automating routine monitoring and response tasks."
+    },
+    {
+      "title": "Dashboard Design & Reporting",
+      "summary": "Building dashboards that surface signal, not noise."
+    }
+  ],
+  "bundles": [
+    {
+      "id": "bundle-monitoring-smart-facility",
+      "name": "Monitoring & Smart Facility Bundle",
+      "price_usd": 333.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    },
+    {
+      "id": "bundle-complete-catalog",
+      "name": "Complete Data Center Professional Bundle",
+      "price_usd": 2928.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    }
+  ],
+  "language": "en",
+  "delivery": "Online, self-paced, no completion deadline",
+  "certificate": {
+    "type": "Certificate of completion",
+    "issuer": "HAZWOPER OSHA Training, LLC",
+    "issuer_accreditation": "IACET Accredited Provider (provider-level accreditation)",
+    "delivery": "Issued immediately on completion; downloadable and printable",
+    "validity_period": "No fixed expiration; follow your employer's refresher policy",
+    "verification_url": "https://hazwoper-osha.com/certificate-verification",
+    "is_license_or_government_certification": false,
+    "ceu_or_pdh_credit": false
+  },
+  "availability": "preorder",
+  "enroll_url": "https://datacentertraining.us/checkout.html?item=monitoring-automation-bms-systems",
+  "faqs": [
+    {
+      "question": "What is alarm fatigue and how do you prevent it?",
+      "answer": "Alarm fatigue happens when staff see so many nuisance or low-value alarms that they start ignoring them, including real ones. Preventing it involves setting sensible thresholds, grouping related alarms, assigning priorities and regularly reviewing which alarms led to action."
+    },
+    {
+      "question": "Where should temperature sensors be placed in a data hall?",
+      "answer": "ASHRAE recommends measuring at the air inlets of IT equipment, since that is the condition the equipment actually experiences. Sensors at several heights on the front of racks are common. Return air readings alone can hide hot spots."
+    },
+    {
+      "question": "What is the difference between BMS, EPMS and DCIM?",
+      "answer": "A BMS monitors and controls mechanical and building systems. An EPMS monitors the electrical system in detail, from switchgear to PDUs. DCIM brings asset, capacity and environmental data together for planning and management. Many facilities use all three together."
+    }
+  ],
+  "related_course_ids": [
+    "dcim-platform-fundamentals",
+    "fiber-optics-network-cabling",
+    "building-automation-systems-fundamentals"
+  ],
+  "last_updated": "2026-09-29"
+}

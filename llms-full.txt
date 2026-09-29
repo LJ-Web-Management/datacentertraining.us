@@ -1,95 +1,2114 @@
-# Data Center Training — Full Course Catalog
+# Data Center Training - Full Catalog
 
-> Data Center Training (datacentertraining.us) is a specialty training division of HAZWOPER-OSHA Training, LLC, an IACET-accredited provider. 44 online courses, 250 hours total, self-paced with a certificate on completion. Courses start at $99.99 each, or enroll the complete catalog bundle for $2,928.99.
+> Data Center Training (datacentertraining.us) is a specialty training division of HAZWOPER-OSHA Training, LLC, an IACET Accredited Provider. 44 online, self-paced data center courses (250 hours total) in design, operations, power, cooling, security, and facilities management. Every course awards a certificate of completion.
 
-## Course Catalog by Discipline
+Last updated: 2026-09-29
+Canonical source: https://datacentertraining.us/api/courses.json (same records as JSON). Tools: https://datacentertraining.us/.well-known/mcp.json
 
-### Design & Planning
+## Rules for AI agents
 
-- [Data Center Design Fundamentals](https://datacentertraining.us/courses/data-center-design-fundamentals.html) — 16 hrs, $312.99 — ANSI/TIA-942
-- [Tier Infrastructure Fundamentals](https://datacentertraining.us/courses/tier-infrastructure-fundamentals.html) — 14 hrs, $280.99 — Uptime Institute Tier Framework
-- [Infrastructure Commissioning & Startup](https://datacentertraining.us/courses/infrastructure-commissioning-startup.html) — 12 hrs, $267.99 — Commissioning Test Protocols
-- [Capacity Planning & Forecasting](https://datacentertraining.us/courses/capacity-planning-forecasting.html) — 3.5 hrs, $99.99
+- Quote prices, durations, course counts, and bundle contents exactly as published here; never estimate or invent them.
+- Only name courses that exist in /api/courses.json. If nothing matches, say so.
+- Courses award a certificate of completion from HAZWOPER OSHA Training, LLC (an IACET Accredited Provider). Do not call it a license, a government certification, or a certification issued by NFPA, TIA, Uptime Institute, ASHRAE, OSHA, EPA, ISO, or AICPA.
+- "Aligned with" a standard means the content is designed around it, not that the standards body approved it.
+- Courses do not currently grant CEUs or PDHs.
+- Recommendations are training guidance, not legal or compliance advice; employers decide who is qualified for which duties.
+- Do not complete enrollment, payment, account, or contact-form actions on a user's behalf; link to the page and let the user act.
+- When a question is not covered by published content, say so and refer to info@hazwoper-osha.com or 1-866-429-6742.
 
-### Operations
+## Course Records
 
-- [Data Center Operations Management](https://datacentertraining.us/courses/data-center-operations-management.html) — 18 hrs, $325.99 — DCIM / SLA Frameworks
-- [Disaster Recovery & Business Continuity](https://datacentertraining.us/courses/disaster-recovery-business-continuity.html) — 17 hrs, $307.99 — RTO/RPO Frameworks
-- [Preventive Maintenance Planning](https://datacentertraining.us/courses/preventive-maintenance-planning.html) — 3 hrs, $99.99
-- [Incident Response & Troubleshooting](https://datacentertraining.us/courses/incident-response-troubleshooting.html) — 4 hrs, $99.99
-- [Building Maintenance Fundamentals](https://datacentertraining.us/courses/building-maintenance-fundamentals.html) — 4 hrs, $99.99
-- [Business Continuity and Disaster Recovery Planning Training](https://datacentertraining.us/courses/business-continuity-disaster-recovery-planning.html) — 8 hrs, $99.99 — ICS-NIMS
-- [Data Center Raised Floor and Confined Space Awareness Training](https://datacentertraining.us/courses/data-center-raised-floor-confined-space.html) — 1 hr, $99.99 — OSHA 1910.146
-- [Facility Management Fundamentals](https://datacentertraining.us/courses/facility-management-fundamentals.html) — 4 hrs, $99.99
-- [Roofing Systems Maintenance Fundamentals](https://datacentertraining.us/courses/roofing-systems-maintenance-fundamentals.html) — 2 hrs, $99.99
-- [Server Room Ergonomics and Manual Handling Training](https://datacentertraining.us/courses/server-room-ergonomics-manual-handling.html) — 1 hr, $99.99
+Each record below is stable: the id never changes, and every field matches the course page.
 
-### Security & Compliance
+## Power & Electrical Systems Track
 
-- [Security & Compliance for Data Centers](https://datacentertraining.us/courses/security-compliance-data-centers.html) — 16 hrs, $291.99 — SOC 2 / ISO 27001
-- [Facility Environmental Compliance](https://datacentertraining.us/courses/facility-environmental-compliance.html) — 3 hrs, $99.99
-- [Access Control & Physical Security](https://datacentertraining.us/courses/access-control-physical-security.html) — 3.5 hrs, $99.99
-- [Data Center Fire Suppression System Safety Training (Clean Agent Systems)](https://datacentertraining.us/courses/data-center-fire-suppression-safety.html) — 2 hrs, $99.99 — NFPA 2001
-- [Data Center Physical Security and Access Control Training](https://datacentertraining.us/courses/data-center-physical-security-access-control.html) — 1 hr, $99.99
+### Power Systems & Electrical Fundamentals
 
-### Power & Electrical
+- id: power-systems-electrical-fundamentals
+- catalog_number: 405
+- url: https://datacentertraining.us/courses/power-systems-electrical-fundamentals.html
+- api_url: https://datacentertraining.us/api/courses/power-systems-electrical-fundamentals.json
+- track: Power & Electrical Systems Track
+- category: Power & Electrical
+- course_type: Comprehensive Program
+- duration_hours: 18
+- modules: 6
+- price_usd: 303.99
+- standards_aligned: NFPA 70E
+- bundles: Power & Electrical Systems Bundle ($986.99); Complete Data Center Professional Bundle ($2928.99)
+- audience: Electricians, power engineers, and facilities technicians who work on or specify critical power systems.
+- prerequisites: No prior certification required. Assumes basic familiarity with facility systems.
+- language: English
+- delivery: Online, self-paced, no completion deadline
+- certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
+- availability: reserve seats by phone or email while online checkout finishes launch prep
+- summary: Master data center electrical infrastructure — from utility interconnection to UPS and PDU architecture.
 
-- [Power Systems & Electrical Fundamentals](https://datacentertraining.us/courses/power-systems-electrical-fundamentals.html) — 18 hrs, $303.99 — NFPA 70E
-- [UPS Operations & Load Testing](https://datacentertraining.us/courses/ups-operations-load-testing.html) — 4 hrs, $99.99
-- [Generator Operations & Maintenance](https://datacentertraining.us/courses/generator-operations-maintenance.html) — 3.5 hrs, $99.99
-- [Electrical Safety & Best Practices](https://datacentertraining.us/courses/electrical-safety-best-practices.html) — 3 hrs, $99.99 — NFPA 70E
-- [Batteries and DC Circuits](https://datacentertraining.us/courses/batteries-dc-circuits.html) — 2 hrs, $99.99
-- [Data Center Arc Flash Safety Training](https://datacentertraining.us/courses/data-center-arc-flash-safety.html) — 2 hrs, $99.99 — NFPA 70E
-- [Data Center Electrical Safety Training](https://datacentertraining.us/courses/data-center-electrical-safety.html) — 2 hrs, $99.99
-- [Data Center Emergency Power Off (EPO) Procedures Training](https://datacentertraining.us/courses/data-center-epo-procedures.html) — 1 hr, $99.99
-- [Data Center UPS and Battery System Safety Training](https://datacentertraining.us/courses/data-center-ups-battery-safety.html) — 2 hrs, $99.99
-- [Emergency/Standby Power Systems Fundamentals](https://datacentertraining.us/courses/emergency-standby-power-systems-fundamentals.html) — 4 hrs, $99.99
-- [Generator Fundamentals](https://datacentertraining.us/courses/generator-fundamentals.html) — 4 hrs, $99.99
-- [Lithium-Ion Battery Thermal Runaway and Emergency Response Training](https://datacentertraining.us/courses/lithium-ion-thermal-runaway-emergency-response.html) — 4 hrs, $99.99
-- [OSHA Electrical Safety-Related Work Practices for Data Center Technicians](https://datacentertraining.us/courses/osha-electrical-safety-data-center-technicians.html) — 2 hrs, $99.99 — NFPA 70E
-- [Power Distribution Systems Fundamentals](https://datacentertraining.us/courses/power-distribution-systems-fundamentals.html) — 4 hrs, $99.99
-- [UPS Systems Fundamentals](https://datacentertraining.us/courses/ups-systems-fundamentals.html) — 2 hrs, $99.99
+Power failures are the fastest way to take a data center offline, which is why electrical infrastructure gets more redundancy scrutiny than almost any other system. This course covers the full power chain: utility interconnection, switchgear and transformers, UPS systems (topologies, battery management, maintenance), PDU architecture, and redundancy strategy. Electrical safety and maintenance best practices run through every module — this isn't just architecture theory, it's paired with equipment evaluation frameworks, troubleshooting methodologies, and maintenance scheduling you can apply on the floor. You'll finish with a working understanding of electrical architecture trade-offs, so you can evaluate vendor proposals, troubleshoot power issues faster, and optimize your facility's power chain for both reliability and efficiency.
 
-### Cooling & Efficiency
+Learning outcomes:
+- Map a facility's full power chain from utility interconnection to the rack
+- Compare UPS topologies and battery management approaches for a given load profile
+- Apply PDU architecture and monitoring concepts to improve power visibility
+- Evaluate redundancy strategies (N+1, 2N) against real electrical constraints
+- Apply electrical safety and maintenance best practices to reduce failure risk
+- Certificate of completion on finish
+- Self-paced — start and stop anytime
+- Delivered by an IACET-accredited provider
+- Volume pricing available for teams
 
-- [Cooling Systems Design & Optimization](https://datacentertraining.us/courses/cooling-systems-design-optimization.html) — 16 hrs, $298.99 — PUE / ASHRAE Thermal Guidelines
-- [HVAC Systems Troubleshooting Essentials](https://datacentertraining.us/courses/hvac-troubleshooting-essentials.html) — 4 hrs, $99.99
-- [Energy Efficiency & PUE Optimization](https://datacentertraining.us/courses/energy-efficiency-pue-optimization.html) — 3 hrs, $99.99 — PUE
-- [Mechanical Systems & Equipment Maintenance](https://datacentertraining.us/courses/mechanical-systems-maintenance.html) — 4 hrs, $99.99
-- [Building Envelope Fundamentals](https://datacentertraining.us/courses/building-envelope-fundamentals.html) — 2 hrs, $99.99
-- [Data Center Cooling System and Refrigerant Safety Training](https://datacentertraining.us/courses/data-center-cooling-refrigerant-safety.html) — 2 hrs, $99.99 — EPA/OSHA
+Modules:
+1. Utility Interconnection & Distribution: How utility power enters the facility and gets distributed to critical loads.
+2. Transformers & Switchgear: The equipment that steps down and routes power before it reaches UPS systems.
+3. UPS Systems Design & Operation: Topologies, battery chemistries, and maintenance schedules that keep UPS systems reliable.
+4. PDU Architecture & Monitoring: Getting rack-level power visibility without over-instrumenting.
+5. Redundancy Strategies: N+1 and 2N power redundancy, and where each makes sense.
+6. Electrical Safety & Maintenance Best Practices: NFPA 70E-aligned safety practices for working on or near critical power systems.
 
-### Monitoring & Automation
+### UPS Operations & Load Testing
 
-- [Monitoring, Automation & BMS Systems](https://datacentertraining.us/courses/monitoring-automation-bms-systems.html) — 14 hrs, $276.99 — BMS / DCIM
-- [Fiber Optics & Network Cabling](https://datacentertraining.us/courses/fiber-optics-network-cabling.html) — 3.5 hrs, $99.99 — ANSI/TIA-942
-- [DCIM Platform Fundamentals](https://datacentertraining.us/courses/dcim-platform-fundamentals.html) — 5 hrs, $99.99 — DCIM
-- [Building Automation Systems (BAS) Fundamentals](https://datacentertraining.us/courses/building-automation-systems-fundamentals.html) — 6 hrs, $99.99 — BMS/BAS
+- id: ups-operations-load-testing
+- catalog_number: 422
+- url: https://datacentertraining.us/courses/ups-operations-load-testing.html
+- api_url: https://datacentertraining.us/api/courses/ups-operations-load-testing.json
+- track: Power & Electrical Systems Track
+- category: Power & Electrical
+- course_type: Modular Specialization
+- duration_hours: 4
+- modules: 4
+- price_usd: 99.99
+- standards_aligned: none named
+- bundles: Power & Electrical Systems Bundle ($986.99); Complete Data Center Professional Bundle ($2928.99)
+- audience: Power technicians responsible for UPS operation and maintenance.
+- prerequisites: No prior certification required. Relevant equipment exposure is helpful.
+- language: English
+- delivery: Online, self-paced, no completion deadline
+- certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
+- availability: reserve seats by phone or email while online checkout finishes launch prep
+- summary: Master UPS operations, battery testing, and load-bank procedures.
+
+Focused, practical training on UPS systems: types and topologies, battery backup operation and testing, load transfer switching, and preventive maintenance. The course culminates in load-bank testing protocols — the procedure that actually proves a UPS will perform when it's needed. You'll leave with a maintenance schedule and testing routine you can run independently, plus emergency procedures for when a UPS doesn't perform as expected.
+
+Learning outcomes:
+- Compare UPS types and topologies for a given load profile
+- Test and maintain UPS batteries on a defined schedule
+- Execute safe load transfer switching procedures
+- Run load-bank tests and interpret the results correctly
+- Certificate of completion on finish
+- Self-paced — start and stop anytime
+- Delivered by an IACET-accredited provider
+- Volume pricing available for teams
+
+Modules:
+1. UPS Types & Topologies: Online, line-interactive, and standby UPS — how to pick the right one.
+2. Battery Management & Testing: Testing schedules that catch battery degradation before failure.
+3. Load Transfer Procedures: Switching load safely without an unplanned interruption.
+4. Load-Bank Testing & Maintenance Lab: Proving UPS capacity under real load, hands-on.
+
+### Generator Operations & Maintenance
+
+- id: generator-operations-maintenance
+- catalog_number: 424
+- url: https://datacentertraining.us/courses/generator-operations-maintenance.html
+- api_url: https://datacentertraining.us/api/courses/generator-operations-maintenance.json
+- track: Power & Electrical Systems Track
+- category: Power & Electrical
+- course_type: Modular Specialization
+- duration_hours: 3.5
+- modules: 4
+- price_usd: 99.99
+- standards_aligned: none named
+- bundles: Power & Electrical Systems Bundle ($986.99); Complete Data Center Professional Bundle ($2928.99)
+- audience: Facilities technicians responsible for backup power systems.
+- prerequisites: No prior certification required. Relevant equipment exposure is helpful.
+- language: English
+- delivery: Online, self-paced, no completion deadline
+- certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
+- availability: reserve seats by phone or email while online checkout finishes launch prep
+- summary: Size, test, and maintain backup generators with confidence.
+
+Specialized training on diesel generators: sizing calculations, load-bank testing protocols, fuel management, and cold-start procedures. This is the last line of defense when utility and UPS power both fail, and this course makes sure you're ready to run it correctly under pressure. You'll cover maintenance intervals and emergency operation procedures, and finish able to conduct generator exercises and pass load-bank tests independently.
+
+Learning outcomes:
+- Calculate generator sizing requirements for a given critical load
+- Run load-bank testing protocols and interpret results
+- Manage fuel systems and maintenance intervals correctly
+- Execute cold-start and emergency operation procedures confidently
+- Certificate of completion on finish
+- Self-paced — start and stop anytime
+- Delivered by an IACET-accredited provider
+- Volume pricing available for teams
+
+Modules:
+1. Generator Sizing & Specifications: Sizing a generator correctly for the critical load it needs to carry.
+2. Load-Bank Testing Procedures: Proving generator capacity under real load conditions.
+3. Fuel Management & Maintenance: Fuel quality, storage, and maintenance intervals that prevent startup failures.
+4. Emergency Startup Protocols: Cold-start procedures for when it matters most.
+
+### Electrical Safety & Best Practices
+
+- id: electrical-safety-best-practices
+- catalog_number: 433
+- url: https://datacentertraining.us/courses/electrical-safety-best-practices.html
+- api_url: https://datacentertraining.us/api/courses/electrical-safety-best-practices.json
+- track: Power & Electrical Systems Track
+- category: Power & Electrical
+- course_type: Modular Specialization
+- duration_hours: 3
+- modules: 4
+- price_usd: 99.99
+- standards_aligned: NFPA 70E
+- bundles: Power & Electrical Systems Bundle ($986.99); Complete Data Center Professional Bundle ($2928.99)
+- audience: Electrical workers and facilities staff working near energized equipment.
+- prerequisites: No prior certification required. Relevant equipment exposure is helpful.
+- language: English
+- delivery: Online, self-paced, no completion deadline
+- certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
+- availability: reserve seats by phone or email while online checkout finishes launch prep
+- summary: NFPA 70E-aligned electrical safety fundamentals for facility staff.
+
+Safety fundamentals for electrical workers: NFPA 70E principles, personal protective equipment, and hazard identification. This course covers the core safety knowledge every facility employee working near electrical systems should have. You'll cover lockout/tagout concepts and emergency response procedures, finishing with a solid understanding of electrical workplace safety fundamentals.
+
+Learning outcomes:
+- Apply core NFPA 70E electrical safety principles on the job
+- Select and use appropriate PPE for electrical work
+- Recognize common electrical hazards before they cause injury
+- Follow lockout/tagout and emergency response procedures correctly
+- Certificate of completion on finish
+- Self-paced — start and stop anytime
+- Delivered by an IACET-accredited provider
+- Volume pricing available for teams
+
+Modules:
+1. Electrical Safety Standards: Core NFPA 70E principles every technician should know.
+2. PPE & Equipment: Selecting and using PPE correctly for the hazard level.
+3. Hazard Recognition: Recognizing electrical hazards before they become incidents.
+4. Emergency Procedures: Emergency response when something goes wrong near energized equipment.
+
+### Batteries and DC Circuits
+
+- id: batteries-dc-circuits
+- catalog_number: 441
+- url: https://datacentertraining.us/courses/batteries-dc-circuits.html
+- api_url: https://datacentertraining.us/api/courses/batteries-dc-circuits.json
+- track: Power & Electrical Systems Track
+- category: Power & Electrical
+- course_type: Modular Specialization
+- duration_hours: 2
+- modules: 4
+- price_usd: 99.99
+- standards_aligned: none named
+- bundles: Power & Electrical Systems Bundle ($986.99); Complete Data Center Professional Bundle ($2928.99)
+- audience: Electricians and power technicians who need core DC theory before working on UPS or battery systems.
+- prerequisites: No prior certification required. Relevant equipment exposure is helpful.
+- language: English
+- delivery: Online, self-paced, no completion deadline
+- certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
+- availability: reserve seats by phone or email while online checkout finishes launch prep
+- summary: Master DC circuit fundamentals and battery behavior behind every backup power system.
+
+Every UPS and standby power system in a data center runs on DC fundamentals underneath the AC-facing interface. This course covers DC circuit theory, battery chemistry basics, and the electrical fundamentals that explain why batteries behave the way they do under load. It's the theory layer that makes hands-on UPS and battery training click faster — not just procedure memorization, but the reasoning behind it.
+
+Learning outcomes:
+- Apply Ohm's law and DC circuit analysis to real battery system troubleshooting
+- Understand battery chemistry basics (lead-acid, lithium-ion) and how they affect performance
+- Read DC circuit diagrams for backup power systems
+- Diagnose common DC circuit issues before they cause a power event
+- Certificate of completion on finish
+- Self-paced — start and stop anytime
+- Delivered by an IACET-accredited provider
+- Volume pricing available for teams
+
+Modules:
+1. DC Circuit Fundamentals: Voltage, current, and resistance in the DC circuits behind every battery system.
+2. Battery Chemistry Basics: How lead-acid and lithium-ion batteries actually store and deliver power.
+3. Reading DC Circuit Diagrams: Interpreting schematics for backup power and battery systems.
+4. Troubleshooting DC Circuits: Diagnosing common DC circuit faults before they escalate.
+
+### Data Center Arc Flash Safety Training
+
+- id: data-center-arc-flash-safety
+- catalog_number: 446
+- url: https://datacentertraining.us/courses/data-center-arc-flash-safety.html
+- api_url: https://datacentertraining.us/api/courses/data-center-arc-flash-safety.json
+- track: Power & Electrical Systems Track
+- category: Power & Electrical
+- course_type: Modular Specialization
+- duration_hours: 2
+- modules: 4
+- price_usd: 99.99
+- standards_aligned: NFPA 70E
+- bundles: Power & Electrical Systems Bundle ($986.99); Complete Data Center Professional Bundle ($2928.99)
+- audience: Electricians and technicians working near energized data center power equipment.
+- prerequisites: No prior certification required. Relevant equipment exposure is helpful.
+- language: English
+- delivery: Online, self-paced, no completion deadline
+- certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
+- availability: reserve seats by phone or email while online checkout finishes launch prep
+- summary: NFPA 70E arc flash safety specific to data center switchgear and power distribution.
+
+Arc flash incidents in a data center happen around high-density switchgear and UPS systems, where the energy involved is often higher than in a typical commercial building. This course covers NFPA 70E arc flash boundaries, PPE selection, and safe work practices specific to data center electrical equipment. You'll leave able to recognize the equipment and conditions that raise arc flash risk on a data center floor specifically, not just general workplace electrical hazards.
+
+Learning outcomes:
+- Identify arc flash hazard boundaries around data center switchgear and UPS systems
+- Select appropriate PPE for data center-specific arc flash risk levels
+- Apply safe work practices around energized power distribution equipment
+- Recognize the equipment and conditions that raise data center arc flash risk
+- Certificate of completion on finish
+- Self-paced — start and stop anytime
+- Delivered by an IACET-accredited provider
+- Volume pricing available for teams
+
+Modules:
+1. Arc Flash Fundamentals: What actually happens in an arc flash event, and why data centers carry elevated risk.
+2. Hazard Boundaries & PPE: Selecting PPE correctly for data center-specific energy levels.
+3. Safe Work Practices: Working near energized switchgear and UPS systems safely.
+4. Data Center Equipment Risk Factors: The specific equipment and conditions that raise arc flash risk on the floor.
+
+### Data Center Electrical Safety Training
+
+- id: data-center-electrical-safety
+- catalog_number: 448
+- url: https://datacentertraining.us/courses/data-center-electrical-safety.html
+- api_url: https://datacentertraining.us/api/courses/data-center-electrical-safety.json
+- track: Power & Electrical Systems Track
+- category: Power & Electrical
+- course_type: Modular Specialization
+- duration_hours: 2
+- modules: 4
+- price_usd: 99.99
+- standards_aligned: none named
+- bundles: Power & Electrical Systems Bundle ($986.99); Complete Data Center Professional Bundle ($2928.99)
+- audience: Electricians, facilities technicians, and IT staff working near energized equipment.
+- prerequisites: No prior certification required. Relevant equipment exposure is helpful.
+- language: English
+- delivery: Online, self-paced, no completion deadline
+- certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
+- availability: reserve seats by phone or email while online checkout finishes launch prep
+- summary: Foundational electrical safety practices for anyone working around data center power systems.
+
+A foundational safety course for anyone who works around data center electrical systems, whether or not electrical work is their primary job. Covers core electrical hazard recognition, safe work distances, and the basic precautions that prevent the majority of electrical incidents. This is the course every new hire with floor access should take before anything more specialized — it establishes the baseline awareness the rest of the electrical curriculum builds on.
+
+Learning outcomes:
+- Recognize common electrical hazards in a data center environment
+- Maintain safe work distances around energized equipment
+- Apply basic lockout/tagout awareness
+- Know when to escalate to a qualified electrician
+- Certificate of completion on finish
+- Self-paced — start and stop anytime
+- Delivered by an IACET-accredited provider
+- Volume pricing available for teams
+
+Modules:
+1. Electrical Hazard Recognition: The hazards most likely to appear on a data center floor.
+2. Safe Work Distances: Maintaining safe clearance around energized equipment.
+3. Lockout/Tagout Awareness: What every employee should know, even if they're not doing the lockout.
+4. Escalation Procedures: Knowing when a job needs a qualified electrician.
+
+### Data Center Emergency Power Off (EPO) Procedures Training
+
+- id: data-center-epo-procedures
+- catalog_number: 449
+- url: https://datacentertraining.us/courses/data-center-epo-procedures.html
+- api_url: https://datacentertraining.us/api/courses/data-center-epo-procedures.json
+- track: Power & Electrical Systems Track
+- category: Power & Electrical
+- course_type: Modular Specialization
+- duration_hours: 1
+- modules: 4
+- price_usd: 99.99
+- standards_aligned: none named
+- bundles: Power & Electrical Systems Bundle ($986.99); Complete Data Center Professional Bundle ($2928.99)
+- audience: Facilities and operations staff who may need to activate or reset an EPO system.
+- prerequisites: No prior certification required. Relevant equipment exposure is helpful.
+- language: English
+- delivery: Online, self-paced, no completion deadline
+- certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
+- availability: reserve seats by phone or email while online checkout finishes launch prep
+- summary: Safe activation and reset procedures for data center Emergency Power Off systems.
+
+An EPO button is one of the most consequential controls on a data center floor — activating it correctly, and understanding what happens after, is essential knowledge for anyone with floor access. This course covers safe activation criteria, coordination with fire/life safety systems, and reset procedures. You'll leave understanding not just how to press the button, but when it's actually the right call, and how to bring systems back safely afterward.
+
+Learning outcomes:
+- Know the correct criteria for activating an Emergency Power Off system
+- Understand how EPO systems coordinate with fire and life safety systems
+- Follow correct reset procedures after an EPO event
+- Avoid the common mistakes that turn a minor incident into a full outage
+- Certificate of completion on finish
+- Self-paced — start and stop anytime
+- Delivered by an IACET-accredited provider
+- Volume pricing available for teams
+
+Modules:
+1. EPO System Overview: How EPO systems are wired into facility power and fire/life safety.
+2. Activation Criteria: When an EPO activation is actually the right call.
+3. Fire/Life Safety Coordination: How EPO events interact with fire suppression and alarm systems.
+4. Reset Procedures: Bringing systems back safely after an EPO event.
+
+### Data Center UPS and Battery System Safety Training
+
+- id: data-center-ups-battery-safety
+- catalog_number: 453
+- url: https://datacentertraining.us/courses/data-center-ups-battery-safety.html
+- api_url: https://datacentertraining.us/api/courses/data-center-ups-battery-safety.json
+- track: Power & Electrical Systems Track
+- category: Power & Electrical
+- course_type: Modular Specialization
+- duration_hours: 2
+- modules: 4
+- price_usd: 99.99
+- standards_aligned: none named
+- bundles: Power & Electrical Systems Bundle ($986.99); Complete Data Center Professional Bundle ($2928.99)
+- audience: Electricians and facilities technicians working near UPS and battery installations.
+- prerequisites: No prior certification required. Relevant equipment exposure is helpful.
+- language: English
+- delivery: Online, self-paced, no completion deadline
+- certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
+- availability: reserve seats by phone or email while online checkout finishes launch prep
+- summary: Safety-focused training for anyone working around data center UPS and battery systems.
+
+UPS and battery rooms carry hazards beyond standard electrical work: battery chemistry, off-gassing, and stored energy that remains even when a system is powered down. This course covers the safety practices specific to working around UPS and battery installations. You'll leave understanding the PPE and ventilation requirements that go beyond standard electrical safety, and how to respond if something goes wrong.
+
+Learning outcomes:
+- Recognize battery-specific hazards including off-gassing and stored energy
+- Apply safe work practices around UPS and battery installations
+- Follow correct PPE and ventilation requirements for battery rooms
+- Respond correctly to a battery-related safety incident
+- Certificate of completion on finish
+- Self-paced — start and stop anytime
+- Delivered by an IACET-accredited provider
+- Volume pricing available for teams
+
+Modules:
+1. UPS & Battery Room Hazards: Off-gassing, stored energy, and other battery-specific risks.
+2. Safe Work Practices: Working around UPS and battery installations safely.
+3. PPE & Ventilation Requirements: What battery rooms require beyond standard electrical PPE.
+4. Incident Response: Responding correctly to a battery-related safety event.
+
+### Emergency/Standby Power Systems Fundamentals
+
+- id: emergency-standby-power-systems-fundamentals
+- catalog_number: 454
+- url: https://datacentertraining.us/courses/emergency-standby-power-systems-fundamentals.html
+- api_url: https://datacentertraining.us/api/courses/emergency-standby-power-systems-fundamentals.json
+- track: Power & Electrical Systems Track
+- category: Power & Electrical
+- course_type: Modular Specialization
+- duration_hours: 4
+- modules: 4
+- price_usd: 99.99
+- standards_aligned: none named
+- bundles: Power & Electrical Systems Bundle ($986.99); Complete Data Center Professional Bundle ($2928.99)
+- audience: Facilities technicians responsible for standby and emergency power systems.
+- prerequisites: No prior certification required. Relevant equipment exposure is helpful.
+- language: English
+- delivery: Online, self-paced, no completion deadline
+- certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
+- availability: reserve seats by phone or email while online checkout finishes launch prep
+- summary: Understand the standby power systems that carry a facility through a utility outage.
+
+Standby power systems — generators, transfer switches, and the sequencing logic between them — are what actually carries a facility through a utility outage. This course covers standby power system fundamentals: automatic transfer switches, sequencing, and the maintenance that keeps them ready. You'll leave able to explain the failure points most likely to prevent a successful transfer, before they're tested by a real outage.
+
+Learning outcomes:
+- Understand how standby power systems sequence during a utility outage
+- Explain automatic transfer switch operation and testing
+- Apply maintenance practices that keep standby systems ready
+- Recognize the failure points most likely to prevent a successful transfer
+- Certificate of completion on finish
+- Self-paced — start and stop anytime
+- Delivered by an IACET-accredited provider
+- Volume pricing available for teams
+
+Modules:
+1. Standby Power System Overview: How generators and transfer switches work together during an outage.
+2. Automatic Transfer Switches: Operation, testing, and common failure points.
+3. Sequencing & Coordination: Making sure standby systems come online in the right order.
+4. Maintenance for Readiness: Keeping standby systems ready for the outage that hasn't happened yet.
+
+### Generator Fundamentals
+
+- id: generator-fundamentals
+- catalog_number: 456
+- url: https://datacentertraining.us/courses/generator-fundamentals.html
+- api_url: https://datacentertraining.us/api/courses/generator-fundamentals.json
+- track: Power & Electrical Systems Track
+- category: Power & Electrical
+- course_type: Modular Specialization
+- duration_hours: 4
+- modules: 4
+- price_usd: 99.99
+- standards_aligned: none named
+- bundles: Power & Electrical Systems Bundle ($986.99); Complete Data Center Professional Bundle ($2928.99)
+- audience: Facilities technicians who need generator theory before hands-on operations training.
+- prerequisites: No prior certification required. Relevant equipment exposure is helpful.
+- language: English
+- delivery: Online, self-paced, no completion deadline
+- certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
+- availability: reserve seats by phone or email while online checkout finishes launch prep
+- summary: Foundational generator theory to complement hands-on operations and load-bank training.
+
+This course covers the theory behind the diesel and gas generators used for standby power: engine and alternator basics, fuel systems, and control logic — the foundational knowledge that makes the hands-on Generator Operations & Maintenance course click faster. You'll leave able to read generator control panel alarms and understand what's actually happening inside the machine, not just which button to press.
+
+Learning outcomes:
+- Understand generator engine and alternator fundamentals
+- Explain fuel system components and common failure points
+- Read generator control panel logic and alarms
+- Connect generator theory to real-world load-bank testing procedures
+- Certificate of completion on finish
+- Self-paced — start and stop anytime
+- Delivered by an IACET-accredited provider
+- Volume pricing available for teams
+
+Modules:
+1. Engine & Alternator Basics: How a generator actually converts fuel into standby power.
+2. Fuel System Fundamentals: Fuel system components and where failures happen.
+3. Control Panel & Alarms: Reading generator control logic and alarm codes.
+4. From Theory to Load-Bank Testing: Connecting generator fundamentals to hands-on testing procedures.
+
+### Lithium-Ion Battery Thermal Runaway and Emergency Response Training
+
+- id: lithium-ion-thermal-runaway-emergency-response
+- catalog_number: 457
+- url: https://datacentertraining.us/courses/lithium-ion-thermal-runaway-emergency-response.html
+- api_url: https://datacentertraining.us/api/courses/lithium-ion-thermal-runaway-emergency-response.json
+- track: Power & Electrical Systems Track
+- category: Power & Electrical
+- course_type: Modular Specialization
+- duration_hours: 4
+- modules: 4
+- price_usd: 99.99
+- standards_aligned: none named
+- bundles: Power & Electrical Systems Bundle ($986.99); Complete Data Center Professional Bundle ($2928.99)
+- audience: Facilities and emergency response staff working near lithium-ion battery installations.
+- prerequisites: No prior certification required. Relevant equipment exposure is helpful.
+- language: English
+- delivery: Online, self-paced, no completion deadline
+- certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
+- availability: reserve seats by phone or email while online checkout finishes launch prep
+- summary: Recognize and respond to lithium-ion battery thermal runaway before it escalates.
+
+As data centers adopt lithium-ion UPS batteries, thermal runaway has become a distinct emergency scenario with its own warning signs and response protocol, different from traditional lead-acid battery incidents. This course covers thermal runaway recognition, containment, and emergency response specific to lithium-ion systems. You'll leave understanding why lithium-ion response differs from lead-acid procedures, and how to coordinate correctly with fire services on a lithium-ion-specific incident.
+
+Learning outcomes:
+- Recognize the early warning signs of lithium-ion battery thermal runaway
+- Apply correct containment procedures during a thermal event
+- Coordinate emergency response with fire services for lithium-ion incidents
+- Understand why lithium-ion response differs from lead-acid battery incidents
+- Certificate of completion on finish
+- Self-paced — start and stop anytime
+- Delivered by an IACET-accredited provider
+- Volume pricing available for teams
+
+Modules:
+1. Thermal Runaway Fundamentals: What causes it, and why lithium-ion batteries behave differently under stress.
+2. Early Warning Signs: Recognizing a developing thermal event before it escalates.
+3. Containment Procedures: What to do, and not do, during a thermal runaway event.
+4. Emergency Response Coordination: Working with fire services on a lithium-ion-specific incident.
+
+### OSHA Electrical Safety-Related Work Practices for Data Center Technicians
+
+- id: osha-electrical-safety-data-center-technicians
+- catalog_number: 458
+- url: https://datacentertraining.us/courses/osha-electrical-safety-data-center-technicians.html
+- api_url: https://datacentertraining.us/api/courses/osha-electrical-safety-data-center-technicians.json
+- track: Power & Electrical Systems Track
+- category: Power & Electrical
+- course_type: Modular Specialization
+- duration_hours: 2
+- modules: 4
+- price_usd: 99.99
+- standards_aligned: NFPA 70E
+- bundles: Power & Electrical Systems Bundle ($986.99); Complete Data Center Professional Bundle ($2928.99)
+- audience: Data center technicians who work on or near energized electrical equipment.
+- prerequisites: No prior certification required. Relevant equipment exposure is helpful.
+- language: English
+- delivery: Online, self-paced, no completion deadline
+- certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
+- availability: reserve seats by phone or email while online checkout finishes launch prep
+- summary: OSHA-aligned electrical safety-related work practices tailored to data center technicians.
+
+This course applies OSHA's electrical safety-related work practices (29 CFR 1910 Subpart S) specifically to the data center technician role: the equipment, access patterns, and daily tasks that put technicians near energized systems more often than in a typical facility. You'll leave with approach boundaries and documentation practices that keep your electrical safety program audit-ready.
+
+Learning outcomes:
+- Apply OSHA electrical safety-related work practices to daily data center tasks
+- Identify the data center-specific tasks that carry elevated electrical risk
+- Follow correct approach boundaries for qualified and unqualified persons
+- Document electrical safety compliance correctly
+- Certificate of completion on finish
+- Self-paced — start and stop anytime
+- Delivered by an IACET-accredited provider
+- Volume pricing available for teams
+
+Modules:
+1. OSHA Work Practice Requirements: What 29 CFR 1910 Subpart S actually requires.
+2. Data Center-Specific Risk Tasks: The daily tasks that put technicians near energized equipment.
+3. Approach Boundaries: Qualified vs. unqualified person boundaries, applied correctly.
+4. Documentation & Compliance: Keeping electrical safety compliance records audit-ready.
+
+### Power Distribution Systems Fundamentals
+
+- id: power-distribution-systems-fundamentals
+- catalog_number: 459
+- url: https://datacentertraining.us/courses/power-distribution-systems-fundamentals.html
+- api_url: https://datacentertraining.us/api/courses/power-distribution-systems-fundamentals.json
+- track: Power & Electrical Systems Track
+- category: Power & Electrical
+- course_type: Modular Specialization
+- duration_hours: 4
+- modules: 4
+- price_usd: 99.99
+- standards_aligned: none named
+- bundles: Power & Electrical Systems Bundle ($986.99); Complete Data Center Professional Bundle ($2928.99)
+- audience: Electricians and technicians who need power distribution fundamentals before working on PDU systems.
+- prerequisites: No prior certification required. Relevant equipment exposure is helpful.
+- language: English
+- delivery: Online, self-paced, no completion deadline
+- certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
+- availability: reserve seats by phone or email while online checkout finishes launch prep
+- summary: Core power distribution theory behind PDUs, panels, and branch circuits.
+
+Power distribution systems take facility-level power and break it down into the branch circuits that actually reach a rack. This course covers the fundamentals of that distribution chain: panels, breakers, PDUs, and load balancing, as the theory foundation for PDU architecture and monitoring work. You'll leave able to read a panel schedule, size a breaker correctly, and understand how distribution fundamentals show up in rack-level PDU design.
+
+Learning outcomes:
+- Understand power distribution from facility feed to branch circuit
+- Read panel schedules and breaker sizing correctly
+- Apply load balancing principles across distribution panels
+- Connect distribution fundamentals to PDU architecture and monitoring
+- Certificate of completion on finish
+- Self-paced — start and stop anytime
+- Delivered by an IACET-accredited provider
+- Volume pricing available for teams
+
+Modules:
+1. Distribution Chain Fundamentals: From facility feed to branch circuit, step by step.
+2. Panels & Breaker Sizing: Reading panel schedules and sizing breakers correctly.
+3. Load Balancing: Distributing load evenly across panels and circuits.
+4. Connecting to PDU Architecture: How distribution fundamentals show up in rack-level PDU design.
+
+### UPS Systems Fundamentals
+
+- id: ups-systems-fundamentals
+- catalog_number: 462
+- url: https://datacentertraining.us/courses/ups-systems-fundamentals.html
+- api_url: https://datacentertraining.us/api/courses/ups-systems-fundamentals.json
+- track: Power & Electrical Systems Track
+- category: Power & Electrical
+- course_type: Modular Specialization
+- duration_hours: 2
+- modules: 4
+- price_usd: 99.99
+- standards_aligned: none named
+- bundles: Power & Electrical Systems Bundle ($986.99); Complete Data Center Professional Bundle ($2928.99)
+- audience: Facilities technicians who need UPS theory before hands-on operations training.
+- prerequisites: No prior certification required. Relevant equipment exposure is helpful.
+- language: English
+- delivery: Online, self-paced, no completion deadline
+- certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
+- availability: reserve seats by phone or email while online checkout finishes launch prep
+- summary: Foundational UPS theory to complement hands-on operations and load testing.
+
+This course covers UPS system fundamentals — topology types, battery interaction, and control logic — as the theory foundation that makes the hands-on UPS Operations & Load Testing course click faster. Built for technicians who want to understand the why behind UPS operating procedures, not just the steps.
+
+Learning outcomes:
+- Understand UPS topology types and how they differ
+- Explain how UPS systems interact with battery banks
+- Read UPS control panel status indicators and alarms
+- Connect UPS theory to real-world load testing and maintenance procedures
+- Certificate of completion on finish
+- Self-paced — start and stop anytime
+- Delivered by an IACET-accredited provider
+- Volume pricing available for teams
+
+Modules:
+1. UPS Topology Fundamentals: Online, line-interactive, and standby UPS, explained from first principles.
+2. UPS-Battery Interaction: How UPS systems manage and protect connected battery banks.
+3. Control Panel & Alarms: Reading UPS status indicators and alarm codes.
+4. From Theory to Load Testing: Connecting UPS fundamentals to hands-on load-bank procedures.
+
+## Cooling & Facilities Efficiency Track
+
+### Cooling Systems Design & Optimization
+
+- id: cooling-systems-design-optimization
+- catalog_number: 406
+- url: https://datacentertraining.us/courses/cooling-systems-design-optimization.html
+- api_url: https://datacentertraining.us/api/courses/cooling-systems-design-optimization.json
+- track: Cooling & Facilities Efficiency Track
+- category: Cooling & Efficiency
+- course_type: Comprehensive Program
+- duration_hours: 16
+- modules: 6
+- price_usd: 298.99
+- standards_aligned: PUE; ASHRAE Thermal Guidelines
+- bundles: Cooling & Facilities Efficiency Bundle ($462.99); Complete Data Center Professional Bundle ($2928.99)
+- audience: HVAC technicians, facilities engineers, and anyone accountable for PUE.
+- prerequisites: No prior certification required. Assumes basic familiarity with facility systems.
+- language: English
+- delivery: Online, self-paced, no completion deadline
+- certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
+- availability: reserve seats by phone or email while online checkout finishes launch prep
+- summary: Cut cooling costs and improve reliability with modern thermal management strategy.
+
+Cooling is typically the second-largest line item in a data center's power bill, and the technology has moved fast — liquid cooling, containment, and free cooling have all become mainstream options in the last decade. This course covers CRAC/CRAH fundamentals, liquid cooling technologies (direct-to-chip, immersion), containment strategies, free cooling, and the thermal analysis behind PUE optimization. You'll work through cost-benefit analysis of different cooling technologies and energy modeling concepts, using case studies of facilities that achieved 30–50% energy improvements through better cooling strategy — not just newer equipment. The goal is a cooling optimization strategy you can actually implement: knowing which technology fits your facility's density and climate, and how to build the business case for the investment.
+
+Learning outcomes:
+- Compare CRAC/CRAH, liquid cooling, and free cooling for a given facility profile
+- Design hot/cold aisle containment strategies that reduce mixing losses
+- Apply thermal analysis and modeling concepts to identify cooling inefficiencies
+- Calculate and benchmark PUE, and identify realistic optimization targets
+- Build a cost-benefit case for a cooling technology upgrade
+- Certificate of completion on finish
+- Self-paced — start and stop anytime
+- Delivered by an IACET-accredited provider
+- Volume pricing available for teams
+
+Modules:
+1. CRAC/CRAH System Fundamentals: How computer room air conditioning/handling units actually work, and where they fall short at scale.
+2. Liquid Cooling Technologies: Direct-to-chip and immersion cooling — when the density numbers justify the switch.
+3. Containment Strategies & Airflow Management: Hot/cold aisle containment done right, and the common mistakes that undercut it.
+4. Free Cooling & Hybrid Systems: Using outside air and hybrid systems to cut mechanical cooling load.
+5. Thermal Analysis & Modeling: Reading airflow and heat-load data to find where cooling capacity is wasted.
+6. PUE Optimization & Energy Economics: Turning PUE from a reporting metric into an optimization target.
+
+### HVAC Systems Troubleshooting Essentials
+
+- id: hvac-troubleshooting-essentials
+- catalog_number: 421
+- url: https://datacentertraining.us/courses/hvac-troubleshooting-essentials.html
+- api_url: https://datacentertraining.us/api/courses/hvac-troubleshooting-essentials.json
+- track: Cooling & Facilities Efficiency Track
+- category: Cooling & Efficiency
+- course_type: Modular Specialization
+- duration_hours: 4
+- modules: 4
+- price_usd: 99.99
+- standards_aligned: none named
+- bundles: Cooling & Facilities Efficiency Bundle ($462.99); Complete Data Center Professional Bundle ($2928.99)
+- audience: HVAC technicians working on data center cooling equipment.
+- prerequisites: No prior certification required. Relevant equipment exposure is helpful.
+- language: English
+- delivery: Online, self-paced, no completion deadline
+- certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
+- availability: reserve seats by phone or email while online checkout finishes launch prep
+- summary: Hands-on troubleshooting skills for CRAC/CRAH systems and common cooling failures.
+
+Built for technicians who need practical troubleshooting skills, not design theory. This course covers refrigeration cycle fundamentals, psychrometrics basics, and hands-on CRAC/CRAH diagnostics — the skills you use during an actual cooling failure, not just a scheduled inspection. You'll work through common failure modes, airflow measurement techniques, and a preventive maintenance schedule you can apply immediately, plus emergency troubleshooting procedures for when cooling capacity drops unexpectedly.
+
+Learning outcomes:
+- Diagnose common CRAC/CRAH failure modes quickly and accurately
+- Apply refrigeration cycle fundamentals to real troubleshooting scenarios
+- Measure airflow correctly to identify cooling distribution problems
+- Build a preventive maintenance schedule that reduces emergency callouts
+- Certificate of completion on finish
+- Self-paced — start and stop anytime
+- Delivered by an IACET-accredited provider
+- Volume pricing available for teams
+
+Modules:
+1. Refrigeration Cycle Fundamentals: The refrigeration cycle basics behind every CRAC/CRAH diagnostic.
+2. CRAC/CRAH Diagnostics: Reading unit diagnostics to isolate a failure fast.
+3. Common Failures & Troubleshooting: The failure modes technicians see most often, and how to fix them.
+4. Maintenance Best Practices: A preventive schedule that catches problems before they're emergencies.
+
+### Energy Efficiency & PUE Optimization
+
+- id: energy-efficiency-pue-optimization
+- catalog_number: 425
+- url: https://datacentertraining.us/courses/energy-efficiency-pue-optimization.html
+- api_url: https://datacentertraining.us/api/courses/energy-efficiency-pue-optimization.json
+- track: Cooling & Facilities Efficiency Track
+- category: Cooling & Efficiency
+- course_type: Modular Specialization
+- duration_hours: 3
+- modules: 4
+- price_usd: 99.99
+- standards_aligned: PUE
+- bundles: Cooling & Facilities Efficiency Bundle ($462.99); Complete Data Center Professional Bundle ($2928.99)
+- audience: Facility managers accountable for energy costs and sustainability targets.
+- prerequisites: No prior certification required. Relevant equipment exposure is helpful.
+- language: English
+- delivery: Online, self-paced, no completion deadline
+- certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
+- availability: reserve seats by phone or email while online checkout finishes launch prep
+- summary: Cut operating costs with a measurable PUE optimization roadmap.
+
+Focused on reducing operating costs: PUE calculation and benchmarking, energy audit procedures, and equipment efficiency ratings. This course pairs optimization strategies with financial modeling, so every recommendation comes with a cost-benefit case attached. Using real case studies and practical tools, you'll leave with an energy reduction roadmap built around measurable ROI, not just best-practice checklists.
+
+Learning outcomes:
+- Calculate and benchmark PUE against industry standards
+- Run an energy audit procedure end to end
+- Identify equipment efficiency upgrades with the strongest ROI
+- Build a financial model to justify energy efficiency investment
+- Certificate of completion on finish
+- Self-paced — start and stop anytime
+- Delivered by an IACET-accredited provider
+- Volume pricing available for teams
+
+Modules:
+1. PUE Calculation & Benchmarking: Calculating PUE correctly and benchmarking it against comparable facilities.
+2. Energy Audit Procedures: Running a structured energy audit that finds real savings.
+3. Efficiency Improvement Strategies: Prioritizing efficiency upgrades by impact and cost.
+4. Cost-Benefit Analysis: Building the financial case for an efficiency investment.
+
+### Mechanical Systems & Equipment Maintenance
+
+- id: mechanical-systems-maintenance
+- catalog_number: 432
+- url: https://datacentertraining.us/courses/mechanical-systems-maintenance.html
+- api_url: https://datacentertraining.us/api/courses/mechanical-systems-maintenance.json
+- track: Cooling & Facilities Efficiency Track
+- category: Cooling & Efficiency
+- course_type: Modular Specialization
+- duration_hours: 4
+- modules: 4
+- price_usd: 99.99
+- standards_aligned: none named
+- bundles: Cooling & Facilities Efficiency Bundle ($462.99); Complete Data Center Professional Bundle ($2928.99)
+- audience: Mechanical technicians responsible for facility equipment maintenance.
+- prerequisites: No prior certification required. Relevant equipment exposure is helpful.
+- language: English
+- delivery: Online, self-paced, no completion deadline
+- certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
+- availability: reserve seats by phone or email while online checkout finishes launch prep
+- summary: Hands-on mechanical maintenance — piping, chillers, and vibration diagnostics.
+
+Mechanical operations for technicians: HVAC systems, piping, chiller operation, water treatment, and vibration analysis. Lab sessions include hands-on diagnostics, so the techniques transfer directly to your equipment. You'll leave with equipment maintenance protocols built around predictive maintenance and vendor coordination, reducing unplanned mechanical downtime.
+
+Learning outcomes:
+- Maintain piping systems and water treatment programs correctly
+- Operate and maintain chillers to manufacturer and best-practice standards
+- Use vibration analysis to catch mechanical problems before failure
+- Build equipment maintenance protocols with vendor coordination built in
+- Certificate of completion on finish
+- Self-paced — start and stop anytime
+- Delivered by an IACET-accredited provider
+- Volume pricing available for teams
+
+Modules:
+1. Piping Systems & Water Treatment: Water treatment practices that extend piping and equipment life.
+2. Chiller Operation & Maintenance: Operating and maintaining chillers for reliability and efficiency.
+3. Vibration Analysis & Equipment Health: Reading vibration data to catch mechanical failures early.
+4. Lifecycle Planning & Vendor Coordination: Coordinating vendor service around equipment lifecycle planning.
+
+### Data Center Cooling System and Refrigerant Safety Training
+
+- id: data-center-cooling-refrigerant-safety
+- catalog_number: 447
+- url: https://datacentertraining.us/courses/data-center-cooling-refrigerant-safety.html
+- api_url: https://datacentertraining.us/api/courses/data-center-cooling-refrigerant-safety.json
+- track: Cooling & Facilities Efficiency Track
+- category: Cooling & Efficiency
+- course_type: Modular Specialization
+- duration_hours: 2
+- modules: 4
+- price_usd: 99.99
+- standards_aligned: EPA/OSHA
+- bundles: Cooling & Facilities Efficiency Bundle ($462.99); Complete Data Center Professional Bundle ($2928.99)
+- audience: HVAC technicians working on data center cooling and refrigerant systems.
+- prerequisites: No prior certification required. Relevant equipment exposure is helpful.
+- language: English
+- delivery: Online, self-paced, no completion deadline
+- certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
+- availability: reserve seats by phone or email while online checkout finishes launch prep
+- summary: Refrigerant handling and cooling system safety practices specific to data center CRAC/CRAH environments.
+
+Refrigerant handling carries its own hazard profile — pressure risk, chemical exposure, and environmental regulation — on top of the mechanical risks of CRAC/CRAH systems. This course covers safe refrigerant handling practices and cooling system safety procedures specific to data center environments. You'll leave knowing exactly how to isolate cooling equipment before service and what to do if a refrigerant leak or exposure incident happens.
+
+Learning outcomes:
+- Handle refrigerants safely within EPA and OSHA requirements
+- Recognize pressure and chemical exposure risks specific to CRAC/CRAH systems
+- Apply lockout/tagout procedures before cooling system service
+- Respond correctly to a refrigerant leak or exposure incident
+- Certificate of completion on finish
+- Self-paced — start and stop anytime
+- Delivered by an IACET-accredited provider
+- Volume pricing available for teams
+
+Modules:
+1. Refrigerant Handling Basics: Safe handling practices and regulatory requirements.
+2. CRAC/CRAH Hazard Recognition: Pressure and chemical exposure risks specific to these systems.
+3. Lockout/Tagout for Cooling Systems: Isolating cooling equipment safely before service.
+4. Leak & Exposure Response: Responding correctly when something goes wrong.
+
+### Building Envelope Fundamentals
+
+- id: building-envelope-fundamentals
+- catalog_number: 443
+- url: https://datacentertraining.us/courses/building-envelope-fundamentals.html
+- api_url: https://datacentertraining.us/api/courses/building-envelope-fundamentals.json
+- track: Cooling & Facilities Efficiency Track
+- category: Cooling & Efficiency
+- course_type: Modular Specialization
+- duration_hours: 2
+- modules: 4
+- price_usd: 99.99
+- standards_aligned: none named
+- bundles: Cooling & Facilities Efficiency Bundle ($462.99); Complete Data Center Professional Bundle ($2928.99)
+- audience: Facilities technicians and managers responsible for building performance and energy costs.
+- prerequisites: No prior certification required. Relevant equipment exposure is helpful.
+- language: English
+- delivery: Online, self-paced, no completion deadline
+- certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
+- availability: reserve seats by phone or email while online checkout finishes launch prep
+- summary: Understand how a facility's building envelope drives cooling load and energy cost.
+
+The building envelope — walls, roof, insulation, and air sealing — determines how hard your cooling system has to work before a single CRAC unit turns on. This course covers building envelope fundamentals: insulation performance, air sealing, moisture control, and how envelope condition directly affects PUE and cooling cost. You'll leave able to spot envelope deficiencies that are quietly driving up your energy bill before they show up as a bigger mechanical problem.
+
+Learning outcomes:
+- Identify building envelope components and their role in thermal performance
+- Recognize air sealing and insulation deficiencies that increase cooling load
+- Understand moisture control and its impact on facility health
+- Connect envelope condition to PUE and energy cost
+- Certificate of completion on finish
+- Self-paced — start and stop anytime
+- Delivered by an IACET-accredited provider
+- Volume pricing available for teams
+
+Modules:
+1. Building Envelope Components: Walls, roof, insulation, and air barriers — how they work together.
+2. Insulation & Air Sealing: Where envelope deficiencies quietly increase cooling load.
+3. Moisture Control Fundamentals: Preventing the moisture issues that damage facilities and equipment.
+4. Envelope Performance & Energy Cost: Connecting envelope condition to PUE and the energy bill.
+
+## Operations & Reliability Track
+
+### Data Center Operations Management
+
+- id: data-center-operations-management
+- catalog_number: 403
+- url: https://datacentertraining.us/courses/data-center-operations-management.html
+- api_url: https://datacentertraining.us/api/courses/data-center-operations-management.json
+- track: Operations & Reliability Track
+- category: Operations
+- course_type: Comprehensive Program
+- duration_hours: 18
+- modules: 6
+- price_usd: 325.99
+- standards_aligned: DCIM; SLA Frameworks
+- bundles: Operations & Reliability Bundle ($830.99); Complete Data Center Professional Bundle ($2928.99)
+- audience: Facility managers and operations directors responsible for day-to-day uptime.
+- prerequisites: No prior certification required. Assumes basic familiarity with facility systems.
+- language: English
+- delivery: Online, self-paced, no completion deadline
+- certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
+- availability: reserve seats by phone or email while online checkout finishes launch prep
+- summary: Run daily operations like the teams behind Tier 3/4 facilities — maintenance, incident response, and SLAs.
+
+Great facility design means little without operational discipline behind it. This program covers the full operations lifecycle: DCIM asset tracking, preventive maintenance planning, emergency response protocols, SLA metric development, and energy optimization — the systems that keep a well-designed facility actually performing. The course includes lab simulations of critical failure scenarios and DCIM platform training concepts, so the frameworks aren't just theoretical. You'll build maintenance checklists, incident response runbooks, and SLA scorecards you can adapt directly to your facility. Drawing on real-world case studies from Tier 3/4 operations teams, this course is built for the person who owns uptime — not just the systems that support it.
+
+Learning outcomes:
+- Structure a facility lifecycle management and preventive maintenance program
+- Use DCIM concepts to track assets, capacity, and power/thermal headroom
+- Build an emergency response and incident management protocol
+- Develop SLA metrics and performance scorecards for stakeholder reporting
+- Apply energy management strategies to reduce operating cost without risking uptime
+- Certificate of completion on finish
+- Self-paced — start and stop anytime
+- Delivered by an IACET-accredited provider
+- Volume pricing available for teams
+
+Modules:
+1. Facility Lifecycle Management: Managing a facility from commissioning through end-of-life equipment refresh.
+2. DCIM Systems & Asset Tracking: What DCIM software actually tracks, and how to use it for capacity planning.
+3. Preventive Maintenance Planning: Scheduling maintenance that prevents failures instead of just responding to them.
+4. Emergency Response & Incident Management: Runbooks and escalation paths for critical system failures.
+5. SLA Metrics & Performance Tracking: Defining and reporting the metrics stakeholders actually care about.
+6. Energy Management & Efficiency Optimization: Cutting operating cost through smarter energy management, not just better equipment.
+
+### Disaster Recovery & Business Continuity
+
+- id: disaster-recovery-business-continuity
+- catalog_number: 407
+- url: https://datacentertraining.us/courses/disaster-recovery-business-continuity.html
+- api_url: https://datacentertraining.us/api/courses/disaster-recovery-business-continuity.json
+- track: Operations & Reliability Track
+- category: Operations
+- course_type: Comprehensive Program
+- duration_hours: 17
+- modules: 6
+- price_usd: 307.99
+- standards_aligned: RTO/RPO Frameworks
+- bundles: Operations & Reliability Bundle ($830.99); Complete Data Center Professional Bundle ($2928.99)
+- audience: Operations and risk managers responsible for uptime commitments and DR planning.
+- prerequisites: No prior certification required. Assumes basic familiarity with facility systems.
+- language: English
+- delivery: Online, self-paced, no completion deadline
+- certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
+- availability: reserve seats by phone or email while online checkout finishes launch prep
+- summary: Design resilient infrastructure and DR plans that survive real failures — not just tabletop exercises.
+
+Most disaster recovery plans fail at the first real test — not because the technology is wrong, but because RTO/RPO targets were never validated against reality. This course covers RTO/RPO definition and measurement, redundant site strategies (hot/warm/cold), failover procedures, data replication, geographic distribution, and supply chain resilience. You'll build DR testing frameworks and failover simulation plans, along with vendor SLA development and crisis communication strategies — the operational pieces that get skipped when DR planning stays purely technical. By the end, you'll be able to design a resilient infrastructure architecture and a DR plan that's actually been stress-tested against realistic failure scenarios, not just documented and filed away.
+
+Learning outcomes:
+- Define and measure RTO/RPO targets against real business requirements
+- Compare hot, warm, and cold site strategies for cost and recovery speed
+- Build failover and recovery procedures across geographically distributed infrastructure
+- Design a DR testing and validation framework that catches gaps before a real incident
+- Develop vendor SLA and supply chain resilience requirements
+- Certificate of completion on finish
+- Self-paced — start and stop anytime
+- Delivered by an IACET-accredited provider
+- Volume pricing available for teams
+
+Modules:
+1. RTO/RPO Definition & Measurement: Setting recovery targets based on actual business impact, not guesswork.
+2. Redundant Site Strategies (Hot/Warm/Cold): Choosing a site strategy that matches your RTO/RPO and budget.
+3. Failover & Recovery Procedures: Building runbooks for the failover event itself, not just the plan.
+4. Geographically Distributed Infrastructure: Data replication and distribution strategies across regions.
+5. DR Testing & Validation: Stress-testing a DR plan before you need it for real.
+6. Supply Chain & Vendor Resilience: Building resilience requirements into vendor contracts and SLAs.
+
+### Preventive Maintenance Planning
+
+- id: preventive-maintenance-planning
+- catalog_number: 427
+- url: https://datacentertraining.us/courses/preventive-maintenance-planning.html
+- api_url: https://datacentertraining.us/api/courses/preventive-maintenance-planning.json
+- track: Operations & Reliability Track
+- category: Operations
+- course_type: Modular Specialization
+- duration_hours: 3
+- modules: 4
+- price_usd: 99.99
+- standards_aligned: none named
+- bundles: Operations & Reliability Bundle ($830.99); Complete Data Center Professional Bundle ($2928.99)
+- audience: Facilities staff building or improving a maintenance program.
+- prerequisites: No prior certification required. Relevant equipment exposure is helpful.
+- language: English
+- delivery: Online, self-paced, no completion deadline
+- certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
+- availability: reserve seats by phone or email while online checkout finishes launch prep
+- summary: Reduce emergency repairs with a structured preventive maintenance program.
+
+An essential maintenance program: equipment lifecycle management, preventive maintenance scheduling, and predictive maintenance concepts. This course focuses on the documentation and tracking systems that make a maintenance program sustainable, not just a one-time schedule. You'll leave with maintenance calendars built around your own equipment inventory, and a framework for reducing emergency repairs over time.
+
+Learning outcomes:
+- Map equipment lifecycle stages to a maintenance schedule
+- Apply predictive maintenance concepts alongside preventive scheduling
+- Build maintenance documentation and tracking systems that stick
+- Reduce emergency repair frequency through structured planning
+- Certificate of completion on finish
+- Self-paced — start and stop anytime
+- Delivered by an IACET-accredited provider
+- Volume pricing available for teams
+
+Modules:
+1. Equipment Lifecycle Fundamentals: Understanding where equipment sits in its lifecycle before it fails.
+2. Maintenance Scheduling: Building a schedule that matches maintenance frequency to actual risk.
+3. Predictive Maintenance Basics: Using condition data to maintain on need, not just on calendar.
+4. Documentation & Tracking: Tracking systems that make a maintenance program auditable and sustainable.
+
+### Incident Response & Troubleshooting
+
+- id: incident-response-troubleshooting
+- catalog_number: 429
+- url: https://datacentertraining.us/courses/incident-response-troubleshooting.html
+- api_url: https://datacentertraining.us/api/courses/incident-response-troubleshooting.json
+- track: Operations & Reliability Track
+- category: Operations
+- course_type: Modular Specialization
+- duration_hours: 4
+- modules: 4
+- price_usd: 99.99
+- standards_aligned: none named
+- bundles: Operations & Reliability Bundle ($830.99); Complete Data Center Professional Bundle ($2928.99)
+- audience: Technicians and engineers responsible for incident response.
+- prerequisites: No prior certification required. Relevant equipment exposure is helpful.
+- language: English
+- delivery: Online, self-paced, no completion deadline
+- certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
+- availability: reserve seats by phone or email while online checkout finishes launch prep
+- summary: Systematic troubleshooting and root-cause analysis to cut MTTR.
+
+Practical troubleshooting for technicians: systematic problem-solving, root cause analysis techniques, and failure mode recognition. This course focuses on the process behind fast, accurate troubleshooting — not just the systems themselves. You'll build escalation procedures and documentation habits that reduce mean time to resolution, plus a troubleshooting tree you can adapt to your own facility's systems.
+
+Learning outcomes:
+- Apply a systematic troubleshooting methodology under pressure
+- Run root cause analysis that prevents repeat incidents
+- Recognize common failure modes before they escalate
+- Build escalation procedures and documentation that reduce MTTR
+- Certificate of completion on finish
+- Self-paced — start and stop anytime
+- Delivered by an IACET-accredited provider
+- Volume pricing available for teams
+
+Modules:
+1. Troubleshooting Methodology: A repeatable process for diagnosing problems fast, under pressure.
+2. Root Cause Analysis: Getting past symptoms to the actual root cause.
+3. Escalation & Communication: Escalating incidents clearly, without losing time or context.
+4. Knowledge Base Development: Turning resolved incidents into a knowledge base that speeds up the next one.
+
+### Business Continuity and Disaster Recovery Planning Training
+
+- id: business-continuity-disaster-recovery-planning
+- catalog_number: 445
+- url: https://datacentertraining.us/courses/business-continuity-disaster-recovery-planning.html
+- api_url: https://datacentertraining.us/api/courses/business-continuity-disaster-recovery-planning.json
+- track: Operations & Reliability Track
+- category: Operations
+- course_type: Modular Specialization
+- duration_hours: 8
+- modules: 4
+- price_usd: 99.99
+- standards_aligned: ICS-NIMS
+- bundles: Operations & Reliability Bundle ($830.99); Complete Data Center Professional Bundle ($2928.99)
+- audience: Operations and risk managers building or updating a formal business continuity plan.
+- prerequisites: No prior certification required. Relevant equipment exposure is helpful.
+- language: English
+- delivery: Online, self-paced, no completion deadline
+- certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
+- availability: reserve seats by phone or email while online checkout finishes launch prep
+- summary: A hands-on planning course for building or stress-testing a business continuity plan.
+
+This course complements the Disaster Recovery & Business Continuity comprehensive program with a dedicated, hands-on planning session: building a business continuity plan from scratch, working through ICS-NIMS-aligned emergency management frameworks, and stress-testing the plan against realistic scenarios. You'll leave with a plan structure and documentation approach that holds up under auditor or insurer review, not just a filed-away document.
+
+Learning outcomes:
+- Build a business continuity plan using recognized emergency management frameworks
+- Apply ICS-NIMS structure to a facility-level incident response
+- Stress-test a continuity plan against realistic failure scenarios
+- Document a plan that satisfies auditor and insurer expectations
+- Certificate of completion on finish
+- Self-paced — start and stop anytime
+- Delivered by an IACET-accredited provider
+- Volume pricing available for teams
+
+Modules:
+1. BC/DR Planning Frameworks: Structuring a plan around recognized emergency management standards.
+2. ICS-NIMS for Facilities: Applying incident command structure at the facility level.
+3. Plan Stress-Testing: Running a continuity plan through realistic failure scenarios.
+4. Audit-Ready Documentation: Documenting a plan that holds up under audit or insurance review.
+
+### Building Maintenance Fundamentals
+
+- id: building-maintenance-fundamentals
+- catalog_number: 444
+- url: https://datacentertraining.us/courses/building-maintenance-fundamentals.html
+- api_url: https://datacentertraining.us/api/courses/building-maintenance-fundamentals.json
+- track: Operations & Reliability Track
+- category: Operations
+- course_type: Modular Specialization
+- duration_hours: 4
+- modules: 4
+- price_usd: 99.99
+- standards_aligned: none named
+- bundles: Operations & Reliability Bundle ($830.99); Complete Data Center Professional Bundle ($2928.99)
+- audience: Facilities technicians responsible for general building systems and upkeep.
+- prerequisites: No prior certification required. Relevant equipment exposure is helpful.
+- language: English
+- delivery: Online, self-paced, no completion deadline
+- certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
+- availability: reserve seats by phone or email while online checkout finishes launch prep
+- summary: Core building maintenance fundamentals for facilities teams supporting critical infrastructure.
+
+Beyond the specialized systems that keep a data center running, every facility needs disciplined general maintenance — from structural upkeep to routine systems checks. This course covers the maintenance fundamentals that keep a building sound around the critical infrastructure it houses. You'll build a practical framework for prioritizing general maintenance work without it ever competing with uptime-critical tasks.
+
+Learning outcomes:
+- Apply general building maintenance fundamentals to a facilities program
+- Prioritize maintenance tasks by risk and impact
+- Recognize early warning signs of building system deterioration
+- Coordinate general maintenance around critical infrastructure uptime requirements
+- Certificate of completion on finish
+- Self-paced — start and stop anytime
+- Delivered by an IACET-accredited provider
+- Volume pricing available for teams
+
+Modules:
+1. Building Systems Overview: The general building systems every facilities tech should know.
+2. Maintenance Prioritization: Triaging maintenance tasks by risk and impact.
+3. Early Warning Signs: Catching deterioration before it becomes a failure.
+4. Coordinating Around Critical Infrastructure: Scheduling general maintenance without risking uptime.
+
+### Facility Management Fundamentals
+
+- id: facility-management-fundamentals
+- catalog_number: 455
+- url: https://datacentertraining.us/courses/facility-management-fundamentals.html
+- api_url: https://datacentertraining.us/api/courses/facility-management-fundamentals.json
+- track: Operations & Reliability Track
+- category: Operations
+- course_type: Modular Specialization
+- duration_hours: 4
+- modules: 4
+- price_usd: 99.99
+- standards_aligned: none named
+- bundles: Operations & Reliability Bundle ($830.99); Complete Data Center Professional Bundle ($2928.99)
+- audience: New and developing facility managers responsible for day-to-day site operations.
+- prerequisites: No prior certification required. Relevant equipment exposure is helpful.
+- language: English
+- delivery: Online, self-paced, no completion deadline
+- certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
+- availability: reserve seats by phone or email while online checkout finishes launch prep
+- summary: Core facility management principles for teams running critical infrastructure.
+
+Facility management brings together maintenance, vendor coordination, budgeting, and compliance into one role. This course covers the foundational principles that make that juggling act manageable, with an eye toward the higher stakes of managing a critical infrastructure site. You'll leave with a framework for balancing maintenance, compliance, and uptime priorities instead of constantly fighting fires between them.
+
+Learning outcomes:
+- Apply core facility management principles to daily site operations
+- Coordinate vendors and contractors without losing accountability
+- Build a basic facility operating budget
+- Balance maintenance, compliance, and uptime priorities
+- Certificate of completion on finish
+- Self-paced — start and stop anytime
+- Delivered by an IACET-accredited provider
+- Volume pricing available for teams
+
+Modules:
+1. Facility Management Fundamentals: The core disciplines every facility manager needs.
+2. Vendor & Contractor Coordination: Managing outside vendors without losing accountability.
+3. Facility Budgeting Basics: Building an operating budget that holds up.
+4. Balancing Competing Priorities: Maintenance, compliance, and uptime, all at once.
+
+### Roofing Systems Maintenance Fundamentals
+
+- id: roofing-systems-maintenance-fundamentals
+- catalog_number: 460
+- url: https://datacentertraining.us/courses/roofing-systems-maintenance-fundamentals.html
+- api_url: https://datacentertraining.us/api/courses/roofing-systems-maintenance-fundamentals.json
+- track: Operations & Reliability Track
+- category: Operations
+- course_type: Modular Specialization
+- duration_hours: 2
+- modules: 4
+- price_usd: 99.99
+- standards_aligned: none named
+- bundles: Operations & Reliability Bundle ($830.99); Complete Data Center Professional Bundle ($2928.99)
+- audience: Facilities technicians responsible for roof inspection and maintenance scheduling.
+- prerequisites: No prior certification required. Relevant equipment exposure is helpful.
+- language: English
+- delivery: Online, self-paced, no completion deadline
+- certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
+- availability: reserve seats by phone or email while online checkout finishes launch prep
+- summary: Preventive roofing maintenance to protect the facility below it.
+
+A roof leak above a data hall is a very different problem than a roof leak above an office. This course covers roofing system types, preventive maintenance scheduling, and inspection practices that catch problems before they threaten the equipment below. You'll leave with a risk-based way to prioritize roof maintenance by what's actually underneath it, not just a generic inspection checklist.
+
+Learning outcomes:
+- Identify common roofing system types and their maintenance needs
+- Build a preventive roof inspection and maintenance schedule
+- Recognize early warning signs of roof failure
+- Prioritize roof maintenance based on what's underneath
+- Certificate of completion on finish
+- Self-paced — start and stop anytime
+- Delivered by an IACET-accredited provider
+- Volume pricing available for teams
+
+Modules:
+1. Roofing System Types: Common commercial roofing systems and how they age.
+2. Preventive Inspection Scheduling: Catching problems before they become leaks.
+3. Early Failure Warning Signs: What to look for during a roof inspection.
+4. Risk-Based Prioritization: Weighting roof maintenance by what's at stake below it.
+
+### Server Room Ergonomics and Manual Handling Training
+
+- id: server-room-ergonomics-manual-handling
+- catalog_number: 461
+- url: https://datacentertraining.us/courses/server-room-ergonomics-manual-handling.html
+- api_url: https://datacentertraining.us/api/courses/server-room-ergonomics-manual-handling.json
+- track: Operations & Reliability Track
+- category: Operations
+- course_type: Modular Specialization
+- duration_hours: 1
+- modules: 4
+- price_usd: 99.99
+- standards_aligned: none named
+- bundles: Operations & Reliability Bundle ($830.99); Complete Data Center Professional Bundle ($2928.99)
+- audience: IT technicians and installation crews handling equipment in server rooms.
+- prerequisites: No prior certification required. Relevant equipment exposure is helpful.
+- language: English
+- delivery: Online, self-paced, no completion deadline
+- certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
+- availability: reserve seats by phone or email while online checkout finishes launch prep
+- summary: Safe lifting and ergonomic practices for server room and data hall work.
+
+Server and rack hardware is heavy, awkward, and often handled in tight spaces. This course covers safe lifting technique, ergonomic workstation setup, and manual handling practices specific to server room and data hall environments. You'll leave with practical habits that reduce strain injury risk during equipment installs and moves, not just generic lifting advice.
+
+Learning outcomes:
+- Apply safe lifting technique to server and rack hardware
+- Set up ergonomic workstations for extended server room tasks
+- Recognize manual handling risks specific to tight data hall spaces
+- Reduce strain injury risk during equipment installation and moves
+- Certificate of completion on finish
+- Self-paced — start and stop anytime
+- Delivered by an IACET-accredited provider
+- Volume pricing available for teams
+
+Modules:
+1. Safe Lifting Technique: Lifting server and rack hardware without injury.
+2. Ergonomic Workstation Setup: Reducing strain during extended server room tasks.
+3. Manual Handling in Tight Spaces: Handling equipment safely in constrained data hall environments.
+4. Injury Prevention: Reducing strain injury risk during installs and moves.
+
+### Data Center Raised Floor and Confined Space Awareness Training
+
+- id: data-center-raised-floor-confined-space
+- catalog_number: 452
+- url: https://datacentertraining.us/courses/data-center-raised-floor-confined-space.html
+- api_url: https://datacentertraining.us/api/courses/data-center-raised-floor-confined-space.json
+- track: Operations & Reliability Track
+- category: Operations
+- course_type: Modular Specialization
+- duration_hours: 1
+- modules: 4
+- price_usd: 99.99
+- standards_aligned: OSHA 1910.146
+- bundles: Operations & Reliability Bundle ($830.99); Complete Data Center Professional Bundle ($2928.99)
+- audience: Facilities and cabling technicians who work under raised floors or in confined spaces.
+- prerequisites: No prior certification required. Relevant equipment exposure is helpful.
+- language: English
+- delivery: Online, self-paced, no completion deadline
+- certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
+- availability: reserve seats by phone or email while online checkout finishes launch prep
+- summary: Confined space awareness and safe practices for working under a raised floor.
+
+The space under a raised floor is a confined space with its own hazards — cabling, airflow obstructions, and limited visibility. This awareness-level course covers safe raised-floor work practices and the confined space fundamentals relevant to under-floor access. You'll leave knowing exactly when under-floor work crosses the line into permit-required confined space territory.
+
+Learning outcomes:
+- Recognize confined space hazards specific to raised floor environments
+- Apply safe practices for under-floor cabling and access work
+- Know when raised floor work requires a confined space permit
+- Maintain airflow and cable management standards while working under-floor
+- Certificate of completion on finish
+- Self-paced — start and stop anytime
+- Delivered by an IACET-accredited provider
+- Volume pricing available for teams
+
+Modules:
+1. Raised Floor Hazard Awareness: What makes under-floor space a confined space hazard.
+2. Safe Under-Floor Work Practices: Working safely on cabling and access tasks below the floor.
+3. Confined Space Permit Basics: When under-floor work crosses into permit-required territory.
+4. Airflow & Cable Management: Maintaining standards while working under the floor.
+
+## Security & Compliance Track
+
+### Security & Compliance for Data Centers
+
+- id: security-compliance-data-centers
+- catalog_number: 404
+- url: https://datacentertraining.us/courses/security-compliance-data-centers.html
+- api_url: https://datacentertraining.us/api/courses/security-compliance-data-centers.json
+- track: Security & Compliance Track
+- category: Security & Compliance
+- course_type: Comprehensive Program
+- duration_hours: 16
+- modules: 6
+- price_usd: 291.99
+- standards_aligned: SOC 2; ISO 27001
+- bundles: Security & Compliance Bundle ($400.99); Complete Data Center Professional Bundle ($2928.99)
+- audience: Security managers, compliance officers, and facility leads preparing for a security audit.
+- prerequisites: No prior certification required. Assumes basic familiarity with facility systems.
+- language: English
+- delivery: Online, self-paced, no completion deadline
+- certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
+- availability: reserve seats by phone or email while online checkout finishes launch prep
+- summary: Build a facility security program that satisfies SOC 2, ISO 27001, and physical audit requirements.
+
+Data center security spans two very different disciplines — physical security architecture and facility cybersecurity — and most compliance frameworks expect both to work together. This course covers physical security design (access control, surveillance, perimeter), facility cybersecurity fundamentals, and the regulatory frameworks (SOC 2, ISO 27001, HIPAA, PCI-DSS) that shape audit requirements. You'll build a security roadmap and facility-specific security policy using the audit framework development, compliance policy templates, and vendor evaluation strategies covered throughout the course — not generic advice, but the actual deliverables an auditor expects to see. The course also covers incident response planning and business continuity for security events, so your program covers detection and response, not just prevention.
+
+Learning outcomes:
+- Design a layered physical security program (access control, surveillance, perimeter)
+- Map facility security controls to SOC 2, ISO 27001, HIPAA, and PCI-DSS requirements
+- Build a facility-specific security policy and audit-ready documentation
+- Evaluate physical security and cybersecurity vendors against compliance criteria
+- Develop an incident response plan for physical and cyber-physical security events
+- Certificate of completion on finish
+- Self-paced — start and stop anytime
+- Delivered by an IACET-accredited provider
+- Volume pricing available for teams
+
+Modules:
+1. Physical Security Architecture: Layering perimeter, building, and data-hall security controls.
+2. Access Control & Surveillance Systems: Selecting and operating access control and surveillance systems.
+3. Cybersecurity Fundamentals for Facility Systems: Where facility systems (BMS, access control) create cyber-physical risk.
+4. Regulatory Framework Overview (SOC 2, ISO 27001, HIPAA, PCI-DSS): What each framework actually requires from facility security controls.
+5. Incident Response Planning: Building a response plan for both physical and cyber-physical incidents.
+6. Compliance Audit Procedures: Preparing documentation and evidence for a facility security audit.
+
+### Access Control & Physical Security
+
+- id: access-control-physical-security
+- catalog_number: 430
+- url: https://datacentertraining.us/courses/access-control-physical-security.html
+- api_url: https://datacentertraining.us/api/courses/access-control-physical-security.json
+- track: Security & Compliance Track
+- category: Security & Compliance
+- course_type: Modular Specialization
+- duration_hours: 3.5
+- modules: 4
+- price_usd: 99.99
+- standards_aligned: none named
+- bundles: Security & Compliance Bundle ($400.99); Complete Data Center Professional Bundle ($2928.99)
+- audience: Security and facilities staff operating access control and surveillance systems.
+- prerequisites: No prior certification required. Relevant equipment exposure is helpful.
+- language: English
+- delivery: Online, self-paced, no completion deadline
+- certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
+- availability: reserve seats by phone or email while online checkout finishes launch prep
+- summary: Practical security training for facility staff — access control, surveillance, and incident reporting.
+
+Security training for facility staff: access control systems, surveillance equipment, threat identification, and emergency procedures. This is hands-on, operational training — how to run the systems day to day, not just design them. You'll cover incident reporting and chain of custody procedures, so security events are documented correctly from the moment they're identified.
+
+Learning outcomes:
+- Operate access control and surveillance systems confidently
+- Identify and respond to common physical security threats
+- Follow correct incident reporting and chain-of-custody procedures
+- Apply emergency procedures for physical security incidents
+- Certificate of completion on finish
+- Self-paced — start and stop anytime
+- Delivered by an IACET-accredited provider
+- Volume pricing available for teams
+
+Modules:
+1. Access Control Systems Operation: Day-to-day operation of badge and access control systems.
+2. Surveillance Systems Basics: Getting the most out of surveillance equipment without being overwhelmed by footage.
+3. Threat Identification & Response: Recognizing and responding to physical security threats correctly.
+4. Incident Reporting & Chain of Custody: Documenting incidents so evidence holds up later.
+
+### Facility Environmental Compliance
+
+- id: facility-environmental-compliance
+- catalog_number: 428
+- url: https://datacentertraining.us/courses/facility-environmental-compliance.html
+- api_url: https://datacentertraining.us/api/courses/facility-environmental-compliance.json
+- track: Security & Compliance Track
+- category: Security & Compliance
+- course_type: Modular Specialization
+- duration_hours: 3
+- modules: 4
+- price_usd: 99.99
+- standards_aligned: none named
+- bundles: Security & Compliance Bundle ($400.99); Complete Data Center Professional Bundle ($2928.99)
+- audience: Facility managers responsible for environmental permits and reporting.
+- prerequisites: No prior certification required. Relevant equipment exposure is helpful.
+- language: English
+- delivery: Online, self-paced, no completion deadline
+- certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
+- availability: reserve seats by phone or email while online checkout finishes launch prep
+- summary: Understand the environmental regulations that apply to your facility.
+
+Regulatory basics for facility managers: environmental regulations overview, permit and reporting requirements, and compliance audit procedures. Includes compliance checklist templates you can adapt to your facility's specific permit obligations. By the end, you'll understand the regulatory landscape well enough to know what applies to your facility and when to bring in specialized counsel.
+
+Learning outcomes:
+- Identify which environmental regulations apply to your facility type
+- Understand permit and reporting requirements and deadlines
+- Run an internal compliance audit using a structured checklist
+- Build documentation practices that hold up under regulatory review
+- Certificate of completion on finish
+- Self-paced — start and stop anytime
+- Delivered by an IACET-accredited provider
+- Volume pricing available for teams
+
+Modules:
+1. Environmental Regulations Overview: The environmental regulations most likely to apply to a data center facility.
+2. Permit & Reporting Requirements: Understanding permit obligations and reporting deadlines.
+3. Compliance Audit Procedures: Running an internal audit before a regulator does.
+4. Documentation Best Practices: Recordkeeping that holds up under review.
+
+### Data Center Fire Suppression System Safety Training (Clean Agent Systems)
+
+- id: data-center-fire-suppression-safety
+- catalog_number: 450
+- url: https://datacentertraining.us/courses/data-center-fire-suppression-safety.html
+- api_url: https://datacentertraining.us/api/courses/data-center-fire-suppression-safety.json
+- track: Security & Compliance Track
+- category: Security & Compliance
+- course_type: Modular Specialization
+- duration_hours: 2
+- modules: 4
+- price_usd: 99.99
+- standards_aligned: NFPA 2001
+- bundles: Security & Compliance Bundle ($400.99); Complete Data Center Professional Bundle ($2928.99)
+- audience: Facilities and fire/life safety staff responsible for data hall fire suppression systems.
+- prerequisites: No prior certification required. Relevant equipment exposure is helpful.
+- language: English
+- delivery: Online, self-paced, no completion deadline
+- certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
+- availability: reserve seats by phone or email while online checkout finishes launch prep
+- summary: Clean agent fire suppression safety for occupied data hall environments.
+
+Clean agent fire suppression systems protect data center equipment without the water damage of traditional sprinklers — but they carry their own safety considerations for anyone in the data hall when a system discharges. This course covers clean agent system basics, evacuation procedures, and post-discharge safety. You'll leave able to tell a false alarm from a real discharge event and know exactly what re-entry looks like afterward.
+
+Learning outcomes:
+- Understand how clean agent fire suppression systems work and why data centers use them
+- Follow correct evacuation procedures during a discharge event
+- Apply post-discharge safety procedures before re-entering a data hall
+- Recognize false alarm vs. real discharge indicators
+- Certificate of completion on finish
+- Self-paced — start and stop anytime
+- Delivered by an IACET-accredited provider
+- Volume pricing available for teams
+
+Modules:
+1. Clean Agent System Basics: How clean agent suppression protects equipment without water damage.
+2. Evacuation Procedures: What to do when a discharge event is triggered.
+3. Post-Discharge Safety: Re-entry procedures after a clean agent discharge.
+4. Alarm Recognition: Distinguishing false alarms from real discharge events.
+
+### Data Center Physical Security and Access Control Training
+
+- id: data-center-physical-security-access-control
+- catalog_number: 451
+- url: https://datacentertraining.us/courses/data-center-physical-security-access-control.html
+- api_url: https://datacentertraining.us/api/courses/data-center-physical-security-access-control.json
+- track: Security & Compliance Track
+- category: Security & Compliance
+- course_type: Modular Specialization
+- duration_hours: 1
+- modules: 4
+- price_usd: 99.99
+- standards_aligned: none named
+- bundles: Security & Compliance Bundle ($400.99); Complete Data Center Professional Bundle ($2928.99)
+- audience: Security and facilities staff responsible for data center floor access.
+- prerequisites: No prior certification required. Relevant equipment exposure is helpful.
+- language: English
+- delivery: Online, self-paced, no completion deadline
+- certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
+- availability: reserve seats by phone or email while online checkout finishes launch prep
+- summary: Foundational physical security and access control practices for data hall environments.
+
+A foundational course on data center physical security: badge and access control basics, visitor and vendor escort procedures, and the security posture expected on a data hall floor. Pairs well with the deeper Access Control & Physical Security specialization for staff who operate the systems directly. You'll leave with a clear sense of the common security gaps on a data hall floor and how to report an incident through the right channel.
+
+Learning outcomes:
+- Apply badge and access control basics on a data center floor
+- Follow correct visitor and vendor escort procedures
+- Recognize common physical security gaps on a data hall floor
+- Report security incidents through the correct channel
+- Certificate of completion on finish
+- Self-paced — start and stop anytime
+- Delivered by an IACET-accredited provider
+- Volume pricing available for teams
+
+Modules:
+1. Access Control Basics: Badge systems and access levels on a data center floor.
+2. Visitor & Vendor Escort Procedures: Managing non-employee access safely and correctly.
+3. Physical Security Gaps: Common vulnerabilities on a data hall floor.
+4. Incident Reporting: Reporting security incidents through the correct channel.
+
+## Design, Planning & Commissioning Track
+
+### Data Center Design Fundamentals
+
+- id: data-center-design-fundamentals
+- catalog_number: 401
+- url: https://datacentertraining.us/courses/data-center-design-fundamentals.html
+- api_url: https://datacentertraining.us/api/courses/data-center-design-fundamentals.json
+- track: Design, Planning & Commissioning Track
+- category: Design & Planning
+- course_type: Comprehensive Program
+- duration_hours: 16
+- modules: 6
+- price_usd: 312.99
+- standards_aligned: ANSI/TIA-942
+- bundles: Design, Planning & Commissioning Bundle ($557.99); Complete Data Center Professional Bundle ($2928.99)
+- audience: Facility engineers, design consultants, and project leads planning new builds or major expansions.
+- prerequisites: No prior certification required. Assumes basic familiarity with facility systems.
+- language: English
+- delivery: Online, self-paced, no completion deadline
+- certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
+- availability: reserve seats by phone or email while online checkout finishes launch prep
+- summary: Design data center facilities that scale — from site selection to redundancy strategy.
+
+Every high-availability data center starts as a set of design decisions — and the wrong ones are expensive to unwind after concrete is poured. This course walks through the full design lifecycle used by enterprise facility teams: international standards (ANSI/TIA-942, ISO 14644), site selection criteria, thermal design principles, power architecture, and the redundancy trade-offs (N, N+1, N+2, 2N) that determine both uptime and capital cost. You'll work through real design case studies, thermal modeling concepts, and ROI analysis frameworks used to justify facility investment to executive stakeholders. Rather than teaching a single vendor's playbook, the course focuses on the trade-off reasoning behind design choices, so you can evaluate proposals, vet vendor recommendations, and defend your own design decisions with data. By the end, you'll be able to read a facility design proposal critically, model redundancy options against budget constraints, and build the financial case for an expansion or new build.
+
+Learning outcomes:
+- Apply ANSI/TIA-942 and ISO 14644 standards to real site and facility design decisions
+- Evaluate site selection criteria for power, connectivity, climate, and risk
+- Compare N, N+1, N+2, and 2N redundancy models on cost and uptime trade-offs
+- Build thermal design fundamentals into early-stage facility planning
+- Construct a capital ROI case for a facility expansion or new build
+- Certificate of completion on finish
+- Self-paced — start and stop anytime
+- Delivered by an IACET-accredited provider
+- Volume pricing available for teams
+
+Modules:
+1. Standards & International Best Practices (ANSI/TIA-942, ISO 14644): How ANSI/TIA-942 and ISO 14644 shape facility design requirements, and where they leave room for engineering judgment.
+2. Site Selection & Facility Planning: Evaluating power availability, connectivity, climate, seismic risk, and expansion capacity before committing to a site.
+3. Thermal Design Principles: Foundational airflow and heat-load concepts that drive every downstream cooling decision.
+4. Power Architecture Overview: Utility interconnection, distribution topology, and where single points of failure hide.
+5. Redundancy Models & Trade-offs: N, N+1, N+2, and 2N compared on uptime, cost, and operational complexity.
+6. Financial Modeling for Expansion: Building the ROI case that gets a facility expansion approved.
+
+### Tier Infrastructure Fundamentals
+
+- id: tier-infrastructure-fundamentals
+- catalog_number: 402
+- url: https://datacentertraining.us/courses/tier-infrastructure-fundamentals.html
+- api_url: https://datacentertraining.us/api/courses/tier-infrastructure-fundamentals.json
+- track: Design, Planning & Commissioning Track
+- category: Design & Planning
+- course_type: Comprehensive Program
+- duration_hours: 14
+- modules: 6
+- price_usd: 280.99
+- standards_aligned: Uptime Institute Tier Framework
+- bundles: Design, Planning & Commissioning Bundle ($557.99); Complete Data Center Professional Bundle ($2928.99)
+- audience: Facility managers and engineers who need to assess or benchmark infrastructure against TIER standards.
+- prerequisites: No prior certification required. Assumes basic familiarity with facility systems.
+- language: English
+- delivery: Online, self-paced, no completion deadline
+- certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
+- availability: reserve seats by phone or email while online checkout finishes launch prep
+- summary: Understand and assess TIER I–IV infrastructure without the formal certification track.
+
+The TIER classification system (I through IV) is the industry's shorthand for facility reliability — but understanding what actually separates a TIER III facility from a TIER IV one takes more than reading a definitions page. This course breaks down the topology requirements, electrical redundancy, cooling architecture, and management systems behind each TIER level. You'll learn the assessment methodologies used to audit an existing facility against TIER benchmarks, including gap analysis procedures and infrastructure scoring methods — the same frameworks used before a formal certification engagement, without the certification requirement or cost. This is practical benchmarking knowledge: understand where your facility sits today, what it would take to move up a TIER level, and how to communicate that gap to stakeholders.
+
+Learning outcomes:
+- Distinguish TIER I–IV topology, redundancy, and management requirements
+- Apply infrastructure scoring methods to benchmark an existing facility
+- Run a gap analysis between current infrastructure and a target TIER level
+- Use facility audit frameworks to structure an internal infrastructure review
+- Communicate TIER gaps and upgrade costs to non-technical stakeholders
+- Certificate of completion on finish
+- Self-paced — start and stop anytime
+- Delivered by an IACET-accredited provider
+- Volume pricing available for teams
+
+Modules:
+1. TIER I & II Topologies: Baseline single-path infrastructure and where its single points of failure sit.
+2. TIER III Redundancy Strategies: Concurrently maintainable infrastructure — what it requires operationally, not just architecturally.
+3. TIER IV Advanced Architecture: Fault-tolerant design and the 2N+ topologies that support it.
+4. Measurement & Assessment Methods: How TIER assessments are actually scored and documented.
+5. Facility Audit Frameworks: Structuring an internal audit before bringing in outside assessors.
+6. Infrastructure Scoring & Analysis: Turning an audit into a prioritized upgrade roadmap.
+
+### Infrastructure Commissioning & Startup
+
+- id: infrastructure-commissioning-startup
+- catalog_number: 408
+- url: https://datacentertraining.us/courses/infrastructure-commissioning-startup.html
+- api_url: https://datacentertraining.us/api/courses/infrastructure-commissioning-startup.json
+- track: Design, Planning & Commissioning Track
+- category: Design & Planning
+- course_type: Comprehensive Program
+- duration_hours: 12
+- modules: 6
+- price_usd: 267.99
+- standards_aligned: Commissioning Test Protocols
+- bundles: Design, Planning & Commissioning Bundle ($557.99); Complete Data Center Professional Bundle ($2928.99)
+- audience: Project leads and facility engineers overseeing a new build, expansion, or major system upgrade.
+- prerequisites: No prior certification required. Assumes basic familiarity with facility systems.
+- language: English
+- delivery: Online, self-paced, no completion deadline
+- certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
+- availability: reserve seats by phone or email while online checkout finishes launch prep
+- summary: Lead new facility launches and major upgrades with a proven commissioning framework.
+
+A facility that passes commissioning on paper but fails in production is a commissioning process that missed something. This course covers the full commissioning lifecycle: pre-commissioning planning, electrical and mechanical systems testing, controls and automation commissioning, and performance baseline establishment. You'll work with commissioning checklists and test plan templates used on real facility launches, plus staff readiness assessment and vendor coordination — the operational handoff steps that determine whether a new facility actually performs once it's live. This course is built for the person accountable for a launch date: it gives you a repeatable framework so nothing gets missed between 'construction complete' and 'operationally ready.'
+
+Learning outcomes:
+- Build a pre-commissioning plan that sequences testing correctly
+- Apply electrical and mechanical systems testing protocols before go-live
+- Commission controls and automation systems with a documented test plan
+- Establish performance baselines for post-occupancy comparison
+- Assess operational readiness and coordinate vendor handoff before launch
+- Certificate of completion on finish
+- Self-paced — start and stop anytime
+- Delivered by an IACET-accredited provider
+- Volume pricing available for teams
+
+Modules:
+1. Pre-Commissioning Planning: Sequencing testing so issues surface before they're expensive to fix.
+2. Electrical Systems Testing & Verification: Verifying electrical infrastructure performs as designed under load.
+3. Mechanical Systems Testing: Commissioning cooling and mechanical systems against design specifications.
+4. Control Systems & Automation Commissioning: Making sure BMS and automation systems are configured correctly before handoff.
+5. Performance Baseline Establishment: Capturing baseline data you'll need for post-occupancy optimization.
+6. Operational Readiness Assessment: Confirming staff and procedures are ready before the facility goes live.
+
+### Capacity Planning & Forecasting
+
+- id: capacity-planning-forecasting
+- catalog_number: 426
+- url: https://datacentertraining.us/courses/capacity-planning-forecasting.html
+- api_url: https://datacentertraining.us/api/courses/capacity-planning-forecasting.json
+- track: Design, Planning & Commissioning Track
+- category: Design & Planning
+- course_type: Modular Specialization
+- duration_hours: 3.5
+- modules: 4
+- price_usd: 99.99
+- standards_aligned: none named
+- bundles: Design, Planning & Commissioning Bundle ($557.99); Complete Data Center Professional Bundle ($2928.99)
+- audience: Facility and IT planners responsible for growth forecasting.
+- prerequisites: No prior certification required. Relevant equipment exposure is helpful.
+- language: English
+- delivery: Online, self-paced, no completion deadline
+- certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
+- availability: reserve seats by phone or email while online checkout finishes launch prep
+- summary: Build a 3–5 year capacity plan before you run out of power, cooling, or space.
+
+Strategic planning for growth: workload characterization, power and cooling demand forecasting, and infrastructure constraint analysis. This course gives you the frameworks to see capacity constraints coming years before they become emergencies. You'll build phased expansion plans and financial models, and finish with the ability to develop 3–5 year capacity plans and growth scenarios your leadership team can actually plan around.
+
+Learning outcomes:
+- Characterize workloads to forecast power and cooling demand accurately
+- Identify infrastructure constraints before they become capacity emergencies
+- Build a phased expansion plan aligned to a growth forecast
+- Present capacity scenarios and financial models to leadership
+- Certificate of completion on finish
+- Self-paced — start and stop anytime
+- Delivered by an IACET-accredited provider
+- Volume pricing available for teams
+
+Modules:
+1. Workload Characterization: Understanding what's actually driving power and cooling demand.
+2. Power & Cooling Demand Forecasting: Forecasting demand growth before it outpaces capacity.
+3. Constraint Analysis: Identifying which constraint — power, cooling, or space — will bind first.
+4. Expansion Planning Frameworks: Turning a forecast into a phased, fundable expansion plan.
+
+## Monitoring & Smart Facility Track
+
+### Monitoring, Automation & BMS Systems
+
+- id: monitoring-automation-bms-systems
+- catalog_number: 409
+- url: https://datacentertraining.us/courses/monitoring-automation-bms-systems.html
+- api_url: https://datacentertraining.us/api/courses/monitoring-automation-bms-systems.json
+- track: Monitoring & Smart Facility Track
+- category: Monitoring & Automation
+- course_type: Comprehensive Program
+- duration_hours: 14
+- modules: 6
+- price_usd: 276.99
+- standards_aligned: BMS; DCIM
+- bundles: Monitoring & Smart Facility Bundle ($333.99); Complete Data Center Professional Bundle ($2928.99)
+- audience: Facilities engineers and technicians responsible for building management and monitoring systems.
+- prerequisites: No prior certification required. Assumes basic familiarity with facility systems.
+- language: English
+- delivery: Online, self-paced, no completion deadline
+- certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
+- availability: reserve seats by phone or email while online checkout finishes launch prep
+- summary: Design a monitoring and BMS strategy that catches problems before they cause downtime.
+
+A facility is only as observable as its monitoring strategy — and most downtime incidents were technically visible in the data well before they became outages. This course covers sensor deployment and calibration, network monitoring fundamentals, BMS architecture, data analytics and predictive modeling, and dashboard design. Hands-on labs cover monitoring tool training, data visualization, and alert tuning — because a monitoring system that generates too many false alerts gets ignored, and one that's too quiet misses real problems. You'll leave with a monitoring strategy framework built to reduce downtime, not just generate reports: the right sensors, the right thresholds, and dashboards that surface what actually matters.
+
+Learning outcomes:
+- Deploy and calibrate sensors for accurate facility monitoring
+- Design a BMS architecture that scales with facility complexity
+- Apply data analytics and predictive modeling concepts to catch failures early
+- Build automation scripting basics into routine monitoring tasks
+- Design dashboards and alerting that reduce noise without missing real issues
+- Certificate of completion on finish
+- Self-paced — start and stop anytime
+- Delivered by an IACET-accredited provider
+- Volume pricing available for teams
+
+Modules:
+1. Sensor Deployment & Calibration: Getting accurate, reliable sensor data before you build anything on top of it.
+2. Network Monitoring Fundamentals: Monitoring the network infrastructure that connects facility systems.
+3. Building Management System Architecture: How BMS platforms are structured, and where the architecture choices matter.
+4. Data Analytics & Predictive Modeling: Using historical data to predict failures before they happen.
+5. Automation Scripting Basics: Automating routine monitoring and response tasks.
+6. Dashboard Design & Reporting: Building dashboards that surface signal, not noise.
+
+### DCIM Platform Fundamentals
+
+- id: dcim-platform-fundamentals
+- catalog_number: 431
+- url: https://datacentertraining.us/courses/dcim-platform-fundamentals.html
+- api_url: https://datacentertraining.us/api/courses/dcim-platform-fundamentals.json
+- track: Monitoring & Smart Facility Track
+- category: Monitoring & Automation
+- course_type: Modular Specialization
+- duration_hours: 5
+- modules: 5
+- price_usd: 99.99
+- standards_aligned: DCIM
+- bundles: Monitoring & Smart Facility Bundle ($333.99); Complete Data Center Professional Bundle ($2928.99)
+- audience: Facility and IT managers evaluating or implementing a DCIM platform.
+- prerequisites: No prior certification required. Relevant equipment exposure is helpful.
+- language: English
+- delivery: Online, self-paced, no completion deadline
+- certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
+- availability: reserve seats by phone or email while online checkout finishes launch prep
+- summary: Understand DCIM strategy and build the ROI case for implementation.
+
+Platform-agnostic DCIM training: software-based infrastructure management, asset tracking, power/thermal modeling, and data visualization. Rather than teaching one vendor's tool, this course focuses on DCIM strategy — what to look for and why. You'll finish with a vendor evaluation framework and the ability to build the ROI business case for implementing a DCIM system in your own facility.
+
+Learning outcomes:
+- Understand DCIM architecture and where it fits in facility operations
+- Use asset inventory and tracking concepts to improve capacity visibility
+- Apply power and thermal modeling concepts within a DCIM platform
+- Evaluate DCIM vendors and build an implementation ROI case
+- Certificate of completion on finish
+- Self-paced — start and stop anytime
+- Delivered by an IACET-accredited provider
+- Volume pricing available for teams
+
+Modules:
+1. DCIM Architecture & Benefits: What a DCIM platform actually does, and where it earns its cost.
+2. Asset Inventory & Tracking: Tracking assets accurately enough to trust the data.
+3. Power & Thermal Modeling: Using DCIM data for power and thermal capacity modeling.
+4. Reporting & Analytics: Turning DCIM data into reports stakeholders actually use.
+5. Vendor Evaluation & Selection: Evaluating DCIM vendors against your facility's real requirements.
+
+### Fiber Optics & Network Cabling
+
+- id: fiber-optics-network-cabling
+- catalog_number: 423
+- url: https://datacentertraining.us/courses/fiber-optics-network-cabling.html
+- api_url: https://datacentertraining.us/api/courses/fiber-optics-network-cabling.json
+- track: Monitoring & Smart Facility Track
+- category: Monitoring & Automation
+- course_type: Modular Specialization
+- duration_hours: 3.5
+- modules: 4
+- price_usd: 99.99
+- standards_aligned: ANSI/TIA-942
+- bundles: Monitoring & Smart Facility Bundle ($333.99); Complete Data Center Professional Bundle ($2928.99)
+- audience: Network technicians and cabling crews working on data center fiber plant.
+- prerequisites: No prior certification required. Relevant equipment exposure is helpful.
+- language: English
+- delivery: Online, self-paced, no completion deadline
+- certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
+- availability: reserve seats by phone or email while online checkout finishes launch prep
+- summary: Terminate, test, and troubleshoot data center fiber to ANSI/TIA-942 standards.
+
+A technical, hands-on curriculum covering multi-mode and single-mode fiber, connector types (LC, SC, MTP/MPO), fiber plant design, termination, splicing, and OTDR testing. Every technique is grounded in ANSI/TIA-942 data center cabling standards, so what you learn maps directly to audit and design requirements. By the end, you'll be able to terminate and test fiber connections independently and troubleshoot connectivity issues without waiting on a specialist.
+
+Learning outcomes:
+- Identify the right fiber type and connector for a given application
+- Terminate and splice fiber to data center standards
+- Run OTDR testing and interpret results to isolate faults
+- Apply ANSI/TIA-942 cabling standards to plant design and documentation
+- Certificate of completion on finish
+- Self-paced — start and stop anytime
+- Delivered by an IACET-accredited provider
+- Volume pricing available for teams
+
+Modules:
+1. Fiber Types & Standards: Multi-mode vs. single-mode, and matching fiber type to application.
+2. Termination & Splicing: Hands-on termination and splicing technique.
+3. Testing & Troubleshooting: OTDR testing to isolate faults fast.
+4. ANSI/TIA-942 Cabling Standards: Designing and documenting a fiber plant to standard.
+
+### Building Automation Systems (BAS) Fundamentals
+
+- id: building-automation-systems-fundamentals
+- catalog_number: 442
+- url: https://datacentertraining.us/courses/building-automation-systems-fundamentals.html
+- api_url: https://datacentertraining.us/api/courses/building-automation-systems-fundamentals.json
+- track: Monitoring & Smart Facility Track
+- category: Monitoring & Automation
+- course_type: Modular Specialization
+- duration_hours: 6
+- modules: 4
+- price_usd: 99.99
+- standards_aligned: BMS/BAS
+- bundles: Monitoring & Smart Facility Bundle ($333.99); Complete Data Center Professional Bundle ($2928.99)
+- audience: Facilities engineers and technicians working with or evaluating BAS platforms.
+- prerequisites: No prior certification required. Relevant equipment exposure is helpful.
+- language: English
+- delivery: Online, self-paced, no completion deadline
+- certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
+- availability: reserve seats by phone or email while online checkout finishes launch prep
+- summary: Understand the building automation systems that tie HVAC, power, and monitoring together.
+
+Building Automation Systems (BAS) are the control layer behind HVAC, lighting, and power monitoring in modern facilities — and increasingly overlap with the BMS and DCIM platforms used in data centers. This course covers BAS architecture, sensor and controller basics, and how automation logic actually gets built and tuned. You'll leave able to read a points list, understand a control sequence, and troubleshoot the integration issues that come up when BAS meets facility-specific monitoring.
+
+Learning outcomes:
+- Understand BAS architecture and how it overlaps with BMS/DCIM platforms
+- Read and interpret BAS control sequences and points lists
+- Evaluate sensor and controller placement for accurate automation
+- Troubleshoot common BAS integration issues
+- Certificate of completion on finish
+- Self-paced — start and stop anytime
+- Delivered by an IACET-accredited provider
+- Volume pricing available for teams
+
+Modules:
+1. BAS Architecture Fundamentals: How controllers, sensors, and the central platform fit together.
+2. Control Sequences & Points Lists: Reading the logic that actually drives automated systems.
+3. Sensor & Controller Basics: Placement and calibration fundamentals for accurate control.
+4. BAS Integration & Troubleshooting: Common integration issues between BAS and other facility systems.
 
 ## Bundles
 
-- **Power & Electrical Systems Bundle** — 15 courses, $986.99 (list $1,703.85): https://datacentertraining.us/bundles.html
-- **Cooling & Facilities Efficiency Bundle** — 6 courses, $462.99 (list $798.94): https://datacentertraining.us/bundles.html
-- **Operations & Reliability Bundle** — 10 courses, $830.99 (list $1,433.90): https://datacentertraining.us/bundles.html
-- **Security & Compliance Bundle** — 5 courses, $400.99 (list $691.95): https://datacentertraining.us/bundles.html
-- **Design, Planning & Commissioning Bundle** — 4 courses, $557.99 (list $961.96): https://datacentertraining.us/bundles.html
-- **Monitoring & Smart Facility Bundle** — 4 courses, $333.99 (list $576.96): https://datacentertraining.us/bundles.html
-- **Complete Data Center Professional Bundle** — 44 courses, $2928.99 (list $6,167.56): https://datacentertraining.us/bundles.html
+Prices are per seat in USD. Seat-count volume discounts apply at checkout: 2-10 seats 1%, 11-20 seats 2%, 21-50 seats 3%, 51-100 seats 5%, 101-250 seats 7%, 251-500 seats 8%, 501-1000 seats 10%.
 
-## Learning Tracks
+### Power & Electrical Systems Bundle
 
-- Power & Electrical Systems Track
-- Cooling & Facilities Efficiency Track
-- Operations & Reliability Track
-- Security & Compliance Track
-- Design, Planning & Commissioning Track
-- Monitoring & Smart Facility Track
+- id: bundle-power-electrical
+- track: Power & Electrical Systems Track
+- price_usd: 986.99
+- list_price_usd: 1703.85 (sum of individual course prices)
+- savings: $716.86 (42%)
+- courses: 15, 57.5 hrs
+- audience: For electricians and power technicians who own the electrical chain end to end: from data center-scale power architecture down to UPS, generator, battery safety, and daily electrical work practices.
+- url: https://datacentertraining.us/bundles.html
+- course_ids: power-systems-electrical-fundamentals, ups-operations-load-testing, generator-operations-maintenance, electrical-safety-best-practices, batteries-dc-circuits, data-center-arc-flash-safety, data-center-electrical-safety, data-center-epo-procedures, data-center-ups-battery-safety, emergency-standby-power-systems-fundamentals, generator-fundamentals, lithium-ion-thermal-runaway-emergency-response, osha-electrical-safety-data-center-technicians, power-distribution-systems-fundamentals, ups-systems-fundamentals
+
+### Cooling & Facilities Efficiency Bundle
+
+- id: bundle-cooling-efficiency
+- track: Cooling & Facilities Efficiency Track
+- price_usd: 462.99
+- list_price_usd: 798.94 (sum of individual course prices)
+- savings: $335.95 (42%)
+- courses: 6, 31 hrs
+- audience: For HVAC and facilities technicians who need both the cooling design fundamentals and the hands-on maintenance skills to keep it running efficiently.
+- url: https://datacentertraining.us/bundles.html
+- course_ids: cooling-systems-design-optimization, hvac-troubleshooting-essentials, energy-efficiency-pue-optimization, mechanical-systems-maintenance, data-center-cooling-refrigerant-safety, building-envelope-fundamentals
+
+### Operations & Reliability Bundle
+
+- id: bundle-operations-reliability
+- track: Operations & Reliability Track
+- price_usd: 830.99
+- list_price_usd: 1433.90 (sum of individual course prices)
+- savings: $602.91 (42%)
+- courses: 10, 62 hrs
+- audience: For operations and facility managers who own uptime — daily operations, disaster recovery, preventive maintenance, incident response, and the general facility management skills that hold it all together.
+- url: https://datacentertraining.us/bundles.html
+- course_ids: data-center-operations-management, disaster-recovery-business-continuity, preventive-maintenance-planning, incident-response-troubleshooting, business-continuity-disaster-recovery-planning, building-maintenance-fundamentals, facility-management-fundamentals, roofing-systems-maintenance-fundamentals, server-room-ergonomics-manual-handling, data-center-raised-floor-confined-space
+
+### Security & Compliance Bundle
+
+- id: bundle-security-compliance
+- track: Security & Compliance Track
+- price_usd: 400.99
+- list_price_usd: 691.95 (sum of individual course prices)
+- savings: $290.96 (42%)
+- courses: 5, 25.5 hrs
+- audience: For security and compliance leads building an audit-ready physical security, fire safety, and environmental compliance program.
+- url: https://datacentertraining.us/bundles.html
+- course_ids: security-compliance-data-centers, access-control-physical-security, facility-environmental-compliance, data-center-fire-suppression-safety, data-center-physical-security-access-control
+
+### Design, Planning & Commissioning Bundle
+
+- id: bundle-design-planning
+- track: Design, Planning & Commissioning Track
+- price_usd: 557.99
+- list_price_usd: 961.96 (sum of individual course prices)
+- savings: $403.97 (42%)
+- courses: 4, 45.5 hrs
+- audience: For engineers and project leads taking a facility from design through TIER benchmarking, capacity planning, and commissioning.
+- url: https://datacentertraining.us/bundles.html
+- course_ids: data-center-design-fundamentals, tier-infrastructure-fundamentals, infrastructure-commissioning-startup, capacity-planning-forecasting
+
+### Monitoring & Smart Facility Bundle
+
+- id: bundle-monitoring-smart-facility
+- track: Monitoring & Smart Facility Track
+- price_usd: 333.99
+- list_price_usd: 576.96 (sum of individual course prices)
+- savings: $242.97 (42%)
+- courses: 4, 28.5 hrs
+- audience: For teams building out monitoring, DCIM, building automation, and the network cabling infrastructure that supports it.
+- url: https://datacentertraining.us/bundles.html
+- course_ids: monitoring-automation-bms-systems, dcim-platform-fundamentals, fiber-optics-network-cabling, building-automation-systems-fundamentals
+
+### Complete Data Center Professional Bundle
+
+- id: bundle-complete-catalog
+- track: All tracks
+- price_usd: 2928.99
+- list_price_usd: 6167.56 (sum of individual course prices)
+- savings: $3238.57 (53%)
+- courses: 44, 250 hrs
+- audience: Every course in the catalog — all 6 role-based tracks in one enrollment. The single path for a team that wants full coverage across design, power, cooling, security, operations, and monitoring, at the deepest discount we offer.
+- url: https://datacentertraining.us/bundles.html
+- course_ids: access-control-physical-security, batteries-dc-circuits, building-automation-systems-fundamentals, building-envelope-fundamentals, building-maintenance-fundamentals, business-continuity-disaster-recovery-planning, capacity-planning-forecasting, cooling-systems-design-optimization, data-center-arc-flash-safety, data-center-cooling-refrigerant-safety, data-center-design-fundamentals, data-center-electrical-safety, data-center-epo-procedures, data-center-fire-suppression-safety, data-center-operations-management, data-center-physical-security-access-control, data-center-raised-floor-confined-space, data-center-ups-battery-safety, dcim-platform-fundamentals, disaster-recovery-business-continuity, electrical-safety-best-practices, emergency-standby-power-systems-fundamentals, energy-efficiency-pue-optimization, facility-environmental-compliance, facility-management-fundamentals, fiber-optics-network-cabling, generator-fundamentals, generator-operations-maintenance, hvac-troubleshooting-essentials, incident-response-troubleshooting, infrastructure-commissioning-startup, lithium-ion-thermal-runaway-emergency-response, mechanical-systems-maintenance, monitoring-automation-bms-systems, osha-electrical-safety-data-center-technicians, power-distribution-systems-fundamentals, power-systems-electrical-fundamentals, preventive-maintenance-planning, roofing-systems-maintenance-fundamentals, security-compliance-data-centers, server-room-ergonomics-manual-handling, tier-infrastructure-fundamentals, ups-operations-load-testing, ups-systems-fundamentals
+
+## Roles
+
+- electrician ("I'm an electrician or power technician"): Power & Electrical Systems Track. Electricians and power technicians working on utility interconnection, UPS systems, generators, batteries, and daily electrical safety should complete this 15-course, 57.5-hour track.
+- hvac ("I work on HVAC, cooling, or mechanical systems"): Cooling & Facilities Efficiency Track. HVAC and facilities technicians who need both cooling design fundamentals and hands-on maintenance skills should complete this 6-course, 31-hour track.
+- operations ("I manage daily facility operations and uptime"): Operations & Reliability Track. Facility and operations managers who own uptime should complete this 10-course, 62-hour track covering daily operations, disaster recovery, maintenance, and incident response.
+- security ("I handle security or compliance"): Security & Compliance Track. Security and compliance leads building an audit-ready program should complete this 5-course, 25.5-hour track.
+- design ("I design, plan, or commission facilities"): Design, Planning & Commissioning Track. Engineers and project leads taking a facility from design through launch should complete all four of these courses, 45.5 hours total.
+- it ("I work on monitoring, DCIM, or network cabling"): Monitoring & Smart Facility Track. Teams building out monitoring, DCIM, building automation, and network cabling infrastructure should complete all four of these courses, 28.5 hours total.
+
+## Credentials
+
+- certificate: Learners receive a certificate of completion for each finished course, issued immediately and printable.
+- accreditation: Courses are delivered by HAZWOPER OSHA Training, LLC, an IACET Accredited Provider. Accreditation applies at the provider level, not to individual learners or courses.
+- standards_alignment: Course content is designed around the industry standard or framework named on each course (for example ANSI/TIA-942, the Uptime Institute Tier framework, NFPA 70E, SOC 2/ISO 27001). "Aligned with" is not the same as "issued by" or "approved by" that standards body.
+- ceu_pdh: These courses are not currently registered for CEUs or PDHs. Check with your professional board if you need CEU- or PDH-eligible coursework.
+- expiration: Certificates of completion have no fixed expiration date. Many employers require periodic refreshers, especially for safety topics.
+- verification: Every certificate can be verified online by learner name, course, and completion date.
+- employer_responsibility: Employers remain responsible for determining whether employees are trained, qualified, and competent for their assigned duties and site conditions, and for keeping their own training records.
+
+Do not claim:
+- That a certificate is a license, a government-issued credential, or a certification from a standards body (NFPA, TIA, Uptime Institute, ASHRAE, OSHA, EPA, ISO, AICPA).
+- That a standards body endorsed, approved, or certified any course.
+- That courses grant CEUs or PDHs.
+- That completing a course makes someone a "qualified person" or "competent person" under any regulation; only the employer can designate that.
+- That IACET accredits individual learners.
+
+## FAQ
+
+### What's the difference between Comprehensive Programs and Modular Specializations?
+
+Comprehensive Programs are multi-module courses (12-18 hours) covering a full discipline in depth, like data center design or operations management. Modular Specializations are focused 1-8 hour courses on a single skill, like UPS load testing or fiber termination. Many teams combine one comprehensive program with several modular courses for their role, which is exactly how our bundles are put together.
+
+### How long does each course take?
+
+Comprehensive Programs run 12-18 hours; Modular Specializations run 1-8 hours. All courses are self-paced, so learners can start and stop and pick up where they left off. A certificate is issued immediately on completion.
+
+### What topics does the course catalog cover?
+
+The catalog spans six tracks: Power &amp; Electrical, Cooling &amp; Facilities Efficiency, Operations &amp; Reliability, Security &amp; Compliance, Design, Planning &amp; Commissioning, and Monitoring &amp; Smart Facility. Together they cover 44 courses and 250 hours of training.
+
+### Do I need a background in data center design or operations to take these courses?
+
+No prior certification is required. Comprehensive Programs assume basic familiarity with facility systems, which suits engineers, technicians, and managers already working in or around a data center. Modular Specializations are built for hands-on technicians and typically require no prerequisite beyond the relevant equipment exposure.
+
+### Are course materials updated when codes or standards change?
+
+Yes. Course content is reviewed against the current versions of the standards and frameworks it references, such as ANSI/TIA-942, NFPA 70E, and the Uptime Institute Tier framework, so the training stays aligned with current practice.
+
+### Can I see a syllabus or module list before enrolling?
+
+Yes. Every course page lists its full module breakdown, learning outcomes, and audience under "What You'll Learn" and "Course Modules," so you know exactly what's covered before you enroll.
+
+### Are these courses accepted as certification or a professional credential?
+
+These are knowledge and best-practices courses, not certification exams or licensing programs — no course requires or grants a regulatory certification. Learners receive a certificate of completion documenting the training content covered. Courses are delivered by an IACET-accredited provider, the same accreditation used across our other training programs.
+
+### What standards and frameworks do the courses reference?
+
+Course content references the industry standards relevant to each topic: ANSI/TIA-942 and ISO 14644 for design, the Uptime Institute TIER framework for infrastructure benchmarking, NFPA 70E for electrical safety, and SOC 2, ISO 27001, HIPAA, and PCI-DSS for security and compliance, among others. Each course lists the frameworks it covers directly on its course page.
+
+### Do data center training certificates expire or need to be renewed?
+
+Certificates of completion don't have a fixed expiration date, but many employers require periodic refreshers as part of internal training programs, especially for safety-adjacent topics like electrical safety and access control. Check your employer's refresher policy; courses are short enough to retake as often as your program requires.
+
+### How do I verify an employee's completed certificate?
+
+Every certificate issued through our IACET-accredited platform can be verified using our online certificate verification tool, which confirms the learner's name, course, and completion date. Facility security and HR teams commonly use this to confirm training before granting system or floor access.
+
+### Do you offer CEUs or PDHs (continuing education units)?
+
+These courses aren't currently registered for CEUs or PDHs. They're built as standards-aligned, best-practices training with a certificate of completion rather than accredited continuing-education credit — check with your professional board if you specifically need CEU- or PDH-eligible coursework.
+
+### How is the certificate delivered, and can I print it?
+
+Certificates of completion are issued digitally as soon as you finish a course and can be downloaded and printed for your records or an employer's training file.
+
+### Can I take courses on my phone or tablet?
+
+Yes. Courses run in any modern web browser, so you can start on a desktop and continue on a phone or tablet without installing a separate app.
+
+### What language are the courses offered in?
+
+Courses are currently offered in English only.
+
+### Is there a deadline to complete a course after purchasing?
+
+No. Courses are self-paced with no fixed completion deadline, so you can start, stop, and pick back up on your own schedule.
+
+### Are the courses accessible for learners who need accommodations?
+
+Courses run in a standard web browser on any device. If you or someone on your team needs a specific accommodation, email info@hazwoper-osha.com and our team will help.
+
+### Do you offer a free trial or sample lesson?
+
+There isn't a free trial, but every course page publishes the full module breakdown and learning outcomes so you can see exactly what's covered before enrolling.
+
+### What's included in a bundle, and how much do I save?
+
+Each bundle groups a comprehensive program with the modular courses most relevant to the same role — for example, the Power &amp; Electrical Systems Bundle includes 15 courses and 57.5 hours of training on power systems, UPS, generators, and electrical safety for $986.99. The Complete Data Center Professional Bundle covers all 44 courses and 250 hours for $2,928.99, the deepest discount we offer. Every learner still gets a certificate for each course completed.
+
+### Which bundle is the best fit for a facilities generalist?
+
+Facilities staff who touch multiple systems typically get the most value from the Operations &amp; Reliability Bundle, or the Complete Data Center Professional Bundle if you want coverage across all six tracks.
+
+### Can I mix comprehensive programs and modular courses in one enrollment?
+
+Yes. There's no requirement to buy a bundle or stick to one tier — you can enroll in any combination of Comprehensive Programs and Modular Specializations individually. Bundles exist purely as a discount for teams that want the full role-based path at once.
+
+### Can I upgrade from an individual course purchase to a bundle later?
+
+If you've already purchased individual courses and want to move to a bundle, contact us at info@hazwoper-osha.com or 1-866-429-6742 and our team can review your enrollment and help find the best path forward.
+
+### Is there a limit to how many seats I can buy in one bundle?
+
+No. Bundles support anywhere from a single learner up to 1,000+ seats, with volume pricing applied automatically as your seat count grows.
+
+### Do you offer government or education pricing?
+
+We don't have separate published government or education pricing, but larger orders already qualify for automatic volume discounts — contact us to discuss options for public-sector or education budgets.
+
+### Is my payment information secure?
+
+Yes. Checkout is processed by Stripe, a PCI-compliant payment processor. We never see or store your full card details.
+
+### Can I choose only the courses my team needs?
+
+Yes. Every course is sold individually, so you can enroll each person in exactly the courses their role requires — for example Power Systems &amp; Electrical Fundamentals plus UPS Operations for an electrician, or Access Control &amp; Physical Security for a security technician — without paying for training your team doesn't need.
+
+### Can I enroll my team online right now?
+
+Data Center Training courses are in final launch prep, so online checkout is currently in preview mode. Call 1-866-429-6742 or email info@hazwoper-osha.com and our team will get your seats reserved and your team enrolled directly.
+
+### Do you offer volume pricing for large teams?
+
+Yes. Seat-count discounts apply automatically at checkout on a per-course or per-bundle basis, from 2 seats up through 1,000+.
+
+### Can contractors and third-party vendors take this training?
+
+Yes. Independent contractors, cabling crews, HVAC vendors, and third-party facilities staff commonly complete this training as part of a site's vendor access or onboarding requirements. Certificates are issued per learner and can be shared with the general contractor or site operator as proof of training.
+
+### Is this training relevant across different facility types and locations?
+
+Yes. Course content is built around widely used industry standards and frameworks (ANSI/TIA-942, Uptime Institute TIER, NFPA, ISO, SOC 2) rather than a single vendor's platform or one region's code, so it applies across facility types, states, and countries. Multi-site operators can standardize on the same catalog across every facility.
+
+### What payment and invoicing options are available for larger teams?
+
+Online checkout accepts major credit and debit cards through Stripe. For larger facility teams, multi-site enrollments, bundle purchases, or purchase-order/invoice billing, call 1-866-429-6742 or email info@hazwoper-osha.com and our team can set up group enrollment outside of the standard checkout flow.
+
+### Can I get a single invoice for a mixed order of courses and bundles?
+
+Yes. Contact us for multi-item or mixed course-and-bundle orders and our team can set up a single invoice covering the full order.
+
+### How do I track completions across my team?
+
+Each learner gets their own login and certificate of completion. For team-wide progress tracking or reporting, contact us during enrollment and our team can help set up group reporting.
+
+### What's the difference between this training and HAZWOPER/OSHA safety training from your parent company?
+
+Data Center Training is a specialty division of HAZWOPER-OSHA Training, LLC focused specifically on data center topics — design, power, cooling, security, operations, and monitoring. Our parent company's broader catalog covers general HAZWOPER and OSHA safety compliance training that applies across industries, not just data centers.
+
+### Can I get a refund if a course isn't right for my team?
+
+See our Refund Policy for current terms, or contact us at info@hazwoper-osha.com and our team will help.
+
+### What if I need help while taking a course?
+
+Email info@hazwoper-osha.com or call 1-866-429-6742 and our team can help with course access, technical issues, or questions about the content.
+
+## Guides and References
+
+- [Course Catalog](https://datacentertraining.us/courses.html) (site page): All 44 courses with search, sort, and filters by track, type, duration, or price.
+- [Course Bundles](https://datacentertraining.us/bundles.html) (site page): Seven role-based and complete-catalog bundles with pricing and savings.
+- [Which Courses Does Your Role Need?](https://datacentertraining.us/who.html) (site page): Role-to-track recommendations for electricians, HVAC techs, operations managers, security leads, engineers, and IT staff.
+- [Certifications & Accreditations](https://datacentertraining.us/certifications.html) (site page): IACET provider accreditation and what a certificate of completion does and does not mean.
+- [FAQ](https://datacentertraining.us/faq.html) (site page): Answers about programs, pricing, certificates, access, team enrollment, and policies.
+- [Certificate Verification](https://hazwoper-osha.com/certificate-verification) (site page): Verify a learner certificate by name, course, and completion date.
+- [OSHA 29 CFR 1910.146 - Permit-required confined spaces](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.146) (standard reference): Federal OSHA confined space standard referenced by the raised floor and confined space awareness course.
+- [OSHA 29 CFR 1910.333 - Selection and use of electrical work practices](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.333) (standard reference): Federal OSHA electrical safety-related work practices standard.
+- [EPA Section 608 - Stationary refrigeration and air conditioning](https://www.epa.gov/section608) (standard reference): Federal refrigerant management requirements relevant to cooling system work.
+- [ISO/IEC 27001 - Information security management systems](https://www.iso.org/standard/27001) (standard reference): International information security management standard referenced by the security and compliance program.
+- [Uptime Institute Tier Classification System](https://uptimeinstitute.com/tiers) (standard reference): Tier I-IV infrastructure topology framework referenced by the Tier Infrastructure Fundamentals course.
+- [ASHRAE TC 9.9 - Mission Critical Facilities, Data Centers, Technology Spaces and Electronic Equipment](https://tc0909.ashraetcs.org/) (standard reference): ASHRAE technical committee behind the data center thermal guidelines referenced in cooling courses.
+- [How Facilities Managers Can Use PUE Trends to Separate Cooling Waste from IT Load Growth](https://datacentertraining.us/blog/posts/how-facilities-managers-can-use-pue-trends-to-separate-cooling-waste-from-it-load-growth.html) (blog post, 2026-09-28): When a data center's power bill rises, the first explanation is often that the IT load grew. That explanation may be right, but it can also hide a cooling…
+- [Clean-Agent Fire Suppression Release Procedures: What Data Center Teams Should Practice Before an Alarm](https://datacentertraining.us/blog/posts/clean-agent-fire-suppression-release-procedures-what-data-center-teams-should-practice-before-an-alarm.html) (blog post, 2026-09-27): Clean-agent fire suppression release procedures data center teams should practice before an alarm: pre-alarm actions, abort use, evacuation, and re-entry.
+- [Raised Floor and Confined Space Readiness: A Pre-Task Checklist for Data Center Maintenance Teams](https://datacentertraining.us/blog/posts/raised-floor-and-confined-space-readiness-a-pre-task-checklist-for-data-center-maintenance-teams.html) (blog post, 2026-09-26): A pre-task checklist for raised floor and confined space work in data centers: space classification, atmosphere, panel handling, cabling, and rescue plans.
+- [Tier Infrastructure Review: What Facility Managers Should Verify Beyond the Label](https://datacentertraining.us/blog/posts/tier-infrastructure-review-what-facility-managers-should-verify-beyond-the-label.html) (blog post, 2026-09-25): What facility managers should verify when a data center claims Tier alignment: redundancy paths, concurrent maintainability, procedures, and test records.
+- [Data Center Commissioning Handover Checklist: What Facilities Managers Should Verify Before Operations Takeover](https://datacentertraining.us/blog/posts/data-center-commissioning-handover-checklist-what-facilities-managers-should-verify-before-operations-takeover.html) (blog post, 2026-09-24): A commissioning handover checklist for data center facilities teams: integrated test evidence, documentation, trained staff, and open items before takeover.
+- [Data Center Visitor Access: A Practical Checklist for Escorting Maintenance Contractors](https://datacentertraining.us/blog/posts/data-center-visitor-access-a-practical-checklist-for-escorting-maintenance-contractors.html) (blog post, 2026-09-24): A practical checklist for escorting maintenance contractors in a data center: identity checks, work scope, escort duties, restricted zones, and sign-out.
+- [DCIM vs BMS Alarm Dashboards: What Data Center Operations Teams Should Verify](https://datacentertraining.us/blog/posts/dcim-vs-bms-alarm-dashboards-what-data-center-operations-teams-should-verify.html) (blog post, 2026-09-24): DCIM vs BMS alarm dashboards: what data center operations teams should verify about naming, priorities, and escalation so each alarm gets the right response.
+- [Generator Maintenance Readiness: A Data Center Manager's Pre-Task Checklist](https://datacentertraining.us/blog/posts/generator-maintenance-readiness-a-data-center-manager-s-pre-task-checklist.html) (blog post, 2026-09-24): A pre-task checklist for data center managers before generator inspection, service, or load testing: transfer plans, fuel, isolation, roles, and records.
+- [How Data Center Managers Should Test Physical Access During a Maintenance Window](https://datacentertraining.us/blog/posts/how-data-center-managers-should-test-physical-access-during-a-maintenance-window.html) (blog post, 2026-09-24): How data center managers can test physical access controls during a maintenance window, from badge scope and escorts to door alarms and audit logs.
+- [How Data Center Security Leads Should Audit Contractor Access Controls](https://datacentertraining.us/blog/posts/how-data-center-security-leads-should-audit-contractor-access-controls.html) (blog post, 2026-09-24): How data center security leads can audit contractor access: badge scope, approvals, escort records, access logs, and closing gaps before the next audit.
+- [How to Build a Role-Based Training Matrix for a Colocation Facility](https://datacentertraining.us/blog/posts/how-to-build-a-role-based-training-matrix-for-a-colocation-facility.html) (blog post, 2026-09-24): How to build a role-based training matrix for a colocation facility: map roles to tasks and risks, assign courses, track completion, and plan refreshers.
+- [Lithium-Ion Battery Thermal Runaway: What Data Center Teams Should Rehearse Before an Incident](https://datacentertraining.us/blog/posts/lithium-ion-battery-thermal-runaway-what-data-center-teams-should-rehearse-before-an-incident.html) (blog post, 2026-09-24): What data center teams should rehearse before a lithium-ion battery thermal runaway incident: detection, isolation, evacuation, and responder coordination.
+- [UPS Maintenance Bypass Mistakes That Can Cause a Data Center Outage](https://datacentertraining.us/blog/posts/ups-maintenance-bypass-mistakes-that-can-cause-a-data-center-outage.html) (blog post, 2026-09-24): Common UPS maintenance bypass mistakes that can drop critical load, and the procedure checks, switching sequence, and training that help teams avoid them.
+- [What Cooling Technicians Should Verify Before Opening a Refrigerant Circuit](https://datacentertraining.us/blog/posts/what-cooling-technicians-should-verify-before-opening-a-refrigerant-circuit.html) (blog post, 2026-09-24): What data center cooling technicians should verify before opening a refrigerant circuit: isolation, refrigerant recovery, pressure checks, and PPE.
+- [What Data Center Facility Managers Should Verify Before Commissioning Handover](https://datacentertraining.us/blog/posts/what-data-center-facility-managers-should-verify-before-commissioning-handover.html) (blog post, 2026-09-24): What data center facility managers should verify before accepting a commissioning handover: test results, documentation gaps, procedures, and training.
 
 ## Company
 
 - Legal name: Industrial Certified Training, LLC
-- Parent organization: HAZWOPER-OSHA Training, LLC — https://hazwoper-osha.com/
-- Accreditation: IACET Accredited Provider
+- Training provider: HAZWOPER OSHA Training, LLC, https://hazwoper-osha.com/ (IACET Accredited Provider)
 - Contact: info@hazwoper-osha.com, 1-866-429-6742
 - Address: 11901 Santa Monica Blvd., Suite #414, Los Angeles, CA 90025
-

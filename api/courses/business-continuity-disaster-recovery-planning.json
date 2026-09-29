@@ -1,0 +1,102 @@
+{
+  "id": "business-continuity-disaster-recovery-planning",
+  "catalog_number": 445,
+  "title": "Business Continuity and Disaster Recovery Planning Training",
+  "url": "https://datacentertraining.us/courses/business-continuity-disaster-recovery-planning.html",
+  "api_url": "https://datacentertraining.us/api/courses/business-continuity-disaster-recovery-planning.json",
+  "track": "Operations & Reliability Track",
+  "category": "Operations",
+  "course_type": "modular",
+  "course_type_label": "Modular Specialization",
+  "duration_hours": 8,
+  "duration_iso8601": "PT8H",
+  "module_count": 4,
+  "price_usd": 99.99,
+  "currency": "USD",
+  "standards": [
+    "ICS-NIMS"
+  ],
+  "summary": "A hands-on planning course for building or stress-testing a business continuity plan.",
+  "description": "This course complements the Disaster Recovery & Business Continuity comprehensive program with a dedicated, hands-on planning session: building a business continuity plan from scratch, working through ICS-NIMS-aligned emergency management frameworks, and stress-testing the plan against realistic scenarios. You'll leave with a plan structure and documentation approach that holds up under auditor or insurer review, not just a filed-away document.",
+  "why_it_matters": "A business continuity plan is only useful if people can follow it under pressure. Many plans are written once for an audit and never tested, so contact lists are out of date, recovery steps assume staff who have left and nobody has practiced who makes decisions when the building is inaccessible. This course is a hands-on planning session. It starts from a business impact analysis, which identifies the processes that matter most and how long each can be down, and builds a plan around those priorities. It uses the Incident Command System (ICS) and the National Incident Management System (NIMS), the same frameworks fire departments and emergency agencies use, so your facility's command structure lines up with responders. You then stress-test the plan and document it in a form auditors can review.",
+  "audience": "Operations and risk managers building or updating a formal business continuity plan.",
+  "prerequisites": "No prior certification required. Relevant equipment exposure is helpful.",
+  "learning_outcomes": [
+    "Build a business continuity plan using recognized emergency management frameworks",
+    "Apply ICS-NIMS structure to a facility-level incident response",
+    "Stress-test a continuity plan against realistic failure scenarios",
+    "Document a plan that satisfies auditor and insurer expectations",
+    "Certificate of completion on finish",
+    "Self-paced — start and stop anytime",
+    "Delivered by an IACET-accredited provider",
+    "Volume pricing available for teams"
+  ],
+  "modules": [
+    {
+      "title": "BC/DR Planning Frameworks",
+      "summary": "Structuring a plan around recognized emergency management standards."
+    },
+    {
+      "title": "ICS-NIMS for Facilities",
+      "summary": "Applying incident command structure at the facility level."
+    },
+    {
+      "title": "Plan Stress-Testing",
+      "summary": "Running a continuity plan through realistic failure scenarios."
+    },
+    {
+      "title": "Audit-Ready Documentation",
+      "summary": "Documenting a plan that holds up under audit or insurance review."
+    }
+  ],
+  "bundles": [
+    {
+      "id": "bundle-operations-reliability",
+      "name": "Operations & Reliability Bundle",
+      "price_usd": 830.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    },
+    {
+      "id": "bundle-complete-catalog",
+      "name": "Complete Data Center Professional Bundle",
+      "price_usd": 2928.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    }
+  ],
+  "language": "en",
+  "delivery": "Online, self-paced, no completion deadline",
+  "certificate": {
+    "type": "Certificate of completion",
+    "issuer": "HAZWOPER OSHA Training, LLC",
+    "issuer_accreditation": "IACET Accredited Provider (provider-level accreditation)",
+    "delivery": "Issued immediately on completion; downloadable and printable",
+    "validity_period": "No fixed expiration; follow your employer's refresher policy",
+    "verification_url": "https://hazwoper-osha.com/certificate-verification",
+    "is_license_or_government_certification": false,
+    "ceu_or_pdh_credit": false
+  },
+  "availability": "preorder",
+  "enroll_url": "https://datacentertraining.us/checkout.html?item=business-continuity-disaster-recovery-planning",
+  "faqs": [
+    {
+      "question": "What is ICS/NIMS and why use it in a data center?",
+      "answer": "The Incident Command System is a standard way to organize people during an emergency, with clear roles such as incident commander, operations and logistics. NIMS is the U.S. national framework built around it. Using the same structure as local responders makes handoffs smoother during fires, floods or other major events."
+    },
+    {
+      "question": "How does this course relate to Disaster Recovery & Business Continuity?",
+      "answer": "Disaster Recovery & Business Continuity is the 12–18 hour comprehensive program covering RTO/RPO, redundant sites and DR testing. This course complements it with a dedicated, practical session on building and stress-testing the continuity plan itself."
+    },
+    {
+      "question": "What is a business impact analysis?",
+      "answer": "A business impact analysis (BIA) identifies critical business processes, the systems they depend on and how long each can be interrupted before the damage becomes unacceptable. It sets the priorities and recovery targets the rest of the plan is built around."
+    }
+  ],
+  "related_course_ids": [
+    "data-center-operations-management",
+    "disaster-recovery-business-continuity",
+    "preventive-maintenance-planning",
+    "incident-response-troubleshooting",
+    "building-maintenance-fundamentals"
+  ],
+  "last_updated": "2026-09-29"
+}

@@ -1,0 +1,112 @@
+{
+  "id": "cooling-systems-design-optimization",
+  "catalog_number": 406,
+  "title": "Cooling Systems Design & Optimization",
+  "url": "https://datacentertraining.us/courses/cooling-systems-design-optimization.html",
+  "api_url": "https://datacentertraining.us/api/courses/cooling-systems-design-optimization.json",
+  "track": "Cooling & Facilities Efficiency Track",
+  "category": "Cooling & Efficiency",
+  "course_type": "comprehensive",
+  "course_type_label": "Comprehensive Program",
+  "duration_hours": 16,
+  "duration_iso8601": "PT16H",
+  "module_count": 6,
+  "price_usd": 298.99,
+  "currency": "USD",
+  "standards": [
+    "PUE",
+    "ASHRAE Thermal Guidelines"
+  ],
+  "summary": "Cut cooling costs and improve reliability with modern thermal management strategy.",
+  "description": "Cooling is typically the second-largest line item in a data center's power bill, and the technology has moved fast — liquid cooling, containment, and free cooling have all become mainstream options in the last decade. This course covers CRAC/CRAH fundamentals, liquid cooling technologies (direct-to-chip, immersion), containment strategies, free cooling, and the thermal analysis behind PUE optimization. You'll work through cost-benefit analysis of different cooling technologies and energy modeling concepts, using case studies of facilities that achieved 30–50% energy improvements through better cooling strategy — not just newer equipment. The goal is a cooling optimization strategy you can actually implement: knowing which technology fits your facility's density and climate, and how to build the business case for the investment.",
+  "why_it_matters": "Cooling usually uses more energy than anything in a data center except the IT load itself, and it is changing fast. Higher rack densities from AI and HPC workloads are pushing air cooling to its limits, and direct-to-chip liquid cooling, rear-door heat exchangers and containment are now common. Decisions made today have to fit both current racks and the next generation of hardware. Good cooling design is about matching the system to the load: getting cold air to server inlets without mixing, running at the warmer inlet temperatures allowed by the ASHRAE thermal guidelines (a recommended range of 18–27°C, or 64.4–80.6°F, for most equipment) and using economizers when the climate allows. This program covers CRAC/CRAH fundamentals, liquid cooling, containment and airflow management, free cooling, thermal modeling and the energy economics that connect cooling choices to PUE and operating costs.",
+  "audience": "HVAC technicians, facilities engineers, and anyone accountable for PUE.",
+  "prerequisites": "No prior certification required. Assumes basic familiarity with facility systems.",
+  "learning_outcomes": [
+    "Compare CRAC/CRAH, liquid cooling, and free cooling for a given facility profile",
+    "Design hot/cold aisle containment strategies that reduce mixing losses",
+    "Apply thermal analysis and modeling concepts to identify cooling inefficiencies",
+    "Calculate and benchmark PUE, and identify realistic optimization targets",
+    "Build a cost-benefit case for a cooling technology upgrade",
+    "Certificate of completion on finish",
+    "Self-paced — start and stop anytime",
+    "Delivered by an IACET-accredited provider",
+    "Volume pricing available for teams"
+  ],
+  "modules": [
+    {
+      "title": "CRAC/CRAH System Fundamentals",
+      "summary": "How computer room air conditioning/handling units actually work, and where they fall short at scale."
+    },
+    {
+      "title": "Liquid Cooling Technologies",
+      "summary": "Direct-to-chip and immersion cooling — when the density numbers justify the switch."
+    },
+    {
+      "title": "Containment Strategies & Airflow Management",
+      "summary": "Hot/cold aisle containment done right, and the common mistakes that undercut it."
+    },
+    {
+      "title": "Free Cooling & Hybrid Systems",
+      "summary": "Using outside air and hybrid systems to cut mechanical cooling load."
+    },
+    {
+      "title": "Thermal Analysis & Modeling",
+      "summary": "Reading airflow and heat-load data to find where cooling capacity is wasted."
+    },
+    {
+      "title": "PUE Optimization & Energy Economics",
+      "summary": "Turning PUE from a reporting metric into an optimization target."
+    }
+  ],
+  "bundles": [
+    {
+      "id": "bundle-cooling-efficiency",
+      "name": "Cooling & Facilities Efficiency Bundle",
+      "price_usd": 462.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    },
+    {
+      "id": "bundle-complete-catalog",
+      "name": "Complete Data Center Professional Bundle",
+      "price_usd": 2928.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    }
+  ],
+  "language": "en",
+  "delivery": "Online, self-paced, no completion deadline",
+  "certificate": {
+    "type": "Certificate of completion",
+    "issuer": "HAZWOPER OSHA Training, LLC",
+    "issuer_accreditation": "IACET Accredited Provider (provider-level accreditation)",
+    "delivery": "Issued immediately on completion; downloadable and printable",
+    "validity_period": "No fixed expiration; follow your employer's refresher policy",
+    "verification_url": "https://hazwoper-osha.com/certificate-verification",
+    "is_license_or_government_certification": false,
+    "ceu_or_pdh_credit": false
+  },
+  "availability": "preorder",
+  "enroll_url": "https://datacentertraining.us/checkout.html?item=cooling-systems-design-optimization",
+  "faqs": [
+    {
+      "question": "What is the difference between a CRAC and a CRAH?",
+      "answer": "A CRAC (computer room air conditioner) has its own compressor and refrigeration circuit. A CRAH (computer room air handler) uses chilled water from a central plant and a fan to move air across a coil. The choice affects efficiency, redundancy and how the rest of the plant is designed."
+    },
+    {
+      "question": "Is liquid cooling replacing air cooling?",
+      "answer": "Not entirely. Liquid cooling is growing quickly for high-density racks, especially for AI hardware, but most facilities will run a mix of air and liquid cooling for years. The course covers both and how to decide which fits a given load."
+    },
+    {
+      "question": "How does cooling design affect PUE?",
+      "answer": "PUE is total facility energy divided by IT energy, and cooling is usually the largest non-IT load. Containment, higher supply temperatures and economizer hours can all lower cooling energy and PUE. The final module ties these choices to energy costs."
+    }
+  ],
+  "related_course_ids": [
+    "hvac-troubleshooting-essentials",
+    "energy-efficiency-pue-optimization",
+    "mechanical-systems-maintenance",
+    "data-center-cooling-refrigerant-safety",
+    "building-envelope-fundamentals"
+  ],
+  "last_updated": "2026-09-29"
+}

@@ -1,0 +1,100 @@
+{
+  "id": "ups-operations-load-testing",
+  "catalog_number": 422,
+  "title": "UPS Operations & Load Testing",
+  "url": "https://datacentertraining.us/courses/ups-operations-load-testing.html",
+  "api_url": "https://datacentertraining.us/api/courses/ups-operations-load-testing.json",
+  "track": "Power & Electrical Systems Track",
+  "category": "Power & Electrical",
+  "course_type": "modular",
+  "course_type_label": "Modular Specialization",
+  "duration_hours": 4,
+  "duration_iso8601": "PT4H",
+  "module_count": 4,
+  "price_usd": 99.99,
+  "currency": "USD",
+  "standards": [],
+  "summary": "Master UPS operations, battery testing, and load-bank procedures.",
+  "description": "Focused, practical training on UPS systems: types and topologies, battery backup operation and testing, load transfer switching, and preventive maintenance. The course culminates in load-bank testing protocols — the procedure that actually proves a UPS will perform when it's needed. You'll leave with a maintenance schedule and testing routine you can run independently, plus emergency procedures for when a UPS doesn't perform as expected.",
+  "why_it_matters": "A UPS carries the entire critical load through the seconds between a utility failure and generator pickup, and through every power disturbance in between. Most UPS failures during an outage come from problems that could have been found earlier: weak batteries, a bypass that was left in the wrong position or a system that was never tested at full load. Operating a UPS safely means understanding transfers between inverter, static bypass and maintenance bypass, and following a written procedure every time, because a wrong switch sequence can drop load. Load-bank testing proves the UPS and batteries can carry rated load for the expected runtime. This course covers UPS types and topologies, battery management and testing, load transfer procedures and load-bank testing and maintenance.",
+  "audience": "Power technicians responsible for UPS operation and maintenance.",
+  "prerequisites": "No prior certification required. Relevant equipment exposure is helpful.",
+  "learning_outcomes": [
+    "Compare UPS types and topologies for a given load profile",
+    "Test and maintain UPS batteries on a defined schedule",
+    "Execute safe load transfer switching procedures",
+    "Run load-bank tests and interpret the results correctly",
+    "Certificate of completion on finish",
+    "Self-paced — start and stop anytime",
+    "Delivered by an IACET-accredited provider",
+    "Volume pricing available for teams"
+  ],
+  "modules": [
+    {
+      "title": "UPS Types & Topologies",
+      "summary": "Online, line-interactive, and standby UPS — how to pick the right one."
+    },
+    {
+      "title": "Battery Management & Testing",
+      "summary": "Testing schedules that catch battery degradation before failure."
+    },
+    {
+      "title": "Load Transfer Procedures",
+      "summary": "Switching load safely without an unplanned interruption."
+    },
+    {
+      "title": "Load-Bank Testing & Maintenance Lab",
+      "summary": "Proving UPS capacity under real load, hands-on."
+    }
+  ],
+  "bundles": [
+    {
+      "id": "bundle-power-electrical",
+      "name": "Power & Electrical Systems Bundle",
+      "price_usd": 986.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    },
+    {
+      "id": "bundle-complete-catalog",
+      "name": "Complete Data Center Professional Bundle",
+      "price_usd": 2928.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    }
+  ],
+  "language": "en",
+  "delivery": "Online, self-paced, no completion deadline",
+  "certificate": {
+    "type": "Certificate of completion",
+    "issuer": "HAZWOPER OSHA Training, LLC",
+    "issuer_accreditation": "IACET Accredited Provider (provider-level accreditation)",
+    "delivery": "Issued immediately on completion; downloadable and printable",
+    "validity_period": "No fixed expiration; follow your employer's refresher policy",
+    "verification_url": "https://hazwoper-osha.com/certificate-verification",
+    "is_license_or_government_certification": false,
+    "ceu_or_pdh_credit": false
+  },
+  "availability": "preorder",
+  "enroll_url": "https://datacentertraining.us/checkout.html?item=ups-operations-load-testing",
+  "faqs": [
+    {
+      "question": "What is the difference between static bypass and maintenance bypass?",
+      "answer": "Static bypass is an automatic, electronic path inside the UPS that transfers load to the bypass source if the inverter faults or is overloaded. Maintenance bypass is a manual switching arrangement that routes power around the UPS entirely so it can be serviced safely."
+    },
+    {
+      "question": "Why load-bank test a UPS?",
+      "answer": "A load-bank test runs the UPS at a controlled load to confirm it can carry its rating and that the batteries provide the expected runtime. It finds weak cells, connection problems and thermal issues before a real outage does."
+    },
+    {
+      "question": "Should I take UPS Systems Fundamentals first?",
+      "answer": "It helps. UPS Systems Fundamentals covers topology types, battery interaction and control panels at a theory level, which makes the procedures in this hands-on course easier to follow."
+    }
+  ],
+  "related_course_ids": [
+    "power-systems-electrical-fundamentals",
+    "generator-operations-maintenance",
+    "electrical-safety-best-practices",
+    "batteries-dc-circuits",
+    "data-center-arc-flash-safety"
+  ],
+  "last_updated": "2026-09-29"
+}

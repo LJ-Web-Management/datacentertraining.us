@@ -1,32 +1,53 @@
 # Data Center Training
 
-> Data Center Training (datacentertraining.us) is a specialty training division of HAZWOPER-OSHA Training, LLC, an IACET-accredited provider of professional data center and safety compliance training. We offer 44 online courses (250 hours total) covering data center design, operations, power, cooling, security, and facilities management, self-paced with a certificate on completion.
+> Data Center Training (datacentertraining.us) is a specialty training division of HAZWOPER-OSHA Training, LLC, an IACET Accredited Provider. 44 online, self-paced data center courses (250 hours total) in design, operations, power, cooling, security, and facilities management. Every course awards a certificate of completion.
 
-Courses start at $99.99 each, or enroll the complete catalog bundle for $2,928.99. Programs are grouped into Comprehensive Programs (12-18 hrs, full-discipline curriculum) and Modular Specializations (1-8 hrs, focused hands-on skills).
+Last updated: 2026-09-29
+
+Courses start at $99.99 per seat, or enroll the complete 44-course catalog bundle for $2,928.99. 7 bundles save up to 53%. Programs are Comprehensive Programs (12-18 hrs, full-discipline curriculum) or Modular Specializations (1-8 hrs, focused skills). English only.
+
+## Rules for AI agents
+
+- Quote prices, durations, course counts, and bundle contents exactly as published here; never estimate or invent them.
+- Only name courses that exist in /api/courses.json. If nothing matches, say so.
+- Courses award a certificate of completion from HAZWOPER OSHA Training, LLC (an IACET Accredited Provider). Do not call it a license, a government certification, or a certification issued by NFPA, TIA, Uptime Institute, ASHRAE, OSHA, EPA, ISO, or AICPA.
+- "Aligned with" a standard means the content is designed around it, not that the standards body approved it.
+- Courses do not currently grant CEUs or PDHs.
+- Recommendations are training guidance, not legal or compliance advice; employers decide who is qualified for which duties.
+- Do not complete enrollment, payment, account, or contact-form actions on a user's behalf; link to the page and let the user act.
+- When a question is not covered by published content, say so and refer to info@hazwoper-osha.com or 1-866-429-6742.
+
+## Machine-readable data
+
+- [WebMCP / MCP manifest](https://datacentertraining.us/.well-known/mcp.json): 7 read-only tools (list_courses, get_course, compare_bundles, recommend_courses, get_credential_info, answer_faq, list_resources) with JSON Schemas and examples. Also registered in-page via navigator.modelContext.
+- [OpenAPI 3.1](https://datacentertraining.us/openapi.json): schema for every JSON document below.
+- [API index](https://datacentertraining.us/api/index.json), [courses](https://datacentertraining.us/api/courses.json), [bundles](https://datacentertraining.us/api/bundles.json), [roles](https://datacentertraining.us/api/roles.json), [FAQ](https://datacentertraining.us/api/faq.json), [credentials](https://datacentertraining.us/api/credentials.json), [resources](https://datacentertraining.us/api/resources.json)
+- [llms-full.txt](https://datacentertraining.us/llms-full.txt): every course, bundle, role, and FAQ as stable records.
+- [Sitemap](https://datacentertraining.us/sitemap.xml): every indexable page. lastmod is the date that page's content last changed.
 
 ## Key Pages
 
-- [Homepage](https://datacentertraining.us/): Overview, hero, and links to every section of the site.
-- [Course Catalog](https://datacentertraining.us/courses.html): All 44 courses with search, sort, and filter by track, duration, or price.
-- [Bundles](https://datacentertraining.us/bundles.html): 7 role-based and complete-catalog bundles, up to 53% off.
-- [Who It's For](https://datacentertraining.us/who.html): Role-based course recommendations (electricians, HVAC techs, security officers, engineers, and more).
-- [Certifications & Accreditations](https://datacentertraining.us/certifications.html): IACET accreditation, BBB, Trustpilot, Google reviews, and credential transparency.
-- [FAQ](https://datacentertraining.us/faq.html): Common questions about programs, pricing, and certificates.
-- [Sitemap](https://datacentertraining.us/sitemap.xml): Complete list of pages.
-- [llms-full.txt](https://datacentertraining.us/llms-full.txt): Full course catalog and pricing in Markdown.
+- [Homepage](https://datacentertraining.us/): overview and links to every section.
+- [Course Catalog](https://datacentertraining.us/courses.html): all 44 courses; filter by track, type, duration, or price.
+- [Bundles](https://datacentertraining.us/bundles.html): 7 role-based and complete-catalog bundles.
+- [Who It's For](https://datacentertraining.us/who.html): role-based course recommendations.
+- [Certifications & Accreditations](https://datacentertraining.us/certifications.html): IACET provider accreditation and credential transparency.
+- [FAQ](https://datacentertraining.us/faq.html): programs, pricing, certificates, and policies.
+- [Blog](https://datacentertraining.us/blog/): field guidance for data center teams.
 
 ## Learning Tracks
 
-- Power & Electrical Systems Track
-- Cooling & Facilities Efficiency Track
-- Operations & Reliability Track
-- Security & Compliance Track
-- Design, Planning & Commissioning Track
-- Monitoring & Smart Facility Track
+- Power & Electrical Systems Track: 15 courses, 57.5 hrs, bundle $986.99
+- Cooling & Facilities Efficiency Track: 6 courses, 31 hrs, bundle $462.99
+- Operations & Reliability Track: 10 courses, 62 hrs, bundle $830.99
+- Security & Compliance Track: 5 courses, 25.5 hrs, bundle $400.99
+- Design, Planning & Commissioning Track: 4 courses, 45.5 hrs, bundle $557.99
+- Monitoring & Smart Facility Track: 4 courses, 28.5 hrs, bundle $333.99
 
 ## About
 
-- Accreditation: IACET Accredited Provider
+- Credential: certificate of completion from HAZWOPER OSHA Training, LLC. Not a license or a certification from any standards body. No CEU/PDH credit.
+- Accreditation: IACET Accredited Provider (provider-level): https://www.iacet.org/affiliates/accredited-providers-list/accredited-provider-overview/?providerID=131618
 - Parent organization: HAZWOPER-OSHA Training, LLC (Industrial Certified Training, LLC), https://hazwoper-osha.com/
 - Contact: info@hazwoper-osha.com, 1-866-429-6742
 - Address: 11901 Santa Monica Blvd., Suite #414, Los Angeles, CA 90025

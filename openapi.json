@@ -1,10 +1,11 @@
 {
   "openapi": "3.1.0",
   "info": {
-    "title": "Data Center Training — Public Content API",
-    "description": "Read-only informational endpoints exposing Data Center Training's course catalog and AI-agent context documents. All resources are static, publicly readable, and require no authentication.",
+    "title": "Data Center Training - Public Catalog API",
     "version": "1.0.0",
+    "description": "Read-only, unauthenticated JSON documents describing Data Center Training's 44 courses, 7 bundles, 6 learning tracks, roles, FAQ, credentials, and resources, plus the HTML pages they come from. The same data backs the WebMCP tools in /.well-known/mcp.json. Last updated 2026-09-29.",
     "contact": {
+      "name": "HAZWOPER OSHA Training, LLC",
       "email": "info@hazwoper-osha.com",
       "url": "https://datacentertraining.us/"
     }
@@ -14,81 +15,296 @@
       "url": "https://datacentertraining.us"
     }
   ],
+  "externalDocs": {
+    "description": "llms-full.txt",
+    "url": "https://datacentertraining.us/llms-full.txt"
+  },
+  "tags": [
+    {
+      "name": "Catalog data",
+      "description": "Static JSON documents"
+    },
+    {
+      "name": "Agent discovery",
+      "description": "Manifests and AI context files"
+    },
+    {
+      "name": "Pages",
+      "description": "Canonical HTML pages"
+    }
+  ],
   "paths": {
-    "/": {
+    "/api/index.json": {
       "get": {
-        "operationId": "getHomepage",
-        "summary": "Homepage",
-        "description": "Site overview and links to the course catalog, bundles, role guide, certifications, and FAQ, with EducationalOrganization/LocalBusiness/WebSite JSON-LD.",
+        "operationId": "getApiIndex",
+        "summary": "API index",
+        "description": "Links to every JSON document, counts, content hash, and agent rules.",
+        "tags": [
+          "Catalog data"
+        ],
         "responses": {
           "200": {
-            "description": "HTML document",
-            "content": { "text/html": {} }
+            "description": "API index",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApiIndex"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found"
           }
         }
       }
     },
-    "/courses.html": {
+    "/api/courses.json": {
       "get": {
-        "operationId": "getCourseCatalog",
-        "summary": "Course catalog",
-        "description": "All 44 courses with search, sort, and filter by track, tier, duration, or price. Includes ItemList JSON-LD.",
+        "operationId": "listCourses",
+        "summary": "All courses",
+        "description": "Every course as a full record. Filter client-side; see the list_courses tool for the documented filters.",
+        "tags": [
+          "Catalog data"
+        ],
         "responses": {
           "200": {
-            "description": "HTML document",
-            "content": { "text/html": {} }
+            "description": "All courses",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CourseList"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found"
           }
         }
       }
     },
-    "/bundles.html": {
+    "/api/courses/{course_id}.json": {
       "get": {
-        "operationId": "getBundles",
-        "summary": "Course bundles",
-        "description": "7 role-based and complete-catalog bundles, up to 53% off individual course pricing.",
+        "operationId": "getCourse",
+        "summary": "One course",
+        "description": "Full record for one course. Returns 404 for unknown ids.",
+        "tags": [
+          "Catalog data"
+        ],
         "responses": {
           "200": {
-            "description": "HTML document",
-            "content": { "text/html": {} }
+            "description": "One course",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Course"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found"
+          }
+        },
+        "parameters": [
+          {
+            "name": "course_id",
+            "in": "path",
+            "required": true,
+            "description": "Course id (URL slug).",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "data-center-design-fundamentals",
+                "tier-infrastructure-fundamentals",
+                "data-center-operations-management",
+                "security-compliance-data-centers",
+                "power-systems-electrical-fundamentals",
+                "cooling-systems-design-optimization",
+                "disaster-recovery-business-continuity",
+                "infrastructure-commissioning-startup",
+                "monitoring-automation-bms-systems",
+                "hvac-troubleshooting-essentials",
+                "ups-operations-load-testing",
+                "fiber-optics-network-cabling",
+                "generator-operations-maintenance",
+                "energy-efficiency-pue-optimization",
+                "capacity-planning-forecasting",
+                "preventive-maintenance-planning",
+                "facility-environmental-compliance",
+                "incident-response-troubleshooting",
+                "access-control-physical-security",
+                "dcim-platform-fundamentals",
+                "mechanical-systems-maintenance",
+                "electrical-safety-best-practices",
+                "batteries-dc-circuits",
+                "building-automation-systems-fundamentals",
+                "building-envelope-fundamentals",
+                "building-maintenance-fundamentals",
+                "business-continuity-disaster-recovery-planning",
+                "data-center-arc-flash-safety",
+                "data-center-cooling-refrigerant-safety",
+                "data-center-electrical-safety",
+                "data-center-epo-procedures",
+                "data-center-fire-suppression-safety",
+                "data-center-physical-security-access-control",
+                "data-center-raised-floor-confined-space",
+                "data-center-ups-battery-safety",
+                "emergency-standby-power-systems-fundamentals",
+                "facility-management-fundamentals",
+                "generator-fundamentals",
+                "lithium-ion-thermal-runaway-emergency-response",
+                "osha-electrical-safety-data-center-technicians",
+                "power-distribution-systems-fundamentals",
+                "roofing-systems-maintenance-fundamentals",
+                "server-room-ergonomics-manual-handling",
+                "ups-systems-fundamentals"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "/api/bundles.json": {
+      "get": {
+        "operationId": "listBundles",
+        "summary": "All bundles",
+        "description": "Bundle prices, individual list prices, savings, and included courses; also the seat-count volume discount ladder.",
+        "tags": [
+          "Catalog data"
+        ],
+        "responses": {
+          "200": {
+            "description": "All bundles",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/BundleList"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found"
           }
         }
       }
     },
-    "/who.html": {
+    "/api/roles.json": {
       "get": {
-        "operationId": "getWhoItsFor",
-        "summary": "Role-based course guide",
-        "description": "Recommended course tracks by role: electricians, HVAC technicians, operations managers, security officers, engineers, and IT/network technicians.",
+        "operationId": "listRoles",
+        "summary": "Roles and tracks",
+        "description": "Role-to-track recommendations and the 6 learning tracks.",
+        "tags": [
+          "Catalog data"
+        ],
         "responses": {
           "200": {
-            "description": "HTML document",
-            "content": { "text/html": {} }
+            "description": "Roles and tracks",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RoleList"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found"
           }
         }
       }
     },
-    "/certifications.html": {
+    "/api/faq.json": {
       "get": {
-        "operationId": "getCertifications",
-        "summary": "Certifications & accreditations",
-        "description": "IACET accreditation, BBB, Trustpilot, and Google review links, plus what a certificate of completion does and doesn't mean.",
+        "operationId": "listFaq",
+        "summary": "FAQ",
+        "description": "Every published FAQ answer with its category and source URL.",
+        "tags": [
+          "Catalog data"
+        ],
         "responses": {
           "200": {
-            "description": "HTML document",
-            "content": { "text/html": {} }
+            "description": "FAQ",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/FaqList"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found"
           }
         }
       }
     },
-    "/faq.html": {
+    "/api/credentials.json": {
       "get": {
-        "operationId": "getFaq",
-        "summary": "Frequently asked questions",
-        "description": "Common questions about programs, pricing, bundles, and certificates. Includes FAQPage JSON-LD.",
+        "operationId": "getCredentials",
+        "summary": "Certificate and accreditation facts",
+        "description": "What the certificate of completion is and is not, with claims agents must not make.",
+        "tags": [
+          "Catalog data"
+        ],
         "responses": {
           "200": {
-            "description": "HTML document",
-            "content": { "text/html": {} }
+            "description": "Certificate and accreditation facts",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Credentials"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      }
+    },
+    "/api/resources.json": {
+      "get": {
+        "operationId": "listResources",
+        "summary": "Resources",
+        "description": "First-party guides and official standards references.",
+        "tags": [
+          "Catalog data"
+        ],
+        "responses": {
+          "200": {
+            "description": "Resources",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ResourceList"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      }
+    },
+    "/.well-known/mcp.json": {
+      "get": {
+        "operationId": "getMcpManifest",
+        "summary": "WebMCP / MCP manifest",
+        "tags": [
+          "Agent discovery"
+        ],
+        "description": "Tool definitions (Draft 7 JSON Schema inputs and outputs, examples, safety annotations) for the read-only catalog tools.",
+        "responses": {
+          "200": {
+            "description": "Manifest",
+            "content": {
+              "application/json": {}
+            }
           }
         }
       }
@@ -96,12 +312,17 @@
     "/llms.txt": {
       "get": {
         "operationId": "getLlmsTxt",
-        "summary": "AI agent context summary",
-        "description": "Concise Markdown summary of the site for AI agents, per the llms.txt convention.",
+        "summary": "llms.txt",
+        "tags": [
+          "Agent discovery"
+        ],
+        "description": "Concise site summary and agent rules.",
         "responses": {
           "200": {
-            "description": "Markdown document",
-            "content": { "text/markdown": {} }
+            "description": "Markdown",
+            "content": {
+              "text/plain": {}
+            }
           }
         }
       }
@@ -109,12 +330,17 @@
     "/llms-full.txt": {
       "get": {
         "operationId": "getLlmsFullTxt",
-        "summary": "Full course catalog in Markdown",
-        "description": "Complete list of all 44 courses grouped by discipline, with links and standards alignment.",
+        "summary": "llms-full.txt",
+        "tags": [
+          "Agent discovery"
+        ],
+        "description": "Every course, bundle, role, and FAQ as stable records.",
         "responses": {
           "200": {
-            "description": "Markdown document",
-            "content": { "text/markdown": {} }
+            "description": "Markdown",
+            "content": {
+              "text/plain": {}
+            }
           }
         }
       }
@@ -123,14 +349,985 @@
       "get": {
         "operationId": "getSitemap",
         "summary": "XML sitemap",
-        "description": "Complete list of indexable course and site pages.",
+        "tags": [
+          "Agent discovery"
+        ],
+        "description": "All indexable pages; lastmod is the date the page content last changed.",
         "responses": {
           "200": {
-            "description": "XML sitemap",
-            "content": { "application/xml": {} }
+            "description": "XML",
+            "content": {
+              "application/xml": {}
+            }
+          }
+        }
+      }
+    },
+    "/": {
+      "get": {
+        "operationId": "getHomepage",
+        "summary": "Homepage",
+        "description": "Site overview with EducationalOrganization, WebSite, and FAQPage JSON-LD.",
+        "tags": [
+          "Pages"
+        ],
+        "responses": {
+          "200": {
+            "description": "HTML document",
+            "content": {
+              "text/html": {}
+            }
+          }
+        }
+      }
+    },
+    "/courses.html": {
+      "get": {
+        "operationId": "getCourseCatalogPage",
+        "summary": "Course catalog page",
+        "description": "All 44 courses with search, sort, and filters; Course ItemList JSON-LD. Accepts ?q=, ?type=, ?track=, ?sort=.",
+        "tags": [
+          "Pages"
+        ],
+        "responses": {
+          "200": {
+            "description": "HTML document",
+            "content": {
+              "text/html": {}
+            }
+          }
+        }
+      }
+    },
+    "/bundles.html": {
+      "get": {
+        "operationId": "getBundlesPage",
+        "summary": "Bundles page",
+        "description": "All 7 bundles with Product/Offer JSON-LD.",
+        "tags": [
+          "Pages"
+        ],
+        "responses": {
+          "200": {
+            "description": "HTML document",
+            "content": {
+              "text/html": {}
+            }
+          }
+        }
+      }
+    },
+    "/who.html": {
+      "get": {
+        "operationId": "getWhoPage",
+        "summary": "Role guide",
+        "description": "Role-to-track recommendations.",
+        "tags": [
+          "Pages"
+        ],
+        "responses": {
+          "200": {
+            "description": "HTML document",
+            "content": {
+              "text/html": {}
+            }
+          }
+        }
+      }
+    },
+    "/certifications.html": {
+      "get": {
+        "operationId": "getCertificationsPage",
+        "summary": "Certifications page",
+        "description": "Accreditation and credential transparency.",
+        "tags": [
+          "Pages"
+        ],
+        "responses": {
+          "200": {
+            "description": "HTML document",
+            "content": {
+              "text/html": {}
+            }
+          }
+        }
+      }
+    },
+    "/faq.html": {
+      "get": {
+        "operationId": "getFaqPage",
+        "summary": "FAQ page",
+        "description": "FAQ with FAQPage JSON-LD.",
+        "tags": [
+          "Pages"
+        ],
+        "responses": {
+          "200": {
+            "description": "HTML document",
+            "content": {
+              "text/html": {}
+            }
+          }
+        }
+      }
+    },
+    "/blog/": {
+      "get": {
+        "operationId": "getBlogIndex",
+        "summary": "Blog",
+        "description": "Field guidance articles with Blog JSON-LD.",
+        "tags": [
+          "Pages"
+        ],
+        "responses": {
+          "200": {
+            "description": "HTML document",
+            "content": {
+              "text/html": {}
+            }
           }
         }
       }
     }
-  }
+  },
+  "components": {
+    "schemas": {
+      "CourseSummary": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "title",
+          "url",
+          "track",
+          "category",
+          "course_type",
+          "duration_hours",
+          "price_usd",
+          "standards",
+          "summary"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Stable course id (URL slug)."
+          },
+          "title": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "description": "Canonical course page."
+          },
+          "track": {
+            "type": "string",
+            "enum": [
+              "Power & Electrical Systems Track",
+              "Cooling & Facilities Efficiency Track",
+              "Operations & Reliability Track",
+              "Security & Compliance Track",
+              "Design, Planning & Commissioning Track",
+              "Monitoring & Smart Facility Track"
+            ]
+          },
+          "category": {
+            "type": "string",
+            "enum": [
+              "Cooling & Efficiency",
+              "Design & Planning",
+              "Monitoring & Automation",
+              "Operations",
+              "Power & Electrical",
+              "Security & Compliance"
+            ]
+          },
+          "course_type": {
+            "type": "string",
+            "enum": [
+              "comprehensive",
+              "modular"
+            ]
+          },
+          "duration_hours": {
+            "type": "number",
+            "minimum": 0
+          },
+          "price_usd": {
+            "type": "number",
+            "minimum": 0,
+            "description": "Per-seat list price in USD."
+          },
+          "standards": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Industry standards or frameworks the content is aligned with (not issued or approved by)."
+          },
+          "summary": {
+            "type": "string"
+          },
+          "rank": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "reason": {
+            "type": "string"
+          }
+        }
+      },
+      "Course": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "catalog_number",
+          "title",
+          "url",
+          "api_url",
+          "track",
+          "category",
+          "course_type",
+          "duration_hours",
+          "price_usd",
+          "standards",
+          "description",
+          "audience",
+          "prerequisites",
+          "learning_outcomes",
+          "modules",
+          "bundles",
+          "language",
+          "certificate",
+          "availability"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "catalog_number": {
+            "type": "integer"
+          },
+          "title": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "api_url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "track": {
+            "type": "string",
+            "enum": [
+              "Power & Electrical Systems Track",
+              "Cooling & Facilities Efficiency Track",
+              "Operations & Reliability Track",
+              "Security & Compliance Track",
+              "Design, Planning & Commissioning Track",
+              "Monitoring & Smart Facility Track"
+            ]
+          },
+          "category": {
+            "type": "string",
+            "enum": [
+              "Cooling & Efficiency",
+              "Design & Planning",
+              "Monitoring & Automation",
+              "Operations",
+              "Power & Electrical",
+              "Security & Compliance"
+            ]
+          },
+          "course_type": {
+            "type": "string",
+            "enum": [
+              "comprehensive",
+              "modular"
+            ]
+          },
+          "course_type_label": {
+            "type": "string"
+          },
+          "duration_hours": {
+            "type": "number",
+            "minimum": 0
+          },
+          "duration_iso8601": {
+            "type": "string"
+          },
+          "module_count": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "price_usd": {
+            "type": "number",
+            "minimum": 0
+          },
+          "currency": {
+            "type": "string",
+            "enum": [
+              "USD"
+            ]
+          },
+          "standards": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "summary": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "why_it_matters": {
+            "type": "string"
+          },
+          "audience": {
+            "type": "string"
+          },
+          "prerequisites": {
+            "type": "string"
+          },
+          "learning_outcomes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "modules": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "title",
+                "summary"
+              ],
+              "properties": {
+                "title": {
+                  "type": "string"
+                },
+                "summary": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "bundles": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "id",
+                "name",
+                "price_usd",
+                "url"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "price_usd": {
+                  "type": "number"
+                },
+                "url": {
+                  "type": "string",
+                  "format": "uri"
+                }
+              }
+            }
+          },
+          "language": {
+            "type": "string",
+            "enum": [
+              "en"
+            ]
+          },
+          "delivery": {
+            "type": "string"
+          },
+          "certificate": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "type",
+              "issuer",
+              "validity_period",
+              "verification_url",
+              "is_license_or_government_certification",
+              "ceu_or_pdh_credit"
+            ],
+            "properties": {
+              "type": {
+                "type": "string"
+              },
+              "issuer": {
+                "type": "string"
+              },
+              "issuer_accreditation": {
+                "type": "string"
+              },
+              "delivery": {
+                "type": "string"
+              },
+              "validity_period": {
+                "type": "string"
+              },
+              "verification_url": {
+                "type": "string",
+                "format": "uri"
+              },
+              "is_license_or_government_certification": {
+                "type": "boolean",
+                "enum": [
+                  false
+                ]
+              },
+              "ceu_or_pdh_credit": {
+                "type": "boolean"
+              }
+            }
+          },
+          "availability": {
+            "type": "string",
+            "enum": [
+              "available",
+              "preorder"
+            ]
+          },
+          "enroll_url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "faqs": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "question",
+                "answer"
+              ],
+              "properties": {
+                "question": {
+                  "type": "string"
+                },
+                "answer": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "related_course_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "last_updated": {
+            "type": "string",
+            "format": "date"
+          }
+        }
+      },
+      "Bundle": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "name",
+          "price_usd",
+          "list_price_usd",
+          "savings_usd",
+          "course_count",
+          "total_hours",
+          "course_ids",
+          "url"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "enum": [
+              "bundle-power-electrical",
+              "bundle-cooling-efficiency",
+              "bundle-operations-reliability",
+              "bundle-security-compliance",
+              "bundle-design-planning",
+              "bundle-monitoring-smart-facility",
+              "bundle-complete-catalog"
+            ]
+          },
+          "catalog_number": {
+            "type": "integer"
+          },
+          "name": {
+            "type": "string"
+          },
+          "track": {
+            "type": "string"
+          },
+          "audience": {
+            "type": "string"
+          },
+          "price_usd": {
+            "type": "number",
+            "minimum": 0
+          },
+          "list_price_usd": {
+            "type": "number",
+            "minimum": 0,
+            "description": "Sum of the included courses at individual prices."
+          },
+          "savings_usd": {
+            "type": "number",
+            "minimum": 0
+          },
+          "savings_percent": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 100
+          },
+          "course_count": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "total_hours": {
+            "type": "number",
+            "minimum": 0
+          },
+          "course_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "enroll_url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "availability": {
+            "type": "string",
+            "enum": [
+              "available",
+              "preorder"
+            ]
+          }
+        }
+      },
+      "Role": {
+        "type": "object",
+        "required": [
+          "id",
+          "label",
+          "track",
+          "bundle_id",
+          "description"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "track": {
+            "type": "string"
+          },
+          "bundle_id": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "keywords": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "source_url": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      },
+      "Track": {
+        "type": "object",
+        "required": [
+          "name",
+          "bundle_id",
+          "course_ids"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "bundle_id": {
+            "type": "string"
+          },
+          "course_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "roles": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "FaqEntry": {
+        "type": "object",
+        "required": [
+          "question",
+          "answer",
+          "source_url"
+        ],
+        "properties": {
+          "question": {
+            "type": "string"
+          },
+          "answer": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          },
+          "source_url": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      },
+      "Resource": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "type",
+          "title",
+          "url",
+          "description",
+          "source",
+          "topics",
+          "audience"
+        ],
+        "properties": {
+          "type": {
+            "type": "string",
+            "enum": [
+              "site_page",
+              "blog_post",
+              "standard_reference"
+            ]
+          },
+          "title": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "description": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          },
+          "topics": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "audience": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "published": {
+            "type": "string",
+            "format": "date"
+          }
+        }
+      },
+      "CourseList": {
+        "type": "object",
+        "required": [
+          "last_updated",
+          "courses"
+        ],
+        "properties": {
+          "publisher": {
+            "type": "string"
+          },
+          "last_updated": {
+            "type": "string",
+            "format": "date"
+          },
+          "license": {
+            "type": "string"
+          },
+          "count": {
+            "type": "integer"
+          },
+          "courses": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Course"
+            }
+          }
+        }
+      },
+      "BundleList": {
+        "type": "object",
+        "required": [
+          "last_updated",
+          "bundles"
+        ],
+        "properties": {
+          "publisher": {
+            "type": "string"
+          },
+          "last_updated": {
+            "type": "string",
+            "format": "date"
+          },
+          "license": {
+            "type": "string"
+          },
+          "count": {
+            "type": "integer"
+          },
+          "bundles": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Bundle"
+            }
+          }
+        }
+      },
+      "FaqList": {
+        "type": "object",
+        "required": [
+          "last_updated",
+          "faqs"
+        ],
+        "properties": {
+          "publisher": {
+            "type": "string"
+          },
+          "last_updated": {
+            "type": "string",
+            "format": "date"
+          },
+          "license": {
+            "type": "string"
+          },
+          "count": {
+            "type": "integer"
+          },
+          "faqs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/FaqEntry"
+            }
+          }
+        }
+      },
+      "ResourceList": {
+        "type": "object",
+        "required": [
+          "last_updated",
+          "resources"
+        ],
+        "properties": {
+          "publisher": {
+            "type": "string"
+          },
+          "last_updated": {
+            "type": "string",
+            "format": "date"
+          },
+          "license": {
+            "type": "string"
+          },
+          "count": {
+            "type": "integer"
+          },
+          "resources": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Resource"
+            }
+          }
+        }
+      },
+      "RoleList": {
+        "type": "object",
+        "required": [
+          "roles",
+          "tracks"
+        ],
+        "properties": {
+          "last_updated": {
+            "type": "string",
+            "format": "date"
+          },
+          "roles": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Role"
+            }
+          },
+          "tracks": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Track"
+            }
+          }
+        }
+      },
+      "Credentials": {
+        "type": "object",
+        "required": [
+          "topics",
+          "do_not_claim"
+        ],
+        "properties": {
+          "last_updated": {
+            "type": "string",
+            "format": "date"
+          },
+          "source_url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "topics": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "object",
+              "properties": {
+                "summary": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "do_not_claim": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "ApiIndex": {
+        "type": "object",
+        "required": [
+          "last_updated",
+          "documents"
+        ],
+        "properties": {
+          "last_updated": {
+            "type": "string",
+            "format": "date"
+          },
+          "content_hash": {
+            "type": "string"
+          },
+          "documents": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          },
+          "counts": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "integer"
+            }
+          },
+          "agent_rules": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  },
+  "x-mcp-tools": [
+    {
+      "name": "list_courses",
+      "description": "Search or filter the 44-course Data Center Training catalog. Returns course summaries with canonical URL, track, type, duration in hours, per-seat USD price, and aligned standards. Use this before get_course when the user describes a topic, role, budget, or time limit. Every filter is optional; with no input it returns the full catalog. Only report courses this tool returns - never invent a course, price, or availability.",
+      "data_source": [
+        "https://datacentertraining.us/api/courses.json"
+      ]
+    },
+    {
+      "name": "get_course",
+      "description": "Return the full record for one course: description, audience, prerequisites, learning outcomes, modules, bundles that include it, certificate details, availability, course FAQs, and related courses. Pass the course_id from list_courses or a canonical course URL. Returns found=false with error \"not_found\" rather than guessing when the course does not exist.",
+      "data_source": [
+        "https://datacentertraining.us/api/courses/{course_id}.json",
+        "https://datacentertraining.us/api/courses.json"
+      ]
+    },
+    {
+      "name": "compare_bundles",
+      "description": "Compare the 7 course bundles (6 role-based track bundles plus the complete 44-course catalog bundle) side by side: bundle price, sum of individual course prices, savings, course count, total hours, audience, and included course ids. Omit bundle_ids to compare all bundles. Prices are per seat before seat-count volume discounts.",
+      "data_source": [
+        "https://datacentertraining.us/api/bundles.json"
+      ]
+    },
+    {
+      "name": "recommend_courses",
+      "description": "Recommend a learning track, bundle, and ranked course list for a job role (e.g. \"electrician\", \"HVAC technician\", \"facility manager\", \"security lead\", \"design engineer\", \"DCIM/network technician\"). Optional work_context refines the match and budget_usd trims the list to what fits. Returns matched=false with the list of supported roles when the role is unclear - ask the user instead of guessing. Training guidance only, not legal or compliance advice.",
+      "data_source": [
+        "https://datacentertraining.us/api/roles.json",
+        "https://datacentertraining.us/api/bundles.json",
+        "https://datacentertraining.us/api/courses.json"
+      ]
+    },
+    {
+      "name": "get_credential_info",
+      "description": "Explain exactly what learners receive and what it does and does not mean: certificate of completion, IACET provider-level accreditation, standards alignment, CEU/PDH status, expiration, verification, and employer responsibility. Includes a do_not_claim list. Use this before describing any course as a \"certification\" or implying approval by NFPA, TIA, Uptime Institute, OSHA, or any other body.",
+      "data_source": [
+        "https://datacentertraining.us/api/credentials.json"
+      ]
+    },
+    {
+      "name": "answer_faq",
+      "description": "Find published answers to a question about programs, pricing, certificates, access, team enrollment, or policies, optionally including one course's FAQ (course_id). Returns up to 3 quoted answers with their source URL. When answered=false there is no published answer: say so and route the user to support rather than composing one.",
+      "data_source": [
+        "https://datacentertraining.us/api/faq.json",
+        "https://datacentertraining.us/api/courses.json"
+      ]
+    },
+    {
+      "name": "list_resources",
+      "description": "List first-party guides (blog posts, catalog, role, and credential pages) and official regulatory or standards-body references by topic, audience, or type. Each item has its source and URL. Prefer these over third-party summaries; standard_reference items point to the issuing body.",
+      "data_source": [
+        "https://datacentertraining.us/api/resources.json"
+      ]
+    }
+  ]
 }

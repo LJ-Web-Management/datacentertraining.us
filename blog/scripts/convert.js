@@ -564,6 +564,42 @@ async function writeCoverImage(input, slug) {
   return imagePath;
 }
 
+// Responsive WebP copies of each cover (the JPEG stays as the fallback src
+// and share image). The featured image is the LCP element on post pages, so
+// phones should download ~30 KB instead of the full 1200px JPEG.
+const COVER_VARIANT_WIDTHS = [480, 800, 1200];
+
+function coverVariantPath(image, width) {
+  return image.replace(/\.jpg$/, "-" + width + "w.webp");
+}
+
+async function ensureCoverVariants(post) {
+  if (!post.image || !post.image.endsWith(".jpg")) return;
+  const src = path.join(ROOT, post.image);
+  if (!fs.existsSync(src)) return;
+  let sharp = null;
+  for (const width of COVER_VARIANT_WIDTHS) {
+    const target = path.join(ROOT, coverVariantPath(post.image, width));
+    if (fs.existsSync(target)) continue;
+    sharp = sharp || require("sharp");
+    await sharp(src)
+      .resize(width, Math.round((width * COVER_HEIGHT) / COVER_WIDTH), { fit: "cover" })
+      .webp({ quality: 70 })
+      .toFile(target);
+  }
+}
+
+// srcset/sizes attributes for a cover, or "" when the variants are missing.
+function coverSrcsetAttrs(image, prefix, sizes) {
+  const all = COVER_VARIANT_WIDTHS.every((w) => fs.existsSync(path.join(ROOT, coverVariantPath(image, w))));
+  if (!all) return "";
+  const srcset = COVER_VARIANT_WIDTHS.map((w) => prefix + escapeHtml(coverVariantPath(image, w)) + " " + w + "w").join(", ");
+  return ' srcset="' + srcset + '" sizes="' + sizes + '"';
+}
+
+const CARD_SIZES = "(max-width: 640px) calc(100vw - 32px), (max-width: 1024px) 50vw, 380px";
+const FEATURED_SIZES = "(max-width: 900px) calc(100vw - 32px), 860px";
+
 // ---------------------------------------------------------------------------
 // Page rendering
 //
@@ -586,9 +622,11 @@ function sortNewestFirst(posts) {
     .map((x) => x.p);
 }
 
-function postCardHtml(post, hrefPrefix, imgPrefix, headingTag) {
+// eager=true for the first card on the index, which is the LCP element on phones.
+function postCardHtml(post, hrefPrefix, imgPrefix, headingTag, eager) {
+  const loading = eager ? ' fetchpriority="high"' : ' loading="lazy" decoding="async"';
   const thumb = post.image
-    ? '<img class="post-card-thumb" src="' + imgPrefix + escapeHtml(post.image) + '" alt="' + escapeHtml(post.title) + '" width="1200" height="675" loading="lazy">'
+    ? '<img class="post-card-thumb" src="' + imgPrefix + escapeHtml(post.image) + '"' + coverSrcsetAttrs(post.image, imgPrefix, CARD_SIZES) + ' alt="' + escapeHtml(post.title) + '" width="1200" height="675"' + loading + '>'
     : "";
   return (
     '<a class="post-card" href="' + hrefPrefix + encodeURIComponent(post.slug) + '.html">' +
@@ -635,7 +673,7 @@ function buildPostPage(post, bodyHtml, related) {
   const shareImageUrl = post.image ? BLOG_URL + "/" + post.image : SITE_URL + "/images/og-image.jpg";
   const canonicalUrl = BLOG_URL + "/posts/" + post.slug + ".html";
   const featuredImage = post.image
-    ? '  <div class="post-featured-image">\n    <img src="../' + post.image + '" alt="' + escapeHtml(post.title) + '" width="1200" height="675" loading="eager">\n  </div>'
+    ? '  <div class="post-featured-image">\n    <img src="../' + post.image + '"' + coverSrcsetAttrs(post.image, "../", FEATURED_SIZES) + ' alt="' + escapeHtml(post.title) + '" width="1200" height="675" fetchpriority="high">\n  </div>'
     : "";
 
   return template
@@ -668,7 +706,7 @@ function updateIndex(sorted) {
   const end = html.indexOf(INDEX_END);
   if (start === -1 || end === -1) return;
   const cards = sorted.length
-    ? sorted.map((p) => "    " + postCardHtml(p, "posts/", "", "h2")).join("\n")
+    ? sorted.map((p, i) => "    " + postCardHtml(p, "posts/", "", "h2", i === 0)).join("\n")
     : '    <div class="empty-state">No blog posts found.</div>';
   fs.writeFileSync(INDEX_FILE, html.slice(0, start + INDEX_START.length) + "\n" + cards + "\n    " + html.slice(end));
 }
@@ -689,7 +727,10 @@ async function optimizeCover(post) {
 }
 
 async function rebuildAll(posts, bodies) {
-  for (const post of posts) await optimizeCover(post);
+  for (const post of posts) {
+    await optimizeCover(post);
+    await ensureCoverVariants(post);
+  }
   const sorted = sortNewestFirst(posts);
   for (const post of posts) {
     const body = bodies[post.slug] || readPostBody(post.slug);

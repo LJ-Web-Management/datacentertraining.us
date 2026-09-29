@@ -1,0 +1,100 @@
+{
+  "id": "building-automation-systems-fundamentals",
+  "catalog_number": 442,
+  "title": "Building Automation Systems (BAS) Fundamentals",
+  "url": "https://datacentertraining.us/courses/building-automation-systems-fundamentals.html",
+  "api_url": "https://datacentertraining.us/api/courses/building-automation-systems-fundamentals.json",
+  "track": "Monitoring & Smart Facility Track",
+  "category": "Monitoring & Automation",
+  "course_type": "modular",
+  "course_type_label": "Modular Specialization",
+  "duration_hours": 6,
+  "duration_iso8601": "PT6H",
+  "module_count": 4,
+  "price_usd": 99.99,
+  "currency": "USD",
+  "standards": [
+    "BMS/BAS"
+  ],
+  "summary": "Understand the building automation systems that tie HVAC, power, and monitoring together.",
+  "description": "Building Automation Systems (BAS) are the control layer behind HVAC, lighting, and power monitoring in modern facilities — and increasingly overlap with the BMS and DCIM platforms used in data centers. This course covers BAS architecture, sensor and controller basics, and how automation logic actually gets built and tuned. You'll leave able to read a points list, understand a control sequence, and troubleshoot the integration issues that come up when BAS meets facility-specific monitoring.",
+  "why_it_matters": "A building automation system decides when chillers stage, how air handlers respond to temperature and how alarms reach people. In a data center, a poorly written control sequence or a mislabeled point can cause cooling to hunt, equipment to fight each other or a real alarm to be missed among hundreds of nuisance alerts. BAS platforms also overlap more and more with the BMS, EPMS and DCIM tools on the data center side, usually through open protocols such as BACnet (ASHRAE Standard 135) and Modbus. Technicians who can read a points list, follow a sequence of operations and trace a signal from sensor to controller to output solve problems faster and give better information to integrators. This course covers BAS architecture, sequences and points lists, sensors and controllers, and integration troubleshooting.",
+  "audience": "Facilities engineers and technicians working with or evaluating BAS platforms.",
+  "prerequisites": "No prior certification required. Relevant equipment exposure is helpful.",
+  "learning_outcomes": [
+    "Understand BAS architecture and how it overlaps with BMS/DCIM platforms",
+    "Read and interpret BAS control sequences and points lists",
+    "Evaluate sensor and controller placement for accurate automation",
+    "Troubleshoot common BAS integration issues",
+    "Certificate of completion on finish",
+    "Self-paced — start and stop anytime",
+    "Delivered by an IACET-accredited provider",
+    "Volume pricing available for teams"
+  ],
+  "modules": [
+    {
+      "title": "BAS Architecture Fundamentals",
+      "summary": "How controllers, sensors, and the central platform fit together."
+    },
+    {
+      "title": "Control Sequences & Points Lists",
+      "summary": "Reading the logic that actually drives automated systems."
+    },
+    {
+      "title": "Sensor & Controller Basics",
+      "summary": "Placement and calibration fundamentals for accurate control."
+    },
+    {
+      "title": "BAS Integration & Troubleshooting",
+      "summary": "Common integration issues between BAS and other facility systems."
+    }
+  ],
+  "bundles": [
+    {
+      "id": "bundle-monitoring-smart-facility",
+      "name": "Monitoring & Smart Facility Bundle",
+      "price_usd": 333.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    },
+    {
+      "id": "bundle-complete-catalog",
+      "name": "Complete Data Center Professional Bundle",
+      "price_usd": 2928.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    }
+  ],
+  "language": "en",
+  "delivery": "Online, self-paced, no completion deadline",
+  "certificate": {
+    "type": "Certificate of completion",
+    "issuer": "HAZWOPER OSHA Training, LLC",
+    "issuer_accreditation": "IACET Accredited Provider (provider-level accreditation)",
+    "delivery": "Issued immediately on completion; downloadable and printable",
+    "validity_period": "No fixed expiration; follow your employer's refresher policy",
+    "verification_url": "https://hazwoper-osha.com/certificate-verification",
+    "is_license_or_government_certification": false,
+    "ceu_or_pdh_credit": false
+  },
+  "availability": "preorder",
+  "enroll_url": "https://datacentertraining.us/checkout.html?item=building-automation-systems-fundamentals",
+  "faqs": [
+    {
+      "question": "What is the difference between a BAS and a BMS?",
+      "answer": "The terms are often used interchangeably. In data centers, BAS usually refers to the control system for HVAC, lighting and general building equipment, while BMS often means the broader monitoring layer that also watches critical systems. Both rely on the same sensors, controllers and protocols this course covers."
+    },
+    {
+      "question": "What is a sequence of operations?",
+      "answer": "A sequence of operations is the written description of how a system should behave, such as when a chiller starts, what setpoints apply and what happens on a failure. The controller programming should match it. Comparing the two is one of the fastest ways to find control problems."
+    },
+    {
+      "question": "Do I need programming experience?",
+      "answer": "No. The course is aimed at facilities engineers and technicians. It explains how control logic, points and protocols work so you can read, verify and troubleshoot them, and communicate clearly with the controls contractor."
+    }
+  ],
+  "related_course_ids": [
+    "monitoring-automation-bms-systems",
+    "dcim-platform-fundamentals",
+    "fiber-optics-network-cabling"
+  ],
+  "last_updated": "2026-09-29"
+}

@@ -1,0 +1,100 @@
+{
+  "id": "generator-operations-maintenance",
+  "catalog_number": 424,
+  "title": "Generator Operations & Maintenance",
+  "url": "https://datacentertraining.us/courses/generator-operations-maintenance.html",
+  "api_url": "https://datacentertraining.us/api/courses/generator-operations-maintenance.json",
+  "track": "Power & Electrical Systems Track",
+  "category": "Power & Electrical",
+  "course_type": "modular",
+  "course_type_label": "Modular Specialization",
+  "duration_hours": 3.5,
+  "duration_iso8601": "PT3H30M",
+  "module_count": 4,
+  "price_usd": 99.99,
+  "currency": "USD",
+  "standards": [],
+  "summary": "Size, test, and maintain backup generators with confidence.",
+  "description": "Specialized training on diesel generators: sizing calculations, load-bank testing protocols, fuel management, and cold-start procedures. This is the last line of defense when utility and UPS power both fail, and this course makes sure you're ready to run it correctly under pressure. You'll cover maintenance intervals and emergency operation procedures, and finish able to conduct generator exercises and pass load-bank tests independently.",
+  "why_it_matters": "Generators are the last line of defense when both utility power and UPS batteries are exhausted, and they often run only during tests. That makes disciplined testing and maintenance essential: a generator that has not been proven under load cannot be assumed to work during an emergency. NFPA 110 sets testing and maintenance requirements for emergency and standby power systems, including regular exercising under load. Load-bank testing verifies that the generator can carry its rated load and helps burn off the deposits that build up during light-load running. Fuel management, including storage, polishing, sampling and resupply contracts, determines how long the site can run. This course covers generator sizing, load-bank testing procedures, fuel management and emergency startup protocols.",
+  "audience": "Facilities technicians responsible for backup power systems.",
+  "prerequisites": "No prior certification required. Relevant equipment exposure is helpful.",
+  "learning_outcomes": [
+    "Calculate generator sizing requirements for a given critical load",
+    "Run load-bank testing protocols and interpret results",
+    "Manage fuel systems and maintenance intervals correctly",
+    "Execute cold-start and emergency operation procedures confidently",
+    "Certificate of completion on finish",
+    "Self-paced — start and stop anytime",
+    "Delivered by an IACET-accredited provider",
+    "Volume pricing available for teams"
+  ],
+  "modules": [
+    {
+      "title": "Generator Sizing & Specifications",
+      "summary": "Sizing a generator correctly for the critical load it needs to carry."
+    },
+    {
+      "title": "Load-Bank Testing Procedures",
+      "summary": "Proving generator capacity under real load conditions."
+    },
+    {
+      "title": "Fuel Management & Maintenance",
+      "summary": "Fuel quality, storage, and maintenance intervals that prevent startup failures."
+    },
+    {
+      "title": "Emergency Startup Protocols",
+      "summary": "Cold-start procedures for when it matters most."
+    }
+  ],
+  "bundles": [
+    {
+      "id": "bundle-power-electrical",
+      "name": "Power & Electrical Systems Bundle",
+      "price_usd": 986.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    },
+    {
+      "id": "bundle-complete-catalog",
+      "name": "Complete Data Center Professional Bundle",
+      "price_usd": 2928.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    }
+  ],
+  "language": "en",
+  "delivery": "Online, self-paced, no completion deadline",
+  "certificate": {
+    "type": "Certificate of completion",
+    "issuer": "HAZWOPER OSHA Training, LLC",
+    "issuer_accreditation": "IACET Accredited Provider (provider-level accreditation)",
+    "delivery": "Issued immediately on completion; downloadable and printable",
+    "validity_period": "No fixed expiration; follow your employer's refresher policy",
+    "verification_url": "https://hazwoper-osha.com/certificate-verification",
+    "is_license_or_government_certification": false,
+    "ceu_or_pdh_credit": false
+  },
+  "availability": "preorder",
+  "enroll_url": "https://datacentertraining.us/checkout.html?item=generator-operations-maintenance",
+  "faqs": [
+    {
+      "question": "What is a load-bank test?",
+      "answer": "A load-bank test connects the generator to an artificial electrical load so it can be run at a controlled percentage of its rating without depending on the facility's actual load. It proves capacity, reveals problems such as overheating and helps prevent wet stacking."
+    },
+    {
+      "question": "How long can a data center run on generators?",
+      "answer": "It depends on fuel storage and resupply. Many facilities store enough fuel for 24 to 72 hours or more at full load and have priority delivery contracts. The Fuel Management module covers how to plan and verify runtime."
+    },
+    {
+      "question": "What does generator sizing involve?",
+      "answer": "Sizing matches the generator's rating to the load it must carry, including motor starting currents, UPS input characteristics, future growth and site conditions such as altitude and temperature. An undersized generator may fail to accept load; an oversized one may run too lightly."
+    }
+  ],
+  "related_course_ids": [
+    "power-systems-electrical-fundamentals",
+    "ups-operations-load-testing",
+    "electrical-safety-best-practices",
+    "batteries-dc-circuits",
+    "data-center-arc-flash-safety"
+  ],
+  "last_updated": "2026-09-29"
+}

@@ -1,0 +1,100 @@
+{
+  "id": "ups-systems-fundamentals",
+  "catalog_number": 462,
+  "title": "UPS Systems Fundamentals",
+  "url": "https://datacentertraining.us/courses/ups-systems-fundamentals.html",
+  "api_url": "https://datacentertraining.us/api/courses/ups-systems-fundamentals.json",
+  "track": "Power & Electrical Systems Track",
+  "category": "Power & Electrical",
+  "course_type": "modular",
+  "course_type_label": "Modular Specialization",
+  "duration_hours": 2,
+  "duration_iso8601": "PT2H",
+  "module_count": 4,
+  "price_usd": 99.99,
+  "currency": "USD",
+  "standards": [],
+  "summary": "Foundational UPS theory to complement hands-on operations and load testing.",
+  "description": "This course covers UPS system fundamentals — topology types, battery interaction, and control logic — as the theory foundation that makes the hands-on UPS Operations & Load Testing course click faster. Built for technicians who want to understand the why behind UPS operating procedures, not just the steps.",
+  "why_it_matters": "The UPS is the piece of equipment most responsible for keeping IT load running through power problems, but its displays, modes and alarms can be confusing without the theory behind them. Technicians who understand how a UPS converts, conditions and stores power make better decisions during alarms and transfers. UPS systems come in three main topologies: standby (offline), line-interactive and double-conversion online. IEC 62040-3 classifies them by how well the output is protected from input problems. Large data centers almost always use double-conversion, which feeds the load from the inverter continuously. This course explains UPS topologies, how the UPS manages its batteries, how to read control panel status and alarms, and how that theory connects to load testing.",
+  "audience": "Facilities technicians who need UPS theory before hands-on operations training.",
+  "prerequisites": "No prior certification required. Relevant equipment exposure is helpful.",
+  "learning_outcomes": [
+    "Understand UPS topology types and how they differ",
+    "Explain how UPS systems interact with battery banks",
+    "Read UPS control panel status indicators and alarms",
+    "Connect UPS theory to real-world load testing and maintenance procedures",
+    "Certificate of completion on finish",
+    "Self-paced — start and stop anytime",
+    "Delivered by an IACET-accredited provider",
+    "Volume pricing available for teams"
+  ],
+  "modules": [
+    {
+      "title": "UPS Topology Fundamentals",
+      "summary": "Online, line-interactive, and standby UPS, explained from first principles."
+    },
+    {
+      "title": "UPS-Battery Interaction",
+      "summary": "How UPS systems manage and protect connected battery banks."
+    },
+    {
+      "title": "Control Panel & Alarms",
+      "summary": "Reading UPS status indicators and alarm codes."
+    },
+    {
+      "title": "From Theory to Load Testing",
+      "summary": "Connecting UPS fundamentals to hands-on load-bank procedures."
+    }
+  ],
+  "bundles": [
+    {
+      "id": "bundle-power-electrical",
+      "name": "Power & Electrical Systems Bundle",
+      "price_usd": 986.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    },
+    {
+      "id": "bundle-complete-catalog",
+      "name": "Complete Data Center Professional Bundle",
+      "price_usd": 2928.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    }
+  ],
+  "language": "en",
+  "delivery": "Online, self-paced, no completion deadline",
+  "certificate": {
+    "type": "Certificate of completion",
+    "issuer": "HAZWOPER OSHA Training, LLC",
+    "issuer_accreditation": "IACET Accredited Provider (provider-level accreditation)",
+    "delivery": "Issued immediately on completion; downloadable and printable",
+    "validity_period": "No fixed expiration; follow your employer's refresher policy",
+    "verification_url": "https://hazwoper-osha.com/certificate-verification",
+    "is_license_or_government_certification": false,
+    "ceu_or_pdh_credit": false
+  },
+  "availability": "preorder",
+  "enroll_url": "https://datacentertraining.us/checkout.html?item=ups-systems-fundamentals",
+  "faqs": [
+    {
+      "question": "What is a double-conversion UPS?",
+      "answer": "A double-conversion (online) UPS converts incoming AC power to DC and then back to clean AC for the load. The load is always fed by the inverter, so it is isolated from most utility disturbances, and there is no transfer time when utility power fails."
+    },
+    {
+      "question": "What do UPS modes like 'on bypass' and 'on battery' mean?",
+      "answer": "'On battery' means the UPS is supplying the load from its batteries because input power is lost or out of tolerance. 'On bypass' means the load is fed directly from the bypass source, not the inverter, so it is not protected by the batteries. The Control Panel & Alarms module explains these states."
+    },
+    {
+      "question": "What should I take after this course?",
+      "answer": "UPS Operations & Load Testing, the hands-on course on UPS operation, transfers and load-bank testing. Data Center UPS and Battery System Safety Training covers the hazards of working around UPS and battery installations."
+    }
+  ],
+  "related_course_ids": [
+    "power-systems-electrical-fundamentals",
+    "ups-operations-load-testing",
+    "generator-operations-maintenance",
+    "electrical-safety-best-practices",
+    "batteries-dc-circuits"
+  ],
+  "last_updated": "2026-09-29"
+}

@@ -1,0 +1,100 @@
+{
+  "id": "lithium-ion-thermal-runaway-emergency-response",
+  "catalog_number": 457,
+  "title": "Lithium-Ion Battery Thermal Runaway and Emergency Response Training",
+  "url": "https://datacentertraining.us/courses/lithium-ion-thermal-runaway-emergency-response.html",
+  "api_url": "https://datacentertraining.us/api/courses/lithium-ion-thermal-runaway-emergency-response.json",
+  "track": "Power & Electrical Systems Track",
+  "category": "Power & Electrical",
+  "course_type": "modular",
+  "course_type_label": "Modular Specialization",
+  "duration_hours": 4,
+  "duration_iso8601": "PT4H",
+  "module_count": 4,
+  "price_usd": 99.99,
+  "currency": "USD",
+  "standards": [],
+  "summary": "Recognize and respond to lithium-ion battery thermal runaway before it escalates.",
+  "description": "As data centers adopt lithium-ion UPS batteries, thermal runaway has become a distinct emergency scenario with its own warning signs and response protocol, different from traditional lead-acid battery incidents. This course covers thermal runaway recognition, containment, and emergency response specific to lithium-ion systems. You'll leave understanding why lithium-ion response differs from lead-acid procedures, and how to coordinate correctly with fire services on a lithium-ion-specific incident.",
+  "why_it_matters": "Lithium-ion batteries are replacing lead-acid in many UPS systems because they are smaller, lighter and last longer. They also bring a different emergency: thermal runaway, where a cell overheats and releases flammable and toxic gases, and heat can spread from cell to cell. A lithium-ion battery fire can reignite after it appears to be out. Codes and test methods have developed quickly. NFPA 855 covers the installation of stationary energy storage systems, and UL 9540A is the test method used to evaluate how thermal runaway spreads. Facility staff need to recognize early warning signs such as off-gas alarms and abnormal temperatures, know the facility's containment steps and coordinate with the fire department. This course covers thermal runaway fundamentals, early warning signs, containment and emergency response coordination.",
+  "audience": "Facilities and emergency response staff working near lithium-ion battery installations.",
+  "prerequisites": "No prior certification required. Relevant equipment exposure is helpful.",
+  "learning_outcomes": [
+    "Recognize the early warning signs of lithium-ion battery thermal runaway",
+    "Apply correct containment procedures during a thermal event",
+    "Coordinate emergency response with fire services for lithium-ion incidents",
+    "Understand why lithium-ion response differs from lead-acid battery incidents",
+    "Certificate of completion on finish",
+    "Self-paced — start and stop anytime",
+    "Delivered by an IACET-accredited provider",
+    "Volume pricing available for teams"
+  ],
+  "modules": [
+    {
+      "title": "Thermal Runaway Fundamentals",
+      "summary": "What causes it, and why lithium-ion batteries behave differently under stress."
+    },
+    {
+      "title": "Early Warning Signs",
+      "summary": "Recognizing a developing thermal event before it escalates."
+    },
+    {
+      "title": "Containment Procedures",
+      "summary": "What to do, and not do, during a thermal runaway event."
+    },
+    {
+      "title": "Emergency Response Coordination",
+      "summary": "Working with fire services on a lithium-ion-specific incident."
+    }
+  ],
+  "bundles": [
+    {
+      "id": "bundle-power-electrical",
+      "name": "Power & Electrical Systems Bundle",
+      "price_usd": 986.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    },
+    {
+      "id": "bundle-complete-catalog",
+      "name": "Complete Data Center Professional Bundle",
+      "price_usd": 2928.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    }
+  ],
+  "language": "en",
+  "delivery": "Online, self-paced, no completion deadline",
+  "certificate": {
+    "type": "Certificate of completion",
+    "issuer": "HAZWOPER OSHA Training, LLC",
+    "issuer_accreditation": "IACET Accredited Provider (provider-level accreditation)",
+    "delivery": "Issued immediately on completion; downloadable and printable",
+    "validity_period": "No fixed expiration; follow your employer's refresher policy",
+    "verification_url": "https://hazwoper-osha.com/certificate-verification",
+    "is_license_or_government_certification": false,
+    "ceu_or_pdh_credit": false
+  },
+  "availability": "preorder",
+  "enroll_url": "https://datacentertraining.us/checkout.html?item=lithium-ion-thermal-runaway-emergency-response",
+  "faqs": [
+    {
+      "question": "What is thermal runaway?",
+      "answer": "Thermal runaway is a chain reaction inside a battery cell where rising temperature causes reactions that release more heat. The cell can vent flammable and toxic gases and may ignite. In a battery module, heat can spread to neighboring cells."
+    },
+    {
+      "question": "How is a lithium-ion incident different from a lead-acid battery incident?",
+      "answer": "Lead-acid batteries mainly pose hydrogen gas, electrolyte and electrical hazards. Lithium-ion batteries can go into self-sustaining thermal runaway, release large amounts of flammable gas quickly and reignite. Early detection and response planning are different as a result."
+    },
+    {
+      "question": "What should staff do if a lithium-ion battery alarm activates?",
+      "answer": "Follow the facility's emergency procedure: evacuate the area if required, notify the fire department and site management, and avoid entering a room that may contain flammable gas. The course's response coordination module covers how to prepare these procedures."
+    }
+  ],
+  "related_course_ids": [
+    "power-systems-electrical-fundamentals",
+    "ups-operations-load-testing",
+    "generator-operations-maintenance",
+    "electrical-safety-best-practices",
+    "batteries-dc-circuits"
+  ],
+  "last_updated": "2026-09-29"
+}

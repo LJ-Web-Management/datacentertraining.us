@@ -1,0 +1,100 @@
+{
+  "id": "generator-fundamentals",
+  "catalog_number": 456,
+  "title": "Generator Fundamentals",
+  "url": "https://datacentertraining.us/courses/generator-fundamentals.html",
+  "api_url": "https://datacentertraining.us/api/courses/generator-fundamentals.json",
+  "track": "Power & Electrical Systems Track",
+  "category": "Power & Electrical",
+  "course_type": "modular",
+  "course_type_label": "Modular Specialization",
+  "duration_hours": 4,
+  "duration_iso8601": "PT4H",
+  "module_count": 4,
+  "price_usd": 99.99,
+  "currency": "USD",
+  "standards": [],
+  "summary": "Foundational generator theory to complement hands-on operations and load-bank training.",
+  "description": "This course covers the theory behind the diesel and gas generators used for standby power: engine and alternator basics, fuel systems, and control logic — the foundational knowledge that makes the hands-on Generator Operations & Maintenance course click faster. You'll leave able to read generator control panel alarms and understand what's actually happening inside the machine, not just which button to press.",
+  "why_it_matters": "A standby generator is only useful if it starts, reaches stable voltage and frequency, and accepts load within seconds of an outage. Understanding how the engine, alternator, fuel system and controls work together is what lets a technician read an alarm correctly or spot a problem during a weekly inspection. Common failure points are well known: weak starting batteries, fuel that has degraded or picked up water and microbial growth, coolant heater failures and control faults. Diesel engines that run too long at light load can also suffer wet stacking, a buildup of unburned fuel in the exhaust. This course covers engine and alternator basics, fuel systems, control panels and alarms, and how that theory connects to load-bank testing.",
+  "audience": "Facilities technicians who need generator theory before hands-on operations training.",
+  "prerequisites": "No prior certification required. Relevant equipment exposure is helpful.",
+  "learning_outcomes": [
+    "Understand generator engine and alternator fundamentals",
+    "Explain fuel system components and common failure points",
+    "Read generator control panel logic and alarms",
+    "Connect generator theory to real-world load-bank testing procedures",
+    "Certificate of completion on finish",
+    "Self-paced — start and stop anytime",
+    "Delivered by an IACET-accredited provider",
+    "Volume pricing available for teams"
+  ],
+  "modules": [
+    {
+      "title": "Engine & Alternator Basics",
+      "summary": "How a generator actually converts fuel into standby power."
+    },
+    {
+      "title": "Fuel System Fundamentals",
+      "summary": "Fuel system components and where failures happen."
+    },
+    {
+      "title": "Control Panel & Alarms",
+      "summary": "Reading generator control logic and alarm codes."
+    },
+    {
+      "title": "From Theory to Load-Bank Testing",
+      "summary": "Connecting generator fundamentals to hands-on testing procedures."
+    }
+  ],
+  "bundles": [
+    {
+      "id": "bundle-power-electrical",
+      "name": "Power & Electrical Systems Bundle",
+      "price_usd": 986.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    },
+    {
+      "id": "bundle-complete-catalog",
+      "name": "Complete Data Center Professional Bundle",
+      "price_usd": 2928.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    }
+  ],
+  "language": "en",
+  "delivery": "Online, self-paced, no completion deadline",
+  "certificate": {
+    "type": "Certificate of completion",
+    "issuer": "HAZWOPER OSHA Training, LLC",
+    "issuer_accreditation": "IACET Accredited Provider (provider-level accreditation)",
+    "delivery": "Issued immediately on completion; downloadable and printable",
+    "validity_period": "No fixed expiration; follow your employer's refresher policy",
+    "verification_url": "https://hazwoper-osha.com/certificate-verification",
+    "is_license_or_government_certification": false,
+    "ceu_or_pdh_credit": false
+  },
+  "availability": "preorder",
+  "enroll_url": "https://datacentertraining.us/checkout.html?item=generator-fundamentals",
+  "faqs": [
+    {
+      "question": "What is wet stacking?",
+      "answer": "Wet stacking is the buildup of unburned fuel and carbon in a diesel engine's exhaust system, usually caused by running the engine at light load for long periods. It reduces performance and can be prevented by exercising the generator at adequate load or running periodic load-bank tests."
+    },
+    {
+      "question": "Why does diesel fuel need to be tested?",
+      "answer": "Stored diesel degrades over time, can absorb water and can support microbial growth that clogs filters. Periodic fuel sampling and treatment help make sure the generator can run for its full design time during an outage."
+    },
+    {
+      "question": "What should I take after this course?",
+      "answer": "Generator Operations & Maintenance, which covers sizing, load-bank testing, fuel management and emergency startup in more depth. Emergency/Standby Power Systems Fundamentals covers how generators work with transfer switches."
+    }
+  ],
+  "related_course_ids": [
+    "power-systems-electrical-fundamentals",
+    "ups-operations-load-testing",
+    "generator-operations-maintenance",
+    "electrical-safety-best-practices",
+    "batteries-dc-circuits"
+  ],
+  "last_updated": "2026-09-29"
+}

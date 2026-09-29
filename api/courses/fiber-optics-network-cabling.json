@@ -1,0 +1,100 @@
+{
+  "id": "fiber-optics-network-cabling",
+  "catalog_number": 423,
+  "title": "Fiber Optics & Network Cabling",
+  "url": "https://datacentertraining.us/courses/fiber-optics-network-cabling.html",
+  "api_url": "https://datacentertraining.us/api/courses/fiber-optics-network-cabling.json",
+  "track": "Monitoring & Smart Facility Track",
+  "category": "Monitoring & Automation",
+  "course_type": "modular",
+  "course_type_label": "Modular Specialization",
+  "duration_hours": 3.5,
+  "duration_iso8601": "PT3H30M",
+  "module_count": 4,
+  "price_usd": 99.99,
+  "currency": "USD",
+  "standards": [
+    "ANSI/TIA-942"
+  ],
+  "summary": "Terminate, test, and troubleshoot data center fiber to ANSI/TIA-942 standards.",
+  "description": "A technical, hands-on curriculum covering multi-mode and single-mode fiber, connector types (LC, SC, MTP/MPO), fiber plant design, termination, splicing, and OTDR testing. Every technique is grounded in ANSI/TIA-942 data center cabling standards, so what you learn maps directly to audit and design requirements. By the end, you'll be able to terminate and test fiber connections independently and troubleshoot connectivity issues without waiting on a specialist.",
+  "why_it_matters": "Data center networks run on fiber, and speeds keep rising: 100G and 400G links are common and 800G is arriving. Higher speeds leave less margin for loss, so a dirty connector, a tight bend or a poor splice that was harmless at 10G can cause errors or link failures now. Contaminated connector end-faces are one of the most common causes of fiber problems. Good fiber work depends on standards and testing. ANSI/TIA-942 defines the structured cabling layout for data centers, from the entrance room through distribution areas to equipment. Technicians need to know multimode types (OM3, OM4, OM5), single-mode (OS2), connector types such as LC and MPO/MTP, and how to certify links with loss testing and an OTDR. This course covers fiber types and standards, termination and splicing, testing and troubleshooting, and TIA-942 cabling structure.",
+  "audience": "Network technicians and cabling crews working on data center fiber plant.",
+  "prerequisites": "No prior certification required. Relevant equipment exposure is helpful.",
+  "learning_outcomes": [
+    "Identify the right fiber type and connector for a given application",
+    "Terminate and splice fiber to data center standards",
+    "Run OTDR testing and interpret results to isolate faults",
+    "Apply ANSI/TIA-942 cabling standards to plant design and documentation",
+    "Certificate of completion on finish",
+    "Self-paced — start and stop anytime",
+    "Delivered by an IACET-accredited provider",
+    "Volume pricing available for teams"
+  ],
+  "modules": [
+    {
+      "title": "Fiber Types & Standards",
+      "summary": "Multi-mode vs. single-mode, and matching fiber type to application."
+    },
+    {
+      "title": "Termination & Splicing",
+      "summary": "Hands-on termination and splicing technique."
+    },
+    {
+      "title": "Testing & Troubleshooting",
+      "summary": "OTDR testing to isolate faults fast."
+    },
+    {
+      "title": "ANSI/TIA-942 Cabling Standards",
+      "summary": "Designing and documenting a fiber plant to standard."
+    }
+  ],
+  "bundles": [
+    {
+      "id": "bundle-monitoring-smart-facility",
+      "name": "Monitoring & Smart Facility Bundle",
+      "price_usd": 333.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    },
+    {
+      "id": "bundle-complete-catalog",
+      "name": "Complete Data Center Professional Bundle",
+      "price_usd": 2928.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    }
+  ],
+  "language": "en",
+  "delivery": "Online, self-paced, no completion deadline",
+  "certificate": {
+    "type": "Certificate of completion",
+    "issuer": "HAZWOPER OSHA Training, LLC",
+    "issuer_accreditation": "IACET Accredited Provider (provider-level accreditation)",
+    "delivery": "Issued immediately on completion; downloadable and printable",
+    "validity_period": "No fixed expiration; follow your employer's refresher policy",
+    "verification_url": "https://hazwoper-osha.com/certificate-verification",
+    "is_license_or_government_certification": false,
+    "ceu_or_pdh_credit": false
+  },
+  "availability": "preorder",
+  "enroll_url": "https://datacentertraining.us/checkout.html?item=fiber-optics-network-cabling",
+  "faqs": [
+    {
+      "question": "What is the difference between single-mode and multimode fiber?",
+      "answer": "Multimode fiber has a larger core and is used for shorter links, usually within a data hall. Single-mode fiber has a much smaller core and supports much longer distances, so it is used between buildings, campuses and increasingly inside large facilities for high-speed links."
+    },
+    {
+      "question": "What is an OTDR used for?",
+      "answer": "An optical time-domain reflectometer sends light pulses into a fiber and measures what reflects back. It shows the location and loss of connectors, splices, bends and breaks along the link, which makes it the main tool for troubleshooting and documenting fiber runs."
+    },
+    {
+      "question": "Why are MPO/MTP connectors common in data centers?",
+      "answer": "MPO/MTP connectors hold many fibers in one connector. They support the parallel optics used in many high-speed links and make high-density trunk cabling faster to install and reconfigure."
+    }
+  ],
+  "related_course_ids": [
+    "monitoring-automation-bms-systems",
+    "dcim-platform-fundamentals",
+    "building-automation-systems-fundamentals"
+  ],
+  "last_updated": "2026-09-29"
+}

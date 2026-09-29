@@ -1,0 +1,102 @@
+{
+  "id": "data-center-arc-flash-safety",
+  "catalog_number": 446,
+  "title": "Data Center Arc Flash Safety Training",
+  "url": "https://datacentertraining.us/courses/data-center-arc-flash-safety.html",
+  "api_url": "https://datacentertraining.us/api/courses/data-center-arc-flash-safety.json",
+  "track": "Power & Electrical Systems Track",
+  "category": "Power & Electrical",
+  "course_type": "modular",
+  "course_type_label": "Modular Specialization",
+  "duration_hours": 2,
+  "duration_iso8601": "PT2H",
+  "module_count": 4,
+  "price_usd": 99.99,
+  "currency": "USD",
+  "standards": [
+    "NFPA 70E"
+  ],
+  "summary": "NFPA 70E arc flash safety specific to data center switchgear and power distribution.",
+  "description": "Arc flash incidents in a data center happen around high-density switchgear and UPS systems, where the energy involved is often higher than in a typical commercial building. This course covers NFPA 70E arc flash boundaries, PPE selection, and safe work practices specific to data center electrical equipment. You'll leave able to recognize the equipment and conditions that raise arc flash risk on a data center floor specifically, not just general workplace electrical hazards.",
+  "why_it_matters": "An arc flash is an explosive release of energy from an electrical fault through the air. It can produce extreme heat, pressure and molten metal in a fraction of a second. Data centers concentrate large amounts of power in switchgear, UPS systems and distribution equipment, and the fault current available in those rooms can be higher than in a typical commercial building. NFPA 70E requires employers to assess arc flash risk, label equipment, set boundaries and select PPE based on the hazard. The standard also requires the arc flash risk assessment to be reviewed at intervals of no more than five years, or whenever the system changes significantly. This course explains arc flash fundamentals, how to read boundaries and labels, how PPE is selected, safe work practices and the risk factors specific to data center equipment.",
+  "audience": "Electricians and technicians working near energized data center power equipment.",
+  "prerequisites": "No prior certification required. Relevant equipment exposure is helpful.",
+  "learning_outcomes": [
+    "Identify arc flash hazard boundaries around data center switchgear and UPS systems",
+    "Select appropriate PPE for data center-specific arc flash risk levels",
+    "Apply safe work practices around energized power distribution equipment",
+    "Recognize the equipment and conditions that raise data center arc flash risk",
+    "Certificate of completion on finish",
+    "Self-paced — start and stop anytime",
+    "Delivered by an IACET-accredited provider",
+    "Volume pricing available for teams"
+  ],
+  "modules": [
+    {
+      "title": "Arc Flash Fundamentals",
+      "summary": "What actually happens in an arc flash event, and why data centers carry elevated risk."
+    },
+    {
+      "title": "Hazard Boundaries & PPE",
+      "summary": "Selecting PPE correctly for data center-specific energy levels."
+    },
+    {
+      "title": "Safe Work Practices",
+      "summary": "Working near energized switchgear and UPS systems safely."
+    },
+    {
+      "title": "Data Center Equipment Risk Factors",
+      "summary": "The specific equipment and conditions that raise arc flash risk on the floor."
+    }
+  ],
+  "bundles": [
+    {
+      "id": "bundle-power-electrical",
+      "name": "Power & Electrical Systems Bundle",
+      "price_usd": 986.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    },
+    {
+      "id": "bundle-complete-catalog",
+      "name": "Complete Data Center Professional Bundle",
+      "price_usd": 2928.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    }
+  ],
+  "language": "en",
+  "delivery": "Online, self-paced, no completion deadline",
+  "certificate": {
+    "type": "Certificate of completion",
+    "issuer": "HAZWOPER OSHA Training, LLC",
+    "issuer_accreditation": "IACET Accredited Provider (provider-level accreditation)",
+    "delivery": "Issued immediately on completion; downloadable and printable",
+    "validity_period": "No fixed expiration; follow your employer's refresher policy",
+    "verification_url": "https://hazwoper-osha.com/certificate-verification",
+    "is_license_or_government_certification": false,
+    "ceu_or_pdh_credit": false
+  },
+  "availability": "preorder",
+  "enroll_url": "https://datacentertraining.us/checkout.html?item=data-center-arc-flash-safety",
+  "faqs": [
+    {
+      "question": "What is the arc flash boundary?",
+      "answer": "Under NFPA 70E, the arc flash boundary is the distance from exposed energized parts at which a person without arc-rated PPE could receive a second-degree burn, defined as an incident energy of 1.2 cal/cm². Anyone inside that boundary must wear PPE rated for the hazard."
+    },
+    {
+      "question": "What information is on an arc flash label?",
+      "answer": "An arc flash label typically shows the nominal voltage, the arc flash boundary, and either the incident energy at a working distance or the PPE category, along with other details required by NFPA 70E. Workers use it to decide what PPE and precautions the task needs."
+    },
+    {
+      "question": "Does this course make me a qualified electrical worker?",
+      "answer": "No single course does that. Under OSHA and NFPA 70E, the employer decides who is qualified based on training and demonstrated skills for specific equipment and tasks. This course supports that training for work near energized data center equipment."
+    }
+  ],
+  "related_course_ids": [
+    "power-systems-electrical-fundamentals",
+    "ups-operations-load-testing",
+    "generator-operations-maintenance",
+    "electrical-safety-best-practices",
+    "batteries-dc-circuits"
+  ],
+  "last_updated": "2026-09-29"
+}

@@ -1,0 +1,100 @@
+{
+  "id": "building-maintenance-fundamentals",
+  "catalog_number": 444,
+  "title": "Building Maintenance Fundamentals",
+  "url": "https://datacentertraining.us/courses/building-maintenance-fundamentals.html",
+  "api_url": "https://datacentertraining.us/api/courses/building-maintenance-fundamentals.json",
+  "track": "Operations & Reliability Track",
+  "category": "Operations",
+  "course_type": "modular",
+  "course_type_label": "Modular Specialization",
+  "duration_hours": 4,
+  "duration_iso8601": "PT4H",
+  "module_count": 4,
+  "price_usd": 99.99,
+  "currency": "USD",
+  "standards": [],
+  "summary": "Core building maintenance fundamentals for facilities teams supporting critical infrastructure.",
+  "description": "Beyond the specialized systems that keep a data center running, every facility needs disciplined general maintenance — from structural upkeep to routine systems checks. This course covers the maintenance fundamentals that keep a building sound around the critical infrastructure it houses. You'll build a practical framework for prioritizing general maintenance work without it ever competing with uptime-critical tasks.",
+  "why_it_matters": "Critical infrastructure gets most of the attention in a data center, but many incidents start with ordinary building problems: a clogged roof drain that backs up during a storm, a failed door closer on a secured room, a slow plumbing leak above a ceiling, or corrosion that nobody logged. General maintenance keeps those issues from reaching the data hall. Building work in a data center also needs more planning than in an office. Contractors may need escorts, work near critical systems may require a method of procedure (MOP), and dust, vibration or a water shutoff can affect live equipment. This course covers the main building systems, how to prioritize maintenance by risk, early warning signs of failure, and how to coordinate routine work around critical infrastructure without creating new risks.",
+  "audience": "Facilities technicians responsible for general building systems and upkeep.",
+  "prerequisites": "No prior certification required. Relevant equipment exposure is helpful.",
+  "learning_outcomes": [
+    "Apply general building maintenance fundamentals to a facilities program",
+    "Prioritize maintenance tasks by risk and impact",
+    "Recognize early warning signs of building system deterioration",
+    "Coordinate general maintenance around critical infrastructure uptime requirements",
+    "Certificate of completion on finish",
+    "Self-paced — start and stop anytime",
+    "Delivered by an IACET-accredited provider",
+    "Volume pricing available for teams"
+  ],
+  "modules": [
+    {
+      "title": "Building Systems Overview",
+      "summary": "The general building systems every facilities tech should know."
+    },
+    {
+      "title": "Maintenance Prioritization",
+      "summary": "Triaging maintenance tasks by risk and impact."
+    },
+    {
+      "title": "Early Warning Signs",
+      "summary": "Catching deterioration before it becomes a failure."
+    },
+    {
+      "title": "Coordinating Around Critical Infrastructure",
+      "summary": "Scheduling general maintenance without risking uptime."
+    }
+  ],
+  "bundles": [
+    {
+      "id": "bundle-operations-reliability",
+      "name": "Operations & Reliability Bundle",
+      "price_usd": 830.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    },
+    {
+      "id": "bundle-complete-catalog",
+      "name": "Complete Data Center Professional Bundle",
+      "price_usd": 2928.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    }
+  ],
+  "language": "en",
+  "delivery": "Online, self-paced, no completion deadline",
+  "certificate": {
+    "type": "Certificate of completion",
+    "issuer": "HAZWOPER OSHA Training, LLC",
+    "issuer_accreditation": "IACET Accredited Provider (provider-level accreditation)",
+    "delivery": "Issued immediately on completion; downloadable and printable",
+    "validity_period": "No fixed expiration; follow your employer's refresher policy",
+    "verification_url": "https://hazwoper-osha.com/certificate-verification",
+    "is_license_or_government_certification": false,
+    "ceu_or_pdh_credit": false
+  },
+  "availability": "preorder",
+  "enroll_url": "https://datacentertraining.us/checkout.html?item=building-maintenance-fundamentals",
+  "faqs": [
+    {
+      "question": "Why is general building maintenance important in a data center?",
+      "answer": "Water intrusion, failed doors, damaged roofs and deferred repairs can all reach critical equipment. A disciplined maintenance program finds these problems early and schedules repairs in a way that does not put uptime at risk."
+    },
+    {
+      "question": "What does coordinating around critical infrastructure mean?",
+      "answer": "It means planning building work so it does not affect live systems: scheduling in approved windows, following change management, controlling dust and water, and making sure operations staff know what is happening. The course's final module covers this process."
+    },
+    {
+      "question": "Who should take this course?",
+      "answer": "Facilities technicians and building maintenance staff who look after general building systems in or around a data center, including staff moving from commercial buildings into critical facilities."
+    }
+  ],
+  "related_course_ids": [
+    "data-center-operations-management",
+    "disaster-recovery-business-continuity",
+    "preventive-maintenance-planning",
+    "incident-response-troubleshooting",
+    "business-continuity-disaster-recovery-planning"
+  ],
+  "last_updated": "2026-09-29"
+}

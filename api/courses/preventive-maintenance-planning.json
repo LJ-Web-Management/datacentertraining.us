@@ -1,0 +1,100 @@
+{
+  "id": "preventive-maintenance-planning",
+  "catalog_number": 427,
+  "title": "Preventive Maintenance Planning",
+  "url": "https://datacentertraining.us/courses/preventive-maintenance-planning.html",
+  "api_url": "https://datacentertraining.us/api/courses/preventive-maintenance-planning.json",
+  "track": "Operations & Reliability Track",
+  "category": "Operations",
+  "course_type": "modular",
+  "course_type_label": "Modular Specialization",
+  "duration_hours": 3,
+  "duration_iso8601": "PT3H",
+  "module_count": 4,
+  "price_usd": 99.99,
+  "currency": "USD",
+  "standards": [],
+  "summary": "Reduce emergency repairs with a structured preventive maintenance program.",
+  "description": "An essential maintenance program: equipment lifecycle management, preventive maintenance scheduling, and predictive maintenance concepts. This course focuses on the documentation and tracking systems that make a maintenance program sustainable, not just a one-time schedule. You'll leave with maintenance calendars built around your own equipment inventory, and a framework for reducing emergency repairs over time.",
+  "why_it_matters": "Without preventive maintenance, a data center runs until something fails, and in a critical facility that can be very costly. With too much maintenance, or poorly planned maintenance, the work itself becomes a risk, because many incidents happen while equipment is in maintenance mode or during the return to service. A sustainable program balances scheduled preventive tasks with predictive techniques such as infrared thermography, vibration analysis and oil analysis, which show when equipment actually needs attention. It relies on good records in a CMMS. NFPA 70B, which became a mandatory standard in its 2023 edition, now requires an electrical maintenance program for covered equipment. This course covers equipment lifecycle, maintenance scheduling, predictive maintenance basics and documentation.",
+  "audience": "Facilities staff building or improving a maintenance program.",
+  "prerequisites": "No prior certification required. Relevant equipment exposure is helpful.",
+  "learning_outcomes": [
+    "Map equipment lifecycle stages to a maintenance schedule",
+    "Apply predictive maintenance concepts alongside preventive scheduling",
+    "Build maintenance documentation and tracking systems that stick",
+    "Reduce emergency repair frequency through structured planning",
+    "Certificate of completion on finish",
+    "Self-paced — start and stop anytime",
+    "Delivered by an IACET-accredited provider",
+    "Volume pricing available for teams"
+  ],
+  "modules": [
+    {
+      "title": "Equipment Lifecycle Fundamentals",
+      "summary": "Understanding where equipment sits in its lifecycle before it fails."
+    },
+    {
+      "title": "Maintenance Scheduling",
+      "summary": "Building a schedule that matches maintenance frequency to actual risk."
+    },
+    {
+      "title": "Predictive Maintenance Basics",
+      "summary": "Using condition data to maintain on need, not just on calendar."
+    },
+    {
+      "title": "Documentation & Tracking",
+      "summary": "Tracking systems that make a maintenance program auditable and sustainable."
+    }
+  ],
+  "bundles": [
+    {
+      "id": "bundle-operations-reliability",
+      "name": "Operations & Reliability Bundle",
+      "price_usd": 830.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    },
+    {
+      "id": "bundle-complete-catalog",
+      "name": "Complete Data Center Professional Bundle",
+      "price_usd": 2928.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    }
+  ],
+  "language": "en",
+  "delivery": "Online, self-paced, no completion deadline",
+  "certificate": {
+    "type": "Certificate of completion",
+    "issuer": "HAZWOPER OSHA Training, LLC",
+    "issuer_accreditation": "IACET Accredited Provider (provider-level accreditation)",
+    "delivery": "Issued immediately on completion; downloadable and printable",
+    "validity_period": "No fixed expiration; follow your employer's refresher policy",
+    "verification_url": "https://hazwoper-osha.com/certificate-verification",
+    "is_license_or_government_certification": false,
+    "ceu_or_pdh_credit": false
+  },
+  "availability": "preorder",
+  "enroll_url": "https://datacentertraining.us/checkout.html?item=preventive-maintenance-planning",
+  "faqs": [
+    {
+      "question": "What is the difference between preventive and predictive maintenance?",
+      "answer": "Preventive maintenance is done on a fixed schedule, such as quarterly inspections. Predictive maintenance uses condition data, such as thermal imaging or vibration readings, to decide when maintenance is needed. Most strong programs combine both."
+    },
+    {
+      "question": "What is NFPA 70B?",
+      "answer": "NFPA 70B covers maintenance of electrical equipment. In its 2023 edition it changed from a recommended practice to a standard, requiring an electrical maintenance program and setting maintenance intervals based on equipment condition."
+    },
+    {
+      "question": "Why does maintenance documentation matter?",
+      "answer": "Records show what was done, what was found and when equipment is due next. They support trend analysis, warranty claims, audits and budgeting. The Documentation & Tracking module covers how to build this into a system your team will keep using."
+    }
+  ],
+  "related_course_ids": [
+    "data-center-operations-management",
+    "disaster-recovery-business-continuity",
+    "incident-response-troubleshooting",
+    "business-continuity-disaster-recovery-planning",
+    "building-maintenance-fundamentals"
+  ],
+  "last_updated": "2026-09-29"
+}

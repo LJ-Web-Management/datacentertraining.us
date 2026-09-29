@@ -1,0 +1,100 @@
+{
+  "id": "data-center-electrical-safety",
+  "catalog_number": 448,
+  "title": "Data Center Electrical Safety Training",
+  "url": "https://datacentertraining.us/courses/data-center-electrical-safety.html",
+  "api_url": "https://datacentertraining.us/api/courses/data-center-electrical-safety.json",
+  "track": "Power & Electrical Systems Track",
+  "category": "Power & Electrical",
+  "course_type": "modular",
+  "course_type_label": "Modular Specialization",
+  "duration_hours": 2,
+  "duration_iso8601": "PT2H",
+  "module_count": 4,
+  "price_usd": 99.99,
+  "currency": "USD",
+  "standards": [],
+  "summary": "Foundational electrical safety practices for anyone working around data center power systems.",
+  "description": "A foundational safety course for anyone who works around data center electrical systems, whether or not electrical work is their primary job. Covers core electrical hazard recognition, safe work distances, and the basic precautions that prevent the majority of electrical incidents. This is the course every new hire with floor access should take before anything more specialized — it establishes the baseline awareness the rest of the electrical curriculum builds on.",
+  "why_it_matters": "Electrical hazards in a data center are not limited to electricians. IT technicians install equipment in energized racks, cabling crews work near power distribution, and facilities staff open panels to read meters. Many injuries happen to people who did not think of their task as electrical work. The basic protections are the same for everyone: recognize energized equipment, stay outside approach boundaries unless qualified, never defeat a lockout, and escalate when something looks wrong. NFPA 70E's core principle is to put equipment in an electrically safe work condition, meaning disconnected, locked out and tested for absence of voltage, before working on it whenever possible. This foundational course covers hazard recognition, safe work distances, lockout/tagout awareness and when and how to escalate.",
+  "audience": "Electricians, facilities technicians, and IT staff working near energized equipment.",
+  "prerequisites": "No prior certification required. Relevant equipment exposure is helpful.",
+  "learning_outcomes": [
+    "Recognize common electrical hazards in a data center environment",
+    "Maintain safe work distances around energized equipment",
+    "Apply basic lockout/tagout awareness",
+    "Know when to escalate to a qualified electrician",
+    "Certificate of completion on finish",
+    "Self-paced — start and stop anytime",
+    "Delivered by an IACET-accredited provider",
+    "Volume pricing available for teams"
+  ],
+  "modules": [
+    {
+      "title": "Electrical Hazard Recognition",
+      "summary": "The hazards most likely to appear on a data center floor."
+    },
+    {
+      "title": "Safe Work Distances",
+      "summary": "Maintaining safe clearance around energized equipment."
+    },
+    {
+      "title": "Lockout/Tagout Awareness",
+      "summary": "What every employee should know, even if they're not doing the lockout."
+    },
+    {
+      "title": "Escalation Procedures",
+      "summary": "Knowing when a job needs a qualified electrician."
+    }
+  ],
+  "bundles": [
+    {
+      "id": "bundle-power-electrical",
+      "name": "Power & Electrical Systems Bundle",
+      "price_usd": 986.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    },
+    {
+      "id": "bundle-complete-catalog",
+      "name": "Complete Data Center Professional Bundle",
+      "price_usd": 2928.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    }
+  ],
+  "language": "en",
+  "delivery": "Online, self-paced, no completion deadline",
+  "certificate": {
+    "type": "Certificate of completion",
+    "issuer": "HAZWOPER OSHA Training, LLC",
+    "issuer_accreditation": "IACET Accredited Provider (provider-level accreditation)",
+    "delivery": "Issued immediately on completion; downloadable and printable",
+    "validity_period": "No fixed expiration; follow your employer's refresher policy",
+    "verification_url": "https://hazwoper-osha.com/certificate-verification",
+    "is_license_or_government_certification": false,
+    "ceu_or_pdh_credit": false
+  },
+  "availability": "preorder",
+  "enroll_url": "https://datacentertraining.us/checkout.html?item=data-center-electrical-safety",
+  "faqs": [
+    {
+      "question": "Who needs electrical safety training in a data center?",
+      "answer": "Anyone who works near energized equipment, including IT staff who install hardware in racks, cabling technicians and facilities staff, not only electricians. OSHA requires training for employees who face a risk of electric shock that is not reduced to a safe level by the installation."
+    },
+    {
+      "question": "What is an electrically safe work condition?",
+      "answer": "It is the state NFPA 70E defines for equipment that has been disconnected from all energy sources, locked and tagged out, tested to confirm there is no voltage and grounded where necessary. Creating it is the preferred way to protect workers."
+    },
+    {
+      "question": "How is this course different from Electrical Safety & Best Practices?",
+      "answer": "This course is an awareness-level foundation for anyone who works around data center electrical systems. Electrical Safety & Best Practices goes further into NFPA 70E principles, PPE and emergency procedures for electrical workers and staff who work near energized equipment more regularly."
+    }
+  ],
+  "related_course_ids": [
+    "power-systems-electrical-fundamentals",
+    "ups-operations-load-testing",
+    "generator-operations-maintenance",
+    "electrical-safety-best-practices",
+    "batteries-dc-circuits"
+  ],
+  "last_updated": "2026-09-29"
+}

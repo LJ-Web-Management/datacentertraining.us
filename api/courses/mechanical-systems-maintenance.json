@@ -1,0 +1,100 @@
+{
+  "id": "mechanical-systems-maintenance",
+  "catalog_number": 432,
+  "title": "Mechanical Systems & Equipment Maintenance",
+  "url": "https://datacentertraining.us/courses/mechanical-systems-maintenance.html",
+  "api_url": "https://datacentertraining.us/api/courses/mechanical-systems-maintenance.json",
+  "track": "Cooling & Facilities Efficiency Track",
+  "category": "Cooling & Efficiency",
+  "course_type": "modular",
+  "course_type_label": "Modular Specialization",
+  "duration_hours": 4,
+  "duration_iso8601": "PT4H",
+  "module_count": 4,
+  "price_usd": 99.99,
+  "currency": "USD",
+  "standards": [],
+  "summary": "Hands-on mechanical maintenance — piping, chillers, and vibration diagnostics.",
+  "description": "Mechanical operations for technicians: HVAC systems, piping, chiller operation, water treatment, and vibration analysis. Lab sessions include hands-on diagnostics, so the techniques transfer directly to your equipment. You'll leave with equipment maintenance protocols built around predictive maintenance and vendor coordination, reducing unplanned mechanical downtime.",
+  "why_it_matters": "Chillers, pumps, cooling towers and piping keep a data center's heat moving out of the building. They run continuously, often for years without a full shutdown, so maintenance has to be planned carefully and done without losing cooling redundancy. Water quality and equipment condition cause many mechanical failures. Poor water treatment leads to scale, corrosion and biological growth, including Legionella risk in cooling towers, which ASHRAE Standard 188 addresses. Vibration analysis can find bearing wear, misalignment and imbalance in pumps and fans long before they fail. This course covers piping and water treatment, chiller operation and maintenance, vibration analysis and lifecycle planning with vendors.",
+  "audience": "Mechanical technicians responsible for facility equipment maintenance.",
+  "prerequisites": "No prior certification required. Relevant equipment exposure is helpful.",
+  "learning_outcomes": [
+    "Maintain piping systems and water treatment programs correctly",
+    "Operate and maintain chillers to manufacturer and best-practice standards",
+    "Use vibration analysis to catch mechanical problems before failure",
+    "Build equipment maintenance protocols with vendor coordination built in",
+    "Certificate of completion on finish",
+    "Self-paced — start and stop anytime",
+    "Delivered by an IACET-accredited provider",
+    "Volume pricing available for teams"
+  ],
+  "modules": [
+    {
+      "title": "Piping Systems & Water Treatment",
+      "summary": "Water treatment practices that extend piping and equipment life."
+    },
+    {
+      "title": "Chiller Operation & Maintenance",
+      "summary": "Operating and maintaining chillers for reliability and efficiency."
+    },
+    {
+      "title": "Vibration Analysis & Equipment Health",
+      "summary": "Reading vibration data to catch mechanical failures early."
+    },
+    {
+      "title": "Lifecycle Planning & Vendor Coordination",
+      "summary": "Coordinating vendor service around equipment lifecycle planning."
+    }
+  ],
+  "bundles": [
+    {
+      "id": "bundle-cooling-efficiency",
+      "name": "Cooling & Facilities Efficiency Bundle",
+      "price_usd": 462.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    },
+    {
+      "id": "bundle-complete-catalog",
+      "name": "Complete Data Center Professional Bundle",
+      "price_usd": 2928.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    }
+  ],
+  "language": "en",
+  "delivery": "Online, self-paced, no completion deadline",
+  "certificate": {
+    "type": "Certificate of completion",
+    "issuer": "HAZWOPER OSHA Training, LLC",
+    "issuer_accreditation": "IACET Accredited Provider (provider-level accreditation)",
+    "delivery": "Issued immediately on completion; downloadable and printable",
+    "validity_period": "No fixed expiration; follow your employer's refresher policy",
+    "verification_url": "https://hazwoper-osha.com/certificate-verification",
+    "is_license_or_government_certification": false,
+    "ceu_or_pdh_credit": false
+  },
+  "availability": "preorder",
+  "enroll_url": "https://datacentertraining.us/checkout.html?item=mechanical-systems-maintenance",
+  "faqs": [
+    {
+      "question": "Why is water treatment important for data center cooling?",
+      "answer": "Untreated water causes scale that reduces heat transfer, corrosion that damages pipes and equipment, and biological growth that fouls systems and can create health risks. A water treatment program keeps chillers and towers efficient and reliable."
+    },
+    {
+      "question": "What can vibration analysis detect?",
+      "answer": "Vibration analysis can detect imbalance, misalignment, looseness, bearing wear and some electrical faults in rotating equipment such as pumps, fans and compressors, often months before failure."
+    },
+    {
+      "question": "How do you maintain a chiller without losing cooling?",
+      "answer": "By planning around redundancy: confirming the remaining chillers can carry the load, following a method of procedure, scheduling during cooler conditions or lower load when possible, and having a backout plan. The course covers this within chiller operations and lifecycle planning."
+    }
+  ],
+  "related_course_ids": [
+    "cooling-systems-design-optimization",
+    "hvac-troubleshooting-essentials",
+    "energy-efficiency-pue-optimization",
+    "data-center-cooling-refrigerant-safety",
+    "building-envelope-fundamentals"
+  ],
+  "last_updated": "2026-09-29"
+}

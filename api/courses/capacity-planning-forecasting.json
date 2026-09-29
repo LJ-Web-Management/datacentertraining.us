@@ -1,0 +1,98 @@
+{
+  "id": "capacity-planning-forecasting",
+  "catalog_number": 426,
+  "title": "Capacity Planning & Forecasting",
+  "url": "https://datacentertraining.us/courses/capacity-planning-forecasting.html",
+  "api_url": "https://datacentertraining.us/api/courses/capacity-planning-forecasting.json",
+  "track": "Design, Planning & Commissioning Track",
+  "category": "Design & Planning",
+  "course_type": "modular",
+  "course_type_label": "Modular Specialization",
+  "duration_hours": 3.5,
+  "duration_iso8601": "PT3H30M",
+  "module_count": 4,
+  "price_usd": 99.99,
+  "currency": "USD",
+  "standards": [],
+  "summary": "Build a 3–5 year capacity plan before you run out of power, cooling, or space.",
+  "description": "Strategic planning for growth: workload characterization, power and cooling demand forecasting, and infrastructure constraint analysis. This course gives you the frameworks to see capacity constraints coming years before they become emergencies. You'll build phased expansion plans and financial models, and finish with the ability to develop 3–5 year capacity plans and growth scenarios your leadership team can actually plan around.",
+  "why_it_matters": "Data centers rarely run out of floor space first. They run out of power, cooling or both, often while rack positions are still empty. Rising rack densities for AI and high-performance workloads have made this faster: a row designed for 5–10 kW per rack cannot simply absorb racks that draw several times that. Capacity problems are expensive when discovered late. Adding utility service, switchgear or chillers can take many months or years, so planners need forecasts well before they are out of headroom. Stranded capacity, where power is available but cooling is not (or the reverse), wastes investment. This course covers workload characterization, power and cooling demand forecasting, constraint analysis and expansion planning, so you can see limits coming and make the case for investment on time.",
+  "audience": "Facility and IT planners responsible for growth forecasting.",
+  "prerequisites": "No prior certification required. Relevant equipment exposure is helpful.",
+  "learning_outcomes": [
+    "Characterize workloads to forecast power and cooling demand accurately",
+    "Identify infrastructure constraints before they become capacity emergencies",
+    "Build a phased expansion plan aligned to a growth forecast",
+    "Present capacity scenarios and financial models to leadership",
+    "Certificate of completion on finish",
+    "Self-paced — start and stop anytime",
+    "Delivered by an IACET-accredited provider",
+    "Volume pricing available for teams"
+  ],
+  "modules": [
+    {
+      "title": "Workload Characterization",
+      "summary": "Understanding what's actually driving power and cooling demand."
+    },
+    {
+      "title": "Power & Cooling Demand Forecasting",
+      "summary": "Forecasting demand growth before it outpaces capacity."
+    },
+    {
+      "title": "Constraint Analysis",
+      "summary": "Identifying which constraint — power, cooling, or space — will bind first."
+    },
+    {
+      "title": "Expansion Planning Frameworks",
+      "summary": "Turning a forecast into a phased, fundable expansion plan."
+    }
+  ],
+  "bundles": [
+    {
+      "id": "bundle-design-planning",
+      "name": "Design, Planning & Commissioning Bundle",
+      "price_usd": 557.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    },
+    {
+      "id": "bundle-complete-catalog",
+      "name": "Complete Data Center Professional Bundle",
+      "price_usd": 2928.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    }
+  ],
+  "language": "en",
+  "delivery": "Online, self-paced, no completion deadline",
+  "certificate": {
+    "type": "Certificate of completion",
+    "issuer": "HAZWOPER OSHA Training, LLC",
+    "issuer_accreditation": "IACET Accredited Provider (provider-level accreditation)",
+    "delivery": "Issued immediately on completion; downloadable and printable",
+    "validity_period": "No fixed expiration; follow your employer's refresher policy",
+    "verification_url": "https://hazwoper-osha.com/certificate-verification",
+    "is_license_or_government_certification": false,
+    "ceu_or_pdh_credit": false
+  },
+  "availability": "preorder",
+  "enroll_url": "https://datacentertraining.us/checkout.html?item=capacity-planning-forecasting",
+  "faqs": [
+    {
+      "question": "What is stranded capacity?",
+      "answer": "Stranded capacity is power, cooling or space that exists but cannot be used because another resource has run out. For example, a room might have spare UPS capacity but no cooling left in that zone. Constraint analysis helps find and recover it."
+    },
+    {
+      "question": "How far ahead should a data center forecast capacity?",
+      "answer": "Far enough to cover the lead time of the largest upgrade you might need. Utility upgrades, generators and major cooling plant changes can take a long time to design, procure and install, so many teams plan on multi-year horizons and update the forecast regularly."
+    },
+    {
+      "question": "Who is this course for?",
+      "answer": "Facility and IT planners, capacity managers and engineering leads responsible for growth forecasts, expansion budgets or deciding where new customer or workload deployments can go."
+    }
+  ],
+  "related_course_ids": [
+    "data-center-design-fundamentals",
+    "tier-infrastructure-fundamentals",
+    "infrastructure-commissioning-startup"
+  ],
+  "last_updated": "2026-09-29"
+}

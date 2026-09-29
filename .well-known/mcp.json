@@ -1,0 +1,2068 @@
+{
+  "schema_version": "2026-06",
+  "name": "datacentertraining-us",
+  "title": "Data Center Training",
+  "description": "Read-only catalog tools for Data Center Training (datacentertraining.us): 44 online, self-paced data center courses (250 hours), 7 bundles, and 6 role-based learning tracks, delivered by HAZWOPER OSHA Training, LLC, an IACET Accredited Provider.",
+  "version": "1.0.0",
+  "last_updated": "2026-09-29",
+  "homepage": "https://datacentertraining.us/",
+  "documentation": "https://datacentertraining.us/llms.txt",
+  "documentation_full": "https://datacentertraining.us/llms-full.txt",
+  "openapi": "https://datacentertraining.us/openapi.json",
+  "sitemap": "https://datacentertraining.us/sitemap.xml",
+  "publisher": {
+    "name": "HAZWOPER OSHA Training, LLC",
+    "url": "https://hazwoper-osha.com/",
+    "email": "info@hazwoper-osha.com",
+    "phone": "1-866-429-6742"
+  },
+  "authentication": {
+    "type": "none"
+  },
+  "transports": [
+    {
+      "type": "webmcp",
+      "description": "Every HTML page registers these tools with navigator.modelContext (WebMCP). The catalog search form on /courses.html is also exposed declaratively as the \"search_catalog\" form tool.",
+      "script": "https://datacentertraining.us/js/webmcp.js"
+    },
+    {
+      "type": "static-http",
+      "description": "Every tool is backed by public JSON documents (GET, no auth, CORS-enabled). Agents without WebMCP can fetch data_source and apply the documented filters.",
+      "base_url": "https://datacentertraining.us/api/"
+    }
+  ],
+  "capabilities": {
+    "tools": {
+      "listChanged": false
+    },
+    "resources": {
+      "subscribe": false,
+      "listChanged": false
+    }
+  },
+  "tools": [
+    {
+      "name": "list_courses",
+      "title": "Search and filter the course catalog",
+      "description": "Search or filter the 44-course Data Center Training catalog. Returns course summaries with canonical URL, track, type, duration in hours, per-seat USD price, and aligned standards. Use this before get_course when the user describes a topic, role, budget, or time limit. Every filter is optional; with no input it returns the full catalog. Only report courses this tool returns - never invent a course, price, or availability.",
+      "inputSchema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "query": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 100,
+            "description": "Keywords matched against title, summary, description, track, category, and standards (all words must match).",
+            "examples": [
+              "UPS",
+              "NFPA 70E"
+            ]
+          },
+          "track": {
+            "type": "string",
+            "enum": [
+              "Power & Electrical Systems Track",
+              "Cooling & Facilities Efficiency Track",
+              "Operations & Reliability Track",
+              "Security & Compliance Track",
+              "Design, Planning & Commissioning Track",
+              "Monitoring & Smart Facility Track"
+            ],
+            "description": "Learning track (one per course)."
+          },
+          "category": {
+            "type": "string",
+            "enum": [
+              "Cooling & Efficiency",
+              "Design & Planning",
+              "Monitoring & Automation",
+              "Operations",
+              "Power & Electrical",
+              "Security & Compliance"
+            ],
+            "description": "Catalog discipline filter."
+          },
+          "role": {
+            "type": "string",
+            "enum": [
+              "electrician",
+              "hvac",
+              "operations",
+              "security",
+              "design",
+              "it"
+            ],
+            "description": "Role id from recommend_courses/roles.json; limits results to that role's track."
+          },
+          "course_type": {
+            "type": "string",
+            "enum": [
+              "comprehensive",
+              "modular"
+            ],
+            "description": "comprehensive = 12-18 hr full-discipline programs; modular = 1-8 hr focused specializations."
+          },
+          "standard": {
+            "type": "string",
+            "maxLength": 60,
+            "description": "Standard or framework name, e.g. \"NFPA 70E\", \"ANSI/TIA-942\"."
+          },
+          "bundle_id": {
+            "type": "string",
+            "enum": [
+              "bundle-power-electrical",
+              "bundle-cooling-efficiency",
+              "bundle-operations-reliability",
+              "bundle-security-compliance",
+              "bundle-design-planning",
+              "bundle-monitoring-smart-facility",
+              "bundle-complete-catalog"
+            ],
+            "description": "Only courses included in this bundle."
+          },
+          "language": {
+            "type": "string",
+            "enum": [
+              "en",
+              "es",
+              "fr",
+              "de",
+              "pt",
+              "zh"
+            ],
+            "description": "ISO 639-1 code. All courses are English-only."
+          },
+          "max_price_usd": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 10000,
+            "description": "Maximum per-seat price in USD."
+          },
+          "max_duration_hours": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 24,
+            "description": "Maximum course length in hours."
+          },
+          "sort": {
+            "type": "string",
+            "enum": [
+              "title",
+              "price_asc",
+              "price_desc",
+              "duration_asc",
+              "duration_desc"
+            ],
+            "default": "title"
+          },
+          "limit": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 44,
+            "default": 44
+          }
+        }
+      },
+      "outputSchema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "total_matching",
+          "returned",
+          "courses",
+          "notes"
+        ],
+        "properties": {
+          "total_matching": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "returned": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "courses": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "id",
+                "title",
+                "url",
+                "track",
+                "category",
+                "course_type",
+                "duration_hours",
+                "price_usd",
+                "standards",
+                "summary"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "description": "Stable course id (URL slug)."
+                },
+                "title": {
+                  "type": "string"
+                },
+                "url": {
+                  "type": "string",
+                  "format": "uri",
+                  "description": "Canonical course page."
+                },
+                "track": {
+                  "type": "string",
+                  "enum": [
+                    "Power & Electrical Systems Track",
+                    "Cooling & Facilities Efficiency Track",
+                    "Operations & Reliability Track",
+                    "Security & Compliance Track",
+                    "Design, Planning & Commissioning Track",
+                    "Monitoring & Smart Facility Track"
+                  ]
+                },
+                "category": {
+                  "type": "string",
+                  "enum": [
+                    "Cooling & Efficiency",
+                    "Design & Planning",
+                    "Monitoring & Automation",
+                    "Operations",
+                    "Power & Electrical",
+                    "Security & Compliance"
+                  ]
+                },
+                "course_type": {
+                  "type": "string",
+                  "enum": [
+                    "comprehensive",
+                    "modular"
+                  ]
+                },
+                "duration_hours": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "price_usd": {
+                  "type": "number",
+                  "minimum": 0,
+                  "description": "Per-seat list price in USD."
+                },
+                "standards": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "Industry standards or frameworks the content is aligned with (not issued or approved by)."
+                },
+                "summary": {
+                  "type": "string"
+                },
+                "rank": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "reason": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "notes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "annotations": {
+        "title": "Search and filter the course catalog",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "data_source": [
+        "https://datacentertraining.us/api/courses.json"
+      ],
+      "examples": [
+        {
+          "input": {
+            "track": "Power & Electrical Systems Track",
+            "max_duration_hours": 2,
+            "limit": 3
+          },
+          "output": {
+            "total_matching": 7,
+            "returned": 3,
+            "courses": [
+              {
+                "id": "batteries-dc-circuits",
+                "title": "Batteries and DC Circuits",
+                "url": "https://datacentertraining.us/courses/batteries-dc-circuits.html",
+                "track": "Power & Electrical Systems Track",
+                "category": "Power & Electrical",
+                "course_type": "modular",
+                "duration_hours": 2,
+                "price_usd": 99.99,
+                "standards": [],
+                "summary": "Master DC circuit fundamentals and battery behavior behind every backup power system."
+              },
+              {
+                "id": "data-center-arc-flash-safety",
+                "title": "Data Center Arc Flash Safety Training",
+                "url": "https://datacentertraining.us/courses/data-center-arc-flash-safety.html",
+                "track": "Power & Electrical Systems Track",
+                "category": "Power & Electrical",
+                "course_type": "modular",
+                "duration_hours": 2,
+                "price_usd": 99.99,
+                "standards": [
+                  "NFPA 70E"
+                ],
+                "summary": "NFPA 70E arc flash safety specific to data center switchgear and power distribution."
+              }
+            ],
+            "notes": []
+          },
+          "output_truncated": true
+        },
+        {
+          "input": {
+            "query": "refrigerant"
+          },
+          "output": {
+            "total_matching": 1,
+            "returned": 1,
+            "courses": [
+              {
+                "id": "data-center-cooling-refrigerant-safety",
+                "title": "Data Center Cooling System and Refrigerant Safety Training",
+                "url": "https://datacentertraining.us/courses/data-center-cooling-refrigerant-safety.html",
+                "track": "Cooling & Facilities Efficiency Track",
+                "category": "Cooling & Efficiency",
+                "course_type": "modular",
+                "duration_hours": 2,
+                "price_usd": 99.99,
+                "standards": [
+                  "EPA/OSHA"
+                ],
+                "summary": "Refrigerant handling and cooling system safety practices specific to data center CRAC/CRAH environments."
+              }
+            ],
+            "notes": []
+          },
+          "output_truncated": true
+        }
+      ]
+    },
+    {
+      "name": "get_course",
+      "title": "Get one course",
+      "description": "Return the full record for one course: description, audience, prerequisites, learning outcomes, modules, bundles that include it, certificate details, availability, course FAQs, and related courses. Pass the course_id from list_courses or a canonical course URL. Returns found=false with error \"not_found\" rather than guessing when the course does not exist.",
+      "inputSchema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "course_id": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$",
+            "maxLength": 80,
+            "description": "Course id (URL slug) as returned by list_courses.",
+            "examples": [
+              "ups-operations-load-testing"
+            ]
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https://datacentertraining\\.us/courses/[a-z0-9-]+\\.html$",
+            "description": "Canonical course URL."
+          }
+        },
+        "anyOf": [
+          {
+            "required": [
+              "course_id"
+            ]
+          },
+          {
+            "required": [
+              "url"
+            ]
+          }
+        ]
+      },
+      "outputSchema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "found"
+        ],
+        "properties": {
+          "found": {
+            "type": "boolean"
+          },
+          "course": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "catalog_number",
+              "title",
+              "url",
+              "api_url",
+              "track",
+              "category",
+              "course_type",
+              "duration_hours",
+              "price_usd",
+              "standards",
+              "description",
+              "audience",
+              "prerequisites",
+              "learning_outcomes",
+              "modules",
+              "bundles",
+              "language",
+              "certificate",
+              "availability"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "catalog_number": {
+                "type": "integer"
+              },
+              "title": {
+                "type": "string"
+              },
+              "url": {
+                "type": "string",
+                "format": "uri"
+              },
+              "api_url": {
+                "type": "string",
+                "format": "uri"
+              },
+              "track": {
+                "type": "string",
+                "enum": [
+                  "Power & Electrical Systems Track",
+                  "Cooling & Facilities Efficiency Track",
+                  "Operations & Reliability Track",
+                  "Security & Compliance Track",
+                  "Design, Planning & Commissioning Track",
+                  "Monitoring & Smart Facility Track"
+                ]
+              },
+              "category": {
+                "type": "string",
+                "enum": [
+                  "Cooling & Efficiency",
+                  "Design & Planning",
+                  "Monitoring & Automation",
+                  "Operations",
+                  "Power & Electrical",
+                  "Security & Compliance"
+                ]
+              },
+              "course_type": {
+                "type": "string",
+                "enum": [
+                  "comprehensive",
+                  "modular"
+                ]
+              },
+              "course_type_label": {
+                "type": "string"
+              },
+              "duration_hours": {
+                "type": "number",
+                "minimum": 0
+              },
+              "duration_iso8601": {
+                "type": "string"
+              },
+              "module_count": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "price_usd": {
+                "type": "number",
+                "minimum": 0
+              },
+              "currency": {
+                "type": "string",
+                "enum": [
+                  "USD"
+                ]
+              },
+              "standards": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "summary": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              },
+              "why_it_matters": {
+                "type": "string"
+              },
+              "audience": {
+                "type": "string"
+              },
+              "prerequisites": {
+                "type": "string"
+              },
+              "learning_outcomes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "modules": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "title",
+                    "summary"
+                  ],
+                  "properties": {
+                    "title": {
+                      "type": "string"
+                    },
+                    "summary": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "bundles": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "id",
+                    "name",
+                    "price_usd",
+                    "url"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "name": {
+                      "type": "string"
+                    },
+                    "price_usd": {
+                      "type": "number"
+                    },
+                    "url": {
+                      "type": "string",
+                      "format": "uri"
+                    }
+                  }
+                }
+              },
+              "language": {
+                "type": "string",
+                "enum": [
+                  "en"
+                ]
+              },
+              "delivery": {
+                "type": "string"
+              },
+              "certificate": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "type",
+                  "issuer",
+                  "validity_period",
+                  "verification_url",
+                  "is_license_or_government_certification",
+                  "ceu_or_pdh_credit"
+                ],
+                "properties": {
+                  "type": {
+                    "type": "string"
+                  },
+                  "issuer": {
+                    "type": "string"
+                  },
+                  "issuer_accreditation": {
+                    "type": "string"
+                  },
+                  "delivery": {
+                    "type": "string"
+                  },
+                  "validity_period": {
+                    "type": "string"
+                  },
+                  "verification_url": {
+                    "type": "string",
+                    "format": "uri"
+                  },
+                  "is_license_or_government_certification": {
+                    "type": "boolean",
+                    "enum": [
+                      false
+                    ]
+                  },
+                  "ceu_or_pdh_credit": {
+                    "type": "boolean"
+                  }
+                }
+              },
+              "availability": {
+                "type": "string",
+                "enum": [
+                  "available",
+                  "preorder"
+                ]
+              },
+              "enroll_url": {
+                "type": "string",
+                "format": "uri"
+              },
+              "faqs": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": [
+                    "question",
+                    "answer"
+                  ],
+                  "properties": {
+                    "question": {
+                      "type": "string"
+                    },
+                    "answer": {
+                      "type": "string"
+                    }
+                  }
+                }
+              },
+              "related_course_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "last_updated": {
+                "type": "string",
+                "format": "date"
+              }
+            }
+          },
+          "related_courses": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "id",
+                "title",
+                "url",
+                "track",
+                "category",
+                "course_type",
+                "duration_hours",
+                "price_usd",
+                "standards",
+                "summary"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "description": "Stable course id (URL slug)."
+                },
+                "title": {
+                  "type": "string"
+                },
+                "url": {
+                  "type": "string",
+                  "format": "uri",
+                  "description": "Canonical course page."
+                },
+                "track": {
+                  "type": "string",
+                  "enum": [
+                    "Power & Electrical Systems Track",
+                    "Cooling & Facilities Efficiency Track",
+                    "Operations & Reliability Track",
+                    "Security & Compliance Track",
+                    "Design, Planning & Commissioning Track",
+                    "Monitoring & Smart Facility Track"
+                  ]
+                },
+                "category": {
+                  "type": "string",
+                  "enum": [
+                    "Cooling & Efficiency",
+                    "Design & Planning",
+                    "Monitoring & Automation",
+                    "Operations",
+                    "Power & Electrical",
+                    "Security & Compliance"
+                  ]
+                },
+                "course_type": {
+                  "type": "string",
+                  "enum": [
+                    "comprehensive",
+                    "modular"
+                  ]
+                },
+                "duration_hours": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "price_usd": {
+                  "type": "number",
+                  "minimum": 0,
+                  "description": "Per-seat list price in USD."
+                },
+                "standards": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "Industry standards or frameworks the content is aligned with (not issued or approved by)."
+                },
+                "summary": {
+                  "type": "string"
+                },
+                "rank": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "reason": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "error": {
+            "type": "string",
+            "enum": [
+              "not_found"
+            ]
+          },
+          "message": {
+            "type": "string"
+          }
+        }
+      },
+      "annotations": {
+        "title": "Get one course",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "data_source": [
+        "https://datacentertraining.us/api/courses/{course_id}.json",
+        "https://datacentertraining.us/api/courses.json"
+      ],
+      "examples": [
+        {
+          "input": {
+            "course_id": "data-center-epo-procedures"
+          },
+          "output": {
+            "found": true,
+            "course": {
+              "id": "data-center-epo-procedures",
+              "catalog_number": 449,
+              "title": "Data Center Emergency Power Off (EPO) Procedures Training",
+              "url": "https://datacentertraining.us/courses/data-center-epo-procedures.html",
+              "api_url": "https://datacentertraining.us/api/courses/data-center-epo-procedures.json",
+              "track": "Power & Electrical Systems Track",
+              "category": "Power & Electrical",
+              "course_type": "modular",
+              "course_type_label": "Modular Specialization",
+              "duration_hours": 1,
+              "duration_iso8601": "PT1H",
+              "module_count": 4,
+              "price_usd": 99.99,
+              "currency": "USD",
+              "standards": [],
+              "summary": "Safe activation and reset procedures for data center Emergency Power Off systems.",
+              "description": "An EPO button is one of the most consequential controls on a data center floor — activating it correctly, and understanding what happens after, is essential knowledge for anyone with floor access. This course covers safe activation criteria, coordination with fire/life safety systems, and reset procedures. You'll leave understanding not just how to press the button, but when it's actually the right call, and how to bring systems back safely afterward.",
+              "why_it_matters": "An emergency power off (EPO) system can drop power to an entire data hall in an instant. It exists to protect people and first responders during a fire or electrical emergency. Pressed by mistake, it causes a full outage. Accidental EPO activations, from someone mistaking the button for a door release or bumping an unguarded switch, are a well-known cause of downtime. NFPA 70 (the National Electrical Code) Article 645 addresses disconnecting means for information technology equipment rooms, and many facilities also coordinate the EPO with fire alarm and suppression systems. Staff with floor access need to know when activation is justified, what the EPO shuts down, who must be notified and how to restore power safely afterward. This course covers EPO system design, activation criteria, fire and life safety coordination, and reset procedures.",
+              "audience": "Facilities and operations staff who may need to activate or reset an EPO system.",
+              "prerequisites": "No prior certification required. Relevant equipment exposure is helpful.",
+              "learning_outcomes": [
+                "Know the correct criteria for activating an Emergency Power Off system",
+                "Understand how EPO systems coordinate with fire and life safety systems",
+                "Follow correct reset procedures after an EPO event",
+                "Avoid the common mistakes that turn a minor incident into a full outage",
+                "Certificate of completion on finish",
+                "Self-paced — start and stop anytime",
+                "Delivered by an IACET-accredited provider",
+                "Volume pricing available for teams"
+              ],
+              "modules": [
+                {
+                  "title": "EPO System Overview",
+                  "summary": "How EPO systems are wired into facility power and fire/life safety."
+                },
+                {
+                  "title": "Activation Criteria",
+                  "summary": "When an EPO activation is actually the right call."
+                }
+              ],
+              "bundles": [
+                {
+                  "id": "bundle-power-electrical",
+                  "name": "Power & Electrical Systems Bundle",
+                  "price_usd": 986.99,
+                  "url": "https://datacentertraining.us/bundles.html"
+                },
+                {
+                  "id": "bundle-complete-catalog",
+                  "name": "Complete Data Center Professional Bundle",
+                  "price_usd": 2928.99,
+                  "url": "https://datacentertraining.us/bundles.html"
+                }
+              ],
+              "language": "en",
+              "delivery": "Online, self-paced, no completion deadline",
+              "certificate": {
+                "type": "Certificate of completion",
+                "issuer": "HAZWOPER OSHA Training, LLC",
+                "issuer_accreditation": "IACET Accredited Provider (provider-level accreditation)",
+                "delivery": "Issued immediately on completion; downloadable and printable",
+                "validity_period": "No fixed expiration; follow your employer's refresher policy",
+                "verification_url": "https://hazwoper-osha.com/certificate-verification",
+                "is_license_or_government_certification": false,
+                "ceu_or_pdh_credit": false
+              },
+              "availability": "preorder",
+              "enroll_url": "https://datacentertraining.us/checkout.html?item=data-center-epo-procedures",
+              "faqs": [
+                {
+                  "question": "What does an EPO button do in a data center?",
+                  "answer": "It disconnects power to IT equipment and, depending on the design, to cooling and other systems in the protected room. Its purpose is to remove power quickly during an emergency so people and firefighters are not exposed to energized equipment."
+                }
+              ],
+              "related_course_ids": [
+                "power-systems-electrical-fundamentals",
+                "ups-operations-load-testing",
+                "generator-operations-maintenance",
+                "electrical-safety-best-practices",
+                "batteries-dc-circuits"
+              ],
+              "last_updated": "2026-09-29"
+            },
+            "related_courses": [
+              {
+                "id": "power-systems-electrical-fundamentals",
+                "title": "Power Systems & Electrical Fundamentals",
+                "url": "https://datacentertraining.us/courses/power-systems-electrical-fundamentals.html",
+                "track": "Power & Electrical Systems Track",
+                "category": "Power & Electrical",
+                "course_type": "comprehensive",
+                "duration_hours": 18,
+                "price_usd": 303.99,
+                "standards": [
+                  "NFPA 70E"
+                ],
+                "summary": "Master data center electrical infrastructure — from utility interconnection to UPS and PDU architecture."
+              }
+            ]
+          },
+          "output_truncated": true
+        },
+        {
+          "input": {
+            "course_id": "quantum-cooling-101"
+          },
+          "output": {
+            "found": false,
+            "error": "not_found",
+            "message": "No course with that id or URL. Use list_courses to find valid course ids; do not guess a closest match."
+          },
+          "output_truncated": true
+        }
+      ]
+    },
+    {
+      "name": "compare_bundles",
+      "title": "Compare course bundles",
+      "description": "Compare the 7 course bundles (6 role-based track bundles plus the complete 44-course catalog bundle) side by side: bundle price, sum of individual course prices, savings, course count, total hours, audience, and included course ids. Omit bundle_ids to compare all bundles. Prices are per seat before seat-count volume discounts.",
+      "inputSchema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "bundle_ids": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 7,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "enum": [
+                "bundle-power-electrical",
+                "bundle-cooling-efficiency",
+                "bundle-operations-reliability",
+                "bundle-security-compliance",
+                "bundle-design-planning",
+                "bundle-monitoring-smart-facility",
+                "bundle-complete-catalog"
+              ]
+            },
+            "description": "Bundles to compare; omit for all."
+          }
+        }
+      },
+      "outputSchema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "bundles",
+          "notes"
+        ],
+        "properties": {
+          "bundles": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "id",
+                "name",
+                "price_usd",
+                "list_price_usd",
+                "savings_usd",
+                "course_count",
+                "total_hours",
+                "course_ids",
+                "url"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "enum": [
+                    "bundle-power-electrical",
+                    "bundle-cooling-efficiency",
+                    "bundle-operations-reliability",
+                    "bundle-security-compliance",
+                    "bundle-design-planning",
+                    "bundle-monitoring-smart-facility",
+                    "bundle-complete-catalog"
+                  ]
+                },
+                "catalog_number": {
+                  "type": "integer"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "track": {
+                  "type": "string"
+                },
+                "audience": {
+                  "type": "string"
+                },
+                "price_usd": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "list_price_usd": {
+                  "type": "number",
+                  "minimum": 0,
+                  "description": "Sum of the included courses at individual prices."
+                },
+                "savings_usd": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "savings_percent": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 100
+                },
+                "course_count": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "total_hours": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "course_ids": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "url": {
+                  "type": "string",
+                  "format": "uri"
+                },
+                "enroll_url": {
+                  "type": "string",
+                  "format": "uri"
+                },
+                "availability": {
+                  "type": "string",
+                  "enum": [
+                    "available",
+                    "preorder"
+                  ]
+                }
+              }
+            }
+          },
+          "notes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "annotations": {
+        "title": "Compare course bundles",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "data_source": [
+        "https://datacentertraining.us/api/bundles.json"
+      ],
+      "examples": [
+        {
+          "input": {
+            "bundle_ids": [
+              "bundle-security-compliance",
+              "bundle-complete-catalog"
+            ]
+          },
+          "output": {
+            "bundles": [
+              {
+                "id": "bundle-security-compliance",
+                "name": "Security & Compliance Bundle",
+                "track": "Security & Compliance Track",
+                "price_usd": 400.99,
+                "list_price_usd": 691.95,
+                "savings_usd": 290.96,
+                "savings_percent": 42,
+                "course_count": 5,
+                "total_hours": 25.5,
+                "audience": "For security and compliance leads building an audit-ready physical security, fire safety, and environmental compliance program.",
+                "url": "https://datacentertraining.us/bundles.html",
+                "course_ids": [
+                  "security-compliance-data-centers",
+                  "access-control-physical-security",
+                  "facility-environmental-compliance",
+                  "data-center-fire-suppression-safety",
+                  "data-center-physical-security-access-control"
+                ]
+              },
+              {
+                "id": "bundle-complete-catalog",
+                "name": "Complete Data Center Professional Bundle",
+                "track": "All tracks",
+                "price_usd": 2928.99,
+                "list_price_usd": 6167.56,
+                "savings_usd": 3238.57,
+                "savings_percent": 53,
+                "course_count": 44,
+                "total_hours": 250,
+                "audience": "Every course in the catalog — all 6 role-based tracks in one enrollment. The single path for a team that wants full coverage across design, power, cooling, security, operations, and monitoring, at the deepest discount we offer.",
+                "url": "https://datacentertraining.us/bundles.html",
+                "course_ids": [
+                  "access-control-physical-security",
+                  "batteries-dc-circuits",
+                  "building-automation-systems-fundamentals",
+                  "building-envelope-fundamentals",
+                  "building-maintenance-fundamentals",
+                  "business-continuity-disaster-recovery-planning",
+                  "capacity-planning-forecasting",
+                  "cooling-systems-design-optimization",
+                  "data-center-arc-flash-safety",
+                  "data-center-cooling-refrigerant-safety",
+                  "data-center-design-fundamentals",
+                  "data-center-electrical-safety",
+                  "data-center-epo-procedures",
+                  "data-center-fire-suppression-safety",
+                  "data-center-operations-management",
+                  "data-center-physical-security-access-control",
+                  "data-center-raised-floor-confined-space",
+                  "data-center-ups-battery-safety",
+                  "dcim-platform-fundamentals",
+                  "disaster-recovery-business-continuity",
+                  "electrical-safety-best-practices",
+                  "emergency-standby-power-systems-fundamentals",
+                  "energy-efficiency-pue-optimization",
+                  "facility-environmental-compliance",
+                  "facility-management-fundamentals",
+                  "fiber-optics-network-cabling",
+                  "generator-fundamentals",
+                  "generator-operations-maintenance",
+                  "hvac-troubleshooting-essentials",
+                  "incident-response-troubleshooting",
+                  "infrastructure-commissioning-startup",
+                  "lithium-ion-thermal-runaway-emergency-response",
+                  "mechanical-systems-maintenance",
+                  "monitoring-automation-bms-systems",
+                  "osha-electrical-safety-data-center-technicians",
+                  "power-distribution-systems-fundamentals",
+                  "power-systems-electrical-fundamentals",
+                  "preventive-maintenance-planning",
+                  "roofing-systems-maintenance-fundamentals",
+                  "security-compliance-data-centers",
+                  "server-room-ergonomics-manual-handling",
+                  "tier-infrastructure-fundamentals",
+                  "ups-operations-load-testing",
+                  "ups-systems-fundamentals"
+                ]
+              }
+            ],
+            "notes": [
+              "Prices are per seat in USD before seat-count volume discounts (2+ seats), which apply at checkout."
+            ]
+          },
+          "output_truncated": true
+        }
+      ]
+    },
+    {
+      "name": "recommend_courses",
+      "title": "Recommend courses for a role",
+      "description": "Recommend a learning track, bundle, and ranked course list for a job role (e.g. \"electrician\", \"HVAC technician\", \"facility manager\", \"security lead\", \"design engineer\", \"DCIM/network technician\"). Optional work_context refines the match and budget_usd trims the list to what fits. Returns matched=false with the list of supported roles when the role is unclear - ask the user instead of guessing. Training guidance only, not legal or compliance advice.",
+      "inputSchema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "role"
+        ],
+        "properties": {
+          "role": {
+            "type": "string",
+            "minLength": 2,
+            "maxLength": 100,
+            "description": "Job title or role id (electrician, hvac, operations, security, design, it).",
+            "examples": [
+              "electrician",
+              "critical facilities manager"
+            ]
+          },
+          "work_context": {
+            "type": "string",
+            "maxLength": 300,
+            "description": "Optional duties or equipment, e.g. \"maintains CRAH units and chillers\"."
+          },
+          "budget_usd": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100000,
+            "description": "Optional per-person budget in USD."
+          }
+        }
+      },
+      "outputSchema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "matched",
+          "caveats"
+        ],
+        "properties": {
+          "matched": {
+            "type": "boolean"
+          },
+          "role": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "label"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "enum": [
+                  "electrician",
+                  "hvac",
+                  "operations",
+                  "security",
+                  "design",
+                  "it"
+                ]
+              },
+              "label": {
+                "type": "string"
+              }
+            }
+          },
+          "track": {
+            "type": "string",
+            "enum": [
+              "Power & Electrical Systems Track",
+              "Cooling & Facilities Efficiency Track",
+              "Operations & Reliability Track",
+              "Security & Compliance Track",
+              "Design, Planning & Commissioning Track",
+              "Monitoring & Smart Facility Track"
+            ]
+          },
+          "reason": {
+            "type": "string"
+          },
+          "recommended_bundle": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "price_usd": {
+                "type": "number"
+              },
+              "list_price_usd": {
+                "type": "number"
+              },
+              "savings_usd": {
+                "type": "number"
+              },
+              "course_count": {
+                "type": "integer"
+              },
+              "total_hours": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string",
+                "format": "uri"
+              }
+            }
+          },
+          "courses": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "id",
+                "title",
+                "url",
+                "track",
+                "category",
+                "course_type",
+                "duration_hours",
+                "price_usd",
+                "standards",
+                "summary"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "description": "Stable course id (URL slug)."
+                },
+                "title": {
+                  "type": "string"
+                },
+                "url": {
+                  "type": "string",
+                  "format": "uri",
+                  "description": "Canonical course page."
+                },
+                "track": {
+                  "type": "string",
+                  "enum": [
+                    "Power & Electrical Systems Track",
+                    "Cooling & Facilities Efficiency Track",
+                    "Operations & Reliability Track",
+                    "Security & Compliance Track",
+                    "Design, Planning & Commissioning Track",
+                    "Monitoring & Smart Facility Track"
+                  ]
+                },
+                "category": {
+                  "type": "string",
+                  "enum": [
+                    "Cooling & Efficiency",
+                    "Design & Planning",
+                    "Monitoring & Automation",
+                    "Operations",
+                    "Power & Electrical",
+                    "Security & Compliance"
+                  ]
+                },
+                "course_type": {
+                  "type": "string",
+                  "enum": [
+                    "comprehensive",
+                    "modular"
+                  ]
+                },
+                "duration_hours": {
+                  "type": "number",
+                  "minimum": 0
+                },
+                "price_usd": {
+                  "type": "number",
+                  "minimum": 0,
+                  "description": "Per-seat list price in USD."
+                },
+                "standards": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "Industry standards or frameworks the content is aligned with (not issued or approved by)."
+                },
+                "summary": {
+                  "type": "string"
+                },
+                "rank": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "reason": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "message": {
+            "type": "string"
+          },
+          "available_roles": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "id",
+                "label"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "label": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "caveats": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "annotations": {
+        "title": "Recommend courses for a role",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "data_source": [
+        "https://datacentertraining.us/api/roles.json",
+        "https://datacentertraining.us/api/bundles.json",
+        "https://datacentertraining.us/api/courses.json"
+      ],
+      "examples": [
+        {
+          "input": {
+            "role": "HVAC technician",
+            "work_context": "maintains CRAH units and chillers",
+            "budget_usd": 500
+          },
+          "output": {
+            "matched": true,
+            "role": {
+              "id": "hvac",
+              "label": "I work on HVAC, cooling, or mechanical systems"
+            },
+            "track": "Cooling & Facilities Efficiency Track",
+            "reason": "HVAC and facilities technicians who need both cooling design fundamentals and hands-on maintenance skills should complete this 6-course, 31-hour track.",
+            "recommended_bundle": {
+              "id": "bundle-cooling-efficiency",
+              "name": "Cooling & Facilities Efficiency Bundle",
+              "price_usd": 462.99,
+              "list_price_usd": 798.94,
+              "savings_usd": 335.95,
+              "course_count": 6,
+              "total_hours": 31,
+              "url": "https://datacentertraining.us/bundles.html"
+            },
+            "courses": [
+              {
+                "id": "cooling-systems-design-optimization",
+                "title": "Cooling Systems Design & Optimization",
+                "url": "https://datacentertraining.us/courses/cooling-systems-design-optimization.html",
+                "track": "Cooling & Facilities Efficiency Track",
+                "category": "Cooling & Efficiency",
+                "course_type": "comprehensive",
+                "duration_hours": 16,
+                "price_usd": 298.99,
+                "standards": [
+                  "PUE",
+                  "ASHRAE Thermal Guidelines"
+                ],
+                "summary": "Cut cooling costs and improve reliability with modern thermal management strategy.",
+                "rank": 1,
+                "reason": "Core full-discipline program for this track."
+              },
+              {
+                "id": "hvac-troubleshooting-essentials",
+                "title": "HVAC Systems Troubleshooting Essentials",
+                "url": "https://datacentertraining.us/courses/hvac-troubleshooting-essentials.html",
+                "track": "Cooling & Facilities Efficiency Track",
+                "category": "Cooling & Efficiency",
+                "course_type": "modular",
+                "duration_hours": 4,
+                "price_usd": 99.99,
+                "standards": [],
+                "summary": "Hands-on troubleshooting skills for CRAC/CRAH systems and common cooling failures.",
+                "rank": 2,
+                "reason": "Focused specialization in the Cooling & Facilities Efficiency Track."
+              }
+            ],
+            "caveats": [
+              "Training guidance only, not legal or compliance advice. Employers decide who is qualified for which duties at their site.",
+              "A certificate of completion documents training; it is not a license or a certification issued by a standards body.",
+              "The full Cooling & Facilities Efficiency Bundle fits this budget and costs less than buying its courses one by one."
+            ]
+          },
+          "output_truncated": true
+        },
+        {
+          "input": {
+            "role": "chef"
+          },
+          "output": {
+            "matched": false,
+            "message": "The role did not match a documented role. Ask the user which of the listed roles is closest instead of guessing.",
+            "available_roles": [
+              {
+                "id": "electrician",
+                "label": "I'm an electrician or power technician"
+              },
+              {
+                "id": "hvac",
+                "label": "I work on HVAC, cooling, or mechanical systems"
+              },
+              {
+                "id": "operations",
+                "label": "I manage daily facility operations and uptime"
+              },
+              {
+                "id": "security",
+                "label": "I handle security or compliance"
+              },
+              {
+                "id": "design",
+                "label": "I design, plan, or commission facilities"
+              },
+              {
+                "id": "it",
+                "label": "I work on monitoring, DCIM, or network cabling"
+              }
+            ],
+            "caveats": [
+              "Training guidance only, not legal or compliance advice. Employers decide who is qualified for which duties at their site.",
+              "A certificate of completion documents training; it is not a license or a certification issued by a standards body."
+            ]
+          },
+          "output_truncated": true
+        }
+      ]
+    },
+    {
+      "name": "get_credential_info",
+      "title": "Explain certificates and accreditation",
+      "description": "Explain exactly what learners receive and what it does and does not mean: certificate of completion, IACET provider-level accreditation, standards alignment, CEU/PDH status, expiration, verification, and employer responsibility. Includes a do_not_claim list. Use this before describing any course as a \"certification\" or implying approval by NFPA, TIA, Uptime Institute, OSHA, or any other body.",
+      "inputSchema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "topic": {
+            "type": "string",
+            "enum": [
+              "certificate",
+              "accreditation",
+              "standards_alignment",
+              "ceu_pdh",
+              "expiration",
+              "verification",
+              "employer_responsibility",
+              "all"
+            ],
+            "default": "all"
+          }
+        }
+      },
+      "outputSchema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "topic",
+          "last_reviewed",
+          "source_url",
+          "do_not_claim"
+        ],
+        "properties": {
+          "topic": {
+            "type": "string"
+          },
+          "last_reviewed": {
+            "type": "string",
+            "format": "date"
+          },
+          "source_url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "do_not_claim": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "certificate": {
+            "type": "object",
+            "required": [
+              "summary"
+            ],
+            "properties": {
+              "summary": {
+                "type": "string"
+              }
+            }
+          },
+          "accreditation": {
+            "type": "object",
+            "required": [
+              "summary"
+            ],
+            "properties": {
+              "summary": {
+                "type": "string"
+              }
+            }
+          },
+          "standards_alignment": {
+            "type": "object",
+            "required": [
+              "summary"
+            ],
+            "properties": {
+              "summary": {
+                "type": "string"
+              }
+            }
+          },
+          "ceu_pdh": {
+            "type": "object",
+            "required": [
+              "summary"
+            ],
+            "properties": {
+              "summary": {
+                "type": "string"
+              }
+            }
+          },
+          "expiration": {
+            "type": "object",
+            "required": [
+              "summary"
+            ],
+            "properties": {
+              "summary": {
+                "type": "string"
+              }
+            }
+          },
+          "verification": {
+            "type": "object",
+            "required": [
+              "summary"
+            ],
+            "properties": {
+              "summary": {
+                "type": "string"
+              }
+            }
+          },
+          "employer_responsibility": {
+            "type": "object",
+            "required": [
+              "summary"
+            ],
+            "properties": {
+              "summary": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      },
+      "annotations": {
+        "title": "Explain certificates and accreditation",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "data_source": [
+        "https://datacentertraining.us/api/credentials.json"
+      ],
+      "examples": [
+        {
+          "input": {
+            "topic": "ceu_pdh"
+          },
+          "output": {
+            "topic": "ceu_pdh",
+            "last_reviewed": "2026-09-29",
+            "source_url": "https://datacentertraining.us/certifications.html",
+            "ceu_pdh": {
+              "summary": "These courses are not currently registered for CEUs or PDHs. Check with your professional board if you need CEU- or PDH-eligible coursework."
+            },
+            "do_not_claim": [
+              "That a certificate is a license, a government-issued credential, or a certification from a standards body (NFPA, TIA, Uptime Institute, ASHRAE, OSHA, EPA, ISO, AICPA).",
+              "That a standards body endorsed, approved, or certified any course.",
+              "That courses grant CEUs or PDHs.",
+              "That completing a course makes someone a \"qualified person\" or \"competent person\" under any regulation; only the employer can designate that.",
+              "That IACET accredits individual learners."
+            ]
+          },
+          "output_truncated": true
+        }
+      ]
+    },
+    {
+      "name": "answer_faq",
+      "title": "Answer from the published FAQ",
+      "description": "Find published answers to a question about programs, pricing, certificates, access, team enrollment, or policies, optionally including one course's FAQ (course_id). Returns up to 3 quoted answers with their source URL. When answered=false there is no published answer: say so and route the user to support rather than composing one.",
+      "inputSchema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "question"
+        ],
+        "properties": {
+          "question": {
+            "type": "string",
+            "minLength": 3,
+            "maxLength": 300,
+            "examples": [
+              "Do certificates expire?"
+            ]
+          },
+          "course_id": {
+            "type": "string",
+            "pattern": "^[a-z0-9-]+$",
+            "maxLength": 80,
+            "description": "Optional course id to include that course's FAQ."
+          }
+        }
+      },
+      "outputSchema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "answered",
+          "matches",
+          "last_reviewed",
+          "support"
+        ],
+        "properties": {
+          "answered": {
+            "type": "boolean"
+          },
+          "matches": {
+            "type": "array",
+            "maxItems": 3,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "question",
+                "answer",
+                "source_url"
+              ],
+              "properties": {
+                "question": {
+                  "type": "string"
+                },
+                "answer": {
+                  "type": "string"
+                },
+                "source_url": {
+                  "type": "string",
+                  "format": "uri"
+                }
+              }
+            }
+          },
+          "last_reviewed": {
+            "type": "string",
+            "format": "date"
+          },
+          "support": {
+            "type": "string"
+          }
+        }
+      },
+      "annotations": {
+        "title": "Answer from the published FAQ",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "data_source": [
+        "https://datacentertraining.us/api/faq.json",
+        "https://datacentertraining.us/api/courses.json"
+      ],
+      "examples": [
+        {
+          "input": {
+            "question": "Do data center training certificates expire?"
+          },
+          "output": {
+            "answered": true,
+            "matches": [
+              {
+                "question": "Do data center training certificates expire or need to be renewed?",
+                "answer": "Certificates of completion don't have a fixed expiration date, but many employers require periodic refreshers as part of internal training programs, especially for safety-adjacent topics like electrical safety and access control. Check your employer's refresher policy; courses are short enough to retake as often as your program requires.",
+                "source_url": "https://datacentertraining.us/faq.html"
+              }
+            ],
+            "last_reviewed": "2026-09-29",
+            "support": "Answers are quoted from published pages. For anything they do not cover, contact info@hazwoper-osha.com or 1-866-429-6742."
+          },
+          "output_truncated": true
+        },
+        {
+          "input": {
+            "question": "What is the difference between static bypass and maintenance bypass?",
+            "course_id": "ups-operations-load-testing"
+          },
+          "output": {
+            "answered": true,
+            "matches": [
+              {
+                "question": "What is the difference between static bypass and maintenance bypass?",
+                "answer": "Static bypass is an automatic, electronic path inside the UPS that transfers load to the bypass source if the inverter faults or is overloaded. Maintenance bypass is a manual switching arrangement that routes power around the UPS entirely so it can be serviced safely.",
+                "source_url": "https://datacentertraining.us/courses/ups-operations-load-testing.html"
+              },
+              {
+                "question": "What's the difference between Comprehensive Programs and Modular Specializations?",
+                "answer": "Comprehensive Programs are multi-module courses (12-18 hours) covering a full discipline in depth, like data center design or operations management. Modular Specializations are focused 1-8 hour courses on a single skill, like UPS load testing or fiber termination. Many teams combine one comprehensive program with several modular courses for their role, which is exactly how our bundles are put together.",
+                "source_url": "https://datacentertraining.us/faq.html"
+              },
+              {
+                "question": "What's the difference between this training and HAZWOPER/OSHA safety training from your parent company?",
+                "answer": "Data Center Training is a specialty division of HAZWOPER-OSHA Training, LLC focused specifically on data center topics — design, power, cooling, security, operations, and monitoring. Our parent company's broader catalog covers general HAZWOPER and OSHA safety compliance training that applies across industries, not just data centers.",
+                "source_url": "https://datacentertraining.us/faq.html"
+              }
+            ],
+            "last_reviewed": "2026-09-29",
+            "support": "Answers are quoted from published pages. For anything they do not cover, contact info@hazwoper-osha.com or 1-866-429-6742."
+          },
+          "output_truncated": true
+        }
+      ]
+    },
+    {
+      "name": "list_resources",
+      "title": "List guides and standards references",
+      "description": "List first-party guides (blog posts, catalog, role, and credential pages) and official regulatory or standards-body references by topic, audience, or type. Each item has its source and URL. Prefer these over third-party summaries; standard_reference items point to the issuing body.",
+      "inputSchema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "topic": {
+            "type": "string",
+            "maxLength": 80,
+            "description": "Keywords, e.g. \"generator\", \"refrigerant\", \"access control\"."
+          },
+          "audience": {
+            "type": "string",
+            "maxLength": 60,
+            "description": "Role keyword, e.g. \"electrician\", \"hvac\", \"security\"."
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "site_page",
+              "blog_post",
+              "standard_reference"
+            ]
+          },
+          "limit": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 100,
+            "default": 25
+          }
+        }
+      },
+      "outputSchema": {
+        "$schema": "http://json-schema.org/draft-07/schema#",
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "count",
+          "resources"
+        ],
+        "properties": {
+          "count": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "resources": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "type",
+                "title",
+                "url",
+                "description",
+                "source",
+                "topics",
+                "audience"
+              ],
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "enum": [
+                    "site_page",
+                    "blog_post",
+                    "standard_reference"
+                  ]
+                },
+                "title": {
+                  "type": "string"
+                },
+                "url": {
+                  "type": "string",
+                  "format": "uri"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "source": {
+                  "type": "string"
+                },
+                "topics": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "audience": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "published": {
+                  "type": "string",
+                  "format": "date"
+                }
+              }
+            }
+          }
+        }
+      },
+      "annotations": {
+        "title": "List guides and standards references",
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
+      },
+      "data_source": [
+        "https://datacentertraining.us/api/resources.json"
+      ],
+      "examples": [
+        {
+          "input": {
+            "topic": "refrigerant"
+          },
+          "output": {
+            "count": 2,
+            "resources": [
+              {
+                "source": "U.S. Environmental Protection Agency",
+                "type": "standard_reference",
+                "title": "EPA Section 608 - Stationary refrigeration and air conditioning",
+                "url": "https://www.epa.gov/section608",
+                "description": "Federal refrigerant management requirements relevant to cooling system work.",
+                "topics": [
+                  "refrigerant",
+                  "cooling",
+                  "epa"
+                ],
+                "audience": [
+                  "hvac"
+                ]
+              },
+              {
+                "type": "blog_post",
+                "title": "What Cooling Technicians Should Verify Before Opening a Refrigerant Circuit",
+                "url": "https://datacentertraining.us/blog/posts/what-cooling-technicians-should-verify-before-opening-a-refrigerant-circuit.html",
+                "description": "What data center cooling technicians should verify before opening a refrigerant circuit: isolation, refrigerant recovery, pressure checks, and PPE.",
+                "topics": [
+                  "cooling",
+                  "refrigerant"
+                ],
+                "audience": [],
+                "source": "Data Center Training (first party)",
+                "published": "2026-09-24"
+              }
+            ]
+          },
+          "output_truncated": true
+        }
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "uri": "https://datacentertraining.us/llms.txt",
+      "name": "llms.txt",
+      "mimeType": "text/markdown",
+      "description": "Concise site summary and agent rules."
+    },
+    {
+      "uri": "https://datacentertraining.us/llms-full.txt",
+      "name": "llms-full.txt",
+      "mimeType": "text/markdown",
+      "description": "Every course, bundle, role, FAQ, and policy as stable records."
+    },
+    {
+      "uri": "https://datacentertraining.us/api/index.json",
+      "name": "API index",
+      "mimeType": "application/json",
+      "description": "Index of all JSON documents."
+    },
+    {
+      "uri": "https://datacentertraining.us/api/courses.json",
+      "name": "Courses",
+      "mimeType": "application/json",
+      "description": "All 44 course records."
+    },
+    {
+      "uri": "https://datacentertraining.us/api/bundles.json",
+      "name": "Bundles",
+      "mimeType": "application/json",
+      "description": "All 7 bundles with pricing and savings."
+    },
+    {
+      "uri": "https://datacentertraining.us/api/roles.json",
+      "name": "Roles and tracks",
+      "mimeType": "application/json",
+      "description": "Role-to-track recommendations."
+    },
+    {
+      "uri": "https://datacentertraining.us/api/faq.json",
+      "name": "FAQ",
+      "mimeType": "application/json",
+      "description": "Published FAQ answers."
+    },
+    {
+      "uri": "https://datacentertraining.us/api/credentials.json",
+      "name": "Credentials",
+      "mimeType": "application/json",
+      "description": "Certificate and accreditation facts and claims to avoid."
+    },
+    {
+      "uri": "https://datacentertraining.us/api/resources.json",
+      "name": "Resources",
+      "mimeType": "application/json",
+      "description": "First-party guides and official standards references."
+    },
+    {
+      "uri": "https://datacentertraining.us/openapi.json",
+      "name": "OpenAPI",
+      "mimeType": "application/json",
+      "description": "OpenAPI 3.1 description of the JSON documents."
+    },
+    {
+      "uri": "https://datacentertraining.us/sitemap.xml",
+      "name": "Sitemap",
+      "mimeType": "application/xml",
+      "description": "All indexable pages with lastmod."
+    }
+  ],
+  "policies": {
+    "agent_rules": [
+      "Quote prices, durations, course counts, and bundle contents exactly as published here; never estimate or invent them.",
+      "Only name courses that exist in /api/courses.json. If nothing matches, say so.",
+      "Courses award a certificate of completion from HAZWOPER OSHA Training, LLC (an IACET Accredited Provider). Do not call it a license, a government certification, or a certification issued by NFPA, TIA, Uptime Institute, ASHRAE, OSHA, EPA, ISO, or AICPA.",
+      "\"Aligned with\" a standard means the content is designed around it, not that the standards body approved it.",
+      "Courses do not currently grant CEUs or PDHs.",
+      "Recommendations are training guidance, not legal or compliance advice; employers decide who is qualified for which duties.",
+      "Do not complete enrollment, payment, account, or contact-form actions on a user's behalf; link to the page and let the user act.",
+      "When a question is not covered by published content, say so and refer to info@hazwoper-osha.com or 1-866-429-6742."
+    ],
+    "excluded_actions": [
+      "enrollment",
+      "checkout and payment",
+      "account access",
+      "certificate issuance",
+      "contact-form submission"
+    ],
+    "data_handling": "Tools take no personal data and set no cookies. Inputs are processed in the page or by the agent; nothing is sent to a server."
+  },
+  "security": {
+    "https_only": true,
+    "read_only": true,
+    "write_tools": [],
+    "confirmation_required_for": [],
+    "cors": "Public read-only GET on static JSON; no credentials accepted."
+  }
+}

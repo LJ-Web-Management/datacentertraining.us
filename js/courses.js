@@ -96,11 +96,46 @@ document.addEventListener('DOMContentLoaded', function () {
     if (emptyState) emptyState.hidden = totalVisible !== 0;
   }
 
+  // Pre-fill from ?q=&type=&track=&sort= so filtered views are linkable (and
+  // the WebSite SearchAction on the homepage lands on real results).
+  var params = new URLSearchParams(window.location.search);
+  function setFrom(el, key) {
+    var v = params.get(key);
+    if (!el || v === null) return;
+    if (el.tagName === 'SELECT' && !Array.prototype.some.call(el.options, function (o) { return o.value === v; })) return;
+    el.value = v;
+  }
+  setFrom(searchInput, 'q');
+  setFrom(tierSelect, 'type');
+  setFrom(categorySelect, 'track');
+  setFrom(sortSelect, 'sort');
+
   [searchInput, sortSelect, tierSelect, categorySelect].forEach(function (el) {
     if (!el) return;
     el.addEventListener('input', apply);
     el.addEventListener('change', apply);
   });
+
+  // The toolbar is a real GET form (works without JS, and is exposed to AI
+  // agents as the declarative WebMCP tool "search_catalog"); with JS we filter
+  // in place instead of reloading.
+  var form = document.getElementById('courseFilters');
+  if (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      apply();
+      var visible = Array.prototype.filter.call(document.querySelectorAll('.course-row'), function (r) { return !r.hidden; });
+      if (e.agentInvoked && typeof e.respondWith === 'function') {
+        e.respondWith(Promise.resolve(JSON.stringify({
+          count: visible.length,
+          courses: visible.map(function (r) {
+            var a = r.querySelector('h3 a');
+            return { title: r.dataset.name, url: a ? a.href : null, track: r.dataset.category, hours: parseFloat(r.dataset.hours), price_usd: parseFloat(r.dataset.price) };
+          })
+        })));
+      }
+    });
+  }
 
   apply();
 });

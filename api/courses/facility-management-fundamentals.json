@@ -1,0 +1,100 @@
+{
+  "id": "facility-management-fundamentals",
+  "catalog_number": 455,
+  "title": "Facility Management Fundamentals",
+  "url": "https://datacentertraining.us/courses/facility-management-fundamentals.html",
+  "api_url": "https://datacentertraining.us/api/courses/facility-management-fundamentals.json",
+  "track": "Operations & Reliability Track",
+  "category": "Operations",
+  "course_type": "modular",
+  "course_type_label": "Modular Specialization",
+  "duration_hours": 4,
+  "duration_iso8601": "PT4H",
+  "module_count": 4,
+  "price_usd": 99.99,
+  "currency": "USD",
+  "standards": [],
+  "summary": "Core facility management principles for teams running critical infrastructure.",
+  "description": "Facility management brings together maintenance, vendor coordination, budgeting, and compliance into one role. This course covers the foundational principles that make that juggling act manageable, with an eye toward the higher stakes of managing a critical infrastructure site. You'll leave with a framework for balancing maintenance, compliance, and uptime priorities instead of constantly fighting fires between them.",
+  "why_it_matters": "A facility manager is responsible for maintenance, contractors, budgets, compliance and people at the same time. In an office building, a missed item usually means inconvenience. In a data center, it can mean downtime for customers, contract penalties or a safety incident, so priorities need to be managed carefully. Much of the job is coordination: making sure vendors work to approved methods of procedure, that maintenance windows are planned, that budgets include lifecycle replacements and that compliance deadlines are tracked. Tools such as a computerized maintenance management system (CMMS) and a clear change process help, but only with sound habits behind them. This course covers facility management principles, vendor and contractor coordination, budgeting basics and how to balance competing priorities in a critical facility.",
+  "audience": "New and developing facility managers responsible for day-to-day site operations.",
+  "prerequisites": "No prior certification required. Relevant equipment exposure is helpful.",
+  "learning_outcomes": [
+    "Apply core facility management principles to daily site operations",
+    "Coordinate vendors and contractors without losing accountability",
+    "Build a basic facility operating budget",
+    "Balance maintenance, compliance, and uptime priorities",
+    "Certificate of completion on finish",
+    "Self-paced — start and stop anytime",
+    "Delivered by an IACET-accredited provider",
+    "Volume pricing available for teams"
+  ],
+  "modules": [
+    {
+      "title": "Facility Management Fundamentals",
+      "summary": "The core disciplines every facility manager needs."
+    },
+    {
+      "title": "Vendor & Contractor Coordination",
+      "summary": "Managing outside vendors without losing accountability."
+    },
+    {
+      "title": "Facility Budgeting Basics",
+      "summary": "Building an operating budget that holds up."
+    },
+    {
+      "title": "Balancing Competing Priorities",
+      "summary": "Maintenance, compliance, and uptime, all at once."
+    }
+  ],
+  "bundles": [
+    {
+      "id": "bundle-operations-reliability",
+      "name": "Operations & Reliability Bundle",
+      "price_usd": 830.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    },
+    {
+      "id": "bundle-complete-catalog",
+      "name": "Complete Data Center Professional Bundle",
+      "price_usd": 2928.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    }
+  ],
+  "language": "en",
+  "delivery": "Online, self-paced, no completion deadline",
+  "certificate": {
+    "type": "Certificate of completion",
+    "issuer": "HAZWOPER OSHA Training, LLC",
+    "issuer_accreditation": "IACET Accredited Provider (provider-level accreditation)",
+    "delivery": "Issued immediately on completion; downloadable and printable",
+    "validity_period": "No fixed expiration; follow your employer's refresher policy",
+    "verification_url": "https://hazwoper-osha.com/certificate-verification",
+    "is_license_or_government_certification": false,
+    "ceu_or_pdh_credit": false
+  },
+  "availability": "preorder",
+  "enroll_url": "https://datacentertraining.us/checkout.html?item=facility-management-fundamentals",
+  "faqs": [
+    {
+      "question": "How is managing a data center different from managing an office building?",
+      "answer": "The tolerance for disruption is much lower. Work near critical systems needs change control, detailed procedures and scheduled windows, and many decisions are driven by customer SLAs and redundancy rather than just cost or comfort."
+    },
+    {
+      "question": "What is a CMMS?",
+      "answer": "A computerized maintenance management system tracks assets, work orders, preventive maintenance schedules, parts and labor. It gives facility managers the records they need for planning, budgeting and audits."
+    },
+    {
+      "question": "Who should take this course?",
+      "answer": "New and developing facility managers, supervisors taking on site responsibility and technicians preparing for a management role in a critical facility."
+    }
+  ],
+  "related_course_ids": [
+    "data-center-operations-management",
+    "disaster-recovery-business-continuity",
+    "preventive-maintenance-planning",
+    "incident-response-troubleshooting",
+    "business-continuity-disaster-recovery-planning"
+  ],
+  "last_updated": "2026-09-29"
+}

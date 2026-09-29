@@ -1,0 +1,100 @@
+{
+  "id": "data-center-ups-battery-safety",
+  "catalog_number": 453,
+  "title": "Data Center UPS and Battery System Safety Training",
+  "url": "https://datacentertraining.us/courses/data-center-ups-battery-safety.html",
+  "api_url": "https://datacentertraining.us/api/courses/data-center-ups-battery-safety.json",
+  "track": "Power & Electrical Systems Track",
+  "category": "Power & Electrical",
+  "course_type": "modular",
+  "course_type_label": "Modular Specialization",
+  "duration_hours": 2,
+  "duration_iso8601": "PT2H",
+  "module_count": 4,
+  "price_usd": 99.99,
+  "currency": "USD",
+  "standards": [],
+  "summary": "Safety-focused training for anyone working around data center UPS and battery systems.",
+  "description": "UPS and battery rooms carry hazards beyond standard electrical work: battery chemistry, off-gassing, and stored energy that remains even when a system is powered down. This course covers the safety practices specific to working around UPS and battery installations. You'll leave understanding the PPE and ventilation requirements that go beyond standard electrical safety, and how to respond if something goes wrong.",
+  "why_it_matters": "UPS and battery rooms store a large amount of energy, and that energy is still there when the UPS output is off. Battery terminals can deliver very high short-circuit current, so a dropped wrench can cause an arc and burns. Lead-acid batteries can release hydrogen during charging, which is why ventilation matters, and electrolyte is corrosive to skin and eyes. NFPA 70E includes specific requirements for work on battery systems, and OSHA requires facilities for quick drenching or flushing of the eyes and body where workers may be exposed to corrosive materials. IEEE standards such as IEEE 1188 cover maintenance of VRLA batteries. This course covers the hazards of UPS and battery rooms, safe work practices, PPE and ventilation requirements, and how to respond to incidents.",
+  "audience": "Electricians and facilities technicians working near UPS and battery installations.",
+  "prerequisites": "No prior certification required. Relevant equipment exposure is helpful.",
+  "learning_outcomes": [
+    "Recognize battery-specific hazards including off-gassing and stored energy",
+    "Apply safe work practices around UPS and battery installations",
+    "Follow correct PPE and ventilation requirements for battery rooms",
+    "Respond correctly to a battery-related safety incident",
+    "Certificate of completion on finish",
+    "Self-paced — start and stop anytime",
+    "Delivered by an IACET-accredited provider",
+    "Volume pricing available for teams"
+  ],
+  "modules": [
+    {
+      "title": "UPS & Battery Room Hazards",
+      "summary": "Off-gassing, stored energy, and other battery-specific risks."
+    },
+    {
+      "title": "Safe Work Practices",
+      "summary": "Working around UPS and battery installations safely."
+    },
+    {
+      "title": "PPE & Ventilation Requirements",
+      "summary": "What battery rooms require beyond standard electrical PPE."
+    },
+    {
+      "title": "Incident Response",
+      "summary": "Responding correctly to a battery-related safety event."
+    }
+  ],
+  "bundles": [
+    {
+      "id": "bundle-power-electrical",
+      "name": "Power & Electrical Systems Bundle",
+      "price_usd": 986.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    },
+    {
+      "id": "bundle-complete-catalog",
+      "name": "Complete Data Center Professional Bundle",
+      "price_usd": 2928.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    }
+  ],
+  "language": "en",
+  "delivery": "Online, self-paced, no completion deadline",
+  "certificate": {
+    "type": "Certificate of completion",
+    "issuer": "HAZWOPER OSHA Training, LLC",
+    "issuer_accreditation": "IACET Accredited Provider (provider-level accreditation)",
+    "delivery": "Issued immediately on completion; downloadable and printable",
+    "validity_period": "No fixed expiration; follow your employer's refresher policy",
+    "verification_url": "https://hazwoper-osha.com/certificate-verification",
+    "is_license_or_government_certification": false,
+    "ceu_or_pdh_credit": false
+  },
+  "availability": "preorder",
+  "enroll_url": "https://datacentertraining.us/checkout.html?item=data-center-ups-battery-safety",
+  "faqs": [
+    {
+      "question": "Why is a UPS dangerous even when it is turned off?",
+      "answer": "The batteries remain charged and connected to parts of the UPS unless they are isolated. Capacitors inside the UPS can also hold a charge. Technicians must follow the manufacturer's isolation procedure and verify absence of voltage before working inside."
+    },
+    {
+      "question": "Do battery rooms need eyewash stations?",
+      "answer": "OSHA requires suitable facilities for quick drenching or flushing of the eyes and body where a worker's eyes or body may be exposed to corrosive materials, which can include battery electrolyte. The facility's safety program decides the type and location."
+    },
+    {
+      "question": "Does this course cover lithium-ion batteries?",
+      "answer": "It covers UPS and battery room hazards in general. For lithium-ion thermal runaway and emergency response specifically, take Lithium-Ion Battery Thermal Runaway and Emergency Response Training."
+    }
+  ],
+  "related_course_ids": [
+    "power-systems-electrical-fundamentals",
+    "ups-operations-load-testing",
+    "generator-operations-maintenance",
+    "electrical-safety-best-practices",
+    "batteries-dc-circuits"
+  ],
+  "last_updated": "2026-09-29"
+}

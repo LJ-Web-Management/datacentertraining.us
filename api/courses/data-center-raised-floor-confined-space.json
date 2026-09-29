@@ -1,0 +1,102 @@
+{
+  "id": "data-center-raised-floor-confined-space",
+  "catalog_number": 452,
+  "title": "Data Center Raised Floor and Confined Space Awareness Training",
+  "url": "https://datacentertraining.us/courses/data-center-raised-floor-confined-space.html",
+  "api_url": "https://datacentertraining.us/api/courses/data-center-raised-floor-confined-space.json",
+  "track": "Operations & Reliability Track",
+  "category": "Operations",
+  "course_type": "modular",
+  "course_type_label": "Modular Specialization",
+  "duration_hours": 1,
+  "duration_iso8601": "PT1H",
+  "module_count": 4,
+  "price_usd": 99.99,
+  "currency": "USD",
+  "standards": [
+    "OSHA 1910.146"
+  ],
+  "summary": "Confined space awareness and safe practices for working under a raised floor.",
+  "description": "The space under a raised floor is a confined space with its own hazards — cabling, airflow obstructions, and limited visibility. This awareness-level course covers safe raised-floor work practices and the confined space fundamentals relevant to under-floor access. You'll leave knowing exactly when under-floor work crosses the line into permit-required confined space territory.",
+  "why_it_matters": "Many data centers still use raised floors for airflow and cabling. Lifting tiles and working in the plenum creates hazards that are easy to underestimate: open holes in walkways, dense cable bundles, sharp tile edges, poor lighting, and pressurized airflow that can carry dust. Removing too many tiles at once can also affect cooling for nearby racks. Some spaces in a data center may meet OSHA's definition of a confined space, and some may be permit-required confined spaces under 29 CFR 1910.146. Whether a given space qualifies depends on its size, access and hazards, so staff need to recognize the signs and follow the facility's program. This awareness course covers raised-floor hazards, safe under-floor work, confined space permit basics, and good airflow and cable management.",
+  "audience": "Facilities and cabling technicians who work under raised floors or in confined spaces.",
+  "prerequisites": "No prior certification required. Relevant equipment exposure is helpful.",
+  "learning_outcomes": [
+    "Recognize confined space hazards specific to raised floor environments",
+    "Apply safe practices for under-floor cabling and access work",
+    "Know when raised floor work requires a confined space permit",
+    "Maintain airflow and cable management standards while working under-floor",
+    "Certificate of completion on finish",
+    "Self-paced — start and stop anytime",
+    "Delivered by an IACET-accredited provider",
+    "Volume pricing available for teams"
+  ],
+  "modules": [
+    {
+      "title": "Raised Floor Hazard Awareness",
+      "summary": "What makes under-floor space a confined space hazard."
+    },
+    {
+      "title": "Safe Under-Floor Work Practices",
+      "summary": "Working safely on cabling and access tasks below the floor."
+    },
+    {
+      "title": "Confined Space Permit Basics",
+      "summary": "When under-floor work crosses into permit-required territory."
+    },
+    {
+      "title": "Airflow & Cable Management",
+      "summary": "Maintaining standards while working under the floor."
+    }
+  ],
+  "bundles": [
+    {
+      "id": "bundle-operations-reliability",
+      "name": "Operations & Reliability Bundle",
+      "price_usd": 830.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    },
+    {
+      "id": "bundle-complete-catalog",
+      "name": "Complete Data Center Professional Bundle",
+      "price_usd": 2928.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    }
+  ],
+  "language": "en",
+  "delivery": "Online, self-paced, no completion deadline",
+  "certificate": {
+    "type": "Certificate of completion",
+    "issuer": "HAZWOPER OSHA Training, LLC",
+    "issuer_accreditation": "IACET Accredited Provider (provider-level accreditation)",
+    "delivery": "Issued immediately on completion; downloadable and printable",
+    "validity_period": "No fixed expiration; follow your employer's refresher policy",
+    "verification_url": "https://hazwoper-osha.com/certificate-verification",
+    "is_license_or_government_certification": false,
+    "ceu_or_pdh_credit": false
+  },
+  "availability": "preorder",
+  "enroll_url": "https://datacentertraining.us/checkout.html?item=data-center-raised-floor-confined-space",
+  "faqs": [
+    {
+      "question": "Is the space under a raised floor a confined space?",
+      "answer": "It depends on the space. OSHA defines a confined space as large enough to enter, with limited means of entry or exit, and not designed for continuous occupancy. A deep plenum may meet that definition. Your facility's confined space evaluation decides how each space is classified."
+    },
+    {
+      "question": "How many floor tiles can be removed at once?",
+      "answer": "There is no universal number. Each open tile creates a fall hazard and changes airflow under the floor, which can cause hot spots. Facilities usually set limits, barricade open tiles and replace them as soon as work is finished. The course covers safe practices for this work."
+    },
+    {
+      "question": "Who should take this course?",
+      "answer": "Facilities technicians, cabling crews and IT staff who lift tiles, run cable under the floor or enter other tight spaces in a data center."
+    }
+  ],
+  "related_course_ids": [
+    "data-center-operations-management",
+    "disaster-recovery-business-continuity",
+    "preventive-maintenance-planning",
+    "incident-response-troubleshooting",
+    "business-continuity-disaster-recovery-planning"
+  ],
+  "last_updated": "2026-09-29"
+}

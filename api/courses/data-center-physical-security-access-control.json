@@ -1,0 +1,99 @@
+{
+  "id": "data-center-physical-security-access-control",
+  "catalog_number": 451,
+  "title": "Data Center Physical Security and Access Control Training",
+  "url": "https://datacentertraining.us/courses/data-center-physical-security-access-control.html",
+  "api_url": "https://datacentertraining.us/api/courses/data-center-physical-security-access-control.json",
+  "track": "Security & Compliance Track",
+  "category": "Security & Compliance",
+  "course_type": "modular",
+  "course_type_label": "Modular Specialization",
+  "duration_hours": 1,
+  "duration_iso8601": "PT1H",
+  "module_count": 4,
+  "price_usd": 99.99,
+  "currency": "USD",
+  "standards": [],
+  "summary": "Foundational physical security and access control practices for data hall environments.",
+  "description": "A foundational course on data center physical security: badge and access control basics, visitor and vendor escort procedures, and the security posture expected on a data hall floor. Pairs well with the deeper Access Control & Physical Security specialization for staff who operate the systems directly. You'll leave with a clear sense of the common security gaps on a data hall floor and how to report an incident through the right channel.",
+  "why_it_matters": "Data centers use layered security: a site perimeter, the building entrance, the data hall, and then cages, cabinets and racks. Every layer only works if people follow the rules at the door. Tailgating through a secured entry, an unescorted vendor or a borrowed badge can bypass every layer at once. Customers and auditors expect this discipline. PCI DSS requires controls on physical access to cardholder data systems, and SOC 2 and ISO/IEC 27001 audits review physical access records. This foundational course gives floor staff the basics: how badge and access control systems work, visitor and vendor escort procedures, how to spot and close common security gaps, and how to report incidents.",
+  "audience": "Security and facilities staff responsible for data center floor access.",
+  "prerequisites": "No prior certification required. Relevant equipment exposure is helpful.",
+  "learning_outcomes": [
+    "Apply badge and access control basics on a data center floor",
+    "Follow correct visitor and vendor escort procedures",
+    "Recognize common physical security gaps on a data hall floor",
+    "Report security incidents through the correct channel",
+    "Certificate of completion on finish",
+    "Self-paced — start and stop anytime",
+    "Delivered by an IACET-accredited provider",
+    "Volume pricing available for teams"
+  ],
+  "modules": [
+    {
+      "title": "Access Control Basics",
+      "summary": "Badge systems and access levels on a data center floor."
+    },
+    {
+      "title": "Visitor & Vendor Escort Procedures",
+      "summary": "Managing non-employee access safely and correctly."
+    },
+    {
+      "title": "Physical Security Gaps",
+      "summary": "Common vulnerabilities on a data hall floor."
+    },
+    {
+      "title": "Incident Reporting",
+      "summary": "Reporting security incidents through the correct channel."
+    }
+  ],
+  "bundles": [
+    {
+      "id": "bundle-security-compliance",
+      "name": "Security & Compliance Bundle",
+      "price_usd": 400.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    },
+    {
+      "id": "bundle-complete-catalog",
+      "name": "Complete Data Center Professional Bundle",
+      "price_usd": 2928.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    }
+  ],
+  "language": "en",
+  "delivery": "Online, self-paced, no completion deadline",
+  "certificate": {
+    "type": "Certificate of completion",
+    "issuer": "HAZWOPER OSHA Training, LLC",
+    "issuer_accreditation": "IACET Accredited Provider (provider-level accreditation)",
+    "delivery": "Issued immediately on completion; downloadable and printable",
+    "validity_period": "No fixed expiration; follow your employer's refresher policy",
+    "verification_url": "https://hazwoper-osha.com/certificate-verification",
+    "is_license_or_government_certification": false,
+    "ceu_or_pdh_credit": false
+  },
+  "availability": "preorder",
+  "enroll_url": "https://datacentertraining.us/checkout.html?item=data-center-physical-security-access-control",
+  "faqs": [
+    {
+      "question": "What is tailgating in a data center?",
+      "answer": "Tailgating, also called piggybacking, is when someone follows an authorized person through a secured door without using their own credentials. Mantraps, anti-passback rules and trained staff who challenge unknown people are the main defenses."
+    },
+    {
+      "question": "Why do vendors need an escort?",
+      "answer": "Vendors often need access to sensitive areas but are not regular badge holders. Escort rules make sure someone accountable is with them, keeps them to the approved area and records the visit. Escort logs are commonly reviewed during audits."
+    },
+    {
+      "question": "How does this course relate to Access Control & Physical Security?",
+      "answer": "This course is the foundation. Access Control & Physical Security is the deeper specialization on operating access control and surveillance systems, threat response and incident reporting with chain of custody."
+    }
+  ],
+  "related_course_ids": [
+    "security-compliance-data-centers",
+    "access-control-physical-security",
+    "facility-environmental-compliance",
+    "data-center-fire-suppression-safety"
+  ],
+  "last_updated": "2026-09-29"
+}

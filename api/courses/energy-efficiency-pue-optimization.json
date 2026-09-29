@@ -1,0 +1,102 @@
+{
+  "id": "energy-efficiency-pue-optimization",
+  "catalog_number": 425,
+  "title": "Energy Efficiency & PUE Optimization",
+  "url": "https://datacentertraining.us/courses/energy-efficiency-pue-optimization.html",
+  "api_url": "https://datacentertraining.us/api/courses/energy-efficiency-pue-optimization.json",
+  "track": "Cooling & Facilities Efficiency Track",
+  "category": "Cooling & Efficiency",
+  "course_type": "modular",
+  "course_type_label": "Modular Specialization",
+  "duration_hours": 3,
+  "duration_iso8601": "PT3H",
+  "module_count": 4,
+  "price_usd": 99.99,
+  "currency": "USD",
+  "standards": [
+    "PUE"
+  ],
+  "summary": "Cut operating costs with a measurable PUE optimization roadmap.",
+  "description": "Focused on reducing operating costs: PUE calculation and benchmarking, energy audit procedures, and equipment efficiency ratings. This course pairs optimization strategies with financial modeling, so every recommendation comes with a cost-benefit case attached. Using real case studies and practical tools, you'll leave with an energy reduction roadmap built around measurable ROI, not just best-practice checklists.",
+  "why_it_matters": "Power is one of the largest operating costs in a data center, and every kilowatt spent on cooling, power conversion losses and lighting is a kilowatt that does not run IT equipment. Power usage effectiveness (PUE), defined by The Green Grid and standardized in ISO/IEC 30134-2, measures that overhead as total facility energy divided by IT equipment energy. Efficiency projects compete for budget with everything else, so they need a clear financial case. Raising supply air temperatures, sealing airflow gaps, adding economizer hours or replacing old UPS modules can each save energy, but the savings, cost and risk differ. This course covers PUE calculation and benchmarking, energy audit procedures, efficiency strategies and cost-benefit analysis so each recommendation comes with numbers attached.",
+  "audience": "Facility managers accountable for energy costs and sustainability targets.",
+  "prerequisites": "No prior certification required. Relevant equipment exposure is helpful.",
+  "learning_outcomes": [
+    "Calculate and benchmark PUE against industry standards",
+    "Run an energy audit procedure end to end",
+    "Identify equipment efficiency upgrades with the strongest ROI",
+    "Build a financial model to justify energy efficiency investment",
+    "Certificate of completion on finish",
+    "Self-paced — start and stop anytime",
+    "Delivered by an IACET-accredited provider",
+    "Volume pricing available for teams"
+  ],
+  "modules": [
+    {
+      "title": "PUE Calculation & Benchmarking",
+      "summary": "Calculating PUE correctly and benchmarking it against comparable facilities."
+    },
+    {
+      "title": "Energy Audit Procedures",
+      "summary": "Running a structured energy audit that finds real savings."
+    },
+    {
+      "title": "Efficiency Improvement Strategies",
+      "summary": "Prioritizing efficiency upgrades by impact and cost."
+    },
+    {
+      "title": "Cost-Benefit Analysis",
+      "summary": "Building the financial case for an efficiency investment."
+    }
+  ],
+  "bundles": [
+    {
+      "id": "bundle-cooling-efficiency",
+      "name": "Cooling & Facilities Efficiency Bundle",
+      "price_usd": 462.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    },
+    {
+      "id": "bundle-complete-catalog",
+      "name": "Complete Data Center Professional Bundle",
+      "price_usd": 2928.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    }
+  ],
+  "language": "en",
+  "delivery": "Online, self-paced, no completion deadline",
+  "certificate": {
+    "type": "Certificate of completion",
+    "issuer": "HAZWOPER OSHA Training, LLC",
+    "issuer_accreditation": "IACET Accredited Provider (provider-level accreditation)",
+    "delivery": "Issued immediately on completion; downloadable and printable",
+    "validity_period": "No fixed expiration; follow your employer's refresher policy",
+    "verification_url": "https://hazwoper-osha.com/certificate-verification",
+    "is_license_or_government_certification": false,
+    "ceu_or_pdh_credit": false
+  },
+  "availability": "preorder",
+  "enroll_url": "https://datacentertraining.us/checkout.html?item=energy-efficiency-pue-optimization",
+  "faqs": [
+    {
+      "question": "How is PUE calculated?",
+      "answer": "PUE equals total facility energy divided by IT equipment energy over the same period. A PUE of 1.5 means that for every 1 kWh used by IT equipment, another 0.5 kWh goes to cooling, power losses and other overhead. Annual measurement gives the most meaningful comparison."
+    },
+    {
+      "question": "What is a good PUE?",
+      "answer": "It depends on climate, design, age and load level. Large new facilities often design for PUEs well below 1.3, while many older or smaller sites run higher. Comparing your facility to its own history and to similar sites is more useful than a single target number."
+    },
+    {
+      "question": "Is PUE the only efficiency metric?",
+      "answer": "No. PUE does not measure how efficiently IT equipment itself works, and it does not cover water or carbon. The Green Grid also defines WUE (water usage effectiveness) and CUE (carbon usage effectiveness), which many teams track alongside PUE."
+    }
+  ],
+  "related_course_ids": [
+    "cooling-systems-design-optimization",
+    "hvac-troubleshooting-essentials",
+    "mechanical-systems-maintenance",
+    "data-center-cooling-refrigerant-safety",
+    "building-envelope-fundamentals"
+  ],
+  "last_updated": "2026-09-29"
+}

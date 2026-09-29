@@ -43,6 +43,7 @@ a { color: inherit; }
   70% { transform: scale(3); opacity: 0; }
   100% { transform: scale(3); opacity: 0; }
 }
+.section-head h1,
 .section-head h2 {
   margin-top: 12px; font-size: clamp(26px, 4vw, 38px); font-weight: 700; letter-spacing: -0.025em; line-height: 1.12;
 }
@@ -186,7 +187,7 @@ a { color: inherit; }
 .cert-grid { grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--hairline); border-radius: var(--r-panel); overflow: hidden; box-shadow: var(--sh-panel); }
 .cert-box { background: var(--surface); text-align: center; padding: 28px 20px; border-radius: 0; box-shadow: none; text-decoration: none; color: var(--text); }
 .cert-box:hover { transform: none; box-shadow: none; background: var(--hover); }
-.cert-box h3 { font-size: 15.5px; font-weight: 650; margin-bottom: 6px; }
+.cert-box h2, .cert-box h3 { font-size: 15.5px; font-weight: 650; margin-bottom: 6px; }
 .cert-box p { font-size: 13px; color: var(--text-2); margin: 0; }
 .cert-box-arrow { margin-top: 8px; font-size: 12.5px; font-weight: 650; color: var(--accent-link); }
 
@@ -207,7 +208,7 @@ a { color: inherit; }
   display: inline-block; font-size: 11px; font-weight: 650; letter-spacing: 0.4px; text-transform: uppercase;
   color: var(--accent-link); background: var(--accent-tint); padding: 5px 11px; border-radius: var(--r-pill); margin-bottom: 12px;
 }
-.role-picker-result h3 { font-size: 18px; margin-bottom: 8px; }
+.role-picker-result h2, .role-picker-result h3 { font-size: 18px; margin-bottom: 8px; }
 .role-picker-result p { font-size: 14px; line-height: 1.65; color: var(--text-2); margin-bottom: 16px; }
 .role-picker-result-courses { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
 .role-picker-result-courses li {
@@ -251,7 +252,7 @@ a { color: inherit; }
   position: absolute; top: -12px; left: 22px; background: var(--text); color: #fff;
   font-size: 11px; font-weight: 650; padding: 5px 12px; border-radius: var(--r-pill);
 }
-.bundle-card h3 { font-size: 17px; font-weight: 700; letter-spacing: -0.01em; margin-bottom: 10px; }
+.bundle-card h2, .bundle-card h3 { font-size: 17px; font-weight: 700; letter-spacing: -0.01em; margin-bottom: 10px; }
 .bundle-card-stats { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-bottom: 12px; }
 .bundle-card-hours { font-size: 21px; font-weight: 700; letter-spacing: -0.01em; color: var(--text); font-variant-numeric: tabular-nums; }
 .bundle-card-course-count {

@@ -1,0 +1,111 @@
+{
+  "id": "security-compliance-data-centers",
+  "catalog_number": 404,
+  "title": "Security & Compliance for Data Centers",
+  "url": "https://datacentertraining.us/courses/security-compliance-data-centers.html",
+  "api_url": "https://datacentertraining.us/api/courses/security-compliance-data-centers.json",
+  "track": "Security & Compliance Track",
+  "category": "Security & Compliance",
+  "course_type": "comprehensive",
+  "course_type_label": "Comprehensive Program",
+  "duration_hours": 16,
+  "duration_iso8601": "PT16H",
+  "module_count": 6,
+  "price_usd": 291.99,
+  "currency": "USD",
+  "standards": [
+    "SOC 2",
+    "ISO 27001"
+  ],
+  "summary": "Build a facility security program that satisfies SOC 2, ISO 27001, and physical audit requirements.",
+  "description": "Data center security spans two very different disciplines — physical security architecture and facility cybersecurity — and most compliance frameworks expect both to work together. This course covers physical security design (access control, surveillance, perimeter), facility cybersecurity fundamentals, and the regulatory frameworks (SOC 2, ISO 27001, HIPAA, PCI-DSS) that shape audit requirements. You'll build a security roadmap and facility-specific security policy using the audit framework development, compliance policy templates, and vendor evaluation strategies covered throughout the course — not generic advice, but the actual deliverables an auditor expects to see. The course also covers incident response planning and business continuity for security events, so your program covers detection and response, not just prevention.",
+  "why_it_matters": "Data center customers increasingly require proof of security, not just promises. SOC 2 reports, ISO/IEC 27001 certification, PCI DSS assessments and HIPAA obligations all include physical safeguards, and many also reach into facility systems such as building controls, badge systems and camera networks, which can be entry points for cyberattacks. Passing an audit takes more than good equipment. Controls must be designed, operated consistently and documented, and incident response plans must exist and be tested. This program covers physical security architecture, access control and surveillance, cybersecurity for facility systems, the main regulatory frameworks, incident response planning and compliance audit procedures.",
+  "audience": "Security managers, compliance officers, and facility leads preparing for a security audit.",
+  "prerequisites": "No prior certification required. Assumes basic familiarity with facility systems.",
+  "learning_outcomes": [
+    "Design a layered physical security program (access control, surveillance, perimeter)",
+    "Map facility security controls to SOC 2, ISO 27001, HIPAA, and PCI-DSS requirements",
+    "Build a facility-specific security policy and audit-ready documentation",
+    "Evaluate physical security and cybersecurity vendors against compliance criteria",
+    "Develop an incident response plan for physical and cyber-physical security events",
+    "Certificate of completion on finish",
+    "Self-paced — start and stop anytime",
+    "Delivered by an IACET-accredited provider",
+    "Volume pricing available for teams"
+  ],
+  "modules": [
+    {
+      "title": "Physical Security Architecture",
+      "summary": "Layering perimeter, building, and data-hall security controls."
+    },
+    {
+      "title": "Access Control & Surveillance Systems",
+      "summary": "Selecting and operating access control and surveillance systems."
+    },
+    {
+      "title": "Cybersecurity Fundamentals for Facility Systems",
+      "summary": "Where facility systems (BMS, access control) create cyber-physical risk."
+    },
+    {
+      "title": "Regulatory Framework Overview (SOC 2, ISO 27001, HIPAA, PCI-DSS)",
+      "summary": "What each framework actually requires from facility security controls."
+    },
+    {
+      "title": "Incident Response Planning",
+      "summary": "Building a response plan for both physical and cyber-physical incidents."
+    },
+    {
+      "title": "Compliance Audit Procedures",
+      "summary": "Preparing documentation and evidence for a facility security audit."
+    }
+  ],
+  "bundles": [
+    {
+      "id": "bundle-security-compliance",
+      "name": "Security & Compliance Bundle",
+      "price_usd": 400.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    },
+    {
+      "id": "bundle-complete-catalog",
+      "name": "Complete Data Center Professional Bundle",
+      "price_usd": 2928.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    }
+  ],
+  "language": "en",
+  "delivery": "Online, self-paced, no completion deadline",
+  "certificate": {
+    "type": "Certificate of completion",
+    "issuer": "HAZWOPER OSHA Training, LLC",
+    "issuer_accreditation": "IACET Accredited Provider (provider-level accreditation)",
+    "delivery": "Issued immediately on completion; downloadable and printable",
+    "validity_period": "No fixed expiration; follow your employer's refresher policy",
+    "verification_url": "https://hazwoper-osha.com/certificate-verification",
+    "is_license_or_government_certification": false,
+    "ceu_or_pdh_credit": false
+  },
+  "availability": "preorder",
+  "enroll_url": "https://datacentertraining.us/checkout.html?item=security-compliance-data-centers",
+  "faqs": [
+    {
+      "question": "What is the difference between SOC 2 and ISO 27001?",
+      "answer": "SOC 2 is an attestation report issued by an independent CPA firm against the AICPA Trust Services Criteria. ISO/IEC 27001 is an international standard for information security management systems, with certification by an accredited body. Both include physical security controls, and many data centers maintain both."
+    },
+    {
+      "question": "Why do facility systems need cybersecurity?",
+      "answer": "Building management, power monitoring, badge and camera systems are often connected to networks. If they are poorly secured, attackers can use them to disrupt operations or reach other systems. The course has a dedicated module on cybersecurity for facility systems."
+    },
+    {
+      "question": "Does this course prepare my facility for an audit?",
+      "answer": "It covers the frameworks, controls and audit procedures that auditors expect and how to prepare evidence. The audit itself is performed by an independent assessor or certification body."
+    }
+  ],
+  "related_course_ids": [
+    "access-control-physical-security",
+    "facility-environmental-compliance",
+    "data-center-fire-suppression-safety",
+    "data-center-physical-security-access-control"
+  ],
+  "last_updated": "2026-09-29"
+}
