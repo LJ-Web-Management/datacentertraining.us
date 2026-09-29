@@ -1,0 +1,109 @@
+{
+  "id": "tier-infrastructure-fundamentals",
+  "catalog_number": 402,
+  "title": "Tier Infrastructure Fundamentals",
+  "url": "https://datacentertraining.us/courses/tier-infrastructure-fundamentals.html",
+  "api_url": "https://datacentertraining.us/api/courses/tier-infrastructure-fundamentals.json",
+  "track": "Design, Planning & Commissioning Track",
+  "category": "Design & Planning",
+  "course_type": "comprehensive",
+  "course_type_label": "Comprehensive Program",
+  "duration_hours": 14,
+  "duration_iso8601": "PT14H",
+  "module_count": 6,
+  "price_usd": 280.99,
+  "currency": "USD",
+  "standards": [
+    "Uptime Institute Tier Framework"
+  ],
+  "summary": "Understand and assess TIER I–IV infrastructure without the formal certification track.",
+  "description": "The TIER classification system (I through IV) is the industry's shorthand for facility reliability — but understanding what actually separates a TIER III facility from a TIER IV one takes more than reading a definitions page. This course breaks down the topology requirements, electrical redundancy, cooling architecture, and management systems behind each TIER level. You'll learn the assessment methodologies used to audit an existing facility against TIER benchmarks, including gap analysis procedures and infrastructure scoring methods — the same frameworks used before a formal certification engagement, without the certification requirement or cost. This is practical benchmarking knowledge: understand where your facility sits today, what it would take to move up a TIER level, and how to communicate that gap to stakeholders.",
+  "why_it_matters": "The Uptime Institute Tier Classification System is the most widely used way to describe data center infrastructure reliability. Tier I provides basic capacity, Tier II adds redundant components, Tier III is concurrently maintainable, meaning any component can be taken out for maintenance without shutting down IT load, and Tier IV is fault tolerant, able to withstand a single failure without affecting IT load. The words are simple but applying them is not. Two facilities marketed as Tier III can have very different designs and operations. Understanding the topology behind each level helps you assess a facility, compare colocation providers, write requirements or plan upgrades. This program covers Tier I–IV topologies, redundancy strategies, measurement and assessment methods, audit frameworks and infrastructure scoring.",
+  "audience": "Facility managers and engineers who need to assess or benchmark infrastructure against TIER standards.",
+  "prerequisites": "No prior certification required. Assumes basic familiarity with facility systems.",
+  "learning_outcomes": [
+    "Distinguish TIER I–IV topology, redundancy, and management requirements",
+    "Apply infrastructure scoring methods to benchmark an existing facility",
+    "Run a gap analysis between current infrastructure and a target TIER level",
+    "Use facility audit frameworks to structure an internal infrastructure review",
+    "Communicate TIER gaps and upgrade costs to non-technical stakeholders",
+    "Certificate of completion on finish",
+    "Self-paced — start and stop anytime",
+    "Delivered by an IACET-accredited provider",
+    "Volume pricing available for teams"
+  ],
+  "modules": [
+    {
+      "title": "TIER I & II Topologies",
+      "summary": "Baseline single-path infrastructure and where its single points of failure sit."
+    },
+    {
+      "title": "TIER III Redundancy Strategies",
+      "summary": "Concurrently maintainable infrastructure — what it requires operationally, not just architecturally."
+    },
+    {
+      "title": "TIER IV Advanced Architecture",
+      "summary": "Fault-tolerant design and the 2N+ topologies that support it."
+    },
+    {
+      "title": "Measurement & Assessment Methods",
+      "summary": "How TIER assessments are actually scored and documented."
+    },
+    {
+      "title": "Facility Audit Frameworks",
+      "summary": "Structuring an internal audit before bringing in outside assessors."
+    },
+    {
+      "title": "Infrastructure Scoring & Analysis",
+      "summary": "Turning an audit into a prioritized upgrade roadmap."
+    }
+  ],
+  "bundles": [
+    {
+      "id": "bundle-design-planning",
+      "name": "Design, Planning & Commissioning Bundle",
+      "price_usd": 557.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    },
+    {
+      "id": "bundle-complete-catalog",
+      "name": "Complete Data Center Professional Bundle",
+      "price_usd": 2928.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    }
+  ],
+  "language": "en",
+  "delivery": "Online, self-paced, no completion deadline",
+  "certificate": {
+    "type": "Certificate of completion",
+    "issuer": "HAZWOPER OSHA Training, LLC",
+    "issuer_accreditation": "IACET Accredited Provider (provider-level accreditation)",
+    "delivery": "Issued immediately on completion; downloadable and printable",
+    "validity_period": "No fixed expiration; follow your employer's refresher policy",
+    "verification_url": "https://hazwoper-osha.com/certificate-verification",
+    "is_license_or_government_certification": false,
+    "ceu_or_pdh_credit": false
+  },
+  "availability": "preorder",
+  "enroll_url": "https://datacentertraining.us/checkout.html?item=tier-infrastructure-fundamentals",
+  "faqs": [
+    {
+      "question": "What is the difference between Tier III and Tier IV?",
+      "answer": "Tier III is concurrently maintainable: every component and distribution path can be removed for planned maintenance without shutting down IT load. Tier IV adds fault tolerance, so the facility can withstand any single unplanned failure without affecting IT load, which usually means fully independent, compartmentalized systems."
+    },
+    {
+      "question": "Does this course certify my facility as a specific Tier?",
+      "answer": "No. Official Tier Certification is issued only by Uptime Institute. This program teaches the concepts and assessment methods so you can understand, benchmark and plan infrastructure against the Tier framework."
+    },
+    {
+      "question": "Is this the same as Uptime Institute's accredited credentials?",
+      "answer": "No. This is an independent course on Tier concepts and is not an Uptime Institute credential such as Accredited Tier Designer. It is designed for teams that need the knowledge without the formal certification track."
+    }
+  ],
+  "related_course_ids": [
+    "data-center-design-fundamentals",
+    "infrastructure-commissioning-startup",
+    "capacity-planning-forecasting"
+  ],
+  "last_updated": "2026-09-29"
+}

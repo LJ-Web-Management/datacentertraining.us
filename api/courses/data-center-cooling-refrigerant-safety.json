@@ -1,0 +1,102 @@
+{
+  "id": "data-center-cooling-refrigerant-safety",
+  "catalog_number": 447,
+  "title": "Data Center Cooling System and Refrigerant Safety Training",
+  "url": "https://datacentertraining.us/courses/data-center-cooling-refrigerant-safety.html",
+  "api_url": "https://datacentertraining.us/api/courses/data-center-cooling-refrigerant-safety.json",
+  "track": "Cooling & Facilities Efficiency Track",
+  "category": "Cooling & Efficiency",
+  "course_type": "modular",
+  "course_type_label": "Modular Specialization",
+  "duration_hours": 2,
+  "duration_iso8601": "PT2H",
+  "module_count": 4,
+  "price_usd": 99.99,
+  "currency": "USD",
+  "standards": [
+    "EPA/OSHA"
+  ],
+  "summary": "Refrigerant handling and cooling system safety practices specific to data center CRAC/CRAH environments.",
+  "description": "Refrigerant handling carries its own hazard profile — pressure risk, chemical exposure, and environmental regulation — on top of the mechanical risks of CRAC/CRAH systems. This course covers safe refrigerant handling practices and cooling system safety procedures specific to data center environments. You'll leave knowing exactly how to isolate cooling equipment before service and what to do if a refrigerant leak or exposure incident happens.",
+  "why_it_matters": "Cooling equipment combines several hazards in one place: refrigerant under high pressure, rotating fans and compressors, electrical panels and hot surfaces. A refrigerant release in an enclosed mechanical room can displace oxygen, and contact with liquid refrigerant can cause frostbite. Cooling units also have to be locked out properly, because a unit that restarts automatically can injure someone working inside it. Refrigerant work is also regulated. Under Section 608 of the Clean Air Act, EPA requires technicians who open refrigerant circuits to be certified and sets rules for leak repair and recovery. The industry is moving to lower-GWP refrigerants under the AIM Act HFC phasedown, and some replacements, such as A2L refrigerants, are mildly flammable. This course covers refrigerant handling basics, CRAC/CRAH hazards, lockout/tagout for cooling systems and how to respond to leaks and exposures.",
+  "audience": "HVAC technicians working on data center cooling and refrigerant systems.",
+  "prerequisites": "No prior certification required. Relevant equipment exposure is helpful.",
+  "learning_outcomes": [
+    "Handle refrigerants safely within EPA and OSHA requirements",
+    "Recognize pressure and chemical exposure risks specific to CRAC/CRAH systems",
+    "Apply lockout/tagout procedures before cooling system service",
+    "Respond correctly to a refrigerant leak or exposure incident",
+    "Certificate of completion on finish",
+    "Self-paced — start and stop anytime",
+    "Delivered by an IACET-accredited provider",
+    "Volume pricing available for teams"
+  ],
+  "modules": [
+    {
+      "title": "Refrigerant Handling Basics",
+      "summary": "Safe handling practices and regulatory requirements."
+    },
+    {
+      "title": "CRAC/CRAH Hazard Recognition",
+      "summary": "Pressure and chemical exposure risks specific to these systems."
+    },
+    {
+      "title": "Lockout/Tagout for Cooling Systems",
+      "summary": "Isolating cooling equipment safely before service."
+    },
+    {
+      "title": "Leak & Exposure Response",
+      "summary": "Responding correctly when something goes wrong."
+    }
+  ],
+  "bundles": [
+    {
+      "id": "bundle-cooling-efficiency",
+      "name": "Cooling & Facilities Efficiency Bundle",
+      "price_usd": 462.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    },
+    {
+      "id": "bundle-complete-catalog",
+      "name": "Complete Data Center Professional Bundle",
+      "price_usd": 2928.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    }
+  ],
+  "language": "en",
+  "delivery": "Online, self-paced, no completion deadline",
+  "certificate": {
+    "type": "Certificate of completion",
+    "issuer": "HAZWOPER OSHA Training, LLC",
+    "issuer_accreditation": "IACET Accredited Provider (provider-level accreditation)",
+    "delivery": "Issued immediately on completion; downloadable and printable",
+    "validity_period": "No fixed expiration; follow your employer's refresher policy",
+    "verification_url": "https://hazwoper-osha.com/certificate-verification",
+    "is_license_or_government_certification": false,
+    "ceu_or_pdh_credit": false
+  },
+  "availability": "preorder",
+  "enroll_url": "https://datacentertraining.us/checkout.html?item=data-center-cooling-refrigerant-safety",
+  "faqs": [
+    {
+      "question": "Does this course provide EPA Section 608 certification?",
+      "answer": "No. EPA 608 certification requires passing an EPA-approved exam. This course covers safe handling practices and hazard recognition for data center cooling systems, which supports technicians who hold or are working toward that certification."
+    },
+    {
+      "question": "What are A2L refrigerants?",
+      "answer": "A2L is the ASHRAE Standard 34 classification for refrigerants with lower toxicity and lower flammability. Several low-GWP replacements for older HFCs are A2L, so technicians need to understand their handling and ventilation requirements as new equipment arrives."
+    },
+    {
+      "question": "Why does lockout/tagout matter for cooling units?",
+      "answer": "CRAC and CRAH units can restart on their own through controls or redundancy logic. Without proper lockout, fans, compressors or electrical parts can energize while someone is working on them. The course has a dedicated module on LOTO for cooling systems."
+    }
+  ],
+  "related_course_ids": [
+    "cooling-systems-design-optimization",
+    "hvac-troubleshooting-essentials",
+    "energy-efficiency-pue-optimization",
+    "mechanical-systems-maintenance",
+    "building-envelope-fundamentals"
+  ],
+  "last_updated": "2026-09-29"
+}

@@ -1,0 +1,225 @@
+{
+  "publisher": "Data Center Training (datacentertraining.us)",
+  "last_updated": "2026-09-29",
+  "license": "Public information; quote with attribution and a link to the source URL.",
+  "roles": [
+    {
+      "id": "electrician",
+      "label": "I'm an electrician or power technician",
+      "track": "Power & Electrical Systems Track",
+      "bundle_id": "bundle-power-electrical",
+      "description": "Electricians and power technicians working on utility interconnection, UPS systems, generators, batteries, and daily electrical safety should complete this 15-course, 57.5-hour track.",
+      "keywords": [
+        "electrician",
+        "electrical",
+        "power tech",
+        "power",
+        "ups",
+        "generator",
+        "battery",
+        "batteries",
+        "switchgear",
+        "arc flash",
+        "epo"
+      ],
+      "source_url": "https://datacentertraining.us/who.html#which-course"
+    },
+    {
+      "id": "hvac",
+      "label": "I work on HVAC, cooling, or mechanical systems",
+      "track": "Cooling & Facilities Efficiency Track",
+      "bundle_id": "bundle-cooling-efficiency",
+      "description": "HVAC and facilities technicians who need both cooling design fundamentals and hands-on maintenance skills should complete this 6-course, 31-hour track.",
+      "keywords": [
+        "hvac",
+        "cooling",
+        "mechanical",
+        "chiller",
+        "crac",
+        "crah",
+        "refrigerant",
+        "thermal",
+        "facilities tech",
+        "maintenance tech"
+      ],
+      "source_url": "https://datacentertraining.us/who.html#which-course"
+    },
+    {
+      "id": "operations",
+      "label": "I manage daily facility operations and uptime",
+      "track": "Operations & Reliability Track",
+      "bundle_id": "bundle-operations-reliability",
+      "description": "Facility and operations managers who own uptime should complete this 10-course, 62-hour track covering daily operations, disaster recovery, maintenance, and incident response.",
+      "keywords": [
+        "operations",
+        "facility manager",
+        "facilities manager",
+        "site manager",
+        "uptime",
+        "reliability",
+        "critical facilities",
+        "shift lead",
+        "maintenance manager",
+        "disaster recovery"
+      ],
+      "source_url": "https://datacentertraining.us/who.html#which-course"
+    },
+    {
+      "id": "security",
+      "label": "I handle security or compliance",
+      "track": "Security & Compliance Track",
+      "bundle_id": "bundle-security-compliance",
+      "description": "Security and compliance leads building an audit-ready program should complete this 5-course, 25.5-hour track.",
+      "keywords": [
+        "security",
+        "compliance",
+        "audit",
+        "access control",
+        "guard",
+        "soc 2",
+        "iso 27001",
+        "fire suppression"
+      ],
+      "source_url": "https://datacentertraining.us/who.html#which-course"
+    },
+    {
+      "id": "design",
+      "label": "I design, plan, or commission facilities",
+      "track": "Design, Planning & Commissioning Track",
+      "bundle_id": "bundle-design-planning",
+      "description": "Engineers and project leads taking a facility from design through launch should complete all four of these courses, 45.5 hours total.",
+      "keywords": [
+        "engineer",
+        "design",
+        "planning",
+        "planner",
+        "commissioning",
+        "project",
+        "architect",
+        "capacity",
+        "tier"
+      ],
+      "source_url": "https://datacentertraining.us/who.html#which-course"
+    },
+    {
+      "id": "it",
+      "label": "I work on monitoring, DCIM, or network cabling",
+      "track": "Monitoring & Smart Facility Track",
+      "bundle_id": "bundle-monitoring-smart-facility",
+      "description": "Teams building out monitoring, DCIM, building automation, and network cabling infrastructure should complete all four of these courses, 28.5 hours total.",
+      "keywords": [
+        "network",
+        "cabling",
+        "fiber",
+        "dcim",
+        "monitoring",
+        "bms",
+        "bas",
+        "automation",
+        "noc",
+        "it tech"
+      ],
+      "source_url": "https://datacentertraining.us/who.html#which-course"
+    }
+  ],
+  "tracks": [
+    {
+      "name": "Power & Electrical Systems Track",
+      "bundle_id": "bundle-power-electrical",
+      "course_ids": [
+        "power-systems-electrical-fundamentals",
+        "ups-operations-load-testing",
+        "generator-operations-maintenance",
+        "electrical-safety-best-practices",
+        "batteries-dc-circuits",
+        "data-center-arc-flash-safety",
+        "data-center-electrical-safety",
+        "data-center-epo-procedures",
+        "data-center-ups-battery-safety",
+        "emergency-standby-power-systems-fundamentals",
+        "generator-fundamentals",
+        "lithium-ion-thermal-runaway-emergency-response",
+        "osha-electrical-safety-data-center-technicians",
+        "power-distribution-systems-fundamentals",
+        "ups-systems-fundamentals"
+      ],
+      "roles": [
+        "electrician"
+      ]
+    },
+    {
+      "name": "Cooling & Facilities Efficiency Track",
+      "bundle_id": "bundle-cooling-efficiency",
+      "course_ids": [
+        "cooling-systems-design-optimization",
+        "hvac-troubleshooting-essentials",
+        "energy-efficiency-pue-optimization",
+        "mechanical-systems-maintenance",
+        "data-center-cooling-refrigerant-safety",
+        "building-envelope-fundamentals"
+      ],
+      "roles": [
+        "hvac"
+      ]
+    },
+    {
+      "name": "Operations & Reliability Track",
+      "bundle_id": "bundle-operations-reliability",
+      "course_ids": [
+        "data-center-operations-management",
+        "disaster-recovery-business-continuity",
+        "preventive-maintenance-planning",
+        "incident-response-troubleshooting",
+        "business-continuity-disaster-recovery-planning",
+        "building-maintenance-fundamentals",
+        "facility-management-fundamentals",
+        "roofing-systems-maintenance-fundamentals",
+        "server-room-ergonomics-manual-handling",
+        "data-center-raised-floor-confined-space"
+      ],
+      "roles": [
+        "operations"
+      ]
+    },
+    {
+      "name": "Security & Compliance Track",
+      "bundle_id": "bundle-security-compliance",
+      "course_ids": [
+        "security-compliance-data-centers",
+        "access-control-physical-security",
+        "facility-environmental-compliance",
+        "data-center-fire-suppression-safety",
+        "data-center-physical-security-access-control"
+      ],
+      "roles": [
+        "security"
+      ]
+    },
+    {
+      "name": "Design, Planning & Commissioning Track",
+      "bundle_id": "bundle-design-planning",
+      "course_ids": [
+        "data-center-design-fundamentals",
+        "tier-infrastructure-fundamentals",
+        "infrastructure-commissioning-startup",
+        "capacity-planning-forecasting"
+      ],
+      "roles": [
+        "design"
+      ]
+    },
+    {
+      "name": "Monitoring & Smart Facility Track",
+      "bundle_id": "bundle-monitoring-smart-facility",
+      "course_ids": [
+        "monitoring-automation-bms-systems",
+        "dcim-platform-fundamentals",
+        "fiber-optics-network-cabling",
+        "building-automation-systems-fundamentals"
+      ],
+      "roles": [
+        "it"
+      ]
+    }
+  ]
+}

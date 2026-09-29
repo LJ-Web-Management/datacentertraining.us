@@ -1,0 +1,100 @@
+{
+  "id": "building-envelope-fundamentals",
+  "catalog_number": 443,
+  "title": "Building Envelope Fundamentals",
+  "url": "https://datacentertraining.us/courses/building-envelope-fundamentals.html",
+  "api_url": "https://datacentertraining.us/api/courses/building-envelope-fundamentals.json",
+  "track": "Cooling & Facilities Efficiency Track",
+  "category": "Cooling & Efficiency",
+  "course_type": "modular",
+  "course_type_label": "Modular Specialization",
+  "duration_hours": 2,
+  "duration_iso8601": "PT2H",
+  "module_count": 4,
+  "price_usd": 99.99,
+  "currency": "USD",
+  "standards": [],
+  "summary": "Understand how a facility's building envelope drives cooling load and energy cost.",
+  "description": "The building envelope — walls, roof, insulation, and air sealing — determines how hard your cooling system has to work before a single CRAC unit turns on. This course covers building envelope fundamentals: insulation performance, air sealing, moisture control, and how envelope condition directly affects PUE and cooling cost. You'll leave able to spot envelope deficiencies that are quietly driving up your energy bill before they show up as a bigger mechanical problem.",
+  "why_it_matters": "The walls, roof, insulation and air barrier around a data hall are the first layer of the cooling system. Heat gain through a poorly insulated roof, outside air leaking through gaps, and moisture moving through walls all add load that the CRAC and CRAH units must remove, every hour of the year. Humidity is the bigger risk for IT equipment. Uncontrolled air leakage brings in moist air that raises the dew point and can cause condensation on cold surfaces, while very dry conditions increase static risk. The envelope also protects against water intrusion, which is one of the fastest ways to lose equipment. This course explains envelope components, insulation and air sealing, moisture control and how envelope performance shows up in energy costs, so facilities teams can find and prioritize fixes.",
+  "audience": "Facilities technicians and managers responsible for building performance and energy costs.",
+  "prerequisites": "No prior certification required. Relevant equipment exposure is helpful.",
+  "learning_outcomes": [
+    "Identify building envelope components and their role in thermal performance",
+    "Recognize air sealing and insulation deficiencies that increase cooling load",
+    "Understand moisture control and its impact on facility health",
+    "Connect envelope condition to PUE and energy cost",
+    "Certificate of completion on finish",
+    "Self-paced — start and stop anytime",
+    "Delivered by an IACET-accredited provider",
+    "Volume pricing available for teams"
+  ],
+  "modules": [
+    {
+      "title": "Building Envelope Components",
+      "summary": "Walls, roof, insulation, and air barriers — how they work together."
+    },
+    {
+      "title": "Insulation & Air Sealing",
+      "summary": "Where envelope deficiencies quietly increase cooling load."
+    },
+    {
+      "title": "Moisture Control Fundamentals",
+      "summary": "Preventing the moisture issues that damage facilities and equipment."
+    },
+    {
+      "title": "Envelope Performance & Energy Cost",
+      "summary": "Connecting envelope condition to PUE and the energy bill."
+    }
+  ],
+  "bundles": [
+    {
+      "id": "bundle-cooling-efficiency",
+      "name": "Cooling & Facilities Efficiency Bundle",
+      "price_usd": 462.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    },
+    {
+      "id": "bundle-complete-catalog",
+      "name": "Complete Data Center Professional Bundle",
+      "price_usd": 2928.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    }
+  ],
+  "language": "en",
+  "delivery": "Online, self-paced, no completion deadline",
+  "certificate": {
+    "type": "Certificate of completion",
+    "issuer": "HAZWOPER OSHA Training, LLC",
+    "issuer_accreditation": "IACET Accredited Provider (provider-level accreditation)",
+    "delivery": "Issued immediately on completion; downloadable and printable",
+    "validity_period": "No fixed expiration; follow your employer's refresher policy",
+    "verification_url": "https://hazwoper-osha.com/certificate-verification",
+    "is_license_or_government_certification": false,
+    "ceu_or_pdh_credit": false
+  },
+  "availability": "preorder",
+  "enroll_url": "https://datacentertraining.us/checkout.html?item=building-envelope-fundamentals",
+  "faqs": [
+    {
+      "question": "How does the building envelope affect data center cooling costs?",
+      "answer": "Every unit of heat or moisture that enters through the walls, roof or gaps has to be removed by mechanical cooling. Better insulation and air sealing reduce that load, which lowers energy use and makes it easier to hold temperature and humidity steady in the data hall."
+    },
+    {
+      "question": "What is an air barrier and why does it matter?",
+      "answer": "An air barrier is the continuous layer that stops outside air from leaking into the building. Gaps at penetrations, joints and doors let in unconditioned, humid air. In a data center, that can raise humidity and add cooling load even when insulation levels look adequate."
+    },
+    {
+      "question": "Who is this course for?",
+      "answer": "Facilities technicians and managers responsible for building performance, energy costs and building repairs. It is also useful for anyone planning retrofits or reviewing contractor proposals for roofing, insulation or sealing work."
+    }
+  ],
+  "related_course_ids": [
+    "cooling-systems-design-optimization",
+    "hvac-troubleshooting-essentials",
+    "energy-efficiency-pue-optimization",
+    "mechanical-systems-maintenance",
+    "data-center-cooling-refrigerant-safety"
+  ],
+  "last_updated": "2026-09-29"
+}

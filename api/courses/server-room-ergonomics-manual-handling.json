@@ -1,0 +1,100 @@
+{
+  "id": "server-room-ergonomics-manual-handling",
+  "catalog_number": 461,
+  "title": "Server Room Ergonomics and Manual Handling Training",
+  "url": "https://datacentertraining.us/courses/server-room-ergonomics-manual-handling.html",
+  "api_url": "https://datacentertraining.us/api/courses/server-room-ergonomics-manual-handling.json",
+  "track": "Operations & Reliability Track",
+  "category": "Operations",
+  "course_type": "modular",
+  "course_type_label": "Modular Specialization",
+  "duration_hours": 1,
+  "duration_iso8601": "PT1H",
+  "module_count": 4,
+  "price_usd": 99.99,
+  "currency": "USD",
+  "standards": [],
+  "summary": "Safe lifting and ergonomic practices for server room and data hall work.",
+  "description": "Server and rack hardware is heavy, awkward, and often handled in tight spaces. This course covers safe lifting technique, ergonomic workstation setup, and manual handling practices specific to server room and data hall environments. You'll leave with practical habits that reduce strain injury risk during equipment installs and moves, not just generic lifting advice.",
+  "why_it_matters": "Servers, storage arrays and switches are heavy, awkward and often installed high in a rack or low near the floor, in narrow aisles. Some modern GPU servers weigh well over 100 pounds. Lifting injuries, strains from reaching into racks and pinched fingers are some of the most common injuries in data center work. The NIOSH Revised Lifting Equation is a widely used method for judging whether a lift is safe, and it starts from a recommended maximum of 51 pounds under ideal conditions. Real data center lifts are rarely ideal, so team lifts, server lifts and good planning matter. Workstation setup in operations centers matters too. This course covers safe lifting, ergonomic workstation setup, manual handling in tight spaces and injury prevention.",
+  "audience": "IT technicians and installation crews handling equipment in server rooms.",
+  "prerequisites": "No prior certification required. Relevant equipment exposure is helpful.",
+  "learning_outcomes": [
+    "Apply safe lifting technique to server and rack hardware",
+    "Set up ergonomic workstations for extended server room tasks",
+    "Recognize manual handling risks specific to tight data hall spaces",
+    "Reduce strain injury risk during equipment installation and moves",
+    "Certificate of completion on finish",
+    "Self-paced — start and stop anytime",
+    "Delivered by an IACET-accredited provider",
+    "Volume pricing available for teams"
+  ],
+  "modules": [
+    {
+      "title": "Safe Lifting Technique",
+      "summary": "Lifting server and rack hardware without injury."
+    },
+    {
+      "title": "Ergonomic Workstation Setup",
+      "summary": "Reducing strain during extended server room tasks."
+    },
+    {
+      "title": "Manual Handling in Tight Spaces",
+      "summary": "Handling equipment safely in constrained data hall environments."
+    },
+    {
+      "title": "Injury Prevention",
+      "summary": "Reducing strain injury risk during installs and moves."
+    }
+  ],
+  "bundles": [
+    {
+      "id": "bundle-operations-reliability",
+      "name": "Operations & Reliability Bundle",
+      "price_usd": 830.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    },
+    {
+      "id": "bundle-complete-catalog",
+      "name": "Complete Data Center Professional Bundle",
+      "price_usd": 2928.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    }
+  ],
+  "language": "en",
+  "delivery": "Online, self-paced, no completion deadline",
+  "certificate": {
+    "type": "Certificate of completion",
+    "issuer": "HAZWOPER OSHA Training, LLC",
+    "issuer_accreditation": "IACET Accredited Provider (provider-level accreditation)",
+    "delivery": "Issued immediately on completion; downloadable and printable",
+    "validity_period": "No fixed expiration; follow your employer's refresher policy",
+    "verification_url": "https://hazwoper-osha.com/certificate-verification",
+    "is_license_or_government_certification": false,
+    "ceu_or_pdh_credit": false
+  },
+  "availability": "preorder",
+  "enroll_url": "https://datacentertraining.us/checkout.html?item=server-room-ergonomics-manual-handling",
+  "faqs": [
+    {
+      "question": "How heavy is too heavy to lift alone?",
+      "answer": "The NIOSH Revised Lifting Equation starts from 51 pounds under ideal conditions and reduces that limit for lifts that are far from the body, high, low, twisting or frequent. Many rack-mount lifts fall well below that adjusted limit, so team lifts or mechanical lifts are often needed."
+    },
+    {
+      "question": "When should a server lift be used?",
+      "answer": "For heavy equipment, installations high or low in the rack, and any lift where the worker cannot keep the load close to the body. Many facilities set a weight threshold above which a lift or second person is required."
+    },
+    {
+      "question": "Who should take this course?",
+      "answer": "IT technicians, installation crews, remote hands staff and anyone who moves, racks or de-racks equipment in server rooms and data halls."
+    }
+  ],
+  "related_course_ids": [
+    "data-center-operations-management",
+    "disaster-recovery-business-continuity",
+    "preventive-maintenance-planning",
+    "incident-response-troubleshooting",
+    "business-continuity-disaster-recovery-planning"
+  ],
+  "last_updated": "2026-09-29"
+}

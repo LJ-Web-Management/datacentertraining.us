@@ -1,0 +1,104 @@
+{
+  "id": "dcim-platform-fundamentals",
+  "catalog_number": 431,
+  "title": "DCIM Platform Fundamentals",
+  "url": "https://datacentertraining.us/courses/dcim-platform-fundamentals.html",
+  "api_url": "https://datacentertraining.us/api/courses/dcim-platform-fundamentals.json",
+  "track": "Monitoring & Smart Facility Track",
+  "category": "Monitoring & Automation",
+  "course_type": "modular",
+  "course_type_label": "Modular Specialization",
+  "duration_hours": 5,
+  "duration_iso8601": "PT5H",
+  "module_count": 5,
+  "price_usd": 99.99,
+  "currency": "USD",
+  "standards": [
+    "DCIM"
+  ],
+  "summary": "Understand DCIM strategy and build the ROI case for implementation.",
+  "description": "Platform-agnostic DCIM training: software-based infrastructure management, asset tracking, power/thermal modeling, and data visualization. Rather than teaching one vendor's tool, this course focuses on DCIM strategy — what to look for and why. You'll finish with a vendor evaluation framework and the ability to build the ROI business case for implementing a DCIM system in your own facility.",
+  "why_it_matters": "Data center infrastructure management (DCIM) software is meant to give one view of assets, power, cooling and space. In practice, many deployments fall short because asset data is incomplete, integrations with power and cooling systems were never finished or the tool was chosen for features the team does not use. A good DCIM program starts with strategy: what questions it needs to answer, where the data will come from and who will keep it accurate. With that in place, DCIM can show available capacity by rack, model the effect of new deployments on power and cooling, and support planning and audits. This vendor-neutral course covers DCIM architecture, asset inventory, power and thermal modeling, reporting and analytics, and how to evaluate and select a platform.",
+  "audience": "Facility and IT managers evaluating or implementing a DCIM platform.",
+  "prerequisites": "No prior certification required. Relevant equipment exposure is helpful.",
+  "learning_outcomes": [
+    "Understand DCIM architecture and where it fits in facility operations",
+    "Use asset inventory and tracking concepts to improve capacity visibility",
+    "Apply power and thermal modeling concepts within a DCIM platform",
+    "Evaluate DCIM vendors and build an implementation ROI case",
+    "Certificate of completion on finish",
+    "Self-paced — start and stop anytime",
+    "Delivered by an IACET-accredited provider",
+    "Volume pricing available for teams"
+  ],
+  "modules": [
+    {
+      "title": "DCIM Architecture & Benefits",
+      "summary": "What a DCIM platform actually does, and where it earns its cost."
+    },
+    {
+      "title": "Asset Inventory & Tracking",
+      "summary": "Tracking assets accurately enough to trust the data."
+    },
+    {
+      "title": "Power & Thermal Modeling",
+      "summary": "Using DCIM data for power and thermal capacity modeling."
+    },
+    {
+      "title": "Reporting & Analytics",
+      "summary": "Turning DCIM data into reports stakeholders actually use."
+    },
+    {
+      "title": "Vendor Evaluation & Selection",
+      "summary": "Evaluating DCIM vendors against your facility's real requirements."
+    }
+  ],
+  "bundles": [
+    {
+      "id": "bundle-monitoring-smart-facility",
+      "name": "Monitoring & Smart Facility Bundle",
+      "price_usd": 333.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    },
+    {
+      "id": "bundle-complete-catalog",
+      "name": "Complete Data Center Professional Bundle",
+      "price_usd": 2928.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    }
+  ],
+  "language": "en",
+  "delivery": "Online, self-paced, no completion deadline",
+  "certificate": {
+    "type": "Certificate of completion",
+    "issuer": "HAZWOPER OSHA Training, LLC",
+    "issuer_accreditation": "IACET Accredited Provider (provider-level accreditation)",
+    "delivery": "Issued immediately on completion; downloadable and printable",
+    "validity_period": "No fixed expiration; follow your employer's refresher policy",
+    "verification_url": "https://hazwoper-osha.com/certificate-verification",
+    "is_license_or_government_certification": false,
+    "ceu_or_pdh_credit": false
+  },
+  "availability": "preorder",
+  "enroll_url": "https://datacentertraining.us/checkout.html?item=dcim-platform-fundamentals",
+  "faqs": [
+    {
+      "question": "What does DCIM stand for?",
+      "answer": "Data center infrastructure management. It refers to software that tracks physical assets and monitors or models power, cooling and space so operators and planners can manage capacity and changes."
+    },
+    {
+      "question": "Does this course teach a specific DCIM product?",
+      "answer": "No. It is platform-agnostic and focuses on strategy, data and evaluation criteria so you can choose, implement or improve any DCIM platform."
+    },
+    {
+      "question": "What is the most common reason DCIM projects struggle?",
+      "answer": "Data quality. If the asset inventory is not complete and kept current, capacity and modeling results cannot be trusted. The Asset Inventory & Tracking module covers how to build and maintain accurate data."
+    }
+  ],
+  "related_course_ids": [
+    "monitoring-automation-bms-systems",
+    "fiber-optics-network-cabling",
+    "building-automation-systems-fundamentals"
+  ],
+  "last_updated": "2026-09-29"
+}

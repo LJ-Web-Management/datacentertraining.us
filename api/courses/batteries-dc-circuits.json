@@ -1,0 +1,100 @@
+{
+  "id": "batteries-dc-circuits",
+  "catalog_number": 441,
+  "title": "Batteries and DC Circuits",
+  "url": "https://datacentertraining.us/courses/batteries-dc-circuits.html",
+  "api_url": "https://datacentertraining.us/api/courses/batteries-dc-circuits.json",
+  "track": "Power & Electrical Systems Track",
+  "category": "Power & Electrical",
+  "course_type": "modular",
+  "course_type_label": "Modular Specialization",
+  "duration_hours": 2,
+  "duration_iso8601": "PT2H",
+  "module_count": 4,
+  "price_usd": 99.99,
+  "currency": "USD",
+  "standards": [],
+  "summary": "Master DC circuit fundamentals and battery behavior behind every backup power system.",
+  "description": "Every UPS and standby power system in a data center runs on DC fundamentals underneath the AC-facing interface. This course covers DC circuit theory, battery chemistry basics, and the electrical fundamentals that explain why batteries behave the way they do under load. It's the theory layer that makes hands-on UPS and battery training click faster — not just procedure memorization, but the reasoning behind it.",
+  "why_it_matters": "Every UPS in a data center ends in a battery string, and every battery string is a DC circuit. When a technician misreads a string's voltage, misses a high-resistance connection or does not understand how temperature affects capacity, the result is a UPS that looks healthy on its display but cannot carry the load when utility power drops. DC behaves differently from the AC most electricians learn first. Strings are built from cells in series and parallel, stored energy is present even when the UPS is off, and internal resistance rises slowly as a battery ages. Heat is a major factor: a common rule of thumb for VRLA batteries is that service life roughly halves for every 8°C (about 15°F) above 25°C (77°F). This course builds that DC foundation so readings, alarms and test results make sense before you work on UPS and battery systems.",
+  "audience": "Electricians and power technicians who need core DC theory before working on UPS or battery systems.",
+  "prerequisites": "No prior certification required. Relevant equipment exposure is helpful.",
+  "learning_outcomes": [
+    "Apply Ohm's law and DC circuit analysis to real battery system troubleshooting",
+    "Understand battery chemistry basics (lead-acid, lithium-ion) and how they affect performance",
+    "Read DC circuit diagrams for backup power systems",
+    "Diagnose common DC circuit issues before they cause a power event",
+    "Certificate of completion on finish",
+    "Self-paced — start and stop anytime",
+    "Delivered by an IACET-accredited provider",
+    "Volume pricing available for teams"
+  ],
+  "modules": [
+    {
+      "title": "DC Circuit Fundamentals",
+      "summary": "Voltage, current, and resistance in the DC circuits behind every battery system."
+    },
+    {
+      "title": "Battery Chemistry Basics",
+      "summary": "How lead-acid and lithium-ion batteries actually store and deliver power."
+    },
+    {
+      "title": "Reading DC Circuit Diagrams",
+      "summary": "Interpreting schematics for backup power and battery systems."
+    },
+    {
+      "title": "Troubleshooting DC Circuits",
+      "summary": "Diagnosing common DC circuit faults before they escalate."
+    }
+  ],
+  "bundles": [
+    {
+      "id": "bundle-power-electrical",
+      "name": "Power & Electrical Systems Bundle",
+      "price_usd": 986.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    },
+    {
+      "id": "bundle-complete-catalog",
+      "name": "Complete Data Center Professional Bundle",
+      "price_usd": 2928.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    }
+  ],
+  "language": "en",
+  "delivery": "Online, self-paced, no completion deadline",
+  "certificate": {
+    "type": "Certificate of completion",
+    "issuer": "HAZWOPER OSHA Training, LLC",
+    "issuer_accreditation": "IACET Accredited Provider (provider-level accreditation)",
+    "delivery": "Issued immediately on completion; downloadable and printable",
+    "validity_period": "No fixed expiration; follow your employer's refresher policy",
+    "verification_url": "https://hazwoper-osha.com/certificate-verification",
+    "is_license_or_government_certification": false,
+    "ceu_or_pdh_credit": false
+  },
+  "availability": "preorder",
+  "enroll_url": "https://datacentertraining.us/checkout.html?item=batteries-dc-circuits",
+  "faqs": [
+    {
+      "question": "Why do data center technicians need to learn DC theory?",
+      "answer": "UPS batteries, many telecom systems and some rack power designs run on DC. Understanding series and parallel strings, voltage drop and internal resistance lets you interpret battery test results, spot a failing cell and work safely around stored energy that does not go away when AC power is switched off."
+    },
+    {
+      "question": "Does this course cover lithium-ion as well as lead-acid batteries?",
+      "answer": "The Battery Chemistry Basics module explains why different battery chemistries behave the way they do under load and during charging. For the specific hazards and emergency response for lithium-ion installations, see Lithium-Ion Battery Thermal Runaway and Emergency Response Training."
+    },
+    {
+      "question": "What should I take after this course?",
+      "answer": "Most learners continue to UPS Systems Fundamentals and then UPS Operations & Load Testing. Anyone who will work in battery rooms should also take Data Center UPS and Battery System Safety Training."
+    }
+  ],
+  "related_course_ids": [
+    "power-systems-electrical-fundamentals",
+    "ups-operations-load-testing",
+    "generator-operations-maintenance",
+    "electrical-safety-best-practices",
+    "data-center-arc-flash-safety"
+  ],
+  "last_updated": "2026-09-29"
+}

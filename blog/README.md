@@ -33,7 +33,13 @@ cd blog && npm install && node scripts/convert.js
 ```
 
 Every run re-renders all posts from `posts.json` (bodies are read back from the existing
-pages), recompresses any cover over 100 KB to a 1200x675 JPEG, pre-renders the post list
+pages), recompresses any cover over 100 KB to a 1200x675 JPEG, writes 480/800/1200px WebP
+copies used in `srcset` (the featured image is the page's LCP element), pre-renders the post list
 into `index.html` so crawlers see links without JavaScript, and refreshes each post's
 "More from the blog" links. After changing `scripts/templates/post-template.html`, run
 `node scripts/convert.js --rebuild` to apply it to every existing post.
+
+The workflow then runs `node scripts/build-site.js` from the repo root so new posts
+also appear in `llms-full.txt`, `/api/resources.json`, and the MCP manifest. The
+`<!-- dct:head -->` block and X card tags in the template are maintained by that
+script too (see `scripts/README.md`).

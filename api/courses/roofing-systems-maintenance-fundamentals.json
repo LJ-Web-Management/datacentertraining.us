@@ -1,0 +1,100 @@
+{
+  "id": "roofing-systems-maintenance-fundamentals",
+  "catalog_number": 460,
+  "title": "Roofing Systems Maintenance Fundamentals",
+  "url": "https://datacentertraining.us/courses/roofing-systems-maintenance-fundamentals.html",
+  "api_url": "https://datacentertraining.us/api/courses/roofing-systems-maintenance-fundamentals.json",
+  "track": "Operations & Reliability Track",
+  "category": "Operations",
+  "course_type": "modular",
+  "course_type_label": "Modular Specialization",
+  "duration_hours": 2,
+  "duration_iso8601": "PT2H",
+  "module_count": 4,
+  "price_usd": 99.99,
+  "currency": "USD",
+  "standards": [],
+  "summary": "Preventive roofing maintenance to protect the facility below it.",
+  "description": "A roof leak above a data hall is a very different problem than a roof leak above an office. This course covers roofing system types, preventive maintenance scheduling, and inspection practices that catch problems before they threaten the equipment below. You'll leave with a risk-based way to prioritize roof maintenance by what's actually underneath it, not just a generic inspection checklist.",
+  "why_it_matters": "A roof leak above an office damages ceiling tiles. A roof leak above a data hall can reach energized equipment, trigger an emergency shutdown or force a customer migration. Data center roofs also carry more than weather: condensers, dry coolers, exhaust fans, antennas and the foot traffic of technicians who service them. Most roof failures give warning signs first: ponding water, blocked drains, open seams, damaged flashing around penetrations or punctures near rooftop equipment. Common roof types such as TPO, EPDM, modified bitumen and built-up roofs each have typical weak points. Many facilities inspect at least twice a year and after major storms. This course covers roofing system types, inspection scheduling, early failure signs and risk-based prioritization of repairs.",
+  "audience": "Facilities technicians responsible for roof inspection and maintenance scheduling.",
+  "prerequisites": "No prior certification required. Relevant equipment exposure is helpful.",
+  "learning_outcomes": [
+    "Identify common roofing system types and their maintenance needs",
+    "Build a preventive roof inspection and maintenance schedule",
+    "Recognize early warning signs of roof failure",
+    "Prioritize roof maintenance based on what's underneath",
+    "Certificate of completion on finish",
+    "Self-paced — start and stop anytime",
+    "Delivered by an IACET-accredited provider",
+    "Volume pricing available for teams"
+  ],
+  "modules": [
+    {
+      "title": "Roofing System Types",
+      "summary": "Common commercial roofing systems and how they age."
+    },
+    {
+      "title": "Preventive Inspection Scheduling",
+      "summary": "Catching problems before they become leaks."
+    },
+    {
+      "title": "Early Failure Warning Signs",
+      "summary": "What to look for during a roof inspection."
+    },
+    {
+      "title": "Risk-Based Prioritization",
+      "summary": "Weighting roof maintenance by what's at stake below it."
+    }
+  ],
+  "bundles": [
+    {
+      "id": "bundle-operations-reliability",
+      "name": "Operations & Reliability Bundle",
+      "price_usd": 830.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    },
+    {
+      "id": "bundle-complete-catalog",
+      "name": "Complete Data Center Professional Bundle",
+      "price_usd": 2928.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    }
+  ],
+  "language": "en",
+  "delivery": "Online, self-paced, no completion deadline",
+  "certificate": {
+    "type": "Certificate of completion",
+    "issuer": "HAZWOPER OSHA Training, LLC",
+    "issuer_accreditation": "IACET Accredited Provider (provider-level accreditation)",
+    "delivery": "Issued immediately on completion; downloadable and printable",
+    "validity_period": "No fixed expiration; follow your employer's refresher policy",
+    "verification_url": "https://hazwoper-osha.com/certificate-verification",
+    "is_license_or_government_certification": false,
+    "ceu_or_pdh_credit": false
+  },
+  "availability": "preorder",
+  "enroll_url": "https://datacentertraining.us/checkout.html?item=roofing-systems-maintenance-fundamentals",
+  "faqs": [
+    {
+      "question": "How often should a data center roof be inspected?",
+      "answer": "A common practice is at least twice a year, often in spring and fall, plus after severe weather. Roofs with a lot of rooftop equipment or a history of leaks may need more frequent checks."
+    },
+    {
+      "question": "What are the most common causes of roof leaks?",
+      "answer": "Failed flashing around penetrations and curbs, open seams, blocked drains that cause ponding, and punctures from foot traffic or dropped tools near rooftop equipment. Many of these can be found early with regular inspections."
+    },
+    {
+      "question": "How should roof repairs be prioritized?",
+      "answer": "By risk: what is directly above critical equipment, how likely the defect is to leak and how bad the consequence would be. The course's risk-based prioritization module covers how to rank repairs so the most important work is done first."
+    }
+  ],
+  "related_course_ids": [
+    "data-center-operations-management",
+    "disaster-recovery-business-continuity",
+    "preventive-maintenance-planning",
+    "incident-response-troubleshooting",
+    "business-continuity-disaster-recovery-planning"
+  ],
+  "last_updated": "2026-09-29"
+}

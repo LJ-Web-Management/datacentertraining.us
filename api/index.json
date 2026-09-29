@@ -1,0 +1,35 @@
+{
+  "name": "Data Center Training public catalog API",
+  "description": "Static, read-only JSON documents describing the Data Center Training catalog. No authentication. Regenerated from the site source on every change.",
+  "last_updated": "2026-09-29",
+  "content_hash": "b6388e86a3eccbf5",
+  "manifest": "https://datacentertraining.us/.well-known/mcp.json",
+  "openapi": "https://datacentertraining.us/openapi.json",
+  "documents": {
+    "courses": "https://datacentertraining.us/api/courses.json",
+    "course": "https://datacentertraining.us/api/courses/{course_id}.json",
+    "bundles": "https://datacentertraining.us/api/bundles.json",
+    "roles": "https://datacentertraining.us/api/roles.json",
+    "faq": "https://datacentertraining.us/api/faq.json",
+    "credentials": "https://datacentertraining.us/api/credentials.json",
+    "resources": "https://datacentertraining.us/api/resources.json"
+  },
+  "counts": {
+    "courses": 44,
+    "bundles": 7,
+    "tracks": 6,
+    "roles": 6,
+    "faqs": 35,
+    "resources": 28
+  },
+  "agent_rules": [
+    "Quote prices, durations, course counts, and bundle contents exactly as published here; never estimate or invent them.",
+    "Only name courses that exist in /api/courses.json. If nothing matches, say so.",
+    "Courses award a certificate of completion from HAZWOPER OSHA Training, LLC (an IACET Accredited Provider). Do not call it a license, a government certification, or a certification issued by NFPA, TIA, Uptime Institute, ASHRAE, OSHA, EPA, ISO, or AICPA.",
+    "\"Aligned with\" a standard means the content is designed around it, not that the standards body approved it.",
+    "Courses do not currently grant CEUs or PDHs.",
+    "Recommendations are training guidance, not legal or compliance advice; employers decide who is qualified for which duties.",
+    "Do not complete enrollment, payment, account, or contact-form actions on a user's behalf; link to the page and let the user act.",
+    "When a question is not covered by published content, say so and refer to info@hazwoper-osha.com or 1-866-429-6742."
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "id": "power-systems-electrical-fundamentals",
+  "catalog_number": 405,
+  "title": "Power Systems & Electrical Fundamentals",
+  "url": "https://datacentertraining.us/courses/power-systems-electrical-fundamentals.html",
+  "api_url": "https://datacentertraining.us/api/courses/power-systems-electrical-fundamentals.json",
+  "track": "Power & Electrical Systems Track",
+  "category": "Power & Electrical",
+  "course_type": "comprehensive",
+  "course_type_label": "Comprehensive Program",
+  "duration_hours": 18,
+  "duration_iso8601": "PT18H",
+  "module_count": 6,
+  "price_usd": 303.99,
+  "currency": "USD",
+  "standards": [
+    "NFPA 70E"
+  ],
+  "summary": "Master data center electrical infrastructure — from utility interconnection to UPS and PDU architecture.",
+  "description": "Power failures are the fastest way to take a data center offline, which is why electrical infrastructure gets more redundancy scrutiny than almost any other system. This course covers the full power chain: utility interconnection, switchgear and transformers, UPS systems (topologies, battery management, maintenance), PDU architecture, and redundancy strategy. Electrical safety and maintenance best practices run through every module — this isn't just architecture theory, it's paired with equipment evaluation frameworks, troubleshooting methodologies, and maintenance scheduling you can apply on the floor. You'll finish with a working understanding of electrical architecture trade-offs, so you can evaluate vendor proposals, troubleshoot power issues faster, and optimize your facility's power chain for both reliability and efficiency.",
+  "why_it_matters": "Power problems are the leading cause of significant data center outages in industry surveys, which is why the electrical system gets more redundancy than almost anything else in the building. A single design or operating mistake anywhere from the utility service to the rack can drop critical load. This program follows the full power chain. It starts with utility interconnection and medium-voltage switchgear, moves through transformers, UPS systems and PDUs, and covers redundancy models such as N+1, 2N and distributed redundant designs. It also covers monitoring, maintenance and safety, including NFPA 70E. Electricians, power engineers and technicians come away understanding how each part affects availability and how to maintain it safely.",
+  "audience": "Electricians, power engineers, and facilities technicians who work on or specify critical power systems.",
+  "prerequisites": "No prior certification required. Assumes basic familiarity with facility systems.",
+  "learning_outcomes": [
+    "Map a facility's full power chain from utility interconnection to the rack",
+    "Compare UPS topologies and battery management approaches for a given load profile",
+    "Apply PDU architecture and monitoring concepts to improve power visibility",
+    "Evaluate redundancy strategies (N+1, 2N) against real electrical constraints",
+    "Apply electrical safety and maintenance best practices to reduce failure risk",
+    "Certificate of completion on finish",
+    "Self-paced — start and stop anytime",
+    "Delivered by an IACET-accredited provider",
+    "Volume pricing available for teams"
+  ],
+  "modules": [
+    {
+      "title": "Utility Interconnection & Distribution",
+      "summary": "How utility power enters the facility and gets distributed to critical loads."
+    },
+    {
+      "title": "Transformers & Switchgear",
+      "summary": "The equipment that steps down and routes power before it reaches UPS systems."
+    },
+    {
+      "title": "UPS Systems Design & Operation",
+      "summary": "Topologies, battery chemistries, and maintenance schedules that keep UPS systems reliable."
+    },
+    {
+      "title": "PDU Architecture & Monitoring",
+      "summary": "Getting rack-level power visibility without over-instrumenting."
+    },
+    {
+      "title": "Redundancy Strategies",
+      "summary": "N+1 and 2N power redundancy, and where each makes sense."
+    },
+    {
+      "title": "Electrical Safety & Maintenance Best Practices",
+      "summary": "NFPA 70E-aligned safety practices for working on or near critical power systems."
+    }
+  ],
+  "bundles": [
+    {
+      "id": "bundle-power-electrical",
+      "name": "Power & Electrical Systems Bundle",
+      "price_usd": 986.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    },
+    {
+      "id": "bundle-complete-catalog",
+      "name": "Complete Data Center Professional Bundle",
+      "price_usd": 2928.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    }
+  ],
+  "language": "en",
+  "delivery": "Online, self-paced, no completion deadline",
+  "certificate": {
+    "type": "Certificate of completion",
+    "issuer": "HAZWOPER OSHA Training, LLC",
+    "issuer_accreditation": "IACET Accredited Provider (provider-level accreditation)",
+    "delivery": "Issued immediately on completion; downloadable and printable",
+    "validity_period": "No fixed expiration; follow your employer's refresher policy",
+    "verification_url": "https://hazwoper-osha.com/certificate-verification",
+    "is_license_or_government_certification": false,
+    "ceu_or_pdh_credit": false
+  },
+  "availability": "preorder",
+  "enroll_url": "https://datacentertraining.us/checkout.html?item=power-systems-electrical-fundamentals",
+  "faqs": [
+    {
+      "question": "What does a typical data center power chain look like?",
+      "answer": "Utility power enters through medium-voltage switchgear and is stepped down by transformers. It passes through switchboards to UPS systems, which provide ride-through during outages, then to PDUs and remote power panels, and finally to rack PDUs and servers. Generators back up the utility."
+    },
+    {
+      "question": "What is distributed redundancy?",
+      "answer": "Distributed redundant designs, sometimes called 3-to-make-2 or 4-to-make-3, spread load across several UPS systems so that the failure of one can be absorbed by the others. They can offer high availability with less idle equipment than a full 2N design."
+    },
+    {
+      "question": "Who should take this program?",
+      "answer": "Electricians, power engineers, facilities technicians and project engineers who work on or specify critical power systems, plus operations staff who want a full picture of the electrical infrastructure they rely on."
+    }
+  ],
+  "related_course_ids": [
+    "ups-operations-load-testing",
+    "generator-operations-maintenance",
+    "electrical-safety-best-practices",
+    "batteries-dc-circuits",
+    "data-center-arc-flash-safety"
+  ],
+  "last_updated": "2026-09-29"
+}

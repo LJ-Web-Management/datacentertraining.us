@@ -3,22 +3,32 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z3T42KYK64"></script>
+<!-- dct:head -->
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; object-src 'none'; base-uri 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#f5f5f7">
+<link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt">
+<link rel="alternate" type="application/json" href="/.well-known/mcp.json" title="WebMCP manifest">
+<link rel="service-desc" type="application/vnd.oai.openapi+json" href="/openapi.json">
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-Z3T42KYK64');
+/* Analytics and chat load on the first interaction (scroll, tap, key, mouse move) so they never delay rendering. */
+(function(w,d){
+  w.dataLayer=w.dataLayer||[];w.gtag=function(){w.dataLayer.push(arguments);};w.gtag('js',new Date());w.gtag('config','G-Z3T42KYK64');
+  w.clarity=w.clarity||function(){(w.clarity.q=w.clarity.q||[]).push(arguments);};
+  w.Tawk_API=w.Tawk_API||{};w.Tawk_API.onLoad=function(){w.Tawk_API.minimize();};
+  var ev=['pointerdown','keydown','touchstart','scroll','mousemove'],done=0;
+  function add(src,attrs){var s=d.createElement('script');s.async=true;s.src=src;for(var k in attrs)s.setAttribute(k,attrs[k]);d.head.appendChild(s);}
+  function go(){if(done)return;done=1;ev.forEach(function(e){w.removeEventListener(e,go,{passive:true});});
+    add('https://www.googletagmanager.com/gtag/js?id=G-Z3T42KYK64');
+    add('https://analytics.ahrefs.com/analytics.js',{'data-key':'tVAd7KxwKax+pAfHx46Zgg'});
+    add('https://www.clarity.ms/tag/ylza43nm4m');
+    w.Tawk_LoadStart=new Date();add('https://embed.tawk.to/6a5a95a2096ab21d402a762c/1jtoth11r',{charset:'UTF-8',crossorigin:'*'});
+  }
+  ev.forEach(function(e){w.addEventListener(e,go,{passive:true});});
+})(window,document);
+if(navigator.modelContext){var m=document.createElement('script');m.src='/js/webmcp.js';m.defer=true;document.head.appendChild(m);}
 </script>
-<script src="https://analytics.ahrefs.com/analytics.js" data-key="tVAd7KxwKax+pAfHx46Zgg" async></script>
-<script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "ylza43nm4m");
-</script>
+<!-- /dct:head -->
 <title>Lithium-Ion Thermal Runaway: What Teams Should Rehearse</title>
 <meta name="description" content="What data center teams should rehearse before a lithium-ion battery thermal runaway incident: detection, isolation, evacuation, and responder coordination.">
 <meta name="robots" content="index, follow">
@@ -32,14 +42,13 @@
 <meta property="og:image" content="https://datacentertraining.us/blog/assets/img/posts/lithium-ion-battery-thermal-runaway-what-data-center-teams-should-rehearse-before-an-incident.jpg">
 <meta property="og:site_name" content="Data Center Training">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@HazwoperOsha">
 <meta name="twitter:title" content="Lithium-Ion Battery Thermal Runaway: What Data Center Teams Should Rehearse Before an Incident">
 <meta name="twitter:description" content="What data center teams should rehearse before a lithium-ion battery thermal runaway incident: detection, isolation, evacuation, and responder coordination.">
 <meta name="twitter:image" content="https://datacentertraining.us/blog/assets/img/posts/lithium-ion-battery-thermal-runaway-what-data-center-teams-should-rehearse-before-an-incident.jpg">
 
-<link rel="stylesheet" href="../../css/tokens.css">
-<link rel="stylesheet" href="../../css/style.css">
-<link rel="stylesheet" href="../assets/css/blog.css">
-<script type="text/javascript" src="../../js/config.js" defer></script>
+<link rel="stylesheet" href="../assets/css/blog.min.css">
+<script src="../../js/nav.js" defer></script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -79,7 +88,7 @@
 <a class="skip-link" href="#main">Skip to content</a>
 <header class="glass-nav">
   <div class="container nav-inner">
-    <a href="../../index.html" class="logo">
+    <a href="../../" class="logo">
       <img src="../../images/favicon.svg" alt="" width="30" height="30">
       <span>
         <span class="logo-mark">datacentertraining.us</span>
@@ -117,7 +126,7 @@
     <h1>Lithium-Ion Battery Thermal Runaway: What Data Center Teams Should Rehearse Before an Incident</h1>
   </div>
   <div class="post-featured-image">
-    <img src="../assets/img/posts/lithium-ion-battery-thermal-runaway-what-data-center-teams-should-rehearse-before-an-incident.jpg" alt="Lithium-Ion Battery Thermal Runaway: What Data Center Teams Should Rehearse Before an Incident" width="1200" height="675" loading="eager">
+    <img src="../assets/img/posts/lithium-ion-battery-thermal-runaway-what-data-center-teams-should-rehearse-before-an-incident.jpg" srcset="../assets/img/posts/lithium-ion-battery-thermal-runaway-what-data-center-teams-should-rehearse-before-an-incident-480w.webp 480w, ../assets/img/posts/lithium-ion-battery-thermal-runaway-what-data-center-teams-should-rehearse-before-an-incident-800w.webp 800w, ../assets/img/posts/lithium-ion-battery-thermal-runaway-what-data-center-teams-should-rehearse-before-an-incident-1200w.webp 1200w" sizes="(max-width: 900px) calc(100vw - 32px), 860px" alt="Lithium-Ion Battery Thermal Runaway: What Data Center Teams Should Rehearse Before an Incident" width="1200" height="675" fetchpriority="high">
   </div>
   <article class="post-content">
 <h2>The Operational Question</h2>
@@ -163,7 +172,7 @@
   </article>
   <section class="related-posts" aria-labelledby="related-heading">
     <h2 id="related-heading">More from the blog</h2>
-    <div class="related-grid"><a class="post-card" href="tier-infrastructure-review-what-facility-managers-should-verify-beyond-the-label.html"><img class="post-card-thumb" src="../assets/img/posts/tier-infrastructure-review-what-facility-managers-should-verify-beyond-the-label.jpg" alt="Tier Infrastructure Review: What Facility Managers Should Verify Beyond the Label" width="1200" height="675" loading="lazy"><div class="post-card-body"><div class="post-date">September 25, 2026</div><h3>Tier Infrastructure Review: What Facility Managers Should Verify Beyond the Label</h3></div></a><a class="post-card" href="how-to-build-a-role-based-training-matrix-for-a-colocation-facility.html"><img class="post-card-thumb" src="../assets/img/posts/how-to-build-a-role-based-training-matrix-for-a-colocation-facility.jpg" alt="How to Build a Role-Based Training Matrix for a Colocation Facility" width="1200" height="675" loading="lazy"><div class="post-card-body"><div class="post-date">September 24, 2026</div><h3>How to Build a Role-Based Training Matrix for a Colocation Facility</h3></div></a><a class="post-card" href="dcim-vs-bms-alarm-dashboards-what-data-center-operations-teams-should-verify.html"><img class="post-card-thumb" src="../assets/img/posts/dcim-vs-bms-alarm-dashboards-what-data-center-operations-teams-should-verify.jpg" alt="DCIM vs BMS Alarm Dashboards: What Data Center Operations Teams Should Verify" width="1200" height="675" loading="lazy"><div class="post-card-body"><div class="post-date">September 24, 2026</div><h3>DCIM vs BMS Alarm Dashboards: What Data Center Operations Teams Should Verify</h3></div></a></div>
+    <div class="related-grid"><a class="post-card" href="tier-infrastructure-review-what-facility-managers-should-verify-beyond-the-label.html"><img class="post-card-thumb" src="../assets/img/posts/tier-infrastructure-review-what-facility-managers-should-verify-beyond-the-label.jpg" srcset="../assets/img/posts/tier-infrastructure-review-what-facility-managers-should-verify-beyond-the-label-480w.webp 480w, ../assets/img/posts/tier-infrastructure-review-what-facility-managers-should-verify-beyond-the-label-800w.webp 800w, ../assets/img/posts/tier-infrastructure-review-what-facility-managers-should-verify-beyond-the-label-1200w.webp 1200w" sizes="(max-width: 640px) calc(100vw - 32px), (max-width: 1024px) 50vw, 380px" alt="Tier Infrastructure Review: What Facility Managers Should Verify Beyond the Label" width="1200" height="675" loading="lazy" decoding="async"><div class="post-card-body"><div class="post-date">September 25, 2026</div><h3>Tier Infrastructure Review: What Facility Managers Should Verify Beyond the Label</h3></div></a><a class="post-card" href="how-to-build-a-role-based-training-matrix-for-a-colocation-facility.html"><img class="post-card-thumb" src="../assets/img/posts/how-to-build-a-role-based-training-matrix-for-a-colocation-facility.jpg" srcset="../assets/img/posts/how-to-build-a-role-based-training-matrix-for-a-colocation-facility-480w.webp 480w, ../assets/img/posts/how-to-build-a-role-based-training-matrix-for-a-colocation-facility-800w.webp 800w, ../assets/img/posts/how-to-build-a-role-based-training-matrix-for-a-colocation-facility-1200w.webp 1200w" sizes="(max-width: 640px) calc(100vw - 32px), (max-width: 1024px) 50vw, 380px" alt="How to Build a Role-Based Training Matrix for a Colocation Facility" width="1200" height="675" loading="lazy" decoding="async"><div class="post-card-body"><div class="post-date">September 24, 2026</div><h3>How to Build a Role-Based Training Matrix for a Colocation Facility</h3></div></a><a class="post-card" href="dcim-vs-bms-alarm-dashboards-what-data-center-operations-teams-should-verify.html"><img class="post-card-thumb" src="../assets/img/posts/dcim-vs-bms-alarm-dashboards-what-data-center-operations-teams-should-verify.jpg" srcset="../assets/img/posts/dcim-vs-bms-alarm-dashboards-what-data-center-operations-teams-should-verify-480w.webp 480w, ../assets/img/posts/dcim-vs-bms-alarm-dashboards-what-data-center-operations-teams-should-verify-800w.webp 800w, ../assets/img/posts/dcim-vs-bms-alarm-dashboards-what-data-center-operations-teams-should-verify-1200w.webp 1200w" sizes="(max-width: 640px) calc(100vw - 32px), (max-width: 1024px) 50vw, 380px" alt="DCIM vs BMS Alarm Dashboards: What Data Center Operations Teams Should Verify" width="1200" height="675" loading="lazy" decoding="async"><div class="post-card-body"><div class="post-date">September 24, 2026</div><h3>DCIM vs BMS Alarm Dashboards: What Data Center Operations Teams Should Verify</h3></div></a></div>
     <a class="related-all" href="../">View all posts &rarr;</a>
   </section>
 </main>
@@ -172,7 +181,7 @@
   <div class="container footer-grid">
 
     <div class="footer-col">
-      <a href="../../index.html" class="logo">
+      <a href="../../" class="logo">
         <img src="../../images/favicon.svg" alt="" width="28" height="28">
         <span>
           <span class="logo-mark">datacentertraining.us</span>
@@ -192,7 +201,7 @@
       <h3>Training</h3>
       <a href="../../courses.html">Course Catalog</a>
       <a href="../../bundles.html">Bundles</a>
-      <a href="../../who.html">Which Courses Do I Need?</a>
+      <a href="../../who.html#which-course">Which Courses Do I Need?</a>
       <a href="../../certifications.html">Certifications &amp; Accreditations</a>
       <a href="../../who.html">Who It's For</a>
       <a href="../../faq.html">FAQ</a>
@@ -211,6 +220,8 @@
       <h3>For AI Agents</h3>
       <a href="/llms.txt">llms.txt</a>
       <a href="/llms-full.txt">llms-full.txt</a>
+      <a href="/.well-known/mcp.json">WebMCP Manifest</a>
+      <a href="/api/index.json">JSON Catalog API</a>
       <a href="/openapi.json">API Docs (OpenAPI)</a>
       <a href="/sitemap.xml">Sitemap</a>
     </div>
@@ -237,7 +248,7 @@
         <a href="https://www.youtube.com/@hazwoper-osha" target="_blank" rel="noopener" aria-label="YouTube">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33zM9.75 15.02V8.48l5.75 3.27z"/></svg>
         </a>
-        <a href="https://twitter.com/HazwoperOsha" target="_blank" rel="noopener" aria-label="X">
+        <a href="https://x.com/HazwoperOsha" target="_blank" rel="noopener" aria-label="X">
           <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.4 8.4L23 22h-6.6l-5.2-6.8L5.1 22H2l7.9-9L1.6 2h6.8l4.7 6.2z"/></svg>
         </a>
         <a href="https://www.linkedin.com/company/hazwoper-osha" target="_blank" rel="noopener" aria-label="LinkedIn">
@@ -258,25 +269,5 @@
 </footer>
 <script src="../../js/main.js" defer></script>
 
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-Tawk_API.onLoad = function(){
-  Tawk_API.minimize();
-};
-
-setTimeout(function(){
-  Tawk_LoadStart = new Date();
-  (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/6a5a95a2096ab21d402a762c/1jtoth11r';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-  })();
-}, 2500);
-</script>
-<!--End of Tawk.to Script-->
 </body>
 </html>

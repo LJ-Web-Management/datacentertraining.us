@@ -1,0 +1,99 @@
+{
+  "id": "access-control-physical-security",
+  "catalog_number": 430,
+  "title": "Access Control & Physical Security",
+  "url": "https://datacentertraining.us/courses/access-control-physical-security.html",
+  "api_url": "https://datacentertraining.us/api/courses/access-control-physical-security.json",
+  "track": "Security & Compliance Track",
+  "category": "Security & Compliance",
+  "course_type": "modular",
+  "course_type_label": "Modular Specialization",
+  "duration_hours": 3.5,
+  "duration_iso8601": "PT3H30M",
+  "module_count": 4,
+  "price_usd": 99.99,
+  "currency": "USD",
+  "standards": [],
+  "summary": "Practical security training for facility staff — access control, surveillance, and incident reporting.",
+  "description": "Security training for facility staff: access control systems, surveillance equipment, threat identification, and emergency procedures. This is hands-on, operational training — how to run the systems day to day, not just design them. You'll cover incident reporting and chain of custody procedures, so security events are documented correctly from the moment they're identified.",
+  "why_it_matters": "Most physical security failures in a data center are not break-ins. They are a badge that still works after a contractor's job ended, a door propped open during a delivery, a camera that stopped recording weeks ago, or a tailgater nobody challenged. Those gaps are operational, and the people who close them are the security officers and facilities staff who run the systems every shift. Auditors look for the same thing. SOC 2, ISO/IEC 27001 and PCI DSS assessments all ask for evidence that physical controls actually operate: access reviews, visitor logs, footage retention and incident records. When an incident does happen, how evidence and removed media are handled decides whether the facility can show what happened. This course focuses on running access control and surveillance day to day, recognizing threats early, and documenting incidents with a clean chain of custody.",
+  "audience": "Security and facilities staff operating access control and surveillance systems.",
+  "prerequisites": "No prior certification required. Relevant equipment exposure is helpful.",
+  "learning_outcomes": [
+    "Operate access control and surveillance systems confidently",
+    "Identify and respond to common physical security threats",
+    "Follow correct incident reporting and chain-of-custody procedures",
+    "Apply emergency procedures for physical security incidents",
+    "Certificate of completion on finish",
+    "Self-paced — start and stop anytime",
+    "Delivered by an IACET-accredited provider",
+    "Volume pricing available for teams"
+  ],
+  "modules": [
+    {
+      "title": "Access Control Systems Operation",
+      "summary": "Day-to-day operation of badge and access control systems."
+    },
+    {
+      "title": "Surveillance Systems Basics",
+      "summary": "Getting the most out of surveillance equipment without being overwhelmed by footage."
+    },
+    {
+      "title": "Threat Identification & Response",
+      "summary": "Recognizing and responding to physical security threats correctly."
+    },
+    {
+      "title": "Incident Reporting & Chain of Custody",
+      "summary": "Documenting incidents so evidence holds up later."
+    }
+  ],
+  "bundles": [
+    {
+      "id": "bundle-security-compliance",
+      "name": "Security & Compliance Bundle",
+      "price_usd": 400.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    },
+    {
+      "id": "bundle-complete-catalog",
+      "name": "Complete Data Center Professional Bundle",
+      "price_usd": 2928.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    }
+  ],
+  "language": "en",
+  "delivery": "Online, self-paced, no completion deadline",
+  "certificate": {
+    "type": "Certificate of completion",
+    "issuer": "HAZWOPER OSHA Training, LLC",
+    "issuer_accreditation": "IACET Accredited Provider (provider-level accreditation)",
+    "delivery": "Issued immediately on completion; downloadable and printable",
+    "validity_period": "No fixed expiration; follow your employer's refresher policy",
+    "verification_url": "https://hazwoper-osha.com/certificate-verification",
+    "is_license_or_government_certification": false,
+    "ceu_or_pdh_credit": false
+  },
+  "availability": "preorder",
+  "enroll_url": "https://datacentertraining.us/checkout.html?item=access-control-physical-security",
+  "faqs": [
+    {
+      "question": "What is chain of custody and why does it matter in a data center?",
+      "answer": "Chain of custody is the documented record of who held an item, such as a failed drive, a badge or recorded footage, from the moment it was collected until it was disposed of or handed over. Without it, a facility cannot prove that customer data or evidence was not tampered with, which matters for audits, customer contracts and any investigation."
+    },
+    {
+      "question": "How is this course different from Data Center Physical Security and Access Control Training?",
+      "answer": "Data Center Physical Security and Access Control Training is the foundational course on badge basics, escorts and floor security posture. This course goes further into operating access control and surveillance systems, identifying and responding to threats, and reporting incidents. Many teams take the foundational course first."
+    },
+    {
+      "question": "Who should take this course?",
+      "answer": "Security officers, facilities technicians and operations staff who administer badge systems, monitor cameras, escort visitors or respond to alarms. It also helps supervisors who have to produce access and incident records for audits."
+    }
+  ],
+  "related_course_ids": [
+    "security-compliance-data-centers",
+    "facility-environmental-compliance",
+    "data-center-fire-suppression-safety",
+    "data-center-physical-security-access-control"
+  ],
+  "last_updated": "2026-09-29"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "datacentertraining-site-scripts",
+  "private": true,
+  "description": "Build and validation scripts for datacentertraining.us (see scripts/README.md).",
+  "scripts": {
+    "build": "node build-site.js",
+    "check": "node build-site.js --check && node validate-agent-layer.js && python3 audit_site.py"
+  },
+  "devDependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1"
+  }
+}

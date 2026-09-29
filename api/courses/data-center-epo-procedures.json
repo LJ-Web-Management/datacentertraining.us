@@ -1,0 +1,100 @@
+{
+  "id": "data-center-epo-procedures",
+  "catalog_number": 449,
+  "title": "Data Center Emergency Power Off (EPO) Procedures Training",
+  "url": "https://datacentertraining.us/courses/data-center-epo-procedures.html",
+  "api_url": "https://datacentertraining.us/api/courses/data-center-epo-procedures.json",
+  "track": "Power & Electrical Systems Track",
+  "category": "Power & Electrical",
+  "course_type": "modular",
+  "course_type_label": "Modular Specialization",
+  "duration_hours": 1,
+  "duration_iso8601": "PT1H",
+  "module_count": 4,
+  "price_usd": 99.99,
+  "currency": "USD",
+  "standards": [],
+  "summary": "Safe activation and reset procedures for data center Emergency Power Off systems.",
+  "description": "An EPO button is one of the most consequential controls on a data center floor — activating it correctly, and understanding what happens after, is essential knowledge for anyone with floor access. This course covers safe activation criteria, coordination with fire/life safety systems, and reset procedures. You'll leave understanding not just how to press the button, but when it's actually the right call, and how to bring systems back safely afterward.",
+  "why_it_matters": "An emergency power off (EPO) system can drop power to an entire data hall in an instant. It exists to protect people and first responders during a fire or electrical emergency. Pressed by mistake, it causes a full outage. Accidental EPO activations, from someone mistaking the button for a door release or bumping an unguarded switch, are a well-known cause of downtime. NFPA 70 (the National Electrical Code) Article 645 addresses disconnecting means for information technology equipment rooms, and many facilities also coordinate the EPO with fire alarm and suppression systems. Staff with floor access need to know when activation is justified, what the EPO shuts down, who must be notified and how to restore power safely afterward. This course covers EPO system design, activation criteria, fire and life safety coordination, and reset procedures.",
+  "audience": "Facilities and operations staff who may need to activate or reset an EPO system.",
+  "prerequisites": "No prior certification required. Relevant equipment exposure is helpful.",
+  "learning_outcomes": [
+    "Know the correct criteria for activating an Emergency Power Off system",
+    "Understand how EPO systems coordinate with fire and life safety systems",
+    "Follow correct reset procedures after an EPO event",
+    "Avoid the common mistakes that turn a minor incident into a full outage",
+    "Certificate of completion on finish",
+    "Self-paced — start and stop anytime",
+    "Delivered by an IACET-accredited provider",
+    "Volume pricing available for teams"
+  ],
+  "modules": [
+    {
+      "title": "EPO System Overview",
+      "summary": "How EPO systems are wired into facility power and fire/life safety."
+    },
+    {
+      "title": "Activation Criteria",
+      "summary": "When an EPO activation is actually the right call."
+    },
+    {
+      "title": "Fire/Life Safety Coordination",
+      "summary": "How EPO events interact with fire suppression and alarm systems."
+    },
+    {
+      "title": "Reset Procedures",
+      "summary": "Bringing systems back safely after an EPO event."
+    }
+  ],
+  "bundles": [
+    {
+      "id": "bundle-power-electrical",
+      "name": "Power & Electrical Systems Bundle",
+      "price_usd": 986.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    },
+    {
+      "id": "bundle-complete-catalog",
+      "name": "Complete Data Center Professional Bundle",
+      "price_usd": 2928.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    }
+  ],
+  "language": "en",
+  "delivery": "Online, self-paced, no completion deadline",
+  "certificate": {
+    "type": "Certificate of completion",
+    "issuer": "HAZWOPER OSHA Training, LLC",
+    "issuer_accreditation": "IACET Accredited Provider (provider-level accreditation)",
+    "delivery": "Issued immediately on completion; downloadable and printable",
+    "validity_period": "No fixed expiration; follow your employer's refresher policy",
+    "verification_url": "https://hazwoper-osha.com/certificate-verification",
+    "is_license_or_government_certification": false,
+    "ceu_or_pdh_credit": false
+  },
+  "availability": "preorder",
+  "enroll_url": "https://datacentertraining.us/checkout.html?item=data-center-epo-procedures",
+  "faqs": [
+    {
+      "question": "What does an EPO button do in a data center?",
+      "answer": "It disconnects power to IT equipment and, depending on the design, to cooling and other systems in the protected room. Its purpose is to remove power quickly during an emergency so people and firefighters are not exposed to energized equipment."
+    },
+    {
+      "question": "How can accidental EPO activation be prevented?",
+      "answer": "Common measures include protective covers, clear labeling, placing buttons away from door releases, two-step activation designs and training everyone with floor access. The course's activation criteria module covers when the button should and should not be used."
+    },
+    {
+      "question": "Why is resetting an EPO a separate procedure?",
+      "answer": "After an EPO event, power must be restored in a controlled sequence after the cause is understood. Bringing systems back all at once can cause inrush problems, restart equipment into a hazard or damage IT loads. A written reset procedure prevents a second incident."
+    }
+  ],
+  "related_course_ids": [
+    "power-systems-electrical-fundamentals",
+    "ups-operations-load-testing",
+    "generator-operations-maintenance",
+    "electrical-safety-best-practices",
+    "batteries-dc-circuits"
+  ],
+  "last_updated": "2026-09-29"
+}

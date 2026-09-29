@@ -1,0 +1,100 @@
+{
+  "id": "power-distribution-systems-fundamentals",
+  "catalog_number": 459,
+  "title": "Power Distribution Systems Fundamentals",
+  "url": "https://datacentertraining.us/courses/power-distribution-systems-fundamentals.html",
+  "api_url": "https://datacentertraining.us/api/courses/power-distribution-systems-fundamentals.json",
+  "track": "Power & Electrical Systems Track",
+  "category": "Power & Electrical",
+  "course_type": "modular",
+  "course_type_label": "Modular Specialization",
+  "duration_hours": 4,
+  "duration_iso8601": "PT4H",
+  "module_count": 4,
+  "price_usd": 99.99,
+  "currency": "USD",
+  "standards": [],
+  "summary": "Core power distribution theory behind PDUs, panels, and branch circuits.",
+  "description": "Power distribution systems take facility-level power and break it down into the branch circuits that actually reach a rack. This course covers the fundamentals of that distribution chain: panels, breakers, PDUs, and load balancing, as the theory foundation for PDU architecture and monitoring work. You'll leave able to read a panel schedule, size a breaker correctly, and understand how distribution fundamentals show up in rack-level PDU design.",
+  "why_it_matters": "Between the UPS and the server power supply, electricity passes through switchboards, panelboards, power distribution units (PDUs), remote power panels and rack PDUs. Each step has breakers, ratings and limits. Mistakes here, such as an overloaded branch circuit, unbalanced phases or a dual-corded server plugged into the same feed twice, cause many avoidable outages. A key rule in data centers with A and B power feeds is that each side must be able to carry the full load if the other fails. That means each feed normally runs at well under half of its usable capacity. Breakers carrying continuous loads are also generally limited to 80% of their rating under the National Electrical Code. This course covers the distribution chain, panels and breaker sizing, load balancing and how these connect to PDU architecture.",
+  "audience": "Electricians and technicians who need power distribution fundamentals before working on PDU systems.",
+  "prerequisites": "No prior certification required. Relevant equipment exposure is helpful.",
+  "learning_outcomes": [
+    "Understand power distribution from facility feed to branch circuit",
+    "Read panel schedules and breaker sizing correctly",
+    "Apply load balancing principles across distribution panels",
+    "Connect distribution fundamentals to PDU architecture and monitoring",
+    "Certificate of completion on finish",
+    "Self-paced — start and stop anytime",
+    "Delivered by an IACET-accredited provider",
+    "Volume pricing available for teams"
+  ],
+  "modules": [
+    {
+      "title": "Distribution Chain Fundamentals",
+      "summary": "From facility feed to branch circuit, step by step."
+    },
+    {
+      "title": "Panels & Breaker Sizing",
+      "summary": "Reading panel schedules and sizing breakers correctly."
+    },
+    {
+      "title": "Load Balancing",
+      "summary": "Distributing load evenly across panels and circuits."
+    },
+    {
+      "title": "Connecting to PDU Architecture",
+      "summary": "How distribution fundamentals show up in rack-level PDU design."
+    }
+  ],
+  "bundles": [
+    {
+      "id": "bundle-power-electrical",
+      "name": "Power & Electrical Systems Bundle",
+      "price_usd": 986.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    },
+    {
+      "id": "bundle-complete-catalog",
+      "name": "Complete Data Center Professional Bundle",
+      "price_usd": 2928.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    }
+  ],
+  "language": "en",
+  "delivery": "Online, self-paced, no completion deadline",
+  "certificate": {
+    "type": "Certificate of completion",
+    "issuer": "HAZWOPER OSHA Training, LLC",
+    "issuer_accreditation": "IACET Accredited Provider (provider-level accreditation)",
+    "delivery": "Issued immediately on completion; downloadable and printable",
+    "validity_period": "No fixed expiration; follow your employer's refresher policy",
+    "verification_url": "https://hazwoper-osha.com/certificate-verification",
+    "is_license_or_government_certification": false,
+    "ceu_or_pdh_credit": false
+  },
+  "availability": "preorder",
+  "enroll_url": "https://datacentertraining.us/checkout.html?item=power-distribution-systems-fundamentals",
+  "faqs": [
+    {
+      "question": "Why should each side of an A/B power feed stay under 50%?",
+      "answer": "In a redundant design, if one feed fails, the other must carry the entire load of dual-corded equipment. If each side is loaded above 50% of its usable capacity, the surviving side can trip on overload and cause an outage instead of preventing one."
+    },
+    {
+      "question": "What is phase balancing?",
+      "answer": "Three-phase systems work best when load is spread evenly across the three phases. Unbalanced loads waste capacity, increase neutral current and can cause one phase to trip before the others. Load balancing is covered in its own module."
+    },
+    {
+      "question": "What should I take after this course?",
+      "answer": "Power Systems & Electrical Fundamentals covers the full power chain from utility to PDU, including redundancy strategies. UPS Systems Fundamentals is a good next step for the UPS portion."
+    }
+  ],
+  "related_course_ids": [
+    "power-systems-electrical-fundamentals",
+    "ups-operations-load-testing",
+    "generator-operations-maintenance",
+    "electrical-safety-best-practices",
+    "batteries-dc-circuits"
+  ],
+  "last_updated": "2026-09-29"
+}

@@ -1,0 +1,109 @@
+{
+  "id": "infrastructure-commissioning-startup",
+  "catalog_number": 408,
+  "title": "Infrastructure Commissioning & Startup",
+  "url": "https://datacentertraining.us/courses/infrastructure-commissioning-startup.html",
+  "api_url": "https://datacentertraining.us/api/courses/infrastructure-commissioning-startup.json",
+  "track": "Design, Planning & Commissioning Track",
+  "category": "Design & Planning",
+  "course_type": "comprehensive",
+  "course_type_label": "Comprehensive Program",
+  "duration_hours": 12,
+  "duration_iso8601": "PT12H",
+  "module_count": 6,
+  "price_usd": 267.99,
+  "currency": "USD",
+  "standards": [
+    "Commissioning Test Protocols"
+  ],
+  "summary": "Lead new facility launches and major upgrades with a proven commissioning framework.",
+  "description": "A facility that passes commissioning on paper but fails in production is a commissioning process that missed something. This course covers the full commissioning lifecycle: pre-commissioning planning, electrical and mechanical systems testing, controls and automation commissioning, and performance baseline establishment. You'll work with commissioning checklists and test plan templates used on real facility launches, plus staff readiness assessment and vendor coordination — the operational handoff steps that determine whether a new facility actually performs once it's live. This course is built for the person accountable for a launch date: it gives you a repeatable framework so nothing gets missed between 'construction complete' and 'operationally ready.'",
+  "why_it_matters": "Commissioning is where a data center proves it works as designed before live load arrives. Problems found at this stage, such as wrong breaker settings, controls that do not sequence correctly or cooling that cannot hold temperature at full load, are far cheaper to fix than after customers move in. Data center commissioning is usually done in levels: factory witness testing, delivery and installation checks, startup, functional performance testing of individual systems and finally integrated systems testing (IST), which fails utility power and other components while load banks simulate IT load. ASHRAE Guideline 0 describes the general commissioning process. This program covers pre-commissioning planning, electrical, mechanical and controls testing, performance baselines and operational readiness.",
+  "audience": "Project leads and facility engineers overseeing a new build, expansion, or major system upgrade.",
+  "prerequisites": "No prior certification required. Assumes basic familiarity with facility systems.",
+  "learning_outcomes": [
+    "Build a pre-commissioning plan that sequences testing correctly",
+    "Apply electrical and mechanical systems testing protocols before go-live",
+    "Commission controls and automation systems with a documented test plan",
+    "Establish performance baselines for post-occupancy comparison",
+    "Assess operational readiness and coordinate vendor handoff before launch",
+    "Certificate of completion on finish",
+    "Self-paced — start and stop anytime",
+    "Delivered by an IACET-accredited provider",
+    "Volume pricing available for teams"
+  ],
+  "modules": [
+    {
+      "title": "Pre-Commissioning Planning",
+      "summary": "Sequencing testing so issues surface before they're expensive to fix."
+    },
+    {
+      "title": "Electrical Systems Testing & Verification",
+      "summary": "Verifying electrical infrastructure performs as designed under load."
+    },
+    {
+      "title": "Mechanical Systems Testing",
+      "summary": "Commissioning cooling and mechanical systems against design specifications."
+    },
+    {
+      "title": "Control Systems & Automation Commissioning",
+      "summary": "Making sure BMS and automation systems are configured correctly before handoff."
+    },
+    {
+      "title": "Performance Baseline Establishment",
+      "summary": "Capturing baseline data you'll need for post-occupancy optimization."
+    },
+    {
+      "title": "Operational Readiness Assessment",
+      "summary": "Confirming staff and procedures are ready before the facility goes live."
+    }
+  ],
+  "bundles": [
+    {
+      "id": "bundle-design-planning",
+      "name": "Design, Planning & Commissioning Bundle",
+      "price_usd": 557.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    },
+    {
+      "id": "bundle-complete-catalog",
+      "name": "Complete Data Center Professional Bundle",
+      "price_usd": 2928.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    }
+  ],
+  "language": "en",
+  "delivery": "Online, self-paced, no completion deadline",
+  "certificate": {
+    "type": "Certificate of completion",
+    "issuer": "HAZWOPER OSHA Training, LLC",
+    "issuer_accreditation": "IACET Accredited Provider (provider-level accreditation)",
+    "delivery": "Issued immediately on completion; downloadable and printable",
+    "validity_period": "No fixed expiration; follow your employer's refresher policy",
+    "verification_url": "https://hazwoper-osha.com/certificate-verification",
+    "is_license_or_government_certification": false,
+    "ceu_or_pdh_credit": false
+  },
+  "availability": "preorder",
+  "enroll_url": "https://datacentertraining.us/checkout.html?item=infrastructure-commissioning-startup",
+  "faqs": [
+    {
+      "question": "What is integrated systems testing (IST)?",
+      "answer": "IST is the final level of commissioning. It tests how power, cooling, controls and fire systems work together under realistic conditions, such as a utility failure with load banks simulating full IT load. It shows whether the facility actually rides through failures as designed."
+    },
+    {
+      "question": "What are commissioning levels 1 through 5?",
+      "answer": "They are a common way to structure data center commissioning: Level 1 factory testing, Level 2 delivery and installation inspection, Level 3 startup, Level 4 functional testing of each system and Level 5 integrated systems testing. Exact definitions vary by project."
+    },
+    {
+      "question": "Is commissioning only for new builds?",
+      "answer": "No. Expansions, major equipment replacements and control upgrades also need commissioning, and recommissioning an existing facility can find problems that have developed over time."
+    }
+  ],
+  "related_course_ids": [
+    "data-center-design-fundamentals",
+    "tier-infrastructure-fundamentals",
+    "capacity-planning-forecasting"
+  ],
+  "last_updated": "2026-09-29"
+}

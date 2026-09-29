@@ -1,0 +1,112 @@
+{
+  "id": "data-center-operations-management",
+  "catalog_number": 403,
+  "title": "Data Center Operations Management",
+  "url": "https://datacentertraining.us/courses/data-center-operations-management.html",
+  "api_url": "https://datacentertraining.us/api/courses/data-center-operations-management.json",
+  "track": "Operations & Reliability Track",
+  "category": "Operations",
+  "course_type": "comprehensive",
+  "course_type_label": "Comprehensive Program",
+  "duration_hours": 18,
+  "duration_iso8601": "PT18H",
+  "module_count": 6,
+  "price_usd": 325.99,
+  "currency": "USD",
+  "standards": [
+    "DCIM",
+    "SLA Frameworks"
+  ],
+  "summary": "Run daily operations like the teams behind Tier 3/4 facilities — maintenance, incident response, and SLAs.",
+  "description": "Great facility design means little without operational discipline behind it. This program covers the full operations lifecycle: DCIM asset tracking, preventive maintenance planning, emergency response protocols, SLA metric development, and energy optimization — the systems that keep a well-designed facility actually performing. The course includes lab simulations of critical failure scenarios and DCIM platform training concepts, so the frameworks aren't just theoretical. You'll build maintenance checklists, incident response runbooks, and SLA scorecards you can adapt directly to your facility. Drawing on real-world case studies from Tier 3/4 operations teams, this course is built for the person who owns uptime — not just the systems that support it.",
+  "why_it_matters": "Industry outage surveys consistently find that a large share of data center incidents involve human error or process failures rather than equipment design. A skipped step in a maintenance procedure, an unclear shift handover or an untested emergency plan can take down a facility that was designed to stay up. Operations management turns a facility into a reliable service. It includes written procedures (SOPs, MOPs and EOPs), change control, preventive maintenance, DCIM and asset tracking, incident management and the service level metrics customers see. It also includes energy management, because operating decisions drive a large part of the power bill. This program covers the full operations lifecycle for facility managers and operations directors responsible for daily uptime.",
+  "audience": "Facility managers and operations directors responsible for day-to-day uptime.",
+  "prerequisites": "No prior certification required. Assumes basic familiarity with facility systems.",
+  "learning_outcomes": [
+    "Structure a facility lifecycle management and preventive maintenance program",
+    "Use DCIM concepts to track assets, capacity, and power/thermal headroom",
+    "Build an emergency response and incident management protocol",
+    "Develop SLA metrics and performance scorecards for stakeholder reporting",
+    "Apply energy management strategies to reduce operating cost without risking uptime",
+    "Certificate of completion on finish",
+    "Self-paced — start and stop anytime",
+    "Delivered by an IACET-accredited provider",
+    "Volume pricing available for teams"
+  ],
+  "modules": [
+    {
+      "title": "Facility Lifecycle Management",
+      "summary": "Managing a facility from commissioning through end-of-life equipment refresh."
+    },
+    {
+      "title": "DCIM Systems & Asset Tracking",
+      "summary": "What DCIM software actually tracks, and how to use it for capacity planning."
+    },
+    {
+      "title": "Preventive Maintenance Planning",
+      "summary": "Scheduling maintenance that prevents failures instead of just responding to them."
+    },
+    {
+      "title": "Emergency Response & Incident Management",
+      "summary": "Runbooks and escalation paths for critical system failures."
+    },
+    {
+      "title": "SLA Metrics & Performance Tracking",
+      "summary": "Defining and reporting the metrics stakeholders actually care about."
+    },
+    {
+      "title": "Energy Management & Efficiency Optimization",
+      "summary": "Cutting operating cost through smarter energy management, not just better equipment."
+    }
+  ],
+  "bundles": [
+    {
+      "id": "bundle-operations-reliability",
+      "name": "Operations & Reliability Bundle",
+      "price_usd": 830.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    },
+    {
+      "id": "bundle-complete-catalog",
+      "name": "Complete Data Center Professional Bundle",
+      "price_usd": 2928.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    }
+  ],
+  "language": "en",
+  "delivery": "Online, self-paced, no completion deadline",
+  "certificate": {
+    "type": "Certificate of completion",
+    "issuer": "HAZWOPER OSHA Training, LLC",
+    "issuer_accreditation": "IACET Accredited Provider (provider-level accreditation)",
+    "delivery": "Issued immediately on completion; downloadable and printable",
+    "validity_period": "No fixed expiration; follow your employer's refresher policy",
+    "verification_url": "https://hazwoper-osha.com/certificate-verification",
+    "is_license_or_government_certification": false,
+    "ceu_or_pdh_credit": false
+  },
+  "availability": "preorder",
+  "enroll_url": "https://datacentertraining.us/checkout.html?item=data-center-operations-management",
+  "faqs": [
+    {
+      "question": "What are SOPs, MOPs and EOPs?",
+      "answer": "Standard operating procedures (SOPs) cover routine tasks. Methods of procedure (MOPs) are step-by-step plans for specific maintenance or change work, including backout steps. Emergency operating procedures (EOPs) tell staff what to do during failures. Together they make operations repeatable and reduce human error."
+    },
+    {
+      "question": "How are data center SLAs usually measured?",
+      "answer": "Common metrics include availability of power and cooling, environmental conditions at the rack, response and resolution times for incidents and completion of scheduled maintenance. The SLA Metrics & Performance Tracking module covers how to define and report them."
+    },
+    {
+      "question": "Who should take this program?",
+      "answer": "Facility managers, operations directors, shift leads and engineers moving into operations leadership. It is also useful for colocation and enterprise teams formalizing their operations program."
+    }
+  ],
+  "related_course_ids": [
+    "disaster-recovery-business-continuity",
+    "preventive-maintenance-planning",
+    "incident-response-troubleshooting",
+    "business-continuity-disaster-recovery-planning",
+    "building-maintenance-fundamentals"
+  ],
+  "last_updated": "2026-09-29"
+}

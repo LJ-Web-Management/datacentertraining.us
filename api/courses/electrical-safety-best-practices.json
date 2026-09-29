@@ -1,0 +1,102 @@
+{
+  "id": "electrical-safety-best-practices",
+  "catalog_number": 433,
+  "title": "Electrical Safety & Best Practices",
+  "url": "https://datacentertraining.us/courses/electrical-safety-best-practices.html",
+  "api_url": "https://datacentertraining.us/api/courses/electrical-safety-best-practices.json",
+  "track": "Power & Electrical Systems Track",
+  "category": "Power & Electrical",
+  "course_type": "modular",
+  "course_type_label": "Modular Specialization",
+  "duration_hours": 3,
+  "duration_iso8601": "PT3H",
+  "module_count": 4,
+  "price_usd": 99.99,
+  "currency": "USD",
+  "standards": [
+    "NFPA 70E"
+  ],
+  "summary": "NFPA 70E-aligned electrical safety fundamentals for facility staff.",
+  "description": "Safety fundamentals for electrical workers: NFPA 70E principles, personal protective equipment, and hazard identification. This course covers the core safety knowledge every facility employee working near electrical systems should have. You'll cover lockout/tagout concepts and emergency response procedures, finishing with a solid understanding of electrical workplace safety fundamentals.",
+  "why_it_matters": "Electrical work in a data center often happens under uptime pressure, which is when shortcuts are most tempting. Most electrical injuries come from a small set of causes: working on equipment assumed to be dead, skipping lockout/tagout, wearing the wrong PPE, or getting too close to exposed parts. NFPA 70E sets out the practices that prevent those injuries, including risk assessments, approach boundaries, PPE selection and the requirement to create an electrically safe work condition whenever possible. OSHA's electrical safety-related work practice rules make these obligations enforceable. This course covers electrical safety standards, PPE and test equipment, hazard recognition and emergency procedures for workers and facilities staff near energized equipment.",
+  "audience": "Electrical workers and facilities staff working near energized equipment.",
+  "prerequisites": "No prior certification required. Relevant equipment exposure is helpful.",
+  "learning_outcomes": [
+    "Apply core NFPA 70E electrical safety principles on the job",
+    "Select and use appropriate PPE for electrical work",
+    "Recognize common electrical hazards before they cause injury",
+    "Follow lockout/tagout and emergency response procedures correctly",
+    "Certificate of completion on finish",
+    "Self-paced — start and stop anytime",
+    "Delivered by an IACET-accredited provider",
+    "Volume pricing available for teams"
+  ],
+  "modules": [
+    {
+      "title": "Electrical Safety Standards",
+      "summary": "Core NFPA 70E principles every technician should know."
+    },
+    {
+      "title": "PPE & Equipment",
+      "summary": "Selecting and using PPE correctly for the hazard level."
+    },
+    {
+      "title": "Hazard Recognition",
+      "summary": "Recognizing electrical hazards before they become incidents."
+    },
+    {
+      "title": "Emergency Procedures",
+      "summary": "Emergency response when something goes wrong near energized equipment."
+    }
+  ],
+  "bundles": [
+    {
+      "id": "bundle-power-electrical",
+      "name": "Power & Electrical Systems Bundle",
+      "price_usd": 986.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    },
+    {
+      "id": "bundle-complete-catalog",
+      "name": "Complete Data Center Professional Bundle",
+      "price_usd": 2928.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    }
+  ],
+  "language": "en",
+  "delivery": "Online, self-paced, no completion deadline",
+  "certificate": {
+    "type": "Certificate of completion",
+    "issuer": "HAZWOPER OSHA Training, LLC",
+    "issuer_accreditation": "IACET Accredited Provider (provider-level accreditation)",
+    "delivery": "Issued immediately on completion; downloadable and printable",
+    "validity_period": "No fixed expiration; follow your employer's refresher policy",
+    "verification_url": "https://hazwoper-osha.com/certificate-verification",
+    "is_license_or_government_certification": false,
+    "ceu_or_pdh_credit": false
+  },
+  "availability": "preorder",
+  "enroll_url": "https://datacentertraining.us/checkout.html?item=electrical-safety-best-practices",
+  "faqs": [
+    {
+      "question": "What is NFPA 70E?",
+      "answer": "NFPA 70E is the Standard for Electrical Safety in the Workplace published by the National Fire Protection Association. It sets out practices for protecting workers from shock and arc flash, and OSHA commonly refers to it when enforcing electrical safety requirements."
+    },
+    {
+      "question": "What should you do if someone is in contact with an energized conductor?",
+      "answer": "Do not touch them. De-energize the circuit if you can do so safely, or use a non-conductive object to separate them, then call emergency services and start first aid or CPR if trained. The Emergency Procedures module covers this in more detail."
+    },
+    {
+      "question": "How often is electrical safety retraining required?",
+      "answer": "NFPA 70E calls for retraining at intervals of no more than three years, and sooner when there are new procedures, new equipment or signs that a worker is not following safe practices."
+    }
+  ],
+  "related_course_ids": [
+    "power-systems-electrical-fundamentals",
+    "ups-operations-load-testing",
+    "generator-operations-maintenance",
+    "batteries-dc-circuits",
+    "data-center-arc-flash-safety"
+  ],
+  "last_updated": "2026-09-29"
+}

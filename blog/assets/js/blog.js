@@ -1,6 +1,7 @@
 var PAGE_SIZE = 20;
 var allPosts = [];
 var currentPage = 1;
+var loaded = false;
 var searchInput = document.getElementById("search-input");
 var sortSelect = document.getElementById("sort-select");
 
@@ -11,11 +12,13 @@ fetch("posts.json", { cache: "no-store" })
   })
   .then(function (posts) {
     allPosts = posts || [];
-    renderPosts();
+    loaded = true;
+    // The newest-first list is already server-rendered (with sized, responsive
+    // images); only take over when the list needs paginating.
+    if (allPosts.length > PAGE_SIZE) renderPosts();
   })
   .catch(function () {
-    allPosts = [];
-    renderPosts();
+    // Keep the server-rendered list; search/sort just stay inactive.
   });
 
 if (searchInput) {
@@ -35,7 +38,7 @@ if (sortSelect) {
 function renderPosts() {
   var container = document.getElementById("posts-list");
   var pagination = document.getElementById("pagination");
-  if (!container) return;
+  if (!container || !loaded) return;
 
   if (allPosts.length === 0) {
     container.innerHTML =
@@ -71,7 +74,7 @@ function renderPosts() {
   container.innerHTML = pagePosts
     .map(function (post) {
       var thumb = post.image
-        ? '<img class="post-card-thumb" src="' + escapeHtml(post.image) + '" alt="' + escapeHtml(post.title) + '" loading="lazy" onerror="handleThumbError(this)">'
+        ? '<img class="post-card-thumb" src="' + escapeHtml(post.image) + '"' + coverSrcset(post.image) + ' alt="' + escapeHtml(post.title) + '" width="1200" height="675" loading="lazy" decoding="async" onerror="handleThumbError(this)">'
         : brokenThumbHtml();
       return (
         '<a class="post-card" href="posts/' + encodeURIComponent(post.slug) + '.html">' +
@@ -179,6 +182,14 @@ function getComparator(sortVal) {
         return (b.date || "").localeCompare(a.date || "");
       };
   }
+}
+
+// Matches the WebP variants scripts/convert.js writes next to every .jpg cover.
+function coverSrcset(image) {
+  if (!/\.jpg$/.test(image)) return "";
+  var base = escapeHtml(image.replace(/\.jpg$/, ""));
+  return ' srcset="' + base + '-480w.webp 480w, ' + base + '-800w.webp 800w, ' + base + '-1200w.webp 1200w"' +
+    ' sizes="(max-width: 640px) calc(100vw - 32px), (max-width: 1024px) 50vw, 380px"';
 }
 
 function handleThumbError(img) {

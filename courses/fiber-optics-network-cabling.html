@@ -3,22 +3,32 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z3T42KYK64"></script>
+<!-- dct:head -->
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; object-src 'none'; base-uri 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#f5f5f7">
+<link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt">
+<link rel="alternate" type="application/json" href="/.well-known/mcp.json" title="WebMCP manifest">
+<link rel="service-desc" type="application/vnd.oai.openapi+json" href="/openapi.json">
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-Z3T42KYK64');
+/* Analytics and chat load on the first interaction (scroll, tap, key, mouse move) so they never delay rendering. */
+(function(w,d){
+  w.dataLayer=w.dataLayer||[];w.gtag=function(){w.dataLayer.push(arguments);};w.gtag('js',new Date());w.gtag('config','G-Z3T42KYK64');
+  w.clarity=w.clarity||function(){(w.clarity.q=w.clarity.q||[]).push(arguments);};
+  w.Tawk_API=w.Tawk_API||{};w.Tawk_API.onLoad=function(){w.Tawk_API.minimize();};
+  var ev=['pointerdown','keydown','touchstart','scroll','mousemove'],done=0;
+  function add(src,attrs){var s=d.createElement('script');s.async=true;s.src=src;for(var k in attrs)s.setAttribute(k,attrs[k]);d.head.appendChild(s);}
+  function go(){if(done)return;done=1;ev.forEach(function(e){w.removeEventListener(e,go,{passive:true});});
+    add('https://www.googletagmanager.com/gtag/js?id=G-Z3T42KYK64');
+    add('https://analytics.ahrefs.com/analytics.js',{'data-key':'tVAd7KxwKax+pAfHx46Zgg'});
+    add('https://www.clarity.ms/tag/ylza43nm4m');
+    w.Tawk_LoadStart=new Date();add('https://embed.tawk.to/6a5a95a2096ab21d402a762c/1jtoth11r',{charset:'UTF-8',crossorigin:'*'});
+  }
+  ev.forEach(function(e){w.addEventListener(e,go,{passive:true});});
+})(window,document);
+if(navigator.modelContext){var m=document.createElement('script');m.src='/js/webmcp.js';m.defer=true;document.head.appendChild(m);}
 </script>
-<script src="https://analytics.ahrefs.com/analytics.js" data-key="tVAd7KxwKax+pAfHx46Zgg" async></script>
-<script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "ylza43nm4m");
-</script>
+<!-- /dct:head -->
 <title>Fiber Optics &amp; Network Cabling | Data Center Training</title>
 <meta name="description" content="Terminate, test, and troubleshoot data center fiber to ANSI/TIA-942 standards. 3.5 hrs self-paced online course, $99.99. Certificate of completion included.">
 <meta name="robots" content="index, follow">
@@ -33,33 +43,103 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:site_name" content="Data Center Training">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@HazwoperOsha">
+<meta name="twitter:title" content="Fiber Optics &amp; Network Cabling | datacentertraining.us">
+<meta name="twitter:description" content="Terminate, test, and troubleshoot data center fiber to ANSI/TIA-942 standards.">
+<meta name="twitter:image" content="https://datacentertraining.us/images/og-image.jpg">
 
-<link rel="stylesheet" href="../css/tokens.css">
-<link rel="stylesheet" href="../css/style.css">
-<script type="text/javascript" src="../js/config.js" defer></script>
+<link rel="stylesheet" href="../css/site.min.css">
+<script src="../js/nav.js" defer></script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Course",
+  "@id": "https://datacentertraining.us/courses/fiber-optics-network-cabling.html#course",
   "name": "Fiber Optics & Network Cabling",
-  "description": "A technical, hands-on curriculum covering multi-mode and single-mode fiber, connector types (LC, SC, MTP/MPO), fiber plant design, termination, splicing, and OTDR testing. Every technique is grounded in ANSI/TIA-942 data center cabling standards, so what you learn maps directly to audit and design requirements.",
+  "description": "A technical, hands-on curriculum covering multi-mode and single-mode fiber, connector types (LC, SC, MTP/MPO), fiber plant design, termination, splicing, and OTDR testing. Every technique is grounded in ANSI/TIA-942 data center cabling standards, so what you learn maps directly to audit and design requirements. By the end, you'll be able to terminate and test fiber connections independently and troubleshoot connectivity issues without waiting on a specialist.",
+  "url": "https://datacentertraining.us/courses/fiber-optics-network-cabling.html",
+  "courseCode": "DCT-423",
+  "inLanguage": "en",
+  "isAccessibleForFree": false,
+  "timeRequired": "PT3H30M",
+  "teaches": [
+    "Identify the right fiber type and connector for a given application",
+    "Terminate and splice fiber to data center standards",
+    "Run OTDR testing and interpret results to isolate faults",
+    "Apply ANSI/TIA-942 cabling standards to plant design and documentation",
+    "Certificate of completion on finish",
+    "Self-paced — start and stop anytime",
+    "Delivered by an IACET-accredited provider",
+    "Volume pricing available for teams"
+  ],
+  "coursePrerequisites": "No prior certification required. Relevant equipment exposure is helpful.",
+  "audience": {
+    "@type": "EducationalAudience",
+    "audienceType": "Network technicians and cabling crews working on data center fiber plant."
+  },
+  "about": [
+    "ANSI/TIA-942"
+  ],
+  "educationalCredentialAwarded": {
+    "@type": "EducationalOccupationalCredential",
+    "name": "Certificate of completion",
+    "credentialCategory": "Certificate of completion"
+  },
   "provider": {
     "@type": "Organization",
+    "@id": "https://hazwoper-osha.com/#organization",
     "name": "HAZWOPER OSHA Training, LLC",
+    "url": "https://hazwoper-osha.com/",
     "sameAs": "https://hazwoper-osha.com/"
   },
-  "offers": {
-    "@type": "Offer",
-    "price": 99.99,
-    "priceCurrency": "USD",
-    "availability": "https://schema.org/PreOrder",
-    "url": "https://datacentertraining.us/checkout.html?item=fiber-optics-network-cabling"
+  "publisher": {
+    "@type": "EducationalOrganization",
+    "@id": "https://datacentertraining.us/#organization",
+    "name": "Data Center Training",
+    "url": "https://datacentertraining.us/"
   },
-  "hasCourseInstance": {
-    "@type": "CourseInstance",
-    "courseMode": "online",
-    "courseWorkload": "3.5 hrs"
-  }
+  "image": "https://datacentertraining.us/images/og-image.jpg",
+  "offers": [
+    {
+      "@type": "Offer",
+      "category": "Paid",
+      "price": "99.99",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/PreOrder",
+      "url": "https://datacentertraining.us/courses/fiber-optics-network-cabling.html"
+    }
+  ],
+  "hasCourseInstance": [
+    {
+      "@type": "CourseInstance",
+      "courseMode": "Online",
+      "courseWorkload": "PT3H30M",
+      "inLanguage": "en"
+    }
+  ],
+  "syllabusSections": [
+    {
+      "@type": "Syllabus",
+      "name": "Fiber Types & Standards",
+      "description": "Multi-mode vs. single-mode, and matching fiber type to application."
+    },
+    {
+      "@type": "Syllabus",
+      "name": "Termination & Splicing",
+      "description": "Hands-on termination and splicing technique."
+    },
+    {
+      "@type": "Syllabus",
+      "name": "Testing & Troubleshooting",
+      "description": "OTDR testing to isolate faults fast."
+    },
+    {
+      "@type": "Syllabus",
+      "name": "ANSI/TIA-942 Cabling Standards",
+      "description": "Designing and documenting a fiber plant to standard."
+    }
+  ]
 }
 </script>
 <script type="application/ld+json">
@@ -252,7 +332,7 @@
           <div class="course-sidebar-hours">3.5 hrs</div>
           <div class="course-sidebar-modules">4 modules &middot; self-paced online</div>
           <div class="course-sidebar-price">$99.99</div>
-          <a href="../checkout.html?item=fiber-optics-network-cabling" class="btn btn-primary btn-block" aria-label="Enroll in Fiber Optics &amp; Network Cabling">Enroll Now</a>
+          <a href="../checkout.html?item=fiber-optics-network-cabling" class="btn btn-primary btn-block" aria-label="Enroll Now: Fiber Optics &amp; Network Cabling">Enroll Now</a>
           <ul class="course-sidebar-list">
             <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Certificate of completion on finish</span></li>
             <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Self-paced &mdash; start and stop anytime</span></li>
@@ -320,7 +400,7 @@
       <h3>Training</h3>
       <a href="../courses.html">Course Catalog</a>
       <a href="../bundles.html">Bundles</a>
-      <a href="../who.html">Which Courses Do I Need?</a>
+      <a href="../who.html#which-course">Which Courses Do I Need?</a>
       <a href="../certifications.html">Certifications &amp; Accreditations</a>
       <a href="../who.html">Who It's For</a>
       <a href="../faq.html">FAQ</a>
@@ -339,6 +419,8 @@
       <h3>For AI Agents</h3>
       <a href="/llms.txt">llms.txt</a>
       <a href="/llms-full.txt">llms-full.txt</a>
+      <a href="/.well-known/mcp.json">WebMCP Manifest</a>
+      <a href="/api/index.json">JSON Catalog API</a>
       <a href="/openapi.json">API Docs (OpenAPI)</a>
       <a href="/sitemap.xml">Sitemap</a>
     </div>
@@ -365,7 +447,7 @@
           <a href="https://www.youtube.com/@hazwoper-osha" target="_blank" rel="noopener" aria-label="YouTube">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33zM9.75 15.02V8.48l5.75 3.27z"/></svg>
           </a>
-          <a href="https://twitter.com/HazwoperOsha" target="_blank" rel="noopener" aria-label="X">
+          <a href="https://x.com/HazwoperOsha" target="_blank" rel="noopener" aria-label="X">
             <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.4 8.4L23 22h-6.6l-5.2-6.8L5.1 22H2l7.9-9L1.6 2h6.8l4.7 6.2z"/></svg>
           </a>
           <a href="https://www.linkedin.com/company/hazwoper-osha" target="_blank" rel="noopener" aria-label="LinkedIn">
@@ -385,25 +467,5 @@
   </div>
 </footer>
 
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-Tawk_API.onLoad = function(){
-  Tawk_API.minimize();
-};
-
-setTimeout(function(){
-  Tawk_LoadStart = new Date();
-  (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/6a5a95a2096ab21d402a762c/1jtoth11r';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-  })();
-}, 2500);
-</script>
-<!--End of Tawk.to Script-->
 </body>
 </html>

@@ -3,22 +3,32 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Z3T42KYK64"></script>
+<!-- dct:head -->
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; object-src 'none'; base-uri 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#f5f5f7">
+<link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt">
+<link rel="alternate" type="application/json" href="/.well-known/mcp.json" title="WebMCP manifest">
+<link rel="service-desc" type="application/vnd.oai.openapi+json" href="/openapi.json">
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-Z3T42KYK64');
+/* Analytics and chat load on the first interaction (scroll, tap, key, mouse move) so they never delay rendering. */
+(function(w,d){
+  w.dataLayer=w.dataLayer||[];w.gtag=function(){w.dataLayer.push(arguments);};w.gtag('js',new Date());w.gtag('config','G-Z3T42KYK64');
+  w.clarity=w.clarity||function(){(w.clarity.q=w.clarity.q||[]).push(arguments);};
+  w.Tawk_API=w.Tawk_API||{};w.Tawk_API.onLoad=function(){w.Tawk_API.minimize();};
+  var ev=['pointerdown','keydown','touchstart','scroll','mousemove'],done=0;
+  function add(src,attrs){var s=d.createElement('script');s.async=true;s.src=src;for(var k in attrs)s.setAttribute(k,attrs[k]);d.head.appendChild(s);}
+  function go(){if(done)return;done=1;ev.forEach(function(e){w.removeEventListener(e,go,{passive:true});});
+    add('https://www.googletagmanager.com/gtag/js?id=G-Z3T42KYK64');
+    add('https://analytics.ahrefs.com/analytics.js',{'data-key':'tVAd7KxwKax+pAfHx46Zgg'});
+    add('https://www.clarity.ms/tag/ylza43nm4m');
+    w.Tawk_LoadStart=new Date();add('https://embed.tawk.to/6a5a95a2096ab21d402a762c/1jtoth11r',{charset:'UTF-8',crossorigin:'*'});
+  }
+  ev.forEach(function(e){w.addEventListener(e,go,{passive:true});});
+})(window,document);
+if(navigator.modelContext){var m=document.createElement('script');m.src='/js/webmcp.js';m.defer=true;document.head.appendChild(m);}
 </script>
-<script src="https://analytics.ahrefs.com/analytics.js" data-key="tVAd7KxwKax+pAfHx46Zgg" async></script>
-<script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "ylza43nm4m");
-</script>
+<!-- /dct:head -->
 <title>Data Center Design Fundamentals | Data Center Training</title>
 <meta name="description" content="Design data center facilities that scale — from site selection to redundancy strategy. 16 hrs self-paced online course, $312.99. Certificate included.">
 <meta name="robots" content="index, follow">
@@ -33,33 +43,114 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:site_name" content="Data Center Training">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@HazwoperOsha">
+<meta name="twitter:title" content="Data Center Design Fundamentals | datacentertraining.us">
+<meta name="twitter:description" content="Design data center facilities that scale — from site selection to redundancy strategy.">
+<meta name="twitter:image" content="https://datacentertraining.us/images/og-image.jpg">
 
-<link rel="stylesheet" href="../css/tokens.css">
-<link rel="stylesheet" href="../css/style.css">
-<script type="text/javascript" src="../js/config.js" defer></script>
+<link rel="stylesheet" href="../css/site.min.css">
+<script src="../js/nav.js" defer></script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Course",
+  "@id": "https://datacentertraining.us/courses/data-center-design-fundamentals.html#course",
   "name": "Data Center Design Fundamentals",
-  "description": "Every high-availability data center starts as a set of design decisions \u2014 and the wrong ones are expensive to unwind after concrete is poured. This course walks through the full design lifecycle used by enterprise facility teams: international standards (ANSI/TIA-942, ISO 14644), site selection criteria, thermal design principles, power architecture, and the redundancy trade-offs (N, N+1, N+2, 2N) that determine both uptime and capital cost.",
+  "description": "Every high-availability data center starts as a set of design decisions — and the wrong ones are expensive to unwind after concrete is poured. This course walks through the full design lifecycle used by enterprise facility teams: international standards (ANSI/TIA-942, ISO 14644), site selection criteria, thermal design principles, power architecture, and the redundancy trade-offs (N, N+1, N+2, 2N) that determine both uptime and capital cost. You'll work through real design case studies, thermal modeling concepts, and ROI analysis frameworks used to justify facility investment to executive stakeholders. Rather than teaching a single vendor's playbook, the course focuses on the trade-off reasoning behind design choices, so you can evaluate proposals, vet vendor recommendations, and defend your own design decisions with data. By the end, you'll be able to read a facility design proposal critically, model redundancy options against budget constraints, and build the financial case for an expansion or new build.",
+  "url": "https://datacentertraining.us/courses/data-center-design-fundamentals.html",
+  "courseCode": "DCT-401",
+  "inLanguage": "en",
+  "isAccessibleForFree": false,
+  "timeRequired": "PT16H",
+  "teaches": [
+    "Apply ANSI/TIA-942 and ISO 14644 standards to real site and facility design decisions",
+    "Evaluate site selection criteria for power, connectivity, climate, and risk",
+    "Compare N, N+1, N+2, and 2N redundancy models on cost and uptime trade-offs",
+    "Build thermal design fundamentals into early-stage facility planning",
+    "Construct a capital ROI case for a facility expansion or new build",
+    "Certificate of completion on finish",
+    "Self-paced — start and stop anytime",
+    "Delivered by an IACET-accredited provider",
+    "Volume pricing available for teams"
+  ],
+  "coursePrerequisites": "No prior certification required. Assumes basic familiarity with facility systems.",
+  "audience": {
+    "@type": "EducationalAudience",
+    "audienceType": "Facility engineers, design consultants, and project leads planning new builds or major expansions."
+  },
+  "about": [
+    "ANSI/TIA-942"
+  ],
+  "educationalCredentialAwarded": {
+    "@type": "EducationalOccupationalCredential",
+    "name": "Certificate of completion",
+    "credentialCategory": "Certificate of completion"
+  },
   "provider": {
     "@type": "Organization",
+    "@id": "https://hazwoper-osha.com/#organization",
     "name": "HAZWOPER OSHA Training, LLC",
+    "url": "https://hazwoper-osha.com/",
     "sameAs": "https://hazwoper-osha.com/"
   },
-  "offers": {
-    "@type": "Offer",
-    "price": 312.99,
-    "priceCurrency": "USD",
-    "availability": "https://schema.org/PreOrder",
-    "url": "https://datacentertraining.us/checkout.html?item=data-center-design-fundamentals"
+  "publisher": {
+    "@type": "EducationalOrganization",
+    "@id": "https://datacentertraining.us/#organization",
+    "name": "Data Center Training",
+    "url": "https://datacentertraining.us/"
   },
-  "hasCourseInstance": {
-    "@type": "CourseInstance",
-    "courseMode": "online",
-    "courseWorkload": "16 hrs"
-  }
+  "image": "https://datacentertraining.us/images/og-image.jpg",
+  "offers": [
+    {
+      "@type": "Offer",
+      "category": "Paid",
+      "price": "312.99",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/PreOrder",
+      "url": "https://datacentertraining.us/courses/data-center-design-fundamentals.html"
+    }
+  ],
+  "hasCourseInstance": [
+    {
+      "@type": "CourseInstance",
+      "courseMode": "Online",
+      "courseWorkload": "PT16H",
+      "inLanguage": "en"
+    }
+  ],
+  "syllabusSections": [
+    {
+      "@type": "Syllabus",
+      "name": "Standards & International Best Practices (ANSI/TIA-942, ISO 14644)",
+      "description": "How ANSI/TIA-942 and ISO 14644 shape facility design requirements, and where they leave room for engineering judgment."
+    },
+    {
+      "@type": "Syllabus",
+      "name": "Site Selection & Facility Planning",
+      "description": "Evaluating power availability, connectivity, climate, seismic risk, and expansion capacity before committing to a site."
+    },
+    {
+      "@type": "Syllabus",
+      "name": "Thermal Design Principles",
+      "description": "Foundational airflow and heat-load concepts that drive every downstream cooling decision."
+    },
+    {
+      "@type": "Syllabus",
+      "name": "Power Architecture Overview",
+      "description": "Utility interconnection, distribution topology, and where single points of failure hide."
+    },
+    {
+      "@type": "Syllabus",
+      "name": "Redundancy Models & Trade-offs",
+      "description": "N, N+1, N+2, and 2N compared on uptime, cost, and operational complexity."
+    },
+    {
+      "@type": "Syllabus",
+      "name": "Financial Modeling for Expansion",
+      "description": "Building the ROI case that gets a facility expansion approved."
+    }
+  ]
 }
 </script>
 <script type="application/ld+json">
@@ -262,7 +353,7 @@
           <div class="course-sidebar-hours">16 hrs</div>
           <div class="course-sidebar-modules">6 modules &middot; self-paced online</div>
           <div class="course-sidebar-price">$312.99</div>
-          <a href="../checkout.html?item=data-center-design-fundamentals" class="btn btn-primary btn-block" aria-label="Enroll in Data Center Design Fundamentals">Enroll Now</a>
+          <a href="../checkout.html?item=data-center-design-fundamentals" class="btn btn-primary btn-block" aria-label="Enroll Now: Data Center Design Fundamentals">Enroll Now</a>
           <ul class="course-sidebar-list">
             <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Certificate of completion on finish</span></li>
             <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Self-paced &mdash; start and stop anytime</span></li>
@@ -330,7 +421,7 @@
       <h3>Training</h3>
       <a href="../courses.html">Course Catalog</a>
       <a href="../bundles.html">Bundles</a>
-      <a href="../who.html">Which Courses Do I Need?</a>
+      <a href="../who.html#which-course">Which Courses Do I Need?</a>
       <a href="../certifications.html">Certifications &amp; Accreditations</a>
       <a href="../who.html">Who It's For</a>
       <a href="../faq.html">FAQ</a>
@@ -349,6 +440,8 @@
       <h3>For AI Agents</h3>
       <a href="/llms.txt">llms.txt</a>
       <a href="/llms-full.txt">llms-full.txt</a>
+      <a href="/.well-known/mcp.json">WebMCP Manifest</a>
+      <a href="/api/index.json">JSON Catalog API</a>
       <a href="/openapi.json">API Docs (OpenAPI)</a>
       <a href="/sitemap.xml">Sitemap</a>
     </div>
@@ -375,7 +468,7 @@
           <a href="https://www.youtube.com/@hazwoper-osha" target="_blank" rel="noopener" aria-label="YouTube">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33zM9.75 15.02V8.48l5.75 3.27z"/></svg>
           </a>
-          <a href="https://twitter.com/HazwoperOsha" target="_blank" rel="noopener" aria-label="X">
+          <a href="https://x.com/HazwoperOsha" target="_blank" rel="noopener" aria-label="X">
             <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.4 8.4L23 22h-6.6l-5.2-6.8L5.1 22H2l7.9-9L1.6 2h6.8l4.7 6.2z"/></svg>
           </a>
           <a href="https://www.linkedin.com/company/hazwoper-osha" target="_blank" rel="noopener" aria-label="LinkedIn">
@@ -395,25 +488,5 @@
   </div>
 </footer>
 
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-Tawk_API.onLoad = function(){
-  Tawk_API.minimize();
-};
-
-setTimeout(function(){
-  Tawk_LoadStart = new Date();
-  (function(){
-    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-    s1.async=true;
-    s1.src='https://embed.tawk.to/6a5a95a2096ab21d402a762c/1jtoth11r';
-    s1.charset='UTF-8';
-    s1.setAttribute('crossorigin','*');
-    s0.parentNode.insertBefore(s1,s0);
-  })();
-}, 2500);
-</script>
-<!--End of Tawk.to Script-->
 </body>
 </html>

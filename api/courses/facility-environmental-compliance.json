@@ -1,0 +1,99 @@
+{
+  "id": "facility-environmental-compliance",
+  "catalog_number": 428,
+  "title": "Facility Environmental Compliance",
+  "url": "https://datacentertraining.us/courses/facility-environmental-compliance.html",
+  "api_url": "https://datacentertraining.us/api/courses/facility-environmental-compliance.json",
+  "track": "Security & Compliance Track",
+  "category": "Security & Compliance",
+  "course_type": "modular",
+  "course_type_label": "Modular Specialization",
+  "duration_hours": 3,
+  "duration_iso8601": "PT3H",
+  "module_count": 4,
+  "price_usd": 99.99,
+  "currency": "USD",
+  "standards": [],
+  "summary": "Understand the environmental regulations that apply to your facility.",
+  "description": "Regulatory basics for facility managers: environmental regulations overview, permit and reporting requirements, and compliance audit procedures. Includes compliance checklist templates you can adapt to your facility's specific permit obligations. By the end, you'll understand the regulatory landscape well enough to know what applies to your facility and when to bring in specialized counsel.",
+  "why_it_matters": "Data centers have more environmental obligations than many people expect. Standby diesel generators often need air permits and are subject to EPA engine rules that limit non-emergency run hours. Large fuel storage can require a Spill Prevention, Control, and Countermeasure (SPCC) plan. Batteries, refrigerants, stormwater and hazardous waste can all bring their own reporting and record-keeping requirements. Missed reports and expired permits can lead to fines and, in some cases, limits on running generators when you need them. Requirements also vary by state and local agency, so each facility needs its own register of obligations. This course gives facility managers an overview of the main environmental regulations, permit and reporting requirements, compliance audit procedures and documentation practices, with checklist templates you can adapt to your permits.",
+  "audience": "Facility managers responsible for environmental permits and reporting.",
+  "prerequisites": "No prior certification required. Relevant equipment exposure is helpful.",
+  "learning_outcomes": [
+    "Identify which environmental regulations apply to your facility type",
+    "Understand permit and reporting requirements and deadlines",
+    "Run an internal compliance audit using a structured checklist",
+    "Build documentation practices that hold up under regulatory review",
+    "Certificate of completion on finish",
+    "Self-paced — start and stop anytime",
+    "Delivered by an IACET-accredited provider",
+    "Volume pricing available for teams"
+  ],
+  "modules": [
+    {
+      "title": "Environmental Regulations Overview",
+      "summary": "The environmental regulations most likely to apply to a data center facility."
+    },
+    {
+      "title": "Permit & Reporting Requirements",
+      "summary": "Understanding permit obligations and reporting deadlines."
+    },
+    {
+      "title": "Compliance Audit Procedures",
+      "summary": "Running an internal audit before a regulator does."
+    },
+    {
+      "title": "Documentation Best Practices",
+      "summary": "Recordkeeping that holds up under review."
+    }
+  ],
+  "bundles": [
+    {
+      "id": "bundle-security-compliance",
+      "name": "Security & Compliance Bundle",
+      "price_usd": 400.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    },
+    {
+      "id": "bundle-complete-catalog",
+      "name": "Complete Data Center Professional Bundle",
+      "price_usd": 2928.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    }
+  ],
+  "language": "en",
+  "delivery": "Online, self-paced, no completion deadline",
+  "certificate": {
+    "type": "Certificate of completion",
+    "issuer": "HAZWOPER OSHA Training, LLC",
+    "issuer_accreditation": "IACET Accredited Provider (provider-level accreditation)",
+    "delivery": "Issued immediately on completion; downloadable and printable",
+    "validity_period": "No fixed expiration; follow your employer's refresher policy",
+    "verification_url": "https://hazwoper-osha.com/certificate-verification",
+    "is_license_or_government_certification": false,
+    "ceu_or_pdh_credit": false
+  },
+  "availability": "preorder",
+  "enroll_url": "https://datacentertraining.us/checkout.html?item=facility-environmental-compliance",
+  "faqs": [
+    {
+      "question": "Do data center generators need environmental permits?",
+      "answer": "Often, yes. Depending on engine size, number of engines and location, standby generators may need a state or local air permit and must meet federal engine standards. Emergency engines generally have limits on hours for maintenance and testing. Your permit and local agency set the specific terms."
+    },
+    {
+      "question": "What is an SPCC plan?",
+      "answer": "A Spill Prevention, Control, and Countermeasure plan is required by EPA for facilities that store more than set thresholds of oil, including diesel fuel, above ground and could reasonably discharge to navigable waters. It describes how spills are prevented, contained and cleaned up."
+    },
+    {
+      "question": "Does this course replace legal or permit advice?",
+      "answer": "No. It explains common regulations and how to build a compliance program. Your permits, state regulators and environmental counsel remain the authority on your facility's specific obligations."
+    }
+  ],
+  "related_course_ids": [
+    "security-compliance-data-centers",
+    "access-control-physical-security",
+    "data-center-fire-suppression-safety",
+    "data-center-physical-security-access-control"
+  ],
+  "last_updated": "2026-09-29"
+}

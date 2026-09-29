@@ -1,0 +1,100 @@
+{
+  "id": "incident-response-troubleshooting",
+  "catalog_number": 429,
+  "title": "Incident Response & Troubleshooting",
+  "url": "https://datacentertraining.us/courses/incident-response-troubleshooting.html",
+  "api_url": "https://datacentertraining.us/api/courses/incident-response-troubleshooting.json",
+  "track": "Operations & Reliability Track",
+  "category": "Operations",
+  "course_type": "modular",
+  "course_type_label": "Modular Specialization",
+  "duration_hours": 4,
+  "duration_iso8601": "PT4H",
+  "module_count": 4,
+  "price_usd": 99.99,
+  "currency": "USD",
+  "standards": [],
+  "summary": "Systematic troubleshooting and root-cause analysis to cut MTTR.",
+  "description": "Practical troubleshooting for technicians: systematic problem-solving, root cause analysis techniques, and failure mode recognition. This course focuses on the process behind fast, accurate troubleshooting — not just the systems themselves. You'll build escalation procedures and documentation habits that reduce mean time to resolution, plus a troubleshooting tree you can adapt to your own facility's systems.",
+  "why_it_matters": "During an incident, the pressure is to restore service fast. Without a clear method, teams can chase symptoms, make changes that create a second failure or restore service without understanding what happened, so the same problem comes back next month. Good incident response has a repeatable process: stabilize, gather facts, form and test hypotheses, escalate at the right time and communicate clearly. Afterward, root cause analysis, using tools such as the 5 Whys, fishbone diagrams or fault trees, finds the underlying cause and the fix that prevents a repeat. This course covers troubleshooting methodology, root cause analysis, escalation and communication, and how to build a knowledge base so lessons are not lost.",
+  "audience": "Technicians and engineers responsible for incident response.",
+  "prerequisites": "No prior certification required. Relevant equipment exposure is helpful.",
+  "learning_outcomes": [
+    "Apply a systematic troubleshooting methodology under pressure",
+    "Run root cause analysis that prevents repeat incidents",
+    "Recognize common failure modes before they escalate",
+    "Build escalation procedures and documentation that reduce MTTR",
+    "Certificate of completion on finish",
+    "Self-paced — start and stop anytime",
+    "Delivered by an IACET-accredited provider",
+    "Volume pricing available for teams"
+  ],
+  "modules": [
+    {
+      "title": "Troubleshooting Methodology",
+      "summary": "A repeatable process for diagnosing problems fast, under pressure."
+    },
+    {
+      "title": "Root Cause Analysis",
+      "summary": "Getting past symptoms to the actual root cause."
+    },
+    {
+      "title": "Escalation & Communication",
+      "summary": "Escalating incidents clearly, without losing time or context."
+    },
+    {
+      "title": "Knowledge Base Development",
+      "summary": "Turning resolved incidents into a knowledge base that speeds up the next one."
+    }
+  ],
+  "bundles": [
+    {
+      "id": "bundle-operations-reliability",
+      "name": "Operations & Reliability Bundle",
+      "price_usd": 830.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    },
+    {
+      "id": "bundle-complete-catalog",
+      "name": "Complete Data Center Professional Bundle",
+      "price_usd": 2928.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    }
+  ],
+  "language": "en",
+  "delivery": "Online, self-paced, no completion deadline",
+  "certificate": {
+    "type": "Certificate of completion",
+    "issuer": "HAZWOPER OSHA Training, LLC",
+    "issuer_accreditation": "IACET Accredited Provider (provider-level accreditation)",
+    "delivery": "Issued immediately on completion; downloadable and printable",
+    "validity_period": "No fixed expiration; follow your employer's refresher policy",
+    "verification_url": "https://hazwoper-osha.com/certificate-verification",
+    "is_license_or_government_certification": false,
+    "ceu_or_pdh_credit": false
+  },
+  "availability": "preorder",
+  "enroll_url": "https://datacentertraining.us/checkout.html?item=incident-response-troubleshooting",
+  "faqs": [
+    {
+      "question": "What is root cause analysis?",
+      "answer": "Root cause analysis is a structured way to find the underlying reason a failure happened, not just the immediate symptom. The goal is a corrective action that stops the problem from recurring. Common methods include the 5 Whys, Ishikawa (fishbone) diagrams and fault tree analysis."
+    },
+    {
+      "question": "When should a technician escalate an incident?",
+      "answer": "When the issue affects or threatens critical load, when it goes beyond their authority or skills, or when the cause is not clear within a set time. Clear escalation criteria remove the guesswork, and the Escalation & Communication module covers how to set them."
+    },
+    {
+      "question": "Who is this course for?",
+      "answer": "Technicians, engineers and shift leads who respond to alarms and incidents in data centers or other critical facilities."
+    }
+  ],
+  "related_course_ids": [
+    "data-center-operations-management",
+    "disaster-recovery-business-continuity",
+    "preventive-maintenance-planning",
+    "business-continuity-disaster-recovery-planning",
+    "building-maintenance-fundamentals"
+  ],
+  "last_updated": "2026-09-29"
+}

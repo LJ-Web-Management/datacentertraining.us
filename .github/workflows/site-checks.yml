@@ -1,0 +1,59 @@
+name: Site checks (SEO + AI readiness)
+
+# Pull requests: fail if generated files are stale, any agent tool schema or
+# example is invalid, or the SEO audit (Ahrefs-style checks) finds an error.
+# Pushes to main: regenerate first (in case js/config.js, a course page, or the
+# CSS was edited without running the build), commit the result, then check.
+on:
+  pull_request:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "blog/uploads/**"
+  workflow_dispatch:
+
+concurrency:
+  group: site-checks-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install validator dependencies
+        working-directory: scripts
+        run: npm ci --no-audit --no-fund
+
+      - name: Regenerate and commit (main only)
+        if: github.event_name != 'pull_request'
+        run: |
+          node scripts/build-site.js
+          if [ -n "$(git status --porcelain)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add -A api .well-known llms.txt llms-full.txt openapi.json css/site.min.css blog/assets/css/blog.min.css '*.html'
+            git commit -m "Regenerate AI-agent layer and CSS bundle"
+            for attempt in 1 2 3 4 5; do
+              git push && break
+              git pull --rebase origin main
+              sleep $((attempt * 3))
+            done
+          fi
+
+      - name: Generated files are up to date
+        run: node scripts/build-site.js --check
+
+      - name: Agent tools, schemas, examples, JSON-LD
+        run: node scripts/validate-agent-layer.js
+
+      - name: SEO audit
+        run: python3 scripts/audit_site.py

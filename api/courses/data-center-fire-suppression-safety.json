@@ -1,0 +1,101 @@
+{
+  "id": "data-center-fire-suppression-safety",
+  "catalog_number": 450,
+  "title": "Data Center Fire Suppression System Safety Training (Clean Agent Systems)",
+  "url": "https://datacentertraining.us/courses/data-center-fire-suppression-safety.html",
+  "api_url": "https://datacentertraining.us/api/courses/data-center-fire-suppression-safety.json",
+  "track": "Security & Compliance Track",
+  "category": "Security & Compliance",
+  "course_type": "modular",
+  "course_type_label": "Modular Specialization",
+  "duration_hours": 2,
+  "duration_iso8601": "PT2H",
+  "module_count": 4,
+  "price_usd": 99.99,
+  "currency": "USD",
+  "standards": [
+    "NFPA 2001"
+  ],
+  "summary": "Clean agent fire suppression safety for occupied data hall environments.",
+  "description": "Clean agent fire suppression systems protect data center equipment without the water damage of traditional sprinklers — but they carry their own safety considerations for anyone in the data hall when a system discharges. This course covers clean agent system basics, evacuation procedures, and post-discharge safety. You'll leave able to tell a false alarm from a real discharge event and know exactly what re-entry looks like afterward.",
+  "why_it_matters": "Many data halls use clean agent fire suppression instead of, or alongside, sprinklers. Clean agents extinguish a fire without leaving water or residue on equipment. Some agents, such as HFC-227ea (known by trade names such as FM-200), work mainly by absorbing heat, while inert gas systems such as IG-541 work by lowering oxygen in the room. Either way, a discharge is loud and sudden, and people need to leave the room when the pre-discharge alarm sounds. Clean agent systems are designed and maintained to NFPA 2001. Most have a time delay between the alarm and discharge, and many include an abort switch. Staff need to recognize the alarms, know evacuation routes and understand what not to do after a discharge, such as re-entering before the room is ventilated. This course covers clean agent basics, alarm recognition, evacuation and post-discharge safety.",
+  "audience": "Facilities and fire/life safety staff responsible for data hall fire suppression systems.",
+  "prerequisites": "No prior certification required. Relevant equipment exposure is helpful.",
+  "learning_outcomes": [
+    "Understand how clean agent fire suppression systems work and why data centers use them",
+    "Follow correct evacuation procedures during a discharge event",
+    "Apply post-discharge safety procedures before re-entering a data hall",
+    "Recognize false alarm vs. real discharge indicators",
+    "Certificate of completion on finish",
+    "Self-paced — start and stop anytime",
+    "Delivered by an IACET-accredited provider",
+    "Volume pricing available for teams"
+  ],
+  "modules": [
+    {
+      "title": "Clean Agent System Basics",
+      "summary": "How clean agent suppression protects equipment without water damage."
+    },
+    {
+      "title": "Evacuation Procedures",
+      "summary": "What to do when a discharge event is triggered."
+    },
+    {
+      "title": "Post-Discharge Safety",
+      "summary": "Re-entry procedures after a clean agent discharge."
+    },
+    {
+      "title": "Alarm Recognition",
+      "summary": "Distinguishing false alarms from real discharge events."
+    }
+  ],
+  "bundles": [
+    {
+      "id": "bundle-security-compliance",
+      "name": "Security & Compliance Bundle",
+      "price_usd": 400.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    },
+    {
+      "id": "bundle-complete-catalog",
+      "name": "Complete Data Center Professional Bundle",
+      "price_usd": 2928.99,
+      "url": "https://datacentertraining.us/bundles.html"
+    }
+  ],
+  "language": "en",
+  "delivery": "Online, self-paced, no completion deadline",
+  "certificate": {
+    "type": "Certificate of completion",
+    "issuer": "HAZWOPER OSHA Training, LLC",
+    "issuer_accreditation": "IACET Accredited Provider (provider-level accreditation)",
+    "delivery": "Issued immediately on completion; downloadable and printable",
+    "validity_period": "No fixed expiration; follow your employer's refresher policy",
+    "verification_url": "https://hazwoper-osha.com/certificate-verification",
+    "is_license_or_government_certification": false,
+    "ceu_or_pdh_credit": false
+  },
+  "availability": "preorder",
+  "enroll_url": "https://datacentertraining.us/checkout.html?item=data-center-fire-suppression-safety",
+  "faqs": [
+    {
+      "question": "Are clean agent fire suppression systems safe for people?",
+      "answer": "Systems designed to NFPA 2001 use agent concentrations that are considered safe for short exposure, but people should still evacuate when the alarm sounds. A discharge can cause low visibility, noise, cold temperatures and, with inert gas systems, reduced oxygen. Fire also produces toxic combustion products."
+    },
+    {
+      "question": "What does the abort switch do?",
+      "answer": "On many systems, the abort switch delays or stops the countdown to discharge while it is held, for example if the alarm was caused by a false detection. Its exact behavior depends on the system design, so staff must learn their facility's procedure."
+    },
+    {
+      "question": "When is it safe to re-enter after a discharge?",
+      "answer": "Only after the fire department or the facility's designated authority says so, and after the room has been ventilated. The course's post-discharge module covers the checks and steps involved."
+    }
+  ],
+  "related_course_ids": [
+    "security-compliance-data-centers",
+    "access-control-physical-security",
+    "facility-environmental-compliance",
+    "data-center-physical-security-access-control"
+  ],
+  "last_updated": "2026-09-29"
+}
