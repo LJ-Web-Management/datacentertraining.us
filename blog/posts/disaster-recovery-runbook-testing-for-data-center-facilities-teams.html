@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- dct:head -->
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; object-src 'none'; base-uri 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#f5f5f7">
+<link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt">
+<link rel="alternate" type="application/json" href="/.well-known/mcp.json" title="WebMCP manifest">
+<link rel="service-desc" type="application/vnd.oai.openapi+json" href="/openapi.json">
+<script>
+/* Analytics and chat load on the first interaction (scroll, tap, key, mouse move) so they never delay rendering. */
+(function(w,d){
+  w.dataLayer=w.dataLayer||[];w.gtag=function(){w.dataLayer.push(arguments);};w.gtag('js',new Date());w.gtag('config','G-Z3T42KYK64');
+  w.clarity=w.clarity||function(){(w.clarity.q=w.clarity.q||[]).push(arguments);};
+  w.Tawk_API=w.Tawk_API||{};w.Tawk_API.onLoad=function(){w.Tawk_API.minimize();};
+  var ev=['pointerdown','keydown','touchstart','scroll','mousemove'],done=0;
+  function add(src,attrs){var s=d.createElement('script');s.async=true;s.src=src;for(var k in attrs)s.setAttribute(k,attrs[k]);d.head.appendChild(s);}
+  function go(){if(done)return;done=1;ev.forEach(function(e){w.removeEventListener(e,go,{passive:true});});
+    add('https://www.googletagmanager.com/gtag/js?id=G-Z3T42KYK64');
+    add('https://analytics.ahrefs.com/analytics.js',{'data-key':'tVAd7KxwKax+pAfHx46Zgg'});
+    add('https://www.clarity.ms/tag/ylza43nm4m');
+    w.Tawk_LoadStart=new Date();add('https://embed.tawk.to/6a5a95a2096ab21d402a762c/1jtoth11r',{charset:'UTF-8',crossorigin:'*'});
+  }
+  ev.forEach(function(e){w.addEventListener(e,go,{passive:true});});
+})(window,document);
+if(navigator.modelContext){var m=document.createElement('script');m.src='/js/webmcp.js';m.defer=true;document.head.appendChild(m);}
+</script>
+<!-- /dct:head -->
+<title>Disaster Recovery Runbook Testing for Data Center Facilities</title>
+<meta name="description" content="When a data center loses a utility source, cooling path, controls network, building access system, or another facility capability, can the team use its…">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/svg+xml" href="../../images/favicon.svg">
+<link rel="canonical" href="https://datacentertraining.us/blog/posts/disaster-recovery-runbook-testing-for-data-center-facilities-teams.html">
+
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://datacentertraining.us/blog/posts/disaster-recovery-runbook-testing-for-data-center-facilities-teams.html">
+<meta property="og:title" content="Disaster Recovery Runbook Testing for Data Center Facilities Teams">
+<meta property="og:description" content="When a data center loses a utility source, cooling path, controls network, building access system, or another facility capability, can the team use its…">
+<meta property="og:image" content="https://datacentertraining.us/blog/assets/img/posts/disaster-recovery-runbook-testing-for-data-center-facilities-teams.jpg">
+<meta property="og:site_name" content="Data Center Training">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@HazwoperOsha">
+<meta name="twitter:title" content="Disaster Recovery Runbook Testing for Data Center Facilities Teams">
+<meta name="twitter:description" content="When a data center loses a utility source, cooling path, controls network, building access system, or another facility capability, can the team use its…">
+<meta name="twitter:image" content="https://datacentertraining.us/blog/assets/img/posts/disaster-recovery-runbook-testing-for-data-center-facilities-teams.jpg">
+
+<link rel="stylesheet" href="../assets/css/blog.min.css">
+<script src="../../js/nav.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://datacentertraining.us/"},
+        {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://datacentertraining.us/blog/"},
+        {"@type": "ListItem", "position": 3, "name": "Disaster Recovery Runbook Testing for Data Center Facilities Teams", "item": "https://datacentertraining.us/blog/posts/disaster-recovery-runbook-testing-for-data-center-facilities-teams.html"}
+      ]
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Disaster Recovery Runbook Testing for Data Center Facilities Teams",
+      "image": "https://datacentertraining.us/blog/assets/img/posts/disaster-recovery-runbook-testing-for-data-center-facilities-teams.jpg",
+      "datePublished": "2026-09-30",
+      "dateModified": "2026-09-30",
+      "author": {
+        "@type": "Organization",
+        "name": "Data Center Training",
+        "url": "https://datacentertraining.us/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "HAZWOPER OSHA Training, LLC",
+        "logo": "https://datacentertraining.us/images/favicon.svg"
+      },
+      "description": "When a data center loses a utility source, cooling path, controls network, building access system, or another facility capability, can the team use its…"
+    }
+  ]
+}
+</script>
+</head>
+<body class="blog-page">
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="glass-nav">
+  <div class="container nav-inner">
+    <a href="../../" class="logo">
+      <img src="../../images/favicon.svg" alt="" width="30" height="30">
+      <span>
+        <span class="logo-mark">datacentertraining.us</span>
+        <span class="logo-sub">Data Center Professional Training</span>
+      </span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="../../courses.html">Courses</a>
+      <a href="../../bundles.html">Bundles</a>
+      <a href="../../who.html">Who It's For</a>
+      <a href="../../certifications.html">Certifications</a>
+      <a href="../../faq.html">FAQ</a>
+      <a href="../" class="active">Blog</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="../../courses.html" class="btn btn-primary btn-sm nav-cta">View Courses</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="provider-trust-bar" role="region" aria-label="Training provider accreditation">
+  Training delivered by <strong>HAZWOPER OSHA Training, LLC</strong>, an <a href="https://www.iacet.org/affiliates/accredited-providers-list/accredited-provider-overview/?providerID=131618" target="_blank" rel="noopener">IACET-accredited provider &rarr;</a>
+</div>
+
+<main id="main" class="blog-container blog-container-read">
+  <a class="back-link" href="../">&larr; Back to Blog</a>
+  <div class="post-header">
+    <div class="post-date">September 30, 2026</div>
+    <h1>Disaster Recovery Runbook Testing for Data Center Facilities Teams</h1>
+  </div>
+  <div class="post-featured-image">
+    <img src="../assets/img/posts/disaster-recovery-runbook-testing-for-data-center-facilities-teams.jpg" srcset="../assets/img/posts/disaster-recovery-runbook-testing-for-data-center-facilities-teams-480w.webp 480w, ../assets/img/posts/disaster-recovery-runbook-testing-for-data-center-facilities-teams-800w.webp 800w, ../assets/img/posts/disaster-recovery-runbook-testing-for-data-center-facilities-teams-1200w.webp 1200w" sizes="(max-width: 900px) calc(100vw - 32px), 860px" alt="Disaster Recovery Runbook Testing for Data Center Facilities Teams" width="1200" height="675" fetchpriority="high">
+  </div>
+  <article class="post-content">
+<h2>The Operational Question</h2>
+<p>When a data center loses a utility source, cooling path, controls network, building access system, or another facility capability, can the team use its disaster recovery runbook without improvising the first critical decisions? A document that looks complete in a shared drive may still omit the actual switch locations, operating limits, communications handoffs, vendor contacts, or recovery evidence that technicians need during a real event. Testing the runbook turns a business-continuity document into an operating tool for the physical plant.</p>
+<p>This guide explains how facilities managers, operations leaders, and training coordinators can test a disaster recovery runbook without creating an unnecessary live-system hazard. It covers the people who should participate, the difference between a discussion exercise and an equipment test, the evidence to collect, and the course choices that support a role-based plan. The goal is not to rehearse every possible catastrophe. The goal is to expose one specific recovery path that would otherwise fail under pressure.</p>
+<hr class="post-divider">
+<h2>Who This Affects</h2>
+<p>Runbook testing matters in every facility where physical infrastructure supports customer commitments, production systems, research, or public services. The exercise should be adapted to the site rather than copied from another building.</p>
+<ul><li>Enterprise data centers need coordination between facilities, IT, security, EHS, procurement, and business owners when a building or utility event changes the operating plan.</li><li>Colocation sites need clear boundaries between the site operator, customer representatives, remote hands staff, contractors, and the incident commander.</li><li>Hyperscale and large campus facilities may need separate runbooks for a building, electrical yard, chiller plant, fuel system, and control network.</li><li>Edge sites often have fewer people on location, which makes escalation, remote guidance, spares, and travel time especially important.</li><li>Commissioning agents and project teams should test handover documents before the operations group inherits a system that has not yet been exercised in its final configuration.</li></ul>
+<p>The participants should reflect the decision chain, not just the people who wrote the document. A facilities manager may authorize a recovery mode. A critical facilities technician may verify switchgear, generators, UPS modules, chillers, or CRAH units. A NOC operator may receive the first alarm and create the incident bridge. Security may control access for responders. An EHS manager may stop an unsafe task. A vendor or electrician may be needed for a specialized repair, but the site still needs an internal owner for each decision.</p>
+<hr class="post-divider">
+<h2>What Can Go Wrong</h2>
+<p>The most common runbook failure is not a missing paragraph about a rare event. It is a mismatch between the written sequence and the facility as it is operated today. Equipment may have been replaced, labels may have changed, a bypass may be locked, or a contact list may point to a person who no longer supports the site.</p>
+<p>During a utility-loss scenario, a team may call for generator operation without confirming fuel status, automatic transfer behavior, load-shed priorities, exhaust conditions, or the authority to enter the generator yard. During a cooling incident, the runbook may say to move load to standby capacity without identifying the actual valves, control points, alarm thresholds, or temperature limits that make the move safe. During a controls-network failure, operators may rely on a dashboard that is unavailable and discover that local gauges, manual controls, and rounds were never assigned.</p>
+<p>These gaps create several kinds of exposure:</p>
+<ul><li>Safety exposure occurs when responders enter an electrical room, battery room, mechanical plant, roof, yard, or confined area without a clear authorization, PPE, communication, or stop-work decision.</li><li>Uptime exposure occurs when a recovery action creates a second failure, such as an incorrect transfer, a premature restart, a lost cooling path, or a sequence that defeats redundancy.</li><li>Compliance exposure occurs when the team cannot show who made decisions, what inspections were completed, how hazards were controlled, or how corrective actions were closed.</li><li>Cost exposure occurs when vendors are called late, spares are not available, equipment is operated outside its limits, or an avoidable incident becomes a prolonged outage.</li></ul>
+<p>A discussion exercise also has limits. Talking through a generator start does not prove that the generator will start. Reviewing an EPO response does not authorize a live EPO test. Confirming that a clean-agent alarm appears on a screen does not demonstrate that the room, notification, evacuation, and incident command procedures are ready. Runbook testing should state what is being simulated, what is being observed, and what physical testing requires a separate approved procedure.</p>
+<p>Standards and guidance can inform the exercise, but the training package is not a regulatory certification or a substitute for site-specific qualification. OSHA requirements, electrical safety practices, emergency-management guidance, manufacturer instructions, contracts, and local procedures still apply to the work.</p>
+<hr class="post-divider">
+<h2>What Managers Should Check</h2>
+<p>Use a controlled, evidence-based exercise. Start with a narrow scenario, such as a utility interruption during a maintenance window, loss of a chilled-water pump, failure of a BMS server, or restricted access to a mechanical room. Avoid combining five failures in the first exercise. Complexity can be added after the team can execute the basic recovery path.</p>
+<h3>1. Set the exercise boundary</h3>
+<p>Write a short scenario statement with a start time, affected asset, known alarms, current operating mode, and constraints. State whether the activity is a tabletop discussion, a communications drill, a walkdown, a simulated alarm injection, or a separately approved equipment test. Include a hard stop that prevents a participant from operating equipment unless the existing procedure and authorization permit it.</p>
+<p>The exercise owner should identify the success condition. For example, the objective might be to establish a safe cooling response within ten minutes, account for affected personnel, communicate customer impact, and document the decision to hold or change the operating mode. It does not need to be “restore everything immediately.” A good objective makes safe delay visible when the evidence is incomplete.</p>
+<h3>2. Validate the starting information</h3>
+<p>Before the exercise, compare the runbook with the latest site information. Check the following:</p>
+<ul><li>One-line diagrams, floor plans, riser diagrams, equipment IDs, breaker names, valve tags, control points, and access routes.</li><li>Current operating mode, maintenance status, bypass status, alarms, open impairments, and temporary changes.</li><li>Generator fuel, UPS state, battery technology, cooling availability, fire-protection impairments, and environmental limits relevant to the scenario.</li><li>Internal contacts, vendor escalation paths, customer notification rules, security contacts, and emergency services information.</li><li>Required permits, lockout or isolation controls, PPE, escort rules, communication channels, and stop-work authority.</li></ul>
+<p>If the runbook says “check the panel,” the team should be able to identify which panel and where it is. If it says “verify redundancy,” the team should be able to name the remaining path and the evidence that proves it is available.</p>
+<h3>3. Assign roles before the clock starts</h3>
+<p>Use named roles, not a vague instruction to “notify the team.” Assign an incident commander, facilities lead, safety lead, communications lead, scribe, security coordinator, and technical subject-matter contacts as needed. One person can hold more than one role at a small site, but the exercise should make that tradeoff explicit.</p>
+<p>The scribe should record the time of each decision, the information available, the person who made the decision, the action owner, and the next verification. This creates a useful after-action record without asking technicians to write a narrative while troubleshooting.</p>
+<h3>4. Walk the physical path</h3>
+<p>A tabletop should be followed by a controlled walkdown. Start at the alarm or notification point and trace the route to the equipment, isolation point, alternate path, staging area, and exit. Look for locked doors, unclear labels, blocked access, poor lighting, incompatible radios, missing drawings, and equipment that cannot be viewed safely from the expected position.</p>
+<p>The walkdown should also test the handoff between control room and field staff. The operator may see a “pump failed” alarm, while the technician needs the pump number, operating state, valve lineup, local control mode, and permission to enter the plant. The exercise is successful when those details move through the team without being invented on the spot.</p>
+<h3>5. Test communications and decision points</h3>
+<p>A recovery runbook should identify what must be communicated, to whom, by when, and through which channel. Test the primary channel and the fallback. A phone tree may be current while a radio channel is not. A vendor may acknowledge a call but still lack the site history needed to respond.</p>
+<p>Ask decision questions that reveal judgment, not memorization:</p>
+<ol><li>What fact would make you stop the recovery sequence?</li><li>Who can authorize a change to the operating mode?</li><li>What customer or internal notification is required before the next step?</li><li>What equipment state must be verified locally rather than assumed from a dashboard?</li><li>What evidence proves the site is stable enough to return to normal operation?</li></ol>
+<p>The answers should be specific to the facility. “Follow the SOP” is not enough if the SOP does not name the current equipment or authority.</p>
+<h3>6. Capture recovery evidence</h3>
+<p>Define the records that demonstrate completion. They may include alarm screenshots, operator logs, equipment readings, a communication timeline, inspection notes, contractor tickets, fuel or temperature records, and a list of open impairments. Do not collect more information than the review team can use. A small set of reliable evidence is better than a large folder of unverified screenshots.</p>
+<p>The return-to-normal step needs the same discipline as the initial response. Identify who confirms stable load, normal cooling, correct breaker or valve lineup, cleared alarms, restored monitoring, access control, and customer communications. If the facility has a temporary configuration, the runbook should show who owns the removal and when it must be completed.</p>
+<h3>7. Turn observations into training assignments</h3>
+<p>After the exercise, separate document defects, equipment defects, staffing gaps, and knowledge gaps. An outdated drawing requires document control. A failed alarm requires technical investigation. A missing spare requires maintenance or procurement action. A technician who cannot explain a switching or cooling sequence may need training, supervised practice, or a qualification review.</p>
+<p>Give each finding an owner, due date, risk statement, and verification method. A revised runbook is not closed until the team uses the revised step in another discussion, walkdown, or approved test.</p>
+<hr class="post-divider">
+<h2>Which Training Fits This Situation</h2>
+<p>For an operations leader building a facility-focused recovery plan, <strong>Disaster Recovery &amp; Business Continuity</strong> provides the broadest foundation for linking critical functions, recovery priorities, communications, and continuity decisions. <strong>Business Continuity and Disaster Recovery Planning Training</strong> is a useful modular option when the immediate need is a focused planning skill for coordinators, supervisors, or cross-functional participants.</p>
+<p>The physical recovery path should determine the supporting assignments. A facilities manager may pair the planning course with <strong>Data Center Operations Management</strong> to connect the exercise to operating modes, logs, escalation, and service commitments. A technician assigned to verify electrical states may need <strong>Power Distribution Systems Fundamentals</strong> or <strong>Emergency/Standby Power Systems Fundamentals</strong>. A cooling lead may benefit from <strong>Cooling Systems Design &amp; Optimization</strong> or <strong>HVAC Systems Troubleshooting Essentials</strong>. A controls specialist may need <strong>Monitoring, Automation &amp; BMS Systems</strong> or <strong>DCIM Platform Fundamentals</strong>.</p>
+<p>When the site is building a common baseline across operations, facilities, and support staff, the <strong>Operations &amp; Reliability Bundle</strong> is the most direct bundle-level fit. It can support a role-based plan, but enrollment does not by itself qualify anyone to operate a particular switchgear lineup, generator, chiller, or control system. The employer still needs site orientation, manufacturer procedures, supervised practice, and its own authorization process.</p>
+<p>Use a simple matrix to assign training:</p>
+<ul><li>Incident commander: recovery planning, escalation, customer communication, and decision authority.</li><li>Facilities lead: operating modes, equipment dependencies, work controls, and return-to-normal checks.</li><li>Field technician: equipment fundamentals, hazard recognition, local indications, and supervised task practice.</li><li>NOC or monitoring operator: alarm triage, incident logging, escalation thresholds, and communications fallback.</li><li>Security and EHS: access, accountability, emergency response, stop-work authority, and responder support.</li></ul>
+<p>Learners receive a certificate of completion for the selected online course. That document records training completion; it is not a license, regulatory certification, or endorsement by OSHA, NFPA, NIST, or another standards body.</p>
+<hr class="post-divider">
+<h2>Common Mistakes to Avoid</h2>
+<ul><li>Treating a tabletop conversation as proof that live equipment can be operated safely.</li><li>Writing a scenario so broad that the team never reaches a real decision point.</li><li>Inviting only managers and excluding the technician, operator, security lead, or contractor who performs the field handoff.</li><li>Using equipment names from an old drawing or a generic template.</li><li>Allowing a participant to change an alarm, breaker, valve, setpoint, or control mode without an approved procedure.</li><li>Testing the primary phone number without testing the backup communication method.</li><li>Recording actions but not recording the information and authority behind each decision.</li><li>Ending the exercise at “service restored” without checking monitoring, alarms, temporary configurations, customer notices, and open impairments.</li><li>Assigning a course to close every finding when the real need is a revised procedure, a supervised demonstration, or equipment repair.</li><li>Assuming an online certificate proves site-specific competence for a high-risk task.</li></ul>
+<hr class="post-divider">
+<h2>Key Takeaway</h2>
+<p>A disaster recovery runbook becomes useful when a real facilities team can follow it, challenge it, and show evidence for each important decision. Start with one narrow failure scenario, walk the physical path, test the communication handoffs, and assign every gap to documentation, equipment, staffing, or training. This week, schedule a 30-minute tabletop for one critical facility dependency and invite the person who would have to verify the recovery in the field.</p>
+<hr class="post-divider">
+<h2>Sources</h2>
+<ul class="sources-list"><li><a href="https://csrc.nist.gov/pubs/sp/800/34/r1/final" target="_blank" rel="noopener noreferrer">NIST SP 800-34 Rev. 1, Contingency Planning Guide for Federal Information Systems</a></li><li><a href="https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.38" target="_blank" rel="noopener noreferrer">OSHA, Emergency Action Plans, 29 CFR 1910.38</a></li><li><a href="https://www.fema.gov/emergency-managers/national-preparedness/continuity" target="_blank" rel="noopener noreferrer">FEMA, Continuity Resource Toolkit</a></li><li><a href="https://www.nist.gov/cyberframework" target="_blank" rel="noopener noreferrer">NIST, Cybersecurity Framework 2.0, Recover Function</a></li></ul>
+  </article>
+  <section class="related-posts" aria-labelledby="related-heading">
+    <h2 id="related-heading">More from the blog</h2>
+    <div class="related-grid"><a class="post-card" href="emergency-power-off-epo-drill-readiness-what-data-center-operations-teams-should-verify-before-testing.html"><img class="post-card-thumb" src="../assets/img/posts/emergency-power-off-epo-drill-readiness-what-data-center-operations-teams-should-verify-before-testing.jpg" srcset="../assets/img/posts/emergency-power-off-epo-drill-readiness-what-data-center-operations-teams-should-verify-before-testing-480w.webp 480w, ../assets/img/posts/emergency-power-off-epo-drill-readiness-what-data-center-operations-teams-should-verify-before-testing-800w.webp 800w, ../assets/img/posts/emergency-power-off-epo-drill-readiness-what-data-center-operations-teams-should-verify-before-testing-1200w.webp 1200w" sizes="(max-width: 640px) calc(100vw - 32px), (max-width: 1024px) 50vw, 380px" alt="Emergency Power Off (EPO) Drill Readiness: What Data Center Operations Teams Should Verify Before Testing" width="1200" height="675" loading="lazy" decoding="async"><div class="post-card-body"><div class="post-date">September 29, 2026</div><h3>Emergency Power Off (EPO) Drill Readiness: What Data Center Operations Teams Should Verify Before Testing</h3></div></a><a class="post-card" href="how-facilities-managers-can-use-pue-trends-to-separate-cooling-waste-from-it-load-growth.html"><img class="post-card-thumb" src="../assets/img/posts/how-facilities-managers-can-use-pue-trends-to-separate-cooling-waste-from-it-load-growth.jpg" srcset="../assets/img/posts/how-facilities-managers-can-use-pue-trends-to-separate-cooling-waste-from-it-load-growth-480w.webp 480w, ../assets/img/posts/how-facilities-managers-can-use-pue-trends-to-separate-cooling-waste-from-it-load-growth-800w.webp 800w, ../assets/img/posts/how-facilities-managers-can-use-pue-trends-to-separate-cooling-waste-from-it-load-growth-1200w.webp 1200w" sizes="(max-width: 640px) calc(100vw - 32px), (max-width: 1024px) 50vw, 380px" alt="How Facilities Managers Can Use PUE Trends to Separate Cooling Waste from IT Load Growth" width="1200" height="675" loading="lazy" decoding="async"><div class="post-card-body"><div class="post-date">September 28, 2026</div><h3>How Facilities Managers Can Use PUE Trends to Separate Cooling Waste from IT Load Growth</h3></div></a></div>
+    <a class="related-all" href="../">View all posts &rarr;</a>
+  </section>
+</main>
+
+<footer class="site-footer" id="contact">
+  <div class="container footer-grid">
+
+    <div class="footer-col">
+      <a href="../../" class="logo">
+        <img src="../../images/favicon.svg" alt="" width="28" height="28">
+        <span>
+          <span class="logo-mark">datacentertraining.us</span>
+          <span class="logo-sub">Data Center Professional Training</span>
+        </span>
+      </a>
+      <p class="footer-legal">Data Center Training is a specialty training division of <a href="https://hazwoper-osha.com/" target="_blank" rel="noopener">HAZWOPER-OSHA Training, LLC</a>, an IACET-accredited provider of professional data center and safety compliance training.</p>
+      <p class="footer-legal" style="margin-top:8px;">HAZWOPER OSHA Training, LLC &middot; 11901 Santa Monica Blvd., Suite #414, Los Angeles, CA 90025</p>
+      <div class="footer-badges">
+        <img src="https://media.hazwoper-osha.com/wp-content/uploads/2023/11/1698821020/IACET-small.webp" alt="IACET Accredited Provider" width="40" height="24" loading="lazy">
+        <img src="https://media.hazwoper-osha.com/wp-content/uploads/2026/07/1784291935/bbb.webp" alt="BBB A+ Rating" width="40" height="24" loading="lazy">
+        <img src="https://media.hazwoper-osha.com/wp-content/uploads/2026/07/1784292027/trust.webp" alt="Google Trust Services" width="141" height="20" loading="lazy" style="height:20px;">
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h3>Training</h3>
+      <a href="../../courses.html">Course Catalog</a>
+      <a href="../../bundles.html">Bundles</a>
+      <a href="../../who.html#which-course">Which Courses Do I Need?</a>
+      <a href="../../certifications.html">Certifications &amp; Accreditations</a>
+      <a href="../../who.html">Who It's For</a>
+      <a href="../../faq.html">FAQ</a>
+      <a href="../">Blog</a>
+    </div>
+
+    <div class="footer-col">
+      <h3>Company</h3>
+      <a href="https://hazwoper-osha.com/" target="_blank" rel="noopener">HAZWOPER-OSHA Training</a>
+      <a href="https://hazwoper-osha.com/certificate-verification" target="_blank" rel="noopener">Verify Certificate</a>
+      <a href="https://hazwoper-osha.com/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a>
+      <a href="https://hazwoper-osha.com/refund-policy" target="_blank" rel="noopener">Refund Policy</a>
+    </div>
+
+    <div class="footer-col">
+      <h3>For AI Agents</h3>
+      <a href="/llms.txt">llms.txt</a>
+      <a href="/llms-full.txt">llms-full.txt</a>
+      <a href="/.well-known/mcp.json">WebMCP Manifest</a>
+      <a href="/api/index.json">JSON Catalog API</a>
+      <a href="/openapi.json">API Docs (OpenAPI)</a>
+      <a href="/sitemap.xml">Sitemap</a>
+    </div>
+
+    <div class="footer-col">
+      <h3>Contact Us</h3>
+      <div class="footer-contact-links">
+        <a href="tel:18664296742">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          1-866-429-6742
+        </a>
+        <a href="mailto:info@hazwoper-osha.com">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          info@hazwoper-osha.com
+        </a>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/HazwoperOsha/" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/hazwoper_osha_training/?hl=en" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a href="https://www.youtube.com/@hazwoper-osha" target="_blank" rel="noopener" aria-label="YouTube">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33zM9.75 15.02V8.48l5.75 3.27z"/></svg>
+        </a>
+        <a href="https://x.com/HazwoperOsha" target="_blank" rel="noopener" aria-label="X">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.4 8.4L23 22h-6.6l-5.2-6.8L5.1 22H2l7.9-9L1.6 2h6.8l4.7 6.2z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/company/hazwoper-osha" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM8.34 18.34V10.1H5.67v8.24zM7.01 8.97a1.55 1.55 0 1 0 0-3.1 1.55 1.55 0 0 0 0 3.1zM18.34 18.34v-4.6c0-2.46-1.31-3.6-3.06-3.6a2.64 2.64 0 0 0-2.39 1.32V10.1H10.2s.04.86 0 8.24h2.68v-4.6c0-.25.02-.5.09-.68a1.5 1.5 0 0 1 1.37-1c.96 0 1.35.73 1.35 1.8v4.48z"/></svg>
+        </a>
+        <a href="https://www.pinterest.com/hazwoperosha/" target="_blank" rel="noopener" aria-label="Pinterest">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.64 7.86 6.36 9.32-.09-.79-.17-2.01.03-2.88.19-.79 1.22-5.03 1.22-5.03s-.31-.63-.31-1.55c0-1.45.84-2.54 1.89-2.54.89 0 1.32.67 1.32 1.47 0 .89-.57 2.23-.86 3.47-.25 1.03.52 1.88 1.53 1.88 1.84 0 3.07-2.36 3.07-5.15 0-2.12-1.43-3.71-4.02-3.71-2.93 0-4.76 2.19-4.76 4.63 0 .84.25 1.44.63 1.9.18.21.2.3.14.54-.05.18-.16.63-.21.81-.07.26-.28.35-.51.26-1.44-.59-2.11-2.16-2.11-3.93 0-2.92 2.46-6.43 7.34-6.43 3.92 0 6.5 2.84 6.5 5.89 0 4.03-2.24 7.04-5.55 7.04-1.11 0-2.16-.6-2.51-1.28 0 0-.6 2.36-.73 2.82-.22.8-.66 1.6-1.06 2.22.95.29 1.95.45 3 .45 5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>
+        </a>
+      </div>
+    </div>
+
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; 2026 HAZWOPER-OSHA Training, LLC. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+<script src="../../js/main.js" defer></script>
+
+</body>
+</html>

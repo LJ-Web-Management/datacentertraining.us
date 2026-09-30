@@ -158,5 +158,15 @@
     "date": "2026-09-29",
     "dateDisplay": "September 29, 2026",
     "excerpt": "An Emergency Power Off (EPO) circuit is intended for a serious emergency, but a data center team still has to prove that the response is understood…"
+  },
+  {
+    "title": "Disaster Recovery Runbook Testing for Data Center Facilities Teams",
+    "slug": "disaster-recovery-runbook-testing-for-data-center-facilities-teams",
+    "seoTitle": "Disaster Recovery Runbook Testing for Data Center Facilities",
+    "description": "When a data center loses a utility source, cooling path, controls network, building access system, or another facility capability, can the team use its…",
+    "image": "assets/img/posts/disaster-recovery-runbook-testing-for-data-center-facilities-teams.jpg",
+    "date": "2026-09-30",
+    "dateDisplay": "September 30, 2026",
+    "excerpt": "When a data center loses a utility source, cooling path, controls network, building access system, or another facility capability, can the team use its…"
   }
 ]
