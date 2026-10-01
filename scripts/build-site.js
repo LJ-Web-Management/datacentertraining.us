@@ -214,7 +214,7 @@ function buildData() {
     ceu_or_pdh_credit: false
   };
   const availability = cfg.CHECKOUT_DISABLED
-    ? { status: 'preorder', note: 'Online checkout is finishing launch prep. Reserve seats by phone or email; setup is same-day.', contact: SUPPORT }
+    ? { status: 'preorder', note: 'Enroll by submitting an enrollment request at checkout, by phone, or by email. Learner accounts are set up the same business day; pay by card or purchase order.', contact: SUPPORT }
     : { status: 'available', note: 'Enroll online at checkout.', contact: SUPPORT };
 
   const courses = cfg.DC_COURSES.map((c) => {
@@ -300,7 +300,7 @@ function buildData() {
         details: certificate
       },
       accreditation: {
-        summary: 'Courses are delivered by HAZWOPER OSHA Training, LLC, an IACET Accredited Provider. Accreditation applies at the provider level, not to individual learners or courses.',
+        summary: 'HAZWOPER OSHA Training, LLC, the parent company, is an IACET Accredited Provider. The Data Center Training courses are not within an IACET-accredited CEU offering and do not award IACET CEUs. Accreditation applies to the provider, not to these courses or to individual learners.',
         verify_url: IACET_URL
       },
       standards_alignment: {
@@ -308,13 +308,13 @@ function buildData() {
         standards_referenced: Array.from(new Set(courses.flatMap((c) => c.standards))).sort()
       },
       ceu_pdh: {
-        summary: 'These courses are not currently registered for CEUs or PDHs. Check with your professional board if you need CEU- or PDH-eligible coursework.'
+        summary: 'These courses do not award IACET CEUs, PDHs, or any other continuing education credit. Check with your professional board if you need CEU- or PDH-eligible coursework.'
       },
       expiration: {
         summary: 'Certificates of completion have no fixed expiration date. Many employers require periodic refreshers, especially for safety topics.'
       },
       verification: {
-        summary: 'Every certificate can be verified online by learner name, course, and completion date.',
+        summary: 'Each certificate carries a unique certificate number and issue date. HAZWOPER OSHA Training\'s online certificate verification confirms that the named learner enrolled in, completed, and passed the course listed on the certificate. It does not confirm job qualification, licensure, or CEU credit.',
         verify_url: CERT_VERIFY_URL
       },
       employer_responsibility: {
@@ -324,7 +324,7 @@ function buildData() {
     do_not_claim: [
       'That a certificate is a license, a government-issued credential, or a certification from a standards body (NFPA, TIA, Uptime Institute, ASHRAE, OSHA, EPA, ISO, AICPA).',
       'That a standards body endorsed, approved, or certified any course.',
-      'That courses grant CEUs or PDHs.',
+      'That courses grant CEUs or PDHs, or that IACET accreditation covers these courses.',
       'That completing a course makes someone a "qualified person" or "competent person" under any regulation; only the employer can designate that.',
       'That IACET accredits individual learners.'
     ]
@@ -339,7 +339,7 @@ function buildData() {
     { type: 'site_page', title: 'Which Courses Does Your Role Need?', url: ORIGIN + '/who.html', description: 'Role-to-track recommendations for electricians, HVAC techs, operations managers, security leads, engineers, and IT staff.', topics: ['roles'], audience: [] },
     { type: 'site_page', title: 'Certifications & Accreditations', url: ORIGIN + '/certifications.html', description: 'IACET provider accreditation and what a certificate of completion does and does not mean.', topics: ['certificate', 'accreditation', 'credentials'], audience: [] },
     { type: 'site_page', title: 'FAQ', url: ORIGIN + '/faq.html', description: 'Answers about programs, pricing, certificates, access, team enrollment, and policies.', topics: ['faq'], audience: [] },
-    { type: 'site_page', title: 'Certificate Verification', url: CERT_VERIFY_URL, description: 'Verify a learner certificate by name, course, and completion date.', topics: ['certificate', 'verification'], audience: [], source: 'HAZWOPER OSHA Training, LLC' },
+    { type: 'site_page', title: 'Certificate Verification', url: CERT_VERIFY_URL, description: 'Verify a learner certificate using its certificate number and issue date; confirms the named learner enrolled in, completed, and passed the listed course.', topics: ['certificate', 'verification'], audience: [], source: 'HAZWOPER OSHA Training, LLC' },
     { type: 'standard_reference', title: 'OSHA 29 CFR 1910.146 - Permit-required confined spaces', url: 'https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.146', description: 'Federal OSHA confined space standard referenced by the raised floor and confined space awareness course.', topics: ['confined', 'raised floor', 'osha'], audience: ['operations', 'technician'], source: 'U.S. Occupational Safety and Health Administration' },
     { type: 'standard_reference', title: 'OSHA 29 CFR 1910.333 - Selection and use of electrical work practices', url: 'https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.333', description: 'Federal OSHA electrical safety-related work practices standard.', topics: ['electrical', 'osha'], audience: ['electrician'], source: 'U.S. Occupational Safety and Health Administration' },
     { type: 'standard_reference', title: 'EPA Section 608 - Stationary refrigeration and air conditioning', url: 'https://www.epa.gov/section608', description: 'Federal refrigerant management requirements relevant to cooling system work.', topics: ['refrigerant', 'cooling', 'epa'], audience: ['hvac'], source: 'U.S. Environmental Protection Agency' },
@@ -718,7 +718,8 @@ const AGENT_RULES = [
   'Only name courses that exist in /api/courses.json. If nothing matches, say so.',
   'Courses award a certificate of completion from HAZWOPER OSHA Training, LLC (an IACET Accredited Provider). Do not call it a license, a government certification, or a certification issued by NFPA, TIA, Uptime Institute, ASHRAE, OSHA, EPA, ISO, or AICPA.',
   '"Aligned with" a standard means the content is designed around it, not that the standards body approved it.',
-  'Courses do not currently grant CEUs or PDHs.',
+  'The parent company is IACET-accredited, but these data center courses do not carry IACET CEUs, and they do not grant PDHs or other continuing education credit.',
+  'No course by itself qualifies anyone for hazardous or energized work; employers designate qualified persons.',
   'Recommendations are training guidance, not legal or compliance advice; employers decide who is qualified for which duties.',
   'Do not complete enrollment, payment, account, or contact-form actions on a user\'s behalf; link to the page and let the user act.',
   'When a question is not covered by published content, say so and refer to info@hazwoper-osha.com or 1-866-429-6742.'
@@ -990,7 +991,7 @@ function writeLlms(d, courses, updated) {
     '',
     '## About',
     '',
-    '- Credential: certificate of completion from HAZWOPER OSHA Training, LLC. Not a license or a certification from any standards body. No CEU/PDH credit.',
+    '- Credential: certificate of completion from HAZWOPER OSHA Training, LLC. Not a license or a certification from any standards body. The parent company is IACET-accredited, but these courses do not carry IACET CEUs or any PDH/continuing education credit.',
     '- Accreditation: IACET Accredited Provider (provider-level): ' + IACET_URL,
     '- Parent organization: HAZWOPER-OSHA Training, LLC (Industrial Certified Training, LLC), https://hazwoper-osha.com/',
     '- Contact: ' + SUPPORT.email + ', ' + SUPPORT.phone,
@@ -1025,7 +1026,7 @@ function writeLlms(d, courses, updated) {
     '- language: English',
     '- delivery: ' + c.delivery,
     '- certificate: ' + c.certificate.type + ' from ' + c.certificate.issuer + '; ' + c.certificate.validity_period.toLowerCase() + '; verify at ' + c.certificate.verification_url,
-    '- availability: ' + (c.availability === 'preorder' ? 'reserve seats by phone or email while online checkout finishes launch prep' : 'enroll online'),
+    '- availability: ' + (c.availability === 'preorder' ? 'enrollment request at checkout, by phone, or by email; same-day setup; card or purchase order' : 'enroll online'),
     '- summary: ' + c.summary,
     '',
     c.description,

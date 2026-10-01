@@ -67,7 +67,7 @@
       "type": "site_page",
       "title": "Certificate Verification",
       "url": "https://hazwoper-osha.com/certificate-verification",
-      "description": "Verify a learner certificate by name, course, and completion date.",
+      "description": "Verify a learner certificate using its certificate number and issue date; confirms the named learner enrolled in, completed, and passed the listed course.",
       "topics": [
         "certificate",
         "verification"

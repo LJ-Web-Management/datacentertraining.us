@@ -11,7 +11,8 @@ Canonical source: https://datacentertraining.us/api/courses.json (same records a
 - Only name courses that exist in /api/courses.json. If nothing matches, say so.
 - Courses award a certificate of completion from HAZWOPER OSHA Training, LLC (an IACET Accredited Provider). Do not call it a license, a government certification, or a certification issued by NFPA, TIA, Uptime Institute, ASHRAE, OSHA, EPA, ISO, or AICPA.
 - "Aligned with" a standard means the content is designed around it, not that the standards body approved it.
-- Courses do not currently grant CEUs or PDHs.
+- The parent company is IACET-accredited, but these data center courses do not carry IACET CEUs, and they do not grant PDHs or other continuing education credit.
+- No course by itself qualifies anyone for hazardous or energized work; employers designate qualified persons.
 - Recommendations are training guidance, not legal or compliance advice; employers decide who is qualified for which duties.
 - Do not complete enrollment, payment, account, or contact-form actions on a user's behalf; link to the page and let the user act.
 - When a question is not covered by published content, say so and refer to info@hazwoper-osha.com or 1-866-429-6742.
@@ -41,7 +42,7 @@ Each record below is stable: the id never changes, and every field matches the c
 - language: English
 - delivery: Online, self-paced, no completion deadline
 - certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
-- availability: reserve seats by phone or email while online checkout finishes launch prep
+- availability: enrollment request at checkout, by phone, or by email; same-day setup; card or purchase order
 - summary: Master data center electrical infrastructure — from utility interconnection to UPS and PDU architecture.
 
 Power failures are the fastest way to take a data center offline, which is why electrical infrastructure gets more redundancy scrutiny than almost any other system. This course covers the full power chain: utility interconnection, switchgear and transformers, UPS systems (topologies, battery management, maintenance), PDU architecture, and redundancy strategy. Electrical safety and maintenance best practices run through every module — this isn't just architecture theory, it's paired with equipment evaluation frameworks, troubleshooting methodologies, and maintenance scheduling you can apply on the floor. You'll finish with a working understanding of electrical architecture trade-offs, so you can evaluate vendor proposals, troubleshoot power issues faster, and optimize your facility's power chain for both reliability and efficiency.
@@ -84,7 +85,7 @@ Modules:
 - language: English
 - delivery: Online, self-paced, no completion deadline
 - certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
-- availability: reserve seats by phone or email while online checkout finishes launch prep
+- availability: enrollment request at checkout, by phone, or by email; same-day setup; card or purchase order
 - summary: Master UPS operations, battery testing, and load-bank procedures.
 
 Focused, practical training on UPS systems: types and topologies, battery backup operation and testing, load transfer switching, and preventive maintenance. The course culminates in load-bank testing protocols — the procedure that actually proves a UPS will perform when it's needed. You'll leave with a maintenance schedule and testing routine you can run independently, plus emergency procedures for when a UPS doesn't perform as expected.
@@ -124,7 +125,7 @@ Modules:
 - language: English
 - delivery: Online, self-paced, no completion deadline
 - certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
-- availability: reserve seats by phone or email while online checkout finishes launch prep
+- availability: enrollment request at checkout, by phone, or by email; same-day setup; card or purchase order
 - summary: Size, test, and maintain backup generators with confidence.
 
 Specialized training on diesel generators: sizing calculations, load-bank testing protocols, fuel management, and cold-start procedures. This is the last line of defense when utility and UPS power both fail, and this course makes sure you're ready to run it correctly under pressure. You'll cover maintenance intervals and emergency operation procedures, and finish able to conduct generator exercises and pass load-bank tests independently.
@@ -164,7 +165,7 @@ Modules:
 - language: English
 - delivery: Online, self-paced, no completion deadline
 - certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
-- availability: reserve seats by phone or email while online checkout finishes launch prep
+- availability: enrollment request at checkout, by phone, or by email; same-day setup; card or purchase order
 - summary: NFPA 70E-aligned electrical safety fundamentals for facility staff.
 
 Safety fundamentals for electrical workers: NFPA 70E principles, personal protective equipment, and hazard identification. This course covers the core safety knowledge every facility employee working near electrical systems should have. You'll cover lockout/tagout concepts and emergency response procedures, finishing with a solid understanding of electrical workplace safety fundamentals.
@@ -204,7 +205,7 @@ Modules:
 - language: English
 - delivery: Online, self-paced, no completion deadline
 - certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
-- availability: reserve seats by phone or email while online checkout finishes launch prep
+- availability: enrollment request at checkout, by phone, or by email; same-day setup; card or purchase order
 - summary: Master DC circuit fundamentals and battery behavior behind every backup power system.
 
 Every UPS and standby power system in a data center runs on DC fundamentals underneath the AC-facing interface. This course covers DC circuit theory, battery chemistry basics, and the electrical fundamentals that explain why batteries behave the way they do under load. It's the theory layer that makes hands-on UPS and battery training click faster — not just procedure memorization, but the reasoning behind it.
@@ -244,7 +245,7 @@ Modules:
 - language: English
 - delivery: Online, self-paced, no completion deadline
 - certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
-- availability: reserve seats by phone or email while online checkout finishes launch prep
+- availability: enrollment request at checkout, by phone, or by email; same-day setup; card or purchase order
 - summary: NFPA 70E arc flash safety specific to data center switchgear and power distribution.
 
 Arc flash incidents in a data center happen around high-density switchgear and UPS systems, where the energy involved is often higher than in a typical commercial building. This course covers NFPA 70E arc flash boundaries, PPE selection, and safe work practices specific to data center electrical equipment. You'll leave able to recognize the equipment and conditions that raise arc flash risk on a data center floor specifically, not just general workplace electrical hazards.
@@ -284,7 +285,7 @@ Modules:
 - language: English
 - delivery: Online, self-paced, no completion deadline
 - certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
-- availability: reserve seats by phone or email while online checkout finishes launch prep
+- availability: enrollment request at checkout, by phone, or by email; same-day setup; card or purchase order
 - summary: Foundational electrical safety practices for anyone working around data center power systems.
 
 A foundational safety course for anyone who works around data center electrical systems, whether or not electrical work is their primary job. Covers core electrical hazard recognition, safe work distances, and the basic precautions that prevent the majority of electrical incidents. This is the course every new hire with floor access should take before anything more specialized — it establishes the baseline awareness the rest of the electrical curriculum builds on.
@@ -324,7 +325,7 @@ Modules:
 - language: English
 - delivery: Online, self-paced, no completion deadline
 - certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
-- availability: reserve seats by phone or email while online checkout finishes launch prep
+- availability: enrollment request at checkout, by phone, or by email; same-day setup; card or purchase order
 - summary: Safe activation and reset procedures for data center Emergency Power Off systems.
 
 An EPO button is one of the most consequential controls on a data center floor — activating it correctly, and understanding what happens after, is essential knowledge for anyone with floor access. This course covers safe activation criteria, coordination with fire/life safety systems, and reset procedures. You'll leave understanding not just how to press the button, but when it's actually the right call, and how to bring systems back safely afterward.
@@ -364,7 +365,7 @@ Modules:
 - language: English
 - delivery: Online, self-paced, no completion deadline
 - certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
-- availability: reserve seats by phone or email while online checkout finishes launch prep
+- availability: enrollment request at checkout, by phone, or by email; same-day setup; card or purchase order
 - summary: Safety-focused training for anyone working around data center UPS and battery systems.
 
 UPS and battery rooms carry hazards beyond standard electrical work: battery chemistry, off-gassing, and stored energy that remains even when a system is powered down. This course covers the safety practices specific to working around UPS and battery installations. You'll leave understanding the PPE and ventilation requirements that go beyond standard electrical safety, and how to respond if something goes wrong.
@@ -404,7 +405,7 @@ Modules:
 - language: English
 - delivery: Online, self-paced, no completion deadline
 - certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
-- availability: reserve seats by phone or email while online checkout finishes launch prep
+- availability: enrollment request at checkout, by phone, or by email; same-day setup; card or purchase order
 - summary: Understand the standby power systems that carry a facility through a utility outage.
 
 Standby power systems — generators, transfer switches, and the sequencing logic between them — are what actually carries a facility through a utility outage. This course covers standby power system fundamentals: automatic transfer switches, sequencing, and the maintenance that keeps them ready. You'll leave able to explain the failure points most likely to prevent a successful transfer, before they're tested by a real outage.
@@ -444,7 +445,7 @@ Modules:
 - language: English
 - delivery: Online, self-paced, no completion deadline
 - certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
-- availability: reserve seats by phone or email while online checkout finishes launch prep
+- availability: enrollment request at checkout, by phone, or by email; same-day setup; card or purchase order
 - summary: Foundational generator theory to complement hands-on operations and load-bank training.
 
 This course covers the theory behind the diesel and gas generators used for standby power: engine and alternator basics, fuel systems, and control logic — the foundational knowledge that makes the hands-on Generator Operations & Maintenance course click faster. You'll leave able to read generator control panel alarms and understand what's actually happening inside the machine, not just which button to press.
@@ -484,7 +485,7 @@ Modules:
 - language: English
 - delivery: Online, self-paced, no completion deadline
 - certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
-- availability: reserve seats by phone or email while online checkout finishes launch prep
+- availability: enrollment request at checkout, by phone, or by email; same-day setup; card or purchase order
 - summary: Recognize and respond to lithium-ion battery thermal runaway before it escalates.
 
 As data centers adopt lithium-ion UPS batteries, thermal runaway has become a distinct emergency scenario with its own warning signs and response protocol, different from traditional lead-acid battery incidents. This course covers thermal runaway recognition, containment, and emergency response specific to lithium-ion systems. You'll leave understanding why lithium-ion response differs from lead-acid procedures, and how to coordinate correctly with fire services on a lithium-ion-specific incident.
@@ -524,7 +525,7 @@ Modules:
 - language: English
 - delivery: Online, self-paced, no completion deadline
 - certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
-- availability: reserve seats by phone or email while online checkout finishes launch prep
+- availability: enrollment request at checkout, by phone, or by email; same-day setup; card or purchase order
 - summary: OSHA-aligned electrical safety-related work practices tailored to data center technicians.
 
 This course applies OSHA's electrical safety-related work practices (29 CFR 1910 Subpart S) specifically to the data center technician role: the equipment, access patterns, and daily tasks that put technicians near energized systems more often than in a typical facility. You'll leave with approach boundaries and documentation practices that keep your electrical safety program audit-ready.
@@ -564,7 +565,7 @@ Modules:
 - language: English
 - delivery: Online, self-paced, no completion deadline
 - certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
-- availability: reserve seats by phone or email while online checkout finishes launch prep
+- availability: enrollment request at checkout, by phone, or by email; same-day setup; card or purchase order
 - summary: Core power distribution theory behind PDUs, panels, and branch circuits.
 
 Power distribution systems take facility-level power and break it down into the branch circuits that actually reach a rack. This course covers the fundamentals of that distribution chain: panels, breakers, PDUs, and load balancing, as the theory foundation for PDU architecture and monitoring work. You'll leave able to read a panel schedule, size a breaker correctly, and understand how distribution fundamentals show up in rack-level PDU design.
@@ -604,7 +605,7 @@ Modules:
 - language: English
 - delivery: Online, self-paced, no completion deadline
 - certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
-- availability: reserve seats by phone or email while online checkout finishes launch prep
+- availability: enrollment request at checkout, by phone, or by email; same-day setup; card or purchase order
 - summary: Foundational UPS theory to complement hands-on operations and load testing.
 
 This course covers UPS system fundamentals — topology types, battery interaction, and control logic — as the theory foundation that makes the hands-on UPS Operations & Load Testing course click faster. Built for technicians who want to understand the why behind UPS operating procedures, not just the steps.
@@ -646,7 +647,7 @@ Modules:
 - language: English
 - delivery: Online, self-paced, no completion deadline
 - certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
-- availability: reserve seats by phone or email while online checkout finishes launch prep
+- availability: enrollment request at checkout, by phone, or by email; same-day setup; card or purchase order
 - summary: Cut cooling costs and improve reliability with modern thermal management strategy.
 
 Cooling is typically the second-largest line item in a data center's power bill, and the technology has moved fast — liquid cooling, containment, and free cooling have all become mainstream options in the last decade. This course covers CRAC/CRAH fundamentals, liquid cooling technologies (direct-to-chip, immersion), containment strategies, free cooling, and the thermal analysis behind PUE optimization. You'll work through cost-benefit analysis of different cooling technologies and energy modeling concepts, using case studies of facilities that achieved 30–50% energy improvements through better cooling strategy — not just newer equipment. The goal is a cooling optimization strategy you can actually implement: knowing which technology fits your facility's density and climate, and how to build the business case for the investment.
@@ -689,7 +690,7 @@ Modules:
 - language: English
 - delivery: Online, self-paced, no completion deadline
 - certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
-- availability: reserve seats by phone or email while online checkout finishes launch prep
+- availability: enrollment request at checkout, by phone, or by email; same-day setup; card or purchase order
 - summary: Hands-on troubleshooting skills for CRAC/CRAH systems and common cooling failures.
 
 Built for technicians who need practical troubleshooting skills, not design theory. This course covers refrigeration cycle fundamentals, psychrometrics basics, and hands-on CRAC/CRAH diagnostics — the skills you use during an actual cooling failure, not just a scheduled inspection. You'll work through common failure modes, airflow measurement techniques, and a preventive maintenance schedule you can apply immediately, plus emergency troubleshooting procedures for when cooling capacity drops unexpectedly.
@@ -729,7 +730,7 @@ Modules:
 - language: English
 - delivery: Online, self-paced, no completion deadline
 - certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
-- availability: reserve seats by phone or email while online checkout finishes launch prep
+- availability: enrollment request at checkout, by phone, or by email; same-day setup; card or purchase order
 - summary: Cut operating costs with a measurable PUE optimization roadmap.
 
 Focused on reducing operating costs: PUE calculation and benchmarking, energy audit procedures, and equipment efficiency ratings. This course pairs optimization strategies with financial modeling, so every recommendation comes with a cost-benefit case attached. Using real case studies and practical tools, you'll leave with an energy reduction roadmap built around measurable ROI, not just best-practice checklists.
@@ -769,7 +770,7 @@ Modules:
 - language: English
 - delivery: Online, self-paced, no completion deadline
 - certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
-- availability: reserve seats by phone or email while online checkout finishes launch prep
+- availability: enrollment request at checkout, by phone, or by email; same-day setup; card or purchase order
 - summary: Hands-on mechanical maintenance — piping, chillers, and vibration diagnostics.
 
 Mechanical operations for technicians: HVAC systems, piping, chiller operation, water treatment, and vibration analysis. Lab sessions include hands-on diagnostics, so the techniques transfer directly to your equipment. You'll leave with equipment maintenance protocols built around predictive maintenance and vendor coordination, reducing unplanned mechanical downtime.
@@ -809,7 +810,7 @@ Modules:
 - language: English
 - delivery: Online, self-paced, no completion deadline
 - certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
-- availability: reserve seats by phone or email while online checkout finishes launch prep
+- availability: enrollment request at checkout, by phone, or by email; same-day setup; card or purchase order
 - summary: Refrigerant handling and cooling system safety practices specific to data center CRAC/CRAH environments.
 
 Refrigerant handling carries its own hazard profile — pressure risk, chemical exposure, and environmental regulation — on top of the mechanical risks of CRAC/CRAH systems. This course covers safe refrigerant handling practices and cooling system safety procedures specific to data center environments. You'll leave knowing exactly how to isolate cooling equipment before service and what to do if a refrigerant leak or exposure incident happens.
@@ -849,7 +850,7 @@ Modules:
 - language: English
 - delivery: Online, self-paced, no completion deadline
 - certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
-- availability: reserve seats by phone or email while online checkout finishes launch prep
+- availability: enrollment request at checkout, by phone, or by email; same-day setup; card or purchase order
 - summary: Understand how a facility's building envelope drives cooling load and energy cost.
 
 The building envelope — walls, roof, insulation, and air sealing — determines how hard your cooling system has to work before a single CRAC unit turns on. This course covers building envelope fundamentals: insulation performance, air sealing, moisture control, and how envelope condition directly affects PUE and cooling cost. You'll leave able to spot envelope deficiencies that are quietly driving up your energy bill before they show up as a bigger mechanical problem.
@@ -891,7 +892,7 @@ Modules:
 - language: English
 - delivery: Online, self-paced, no completion deadline
 - certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
-- availability: reserve seats by phone or email while online checkout finishes launch prep
+- availability: enrollment request at checkout, by phone, or by email; same-day setup; card or purchase order
 - summary: Run daily operations like the teams behind Tier 3/4 facilities — maintenance, incident response, and SLAs.
 
 Great facility design means little without operational discipline behind it. This program covers the full operations lifecycle: DCIM asset tracking, preventive maintenance planning, emergency response protocols, SLA metric development, and energy optimization — the systems that keep a well-designed facility actually performing. The course includes lab simulations of critical failure scenarios and DCIM platform training concepts, so the frameworks aren't just theoretical. You'll build maintenance checklists, incident response runbooks, and SLA scorecards you can adapt directly to your facility. Drawing on real-world case studies from Tier 3/4 operations teams, this course is built for the person who owns uptime — not just the systems that support it.
@@ -934,7 +935,7 @@ Modules:
 - language: English
 - delivery: Online, self-paced, no completion deadline
 - certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
-- availability: reserve seats by phone or email while online checkout finishes launch prep
+- availability: enrollment request at checkout, by phone, or by email; same-day setup; card or purchase order
 - summary: Design resilient infrastructure and DR plans that survive real failures — not just tabletop exercises.
 
 Most disaster recovery plans fail at the first real test — not because the technology is wrong, but because RTO/RPO targets were never validated against reality. This course covers RTO/RPO definition and measurement, redundant site strategies (hot/warm/cold), failover procedures, data replication, geographic distribution, and supply chain resilience. You'll build DR testing frameworks and failover simulation plans, along with vendor SLA development and crisis communication strategies — the operational pieces that get skipped when DR planning stays purely technical. By the end, you'll be able to design a resilient infrastructure architecture and a DR plan that's actually been stress-tested against realistic failure scenarios, not just documented and filed away.
@@ -977,7 +978,7 @@ Modules:
 - language: English
 - delivery: Online, self-paced, no completion deadline
 - certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
-- availability: reserve seats by phone or email while online checkout finishes launch prep
+- availability: enrollment request at checkout, by phone, or by email; same-day setup; card or purchase order
 - summary: Reduce emergency repairs with a structured preventive maintenance program.
 
 An essential maintenance program: equipment lifecycle management, preventive maintenance scheduling, and predictive maintenance concepts. This course focuses on the documentation and tracking systems that make a maintenance program sustainable, not just a one-time schedule. You'll leave with maintenance calendars built around your own equipment inventory, and a framework for reducing emergency repairs over time.
@@ -1017,7 +1018,7 @@ Modules:
 - language: English
 - delivery: Online, self-paced, no completion deadline
 - certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
-- availability: reserve seats by phone or email while online checkout finishes launch prep
+- availability: enrollment request at checkout, by phone, or by email; same-day setup; card or purchase order
 - summary: Systematic troubleshooting and root-cause analysis to cut MTTR.
 
 Practical troubleshooting for technicians: systematic problem-solving, root cause analysis techniques, and failure mode recognition. This course focuses on the process behind fast, accurate troubleshooting — not just the systems themselves. You'll build escalation procedures and documentation habits that reduce mean time to resolution, plus a troubleshooting tree you can adapt to your own facility's systems.
@@ -1057,7 +1058,7 @@ Modules:
 - language: English
 - delivery: Online, self-paced, no completion deadline
 - certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
-- availability: reserve seats by phone or email while online checkout finishes launch prep
+- availability: enrollment request at checkout, by phone, or by email; same-day setup; card or purchase order
 - summary: A hands-on planning course for building or stress-testing a business continuity plan.
 
 This course complements the Disaster Recovery & Business Continuity comprehensive program with a dedicated, hands-on planning session: building a business continuity plan from scratch, working through ICS-NIMS-aligned emergency management frameworks, and stress-testing the plan against realistic scenarios. You'll leave with a plan structure and documentation approach that holds up under auditor or insurer review, not just a filed-away document.
@@ -1097,7 +1098,7 @@ Modules:
 - language: English
 - delivery: Online, self-paced, no completion deadline
 - certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
-- availability: reserve seats by phone or email while online checkout finishes launch prep
+- availability: enrollment request at checkout, by phone, or by email; same-day setup; card or purchase order
 - summary: Core building maintenance fundamentals for facilities teams supporting critical infrastructure.
 
 Beyond the specialized systems that keep a data center running, every facility needs disciplined general maintenance — from structural upkeep to routine systems checks. This course covers the maintenance fundamentals that keep a building sound around the critical infrastructure it houses. You'll build a practical framework for prioritizing general maintenance work without it ever competing with uptime-critical tasks.
@@ -1137,7 +1138,7 @@ Modules:
 - language: English
 - delivery: Online, self-paced, no completion deadline
 - certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
-- availability: reserve seats by phone or email while online checkout finishes launch prep
+- availability: enrollment request at checkout, by phone, or by email; same-day setup; card or purchase order
 - summary: Core facility management principles for teams running critical infrastructure.
 
 Facility management brings together maintenance, vendor coordination, budgeting, and compliance into one role. This course covers the foundational principles that make that juggling act manageable, with an eye toward the higher stakes of managing a critical infrastructure site. You'll leave with a framework for balancing maintenance, compliance, and uptime priorities instead of constantly fighting fires between them.
@@ -1177,7 +1178,7 @@ Modules:
 - language: English
 - delivery: Online, self-paced, no completion deadline
 - certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
-- availability: reserve seats by phone or email while online checkout finishes launch prep
+- availability: enrollment request at checkout, by phone, or by email; same-day setup; card or purchase order
 - summary: Preventive roofing maintenance to protect the facility below it.
 
 A roof leak above a data hall is a very different problem than a roof leak above an office. This course covers roofing system types, preventive maintenance scheduling, and inspection practices that catch problems before they threaten the equipment below. You'll leave with a risk-based way to prioritize roof maintenance by what's actually underneath it, not just a generic inspection checklist.
@@ -1217,7 +1218,7 @@ Modules:
 - language: English
 - delivery: Online, self-paced, no completion deadline
 - certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
-- availability: reserve seats by phone or email while online checkout finishes launch prep
+- availability: enrollment request at checkout, by phone, or by email; same-day setup; card or purchase order
 - summary: Safe lifting and ergonomic practices for server room and data hall work.
 
 Server and rack hardware is heavy, awkward, and often handled in tight spaces. This course covers safe lifting technique, ergonomic workstation setup, and manual handling practices specific to server room and data hall environments. You'll leave with practical habits that reduce strain injury risk during equipment installs and moves, not just generic lifting advice.
@@ -1257,7 +1258,7 @@ Modules:
 - language: English
 - delivery: Online, self-paced, no completion deadline
 - certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
-- availability: reserve seats by phone or email while online checkout finishes launch prep
+- availability: enrollment request at checkout, by phone, or by email; same-day setup; card or purchase order
 - summary: Confined space awareness and safe practices for working under a raised floor.
 
 The space under a raised floor is a confined space with its own hazards — cabling, airflow obstructions, and limited visibility. This awareness-level course covers safe raised-floor work practices and the confined space fundamentals relevant to under-floor access. You'll leave knowing exactly when under-floor work crosses the line into permit-required confined space territory.
@@ -1299,7 +1300,7 @@ Modules:
 - language: English
 - delivery: Online, self-paced, no completion deadline
 - certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
-- availability: reserve seats by phone or email while online checkout finishes launch prep
+- availability: enrollment request at checkout, by phone, or by email; same-day setup; card or purchase order
 - summary: Build a facility security program that satisfies SOC 2, ISO 27001, and physical audit requirements.
 
 Data center security spans two very different disciplines — physical security architecture and facility cybersecurity — and most compliance frameworks expect both to work together. This course covers physical security design (access control, surveillance, perimeter), facility cybersecurity fundamentals, and the regulatory frameworks (SOC 2, ISO 27001, HIPAA, PCI-DSS) that shape audit requirements. You'll build a security roadmap and facility-specific security policy using the audit framework development, compliance policy templates, and vendor evaluation strategies covered throughout the course — not generic advice, but the actual deliverables an auditor expects to see. The course also covers incident response planning and business continuity for security events, so your program covers detection and response, not just prevention.
@@ -1342,7 +1343,7 @@ Modules:
 - language: English
 - delivery: Online, self-paced, no completion deadline
 - certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
-- availability: reserve seats by phone or email while online checkout finishes launch prep
+- availability: enrollment request at checkout, by phone, or by email; same-day setup; card or purchase order
 - summary: Practical security training for facility staff — access control, surveillance, and incident reporting.
 
 Security training for facility staff: access control systems, surveillance equipment, threat identification, and emergency procedures. This is hands-on, operational training — how to run the systems day to day, not just design them. You'll cover incident reporting and chain of custody procedures, so security events are documented correctly from the moment they're identified.
@@ -1382,7 +1383,7 @@ Modules:
 - language: English
 - delivery: Online, self-paced, no completion deadline
 - certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
-- availability: reserve seats by phone or email while online checkout finishes launch prep
+- availability: enrollment request at checkout, by phone, or by email; same-day setup; card or purchase order
 - summary: Understand the environmental regulations that apply to your facility.
 
 Regulatory basics for facility managers: environmental regulations overview, permit and reporting requirements, and compliance audit procedures. Includes compliance checklist templates you can adapt to your facility's specific permit obligations. By the end, you'll understand the regulatory landscape well enough to know what applies to your facility and when to bring in specialized counsel.
@@ -1422,7 +1423,7 @@ Modules:
 - language: English
 - delivery: Online, self-paced, no completion deadline
 - certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
-- availability: reserve seats by phone or email while online checkout finishes launch prep
+- availability: enrollment request at checkout, by phone, or by email; same-day setup; card or purchase order
 - summary: Clean agent fire suppression safety for occupied data hall environments.
 
 Clean agent fire suppression systems protect data center equipment without the water damage of traditional sprinklers — but they carry their own safety considerations for anyone in the data hall when a system discharges. This course covers clean agent system basics, evacuation procedures, and post-discharge safety. You'll leave able to tell a false alarm from a real discharge event and know exactly what re-entry looks like afterward.
@@ -1462,7 +1463,7 @@ Modules:
 - language: English
 - delivery: Online, self-paced, no completion deadline
 - certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
-- availability: reserve seats by phone or email while online checkout finishes launch prep
+- availability: enrollment request at checkout, by phone, or by email; same-day setup; card or purchase order
 - summary: Foundational physical security and access control practices for data hall environments.
 
 A foundational course on data center physical security: badge and access control basics, visitor and vendor escort procedures, and the security posture expected on a data hall floor. Pairs well with the deeper Access Control & Physical Security specialization for staff who operate the systems directly. You'll leave with a clear sense of the common security gaps on a data hall floor and how to report an incident through the right channel.
@@ -1504,7 +1505,7 @@ Modules:
 - language: English
 - delivery: Online, self-paced, no completion deadline
 - certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
-- availability: reserve seats by phone or email while online checkout finishes launch prep
+- availability: enrollment request at checkout, by phone, or by email; same-day setup; card or purchase order
 - summary: Design data center facilities that scale — from site selection to redundancy strategy.
 
 Every high-availability data center starts as a set of design decisions — and the wrong ones are expensive to unwind after concrete is poured. This course walks through the full design lifecycle used by enterprise facility teams: international standards (ANSI/TIA-942, ISO 14644), site selection criteria, thermal design principles, power architecture, and the redundancy trade-offs (N, N+1, N+2, 2N) that determine both uptime and capital cost. You'll work through real design case studies, thermal modeling concepts, and ROI analysis frameworks used to justify facility investment to executive stakeholders. Rather than teaching a single vendor's playbook, the course focuses on the trade-off reasoning behind design choices, so you can evaluate proposals, vet vendor recommendations, and defend your own design decisions with data. By the end, you'll be able to read a facility design proposal critically, model redundancy options against budget constraints, and build the financial case for an expansion or new build.
@@ -1547,7 +1548,7 @@ Modules:
 - language: English
 - delivery: Online, self-paced, no completion deadline
 - certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
-- availability: reserve seats by phone or email while online checkout finishes launch prep
+- availability: enrollment request at checkout, by phone, or by email; same-day setup; card or purchase order
 - summary: Understand and assess TIER I–IV infrastructure without the formal certification track.
 
 The TIER classification system (I through IV) is the industry's shorthand for facility reliability — but understanding what actually separates a TIER III facility from a TIER IV one takes more than reading a definitions page. This course breaks down the topology requirements, electrical redundancy, cooling architecture, and management systems behind each TIER level. You'll learn the assessment methodologies used to audit an existing facility against TIER benchmarks, including gap analysis procedures and infrastructure scoring methods — the same frameworks used before a formal certification engagement, without the certification requirement or cost. This is practical benchmarking knowledge: understand where your facility sits today, what it would take to move up a TIER level, and how to communicate that gap to stakeholders.
@@ -1590,7 +1591,7 @@ Modules:
 - language: English
 - delivery: Online, self-paced, no completion deadline
 - certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
-- availability: reserve seats by phone or email while online checkout finishes launch prep
+- availability: enrollment request at checkout, by phone, or by email; same-day setup; card or purchase order
 - summary: Lead new facility launches and major upgrades with a proven commissioning framework.
 
 A facility that passes commissioning on paper but fails in production is a commissioning process that missed something. This course covers the full commissioning lifecycle: pre-commissioning planning, electrical and mechanical systems testing, controls and automation commissioning, and performance baseline establishment. You'll work with commissioning checklists and test plan templates used on real facility launches, plus staff readiness assessment and vendor coordination — the operational handoff steps that determine whether a new facility actually performs once it's live. This course is built for the person accountable for a launch date: it gives you a repeatable framework so nothing gets missed between 'construction complete' and 'operationally ready.'
@@ -1633,7 +1634,7 @@ Modules:
 - language: English
 - delivery: Online, self-paced, no completion deadline
 - certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
-- availability: reserve seats by phone or email while online checkout finishes launch prep
+- availability: enrollment request at checkout, by phone, or by email; same-day setup; card or purchase order
 - summary: Build a 3–5 year capacity plan before you run out of power, cooling, or space.
 
 Strategic planning for growth: workload characterization, power and cooling demand forecasting, and infrastructure constraint analysis. This course gives you the frameworks to see capacity constraints coming years before they become emergencies. You'll build phased expansion plans and financial models, and finish with the ability to develop 3–5 year capacity plans and growth scenarios your leadership team can actually plan around.
@@ -1675,7 +1676,7 @@ Modules:
 - language: English
 - delivery: Online, self-paced, no completion deadline
 - certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
-- availability: reserve seats by phone or email while online checkout finishes launch prep
+- availability: enrollment request at checkout, by phone, or by email; same-day setup; card or purchase order
 - summary: Design a monitoring and BMS strategy that catches problems before they cause downtime.
 
 A facility is only as observable as its monitoring strategy — and most downtime incidents were technically visible in the data well before they became outages. This course covers sensor deployment and calibration, network monitoring fundamentals, BMS architecture, data analytics and predictive modeling, and dashboard design. Hands-on labs cover monitoring tool training, data visualization, and alert tuning — because a monitoring system that generates too many false alerts gets ignored, and one that's too quiet misses real problems. You'll leave with a monitoring strategy framework built to reduce downtime, not just generate reports: the right sensors, the right thresholds, and dashboards that surface what actually matters.
@@ -1718,7 +1719,7 @@ Modules:
 - language: English
 - delivery: Online, self-paced, no completion deadline
 - certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
-- availability: reserve seats by phone or email while online checkout finishes launch prep
+- availability: enrollment request at checkout, by phone, or by email; same-day setup; card or purchase order
 - summary: Understand DCIM strategy and build the ROI case for implementation.
 
 Platform-agnostic DCIM training: software-based infrastructure management, asset tracking, power/thermal modeling, and data visualization. Rather than teaching one vendor's tool, this course focuses on DCIM strategy — what to look for and why. You'll finish with a vendor evaluation framework and the ability to build the ROI business case for implementing a DCIM system in your own facility.
@@ -1759,7 +1760,7 @@ Modules:
 - language: English
 - delivery: Online, self-paced, no completion deadline
 - certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
-- availability: reserve seats by phone or email while online checkout finishes launch prep
+- availability: enrollment request at checkout, by phone, or by email; same-day setup; card or purchase order
 - summary: Terminate, test, and troubleshoot data center fiber to ANSI/TIA-942 standards.
 
 A technical, hands-on curriculum covering multi-mode and single-mode fiber, connector types (LC, SC, MTP/MPO), fiber plant design, termination, splicing, and OTDR testing. Every technique is grounded in ANSI/TIA-942 data center cabling standards, so what you learn maps directly to audit and design requirements. By the end, you'll be able to terminate and test fiber connections independently and troubleshoot connectivity issues without waiting on a specialist.
@@ -1799,7 +1800,7 @@ Modules:
 - language: English
 - delivery: Online, self-paced, no completion deadline
 - certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
-- availability: reserve seats by phone or email while online checkout finishes launch prep
+- availability: enrollment request at checkout, by phone, or by email; same-day setup; card or purchase order
 - summary: Understand the building automation systems that tie HVAC, power, and monitoring together.
 
 Building Automation Systems (BAS) are the control layer behind HVAC, lighting, and power monitoring in modern facilities — and increasingly overlap with the BMS and DCIM platforms used in data centers. This course covers BAS architecture, sensor and controller basics, and how automation logic actually gets built and tuned. You'll leave able to read a points list, understand a control sequence, and troubleshoot the integration issues that come up when BAS meets facility-specific monitoring.
@@ -1920,17 +1921,17 @@ Prices are per seat in USD. Seat-count volume discounts apply at checkout: 2-10 
 ## Credentials
 
 - certificate: Learners receive a certificate of completion for each finished course, issued immediately and printable.
-- accreditation: Courses are delivered by HAZWOPER OSHA Training, LLC, an IACET Accredited Provider. Accreditation applies at the provider level, not to individual learners or courses.
+- accreditation: HAZWOPER OSHA Training, LLC, the parent company, is an IACET Accredited Provider. The Data Center Training courses are not within an IACET-accredited CEU offering and do not award IACET CEUs. Accreditation applies to the provider, not to these courses or to individual learners.
 - standards_alignment: Course content is designed around the industry standard or framework named on each course (for example ANSI/TIA-942, the Uptime Institute Tier framework, NFPA 70E, SOC 2/ISO 27001). "Aligned with" is not the same as "issued by" or "approved by" that standards body.
-- ceu_pdh: These courses are not currently registered for CEUs or PDHs. Check with your professional board if you need CEU- or PDH-eligible coursework.
+- ceu_pdh: These courses do not award IACET CEUs, PDHs, or any other continuing education credit. Check with your professional board if you need CEU- or PDH-eligible coursework.
 - expiration: Certificates of completion have no fixed expiration date. Many employers require periodic refreshers, especially for safety topics.
-- verification: Every certificate can be verified online by learner name, course, and completion date.
+- verification: Each certificate carries a unique certificate number and issue date. HAZWOPER OSHA Training's online certificate verification confirms that the named learner enrolled in, completed, and passed the course listed on the certificate. It does not confirm job qualification, licensure, or CEU credit.
 - employer_responsibility: Employers remain responsible for determining whether employees are trained, qualified, and competent for their assigned duties and site conditions, and for keeping their own training records.
 
 Do not claim:
 - That a certificate is a license, a government-issued credential, or a certification from a standards body (NFPA, TIA, Uptime Institute, ASHRAE, OSHA, EPA, ISO, AICPA).
 - That a standards body endorsed, approved, or certified any course.
-- That courses grant CEUs or PDHs.
+- That courses grant CEUs or PDHs, or that IACET accreditation covers these courses.
 - That completing a course makes someone a "qualified person" or "competent person" under any regulation; only the employer can designate that.
 - That IACET accredits individual learners.
 
@@ -1962,7 +1963,7 @@ Yes. Every course page lists its full module breakdown, learning outcomes, and a
 
 ### Are these courses accepted as certification or a professional credential?
 
-These are knowledge and best-practices courses, not certification exams or licensing programs — no course requires or grants a regulatory certification. Learners receive a certificate of completion documenting the training content covered. Courses are delivered by an IACET-accredited provider, the same accreditation used across our other training programs.
+No. These are knowledge and best-practices courses, not certification exams or licensing programs. Learners receive a certificate of completion documenting the training they finished. Our parent company, HAZWOPER OSHA Training, LLC, is an IACET Accredited Provider, but that accreditation is held by the company. These data center courses do not carry IACET CEUs and are not a professional certification.
 
 ### What standards and frameworks do the courses reference?
 
@@ -1974,11 +1975,15 @@ Certificates of completion don't have a fixed expiration date, but many employer
 
 ### How do I verify an employee's completed certificate?
 
-Every certificate issued through our IACET-accredited platform can be verified using our online certificate verification tool, which confirms the learner's name, course, and completion date. Facility security and HR teams commonly use this to confirm training before granting system or floor access.
+Each certificate of completion carries a unique certificate number and issue date. Enter them on HAZWOPER OSHA Training's certificate verification page. A successful lookup confirms that the learner named on the certificate enrolled in, completed, and passed the course listed on it. It does not confirm that the person is qualified for specific work, licensed, or holds CEU credit. Those decisions stay with the employer.
 
 ### Do you offer CEUs or PDHs (continuing education units)?
 
-These courses aren't currently registered for CEUs or PDHs. They're built as standards-aligned, best-practices training with a certificate of completion rather than accredited continuing-education credit — check with your professional board if you specifically need CEU- or PDH-eligible coursework.
+No. HAZWOPER OSHA Training, LLC, our parent company, is an IACET Accredited Provider, but these data center courses do not carry IACET CEUs. They are also not approved for PDHs or any other continuing education credit. Learners receive a certificate of completion only. Check with your licensing board or professional body if you specifically need CEU- or PDH-eligible coursework.
+
+### Does a safety course qualify someone to do electrical or other hazardous work?
+
+No. An online course alone does not make anyone a qualified person for energized electrical work, confined space entry, refrigerant handling, or other hazardous tasks. Under OSHA rules and standards such as NFPA 70E, the employer decides who is qualified, based on training plus demonstrated skills on the specific equipment and tasks at that site. Our safety courses provide the knowledge portion of that training. Each safety course page lists the standards it covers and what it does and does not prepare a learner to do.
 
 ### How is the certificate delivered, and can I print it?
 
@@ -2003,6 +2008,10 @@ Courses run in a standard web browser on any device. If you or someone on your t
 ### Do you offer a free trial or sample lesson?
 
 There isn't a free trial, but every course page publishes the full module breakdown and learning outcomes so you can see exactly what's covered before enrolling.
+
+### Is instructor-led, virtual, or on-site training available?
+
+Data Center Training courses are published as online, self-paced courses. HAZWOPER OSHA Training also delivers training in three other formats: live virtual instructor-led sessions, in-person sessions at your site for larger groups, and SCORM packages for your own LMS. To ask whether a data center topic can be delivered in one of these formats for your team, email info@hazwoper-osha.com or call 1-866-429-6742 for a quote.
 
 ### What's included in a bundle, and how much do I save?
 
@@ -2030,7 +2039,7 @@ We don't have separate published government or education pricing, but larger ord
 
 ### Is my payment information secure?
 
-Yes. Checkout is processed by Stripe, a PCI-compliant payment processor. We never see or store your full card details.
+Yes. You don't enter card details when you send an enrollment request. When you pay by card, payment is processed by Stripe, a PCI-compliant payment processor, and we never see or store your full card details. Corporate accounts can pay by purchase order instead.
 
 ### Can I choose only the courses my team needs?
 
@@ -2038,11 +2047,11 @@ Yes. Every course is sold individually, so you can enroll each person in exactly
 
 ### Can I enroll my team online right now?
 
-Data Center Training courses are in final launch prep, so online checkout is currently in preview mode. Call 1-866-429-6742 or email info@hazwoper-osha.com and our team will get your seats reserved and your team enrolled directly.
+Yes. Open any course or bundle, choose Enroll Now, set your seat count, and send the enrollment request. Our team replies by email with your order confirmation and payment options, and sets up learner accounts the same day. You can also call 1-866-429-6742 or email info@hazwoper-osha.com.
 
 ### Do you offer volume pricing for large teams?
 
-Yes. Seat-count discounts apply automatically at checkout on a per-course or per-bundle basis, from 2 seats up through 1,000+.
+Yes. Seat-count discounts apply automatically when you set your seat count at checkout, on a per-course or per-bundle basis: 1% for 2-10 seats, 2% for 11-20, 3% for 21-50, 5% for 51-100, 7% for 101-250, 8% for 251-500, and 10% for 501-1,000. For more than 1,000 seats, contact us.
 
 ### Can contractors and third-party vendors take this training?
 
@@ -2054,7 +2063,7 @@ Yes. Course content is built around widely used industry standards and framework
 
 ### What payment and invoicing options are available for larger teams?
 
-Online checkout accepts major credit and debit cards through Stripe. For larger facility teams, multi-site enrollments, bundle purchases, or purchase-order/invoice billing, call 1-866-429-6742 or email info@hazwoper-osha.com and our team can set up group enrollment outside of the standard checkout flow.
+You can pay by credit or debit card, or use a purchase order number for a corporate account. Note the PO number in your enrollment request, or call 1-866-429-6742 or email info@hazwoper-osha.com for multi-site enrollments, bundle purchases, or invoice billing.
 
 ### Can I get a single invoice for a mixed order of courses and bundles?
 
@@ -2062,7 +2071,11 @@ Yes. Contact us for multi-item or mixed course-and-bundle orders and our team ca
 
 ### How do I track completions across my team?
 
-Each learner gets their own login and certificate of completion. For team-wide progress tracking or reporting, contact us during enrollment and our team can help set up group reporting.
+Courses run on HAZWOPER OSHA Training's cloud-based learning management system. A training manager or supervisor can register for an account, enroll as many learners as needed, assign or change learners from the dashboard after purchase, and track each learner's progress, grades, and course completions in real time. Each learner gets their own login and certificate of completion, which can be downloaded for your training records.
+
+### Can we run the training in our own LMS?
+
+Our parent company, HAZWOPER OSHA Training, provides SCORM packages for organizations with an in-house learning management system. SCORM availability for individual data center courses is confirmed per order, so tell us which courses you need when you send your enrollment request, or email info@hazwoper-osha.com.
 
 ### What's the difference between this training and HAZWOPER/OSHA safety training from your parent company?
 
@@ -2083,7 +2096,7 @@ Email info@hazwoper-osha.com or call 1-866-429-6742 and our team can help with c
 - [Which Courses Does Your Role Need?](https://datacentertraining.us/who.html) (site page): Role-to-track recommendations for electricians, HVAC techs, operations managers, security leads, engineers, and IT staff.
 - [Certifications & Accreditations](https://datacentertraining.us/certifications.html) (site page): IACET provider accreditation and what a certificate of completion does and does not mean.
 - [FAQ](https://datacentertraining.us/faq.html) (site page): Answers about programs, pricing, certificates, access, team enrollment, and policies.
-- [Certificate Verification](https://hazwoper-osha.com/certificate-verification) (site page): Verify a learner certificate by name, course, and completion date.
+- [Certificate Verification](https://hazwoper-osha.com/certificate-verification) (site page): Verify a learner certificate using its certificate number and issue date; confirms the named learner enrolled in, completed, and passed the listed course.
 - [OSHA 29 CFR 1910.146 - Permit-required confined spaces](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.146) (standard reference): Federal OSHA confined space standard referenced by the raised floor and confined space awareness course.
 - [OSHA 29 CFR 1910.333 - Selection and use of electrical work practices](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.333) (standard reference): Federal OSHA electrical safety-related work practices standard.
 - [EPA Section 608 - Stationary refrigeration and air conditioning](https://www.epa.gov/section608) (standard reference): Federal refrigerant management requirements relevant to cooling system work.

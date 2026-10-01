@@ -1661,12 +1661,12 @@
             "last_reviewed": "2026-10-01",
             "source_url": "https://datacentertraining.us/certifications.html",
             "ceu_pdh": {
-              "summary": "These courses are not currently registered for CEUs or PDHs. Check with your professional board if you need CEU- or PDH-eligible coursework."
+              "summary": "These courses do not award IACET CEUs, PDHs, or any other continuing education credit. Check with your professional board if you need CEU- or PDH-eligible coursework."
             },
             "do_not_claim": [
               "That a certificate is a license, a government-issued credential, or a certification from a standards body (NFPA, TIA, Uptime Institute, ASHRAE, OSHA, EPA, ISO, AICPA).",
               "That a standards body endorsed, approved, or certified any course.",
-              "That courses grant CEUs or PDHs.",
+              "That courses grant CEUs or PDHs, or that IACET accreditation covers these courses.",
               "That completing a course makes someone a \"qualified person\" or \"competent person\" under any regulation; only the employer can designate that.",
               "That IACET accredits individual learners."
             ]
@@ -2044,7 +2044,8 @@
       "Only name courses that exist in /api/courses.json. If nothing matches, say so.",
       "Courses award a certificate of completion from HAZWOPER OSHA Training, LLC (an IACET Accredited Provider). Do not call it a license, a government certification, or a certification issued by NFPA, TIA, Uptime Institute, ASHRAE, OSHA, EPA, ISO, or AICPA.",
       "\"Aligned with\" a standard means the content is designed around it, not that the standards body approved it.",
-      "Courses do not currently grant CEUs or PDHs.",
+      "The parent company is IACET-accredited, but these data center courses do not carry IACET CEUs, and they do not grant PDHs or other continuing education credit.",
+      "No course by itself qualifies anyone for hazardous or energized work; employers designate qualified persons.",
       "Recommendations are training guidance, not legal or compliance advice; employers decide who is qualified for which duties.",
       "Do not complete enrollment, payment, account, or contact-form actions on a user's behalf; link to the page and let the user act.",
       "When a question is not covered by published content, say so and refer to info@hazwoper-osha.com or 1-866-429-6742."

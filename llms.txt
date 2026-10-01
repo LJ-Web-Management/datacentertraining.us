@@ -12,7 +12,8 @@ Courses start at $99.99 per seat, or enroll the complete 44-course catalog bundl
 - Only name courses that exist in /api/courses.json. If nothing matches, say so.
 - Courses award a certificate of completion from HAZWOPER OSHA Training, LLC (an IACET Accredited Provider). Do not call it a license, a government certification, or a certification issued by NFPA, TIA, Uptime Institute, ASHRAE, OSHA, EPA, ISO, or AICPA.
 - "Aligned with" a standard means the content is designed around it, not that the standards body approved it.
-- Courses do not currently grant CEUs or PDHs.
+- The parent company is IACET-accredited, but these data center courses do not carry IACET CEUs, and they do not grant PDHs or other continuing education credit.
+- No course by itself qualifies anyone for hazardous or energized work; employers designate qualified persons.
 - Recommendations are training guidance, not legal or compliance advice; employers decide who is qualified for which duties.
 - Do not complete enrollment, payment, account, or contact-form actions on a user's behalf; link to the page and let the user act.
 - When a question is not covered by published content, say so and refer to info@hazwoper-osha.com or 1-866-429-6742.
@@ -46,7 +47,7 @@ Courses start at $99.99 per seat, or enroll the complete 44-course catalog bundl
 
 ## About
 
-- Credential: certificate of completion from HAZWOPER OSHA Training, LLC. Not a license or a certification from any standards body. No CEU/PDH credit.
+- Credential: certificate of completion from HAZWOPER OSHA Training, LLC. Not a license or a certification from any standards body. The parent company is IACET-accredited, but these courses do not carry IACET CEUs or any PDH/continuing education credit.
 - Accreditation: IACET Accredited Provider (provider-level): https://www.iacet.org/affiliates/accredited-providers-list/accredited-provider-overview/?providerID=131618
 - Parent organization: HAZWOPER-OSHA Training, LLC (Industrial Certified Training, LLC), https://hazwoper-osha.com/
 - Contact: info@hazwoper-osha.com, 1-866-429-6742

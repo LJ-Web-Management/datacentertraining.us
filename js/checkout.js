@@ -31,11 +31,67 @@ document.addEventListener('DOMContentLoaded', function () {
   var itemSlug = urlParams.get('item') || (typeof DC_COURSES !== 'undefined' && DC_COURSES[0] ? DC_COURSES[0].slug : 'electrical-safety');
   var selected = (typeof findDcItem === 'function') ? findDcItem(itemSlug) : null;
   if (!selected) {
-    selected = { type: 'course', name: 'Data Center Design Fundamentals', price: 695, courseId: 401 };
+    selected = { type: 'course', name: 'Data Center Design Fundamentals', price: 312.99, courseId: 401 };
   }
 
   var basePrice = selected.price;
   var selectedCourseIds = selected.type === 'bundle' ? selected.courseIds : [selected.courseId];
+
+  // While online payment is off, this page sends an enrollment request by
+  // email instead of charging a card. Flip CHECKOUT_DISABLED in config.js to
+  // switch back to the Stripe flow below.
+  var requestMode = typeof CHECKOUT_DISABLED !== 'undefined' && CHECKOUT_DISABLED;
+  var ENROLL_EMAIL = 'info@hazwoper-osha.com';
+
+  var seatInput = document.getElementById('seatCount');
+  var seatParam = parseInt(urlParams.get('seats'), 10);
+  if (seatInput && seatParam > 0) seatInput.value = String(seatParam);
+
+  var getSeats = function () {
+    var n = seatInput ? parseInt(seatInput.value, 10) : 1;
+    return n > 0 ? n : 1;
+  };
+
+  var priceFor = function (seats) {
+    var tier = typeof tierForSeats === 'function' ? tierForSeats(seats) : { discount: 0 };
+    var unit = typeof tierPrice === 'function' ? tierPrice(basePrice, tier) : basePrice;
+    var subtotal = Math.round(basePrice * seats * 100) / 100;
+    var total = Math.round(unit * seats * 100) / 100;
+    return { tier: tier, unit: unit, subtotal: subtotal, total: total, discount: Math.round((subtotal - total) * 100) / 100 };
+  };
+
+  var fmt = function (amt) {
+    if (typeof formatMoney === 'function') return formatMoney(amt);
+    return Number(amt).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  };
+
+  var updateSummary = function () {
+    var seats = getSeats();
+    var p = priceFor(seats);
+    var set = function (id, text) { var el = document.getElementById(id); if (el) el.textContent = text; };
+    set('summaryCourseQty', (selected.type === 'bundle' ? 'Bundle · ' : '') + seats + (seats === 1 ? ' seat' : ' seats') + ' × $' + fmt(basePrice));
+    set('summaryCourseAmount', '$' + fmt(p.subtotal));
+    set('summarySubtotal', '$' + fmt(p.subtotal));
+    set('summaryTotal', '$' + fmt(p.total));
+    var discountRow = document.getElementById('summaryDiscountRow');
+    if (discountRow) discountRow.hidden = !(p.discount > 0);
+    set('summaryDiscountLabel', 'Volume discount (' + Math.round((p.tier.discount || 0) * 100) + '%)');
+    set('summaryDiscount', '-$' + fmt(p.discount));
+    if (currentOrderDetails) {
+      currentOrderDetails.seats = seats;
+      currentOrderDetails.totalPrice = p.total;
+    }
+    return p;
+  };
+
+  var loadStripeJs = function (done) {
+    if (window.Stripe) { done(); return; }
+    var tag = document.createElement('script');
+    tag.src = 'https://js.stripe.com/v3/';
+    tag.onload = done;
+    tag.onerror = function () { console.error('Stripe.js failed to load'); };
+    document.head.appendChild(tag);
+  };
 
   var getStripe = function () {
     if (stripe) return stripe;
@@ -51,7 +107,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (!submitPaymentBtn) return;
     var btnText = submitPaymentBtn.querySelector('.btn-text');
     var btnSpinner = submitPaymentBtn.querySelector('.btn-spinner');
-    submitPaymentBtn.disabled = isLoading || (typeof CHECKOUT_DISABLED !== 'undefined' && CHECKOUT_DISABLED);
+    submitPaymentBtn.disabled = isLoading;
     if (btnText) btnText.hidden = isLoading;
     if (btnSpinner) btnSpinner.hidden = !isLoading;
   };
@@ -66,20 +122,10 @@ document.addEventListener('DOMContentLoaded', function () {
       totalPrice: basePrice
     };
 
-    var fmt = function (amt) {
-      if (typeof formatMoney === 'function') return formatMoney(amt);
-      return Number(amt).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-    };
-
     var summaryNameEl = document.getElementById('summaryCourseName');
-    var summaryQtyEl = document.getElementById('summaryCourseQty');
     var summaryIncludesEl = document.getElementById('summaryCourseIncludes');
-    var summaryAmtEl = document.getElementById('summaryCourseAmount');
-    var summarySubtotalEl = document.getElementById('summarySubtotal');
-    var summaryTotalEl = document.getElementById('summaryTotal');
 
     if (summaryNameEl) summaryNameEl.textContent = selected.name;
-    if (summaryQtyEl) summaryQtyEl.textContent = selected.type === 'bundle' ? 'Bundle · 1 team seat' : 'Qty: 1';
     if (summaryIncludesEl) {
       if (selected.type === 'bundle' && selected.includedNames) {
         summaryIncludesEl.hidden = false;
@@ -90,12 +136,34 @@ document.addEventListener('DOMContentLoaded', function () {
         summaryIncludesEl.hidden = true;
       }
     }
-    if (summaryAmtEl) summaryAmtEl.textContent = '$' + fmt(basePrice);
-    if (summarySubtotalEl) summarySubtotalEl.textContent = '$' + fmt(basePrice);
-    if (summaryTotalEl) summaryTotalEl.textContent = '$' + fmt(basePrice);
+    updateSummary();
+    if (seatInput) seatInput.addEventListener('input', updateSummary);
 
-    // Mount Stripe Card Element — fully wired even while checkout is disabled,
-    // so enabling it later only requires flipping CHECKOUT_DISABLED in config.js.
+    var requestSection = document.getElementById('requestSection');
+    var paymentSection = document.getElementById('paymentSection');
+    var addressFields = document.getElementById('billingAddressFields');
+
+    if (requestMode) {
+      // Enrollment request: no card, no billing address needed yet.
+      if (requestSection) requestSection.hidden = false;
+      if (paymentSection) paymentSection.hidden = true;
+      if (addressFields) {
+        addressFields.hidden = true;
+        Array.prototype.forEach.call(addressFields.querySelectorAll('[required]'), function (el) { el.required = false; });
+      }
+      return;
+    }
+
+    if (requestSection) requestSection.hidden = true;
+    if (paymentSection) paymentSection.hidden = false;
+    var enrollNote = document.getElementById('enrollModeNote');
+    if (enrollNote) {
+      enrollNote.innerHTML = 'Pay securely by card below. For purchase-order billing, call <a href="tel:18664296742" style="color:inherit;text-decoration:underline;">1-866-429-6742</a> or email <a href="mailto:info@hazwoper-osha.com" style="color:inherit;text-decoration:underline;">info@hazwoper-osha.com</a>.';
+    }
+    loadStripeJs(mountCard);
+  };
+
+  var mountCard = function () {
     var stripeInstance = getStripe();
     if (!stripeInstance) return;
 
@@ -119,14 +187,6 @@ document.addEventListener('DOMContentLoaded', function () {
       cardElement.mount('#payment-element');
     } catch (err) {
       console.warn('Error mounting Stripe Card Element:', err);
-    }
-
-    // Checkout is disabled until Data Center Safety courses are live in the LMS.
-    if (typeof CHECKOUT_DISABLED !== 'undefined' && CHECKOUT_DISABLED && submitPaymentBtn) {
-      submitPaymentBtn.disabled = true;
-      submitPaymentBtn.setAttribute('aria-disabled', 'true');
-      var btnText = submitPaymentBtn.querySelector('.btn-text');
-      if (btnText) btnText.textContent = 'Enrollment Opening Soon';
     }
   };
 
@@ -168,16 +228,82 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  var fieldValue = function (id) {
+    var el = document.getElementById(id);
+    return el ? el.value.trim() : '';
+  };
+
+  var sendEnrollmentRequest = function () {
+    var requestError = document.getElementById('request-error');
+    if (requestError) requestError.hidden = true;
+    if (iti && phoneInput && phoneInput.value.trim() !== '' && !iti.isValidNumber()) {
+      if (phoneErrorEl) {
+        phoneErrorEl.textContent = 'Please enter a valid phone number.';
+        phoneErrorEl.hidden = false;
+      }
+      phoneInput.focus();
+      return;
+    }
+
+    var seats = getSeats();
+    var p = updateSummary();
+    var phone = (iti && typeof iti.getNumber === 'function' && iti.getNumber()) || fieldValue('billingPhone');
+    var lines = [
+      'Enrollment request from datacentertraining.us',
+      '',
+      (selected.type === 'bundle' ? 'Bundle: ' : 'Course: ') + selected.name + ' (' + itemSlug + ')',
+      'Seats: ' + seats,
+      'List price: $' + fmt(basePrice) + ' per seat',
+      'Estimated total: $' + fmt(p.total) + (p.discount > 0 ? ' after ' + Math.round(p.tier.discount * 100) + '% volume discount' : ''),
+      '',
+      'Name: ' + fieldValue('billingFirstName') + ' ' + fieldValue('billingLastName'),
+      'Company: ' + (fieldValue('billingCompany') || '-'),
+      'Email: ' + fieldValue('billingEmail'),
+      'Phone: ' + phone
+    ];
+    var notes = fieldValue('requestNotes');
+    if (notes) lines.push('', 'Notes: ' + notes);
+    var body = lines.join('\n');
+    var subject = 'Enrollment request: ' + selected.name + ' (' + seats + (seats === 1 ? ' seat)' : ' seats)');
+    var href = 'mailto:' + ENROLL_EMAIL + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+
+    var sentView = document.getElementById('requestSentView');
+    var summaryText = document.getElementById('requestSummaryText');
+    var reopen = document.getElementById('reopenEmailLink');
+    if (summaryText) summaryText.textContent = 'To: ' + ENROLL_EMAIL + '\nSubject: ' + subject + '\n\n' + body;
+    if (reopen) reopen.href = href;
+
+    stripeCheckoutForm.hidden = true;
+    stripeCheckoutForm.style.display = 'none';
+    var pageHeader = document.querySelector('.checkout-header');
+    if (pageHeader) { pageHeader.hidden = true; pageHeader.style.display = 'none'; }
+    if (sentView) {
+      sentView.hidden = false;
+      sentView.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'generate_lead', { currency: 'USD', value: p.total, items: [{ item_id: itemSlug, item_name: selected.name, quantity: seats }] });
+    }
+    window.location.href = href;
+  };
+
+  var copyBtn = document.getElementById('copyRequestBtn');
+  if (copyBtn) {
+    copyBtn.addEventListener('click', function () {
+      var text = (document.getElementById('requestSummaryText') || {}).textContent || '';
+      var done = function () { copyBtn.textContent = 'Copied'; };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(done, function () {});
+      }
+    });
+  }
+
   // Handle Form Submit
   stripeCheckoutForm.addEventListener('submit', async function (e) {
     e.preventDefault();
 
-    // Hard stop: checkout is disabled until courses are live in the LMS.
-    if (typeof CHECKOUT_DISABLED !== 'undefined' && CHECKOUT_DISABLED) {
-      if (paymentErrorAlert) {
-        paymentErrorAlert.textContent = 'Online enrollment is opening soon. Call 1-866-429-6742 or email info@hazwoper-osha.com to enroll now.';
-        paymentErrorAlert.hidden = false;
-      }
+    if (requestMode) {
+      sendEnrollmentRequest();
       return;
     }
 
@@ -297,7 +423,7 @@ document.addEventListener('DOMContentLoaded', function () {
         courses: (currentOrderDetails && currentOrderDetails.courseIds ? currentOrderDetails.courseIds : [null]).map(function (cid) {
           return {
             course_id: cid,
-            quantity: 1,
+            quantity: getSeats(),
             users: [ { first_name: firstName, last_name: lastName, email: userEmail, user_name: "" } ]
           };
         })
