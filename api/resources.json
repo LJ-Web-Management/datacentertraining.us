@@ -1,8 +1,8 @@
 {
   "publisher": "Data Center Training (datacentertraining.us)",
-  "last_updated": "2026-09-30",
+  "last_updated": "2026-10-01",
   "license": "Public information; quote with attribution and a link to the source URL.",
-  "count": 29,
+  "count": 30,
   "resources": [
     {
       "source": "Data Center Training (first party)",
@@ -163,6 +163,16 @@
       "audience": [
         "hvac"
       ]
+    },
+    {
+      "type": "blog_post",
+      "title": "ISO 27001 Physical Evidence: What Data Center Facility Managers Should Organize Before an Audit",
+      "url": "https://datacentertraining.us/blog/posts/iso-27001-physical-evidence-what-data-center-facility-managers-should-organize-before-an-audit.html",
+      "description": "When an ISO 27001 audit reaches the facility, can the data center team show how physical and environmental controls work in practice, or can it only produce…",
+      "topics": [],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-10-01"
     },
     {
       "type": "blog_post",

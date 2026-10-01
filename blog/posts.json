@@ -168,5 +168,15 @@
     "date": "2026-09-30",
     "dateDisplay": "September 30, 2026",
     "excerpt": "When a data center loses a utility source, cooling path, controls network, building access system, or another facility capability, can the team use its…"
+  },
+  {
+    "title": "ISO 27001 Physical Evidence: What Data Center Facility Managers Should Organize Before an Audit",
+    "slug": "iso-27001-physical-evidence-what-data-center-facility-managers-should-organize-before-an-audit",
+    "seoTitle": "ISO 27001 Physical Evidence: What Data Center Facility",
+    "description": "When an ISO 27001 audit reaches the facility, can the data center team show how physical and environmental controls work in practice, or can it only produce…",
+    "image": "assets/img/posts/iso-27001-physical-evidence-what-data-center-facility-managers-should-organize-before-an-audit.jpg",
+    "date": "2026-10-01",
+    "dateDisplay": "October 1, 2026",
+    "excerpt": "When an ISO 27001 audit reaches the facility, can the data center team show how physical and environmental controls work in practice, or can it only produce…"
   }
 ]
