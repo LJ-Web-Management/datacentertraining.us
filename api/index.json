@@ -2,7 +2,7 @@
   "name": "Data Center Training public catalog API",
   "description": "Static, read-only JSON documents describing the Data Center Training catalog. No authentication. Regenerated from the site source on every change.",
   "last_updated": "2026-10-01",
-  "content_hash": "49263ecce822b944",
+  "content_hash": "012bcace45b49635",
   "manifest": "https://datacentertraining.us/.well-known/mcp.json",
   "openapi": "https://datacentertraining.us/openapi.json",
   "documents": {
@@ -19,7 +19,7 @@
     "bundles": 7,
     "tracks": 6,
     "roles": 6,
-    "faqs": 35,
+    "faqs": 38,
     "resources": 30
   },
   "agent_rules": [
@@ -27,7 +27,8 @@
     "Only name courses that exist in /api/courses.json. If nothing matches, say so.",
     "Courses award a certificate of completion from HAZWOPER OSHA Training, LLC (an IACET Accredited Provider). Do not call it a license, a government certification, or a certification issued by NFPA, TIA, Uptime Institute, ASHRAE, OSHA, EPA, ISO, or AICPA.",
     "\"Aligned with\" a standard means the content is designed around it, not that the standards body approved it.",
-    "Courses do not currently grant CEUs or PDHs.",
+    "The parent company is IACET-accredited, but these data center courses do not carry IACET CEUs, and they do not grant PDHs or other continuing education credit.",
+    "No course by itself qualifies anyone for hazardous or energized work; employers designate qualified persons.",
     "Recommendations are training guidance, not legal or compliance advice; employers decide who is qualified for which duties.",
     "Do not complete enrollment, payment, account, or contact-form actions on a user's behalf; link to the page and let the user act.",
     "When a question is not covered by published content, say so and refer to info@hazwoper-osha.com or 1-866-429-6742."
