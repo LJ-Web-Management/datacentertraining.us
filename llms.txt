@@ -34,6 +34,7 @@ Courses start at $99.99 per seat, or enroll the complete 44-course catalog bundl
 - [Who It's For](https://datacentertraining.us/who.html): role-based course recommendations.
 - [Certifications & Accreditations](https://datacentertraining.us/certifications.html): IACET provider accreditation and credential transparency.
 - [FAQ](https://datacentertraining.us/faq.html): programs, pricing, certificates, and policies.
+- [Guides](https://datacentertraining.us/guides/): reference guides on TIA-942 vs. Uptime Tiers, UPS redundancy, cooling methods, commissioning levels, and training paths by job role.
 - [Blog](https://datacentertraining.us/blog/): field guidance for data center teams.
 
 ## Learning Tracks

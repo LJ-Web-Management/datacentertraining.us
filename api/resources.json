@@ -2,7 +2,7 @@
   "publisher": "Data Center Training (datacentertraining.us)",
   "last_updated": "2026-10-01",
   "license": "Public information; quote with attribution and a link to the source URL.",
-  "count": 30,
+  "count": 36,
   "resources": [
     {
       "source": "Data Center Training (first party)",
@@ -59,6 +59,92 @@
       "description": "Answers about programs, pricing, certificates, access, team enrollment, and policies.",
       "topics": [
         "faq"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Guides",
+      "url": "https://datacentertraining.us/guides/",
+      "description": "Free reference guides on data center standards, power, cooling, commissioning, and role-based training paths.",
+      "topics": [
+        "guides",
+        "tier",
+        "ups",
+        "cooling",
+        "commissioning"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "TIA-942 vs. Uptime Institute Tiers",
+      "url": "https://datacentertraining.us/guides/tia-942-vs-uptime-tier.html",
+      "description": "How ANSI/TIA-942 Rated levels and Uptime Institute Tiers differ in publisher, scope, approach, and certification.",
+      "topics": [
+        "tier",
+        "tia-942",
+        "design"
+      ],
+      "audience": [
+        "design"
+      ]
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "UPS Topologies and Redundancy",
+      "url": "https://datacentertraining.us/guides/ups-topologies-redundancy.html",
+      "description": "Standby, line-interactive, and double-conversion UPS designs, and N, N+1, 2N, and 2(N+1) redundancy compared.",
+      "topics": [
+        "ups",
+        "battery",
+        "electrical"
+      ],
+      "audience": [
+        "electrician"
+      ]
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Cooling Methods Compared",
+      "url": "https://datacentertraining.us/guides/data-center-cooling-methods.html",
+      "description": "CRAC vs. CRAH, containment, in-row, rear-door, direct-to-chip, and immersion cooling, with ASHRAE inlet ranges and PUE.",
+      "topics": [
+        "cooling",
+        "pue",
+        "refrigerant"
+      ],
+      "audience": [
+        "hvac"
+      ]
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Commissioning Levels 1-5",
+      "url": "https://datacentertraining.us/guides/data-center-commissioning-levels.html",
+      "description": "The five commissioning levels, from factory witness testing to integrated systems testing.",
+      "topics": [
+        "commissioning"
+      ],
+      "audience": [
+        "design",
+        "operations"
+      ]
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Training Paths by Job Role",
+      "url": "https://datacentertraining.us/guides/data-center-training-paths-by-role.html",
+      "description": "Ordered course sequences for technicians, operators, electricians, HVAC staff, security, designers, and facility managers.",
+      "topics": [
+        "roles",
+        "training matrix"
       ],
       "audience": []
     },

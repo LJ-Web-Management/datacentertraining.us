@@ -1933,8 +1933,23 @@
             "topic": "refrigerant"
           },
           "output": {
-            "count": 2,
+            "count": 3,
             "resources": [
+              {
+                "source": "Data Center Training (first party)",
+                "type": "site_page",
+                "title": "Data Center Cooling Methods Compared",
+                "url": "https://datacentertraining.us/guides/data-center-cooling-methods.html",
+                "description": "CRAC vs. CRAH, containment, in-row, rear-door, direct-to-chip, and immersion cooling, with ASHRAE inlet ranges and PUE.",
+                "topics": [
+                  "cooling",
+                  "pue",
+                  "refrigerant"
+                ],
+                "audience": [
+                  "hvac"
+                ]
+              },
               {
                 "source": "U.S. Environmental Protection Agency",
                 "type": "standard_reference",
@@ -1949,19 +1964,6 @@
                 "audience": [
                   "hvac"
                 ]
-              },
-              {
-                "type": "blog_post",
-                "title": "What Cooling Technicians Should Verify Before Opening a Refrigerant Circuit",
-                "url": "https://datacentertraining.us/blog/posts/what-cooling-technicians-should-verify-before-opening-a-refrigerant-circuit.html",
-                "description": "What data center cooling technicians should verify before opening a refrigerant circuit: isolation, refrigerant recovery, pressure checks, and PPE.",
-                "topics": [
-                  "cooling",
-                  "refrigerant"
-                ],
-                "audience": [],
-                "source": "Data Center Training (first party)",
-                "published": "2026-09-24"
               }
             ]
           },

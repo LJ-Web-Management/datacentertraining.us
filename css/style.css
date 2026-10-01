@@ -525,3 +525,31 @@ a { color: inherit; }
 .standards-table td { vertical-align: top; padding: 10px; border-bottom: 1px solid var(--hairline); }
 .standards-table tr:last-child td { border-bottom: none; }
 @media (max-width: 640px) { .standards-table { min-width: 560px; } }
+
+/* Guides (knowledge hub) */
+.guide-article h1 { font-size: clamp(28px, 4.5vw, 40px); font-weight: 700; letter-spacing: -0.025em; line-height: 1.15; margin-top: 8px; }
+.guide-article h2 { font-size: clamp(20px, 3vw, 24px); font-weight: 700; letter-spacing: -0.015em; margin: 36px 0 12px; }
+.guide-article p, .guide-article li { font-size: 15.5px; line-height: 1.7; color: var(--text-body); }
+.guide-article p + p { margin-top: 12px; }
+.guide-article ul, .guide-article ol { padding-left: 20px; }
+.guide-article li + li { margin-top: 6px; }
+.guide-article a { color: var(--accent-link); }
+.guide-article .panel { margin: 4px 0 8px; }
+.guide-byline { margin-top: 10px; font-size: 13px !important; color: var(--text-3) !important; }
+.answer-box { margin: 22px 0 8px; padding: 18px 20px; border-radius: var(--r-panel); background: var(--accent-tint); border-left: 4px solid var(--accent); }
+.answer-box p { color: var(--text) !important; }
+.guide-list { margin: 0; }
+.guide-meta { font-size: 13px !important; color: var(--text-3) !important; white-space: nowrap; }
+p.guide-meta { margin-top: 8px; white-space: normal; }
+.guide-note { margin-top: 32px; padding-top: 16px; border-top: 1px solid var(--hairline); font-size: 13px !important; color: var(--text-3) !important; }
+.guide-toc { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0 !important; margin: 20px 0 0; }
+.guide-toc li { margin: 0 !important; }
+.guide-toc a { display: inline-block; padding: 6px 12px; border-radius: 999px; background: var(--surface); box-shadow: var(--sh-panel); font-size: 13px; text-decoration: none; }
+.standards-table th[scope="row"] { font-weight: 600; color: var(--text); padding: 10px; border-bottom: 1px solid var(--hairline); text-align: left; vertical-align: top; }
+.guide-grid { grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+.guide-card { display: block; color: inherit; text-decoration: none; }
+.guide-card h2 { font-size: 17px; font-weight: 650; letter-spacing: -0.01em; margin-bottom: 8px; }
+.guide-card p { font-size: 14px; color: var(--text-2); line-height: 1.55; }
+.guide-card .cert-box-arrow { display: block; margin-top: 12px; font-size: 13px; font-weight: 600; color: var(--accent-link); }
+.course-guides { font-size: 14.5px; line-height: 1.6; color: var(--text-body); margin: 0 0 24px; }
+.course-guides a { color: var(--accent-link); }

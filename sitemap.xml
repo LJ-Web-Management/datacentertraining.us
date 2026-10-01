@@ -301,6 +301,42 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://datacentertraining.us/guides/</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://datacentertraining.us/guides/data-center-training-paths-by-role.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://datacentertraining.us/guides/tia-942-vs-uptime-tier.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://datacentertraining.us/guides/ups-topologies-redundancy.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://datacentertraining.us/guides/data-center-cooling-methods.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://datacentertraining.us/guides/data-center-commissioning-levels.html</loc>
+    <lastmod>2026-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://datacentertraining.us/blog/</loc>
     <lastmod>2026-10-01</lastmod>
     <changefreq>weekly</changefreq>
