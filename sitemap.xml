@@ -301,6 +301,24 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://datacentertraining.us/privacy.html</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://datacentertraining.us/terms.html</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://datacentertraining.us/accessibility.html</loc>
+    <lastmod>2026-10-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://datacentertraining.us/blog/</loc>
     <lastmod>2026-10-02</lastmod>
     <changefreq>weekly</changefreq>
