@@ -554,3 +554,19 @@ a { color: inherit; }
 .legal-page li + li { margin-top: 6px; }
 .legal-page a:not(.btn) { color: var(--accent-link); }
 .legal-page .table-scroll { margin: 8px 0 16px; }
+
+/* 404 page */
+.visually-hidden { position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.not-found h1 { font-size: clamp(30px, 5vw, 44px); font-weight: 700; letter-spacing: -0.025em; margin-top: 8px; }
+.not-found-lede { margin-top: 12px; font-size: 16px; line-height: 1.6; color: var(--text-2); }
+.not-found-search { display: flex; gap: 10px; margin: 24px 0 8px; }
+.not-found-search input { flex: 1; min-width: 0; height: 46px; padding: 0 16px; border-radius: 999px; border: 1px solid var(--hairline); background: var(--surface); font: inherit; font-size: 15px; color: var(--text); }
+.not-found-search input:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+.not-found h2 { font-size: 18px; font-weight: 650; margin: 32px 0 12px; }
+.not-found-links { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+.not-found-links a { display: flex; flex-direction: column; gap: 2px; padding: 14px 16px; border-radius: var(--r-card); background: var(--surface); box-shadow: var(--sh-panel); color: var(--text); text-decoration: none; }
+.not-found-links a:hover { color: var(--accent-link); }
+.not-found-links span { font-size: 13px; color: var(--text-3); }
+.not-found-help { margin-top: 28px; font-size: 14px; color: var(--text-2); }
+.not-found-help a { color: var(--accent-link); }
+@media (max-width: 560px) { .not-found-search { flex-direction: column; } .not-found-links { grid-template-columns: 1fr; } }

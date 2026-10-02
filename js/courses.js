@@ -29,7 +29,8 @@ document.addEventListener('DOMContentLoaded', function () {
     var haystack = (
       row.dataset.name + ' ' + row.dataset.category + ' ' + (row.dataset.standard || '')
     ).toLowerCase();
-    return haystack.indexOf(query) !== -1;
+    // Every word must appear somewhere, in any order ("ups load test" matches "UPS Operations & Load Testing").
+    return query.split(/\s+/).every(function (word) { return haystack.indexOf(word) !== -1; });
   }
 
   function matchesCategory(row, category) {
