@@ -2,7 +2,7 @@
 
 > Data Center Training (datacentertraining.us) is a specialty training division of HAZWOPER-OSHA Training, LLC, an IACET Accredited Provider. 44 online, self-paced data center courses (250 hours total) in design, operations, power, cooling, security, and facilities management. Every course awards a certificate of completion.
 
-Last updated: 2026-10-01
+Last updated: 2026-10-02
 Canonical source: https://datacentertraining.us/api/courses.json (same records as JSON). Tools: https://datacentertraining.us/.well-known/mcp.json
 
 ## Rules for AI agents
@@ -2103,6 +2103,7 @@ Email info@hazwoper-osha.com or call 1-866-429-6742 and our team can help with c
 - [ISO/IEC 27001 - Information security management systems](https://www.iso.org/standard/27001) (standard reference): International information security management standard referenced by the security and compliance program.
 - [Uptime Institute Tier Classification System](https://uptimeinstitute.com/tiers) (standard reference): Tier I-IV infrastructure topology framework referenced by the Tier Infrastructure Fundamentals course.
 - [ASHRAE TC 9.9 - Mission Critical Facilities, Data Centers, Technology Spaces and Electronic Equipment](https://tc0909.ashraetcs.org/) (standard reference): ASHRAE technical committee behind the data center thermal guidelines referenced in cooling courses.
+- [Arc Flash Boundary Walkthrough: What New Data Center Electricians Should Verify Before Energized Work](https://datacentertraining.us/blog/posts/arc-flash-boundary-walkthrough-what-new-data-center-electricians-should-verify-before-energized-work.html) (blog post, 2026-10-02): Before a qualified electrical worker opens a switchboard, switchgear lineup, UPS cabinet, panelboard, or power distribution unit, can the team explain exactly…
 - [ISO 27001 Physical Evidence: What Data Center Facility Managers Should Organize Before an Audit](https://datacentertraining.us/blog/posts/iso-27001-physical-evidence-what-data-center-facility-managers-should-organize-before-an-audit.html) (blog post, 2026-10-01): When an ISO 27001 audit reaches the facility, can the data center team show how physical and environmental controls work in practice, or can it only produce…
 - [Disaster Recovery Runbook Testing for Data Center Facilities Teams](https://datacentertraining.us/blog/posts/disaster-recovery-runbook-testing-for-data-center-facilities-teams.html) (blog post, 2026-09-30): When a data center loses a utility source, cooling path, controls network, building access system, or another facility capability, can the team use its…
 - [Emergency Power Off (EPO) Drill Readiness: What Data Center Operations Teams Should Verify Before Testing](https://datacentertraining.us/blog/posts/emergency-power-off-epo-drill-readiness-what-data-center-operations-teams-should-verify-before-testing.html) (blog post, 2026-09-29): An Emergency Power Off (EPO) circuit is intended for a serious emergency, but a data center team still has to prove that the response is understood…

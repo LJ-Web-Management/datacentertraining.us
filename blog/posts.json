@@ -178,5 +178,15 @@
     "date": "2026-10-01",
     "dateDisplay": "October 1, 2026",
     "excerpt": "When an ISO 27001 audit reaches the facility, can the data center team show how physical and environmental controls work in practice, or can it only produce…"
+  },
+  {
+    "title": "Arc Flash Boundary Walkthrough: What New Data Center Electricians Should Verify Before Energized Work",
+    "slug": "arc-flash-boundary-walkthrough-what-new-data-center-electricians-should-verify-before-energized-work",
+    "seoTitle": "Arc Flash Boundary Walkthrough | Data Center Training",
+    "description": "Before a qualified electrical worker opens a switchboard, switchgear lineup, UPS cabinet, panelboard, or power distribution unit, can the team explain exactly…",
+    "image": "assets/img/posts/arc-flash-boundary-walkthrough-what-new-data-center-electricians-should-verify-before-energized-work.jpg",
+    "date": "2026-10-02",
+    "dateDisplay": "October 2, 2026",
+    "excerpt": "Before a qualified electrical worker opens a switchboard, switchgear lineup, UPS cabinet, panelboard, or power distribution unit, can the team explain exactly…"
   }
 ]

@@ -1,8 +1,8 @@
 {
   "publisher": "Data Center Training (datacentertraining.us)",
-  "last_updated": "2026-10-01",
+  "last_updated": "2026-10-02",
   "license": "Public information; quote with attribution and a link to the source URL.",
-  "count": 30,
+  "count": 31,
   "resources": [
     {
       "source": "Data Center Training (first party)",
@@ -163,6 +163,19 @@
       "audience": [
         "hvac"
       ]
+    },
+    {
+      "type": "blog_post",
+      "title": "Arc Flash Boundary Walkthrough: What New Data Center Electricians Should Verify Before Energized Work",
+      "url": "https://datacentertraining.us/blog/posts/arc-flash-boundary-walkthrough-what-new-data-center-electricians-should-verify-before-energized-work.html",
+      "description": "Before a qualified electrical worker opens a switchboard, switchgear lineup, UPS cabinet, panelboard, or power distribution unit, can the team explain exactly…",
+      "topics": [
+        "electrical",
+        "ups"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-10-02"
     },
     {
       "type": "blog_post",

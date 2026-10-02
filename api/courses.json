@@ -1,6 +1,6 @@
 {
   "publisher": "Data Center Training (datacentertraining.us)",
-  "last_updated": "2026-10-01",
+  "last_updated": "2026-10-02",
   "license": "Public information; quote with attribution and a link to the source URL.",
   "count": 44,
   "courses": [
@@ -111,7 +111,7 @@
         "infrastructure-commissioning-startup",
         "capacity-planning-forecasting"
       ],
-      "last_updated": "2026-10-01"
+      "last_updated": "2026-10-02"
     },
     {
       "id": "tier-infrastructure-fundamentals",
@@ -220,7 +220,7 @@
         "infrastructure-commissioning-startup",
         "capacity-planning-forecasting"
       ],
-      "last_updated": "2026-10-01"
+      "last_updated": "2026-10-02"
     },
     {
       "id": "data-center-operations-management",
@@ -332,7 +332,7 @@
         "business-continuity-disaster-recovery-planning",
         "building-maintenance-fundamentals"
       ],
-      "last_updated": "2026-10-01"
+      "last_updated": "2026-10-02"
     },
     {
       "id": "security-compliance-data-centers",
@@ -443,7 +443,7 @@
         "data-center-fire-suppression-safety",
         "data-center-physical-security-access-control"
       ],
-      "last_updated": "2026-10-01"
+      "last_updated": "2026-10-02"
     },
     {
       "id": "power-systems-electrical-fundamentals",
@@ -554,7 +554,7 @@
         "batteries-dc-circuits",
         "data-center-arc-flash-safety"
       ],
-      "last_updated": "2026-10-01"
+      "last_updated": "2026-10-02"
     },
     {
       "id": "cooling-systems-design-optimization",
@@ -666,7 +666,7 @@
         "data-center-cooling-refrigerant-safety",
         "building-envelope-fundamentals"
       ],
-      "last_updated": "2026-10-01"
+      "last_updated": "2026-10-02"
     },
     {
       "id": "disaster-recovery-business-continuity",
@@ -777,7 +777,7 @@
         "business-continuity-disaster-recovery-planning",
         "building-maintenance-fundamentals"
       ],
-      "last_updated": "2026-10-01"
+      "last_updated": "2026-10-02"
     },
     {
       "id": "infrastructure-commissioning-startup",
@@ -886,7 +886,7 @@
         "tier-infrastructure-fundamentals",
         "capacity-planning-forecasting"
       ],
-      "last_updated": "2026-10-01"
+      "last_updated": "2026-10-02"
     },
     {
       "id": "monitoring-automation-bms-systems",
@@ -996,7 +996,7 @@
         "fiber-optics-network-cabling",
         "building-automation-systems-fundamentals"
       ],
-      "last_updated": "2026-10-01"
+      "last_updated": "2026-10-02"
     },
     {
       "id": "hvac-troubleshooting-essentials",
@@ -1096,7 +1096,7 @@
         "data-center-cooling-refrigerant-safety",
         "building-envelope-fundamentals"
       ],
-      "last_updated": "2026-10-01"
+      "last_updated": "2026-10-02"
     },
     {
       "id": "ups-operations-load-testing",
@@ -1196,7 +1196,7 @@
         "batteries-dc-circuits",
         "data-center-arc-flash-safety"
       ],
-      "last_updated": "2026-10-01"
+      "last_updated": "2026-10-02"
     },
     {
       "id": "fiber-optics-network-cabling",
@@ -1296,7 +1296,7 @@
         "dcim-platform-fundamentals",
         "building-automation-systems-fundamentals"
       ],
-      "last_updated": "2026-10-01"
+      "last_updated": "2026-10-02"
     },
     {
       "id": "generator-operations-maintenance",
@@ -1396,7 +1396,7 @@
         "batteries-dc-circuits",
         "data-center-arc-flash-safety"
       ],
-      "last_updated": "2026-10-01"
+      "last_updated": "2026-10-02"
     },
     {
       "id": "energy-efficiency-pue-optimization",
@@ -1498,7 +1498,7 @@
         "data-center-cooling-refrigerant-safety",
         "building-envelope-fundamentals"
       ],
-      "last_updated": "2026-10-01"
+      "last_updated": "2026-10-02"
     },
     {
       "id": "capacity-planning-forecasting",
@@ -1596,7 +1596,7 @@
         "tier-infrastructure-fundamentals",
         "infrastructure-commissioning-startup"
       ],
-      "last_updated": "2026-10-01"
+      "last_updated": "2026-10-02"
     },
     {
       "id": "preventive-maintenance-planning",
@@ -1696,7 +1696,7 @@
         "business-continuity-disaster-recovery-planning",
         "building-maintenance-fundamentals"
       ],
-      "last_updated": "2026-10-01"
+      "last_updated": "2026-10-02"
     },
     {
       "id": "facility-environmental-compliance",
@@ -1795,7 +1795,7 @@
         "data-center-fire-suppression-safety",
         "data-center-physical-security-access-control"
       ],
-      "last_updated": "2026-10-01"
+      "last_updated": "2026-10-02"
     },
     {
       "id": "incident-response-troubleshooting",
@@ -1895,7 +1895,7 @@
         "business-continuity-disaster-recovery-planning",
         "building-maintenance-fundamentals"
       ],
-      "last_updated": "2026-10-01"
+      "last_updated": "2026-10-02"
     },
     {
       "id": "access-control-physical-security",
@@ -1994,7 +1994,7 @@
         "data-center-fire-suppression-safety",
         "data-center-physical-security-access-control"
       ],
-      "last_updated": "2026-10-01"
+      "last_updated": "2026-10-02"
     },
     {
       "id": "dcim-platform-fundamentals",
@@ -2098,7 +2098,7 @@
         "fiber-optics-network-cabling",
         "building-automation-systems-fundamentals"
       ],
-      "last_updated": "2026-10-01"
+      "last_updated": "2026-10-02"
     },
     {
       "id": "mechanical-systems-maintenance",
@@ -2198,7 +2198,7 @@
         "data-center-cooling-refrigerant-safety",
         "building-envelope-fundamentals"
       ],
-      "last_updated": "2026-10-01"
+      "last_updated": "2026-10-02"
     },
     {
       "id": "electrical-safety-best-practices",
@@ -2300,7 +2300,7 @@
         "batteries-dc-circuits",
         "data-center-arc-flash-safety"
       ],
-      "last_updated": "2026-10-01"
+      "last_updated": "2026-10-02"
     },
     {
       "id": "batteries-dc-circuits",
@@ -2400,7 +2400,7 @@
         "electrical-safety-best-practices",
         "data-center-arc-flash-safety"
       ],
-      "last_updated": "2026-10-01"
+      "last_updated": "2026-10-02"
     },
     {
       "id": "building-automation-systems-fundamentals",
@@ -2500,7 +2500,7 @@
         "dcim-platform-fundamentals",
         "fiber-optics-network-cabling"
       ],
-      "last_updated": "2026-10-01"
+      "last_updated": "2026-10-02"
     },
     {
       "id": "building-envelope-fundamentals",
@@ -2600,7 +2600,7 @@
         "mechanical-systems-maintenance",
         "data-center-cooling-refrigerant-safety"
       ],
-      "last_updated": "2026-10-01"
+      "last_updated": "2026-10-02"
     },
     {
       "id": "building-maintenance-fundamentals",
@@ -2700,7 +2700,7 @@
         "incident-response-troubleshooting",
         "business-continuity-disaster-recovery-planning"
       ],
-      "last_updated": "2026-10-01"
+      "last_updated": "2026-10-02"
     },
     {
       "id": "business-continuity-disaster-recovery-planning",
@@ -2802,7 +2802,7 @@
         "incident-response-troubleshooting",
         "building-maintenance-fundamentals"
       ],
-      "last_updated": "2026-10-01"
+      "last_updated": "2026-10-02"
     },
     {
       "id": "data-center-arc-flash-safety",
@@ -2904,7 +2904,7 @@
         "electrical-safety-best-practices",
         "batteries-dc-circuits"
       ],
-      "last_updated": "2026-10-01"
+      "last_updated": "2026-10-02"
     },
     {
       "id": "data-center-cooling-refrigerant-safety",
@@ -3006,7 +3006,7 @@
         "mechanical-systems-maintenance",
         "building-envelope-fundamentals"
       ],
-      "last_updated": "2026-10-01"
+      "last_updated": "2026-10-02"
     },
     {
       "id": "data-center-electrical-safety",
@@ -3106,7 +3106,7 @@
         "electrical-safety-best-practices",
         "batteries-dc-circuits"
       ],
-      "last_updated": "2026-10-01"
+      "last_updated": "2026-10-02"
     },
     {
       "id": "data-center-epo-procedures",
@@ -3206,7 +3206,7 @@
         "electrical-safety-best-practices",
         "batteries-dc-circuits"
       ],
-      "last_updated": "2026-10-01"
+      "last_updated": "2026-10-02"
     },
     {
       "id": "data-center-fire-suppression-safety",
@@ -3307,7 +3307,7 @@
         "facility-environmental-compliance",
         "data-center-physical-security-access-control"
       ],
-      "last_updated": "2026-10-01"
+      "last_updated": "2026-10-02"
     },
     {
       "id": "data-center-physical-security-access-control",
@@ -3406,7 +3406,7 @@
         "facility-environmental-compliance",
         "data-center-fire-suppression-safety"
       ],
-      "last_updated": "2026-10-01"
+      "last_updated": "2026-10-02"
     },
     {
       "id": "data-center-raised-floor-confined-space",
@@ -3508,7 +3508,7 @@
         "incident-response-troubleshooting",
         "business-continuity-disaster-recovery-planning"
       ],
-      "last_updated": "2026-10-01"
+      "last_updated": "2026-10-02"
     },
     {
       "id": "data-center-ups-battery-safety",
@@ -3608,7 +3608,7 @@
         "electrical-safety-best-practices",
         "batteries-dc-circuits"
       ],
-      "last_updated": "2026-10-01"
+      "last_updated": "2026-10-02"
     },
     {
       "id": "emergency-standby-power-systems-fundamentals",
@@ -3708,7 +3708,7 @@
         "electrical-safety-best-practices",
         "batteries-dc-circuits"
       ],
-      "last_updated": "2026-10-01"
+      "last_updated": "2026-10-02"
     },
     {
       "id": "facility-management-fundamentals",
@@ -3808,7 +3808,7 @@
         "incident-response-troubleshooting",
         "business-continuity-disaster-recovery-planning"
       ],
-      "last_updated": "2026-10-01"
+      "last_updated": "2026-10-02"
     },
     {
       "id": "generator-fundamentals",
@@ -3908,7 +3908,7 @@
         "electrical-safety-best-practices",
         "batteries-dc-circuits"
       ],
-      "last_updated": "2026-10-01"
+      "last_updated": "2026-10-02"
     },
     {
       "id": "lithium-ion-thermal-runaway-emergency-response",
@@ -4008,7 +4008,7 @@
         "electrical-safety-best-practices",
         "batteries-dc-circuits"
       ],
-      "last_updated": "2026-10-01"
+      "last_updated": "2026-10-02"
     },
     {
       "id": "osha-electrical-safety-data-center-technicians",
@@ -4110,7 +4110,7 @@
         "electrical-safety-best-practices",
         "batteries-dc-circuits"
       ],
-      "last_updated": "2026-10-01"
+      "last_updated": "2026-10-02"
     },
     {
       "id": "power-distribution-systems-fundamentals",
@@ -4210,7 +4210,7 @@
         "electrical-safety-best-practices",
         "batteries-dc-circuits"
       ],
-      "last_updated": "2026-10-01"
+      "last_updated": "2026-10-02"
     },
     {
       "id": "roofing-systems-maintenance-fundamentals",
@@ -4310,7 +4310,7 @@
         "incident-response-troubleshooting",
         "business-continuity-disaster-recovery-planning"
       ],
-      "last_updated": "2026-10-01"
+      "last_updated": "2026-10-02"
     },
     {
       "id": "server-room-ergonomics-manual-handling",
@@ -4410,7 +4410,7 @@
         "incident-response-troubleshooting",
         "business-continuity-disaster-recovery-planning"
       ],
-      "last_updated": "2026-10-01"
+      "last_updated": "2026-10-02"
     },
     {
       "id": "ups-systems-fundamentals",
@@ -4510,7 +4510,7 @@
         "electrical-safety-best-practices",
         "batteries-dc-circuits"
       ],
-      "last_updated": "2026-10-01"
+      "last_updated": "2026-10-02"
     }
   ]
 }
