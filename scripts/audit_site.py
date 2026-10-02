@@ -18,6 +18,8 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ORIGIN = "https://datacentertraining.us"
 SKIP_DIRS = {".git", "node_modules", "scripts", "uploads"}
 NOINDEX_OK = {"checkout.html"}
+# Served by GitHub Pages for any missing URL: no canonical, never linked to.
+ERROR_PAGES = {"404.html"}
 
 errors, warnings = [], []
 
@@ -141,7 +143,12 @@ def main():
         if not noindex:
             titles.setdefault(t, []).append(rel)
             descs.setdefault(d, []).append(rel)
-        if p.canonical != url:
+        if rel in ERROR_PAGES:
+            if p.canonical:
+                err(rel, "error page must not declare a canonical URL")
+            if not noindex:
+                err(rel, "error page must be noindex")
+        elif p.canonical != url:
             err(rel, f"canonical {p.canonical!r} != {url}")
         if p.h1 != 1:
             err(rel, f"{p.h1} <h1> elements")
@@ -217,7 +224,7 @@ def main():
     for u in sorted(indexable - set(sm_urls)):
         err("sitemap.xml", f"indexable page missing: {u}")
     for rel, n in inlinks.items():
-        if n == 0 and rel != "index.html":
+        if n == 0 and rel != "index.html" and rel not in ERROR_PAGES:
             err(rel, "orphan page (no internal links)")
 
     for w in warnings:
