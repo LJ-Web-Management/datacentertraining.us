@@ -11,8 +11,8 @@
 <link rel="alternate" type="application/json" href="/.well-known/mcp.json" title="WebMCP manifest">
 <link rel="service-desc" type="application/vnd.oai.openapi+json" href="/openapi.json">
 <script>
-/* Analytics, session recording, and chat load only after the visitor opts in (see /js/consent.js),
-   and then on the first interaction (scroll, tap, key, mouse move) so they never delay rendering. */
+/* Analytics, session recording, and chat load for every visitor unless they opt out or send a GPC signal
+   (see /js/consent.js), on the first interaction (scroll, tap, key, mouse move) so they never delay rendering. */
 (function(w,d){
   w.dataLayer=w.dataLayer||[];w.gtag=function(){w.dataLayer.push(arguments);};
   w.clarity=w.clarity||function(){(w.clarity.q=w.clarity.q||[]).push(arguments);};
@@ -224,6 +224,8 @@ if(navigator.modelContext){var m=document.createElement('script');m.src='/js/web
       <p class="footer-legal" style="margin-top:8px;">HAZWOPER OSHA Training, LLC &middot; 11901 Santa Monica Blvd., Suite #414, Los Angeles, CA 90025</p>
       <div class="footer-badges">
         <img src="https://media.hazwoper-osha.com/wp-content/uploads/2023/11/1698821020/IACET-small.webp" alt="IACET Accredited Provider" width="40" height="24" loading="lazy">
+        <img src="https://media.hazwoper-osha.com/wp-content/uploads/2026/07/1784291935/bbb.webp" alt="BBB A+ Rating" width="40" height="24" loading="lazy">
+        <img src="https://media.hazwoper-osha.com/wp-content/uploads/2026/07/1784292027/trust.webp" alt="Google Trust Services" width="141" height="20" loading="lazy" style="height:20px;">
       </div>
     </div>
 

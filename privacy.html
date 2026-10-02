@@ -11,8 +11,8 @@
 <link rel="alternate" type="application/json" href="/.well-known/mcp.json" title="WebMCP manifest">
 <link rel="service-desc" type="application/vnd.oai.openapi+json" href="/openapi.json">
 <script>
-/* Analytics, session recording, and chat load only after the visitor opts in (see /js/consent.js),
-   and then on the first interaction (scroll, tap, key, mouse move) so they never delay rendering. */
+/* Analytics, session recording, and chat load for every visitor unless they opt out or send a GPC signal
+   (see /js/consent.js), on the first interaction (scroll, tap, key, mouse move) so they never delay rendering. */
 (function(w,d){
   w.dataLayer=w.dataLayer||[];w.gtag=function(){w.dataLayer.push(arguments);};
   w.clarity=w.clarity||function(){(w.clarity.q=w.clarity.q||[]).push(arguments);};
@@ -129,7 +129,7 @@ if(navigator.modelContext){var m=document.createElement('script');m.src='/js/web
       <h2>Summary</h2>
       <ul>
         <li>We do not sell your personal information for money.</li>
-        <li>Analytics, session recording, and live chat are <strong>off unless you turn them on</strong>.</li>
+        <li>We use analytics, session recording, and live chat for every visitor. You can <strong>turn them off at any time</strong>.</li>
         <li>We honor the Global Privacy Control (GPC) browser signal as an opt-out.</li>
         <li>You can change your choices at any time with the <a href="#choices" data-privacy-choices>Your Privacy Choices</a> link in the footer of every page.</li>
       </ul>
@@ -141,8 +141,8 @@ if(navigator.modelContext){var m=document.createElement('script');m.src='/js/web
         <tbody>
           <tr><th scope="row">Contact and order details</th><td>Name, company, email, phone, seat count, courses requested, purchase order number, notes</td><td>You, when you send an enrollment request, email, call, or use chat</td><td>To respond, quote and confirm orders, set up learner accounts, and provide support</td></tr>
           <tr><th scope="row">Payment information</th><td>Card details and billing address</td><td>You, only when online card payment is enabled</td><td>To process payment. Card data goes directly to our payment processor, Stripe; we never see or store full card numbers</td></tr>
-          <tr><th scope="row">Usage and device information <em>(only if you opt in)</em></th><td>Pages viewed, clicks, scrolling and mouse movement, session recordings, referring page, browser and device type, approximate location derived from IP address</td><td>Google Analytics, Ahrefs Web Analytics, and Microsoft Clarity</td><td>To understand how the Site is used and improve it</td></tr>
-          <tr><th scope="row">Chat content <em>(only if you opt in)</em></th><td>Messages you type, and any name or email you give in the chat, plus browser and IP information</td><td>Tawk.to live chat</td><td>To answer your questions</td></tr>
+          <tr><th scope="row">Usage and device information <em>(unless you opt out)</em></th><td>Pages viewed, clicks, scrolling and mouse movement, session recordings, referring page, browser and device type, approximate location derived from IP address</td><td>Google Analytics, Ahrefs Web Analytics, and Microsoft Clarity</td><td>To understand how the Site is used and improve it</td></tr>
+          <tr><th scope="row">Chat content <em>(unless you opt out)</em></th><td>Messages you type, and any name or email you give in the chat, plus browser and IP information</td><td>Tawk.to live chat</td><td>To answer your questions</td></tr>
           <tr><th scope="row">Technical logs</th><td>IP address, browser type, pages requested, date and time</td><td>Our hosting and content delivery providers, automatically</td><td>To deliver the Site and keep it secure</td></tr>
           <tr><th scope="row">Your privacy choice</th><td>Whether you allowed analytics and chat, and when</td><td>Stored in your browser's local storage</td><td>To remember your choice</td></tr>
         </tbody>
@@ -162,10 +162,10 @@ if(navigator.modelContext){var m=document.createElement('script');m.src='/js/web
       <h2>Service Providers We Use</h2>
       <p>We share information with service providers that help us run the Site. Each processes data under its own privacy policy:</p>
       <ul>
-        <li>Google Analytics (Google LLC), analytics, opt-in only: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
-        <li>Microsoft Clarity (Microsoft Corporation), session recording and heatmaps, opt-in only: <a href="https://privacy.microsoft.com/privacystatement" target="_blank" rel="noopener">Microsoft Privacy Statement</a></li>
-        <li>Ahrefs Web Analytics (Ahrefs Pte. Ltd.), analytics, opt-in only: <a href="https://ahrefs.com/legal/privacy-policy" target="_blank" rel="noopener">Ahrefs Privacy Policy</a></li>
-        <li>Tawk.to (tawk.to inc.), live chat, opt-in only: <a href="https://www.tawk.to/privacy-policy/" target="_blank" rel="noopener">Tawk.to Privacy Policy</a></li>
+        <li>Google Analytics (Google LLC), analytics: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
+        <li>Microsoft Clarity (Microsoft Corporation), session recording and heatmaps: <a href="https://privacy.microsoft.com/privacystatement" target="_blank" rel="noopener">Microsoft Privacy Statement</a></li>
+        <li>Ahrefs Web Analytics (Ahrefs Pte. Ltd.), analytics: <a href="https://ahrefs.com/legal/privacy-policy" target="_blank" rel="noopener">Ahrefs Privacy Policy</a></li>
+        <li>Tawk.to (tawk.to inc.), live chat: <a href="https://www.tawk.to/privacy-policy/" target="_blank" rel="noopener">Tawk.to Privacy Policy</a></li>
         <li>Stripe, Inc., payment processing when online card payment is enabled: <a href="https://stripe.com/privacy" target="_blank" rel="noopener">Stripe Privacy Policy</a></li>
         <li>GitHub, Inc., website hosting: <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">GitHub Privacy Statement</a></li>
         <li>jsDelivr, which serves the phone-number formatting tool on the checkout page: <a href="https://www.jsdelivr.com/terms/privacy-policy-jsdelivr-net" target="_blank" rel="noopener">jsDelivr Privacy Policy</a></li>
@@ -173,9 +173,9 @@ if(navigator.modelContext){var m=document.createElement('script');m.src='/js/web
       <p>We may also disclose information to comply with law, respond to lawful requests, protect our rights or others' safety, or as part of a merger, acquisition, or sale of assets.</p>
 
       <h2 id="choices">Your Privacy Choices</h2>
-      <p>When you first visit, the Site asks whether to turn on analytics and session recording, and live chat. Nothing in those categories loads until you agree. You can change or withdraw your choice at any time:</p>
+      <p>Analytics and session recording, and live chat, are on by default. You can turn either one off for your browser at any time, and turn it back on later:</p>
       <p><button type="button" class="btn btn-primary" data-privacy-choices>Open Privacy Choices</button></p>
-      <p><strong>Opt-out of sale or sharing.</strong> We do not sell personal information for money. Some state laws may treat analytics tools as a "sale" or "sharing" of personal information. Because those tools are off unless you opt in, choosing "Reject all" (or never opting in) opts you out. You can also email or call us to opt out.</p>
+      <p><strong>Opt-out of sale or sharing.</strong> We do not sell personal information for money. Some state laws may treat analytics tools as a "sale" or "sharing" of personal information. To opt out, open Your Privacy Choices and choose "Turn all off," or uncheck analytics and save. Your choice is stored in your browser, so repeat it on each browser or device you use, or email or call us to opt out.</p>
       <p><strong>Global Privacy Control.</strong> If your browser sends a GPC signal, we treat it as a request to opt out of sale and sharing, and analytics and session recording stay off for that browser. Browsers' older "Do Not Track" setting has no agreed standard, so we rely on GPC instead.</p>
 
       <h2>Your Privacy Rights</h2>
@@ -227,6 +227,8 @@ if(navigator.modelContext){var m=document.createElement('script');m.src='/js/web
       <p class="footer-legal" style="margin-top:8px;">HAZWOPER OSHA Training, LLC &middot; 11901 Santa Monica Blvd., Suite #414, Los Angeles, CA 90025</p>
       <div class="footer-badges">
         <img src="https://media.hazwoper-osha.com/wp-content/uploads/2023/11/1698821020/IACET-small.webp" alt="IACET Accredited Provider" width="40" height="24" loading="lazy">
+        <img src="https://media.hazwoper-osha.com/wp-content/uploads/2026/07/1784291935/bbb.webp" alt="BBB A+ Rating" width="40" height="24" loading="lazy">
+        <img src="https://media.hazwoper-osha.com/wp-content/uploads/2026/07/1784292027/trust.webp" alt="Google Trust Services" width="141" height="20" loading="lazy" style="height:20px;">
       </div>
     </div>
 

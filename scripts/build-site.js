@@ -1111,8 +1111,8 @@ function writeLlms(d, courses, updated) {
 // ---------------------------------------------------------------------------
 
 const THIRD_PARTY = `<script>
-/* Analytics, session recording, and chat load only after the visitor opts in (see /js/consent.js),
-   and then on the first interaction (scroll, tap, key, mouse move) so they never delay rendering. */
+/* Analytics, session recording, and chat load for every visitor unless they opt out or send a GPC signal
+   (see /js/consent.js), on the first interaction (scroll, tap, key, mouse move) so they never delay rendering. */
 (function(w,d){
   w.dataLayer=w.dataLayer||[];w.gtag=function(){w.dataLayer.push(arguments);};
   w.clarity=w.clarity||function(){(w.clarity.q=w.clarity.q||[]).push(arguments);};
