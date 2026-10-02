@@ -41,8 +41,13 @@
   var banner = null;
   var lastFocus = null;
 
+  // Keep the Tawk.to bubble out of the way while the panel is open.
+  function tawk(method) {
+    try { if (w.Tawk_API && typeof w.Tawk_API[method] === 'function') w.Tawk_API[method](); } catch (e) { /* chat not loaded */ }
+  }
+
   function close() {
-    if (banner) { banner.remove(); banner = null; }
+    if (banner) { banner.remove(); banner = null; tawk('showWidget'); }
     if (lastFocus && lastFocus.focus) lastFocus.focus();
   }
 
@@ -95,6 +100,7 @@
       if (e.key === 'Escape') close();
     });
     d.body.appendChild(banner);
+    tawk('hideWidget');
     if (fromUser) banner.querySelector('input:not([disabled]), button').focus();
   }
 
