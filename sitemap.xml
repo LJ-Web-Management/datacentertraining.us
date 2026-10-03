@@ -320,7 +320,7 @@
   </url>
   <url>
     <loc>https://datacentertraining.us/blog/</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -435,6 +435,12 @@
   <url>
     <loc>https://datacentertraining.us/blog/posts/arc-flash-boundary-walkthrough-what-new-data-center-electricians-should-verify-before-energized-work.html</loc>
     <lastmod>2026-10-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://datacentertraining.us/blog/posts/crah-unit-maintenance-readiness-what-data-center-technicians-should-verify-before-service.html</loc>
+    <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

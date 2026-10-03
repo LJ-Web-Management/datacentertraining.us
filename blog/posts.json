@@ -188,5 +188,15 @@
     "date": "2026-10-02",
     "dateDisplay": "October 2, 2026",
     "excerpt": "Before a qualified electrical worker opens a switchboard, switchgear lineup, UPS cabinet, panelboard, or power distribution unit, can the team explain exactly…"
+  },
+  {
+    "title": "CRAH Unit Maintenance Readiness: What Data Center Technicians Should Verify Before Service",
+    "slug": "crah-unit-maintenance-readiness-what-data-center-technicians-should-verify-before-service",
+    "seoTitle": "CRAH Unit Maintenance Readiness | Data Center Training",
+    "description": "Before a technician opens a panel, isolates a fan, changes a filter, or works on a CRAH unit, what should the team verify so the maintenance task does not…",
+    "image": "assets/img/posts/crah-unit-maintenance-readiness-what-data-center-technicians-should-verify-before-service.jpg",
+    "date": "2026-10-03",
+    "dateDisplay": "October 3, 2026",
+    "excerpt": "Before a technician opens a panel, isolates a fan, changes a filter, or works on a CRAH unit, what should the team verify so the maintenance task does not…"
   }
 ]
