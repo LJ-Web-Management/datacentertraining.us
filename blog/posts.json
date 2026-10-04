@@ -198,5 +198,15 @@
     "date": "2026-10-03",
     "dateDisplay": "October 3, 2026",
     "excerpt": "Before a technician opens a panel, isolates a fan, changes a filter, or works on a CRAH unit, what should the team verify so the maintenance task does not…"
+  },
+  {
+    "title": "How Data Center Facility Managers Should Review a Capacity Plan Before Adding a New Load",
+    "slug": "how-data-center-facility-managers-should-review-a-capacity-plan-before-adding-a-new-load",
+    "seoTitle": "How Data Center Facility Managers Should Review a Capacity",
+    "description": "A new rack, high-density enclosure, battery charger, network row, or customer deployment can look like a simple purchasing request until the facility has…",
+    "image": "assets/img/posts/how-data-center-facility-managers-should-review-a-capacity-plan-before-adding-a-new-load.jpg",
+    "date": "2026-10-04",
+    "dateDisplay": "October 4, 2026",
+    "excerpt": "A new rack, high-density enclosure, battery charger, network row, or customer deployment can look like a simple purchasing request until the facility has…"
   }
 ]
