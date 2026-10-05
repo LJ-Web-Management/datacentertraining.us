@@ -3,7 +3,7 @@
   "info": {
     "title": "Data Center Training - Public Catalog API",
     "version": "1.0.0",
-    "description": "Read-only, unauthenticated JSON documents describing Data Center Training's 44 courses, 7 bundles, 6 learning tracks, roles, FAQ, credentials, and resources, plus the HTML pages they come from. The same data backs the WebMCP tools in /.well-known/mcp.json. Last updated 2026-10-04.",
+    "description": "Read-only, unauthenticated JSON documents describing Data Center Training's 44 courses, 7 bundles, 6 learning tracks, roles, FAQ, credentials, and resources, plus the HTML pages they come from. The same data backs the WebMCP tools in /.well-known/mcp.json. Last updated 2026-10-05.",
     "contact": {
       "name": "HAZWOPER OSHA Training, LLC",
       "email": "info@hazwoper-osha.com",

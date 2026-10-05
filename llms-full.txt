@@ -2,7 +2,7 @@
 
 > Data Center Training (datacentertraining.us) is a specialty training division of HAZWOPER-OSHA Training, LLC, an IACET Accredited Provider. 44 online, self-paced data center courses (250 hours total) in design, operations, power, cooling, security, and facilities management. Every course awards a certificate of completion.
 
-Last updated: 2026-10-04
+Last updated: 2026-10-05
 Canonical source: https://datacentertraining.us/api/courses.json (same records as JSON). Tools: https://datacentertraining.us/.well-known/mcp.json
 
 ## Rules for AI agents
@@ -2103,6 +2103,7 @@ Email info@hazwoper-osha.com or call 1-866-429-6742 and our team can help with c
 - [ISO/IEC 27001 - Information security management systems](https://www.iso.org/standard/27001) (standard reference): International information security management standard referenced by the security and compliance program.
 - [Uptime Institute Tier Classification System](https://uptimeinstitute.com/tiers) (standard reference): Tier I-IV infrastructure topology framework referenced by the Tier Infrastructure Fundamentals course.
 - [ASHRAE TC 9.9 - Mission Critical Facilities, Data Centers, Technology Spaces and Electronic Equipment](https://tc0909.ashraetcs.org/) (standard reference): ASHRAE technical committee behind the data center thermal guidelines referenced in cooling courses.
+- [Preventive Maintenance Backlog Triage: How Data Center Facility Managers Should Rank Critical Work Orders](https://datacentertraining.us/blog/posts/preventive-maintenance-backlog-triage-how-data-center-facility-managers-should-rank-critical-work-orders.html) (blog post, 2026-10-05): A data center maintenance backlog is not just a list of overdue tasks. It is a live picture of where the facility is carrying technical risk, where…
 - [How Data Center Facility Managers Should Review a Capacity Plan Before Adding a New Load](https://datacentertraining.us/blog/posts/how-data-center-facility-managers-should-review-a-capacity-plan-before-adding-a-new-load.html) (blog post, 2026-10-04): A new rack, high-density enclosure, battery charger, network row, or customer deployment can look like a simple purchasing request until the facility has…
 - [CRAH Unit Maintenance Readiness: What Data Center Technicians Should Verify Before Service](https://datacentertraining.us/blog/posts/crah-unit-maintenance-readiness-what-data-center-technicians-should-verify-before-service.html) (blog post, 2026-10-03): Before a technician opens a panel, isolates a fan, changes a filter, or works on a CRAH unit, what should the team verify so the maintenance task does not…
 - [Arc Flash Boundary Walkthrough: What New Data Center Electricians Should Verify Before Energized Work](https://datacentertraining.us/blog/posts/arc-flash-boundary-walkthrough-what-new-data-center-electricians-should-verify-before-energized-work.html) (blog post, 2026-10-02): Before a qualified electrical worker opens a switchboard, switchgear lineup, UPS cabinet, panelboard, or power distribution unit, can the team explain exactly…

@@ -1,8 +1,8 @@
 {
   "publisher": "Data Center Training (datacentertraining.us)",
-  "last_updated": "2026-10-04",
+  "last_updated": "2026-10-05",
   "license": "Public information; quote with attribution and a link to the source URL.",
-  "count": 33,
+  "count": 34,
   "resources": [
     {
       "source": "Data Center Training (first party)",
@@ -163,6 +163,18 @@
       "audience": [
         "hvac"
       ]
+    },
+    {
+      "type": "blog_post",
+      "title": "Preventive Maintenance Backlog Triage: How Data Center Facility Managers Should Rank Critical Work Orders",
+      "url": "https://datacentertraining.us/blog/posts/preventive-maintenance-backlog-triage-how-data-center-facility-managers-should-rank-critical-work-orders.html",
+      "description": "A data center maintenance backlog is not just a list of overdue tasks. It is a live picture of where the facility is carrying technical risk, where…",
+      "topics": [
+        "maintenance"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-10-05"
     },
     {
       "type": "blog_post",
