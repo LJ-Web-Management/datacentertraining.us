@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- dct:head -->
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; object-src 'none'; base-uri 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#f5f5f7">
+<link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt">
+<link rel="alternate" type="application/json" href="/.well-known/mcp.json" title="WebMCP manifest">
+<link rel="service-desc" type="application/vnd.oai.openapi+json" href="/openapi.json">
+<script>
+/* Analytics, session recording, and chat load for every visitor unless they opt out or send a GPC signal
+   (see /js/consent.js), on the first interaction (scroll, tap, key, mouse move) so they never delay rendering. */
+(function(w,d){
+  w.dataLayer=w.dataLayer||[];w.gtag=function(){w.dataLayer.push(arguments);};
+  w.clarity=w.clarity||function(){(w.clarity.q=w.clarity.q||[]).push(arguments);};
+  w.Tawk_API=w.Tawk_API||{};w.Tawk_API.onLoad=function(){w.Tawk_API.minimize();};
+  var ev=['pointerdown','keydown','touchstart','scroll','mousemove'];
+  function add(src,attrs){var s=d.createElement('script');s.async=true;s.src=src;for(var k in attrs)s.setAttribute(k,attrs[k]);d.head.appendChild(s);}
+  function once(fn){var done=0;return function(now){if(done)return;function go(){if(done)return;done=1;ev.forEach(function(e){w.removeEventListener(e,go,{passive:true});});fn();}
+    if(now)go();else ev.forEach(function(e){w.addEventListener(e,go,{passive:true});});};}
+  w.dctLoad={
+    analytics:once(function(){
+      w.gtag('js',new Date());w.gtag('config','G-Z3T42KYK64');
+      add('https://www.googletagmanager.com/gtag/js?id=G-Z3T42KYK64');
+      add('https://analytics.ahrefs.com/analytics.js',{'data-key':'tVAd7KxwKax+pAfHx46Zgg'});
+      add('https://www.clarity.ms/tag/ylza43nm4m');
+    }),
+    chat:once(function(){
+      w.Tawk_LoadStart=new Date();add('https://embed.tawk.to/6a5a95a2096ab21d402a762c/1jtoth11r',{charset:'UTF-8',crossorigin:'*'});
+    })
+  };
+})(window,document);
+if(navigator.modelContext){var m=document.createElement('script');m.src='/js/webmcp.js';m.defer=true;document.head.appendChild(m);}
+</script>
+<script src="/js/consent.js" defer></script>
+<!-- /dct:head -->
+<title>Static Transfer Switch Alarm Response | Data Center Training</title>
+<meta name="description" content="When a static transfer switch (STS) reports a source-quality alarm, a data center operator has to decide whether the event is a nuisance indication…">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/svg+xml" href="../../images/favicon.svg">
+<link rel="canonical" href="https://datacentertraining.us/blog/posts/static-transfer-switch-alarm-response-what-data-center-operators-should-verify-before-a-load-transfer.html">
+
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://datacentertraining.us/blog/posts/static-transfer-switch-alarm-response-what-data-center-operators-should-verify-before-a-load-transfer.html">
+<meta property="og:title" content="Static Transfer Switch Alarm Response: What Data Center Operators Should Verify Before a Load Transfer">
+<meta property="og:description" content="When a static transfer switch (STS) reports a source-quality alarm, a data center operator has to decide whether the event is a nuisance indication…">
+<meta property="og:image" content="https://datacentertraining.us/blog/assets/img/posts/static-transfer-switch-alarm-response-what-data-center-operators-should-verify-before-a-load-transfer.jpg">
+<meta property="og:site_name" content="Data Center Training">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@HazwoperOsha">
+<meta name="twitter:title" content="Static Transfer Switch Alarm Response: What Data Center Operators Should Verify Before a Load Transfer">
+<meta name="twitter:description" content="When a static transfer switch (STS) reports a source-quality alarm, a data center operator has to decide whether the event is a nuisance indication…">
+<meta name="twitter:image" content="https://datacentertraining.us/blog/assets/img/posts/static-transfer-switch-alarm-response-what-data-center-operators-should-verify-before-a-load-transfer.jpg">
+
+<link rel="stylesheet" href="../assets/css/blog.min.css">
+<script src="../../js/nav.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://datacentertraining.us/"},
+        {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://datacentertraining.us/blog/"},
+        {"@type": "ListItem", "position": 3, "name": "Static Transfer Switch Alarm Response: What Data Center Operators Should Verify Before a Load Transfer", "item": "https://datacentertraining.us/blog/posts/static-transfer-switch-alarm-response-what-data-center-operators-should-verify-before-a-load-transfer.html"}
+      ]
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Static Transfer Switch Alarm Response: What Data Center Operators Should Verify Before a Load Transfer",
+      "image": "https://datacentertraining.us/blog/assets/img/posts/static-transfer-switch-alarm-response-what-data-center-operators-should-verify-before-a-load-transfer.jpg",
+      "datePublished": "2026-10-06",
+      "dateModified": "2026-10-06",
+      "author": {
+        "@type": "Organization",
+        "name": "Data Center Training",
+        "url": "https://datacentertraining.us/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "HAZWOPER OSHA Training, LLC",
+        "logo": "https://datacentertraining.us/images/favicon.svg"
+      },
+      "description": "When a static transfer switch (STS) reports a source-quality alarm, a data center operator has to decide whether the event is a nuisance indication…"
+    }
+  ]
+}
+</script>
+</head>
+<body class="blog-page">
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="glass-nav">
+  <div class="container nav-inner">
+    <a href="../../" class="logo">
+      <img src="../../images/favicon.svg" alt="" width="30" height="30">
+      <span>
+        <span class="logo-mark">datacentertraining.us</span>
+        <span class="logo-sub">Data Center Professional Training</span>
+      </span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="../../courses.html">Courses</a>
+      <a href="../../bundles.html">Bundles</a>
+      <a href="../../who.html">Who It's For</a>
+      <a href="../../certifications.html">Certifications</a>
+      <a href="../../faq.html">FAQ</a>
+      <a href="../" class="active">Blog</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="../../courses.html" class="btn btn-primary btn-sm nav-cta">View Courses</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="provider-trust-bar" role="region" aria-label="Training provider accreditation">
+  Training delivered by <strong>HAZWOPER OSHA Training, LLC</strong>, an <a href="https://www.iacet.org/affiliates/accredited-providers-list/accredited-provider-overview/?providerID=131618" target="_blank" rel="noopener">IACET-accredited provider &rarr;</a>
+</div>
+
+<main id="main" class="blog-container blog-container-read">
+  <a class="back-link" href="../">&larr; Back to Blog</a>
+  <div class="post-header">
+    <div class="post-date">October 6, 2026</div>
+    <h1>Static Transfer Switch Alarm Response: What Data Center Operators Should Verify Before a Load Transfer</h1>
+  </div>
+  <div class="post-featured-image">
+    <img src="../assets/img/posts/static-transfer-switch-alarm-response-what-data-center-operators-should-verify-before-a-load-transfer.jpg" srcset="../assets/img/posts/static-transfer-switch-alarm-response-what-data-center-operators-should-verify-before-a-load-transfer-480w.webp 480w, ../assets/img/posts/static-transfer-switch-alarm-response-what-data-center-operators-should-verify-before-a-load-transfer-800w.webp 800w, ../assets/img/posts/static-transfer-switch-alarm-response-what-data-center-operators-should-verify-before-a-load-transfer-1200w.webp 1200w" sizes="(max-width: 900px) calc(100vw - 32px), 860px" alt="Static Transfer Switch Alarm Response: What Data Center Operators Should Verify Before a Load Transfer" width="1200" height="675" fetchpriority="high">
+  </div>
+  <article class="post-content">
+<h2>The Operational Question</h2>
+<p>When a static transfer switch (STS) reports a source-quality alarm, a data center operator has to decide whether the event is a nuisance indication, a controlled maintenance condition, or a developing threat to critical load continuity. The answer cannot come from the alarm text alone. Operators need to understand which source is preferred, which alternate source is available, what transfer mode is permitted, and whether the downstream load can tolerate the planned action.</p>
+<p>This matters because an STS can transfer a critical load in milliseconds, but a fast device does not make an unplanned transfer safe. A mismatched source, a bypass left in the wrong position, an inhibited transfer, or an unclear command path can turn a single alarm into a loss of redundancy. This guide gives facility managers, electrical technicians, and control-room staff a practical way to review STS alarm response before they authorize a load transfer or maintenance window.</p>
+<p>The goal is not to tell an operator to operate unfamiliar equipment from a blog post. Site procedures, qualified-person requirements, manufacturer instructions, and the approved switching plan always govern the work. The goal is to help a team recognize the information that must be confirmed before the procedure begins.</p>
+<hr class="post-divider">
+<h2>Who This Affects</h2>
+<p>This issue is most common in facilities where an STS sits between two independent or separately conditioned power paths and feeds a critical distribution path. The exact architecture varies, but the decision points are similar.</p>
+<ul><li><strong>Enterprise data centers</strong> may use an STS to support a network room, a high-availability suite, or a selected group of downstream PDUs.</li><li><strong>Colocation facilities</strong> may need to coordinate an STS alarm with tenant notifications, maintenance approvals, and a documented change window.</li><li><strong>Hyperscale and large campus sites</strong> often have multiple switchboards, UPS plants, generators, and monitoring layers. A local indication can be one part of a much larger event.</li><li><strong>Edge sites</strong> may have less staffing and less redundancy, which makes clear alarm escalation and remote-hands limits especially important.</li><li><strong>Electrical technicians and critical facilities engineers</strong> may investigate source voltage, frequency, phase relationship, breaker status, and transfer inhibit conditions.</li><li><strong>Control-room, NOC, and site operations staff</strong> may be the first to acknowledge the alarm, open the procedure, and call the qualified person.</li><li><strong>Facility managers and EHS leads</strong> need to verify that the procedure assigns decision authority, boundaries, communications, and stop-work conditions.</li></ul>
+<p>The situation can arise during a utility disturbance, UPS maintenance, generator testing, switchgear work, breaker testing, commissioning, or a routine inspection that reveals an STS in an unexpected state. It can also appear after a monitoring integration change when the alarm is real but the displayed label, point name, or escalation rule is not clear.</p>
+<hr class="post-divider">
+<h2>What Can Go Wrong</h2>
+<p>An STS alarm deserves disciplined interpretation because several different failure modes can look similar from a dashboard. The first mistake is treating every alarm as proof that a transfer should occur immediately. The second is treating every alarm as a nuisance because the critical load is still energized.</p>
+<h3>Source quality is not the same as source availability</h3>
+<p>An alternate input may be energized but still unsuitable for transfer. Frequency drift, voltage outside the configured window, phase rotation, phase-angle difference, or a source that is not synchronized can affect whether the STS will accept the alternate input. A source breaker that is closed does not prove that the source is healthy for the specific STS.</p>
+<h3>A transfer can change the risk profile</h3>
+<p>If the preferred input is unstable and the alternate input has limited ride-through or a different maintenance condition, transferring may preserve the load or may move the problem to a less recoverable path. A technician must know whether the STS is in automatic, manual, bypass, test, or an inhibited state, and what the approved procedure says about each state.</p>
+<h3>Bypass and maintenance states can be misunderstood</h3>
+<p>Some systems include a maintenance bypass or wraparound arrangement. That bypass may protect the load during STS maintenance, but it can also remove the normal electronic transfer function or place the load on a single source. Labels, key interlocks, breaker positions, and mimic diagrams must be read together. A local handle position by itself is not a complete operating picture.</p>
+<h3>Downstream equipment may react differently</h3>
+<p>Power supplies, static switches inside UPS systems, motor loads, lighting controls, and monitoring devices do not all respond identically to a transfer or brief disturbance. A transfer that is acceptable for one distribution segment may not be acceptable for another. Operators should confirm the load list and any sensitive equipment or customer-specific constraints before a planned action.</p>
+<h3>Alarm systems may hide the sequence</h3>
+<p>An STS alarm may be accompanied by UPS alarms, breaker status changes, generator signals, BMS points, DCIM events, or power-quality notifications. If the team acknowledges each alarm separately without preserving the event sequence, it can lose the difference between a cause and an effect. That weakens troubleshooting and can lead to the wrong equipment being operated.</p>
+<p>Electrical work also carries shock, arc-flash, and unexpected-energy hazards. OSHA's electrical safety-related work practices require employers to protect employees from recognized hazards, and NFPA 70E is commonly used as a consensus framework for electrical safe work practices. Neither source replaces the site's electrical safety program or the equipment-specific switching procedure.</p>
+<hr class="post-divider">
+<h2>What Managers Should Check</h2>
+<p>Before approving a planned load transfer or asking an operator to investigate an STS alarm, a manager should review the following sequence. The checklist is a management control, not a substitute for the qualified person's technical judgment.</p>
+<ol><li><strong>Identify the exact STS and downstream load.</strong> Record the equipment ID, room, source A, source B, output, downstream panels or PDUs, and the customers or systems affected. Confirm that the one-line diagram and the monitoring label use the same names.</li><li><strong>Confirm the reason for the action.</strong> Separate a real source-quality event from a scheduled test, planned maintenance, commissioning step, or alarm-validation exercise. Write the purpose in the work order and switching plan.</li><li><strong>Check the current operating mode.</strong> Verify whether the STS is automatic, preferred-source locked, manual, bypassed, test-enabled, transfer-inhibited, or in another manufacturer-defined mode. Capture the indication before changing it.</li><li><strong>Verify both source conditions.</strong> Review voltage, frequency, phase relationship, source breaker status, upstream UPS or switchgear alarms, and any source restrictions. Do not infer health from one green status lamp.</li><li><strong>Confirm transfer permissives and inhibits.</strong> Identify interlocks, synchronization requirements, undervoltage settings, overfrequency or underfrequency limits, remote-control permissions, and any active maintenance inhibit. The team should know what condition will block the transfer and who may clear it.</li><li><strong>Check the alternate path's maintenance status.</strong> Look for open breakers, temporary feeds, test equipment, generator paralleling activity, UPS battery work, or a concurrent switching order that could make the alternate source less dependable.</li><li><strong>Review the load consequence.</strong> Determine whether the load is single-corded, dual-corded, supported by another STS, connected to a UPS output, or dependent on a specific source. Confirm whether tenants, NOC staff, or application owners need notice.</li><li><strong>Assign roles and communications.</strong> Name the switching authority, field technician, control-room communicator, observer, and escalation contact. Use read-back language for device names, positions, and hold points.</li><li><strong>Set stop-work conditions.</strong> Examples include an unexplained breaker position, a one-line mismatch, unexpected source-quality data, a failed permissive, loss of communications, an alarm that changes during the pre-check, or any condition outside the approved procedure.</li><li><strong>Define restoration and evidence.</strong> The plan should state the expected final state, verification readings, alarm-clear criteria, notification steps, and records to retain. A completed switching step without a verified normal state is not a finished task.</li></ol>
+<h3>A practical pre-transfer review</h3>
+<p>Ask the team to answer four questions in plain language before anyone operates a control:</p>
+<ul><li>What is feeding the load now?</li><li>What will feed it after the action?</li><li>What specific condition would stop the transfer?</li><li>How will we prove the final state is normal?</li></ul>
+<p>If the answers differ between the control room, field technician, and manager, pause the work. That disagreement is useful evidence that the one-line diagram, procedure, training, or communications plan needs attention.</p>
+<h3>Evidence worth retaining</h3>
+<p>For a planned test or maintenance event, retain the approved switching order, pre-job brief, STS alarm and event log, source readings, breaker or mimic screenshots where permitted, notification record, and post-work verification. The record should show what was expected and what actually occurred. This helps the next shift distinguish a known temporary condition from a new abnormal one.</p>
+<hr class="post-divider">
+<h2>Which Training Fits This Situation</h2>
+<p>The most relevant starting point is <strong>UPS Operations &amp; Load Testing</strong>, because operators need a working understanding of how UPS-supported power paths, load transfers, alarms, and test conditions interact. It is especially useful for critical facilities engineers, electrical technicians, and operations staff who participate in planned testing or respond to power-path alarms.</p>
+<p>Pair that course with <strong>Power Distribution Systems Fundamentals</strong> when the team needs to strengthen its understanding of switchboards, distribution paths, breakers, source separation, and one-line diagrams. A technician who can read the distribution path is better positioned to ask whether the alternate source is truly available, not just energized.</p>
+<p>For a broader electrical role, <strong>Electrical Safety &amp; Best Practices</strong>, <strong>Data Center Electrical Safety Training</strong>, and <strong>Data Center Arc Flash Safety Training</strong> can support the site's safety program. These are knowledge and best-practice courses with a certificate of completion. They are not regulatory certifications, licenses, or permission to perform energized work.</p>
+<p>The <strong>Power &amp; Electrical Systems Bundle</strong> can fit a team that needs a role-based path across power architecture, UPS, generators, battery safety, EPO procedures, and daily electrical work practices. A manager does not need every employee to take every course at once. One practical plan might look like this:</p>
+<ul><li>Control-room and NOC staff start with power-path awareness and alarm escalation.</li><li>Electrical technicians add UPS operations, power distribution, and electrical safety topics.</li><li>Facility managers review switching governance, maintenance coordination, and emergency decision-making.</li><li>New hires complete foundational modules before shadowing a qualified person during a switching exercise.</li><li>The full team rehearses the site's STS alarm procedure using a tabletop scenario before a live test window.</li></ul>
+<p>Training should be mapped to the site's equipment and procedures. A course can support shared vocabulary and decision quality, but the employer still has to qualify personnel, maintain accurate drawings, control access, and authorize specific work under its own program.</p>
+<hr class="post-divider">
+<h2>Common Mistakes to Avoid</h2>
+<ul><li><strong>Acknowledge first, investigate later.</strong> Acknowledging an alarm may silence a notification without resolving the abnormal condition. Preserve the event details before clearing or resetting anything.</li><li><strong>Assume the alternate source is better because it is alternate.</strong> Review its actual voltage, frequency, loading, maintenance state, and upstream alarms.</li><li><strong>Operate from a dashboard alone.</strong> Validate critical state information at the equipment and against the approved one-line diagram when the procedure requires it.</li><li><strong>Use a generic switching order.</strong> STS models, interlocks, controls, and bypass arrangements differ. The procedure must identify the actual equipment and expected indications.</li><li><strong>Let a maintenance window blur decision authority.</strong> A contractor, tenant representative, or remote operator may provide information, but the site's authorized switching authority must remain clear.</li><li><strong>Treat a successful transfer as proof of a healthy system.</strong> The team still needs to verify load current, source state, alarms, redundancy, and restoration status.</li><li><strong>Skip the post-work handoff.</strong> The incoming shift should know what changed, what remains inhibited, and what evidence confirms normal operation.</li><li><strong>Overstate what training accomplishes.</strong> Online knowledge training supports a program. It does not replace hands-on qualification, site-specific procedures, manufacturer instructions, or electrical safety controls.</li></ul>
+<hr class="post-divider">
+<h2>Key Takeaway</h2>
+<p>An STS alarm is a decision point, not an automatic command to transfer a critical load. The safest teams identify the exact power path, verify both source conditions, understand transfer permissives and inhibits, assign clear roles, and define the final state before anyone operates the equipment. That discipline protects people, preserves redundancy, and creates a useful record for the next event.</p>
+<p>This week, walk one STS procedure with a control-room operator and an electrical technician. Ask them to point to the preferred source, alternate source, transfer inhibit, downstream load, and post-transfer verification step. If any answer depends on memory or a mismatched drawing, open a corrective work order before the next maintenance window.</p>
+<hr class="post-divider">
+<h2>Sources</h2>
+<ul class="sources-list"><li><a href="https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.269" target="_blank" rel="noopener noreferrer">OSHA, Electrical Safety-Related Work Practices</a></li><li><a href="https://www.nfpa.org/codes-and-standards/nfpa-70e-standard-development/70e" target="_blank" rel="noopener noreferrer">NFPA, NFPA 70E Standard for Electrical Safety in the Workplace</a></li><li><a href="https://www.energy.gov/eere/femp/operations-and-maintenance-best-practices-guide" target="_blank" rel="noopener noreferrer">U.S. Department of Energy, Operations and Maintenance Best Practices Guide</a></li></ul>
+  </article>
+  <section class="related-posts" aria-labelledby="related-heading">
+    <h2 id="related-heading">More from the blog</h2>
+    <div class="related-grid"><a class="post-card" href="preventive-maintenance-backlog-triage-how-data-center-facility-managers-should-rank-critical-work-orders.html"><img class="post-card-thumb" src="../assets/img/posts/preventive-maintenance-backlog-triage-how-data-center-facility-managers-should-rank-critical-work-orders.jpg" srcset="../assets/img/posts/preventive-maintenance-backlog-triage-how-data-center-facility-managers-should-rank-critical-work-orders-480w.webp 480w, ../assets/img/posts/preventive-maintenance-backlog-triage-how-data-center-facility-managers-should-rank-critical-work-orders-800w.webp 800w, ../assets/img/posts/preventive-maintenance-backlog-triage-how-data-center-facility-managers-should-rank-critical-work-orders-1200w.webp 1200w" sizes="(max-width: 640px) calc(100vw - 32px), (max-width: 1024px) 50vw, 380px" alt="Preventive Maintenance Backlog Triage: How Data Center Facility Managers Should Rank Critical Work Orders" width="1200" height="675" loading="lazy" decoding="async"><div class="post-card-body"><div class="post-date">October 5, 2026</div><h3>Preventive Maintenance Backlog Triage: How Data Center Facility Managers Should Rank Critical Work Orders</h3></div></a><a class="post-card" href="how-data-center-facility-managers-should-review-a-capacity-plan-before-adding-a-new-load.html"><img class="post-card-thumb" src="../assets/img/posts/how-data-center-facility-managers-should-review-a-capacity-plan-before-adding-a-new-load.jpg" srcset="../assets/img/posts/how-data-center-facility-managers-should-review-a-capacity-plan-before-adding-a-new-load-480w.webp 480w, ../assets/img/posts/how-data-center-facility-managers-should-review-a-capacity-plan-before-adding-a-new-load-800w.webp 800w, ../assets/img/posts/how-data-center-facility-managers-should-review-a-capacity-plan-before-adding-a-new-load-1200w.webp 1200w" sizes="(max-width: 640px) calc(100vw - 32px), (max-width: 1024px) 50vw, 380px" alt="How Data Center Facility Managers Should Review a Capacity Plan Before Adding a New Load" width="1200" height="675" loading="lazy" decoding="async"><div class="post-card-body"><div class="post-date">October 4, 2026</div><h3>How Data Center Facility Managers Should Review a Capacity Plan Before Adding a New Load</h3></div></a></div>
+    <a class="related-all" href="../">View all posts &rarr;</a>
+  </section>
+</main>
+
+<footer class="site-footer" id="contact">
+  <div class="container footer-grid">
+
+    <div class="footer-col">
+      <a href="../../" class="logo">
+        <img src="../../images/favicon.svg" alt="" width="28" height="28">
+        <span>
+          <span class="logo-mark">datacentertraining.us</span>
+          <span class="logo-sub">Data Center Professional Training</span>
+        </span>
+      </a>
+      <p class="footer-legal">Data Center Training is a specialty training division of <a href="https://hazwoper-osha.com/" target="_blank" rel="noopener">HAZWOPER-OSHA Training, LLC</a>, an IACET-accredited provider of professional data center and safety compliance training.</p>
+      <p class="footer-legal" style="margin-top:8px;">HAZWOPER OSHA Training, LLC &middot; 11901 Santa Monica Blvd., Suite #414, Los Angeles, CA 90025</p>
+      <div class="footer-badges">
+        <img src="https://media.hazwoper-osha.com/wp-content/uploads/2023/11/1698821020/IACET-small.webp" alt="IACET Accredited Provider" width="40" height="24" loading="lazy">
+        <img src="https://media.hazwoper-osha.com/wp-content/uploads/2026/07/1784291935/bbb.webp" alt="BBB A+ Rating" width="40" height="24" loading="lazy">
+        <img src="https://media.hazwoper-osha.com/wp-content/uploads/2026/07/1784292027/trust.webp" alt="Google Trust Services" width="141" height="20" loading="lazy" style="height:20px;">
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h3>Training</h3>
+      <a href="../../courses.html">Course Catalog</a>
+      <a href="../../bundles.html">Bundles</a>
+      <a href="../../who.html#which-course">Which Courses Do I Need?</a>
+      <a href="../../certifications.html">Certifications &amp; Accreditations</a>
+      <a href="../../who.html">Who It's For</a>
+      <a href="../../faq.html">FAQ</a>
+      <a href="../">Blog</a>
+    </div>
+
+    <div class="footer-col">
+      <h3>Company</h3>
+      <a href="https://hazwoper-osha.com/" target="_blank" rel="noopener">HAZWOPER-OSHA Training</a>
+      <a href="https://hazwoper-osha.com/certificate-verification" target="_blank" rel="noopener">Verify Certificate</a>
+      <a href="../../privacy.html">Privacy Policy</a>
+      <a href="../../terms.html">Terms of Service</a>
+      <a href="../../accessibility.html">Accessibility</a>
+      <a href="../../privacy.html#choices" data-privacy-choices>Your Privacy Choices</a>
+      <a href="https://hazwoper-osha.com/refund-policy" target="_blank" rel="noopener">Refund Policy</a>
+    </div>
+
+    <div class="footer-col">
+      <h3>For AI Agents</h3>
+      <a href="/llms.txt">llms.txt</a>
+      <a href="/llms-full.txt">llms-full.txt</a>
+      <a href="/.well-known/mcp.json">WebMCP Manifest</a>
+      <a href="/api/index.json">JSON Catalog API</a>
+      <a href="/openapi.json">API Docs (OpenAPI)</a>
+      <a href="/sitemap.xml">Sitemap</a>
+    </div>
+
+    <div class="footer-col">
+      <h3>Contact Us</h3>
+      <div class="footer-contact-links">
+        <a href="tel:18664296742">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          1-866-429-6742
+        </a>
+        <a href="mailto:info@hazwoper-osha.com">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          info@hazwoper-osha.com
+        </a>
+      </div>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/HazwoperOsha/" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/hazwoper_osha_training/?hl=en" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a href="https://www.youtube.com/@hazwoper-osha" target="_blank" rel="noopener" aria-label="YouTube">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33zM9.75 15.02V8.48l5.75 3.27z"/></svg>
+        </a>
+        <a href="https://x.com/HazwoperOsha" target="_blank" rel="noopener" aria-label="X">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.4 8.4L23 22h-6.6l-5.2-6.8L5.1 22H2l7.9-9L1.6 2h6.8l4.7 6.2z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/company/hazwoper-osha" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM8.34 18.34V10.1H5.67v8.24zM7.01 8.97a1.55 1.55 0 1 0 0-3.1 1.55 1.55 0 0 0 0 3.1zM18.34 18.34v-4.6c0-2.46-1.31-3.6-3.06-3.6a2.64 2.64 0 0 0-2.39 1.32V10.1H10.2s.04.86 0 8.24h2.68v-4.6c0-.25.02-.5.09-.68a1.5 1.5 0 0 1 1.37-1c.96 0 1.35.73 1.35 1.8v4.48z"/></svg>
+        </a>
+        <a href="https://www.pinterest.com/hazwoperosha/" target="_blank" rel="noopener" aria-label="Pinterest">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.64 7.86 6.36 9.32-.09-.79-.17-2.01.03-2.88.19-.79 1.22-5.03 1.22-5.03s-.31-.63-.31-1.55c0-1.45.84-2.54 1.89-2.54.89 0 1.32.67 1.32 1.47 0 .89-.57 2.23-.86 3.47-.25 1.03.52 1.88 1.53 1.88 1.84 0 3.07-2.36 3.07-5.15 0-2.12-1.43-3.71-4.02-3.71-2.93 0-4.76 2.19-4.76 4.63 0 .84.25 1.44.63 1.9.18.21.2.3.14.54-.05.18-.16.63-.21.81-.07.26-.28.35-.51.26-1.44-.59-2.11-2.16-2.11-3.93 0-2.92 2.46-6.43 7.34-6.43 3.92 0 6.5 2.84 6.5 5.89 0 4.03-2.24 7.04-5.55 7.04-1.11 0-2.16-.6-2.51-1.28 0 0-.6 2.36-.73 2.82-.22.8-.66 1.6-1.06 2.22.95.29 1.95.45 3 .45 5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>
+        </a>
+      </div>
+    </div>
+
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; 2026 HAZWOPER-OSHA Training, LLC. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+<script src="../../js/main.js" defer></script>
+
+</body>
+</html>

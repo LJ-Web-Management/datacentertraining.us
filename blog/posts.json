@@ -218,5 +218,15 @@
     "date": "2026-10-05",
     "dateDisplay": "October 5, 2026",
     "excerpt": "A data center maintenance backlog is not just a list of overdue tasks. It is a live picture of where the facility is carrying technical risk, where…"
+  },
+  {
+    "title": "Static Transfer Switch Alarm Response: What Data Center Operators Should Verify Before a Load Transfer",
+    "slug": "static-transfer-switch-alarm-response-what-data-center-operators-should-verify-before-a-load-transfer",
+    "seoTitle": "Static Transfer Switch Alarm Response | Data Center Training",
+    "description": "When a static transfer switch (STS) reports a source-quality alarm, a data center operator has to decide whether the event is a nuisance indication…",
+    "image": "assets/img/posts/static-transfer-switch-alarm-response-what-data-center-operators-should-verify-before-a-load-transfer.jpg",
+    "date": "2026-10-06",
+    "dateDisplay": "October 6, 2026",
+    "excerpt": "When a static transfer switch (STS) reports a source-quality alarm, a data center operator has to decide whether the event is a nuisance indication…"
   }
 ]
