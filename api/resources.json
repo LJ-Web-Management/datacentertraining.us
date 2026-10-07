@@ -1,8 +1,8 @@
 {
   "publisher": "Data Center Training (datacentertraining.us)",
-  "last_updated": "2026-10-06",
+  "last_updated": "2026-10-07",
   "license": "Public information; quote with attribution and a link to the source URL.",
-  "count": 35,
+  "count": 36,
   "resources": [
     {
       "source": "Data Center Training (first party)",
@@ -163,6 +163,18 @@
       "audience": [
         "hvac"
       ]
+    },
+    {
+      "type": "blog_post",
+      "title": "BMS Alarm Setpoint Changes: A Change-Control Checklist for Data Center Facility Managers",
+      "url": "https://datacentertraining.us/blog/posts/bms-alarm-setpoint-changes-a-change-control-checklist-for-data-center-facility-managers.html",
+      "description": "When a building management system alarm is too sensitive, the easy answer is to raise the threshold, add a delay, or silence the notification.",
+      "topics": [
+        "bms"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-10-07"
     },
     {
       "type": "blog_post",

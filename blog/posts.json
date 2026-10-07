@@ -228,5 +228,15 @@
     "date": "2026-10-06",
     "dateDisplay": "October 6, 2026",
     "excerpt": "When a static transfer switch (STS) reports a source-quality alarm, a data center operator has to decide whether the event is a nuisance indication…"
+  },
+  {
+    "title": "BMS Alarm Setpoint Changes: A Change-Control Checklist for Data Center Facility Managers",
+    "slug": "bms-alarm-setpoint-changes-a-change-control-checklist-for-data-center-facility-managers",
+    "seoTitle": "BMS Alarm Setpoint Changes: A Change-Control Checklist",
+    "description": "When a building management system alarm is too sensitive, the easy answer is to raise the threshold, add a delay, or silence the notification.",
+    "image": "assets/img/posts/bms-alarm-setpoint-changes-a-change-control-checklist-for-data-center-facility-managers.jpg",
+    "date": "2026-10-07",
+    "dateDisplay": "October 7, 2026",
+    "excerpt": "When a building management system alarm is too sensitive, the easy answer is to raise the threshold, add a delay, or silence the notification."
   }
 ]

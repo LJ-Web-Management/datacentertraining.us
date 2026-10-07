@@ -4,7 +4,7 @@
   "title": "Data Center Training",
   "description": "Read-only catalog tools for Data Center Training (datacentertraining.us): 44 online, self-paced data center courses (250 hours), 7 bundles, and 6 role-based learning tracks, delivered by HAZWOPER OSHA Training, LLC, an IACET Accredited Provider.",
   "version": "1.0.0",
-  "last_updated": "2026-10-06",
+  "last_updated": "2026-10-07",
   "homepage": "https://datacentertraining.us/",
   "documentation": "https://datacentertraining.us/llms.txt",
   "documentation_full": "https://datacentertraining.us/llms-full.txt",
@@ -872,7 +872,7 @@
                 "electrical-safety-best-practices",
                 "batteries-dc-circuits"
               ],
-              "last_updated": "2026-10-06"
+              "last_updated": "2026-10-07"
             },
             "related_courses": [
               {
@@ -1658,7 +1658,7 @@
           },
           "output": {
             "topic": "ceu_pdh",
-            "last_reviewed": "2026-10-06",
+            "last_reviewed": "2026-10-07",
             "source_url": "https://datacentertraining.us/certifications.html",
             "ceu_pdh": {
               "summary": "These courses do not award IACET CEUs, PDHs, or any other continuing education credit. Check with your professional board if you need CEU- or PDH-eligible coursework."
@@ -1776,7 +1776,7 @@
                 "source_url": "https://datacentertraining.us/faq.html"
               }
             ],
-            "last_reviewed": "2026-10-06",
+            "last_reviewed": "2026-10-07",
             "support": "Answers are quoted from published pages. For anything they do not cover, contact info@hazwoper-osha.com or 1-866-429-6742."
           },
           "output_truncated": true
@@ -1805,7 +1805,7 @@
                 "source_url": "https://datacentertraining.us/faq.html"
               }
             ],
-            "last_reviewed": "2026-10-06",
+            "last_reviewed": "2026-10-07",
             "support": "Answers are quoted from published pages. For anything they do not cover, contact info@hazwoper-osha.com or 1-866-429-6742."
           },
           "output_truncated": true

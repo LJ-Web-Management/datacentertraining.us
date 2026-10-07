@@ -320,7 +320,7 @@
   </url>
   <url>
     <loc>https://datacentertraining.us/blog/</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -459,6 +459,12 @@
   <url>
     <loc>https://datacentertraining.us/blog/posts/static-transfer-switch-alarm-response-what-data-center-operators-should-verify-before-a-load-transfer.html</loc>
     <lastmod>2026-10-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://datacentertraining.us/blog/posts/bms-alarm-setpoint-changes-a-change-control-checklist-for-data-center-facility-managers.html</loc>
+    <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
