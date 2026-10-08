@@ -238,5 +238,15 @@
     "date": "2026-10-07",
     "dateDisplay": "October 7, 2026",
     "excerpt": "When a building management system alarm is too sensitive, the easy answer is to raise the threshold, add a delay, or silence the notification."
+  },
+  {
+    "title": "How to Choose a Data Center Training Bundle for a New Maintenance Team",
+    "slug": "how-to-choose-a-data-center-training-bundle-for-a-new-maintenance-team",
+    "seoTitle": "How to Choose a Data Center Training Bundle for a New",
+    "description": "A new data center maintenance team can be busy from its first shift: walking electrical rooms, inspecting cooling equipment, responding to alarms, coordinating…",
+    "image": "assets/img/posts/how-to-choose-a-data-center-training-bundle-for-a-new-maintenance-team.jpg",
+    "date": "2026-10-08",
+    "dateDisplay": "October 8, 2026",
+    "excerpt": "A new data center maintenance team can be busy from its first shift: walking electrical rooms, inspecting cooling equipment, responding to alarms, coordinating…"
   }
 ]

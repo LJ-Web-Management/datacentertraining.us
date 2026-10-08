@@ -1,8 +1,8 @@
 {
   "publisher": "Data Center Training (datacentertraining.us)",
-  "last_updated": "2026-10-07",
+  "last_updated": "2026-10-08",
   "license": "Public information; quote with attribution and a link to the source URL.",
-  "count": 36,
+  "count": 37,
   "resources": [
     {
       "source": "Data Center Training (first party)",
@@ -163,6 +163,20 @@
       "audience": [
         "hvac"
       ]
+    },
+    {
+      "type": "blog_post",
+      "title": "How to Choose a Data Center Training Bundle for a New Maintenance Team",
+      "url": "https://datacentertraining.us/blog/posts/how-to-choose-a-data-center-training-bundle-for-a-new-maintenance-team.html",
+      "description": "A new data center maintenance team can be busy from its first shift: walking electrical rooms, inspecting cooling equipment, responding to alarms, coordinating…",
+      "topics": [
+        "electrical",
+        "cooling",
+        "maintenance"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-10-08"
     },
     {
       "type": "blog_post",
