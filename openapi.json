@@ -3,7 +3,7 @@
   "info": {
     "title": "Data Center Training - Public Catalog API",
     "version": "1.0.0",
-    "description": "Read-only, unauthenticated JSON documents describing Data Center Training's 44 courses, 10 bundles, 6 learning tracks, roles, FAQ, credentials, and resources, plus the HTML pages they come from. The same data backs the WebMCP tools in /.well-known/mcp.json. Last updated 2026-10-08.",
+    "description": "Read-only, unauthenticated JSON documents describing Data Center Training's 43 courses, 4 bundles, 6 learning tracks, roles, FAQ, credentials, and resources, plus the HTML pages they come from. The same data backs the WebMCP tools in /.well-known/mcp.json. Last updated 2026-10-08.",
     "contact": {
       "name": "HAZWOPER OSHA Training, LLC",
       "email": "info@hazwoper-osha.com",
@@ -155,7 +155,6 @@
                 "facility-management-fundamentals",
                 "generator-fundamentals",
                 "lithium-ion-thermal-runaway-emergency-response",
-                "osha-electrical-safety-data-center-technicians",
                 "power-distribution-systems-fundamentals",
                 "roofing-systems-maintenance-fundamentals",
                 "server-room-ergonomics-manual-handling",
@@ -385,7 +384,7 @@
       "get": {
         "operationId": "getCourseCatalogPage",
         "summary": "Course catalog page",
-        "description": "All 44 courses with search, sort, and filters; Course ItemList JSON-LD. Accepts ?q=, ?type=, ?track=, ?sort=.",
+        "description": "All 43 courses with search, sort, and filters; Course ItemList JSON-LD. Accepts ?q=, ?type=, ?track=, ?sort=.",
         "tags": [
           "Pages"
         ],
@@ -403,7 +402,7 @@
       "get": {
         "operationId": "getBundlesPage",
         "summary": "Bundles page",
-        "description": "All 10 bundles with Product/Offer JSON-LD.",
+        "description": "All 4 bundles with Product/Offer JSON-LD.",
         "tags": [
           "Pages"
         ],
@@ -728,6 +727,7 @@
                 "id",
                 "name",
                 "price_usd",
+                "billing",
                 "url"
               ],
               "properties": {
@@ -739,6 +739,13 @@
                 },
                 "price_usd": {
                   "type": "number"
+                },
+                "billing": {
+                  "type": "string",
+                  "enum": [
+                    "one-time",
+                    "annual"
+                  ]
                 },
                 "url": {
                   "type": "string",
@@ -846,6 +853,7 @@
         "required": [
           "id",
           "name",
+          "billing",
           "price_usd",
           "list_price_usd",
           "savings_usd",
@@ -858,16 +866,10 @@
           "id": {
             "type": "string",
             "enum": [
-              "bundle-power-electrical",
-              "bundle-cooling-efficiency",
-              "bundle-operations-reliability",
-              "bundle-security-compliance",
-              "bundle-design-planning",
-              "bundle-monitoring-smart-facility",
-              "bundle-complete-catalog",
               "bundle-facilities-safety-pack",
               "bundle-infrastructure-professional-pack",
-              "bundle-technician-skills-pack"
+              "bundle-technician-skills-pack",
+              "bundle-data-center-library"
             ]
           },
           "catalog_number": {
@@ -877,6 +879,17 @@
             "type": "string"
           },
           "track": {
+            "type": "string"
+          },
+          "billing": {
+            "type": "string",
+            "enum": [
+              "one-time",
+              "annual"
+            ],
+            "description": "one-time: per-seat compliance pack. annual: per-seat, 12-month subscription."
+          },
+          "billing_label": {
             "type": "string"
           },
           "audience": {
@@ -972,14 +985,14 @@
         "type": "object",
         "required": [
           "name",
-          "bundle_id",
+          "id",
           "course_ids"
         ],
         "properties": {
           "name": {
             "type": "string"
           },
-          "bundle_id": {
+          "id": {
             "type": "string"
           },
           "course_ids": {
@@ -1281,7 +1294,7 @@
   "x-mcp-tools": [
     {
       "name": "list_courses",
-      "description": "Search or filter the 44-course Data Center Training catalog. Returns course summaries with canonical URL, track, type, duration in hours, per-seat USD price, and aligned standards. Use this before get_course when the user describes a topic, role, budget, or time limit. Every filter is optional; with no input it returns the full catalog. Only report courses this tool returns - never invent a course, price, or availability.",
+      "description": "Search or filter the 43-course Data Center Training catalog. Returns course summaries with canonical URL, track, type, duration in hours, per-seat USD price, and aligned standards. Use this before get_course when the user describes a topic, role, budget, or time limit. Every filter is optional; with no input it returns the full catalog. Only report courses this tool returns - never invent a course, price, or availability.",
       "data_source": [
         "https://datacentertraining.us/api/courses.json"
       ]
@@ -1296,7 +1309,7 @@
     },
     {
       "name": "compare_bundles",
-      "description": "Compare the 10 course bundles (6 role-based track bundles, 3 compliance packs, and the complete 44-course catalog bundle) side by side: bundle price, sum of individual course prices, savings, course count, total hours, audience, and included course ids. Omit bundle_ids to compare all bundles. Prices are per seat before seat-count volume discounts.",
+      "description": "Compare the 4 products for sale (3 one-time compliance packs and the annual 43-course Data Center & IT Infrastructure Library subscription) side by side: billing, price, sum of individual course prices, savings, course count, total hours, audience, and included course ids. Omit bundle_ids to compare all bundles. Prices are per seat before seat-count volume discounts.",
       "data_source": [
         "https://datacentertraining.us/api/bundles.json"
       ]

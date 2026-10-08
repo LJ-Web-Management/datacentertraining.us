@@ -22,7 +22,7 @@
     },
     {
       "question": "What topics does the course catalog cover?",
-      "answer": "The catalog spans six tracks: Power &amp; Electrical, Cooling &amp; Facilities Efficiency, Operations &amp; Reliability, Security &amp; Compliance, Design, Planning &amp; Commissioning, and Monitoring &amp; Smart Facility. Together they cover 44 courses and 183 hours of training.",
+      "answer": "The catalog spans six tracks: Power &amp; Electrical, Cooling &amp; Facilities Efficiency, Operations &amp; Reliability, Security &amp; Compliance, Design, Planning &amp; Commissioning, and Monitoring &amp; Smart Facility. Together they cover 43 courses and 184 hours of training.",
       "category": "Programs & Curriculum",
       "source_url": "https://datacentertraining.us/faq.html"
     },
@@ -124,19 +124,19 @@
     },
     {
       "question": "What's included in a bundle, and how much do I save?",
-      "answer": "Each bundle groups a comprehensive program with the modular courses most relevant to the same role — for example, the Power &amp; Electrical Systems Bundle includes 15 courses and 49 hours of training on power systems, UPS, generators, and electrical safety for $986.99. The Complete Data Center Professional Bundle covers all 44 courses and 183 hours for $2,928.99, the deepest discount we offer. Every learner still gets a certificate for each course completed.",
+      "answer": "We sell three compliance packs and one annual library — the Data Center Facilities Safety Pack (10 courses, 18 hours) is $649.99 per seat, 35% off buying each course; the Data Center Technician Skills Pack (13 courses, 50 hours) is $844.99, 35% off; and the Data Center Infrastructure Professional Pack (9 courses, 72 hours) is $1,867.99, 30% off. The Data Center &amp; IT Infrastructure Library gives one learner all 43 courses (184 hours) for $119 per seat per year. Every learner still gets a certificate for each course completed.",
       "category": "Pricing & Bundles",
       "source_url": "https://datacentertraining.us/faq.html"
     },
     {
       "question": "Which bundle is the best fit for a facilities generalist?",
-      "answer": "Facilities staff who touch multiple systems typically get the most value from the Operations &amp; Reliability Bundle, or the Complete Data Center Professional Bundle if you want coverage across all six tracks.",
+      "answer": "Facilities staff who touch multiple systems typically get the most value from the Data Center Technician Skills Pack, or the Data Center &amp; IT Infrastructure Library if you want coverage across all six tracks.",
       "category": "Pricing & Bundles",
       "source_url": "https://datacentertraining.us/faq.html"
     },
     {
       "question": "Can I mix comprehensive programs and modular courses in one enrollment?",
-      "answer": "Yes. There's no requirement to buy a bundle or stick to one tier — you can enroll in any combination of Comprehensive Programs and Modular Specializations individually. Bundles exist purely as a discount for teams that want the full role-based path at once.",
+      "answer": "Yes. There's no requirement to buy a bundle or stick to one tier — you can enroll in any combination of Comprehensive Programs and Modular Specializations individually. Packs and the library exist purely as a discount for teams that want a full set of courses at once.",
       "category": "Pricing & Bundles",
       "source_url": "https://datacentertraining.us/faq.html"
     },
@@ -148,7 +148,7 @@
     },
     {
       "question": "Is there a limit to how many seats I can buy in one bundle?",
-      "answer": "No. Bundles support anywhere from a single learner up to 1,000+ seats, with volume pricing applied automatically as your seat count grows.",
+      "answer": "You can order 1 to 1,000 seats online, with volume pricing applied automatically from 25 seats. For more than 1,000 seats, contact us for a custom enterprise license.",
       "category": "Pricing & Bundles",
       "source_url": "https://datacentertraining.us/faq.html"
     },

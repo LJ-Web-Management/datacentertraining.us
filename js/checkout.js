@@ -30,12 +30,18 @@ document.addEventListener('DOMContentLoaded', function () {
   var urlParams = new URLSearchParams(window.location.search);
   var itemSlug = urlParams.get('item') || (typeof DC_COURSES !== 'undefined' && DC_COURSES[0] ? DC_COURSES[0].slug : 'electrical-safety');
   var selected = (typeof findDcItem === 'function') ? findDcItem(itemSlug) : null;
+  if (!selected && urlParams.get('item')) {
+    // Item is no longer sold (or never existed): send the visitor to the catalog.
+    window.location.replace('courses.html');
+    return;
+  }
   if (!selected) {
     selected = { type: 'course', name: 'Data Center Design Fundamentals', price: 312.99, courseId: 401 };
   }
 
   var basePrice = selected.price;
   var selectedCourseIds = selected.type === 'bundle' ? selected.courseIds : [selected.courseId];
+  var perYear = selected.billing === 'annual' ? ' / year' : '';
 
   // While online payment is off, this page sends an enrollment request by
   // email instead of charging a card. Flip CHECKOUT_DISABLED in config.js to
@@ -69,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var seats = getSeats();
     var p = priceFor(seats);
     var set = function (id, text) { var el = document.getElementById(id); if (el) el.textContent = text; };
-    set('summaryCourseQty', (selected.type === 'bundle' ? 'Bundle · ' : '') + seats + (seats === 1 ? ' seat' : ' seats') + ' × $' + fmt(basePrice));
+    set('summaryCourseQty', (selected.type === 'bundle' ? 'Bundle · ' : '') + seats + (seats === 1 ? ' seat' : ' seats') + ' × $' + fmt(basePrice) + perYear);
     set('summaryCourseAmount', '$' + fmt(p.subtotal));
     set('summarySubtotal', '$' + fmt(p.subtotal));
     set('summaryTotal', '$' + fmt(p.total));
@@ -251,10 +257,10 @@ document.addEventListener('DOMContentLoaded', function () {
     var lines = [
       'Enrollment request from datacentertraining.us',
       '',
-      (selected.type === 'bundle' ? 'Bundle: ' : 'Course: ') + selected.name + ' (' + itemSlug + ')',
+      (selected.type === 'bundle' ? (selected.billing === 'annual' ? 'Annual subscription: ' : 'Pack: ') : 'Course: ') + selected.name + ' (' + itemSlug + ')',
       'Seats: ' + seats,
-      'List price: $' + fmt(basePrice) + ' per seat',
-      'Estimated total: $' + fmt(p.total) + (p.discount > 0 ? ' after ' + Math.round(p.tier.discount * 100) + '% volume discount' : ''),
+      'List price: $' + fmt(basePrice) + ' per seat' + (perYear ? ' per year' : ''),
+      'Estimated total: $' + fmt(p.total) + perYear + (p.discount > 0 ? ' after ' + Math.round(p.tier.discount * 100) + '% volume discount' : ''),
       '',
       'Name: ' + fieldValue('billingFirstName') + ' ' + fieldValue('billingLastName'),
       'Company: ' + (fieldValue('billingCompany') || '-'),

@@ -9,7 +9,7 @@
       "type": "site_page",
       "title": "Course Catalog",
       "url": "https://datacentertraining.us/courses.html",
-      "description": "All 44 courses with search, sort, and filters by track, type, duration, or price.",
+      "description": "All 43 courses with search, sort, and filters by track, type, duration, or price.",
       "topics": [
         "catalog"
       ],
@@ -20,7 +20,7 @@
       "type": "site_page",
       "title": "Course Bundles",
       "url": "https://datacentertraining.us/bundles.html",
-      "description": "10 role-based, compliance pack, and complete-catalog bundles with pricing and savings.",
+      "description": "4 products (compliance packs and the annual Data Center & IT Infrastructure Library) with pricing and savings.",
       "topics": [
         "pricing",
         "bundles"

@@ -2,7 +2,7 @@
   "publisher": "Data Center Training (datacentertraining.us)",
   "last_updated": "2026-10-08",
   "license": "Public information; quote with attribution and a link to the source URL.",
-  "count": 44,
+  "count": 43,
   "courses": [
     {
       "id": "data-center-design-fundamentals",
@@ -66,21 +66,17 @@
       ],
       "bundles": [
         {
-          "id": "bundle-design-planning",
-          "name": "Design, Planning & Commissioning Bundle",
-          "price_usd": 557.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
-          "id": "bundle-complete-catalog",
-          "name": "Complete Data Center Professional Bundle",
-          "price_usd": 2928.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
           "id": "bundle-infrastructure-professional-pack",
           "name": "Data Center Infrastructure Professional Pack",
           "price_usd": 1867.99,
+          "billing": "one-time",
+          "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-data-center-library",
+          "name": "Data Center & IT Infrastructure Library",
+          "price_usd": 119,
+          "billing": "annual",
           "url": "https://datacentertraining.us/bundles.html"
         }
       ],
@@ -181,21 +177,17 @@
       ],
       "bundles": [
         {
-          "id": "bundle-design-planning",
-          "name": "Design, Planning & Commissioning Bundle",
-          "price_usd": 557.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
-          "id": "bundle-complete-catalog",
-          "name": "Complete Data Center Professional Bundle",
-          "price_usd": 2928.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
           "id": "bundle-infrastructure-professional-pack",
           "name": "Data Center Infrastructure Professional Pack",
           "price_usd": 1867.99,
+          "billing": "one-time",
+          "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-data-center-library",
+          "name": "Data Center & IT Infrastructure Library",
+          "price_usd": 119,
+          "billing": "annual",
           "url": "https://datacentertraining.us/bundles.html"
         }
       ],
@@ -297,21 +289,17 @@
       ],
       "bundles": [
         {
-          "id": "bundle-operations-reliability",
-          "name": "Operations & Reliability Bundle",
-          "price_usd": 830.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
-          "id": "bundle-complete-catalog",
-          "name": "Complete Data Center Professional Bundle",
-          "price_usd": 2928.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
           "id": "bundle-infrastructure-professional-pack",
           "name": "Data Center Infrastructure Professional Pack",
           "price_usd": 1867.99,
+          "billing": "one-time",
+          "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-data-center-library",
+          "name": "Data Center & IT Infrastructure Library",
+          "price_usd": 119,
+          "billing": "annual",
           "url": "https://datacentertraining.us/bundles.html"
         }
       ],
@@ -415,21 +403,17 @@
       ],
       "bundles": [
         {
-          "id": "bundle-security-compliance",
-          "name": "Security & Compliance Bundle",
-          "price_usd": 400.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
-          "id": "bundle-complete-catalog",
-          "name": "Complete Data Center Professional Bundle",
-          "price_usd": 2928.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
           "id": "bundle-infrastructure-professional-pack",
           "name": "Data Center Infrastructure Professional Pack",
           "price_usd": 1867.99,
+          "billing": "one-time",
+          "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-data-center-library",
+          "name": "Data Center & IT Infrastructure Library",
+          "price_usd": 119,
+          "billing": "annual",
           "url": "https://datacentertraining.us/bundles.html"
         }
       ],
@@ -531,21 +515,17 @@
       ],
       "bundles": [
         {
-          "id": "bundle-power-electrical",
-          "name": "Power & Electrical Systems Bundle",
-          "price_usd": 986.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
-          "id": "bundle-complete-catalog",
-          "name": "Complete Data Center Professional Bundle",
-          "price_usd": 2928.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
           "id": "bundle-infrastructure-professional-pack",
           "name": "Data Center Infrastructure Professional Pack",
           "price_usd": 1867.99,
+          "billing": "one-time",
+          "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-data-center-library",
+          "name": "Data Center & IT Infrastructure Library",
+          "price_usd": 119,
+          "billing": "annual",
           "url": "https://datacentertraining.us/bundles.html"
         }
       ],
@@ -649,21 +629,17 @@
       ],
       "bundles": [
         {
-          "id": "bundle-cooling-efficiency",
-          "name": "Cooling & Facilities Efficiency Bundle",
-          "price_usd": 462.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
-          "id": "bundle-complete-catalog",
-          "name": "Complete Data Center Professional Bundle",
-          "price_usd": 2928.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
           "id": "bundle-infrastructure-professional-pack",
           "name": "Data Center Infrastructure Professional Pack",
           "price_usd": 1867.99,
+          "billing": "one-time",
+          "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-data-center-library",
+          "name": "Data Center & IT Infrastructure Library",
+          "price_usd": 119,
+          "billing": "annual",
           "url": "https://datacentertraining.us/bundles.html"
         }
       ],
@@ -766,21 +742,17 @@
       ],
       "bundles": [
         {
-          "id": "bundle-operations-reliability",
-          "name": "Operations & Reliability Bundle",
-          "price_usd": 830.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
-          "id": "bundle-complete-catalog",
-          "name": "Complete Data Center Professional Bundle",
-          "price_usd": 2928.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
           "id": "bundle-infrastructure-professional-pack",
           "name": "Data Center Infrastructure Professional Pack",
           "price_usd": 1867.99,
+          "billing": "one-time",
+          "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-data-center-library",
+          "name": "Data Center & IT Infrastructure Library",
+          "price_usd": 119,
+          "billing": "annual",
           "url": "https://datacentertraining.us/bundles.html"
         }
       ],
@@ -883,21 +855,17 @@
       ],
       "bundles": [
         {
-          "id": "bundle-design-planning",
-          "name": "Design, Planning & Commissioning Bundle",
-          "price_usd": 557.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
-          "id": "bundle-complete-catalog",
-          "name": "Complete Data Center Professional Bundle",
-          "price_usd": 2928.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
           "id": "bundle-infrastructure-professional-pack",
           "name": "Data Center Infrastructure Professional Pack",
           "price_usd": 1867.99,
+          "billing": "one-time",
+          "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-data-center-library",
+          "name": "Data Center & IT Infrastructure Library",
+          "price_usd": 119,
+          "billing": "annual",
           "url": "https://datacentertraining.us/bundles.html"
         }
       ],
@@ -999,21 +967,17 @@
       ],
       "bundles": [
         {
-          "id": "bundle-monitoring-smart-facility",
-          "name": "Monitoring & Smart Facility Bundle",
-          "price_usd": 333.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
-          "id": "bundle-complete-catalog",
-          "name": "Complete Data Center Professional Bundle",
-          "price_usd": 2928.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
           "id": "bundle-infrastructure-professional-pack",
           "name": "Data Center Infrastructure Professional Pack",
           "price_usd": 1867.99,
+          "billing": "one-time",
+          "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-data-center-library",
+          "name": "Data Center & IT Infrastructure Library",
+          "price_usd": 119,
+          "billing": "annual",
           "url": "https://datacentertraining.us/bundles.html"
         }
       ],
@@ -1103,21 +1067,17 @@
       ],
       "bundles": [
         {
-          "id": "bundle-cooling-efficiency",
-          "name": "Cooling & Facilities Efficiency Bundle",
-          "price_usd": 462.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
-          "id": "bundle-complete-catalog",
-          "name": "Complete Data Center Professional Bundle",
-          "price_usd": 2928.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
           "id": "bundle-technician-skills-pack",
           "name": "Data Center Technician Skills Pack",
           "price_usd": 844.99,
+          "billing": "one-time",
+          "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-data-center-library",
+          "name": "Data Center & IT Infrastructure Library",
+          "price_usd": 119,
+          "billing": "annual",
           "url": "https://datacentertraining.us/bundles.html"
         }
       ],
@@ -1209,21 +1169,17 @@
       ],
       "bundles": [
         {
-          "id": "bundle-power-electrical",
-          "name": "Power & Electrical Systems Bundle",
-          "price_usd": 986.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
-          "id": "bundle-complete-catalog",
-          "name": "Complete Data Center Professional Bundle",
-          "price_usd": 2928.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
           "id": "bundle-technician-skills-pack",
           "name": "Data Center Technician Skills Pack",
           "price_usd": 844.99,
+          "billing": "one-time",
+          "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-data-center-library",
+          "name": "Data Center & IT Infrastructure Library",
+          "price_usd": 119,
+          "billing": "annual",
           "url": "https://datacentertraining.us/bundles.html"
         }
       ],
@@ -1317,21 +1273,17 @@
       ],
       "bundles": [
         {
-          "id": "bundle-monitoring-smart-facility",
-          "name": "Monitoring & Smart Facility Bundle",
-          "price_usd": 333.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
-          "id": "bundle-complete-catalog",
-          "name": "Complete Data Center Professional Bundle",
-          "price_usd": 2928.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
           "id": "bundle-technician-skills-pack",
           "name": "Data Center Technician Skills Pack",
           "price_usd": 844.99,
+          "billing": "one-time",
+          "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-data-center-library",
+          "name": "Data Center & IT Infrastructure Library",
+          "price_usd": 119,
+          "billing": "annual",
           "url": "https://datacentertraining.us/bundles.html"
         }
       ],
@@ -1421,21 +1373,17 @@
       ],
       "bundles": [
         {
-          "id": "bundle-power-electrical",
-          "name": "Power & Electrical Systems Bundle",
-          "price_usd": 986.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
-          "id": "bundle-complete-catalog",
-          "name": "Complete Data Center Professional Bundle",
-          "price_usd": 2928.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
           "id": "bundle-technician-skills-pack",
           "name": "Data Center Technician Skills Pack",
           "price_usd": 844.99,
+          "billing": "one-time",
+          "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-data-center-library",
+          "name": "Data Center & IT Infrastructure Library",
+          "price_usd": 119,
+          "billing": "annual",
           "url": "https://datacentertraining.us/bundles.html"
         }
       ],
@@ -1486,8 +1434,8 @@
       "category": "Cooling & Efficiency",
       "course_type": "modular",
       "course_type_label": "Modular Specialization",
-      "duration_hours": 3,
-      "duration_iso8601": "PT3H",
+      "duration_hours": 4,
+      "duration_iso8601": "PT4H",
       "module_count": 4,
       "price_usd": 99.99,
       "currency": "USD",
@@ -1529,15 +1477,10 @@
       ],
       "bundles": [
         {
-          "id": "bundle-cooling-efficiency",
-          "name": "Cooling & Facilities Efficiency Bundle",
-          "price_usd": 462.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
-          "id": "bundle-complete-catalog",
-          "name": "Complete Data Center Professional Bundle",
-          "price_usd": 2928.99,
+          "id": "bundle-data-center-library",
+          "name": "Data Center & IT Infrastructure Library",
+          "price_usd": 119,
+          "billing": "annual",
           "url": "https://datacentertraining.us/bundles.html"
         }
       ],
@@ -1588,8 +1531,8 @@
       "category": "Design & Planning",
       "course_type": "modular",
       "course_type_label": "Modular Specialization",
-      "duration_hours": 3.5,
-      "duration_iso8601": "PT3H30M",
+      "duration_hours": 4,
+      "duration_iso8601": "PT4H",
       "module_count": 4,
       "price_usd": 99.99,
       "currency": "USD",
@@ -1629,15 +1572,10 @@
       ],
       "bundles": [
         {
-          "id": "bundle-design-planning",
-          "name": "Design, Planning & Commissioning Bundle",
-          "price_usd": 557.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
-          "id": "bundle-complete-catalog",
-          "name": "Complete Data Center Professional Bundle",
-          "price_usd": 2928.99,
+          "id": "bundle-data-center-library",
+          "name": "Data Center & IT Infrastructure Library",
+          "price_usd": 119,
+          "billing": "annual",
           "url": "https://datacentertraining.us/bundles.html"
         }
       ],
@@ -1727,21 +1665,17 @@
       ],
       "bundles": [
         {
-          "id": "bundle-operations-reliability",
-          "name": "Operations & Reliability Bundle",
-          "price_usd": 830.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
-          "id": "bundle-complete-catalog",
-          "name": "Complete Data Center Professional Bundle",
-          "price_usd": 2928.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
           "id": "bundle-technician-skills-pack",
           "name": "Data Center Technician Skills Pack",
           "price_usd": 844.99,
+          "billing": "one-time",
+          "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-data-center-library",
+          "name": "Data Center & IT Infrastructure Library",
+          "price_usd": 119,
+          "billing": "annual",
           "url": "https://datacentertraining.us/bundles.html"
         }
       ],
@@ -1792,8 +1726,8 @@
       "category": "Security & Compliance",
       "course_type": "modular",
       "course_type_label": "Modular Specialization",
-      "duration_hours": 3,
-      "duration_iso8601": "PT3H",
+      "duration_hours": 4,
+      "duration_iso8601": "PT4H",
       "module_count": 4,
       "price_usd": 99.99,
       "currency": "USD",
@@ -1833,15 +1767,10 @@
       ],
       "bundles": [
         {
-          "id": "bundle-security-compliance",
-          "name": "Security & Compliance Bundle",
-          "price_usd": 400.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
-          "id": "bundle-complete-catalog",
-          "name": "Complete Data Center Professional Bundle",
-          "price_usd": 2928.99,
+          "id": "bundle-data-center-library",
+          "name": "Data Center & IT Infrastructure Library",
+          "price_usd": 119,
+          "billing": "annual",
           "url": "https://datacentertraining.us/bundles.html"
         }
       ],
@@ -1932,21 +1861,17 @@
       ],
       "bundles": [
         {
-          "id": "bundle-operations-reliability",
-          "name": "Operations & Reliability Bundle",
-          "price_usd": 830.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
-          "id": "bundle-complete-catalog",
-          "name": "Complete Data Center Professional Bundle",
-          "price_usd": 2928.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
           "id": "bundle-technician-skills-pack",
           "name": "Data Center Technician Skills Pack",
           "price_usd": 844.99,
+          "billing": "one-time",
+          "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-data-center-library",
+          "name": "Data Center & IT Infrastructure Library",
+          "price_usd": 119,
+          "billing": "annual",
           "url": "https://datacentertraining.us/bundles.html"
         }
       ],
@@ -1997,8 +1922,8 @@
       "category": "Security & Compliance",
       "course_type": "modular",
       "course_type_label": "Modular Specialization",
-      "duration_hours": 3.5,
-      "duration_iso8601": "PT3H30M",
+      "duration_hours": 4,
+      "duration_iso8601": "PT4H",
       "module_count": 4,
       "price_usd": 99.99,
       "currency": "USD",
@@ -2038,15 +1963,10 @@
       ],
       "bundles": [
         {
-          "id": "bundle-security-compliance",
-          "name": "Security & Compliance Bundle",
-          "price_usd": 400.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
-          "id": "bundle-complete-catalog",
-          "name": "Complete Data Center Professional Bundle",
-          "price_usd": 2928.99,
+          "id": "bundle-data-center-library",
+          "name": "Data Center & IT Infrastructure Library",
+          "price_usd": 119,
+          "billing": "annual",
           "url": "https://datacentertraining.us/bundles.html"
         }
       ],
@@ -2143,21 +2063,17 @@
       ],
       "bundles": [
         {
-          "id": "bundle-monitoring-smart-facility",
-          "name": "Monitoring & Smart Facility Bundle",
-          "price_usd": 333.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
-          "id": "bundle-complete-catalog",
-          "name": "Complete Data Center Professional Bundle",
-          "price_usd": 2928.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
           "id": "bundle-technician-skills-pack",
           "name": "Data Center Technician Skills Pack",
           "price_usd": 844.99,
+          "billing": "one-time",
+          "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-data-center-library",
+          "name": "Data Center & IT Infrastructure Library",
+          "price_usd": 119,
+          "billing": "annual",
           "url": "https://datacentertraining.us/bundles.html"
         }
       ],
@@ -2247,15 +2163,10 @@
       ],
       "bundles": [
         {
-          "id": "bundle-cooling-efficiency",
-          "name": "Cooling & Facilities Efficiency Bundle",
-          "price_usd": 462.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
-          "id": "bundle-complete-catalog",
-          "name": "Complete Data Center Professional Bundle",
-          "price_usd": 2928.99,
+          "id": "bundle-data-center-library",
+          "name": "Data Center & IT Infrastructure Library",
+          "price_usd": 119,
+          "billing": "annual",
           "url": "https://datacentertraining.us/bundles.html"
         }
       ],
@@ -2349,21 +2260,17 @@
       ],
       "bundles": [
         {
-          "id": "bundle-power-electrical",
-          "name": "Power & Electrical Systems Bundle",
-          "price_usd": 986.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
-          "id": "bundle-complete-catalog",
-          "name": "Complete Data Center Professional Bundle",
-          "price_usd": 2928.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
           "id": "bundle-technician-skills-pack",
           "name": "Data Center Technician Skills Pack",
           "price_usd": 844.99,
+          "billing": "one-time",
+          "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-data-center-library",
+          "name": "Data Center & IT Infrastructure Library",
+          "price_usd": 119,
+          "billing": "annual",
           "url": "https://datacentertraining.us/bundles.html"
         }
       ],
@@ -2455,21 +2362,17 @@
       ],
       "bundles": [
         {
-          "id": "bundle-power-electrical",
-          "name": "Power & Electrical Systems Bundle",
-          "price_usd": 986.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
-          "id": "bundle-complete-catalog",
-          "name": "Complete Data Center Professional Bundle",
-          "price_usd": 2928.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
           "id": "bundle-technician-skills-pack",
           "name": "Data Center Technician Skills Pack",
           "price_usd": 844.99,
+          "billing": "one-time",
+          "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-data-center-library",
+          "name": "Data Center & IT Infrastructure Library",
+          "price_usd": 119,
+          "billing": "annual",
           "url": "https://datacentertraining.us/bundles.html"
         }
       ],
@@ -2563,21 +2466,17 @@
       ],
       "bundles": [
         {
-          "id": "bundle-monitoring-smart-facility",
-          "name": "Monitoring & Smart Facility Bundle",
-          "price_usd": 333.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
-          "id": "bundle-complete-catalog",
-          "name": "Complete Data Center Professional Bundle",
-          "price_usd": 2928.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
           "id": "bundle-technician-skills-pack",
           "name": "Data Center Technician Skills Pack",
           "price_usd": 844.99,
+          "billing": "one-time",
+          "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-data-center-library",
+          "name": "Data Center & IT Infrastructure Library",
+          "price_usd": 119,
+          "billing": "annual",
           "url": "https://datacentertraining.us/bundles.html"
         }
       ],
@@ -2667,15 +2566,10 @@
       ],
       "bundles": [
         {
-          "id": "bundle-cooling-efficiency",
-          "name": "Cooling & Facilities Efficiency Bundle",
-          "price_usd": 462.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
-          "id": "bundle-complete-catalog",
-          "name": "Complete Data Center Professional Bundle",
-          "price_usd": 2928.99,
+          "id": "bundle-data-center-library",
+          "name": "Data Center & IT Infrastructure Library",
+          "price_usd": 119,
+          "billing": "annual",
           "url": "https://datacentertraining.us/bundles.html"
         }
       ],
@@ -2767,15 +2661,10 @@
       ],
       "bundles": [
         {
-          "id": "bundle-operations-reliability",
-          "name": "Operations & Reliability Bundle",
-          "price_usd": 830.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
-          "id": "bundle-complete-catalog",
-          "name": "Complete Data Center Professional Bundle",
-          "price_usd": 2928.99,
+          "id": "bundle-data-center-library",
+          "name": "Data Center & IT Infrastructure Library",
+          "price_usd": 119,
+          "billing": "annual",
           "url": "https://datacentertraining.us/bundles.html"
         }
       ],
@@ -2869,15 +2758,10 @@
       ],
       "bundles": [
         {
-          "id": "bundle-operations-reliability",
-          "name": "Operations & Reliability Bundle",
-          "price_usd": 830.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
-          "id": "bundle-complete-catalog",
-          "name": "Complete Data Center Professional Bundle",
-          "price_usd": 2928.99,
+          "id": "bundle-data-center-library",
+          "name": "Data Center & IT Infrastructure Library",
+          "price_usd": 119,
+          "billing": "annual",
           "url": "https://datacentertraining.us/bundles.html"
         }
       ],
@@ -2971,21 +2855,17 @@
       ],
       "bundles": [
         {
-          "id": "bundle-power-electrical",
-          "name": "Power & Electrical Systems Bundle",
-          "price_usd": 986.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
-          "id": "bundle-complete-catalog",
-          "name": "Complete Data Center Professional Bundle",
-          "price_usd": 2928.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
           "id": "bundle-facilities-safety-pack",
           "name": "Data Center Facilities Safety Pack",
           "price_usd": 649.99,
+          "billing": "one-time",
+          "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-data-center-library",
+          "name": "Data Center & IT Infrastructure Library",
+          "price_usd": 119,
+          "billing": "annual",
           "url": "https://datacentertraining.us/bundles.html"
         }
       ],
@@ -3079,21 +2959,17 @@
       ],
       "bundles": [
         {
-          "id": "bundle-cooling-efficiency",
-          "name": "Cooling & Facilities Efficiency Bundle",
-          "price_usd": 462.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
-          "id": "bundle-complete-catalog",
-          "name": "Complete Data Center Professional Bundle",
-          "price_usd": 2928.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
           "id": "bundle-facilities-safety-pack",
           "name": "Data Center Facilities Safety Pack",
           "price_usd": 649.99,
+          "billing": "one-time",
+          "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-data-center-library",
+          "name": "Data Center & IT Infrastructure Library",
+          "price_usd": 119,
+          "billing": "annual",
           "url": "https://datacentertraining.us/bundles.html"
         }
       ],
@@ -3185,21 +3061,17 @@
       ],
       "bundles": [
         {
-          "id": "bundle-power-electrical",
-          "name": "Power & Electrical Systems Bundle",
-          "price_usd": 986.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
-          "id": "bundle-complete-catalog",
-          "name": "Complete Data Center Professional Bundle",
-          "price_usd": 2928.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
           "id": "bundle-facilities-safety-pack",
           "name": "Data Center Facilities Safety Pack",
           "price_usd": 649.99,
+          "billing": "one-time",
+          "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-data-center-library",
+          "name": "Data Center & IT Infrastructure Library",
+          "price_usd": 119,
+          "billing": "annual",
           "url": "https://datacentertraining.us/bundles.html"
         }
       ],
@@ -3291,21 +3163,17 @@
       ],
       "bundles": [
         {
-          "id": "bundle-power-electrical",
-          "name": "Power & Electrical Systems Bundle",
-          "price_usd": 986.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
-          "id": "bundle-complete-catalog",
-          "name": "Complete Data Center Professional Bundle",
-          "price_usd": 2928.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
           "id": "bundle-facilities-safety-pack",
           "name": "Data Center Facilities Safety Pack",
           "price_usd": 649.99,
+          "billing": "one-time",
+          "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-data-center-library",
+          "name": "Data Center & IT Infrastructure Library",
+          "price_usd": 119,
+          "billing": "annual",
           "url": "https://datacentertraining.us/bundles.html"
         }
       ],
@@ -3399,21 +3267,17 @@
       ],
       "bundles": [
         {
-          "id": "bundle-security-compliance",
-          "name": "Security & Compliance Bundle",
-          "price_usd": 400.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
-          "id": "bundle-complete-catalog",
-          "name": "Complete Data Center Professional Bundle",
-          "price_usd": 2928.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
           "id": "bundle-facilities-safety-pack",
           "name": "Data Center Facilities Safety Pack",
           "price_usd": 649.99,
+          "billing": "one-time",
+          "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-data-center-library",
+          "name": "Data Center & IT Infrastructure Library",
+          "price_usd": 119,
+          "billing": "annual",
           "url": "https://datacentertraining.us/bundles.html"
         }
       ],
@@ -3504,21 +3368,17 @@
       ],
       "bundles": [
         {
-          "id": "bundle-security-compliance",
-          "name": "Security & Compliance Bundle",
-          "price_usd": 400.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
-          "id": "bundle-complete-catalog",
-          "name": "Complete Data Center Professional Bundle",
-          "price_usd": 2928.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
           "id": "bundle-facilities-safety-pack",
           "name": "Data Center Facilities Safety Pack",
           "price_usd": 649.99,
+          "billing": "one-time",
+          "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-data-center-library",
+          "name": "Data Center & IT Infrastructure Library",
+          "price_usd": 119,
+          "billing": "annual",
           "url": "https://datacentertraining.us/bundles.html"
         }
       ],
@@ -3611,21 +3471,17 @@
       ],
       "bundles": [
         {
-          "id": "bundle-operations-reliability",
-          "name": "Operations & Reliability Bundle",
-          "price_usd": 830.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
-          "id": "bundle-complete-catalog",
-          "name": "Complete Data Center Professional Bundle",
-          "price_usd": 2928.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
           "id": "bundle-facilities-safety-pack",
           "name": "Data Center Facilities Safety Pack",
           "price_usd": 649.99,
+          "billing": "one-time",
+          "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-data-center-library",
+          "name": "Data Center & IT Infrastructure Library",
+          "price_usd": 119,
+          "billing": "annual",
           "url": "https://datacentertraining.us/bundles.html"
         }
       ],
@@ -3717,21 +3573,17 @@
       ],
       "bundles": [
         {
-          "id": "bundle-power-electrical",
-          "name": "Power & Electrical Systems Bundle",
-          "price_usd": 986.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
-          "id": "bundle-complete-catalog",
-          "name": "Complete Data Center Professional Bundle",
-          "price_usd": 2928.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
           "id": "bundle-facilities-safety-pack",
           "name": "Data Center Facilities Safety Pack",
           "price_usd": 649.99,
+          "billing": "one-time",
+          "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-data-center-library",
+          "name": "Data Center & IT Infrastructure Library",
+          "price_usd": 119,
+          "billing": "annual",
           "url": "https://datacentertraining.us/bundles.html"
         }
       ],
@@ -3823,15 +3675,10 @@
       ],
       "bundles": [
         {
-          "id": "bundle-power-electrical",
-          "name": "Power & Electrical Systems Bundle",
-          "price_usd": 986.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
-          "id": "bundle-complete-catalog",
-          "name": "Complete Data Center Professional Bundle",
-          "price_usd": 2928.99,
+          "id": "bundle-data-center-library",
+          "name": "Data Center & IT Infrastructure Library",
+          "price_usd": 119,
+          "billing": "annual",
           "url": "https://datacentertraining.us/bundles.html"
         }
       ],
@@ -3923,15 +3770,10 @@
       ],
       "bundles": [
         {
-          "id": "bundle-operations-reliability",
-          "name": "Operations & Reliability Bundle",
-          "price_usd": 830.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
-          "id": "bundle-complete-catalog",
-          "name": "Complete Data Center Professional Bundle",
-          "price_usd": 2928.99,
+          "id": "bundle-data-center-library",
+          "name": "Data Center & IT Infrastructure Library",
+          "price_usd": 119,
+          "billing": "annual",
           "url": "https://datacentertraining.us/bundles.html"
         }
       ],
@@ -4023,21 +3865,17 @@
       ],
       "bundles": [
         {
-          "id": "bundle-power-electrical",
-          "name": "Power & Electrical Systems Bundle",
-          "price_usd": 986.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
-          "id": "bundle-complete-catalog",
-          "name": "Complete Data Center Professional Bundle",
-          "price_usd": 2928.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
           "id": "bundle-technician-skills-pack",
           "name": "Data Center Technician Skills Pack",
           "price_usd": 844.99,
+          "billing": "one-time",
+          "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-data-center-library",
+          "name": "Data Center & IT Infrastructure Library",
+          "price_usd": 119,
+          "billing": "annual",
           "url": "https://datacentertraining.us/bundles.html"
         }
       ],
@@ -4129,21 +3967,17 @@
       ],
       "bundles": [
         {
-          "id": "bundle-power-electrical",
-          "name": "Power & Electrical Systems Bundle",
-          "price_usd": 986.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
-          "id": "bundle-complete-catalog",
-          "name": "Complete Data Center Professional Bundle",
-          "price_usd": 2928.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
           "id": "bundle-facilities-safety-pack",
           "name": "Data Center Facilities Safety Pack",
           "price_usd": 649.99,
+          "billing": "one-time",
+          "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-data-center-library",
+          "name": "Data Center & IT Infrastructure Library",
+          "price_usd": 119,
+          "billing": "annual",
           "url": "https://datacentertraining.us/bundles.html"
         }
       ],
@@ -4173,108 +4007,6 @@
         {
           "question": "What should staff do if a lithium-ion battery alarm activates?",
           "answer": "Follow the facility's emergency procedure: evacuate the area if required, notify the fire department and site management, and avoid entering a room that may contain flammable gas. The course's response coordination module covers how to prepare these procedures."
-        }
-      ],
-      "related_course_ids": [
-        "power-systems-electrical-fundamentals",
-        "ups-operations-load-testing",
-        "generator-operations-maintenance",
-        "electrical-safety-best-practices",
-        "batteries-dc-circuits"
-      ],
-      "last_updated": "2026-10-08"
-    },
-    {
-      "id": "osha-electrical-safety-data-center-technicians",
-      "catalog_number": 458,
-      "title": "OSHA Electrical Safety-Related Work Practices for Data Center Technicians",
-      "url": "https://datacentertraining.us/courses/osha-electrical-safety-data-center-technicians.html",
-      "api_url": "https://datacentertraining.us/api/courses/osha-electrical-safety-data-center-technicians.json",
-      "track": "Power & Electrical Systems Track",
-      "category": "Power & Electrical",
-      "course_type": "modular",
-      "course_type_label": "Modular Specialization",
-      "duration_hours": 2,
-      "duration_iso8601": "PT2H",
-      "module_count": 4,
-      "price_usd": 99.99,
-      "currency": "USD",
-      "standards": [
-        "NFPA 70E"
-      ],
-      "summary": "OSHA-aligned electrical safety-related work practices tailored to data center technicians.",
-      "description": "This course applies OSHA's electrical safety-related work practices (29 CFR 1910 Subpart S) specifically to the data center technician role: the equipment, access patterns, and daily tasks that put technicians near energized systems more often than in a typical facility. You'll leave with approach boundaries and documentation practices that keep your electrical safety program audit-ready.",
-      "why_it_matters": "Data center technicians work near energized equipment more often than most workers in commercial buildings. Installing servers in live racks, replacing PDU components, reading meters in electrical rooms and working near busway all bring them close to exposed or potentially exposed conductors. OSHA's electrical safety-related work practices, found in 29 CFR 1910.331 through 1910.335 within Subpart S, set the legal requirements: de-energize equipment before work unless that creates a greater hazard or is infeasible, use lockout/tagout, keep safe approach distances and use appropriate PPE and tools. This course applies those requirements to real data center tasks, covering OSHA work practice rules, high-risk data center tasks, approach boundaries and the documentation needed for compliance.",
-      "audience": "Data center technicians who work on or near energized electrical equipment.",
-      "prerequisites": "No prior certification required. Relevant equipment exposure is helpful.",
-      "learning_outcomes": [
-        "Apply OSHA electrical safety-related work practices to daily data center tasks",
-        "Identify the data center-specific tasks that carry elevated electrical risk",
-        "Follow correct approach boundaries for qualified and unqualified persons",
-        "Document electrical safety compliance correctly",
-        "Certificate of completion on finish",
-        "Self-paced — start and stop anytime",
-        "Delivered by an IACET-accredited provider",
-        "Volume pricing available for teams"
-      ],
-      "modules": [
-        {
-          "title": "OSHA Work Practice Requirements",
-          "summary": "What 29 CFR 1910 Subpart S actually requires."
-        },
-        {
-          "title": "Data Center-Specific Risk Tasks",
-          "summary": "The daily tasks that put technicians near energized equipment."
-        },
-        {
-          "title": "Approach Boundaries",
-          "summary": "Qualified vs. unqualified person boundaries, applied correctly."
-        },
-        {
-          "title": "Documentation & Compliance",
-          "summary": "Keeping electrical safety compliance records audit-ready."
-        }
-      ],
-      "bundles": [
-        {
-          "id": "bundle-power-electrical",
-          "name": "Power & Electrical Systems Bundle",
-          "price_usd": 986.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
-          "id": "bundle-complete-catalog",
-          "name": "Complete Data Center Professional Bundle",
-          "price_usd": 2928.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        }
-      ],
-      "language": "en",
-      "delivery": "Online, self-paced, no completion deadline",
-      "certificate": {
-        "type": "Certificate of completion",
-        "issuer": "HAZWOPER OSHA Training, LLC",
-        "issuer_accreditation": "IACET Accredited Provider (provider-level accreditation)",
-        "delivery": "Issued immediately on completion; downloadable and printable",
-        "validity_period": "No fixed expiration; follow your employer's refresher policy",
-        "verification_url": "https://hazwoper-osha.com/certificate-verification",
-        "is_license_or_government_certification": false,
-        "ceu_or_pdh_credit": false
-      },
-      "availability": "preorder",
-      "enroll_url": "https://datacentertraining.us/checkout.html?item=osha-electrical-safety-data-center-technicians",
-      "faqs": [
-        {
-          "question": "What is OSHA 29 CFR 1910 Subpart S?",
-          "answer": "Subpart S is the electrical section of OSHA's general industry standards. It covers electrical installation requirements and, in 1910.331 through 1910.335, the safety-related work practices employers must follow to protect workers from electrical hazards."
-        },
-        {
-          "question": "Can data center technicians work on energized equipment?",
-          "answer": "OSHA requires parts to be de-energized before work unless the employer can show that de-energizing creates greater hazards or is infeasible due to equipment design or operational limits. Energized work then requires qualified persons, safe work practices and appropriate PPE."
-        },
-        {
-          "question": "How does this course relate to NFPA 70E?",
-          "answer": "OSHA sets the legal requirements, and NFPA 70E provides detailed practices that help employers meet them. This course focuses on the OSHA rules as they apply to data center technicians. For NFPA 70E in more depth, see Electrical Safety & Best Practices and Data Center Arc Flash Safety Training."
         }
       ],
       "related_course_ids": [
@@ -4337,21 +4069,17 @@
       ],
       "bundles": [
         {
-          "id": "bundle-power-electrical",
-          "name": "Power & Electrical Systems Bundle",
-          "price_usd": 986.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
-          "id": "bundle-complete-catalog",
-          "name": "Complete Data Center Professional Bundle",
-          "price_usd": 2928.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
           "id": "bundle-technician-skills-pack",
           "name": "Data Center Technician Skills Pack",
           "price_usd": 844.99,
+          "billing": "one-time",
+          "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-data-center-library",
+          "name": "Data Center & IT Infrastructure Library",
+          "price_usd": 119,
+          "billing": "annual",
           "url": "https://datacentertraining.us/bundles.html"
         }
       ],
@@ -4443,15 +4171,10 @@
       ],
       "bundles": [
         {
-          "id": "bundle-operations-reliability",
-          "name": "Operations & Reliability Bundle",
-          "price_usd": 830.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
-          "id": "bundle-complete-catalog",
-          "name": "Complete Data Center Professional Bundle",
-          "price_usd": 2928.99,
+          "id": "bundle-data-center-library",
+          "name": "Data Center & IT Infrastructure Library",
+          "price_usd": 119,
+          "billing": "annual",
           "url": "https://datacentertraining.us/bundles.html"
         }
       ],
@@ -4543,21 +4266,17 @@
       ],
       "bundles": [
         {
-          "id": "bundle-operations-reliability",
-          "name": "Operations & Reliability Bundle",
-          "price_usd": 830.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
-          "id": "bundle-complete-catalog",
-          "name": "Complete Data Center Professional Bundle",
-          "price_usd": 2928.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
           "id": "bundle-facilities-safety-pack",
           "name": "Data Center Facilities Safety Pack",
           "price_usd": 649.99,
+          "billing": "one-time",
+          "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-data-center-library",
+          "name": "Data Center & IT Infrastructure Library",
+          "price_usd": 119,
+          "billing": "annual",
           "url": "https://datacentertraining.us/bundles.html"
         }
       ],
@@ -4649,21 +4368,17 @@
       ],
       "bundles": [
         {
-          "id": "bundle-power-electrical",
-          "name": "Power & Electrical Systems Bundle",
-          "price_usd": 986.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
-          "id": "bundle-complete-catalog",
-          "name": "Complete Data Center Professional Bundle",
-          "price_usd": 2928.99,
-          "url": "https://datacentertraining.us/bundles.html"
-        },
-        {
           "id": "bundle-technician-skills-pack",
           "name": "Data Center Technician Skills Pack",
           "price_usd": 844.99,
+          "billing": "one-time",
+          "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-data-center-library",
+          "name": "Data Center & IT Infrastructure Library",
+          "price_usd": 119,
+          "billing": "annual",
           "url": "https://datacentertraining.us/bundles.html"
         }
       ],

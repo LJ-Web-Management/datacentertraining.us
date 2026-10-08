@@ -2,7 +2,7 @@
   "schema_version": "2026-06",
   "name": "datacentertraining-us",
   "title": "Data Center Training",
-  "description": "Read-only catalog tools for Data Center Training (datacentertraining.us): 44 online, self-paced data center courses (183 hours), 10 bundles, and 6 role-based learning tracks, delivered by HAZWOPER OSHA Training, LLC, an IACET Accredited Provider.",
+  "description": "Read-only catalog tools for Data Center Training (datacentertraining.us): 43 online, self-paced data center courses (184 hours), 4 bundles, and 6 role-based learning tracks, delivered by HAZWOPER OSHA Training, LLC, an IACET Accredited Provider.",
   "version": "1.0.0",
   "last_updated": "2026-10-08",
   "homepage": "https://datacentertraining.us/",
@@ -44,7 +44,7 @@
     {
       "name": "list_courses",
       "title": "Search and filter the course catalog",
-      "description": "Search or filter the 44-course Data Center Training catalog. Returns course summaries with canonical URL, track, type, duration in hours, per-seat USD price, and aligned standards. Use this before get_course when the user describes a topic, role, budget, or time limit. Every filter is optional; with no input it returns the full catalog. Only report courses this tool returns - never invent a course, price, or availability.",
+      "description": "Search or filter the 43-course Data Center Training catalog. Returns course summaries with canonical URL, track, type, duration in hours, per-seat USD price, and aligned standards. Use this before get_course when the user describes a topic, role, budget, or time limit. Every filter is optional; with no input it returns the full catalog. Only report courses this tool returns - never invent a course, price, or availability.",
       "inputSchema": {
         "$schema": "http://json-schema.org/draft-07/schema#",
         "type": "object",
@@ -102,7 +102,7 @@
               "comprehensive",
               "modular"
             ],
-            "description": "comprehensive = 12-18 hr full-discipline programs; modular = 1-8 hr focused specializations."
+            "description": "comprehensive = 8 hr full-discipline programs; modular = 1-8 hr focused specializations."
           },
           "standard": {
             "type": "string",
@@ -112,16 +112,10 @@
           "bundle_id": {
             "type": "string",
             "enum": [
-              "bundle-power-electrical",
-              "bundle-cooling-efficiency",
-              "bundle-operations-reliability",
-              "bundle-security-compliance",
-              "bundle-design-planning",
-              "bundle-monitoring-smart-facility",
-              "bundle-complete-catalog",
               "bundle-facilities-safety-pack",
               "bundle-infrastructure-professional-pack",
-              "bundle-technician-skills-pack"
+              "bundle-technician-skills-pack",
+              "bundle-data-center-library"
             ],
             "description": "Only courses included in this bundle."
           },
@@ -301,7 +295,7 @@
             "limit": 3
           },
           "output": {
-            "total_matching": 7,
+            "total_matching": 6,
             "returned": 3,
             "courses": [
               {
@@ -564,6 +558,7 @@
                     "id",
                     "name",
                     "price_usd",
+                    "billing",
                     "url"
                   ],
                   "properties": {
@@ -575,6 +570,13 @@
                     },
                     "price_usd": {
                       "type": "number"
+                    },
+                    "billing": {
+                      "type": "string",
+                      "enum": [
+                        "one-time",
+                        "annual"
+                      ]
                     },
                     "url": {
                       "type": "string",
@@ -836,21 +838,17 @@
               ],
               "bundles": [
                 {
-                  "id": "bundle-power-electrical",
-                  "name": "Power & Electrical Systems Bundle",
-                  "price_usd": 986.99,
-                  "url": "https://datacentertraining.us/bundles.html"
-                },
-                {
-                  "id": "bundle-complete-catalog",
-                  "name": "Complete Data Center Professional Bundle",
-                  "price_usd": 2928.99,
-                  "url": "https://datacentertraining.us/bundles.html"
-                },
-                {
                   "id": "bundle-facilities-safety-pack",
                   "name": "Data Center Facilities Safety Pack",
                   "price_usd": 649.99,
+                  "billing": "one-time",
+                  "url": "https://datacentertraining.us/bundles.html"
+                },
+                {
+                  "id": "bundle-data-center-library",
+                  "name": "Data Center & IT Infrastructure Library",
+                  "price_usd": 119,
+                  "billing": "annual",
                   "url": "https://datacentertraining.us/bundles.html"
                 }
               ],
@@ -918,7 +916,7 @@
     {
       "name": "compare_bundles",
       "title": "Compare course bundles",
-      "description": "Compare the 10 course bundles (6 role-based track bundles, 3 compliance packs, and the complete 44-course catalog bundle) side by side: bundle price, sum of individual course prices, savings, course count, total hours, audience, and included course ids. Omit bundle_ids to compare all bundles. Prices are per seat before seat-count volume discounts.",
+      "description": "Compare the 4 products for sale (3 one-time compliance packs and the annual 43-course Data Center & IT Infrastructure Library subscription) side by side: billing, price, sum of individual course prices, savings, course count, total hours, audience, and included course ids. Omit bundle_ids to compare all bundles. Prices are per seat before seat-count volume discounts.",
       "inputSchema": {
         "$schema": "http://json-schema.org/draft-07/schema#",
         "type": "object",
@@ -927,21 +925,15 @@
           "bundle_ids": {
             "type": "array",
             "minItems": 1,
-            "maxItems": 10,
+            "maxItems": 4,
             "uniqueItems": true,
             "items": {
               "type": "string",
               "enum": [
-                "bundle-power-electrical",
-                "bundle-cooling-efficiency",
-                "bundle-operations-reliability",
-                "bundle-security-compliance",
-                "bundle-design-planning",
-                "bundle-monitoring-smart-facility",
-                "bundle-complete-catalog",
                 "bundle-facilities-safety-pack",
                 "bundle-infrastructure-professional-pack",
-                "bundle-technician-skills-pack"
+                "bundle-technician-skills-pack",
+                "bundle-data-center-library"
               ]
             },
             "description": "Bundles to compare; omit for all."
@@ -965,6 +957,7 @@
               "required": [
                 "id",
                 "name",
+                "billing",
                 "price_usd",
                 "list_price_usd",
                 "savings_usd",
@@ -977,16 +970,10 @@
                 "id": {
                   "type": "string",
                   "enum": [
-                    "bundle-power-electrical",
-                    "bundle-cooling-efficiency",
-                    "bundle-operations-reliability",
-                    "bundle-security-compliance",
-                    "bundle-design-planning",
-                    "bundle-monitoring-smart-facility",
-                    "bundle-complete-catalog",
                     "bundle-facilities-safety-pack",
                     "bundle-infrastructure-professional-pack",
-                    "bundle-technician-skills-pack"
+                    "bundle-technician-skills-pack",
+                    "bundle-data-center-library"
                   ]
                 },
                 "catalog_number": {
@@ -996,6 +983,17 @@
                   "type": "string"
                 },
                 "track": {
+                  "type": "string"
+                },
+                "billing": {
+                  "type": "string",
+                  "enum": [
+                    "one-time",
+                    "annual"
+                  ],
+                  "description": "one-time: per-seat compliance pack. annual: per-seat, 12-month subscription."
+                },
+                "billing_label": {
                   "type": "string"
                 },
                 "audience": {
@@ -1073,43 +1071,52 @@
         {
           "input": {
             "bundle_ids": [
-              "bundle-security-compliance",
-              "bundle-complete-catalog"
+              "bundle-facilities-safety-pack",
+              "bundle-data-center-library"
             ]
           },
           "output": {
             "bundles": [
               {
-                "id": "bundle-security-compliance",
-                "name": "Security & Compliance Bundle",
-                "track": "Security & Compliance Track",
-                "price_usd": 400.99,
-                "list_price_usd": 691.95,
-                "savings_usd": 290.96,
-                "savings_percent": 42,
-                "course_count": 5,
-                "total_hours": 17.5,
-                "audience": "For security and compliance leads building an audit-ready physical security, fire safety, and environmental compliance program.",
+                "id": "bundle-facilities-safety-pack",
+                "name": "Data Center Facilities Safety Pack",
+                "track": "Multiple tracks",
+                "billing": "one-time",
+                "billing_label": "per seat, one-time",
+                "price_usd": 649.99,
+                "list_price_usd": 999.9,
+                "savings_usd": 349.91,
+                "savings_percent": 35,
+                "course_count": 10,
+                "total_hours": 18,
+                "audience": "For white-space and gray-space technicians at data centers and critical facilities: the OSHA/NFPA life-safety and electrical compliance training every technician needs before working on the floor.",
                 "url": "https://datacentertraining.us/bundles.html",
                 "course_ids": [
-                  "security-compliance-data-centers",
-                  "access-control-physical-security",
-                  "facility-environmental-compliance",
+                  "data-center-arc-flash-safety",
+                  "data-center-electrical-safety",
+                  "data-center-ups-battery-safety",
+                  "data-center-epo-procedures",
                   "data-center-fire-suppression-safety",
-                  "data-center-physical-security-access-control"
+                  "data-center-cooling-refrigerant-safety",
+                  "data-center-raised-floor-confined-space",
+                  "data-center-physical-security-access-control",
+                  "server-room-ergonomics-manual-handling",
+                  "lithium-ion-thermal-runaway-emergency-response"
                 ]
               },
               {
-                "id": "bundle-complete-catalog",
-                "name": "Complete Data Center Professional Bundle",
+                "id": "bundle-data-center-library",
+                "name": "Data Center & IT Infrastructure Library",
                 "track": "All tracks",
-                "price_usd": 2928.99,
-                "list_price_usd": 6167.56,
-                "savings_usd": 3238.57,
-                "savings_percent": 53,
-                "course_count": 44,
-                "total_hours": 183,
-                "audience": "Every course in the catalog — all 6 role-based tracks in one enrollment. The single path for a team that wants full coverage across design, power, cooling, security, operations, and monitoring, at the deepest discount we offer.",
+                "billing": "annual",
+                "billing_label": "per seat, per year (12-month subscription)",
+                "price_usd": 119,
+                "list_price_usd": 6067.57,
+                "savings_usd": 5948.57,
+                "savings_percent": 98,
+                "course_count": 43,
+                "total_hours": 184,
+                "audience": "Unlimited 12-month access to all 43 data center courses for one learner: every safety, technician, and infrastructure program in the catalog, priced per seat per year.",
                 "url": "https://datacentertraining.us/bundles.html",
                 "course_ids": [
                   "access-control-physical-security",
@@ -1146,7 +1153,6 @@
                   "lithium-ion-thermal-runaway-emergency-response",
                   "mechanical-systems-maintenance",
                   "monitoring-automation-bms-systems",
-                  "osha-electrical-safety-data-center-technicians",
                   "power-distribution-systems-fundamentals",
                   "power-systems-electrical-fundamentals",
                   "preventive-maintenance-planning",
@@ -1160,7 +1166,8 @@
               }
             ],
             "notes": [
-              "Prices are per seat in USD before seat-count volume discounts (25+ seats), which apply at checkout."
+              "Prices are per seat in USD before seat-count volume discounts (25+ seats), which apply at checkout.",
+              "Compliance packs are a one-time purchase; the Data Center & IT Infrastructure Library is billed per seat per year."
             ]
           },
           "output_truncated": true
@@ -1264,6 +1271,13 @@
               },
               "name": {
                 "type": "string"
+              },
+              "billing": {
+                "type": "string",
+                "enum": [
+                  "one-time",
+                  "annual"
+                ]
               },
               "price_usd": {
                 "type": "number"
@@ -1430,15 +1444,16 @@
               "label": "I work on HVAC, cooling, or mechanical systems"
             },
             "track": "Cooling & Facilities Efficiency Track",
-            "reason": "HVAC and facilities technicians who need both cooling design fundamentals and hands-on maintenance skills should complete this 6-course, 23-hour track.",
+            "reason": "HVAC and facilities technicians who need both cooling design fundamentals and hands-on maintenance skills should complete this 6-course, 24-hour track.",
             "recommended_bundle": {
-              "id": "bundle-cooling-efficiency",
-              "name": "Cooling & Facilities Efficiency Bundle",
-              "price_usd": 462.99,
-              "list_price_usd": 798.94,
-              "savings_usd": 335.95,
-              "course_count": 6,
-              "total_hours": 23,
+              "id": "bundle-technician-skills-pack",
+              "name": "Data Center Technician Skills Pack",
+              "billing": "one-time",
+              "price_usd": 844.99,
+              "list_price_usd": 1299.87,
+              "savings_usd": 454.88,
+              "course_count": 13,
+              "total_hours": 50,
               "url": "https://datacentertraining.us/bundles.html"
             },
             "courses": [
@@ -1460,24 +1475,25 @@
                 "reason": "Core full-discipline program for this track."
               },
               {
-                "id": "hvac-troubleshooting-essentials",
-                "title": "HVAC Systems Troubleshooting Essentials",
-                "url": "https://datacentertraining.us/courses/hvac-troubleshooting-essentials.html",
+                "id": "energy-efficiency-pue-optimization",
+                "title": "Energy Efficiency & PUE Optimization",
+                "url": "https://datacentertraining.us/courses/energy-efficiency-pue-optimization.html",
                 "track": "Cooling & Facilities Efficiency Track",
                 "category": "Cooling & Efficiency",
                 "course_type": "modular",
                 "duration_hours": 4,
                 "price_usd": 99.99,
-                "standards": [],
-                "summary": "Hands-on troubleshooting skills for CRAC/CRAH systems and common cooling failures.",
+                "standards": [
+                  "PUE"
+                ],
+                "summary": "Cut operating costs with a measurable PUE optimization roadmap.",
                 "rank": 2,
                 "reason": "Focused specialization in the Cooling & Facilities Efficiency Track."
               }
             ],
             "caveats": [
               "Training guidance only, not legal or compliance advice. Employers decide who is qualified for which duties at their site.",
-              "A certificate of completion documents training; it is not a license or a certification issued by a standards body.",
-              "The full Cooling & Facilities Efficiency Bundle fits this budget and costs less than buying its courses one by one."
+              "A certificate of completion documents training; it is not a license or a certification issued by a standards body."
             ]
           },
           "output_truncated": true
@@ -2008,13 +2024,13 @@
       "uri": "https://datacentertraining.us/api/courses.json",
       "name": "Courses",
       "mimeType": "application/json",
-      "description": "All 44 course records."
+      "description": "All 43 course records."
     },
     {
       "uri": "https://datacentertraining.us/api/bundles.json",
       "name": "Bundles",
       "mimeType": "application/json",
-      "description": "All 10 bundles with pricing and savings."
+      "description": "All 4 bundles with pricing and savings."
     },
     {
       "uri": "https://datacentertraining.us/api/roles.json",

@@ -49,15 +49,10 @@
   ],
   "bundles": [
     {
-      "id": "bundle-cooling-efficiency",
-      "name": "Cooling & Facilities Efficiency Bundle",
-      "price_usd": 462.99,
-      "url": "https://datacentertraining.us/bundles.html"
-    },
-    {
-      "id": "bundle-complete-catalog",
-      "name": "Complete Data Center Professional Bundle",
-      "price_usd": 2928.99,
+      "id": "bundle-data-center-library",
+      "name": "Data Center & IT Infrastructure Library",
+      "price_usd": 119,
+      "billing": "annual",
       "url": "https://datacentertraining.us/bundles.html"
     }
   ],

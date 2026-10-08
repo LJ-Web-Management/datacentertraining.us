@@ -7,8 +7,8 @@
       "id": "electrician",
       "label": "I'm an electrician or power technician",
       "track": "Power & Electrical Systems Track",
-      "bundle_id": "bundle-power-electrical",
-      "description": "Electricians and power technicians working on utility interconnection, UPS systems, generators, batteries, and daily electrical safety should complete this 15-course, 49-hour track.",
+      "bundle_id": "bundle-facilities-safety-pack",
+      "description": "Electricians and power technicians working on utility interconnection, UPS systems, generators, batteries, and daily electrical safety should complete this 14-course, 47-hour track.",
       "keywords": [
         "electrician",
         "electrical",
@@ -28,8 +28,8 @@
       "id": "hvac",
       "label": "I work on HVAC, cooling, or mechanical systems",
       "track": "Cooling & Facilities Efficiency Track",
-      "bundle_id": "bundle-cooling-efficiency",
-      "description": "HVAC and facilities technicians who need both cooling design fundamentals and hands-on maintenance skills should complete this 6-course, 23-hour track.",
+      "bundle_id": "bundle-technician-skills-pack",
+      "description": "HVAC and facilities technicians who need both cooling design fundamentals and hands-on maintenance skills should complete this 6-course, 24-hour track.",
       "keywords": [
         "hvac",
         "cooling",
@@ -48,7 +48,7 @@
       "id": "operations",
       "label": "I manage daily facility operations and uptime",
       "track": "Operations & Reliability Track",
-      "bundle_id": "bundle-operations-reliability",
+      "bundle_id": "bundle-infrastructure-professional-pack",
       "description": "Facility and operations managers who own uptime should complete this 10-course, 44-hour track covering daily operations, disaster recovery, maintenance, and incident response.",
       "keywords": [
         "operations",
@@ -68,8 +68,8 @@
       "id": "security",
       "label": "I handle security or compliance",
       "track": "Security & Compliance Track",
-      "bundle_id": "bundle-security-compliance",
-      "description": "Security and compliance leads building an audit-ready program should complete this 5-course, 17.5-hour track.",
+      "bundle_id": "bundle-facilities-safety-pack",
+      "description": "Security and compliance leads building an audit-ready program should complete this 5-course, 19-hour track.",
       "keywords": [
         "security",
         "compliance",
@@ -86,8 +86,8 @@
       "id": "design",
       "label": "I design, plan, or commission facilities",
       "track": "Design, Planning & Commissioning Track",
-      "bundle_id": "bundle-design-planning",
-      "description": "Engineers and project leads taking a facility from design through launch should complete all four of these courses, 27.5 hours total.",
+      "bundle_id": "bundle-infrastructure-professional-pack",
+      "description": "Engineers and project leads taking a facility from design through launch should complete all four of these courses, 28 hours total.",
       "keywords": [
         "engineer",
         "design",
@@ -105,7 +105,7 @@
       "id": "it",
       "label": "I work on monitoring, DCIM, or network cabling",
       "track": "Monitoring & Smart Facility Track",
-      "bundle_id": "bundle-monitoring-smart-facility",
+      "bundle_id": "bundle-technician-skills-pack",
       "description": "Teams building out monitoring, DCIM, building automation, and network cabling infrastructure should complete all four of these courses, 22 hours total.",
       "keywords": [
         "network",
@@ -125,7 +125,7 @@
   "tracks": [
     {
       "name": "Power & Electrical Systems Track",
-      "bundle_id": "bundle-power-electrical",
+      "id": "track-power-electrical",
       "course_ids": [
         "power-systems-electrical-fundamentals",
         "ups-operations-load-testing",
@@ -139,7 +139,6 @@
         "emergency-standby-power-systems-fundamentals",
         "generator-fundamentals",
         "lithium-ion-thermal-runaway-emergency-response",
-        "osha-electrical-safety-data-center-technicians",
         "power-distribution-systems-fundamentals",
         "ups-systems-fundamentals"
       ],
@@ -149,7 +148,7 @@
     },
     {
       "name": "Cooling & Facilities Efficiency Track",
-      "bundle_id": "bundle-cooling-efficiency",
+      "id": "track-cooling-efficiency",
       "course_ids": [
         "cooling-systems-design-optimization",
         "hvac-troubleshooting-essentials",
@@ -164,7 +163,7 @@
     },
     {
       "name": "Operations & Reliability Track",
-      "bundle_id": "bundle-operations-reliability",
+      "id": "track-operations-reliability",
       "course_ids": [
         "data-center-operations-management",
         "disaster-recovery-business-continuity",
@@ -183,7 +182,7 @@
     },
     {
       "name": "Security & Compliance Track",
-      "bundle_id": "bundle-security-compliance",
+      "id": "track-security-compliance",
       "course_ids": [
         "security-compliance-data-centers",
         "access-control-physical-security",
@@ -197,7 +196,7 @@
     },
     {
       "name": "Design, Planning & Commissioning Track",
-      "bundle_id": "bundle-design-planning",
+      "id": "track-design-planning",
       "course_ids": [
         "data-center-design-fundamentals",
         "tier-infrastructure-fundamentals",
@@ -210,7 +209,7 @@
     },
     {
       "name": "Monitoring & Smart Facility Track",
-      "bundle_id": "bundle-monitoring-smart-facility",
+      "id": "track-monitoring-smart-facility",
       "course_ids": [
         "monitoring-automation-bms-systems",
         "dcim-platform-fundamentals",

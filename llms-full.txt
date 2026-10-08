@@ -1,6 +1,6 @@
 # Data Center Training - Full Catalog
 
-> Data Center Training (datacentertraining.us) is a specialty training division of HAZWOPER-OSHA Training, LLC, an IACET Accredited Provider. 44 online, self-paced data center courses (183 hours total) in design, operations, power, cooling, security, and facilities management. Every course awards a certificate of completion.
+> Data Center Training (datacentertraining.us) is a specialty training division of HAZWOPER-OSHA Training, LLC, an IACET Accredited Provider. 43 online, self-paced data center courses (184 hours total) in design, operations, power, cooling, security, and facilities management. Every course awards a certificate of completion.
 
 Last updated: 2026-10-08
 Canonical source: https://datacentertraining.us/api/courses.json (same records as JSON). Tools: https://datacentertraining.us/.well-known/mcp.json
@@ -36,7 +36,7 @@ Each record below is stable: the id never changes, and every field matches the c
 - modules: 6
 - price_usd: 303.99
 - standards_aligned: NFPA 70E
-- bundles: Power & Electrical Systems Bundle ($986.99); Complete Data Center Professional Bundle ($2928.99); Data Center Infrastructure Professional Pack ($1867.99)
+- bundles: Data Center Infrastructure Professional Pack ($1867.99); Data Center & IT Infrastructure Library ($119.00/year)
 - audience: Electricians, power engineers, and facilities technicians who work on or specify critical power systems.
 - prerequisites: No prior certification required. Assumes basic familiarity with facility systems.
 - language: English
@@ -79,7 +79,7 @@ Modules:
 - modules: 4
 - price_usd: 99.99
 - standards_aligned: none named
-- bundles: Power & Electrical Systems Bundle ($986.99); Complete Data Center Professional Bundle ($2928.99); Data Center Technician Skills Pack ($844.99)
+- bundles: Data Center Technician Skills Pack ($844.99); Data Center & IT Infrastructure Library ($119.00/year)
 - audience: Power technicians responsible for UPS operation and maintenance.
 - prerequisites: No prior certification required. Relevant equipment exposure is helpful.
 - language: English
@@ -119,7 +119,7 @@ Modules:
 - modules: 4
 - price_usd: 99.99
 - standards_aligned: none named
-- bundles: Power & Electrical Systems Bundle ($986.99); Complete Data Center Professional Bundle ($2928.99); Data Center Technician Skills Pack ($844.99)
+- bundles: Data Center Technician Skills Pack ($844.99); Data Center & IT Infrastructure Library ($119.00/year)
 - audience: Facilities technicians responsible for backup power systems.
 - prerequisites: No prior certification required. Relevant equipment exposure is helpful.
 - language: English
@@ -159,7 +159,7 @@ Modules:
 - modules: 4
 - price_usd: 99.99
 - standards_aligned: NFPA 70E
-- bundles: Power & Electrical Systems Bundle ($986.99); Complete Data Center Professional Bundle ($2928.99); Data Center Technician Skills Pack ($844.99)
+- bundles: Data Center Technician Skills Pack ($844.99); Data Center & IT Infrastructure Library ($119.00/year)
 - audience: Electrical workers and facilities staff working near energized equipment.
 - prerequisites: No prior certification required. Relevant equipment exposure is helpful.
 - language: English
@@ -199,7 +199,7 @@ Modules:
 - modules: 4
 - price_usd: 99.99
 - standards_aligned: none named
-- bundles: Power & Electrical Systems Bundle ($986.99); Complete Data Center Professional Bundle ($2928.99); Data Center Technician Skills Pack ($844.99)
+- bundles: Data Center Technician Skills Pack ($844.99); Data Center & IT Infrastructure Library ($119.00/year)
 - audience: Electricians and power technicians who need core DC theory before working on UPS or battery systems.
 - prerequisites: No prior certification required. Relevant equipment exposure is helpful.
 - language: English
@@ -239,7 +239,7 @@ Modules:
 - modules: 4
 - price_usd: 99.99
 - standards_aligned: NFPA 70E
-- bundles: Power & Electrical Systems Bundle ($986.99); Complete Data Center Professional Bundle ($2928.99); Data Center Facilities Safety Pack ($649.99)
+- bundles: Data Center Facilities Safety Pack ($649.99); Data Center & IT Infrastructure Library ($119.00/year)
 - audience: Electricians and technicians working near energized data center power equipment.
 - prerequisites: No prior certification required. Relevant equipment exposure is helpful.
 - language: English
@@ -279,7 +279,7 @@ Modules:
 - modules: 4
 - price_usd: 99.99
 - standards_aligned: none named
-- bundles: Power & Electrical Systems Bundle ($986.99); Complete Data Center Professional Bundle ($2928.99); Data Center Facilities Safety Pack ($649.99)
+- bundles: Data Center Facilities Safety Pack ($649.99); Data Center & IT Infrastructure Library ($119.00/year)
 - audience: Electricians, facilities technicians, and IT staff working near energized equipment.
 - prerequisites: No prior certification required. Relevant equipment exposure is helpful.
 - language: English
@@ -319,7 +319,7 @@ Modules:
 - modules: 4
 - price_usd: 99.99
 - standards_aligned: none named
-- bundles: Power & Electrical Systems Bundle ($986.99); Complete Data Center Professional Bundle ($2928.99); Data Center Facilities Safety Pack ($649.99)
+- bundles: Data Center Facilities Safety Pack ($649.99); Data Center & IT Infrastructure Library ($119.00/year)
 - audience: Facilities and operations staff who may need to activate or reset an EPO system.
 - prerequisites: No prior certification required. Relevant equipment exposure is helpful.
 - language: English
@@ -359,7 +359,7 @@ Modules:
 - modules: 4
 - price_usd: 99.99
 - standards_aligned: none named
-- bundles: Power & Electrical Systems Bundle ($986.99); Complete Data Center Professional Bundle ($2928.99); Data Center Facilities Safety Pack ($649.99)
+- bundles: Data Center Facilities Safety Pack ($649.99); Data Center & IT Infrastructure Library ($119.00/year)
 - audience: Electricians and facilities technicians working near UPS and battery installations.
 - prerequisites: No prior certification required. Relevant equipment exposure is helpful.
 - language: English
@@ -399,7 +399,7 @@ Modules:
 - modules: 4
 - price_usd: 99.99
 - standards_aligned: none named
-- bundles: Power & Electrical Systems Bundle ($986.99); Complete Data Center Professional Bundle ($2928.99)
+- bundles: Data Center & IT Infrastructure Library ($119.00/year)
 - audience: Facilities technicians responsible for standby and emergency power systems.
 - prerequisites: No prior certification required. Relevant equipment exposure is helpful.
 - language: English
@@ -439,7 +439,7 @@ Modules:
 - modules: 4
 - price_usd: 99.99
 - standards_aligned: none named
-- bundles: Power & Electrical Systems Bundle ($986.99); Complete Data Center Professional Bundle ($2928.99); Data Center Technician Skills Pack ($844.99)
+- bundles: Data Center Technician Skills Pack ($844.99); Data Center & IT Infrastructure Library ($119.00/year)
 - audience: Facilities technicians who need generator theory before hands-on operations training.
 - prerequisites: No prior certification required. Relevant equipment exposure is helpful.
 - language: English
@@ -479,7 +479,7 @@ Modules:
 - modules: 4
 - price_usd: 99.99
 - standards_aligned: none named
-- bundles: Power & Electrical Systems Bundle ($986.99); Complete Data Center Professional Bundle ($2928.99); Data Center Facilities Safety Pack ($649.99)
+- bundles: Data Center Facilities Safety Pack ($649.99); Data Center & IT Infrastructure Library ($119.00/year)
 - audience: Facilities and emergency response staff working near lithium-ion battery installations.
 - prerequisites: No prior certification required. Relevant equipment exposure is helpful.
 - language: English
@@ -506,46 +506,6 @@ Modules:
 3. Containment Procedures: What to do, and not do, during a thermal runaway event.
 4. Emergency Response Coordination: Working with fire services on a lithium-ion-specific incident.
 
-### OSHA Electrical Safety-Related Work Practices for Data Center Technicians
-
-- id: osha-electrical-safety-data-center-technicians
-- catalog_number: 458
-- url: https://datacentertraining.us/courses/osha-electrical-safety-data-center-technicians.html
-- api_url: https://datacentertraining.us/api/courses/osha-electrical-safety-data-center-technicians.json
-- track: Power & Electrical Systems Track
-- category: Power & Electrical
-- course_type: Modular Specialization
-- duration_hours: 2
-- modules: 4
-- price_usd: 99.99
-- standards_aligned: NFPA 70E
-- bundles: Power & Electrical Systems Bundle ($986.99); Complete Data Center Professional Bundle ($2928.99)
-- audience: Data center technicians who work on or near energized electrical equipment.
-- prerequisites: No prior certification required. Relevant equipment exposure is helpful.
-- language: English
-- delivery: Online, self-paced, no completion deadline
-- certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
-- availability: enrollment request at checkout, by phone, or by email; same-day setup; card or purchase order
-- summary: OSHA-aligned electrical safety-related work practices tailored to data center technicians.
-
-This course applies OSHA's electrical safety-related work practices (29 CFR 1910 Subpart S) specifically to the data center technician role: the equipment, access patterns, and daily tasks that put technicians near energized systems more often than in a typical facility. You'll leave with approach boundaries and documentation practices that keep your electrical safety program audit-ready.
-
-Learning outcomes:
-- Apply OSHA electrical safety-related work practices to daily data center tasks
-- Identify the data center-specific tasks that carry elevated electrical risk
-- Follow correct approach boundaries for qualified and unqualified persons
-- Document electrical safety compliance correctly
-- Certificate of completion on finish
-- Self-paced — start and stop anytime
-- Delivered by an IACET-accredited provider
-- Volume pricing available for teams
-
-Modules:
-1. OSHA Work Practice Requirements: What 29 CFR 1910 Subpart S actually requires.
-2. Data Center-Specific Risk Tasks: The daily tasks that put technicians near energized equipment.
-3. Approach Boundaries: Qualified vs. unqualified person boundaries, applied correctly.
-4. Documentation & Compliance: Keeping electrical safety compliance records audit-ready.
-
 ### Power Distribution Systems Fundamentals
 
 - id: power-distribution-systems-fundamentals
@@ -559,7 +519,7 @@ Modules:
 - modules: 4
 - price_usd: 99.99
 - standards_aligned: none named
-- bundles: Power & Electrical Systems Bundle ($986.99); Complete Data Center Professional Bundle ($2928.99); Data Center Technician Skills Pack ($844.99)
+- bundles: Data Center Technician Skills Pack ($844.99); Data Center & IT Infrastructure Library ($119.00/year)
 - audience: Electricians and technicians who need power distribution fundamentals before working on PDU systems.
 - prerequisites: No prior certification required. Relevant equipment exposure is helpful.
 - language: English
@@ -599,7 +559,7 @@ Modules:
 - modules: 4
 - price_usd: 99.99
 - standards_aligned: none named
-- bundles: Power & Electrical Systems Bundle ($986.99); Complete Data Center Professional Bundle ($2928.99); Data Center Technician Skills Pack ($844.99)
+- bundles: Data Center Technician Skills Pack ($844.99); Data Center & IT Infrastructure Library ($119.00/year)
 - audience: Facilities technicians who need UPS theory before hands-on operations training.
 - prerequisites: No prior certification required. Relevant equipment exposure is helpful.
 - language: English
@@ -641,7 +601,7 @@ Modules:
 - modules: 6
 - price_usd: 298.99
 - standards_aligned: PUE; ASHRAE Thermal Guidelines
-- bundles: Cooling & Facilities Efficiency Bundle ($462.99); Complete Data Center Professional Bundle ($2928.99); Data Center Infrastructure Professional Pack ($1867.99)
+- bundles: Data Center Infrastructure Professional Pack ($1867.99); Data Center & IT Infrastructure Library ($119.00/year)
 - audience: HVAC technicians, facilities engineers, and anyone accountable for PUE.
 - prerequisites: No prior certification required. Assumes basic familiarity with facility systems.
 - language: English
@@ -684,7 +644,7 @@ Modules:
 - modules: 4
 - price_usd: 99.99
 - standards_aligned: none named
-- bundles: Cooling & Facilities Efficiency Bundle ($462.99); Complete Data Center Professional Bundle ($2928.99); Data Center Technician Skills Pack ($844.99)
+- bundles: Data Center Technician Skills Pack ($844.99); Data Center & IT Infrastructure Library ($119.00/year)
 - audience: HVAC technicians working on data center cooling equipment.
 - prerequisites: No prior certification required. Relevant equipment exposure is helpful.
 - language: English
@@ -720,11 +680,11 @@ Modules:
 - track: Cooling & Facilities Efficiency Track
 - category: Cooling & Efficiency
 - course_type: Modular Specialization
-- duration_hours: 3
+- duration_hours: 4
 - modules: 4
 - price_usd: 99.99
 - standards_aligned: PUE
-- bundles: Cooling & Facilities Efficiency Bundle ($462.99); Complete Data Center Professional Bundle ($2928.99)
+- bundles: Data Center & IT Infrastructure Library ($119.00/year)
 - audience: Facility managers accountable for energy costs and sustainability targets.
 - prerequisites: No prior certification required. Relevant equipment exposure is helpful.
 - language: English
@@ -764,7 +724,7 @@ Modules:
 - modules: 4
 - price_usd: 99.99
 - standards_aligned: none named
-- bundles: Cooling & Facilities Efficiency Bundle ($462.99); Complete Data Center Professional Bundle ($2928.99)
+- bundles: Data Center & IT Infrastructure Library ($119.00/year)
 - audience: Mechanical technicians responsible for facility equipment maintenance.
 - prerequisites: No prior certification required. Relevant equipment exposure is helpful.
 - language: English
@@ -804,7 +764,7 @@ Modules:
 - modules: 4
 - price_usd: 99.99
 - standards_aligned: EPA/OSHA
-- bundles: Cooling & Facilities Efficiency Bundle ($462.99); Complete Data Center Professional Bundle ($2928.99); Data Center Facilities Safety Pack ($649.99)
+- bundles: Data Center Facilities Safety Pack ($649.99); Data Center & IT Infrastructure Library ($119.00/year)
 - audience: HVAC technicians working on data center cooling and refrigerant systems.
 - prerequisites: No prior certification required. Relevant equipment exposure is helpful.
 - language: English
@@ -844,7 +804,7 @@ Modules:
 - modules: 4
 - price_usd: 99.99
 - standards_aligned: none named
-- bundles: Cooling & Facilities Efficiency Bundle ($462.99); Complete Data Center Professional Bundle ($2928.99)
+- bundles: Data Center & IT Infrastructure Library ($119.00/year)
 - audience: Facilities technicians and managers responsible for building performance and energy costs.
 - prerequisites: No prior certification required. Relevant equipment exposure is helpful.
 - language: English
@@ -886,7 +846,7 @@ Modules:
 - modules: 6
 - price_usd: 325.99
 - standards_aligned: DCIM; SLA Frameworks
-- bundles: Operations & Reliability Bundle ($830.99); Complete Data Center Professional Bundle ($2928.99); Data Center Infrastructure Professional Pack ($1867.99)
+- bundles: Data Center Infrastructure Professional Pack ($1867.99); Data Center & IT Infrastructure Library ($119.00/year)
 - audience: Facility managers and operations directors responsible for day-to-day uptime.
 - prerequisites: No prior certification required. Assumes basic familiarity with facility systems.
 - language: English
@@ -929,7 +889,7 @@ Modules:
 - modules: 6
 - price_usd: 307.99
 - standards_aligned: RTO/RPO Frameworks
-- bundles: Operations & Reliability Bundle ($830.99); Complete Data Center Professional Bundle ($2928.99); Data Center Infrastructure Professional Pack ($1867.99)
+- bundles: Data Center Infrastructure Professional Pack ($1867.99); Data Center & IT Infrastructure Library ($119.00/year)
 - audience: Operations and risk managers responsible for uptime commitments and DR planning.
 - prerequisites: No prior certification required. Assumes basic familiarity with facility systems.
 - language: English
@@ -972,7 +932,7 @@ Modules:
 - modules: 4
 - price_usd: 99.99
 - standards_aligned: none named
-- bundles: Operations & Reliability Bundle ($830.99); Complete Data Center Professional Bundle ($2928.99); Data Center Technician Skills Pack ($844.99)
+- bundles: Data Center Technician Skills Pack ($844.99); Data Center & IT Infrastructure Library ($119.00/year)
 - audience: Facilities staff building or improving a maintenance program.
 - prerequisites: No prior certification required. Relevant equipment exposure is helpful.
 - language: English
@@ -1012,7 +972,7 @@ Modules:
 - modules: 4
 - price_usd: 99.99
 - standards_aligned: none named
-- bundles: Operations & Reliability Bundle ($830.99); Complete Data Center Professional Bundle ($2928.99); Data Center Technician Skills Pack ($844.99)
+- bundles: Data Center Technician Skills Pack ($844.99); Data Center & IT Infrastructure Library ($119.00/year)
 - audience: Technicians and engineers responsible for incident response.
 - prerequisites: No prior certification required. Relevant equipment exposure is helpful.
 - language: English
@@ -1052,7 +1012,7 @@ Modules:
 - modules: 4
 - price_usd: 99.99
 - standards_aligned: ICS-NIMS
-- bundles: Operations & Reliability Bundle ($830.99); Complete Data Center Professional Bundle ($2928.99)
+- bundles: Data Center & IT Infrastructure Library ($119.00/year)
 - audience: Operations and risk managers building or updating a formal business continuity plan.
 - prerequisites: No prior certification required. Relevant equipment exposure is helpful.
 - language: English
@@ -1092,7 +1052,7 @@ Modules:
 - modules: 4
 - price_usd: 99.99
 - standards_aligned: none named
-- bundles: Operations & Reliability Bundle ($830.99); Complete Data Center Professional Bundle ($2928.99)
+- bundles: Data Center & IT Infrastructure Library ($119.00/year)
 - audience: Facilities technicians responsible for general building systems and upkeep.
 - prerequisites: No prior certification required. Relevant equipment exposure is helpful.
 - language: English
@@ -1132,7 +1092,7 @@ Modules:
 - modules: 4
 - price_usd: 99.99
 - standards_aligned: none named
-- bundles: Operations & Reliability Bundle ($830.99); Complete Data Center Professional Bundle ($2928.99)
+- bundles: Data Center & IT Infrastructure Library ($119.00/year)
 - audience: New and developing facility managers responsible for day-to-day site operations.
 - prerequisites: No prior certification required. Relevant equipment exposure is helpful.
 - language: English
@@ -1172,7 +1132,7 @@ Modules:
 - modules: 4
 - price_usd: 99.99
 - standards_aligned: none named
-- bundles: Operations & Reliability Bundle ($830.99); Complete Data Center Professional Bundle ($2928.99)
+- bundles: Data Center & IT Infrastructure Library ($119.00/year)
 - audience: Facilities technicians responsible for roof inspection and maintenance scheduling.
 - prerequisites: No prior certification required. Relevant equipment exposure is helpful.
 - language: English
@@ -1212,7 +1172,7 @@ Modules:
 - modules: 4
 - price_usd: 99.99
 - standards_aligned: none named
-- bundles: Operations & Reliability Bundle ($830.99); Complete Data Center Professional Bundle ($2928.99); Data Center Facilities Safety Pack ($649.99)
+- bundles: Data Center Facilities Safety Pack ($649.99); Data Center & IT Infrastructure Library ($119.00/year)
 - audience: IT technicians and installation crews handling equipment in server rooms.
 - prerequisites: No prior certification required. Relevant equipment exposure is helpful.
 - language: English
@@ -1252,7 +1212,7 @@ Modules:
 - modules: 4
 - price_usd: 99.99
 - standards_aligned: OSHA 1910.146
-- bundles: Operations & Reliability Bundle ($830.99); Complete Data Center Professional Bundle ($2928.99); Data Center Facilities Safety Pack ($649.99)
+- bundles: Data Center Facilities Safety Pack ($649.99); Data Center & IT Infrastructure Library ($119.00/year)
 - audience: Facilities and cabling technicians who work under raised floors or in confined spaces.
 - prerequisites: No prior certification required. Relevant equipment exposure is helpful.
 - language: English
@@ -1294,7 +1254,7 @@ Modules:
 - modules: 6
 - price_usd: 291.99
 - standards_aligned: SOC 2; ISO 27001
-- bundles: Security & Compliance Bundle ($400.99); Complete Data Center Professional Bundle ($2928.99); Data Center Infrastructure Professional Pack ($1867.99)
+- bundles: Data Center Infrastructure Professional Pack ($1867.99); Data Center & IT Infrastructure Library ($119.00/year)
 - audience: Security managers, compliance officers, and facility leads preparing for a security audit.
 - prerequisites: No prior certification required. Assumes basic familiarity with facility systems.
 - language: English
@@ -1333,11 +1293,11 @@ Modules:
 - track: Security & Compliance Track
 - category: Security & Compliance
 - course_type: Modular Specialization
-- duration_hours: 3.5
+- duration_hours: 4
 - modules: 4
 - price_usd: 99.99
 - standards_aligned: none named
-- bundles: Security & Compliance Bundle ($400.99); Complete Data Center Professional Bundle ($2928.99)
+- bundles: Data Center & IT Infrastructure Library ($119.00/year)
 - audience: Security and facilities staff operating access control and surveillance systems.
 - prerequisites: No prior certification required. Relevant equipment exposure is helpful.
 - language: English
@@ -1373,11 +1333,11 @@ Modules:
 - track: Security & Compliance Track
 - category: Security & Compliance
 - course_type: Modular Specialization
-- duration_hours: 3
+- duration_hours: 4
 - modules: 4
 - price_usd: 99.99
 - standards_aligned: none named
-- bundles: Security & Compliance Bundle ($400.99); Complete Data Center Professional Bundle ($2928.99)
+- bundles: Data Center & IT Infrastructure Library ($119.00/year)
 - audience: Facility managers responsible for environmental permits and reporting.
 - prerequisites: No prior certification required. Relevant equipment exposure is helpful.
 - language: English
@@ -1417,7 +1377,7 @@ Modules:
 - modules: 4
 - price_usd: 99.99
 - standards_aligned: NFPA 2001
-- bundles: Security & Compliance Bundle ($400.99); Complete Data Center Professional Bundle ($2928.99); Data Center Facilities Safety Pack ($649.99)
+- bundles: Data Center Facilities Safety Pack ($649.99); Data Center & IT Infrastructure Library ($119.00/year)
 - audience: Facilities and fire/life safety staff responsible for data hall fire suppression systems.
 - prerequisites: No prior certification required. Relevant equipment exposure is helpful.
 - language: English
@@ -1457,7 +1417,7 @@ Modules:
 - modules: 4
 - price_usd: 99.99
 - standards_aligned: none named
-- bundles: Security & Compliance Bundle ($400.99); Complete Data Center Professional Bundle ($2928.99); Data Center Facilities Safety Pack ($649.99)
+- bundles: Data Center Facilities Safety Pack ($649.99); Data Center & IT Infrastructure Library ($119.00/year)
 - audience: Security and facilities staff responsible for data center floor access.
 - prerequisites: No prior certification required. Relevant equipment exposure is helpful.
 - language: English
@@ -1499,7 +1459,7 @@ Modules:
 - modules: 6
 - price_usd: 312.99
 - standards_aligned: ANSI/TIA-942
-- bundles: Design, Planning & Commissioning Bundle ($557.99); Complete Data Center Professional Bundle ($2928.99); Data Center Infrastructure Professional Pack ($1867.99)
+- bundles: Data Center Infrastructure Professional Pack ($1867.99); Data Center & IT Infrastructure Library ($119.00/year)
 - audience: Facility engineers, design consultants, and project leads planning new builds or major expansions.
 - prerequisites: No prior certification required. Assumes basic familiarity with facility systems.
 - language: English
@@ -1542,7 +1502,7 @@ Modules:
 - modules: 6
 - price_usd: 280.99
 - standards_aligned: Uptime Institute Tier Framework
-- bundles: Design, Planning & Commissioning Bundle ($557.99); Complete Data Center Professional Bundle ($2928.99); Data Center Infrastructure Professional Pack ($1867.99)
+- bundles: Data Center Infrastructure Professional Pack ($1867.99); Data Center & IT Infrastructure Library ($119.00/year)
 - audience: Facility managers and engineers who need to assess or benchmark infrastructure against TIER standards.
 - prerequisites: No prior certification required. Assumes basic familiarity with facility systems.
 - language: English
@@ -1585,7 +1545,7 @@ Modules:
 - modules: 6
 - price_usd: 267.99
 - standards_aligned: Commissioning Test Protocols
-- bundles: Design, Planning & Commissioning Bundle ($557.99); Complete Data Center Professional Bundle ($2928.99); Data Center Infrastructure Professional Pack ($1867.99)
+- bundles: Data Center Infrastructure Professional Pack ($1867.99); Data Center & IT Infrastructure Library ($119.00/year)
 - audience: Project leads and facility engineers overseeing a new build, expansion, or major system upgrade.
 - prerequisites: No prior certification required. Assumes basic familiarity with facility systems.
 - language: English
@@ -1624,11 +1584,11 @@ Modules:
 - track: Design, Planning & Commissioning Track
 - category: Design & Planning
 - course_type: Modular Specialization
-- duration_hours: 3.5
+- duration_hours: 4
 - modules: 4
 - price_usd: 99.99
 - standards_aligned: none named
-- bundles: Design, Planning & Commissioning Bundle ($557.99); Complete Data Center Professional Bundle ($2928.99)
+- bundles: Data Center & IT Infrastructure Library ($119.00/year)
 - audience: Facility and IT planners responsible for growth forecasting.
 - prerequisites: No prior certification required. Relevant equipment exposure is helpful.
 - language: English
@@ -1670,7 +1630,7 @@ Modules:
 - modules: 6
 - price_usd: 276.99
 - standards_aligned: BMS; DCIM
-- bundles: Monitoring & Smart Facility Bundle ($333.99); Complete Data Center Professional Bundle ($2928.99); Data Center Infrastructure Professional Pack ($1867.99)
+- bundles: Data Center Infrastructure Professional Pack ($1867.99); Data Center & IT Infrastructure Library ($119.00/year)
 - audience: Facilities engineers and technicians responsible for building management and monitoring systems.
 - prerequisites: No prior certification required. Assumes basic familiarity with facility systems.
 - language: English
@@ -1713,7 +1673,7 @@ Modules:
 - modules: 5
 - price_usd: 99.99
 - standards_aligned: DCIM
-- bundles: Monitoring & Smart Facility Bundle ($333.99); Complete Data Center Professional Bundle ($2928.99); Data Center Technician Skills Pack ($844.99)
+- bundles: Data Center Technician Skills Pack ($844.99); Data Center & IT Infrastructure Library ($119.00/year)
 - audience: Facility and IT managers evaluating or implementing a DCIM platform.
 - prerequisites: No prior certification required. Relevant equipment exposure is helpful.
 - language: English
@@ -1754,7 +1714,7 @@ Modules:
 - modules: 4
 - price_usd: 99.99
 - standards_aligned: ANSI/TIA-942
-- bundles: Monitoring & Smart Facility Bundle ($333.99); Complete Data Center Professional Bundle ($2928.99); Data Center Technician Skills Pack ($844.99)
+- bundles: Data Center Technician Skills Pack ($844.99); Data Center & IT Infrastructure Library ($119.00/year)
 - audience: Network technicians and cabling crews working on data center fiber plant.
 - prerequisites: No prior certification required. Relevant equipment exposure is helpful.
 - language: English
@@ -1794,7 +1754,7 @@ Modules:
 - modules: 4
 - price_usd: 99.99
 - standards_aligned: BMS/BAS
-- bundles: Monitoring & Smart Facility Bundle ($333.99); Complete Data Center Professional Bundle ($2928.99); Data Center Technician Skills Pack ($844.99)
+- bundles: Data Center Technician Skills Pack ($844.99); Data Center & IT Infrastructure Library ($119.00/year)
 - audience: Facilities engineers and technicians working with or evaluating BAS platforms.
 - prerequisites: No prior certification required. Relevant equipment exposure is helpful.
 - language: English
@@ -1825,94 +1785,11 @@ Modules:
 
 Prices are per seat in USD. Seat-count volume discounts apply at checkout: 25-50 seats 10%, 51-100 seats 15%, 101-200 seats 20%, 201-350 seats 25%, 351-500 seats 30%, 501-1000 seats 35%. Discounted per-seat prices round to the nearest dollar, ending in .99 for .99 list prices. More than 1,000 seats: custom enterprise quote.
 
-### Power & Electrical Systems Bundle
-
-- id: bundle-power-electrical
-- track: Power & Electrical Systems Track
-- price_usd: 986.99
-- list_price_usd: 1703.85 (sum of individual course prices)
-- savings: $716.86 (42%)
-- courses: 15, 49 hrs
-- audience: For electricians and power technicians who own the electrical chain end to end: from data center-scale power architecture down to UPS, generator, battery safety, and daily electrical work practices.
-- url: https://datacentertraining.us/bundles.html
-- course_ids: power-systems-electrical-fundamentals, ups-operations-load-testing, generator-operations-maintenance, electrical-safety-best-practices, batteries-dc-circuits, data-center-arc-flash-safety, data-center-electrical-safety, data-center-epo-procedures, data-center-ups-battery-safety, emergency-standby-power-systems-fundamentals, generator-fundamentals, lithium-ion-thermal-runaway-emergency-response, osha-electrical-safety-data-center-technicians, power-distribution-systems-fundamentals, ups-systems-fundamentals
-
-### Cooling & Facilities Efficiency Bundle
-
-- id: bundle-cooling-efficiency
-- track: Cooling & Facilities Efficiency Track
-- price_usd: 462.99
-- list_price_usd: 798.94 (sum of individual course prices)
-- savings: $335.95 (42%)
-- courses: 6, 23 hrs
-- audience: For HVAC and facilities technicians who need both the cooling design fundamentals and the hands-on maintenance skills to keep it running efficiently.
-- url: https://datacentertraining.us/bundles.html
-- course_ids: cooling-systems-design-optimization, hvac-troubleshooting-essentials, energy-efficiency-pue-optimization, mechanical-systems-maintenance, data-center-cooling-refrigerant-safety, building-envelope-fundamentals
-
-### Operations & Reliability Bundle
-
-- id: bundle-operations-reliability
-- track: Operations & Reliability Track
-- price_usd: 830.99
-- list_price_usd: 1433.90 (sum of individual course prices)
-- savings: $602.91 (42%)
-- courses: 10, 44 hrs
-- audience: For operations and facility managers who own uptime — daily operations, disaster recovery, preventive maintenance, incident response, and the general facility management skills that hold it all together.
-- url: https://datacentertraining.us/bundles.html
-- course_ids: data-center-operations-management, disaster-recovery-business-continuity, preventive-maintenance-planning, incident-response-troubleshooting, business-continuity-disaster-recovery-planning, building-maintenance-fundamentals, facility-management-fundamentals, roofing-systems-maintenance-fundamentals, server-room-ergonomics-manual-handling, data-center-raised-floor-confined-space
-
-### Security & Compliance Bundle
-
-- id: bundle-security-compliance
-- track: Security & Compliance Track
-- price_usd: 400.99
-- list_price_usd: 691.95 (sum of individual course prices)
-- savings: $290.96 (42%)
-- courses: 5, 17.5 hrs
-- audience: For security and compliance leads building an audit-ready physical security, fire safety, and environmental compliance program.
-- url: https://datacentertraining.us/bundles.html
-- course_ids: security-compliance-data-centers, access-control-physical-security, facility-environmental-compliance, data-center-fire-suppression-safety, data-center-physical-security-access-control
-
-### Design, Planning & Commissioning Bundle
-
-- id: bundle-design-planning
-- track: Design, Planning & Commissioning Track
-- price_usd: 557.99
-- list_price_usd: 961.96 (sum of individual course prices)
-- savings: $403.97 (42%)
-- courses: 4, 27.5 hrs
-- audience: For engineers and project leads taking a facility from design through TIER benchmarking, capacity planning, and commissioning.
-- url: https://datacentertraining.us/bundles.html
-- course_ids: data-center-design-fundamentals, tier-infrastructure-fundamentals, infrastructure-commissioning-startup, capacity-planning-forecasting
-
-### Monitoring & Smart Facility Bundle
-
-- id: bundle-monitoring-smart-facility
-- track: Monitoring & Smart Facility Track
-- price_usd: 333.99
-- list_price_usd: 576.96 (sum of individual course prices)
-- savings: $242.97 (42%)
-- courses: 4, 22 hrs
-- audience: For teams building out monitoring, DCIM, building automation, and the network cabling infrastructure that supports it.
-- url: https://datacentertraining.us/bundles.html
-- course_ids: monitoring-automation-bms-systems, dcim-platform-fundamentals, fiber-optics-network-cabling, building-automation-systems-fundamentals
-
-### Complete Data Center Professional Bundle
-
-- id: bundle-complete-catalog
-- track: All tracks
-- price_usd: 2928.99
-- list_price_usd: 6167.56 (sum of individual course prices)
-- savings: $3238.57 (53%)
-- courses: 44, 183 hrs
-- audience: Every course in the catalog — all 6 role-based tracks in one enrollment. The single path for a team that wants full coverage across design, power, cooling, security, operations, and monitoring, at the deepest discount we offer.
-- url: https://datacentertraining.us/bundles.html
-- course_ids: access-control-physical-security, batteries-dc-circuits, building-automation-systems-fundamentals, building-envelope-fundamentals, building-maintenance-fundamentals, business-continuity-disaster-recovery-planning, capacity-planning-forecasting, cooling-systems-design-optimization, data-center-arc-flash-safety, data-center-cooling-refrigerant-safety, data-center-design-fundamentals, data-center-electrical-safety, data-center-epo-procedures, data-center-fire-suppression-safety, data-center-operations-management, data-center-physical-security-access-control, data-center-raised-floor-confined-space, data-center-ups-battery-safety, dcim-platform-fundamentals, disaster-recovery-business-continuity, electrical-safety-best-practices, emergency-standby-power-systems-fundamentals, energy-efficiency-pue-optimization, facility-environmental-compliance, facility-management-fundamentals, fiber-optics-network-cabling, generator-fundamentals, generator-operations-maintenance, hvac-troubleshooting-essentials, incident-response-troubleshooting, infrastructure-commissioning-startup, lithium-ion-thermal-runaway-emergency-response, mechanical-systems-maintenance, monitoring-automation-bms-systems, osha-electrical-safety-data-center-technicians, power-distribution-systems-fundamentals, power-systems-electrical-fundamentals, preventive-maintenance-planning, roofing-systems-maintenance-fundamentals, security-compliance-data-centers, server-room-ergonomics-manual-handling, tier-infrastructure-fundamentals, ups-operations-load-testing, ups-systems-fundamentals
-
 ### Data Center Facilities Safety Pack
 
 - id: bundle-facilities-safety-pack
 - track: Multiple tracks
+- billing: per seat, one-time
 - price_usd: 649.99
 - list_price_usd: 999.90 (sum of individual course prices)
 - savings: $349.91 (35%)
@@ -1925,6 +1802,7 @@ Prices are per seat in USD. Seat-count volume discounts apply at checkout: 25-50
 
 - id: bundle-infrastructure-professional-pack
 - track: Multiple tracks
+- billing: per seat, one-time
 - price_usd: 1867.99
 - list_price_usd: 2667.91 (sum of individual course prices)
 - savings: $799.92 (30%)
@@ -1937,6 +1815,7 @@ Prices are per seat in USD. Seat-count volume discounts apply at checkout: 25-50
 
 - id: bundle-technician-skills-pack
 - track: Multiple tracks
+- billing: per seat, one-time
 - price_usd: 844.99
 - list_price_usd: 1299.87 (sum of individual course prices)
 - savings: $454.88 (35%)
@@ -1945,13 +1824,26 @@ Prices are per seat in USD. Seat-count volume discounts apply at checkout: 25-50
 - url: https://datacentertraining.us/bundles.html
 - course_ids: ups-systems-fundamentals, ups-operations-load-testing, generator-fundamentals, generator-operations-maintenance, power-distribution-systems-fundamentals, batteries-dc-circuits, hvac-troubleshooting-essentials, building-automation-systems-fundamentals, dcim-platform-fundamentals, fiber-optics-network-cabling, preventive-maintenance-planning, incident-response-troubleshooting, electrical-safety-best-practices
 
+### Data Center & IT Infrastructure Library
+
+- id: bundle-data-center-library
+- track: All tracks
+- billing: per seat, per year (12-month subscription)
+- price_usd: 119.00
+- list_price_usd: 6067.57 (sum of individual course prices)
+- savings: $5948.57 (98%)
+- courses: 43, 184 hrs
+- audience: Unlimited 12-month access to all 43 data center courses for one learner: every safety, technician, and infrastructure program in the catalog, priced per seat per year.
+- url: https://datacentertraining.us/bundles.html
+- course_ids: access-control-physical-security, batteries-dc-circuits, building-automation-systems-fundamentals, building-envelope-fundamentals, building-maintenance-fundamentals, business-continuity-disaster-recovery-planning, capacity-planning-forecasting, cooling-systems-design-optimization, data-center-arc-flash-safety, data-center-cooling-refrigerant-safety, data-center-design-fundamentals, data-center-electrical-safety, data-center-epo-procedures, data-center-fire-suppression-safety, data-center-operations-management, data-center-physical-security-access-control, data-center-raised-floor-confined-space, data-center-ups-battery-safety, dcim-platform-fundamentals, disaster-recovery-business-continuity, electrical-safety-best-practices, emergency-standby-power-systems-fundamentals, energy-efficiency-pue-optimization, facility-environmental-compliance, facility-management-fundamentals, fiber-optics-network-cabling, generator-fundamentals, generator-operations-maintenance, hvac-troubleshooting-essentials, incident-response-troubleshooting, infrastructure-commissioning-startup, lithium-ion-thermal-runaway-emergency-response, mechanical-systems-maintenance, monitoring-automation-bms-systems, power-distribution-systems-fundamentals, power-systems-electrical-fundamentals, preventive-maintenance-planning, roofing-systems-maintenance-fundamentals, security-compliance-data-centers, server-room-ergonomics-manual-handling, tier-infrastructure-fundamentals, ups-operations-load-testing, ups-systems-fundamentals
+
 ## Roles
 
-- electrician ("I'm an electrician or power technician"): Power & Electrical Systems Track. Electricians and power technicians working on utility interconnection, UPS systems, generators, batteries, and daily electrical safety should complete this 15-course, 49-hour track.
-- hvac ("I work on HVAC, cooling, or mechanical systems"): Cooling & Facilities Efficiency Track. HVAC and facilities technicians who need both cooling design fundamentals and hands-on maintenance skills should complete this 6-course, 23-hour track.
+- electrician ("I'm an electrician or power technician"): Power & Electrical Systems Track. Electricians and power technicians working on utility interconnection, UPS systems, generators, batteries, and daily electrical safety should complete this 14-course, 47-hour track.
+- hvac ("I work on HVAC, cooling, or mechanical systems"): Cooling & Facilities Efficiency Track. HVAC and facilities technicians who need both cooling design fundamentals and hands-on maintenance skills should complete this 6-course, 24-hour track.
 - operations ("I manage daily facility operations and uptime"): Operations & Reliability Track. Facility and operations managers who own uptime should complete this 10-course, 44-hour track covering daily operations, disaster recovery, maintenance, and incident response.
-- security ("I handle security or compliance"): Security & Compliance Track. Security and compliance leads building an audit-ready program should complete this 5-course, 17.5-hour track.
-- design ("I design, plan, or commission facilities"): Design, Planning & Commissioning Track. Engineers and project leads taking a facility from design through launch should complete all four of these courses, 27.5 hours total.
+- security ("I handle security or compliance"): Security & Compliance Track. Security and compliance leads building an audit-ready program should complete this 5-course, 19-hour track.
+- design ("I design, plan, or commission facilities"): Design, Planning & Commissioning Track. Engineers and project leads taking a facility from design through launch should complete all four of these courses, 28 hours total.
 - it ("I work on monitoring, DCIM, or network cabling"): Monitoring & Smart Facility Track. Teams building out monitoring, DCIM, building automation, and network cabling infrastructure should complete all four of these courses, 22 hours total.
 
 ## Credentials
@@ -1983,7 +1875,7 @@ Comprehensive Programs run 8 hours each; Modular Specializations run 1-8 hours. 
 
 ### What topics does the course catalog cover?
 
-The catalog spans six tracks: Power &amp; Electrical, Cooling &amp; Facilities Efficiency, Operations &amp; Reliability, Security &amp; Compliance, Design, Planning &amp; Commissioning, and Monitoring &amp; Smart Facility. Together they cover 44 courses and 183 hours of training.
+The catalog spans six tracks: Power &amp; Electrical, Cooling &amp; Facilities Efficiency, Operations &amp; Reliability, Security &amp; Compliance, Design, Planning &amp; Commissioning, and Monitoring &amp; Smart Facility. Together they cover 43 courses and 184 hours of training.
 
 ### Do I need a background in data center design or operations to take these courses?
 
@@ -2051,15 +1943,15 @@ Data Center Training courses are published as online, self-paced courses. HAZWOP
 
 ### What's included in a bundle, and how much do I save?
 
-Each bundle groups a comprehensive program with the modular courses most relevant to the same role — for example, the Power &amp; Electrical Systems Bundle includes 15 courses and 49 hours of training on power systems, UPS, generators, and electrical safety for $986.99. The Complete Data Center Professional Bundle covers all 44 courses and 183 hours for $2,928.99, the deepest discount we offer. Every learner still gets a certificate for each course completed.
+We sell three compliance packs and one annual library — the Data Center Facilities Safety Pack (10 courses, 18 hours) is $649.99 per seat, 35% off buying each course; the Data Center Technician Skills Pack (13 courses, 50 hours) is $844.99, 35% off; and the Data Center Infrastructure Professional Pack (9 courses, 72 hours) is $1,867.99, 30% off. The Data Center &amp; IT Infrastructure Library gives one learner all 43 courses (184 hours) for $119 per seat per year. Every learner still gets a certificate for each course completed.
 
 ### Which bundle is the best fit for a facilities generalist?
 
-Facilities staff who touch multiple systems typically get the most value from the Operations &amp; Reliability Bundle, or the Complete Data Center Professional Bundle if you want coverage across all six tracks.
+Facilities staff who touch multiple systems typically get the most value from the Data Center Technician Skills Pack, or the Data Center &amp; IT Infrastructure Library if you want coverage across all six tracks.
 
 ### Can I mix comprehensive programs and modular courses in one enrollment?
 
-Yes. There's no requirement to buy a bundle or stick to one tier — you can enroll in any combination of Comprehensive Programs and Modular Specializations individually. Bundles exist purely as a discount for teams that want the full role-based path at once.
+Yes. There's no requirement to buy a bundle or stick to one tier — you can enroll in any combination of Comprehensive Programs and Modular Specializations individually. Packs and the library exist purely as a discount for teams that want a full set of courses at once.
 
 ### Can I upgrade from an individual course purchase to a bundle later?
 
@@ -2067,7 +1959,7 @@ If you've already purchased individual courses and want to move to a bundle, con
 
 ### Is there a limit to how many seats I can buy in one bundle?
 
-No. Bundles support anywhere from a single learner up to 1,000+ seats, with volume pricing applied automatically as your seat count grows.
+You can order 1 to 1,000 seats online, with volume pricing applied automatically from 25 seats. For more than 1,000 seats, contact us for a custom enterprise license.
 
 ### Do you offer government or education pricing?
 
@@ -2127,8 +2019,8 @@ Email info@hazwoper-osha.com or call 1-866-429-6742 and our team can help with c
 
 ## Guides and References
 
-- [Course Catalog](https://datacentertraining.us/courses.html) (site page): All 44 courses with search, sort, and filters by track, type, duration, or price.
-- [Course Bundles](https://datacentertraining.us/bundles.html) (site page): 10 role-based, compliance pack, and complete-catalog bundles with pricing and savings.
+- [Course Catalog](https://datacentertraining.us/courses.html) (site page): All 43 courses with search, sort, and filters by track, type, duration, or price.
+- [Course Bundles](https://datacentertraining.us/bundles.html) (site page): 4 products (compliance packs and the annual Data Center & IT Infrastructure Library) with pricing and savings.
 - [Which Courses Does Your Role Need?](https://datacentertraining.us/who.html) (site page): Role-to-track recommendations for electricians, HVAC techs, operations managers, security leads, engineers, and IT staff.
 - [Certifications & Accreditations](https://datacentertraining.us/certifications.html) (site page): IACET provider accreditation and what a certificate of completion does and does not mean.
 - [FAQ](https://datacentertraining.us/faq.html) (site page): Answers about programs, pricing, certificates, access, team enrollment, and policies.

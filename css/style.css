@@ -525,6 +525,10 @@ a { color: inherit; }
 .standards-table td { vertical-align: top; padding: 10px; border-bottom: 1px solid var(--hairline); }
 .standards-table tr:last-child td { border-bottom: none; }
 @media (max-width: 640px) { .standards-table { min-width: 560px; } }
+.tier-table-title { font-size: 20px; font-weight: 700; letter-spacing: -0.01em; margin: 40px 0 12px; }
+.tier-table-note { font-size: 13.5px; color: var(--text-3); margin-top: 10px; }
+.tier-note { font-weight: 400; color: var(--text-3); }
+.standards-table th[scope="row"] { font-weight: 600; }
 
 /* Privacy choices banner (js/consent.js) */
 .consent-banner {

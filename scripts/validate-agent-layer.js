@@ -31,7 +31,7 @@ for (const f of ['courses', 'bundles', 'roles', 'faq', 'credentials', 'resources
 
 // Edge cases beyond the published examples: empty input, no matches, bad ids.
 const extraCalls = {
-  list_courses: [{}, { query: 'zzzz-no-match' }, { language: 'es' }, { role: 'security', sort: 'price_desc' }, { standard: 'NFPA 70E', max_price_usd: 100 }, { bundle_id: 'bundle-design-planning', course_type: 'comprehensive' }],
+  list_courses: [{}, { query: 'zzzz-no-match' }, { language: 'es' }, { role: 'security', sort: 'price_desc' }, { standard: 'NFPA 70E', max_price_usd: 100 }, { bundle_id: 'bundle-infrastructure-professional-pack', course_type: 'comprehensive' }],
   get_course: [{ url: ORIGIN + '/courses/ups-systems-fundamentals.html' }, { course_id: 'no-such-course' }],
   compare_bundles: [{}],
   recommend_courses: [{ role: 'electrician' }, { role: 'Facility manager', budget_usd: 50 }, { role: 'network technician', work_context: 'fiber and DCIM' }, { role: 'xy' }],

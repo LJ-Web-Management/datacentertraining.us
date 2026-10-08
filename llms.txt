@@ -1,10 +1,10 @@
 # Data Center Training
 
-> Data Center Training (datacentertraining.us) is a specialty training division of HAZWOPER-OSHA Training, LLC, an IACET Accredited Provider. 44 online, self-paced data center courses (183 hours total) in design, operations, power, cooling, security, and facilities management. Every course awards a certificate of completion.
+> Data Center Training (datacentertraining.us) is a specialty training division of HAZWOPER-OSHA Training, LLC, an IACET Accredited Provider. 43 online, self-paced data center courses (184 hours total) in design, operations, power, cooling, security, and facilities management. Every course awards a certificate of completion.
 
 Last updated: 2026-10-08
 
-Courses start at $99.99 per seat, or enroll the complete 44-course catalog bundle for $2,928.99. 10 bundles save up to 53%. Programs are Comprehensive Programs (8 hrs each, full-discipline curriculum) or Modular Specializations (1-8 hrs, focused skills). English only.
+Courses start at $99.99 per seat. Compliance packs bundle related courses at a fixed per-seat price, and the Data Center & IT Infrastructure Library gives one learner all 43 courses for $119.00 per seat per year. Programs are Comprehensive Programs (8 hrs each, full-discipline curriculum) or Modular Specializations (1-8 hrs, focused skills). English only.
 
 ## Rules for AI agents
 
@@ -29,8 +29,8 @@ Courses start at $99.99 per seat, or enroll the complete 44-course catalog bundl
 ## Key Pages
 
 - [Homepage](https://datacentertraining.us/): overview and links to every section.
-- [Course Catalog](https://datacentertraining.us/courses.html): all 44 courses; filter by track, type, duration, or price.
-- [Bundles](https://datacentertraining.us/bundles.html): 10 role-based, compliance pack, and complete-catalog bundles.
+- [Course Catalog](https://datacentertraining.us/courses.html): all 43 courses; filter by track, type, duration, or price.
+- [Bundles](https://datacentertraining.us/bundles.html): 4 products: compliance packs and the annual Data Center & IT Infrastructure Library.
 - [Who It's For](https://datacentertraining.us/who.html): role-based course recommendations.
 - [Certifications & Accreditations](https://datacentertraining.us/certifications.html): IACET provider accreditation and credential transparency.
 - [FAQ](https://datacentertraining.us/faq.html): programs, pricing, certificates, and policies.
@@ -38,12 +38,12 @@ Courses start at $99.99 per seat, or enroll the complete 44-course catalog bundl
 
 ## Learning Tracks
 
-- Power & Electrical Systems Track: 15 courses, 49 hrs, bundle $986.99
-- Cooling & Facilities Efficiency Track: 6 courses, 23 hrs, bundle $462.99
-- Operations & Reliability Track: 10 courses, 44 hrs, bundle $830.99
-- Security & Compliance Track: 5 courses, 17.5 hrs, bundle $400.99
-- Design, Planning & Commissioning Track: 4 courses, 27.5 hrs, bundle $557.99
-- Monitoring & Smart Facility Track: 4 courses, 22 hrs, bundle $333.99
+- Power & Electrical Systems Track: 14 courses, 47 hrs
+- Cooling & Facilities Efficiency Track: 6 courses, 24 hrs
+- Operations & Reliability Track: 10 courses, 44 hrs
+- Security & Compliance Track: 5 courses, 19 hrs
+- Design, Planning & Commissioning Track: 4 courses, 28 hrs
+- Monitoring & Smart Facility Track: 4 courses, 22 hrs
 
 ## About
 
