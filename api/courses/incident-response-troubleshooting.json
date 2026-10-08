@@ -59,6 +59,12 @@
       "name": "Complete Data Center Professional Bundle",
       "price_usd": 2928.99,
       "url": "https://datacentertraining.us/bundles.html"
+    },
+    {
+      "id": "bundle-technician-skills-pack",
+      "name": "Data Center Technician Skills Pack",
+      "price_usd": 844.99,
+      "url": "https://datacentertraining.us/bundles.html"
     }
   ],
   "language": "en",
@@ -96,5 +102,5 @@
     "business-continuity-disaster-recovery-planning",
     "building-maintenance-fundamentals"
   ],
-  "last_updated": "2026-10-07"
+  "last_updated": "2026-10-08"
 }

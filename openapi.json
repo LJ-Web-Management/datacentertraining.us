@@ -3,7 +3,7 @@
   "info": {
     "title": "Data Center Training - Public Catalog API",
     "version": "1.0.0",
-    "description": "Read-only, unauthenticated JSON documents describing Data Center Training's 44 courses, 7 bundles, 6 learning tracks, roles, FAQ, credentials, and resources, plus the HTML pages they come from. The same data backs the WebMCP tools in /.well-known/mcp.json. Last updated 2026-10-07.",
+    "description": "Read-only, unauthenticated JSON documents describing Data Center Training's 44 courses, 10 bundles, 6 learning tracks, roles, FAQ, credentials, and resources, plus the HTML pages they come from. The same data backs the WebMCP tools in /.well-known/mcp.json. Last updated 2026-10-08.",
     "contact": {
       "name": "HAZWOPER OSHA Training, LLC",
       "email": "info@hazwoper-osha.com",
@@ -403,7 +403,7 @@
       "get": {
         "operationId": "getBundlesPage",
         "summary": "Bundles page",
-        "description": "All 7 bundles with Product/Offer JSON-LD.",
+        "description": "All 10 bundles with Product/Offer JSON-LD.",
         "tags": [
           "Pages"
         ],
@@ -864,7 +864,10 @@
               "bundle-security-compliance",
               "bundle-design-planning",
               "bundle-monitoring-smart-facility",
-              "bundle-complete-catalog"
+              "bundle-complete-catalog",
+              "bundle-facilities-safety-pack",
+              "bundle-infrastructure-professional-pack",
+              "bundle-technician-skills-pack"
             ]
           },
           "catalog_number": {
@@ -1293,7 +1296,7 @@
     },
     {
       "name": "compare_bundles",
-      "description": "Compare the 7 course bundles (6 role-based track bundles plus the complete 44-course catalog bundle) side by side: bundle price, sum of individual course prices, savings, course count, total hours, audience, and included course ids. Omit bundle_ids to compare all bundles. Prices are per seat before seat-count volume discounts.",
+      "description": "Compare the 10 course bundles (6 role-based track bundles, 3 compliance packs, and the complete 44-course catalog bundle) side by side: bundle price, sum of individual course prices, savings, course count, total hours, audience, and included course ids. Omit bundle_ids to compare all bundles. Prices are per seat before seat-count volume discounts.",
       "data_source": [
         "https://datacentertraining.us/api/bundles.json"
       ]

@@ -1,6 +1,6 @@
 {
   "publisher": "Data Center Training (datacentertraining.us)",
-  "last_updated": "2026-10-07",
+  "last_updated": "2026-10-08",
   "license": "Public information; quote with attribution and a link to the source URL.",
   "roles": [
     {
@@ -8,7 +8,7 @@
       "label": "I'm an electrician or power technician",
       "track": "Power & Electrical Systems Track",
       "bundle_id": "bundle-power-electrical",
-      "description": "Electricians and power technicians working on utility interconnection, UPS systems, generators, batteries, and daily electrical safety should complete this 15-course, 57.5-hour track.",
+      "description": "Electricians and power technicians working on utility interconnection, UPS systems, generators, batteries, and daily electrical safety should complete this 15-course, 49-hour track.",
       "keywords": [
         "electrician",
         "electrical",
@@ -29,7 +29,7 @@
       "label": "I work on HVAC, cooling, or mechanical systems",
       "track": "Cooling & Facilities Efficiency Track",
       "bundle_id": "bundle-cooling-efficiency",
-      "description": "HVAC and facilities technicians who need both cooling design fundamentals and hands-on maintenance skills should complete this 6-course, 31-hour track.",
+      "description": "HVAC and facilities technicians who need both cooling design fundamentals and hands-on maintenance skills should complete this 6-course, 23-hour track.",
       "keywords": [
         "hvac",
         "cooling",
@@ -49,7 +49,7 @@
       "label": "I manage daily facility operations and uptime",
       "track": "Operations & Reliability Track",
       "bundle_id": "bundle-operations-reliability",
-      "description": "Facility and operations managers who own uptime should complete this 10-course, 62-hour track covering daily operations, disaster recovery, maintenance, and incident response.",
+      "description": "Facility and operations managers who own uptime should complete this 10-course, 44-hour track covering daily operations, disaster recovery, maintenance, and incident response.",
       "keywords": [
         "operations",
         "facility manager",
@@ -69,7 +69,7 @@
       "label": "I handle security or compliance",
       "track": "Security & Compliance Track",
       "bundle_id": "bundle-security-compliance",
-      "description": "Security and compliance leads building an audit-ready program should complete this 5-course, 25.5-hour track.",
+      "description": "Security and compliance leads building an audit-ready program should complete this 5-course, 17.5-hour track.",
       "keywords": [
         "security",
         "compliance",
@@ -87,7 +87,7 @@
       "label": "I design, plan, or commission facilities",
       "track": "Design, Planning & Commissioning Track",
       "bundle_id": "bundle-design-planning",
-      "description": "Engineers and project leads taking a facility from design through launch should complete all four of these courses, 45.5 hours total.",
+      "description": "Engineers and project leads taking a facility from design through launch should complete all four of these courses, 27.5 hours total.",
       "keywords": [
         "engineer",
         "design",
@@ -106,7 +106,7 @@
       "label": "I work on monitoring, DCIM, or network cabling",
       "track": "Monitoring & Smart Facility Track",
       "bundle_id": "bundle-monitoring-smart-facility",
-      "description": "Teams building out monitoring, DCIM, building automation, and network cabling infrastructure should complete all four of these courses, 28.5 hours total.",
+      "description": "Teams building out monitoring, DCIM, building automation, and network cabling infrastructure should complete all four of these courses, 22 hours total.",
       "keywords": [
         "network",
         "cabling",

@@ -8,8 +8,8 @@
   "category": "Monitoring & Automation",
   "course_type": "modular",
   "course_type_label": "Modular Specialization",
-  "duration_hours": 5,
-  "duration_iso8601": "PT5H",
+  "duration_hours": 4,
+  "duration_iso8601": "PT4H",
   "module_count": 5,
   "price_usd": 99.99,
   "currency": "USD",
@@ -65,6 +65,12 @@
       "name": "Complete Data Center Professional Bundle",
       "price_usd": 2928.99,
       "url": "https://datacentertraining.us/bundles.html"
+    },
+    {
+      "id": "bundle-technician-skills-pack",
+      "name": "Data Center Technician Skills Pack",
+      "price_usd": 844.99,
+      "url": "https://datacentertraining.us/bundles.html"
     }
   ],
   "language": "en",
@@ -100,5 +106,5 @@
     "fiber-optics-network-cabling",
     "building-automation-systems-fundamentals"
   ],
-  "last_updated": "2026-10-07"
+  "last_updated": "2026-10-08"
 }

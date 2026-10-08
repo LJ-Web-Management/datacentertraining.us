@@ -1,6 +1,6 @@
 {
   "publisher": "Data Center Training (datacentertraining.us)",
-  "last_updated": "2026-10-07",
+  "last_updated": "2026-10-08",
   "license": "Public information; quote with attribution and a link to the source URL.",
   "count": 44,
   "courses": [
@@ -14,8 +14,8 @@
       "category": "Design & Planning",
       "course_type": "comprehensive",
       "course_type_label": "Comprehensive Program",
-      "duration_hours": 16,
-      "duration_iso8601": "PT16H",
+      "duration_hours": 8,
+      "duration_iso8601": "PT8H",
       "module_count": 6,
       "price_usd": 312.99,
       "currency": "USD",
@@ -76,6 +76,12 @@
           "name": "Complete Data Center Professional Bundle",
           "price_usd": 2928.99,
           "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-infrastructure-professional-pack",
+          "name": "Data Center Infrastructure Professional Pack",
+          "price_usd": 1867.99,
+          "url": "https://datacentertraining.us/bundles.html"
         }
       ],
       "language": "en",
@@ -111,7 +117,7 @@
         "infrastructure-commissioning-startup",
         "capacity-planning-forecasting"
       ],
-      "last_updated": "2026-10-07"
+      "last_updated": "2026-10-08"
     },
     {
       "id": "tier-infrastructure-fundamentals",
@@ -123,8 +129,8 @@
       "category": "Design & Planning",
       "course_type": "comprehensive",
       "course_type_label": "Comprehensive Program",
-      "duration_hours": 14,
-      "duration_iso8601": "PT14H",
+      "duration_hours": 8,
+      "duration_iso8601": "PT8H",
       "module_count": 6,
       "price_usd": 280.99,
       "currency": "USD",
@@ -185,6 +191,12 @@
           "name": "Complete Data Center Professional Bundle",
           "price_usd": 2928.99,
           "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-infrastructure-professional-pack",
+          "name": "Data Center Infrastructure Professional Pack",
+          "price_usd": 1867.99,
+          "url": "https://datacentertraining.us/bundles.html"
         }
       ],
       "language": "en",
@@ -220,7 +232,7 @@
         "infrastructure-commissioning-startup",
         "capacity-planning-forecasting"
       ],
-      "last_updated": "2026-10-07"
+      "last_updated": "2026-10-08"
     },
     {
       "id": "data-center-operations-management",
@@ -232,8 +244,8 @@
       "category": "Operations",
       "course_type": "comprehensive",
       "course_type_label": "Comprehensive Program",
-      "duration_hours": 18,
-      "duration_iso8601": "PT18H",
+      "duration_hours": 8,
+      "duration_iso8601": "PT8H",
       "module_count": 6,
       "price_usd": 325.99,
       "currency": "USD",
@@ -295,6 +307,12 @@
           "name": "Complete Data Center Professional Bundle",
           "price_usd": 2928.99,
           "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-infrastructure-professional-pack",
+          "name": "Data Center Infrastructure Professional Pack",
+          "price_usd": 1867.99,
+          "url": "https://datacentertraining.us/bundles.html"
         }
       ],
       "language": "en",
@@ -332,7 +350,7 @@
         "business-continuity-disaster-recovery-planning",
         "building-maintenance-fundamentals"
       ],
-      "last_updated": "2026-10-07"
+      "last_updated": "2026-10-08"
     },
     {
       "id": "security-compliance-data-centers",
@@ -344,8 +362,8 @@
       "category": "Security & Compliance",
       "course_type": "comprehensive",
       "course_type_label": "Comprehensive Program",
-      "duration_hours": 16,
-      "duration_iso8601": "PT16H",
+      "duration_hours": 8,
+      "duration_iso8601": "PT8H",
       "module_count": 6,
       "price_usd": 291.99,
       "currency": "USD",
@@ -407,6 +425,12 @@
           "name": "Complete Data Center Professional Bundle",
           "price_usd": 2928.99,
           "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-infrastructure-professional-pack",
+          "name": "Data Center Infrastructure Professional Pack",
+          "price_usd": 1867.99,
+          "url": "https://datacentertraining.us/bundles.html"
         }
       ],
       "language": "en",
@@ -443,7 +467,7 @@
         "data-center-fire-suppression-safety",
         "data-center-physical-security-access-control"
       ],
-      "last_updated": "2026-10-07"
+      "last_updated": "2026-10-08"
     },
     {
       "id": "power-systems-electrical-fundamentals",
@@ -455,8 +479,8 @@
       "category": "Power & Electrical",
       "course_type": "comprehensive",
       "course_type_label": "Comprehensive Program",
-      "duration_hours": 18,
-      "duration_iso8601": "PT18H",
+      "duration_hours": 8,
+      "duration_iso8601": "PT8H",
       "module_count": 6,
       "price_usd": 303.99,
       "currency": "USD",
@@ -517,6 +541,12 @@
           "name": "Complete Data Center Professional Bundle",
           "price_usd": 2928.99,
           "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-infrastructure-professional-pack",
+          "name": "Data Center Infrastructure Professional Pack",
+          "price_usd": 1867.99,
+          "url": "https://datacentertraining.us/bundles.html"
         }
       ],
       "language": "en",
@@ -554,7 +584,7 @@
         "batteries-dc-circuits",
         "data-center-arc-flash-safety"
       ],
-      "last_updated": "2026-10-07"
+      "last_updated": "2026-10-08"
     },
     {
       "id": "cooling-systems-design-optimization",
@@ -566,8 +596,8 @@
       "category": "Cooling & Efficiency",
       "course_type": "comprehensive",
       "course_type_label": "Comprehensive Program",
-      "duration_hours": 16,
-      "duration_iso8601": "PT16H",
+      "duration_hours": 8,
+      "duration_iso8601": "PT8H",
       "module_count": 6,
       "price_usd": 298.99,
       "currency": "USD",
@@ -629,6 +659,12 @@
           "name": "Complete Data Center Professional Bundle",
           "price_usd": 2928.99,
           "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-infrastructure-professional-pack",
+          "name": "Data Center Infrastructure Professional Pack",
+          "price_usd": 1867.99,
+          "url": "https://datacentertraining.us/bundles.html"
         }
       ],
       "language": "en",
@@ -666,7 +702,7 @@
         "data-center-cooling-refrigerant-safety",
         "building-envelope-fundamentals"
       ],
-      "last_updated": "2026-10-07"
+      "last_updated": "2026-10-08"
     },
     {
       "id": "disaster-recovery-business-continuity",
@@ -678,8 +714,8 @@
       "category": "Operations",
       "course_type": "comprehensive",
       "course_type_label": "Comprehensive Program",
-      "duration_hours": 17,
-      "duration_iso8601": "PT17H",
+      "duration_hours": 8,
+      "duration_iso8601": "PT8H",
       "module_count": 6,
       "price_usd": 307.99,
       "currency": "USD",
@@ -740,6 +776,12 @@
           "name": "Complete Data Center Professional Bundle",
           "price_usd": 2928.99,
           "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-infrastructure-professional-pack",
+          "name": "Data Center Infrastructure Professional Pack",
+          "price_usd": 1867.99,
+          "url": "https://datacentertraining.us/bundles.html"
         }
       ],
       "language": "en",
@@ -777,7 +819,7 @@
         "business-continuity-disaster-recovery-planning",
         "building-maintenance-fundamentals"
       ],
-      "last_updated": "2026-10-07"
+      "last_updated": "2026-10-08"
     },
     {
       "id": "infrastructure-commissioning-startup",
@@ -789,8 +831,8 @@
       "category": "Design & Planning",
       "course_type": "comprehensive",
       "course_type_label": "Comprehensive Program",
-      "duration_hours": 12,
-      "duration_iso8601": "PT12H",
+      "duration_hours": 8,
+      "duration_iso8601": "PT8H",
       "module_count": 6,
       "price_usd": 267.99,
       "currency": "USD",
@@ -851,6 +893,12 @@
           "name": "Complete Data Center Professional Bundle",
           "price_usd": 2928.99,
           "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-infrastructure-professional-pack",
+          "name": "Data Center Infrastructure Professional Pack",
+          "price_usd": 1867.99,
+          "url": "https://datacentertraining.us/bundles.html"
         }
       ],
       "language": "en",
@@ -886,7 +934,7 @@
         "tier-infrastructure-fundamentals",
         "capacity-planning-forecasting"
       ],
-      "last_updated": "2026-10-07"
+      "last_updated": "2026-10-08"
     },
     {
       "id": "monitoring-automation-bms-systems",
@@ -898,8 +946,8 @@
       "category": "Monitoring & Automation",
       "course_type": "comprehensive",
       "course_type_label": "Comprehensive Program",
-      "duration_hours": 14,
-      "duration_iso8601": "PT14H",
+      "duration_hours": 8,
+      "duration_iso8601": "PT8H",
       "module_count": 6,
       "price_usd": 276.99,
       "currency": "USD",
@@ -961,6 +1009,12 @@
           "name": "Complete Data Center Professional Bundle",
           "price_usd": 2928.99,
           "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-infrastructure-professional-pack",
+          "name": "Data Center Infrastructure Professional Pack",
+          "price_usd": 1867.99,
+          "url": "https://datacentertraining.us/bundles.html"
         }
       ],
       "language": "en",
@@ -996,7 +1050,7 @@
         "fiber-optics-network-cabling",
         "building-automation-systems-fundamentals"
       ],
-      "last_updated": "2026-10-07"
+      "last_updated": "2026-10-08"
     },
     {
       "id": "hvac-troubleshooting-essentials",
@@ -1059,6 +1113,12 @@
           "name": "Complete Data Center Professional Bundle",
           "price_usd": 2928.99,
           "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-technician-skills-pack",
+          "name": "Data Center Technician Skills Pack",
+          "price_usd": 844.99,
+          "url": "https://datacentertraining.us/bundles.html"
         }
       ],
       "language": "en",
@@ -1096,7 +1156,7 @@
         "data-center-cooling-refrigerant-safety",
         "building-envelope-fundamentals"
       ],
-      "last_updated": "2026-10-07"
+      "last_updated": "2026-10-08"
     },
     {
       "id": "ups-operations-load-testing",
@@ -1159,6 +1219,12 @@
           "name": "Complete Data Center Professional Bundle",
           "price_usd": 2928.99,
           "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-technician-skills-pack",
+          "name": "Data Center Technician Skills Pack",
+          "price_usd": 844.99,
+          "url": "https://datacentertraining.us/bundles.html"
         }
       ],
       "language": "en",
@@ -1196,7 +1262,7 @@
         "batteries-dc-circuits",
         "data-center-arc-flash-safety"
       ],
-      "last_updated": "2026-10-07"
+      "last_updated": "2026-10-08"
     },
     {
       "id": "fiber-optics-network-cabling",
@@ -1208,8 +1274,8 @@
       "category": "Monitoring & Automation",
       "course_type": "modular",
       "course_type_label": "Modular Specialization",
-      "duration_hours": 3.5,
-      "duration_iso8601": "PT3H30M",
+      "duration_hours": 4,
+      "duration_iso8601": "PT4H",
       "module_count": 4,
       "price_usd": 99.99,
       "currency": "USD",
@@ -1261,6 +1327,12 @@
           "name": "Complete Data Center Professional Bundle",
           "price_usd": 2928.99,
           "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-technician-skills-pack",
+          "name": "Data Center Technician Skills Pack",
+          "price_usd": 844.99,
+          "url": "https://datacentertraining.us/bundles.html"
         }
       ],
       "language": "en",
@@ -1296,7 +1368,7 @@
         "dcim-platform-fundamentals",
         "building-automation-systems-fundamentals"
       ],
-      "last_updated": "2026-10-07"
+      "last_updated": "2026-10-08"
     },
     {
       "id": "generator-operations-maintenance",
@@ -1308,8 +1380,8 @@
       "category": "Power & Electrical",
       "course_type": "modular",
       "course_type_label": "Modular Specialization",
-      "duration_hours": 3.5,
-      "duration_iso8601": "PT3H30M",
+      "duration_hours": 4,
+      "duration_iso8601": "PT4H",
       "module_count": 4,
       "price_usd": 99.99,
       "currency": "USD",
@@ -1359,6 +1431,12 @@
           "name": "Complete Data Center Professional Bundle",
           "price_usd": 2928.99,
           "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-technician-skills-pack",
+          "name": "Data Center Technician Skills Pack",
+          "price_usd": 844.99,
+          "url": "https://datacentertraining.us/bundles.html"
         }
       ],
       "language": "en",
@@ -1396,7 +1474,7 @@
         "batteries-dc-circuits",
         "data-center-arc-flash-safety"
       ],
-      "last_updated": "2026-10-07"
+      "last_updated": "2026-10-08"
     },
     {
       "id": "energy-efficiency-pue-optimization",
@@ -1498,7 +1576,7 @@
         "data-center-cooling-refrigerant-safety",
         "building-envelope-fundamentals"
       ],
-      "last_updated": "2026-10-07"
+      "last_updated": "2026-10-08"
     },
     {
       "id": "capacity-planning-forecasting",
@@ -1596,7 +1674,7 @@
         "tier-infrastructure-fundamentals",
         "infrastructure-commissioning-startup"
       ],
-      "last_updated": "2026-10-07"
+      "last_updated": "2026-10-08"
     },
     {
       "id": "preventive-maintenance-planning",
@@ -1608,8 +1686,8 @@
       "category": "Operations",
       "course_type": "modular",
       "course_type_label": "Modular Specialization",
-      "duration_hours": 3,
-      "duration_iso8601": "PT3H",
+      "duration_hours": 4,
+      "duration_iso8601": "PT4H",
       "module_count": 4,
       "price_usd": 99.99,
       "currency": "USD",
@@ -1659,6 +1737,12 @@
           "name": "Complete Data Center Professional Bundle",
           "price_usd": 2928.99,
           "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-technician-skills-pack",
+          "name": "Data Center Technician Skills Pack",
+          "price_usd": 844.99,
+          "url": "https://datacentertraining.us/bundles.html"
         }
       ],
       "language": "en",
@@ -1696,7 +1780,7 @@
         "business-continuity-disaster-recovery-planning",
         "building-maintenance-fundamentals"
       ],
-      "last_updated": "2026-10-07"
+      "last_updated": "2026-10-08"
     },
     {
       "id": "facility-environmental-compliance",
@@ -1795,7 +1879,7 @@
         "data-center-fire-suppression-safety",
         "data-center-physical-security-access-control"
       ],
-      "last_updated": "2026-10-07"
+      "last_updated": "2026-10-08"
     },
     {
       "id": "incident-response-troubleshooting",
@@ -1858,6 +1942,12 @@
           "name": "Complete Data Center Professional Bundle",
           "price_usd": 2928.99,
           "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-technician-skills-pack",
+          "name": "Data Center Technician Skills Pack",
+          "price_usd": 844.99,
+          "url": "https://datacentertraining.us/bundles.html"
         }
       ],
       "language": "en",
@@ -1895,7 +1985,7 @@
         "business-continuity-disaster-recovery-planning",
         "building-maintenance-fundamentals"
       ],
-      "last_updated": "2026-10-07"
+      "last_updated": "2026-10-08"
     },
     {
       "id": "access-control-physical-security",
@@ -1994,7 +2084,7 @@
         "data-center-fire-suppression-safety",
         "data-center-physical-security-access-control"
       ],
-      "last_updated": "2026-10-07"
+      "last_updated": "2026-10-08"
     },
     {
       "id": "dcim-platform-fundamentals",
@@ -2006,8 +2096,8 @@
       "category": "Monitoring & Automation",
       "course_type": "modular",
       "course_type_label": "Modular Specialization",
-      "duration_hours": 5,
-      "duration_iso8601": "PT5H",
+      "duration_hours": 4,
+      "duration_iso8601": "PT4H",
       "module_count": 5,
       "price_usd": 99.99,
       "currency": "USD",
@@ -2063,6 +2153,12 @@
           "name": "Complete Data Center Professional Bundle",
           "price_usd": 2928.99,
           "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-technician-skills-pack",
+          "name": "Data Center Technician Skills Pack",
+          "price_usd": 844.99,
+          "url": "https://datacentertraining.us/bundles.html"
         }
       ],
       "language": "en",
@@ -2098,7 +2194,7 @@
         "fiber-optics-network-cabling",
         "building-automation-systems-fundamentals"
       ],
-      "last_updated": "2026-10-07"
+      "last_updated": "2026-10-08"
     },
     {
       "id": "mechanical-systems-maintenance",
@@ -2198,7 +2294,7 @@
         "data-center-cooling-refrigerant-safety",
         "building-envelope-fundamentals"
       ],
-      "last_updated": "2026-10-07"
+      "last_updated": "2026-10-08"
     },
     {
       "id": "electrical-safety-best-practices",
@@ -2210,8 +2306,8 @@
       "category": "Power & Electrical",
       "course_type": "modular",
       "course_type_label": "Modular Specialization",
-      "duration_hours": 3,
-      "duration_iso8601": "PT3H",
+      "duration_hours": 4,
+      "duration_iso8601": "PT4H",
       "module_count": 4,
       "price_usd": 99.99,
       "currency": "USD",
@@ -2263,6 +2359,12 @@
           "name": "Complete Data Center Professional Bundle",
           "price_usd": 2928.99,
           "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-technician-skills-pack",
+          "name": "Data Center Technician Skills Pack",
+          "price_usd": 844.99,
+          "url": "https://datacentertraining.us/bundles.html"
         }
       ],
       "language": "en",
@@ -2300,7 +2402,7 @@
         "batteries-dc-circuits",
         "data-center-arc-flash-safety"
       ],
-      "last_updated": "2026-10-07"
+      "last_updated": "2026-10-08"
     },
     {
       "id": "batteries-dc-circuits",
@@ -2363,6 +2465,12 @@
           "name": "Complete Data Center Professional Bundle",
           "price_usd": 2928.99,
           "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-technician-skills-pack",
+          "name": "Data Center Technician Skills Pack",
+          "price_usd": 844.99,
+          "url": "https://datacentertraining.us/bundles.html"
         }
       ],
       "language": "en",
@@ -2400,7 +2508,7 @@
         "electrical-safety-best-practices",
         "data-center-arc-flash-safety"
       ],
-      "last_updated": "2026-10-07"
+      "last_updated": "2026-10-08"
     },
     {
       "id": "building-automation-systems-fundamentals",
@@ -2465,6 +2573,12 @@
           "name": "Complete Data Center Professional Bundle",
           "price_usd": 2928.99,
           "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-technician-skills-pack",
+          "name": "Data Center Technician Skills Pack",
+          "price_usd": 844.99,
+          "url": "https://datacentertraining.us/bundles.html"
         }
       ],
       "language": "en",
@@ -2500,7 +2614,7 @@
         "dcim-platform-fundamentals",
         "fiber-optics-network-cabling"
       ],
-      "last_updated": "2026-10-07"
+      "last_updated": "2026-10-08"
     },
     {
       "id": "building-envelope-fundamentals",
@@ -2600,7 +2714,7 @@
         "mechanical-systems-maintenance",
         "data-center-cooling-refrigerant-safety"
       ],
-      "last_updated": "2026-10-07"
+      "last_updated": "2026-10-08"
     },
     {
       "id": "building-maintenance-fundamentals",
@@ -2700,7 +2814,7 @@
         "incident-response-troubleshooting",
         "business-continuity-disaster-recovery-planning"
       ],
-      "last_updated": "2026-10-07"
+      "last_updated": "2026-10-08"
     },
     {
       "id": "business-continuity-disaster-recovery-planning",
@@ -2788,7 +2902,7 @@
         },
         {
           "question": "How does this course relate to Disaster Recovery & Business Continuity?",
-          "answer": "Disaster Recovery & Business Continuity is the 12–18 hour comprehensive program covering RTO/RPO, redundant sites and DR testing. This course complements it with a dedicated, practical session on building and stress-testing the continuity plan itself."
+          "answer": "Disaster Recovery & Business Continuity is the 8-hour comprehensive program covering RTO/RPO, redundant sites and DR testing. This course complements it with a dedicated, practical session on building and stress-testing the continuity plan itself."
         },
         {
           "question": "What is a business impact analysis?",
@@ -2802,7 +2916,7 @@
         "incident-response-troubleshooting",
         "building-maintenance-fundamentals"
       ],
-      "last_updated": "2026-10-07"
+      "last_updated": "2026-10-08"
     },
     {
       "id": "data-center-arc-flash-safety",
@@ -2867,6 +2981,12 @@
           "name": "Complete Data Center Professional Bundle",
           "price_usd": 2928.99,
           "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-facilities-safety-pack",
+          "name": "Data Center Facilities Safety Pack",
+          "price_usd": 649.99,
+          "url": "https://datacentertraining.us/bundles.html"
         }
       ],
       "language": "en",
@@ -2904,7 +3024,7 @@
         "electrical-safety-best-practices",
         "batteries-dc-circuits"
       ],
-      "last_updated": "2026-10-07"
+      "last_updated": "2026-10-08"
     },
     {
       "id": "data-center-cooling-refrigerant-safety",
@@ -2969,6 +3089,12 @@
           "name": "Complete Data Center Professional Bundle",
           "price_usd": 2928.99,
           "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-facilities-safety-pack",
+          "name": "Data Center Facilities Safety Pack",
+          "price_usd": 649.99,
+          "url": "https://datacentertraining.us/bundles.html"
         }
       ],
       "language": "en",
@@ -3006,7 +3132,7 @@
         "mechanical-systems-maintenance",
         "building-envelope-fundamentals"
       ],
-      "last_updated": "2026-10-07"
+      "last_updated": "2026-10-08"
     },
     {
       "id": "data-center-electrical-safety",
@@ -3069,6 +3195,12 @@
           "name": "Complete Data Center Professional Bundle",
           "price_usd": 2928.99,
           "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-facilities-safety-pack",
+          "name": "Data Center Facilities Safety Pack",
+          "price_usd": 649.99,
+          "url": "https://datacentertraining.us/bundles.html"
         }
       ],
       "language": "en",
@@ -3106,7 +3238,7 @@
         "electrical-safety-best-practices",
         "batteries-dc-circuits"
       ],
-      "last_updated": "2026-10-07"
+      "last_updated": "2026-10-08"
     },
     {
       "id": "data-center-epo-procedures",
@@ -3169,6 +3301,12 @@
           "name": "Complete Data Center Professional Bundle",
           "price_usd": 2928.99,
           "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-facilities-safety-pack",
+          "name": "Data Center Facilities Safety Pack",
+          "price_usd": 649.99,
+          "url": "https://datacentertraining.us/bundles.html"
         }
       ],
       "language": "en",
@@ -3206,7 +3344,7 @@
         "electrical-safety-best-practices",
         "batteries-dc-circuits"
       ],
-      "last_updated": "2026-10-07"
+      "last_updated": "2026-10-08"
     },
     {
       "id": "data-center-fire-suppression-safety",
@@ -3271,6 +3409,12 @@
           "name": "Complete Data Center Professional Bundle",
           "price_usd": 2928.99,
           "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-facilities-safety-pack",
+          "name": "Data Center Facilities Safety Pack",
+          "price_usd": 649.99,
+          "url": "https://datacentertraining.us/bundles.html"
         }
       ],
       "language": "en",
@@ -3307,7 +3451,7 @@
         "facility-environmental-compliance",
         "data-center-physical-security-access-control"
       ],
-      "last_updated": "2026-10-07"
+      "last_updated": "2026-10-08"
     },
     {
       "id": "data-center-physical-security-access-control",
@@ -3370,6 +3514,12 @@
           "name": "Complete Data Center Professional Bundle",
           "price_usd": 2928.99,
           "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-facilities-safety-pack",
+          "name": "Data Center Facilities Safety Pack",
+          "price_usd": 649.99,
+          "url": "https://datacentertraining.us/bundles.html"
         }
       ],
       "language": "en",
@@ -3406,7 +3556,7 @@
         "facility-environmental-compliance",
         "data-center-fire-suppression-safety"
       ],
-      "last_updated": "2026-10-07"
+      "last_updated": "2026-10-08"
     },
     {
       "id": "data-center-raised-floor-confined-space",
@@ -3471,6 +3621,12 @@
           "name": "Complete Data Center Professional Bundle",
           "price_usd": 2928.99,
           "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-facilities-safety-pack",
+          "name": "Data Center Facilities Safety Pack",
+          "price_usd": 649.99,
+          "url": "https://datacentertraining.us/bundles.html"
         }
       ],
       "language": "en",
@@ -3508,7 +3664,7 @@
         "incident-response-troubleshooting",
         "business-continuity-disaster-recovery-planning"
       ],
-      "last_updated": "2026-10-07"
+      "last_updated": "2026-10-08"
     },
     {
       "id": "data-center-ups-battery-safety",
@@ -3571,6 +3727,12 @@
           "name": "Complete Data Center Professional Bundle",
           "price_usd": 2928.99,
           "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-facilities-safety-pack",
+          "name": "Data Center Facilities Safety Pack",
+          "price_usd": 649.99,
+          "url": "https://datacentertraining.us/bundles.html"
         }
       ],
       "language": "en",
@@ -3608,7 +3770,7 @@
         "electrical-safety-best-practices",
         "batteries-dc-circuits"
       ],
-      "last_updated": "2026-10-07"
+      "last_updated": "2026-10-08"
     },
     {
       "id": "emergency-standby-power-systems-fundamentals",
@@ -3708,7 +3870,7 @@
         "electrical-safety-best-practices",
         "batteries-dc-circuits"
       ],
-      "last_updated": "2026-10-07"
+      "last_updated": "2026-10-08"
     },
     {
       "id": "facility-management-fundamentals",
@@ -3808,7 +3970,7 @@
         "incident-response-troubleshooting",
         "business-continuity-disaster-recovery-planning"
       ],
-      "last_updated": "2026-10-07"
+      "last_updated": "2026-10-08"
     },
     {
       "id": "generator-fundamentals",
@@ -3871,6 +4033,12 @@
           "name": "Complete Data Center Professional Bundle",
           "price_usd": 2928.99,
           "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-technician-skills-pack",
+          "name": "Data Center Technician Skills Pack",
+          "price_usd": 844.99,
+          "url": "https://datacentertraining.us/bundles.html"
         }
       ],
       "language": "en",
@@ -3908,7 +4076,7 @@
         "electrical-safety-best-practices",
         "batteries-dc-circuits"
       ],
-      "last_updated": "2026-10-07"
+      "last_updated": "2026-10-08"
     },
     {
       "id": "lithium-ion-thermal-runaway-emergency-response",
@@ -3971,6 +4139,12 @@
           "name": "Complete Data Center Professional Bundle",
           "price_usd": 2928.99,
           "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-facilities-safety-pack",
+          "name": "Data Center Facilities Safety Pack",
+          "price_usd": 649.99,
+          "url": "https://datacentertraining.us/bundles.html"
         }
       ],
       "language": "en",
@@ -4008,7 +4182,7 @@
         "electrical-safety-best-practices",
         "batteries-dc-circuits"
       ],
-      "last_updated": "2026-10-07"
+      "last_updated": "2026-10-08"
     },
     {
       "id": "osha-electrical-safety-data-center-technicians",
@@ -4110,7 +4284,7 @@
         "electrical-safety-best-practices",
         "batteries-dc-circuits"
       ],
-      "last_updated": "2026-10-07"
+      "last_updated": "2026-10-08"
     },
     {
       "id": "power-distribution-systems-fundamentals",
@@ -4173,6 +4347,12 @@
           "name": "Complete Data Center Professional Bundle",
           "price_usd": 2928.99,
           "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-technician-skills-pack",
+          "name": "Data Center Technician Skills Pack",
+          "price_usd": 844.99,
+          "url": "https://datacentertraining.us/bundles.html"
         }
       ],
       "language": "en",
@@ -4210,7 +4390,7 @@
         "electrical-safety-best-practices",
         "batteries-dc-circuits"
       ],
-      "last_updated": "2026-10-07"
+      "last_updated": "2026-10-08"
     },
     {
       "id": "roofing-systems-maintenance-fundamentals",
@@ -4310,7 +4490,7 @@
         "incident-response-troubleshooting",
         "business-continuity-disaster-recovery-planning"
       ],
-      "last_updated": "2026-10-07"
+      "last_updated": "2026-10-08"
     },
     {
       "id": "server-room-ergonomics-manual-handling",
@@ -4373,6 +4553,12 @@
           "name": "Complete Data Center Professional Bundle",
           "price_usd": 2928.99,
           "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-facilities-safety-pack",
+          "name": "Data Center Facilities Safety Pack",
+          "price_usd": 649.99,
+          "url": "https://datacentertraining.us/bundles.html"
         }
       ],
       "language": "en",
@@ -4410,7 +4596,7 @@
         "incident-response-troubleshooting",
         "business-continuity-disaster-recovery-planning"
       ],
-      "last_updated": "2026-10-07"
+      "last_updated": "2026-10-08"
     },
     {
       "id": "ups-systems-fundamentals",
@@ -4473,6 +4659,12 @@
           "name": "Complete Data Center Professional Bundle",
           "price_usd": 2928.99,
           "url": "https://datacentertraining.us/bundles.html"
+        },
+        {
+          "id": "bundle-technician-skills-pack",
+          "name": "Data Center Technician Skills Pack",
+          "price_usd": 844.99,
+          "url": "https://datacentertraining.us/bundles.html"
         }
       ],
       "language": "en",
@@ -4510,7 +4702,7 @@
         "electrical-safety-best-practices",
         "batteries-dc-circuits"
       ],
-      "last_updated": "2026-10-07"
+      "last_updated": "2026-10-08"
     }
   ]
 }

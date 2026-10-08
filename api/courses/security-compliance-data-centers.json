@@ -8,8 +8,8 @@
   "category": "Security & Compliance",
   "course_type": "comprehensive",
   "course_type_label": "Comprehensive Program",
-  "duration_hours": 16,
-  "duration_iso8601": "PT16H",
+  "duration_hours": 8,
+  "duration_iso8601": "PT8H",
   "module_count": 6,
   "price_usd": 291.99,
   "currency": "USD",
@@ -71,6 +71,12 @@
       "name": "Complete Data Center Professional Bundle",
       "price_usd": 2928.99,
       "url": "https://datacentertraining.us/bundles.html"
+    },
+    {
+      "id": "bundle-infrastructure-professional-pack",
+      "name": "Data Center Infrastructure Professional Pack",
+      "price_usd": 1867.99,
+      "url": "https://datacentertraining.us/bundles.html"
     }
   ],
   "language": "en",
@@ -107,5 +113,5 @@
     "data-center-fire-suppression-safety",
     "data-center-physical-security-access-control"
   ],
-  "last_updated": "2026-10-07"
+  "last_updated": "2026-10-08"
 }

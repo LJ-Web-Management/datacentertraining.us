@@ -61,6 +61,12 @@
       "name": "Complete Data Center Professional Bundle",
       "price_usd": 2928.99,
       "url": "https://datacentertraining.us/bundles.html"
+    },
+    {
+      "id": "bundle-facilities-safety-pack",
+      "name": "Data Center Facilities Safety Pack",
+      "price_usd": 649.99,
+      "url": "https://datacentertraining.us/bundles.html"
     }
   ],
   "language": "en",
@@ -97,5 +103,5 @@
     "facility-environmental-compliance",
     "data-center-physical-security-access-control"
   ],
-  "last_updated": "2026-10-07"
+  "last_updated": "2026-10-08"
 }

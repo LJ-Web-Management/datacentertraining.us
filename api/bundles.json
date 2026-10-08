@@ -1,8 +1,8 @@
 {
   "publisher": "Data Center Training (datacentertraining.us)",
-  "last_updated": "2026-10-07",
+  "last_updated": "2026-10-08",
   "license": "Public information; quote with attribution and a link to the source URL.",
-  "count": 7,
+  "count": 10,
   "currency": "USD",
   "volume_discounts": [
     {
@@ -58,7 +58,7 @@
       "savings_usd": 716.86,
       "savings_percent": 42,
       "course_count": 15,
-      "total_hours": 57.5,
+      "total_hours": 49,
       "course_ids": [
         "power-systems-electrical-fundamentals",
         "ups-operations-load-testing",
@@ -91,7 +91,7 @@
       "savings_usd": 335.95,
       "savings_percent": 42,
       "course_count": 6,
-      "total_hours": 31,
+      "total_hours": 23,
       "course_ids": [
         "cooling-systems-design-optimization",
         "hvac-troubleshooting-essentials",
@@ -115,7 +115,7 @@
       "savings_usd": 602.91,
       "savings_percent": 42,
       "course_count": 10,
-      "total_hours": 62,
+      "total_hours": 44,
       "course_ids": [
         "data-center-operations-management",
         "disaster-recovery-business-continuity",
@@ -143,7 +143,7 @@
       "savings_usd": 290.96,
       "savings_percent": 42,
       "course_count": 5,
-      "total_hours": 25.5,
+      "total_hours": 17.5,
       "course_ids": [
         "security-compliance-data-centers",
         "access-control-physical-security",
@@ -166,7 +166,7 @@
       "savings_usd": 403.97,
       "savings_percent": 42,
       "course_count": 4,
-      "total_hours": 45.5,
+      "total_hours": 27.5,
       "course_ids": [
         "data-center-design-fundamentals",
         "tier-infrastructure-fundamentals",
@@ -188,7 +188,7 @@
       "savings_usd": 242.97,
       "savings_percent": 42,
       "course_count": 4,
-      "total_hours": 28.5,
+      "total_hours": 22,
       "course_ids": [
         "monitoring-automation-bms-systems",
         "dcim-platform-fundamentals",
@@ -210,7 +210,7 @@
       "savings_usd": 3238.57,
       "savings_percent": 53,
       "course_count": 44,
-      "total_hours": 250,
+      "total_hours": 183,
       "course_ids": [
         "access-control-physical-security",
         "batteries-dc-circuits",
@@ -259,6 +259,92 @@
       ],
       "url": "https://datacentertraining.us/bundles.html",
       "enroll_url": "https://datacentertraining.us/checkout.html?item=bundle-complete-catalog",
+      "availability": "preorder"
+    },
+    {
+      "id": "bundle-facilities-safety-pack",
+      "catalog_number": 508,
+      "name": "Data Center Facilities Safety Pack",
+      "track": "Multiple tracks",
+      "audience": "For white-space and gray-space technicians at data centers and critical facilities: the OSHA/NFPA life-safety and electrical compliance training every technician needs before working on the floor.",
+      "price_usd": 649.99,
+      "list_price_usd": 999.9,
+      "savings_usd": 349.91,
+      "savings_percent": 35,
+      "course_count": 10,
+      "total_hours": 18,
+      "course_ids": [
+        "data-center-arc-flash-safety",
+        "data-center-electrical-safety",
+        "data-center-ups-battery-safety",
+        "data-center-epo-procedures",
+        "data-center-fire-suppression-safety",
+        "data-center-cooling-refrigerant-safety",
+        "data-center-raised-floor-confined-space",
+        "data-center-physical-security-access-control",
+        "server-room-ergonomics-manual-handling",
+        "lithium-ion-thermal-runaway-emergency-response"
+      ],
+      "url": "https://datacentertraining.us/bundles.html",
+      "enroll_url": "https://datacentertraining.us/checkout.html?item=bundle-facilities-safety-pack",
+      "availability": "preorder"
+    },
+    {
+      "id": "bundle-infrastructure-professional-pack",
+      "catalog_number": 509,
+      "name": "Data Center Infrastructure Professional Pack",
+      "track": "Multiple tracks",
+      "audience": "For data center managers and engineers: all nine advanced programs covering design, tiers, operations, power, cooling, commissioning, monitoring, security, and disaster recovery.",
+      "price_usd": 1867.99,
+      "list_price_usd": 2667.91,
+      "savings_usd": 799.92,
+      "savings_percent": 30,
+      "course_count": 9,
+      "total_hours": 72,
+      "course_ids": [
+        "data-center-design-fundamentals",
+        "tier-infrastructure-fundamentals",
+        "data-center-operations-management",
+        "security-compliance-data-centers",
+        "power-systems-electrical-fundamentals",
+        "cooling-systems-design-optimization",
+        "disaster-recovery-business-continuity",
+        "infrastructure-commissioning-startup",
+        "monitoring-automation-bms-systems"
+      ],
+      "url": "https://datacentertraining.us/bundles.html",
+      "enroll_url": "https://datacentertraining.us/checkout.html?item=bundle-infrastructure-professional-pack",
+      "availability": "preorder"
+    },
+    {
+      "id": "bundle-technician-skills-pack",
+      "catalog_number": 510,
+      "name": "Data Center Technician Skills Pack",
+      "track": "Multiple tracks",
+      "audience": "For facilities technicians and operations staff: the core technical competencies across UPS, generators, power distribution, HVAC, building automation, DCIM, cabling, maintenance, and troubleshooting.",
+      "price_usd": 844.99,
+      "list_price_usd": 1299.87,
+      "savings_usd": 454.88,
+      "savings_percent": 35,
+      "course_count": 13,
+      "total_hours": 50,
+      "course_ids": [
+        "ups-systems-fundamentals",
+        "ups-operations-load-testing",
+        "generator-fundamentals",
+        "generator-operations-maintenance",
+        "power-distribution-systems-fundamentals",
+        "batteries-dc-circuits",
+        "hvac-troubleshooting-essentials",
+        "building-automation-systems-fundamentals",
+        "dcim-platform-fundamentals",
+        "fiber-optics-network-cabling",
+        "preventive-maintenance-planning",
+        "incident-response-troubleshooting",
+        "electrical-safety-best-practices"
+      ],
+      "url": "https://datacentertraining.us/bundles.html",
+      "enroll_url": "https://datacentertraining.us/checkout.html?item=bundle-technician-skills-pack",
       "availability": "preorder"
     }
   ]

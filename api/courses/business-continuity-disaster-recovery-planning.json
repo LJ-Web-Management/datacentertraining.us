@@ -84,7 +84,7 @@
     },
     {
       "question": "How does this course relate to Disaster Recovery & Business Continuity?",
-      "answer": "Disaster Recovery & Business Continuity is the 12–18 hour comprehensive program covering RTO/RPO, redundant sites and DR testing. This course complements it with a dedicated, practical session on building and stress-testing the continuity plan itself."
+      "answer": "Disaster Recovery & Business Continuity is the 8-hour comprehensive program covering RTO/RPO, redundant sites and DR testing. This course complements it with a dedicated, practical session on building and stress-testing the continuity plan itself."
     },
     {
       "question": "What is a business impact analysis?",
@@ -98,5 +98,5 @@
     "incident-response-troubleshooting",
     "building-maintenance-fundamentals"
   ],
-  "last_updated": "2026-10-07"
+  "last_updated": "2026-10-08"
 }

@@ -1,6 +1,6 @@
 {
   "publisher": "Data Center Training (datacentertraining.us)",
-  "last_updated": "2026-10-07",
+  "last_updated": "2026-10-08",
   "license": "Public information; quote with attribution and a link to the source URL.",
   "count": 36,
   "resources": [
@@ -20,7 +20,7 @@
       "type": "site_page",
       "title": "Course Bundles",
       "url": "https://datacentertraining.us/bundles.html",
-      "description": "Seven role-based and complete-catalog bundles with pricing and savings.",
+      "description": "10 role-based, compliance pack, and complete-catalog bundles with pricing and savings.",
       "topics": [
         "pricing",
         "bundles"

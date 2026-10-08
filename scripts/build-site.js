@@ -198,7 +198,7 @@ function parseRoles(trackOf) {
 
 function buildData() {
   const cfg = loadConfig();
-  const trackBundles = cfg.DC_BUNDLES.filter((b) => b.slug !== 'bundle-complete-catalog');
+  const trackBundles = cfg.DC_BUNDLES.filter((b) => b.slug !== 'bundle-complete-catalog' && !b.pack);
   const trackOf = {};
   for (const b of trackBundles) trackOf[b.slug] = b.name.replace(/ Bundle$/, ' Track');
 
@@ -267,7 +267,7 @@ function buildData() {
       id: b.slug,
       catalog_number: b.id,
       name: b.name,
-      track: trackOf[b.slug] || 'All tracks',
+      track: trackOf[b.slug] || (b.pack ? 'Multiple tracks' : 'All tracks'),
       audience: b.description,
       price_usd: b.price,
       list_price_usd: listPrice,
@@ -335,7 +335,7 @@ function buildData() {
     'dcim', 'bms', 'pue', 'battery', 'lithium', 'tier', 'confined', 'raised floor', 'training matrix', 'contractor', 'visitor', 'maintenance'];
   const staticResources = [
     { type: 'site_page', title: 'Course Catalog', url: ORIGIN + '/courses.html', description: 'All 44 courses with search, sort, and filters by track, type, duration, or price.', topics: ['catalog'], audience: [] },
-    { type: 'site_page', title: 'Course Bundles', url: ORIGIN + '/bundles.html', description: 'Seven role-based and complete-catalog bundles with pricing and savings.', topics: ['pricing', 'bundles'], audience: [] },
+    { type: 'site_page', title: 'Course Bundles', url: ORIGIN + '/bundles.html', description: cfg.DC_BUNDLES.length + ' role-based, compliance pack, and complete-catalog bundles with pricing and savings.', topics: ['pricing', 'bundles'], audience: [] },
     { type: 'site_page', title: 'Which Courses Does Your Role Need?', url: ORIGIN + '/who.html', description: 'Role-to-track recommendations for electricians, HVAC techs, operations managers, security leads, engineers, and IT staff.', topics: ['roles'], audience: [] },
     { type: 'site_page', title: 'Certifications & Accreditations', url: ORIGIN + '/certifications.html', description: 'IACET provider accreditation and what a certificate of completion does and does not mean.', topics: ['certificate', 'accreditation', 'credentials'], audience: [] },
     { type: 'site_page', title: 'FAQ', url: ORIGIN + '/faq.html', description: 'Answers about programs, pricing, certificates, access, team enrollment, and policies.', topics: ['faq'], audience: [] },
@@ -571,7 +571,7 @@ function toolDefs(d) {
     {
       name: 'compare_bundles',
       title: 'Compare course bundles',
-      description: 'Compare the 7 course bundles (6 role-based track bundles plus the complete 44-course catalog bundle) side by side: bundle price, sum of individual course prices, savings, course count, total hours, audience, and included course ids. Omit bundle_ids to compare all bundles. Prices are per seat before seat-count volume discounts.',
+      description: 'Compare the ' + d.bundles.length + ' course bundles (' + d.tracks.length + ' role-based track bundles, ' + d.bundles.filter((b) => b.track === 'Multiple tracks').length + ' compliance packs, and the complete ' + d.courses.length + '-course catalog bundle) side by side: bundle price, sum of individual course prices, savings, course count, total hours, audience, and included course ids. Omit bundle_ids to compare all bundles. Prices are per seat before seat-count volume discounts.',
       data_source: [ORIGIN + '/api/bundles.json'],
       inputSchema: {
         $schema: D7, type: 'object', additionalProperties: false,
@@ -774,7 +774,7 @@ function buildOutputs(d) {
     schema_version: '2026-06',
     name: 'datacentertraining-us',
     title: 'Data Center Training',
-    description: 'Read-only catalog tools for Data Center Training (datacentertraining.us): 44 online, self-paced data center courses (250 hours), 7 bundles, and 6 role-based learning tracks, delivered by HAZWOPER OSHA Training, LLC, an IACET Accredited Provider.',
+    description: 'Read-only catalog tools for Data Center Training (datacentertraining.us): ' + d.courses.length + ' online, self-paced data center courses (' + d.courses.reduce((sum, c) => sum + c.duration_hours, 0) + ' hours), ' + d.bundles.length + ' bundles, and ' + d.tracks.length + ' role-based learning tracks, delivered by HAZWOPER OSHA Training, LLC, an IACET Accredited Provider.',
     version: MANIFEST_VERSION,
     last_updated: updated,
     homepage: ORIGIN + '/',
@@ -808,7 +808,7 @@ function buildOutputs(d) {
       { uri: ORIGIN + '/llms-full.txt', name: 'llms-full.txt', mimeType: 'text/markdown', description: 'Every course, bundle, role, FAQ, and policy as stable records.' },
       { uri: ORIGIN + '/api/index.json', name: 'API index', mimeType: 'application/json', description: 'Index of all JSON documents.' },
       { uri: ORIGIN + '/api/courses.json', name: 'Courses', mimeType: 'application/json', description: 'All 44 course records.' },
-      { uri: ORIGIN + '/api/bundles.json', name: 'Bundles', mimeType: 'application/json', description: 'All 7 bundles with pricing and savings.' },
+      { uri: ORIGIN + '/api/bundles.json', name: 'Bundles', mimeType: 'application/json', description: 'All ' + d.bundles.length + ' bundles with pricing and savings.' },
       { uri: ORIGIN + '/api/roles.json', name: 'Roles and tracks', mimeType: 'application/json', description: 'Role-to-track recommendations.' },
       { uri: ORIGIN + '/api/faq.json', name: 'FAQ', mimeType: 'application/json', description: 'Published FAQ answers.' },
       { uri: ORIGIN + '/api/credentials.json', name: 'Credentials', mimeType: 'application/json', description: 'Certificate and accreditation facts and claims to avoid.' },
@@ -883,7 +883,7 @@ function writeOpenApi(d, s, defs, updated) {
     info: {
       title: 'Data Center Training - Public Catalog API',
       version: MANIFEST_VERSION,
-      description: 'Read-only, unauthenticated JSON documents describing Data Center Training\'s 44 courses, 7 bundles, 6 learning tracks, roles, FAQ, credentials, and resources, plus the HTML pages they come from. The same data backs the WebMCP tools in /.well-known/mcp.json. Last updated ' + updated + '.',
+      description: 'Read-only, unauthenticated JSON documents describing Data Center Training\'s ' + d.courses.length + ' courses, ' + d.bundles.length + ' bundles, ' + d.tracks.length + ' learning tracks, roles, FAQ, credentials, and resources, plus the HTML pages they come from. The same data backs the WebMCP tools in /.well-known/mcp.json. Last updated ' + updated + '.',
       contact: { name: 'HAZWOPER OSHA Training, LLC', email: SUPPORT.email, url: ORIGIN + '/' }
     },
     servers: [{ url: ORIGIN }],
@@ -910,7 +910,7 @@ function writeOpenApi(d, s, defs, updated) {
       },
       page('getHomepage', '/', 'Homepage', 'Site overview with EducationalOrganization, WebSite, and FAQPage JSON-LD.'),
       page('getCourseCatalogPage', '/courses.html', 'Course catalog page', 'All 44 courses with search, sort, and filters; Course ItemList JSON-LD. Accepts ?q=, ?type=, ?track=, ?sort=.'),
-      page('getBundlesPage', '/bundles.html', 'Bundles page', 'All 7 bundles with Product/Offer JSON-LD.'),
+      page('getBundlesPage', '/bundles.html', 'Bundles page', 'All ' + d.bundles.length + ' bundles with Product/Offer JSON-LD.'),
       page('getWhoPage', '/who.html', 'Role guide', 'Role-to-track recommendations.'),
       page('getCertificationsPage', '/certifications.html', 'Certifications page', 'Accreditation and credential transparency.'),
       page('getFaqPage', '/faq.html', 'FAQ page', 'FAQ with FAQPage JSON-LD.'),
@@ -958,7 +958,7 @@ function writeLlms(d, courses, updated) {
     '',
     'Last updated: ' + updated,
     '',
-    'Courses start at $' + Math.min(...courses.map((c) => c.price_usd)).toFixed(2) + ' per seat, or enroll the complete ' + courses.length + '-course catalog bundle for $' + complete.price_usd.toLocaleString('en-US', { minimumFractionDigits: 2 }) + '. ' + d.bundles.length + ' bundles save up to ' + maxSave + '%. Programs are Comprehensive Programs (12-18 hrs, full-discipline curriculum) or Modular Specializations (1-8 hrs, focused skills). English only.',
+    'Courses start at $' + Math.min(...courses.map((c) => c.price_usd)).toFixed(2) + ' per seat, or enroll the complete ' + courses.length + '-course catalog bundle for $' + complete.price_usd.toLocaleString('en-US', { minimumFractionDigits: 2 }) + '. ' + d.bundles.length + ' bundles save up to ' + maxSave + '%. Programs are Comprehensive Programs (8 hrs each, full-discipline curriculum) or Modular Specializations (1-8 hrs, focused skills). English only.',
     '',
     '## Rules for AI agents',
     '',
@@ -976,7 +976,7 @@ function writeLlms(d, courses, updated) {
     '',
     '- [Homepage](' + ORIGIN + '/): overview and links to every section.',
     '- [Course Catalog](' + ORIGIN + '/courses.html): all ' + courses.length + ' courses; filter by track, type, duration, or price.',
-    '- [Bundles](' + ORIGIN + '/bundles.html): ' + d.bundles.length + ' role-based and complete-catalog bundles.',
+    '- [Bundles](' + ORIGIN + '/bundles.html): ' + d.bundles.length + ' role-based, compliance pack, and complete-catalog bundles.',
     '- [Who It\'s For](' + ORIGIN + '/who.html): role-based course recommendations.',
     '- [Certifications & Accreditations](' + ORIGIN + '/certifications.html): IACET provider accreditation and credential transparency.',
     '- [FAQ](' + ORIGIN + '/faq.html): programs, pricing, certificates, and policies.',

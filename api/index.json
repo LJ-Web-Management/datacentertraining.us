@@ -1,8 +1,8 @@
 {
   "name": "Data Center Training public catalog API",
   "description": "Static, read-only JSON documents describing the Data Center Training catalog. No authentication. Regenerated from the site source on every change.",
-  "last_updated": "2026-10-07",
-  "content_hash": "384ec5fb6210287d",
+  "last_updated": "2026-10-08",
+  "content_hash": "d9269f066c39d7fe",
   "manifest": "https://datacentertraining.us/.well-known/mcp.json",
   "openapi": "https://datacentertraining.us/openapi.json",
   "documents": {
@@ -16,7 +16,7 @@
   },
   "counts": {
     "courses": 44,
-    "bundles": 7,
+    "bundles": 10,
     "tracks": 6,
     "roles": 6,
     "faqs": 38,
