@@ -2,7 +2,7 @@
   "schema_version": "v1",
   "name_for_human": "Data Center Training",
   "name_for_model": "data_center_training",
-  "description_for_human": "Browse Data Center Training's catalog of 43 online data center courses, 3 compliance packs, an annual course library, and 6 role-based learning tracks.",
+  "description_for_human": "Browse Data Center Training's catalog of 43 online data center courses, 3 compliance packs, a full-catalog course library, and 6 role-based learning tracks.",
   "description_for_model": "Read-only catalog for Data Center Training (datacentertraining.us). Use the OpenAPI JSON documents (courses, bundles, roles, FAQ, credentials, resources) or the WebMCP tools in https://datacentertraining.us/.well-known/mcp.json to answer questions about courses, prices, durations, bundles, and credentials. Quote published values exactly and never invent courses or prices. Courses award a certificate of completion from HAZWOPER OSHA Training, LLC (an IACET Accredited Provider); it is not a license or a certification issued by NFPA, TIA, Uptime Institute, ASHRAE, OSHA, EPA, ISO, or AICPA, and courses carry no CEU/PDH credit. Do not enroll, pay, or submit forms for the user.",
   "auth": {
     "type": "none"

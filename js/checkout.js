@@ -41,7 +41,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var basePrice = selected.price;
   var selectedCourseIds = selected.type === 'bundle' ? selected.courseIds : [selected.courseId];
-  var perYear = selected.billing === 'annual' ? ' / year' : '';
 
   // While online payment is off, this page sends an enrollment request by
   // email instead of charging a card. Flip CHECKOUT_DISABLED in config.js to
@@ -75,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var seats = getSeats();
     var p = priceFor(seats);
     var set = function (id, text) { var el = document.getElementById(id); if (el) el.textContent = text; };
-    set('summaryCourseQty', (selected.type === 'bundle' ? 'Bundle · ' : '') + seats + (seats === 1 ? ' seat' : ' seats') + ' × $' + fmt(basePrice) + perYear);
+    set('summaryCourseQty', (selected.type === 'bundle' ? 'Bundle · ' : '') + seats + (seats === 1 ? ' seat' : ' seats') + ' × $' + fmt(basePrice));
     set('summaryCourseAmount', '$' + fmt(p.subtotal));
     set('summarySubtotal', '$' + fmt(p.subtotal));
     set('summaryTotal', '$' + fmt(p.total));
@@ -257,10 +256,10 @@ document.addEventListener('DOMContentLoaded', function () {
     var lines = [
       'Enrollment request from datacentertraining.us',
       '',
-      (selected.type === 'bundle' ? (selected.billing === 'annual' ? 'Annual subscription: ' : 'Pack: ') : 'Course: ') + selected.name + ' (' + itemSlug + ')',
+      (selected.type === 'bundle' ? 'Bundle: ' : 'Course: ') + selected.name + ' (' + itemSlug + ')',
       'Seats: ' + seats,
-      'List price: $' + fmt(basePrice) + ' per seat' + (perYear ? ' per year' : ''),
-      'Estimated total: $' + fmt(p.total) + perYear + (p.discount > 0 ? ' after ' + Math.round(p.tier.discount * 100) + '% volume discount' : ''),
+      'List price: $' + fmt(basePrice) + ' per seat',
+      'Estimated total: $' + fmt(p.total) + (p.discount > 0 ? ' after ' + Math.round(p.tier.discount * 100) + '% volume discount' : ''),
       '',
       'Name: ' + fieldValue('billingFirstName') + ' ' + fieldValue('billingLastName'),
       'Company: ' + (fieldValue('billingCompany') || '-'),

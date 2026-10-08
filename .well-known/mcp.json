@@ -558,7 +558,6 @@
                     "id",
                     "name",
                     "price_usd",
-                    "billing",
                     "url"
                   ],
                   "properties": {
@@ -570,13 +569,6 @@
                     },
                     "price_usd": {
                       "type": "number"
-                    },
-                    "billing": {
-                      "type": "string",
-                      "enum": [
-                        "one-time",
-                        "annual"
-                      ]
                     },
                     "url": {
                       "type": "string",
@@ -841,14 +833,12 @@
                   "id": "bundle-facilities-safety-pack",
                   "name": "Data Center Facilities Safety Pack",
                   "price_usd": 649.99,
-                  "billing": "one-time",
                   "url": "https://datacentertraining.us/bundles.html"
                 },
                 {
                   "id": "bundle-data-center-library",
                   "name": "Data Center & IT Infrastructure Library",
                   "price_usd": 119,
-                  "billing": "annual",
                   "url": "https://datacentertraining.us/bundles.html"
                 }
               ],
@@ -916,7 +906,7 @@
     {
       "name": "compare_bundles",
       "title": "Compare course bundles",
-      "description": "Compare the 4 products for sale (3 one-time compliance packs and the annual 43-course Data Center & IT Infrastructure Library subscription) side by side: billing, price, sum of individual course prices, savings, course count, total hours, audience, and included course ids. Omit bundle_ids to compare all bundles. Prices are per seat before seat-count volume discounts.",
+      "description": "Compare the 4 products for sale (3 compliance packs and the 43-course Data Center & IT Infrastructure Library, all one-time per-seat purchases) side by side: price, sum of individual course prices, savings, course count, total hours, audience, and included course ids. Omit bundle_ids to compare all bundles. Prices are per seat before seat-count volume discounts.",
       "inputSchema": {
         "$schema": "http://json-schema.org/draft-07/schema#",
         "type": "object",
@@ -957,7 +947,6 @@
               "required": [
                 "id",
                 "name",
-                "billing",
                 "price_usd",
                 "list_price_usd",
                 "savings_usd",
@@ -983,17 +972,6 @@
                   "type": "string"
                 },
                 "track": {
-                  "type": "string"
-                },
-                "billing": {
-                  "type": "string",
-                  "enum": [
-                    "one-time",
-                    "annual"
-                  ],
-                  "description": "one-time: per-seat compliance pack. annual: per-seat, 12-month subscription."
-                },
-                "billing_label": {
                   "type": "string"
                 },
                 "audience": {
@@ -1081,8 +1059,6 @@
                 "id": "bundle-facilities-safety-pack",
                 "name": "Data Center Facilities Safety Pack",
                 "track": "Multiple tracks",
-                "billing": "one-time",
-                "billing_label": "per seat, one-time",
                 "price_usd": 649.99,
                 "list_price_usd": 999.9,
                 "savings_usd": 349.91,
@@ -1108,15 +1084,13 @@
                 "id": "bundle-data-center-library",
                 "name": "Data Center & IT Infrastructure Library",
                 "track": "All tracks",
-                "billing": "annual",
-                "billing_label": "per seat, per year (12-month subscription)",
                 "price_usd": 119,
                 "list_price_usd": 6067.57,
                 "savings_usd": 5948.57,
                 "savings_percent": 98,
                 "course_count": 43,
                 "total_hours": 184,
-                "audience": "Unlimited 12-month access to all 43 data center courses for one learner: every safety, technician, and infrastructure program in the catalog, priced per seat per year.",
+                "audience": "All 43 data center courses for one learner in a single one-time purchase: every safety, technician, and infrastructure program in the catalog.",
                 "url": "https://datacentertraining.us/bundles.html",
                 "course_ids": [
                   "access-control-physical-security",
@@ -1167,7 +1141,7 @@
             ],
             "notes": [
               "Prices are per seat in USD before seat-count volume discounts (25+ seats), which apply at checkout.",
-              "Compliance packs are a one-time purchase; the Data Center & IT Infrastructure Library is billed per seat per year."
+              "Every pack and the Data Center & IT Infrastructure Library is a one-time, per-seat purchase."
             ]
           },
           "output_truncated": true
@@ -1271,13 +1245,6 @@
               },
               "name": {
                 "type": "string"
-              },
-              "billing": {
-                "type": "string",
-                "enum": [
-                  "one-time",
-                  "annual"
-                ]
               },
               "price_usd": {
                 "type": "number"
@@ -1448,7 +1415,6 @@
             "recommended_bundle": {
               "id": "bundle-technician-skills-pack",
               "name": "Data Center Technician Skills Pack",
-              "billing": "one-time",
               "price_usd": 844.99,
               "list_price_usd": 1299.87,
               "savings_usd": 454.88,

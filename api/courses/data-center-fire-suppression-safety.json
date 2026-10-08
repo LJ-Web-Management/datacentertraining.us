@@ -54,14 +54,12 @@
       "id": "bundle-facilities-safety-pack",
       "name": "Data Center Facilities Safety Pack",
       "price_usd": 649.99,
-      "billing": "one-time",
       "url": "https://datacentertraining.us/bundles.html"
     },
     {
       "id": "bundle-data-center-library",
       "name": "Data Center & IT Infrastructure Library",
       "price_usd": 119,
-      "billing": "annual",
       "url": "https://datacentertraining.us/bundles.html"
     }
   ],

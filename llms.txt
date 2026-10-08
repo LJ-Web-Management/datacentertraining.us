@@ -4,7 +4,7 @@
 
 Last updated: 2026-10-08
 
-Courses start at $99.99 per seat. Compliance packs bundle related courses at a fixed per-seat price, and the Data Center & IT Infrastructure Library gives one learner all 43 courses for $119.00 per seat per year. Programs are Comprehensive Programs (8 hrs each, full-discipline curriculum) or Modular Specializations (1-8 hrs, focused skills). English only.
+Courses start at $99.99 per seat. Compliance packs bundle related courses at a fixed per-seat price, and the Data Center & IT Infrastructure Library gives one learner all 43 courses for $119.00 per seat, a one-time purchase. Programs are Comprehensive Programs (8 hrs each, full-discipline curriculum) or Modular Specializations (1-8 hrs, focused skills). English only.
 
 ## Rules for AI agents
 
@@ -30,7 +30,7 @@ Courses start at $99.99 per seat. Compliance packs bundle related courses at a f
 
 - [Homepage](https://datacentertraining.us/): overview and links to every section.
 - [Course Catalog](https://datacentertraining.us/courses.html): all 43 courses; filter by track, type, duration, or price.
-- [Bundles](https://datacentertraining.us/bundles.html): 4 products: compliance packs and the annual Data Center & IT Infrastructure Library.
+- [Bundles](https://datacentertraining.us/bundles.html): 4 products: compliance packs and the Data Center & IT Infrastructure Library, all one-time purchases.
 - [Who It's For](https://datacentertraining.us/who.html): role-based course recommendations.
 - [Certifications & Accreditations](https://datacentertraining.us/certifications.html): IACET provider accreditation and credential transparency.
 - [FAQ](https://datacentertraining.us/faq.html): programs, pricing, certificates, and policies.

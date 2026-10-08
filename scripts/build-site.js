@@ -256,7 +256,7 @@ function buildData() {
         : 'No prior certification required. Relevant equipment exposure is helpful.',
       learning_outcomes: page.outcomes,
       modules: page.modules,
-      bundles: bundles.map((b) => ({ id: b.slug, name: b.name, price_usd: b.price, billing: b.billing, url: bundleUrl })),
+      bundles: bundles.map((b) => ({ id: b.slug, name: b.name, price_usd: b.price, url: bundleUrl })),
       language: 'en',
       delivery: 'Online, self-paced, no completion deadline',
       certificate,
@@ -276,8 +276,6 @@ function buildData() {
       catalog_number: b.id,
       name: b.name,
       track: b.courses.length === cfg.DC_COURSES.length ? 'All tracks' : 'Multiple tracks',
-      billing: b.billing,
-      billing_label: b.billing === 'annual' ? 'per seat, per year (12-month subscription)' : 'per seat, one-time',
       audience: b.description,
       price_usd: b.price,
       list_price_usd: listPrice,
@@ -345,7 +343,7 @@ function buildData() {
     'dcim', 'bms', 'pue', 'battery', 'lithium', 'tier', 'confined', 'raised floor', 'training matrix', 'contractor', 'visitor', 'maintenance'];
   const staticResources = [
     { type: 'site_page', title: 'Course Catalog', url: ORIGIN + '/courses.html', description: 'All ' + cfg.DC_COURSES.length + ' courses with search, sort, and filters by track, type, duration, or price.', topics: ['catalog'], audience: [] },
-    { type: 'site_page', title: 'Course Bundles', url: ORIGIN + '/bundles.html', description: cfg.DC_BUNDLES.length + ' products (compliance packs and the annual Data Center & IT Infrastructure Library) with pricing and savings.', topics: ['pricing', 'bundles'], audience: [] },
+    { type: 'site_page', title: 'Course Bundles', url: ORIGIN + '/bundles.html', description: cfg.DC_BUNDLES.length + ' products (compliance packs and the Data Center & IT Infrastructure Library) with pricing and savings. All are one-time, per-seat purchases.', topics: ['pricing', 'bundles'], audience: [] },
     { type: 'site_page', title: 'Which Courses Does Your Role Need?', url: ORIGIN + '/who.html', description: 'Role-to-track recommendations for electricians, HVAC techs, operations managers, security leads, engineers, and IT staff.', topics: ['roles'], audience: [] },
     { type: 'site_page', title: 'Certifications & Accreditations', url: ORIGIN + '/certifications.html', description: 'IACET provider accreditation and what a certificate of completion does and does not mean.', topics: ['certificate', 'accreditation', 'credentials'], audience: [] },
     { type: 'site_page', title: 'FAQ', url: ORIGIN + '/faq.html', description: 'Answers about programs, pricing, certificates, access, team enrollment, and policies.', topics: ['faq'], audience: [] },
@@ -435,8 +433,8 @@ function schemas(d) {
       bundles: {
         type: 'array',
         items: {
-          type: 'object', additionalProperties: false, required: ['id', 'name', 'price_usd', 'billing', 'url'],
-          properties: { id: { type: 'string' }, name: { type: 'string' }, price_usd: { type: 'number' }, billing: { type: 'string', enum: ['one-time', 'annual'] }, url: { type: 'string', format: 'uri' } }
+          type: 'object', additionalProperties: false, required: ['id', 'name', 'price_usd', 'url'],
+          properties: { id: { type: 'string' }, name: { type: 'string' }, price_usd: { type: 'number' }, url: { type: 'string', format: 'uri' } }
         }
       },
       language: { type: 'string', enum: ['en'] },
@@ -469,14 +467,12 @@ function schemas(d) {
   const bundle = {
     type: 'object',
     additionalProperties: false,
-    required: ['id', 'name', 'billing', 'price_usd', 'list_price_usd', 'savings_usd', 'course_count', 'total_hours', 'course_ids', 'url'],
+    required: ['id', 'name', 'price_usd', 'list_price_usd', 'savings_usd', 'course_count', 'total_hours', 'course_ids', 'url'],
     properties: {
       id: { type: 'string', enum: d.bundles.map((b) => b.id) },
       catalog_number: { type: 'integer' },
       name: { type: 'string' },
       track: { type: 'string' },
-      billing: { type: 'string', enum: ['one-time', 'annual'], description: 'one-time: per-seat compliance pack. annual: per-seat, 12-month subscription.' },
-      billing_label: { type: 'string' },
       audience: { type: 'string' },
       price_usd: { type: 'number', minimum: 0 },
       list_price_usd: { type: 'number', minimum: 0, description: 'Sum of the included courses at individual prices.' },
@@ -583,7 +579,7 @@ function toolDefs(d) {
     {
       name: 'compare_bundles',
       title: 'Compare course bundles',
-      description: 'Compare the ' + d.bundles.length + ' products for sale (' + d.bundles.filter((b) => b.billing === 'one-time').length + ' one-time compliance packs and the annual ' + d.courses.length + '-course Data Center & IT Infrastructure Library subscription) side by side: billing, price, sum of individual course prices, savings, course count, total hours, audience, and included course ids. Omit bundle_ids to compare all bundles. Prices are per seat before seat-count volume discounts.',
+      description: 'Compare the ' + d.bundles.length + ' products for sale (' + (d.bundles.length - 1) + ' compliance packs and the ' + d.courses.length + '-course Data Center & IT Infrastructure Library, all one-time per-seat purchases) side by side: price, sum of individual course prices, savings, course count, total hours, audience, and included course ids. Omit bundle_ids to compare all bundles. Prices are per seat before seat-count volume discounts.',
       data_source: [ORIGIN + '/api/bundles.json'],
       inputSchema: {
         $schema: D7, type: 'object', additionalProperties: false,
@@ -621,7 +617,7 @@ function toolDefs(d) {
           recommended_bundle: {
             type: ['object', 'null'], additionalProperties: false,
             properties: {
-              id: { type: 'string' }, name: { type: 'string' }, billing: { type: 'string', enum: ['one-time', 'annual'] }, price_usd: { type: 'number' }, list_price_usd: { type: 'number' },
+              id: { type: 'string' }, name: { type: 'string' }, price_usd: { type: 'number' }, list_price_usd: { type: 'number' },
               savings_usd: { type: 'number' }, course_count: { type: 'integer' }, total_hours: { type: 'number' }, url: { type: 'string', format: 'uri' }
             }
           },
@@ -956,7 +952,7 @@ function writeOpenApi(d, s, defs, updated) {
 
 function writeLlms(d, courses, updated) {
   const total = courses.reduce((sum, c) => sum + c.duration_hours, 0);
-  const library = d.bundles.find((b) => b.billing === 'annual');
+  const library = d.bundles.find((b) => b.course_count === courses.length);
   const intro =
     '> Data Center Training (datacentertraining.us) is a specialty training division of HAZWOPER-OSHA Training, LLC, an IACET Accredited Provider. ' +
     courses.length + ' online, self-paced data center courses (' + total + ' hours total) in design, operations, power, cooling, security, and facilities management. Every course awards a certificate of completion.';
@@ -969,7 +965,7 @@ function writeLlms(d, courses, updated) {
     '',
     'Last updated: ' + updated,
     '',
-    'Courses start at $' + Math.min(...courses.map((c) => c.price_usd)).toFixed(2) + ' per seat. Compliance packs bundle related courses at a fixed per-seat price, and the Data Center & IT Infrastructure Library gives one learner all ' + courses.length + ' courses for $' + library.price_usd.toFixed(2) + ' per seat per year. Programs are Comprehensive Programs (8 hrs each, full-discipline curriculum) or Modular Specializations (1-8 hrs, focused skills). English only.',
+    'Courses start at $' + Math.min(...courses.map((c) => c.price_usd)).toFixed(2) + ' per seat. Compliance packs bundle related courses at a fixed per-seat price, and the Data Center & IT Infrastructure Library gives one learner all ' + courses.length + ' courses for $' + library.price_usd.toFixed(2) + ' per seat, a one-time purchase. Programs are Comprehensive Programs (8 hrs each, full-discipline curriculum) or Modular Specializations (1-8 hrs, focused skills). English only.',
     '',
     '## Rules for AI agents',
     '',
@@ -987,7 +983,7 @@ function writeLlms(d, courses, updated) {
     '',
     '- [Homepage](' + ORIGIN + '/): overview and links to every section.',
     '- [Course Catalog](' + ORIGIN + '/courses.html): all ' + courses.length + ' courses; filter by track, type, duration, or price.',
-    '- [Bundles](' + ORIGIN + '/bundles.html): ' + d.bundles.length + ' products: compliance packs and the annual Data Center & IT Infrastructure Library.',
+    '- [Bundles](' + ORIGIN + '/bundles.html): ' + d.bundles.length + ' products: compliance packs and the Data Center & IT Infrastructure Library, all one-time purchases.',
     '- [Who It\'s For](' + ORIGIN + '/who.html): role-based course recommendations.',
     '- [Certifications & Accreditations](' + ORIGIN + '/certifications.html): IACET provider accreditation and credential transparency.',
     '- [FAQ](' + ORIGIN + '/faq.html): programs, pricing, certificates, and policies.',
@@ -1033,7 +1029,7 @@ function writeLlms(d, courses, updated) {
     '- modules: ' + c.module_count,
     '- price_usd: ' + c.price_usd.toFixed(2),
     '- standards_aligned: ' + (c.standards.length ? c.standards.join('; ') : 'none named'),
-    '- bundles: ' + c.bundles.map((b) => b.name + ' ($' + b.price_usd.toFixed(2) + (b.billing === 'annual' ? '/year' : '') + ')').join('; '),
+    '- bundles: ' + c.bundles.map((b) => b.name + ' ($' + b.price_usd.toFixed(2) + ')').join('; '),
     '- audience: ' + c.audience,
     '- prerequisites: ' + c.prerequisites,
     '- language: English',
@@ -1079,7 +1075,6 @@ function writeLlms(d, courses, updated) {
       '',
       '- id: ' + b.id,
       '- track: ' + b.track,
-      '- billing: ' + b.billing_label,
       '- price_usd: ' + b.price_usd.toFixed(2),
       '- list_price_usd: ' + b.list_price_usd.toFixed(2) + ' (sum of individual course prices)',
       '- savings: $' + b.savings_usd.toFixed(2) + ' (' + b.savings_percent + '%)',
@@ -1312,8 +1307,7 @@ function processPages(d) {
               priceCurrency: 'USD',
               availability: b.availability === 'preorder' ? 'https://schema.org/PreOrder' : 'https://schema.org/InStock',
               url: ORIGIN + '/bundles.html',
-              seller: PROVIDER,
-              ...(b.billing === 'annual' ? { priceSpecification: { '@type': 'UnitPriceSpecification', price: b.price_usd.toFixed(2), priceCurrency: 'USD', billingDuration: 'P1Y', referenceQuantity: { '@type': 'QuantitativeValue', value: 1, unitText: 'seat' } } } : {})
+              seller: PROVIDER
             }
           }
         }))

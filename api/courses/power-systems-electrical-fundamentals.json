@@ -63,14 +63,12 @@
       "id": "bundle-infrastructure-professional-pack",
       "name": "Data Center Infrastructure Professional Pack",
       "price_usd": 1867.99,
-      "billing": "one-time",
       "url": "https://datacentertraining.us/bundles.html"
     },
     {
       "id": "bundle-data-center-library",
       "name": "Data Center & IT Infrastructure Library",
       "price_usd": 119,
-      "billing": "annual",
       "url": "https://datacentertraining.us/bundles.html"
     }
   ],

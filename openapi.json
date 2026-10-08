@@ -727,7 +727,6 @@
                 "id",
                 "name",
                 "price_usd",
-                "billing",
                 "url"
               ],
               "properties": {
@@ -739,13 +738,6 @@
                 },
                 "price_usd": {
                   "type": "number"
-                },
-                "billing": {
-                  "type": "string",
-                  "enum": [
-                    "one-time",
-                    "annual"
-                  ]
                 },
                 "url": {
                   "type": "string",
@@ -853,7 +845,6 @@
         "required": [
           "id",
           "name",
-          "billing",
           "price_usd",
           "list_price_usd",
           "savings_usd",
@@ -879,17 +870,6 @@
             "type": "string"
           },
           "track": {
-            "type": "string"
-          },
-          "billing": {
-            "type": "string",
-            "enum": [
-              "one-time",
-              "annual"
-            ],
-            "description": "one-time: per-seat compliance pack. annual: per-seat, 12-month subscription."
-          },
-          "billing_label": {
             "type": "string"
           },
           "audience": {
@@ -1309,7 +1289,7 @@
     },
     {
       "name": "compare_bundles",
-      "description": "Compare the 4 products for sale (3 one-time compliance packs and the annual 43-course Data Center & IT Infrastructure Library subscription) side by side: billing, price, sum of individual course prices, savings, course count, total hours, audience, and included course ids. Omit bundle_ids to compare all bundles. Prices are per seat before seat-count volume discounts.",
+      "description": "Compare the 4 products for sale (3 compliance packs and the 43-course Data Center & IT Infrastructure Library, all one-time per-seat purchases) side by side: price, sum of individual course prices, savings, course count, total hours, audience, and included course ids. Omit bundle_ids to compare all bundles. Prices are per seat before seat-count volume discounts.",
       "data_source": [
         "https://datacentertraining.us/api/bundles.json"
       ]

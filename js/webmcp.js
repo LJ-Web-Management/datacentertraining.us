@@ -128,12 +128,12 @@
       return {
         bundles: list.map(function (b) {
           return {
-            id: b.id, name: b.name, track: b.track, billing: b.billing, billing_label: b.billing_label, price_usd: b.price_usd, list_price_usd: b.list_price_usd,
+            id: b.id, name: b.name, track: b.track, price_usd: b.price_usd, list_price_usd: b.list_price_usd,
             savings_usd: b.savings_usd, savings_percent: b.savings_percent, course_count: b.course_count,
             total_hours: b.total_hours, audience: b.audience, url: b.url, course_ids: b.course_ids
           };
         }),
-        notes: ['Prices are per seat in USD before seat-count volume discounts (25+ seats), which apply at checkout.', 'Compliance packs are a one-time purchase; the Data Center & IT Infrastructure Library is billed per seat per year.']
+        notes: ['Prices are per seat in USD before seat-count volume discounts (25+ seats), which apply at checkout.', 'Every pack and the Data Center & IT Infrastructure Library is a one-time, per-seat purchase.']
       };
     },
 
@@ -172,7 +172,7 @@
         track: role.track,
         reason: role.description,
         recommended_bundle: bundle ? {
-          id: bundle.id, name: bundle.name, billing: bundle.billing, price_usd: bundle.price_usd, list_price_usd: bundle.list_price_usd,
+          id: bundle.id, name: bundle.name, price_usd: bundle.price_usd, list_price_usd: bundle.list_price_usd,
           savings_usd: bundle.savings_usd, course_count: bundle.course_count, total_hours: bundle.total_hours, url: bundle.url
         } : null,
         courses: courses.map(function (c, i) {
