@@ -1160,7 +1160,7 @@
               }
             ],
             "notes": [
-              "Prices are per seat in USD before seat-count volume discounts (2+ seats), which apply at checkout."
+              "Prices are per seat in USD before seat-count volume discounts (25+ seats), which apply at checkout."
             ]
           },
           "output_truncated": true

@@ -1823,7 +1823,7 @@ Modules:
 
 ## Bundles
 
-Prices are per seat in USD. Seat-count volume discounts apply at checkout: 2-10 seats 1%, 11-20 seats 2%, 21-50 seats 3%, 51-100 seats 5%, 101-250 seats 7%, 251-500 seats 8%, 501-1000 seats 10%.
+Prices are per seat in USD. Seat-count volume discounts apply at checkout: 25-50 seats 10%, 51-100 seats 15%, 101-200 seats 20%, 201-350 seats 25%, 351-500 seats 30%, 501-1000 seats 35%. Discounted per-seat prices round to the nearest dollar, ending in .99 for .99 list prices. More than 1,000 seats: custom enterprise quote.
 
 ### Power & Electrical Systems Bundle
 
@@ -2087,7 +2087,7 @@ Yes. Open any course or bundle, choose Enroll Now, set your seat count, and send
 
 ### Do you offer volume pricing for large teams?
 
-Yes. Seat-count discounts apply automatically when you set your seat count at checkout, on a per-course or per-bundle basis: 1% for 2-10 seats, 2% for 11-20, 3% for 21-50, 5% for 51-100, 7% for 101-250, 8% for 251-500, and 10% for 501-1,000. For more than 1,000 seats, contact us.
+Yes. Seat-count discounts apply automatically when you set your seat count at checkout, on a per-course or per-bundle basis: 10% for 25-50 seats, 15% for 51-100, 20% for 101-200, 25% for 201-350, 30% for 351-500, and 35% for 501-1,000. For more than 1,000 seats, contact us for a custom enterprise license.
 
 ### Can contractors and third-party vendors take this training?
 

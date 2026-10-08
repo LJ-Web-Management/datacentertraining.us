@@ -6,16 +6,16 @@ const API_BASE_URL = "https://hazwoper-osha.com/api";
 // live in the LMS catalog. Flip to false once course IDs are provisioned.
 const CHECKOUT_DISABLED = true;
 
-// Bulk pricing tiers (seat-count discount ladder, applied to each item's per-seat price)
+// Bulk pricing tiers (seat-count discount ladder, applied to each item's per-seat price).
+// Matches the master catalog's Seat Tier Pricing; 1,001+ seats is a custom enterprise quote.
 var BULK_TIERS = [
-  { min: 1, max: 1, discount: 0 },
-  { min: 2, max: 10, discount: 0.01 },
-  { min: 11, max: 20, discount: 0.02 },
-  { min: 21, max: 50, discount: 0.03 },
-  { min: 51, max: 100, discount: 0.05 },
-  { min: 101, max: 250, discount: 0.07 },
-  { min: 251, max: 500, discount: 0.08 },
-  { min: 501, max: 1000, discount: 0.10 }
+  { min: 1, max: 24, discount: 0 },
+  { min: 25, max: 50, discount: 0.10 },
+  { min: 51, max: 100, discount: 0.15 },
+  { min: 101, max: 200, discount: 0.20 },
+  { min: 201, max: 350, discount: 0.25 },
+  { min: 351, max: 500, discount: 0.30 },
+  { min: 501, max: 1000, discount: 0.35 }
 ];
 
 // Source of truth for the Data Center Training course catalog.
@@ -102,7 +102,10 @@ var tierLabel = function (tier) {
 
 var tierPrice = function (basePrice, tier) {
   var discount = (tier && typeof tier.discount === 'number') ? tier.discount : 0;
-  return Math.round(basePrice * (1 - discount) * 100) / 100;
+  if (!discount) return basePrice;
+  // Catalog rounding: nearest whole dollar, kept on a .99 ending for .99 list prices.
+  var dollars = Math.round(basePrice * (1 - discount));
+  return Math.round(basePrice * 100) % 100 === 99 ? Math.round((dollars - 0.01) * 100) / 100 : dollars;
 };
 
 // Sum of a bundle's included courses at individual list price

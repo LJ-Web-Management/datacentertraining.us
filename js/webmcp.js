@@ -133,7 +133,7 @@
             total_hours: b.total_hours, audience: b.audience, url: b.url, course_ids: b.course_ids
           };
         }),
-        notes: ['Prices are per seat in USD before seat-count volume discounts (2+ seats), which apply at checkout.']
+        notes: ['Prices are per seat in USD before seat-count volume discounts (25+ seats), which apply at checkout.']
       };
     },
 

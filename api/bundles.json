@@ -7,43 +7,38 @@
   "volume_discounts": [
     {
       "min": 1,
-      "max": 1,
+      "max": 24,
       "discount": 0
     },
     {
-      "min": 2,
-      "max": 10,
-      "discount": 0.01
-    },
-    {
-      "min": 11,
-      "max": 20,
-      "discount": 0.02
-    },
-    {
-      "min": 21,
+      "min": 25,
       "max": 50,
-      "discount": 0.03
+      "discount": 0.1
     },
     {
       "min": 51,
       "max": 100,
-      "discount": 0.05
+      "discount": 0.15
     },
     {
       "min": 101,
-      "max": 250,
-      "discount": 0.07
+      "max": 200,
+      "discount": 0.2
     },
     {
-      "min": 251,
+      "min": 201,
+      "max": 350,
+      "discount": 0.25
+    },
+    {
+      "min": 351,
       "max": 500,
-      "discount": 0.08
+      "discount": 0.3
     },
     {
       "min": 501,
       "max": 1000,
-      "discount": 0.1
+      "discount": 0.35
     }
   ],
   "bundles": [

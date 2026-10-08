@@ -1061,7 +1061,7 @@ function writeLlms(d, courses, updated) {
     '## Bundles',
     '',
     'Prices are per seat in USD. Seat-count volume discounts apply at checkout: ' +
-      d.cfg.BULK_TIERS.filter((t) => t.discount).map((t) => t.min + '-' + t.max + ' seats ' + Math.round(t.discount * 100) + '%').join(', ') + '.',
+      d.cfg.BULK_TIERS.filter((t) => t.discount).map((t) => t.min + '-' + t.max + ' seats ' + Math.round(t.discount * 100) + '%').join(', ') + '. Discounted per-seat prices round to the nearest dollar, ending in .99 for .99 list prices. More than ' + d.cfg.BULK_TIERS[d.cfg.BULK_TIERS.length - 1].max.toLocaleString('en-US') + ' seats: custom enterprise quote.',
     '',
     d.bundles.map((b) => [
       '### ' + b.name,

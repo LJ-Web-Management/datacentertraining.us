@@ -178,7 +178,7 @@
     },
     {
       "question": "Do you offer volume pricing for large teams?",
-      "answer": "Yes. Seat-count discounts apply automatically when you set your seat count at checkout, on a per-course or per-bundle basis: 1% for 2-10 seats, 2% for 11-20, 3% for 21-50, 5% for 51-100, 7% for 101-250, 8% for 251-500, and 10% for 501-1,000. For more than 1,000 seats, contact us.",
+      "answer": "Yes. Seat-count discounts apply automatically when you set your seat count at checkout, on a per-course or per-bundle basis: 10% for 25-50 seats, 15% for 51-100, 20% for 101-200, 25% for 201-350, 30% for 351-500, and 35% for 501-1,000. For more than 1,000 seats, contact us for a custom enterprise license.",
       "category": "Enrolling Your Team",
       "source_url": "https://datacentertraining.us/faq.html"
     },
