@@ -1,8 +1,8 @@
 {
   "publisher": "Data Center Training (datacentertraining.us)",
-  "last_updated": "2026-10-08",
+  "last_updated": "2026-10-09",
   "license": "Public information; quote with attribution and a link to the source URL.",
-  "count": 37,
+  "count": 38,
   "resources": [
     {
       "source": "Data Center Training (first party)",
@@ -163,6 +163,16 @@
       "audience": [
         "hvac"
       ]
+    },
+    {
+      "type": "blog_post",
+      "title": "ANSI/TIA-942 Design Review: What Data Center Facility Teams Should Verify Before Construction",
+      "url": "https://datacentertraining.us/blog/posts/ansi-tia-942-design-review-what-data-center-facility-teams-should-verify-before-construction.html",
+      "description": "Before a data center project moves from drawings into construction, who verifies that the design will be operable, maintainable, and aligned with the site's…",
+      "topics": [],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-10-09"
     },
     {
       "type": "blog_post",

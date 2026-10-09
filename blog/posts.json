@@ -248,5 +248,15 @@
     "date": "2026-10-08",
     "dateDisplay": "October 8, 2026",
     "excerpt": "A new data center maintenance team can be busy from its first shift: walking electrical rooms, inspecting cooling equipment, responding to alarms, coordinating…"
+  },
+  {
+    "title": "ANSI/TIA-942 Design Review: What Data Center Facility Teams Should Verify Before Construction",
+    "slug": "ansi-tia-942-design-review-what-data-center-facility-teams-should-verify-before-construction",
+    "seoTitle": "ANSI/TIA-942 Design Review: What Data Center Facility Teams",
+    "description": "Before a data center project moves from drawings into construction, who verifies that the design will be operable, maintainable, and aligned with the site's…",
+    "image": "assets/img/posts/ansi-tia-942-design-review-what-data-center-facility-teams-should-verify-before-construction.jpg",
+    "date": "2026-10-09",
+    "dateDisplay": "October 9, 2026",
+    "excerpt": "Before a data center project moves from drawings into construction, who verifies that the design will be operable, maintainable, and aligned with the site's…"
   }
 ]
