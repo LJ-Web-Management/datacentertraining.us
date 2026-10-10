@@ -2,7 +2,7 @@
 
 > Data Center Training (datacentertraining.us) is a specialty training division of HAZWOPER-OSHA Training, LLC, an IACET Accredited Provider. 44 online, self-paced data center courses (250 hours total) in design, operations, power, cooling, security, and facilities management. Every course awards a certificate of completion.
 
-Last updated: 2026-10-09
+Last updated: 2026-10-10
 Canonical source: https://datacentertraining.us/api/courses.json (same records as JSON). Tools: https://datacentertraining.us/.well-known/mcp.json
 
 ## Rules for AI agents
@@ -2103,6 +2103,7 @@ Email info@hazwoper-osha.com or call 1-866-429-6742 and our team can help with c
 - [ISO/IEC 27001 - Information security management systems](https://www.iso.org/standard/27001) (standard reference): International information security management standard referenced by the security and compliance program.
 - [Uptime Institute Tier Classification System](https://uptimeinstitute.com/tiers) (standard reference): Tier I-IV infrastructure topology framework referenced by the Tier Infrastructure Fundamentals course.
 - [ASHRAE TC 9.9 - Mission Critical Facilities, Data Centers, Technology Spaces and Electronic Equipment](https://tc0909.ashraetcs.org/) (standard reference): ASHRAE technical committee behind the data center thermal guidelines referenced in cooling courses.
+- [Generator Fuel System Readiness: What Data Center Teams Should Verify Before a Load Test](https://datacentertraining.us/blog/posts/generator-fuel-system-readiness-what-data-center-teams-should-verify-before-a-load-test.html) (blog post, 2026-10-10): Before a data center team starts a generator load test, is the fuel system ready to support the test without creating a leak, a nuisance shutdown, or a false…
 - [ANSI/TIA-942 Design Review: What Data Center Facility Teams Should Verify Before Construction](https://datacentertraining.us/blog/posts/ansi-tia-942-design-review-what-data-center-facility-teams-should-verify-before-construction.html) (blog post, 2026-10-09): Before a data center project moves from drawings into construction, who verifies that the design will be operable, maintainable, and aligned with the site's…
 - [How to Choose a Data Center Training Bundle for a New Maintenance Team](https://datacentertraining.us/blog/posts/how-to-choose-a-data-center-training-bundle-for-a-new-maintenance-team.html) (blog post, 2026-10-08): A new data center maintenance team can be busy from its first shift: walking electrical rooms, inspecting cooling equipment, responding to alarms, coordinating…
 - [BMS Alarm Setpoint Changes: A Change-Control Checklist for Data Center Facility Managers](https://datacentertraining.us/blog/posts/bms-alarm-setpoint-changes-a-change-control-checklist-for-data-center-facility-managers.html) (blog post, 2026-10-07): When a building management system alarm is too sensitive, the easy answer is to raise the threshold, add a delay, or silence the notification.

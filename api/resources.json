@@ -1,8 +1,8 @@
 {
   "publisher": "Data Center Training (datacentertraining.us)",
-  "last_updated": "2026-10-09",
+  "last_updated": "2026-10-10",
   "license": "Public information; quote with attribution and a link to the source URL.",
-  "count": 38,
+  "count": 39,
   "resources": [
     {
       "source": "Data Center Training (first party)",
@@ -163,6 +163,18 @@
       "audience": [
         "hvac"
       ]
+    },
+    {
+      "type": "blog_post",
+      "title": "Generator Fuel System Readiness: What Data Center Teams Should Verify Before a Load Test",
+      "url": "https://datacentertraining.us/blog/posts/generator-fuel-system-readiness-what-data-center-teams-should-verify-before-a-load-test.html",
+      "description": "Before a data center team starts a generator load test, is the fuel system ready to support the test without creating a leak, a nuisance shutdown, or a false…",
+      "topics": [
+        "generator"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-10-10"
     },
     {
       "type": "blog_post",

@@ -258,5 +258,15 @@
     "date": "2026-10-09",
     "dateDisplay": "October 9, 2026",
     "excerpt": "Before a data center project moves from drawings into construction, who verifies that the design will be operable, maintainable, and aligned with the site's…"
+  },
+  {
+    "title": "Generator Fuel System Readiness: What Data Center Teams Should Verify Before a Load Test",
+    "slug": "generator-fuel-system-readiness-what-data-center-teams-should-verify-before-a-load-test",
+    "seoTitle": "Generator Fuel System Readiness | Data Center Training",
+    "description": "Before a data center team starts a generator load test, is the fuel system ready to support the test without creating a leak, a nuisance shutdown, or a false…",
+    "image": "assets/img/posts/generator-fuel-system-readiness-what-data-center-teams-should-verify-before-a-load-test.jpg",
+    "date": "2026-10-10",
+    "dateDisplay": "October 10, 2026",
+    "excerpt": "Before a data center team starts a generator load test, is the fuel system ready to support the test without creating a leak, a nuisance shutdown, or a false…"
   }
 ]

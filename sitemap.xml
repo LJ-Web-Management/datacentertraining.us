@@ -320,7 +320,7 @@
   </url>
   <url>
     <loc>https://datacentertraining.us/blog/</loc>
-    <lastmod>2026-10-09</lastmod>
+    <lastmod>2026-10-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -477,6 +477,12 @@
   <url>
     <loc>https://datacentertraining.us/blog/posts/ansi-tia-942-design-review-what-data-center-facility-teams-should-verify-before-construction.html</loc>
     <lastmod>2026-10-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://datacentertraining.us/blog/posts/generator-fuel-system-readiness-what-data-center-teams-should-verify-before-a-load-test.html</loc>
+    <lastmod>2026-10-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
