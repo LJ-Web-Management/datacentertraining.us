@@ -268,5 +268,15 @@
     "date": "2026-10-10",
     "dateDisplay": "October 10, 2026",
     "excerpt": "Before a data center team starts a generator load test, is the fuel system ready to support the test without creating a leak, a nuisance shutdown, or a false…"
+  },
+  {
+    "title": "What a New Data Center Technician Should Learn in the First 90 Days",
+    "slug": "what-a-new-data-center-technician-should-learn-in-the-first-90-days",
+    "seoTitle": "What a New Data Center Technician Should Learn in the First",
+    "description": "A new data center technician can be eager, mechanically capable, and still be unready for independent work in a live critical facility.",
+    "image": "assets/img/posts/what-a-new-data-center-technician-should-learn-in-the-first-90-days.jpg",
+    "date": "2026-10-11",
+    "dateDisplay": "October 11, 2026",
+    "excerpt": "A new data center technician can be eager, mechanically capable, and still be unready for independent work in a live critical facility."
   }
 ]

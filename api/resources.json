@@ -1,8 +1,8 @@
 {
   "publisher": "Data Center Training (datacentertraining.us)",
-  "last_updated": "2026-10-10",
+  "last_updated": "2026-10-11",
   "license": "Public information; quote with attribution and a link to the source URL.",
-  "count": 39,
+  "count": 40,
   "resources": [
     {
       "source": "Data Center Training (first party)",
@@ -163,6 +163,16 @@
       "audience": [
         "hvac"
       ]
+    },
+    {
+      "type": "blog_post",
+      "title": "What a New Data Center Technician Should Learn in the First 90 Days",
+      "url": "https://datacentertraining.us/blog/posts/what-a-new-data-center-technician-should-learn-in-the-first-90-days.html",
+      "description": "A new data center technician can be eager, mechanically capable, and still be unready for independent work in a live critical facility.",
+      "topics": [],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-10-11"
     },
     {
       "type": "blog_post",
