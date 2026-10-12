@@ -1,8 +1,8 @@
 {
   "publisher": "Data Center Training (datacentertraining.us)",
-  "last_updated": "2026-10-11",
+  "last_updated": "2026-10-12",
   "license": "Public information; quote with attribution and a link to the source URL.",
-  "count": 40,
+  "count": 41,
   "resources": [
     {
       "source": "Data Center Training (first party)",
@@ -163,6 +163,18 @@
       "audience": [
         "hvac"
       ]
+    },
+    {
+      "type": "blog_post",
+      "title": "Data Center Roof Maintenance Planning: How Facility Managers Can Protect Uptime During Exterior Work",
+      "url": "https://datacentertraining.us/blog/posts/data-center-roof-maintenance-planning-how-facility-managers-can-protect-uptime-during-exterior-work.html",
+      "description": "Roof repairs look like an outside-the-building project, but a data center roof protects equipment, power rooms, air-handling spaces, cable pathways…",
+      "topics": [
+        "maintenance"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-10-12"
     },
     {
       "type": "blog_post",
