@@ -36,6 +36,10 @@ if (!item || !args.email) {
   process.exit(1);
 }
 
+if (item.type === 'bundle') {
+  console.log('Note: checkout sends bundle orders by email, not to the LMS API. This still tests that the LMS accepts the bundle\'s course IDs.');
+}
+
 const api = (typeof args.api === 'string' ? args.api : ctx.API_BASE_URL).replace(/\/$/, '');
 const seats = parseInt(args.seats, 10) > 0 ? parseInt(args.seats, 10) : 1;
 const first = args.first || 'DCT';

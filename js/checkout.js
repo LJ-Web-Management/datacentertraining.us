@@ -39,8 +39,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // While online payment is off, this page sends an enrollment request by
   // email instead of charging a card. Flip CHECKOUT_DISABLED in config.js to
-  // switch back to the Stripe flow below.
-  var requestMode = typeof CHECKOUT_DISABLED !== 'undefined' && CHECKOUT_DISABLED;
+  // switch back to the Stripe flow below. Bundles always go by email: add_order
+  // takes per-course IDs only, so the LMS can't apply the bundle price.
+  var requestMode = (typeof CHECKOUT_DISABLED !== 'undefined' && CHECKOUT_DISABLED) || selected.type === 'bundle';
   var ENROLL_EMAIL = 'info@hazwoper-osha.com';
 
   var seatInput = document.getElementById('seatCount');
