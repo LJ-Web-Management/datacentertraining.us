@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var itemSlug = urlParams.get('item') || (typeof DC_COURSES !== 'undefined' && DC_COURSES[0] ? DC_COURSES[0].slug : 'electrical-safety');
   var selected = (typeof findDcItem === 'function') ? findDcItem(itemSlug) : null;
   if (!selected) {
-    selected = { type: 'course', name: 'Data Center Design Fundamentals', price: 312.99, courseId: 401 };
+    selected = { type: 'course', name: 'Data Center Design Fundamentals', price: 312.99, courseId: 842 };
   }
 
   var basePrice = selected.price;
@@ -255,6 +255,7 @@ document.addEventListener('DOMContentLoaded', function () {
       'Seats: ' + seats,
       'List price: $' + fmt(basePrice) + ' per seat',
       'Estimated total: $' + fmt(p.total) + (p.discount > 0 ? ' after ' + Math.round(p.tier.discount * 100) + '% volume discount' : ''),
+      'LMS course ID' + (selectedCourseIds.length === 1 ? ': ' : 's: ') + selectedCourseIds.join(', '),
       '',
       'Name: ' + fieldValue('billingFirstName') + ' ' + fieldValue('billingLastName'),
       'Company: ' + (fieldValue('billingCompany') || '-'),
