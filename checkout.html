@@ -88,7 +88,7 @@ if(navigator.modelContext){var m=document.createElement('script');m.src='/js/web
 
     <div class="checkout-header">
       <h1>Checkout</h1>
-      <p>Choose your seat count, add your contact details, and send your enrollment request. Our team confirms the order and sets up learner accounts the same day.</p>
+      <p>Choose your seat count and add your contact details. Learner accounts are set up the same day, with logins sent by email.</p>
     </div>
 
     <div class="disclosure-banner">
@@ -96,7 +96,7 @@ if(navigator.modelContext){var m=document.createElement('script');m.src='/js/web
       <span id="enrollModeNote"><strong>How enrollment works:</strong> send this request and we reply by email with your order confirmation and payment options (credit card, or purchase order for corporate accounts). Learner logins are emailed once the order is confirmed. Prefer to talk? Call <a href="tel:18664296742" style="color:inherit;text-decoration:underline;">1-866-429-6742</a> or email <a href="mailto:info@hazwoper-osha.com" style="color:inherit;text-decoration:underline;">info@hazwoper-osha.com</a>.</span>
     </div>
 
-    <!-- SUCCESS CONFIRMATION VIEW (Shown after successful payment; unused while checkout is disabled) -->
+    <!-- SUCCESS CONFIRMATION VIEW (shown after a successful card payment) -->
     <div id="checkoutSuccessView" class="success-view-card" hidden>
       <div class="success-icon-wrapper">
         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
@@ -113,7 +113,7 @@ if(navigator.modelContext){var m=document.createElement('script');m.src='/js/web
       <a href="/#top" class="btn btn-primary btn-lg">Return to Home</a>
     </div>
 
-    <!-- ENROLLMENT REQUEST VIEW (shown after an enrollment request is composed while online payment is off) -->
+    <!-- ENROLLMENT REQUEST VIEW (shown after an enrollment request is composed: bundles, or every order while CHECKOUT_DISABLED is on) -->
     <div id="requestSentView" class="success-view-card" hidden>
       <h2>Your Enrollment Request Is Ready</h2>
       <p class="success-lead">Your email app should have opened with the request below, addressed to info@hazwoper-osha.com. Press send, and our team will reply with your order confirmation and payment options.</p>

@@ -77,7 +77,7 @@
       ],
       "url": "https://datacentertraining.us/bundles.html",
       "enroll_url": "https://datacentertraining.us/checkout.html?item=bundle-power-electrical",
-      "availability": "preorder"
+      "availability": "available"
     },
     {
       "id": "bundle-cooling-efficiency",
@@ -101,7 +101,7 @@
       ],
       "url": "https://datacentertraining.us/bundles.html",
       "enroll_url": "https://datacentertraining.us/checkout.html?item=bundle-cooling-efficiency",
-      "availability": "preorder"
+      "availability": "available"
     },
     {
       "id": "bundle-operations-reliability",
@@ -129,7 +129,7 @@
       ],
       "url": "https://datacentertraining.us/bundles.html",
       "enroll_url": "https://datacentertraining.us/checkout.html?item=bundle-operations-reliability",
-      "availability": "preorder"
+      "availability": "available"
     },
     {
       "id": "bundle-security-compliance",
@@ -152,7 +152,7 @@
       ],
       "url": "https://datacentertraining.us/bundles.html",
       "enroll_url": "https://datacentertraining.us/checkout.html?item=bundle-security-compliance",
-      "availability": "preorder"
+      "availability": "available"
     },
     {
       "id": "bundle-design-planning",
@@ -174,7 +174,7 @@
       ],
       "url": "https://datacentertraining.us/bundles.html",
       "enroll_url": "https://datacentertraining.us/checkout.html?item=bundle-design-planning",
-      "availability": "preorder"
+      "availability": "available"
     },
     {
       "id": "bundle-monitoring-smart-facility",
@@ -196,7 +196,7 @@
       ],
       "url": "https://datacentertraining.us/bundles.html",
       "enroll_url": "https://datacentertraining.us/checkout.html?item=bundle-monitoring-smart-facility",
-      "availability": "preorder"
+      "availability": "available"
     },
     {
       "id": "bundle-complete-catalog",
@@ -257,7 +257,7 @@
       ],
       "url": "https://datacentertraining.us/bundles.html",
       "enroll_url": "https://datacentertraining.us/checkout.html?item=bundle-complete-catalog",
-      "availability": "preorder"
+      "availability": "available"
     }
   ]
 }
