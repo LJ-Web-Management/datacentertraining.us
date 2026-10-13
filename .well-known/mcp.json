@@ -2,7 +2,7 @@
   "schema_version": "2026-06",
   "name": "datacentertraining-us",
   "title": "Data Center Training",
-  "description": "Read-only catalog tools for Data Center Training (datacentertraining.us): 44 online, self-paced data center courses (250 hours), 7 bundles, and 6 role-based learning tracks, delivered by HAZWOPER OSHA Training, LLC, an IACET Accredited Provider.",
+  "description": "Read-only catalog tools for Data Center Training (datacentertraining.us): 43 online, self-paced data center courses (184 hours), 7 bundles, and 6 role-based learning tracks, delivered by HAZWOPER OSHA Training, LLC, an IACET Accredited Provider.",
   "version": "1.0.0",
   "last_updated": "2026-10-13",
   "homepage": "https://datacentertraining.us/",
@@ -44,7 +44,7 @@
     {
       "name": "list_courses",
       "title": "Search and filter the course catalog",
-      "description": "Search or filter the 44-course Data Center Training catalog. Returns course summaries with canonical URL, track, type, duration in hours, per-seat USD price, and aligned standards. Use this before get_course when the user describes a topic, role, budget, or time limit. Every filter is optional; with no input it returns the full catalog. Only report courses this tool returns - never invent a course, price, or availability.",
+      "description": "Search or filter the 43-course Data Center Training catalog. Returns course summaries with canonical URL, track, type, duration in hours, per-seat USD price, and aligned standards. Use this before get_course when the user describes a topic, role, budget, or time limit. Every filter is optional; with no input it returns the full catalog. Only report courses this tool returns - never invent a course, price, or availability.",
       "inputSchema": {
         "$schema": "http://json-schema.org/draft-07/schema#",
         "type": "object",
@@ -102,7 +102,7 @@
               "comprehensive",
               "modular"
             ],
-            "description": "comprehensive = 12-18 hr full-discipline programs; modular = 1-8 hr focused specializations."
+            "description": "comprehensive = 8 hr full-discipline programs; modular = 1-8 hr focused specializations."
           },
           "standard": {
             "type": "string",
@@ -160,8 +160,8 @@
           "limit": {
             "type": "integer",
             "minimum": 1,
-            "maximum": 44,
-            "default": 44
+            "maximum": 43,
+            "default": 43
           }
         }
       },
@@ -298,7 +298,7 @@
             "limit": 3
           },
           "output": {
-            "total_matching": 7,
+            "total_matching": 6,
             "returned": 3,
             "courses": [
               {
@@ -882,7 +882,7 @@
                 "track": "Power & Electrical Systems Track",
                 "category": "Power & Electrical",
                 "course_type": "comprehensive",
-                "duration_hours": 18,
+                "duration_hours": 8,
                 "price_usd": 303.99,
                 "standards": [
                   "NFPA 70E"
@@ -909,7 +909,7 @@
     {
       "name": "compare_bundles",
       "title": "Compare course bundles",
-      "description": "Compare the 7 course bundles (6 role-based track bundles plus the complete 44-course catalog bundle) side by side: bundle price, sum of individual course prices, savings, course count, total hours, audience, and included course ids. Omit bundle_ids to compare all bundles. Prices are per seat before seat-count volume discounts.",
+      "description": "Compare the 7 course bundles (6 role-based track bundles plus the complete 43-course catalog bundle) side by side: bundle price, sum of individual course prices, savings, course count, total hours, audience, and included course ids. Omit bundle_ids to compare all bundles. Prices are per seat before seat-count volume discounts.",
       "inputSchema": {
         "$schema": "http://json-schema.org/draft-07/schema#",
         "type": "object",
@@ -1073,7 +1073,7 @@
                 "savings_usd": 290.96,
                 "savings_percent": 42,
                 "course_count": 5,
-                "total_hours": 25.5,
+                "total_hours": 19,
                 "audience": "For security and compliance leads building an audit-ready physical security, fire safety, and environmental compliance program.",
                 "url": "https://datacentertraining.us/bundles.html",
                 "course_ids": [
@@ -1089,11 +1089,11 @@
                 "name": "Complete Data Center Professional Bundle",
                 "track": "All tracks",
                 "price_usd": 2928.99,
-                "list_price_usd": 6167.56,
-                "savings_usd": 3238.57,
-                "savings_percent": 53,
-                "course_count": 44,
-                "total_hours": 250,
+                "list_price_usd": 6067.57,
+                "savings_usd": 3138.58,
+                "savings_percent": 52,
+                "course_count": 43,
+                "total_hours": 184,
                 "audience": "Every course in the catalog — all 6 role-based tracks in one enrollment. The single path for a team that wants full coverage across design, power, cooling, security, operations, and monitoring, at the deepest discount we offer.",
                 "url": "https://datacentertraining.us/bundles.html",
                 "course_ids": [
@@ -1131,7 +1131,6 @@
                   "lithium-ion-thermal-runaway-emergency-response",
                   "mechanical-systems-maintenance",
                   "monitoring-automation-bms-systems",
-                  "osha-electrical-safety-data-center-technicians",
                   "power-distribution-systems-fundamentals",
                   "power-systems-electrical-fundamentals",
                   "preventive-maintenance-planning",
@@ -1415,7 +1414,7 @@
               "label": "I work on HVAC, cooling, or mechanical systems"
             },
             "track": "Cooling & Facilities Efficiency Track",
-            "reason": "HVAC and facilities technicians who need both cooling design fundamentals and hands-on maintenance skills should complete this 6-course, 31-hour track.",
+            "reason": "HVAC and facilities technicians who need both cooling design fundamentals and hands-on maintenance skills should complete this 6-course, 24-hour track.",
             "recommended_bundle": {
               "id": "bundle-cooling-efficiency",
               "name": "Cooling & Facilities Efficiency Bundle",
@@ -1423,7 +1422,7 @@
               "list_price_usd": 798.94,
               "savings_usd": 335.95,
               "course_count": 6,
-              "total_hours": 31,
+              "total_hours": 24,
               "url": "https://datacentertraining.us/bundles.html"
             },
             "courses": [
@@ -1434,7 +1433,7 @@
                 "track": "Cooling & Facilities Efficiency Track",
                 "category": "Cooling & Efficiency",
                 "course_type": "comprehensive",
-                "duration_hours": 16,
+                "duration_hours": 8,
                 "price_usd": 298.99,
                 "standards": [
                   "PUE",
@@ -1445,16 +1444,18 @@
                 "reason": "Core full-discipline program for this track."
               },
               {
-                "id": "hvac-troubleshooting-essentials",
-                "title": "HVAC Systems Troubleshooting Essentials",
-                "url": "https://datacentertraining.us/courses/hvac-troubleshooting-essentials.html",
+                "id": "energy-efficiency-pue-optimization",
+                "title": "Energy Efficiency & PUE Optimization",
+                "url": "https://datacentertraining.us/courses/energy-efficiency-pue-optimization.html",
                 "track": "Cooling & Facilities Efficiency Track",
                 "category": "Cooling & Efficiency",
                 "course_type": "modular",
                 "duration_hours": 4,
                 "price_usd": 99.99,
-                "standards": [],
-                "summary": "Hands-on troubleshooting skills for CRAC/CRAH systems and common cooling failures.",
+                "standards": [
+                  "PUE"
+                ],
+                "summary": "Cut operating costs with a measurable PUE optimization roadmap.",
                 "rank": 2,
                 "reason": "Focused specialization in the Cooling & Facilities Efficiency Track."
               }
@@ -1796,7 +1797,7 @@
               },
               {
                 "question": "What's the difference between Comprehensive Programs and Modular Specializations?",
-                "answer": "Comprehensive Programs are multi-module courses (12-18 hours) covering a full discipline in depth, like data center design or operations management. Modular Specializations are focused 1-8 hour courses on a single skill, like UPS load testing or fiber termination. Many teams combine one comprehensive program with several modular courses for their role, which is exactly how our bundles are put together.",
+                "answer": "Comprehensive Programs are multi-module courses (8 hours) covering a full discipline in depth, like data center design or operations management. Modular Specializations are focused 1-8 hour courses on a single skill, like UPS load testing or fiber termination. Many teams combine one comprehensive program with several modular courses for their role, which is exactly how our bundles are put together.",
                 "source_url": "https://datacentertraining.us/faq.html"
               },
               {
@@ -1993,7 +1994,7 @@
       "uri": "https://datacentertraining.us/api/courses.json",
       "name": "Courses",
       "mimeType": "application/json",
-      "description": "All 44 course records."
+      "description": "All 43 course records."
     },
     {
       "uri": "https://datacentertraining.us/api/bundles.json",
