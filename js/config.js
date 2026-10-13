@@ -2,11 +2,10 @@
 const STRIPE_PUBLISHABLE_KEY = "pk_live_doCHB0jglD5eISjEmB1vB6mb00xIg51noK";
 const API_BASE_URL = "https://hazwoper-osha.com/api";
 
-// Checkout is intentionally disabled until Data Center Training courses are
-// live in the LMS catalog. Course IDs are provisioned (see lmsId below), but
-// as of the Oct 13, 2026 HAZWOPER-OSHA course export every one is still
-// content "Not Available" / page "Unpublish". Flip to false once they're live.
-const CHECKOUT_DISABLED = true;
+// Card checkout for single courses (Stripe + the LMS add_order API, using
+// lmsId below). Bundles always go by enrollment-request email (checkout.js).
+// Set to true to send every order as an email request instead.
+const CHECKOUT_DISABLED = false;
 
 // Bulk pricing tiers (seat-count discount ladder, applied to each item's per-seat price)
 var BULK_TIERS = [

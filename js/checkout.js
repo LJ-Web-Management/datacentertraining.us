@@ -387,7 +387,9 @@ document.addEventListener('DOMContentLoaded', function () {
           customerId = userData.user_id ||
             (userData.data && userData.data.user_id) ||
             (userData.success && userData.success.user_id) ||
-            (userData.user && userData.user.user_id) || 0;
+            (userData.user && userData.user.user_id) ||
+            // Existing email: the API answers is_duplicate with the user's id in existing_email.
+            (userData.is_duplicate && Number(userData.existing_email)) || 0;
         }
       }
     } catch (userErr) {
@@ -410,6 +412,7 @@ document.addEventListener('DOMContentLoaded', function () {
         billing_email: userEmail,
         billing_phone: phone,
         billing_company: company,
+        reg_company: company,
         billing_address_1: address1,
         billing_address_2: address2,
         billing_city: city,
