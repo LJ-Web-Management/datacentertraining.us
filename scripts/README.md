@@ -61,3 +61,17 @@ them up front blocks the main thread during PageSpeed's mobile test (Total
 Blocking Time) and triggers third-party-cookie and console warnings in Best
 Practices. Visitors who leave without interacting with the page are not
 counted in analytics and never see the chat widget.
+
+## Testing the LMS course link
+
+`test-lms-order.js` sends the same `add_new_user` and `add_order` requests as
+`checkout.html`, so you can check that a course or bundle reaches the right
+LMS course ids (`lmsId` in `js/config.js`):
+
+```bash
+node scripts/test-lms-order.js --item data-center-epo-procedures --email you+test@example.com          # print only
+node scripts/test-lms-order.js --item data-center-epo-procedures --email you+test@example.com --send   # live call
+```
+
+`--send` creates a real user and a pending order in the live LMS; no card is
+charged. Use `--api <url>` to point it at a staging server instead.
