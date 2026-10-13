@@ -63,6 +63,7 @@ const orderPayload = (customerId) => ({
   billing_email: args.email,
   billing_phone: '',
   billing_company: 'API test - please ignore',
+  reg_company: 'API test - please ignore',
   billing_address_1: '', billing_address_2: '', billing_city: '', billing_state: '', billing_postcode: '', billing_country: 'US',
   shipping_address_1: '', shipping_address_2: '', shipping_city: '', shipping_state: '', shipping_postcode: '', shipping_country: 'US',
   courses: courseIds.map((cid) => ({
@@ -92,7 +93,8 @@ const show = (label, x) => console.log('\n== ' + label + '\n' + (typeof x === 's
   const user = await post(api + '/add_new_user', userPayload);
   show('add_new_user -> HTTP ' + user.status, user.body);
   const b = user.body || {};
-  const customerId = b.user_id || (b.data && b.data.user_id) || (b.success && b.success.user_id) || (b.user && b.user.user_id) || 0;
+  const customerId = b.user_id || (b.data && b.data.user_id) || (b.success && b.success.user_id) || (b.user && b.user.user_id) ||
+    (b.is_duplicate && Number(b.existing_email)) || 0;
   if (!customerId) console.log('\nNo user_id in the response; sending add_order with customer_id 0, as checkout does.');
 
   const order = await post(api + '/add_order', orderPayload(customerId));
