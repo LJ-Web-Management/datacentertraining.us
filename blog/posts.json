@@ -298,5 +298,15 @@
     "date": "2026-10-13",
     "dateDisplay": "October 13, 2026",
     "excerpt": "A new data hall can have energized racks, commissioned cooling, and a functioning monitoring platform while still carrying a hidden operational risk: the fiber…"
+  },
+  {
+    "title": "Data Center Anti-Tailgating Drills: How Security Leads Should Test Badge-and-Mantrap Controls",
+    "slug": "data-center-anti-tailgating-drills-how-security-leads-should-test-badge-and-mantrap-controls",
+    "seoTitle": "Data Center Anti-Tailgating Drills | Data Center Training",
+    "description": "Can a person enter a restricted data center zone without presenting the right credential, being challenged, or leaving a reviewable record?",
+    "image": "assets/img/posts/data-center-anti-tailgating-drills-how-security-leads-should-test-badge-and-mantrap-controls.jpg",
+    "date": "2026-10-14",
+    "dateDisplay": "October 14, 2026",
+    "excerpt": "Can a person enter a restricted data center zone without presenting the right credential, being challenged, or leaving a reviewable record?"
   }
 ]

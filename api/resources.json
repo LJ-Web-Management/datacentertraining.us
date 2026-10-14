@@ -1,8 +1,8 @@
 {
   "publisher": "Data Center Training (datacentertraining.us)",
-  "last_updated": "2026-10-13",
+  "last_updated": "2026-10-14",
   "license": "Public information; quote with attribution and a link to the source URL.",
-  "count": 42,
+  "count": 43,
   "resources": [
     {
       "source": "Data Center Training (first party)",
@@ -163,6 +163,18 @@
       "audience": [
         "hvac"
       ]
+    },
+    {
+      "type": "blog_post",
+      "title": "Data Center Anti-Tailgating Drills: How Security Leads Should Test Badge-and-Mantrap Controls",
+      "url": "https://datacentertraining.us/blog/posts/data-center-anti-tailgating-drills-how-security-leads-should-test-badge-and-mantrap-controls.html",
+      "description": "Can a person enter a restricted data center zone without presenting the right credential, being challenged, or leaving a reviewable record?",
+      "topics": [
+        "security"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-10-14"
     },
     {
       "type": "blog_post",

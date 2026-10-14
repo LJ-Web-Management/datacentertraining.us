@@ -314,7 +314,7 @@
   </url>
   <url>
     <loc>https://datacentertraining.us/blog/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-10-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -495,6 +495,12 @@
   <url>
     <loc>https://datacentertraining.us/blog/posts/fiber-optic-pathway-readiness-what-data-center-facility-teams-should-verify-before-a-new-hall-goes-live.html</loc>
     <lastmod>2026-10-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://datacentertraining.us/blog/posts/data-center-anti-tailgating-drills-how-security-leads-should-test-badge-and-mantrap-controls.html</loc>
+    <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
