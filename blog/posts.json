@@ -308,5 +308,15 @@
     "date": "2026-10-14",
     "dateDisplay": "October 14, 2026",
     "excerpt": "Can a person enter a restricted data center zone without presenting the right credential, being challenged, or leaving a reviewable record?"
+  },
+  {
+    "title": "Chilled Water Valve Position: A Troubleshooting Checklist for Data Center Facilities Teams",
+    "slug": "chilled-water-valve-position-a-troubleshooting-checklist-for-data-center-facilities-teams",
+    "seoTitle": "Chilled Water Valve Position: A Troubleshooting Checklist",
+    "description": "When a data center cooling zone warms up, the first visible symptom may be a high supply-air temperature, a rising return-water temperature, or a CRAH unit…",
+    "image": "assets/img/posts/chilled-water-valve-position-a-troubleshooting-checklist-for-data-center-facilities-teams.jpg",
+    "date": "2026-10-15",
+    "dateDisplay": "October 15, 2026",
+    "excerpt": "When a data center cooling zone warms up, the first visible symptom may be a high supply-air temperature, a rising return-water temperature, or a CRAH unit…"
   }
 ]

@@ -1,8 +1,8 @@
 {
   "publisher": "Data Center Training (datacentertraining.us)",
-  "last_updated": "2026-10-14",
+  "last_updated": "2026-10-15",
   "license": "Public information; quote with attribution and a link to the source URL.",
-  "count": 43,
+  "count": 44,
   "resources": [
     {
       "source": "Data Center Training (first party)",
@@ -163,6 +163,18 @@
       "audience": [
         "hvac"
       ]
+    },
+    {
+      "type": "blog_post",
+      "title": "Chilled Water Valve Position: A Troubleshooting Checklist for Data Center Facilities Teams",
+      "url": "https://datacentertraining.us/blog/posts/chilled-water-valve-position-a-troubleshooting-checklist-for-data-center-facilities-teams.html",
+      "description": "When a data center cooling zone warms up, the first visible symptom may be a high supply-air temperature, a rising return-water temperature, or a CRAH unit…",
+      "topics": [
+        "cooling"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-10-15"
     },
     {
       "type": "blog_post",
