@@ -314,7 +314,7 @@
   </url>
   <url>
     <loc>https://datacentertraining.us/blog/</loc>
-    <lastmod>2026-10-15</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -507,6 +507,12 @@
   <url>
     <loc>https://datacentertraining.us/blog/posts/chilled-water-valve-position-a-troubleshooting-checklist-for-data-center-facilities-teams.html</loc>
     <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://datacentertraining.us/blog/posts/vrla-vs-lithium-ion-ups-battery-maintenance-what-facility-managers-should-compare-before-standardizing.html</loc>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

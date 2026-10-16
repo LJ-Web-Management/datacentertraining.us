@@ -1,8 +1,8 @@
 {
   "publisher": "Data Center Training (datacentertraining.us)",
-  "last_updated": "2026-10-15",
+  "last_updated": "2026-10-16",
   "license": "Public information; quote with attribution and a link to the source URL.",
-  "count": 44,
+  "count": 45,
   "resources": [
     {
       "source": "Data Center Training (first party)",
@@ -163,6 +163,21 @@
       "audience": [
         "hvac"
       ]
+    },
+    {
+      "type": "blog_post",
+      "title": "VRLA vs Lithium-Ion UPS Battery Maintenance: What Facility Managers Should Compare Before Standardizing",
+      "url": "https://datacentertraining.us/blog/posts/vrla-vs-lithium-ion-ups-battery-maintenance-what-facility-managers-should-compare-before-standardizing.html",
+      "description": "Facility managers are often asked whether a UPS battery room should continue with valve-regulated lead-acid batteries, commonly called VRLA, or move toward…",
+      "topics": [
+        "ups",
+        "battery",
+        "lithium",
+        "maintenance"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-10-16"
     },
     {
       "type": "blog_post",
