@@ -328,5 +328,15 @@
     "date": "2026-10-16",
     "dateDisplay": "October 16, 2026",
     "excerpt": "Facility managers are often asked whether a UPS battery room should continue with valve-regulated lead-acid batteries, commonly called VRLA, or move toward…"
+  },
+  {
+    "title": "Data Center Incident Response Handoffs: What Facilities and NOC Teams Should Confirm in the First 15 Minutes",
+    "slug": "data-center-incident-response-handoffs-what-facilities-and-noc-teams-should-confirm-in-the-first-15-minutes",
+    "seoTitle": "Data Center Incident Response Handoffs",
+    "description": "When a data center alarm appears, the first fifteen minutes often determine whether the team contains a developing problem or spends the next hour reacting…",
+    "image": "assets/img/posts/data-center-incident-response-handoffs-what-facilities-and-noc-teams-should-confirm-in-the-first-15-minutes.jpg",
+    "date": "2026-10-17",
+    "dateDisplay": "October 17, 2026",
+    "excerpt": "When a data center alarm appears, the first fifteen minutes often determine whether the team contains a developing problem or spends the next hour reacting…"
   }
 ]

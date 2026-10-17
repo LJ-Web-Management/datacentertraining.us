@@ -1,8 +1,8 @@
 {
   "publisher": "Data Center Training (datacentertraining.us)",
-  "last_updated": "2026-10-16",
+  "last_updated": "2026-10-17",
   "license": "Public information; quote with attribution and a link to the source URL.",
-  "count": 45,
+  "count": 46,
   "resources": [
     {
       "source": "Data Center Training (first party)",
@@ -163,6 +163,16 @@
       "audience": [
         "hvac"
       ]
+    },
+    {
+      "type": "blog_post",
+      "title": "Data Center Incident Response Handoffs: What Facilities and NOC Teams Should Confirm in the First 15 Minutes",
+      "url": "https://datacentertraining.us/blog/posts/data-center-incident-response-handoffs-what-facilities-and-noc-teams-should-confirm-in-the-first-15-minutes.html",
+      "description": "When a data center alarm appears, the first fifteen minutes often determine whether the team contains a developing problem or spends the next hour reacting…",
+      "topics": [],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-10-17"
     },
     {
       "type": "blog_post",
