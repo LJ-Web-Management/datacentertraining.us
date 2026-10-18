@@ -1,8 +1,8 @@
 {
   "publisher": "Data Center Training (datacentertraining.us)",
-  "last_updated": "2026-10-17",
+  "last_updated": "2026-10-18",
   "license": "Public information; quote with attribution and a link to the source URL.",
-  "count": 46,
+  "count": 47,
   "resources": [
     {
       "source": "Data Center Training (first party)",
@@ -163,6 +163,16 @@
       "audience": [
         "hvac"
       ]
+    },
+    {
+      "type": "blog_post",
+      "title": "Data Center Environmental Compliance Walkthrough: What EHS Managers Should Verify Before an Audit",
+      "url": "https://datacentertraining.us/blog/posts/data-center-environmental-compliance-walkthrough-what-ehs-managers-should-verify-before-an-audit.html",
+      "description": "An environmental audit at a data center is rarely limited to a single permit or a single piece of equipment. The difficult question is whether the site can…",
+      "topics": [],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-10-18"
     },
     {
       "type": "blog_post",
