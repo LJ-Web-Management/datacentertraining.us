@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Center Energy Efficiency and PUE Explained</title>
+<meta name="description" content="What PUE is, how to calculate it with a worked example, where facility energy goes, PUE's limits, WUE and CUE, and a practical checklist to cut overhead.">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+<link rel="canonical" href="https://datacentertraining.us/learn/energy-efficiency-pue.html">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Data Center Energy Efficiency and PUE Explained">
+<meta property="og:description" content="What PUE is, how to calculate it with a worked example, where facility energy goes, PUE's limits, WUE and CUE, and a practical checklist to cut overhead.">
+<meta property="og:url" content="https://datacentertraining.us/learn/energy-efficiency-pue.html">
+<meta property="og:image" content="https://datacentertraining.us/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Data Center Training">
+
+<link rel="stylesheet" href="../css/site.min.css">
+<script src="../js/nav.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Data Center Energy Efficiency and PUE Explained",
+  "description": "What PUE is, how to calculate it with a worked example, where facility energy goes, PUE's limits, WUE and CUE, and a practical checklist to cut overhead.",
+  "url": "https://datacentertraining.us/learn/energy-efficiency-pue.html",
+  "mainEntityOfPage": "https://datacentertraining.us/learn/energy-efficiency-pue.html",
+  "image": "https://datacentertraining.us/images/og-image.jpg",
+  "datePublished": "2026-10-19",
+  "dateModified": "2026-10-19",
+  "inLanguage": "en-US",
+  "author": {"@type": "Organization", "name": "Data Center Training", "url": "https://datacentertraining.us/"},
+  "publisher": {"@type": "EducationalOrganization", "@id": "https://datacentertraining.us/#organization", "name": "Data Center Training", "url": "https://datacentertraining.us/"},
+  "about": ["Power usage effectiveness", "Data center energy efficiency", "Water usage effectiveness", "Carbon usage effectiveness"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://datacentertraining.us/"},
+    {"@type": "ListItem", "position": 2, "name": "Knowledge Center", "item": "https://datacentertraining.us/learn/"},
+    {"@type": "ListItem", "position": 3, "name": "Energy Efficiency and PUE", "item": "https://datacentertraining.us/learn/energy-efficiency-pue.html"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "What is a good PUE for a data center?", "acceptedAnswer": {"@type": "Answer", "text": "There is no single target, because climate, density, redundancy, and measurement method all affect the result. Uptime Institute's 2024 survey put the industry average at 1.56. Newer facilities designed around economization often run well below that, while older enterprise rooms often run higher. The most useful comparison is your own site against its own baseline over time."}},
+    {"@type": "Question", "name": "Can PUE be lower than 1.0?", "acceptedAnswer": {"@type": "Answer", "text": "No. PUE divides total facility energy by IT energy, and total facility energy always includes the IT energy plus some overhead, so the ratio cannot fall below 1.0. Heat reuse does not lower PUE. It is credited through separate metrics such as the energy reuse factor (ERF)."}},
+    {"@type": "Question", "name": "Does a lower PUE always mean a more efficient data center?", "acceptedAnswer": {"@type": "Answer", "text": "Not always. PUE measures infrastructure overhead, not how much useful work the IT equipment does. Removing idle servers saves energy but can raise PUE, and evaporative cooling can lower PUE while increasing water use. Look at PUE together with total energy, IT utilization, WUE, and CUE."}},
+    {"@type": "Question", "name": "How often should PUE be measured?", "acceptedAnswer": {"@type": "Answer", "text": "Measure continuously if your metering allows it, and report annual PUE based on 12 months of energy data so seasonal swings and load changes are captured. Daily or monthly trends are useful for spotting problems, but a single instantaneous reading is only a snapshot."}},
+    {"@type": "Question", "name": "What is the difference between PUE and DCiE?", "acceptedAnswer": {"@type": "Answer", "text": "They express the same relationship in opposite directions. PUE is total facility energy divided by IT energy, so lower is better and 1.0 is ideal. DCiE is IT energy divided by total facility energy, shown as a percentage, so higher is better and 100 percent is ideal. A PUE of 2.0 equals a DCiE of 50 percent."}}
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="glass-nav"></header>
+
+<main id="main">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../">Home</a>
+      <span>&rsaquo;</span>
+      <a href="./">Knowledge Center</a>
+      <span>&rsaquo;</span>
+      <span aria-current="page">Energy Efficiency and PUE</span>
+    </nav>
+  </div>
+
+  <section class="course-hero">
+    <div class="container">
+      <div class="course-hero-eyebrow">Knowledge Center &middot; Efficiency</div>
+      <h1>Data Center Energy Efficiency and PUE Explained</h1>
+      <p class="course-hero-hook">Power usage effectiveness is the number every data center gets judged by. Here is how to calculate it correctly, what moves it, what it hides, and a practical plan for cutting the energy a facility spends on overhead.</p>
+      <div class="course-pills">
+        <span class="course-pill">13 min read</span>
+        <span class="course-pill">Beginner to intermediate</span>
+        <span class="course-pill">Updated October 2026</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="container guide-layout">
+    <aside class="guide-toc" aria-label="On this page">
+      <p class="guide-toc-title">On this page</p>
+      <ol>
+        <li><a href="#what-is-pue">What PUE measures</a></li>
+        <li><a href="#calculate">Worked example</a></li>
+        <li><a href="#dcie">DCiE</a></li>
+        <li><a href="#energy-breakdown">Where the energy goes</a></li>
+        <li><a href="#why-pue-moves">Why PUE changes</a></li>
+        <li><a href="#limitations">Limitations of PUE</a></li>
+        <li><a href="#other-metrics">WUE, CUE, and more</a></li>
+        <li><a href="#checklist">Efficiency checklist</a></li>
+        <li><a href="#industry">Industry context</a></li>
+        <li><a href="#plan">Improvement plan</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ol>
+      <a class="guide-toc-cta" href="../tools/pue-calculator.html"><strong>Run the numbers</strong>Calculate PUE, DCiE, and savings in the PUE Calculator.</a>
+    </aside>
+
+    <article class="guide-body prose">
+      <div class="key-takeaways">
+        <p class="key-takeaways-title">Key takeaways</p>
+        <ul>
+          <li>PUE is total facility energy divided by IT equipment energy. A PUE of 1.5 means 0.5 kWh of overhead for every kWh delivered to IT.</li>
+          <li>Calculate it from energy (kWh) over a full year, not a single power reading, and state where you measured the IT energy.</li>
+          <li>Cooling is usually the largest source of overhead, followed by power conversion losses in UPS systems and transformers.</li>
+          <li>PUE says nothing about how much useful work the IT equipment does, or about water and carbon. Pair it with WUE, CUE, and IT utilization.</li>
+          <li>The biggest wins usually come from airflow management, warmer setpoints within ASHRAE ranges, economization, and right-sized equipment.</li>
+        </ul>
+      </div>
+
+      <h2 id="what-is-pue">What PUE measures</h2>
+      <p>Power usage effectiveness (<a href="glossary.html#term-pue">PUE</a>) is the most widely used data center efficiency metric. It compares the energy the whole facility uses with the energy that reaches the IT equipment:</p>
+      <p><strong>PUE = total facility energy &divide; IT equipment energy</strong></p>
+      <p><strong>Total facility energy</strong> is everything metered at the facility boundary: IT equipment, cooling, power conversion losses, lighting, and other building loads inside that boundary. <strong>IT equipment energy</strong> is what the servers, storage, network gear, and related IT devices consume. A perfect facility, where every kilowatt-hour went to IT, would have a PUE of 1.0. Every real facility is above that.</p>
+      <p>PUE was introduced by The Green Grid, an industry consortium, and is standardized internationally as <strong>ISO/IEC 30134-2</strong>. Both describe measurement categories based on where IT energy is metered: at the UPS output (simplest, but losses in downstream PDUs get counted as IT), at the PDU outputs, or at the IT equipment itself (most accurate). Always state which one you used.</p>
+
+      <h2 id="calculate">How to calculate PUE: a worked example</h2>
+      <p>Suppose a facility meters the following over 12 months:</p>
+      <ul>
+        <li>Total facility energy at the utility meters: <strong>13,140,000 kWh</strong></li>
+        <li>IT equipment energy at the PDU outputs: <strong>8,760,000 kWh</strong> (an average IT load of 1 MW)</li>
+      </ul>
+      <p>PUE = 13,140,000 &divide; 8,760,000 = <strong>1.50</strong>. The facility spends 4,380,000 kWh a year, or 0.5 kWh for every kWh of IT energy, on cooling, power losses, and other overhead.</p>
+      <p>Now suppose an airflow and cooling project brings PUE down to 1.30 at the same IT load. Total energy becomes 8,760,000 &times; 1.30 = 11,388,000 kWh, a saving of 1,752,000 kWh a year. Multiply that by your utility rate to get the annual cost saving. The same math works in reverse: at a PUE of 1.5, every kilowatt of new IT load brings about half a kilowatt of overhead with it.</p>
+      <div class="callout callout-tip">
+        <span class="callout-title">Energy, not power</span>
+        <p>A PUE calculated from one instantaneous kW reading is a snapshot. Annual energy captures every season, load level, and maintenance event. Many sites trend a rolling 12-month PUE alongside daily or monthly values.</p>
+      </div>
+      <div class="inline-cta">
+        <p><strong>Try it with your own numbers.</strong> Get PUE, DCiE, overhead cost, and the savings from hitting a target PUE.</p>
+        <a class="btn btn-primary btn-sm" href="../tools/pue-calculator.html">Open the PUE Calculator</a>
+      </div>
+
+      <h2 id="dcie">DCiE: the same idea, inverted</h2>
+      <p>Data center infrastructure efficiency (DCiE) is the reciprocal of PUE, shown as a percentage: DCiE = IT equipment energy &divide; total facility energy &times; 100, or simply 1 &divide; PUE. A PUE of 1.5 is a DCiE of about 67 percent, meaning two-thirds of the energy reaches IT. A PUE of 2.0 is a DCiE of 50 percent. The Green Grid published DCiE alongside PUE, but PUE became the figure most organizations report.</p>
+
+      <h2 id="energy-breakdown">Where the facility energy goes</h2>
+      <p>Everything that is not IT energy is overhead. In most facilities it falls into four buckets:</p>
+      <div class="table-panel">
+        <table class="data-table">
+          <caption>Sources of facility overhead</caption>
+          <thead><tr><th>Category</th><th>What uses the energy</th><th>Main levers</th></tr></thead>
+          <tbody>
+            <tr><td>Cooling</td><td>Chillers and compressors, CRAH and CRAC fans, pumps, cooling tower fans, humidifiers, CDUs</td><td>Warmer setpoints, containment, economizers, variable speed drives, liquid cooling</td></tr>
+            <tr><td>Power conversion and distribution</td><td>UPS rectifier and inverter losses, transformer losses, conductor losses, battery charging</td><td>Efficient UPS operating modes, well-loaded UPS modules, high-efficiency transformers</td></tr>
+            <tr><td>Lighting</td><td>Data hall, gray space, and exterior lighting</td><td>LED fixtures, occupancy sensors, lights-off operation in data halls</td></tr>
+            <tr><td>Other building loads</td><td>Generator block heaters, security systems, offices and support spaces inside the boundary</td><td>Controls tuning, scheduling, separate metering of non-data center loads</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Cooling is usually the largest piece, which is why most efficiency programs start there; the <a href="data-center-cooling.html">cooling guide</a> explains the equipment involved. Power losses are easy to overlook. A UPS running at a small fraction of its rating often operates lower on its efficiency curve than one loaded closer to its sweet spot, so check the manufacturer's curve for your units.</p>
+
+      <h2 id="why-pue-moves">Why PUE changes</h2>
+      <ul>
+        <li><strong>IT load.</strong> Much of the overhead is fixed. Lighting, block heaters, minimum pump flows, and UPS losses do not shrink in proportion when IT load drops. A half-empty facility almost always has a worse PUE than the same facility full, which is why new sites often post high PUE in their first year.</li>
+        <li><strong>Weather.</strong> Economizers run more hours in cool weather, and chillers work harder in hot, humid weather. PUE typically rises in summer and falls in winter, which is why annual figures matter.</li>
+        <li><strong>Measurement point and boundary.</strong> Measuring IT energy at the UPS output instead of at the IT equipment, or leaving offices or part of the plant out of the boundary, changes the number. Two equally efficient sites can report different PUEs.</li>
+        <li><strong>Redundancy.</strong> In a 2N design, each side normally carries less than half of its capacity, so UPS modules and transformers run at light load, where efficiency is lower.</li>
+        <li><strong>Operations.</strong> Changed setpoints, units left in manual, stuck economizer dampers, or a failed valve can all move PUE without anyone noticing unless someone is trending it.</li>
+      </ul>
+
+      <h2 id="limitations">Limitations of PUE</h2>
+      <p>PUE measures one thing: infrastructure overhead relative to IT energy. Keep its blind spots in mind.</p>
+      <ul>
+        <li><strong>It ignores IT efficiency.</strong> A room full of idle servers can post an excellent PUE while doing little useful work. Decommissioning servers cuts total energy but can raise PUE, because fixed overhead is spread over less IT load.</li>
+        <li><strong>Server fans count as IT.</strong> Push inlet temperatures too high and server fans speed up. PUE improves because facility fans slow down, while total energy may barely change, or even rise.</li>
+        <li><strong>It ignores water and carbon.</strong> Evaporative cooling can lower PUE while using a lot of water, and a low-PUE site on a carbon-intensive grid can still have large emissions.</li>
+        <li><strong>It invites unfair comparisons.</strong> Climate, Tier level, density, measurement category, and boundary all affect the number. Compare a site with itself over time before comparing it with others.</li>
+        <li><strong>Design PUE is not operating PUE.</strong> A design figure is usually calculated at full load in typical weather. Ask for measured annual values.</li>
+      </ul>
+
+      <h2 id="other-metrics">WUE, CUE, and other metrics</h2>
+      <div class="table-panel">
+        <table class="data-table">
+          <caption>Metrics that complement PUE</caption>
+          <thead><tr><th>Metric</th><th>Formula</th><th>What it tells you</th></tr></thead>
+          <tbody>
+            <tr><td>WUE (water usage effectiveness)</td><td>Annual site water use (liters) &divide; IT equipment energy (kWh)</td><td>Water consumed per unit of IT energy, mostly from evaporative cooling</td></tr>
+            <tr><td>CUE (carbon usage effectiveness)</td><td>CO&#8322; emissions from the facility's energy &divide; IT equipment energy</td><td>Emissions per kWh of IT energy, driven by PUE and the grid's carbon intensity</td></tr>
+            <tr><td>ERF (energy reuse factor)</td><td>Energy reused outside the data center &divide; total facility energy</td><td>Credit for heat reuse, which PUE cannot show</td></tr>
+            <tr><td>IT utilization</td><td>Average useful work or CPU utilization of IT equipment</td><td>Whether the IT energy is doing useful work</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>The Green Grid introduced WUE and CUE as companions to PUE, and the ISO/IEC 30134 series standardizes several of these key performance indicators. Reporting PUE, WUE, and CUE together gives a far more honest picture than PUE alone.</p>
+
+      <h2 id="checklist">A practical efficiency checklist</h2>
+      <ul>
+        <li><strong>Meter first.</strong> Verify sub-metering for IT, cooling, and power losses, and document the measurement boundary.</li>
+        <li><strong>Raise supply temperatures</strong> within the ASHRAE recommended inlet range of 18 to 27°C (64.4 to 80.6°F) once airflow is under control, and raise chilled water temperatures with them. Watch rack inlets and server fan behavior as you go.</li>
+        <li><strong>Contain and seal.</strong> Add hot or cold aisle containment, blanking panels in every empty rack unit, and grommets on every cable opening. Then slow fans or turn off surplus cooling units.</li>
+        <li><strong>Economize more hours.</strong> Tune airside or waterside economizer controls, repair dampers and valves, and widen the conditions that allow free cooling.</li>
+        <li><strong>Use variable speed drives and EC fans</strong> on fans, pumps, and cooling towers. Under the fan affinity laws, power varies roughly with the cube of speed, so a fan at 80 percent speed draws about half the power.</li>
+        <li><strong>Right-size the UPS.</strong> Consolidate lightly loaded modules where redundancy allows, evaluate high-efficiency modes as a risk decision, and specify efficient units at replacement.</li>
+        <li><strong>Decommission idle servers.</strong> Find servers that draw power but do no useful work and remove them. Consolidate and virtualize where possible. Total energy falls even if PUE ticks up.</li>
+        <li><strong>Stop units fighting.</strong> Make sure neighboring cooling units are not humidifying and dehumidifying at the same time.</li>
+        <li><strong>Adopt liquid cooling where density justifies it.</strong> Direct-to-chip and rear-door systems can run on warmer water, which cuts fan energy and extends economizer hours.</li>
+        <li><strong>Reuse heat.</strong> Where there is a nearby user, such as a district heating network, waste heat can replace fuel burned elsewhere. Track it with ERF.</li>
+      </ul>
+
+      <h2 id="industry">Industry context</h2>
+      <p>Efficiency matters more as demand grows, and the industry average has stalled.</p>
+      <div class="stat-grid">
+        <div class="stat-tile">
+          <div class="stat-value">1.56</div>
+          <div class="stat-label">Average PUE in Uptime Institute's 2024 survey. Its 2025 survey found little change for six consecutive years.</div>
+          <div class="stat-source">Source: <a href="https://intelligence.uptimeinstitute.com/resource/uptime-institute-global-data-center-survey-2025" target="_blank" rel="noopener noreferrer">Uptime Institute</a></div>
+        </div>
+        <div class="stat-tile">
+          <div class="stat-value">4.4%</div>
+          <div class="stat-label">Share of total U.S. electricity used by data centers in 2023, about 176 TWh.</div>
+          <div class="stat-source">Source: <a href="https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers" target="_blank" rel="noopener noreferrer">U.S. DOE / LBNL</a></div>
+        </div>
+        <div class="stat-tile">
+          <div class="stat-value">6.7% to 12%</div>
+          <div class="stat-label">Projected data center share of U.S. electricity by 2028, about 325 to 580 TWh.</div>
+          <div class="stat-source">Source: <a href="https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers" target="_blank" rel="noopener noreferrer">U.S. DOE / LBNL</a></div>
+        </div>
+      </div>
+      <p>Averages hide a wide spread. Newer, large facilities designed around economization and containment tend to run far lower than older, smaller rooms, which leaves plenty of room for improvement in existing sites. As AI pushes rack densities up, liquid cooling and warmer water temperatures are also changing what good performance looks like. See <a href="ai-data-centers.html">AI Data Centers</a>.</p>
+
+      <h2 id="plan">How to build a PUE improvement plan</h2>
+      <ol class="steps">
+        <li><h3>Define the boundary and metering</h3><p>Decide what counts as total facility energy and where IT energy is measured, write it down, and close metering gaps. Use the same method every time. <a href="../courses/monitoring-automation-bms-systems.html">Monitoring, Automation &amp; BMS Systems</a> covers the data side.</p></li>
+        <li><h3>Establish a baseline</h3><p>Trend at least 12 months of energy data along with IT load and weather, so you can separate real improvement from seasonal swings.</p></li>
+        <li><h3>Find the losses</h3><p>Survey airflow and rack inlet temperatures, look for bypass and recirculation, review UPS loading against efficiency curves, and benchmark the chiller plant in kW per ton. <a href="../courses/dcim-platform-fundamentals.html">DCIM</a> and BMS trend data show where energy goes.</p></li>
+        <li><h3>Take the quick wins</h3><p>Blanking panels, sealed cable openings, corrected tile placement, and tuned setpoints cost little and often pay back quickly.</p></li>
+        <li><h3>Plan capital projects</h3><p>Containment, variable speed drives, economizer upgrades, UPS replacement, and liquid cooling need budgets. Rank them by energy saved, risk, and payback.</p></li>
+        <li><h3>Manage risk and change</h3><p>Every change to a live facility goes through change control and a written method of procedure with rollback steps. Raise setpoints in small steps and watch inlet temperatures.</p></li>
+        <li><h3>Verify and sustain</h3><p>Compare results with the baseline, normalized for IT load and weather. Report PUE with WUE and CUE, and keep trending so gains do not quietly erode.</p></li>
+      </ol>
+
+      <h2 id="courses">Courses that go deeper</h2>
+      <p>Each of these self-paced courses awards a certificate of completion. Start with <a href="../courses/energy-efficiency-pue-optimization.html">Energy Efficiency &amp; PUE Optimization</a>, then add cooling, controls, and planning.</p>
+      <!-- dct:courses energy-efficiency-pue-optimization cooling-systems-design-optimization building-envelope-fundamentals monitoring-automation-bms-systems dcim-platform-fundamentals capacity-planning-forecasting -->
+      <!-- /dct:courses -->
+      <!-- dct:bundle bundle-cooling-efficiency -->
+      <!-- /dct:bundle -->
+
+      <h2 id="faq">Frequently asked questions</h2>
+      <div class="guide-faq">
+        <h3>What is a good PUE for a data center?</h3>
+        <p>There is no single target, because climate, density, redundancy, and measurement method all affect the result. Uptime Institute's 2024 survey put the industry average at 1.56. Newer facilities designed around economization often run well below that, while older enterprise rooms often run higher. The most useful comparison is your own site against its own baseline over time.</p>
+        <h3>Can PUE be lower than 1.0?</h3>
+        <p>No. PUE divides total facility energy by IT energy, and total facility energy always includes the IT energy plus some overhead, so the ratio cannot fall below 1.0. Heat reuse does not lower PUE. It is credited through separate metrics such as the energy reuse factor (ERF).</p>
+        <h3>Does a lower PUE always mean a more efficient data center?</h3>
+        <p>Not always. PUE measures infrastructure overhead, not how much useful work the IT equipment does. Removing idle servers saves energy but can raise PUE, and evaporative cooling can lower PUE while increasing water use. Look at PUE together with total energy, IT utilization, WUE, and CUE.</p>
+        <h3>How often should PUE be measured?</h3>
+        <p>Measure continuously if your metering allows it, and report annual PUE based on 12 months of energy data so seasonal swings and load changes are captured. Daily or monthly trends are useful for spotting problems, but a single instantaneous reading is only a snapshot.</p>
+        <h3>What is the difference between PUE and DCiE?</h3>
+        <p>They express the same relationship in opposite directions. PUE is total facility energy divided by IT energy, so lower is better and 1.0 is ideal. DCiE is IT energy divided by total facility energy, shown as a percentage, so higher is better and 100 percent is ideal. A PUE of 2.0 equals a DCiE of 50 percent.</p>
+      </div>
+
+      <h2 id="related">Keep learning</h2>
+      <div class="card-grid card-grid-2">
+        <a class="topic-card" href="data-center-cooling.html"><span class="topic-card-kicker">Guide</span><h3>How Data Center Cooling Works</h3><p>The equipment behind the biggest slice of facility overhead.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+        <a class="topic-card" href="ai-data-centers.html"><span class="topic-card-kicker">Guide</span><h3>AI Data Centers</h3><p>How GPU density is changing power, cooling, and efficiency.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+        <a class="topic-card" href="../tools/pue-calculator.html"><span class="topic-card-kicker">Tool</span><h3>PUE Calculator</h3><p>PUE, DCiE, overhead cost, and savings from a target PUE.</p><span class="topic-card-cta">Open the tool &rarr;</span></a>
+        <a class="topic-card" href="../careers/data-center-jobs.html#facility-manager"><span class="topic-card-kicker">Careers</span><h3>Data Center Facility Manager</h3><p>The role that owns energy, maintenance, and budgets.</p><span class="topic-card-cta">See the role &rarr;</span></a>
+      </div>
+      <p class="guide-updated">This guide is general educational information, not engineering, legal, or compliance advice. Validate any change to a live facility with qualified engineers and your site's change control process.</p>
+    </article>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta-block">
+        <h2>Cut Energy Without Adding Risk</h2>
+        <p>Our Cooling &amp; Facilities Efficiency courses cover PUE improvement, cooling design, maintenance, and the building envelope.</p>
+        <div class="hero-ctas">
+          <a href="../bundles.html" class="btn glass-chip">See the Cooling &amp; Efficiency Bundle</a>
+          <a href="../courses.html" class="btn glass-chip">Browse All Courses</a>
+          <a href="tel:18664296742" class="btn glass-chip">Call 1-866-429-6742</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="contact"></footer>
+<script src="../js/main.js" defer></script>
+
+</body>
+</html>
