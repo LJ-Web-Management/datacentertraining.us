@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Center Glossary: 150+ Terms Explained</title>
+<meta name="description" content="Plain-English definitions of 150+ data center terms: UPS, PUE, ATS, CRAH, Tier III, arc flash, LOTO, DCIM, colocation, cross-connects, and more.">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+<link rel="canonical" href="https://datacentertraining.us/learn/glossary.html">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Data Center Glossary: 150+ Terms Explained">
+<meta property="og:description" content="Plain-English definitions of 150+ data center terms: UPS, PUE, ATS, CRAH, Tier III, arc flash, LOTO, DCIM, colocation, cross-connects, and more.">
+<meta property="og:url" content="https://datacentertraining.us/learn/glossary.html">
+<meta property="og:image" content="https://datacentertraining.us/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Data Center Training">
+
+<link rel="stylesheet" href="../css/site.min.css">
+<script src="../js/nav.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://datacentertraining.us/"},
+    {"@type": "ListItem", "position": 2, "name": "Knowledge Center", "item": "https://datacentertraining.us/learn/"},
+    {"@type": "ListItem", "position": 3, "name": "Glossary", "item": "https://datacentertraining.us/learn/glossary.html"}
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="glass-nav"></header>
+
+<main id="main">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../">Home</a>
+      <span>&rsaquo;</span>
+      <a href="./">Knowledge Center</a>
+      <span>&rsaquo;</span>
+      <span aria-current="page">Glossary</span>
+    </nav>
+  </div>
+
+  <section class="course-hero">
+    <div class="container">
+      <div class="course-hero-eyebrow">Knowledge Center &middot; Reference</div>
+      <h1>Data Center Glossary: 150+ Terms Explained</h1>
+      <p class="course-hero-hook">Plain-English definitions of the power, cooling, safety, security, networking, monitoring, sustainability, and business terms you will hear on a data center floor. Filter the list or jump to a letter.</p>
+      <div class="course-pills">
+        <span class="course-pill">233 terms</span>
+        <span class="course-pill">Beginner friendly</span>
+        <span class="course-pill">Updated October 2026</span>
+      </div>
+    </div>
+  </section>
+
+<div class="container">
+  <div class="glossary-tools">
+    <div class="catalog-toolbar">
+      <div class="catalog-toolbar-search">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <label class="visually-hidden" for="glossarySearch">Filter terms</label>
+        <input type="search" id="glossarySearch" class="glossary-filter" placeholder="Filter terms, e.g. UPS or PUE" autocomplete="off">
+      </div>
+      <span class="catalog-toolbar-count" id="glossaryCount" aria-live="polite"></span>
+    </div>
+    <nav class="az-nav" aria-label="Jump to letter"><a href="#letter-0-9">0-9</a><a href="#letter-a">A</a><a href="#letter-b">B</a><a href="#letter-c">C</a><a href="#letter-d">D</a><a href="#letter-e">E</a><a href="#letter-f">F</a><a href="#letter-g">G</a><a href="#letter-h">H</a><a href="#letter-i">I</a><a href="#letter-j">J</a><a href="#letter-k">K</a><a href="#letter-l">L</a><a href="#letter-m">M</a><a href="#letter-n">N</a><a href="#letter-o">O</a><a href="#letter-p">P</a><a href="#letter-q">Q</a><a href="#letter-r">R</a><a href="#letter-s">S</a><a href="#letter-t">T</a><a href="#letter-u">U</a><a href="#letter-v">V</a><a href="#letter-w">W</a></nav>
+  </div>
+  <section class="glossary-section" id="letter-0-9" aria-labelledby="letter-0-9-h">
+    <h2 class="glossary-letter" id="letter-0-9-h">0-9</h2>
+    <dl class="glossary-list">
+      <div class="glossary-item" id="term-19-inch-rack"><dt>19-inch rack</dt><dd>The standard equipment rack defined by the EIA-310 standard, in which equipment front panels are 19 inches wide. Equipment height is measured in <a href="#term-rack-unit">rack units</a>.</dd></div>
+      <div class="glossary-item" id="term-2n"><dt>2N</dt><dd>A redundancy design with two complete, independent systems (A and B), each able to carry the full load alone. A failure or maintenance anywhere in one path leaves the other carrying the load. See <a href="data-center-power.html">how data center power works</a>.</dd></div>
+      <div class="glossary-item" id="term-2n-plus-1"><dt>2N+1</dt><dd>A <a href="#term-2n">2N</a> design with an additional spare unit, so the facility keeps full redundancy even while one component is out of service.</dd></div>
+    </dl>
+  </section>
+  <section class="glossary-section" id="letter-a" aria-labelledby="letter-a-h">
+    <h2 class="glossary-letter" id="letter-a-h">A</h2>
+    <dl class="glossary-list">
+      <div class="glossary-item" id="term-ab-power-feeds"><dt>A/B power feeds</dt><dd>Two independent power paths delivered to each rack, usually from separate UPS systems. <a href="#term-dual-corded">Dual-corded</a> equipment plugs into both, so each feed must be loaded lightly enough to carry the full load alone if the other is lost.</dd></div>
+      <div class="glossary-item" id="term-access-control"><dt>Access control</dt><dd>The systems and procedures that decide who can enter which spaces, and when. In data centers it usually layers badges, PINs, or biometrics with zones, logs, and escorts. See <a href="data-center-security-compliance.html">security and compliance</a>.</dd></div>
+      <div class="glossary-item" id="term-adiabatic-cooling"><dt>Adiabatic cooling</dt><dd>Lowering air temperature by evaporating water into it. Data centers often use it to pre-cool air entering dry coolers or condensers on hot days, trading some water use for lower energy use.</dd></div>
+      <div class="glossary-item" id="term-ahj"><dt>AHJ (Authority Having Jurisdiction)</dt><dd>The office or official responsible for enforcing a code and approving equipment, installations, or procedures, such as a building official, electrical inspector, or fire marshal. Their interpretation governs on site. See the <a href="data-center-standards.html">standards guide</a>.</dd></div>
+      <div class="glossary-item" id="term-air-side-economizer"><dt>Air-side economizer</dt><dd>A cooling mode that brings filtered outside air into the facility when outdoor conditions are cool and dry enough, reducing or replacing mechanical cooling. It requires careful control of humidity and air quality.</dd></div>
+      <div class="glossary-item" id="term-aisle-containment"><dt>Aisle containment</dt><dd>Doors, roof panels, or curtains that enclose either the cold aisle or the hot aisle so supply and exhaust air do not mix. Containment improves cooling efficiency and lets supply air temperatures rise.</dd></div>
+      <div class="glossary-item" id="term-anti-passback"><dt>Anti-passback</dt><dd>An access control rule that rejects a badge used to enter an area again before it has been used to exit. It stops one badge from being passed back to let a second person in.</dd></div>
+      <div class="glossary-item" id="term-arc-flash"><dt>Arc flash</dt><dd>A release of energy from an electric arc through air between conductors or to ground. It produces intense heat, light, pressure, and molten metal, and can cause severe burns or death. See <a href="data-center-safety.html">data center safety</a> and <a href="../courses/data-center-arc-flash-safety.html">Data Center Arc Flash Safety</a>.</dd></div>
+      <div class="glossary-item" id="term-arc-flash-boundary"><dt>Arc flash boundary</dt><dd>The distance from a potential arc source at which incident energy equals 1.2 cal/cm&sup2;, the level associated with the onset of a second-degree burn on bare skin. Anyone inside it needs arc-rated PPE.</dd></div>
+      <div class="glossary-item" id="term-arc-rated-clothing"><dt>Arc-rated (AR) clothing</dt><dd>Clothing and PPE tested to resist ignition and limit heat transfer from an arc flash, labeled with an arc rating in cal/cm&sup2;. The rating must meet or exceed the incident energy for the task.</dd></div>
+      <div class="glossary-item" id="term-ashrae"><dt>ASHRAE</dt><dd>A professional society for heating, ventilation, air conditioning, and refrigeration. Its Technical Committee 9.9 publishes the thermal guidelines most data centers follow, with a recommended inlet range of 18-27 &deg;C (64.4-80.6 &deg;F) for most equipment classes.</dd></div>
+      <div class="glossary-item" id="term-aspirating-smoke-detection"><dt>Aspirating smoke detection</dt><dd>A detection system that continuously draws air samples through a pipe network to a highly sensitive detector, giving very early warning of smoke. VESDA is a widely known brand.</dd></div>
+      <div class="glossary-item" id="term-ats"><dt>ATS (Automatic Transfer Switch)</dt><dd>A switch that automatically moves electrical load from the normal source, usually the utility, to an alternate source, usually a generator, when the normal source fails, and back when it returns. Most transfers involve a brief interruption that the UPS covers.</dd></div>
+      <div class="glossary-item" id="term-availability"><dt>Availability</dt><dd>The percentage of time a system is running and able to serve its load, often expressed in &ldquo;nines,&rdquo; such as 99.99%. The <a href="../tools/uptime-calculator.html">uptime calculator</a> converts availability into downtime.</dd></div>
+      <div class="glossary-item" id="term-available-fault-current"><dt>Available fault current</dt><dd>The maximum current that could flow at a given point during a short circuit. Equipment must be rated to withstand and interrupt it, and it is a key input to <a href="#term-arc-flash">arc flash</a> studies.</dd></div>
+    </dl>
+  </section>
+  <section class="glossary-section" id="letter-b" aria-labelledby="letter-b-h">
+    <h2 class="glossary-letter" id="letter-b-h">B</h2>
+    <dl class="glossary-list">
+      <div class="glossary-item" id="term-bacnet"><dt>BACnet</dt><dd>A standard communication protocol for building automation and control networks, published as ASHRAE Standard 135. Many BMS controllers, chillers, and air handlers use it.</dd></div>
+      <div class="glossary-item" id="term-battery-string"><dt>Battery string</dt><dd>A set of battery cells or blocks connected in series to reach the DC voltage a UPS needs. Large UPS systems often use several strings in parallel for capacity and redundancy.</dd></div>
+      <div class="glossary-item" id="term-bess"><dt>BESS (Battery Energy Storage System)</dt><dd>A large battery installation that stores energy for later use, such as reducing peak demand, supporting the grid, or backing up a site. NFPA 855 covers stationary energy storage installations.</dd></div>
+      <div class="glossary-item" id="term-bicsi"><dt>BICSI</dt><dd>A professional association for information and communications technology infrastructure. It publishes ANSI/BICSI 002, a data center design standard, and offers its own credentials, such as the RCDD.</dd></div>
+      <div class="glossary-item" id="term-biometric-authentication"><dt>Biometric authentication</dt><dd>Verifying identity with a physical trait, such as a fingerprint, iris, hand geometry, or face. Often combined with a badge for two-factor entry into secure areas.</dd></div>
+      <div class="glossary-item" id="term-blanking-panel"><dt>Blanking panel</dt><dd>A plate that fills unused rack spaces so hot exhaust air cannot recirculate to the front of the rack. One of the cheapest and most effective airflow fixes.</dd></div>
+      <div class="glossary-item" id="term-bms"><dt>BMS (Building Management System)</dt><dd>The control and monitoring system for mechanical and building equipment such as chillers, air handlers, pumps, and lighting. Also called a building automation system (BAS). It trends data, raises alarms, and runs control sequences. See <a href="../courses/monitoring-automation-bms-systems.html">Monitoring, Automation &amp; BMS Systems</a>.</dd></div>
+      <div class="glossary-item" id="term-branch-circuit"><dt>Branch circuit</dt><dd>The final circuit between the last overcurrent device and the outlets or equipment it serves, such as the circuit feeding a rack PDU.</dd></div>
+      <div class="glossary-item" id="term-btu"><dt>BTU (British Thermal Unit)</dt><dd>The heat needed to raise one pound of water by one degree Fahrenheit. Cooling loads are often stated in BTU per hour, and 1 kW of IT load produces about 3,412 BTU/hr of heat.</dd></div>
+      <div class="glossary-item" id="term-build-to-suit"><dt>Build-to-suit</dt><dd>A data center developed to a specific tenant's requirements, usually under a long-term lease. Common for large cloud and AI deployments.</dd></div>
+      <div class="glossary-item" id="term-busway"><dt>Busway</dt><dd>A prefabricated enclosure of copper or aluminum bars that distributes power, often overhead, with plug-in tap-off boxes feeding racks. It is easier to reconfigure than individual cable runs.</dd></div>
+      <div class="glossary-item" id="term-bypass-airflow"><dt>Bypass airflow</dt><dd>Cool supply air that returns to the cooling units without passing through IT equipment, for example through cable cutouts or misplaced perforated tiles. It wastes fan energy and cooling capacity.</dd></div>
+    </dl>
+  </section>
+  <section class="glossary-section" id="letter-c" aria-labelledby="letter-c-h">
+    <h2 class="glossary-letter" id="letter-c-h">C</h2>
+    <dl class="glossary-list">
+      <div class="glossary-item" id="term-cable-tray"><dt>Cable tray</dt><dd>An open support system, such as a ladder or wire basket, that carries power or data cables overhead or under a raised floor.</dd></div>
+      <div class="glossary-item" id="term-cage"><dt>Cage</dt><dd>A locked, mesh-enclosed area inside a colocation data hall that holds one customer's racks.</dd></div>
+      <div class="glossary-item" id="term-capacity-planning"><dt>Capacity planning</dt><dd>Forecasting demand for power, cooling, space, and network so capacity is added before it runs out, without overbuilding. See <a href="../courses/capacity-planning-forecasting.html">Capacity Planning &amp; Forecasting</a>.</dd></div>
+      <div class="glossary-item" id="term-carrier-neutral"><dt>Carrier-neutral</dt><dd>A data center that lets customers connect to many telecommunications carriers and network providers, rather than only the provider that owns the building.</dd></div>
+      <div class="glossary-item" id="term-cctv"><dt>CCTV</dt><dd>Closed-circuit television: the cameras and recording systems that monitor perimeters, entrances, and data halls. Video retention periods are often set by contracts or audit requirements.</dd></div>
+      <div class="glossary-item" id="term-cdu"><dt>CDU (Coolant Distribution Unit)</dt><dd>Equipment that transfers heat from a liquid-cooled rack loop to the facility water system using a heat exchanger, pumps, filters, and controls. Central to direct-to-chip cooling. See <a href="ai-data-centers.html">AI data centers</a>.</dd></div>
+      <div class="glossary-item" id="term-cfd"><dt>CFD (Computational Fluid Dynamics)</dt><dd>Computer modeling of airflow and temperature in a data hall. Used to test layouts, find hot spots, and check what happens when a cooling unit fails.</dd></div>
+      <div class="glossary-item" id="term-chain-of-custody"><dt>Chain of custody</dt><dd>A documented record of who handled a piece of equipment or media, such as a failed drive, from removal through destruction. Many security frameworks and customer contracts require it.</dd></div>
+      <div class="glossary-item" id="term-change-management"><dt>Change management</dt><dd>The process for proposing, reviewing, approving, scheduling, and documenting changes to critical systems, so risky work happens deliberately and with a back-out plan. See <a href="data-center-operations.html">operations and maintenance</a>.</dd></div>
+      <div class="glossary-item" id="term-chilled-water"><dt>Chilled water</dt><dd>Water cooled by chillers and pumped to CRAHs, air handlers, or coolant distribution units to absorb heat. Warmer chilled water temperatures improve chiller efficiency and increase economizer hours.</dd></div>
+      <div class="glossary-item" id="term-chiller"><dt>Chiller</dt><dd>A machine that removes heat from water using a refrigeration cycle. Air-cooled chillers reject heat to outdoor air; water-cooled chillers reject it to condenser water and cooling towers.</dd></div>
+      <div class="glossary-item" id="term-circuit-breaker"><dt>Circuit breaker</dt><dd>A switching device that opens a circuit automatically on overload or short circuit and can also be operated manually. Large breakers in switchgear are controlled by trip units or protective relays.</dd></div>
+      <div class="glossary-item" id="term-clean-agent"><dt>Clean agent</dt><dd>An electrically nonconductive fire suppressant that leaves no residue, such as HFC-227ea (sold as FM-200), FK-5-1-12 (sold as Novec 1230 and others), or inert gases such as IG-541. NFPA 2001 covers these systems. See <a href="../courses/data-center-fire-suppression-safety.html">Fire Suppression System Safety</a>.</dd></div>
+      <div class="glossary-item" id="term-cmms"><dt>CMMS (Computerized Maintenance Management System)</dt><dd>Software that schedules preventive maintenance and tracks work orders, assets, spare parts, and maintenance history.</dd></div>
+      <div class="glossary-item" id="term-cold-aisle"><dt>Cold aisle</dt><dd>The aisle where rack fronts face each other and cool supply air is delivered to equipment inlets.</dd></div>
+      <div class="glossary-item" id="term-cold-plate"><dt>Cold plate</dt><dd>A metal plate with internal channels mounted directly on a processor or GPU. Coolant flowing through it carries the heat away. The core component of <a href="#term-direct-to-chip-cooling">direct-to-chip cooling</a>.</dd></div>
+      <div class="glossary-item" id="term-colocation"><dt>Colocation</dt><dd>A business model in which a provider supplies space, power, cooling, security, and connectivity, and customers bring their own IT equipment. Sold by the rack, cage, suite, or hall.</dd></div>
+      <div class="glossary-item" id="term-commissioning"><dt>Commissioning</dt><dd>A structured process that verifies systems are installed and perform as designed, commonly organized in levels from factory witness testing (L1) through integrated systems testing (L5). See <a href="data-center-commissioning.html">data center commissioning</a>.</dd></div>
+      <div class="glossary-item" id="term-concurrent-maintainability"><dt>Concurrent maintainability</dt><dd>The ability to take any component or distribution path out of service for planned maintenance without affecting the IT load. The defining feature of a <a href="#term-tier-iii">Tier III</a> facility.</dd></div>
+      <div class="glossary-item" id="term-condenser-water"><dt>Condenser water</dt><dd>The water loop that carries heat from water-cooled chillers to cooling towers, where it is rejected to the atmosphere.</dd></div>
+      <div class="glossary-item" id="term-confined-space"><dt>Confined space</dt><dd>A space large enough to enter, with limited entry or exit, not designed for continuous occupancy. OSHA 29 CFR 1910.146 requires a permit program for confined spaces with serious hazards. See <a href="../courses/data-center-raised-floor-confined-space.html">Raised Floor and Confined Space Awareness</a>.</dd></div>
+      <div class="glossary-item" id="term-cooling-tower"><dt>Cooling tower</dt><dd>An outdoor heat rejection device that cools condenser water by evaporating part of it. It consumes water and needs water treatment, including Legionella control.</dd></div>
+      <div class="glossary-item" id="term-crac"><dt>CRAC (Computer Room Air Conditioner)</dt><dd>A computer room cooling unit with its own refrigeration compressor, typically a direct expansion (DX) system. Compare with a <a href="#term-crah">CRAH</a>, which uses chilled water.</dd></div>
+      <div class="glossary-item" id="term-crah"><dt>CRAH (Computer Room Air Handler)</dt><dd>A cooling unit that uses fans and a chilled water coil to cool data hall air. It has no compressor; the chiller plant does the refrigeration. See <a href="data-center-cooling.html">how data center cooling works</a>.</dd></div>
+      <div class="glossary-item" id="term-critical-load"><dt>Critical load</dt><dd>The equipment that must stay powered without interruption, usually the IT equipment on UPS power plus any critical mechanical loads.</dd></div>
+      <div class="glossary-item" id="term-cross-connect"><dt>Cross-connect</dt><dd>A physical cable connection between two parties inside a data center, such as between a customer's cage and a carrier. Colocation providers usually charge a monthly fee for each one.</dd></div>
+      <div class="glossary-item" id="term-cue"><dt>CUE (Carbon Usage Effectiveness)</dt><dd>A Green Grid metric of the carbon emissions caused by a data center's energy use, divided by IT equipment energy, usually expressed in kg CO2e per kWh.</dd></div>
+    </dl>
+  </section>
+  <section class="glossary-section" id="letter-d" aria-labelledby="letter-d-h">
+    <h2 class="glossary-letter" id="letter-d-h">D</h2>
+    <dl class="glossary-list">
+      <div class="glossary-item" id="term-dark-fiber"><dt>Dark fiber</dt><dd>Installed optical fiber that is not lit by a provider's equipment. The customer leases it and connects its own optics, controlling capacity end to end.</dd></div>
+      <div class="glossary-item" id="term-data-hall"><dt>Data hall</dt><dd>A room in a data center that holds IT racks. Also called a computer room or <a href="#term-white-space">white space</a>.</dd></div>
+      <div class="glossary-item" id="term-day-tank"><dt>Day tank</dt><dd>A small fuel tank at or in a generator that feeds the engine directly and is refilled from larger bulk storage tanks.</dd></div>
+      <div class="glossary-item" id="term-dcie"><dt>DCiE (Data Center infrastructure Efficiency)</dt><dd>IT equipment energy divided by total facility energy, expressed as a percentage. It is the inverse of <a href="#term-pue">PUE</a>, so a PUE of 1.5 equals a DCiE of about 67%.</dd></div>
+      <div class="glossary-item" id="term-dcim"><dt>DCIM (Data Center Infrastructure Management)</dt><dd>Software that tracks and monitors physical infrastructure: assets, rack space, power and cooling capacity, environmental sensors, and connectivity. It bridges IT and facilities data. See <a href="../courses/dcim-platform-fundamentals.html">DCIM Platform Fundamentals</a>.</dd></div>
+      <div class="glossary-item" id="term-defense-in-depth"><dt>Defense in depth</dt><dd>Layering security controls, such as perimeter fencing, building entry, mantraps, data hall access, and locked racks, so one failure does not expose critical assets.</dd></div>
+      <div class="glossary-item" id="term-delta-t"><dt>Delta T</dt><dd>A temperature difference, such as between supply and return air or water. A healthy delta T across IT equipment and coils shows air or water is being used efficiently.</dd></div>
+      <div class="glossary-item" id="term-demarc"><dt>Demarc (demarcation point)</dt><dd>The point where a carrier's network responsibility ends and the customer's or building's begins.</dd></div>
+      <div class="glossary-item" id="term-dew-point"><dt>Dew point</dt><dd>The temperature at which water vapor in air condenses. ASHRAE expresses data center humidity limits partly in dew point, and surfaces colder than it will collect condensation.</dd></div>
+      <div class="glossary-item" id="term-direct-to-chip-cooling"><dt>Direct-to-chip cooling</dt><dd>Liquid cooling that pumps coolant through cold plates mounted on processors and GPUs. It removes most of a server's heat at the source and is the most common approach for high-density AI racks.</dd></div>
+      <div class="glossary-item" id="term-disaster-recovery"><dt>Disaster recovery (DR)</dt><dd>The plans, systems, and procedures for restoring IT services after a major disruption, measured against <a href="#term-rto">RTO</a> and <a href="#term-rpo">RPO</a> targets. See <a href="../courses/disaster-recovery-business-continuity.html">Disaster Recovery &amp; Business Continuity</a>.</dd></div>
+      <div class="glossary-item" id="term-distributed-redundancy"><dt>Distributed redundancy</dt><dd>A design that spreads load across three or more power systems so any one can fail and the others absorb its share, without building a full 2N. Often written like 4N/3: four systems sharing a load that three could carry.</dd></div>
+      <div class="glossary-item" id="term-diverse-routing"><dt>Diverse routing</dt><dd>Running redundant fiber or power paths along physically separate routes so a single cut or event cannot take out both.</dd></div>
+      <div class="glossary-item" id="term-double-conversion"><dt>Double conversion</dt><dd>The online UPS topology that converts incoming AC to DC and back to clean AC continuously, so the load sees no transfer when utility power fails. The standard for data center critical loads.</dd></div>
+      <div class="glossary-item" id="term-dry-cooler"><dt>Dry cooler</dt><dd>An outdoor fan-and-coil heat exchanger that rejects heat from a water or glycol loop to the air without evaporating water. It saves water, but its capacity drops on hot days.</dd></div>
+      <div class="glossary-item" id="term-dual-corded"><dt>Dual-corded equipment</dt><dd>IT equipment with two power supplies, connected to separate A and B feeds so it keeps running if one feed fails.</dd></div>
+      <div class="glossary-item" id="term-dx"><dt>DX (Direct Expansion)</dt><dd>A cooling system in which refrigerant evaporates directly in the air-cooling coil, as in most <a href="#term-crac">CRAC</a> units.</dd></div>
+    </dl>
+  </section>
+  <section class="glossary-section" id="letter-e" aria-labelledby="letter-e-h">
+    <h2 class="glossary-letter" id="letter-e-h">E</h2>
+    <dl class="glossary-list">
+      <div class="glossary-item" id="term-economizer"><dt>Economizer</dt><dd>Any cooling mode that uses cool outdoor air or water to reduce or replace mechanical refrigeration. See <a href="#term-air-side-economizer">air-side</a> and <a href="#term-water-side-economizer">water-side</a> economizers.</dd></div>
+      <div class="glossary-item" id="term-edge-data-center"><dt>Edge data center</dt><dd>A smaller facility placed close to users or devices to reduce latency, often unstaffed and monitored remotely.</dd></div>
+      <div class="glossary-item" id="term-electrically-safe-work-condition"><dt>Electrically safe work condition (ESWC)</dt><dd>A state in which equipment has been disconnected, locked and tagged out, tested for absence of voltage, and grounded where needed. NFPA 70E makes establishing it the preferred way to work on electrical equipment.</dd></div>
+      <div class="glossary-item" id="term-energized-work-permit"><dt>Energized electrical work permit</dt><dd>A written authorization required under NFPA 70E before justified work on energized equipment. It documents why the work cannot be de-energized, the hazards, the boundaries, and the PPE.</dd></div>
+      <div class="glossary-item" id="term-entrance-room"><dt>Entrance room</dt><dd>The space where carrier and campus cabling enters the data center and connects to the internal cabling system, as defined in ANSI/TIA-942.</dd></div>
+      <div class="glossary-item" id="term-eop"><dt>EOP (Emergency Operating Procedure)</dt><dd>A pre-written procedure for responding to a specific failure or emergency, such as a UPS fault, chiller trip, or utility outage, so technicians act quickly and correctly under pressure.</dd></div>
+      <div class="glossary-item" id="term-epa-section-608"><dt>EPA Section 608</dt><dd>The Clean Air Act section under which EPA regulates refrigerant handling. Technicians who open refrigerant systems need Section 608 certification from an EPA-approved certifying program. See <a href="../courses/data-center-cooling-refrigerant-safety.html">Cooling System and Refrigerant Safety</a>.</dd></div>
+      <div class="glossary-item" id="term-epms"><dt>EPMS (Electrical Power Monitoring System)</dt><dd>Meters and software that monitor power quality, loads, breaker status, and events across switchgear, UPS systems, and distribution equipment.</dd></div>
+      <div class="glossary-item" id="term-epo"><dt>EPO (Emergency Power Off)</dt><dd>A system that lets someone quickly shut off power to IT equipment in an emergency, usually through guarded buttons near room exits. Accidental activation is a known cause of outages. See <a href="../courses/data-center-epo-procedures.html">EPO Procedures</a>.</dd></div>
+      <div class="glossary-item" id="term-ere"><dt>ERE (Energy Reuse Effectiveness)</dt><dd>A Green Grid metric that credits energy reused outside the data center, such as waste heat sent to a heating network. It equals total facility energy minus reused energy, divided by IT energy.</dd></div>
+      <div class="glossary-item" id="term-esd"><dt>ESD (Electrostatic Discharge)</dt><dd>A sudden flow of static electricity that can damage electronic components. Wrist straps, grounded work surfaces, and humidity control reduce the risk.</dd></div>
+      <div class="glossary-item" id="term-evaporative-cooling"><dt>Evaporative cooling</dt><dd>Cooling by evaporating water into air, either directly into the supply air or indirectly through a heat exchanger. It saves energy but consumes water.</dd></div>
+    </dl>
+  </section>
+  <section class="glossary-section" id="letter-f" aria-labelledby="letter-f-h">
+    <h2 class="glossary-letter" id="letter-f-h">F</h2>
+    <dl class="glossary-list">
+      <div class="glossary-item" id="term-facility-rounds"><dt>Facility rounds</dt><dd>Scheduled walk-throughs in which technicians check and record equipment readings, alarms, leaks, and conditions across the facility.</dd></div>
+      <div class="glossary-item" id="term-fws"><dt>Facility water system (FWS)</dt><dd>In liquid cooling, the building-side water loop served by chillers, cooling towers, or dry coolers. A CDU connects it to the <a href="#term-tcs">technology cooling system</a>.</dd></div>
+      <div class="glossary-item" id="term-fault-tolerance"><dt>Fault tolerance</dt><dd>The ability to withstand any single unplanned failure of a component or path without affecting the IT load. The defining feature of a <a href="#term-tier-iv">Tier IV</a> facility.</dd></div>
+      <div class="glossary-item" id="term-firestop"><dt>Firestop</dt><dd>Listed materials and systems that seal openings where cables or pipes pass through fire-rated walls and floors, preserving the fire rating.</dd></div>
+      <div class="glossary-item" id="term-fk-5-1-12"><dt>FK-5-1-12</dt><dd>A clean agent fire suppressant, sold under names including Novec 1230, stored as a liquid and discharged as a gas. Systems are designed under NFPA 2001.</dd></div>
+      <div class="glossary-item" id="term-flywheel-ups"><dt>Flywheel UPS</dt><dd>A UPS that stores energy in a spinning rotor instead of batteries. It provides ride-through for seconds rather than minutes, so generators must start quickly.</dd></div>
+      <div class="glossary-item" id="term-fm-200"><dt>FM-200 (HFC-227ea)</dt><dd>A widely used clean agent fire suppressant, heptafluoropropane. As a hydrofluorocarbon, it is subject to HFC phase-down rules.</dd></div>
+      <div class="glossary-item" id="term-free-cooling"><dt>Free cooling</dt><dd>Cooling with little or no compressor energy by using cool outdoor air or water, typically through an <a href="#term-economizer">economizer</a>.</dd></div>
+      <div class="glossary-item" id="term-fuel-polishing"><dt>Fuel polishing</dt><dd>Filtering and conditioning stored diesel fuel to remove water, sediment, and microbial growth so generators get clean fuel.</dd></div>
+    </dl>
+  </section>
+  <section class="glossary-section" id="letter-g" aria-labelledby="letter-g-h">
+    <h2 class="glossary-letter" id="letter-g-h">G</h2>
+    <dl class="glossary-list">
+      <div class="glossary-item" id="term-generator"><dt>Generator (standby)</dt><dd>An engine-driven alternator, usually diesel, that carries the facility through utility outages after the UPS bridges the start-up. NFPA 110 covers testing and maintenance. See <a href="../courses/generator-fundamentals.html">Generator Fundamentals</a>.</dd></div>
+      <div class="glossary-item" id="term-glycol"><dt>Glycol</dt><dd>Ethylene or propylene glycol mixed with water to lower the freezing point of cooling loops exposed to cold weather. It reduces heat transfer somewhat and must be tested and maintained.</dd></div>
+      <div class="glossary-item" id="term-gpu"><dt>GPU (Graphics Processing Unit)</dt><dd>A processor with thousands of parallel cores, now the main engine of AI training and inference. GPU servers draw far more power per rack than traditional servers. See <a href="ai-data-centers.html">AI data centers</a>.</dd></div>
+      <div class="glossary-item" id="term-gray-space"><dt>Gray space</dt><dd>The back-of-house areas that hold support infrastructure, such as electrical rooms, UPS and battery rooms, mechanical plants, and generator yards.</dd></div>
+      <div class="glossary-item" id="term-grounding-and-bonding"><dt>Grounding and bonding</dt><dd>Grounding connects electrical systems to the earth; bonding connects metal parts so they stay at the same potential. Together they let protective devices clear faults and reduce shock hazards.</dd></div>
+      <div class="glossary-item" id="term-gwp"><dt>GWP (Global Warming Potential)</dt><dd>A measure of how much heat a gas traps compared with carbon dioxide over a set period. Refrigerant and fire suppressant choices increasingly hinge on low GWP.</dd></div>
+    </dl>
+  </section>
+  <section class="glossary-section" id="letter-h" aria-labelledby="letter-h-h">
+    <h2 class="glossary-letter" id="letter-h-h">H</h2>
+    <dl class="glossary-list">
+      <div class="glossary-item" id="term-harmonics"><dt>Harmonics</dt><dd>Currents or voltages at multiples of the fundamental frequency, created by non-linear loads such as power supplies and drives. They add heat to transformers and neutral conductors and can upset sensitive equipment.</dd></div>
+      <div class="glossary-item" id="term-hazcom"><dt>HazCom (Hazard Communication)</dt><dd>The OSHA standard, 29 CFR 1910.1200, that requires labels, Safety Data Sheets, and training for hazardous chemicals such as battery electrolyte, diesel fuel, refrigerants, and coolants.</dd></div>
+      <div class="glossary-item" id="term-hda"><dt>HDA (Horizontal Distribution Area)</dt><dd>In ANSI/TIA-942, the space where horizontal cabling to equipment racks is distributed, often serving a row or zone of the data hall.</dd></div>
+      <div class="glossary-item" id="term-heat-reuse"><dt>Heat reuse</dt><dd>Capturing waste heat from a data center for another purpose, such as heating nearby buildings. Liquid cooling makes it easier because heat leaves at higher temperatures.</dd></div>
+      <div class="glossary-item" id="term-high-density"><dt>High density</dt><dd>Racks or rooms with power and heat loads above what conventional air cooling handles easily. Traditional enterprise racks commonly draw single-digit kilowatts; AI training racks commonly draw tens of kilowatts.</dd></div>
+      <div class="glossary-item" id="term-hot-aisle"><dt>Hot aisle</dt><dd>The aisle where rack backs face each other and hot exhaust air collects before returning to the cooling units.</dd></div>
+      <div class="glossary-item" id="term-hot-spot"><dt>Hot spot</dt><dd>A location where equipment inlet temperatures run above the intended range, often caused by recirculation, blocked airflow, or a local overload.</dd></div>
+      <div class="glossary-item" id="term-hot-work-permit"><dt>Hot work permit</dt><dd>Authorization required before welding, cutting, brazing, or other spark-producing work, with precautions such as a fire watch and coordination with the fire alarm and suppression systems.</dd></div>
+      <div class="glossary-item" id="term-hvac"><dt>HVAC</dt><dd>Heating, ventilation, and air conditioning: the mechanical systems that control temperature, humidity, and air quality.</dd></div>
+      <div class="glossary-item" id="term-hyperscale"><dt>Hyperscale data center</dt><dd>A very large facility or campus built and operated by a major cloud or internet company to run its own services at massive scale.</dd></div>
+    </dl>
+  </section>
+  <section class="glossary-section" id="letter-i" aria-labelledby="letter-i-h">
+    <h2 class="glossary-letter" id="letter-i-h">I</h2>
+    <dl class="glossary-list">
+      <div class="glossary-item" id="term-immersion-cooling"><dt>Immersion cooling</dt><dd>Cooling servers by submerging them in a dielectric fluid. In single-phase systems the fluid stays liquid; in two-phase systems it boils off hot components and condenses on a coil.</dd></div>
+      <div class="glossary-item" id="term-incident-energy"><dt>Incident energy</dt><dd>The thermal energy an arc flash could deliver to a surface at a given working distance, measured in cal/cm&sup2;. Arc flash studies calculate it, commonly with the IEEE 1584 method, to select PPE.</dd></div>
+      <div class="glossary-item" id="term-incident-management"><dt>Incident management</dt><dd>Detecting, responding to, escalating, and resolving events that affect or threaten operations, followed by documentation and <a href="#term-root-cause-analysis">root cause analysis</a>. See <a href="../courses/incident-response-troubleshooting.html">Incident Response &amp; Troubleshooting</a>.</dd></div>
+      <div class="glossary-item" id="term-inert-gas-agent"><dt>Inert gas agent</dt><dd>A clean agent made of naturally occurring gases, such as IG-541 (Inergen), IG-55, or IG-100 (nitrogen), that suppresses fire by lowering oxygen concentration. Protected rooms need pressure relief venting and clear evacuation procedures.</dd></div>
+      <div class="glossary-item" id="term-infrared-thermography"><dt>Infrared thermography</dt><dd>Using a thermal camera to find hot connections, overloaded circuits, and failing components without contact. A routine part of electrical maintenance.</dd></div>
+      <div class="glossary-item" id="term-in-row-cooling"><dt>In-row cooling</dt><dd>Cooling units placed between racks within a row, close to the heat source, rather than at the room perimeter.</dd></div>
+      <div class="glossary-item" id="term-internet-exchange"><dt>Internet exchange (IX)</dt><dd>A shared switching platform where networks connect and exchange traffic directly with each other, often hosted in carrier-neutral data centers.</dd></div>
+      <div class="glossary-item" id="term-inverter"><dt>Inverter</dt><dd>The UPS stage that converts DC power from the rectifier or batteries into conditioned AC power for the load.</dd></div>
+      <div class="glossary-item" id="term-iso-27001"><dt>ISO/IEC 27001</dt><dd>The international standard for information security management systems. Annex A of the 2022 edition includes physical security controls, and certification is issued by accredited certification bodies.</dd></div>
+      <div class="glossary-item" id="term-ist"><dt>IST (Integrated Systems Testing)</dt><dd>The final level of commissioning, which tests all systems together under realistic conditions, including utility and component failures, often with load banks in place of IT equipment.</dd></div>
+      <div class="glossary-item" id="term-it-load"><dt>IT load</dt><dd>The power drawn by IT equipment such as servers, storage, and network gear. It is the denominator in <a href="#term-pue">PUE</a>.</dd></div>
+    </dl>
+  </section>
+  <section class="glossary-section" id="letter-j" aria-labelledby="letter-j-h">
+    <h2 class="glossary-letter" id="letter-j-h">J</h2>
+    <dl class="glossary-list">
+      <div class="glossary-item" id="term-jha"><dt>JHA (Job Hazard Analysis)</dt><dd>A step-by-step review of a task to identify its hazards and controls before work begins. Also called a job safety analysis (JSA).</dd></div>
+    </dl>
+  </section>
+  <section class="glossary-section" id="letter-k" aria-labelledby="letter-k-h">
+    <h2 class="glossary-letter" id="letter-k-h">K</h2>
+    <dl class="glossary-list">
+      <div class="glossary-item" id="term-kva"><dt>kVA (kilovolt-ampere)</dt><dd>A unit of apparent power, the product of voltage and current. UPS systems, generators, and transformers are often rated in kVA, while loads are measured in kW.</dd></div>
+      <div class="glossary-item" id="term-kw"><dt>kW (kilowatt)</dt><dd>A unit of real power, the rate at which energy is used. Rack and IT loads are usually stated in kW.</dd></div>
+      <div class="glossary-item" id="term-kwh"><dt>kWh (kilowatt-hour)</dt><dd>A unit of energy: one kilowatt used for one hour. Utility bills and PUE calculations use energy in kWh, not instantaneous kW.</dd></div>
+    </dl>
+  </section>
+  <section class="glossary-section" id="letter-l" aria-labelledby="letter-l-h">
+    <h2 class="glossary-letter" id="letter-l-h">L</h2>
+    <dl class="glossary-list">
+      <div class="glossary-item" id="term-latency"><dt>Latency</dt><dd>The time it takes data to travel between two points, usually measured in milliseconds. Distance, routing, and equipment all add to it.</dd></div>
+      <div class="glossary-item" id="term-leak-detection"><dt>Leak detection</dt><dd>Cable or spot sensors that alarm when they sense water or coolant under raised floors, near cooling units, or along liquid cooling piping.</dd></div>
+      <div class="glossary-item" id="term-limited-approach-boundary"><dt>Limited approach boundary</dt><dd>An NFPA 70E shock protection boundary around exposed energized parts. Unqualified persons may cross it only when continuously escorted and advised by a qualified person.</dd></div>
+      <div class="glossary-item" id="term-liquid-cooling"><dt>Liquid cooling</dt><dd>Any cooling method that brings liquid to or very close to the heat source, such as direct-to-chip cold plates, rear-door heat exchangers, or immersion.</dd></div>
+      <div class="glossary-item" id="term-lithium-ion-battery"><dt>Lithium-ion battery</dt><dd>A battery chemistry increasingly used in UPS systems because it is smaller, lighter, and longer-lived than lead-acid. It carries a risk of <a href="#term-thermal-runaway">thermal runaway</a>. See <a href="../courses/lithium-ion-thermal-runaway-emergency-response.html">Lithium-Ion Thermal Runaway</a>.</dd></div>
+      <div class="glossary-item" id="term-load-bank"><dt>Load bank</dt><dd>A portable or permanent device that applies an artificial electrical load, and its heat, to test generators, UPS systems, and cooling before or without real IT load.</dd></div>
+      <div class="glossary-item" id="term-loto"><dt>LOTO (Lockout/Tagout)</dt><dd>Procedures that isolate energy sources and secure them with locks and tags so equipment cannot be energized while someone works on it. Required by OSHA 29 CFR 1910.147, with electrical work also covered by Subpart S. See <a href="data-center-safety.html">data center safety</a>.</dd></div>
+    </dl>
+  </section>
+  <section class="glossary-section" id="letter-m" aria-labelledby="letter-m-h">
+    <h2 class="glossary-letter" id="letter-m-h">M</h2>
+    <dl class="glossary-list">
+      <div class="glossary-item" id="term-maintenance-bypass"><dt>Maintenance bypass</dt><dd>Manually operated breakers that route power around a UPS so it can be fully isolated for service. The load is unprotected while on bypass, so switching follows a written procedure.</dd></div>
+      <div class="glossary-item" id="term-mantrap"><dt>Mantrap</dt><dd>A small entry vestibule with two interlocked doors, only one of which can open at a time, used to prevent tailgating and verify identity. Also called a security vestibule.</dd></div>
+      <div class="glossary-item" id="term-mda"><dt>MDA (Main Distribution Area)</dt><dd>In ANSI/TIA-942, the central space that holds the main cross-connect and usually the core routers and switches.</dd></div>
+      <div class="glossary-item" id="term-medium-voltage"><dt>Medium voltage</dt><dd>Distribution voltages above 1,000 V, commonly up to about 35 kV, used for utility service and campus distribution in large data centers.</dd></div>
+      <div class="glossary-item" id="term-meet-me-room"><dt>Meet-me room (MMR)</dt><dd>A secure room where carriers and customers interconnect their networks through cross-connects. The heart of a carrier-neutral facility.</dd></div>
+      <div class="glossary-item" id="term-modbus"><dt>Modbus</dt><dd>A simple, widely used industrial communication protocol for reading meters, UPS systems, generators, and other equipment into BMS and EPMS platforms.</dd></div>
+      <div class="glossary-item" id="term-modular-data-center"><dt>Modular data center</dt><dd>A data center built from prefabricated, factory-tested modules, such as power skids, cooling modules, or complete IT pods, to speed construction and scale in steps.</dd></div>
+      <div class="glossary-item" id="term-mop"><dt>MOP (Method of Procedure)</dt><dd>A written, step-by-step procedure for a specific task on critical equipment, with prerequisites, hold points, verification steps, and a back-out plan. It is reviewed and approved through change management. See <a href="data-center-operations.html">operations and maintenance</a>.</dd></div>
+      <div class="glossary-item" id="term-mpo-connector"><dt>MPO connector</dt><dd>A multi-fiber push-on connector that terminates many fibers in a single ferrule. Used for high-speed links and dense trunk cabling.</dd></div>
+      <div class="glossary-item" id="term-mtbf"><dt>MTBF (Mean Time Between Failures)</dt><dd>The average operating time between failures of a repairable component or system. A statistical measure, not a promise for any single unit.</dd></div>
+      <div class="glossary-item" id="term-mttr"><dt>MTTR (Mean Time To Repair)</dt><dd>The average time to restore a failed component or system to service. Good spares, procedures, and training lower it.</dd></div>
+      <div class="glossary-item" id="term-multimode-fiber"><dt>Multimode fiber</dt><dd>Optical fiber with a larger core that carries multiple light paths. Its optics cost less, but distances are shorter, so it is common inside data halls.</dd></div>
+    </dl>
+  </section>
+  <section class="glossary-section" id="letter-n" aria-labelledby="letter-n-h">
+    <h2 class="glossary-letter" id="letter-n-h">N</h2>
+    <dl class="glossary-list">
+      <div class="glossary-item" id="term-n"><dt>N</dt><dd>The amount of capacity needed to carry the load, with no spare. Redundancy is described relative to it, as in <a href="#term-n-plus-1">N+1</a> or <a href="#term-2n">2N</a>.</dd></div>
+      <div class="glossary-item" id="term-n-plus-1"><dt>N+1</dt><dd>A redundancy level with one more unit than the load needs, such as five UPS modules where four would carry the load. It covers a single unit's failure or maintenance, but usually shares one distribution path.</dd></div>
+      <div class="glossary-item" id="term-nec"><dt>NEC (National Electrical Code)</dt><dd>NFPA 70, the model code for electrical installations in the United States. It becomes law where states and localities adopt it. Article 645 has provisions for information technology equipment rooms.</dd></div>
+      <div class="glossary-item" id="term-nfpa-70e"><dt>NFPA 70E</dt><dd>The NFPA standard for electrical safety in the workplace, covering electrically safe work conditions, risk assessment, approach boundaries, arc flash PPE, and training. See <a href="../courses/electrical-safety-best-practices.html">Electrical Safety &amp; Best Practices</a>.</dd></div>
+      <div class="glossary-item" id="term-noc"><dt>NOC (Network Operations Center)</dt><dd>A staffed center that monitors networks, systems, and often facility alarms around the clock, and coordinates the response to incidents.</dd></div>
+    </dl>
+  </section>
+  <section class="glossary-section" id="letter-o" aria-labelledby="letter-o-h">
+    <h2 class="glossary-letter" id="letter-o-h">O</h2>
+    <dl class="glossary-list">
+      <div class="glossary-item" id="term-open-compute-project"><dt>Open Compute Project (OCP)</dt><dd>An industry organization that publishes open hardware designs for servers, racks, and power, including rack designs that distribute DC power on busbars.</dd></div>
+      <div class="glossary-item" id="term-operational-sustainability"><dt>Operational Sustainability</dt><dd>Uptime Institute's standard for the staffing, maintenance, training, and management practices that keep a facility performing to its Tier over time. It is certified separately from design and construction.</dd></div>
+      <div class="glossary-item" id="term-osha"><dt>OSHA</dt><dd>The U.S. Occupational Safety and Health Administration, which sets and enforces workplace safety rules such as 29 CFR 1910 Subpart S (electrical), 1910.147 (lockout/tagout), and 1910.146 (confined spaces).</dd></div>
+      <div class="glossary-item" id="term-otdr"><dt>OTDR (Optical Time-Domain Reflectometer)</dt><dd>A test instrument that sends light pulses down a fiber and measures what reflects back, to locate breaks, splices, connectors, and loss along the link.</dd></div>
+    </dl>
+  </section>
+  <section class="glossary-section" id="letter-p" aria-labelledby="letter-p-h">
+    <h2 class="glossary-letter" id="letter-p-h">P</h2>
+    <dl class="glossary-list">
+      <div class="glossary-item" id="term-paralleling-switchgear"><dt>Paralleling switchgear</dt><dd>Switchgear that synchronizes multiple generators onto a common bus so they share the load and back each other up.</dd></div>
+      <div class="glossary-item" id="term-patch-panel"><dt>Patch panel</dt><dd>A panel of ports where permanent cabling terminates, so connections can be changed with short patch cords instead of new cable runs.</dd></div>
+      <div class="glossary-item" id="term-pci-dss"><dt>PCI DSS</dt><dd>The Payment Card Industry Data Security Standard. Its Requirement 9 restricts physical access to cardholder data, which affects facilities hosting payment systems.</dd></div>
+      <div class="glossary-item" id="term-pdu"><dt>PDU (Power Distribution Unit)</dt><dd>Equipment that distributes power to IT racks. A floor-standing PDU usually contains a transformer that steps 480 V down to rack voltage plus panelboards; a <a href="#term-rack-pdu">rack PDU</a> is the power strip inside the rack.</dd></div>
+      <div class="glossary-item" id="term-peering"><dt>Peering</dt><dd>Two networks exchanging traffic directly, often without payment, rather than through a transit provider. It usually happens at internet exchanges or over cross-connects.</dd></div>
+      <div class="glossary-item" id="term-plenum"><dt>Plenum</dt><dd>An air space used for air distribution, such as the space under a raised floor or above a ceiling. Cables in plenums must meet stricter fire ratings.</dd></div>
+      <div class="glossary-item" id="term-pop"><dt>Point of presence (PoP)</dt><dd>A location where a network provider has equipment and offers connections to customers.</dd></div>
+      <div class="glossary-item" id="term-power-factor"><dt>Power factor</dt><dd>The ratio of real power (kW) to apparent power (kVA). Modern IT power supplies run close to 1.0, which affects how UPS and generator capacity is sized.</dd></div>
+      <div class="glossary-item" id="term-powered-shell"><dt>Powered shell</dt><dd>A building delivered with utility power and basic infrastructure in place but without the data hall fit-out, which the tenant completes.</dd></div>
+      <div class="glossary-item" id="term-ppa"><dt>PPA (Power Purchase Agreement)</dt><dd>A long-term contract to buy electricity, often tied to a specific wind or solar project, used by data center operators to source renewable energy.</dd></div>
+      <div class="glossary-item" id="term-ppe"><dt>PPE (Personal Protective Equipment)</dt><dd>Equipment worn to reduce exposure to hazards, such as arc-rated clothing, voltage-rated gloves, safety glasses, and hearing protection. OSHA 29 CFR 1910.132 sets the general requirements.</dd></div>
+      <div class="glossary-item" id="term-pre-action-sprinkler"><dt>Pre-action sprinkler system</dt><dd>A sprinkler system with dry piping that fills with water only after a detection system activates; in double-interlock designs, water flows only when a sprinkler head also opens. Common in data halls to reduce accidental water release.</dd></div>
+      <div class="glossary-item" id="term-predictive-maintenance"><dt>Predictive maintenance</dt><dd>Maintenance triggered by condition data, such as vibration, oil analysis, thermography, or battery impedance trends, rather than a fixed calendar.</dd></div>
+      <div class="glossary-item" id="term-preventive-maintenance"><dt>Preventive maintenance (PM)</dt><dd>Scheduled inspection, testing, and servicing to prevent failures, based on manufacturer recommendations, standards such as NFPA 70B, and site history. See <a href="../courses/preventive-maintenance-planning.html">Preventive Maintenance Planning</a>.</dd></div>
+      <div class="glossary-item" id="term-pue"><dt>PUE (Power Usage Effectiveness)</dt><dd>Total facility energy divided by IT equipment energy. A PUE of 1.0 would mean every kilowatt-hour goes to IT; real facilities run higher. Try the <a href="../tools/pue-calculator.html">PUE calculator</a> or read the <a href="energy-efficiency-pue.html">energy efficiency guide</a>.</dd></div>
+    </dl>
+  </section>
+  <section class="glossary-section" id="letter-q" aria-labelledby="letter-q-h">
+    <h2 class="glossary-letter" id="letter-q-h">Q</h2>
+    <dl class="glossary-list">
+      <div class="glossary-item" id="term-qualified-person"><dt>Qualified person</dt><dd>Under OSHA and NFPA 70E, a person with the skills, knowledge, and safety training to recognize and avoid the hazards of specific equipment and tasks. The employer makes that determination; no course alone makes someone qualified.</dd></div>
+    </dl>
+  </section>
+  <section class="glossary-section" id="letter-r" aria-labelledby="letter-r-h">
+    <h2 class="glossary-letter" id="letter-r-h">R</h2>
+    <dl class="glossary-list">
+      <div class="glossary-item" id="term-rack-pdu"><dt>Rack PDU</dt><dd>A power strip mounted in a rack that feeds IT equipment, often with metering, outlet switching, and network monitoring.</dd></div>
+      <div class="glossary-item" id="term-rack-unit"><dt>Rack unit (U)</dt><dd>The standard unit of rack height, 1.75 inches (44.45 mm). A 2U server is 3.5 inches tall, and full-height racks are commonly 42U or more.</dd></div>
+      <div class="glossary-item" id="term-raised-floor"><dt>Raised floor</dt><dd>A floor of removable tiles on pedestals above the structural slab. The space beneath can serve as a cool-air plenum and route cables and piping.</dd></div>
+      <div class="glossary-item" id="term-rear-door-heat-exchanger"><dt>Rear-door heat exchanger (RDHx)</dt><dd>A water-cooled coil that replaces a rack's rear door and removes heat from exhaust air before it enters the room. Passive versions rely on server fans; active versions add their own.</dd></div>
+      <div class="glossary-item" id="term-rectifier"><dt>Rectifier</dt><dd>The UPS stage that converts incoming AC power to DC to charge the batteries and feed the inverter.</dd></div>
+      <div class="glossary-item" id="term-redundancy"><dt>Redundancy</dt><dd>Extra components or paths beyond what the load needs, so failures or maintenance do not interrupt service. Described with notation such as <a href="#term-n-plus-1">N+1</a> and <a href="#term-2n">2N</a>.</dd></div>
+      <div class="glossary-item" id="term-refrigerant"><dt>Refrigerant</dt><dd>The working fluid in a vapor-compression cooling cycle. EPA regulates its handling under Section 608, and many refrigerants are being phased down because of their global warming potential.</dd></div>
+      <div class="glossary-item" id="term-relative-humidity"><dt>Relative humidity (RH)</dt><dd>The moisture in air compared with the maximum it could hold at that temperature, as a percentage. Very dry air raises static risk; very humid air risks condensation.</dd></div>
+      <div class="glossary-item" id="term-remote-hands"><dt>Remote hands</dt><dd>On-site technical services a colocation provider performs on request, such as rebooting servers, reseating cables, or swapping drives. More skilled versions are often called smart hands.</dd></div>
+      <div class="glossary-item" id="term-restricted-approach-boundary"><dt>Restricted approach boundary</dt><dd>The NFPA 70E shock protection boundary closest to exposed energized parts, where the likelihood of shock is increased. Only qualified persons using shock protection techniques and PPE may cross it.</dd></div>
+      <div class="glossary-item" id="term-retail-colocation"><dt>Retail colocation</dt><dd>Leasing smaller amounts of space and power, such as individual racks or cages, usually with shorter terms and more provider services. Compare with <a href="#term-wholesale-colocation">wholesale colocation</a>.</dd></div>
+      <div class="glossary-item" id="term-return-air"><dt>Return air</dt><dd>Warm air flowing from the IT equipment back to the cooling units.</dd></div>
+      <div class="glossary-item" id="term-ride-through"><dt>Ride-through</dt><dd>How long equipment or a facility can keep operating through a disturbance, such as UPS battery runtime or how long servers stay within temperature limits after cooling stops.</dd></div>
+      <div class="glossary-item" id="term-room-integrity-test"><dt>Room integrity test</dt><dd>A door fan test that measures how well a room protected by a clean agent system will hold the agent after discharge. Commonly performed at acceptance and after changes to the room.</dd></div>
+      <div class="glossary-item" id="term-root-cause-analysis"><dt>Root cause analysis (RCA)</dt><dd>A structured investigation that finds the underlying causes of an incident, not just the immediate trigger, and sets corrective actions to prevent a repeat.</dd></div>
+      <div class="glossary-item" id="term-rpo"><dt>RPO (Recovery Point Objective)</dt><dd>The maximum acceptable data loss after a disruption, measured in time. An RPO of one hour means data must be backed up or replicated at least hourly.</dd></div>
+      <div class="glossary-item" id="term-rpp"><dt>RPP (Remote Power Panel)</dt><dd>A cabinet of branch circuit breakers fed from a PDU and placed near the racks it serves, extending power distribution closer to the rows.</dd></div>
+      <div class="glossary-item" id="term-rto"><dt>RTO (Recovery Time Objective)</dt><dd>The maximum acceptable time to restore a service after a disruption. It drives disaster recovery design and cost.</dd></div>
+    </dl>
+  </section>
+  <section class="glossary-section" id="letter-s" aria-labelledby="letter-s-h">
+    <h2 class="glossary-letter" id="letter-s-h">S</h2>
+    <dl class="glossary-list">
+      <div class="glossary-item" id="term-sds"><dt>Safety Data Sheet (SDS)</dt><dd>A standardized document from a chemical's manufacturer describing its hazards, safe handling, PPE, and emergency measures. Required under OSHA's <a href="#term-hazcom">hazard communication</a> standard.</dd></div>
+      <div class="glossary-item" id="term-scope-2-emissions"><dt>Scope 2 emissions</dt><dd>Greenhouse gas emissions from generating the electricity, heat, or steam an organization buys. For most data centers, purchased electricity makes Scope 2 the largest share of operational emissions.</dd></div>
+      <div class="glossary-item" id="term-selective-coordination"><dt>Selective coordination</dt><dd>Choosing and setting protective devices so that only the device nearest a fault opens, leaving the rest of the system energized.</dd></div>
+      <div class="glossary-item" id="term-spof"><dt>Single point of failure (SPOF)</dt><dd>Any component or path whose failure would interrupt the IT load. Eliminating them is the goal of redundant design.</dd></div>
+      <div class="glossary-item" id="term-single-mode-fiber"><dt>Single-mode fiber</dt><dd>Optical fiber with a very small core that carries a single light path, supporting long distances and high bandwidth. Used for campus and metro links and increasingly inside data halls.</dd></div>
+      <div class="glossary-item" id="term-sla"><dt>SLA (Service Level Agreement)</dt><dd>The contract terms that define a provider's commitments, such as power availability, temperature range, and response times, and the credits owed if they are missed.</dd></div>
+      <div class="glossary-item" id="term-snmp"><dt>SNMP (Simple Network Management Protocol)</dt><dd>A protocol for monitoring and managing network-connected devices. UPS systems, rack PDUs, and sensors often report to DCIM through SNMP.</dd></div>
+      <div class="glossary-item" id="term-soc-2"><dt>SOC 2</dt><dd>An attestation report, issued by an independent CPA firm under AICPA standards, on controls relevant to the Trust Services Criteria: security, availability, processing integrity, confidentiality, and privacy. Type 2 reports test controls over a period of time.</dd></div>
+      <div class="glossary-item" id="term-sop"><dt>SOP (Standard Operating Procedure)</dt><dd>A written procedure for a routine task, such as facility rounds or generator testing. Compare with a <a href="#term-mop">MOP</a> for specific changes and an <a href="#term-eop">EOP</a> for emergencies.</dd></div>
+      <div class="glossary-item" id="term-spcc"><dt>SPCC plan</dt><dd>A Spill Prevention, Control, and Countermeasure plan required by EPA under 40 CFR 112 for facilities that store oil, including diesel fuel, above set thresholds. See <a href="../courses/facility-environmental-compliance.html">Facility Environmental Compliance</a>.</dd></div>
+      <div class="glossary-item" id="term-spine-leaf"><dt>Spine-leaf architecture</dt><dd>A data center network design in which every leaf (access) switch connects to every spine switch, giving predictable latency and simple scaling.</dd></div>
+      <div class="glossary-item" id="term-static-bypass"><dt>Static bypass</dt><dd>An automatic electronic switch inside a UPS that transfers the load directly to the bypass source if the UPS has a fault or overload.</dd></div>
+      <div class="glossary-item" id="term-step-load"><dt>Step load</dt><dd>A sudden increase or decrease in load. Generators and UPS systems are rated for how large a step they can accept while holding voltage and frequency.</dd></div>
+      <div class="glossary-item" id="term-stranded-capacity"><dt>Stranded capacity</dt><dd>Power, cooling, or space that exists but cannot be used, for example a rack position with power but no cooling, or cooling but no floor space.</dd></div>
+      <div class="glossary-item" id="term-structured-cabling"><dt>Structured cabling</dt><dd>A standards-based cabling system of backbone and horizontal cabling, patch panels, and pathways, as described in ANSI/TIA-942 and related standards. See <a href="../courses/fiber-optics-network-cabling.html">Fiber Optics &amp; Network Cabling</a>.</dd></div>
+      <div class="glossary-item" id="term-sts"><dt>STS (Static Transfer Switch)</dt><dd>A solid-state switch that moves a load between two independent power sources within milliseconds, fast enough that single-corded equipment rides through.</dd></div>
+      <div class="glossary-item" id="term-substation"><dt>Substation</dt><dd>A facility that transforms voltage between transmission and distribution levels and switches circuits. Large campuses often have dedicated utility substations.</dd></div>
+      <div class="glossary-item" id="term-supply-air"><dt>Supply air</dt><dd>Cooled air delivered from the cooling units to equipment inlets.</dd></div>
+      <div class="glossary-item" id="term-spd"><dt>Surge protective device (SPD)</dt><dd>A device that limits transient overvoltages, such as from lightning or switching, by diverting surge current to ground.</dd></div>
+      <div class="glossary-item" id="term-switchgear"><dt>Switchgear</dt><dd>Assemblies of circuit breakers, relays, and switches that control, protect, and isolate electrical equipment. It holds large amounts of energy, so switching follows written procedures.</dd></div>
+    </dl>
+  </section>
+  <section class="glossary-section" id="letter-t" aria-labelledby="letter-t-h">
+    <h2 class="glossary-letter" id="letter-t-h">T</h2>
+    <dl class="glossary-list">
+      <div class="glossary-item" id="term-tailgating"><dt>Tailgating</dt><dd>Following an authorized person through a secure door without badging in. Mantraps, anti-passback rules, and staff awareness counter it.</dd></div>
+      <div class="glossary-item" id="term-tco"><dt>TCO (Total Cost of Ownership)</dt><dd>The full cost of an asset over its life, including purchase, installation, energy, maintenance, and disposal. Used to compare design options.</dd></div>
+      <div class="glossary-item" id="term-tcs"><dt>Technology cooling system (TCS)</dt><dd>In liquid cooling, the secondary loop that circulates treated coolant through rack manifolds and cold plates. A CDU separates it from the <a href="#term-fws">facility water system</a>.</dd></div>
+      <div class="glossary-item" id="term-thermal-runaway"><dt>Thermal runaway</dt><dd>An uncontrolled, self-heating reaction in a battery cell that can spread to neighboring cells and cause fire or the release of flammable and toxic gases. A key lithium-ion risk.</dd></div>
+      <div class="glossary-item" id="term-three-phase-power"><dt>Three-phase power</dt><dd>AC power delivered on three conductors with voltages offset by 120 degrees. It moves more power with less conductor material than single-phase and is standard for data center distribution.</dd></div>
+      <div class="glossary-item" id="term-tia-942"><dt>TIA-942</dt><dd>ANSI/TIA-942, the Telecommunications Industry Association standard for data center infrastructure, covering spaces, cabling, and facility systems, with ratings from Rated-1 to Rated-4.</dd></div>
+      <div class="glossary-item" id="term-tier-i"><dt>Tier I</dt><dd>Uptime Institute's basic capacity level: dedicated site infrastructure with a single path for power and cooling and no redundant components. Planned maintenance requires a shutdown.</dd></div>
+      <div class="glossary-item" id="term-tier-ii"><dt>Tier II</dt><dd>Uptime Institute's redundant capacity components level: a single distribution path, but with redundant components such as extra UPS modules, chillers, or generators.</dd></div>
+      <div class="glossary-item" id="term-tier-iii"><dt>Tier III</dt><dd>Uptime Institute's concurrently maintainable level: redundant components and multiple distribution paths, so any component can be removed for planned maintenance without affecting IT. A &ldquo;Tier III&rdquo; claim without Uptime certification describes design intent. See <a href="data-center-tiers.html">Tier levels explained</a>.</dd></div>
+      <div class="glossary-item" id="term-tier-iv"><dt>Tier IV</dt><dd>Uptime Institute's fault tolerant level: concurrently maintainable and able to withstand any single unplanned failure without affecting IT, with independent, physically separated paths.</dd></div>
+      <div class="glossary-item" id="term-ton-of-refrigeration"><dt>Ton of refrigeration</dt><dd>A unit of cooling capacity equal to 12,000 BTU/hr, or about 3.517 kW of heat removal. Try the <a href="../tools/cooling-load-calculator.html">cooling load calculator</a>.</dd></div>
+      <div class="glossary-item" id="term-top-of-rack-switch"><dt>Top-of-rack (ToR) switch</dt><dd>A network switch mounted in each rack that connects the servers in that rack, with uplinks to aggregation or spine switches.</dd></div>
+      <div class="glossary-item" id="term-transceiver"><dt>Transceiver</dt><dd>A pluggable optical or electrical module, such as an SFP or QSFP, that converts signals between a switch port and the cable.</dd></div>
+      <div class="glossary-item" id="term-transformer"><dt>Transformer</dt><dd>A device that changes AC voltage from one level to another, such as stepping medium-voltage utility power down to 480 V, or 480 V down to rack voltage in a PDU.</dd></div>
+    </dl>
+  </section>
+  <section class="glossary-section" id="letter-u" aria-labelledby="letter-u-h">
+    <h2 class="glossary-letter" id="letter-u-h">U</h2>
+    <dl class="glossary-list">
+      <div class="glossary-item" id="term-ups"><dt>UPS (Uninterruptible Power Supply)</dt><dd>Equipment that conditions power and carries the IT load from stored energy, usually batteries, during the seconds to minutes before generators take over. See <a href="data-center-power.html">how data center power works</a> and <a href="../courses/ups-systems-fundamentals.html">UPS Systems Fundamentals</a>.</dd></div>
+      <div class="glossary-item" id="term-uptime-institute"><dt>Uptime Institute</dt><dd>An organization known for its Tier Classification System and Tier Certification of data center designs, constructed facilities, and operations, and for industry research such as its annual global survey.</dd></div>
+      <div class="glossary-item" id="term-utility-feed"><dt>Utility feed</dt><dd>The incoming power service from the electric utility. Critical sites often take two feeds from separate substations or circuits.</dd></div>
+    </dl>
+  </section>
+  <section class="glossary-section" id="letter-v" aria-labelledby="letter-v-h">
+    <h2 class="glossary-letter" id="letter-v-h">V</h2>
+    <dl class="glossary-list">
+      <div class="glossary-item" id="term-vfd"><dt>VFD (Variable Frequency Drive)</dt><dd>A motor controller that varies the speed of fans and pumps by changing the supply frequency. Because fan and pump power drops steeply with speed, VFDs are a major efficiency tool.</dd></div>
+      <div class="glossary-item" id="term-vrla-battery"><dt>VRLA battery</dt><dd>A valve-regulated lead-acid battery: a sealed lead-acid design that was long the default for UPS systems. It needs temperature control, regular monitoring, and periodic replacement.</dd></div>
+    </dl>
+  </section>
+  <section class="glossary-section" id="letter-w" aria-labelledby="letter-w-h">
+    <h2 class="glossary-letter" id="letter-w-h">W</h2>
+    <dl class="glossary-list">
+      <div class="glossary-item" id="term-water-side-economizer"><dt>Water-side economizer</dt><dd>A cooling mode that uses cooling towers or dry coolers to chill water through a heat exchanger when outdoor conditions allow, bypassing or assisting the chillers.</dd></div>
+      <div class="glossary-item" id="term-wet-stacking"><dt>Wet stacking</dt><dd>Unburned fuel and carbon building up in a diesel engine's exhaust when it runs lightly loaded for long periods. Load-bank testing helps prevent it.</dd></div>
+      <div class="glossary-item" id="term-white-space"><dt>White space</dt><dd>The area of a data center where IT equipment is installed, as opposed to the <a href="#term-gray-space">gray space</a> that holds support infrastructure.</dd></div>
+      <div class="glossary-item" id="term-wholesale-colocation"><dt>Wholesale colocation</dt><dd>Leasing large blocks of data center capacity, such as a whole hall or building, usually to a single large tenant under a long-term contract. Compare with <a href="#term-retail-colocation">retail colocation</a>.</dd></div>
+      <div class="glossary-item" id="term-work-order"><dt>Work order</dt><dd>A documented request or assignment for maintenance work, tracked in a <a href="#term-cmms">CMMS</a> from creation through completion and sign-off.</dd></div>
+      <div class="glossary-item" id="term-wue"><dt>WUE (Water Usage Effectiveness)</dt><dd>A Green Grid metric of water use: liters of site water consumed per kWh of IT energy. Evaporative cooling raises WUE; dry cooling lowers it.</dd></div>
+    </dl>
+  </section>
+  <p class="guide-updated">These definitions are general educational information, not engineering, legal, or compliance advice. Follow your site's procedures, the equipment manufacturer's instructions, and the codes adopted in your jurisdiction.</p>
+</div>
+
+  <section class="section" id="courses">
+    <div class="container">
+      <div class="section-head">
+        <h2>Courses that cover these terms</h2>
+        <p>Turn vocabulary into job skills with self-paced, standards-aligned courses. Each awards a certificate of completion.</p>
+      </div>
+      <!-- dct:courses power-systems-electrical-fundamentals cooling-systems-design-optimization data-center-operations-management data-center-design-fundamentals tier-infrastructure-fundamentals electrical-safety-best-practices security-compliance-data-centers monitoring-automation-bms-systems -->
+      <!-- /dct:courses -->
+      <div style="margin-top:16px;">
+      <!-- dct:bundle bundle-complete-catalog -->
+      <!-- /dct:bundle -->
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <h2>Keep learning</h2>
+        <p>See the terms in context, or test what you know.</p>
+      </div>
+      <div class="card-grid">
+        <a class="topic-card" href="what-is-a-data-center.html"><span class="topic-card-icon" aria-hidden="true">&#127970;</span><h3>What Is a Data Center?</h3><p>How the building, power, cooling, and network fit together.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+        <a class="topic-card" href="data-center-power.html"><span class="topic-card-icon" aria-hidden="true">&#9889;</span><h3>How Data Center Power Works</h3><p>UPS, ATS, STS, PDU, and generators in one chain.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+        <a class="topic-card" href="data-center-cooling.html"><span class="topic-card-icon" aria-hidden="true">&#10052;&#65039;</span><h3>How Data Center Cooling Works</h3><p>CRAHs, chillers, containment, and economizers explained.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+        <a class="topic-card" href="data-center-standards.html"><span class="topic-card-icon" aria-hidden="true">&#128220;</span><h3>Standards &amp; Regulations</h3><p>TIA-942, NFPA, OSHA, ASHRAE, and ISO, sorted by topic.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+        <a class="topic-card" href="../quizzes/data-center-basics-quiz.html"><span class="topic-card-icon" aria-hidden="true">&#9989;</span><h3>Data Center Basics Quiz</h3><p>Check how much of this vocabulary has stuck.</p><span class="topic-card-cta">Take the quiz &rarr;</span></a>
+        <a class="topic-card" href="../careers/"><span class="topic-card-icon" aria-hidden="true">&#129517;</span><h3>Data Center Careers</h3><p>The roles that use these terms every shift.</p><span class="topic-card-cta">Explore careers &rarr;</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta-block">
+        <h2>Learn the Systems Behind the Terms</h2>
+        <p>The Complete Data Center Professional Bundle covers power, cooling, safety, security, design, and operations, with a certificate of completion for every course.</p>
+        <div class="hero-ctas">
+          <a href="../bundles.html" class="btn glass-chip">See the Complete Bundle</a>
+          <a href="../courses.html" class="btn glass-chip">Browse All Courses</a>
+          <a href="tel:18664296742" class="btn glass-chip">Call 1-866-429-6742</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="contact"></footer>
+<script src="../js/main.js" defer></script>
+
+</body>
+</html>
