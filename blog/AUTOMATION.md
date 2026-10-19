@@ -33,7 +33,7 @@ Local copy workflow:
 
 Website and business context:
 - Website: https://datacentertraining.us/
-- The site sells 43 self-paced online data center courses and 7 bundles, delivered by HAZWOPER OSHA Training, LLC, an IACET-accredited provider. Comprehensive Programs run 8 hours; Modular Specializations run 1-8 hours. Learners receive a certificate of completion immediately on finishing. Courses can be bought individually or in bundles, and teams can enroll together.
+- The site sells 43 self-paced online data center courses and 7 bundles, delivered by HAZWOPER OSHA Training, LLC, an IACET-accredited provider. Comprehensive Programs run 8 to 16 hours; Modular Specializations run 1-8 hours. Learners receive a certificate of completion immediately on finishing. Courses can be bought individually or in bundles, and teams can enroll together.
 - Course tracks: Power & Electrical; Cooling & Facilities Efficiency; Operations & Reliability; Security & Compliance; Design, Planning & Commissioning; Monitoring & Smart Facility.
 - Before choosing a topic, open https://datacentertraining.us/courses.html and https://datacentertraining.us/bundles.html and use the real course and bundle names. Do not invent courses, prices, or hours.
 - These are knowledge and best-practice courses, not certification exams. Never claim a course grants a regulatory certification, a license, CEUs, or PDHs. Never imply OSHA, Uptime Institute, TIA, NFPA, ASHRAE, or any other body certifies, approves, or endorses a course, learner, or employer. Use wording like "standards-aligned", "certificate of completion", and "supports your training program".

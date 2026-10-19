@@ -89,6 +89,13 @@ function isoDuration(hours) {
   return 'PT' + (h ? h + 'H' : '') + (m ? m + 'M' : '');
 }
 
+// "8" or "8-16": the range of course lengths for one course type, for prose.
+function hoursRange(courses, type) {
+  const hours = courses.filter((c) => c.course_type === type).map((c) => c.duration_hours);
+  const lo = Math.min(...hours), hi = Math.max(...hours);
+  return lo === hi ? String(lo) : lo + '-' + hi;
+}
+
 function jsonLd(obj) {
   // Escape "<" so a value can never close the <script> element.
   return '<script type="application/ld+json">\n' + JSON.stringify(obj, null, 2).replace(/</g, '\\u003c') + '\n</script>';
@@ -558,7 +565,7 @@ function toolDefs(d) {
           track: { type: 'string', enum: s.trackNames, description: 'Learning track (one per course).' },
           category: { type: 'string', enum: s.categories, description: 'Catalog discipline filter.' },
           role: { type: 'string', enum: rolesEnum, description: 'Role id from recommend_courses/roles.json; limits results to that role\'s track.' },
-          course_type: { type: 'string', enum: ['comprehensive', 'modular'], description: 'comprehensive = 8 hr full-discipline programs; modular = 1-8 hr focused specializations.' },
+          course_type: { type: 'string', enum: ['comprehensive', 'modular'], description: 'comprehensive = ' + hoursRange(d.courses, 'comprehensive') + ' hr full-discipline programs; modular = ' + hoursRange(d.courses, 'modular') + ' hr focused specializations.' },
           standard: { type: 'string', maxLength: 60, description: 'Standard or framework name, e.g. "NFPA 70E", "ANSI/TIA-942".' },
           bundle_id: { type: 'string', enum: d.bundles.map((b) => b.id), description: 'Only courses included in this bundle.' },
           language: { type: 'string', enum: ['en', 'es', 'fr', 'de', 'pt', 'zh'], description: 'ISO 639-1 code. All courses are English-only.' },
@@ -812,7 +819,7 @@ function buildOutputs(d) {
     schema_version: '2026-06',
     name: 'datacentertraining-us',
     title: 'Data Center Training',
-    description: 'Read-only catalog tools for Data Center Training (datacentertraining.us): 43 online, self-paced data center courses (184 hours), 7 bundles, and 6 role-based learning tracks, delivered by HAZWOPER OSHA Training, LLC, an IACET Accredited Provider.',
+    description: 'Read-only catalog tools for Data Center Training (datacentertraining.us): ' + d.courses.length + ' online, self-paced data center courses (' + d.courses.reduce((sum, c) => sum + c.duration_hours, 0) + ' hours), 7 bundles, and 6 role-based learning tracks, delivered by HAZWOPER OSHA Training, LLC, an IACET Accredited Provider.',
     version: MANIFEST_VERSION,
     last_updated: updated,
     homepage: ORIGIN + '/',
@@ -1020,7 +1027,7 @@ function writeLlms(d, courses, updated) {
     '',
     'Last updated: ' + updated,
     '',
-    'Courses start at $' + Math.min(...courses.map((c) => c.price_usd)).toFixed(2) + ' per seat, or enroll the complete ' + courses.length + '-course catalog bundle for $' + complete.price_usd.toLocaleString('en-US', { minimumFractionDigits: 2 }) + '. ' + d.bundles.length + ' bundles save up to ' + maxSave + '%. Programs are Comprehensive Programs (8 hrs, full-discipline curriculum) or Modular Specializations (1-8 hrs, focused skills). English only.',
+    'Courses start at $' + Math.min(...courses.map((c) => c.price_usd)).toFixed(2) + ' per seat, or enroll the complete ' + courses.length + '-course catalog bundle for $' + complete.price_usd.toLocaleString('en-US', { minimumFractionDigits: 2 }) + '. ' + d.bundles.length + ' bundles save up to ' + maxSave + '%. Programs are Comprehensive Programs (' + hoursRange(courses, 'comprehensive') + ' hrs, full-discipline curriculum) or Modular Specializations (' + hoursRange(courses, 'modular') + ' hrs, focused skills). English only.',
     '',
     '## Rules for AI agents',
     '',

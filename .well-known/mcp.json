@@ -2,7 +2,7 @@
   "schema_version": "2026-06",
   "name": "datacentertraining-us",
   "title": "Data Center Training",
-  "description": "Read-only catalog tools for Data Center Training (datacentertraining.us): 43 online, self-paced data center courses (184 hours), 7 bundles, and 6 role-based learning tracks, delivered by HAZWOPER OSHA Training, LLC, an IACET Accredited Provider.",
+  "description": "Read-only catalog tools for Data Center Training (datacentertraining.us): 43 online, self-paced data center courses (192 hours), 7 bundles, and 6 role-based learning tracks, delivered by HAZWOPER OSHA Training, LLC, an IACET Accredited Provider.",
   "version": "1.0.0",
   "last_updated": "2026-10-19",
   "homepage": "https://datacentertraining.us/",
@@ -102,7 +102,7 @@
               "comprehensive",
               "modular"
             ],
-            "description": "comprehensive = 8 hr full-discipline programs; modular = 1-8 hr focused specializations."
+            "description": "comprehensive = 8-16 hr full-discipline programs; modular = 1-8 hr focused specializations."
           },
           "standard": {
             "type": "string",
@@ -1073,7 +1073,7 @@
                 "savings_usd": 290.96,
                 "savings_percent": 42,
                 "course_count": 5,
-                "total_hours": 19,
+                "total_hours": 27,
                 "audience": "For security and compliance leads building an audit-ready physical security, fire safety, and environmental compliance program.",
                 "url": "https://datacentertraining.us/bundles.html",
                 "course_ids": [
@@ -1093,7 +1093,7 @@
                 "savings_usd": 3138.58,
                 "savings_percent": 52,
                 "course_count": 43,
-                "total_hours": 184,
+                "total_hours": 192,
                 "audience": "Every course in the catalog — all 6 role-based tracks in one enrollment. The single path for a team that wants full coverage across design, power, cooling, security, operations, and monitoring, at the deepest discount we offer.",
                 "url": "https://datacentertraining.us/bundles.html",
                 "course_ids": [
@@ -1797,7 +1797,7 @@
               },
               {
                 "question": "What's the difference between Comprehensive Programs and Modular Specializations?",
-                "answer": "Comprehensive Programs are multi-module courses (8 hours) covering a full discipline in depth, like data center design or operations management. Modular Specializations are focused 1-8 hour courses on a single skill, like UPS load testing or fiber termination. Many teams combine one comprehensive program with several modular courses for their role, which is exactly how our bundles are put together.",
+                "answer": "Comprehensive Programs are multi-module courses (8 to 16 hours) covering a full discipline in depth, like data center design or operations management. Modular Specializations are focused 1-8 hour courses on a single skill, like UPS load testing or fiber termination. Many teams combine one comprehensive program with several modular courses for their role, which is exactly how our bundles are put together.",
                 "source_url": "https://datacentertraining.us/faq.html"
               },
               {

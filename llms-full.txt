@@ -1,6 +1,6 @@
 # Data Center Training - Full Catalog
 
-> Data Center Training (datacentertraining.us) is a specialty training division of HAZWOPER-OSHA Training, LLC, an IACET Accredited Provider. 43 online, self-paced data center courses (184 hours total) in design, operations, power, cooling, security, and facilities management. Every course awards a certificate of completion.
+> Data Center Training (datacentertraining.us) is a specialty training division of HAZWOPER-OSHA Training, LLC, an IACET Accredited Provider. 43 online, self-paced data center courses (192 hours total) in design, operations, power, cooling, security, and facilities management. Every course awards a certificate of completion.
 
 Last updated: 2026-10-19
 Canonical source: https://datacentertraining.us/api/courses.json (same records as JSON). Tools: https://datacentertraining.us/.well-known/mcp.json
@@ -1250,7 +1250,7 @@ Modules:
 - track: Security & Compliance Track
 - category: Security & Compliance
 - course_type: Comprehensive Program
-- duration_hours: 8
+- duration_hours: 16
 - modules: 6
 - price_usd: 291.99
 - standards_aligned: SOC 2; ISO 27001
@@ -1828,7 +1828,7 @@ Prices are per seat in USD. Seat-count volume discounts apply at checkout: 2-10 
 - price_usd: 400.99
 - list_price_usd: 691.95 (sum of individual course prices)
 - savings: $290.96 (42%)
-- courses: 5, 19 hrs
+- courses: 5, 27 hrs
 - audience: For security and compliance leads building an audit-ready physical security, fire safety, and environmental compliance program.
 - url: https://datacentertraining.us/bundles.html
 - course_ids: security-compliance-data-centers, access-control-physical-security, facility-environmental-compliance, data-center-fire-suppression-safety, data-center-physical-security-access-control
@@ -1864,7 +1864,7 @@ Prices are per seat in USD. Seat-count volume discounts apply at checkout: 2-10 
 - price_usd: 2928.99
 - list_price_usd: 6067.57 (sum of individual course prices)
 - savings: $3138.58 (52%)
-- courses: 43, 184 hrs
+- courses: 43, 192 hrs
 - audience: Every course in the catalog — all 6 role-based tracks in one enrollment. The single path for a team that wants full coverage across design, power, cooling, security, operations, and monitoring, at the deepest discount we offer.
 - url: https://datacentertraining.us/bundles.html
 - course_ids: access-control-physical-security, batteries-dc-circuits, building-automation-systems-fundamentals, building-envelope-fundamentals, building-maintenance-fundamentals, business-continuity-disaster-recovery-planning, capacity-planning-forecasting, cooling-systems-design-optimization, data-center-arc-flash-safety, data-center-cooling-refrigerant-safety, data-center-design-fundamentals, data-center-electrical-safety, data-center-epo-procedures, data-center-fire-suppression-safety, data-center-operations-management, data-center-physical-security-access-control, data-center-raised-floor-confined-space, data-center-ups-battery-safety, dcim-platform-fundamentals, disaster-recovery-business-continuity, electrical-safety-best-practices, emergency-standby-power-systems-fundamentals, energy-efficiency-pue-optimization, facility-environmental-compliance, facility-management-fundamentals, fiber-optics-network-cabling, generator-fundamentals, generator-operations-maintenance, hvac-troubleshooting-essentials, incident-response-troubleshooting, infrastructure-commissioning-startup, lithium-ion-thermal-runaway-emergency-response, mechanical-systems-maintenance, monitoring-automation-bms-systems, power-distribution-systems-fundamentals, power-systems-electrical-fundamentals, preventive-maintenance-planning, roofing-systems-maintenance-fundamentals, security-compliance-data-centers, server-room-ergonomics-manual-handling, tier-infrastructure-fundamentals, ups-operations-load-testing, ups-systems-fundamentals
@@ -1874,7 +1874,7 @@ Prices are per seat in USD. Seat-count volume discounts apply at checkout: 2-10 
 - electrician ("I'm an electrician or power technician"): Power & Electrical Systems Track. Electricians and power technicians working on utility interconnection, UPS systems, generators, batteries, and daily electrical safety should complete this 14-course, 47-hour track.
 - hvac ("I work on HVAC, cooling, or mechanical systems"): Cooling & Facilities Efficiency Track. HVAC and facilities technicians who need both cooling design fundamentals and hands-on maintenance skills should complete this 6-course, 24-hour track.
 - operations ("I manage daily facility operations and uptime"): Operations & Reliability Track. Facility and operations managers who own uptime should complete this 10-course, 44-hour track covering daily operations, disaster recovery, maintenance, and incident response.
-- security ("I handle security or compliance"): Security & Compliance Track. Security and compliance leads building an audit-ready program should complete this 5-course, 19-hour track.
+- security ("I handle security or compliance"): Security & Compliance Track. Security and compliance leads building an audit-ready program should complete this 5-course, 27-hour track.
 - design ("I design, plan, or commission facilities"): Design, Planning & Commissioning Track. Engineers and project leads taking a facility from design through launch should complete all four of these courses, 28 hours total.
 - it ("I work on monitoring, DCIM, or network cabling"): Monitoring & Smart Facility Track. Teams building out monitoring, DCIM, building automation, and network cabling infrastructure should complete all four of these courses, 22 hours total.
 
@@ -1899,15 +1899,15 @@ Do not claim:
 
 ### What's the difference between Comprehensive Programs and Modular Specializations?
 
-Comprehensive Programs are multi-module courses (8 hours) covering a full discipline in depth, like data center design or operations management. Modular Specializations are focused 1-8 hour courses on a single skill, like UPS load testing or fiber termination. Many teams combine one comprehensive program with several modular courses for their role, which is exactly how our bundles are put together.
+Comprehensive Programs are multi-module courses (8 to 16 hours) covering a full discipline in depth, like data center design or operations management. Modular Specializations are focused 1-8 hour courses on a single skill, like UPS load testing or fiber termination. Many teams combine one comprehensive program with several modular courses for their role, which is exactly how our bundles are put together.
 
 ### How long does each course take?
 
-Comprehensive Programs run 8 hours; Modular Specializations run 1-8 hours. All courses are self-paced, so learners can start and stop and pick up where they left off. A certificate is issued immediately on completion.
+Comprehensive Programs run 8 to 16 hours; Modular Specializations run 1-8 hours. All courses are self-paced, so learners can start and stop and pick up where they left off. A certificate is issued immediately on completion.
 
 ### What topics does the course catalog cover?
 
-The catalog spans six tracks: Power &amp; Electrical, Cooling &amp; Facilities Efficiency, Operations &amp; Reliability, Security &amp; Compliance, Design, Planning &amp; Commissioning, and Monitoring &amp; Smart Facility. Together they cover 43 courses and 184 hours of training.
+The catalog spans six tracks: Power &amp; Electrical, Cooling &amp; Facilities Efficiency, Operations &amp; Reliability, Security &amp; Compliance, Design, Planning &amp; Commissioning, and Monitoring &amp; Smart Facility. Together they cover 43 courses and 192 hours of training.
 
 ### Do I need a background in data center design or operations to take these courses?
 
@@ -1975,7 +1975,7 @@ Data Center Training courses are published as online, self-paced courses. HAZWOP
 
 ### What's included in a bundle, and how much do I save?
 
-Each bundle groups a comprehensive program with the modular courses most relevant to the same role — for example, the Power &amp; Electrical Systems Bundle includes 14 courses and 47 hours of training on power systems, UPS, generators, and electrical safety for $986.99. The Complete Data Center Professional Bundle covers all 43 courses and 184 hours for $2,928.99, the deepest discount we offer. Every learner still gets a certificate for each course completed.
+Each bundle groups a comprehensive program with the modular courses most relevant to the same role — for example, the Power &amp; Electrical Systems Bundle includes 14 courses and 47 hours of training on power systems, UPS, generators, and electrical safety for $986.99. The Complete Data Center Professional Bundle covers all 43 courses and 192 hours for $2,928.99, the deepest discount we offer. Every learner still gets a certificate for each course completed.
 
 ### Which bundle is the best fit for a facilities generalist?
 
