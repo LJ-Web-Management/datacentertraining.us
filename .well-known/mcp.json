@@ -1934,7 +1934,7 @@
             "topic": "refrigerant"
           },
           "output": {
-            "count": 2,
+            "count": 4,
             "resources": [
               {
                 "source": "U.S. Environmental Protection Agency",
@@ -1952,17 +1952,17 @@
                 ]
               },
               {
-                "type": "blog_post",
-                "title": "What Cooling Technicians Should Verify Before Opening a Refrigerant Circuit",
-                "url": "https://datacentertraining.us/blog/posts/what-cooling-technicians-should-verify-before-opening-a-refrigerant-circuit.html",
-                "description": "What data center cooling technicians should verify before opening a refrigerant circuit: isolation, refrigerant recovery, pressure checks, and PPE.",
+                "source": "Data Center Training (first party)",
+                "type": "site_page",
+                "title": "How Data Center Cooling Works",
+                "url": "https://datacentertraining.us/learn/data-center-cooling.html",
+                "description": "How data center cooling works: heat loads, ASHRAE inlet ranges, CRAC vs CRAH, chilled water, economizers, containment, liquid cooling, and refrigerant safety.",
                 "topics": [
+                  "guide",
                   "cooling",
                   "refrigerant"
                 ],
-                "audience": [],
-                "source": "Data Center Training (first party)",
-                "published": "2026-09-24"
+                "audience": []
               }
             ]
           },

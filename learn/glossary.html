@@ -3,20 +3,59 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Data Center Glossary: 150+ Terms Explained</title>
-<meta name="description" content="Plain-English definitions of 150+ data center terms: UPS, PUE, ATS, CRAH, Tier III, arc flash, LOTO, DCIM, colocation, cross-connects, and more.">
+<!-- dct:head -->
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; object-src 'none'; base-uri 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#f5f5f7">
+<link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt">
+<link rel="alternate" type="application/json" href="/.well-known/mcp.json" title="WebMCP manifest">
+<link rel="service-desc" type="application/vnd.oai.openapi+json" href="/openapi.json">
+<script>
+/* Analytics, session recording, and chat load for every visitor unless they opt out or send a GPC signal
+   (see /js/consent.js), on the first interaction (scroll, tap, key, mouse move) so they never delay rendering. */
+(function(w,d){
+  w.dataLayer=w.dataLayer||[];w.gtag=function(){w.dataLayer.push(arguments);};
+  w.clarity=w.clarity||function(){(w.clarity.q=w.clarity.q||[]).push(arguments);};
+  w.Tawk_API=w.Tawk_API||{};w.Tawk_API.onLoad=function(){w.Tawk_API.minimize();};
+  var ev=['pointerdown','keydown','touchstart','scroll','mousemove'];
+  function add(src,attrs){var s=d.createElement('script');s.async=true;s.src=src;for(var k in attrs)s.setAttribute(k,attrs[k]);d.head.appendChild(s);}
+  function once(fn){var done=0;return function(now){if(done)return;function go(){if(done)return;done=1;ev.forEach(function(e){w.removeEventListener(e,go,{passive:true});});fn();}
+    if(now)go();else ev.forEach(function(e){w.addEventListener(e,go,{passive:true});});};}
+  w.dctLoad={
+    analytics:once(function(){
+      w.gtag('js',new Date());w.gtag('config','G-Z3T42KYK64');
+      add('https://www.googletagmanager.com/gtag/js?id=G-Z3T42KYK64');
+      add('https://analytics.ahrefs.com/analytics.js',{'data-key':'tVAd7KxwKax+pAfHx46Zgg'});
+      add('https://www.clarity.ms/tag/ylza43nm4m');
+    }),
+    chat:once(function(){
+      w.Tawk_LoadStart=new Date();add('https://embed.tawk.to/6a5a95a2096ab21d402a762c/1jtoth11r',{charset:'UTF-8',crossorigin:'*'});
+    })
+  };
+})(window,document);
+if(navigator.modelContext){var m=document.createElement('script');m.src='/js/webmcp.js';m.defer=true;document.head.appendChild(m);}
+</script>
+<script src="/js/consent.js" defer></script>
+<!-- /dct:head -->
+<title>Data Center Glossary: 200+ Terms Explained</title>
+<meta name="description" content="Plain-English definitions of 200+ data center terms: UPS, PUE, ATS, CRAH, Tier III, arc flash, LOTO, DCIM, colocation, cross-connects, and more.">
 <meta name="robots" content="index, follow">
 <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
 <link rel="canonical" href="https://datacentertraining.us/learn/glossary.html">
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="Data Center Glossary: 150+ Terms Explained">
-<meta property="og:description" content="Plain-English definitions of 150+ data center terms: UPS, PUE, ATS, CRAH, Tier III, arc flash, LOTO, DCIM, colocation, cross-connects, and more.">
+<meta property="og:title" content="Data Center Glossary: 200+ Terms Explained">
+<meta property="og:description" content="Plain-English definitions of 200+ data center terms: UPS, PUE, ATS, CRAH, Tier III, arc flash, LOTO, DCIM, colocation, cross-connects, and more.">
 <meta property="og:url" content="https://datacentertraining.us/learn/glossary.html">
 <meta property="og:image" content="https://datacentertraining.us/images/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:site_name" content="Data Center Training">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@HazwoperOsha">
+<meta name="twitter:title" content="Data Center Glossary: 200+ Terms Explained">
+<meta name="twitter:description" content="Plain-English definitions of 200+ data center terms: UPS, PUE, ATS, CRAH, Tier III, arc flash, LOTO, DCIM, colocation, cross-connects, and more.">
+<meta name="twitter:image" content="https://datacentertraining.us/images/og-image.jpg">
 
 <link rel="stylesheet" href="../css/site.min.css">
 <script src="../js/nav.js" defer></script>
@@ -31,11 +70,2001 @@
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "DefinedTermSet",
+  "@id": "https://datacentertraining.us/learn/glossary.html#terms",
+  "name": "Data Center Glossary: 200+ Terms Explained",
+  "description": "Plain-English definitions of 200+ data center terms: UPS, PUE, ATS, CRAH, Tier III, arc flash, LOTO, DCIM, colocation, cross-connects, and more.",
+  "url": "https://datacentertraining.us/learn/glossary.html",
+  "publisher": {
+    "@type": "EducationalOrganization",
+    "@id": "https://datacentertraining.us/#organization",
+    "name": "Data Center Training",
+    "url": "https://datacentertraining.us/"
+  },
+  "hasDefinedTerm": [
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-2n",
+      "name": "2N",
+      "description": "A redundancy design with two complete, independent systems (A and B), each able to carry the full load alone. A failure or maintenance anywhere in one path leaves the other carrying the load. See how data center power works.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-2n",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-2n-plus-1",
+      "name": "2N+1",
+      "description": "A 2N design with an additional spare unit, so the facility keeps full redundancy even while one component is out of service.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-2n-plus-1",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-19-inch-rack",
+      "name": "19-inch rack",
+      "description": "The standard equipment rack defined by the EIA-310 standard, in which equipment front panels are 19 inches wide. Equipment height is measured in rack units.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-19-inch-rack",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-ab-power-feeds",
+      "name": "A/B power feeds",
+      "description": "Two independent power paths delivered to each rack, usually from separate UPS systems. Dual-corded equipment plugs into both, so each feed must be loaded lightly enough to carry the full load alone if the other is lost.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-ab-power-feeds",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-access-control",
+      "name": "Access control",
+      "description": "The systems and procedures that decide who can enter which spaces, and when. In data centers it usually layers badges, PINs, or biometrics with zones, logs, and escorts. See security and compliance.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-access-control",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-adiabatic-cooling",
+      "name": "Adiabatic cooling",
+      "description": "Lowering air temperature by evaporating water into it. Data centers often use it to pre-cool air entering dry coolers or condensers on hot days, trading some water use for lower energy use.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-adiabatic-cooling",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-ahj",
+      "name": "AHJ (Authority Having Jurisdiction)",
+      "description": "The office or official responsible for enforcing a code and approving equipment, installations, or procedures, such as a building official, electrical inspector, or fire marshal. Their interpretation governs on site. See the standards guide.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-ahj",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-air-side-economizer",
+      "name": "Air-side economizer",
+      "description": "A cooling mode that brings filtered outside air into the facility when outdoor conditions are cool and dry enough, reducing or replacing mechanical cooling. It requires careful control of humidity and air quality.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-air-side-economizer",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-aisle-containment",
+      "name": "Aisle containment",
+      "description": "Doors, roof panels, or curtains that enclose either the cold aisle or the hot aisle so supply and exhaust air do not mix. Containment improves cooling efficiency and lets supply air temperatures rise.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-aisle-containment",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-anti-passback",
+      "name": "Anti-passback",
+      "description": "An access control rule that rejects a badge used to enter an area again before it has been used to exit. It stops one badge from being passed back to let a second person in.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-anti-passback",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-arc-flash",
+      "name": "Arc flash",
+      "description": "A release of energy from an electric arc through air between conductors or to ground. It produces intense heat, light, pressure, and molten metal, and can cause severe burns or death. See data center safety and Data Center Arc Flash Safety.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-arc-flash",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-arc-flash-boundary",
+      "name": "Arc flash boundary",
+      "description": "The distance from a potential arc source at which incident energy equals 1.2 cal/cm², the level associated with the onset of a second-degree burn on bare skin. Anyone inside it needs arc-rated PPE.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-arc-flash-boundary",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-arc-rated-clothing",
+      "name": "Arc-rated (AR) clothing",
+      "description": "Clothing and PPE tested to resist ignition and limit heat transfer from an arc flash, labeled with an arc rating in cal/cm². The rating must meet or exceed the incident energy for the task.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-arc-rated-clothing",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-ashrae",
+      "name": "ASHRAE",
+      "description": "A professional society for heating, ventilation, air conditioning, and refrigeration. Its Technical Committee 9.9 publishes the thermal guidelines most data centers follow, with a recommended inlet range of 18-27 °C (64.4-80.6 °F) for most equipment classes.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-ashrae",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-aspirating-smoke-detection",
+      "name": "Aspirating smoke detection",
+      "description": "A detection system that continuously draws air samples through a pipe network to a highly sensitive detector, giving very early warning of smoke. VESDA is a widely known brand.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-aspirating-smoke-detection",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-ats",
+      "name": "ATS (Automatic Transfer Switch)",
+      "description": "A switch that automatically moves electrical load from the normal source, usually the utility, to an alternate source, usually a generator, when the normal source fails, and back when it returns. Most transfers involve a brief interruption that the UPS covers.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-ats",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-availability",
+      "name": "Availability",
+      "description": "The percentage of time a system is running and able to serve its load, often expressed in “nines,” such as 99.99%. The uptime calculator converts availability into downtime.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-availability",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-available-fault-current",
+      "name": "Available fault current",
+      "description": "The maximum current that could flow at a given point during a short circuit. Equipment must be rated to withstand and interrupt it, and it is a key input to arc flash studies.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-available-fault-current",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-bacnet",
+      "name": "BACnet",
+      "description": "A standard communication protocol for building automation and control networks, published as ASHRAE Standard 135. Many BMS controllers, chillers, and air handlers use it.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-bacnet",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-battery-string",
+      "name": "Battery string",
+      "description": "A set of battery cells or blocks connected in series to reach the DC voltage a UPS needs. Large UPS systems often use several strings in parallel for capacity and redundancy.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-battery-string",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-bess",
+      "name": "BESS (Battery Energy Storage System)",
+      "description": "A large battery installation that stores energy for later use, such as reducing peak demand, supporting the grid, or backing up a site. NFPA 855 covers stationary energy storage installations.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-bess",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-bicsi",
+      "name": "BICSI",
+      "description": "A professional association for information and communications technology infrastructure. It publishes ANSI/BICSI 002, a data center design standard, and offers its own credentials, such as the RCDD.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-bicsi",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-biometric-authentication",
+      "name": "Biometric authentication",
+      "description": "Verifying identity with a physical trait, such as a fingerprint, iris, hand geometry, or face. Often combined with a badge for two-factor entry into secure areas.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-biometric-authentication",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-blanking-panel",
+      "name": "Blanking panel",
+      "description": "A plate that fills unused rack spaces so hot exhaust air cannot recirculate to the front of the rack. One of the cheapest and most effective airflow fixes.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-blanking-panel",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-bms",
+      "name": "BMS (Building Management System)",
+      "description": "The control and monitoring system for mechanical and building equipment such as chillers, air handlers, pumps, and lighting. Also called a building automation system (BAS). It trends data, raises alarms, and runs control sequences. See Monitoring, Automation & BMS Systems.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-bms",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-branch-circuit",
+      "name": "Branch circuit",
+      "description": "The final circuit between the last overcurrent device and the outlets or equipment it serves, such as the circuit feeding a rack PDU.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-branch-circuit",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-btu",
+      "name": "BTU (British Thermal Unit)",
+      "description": "The heat needed to raise one pound of water by one degree Fahrenheit. Cooling loads are often stated in BTU per hour, and 1 kW of IT load produces about 3,412 BTU/hr of heat.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-btu",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-build-to-suit",
+      "name": "Build-to-suit",
+      "description": "A data center developed to a specific tenant's requirements, usually under a long-term lease. Common for large cloud and AI deployments.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-build-to-suit",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-busway",
+      "name": "Busway",
+      "description": "A prefabricated enclosure of copper or aluminum bars that distributes power, often overhead, with plug-in tap-off boxes feeding racks. It is easier to reconfigure than individual cable runs.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-busway",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-bypass-airflow",
+      "name": "Bypass airflow",
+      "description": "Cool supply air that returns to the cooling units without passing through IT equipment, for example through cable cutouts or misplaced perforated tiles. It wastes fan energy and cooling capacity.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-bypass-airflow",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-cable-tray",
+      "name": "Cable tray",
+      "description": "An open support system, such as a ladder or wire basket, that carries power or data cables overhead or under a raised floor.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-cable-tray",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-cage",
+      "name": "Cage",
+      "description": "A locked, mesh-enclosed area inside a colocation data hall that holds one customer's racks.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-cage",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-capacity-planning",
+      "name": "Capacity planning",
+      "description": "Forecasting demand for power, cooling, space, and network so capacity is added before it runs out, without overbuilding. See Capacity Planning & Forecasting.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-capacity-planning",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-carrier-neutral",
+      "name": "Carrier-neutral",
+      "description": "A data center that lets customers connect to many telecommunications carriers and network providers, rather than only the provider that owns the building.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-carrier-neutral",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-cctv",
+      "name": "CCTV",
+      "description": "Closed-circuit television: the cameras and recording systems that monitor perimeters, entrances, and data halls. Video retention periods are often set by contracts or audit requirements.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-cctv",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-cdu",
+      "name": "CDU (Coolant Distribution Unit)",
+      "description": "Equipment that transfers heat from a liquid-cooled rack loop to the facility water system using a heat exchanger, pumps, filters, and controls. Central to direct-to-chip cooling. See AI data centers.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-cdu",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-cfd",
+      "name": "CFD (Computational Fluid Dynamics)",
+      "description": "Computer modeling of airflow and temperature in a data hall. Used to test layouts, find hot spots, and check what happens when a cooling unit fails.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-cfd",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-chain-of-custody",
+      "name": "Chain of custody",
+      "description": "A documented record of who handled a piece of equipment or media, such as a failed drive, from removal through destruction. Many security frameworks and customer contracts require it.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-chain-of-custody",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-change-management",
+      "name": "Change management",
+      "description": "The process for proposing, reviewing, approving, scheduling, and documenting changes to critical systems, so risky work happens deliberately and with a back-out plan. See operations and maintenance.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-change-management",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-chilled-water",
+      "name": "Chilled water",
+      "description": "Water cooled by chillers and pumped to CRAHs, air handlers, or coolant distribution units to absorb heat. Warmer chilled water temperatures improve chiller efficiency and increase economizer hours.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-chilled-water",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-chiller",
+      "name": "Chiller",
+      "description": "A machine that removes heat from water using a refrigeration cycle. Air-cooled chillers reject heat to outdoor air; water-cooled chillers reject it to condenser water and cooling towers.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-chiller",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-circuit-breaker",
+      "name": "Circuit breaker",
+      "description": "A switching device that opens a circuit automatically on overload or short circuit and can also be operated manually. Large breakers in switchgear are controlled by trip units or protective relays.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-circuit-breaker",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-clean-agent",
+      "name": "Clean agent",
+      "description": "An electrically nonconductive fire suppressant that leaves no residue, such as HFC-227ea (sold as FM-200), FK-5-1-12 (sold as Novec 1230 and others), or inert gases such as IG-541. NFPA 2001 covers these systems. See Fire Suppression System Safety.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-clean-agent",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-cmms",
+      "name": "CMMS (Computerized Maintenance Management System)",
+      "description": "Software that schedules preventive maintenance and tracks work orders, assets, spare parts, and maintenance history.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-cmms",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-cold-aisle",
+      "name": "Cold aisle",
+      "description": "The aisle where rack fronts face each other and cool supply air is delivered to equipment inlets.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-cold-aisle",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-cold-plate",
+      "name": "Cold plate",
+      "description": "A metal plate with internal channels mounted directly on a processor or GPU. Coolant flowing through it carries the heat away. The core component of direct-to-chip cooling.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-cold-plate",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-colocation",
+      "name": "Colocation",
+      "description": "A business model in which a provider supplies space, power, cooling, security, and connectivity, and customers bring their own IT equipment. Sold by the rack, cage, suite, or hall.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-colocation",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-commissioning",
+      "name": "Commissioning",
+      "description": "A structured process that verifies systems are installed and perform as designed, commonly organized in levels from factory witness testing (L1) through integrated systems testing (L5). See data center commissioning.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-commissioning",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-concurrent-maintainability",
+      "name": "Concurrent maintainability",
+      "description": "The ability to take any component or distribution path out of service for planned maintenance without affecting the IT load. The defining feature of a Tier III facility.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-concurrent-maintainability",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-condenser-water",
+      "name": "Condenser water",
+      "description": "The water loop that carries heat from water-cooled chillers to cooling towers, where it is rejected to the atmosphere.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-condenser-water",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-confined-space",
+      "name": "Confined space",
+      "description": "A space large enough to enter, with limited entry or exit, not designed for continuous occupancy. OSHA 29 CFR 1910.146 requires a permit program for confined spaces with serious hazards. See Raised Floor and Confined Space Awareness.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-confined-space",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-cooling-tower",
+      "name": "Cooling tower",
+      "description": "An outdoor heat rejection device that cools condenser water by evaporating part of it. It consumes water and needs water treatment, including Legionella control.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-cooling-tower",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-crac",
+      "name": "CRAC (Computer Room Air Conditioner)",
+      "description": "A computer room cooling unit with its own refrigeration compressor, typically a direct expansion (DX) system. Compare with a CRAH, which uses chilled water.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-crac",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-crah",
+      "name": "CRAH (Computer Room Air Handler)",
+      "description": "A cooling unit that uses fans and a chilled water coil to cool data hall air. It has no compressor; the chiller plant does the refrigeration. See how data center cooling works.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-crah",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-critical-load",
+      "name": "Critical load",
+      "description": "The equipment that must stay powered without interruption, usually the IT equipment on UPS power plus any critical mechanical loads.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-critical-load",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-cross-connect",
+      "name": "Cross-connect",
+      "description": "A physical cable connection between two parties inside a data center, such as between a customer's cage and a carrier. Colocation providers usually charge a monthly fee for each one.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-cross-connect",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-cue",
+      "name": "CUE (Carbon Usage Effectiveness)",
+      "description": "A Green Grid metric of the carbon emissions caused by a data center's energy use, divided by IT equipment energy, usually expressed in kg CO2e per kWh.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-cue",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-dark-fiber",
+      "name": "Dark fiber",
+      "description": "Installed optical fiber that is not lit by a provider's equipment. The customer leases it and connects its own optics, controlling capacity end to end.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-dark-fiber",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-data-hall",
+      "name": "Data hall",
+      "description": "A room in a data center that holds IT racks. Also called a computer room or white space.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-data-hall",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-day-tank",
+      "name": "Day tank",
+      "description": "A small fuel tank at or in a generator that feeds the engine directly and is refilled from larger bulk storage tanks.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-day-tank",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-dcie",
+      "name": "DCiE (Data Center infrastructure Efficiency)",
+      "description": "IT equipment energy divided by total facility energy, expressed as a percentage. It is the inverse of PUE, so a PUE of 1.5 equals a DCiE of about 67%.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-dcie",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-dcim",
+      "name": "DCIM (Data Center Infrastructure Management)",
+      "description": "Software that tracks and monitors physical infrastructure: assets, rack space, power and cooling capacity, environmental sensors, and connectivity. It bridges IT and facilities data. See DCIM Platform Fundamentals.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-dcim",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-defense-in-depth",
+      "name": "Defense in depth",
+      "description": "Layering security controls, such as perimeter fencing, building entry, mantraps, data hall access, and locked racks, so one failure does not expose critical assets.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-defense-in-depth",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-delta-t",
+      "name": "Delta T",
+      "description": "A temperature difference, such as between supply and return air or water. A healthy delta T across IT equipment and coils shows air or water is being used efficiently.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-delta-t",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-demarc",
+      "name": "Demarc (demarcation point)",
+      "description": "The point where a carrier's network responsibility ends and the customer's or building's begins.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-demarc",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-dew-point",
+      "name": "Dew point",
+      "description": "The temperature at which water vapor in air condenses. ASHRAE expresses data center humidity limits partly in dew point, and surfaces colder than it will collect condensation.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-dew-point",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-direct-to-chip-cooling",
+      "name": "Direct-to-chip cooling",
+      "description": "Liquid cooling that pumps coolant through cold plates mounted on processors and GPUs. It removes most of a server's heat at the source and is the most common approach for high-density AI racks.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-direct-to-chip-cooling",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-disaster-recovery",
+      "name": "Disaster recovery (DR)",
+      "description": "The plans, systems, and procedures for restoring IT services after a major disruption, measured against RTO and RPO targets. See Disaster Recovery & Business Continuity.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-disaster-recovery",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-distributed-redundancy",
+      "name": "Distributed redundancy",
+      "description": "A design that spreads load across three or more power systems so any one can fail and the others absorb its share, without building a full 2N. Often written like 4N/3: four systems sharing a load that three could carry.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-distributed-redundancy",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-diverse-routing",
+      "name": "Diverse routing",
+      "description": "Running redundant fiber or power paths along physically separate routes so a single cut or event cannot take out both.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-diverse-routing",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-double-conversion",
+      "name": "Double conversion",
+      "description": "The online UPS topology that converts incoming AC to DC and back to clean AC continuously, so the load sees no transfer when utility power fails. The standard for data center critical loads.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-double-conversion",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-dry-cooler",
+      "name": "Dry cooler",
+      "description": "An outdoor fan-and-coil heat exchanger that rejects heat from a water or glycol loop to the air without evaporating water. It saves water, but its capacity drops on hot days.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-dry-cooler",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-dual-corded",
+      "name": "Dual-corded equipment",
+      "description": "IT equipment with two power supplies, connected to separate A and B feeds so it keeps running if one feed fails.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-dual-corded",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-dx",
+      "name": "DX (Direct Expansion)",
+      "description": "A cooling system in which refrigerant evaporates directly in the air-cooling coil, as in most CRAC units.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-dx",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-economizer",
+      "name": "Economizer",
+      "description": "Any cooling mode that uses cool outdoor air or water to reduce or replace mechanical refrigeration. See air-side and water-side economizers.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-economizer",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-edge-data-center",
+      "name": "Edge data center",
+      "description": "A smaller facility placed close to users or devices to reduce latency, often unstaffed and monitored remotely.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-edge-data-center",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-electrically-safe-work-condition",
+      "name": "Electrically safe work condition (ESWC)",
+      "description": "A state in which equipment has been disconnected, locked and tagged out, tested for absence of voltage, and grounded where needed. NFPA 70E makes establishing it the preferred way to work on electrical equipment.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-electrically-safe-work-condition",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-energized-work-permit",
+      "name": "Energized electrical work permit",
+      "description": "A written authorization required under NFPA 70E before justified work on energized equipment. It documents why the work cannot be de-energized, the hazards, the boundaries, and the PPE.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-energized-work-permit",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-entrance-room",
+      "name": "Entrance room",
+      "description": "The space where carrier and campus cabling enters the data center and connects to the internal cabling system, as defined in ANSI/TIA-942.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-entrance-room",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-eop",
+      "name": "EOP (Emergency Operating Procedure)",
+      "description": "A pre-written procedure for responding to a specific failure or emergency, such as a UPS fault, chiller trip, or utility outage, so technicians act quickly and correctly under pressure.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-eop",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-epa-section-608",
+      "name": "EPA Section 608",
+      "description": "The Clean Air Act section under which EPA regulates refrigerant handling. Technicians who open refrigerant systems need Section 608 certification from an EPA-approved certifying program. See Cooling System and Refrigerant Safety.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-epa-section-608",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-epms",
+      "name": "EPMS (Electrical Power Monitoring System)",
+      "description": "Meters and software that monitor power quality, loads, breaker status, and events across switchgear, UPS systems, and distribution equipment.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-epms",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-epo",
+      "name": "EPO (Emergency Power Off)",
+      "description": "A system that lets someone quickly shut off power to IT equipment in an emergency, usually through guarded buttons near room exits. Accidental activation is a known cause of outages. See EPO Procedures.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-epo",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-ere",
+      "name": "ERE (Energy Reuse Effectiveness)",
+      "description": "A Green Grid metric that credits energy reused outside the data center, such as waste heat sent to a heating network. It equals total facility energy minus reused energy, divided by IT energy.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-ere",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-esd",
+      "name": "ESD (Electrostatic Discharge)",
+      "description": "A sudden flow of static electricity that can damage electronic components. Wrist straps, grounded work surfaces, and humidity control reduce the risk.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-esd",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-evaporative-cooling",
+      "name": "Evaporative cooling",
+      "description": "Cooling by evaporating water into air, either directly into the supply air or indirectly through a heat exchanger. It saves energy but consumes water.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-evaporative-cooling",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-facility-rounds",
+      "name": "Facility rounds",
+      "description": "Scheduled walk-throughs in which technicians check and record equipment readings, alarms, leaks, and conditions across the facility.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-facility-rounds",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-fws",
+      "name": "Facility water system (FWS)",
+      "description": "In liquid cooling, the building-side water loop served by chillers, cooling towers, or dry coolers. A CDU connects it to the technology cooling system.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-fws",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-fault-tolerance",
+      "name": "Fault tolerance",
+      "description": "The ability to withstand any single unplanned failure of a component or path without affecting the IT load. The defining feature of a Tier IV facility.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-fault-tolerance",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-firestop",
+      "name": "Firestop",
+      "description": "Listed materials and systems that seal openings where cables or pipes pass through fire-rated walls and floors, preserving the fire rating.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-firestop",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-fk-5-1-12",
+      "name": "FK-5-1-12",
+      "description": "A clean agent fire suppressant, sold under names including Novec 1230, stored as a liquid and discharged as a gas. Systems are designed under NFPA 2001.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-fk-5-1-12",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-flywheel-ups",
+      "name": "Flywheel UPS",
+      "description": "A UPS that stores energy in a spinning rotor instead of batteries. It provides ride-through for seconds rather than minutes, so generators must start quickly.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-flywheel-ups",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-fm-200",
+      "name": "FM-200 (HFC-227ea)",
+      "description": "A widely used clean agent fire suppressant, heptafluoropropane. As a hydrofluorocarbon, it is subject to HFC phase-down rules.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-fm-200",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-free-cooling",
+      "name": "Free cooling",
+      "description": "Cooling with little or no compressor energy by using cool outdoor air or water, typically through an economizer.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-free-cooling",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-fuel-polishing",
+      "name": "Fuel polishing",
+      "description": "Filtering and conditioning stored diesel fuel to remove water, sediment, and microbial growth so generators get clean fuel.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-fuel-polishing",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-generator",
+      "name": "Generator (standby)",
+      "description": "An engine-driven alternator, usually diesel, that carries the facility through utility outages after the UPS bridges the start-up. NFPA 110 covers testing and maintenance. See Generator Fundamentals.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-generator",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-glycol",
+      "name": "Glycol",
+      "description": "Ethylene or propylene glycol mixed with water to lower the freezing point of cooling loops exposed to cold weather. It reduces heat transfer somewhat and must be tested and maintained.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-glycol",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-gpu",
+      "name": "GPU (Graphics Processing Unit)",
+      "description": "A processor with thousands of parallel cores, now the main engine of AI training and inference. GPU servers draw far more power per rack than traditional servers. See AI data centers.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-gpu",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-gray-space",
+      "name": "Gray space",
+      "description": "The back-of-house areas that hold support infrastructure, such as electrical rooms, UPS and battery rooms, mechanical plants, and generator yards.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-gray-space",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-grounding-and-bonding",
+      "name": "Grounding and bonding",
+      "description": "Grounding connects electrical systems to the earth; bonding connects metal parts so they stay at the same potential. Together they let protective devices clear faults and reduce shock hazards.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-grounding-and-bonding",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-gwp",
+      "name": "GWP (Global Warming Potential)",
+      "description": "A measure of how much heat a gas traps compared with carbon dioxide over a set period. Refrigerant and fire suppressant choices increasingly hinge on low GWP.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-gwp",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-harmonics",
+      "name": "Harmonics",
+      "description": "Currents or voltages at multiples of the fundamental frequency, created by non-linear loads such as power supplies and drives. They add heat to transformers and neutral conductors and can upset sensitive equipment.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-harmonics",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-hazcom",
+      "name": "HazCom (Hazard Communication)",
+      "description": "The OSHA standard, 29 CFR 1910.1200, that requires labels, Safety Data Sheets, and training for hazardous chemicals such as battery electrolyte, diesel fuel, refrigerants, and coolants.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-hazcom",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-hda",
+      "name": "HDA (Horizontal Distribution Area)",
+      "description": "In ANSI/TIA-942, the space where horizontal cabling to equipment racks is distributed, often serving a row or zone of the data hall.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-hda",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-heat-reuse",
+      "name": "Heat reuse",
+      "description": "Capturing waste heat from a data center for another purpose, such as heating nearby buildings. Liquid cooling makes it easier because heat leaves at higher temperatures.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-heat-reuse",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-high-density",
+      "name": "High density",
+      "description": "Racks or rooms with power and heat loads above what conventional air cooling handles easily. Traditional enterprise racks commonly draw single-digit kilowatts; AI training racks commonly draw tens of kilowatts.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-high-density",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-hot-aisle",
+      "name": "Hot aisle",
+      "description": "The aisle where rack backs face each other and hot exhaust air collects before returning to the cooling units.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-hot-aisle",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-hot-spot",
+      "name": "Hot spot",
+      "description": "A location where equipment inlet temperatures run above the intended range, often caused by recirculation, blocked airflow, or a local overload.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-hot-spot",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-hot-work-permit",
+      "name": "Hot work permit",
+      "description": "Authorization required before welding, cutting, brazing, or other spark-producing work, with precautions such as a fire watch and coordination with the fire alarm and suppression systems.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-hot-work-permit",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-hvac",
+      "name": "HVAC",
+      "description": "Heating, ventilation, and air conditioning: the mechanical systems that control temperature, humidity, and air quality.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-hvac",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-hyperscale",
+      "name": "Hyperscale data center",
+      "description": "A very large facility or campus built and operated by a major cloud or internet company to run its own services at massive scale.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-hyperscale",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-immersion-cooling",
+      "name": "Immersion cooling",
+      "description": "Cooling servers by submerging them in a dielectric fluid. In single-phase systems the fluid stays liquid; in two-phase systems it boils off hot components and condenses on a coil.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-immersion-cooling",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-incident-energy",
+      "name": "Incident energy",
+      "description": "The thermal energy an arc flash could deliver to a surface at a given working distance, measured in cal/cm². Arc flash studies calculate it, commonly with the IEEE 1584 method, to select PPE.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-incident-energy",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-incident-management",
+      "name": "Incident management",
+      "description": "Detecting, responding to, escalating, and resolving events that affect or threaten operations, followed by documentation and root cause analysis. See Incident Response & Troubleshooting.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-incident-management",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-inert-gas-agent",
+      "name": "Inert gas agent",
+      "description": "A clean agent made of naturally occurring gases, such as IG-541 (Inergen), IG-55, or IG-100 (nitrogen), that suppresses fire by lowering oxygen concentration. Protected rooms need pressure relief venting and clear evacuation procedures.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-inert-gas-agent",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-infrared-thermography",
+      "name": "Infrared thermography",
+      "description": "Using a thermal camera to find hot connections, overloaded circuits, and failing components without contact. A routine part of electrical maintenance.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-infrared-thermography",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-in-row-cooling",
+      "name": "In-row cooling",
+      "description": "Cooling units placed between racks within a row, close to the heat source, rather than at the room perimeter.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-in-row-cooling",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-internet-exchange",
+      "name": "Internet exchange (IX)",
+      "description": "A shared switching platform where networks connect and exchange traffic directly with each other, often hosted in carrier-neutral data centers.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-internet-exchange",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-inverter",
+      "name": "Inverter",
+      "description": "The UPS stage that converts DC power from the rectifier or batteries into conditioned AC power for the load.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-inverter",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-iso-27001",
+      "name": "ISO/IEC 27001",
+      "description": "The international standard for information security management systems. Annex A of the 2022 edition includes physical security controls, and certification is issued by accredited certification bodies.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-iso-27001",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-ist",
+      "name": "IST (Integrated Systems Testing)",
+      "description": "The final level of commissioning, which tests all systems together under realistic conditions, including utility and component failures, often with load banks in place of IT equipment.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-ist",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-it-load",
+      "name": "IT load",
+      "description": "The power drawn by IT equipment such as servers, storage, and network gear. It is the denominator in PUE.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-it-load",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-jha",
+      "name": "JHA (Job Hazard Analysis)",
+      "description": "A step-by-step review of a task to identify its hazards and controls before work begins. Also called a job safety analysis (JSA).",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-jha",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-kva",
+      "name": "kVA (kilovolt-ampere)",
+      "description": "A unit of apparent power, the product of voltage and current. UPS systems, generators, and transformers are often rated in kVA, while loads are measured in kW.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-kva",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-kw",
+      "name": "kW (kilowatt)",
+      "description": "A unit of real power, the rate at which energy is used. Rack and IT loads are usually stated in kW.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-kw",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-kwh",
+      "name": "kWh (kilowatt-hour)",
+      "description": "A unit of energy: one kilowatt used for one hour. Utility bills and PUE calculations use energy in kWh, not instantaneous kW.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-kwh",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-latency",
+      "name": "Latency",
+      "description": "The time it takes data to travel between two points, usually measured in milliseconds. Distance, routing, and equipment all add to it.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-latency",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-leak-detection",
+      "name": "Leak detection",
+      "description": "Cable or spot sensors that alarm when they sense water or coolant under raised floors, near cooling units, or along liquid cooling piping.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-leak-detection",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-limited-approach-boundary",
+      "name": "Limited approach boundary",
+      "description": "An NFPA 70E shock protection boundary around exposed energized parts. Unqualified persons may cross it only when continuously escorted and advised by a qualified person.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-limited-approach-boundary",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-liquid-cooling",
+      "name": "Liquid cooling",
+      "description": "Any cooling method that brings liquid to or very close to the heat source, such as direct-to-chip cold plates, rear-door heat exchangers, or immersion.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-liquid-cooling",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-lithium-ion-battery",
+      "name": "Lithium-ion battery",
+      "description": "A battery chemistry increasingly used in UPS systems because it is smaller, lighter, and longer-lived than lead-acid. It carries a risk of thermal runaway. See Lithium-Ion Thermal Runaway.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-lithium-ion-battery",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-load-bank",
+      "name": "Load bank",
+      "description": "A portable or permanent device that applies an artificial electrical load, and its heat, to test generators, UPS systems, and cooling before or without real IT load.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-load-bank",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-loto",
+      "name": "LOTO (Lockout/Tagout)",
+      "description": "Procedures that isolate energy sources and secure them with locks and tags so equipment cannot be energized while someone works on it. Required by OSHA 29 CFR 1910.147, with electrical work also covered by Subpart S. See data center safety.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-loto",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-maintenance-bypass",
+      "name": "Maintenance bypass",
+      "description": "Manually operated breakers that route power around a UPS so it can be fully isolated for service. The load is unprotected while on bypass, so switching follows a written procedure.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-maintenance-bypass",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-mantrap",
+      "name": "Mantrap",
+      "description": "A small entry vestibule with two interlocked doors, only one of which can open at a time, used to prevent tailgating and verify identity. Also called a security vestibule.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-mantrap",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-mda",
+      "name": "MDA (Main Distribution Area)",
+      "description": "In ANSI/TIA-942, the central space that holds the main cross-connect and usually the core routers and switches.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-mda",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-medium-voltage",
+      "name": "Medium voltage",
+      "description": "Distribution voltages above 1,000 V, commonly up to about 35 kV, used for utility service and campus distribution in large data centers.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-medium-voltage",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-meet-me-room",
+      "name": "Meet-me room (MMR)",
+      "description": "A secure room where carriers and customers interconnect their networks through cross-connects. The heart of a carrier-neutral facility.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-meet-me-room",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-modbus",
+      "name": "Modbus",
+      "description": "A simple, widely used industrial communication protocol for reading meters, UPS systems, generators, and other equipment into BMS and EPMS platforms.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-modbus",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-modular-data-center",
+      "name": "Modular data center",
+      "description": "A data center built from prefabricated, factory-tested modules, such as power skids, cooling modules, or complete IT pods, to speed construction and scale in steps.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-modular-data-center",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-mop",
+      "name": "MOP (Method of Procedure)",
+      "description": "A written, step-by-step procedure for a specific task on critical equipment, with prerequisites, hold points, verification steps, and a back-out plan. It is reviewed and approved through change management. See operations and maintenance.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-mop",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-mpo-connector",
+      "name": "MPO connector",
+      "description": "A multi-fiber push-on connector that terminates many fibers in a single ferrule. Used for high-speed links and dense trunk cabling.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-mpo-connector",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-mtbf",
+      "name": "MTBF (Mean Time Between Failures)",
+      "description": "The average operating time between failures of a repairable component or system. A statistical measure, not a promise for any single unit.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-mtbf",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-mttr",
+      "name": "MTTR (Mean Time To Repair)",
+      "description": "The average time to restore a failed component or system to service. Good spares, procedures, and training lower it.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-mttr",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-multimode-fiber",
+      "name": "Multimode fiber",
+      "description": "Optical fiber with a larger core that carries multiple light paths. Its optics cost less, but distances are shorter, so it is common inside data halls.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-multimode-fiber",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-n",
+      "name": "N",
+      "description": "The amount of capacity needed to carry the load, with no spare. Redundancy is described relative to it, as in N+1 or 2N.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-n",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-n-plus-1",
+      "name": "N+1",
+      "description": "A redundancy level with one more unit than the load needs, such as five UPS modules where four would carry the load. It covers a single unit's failure or maintenance, but usually shares one distribution path.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-n-plus-1",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-nec",
+      "name": "NEC (National Electrical Code)",
+      "description": "NFPA 70, the model code for electrical installations in the United States. It becomes law where states and localities adopt it. Article 645 has provisions for information technology equipment rooms.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-nec",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-nfpa-70e",
+      "name": "NFPA 70E",
+      "description": "The NFPA standard for electrical safety in the workplace, covering electrically safe work conditions, risk assessment, approach boundaries, arc flash PPE, and training. See Electrical Safety & Best Practices.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-nfpa-70e",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-noc",
+      "name": "NOC (Network Operations Center)",
+      "description": "A staffed center that monitors networks, systems, and often facility alarms around the clock, and coordinates the response to incidents.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-noc",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-open-compute-project",
+      "name": "Open Compute Project (OCP)",
+      "description": "An industry organization that publishes open hardware designs for servers, racks, and power, including rack designs that distribute DC power on busbars.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-open-compute-project",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-operational-sustainability",
+      "name": "Operational Sustainability",
+      "description": "Uptime Institute's standard for the staffing, maintenance, training, and management practices that keep a facility performing to its Tier over time. It is certified separately from design and construction.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-operational-sustainability",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-osha",
+      "name": "OSHA",
+      "description": "The U.S. Occupational Safety and Health Administration, which sets and enforces workplace safety rules such as 29 CFR 1910 Subpart S (electrical), 1910.147 (lockout/tagout), and 1910.146 (confined spaces).",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-osha",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-otdr",
+      "name": "OTDR (Optical Time-Domain Reflectometer)",
+      "description": "A test instrument that sends light pulses down a fiber and measures what reflects back, to locate breaks, splices, connectors, and loss along the link.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-otdr",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-paralleling-switchgear",
+      "name": "Paralleling switchgear",
+      "description": "Switchgear that synchronizes multiple generators onto a common bus so they share the load and back each other up.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-paralleling-switchgear",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-patch-panel",
+      "name": "Patch panel",
+      "description": "A panel of ports where permanent cabling terminates, so connections can be changed with short patch cords instead of new cable runs.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-patch-panel",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-pci-dss",
+      "name": "PCI DSS",
+      "description": "The Payment Card Industry Data Security Standard. Its Requirement 9 restricts physical access to cardholder data, which affects facilities hosting payment systems.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-pci-dss",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-pdu",
+      "name": "PDU (Power Distribution Unit)",
+      "description": "Equipment that distributes power to IT racks. A floor-standing PDU usually contains a transformer that steps 480 V down to rack voltage plus panelboards; a rack PDU is the power strip inside the rack.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-pdu",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-peering",
+      "name": "Peering",
+      "description": "Two networks exchanging traffic directly, often without payment, rather than through a transit provider. It usually happens at internet exchanges or over cross-connects.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-peering",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-plenum",
+      "name": "Plenum",
+      "description": "An air space used for air distribution, such as the space under a raised floor or above a ceiling. Cables in plenums must meet stricter fire ratings.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-plenum",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-pop",
+      "name": "Point of presence (PoP)",
+      "description": "A location where a network provider has equipment and offers connections to customers.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-pop",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-power-factor",
+      "name": "Power factor",
+      "description": "The ratio of real power (kW) to apparent power (kVA). Modern IT power supplies run close to 1.0, which affects how UPS and generator capacity is sized.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-power-factor",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-powered-shell",
+      "name": "Powered shell",
+      "description": "A building delivered with utility power and basic infrastructure in place but without the data hall fit-out, which the tenant completes.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-powered-shell",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-ppa",
+      "name": "PPA (Power Purchase Agreement)",
+      "description": "A long-term contract to buy electricity, often tied to a specific wind or solar project, used by data center operators to source renewable energy.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-ppa",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-ppe",
+      "name": "PPE (Personal Protective Equipment)",
+      "description": "Equipment worn to reduce exposure to hazards, such as arc-rated clothing, voltage-rated gloves, safety glasses, and hearing protection. OSHA 29 CFR 1910.132 sets the general requirements.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-ppe",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-pre-action-sprinkler",
+      "name": "Pre-action sprinkler system",
+      "description": "A sprinkler system with dry piping that fills with water only after a detection system activates; in double-interlock designs, water flows only when a sprinkler head also opens. Common in data halls to reduce accidental water release.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-pre-action-sprinkler",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-predictive-maintenance",
+      "name": "Predictive maintenance",
+      "description": "Maintenance triggered by condition data, such as vibration, oil analysis, thermography, or battery impedance trends, rather than a fixed calendar.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-predictive-maintenance",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-preventive-maintenance",
+      "name": "Preventive maintenance (PM)",
+      "description": "Scheduled inspection, testing, and servicing to prevent failures, based on manufacturer recommendations, standards such as NFPA 70B, and site history. See Preventive Maintenance Planning.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-preventive-maintenance",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-pue",
+      "name": "PUE (Power Usage Effectiveness)",
+      "description": "Total facility energy divided by IT equipment energy. A PUE of 1.0 would mean every kilowatt-hour goes to IT; real facilities run higher. Try the PUE calculator or read the energy efficiency guide.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-pue",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-qualified-person",
+      "name": "Qualified person",
+      "description": "Under OSHA and NFPA 70E, a person with the skills, knowledge, and safety training to recognize and avoid the hazards of specific equipment and tasks. The employer makes that determination; no course alone makes someone qualified.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-qualified-person",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-rack-pdu",
+      "name": "Rack PDU",
+      "description": "A power strip mounted in a rack that feeds IT equipment, often with metering, outlet switching, and network monitoring.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-rack-pdu",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-rack-unit",
+      "name": "Rack unit (U)",
+      "description": "The standard unit of rack height, 1.75 inches (44.45 mm). A 2U server is 3.5 inches tall, and full-height racks are commonly 42U or more.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-rack-unit",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-raised-floor",
+      "name": "Raised floor",
+      "description": "A floor of removable tiles on pedestals above the structural slab. The space beneath can serve as a cool-air plenum and route cables and piping.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-raised-floor",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-rear-door-heat-exchanger",
+      "name": "Rear-door heat exchanger (RDHx)",
+      "description": "A water-cooled coil that replaces a rack's rear door and removes heat from exhaust air before it enters the room. Passive versions rely on server fans; active versions add their own.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-rear-door-heat-exchanger",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-rectifier",
+      "name": "Rectifier",
+      "description": "The UPS stage that converts incoming AC power to DC to charge the batteries and feed the inverter.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-rectifier",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-redundancy",
+      "name": "Redundancy",
+      "description": "Extra components or paths beyond what the load needs, so failures or maintenance do not interrupt service. Described with notation such as N+1 and 2N.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-redundancy",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-refrigerant",
+      "name": "Refrigerant",
+      "description": "The working fluid in a vapor-compression cooling cycle. EPA regulates its handling under Section 608, and many refrigerants are being phased down because of their global warming potential.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-refrigerant",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-relative-humidity",
+      "name": "Relative humidity (RH)",
+      "description": "The moisture in air compared with the maximum it could hold at that temperature, as a percentage. Very dry air raises static risk; very humid air risks condensation.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-relative-humidity",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-remote-hands",
+      "name": "Remote hands",
+      "description": "On-site technical services a colocation provider performs on request, such as rebooting servers, reseating cables, or swapping drives. More skilled versions are often called smart hands.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-remote-hands",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-restricted-approach-boundary",
+      "name": "Restricted approach boundary",
+      "description": "The NFPA 70E shock protection boundary closest to exposed energized parts, where the likelihood of shock is increased. Only qualified persons using shock protection techniques and PPE may cross it.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-restricted-approach-boundary",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-retail-colocation",
+      "name": "Retail colocation",
+      "description": "Leasing smaller amounts of space and power, such as individual racks or cages, usually with shorter terms and more provider services. Compare with wholesale colocation.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-retail-colocation",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-return-air",
+      "name": "Return air",
+      "description": "Warm air flowing from the IT equipment back to the cooling units.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-return-air",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-ride-through",
+      "name": "Ride-through",
+      "description": "How long equipment or a facility can keep operating through a disturbance, such as UPS battery runtime or how long servers stay within temperature limits after cooling stops.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-ride-through",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-room-integrity-test",
+      "name": "Room integrity test",
+      "description": "A door fan test that measures how well a room protected by a clean agent system will hold the agent after discharge. Commonly performed at acceptance and after changes to the room.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-room-integrity-test",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-root-cause-analysis",
+      "name": "Root cause analysis (RCA)",
+      "description": "A structured investigation that finds the underlying causes of an incident, not just the immediate trigger, and sets corrective actions to prevent a repeat.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-root-cause-analysis",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-rpo",
+      "name": "RPO (Recovery Point Objective)",
+      "description": "The maximum acceptable data loss after a disruption, measured in time. An RPO of one hour means data must be backed up or replicated at least hourly.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-rpo",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-rpp",
+      "name": "RPP (Remote Power Panel)",
+      "description": "A cabinet of branch circuit breakers fed from a PDU and placed near the racks it serves, extending power distribution closer to the rows.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-rpp",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-rto",
+      "name": "RTO (Recovery Time Objective)",
+      "description": "The maximum acceptable time to restore a service after a disruption. It drives disaster recovery design and cost.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-rto",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-sds",
+      "name": "Safety Data Sheet (SDS)",
+      "description": "A standardized document from a chemical's manufacturer describing its hazards, safe handling, PPE, and emergency measures. Required under OSHA's hazard communication standard.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-sds",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-scope-2-emissions",
+      "name": "Scope 2 emissions",
+      "description": "Greenhouse gas emissions from generating the electricity, heat, or steam an organization buys. For most data centers, purchased electricity makes Scope 2 the largest share of operational emissions.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-scope-2-emissions",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-selective-coordination",
+      "name": "Selective coordination",
+      "description": "Choosing and setting protective devices so that only the device nearest a fault opens, leaving the rest of the system energized.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-selective-coordination",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-spof",
+      "name": "Single point of failure (SPOF)",
+      "description": "Any component or path whose failure would interrupt the IT load. Eliminating them is the goal of redundant design.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-spof",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-single-mode-fiber",
+      "name": "Single-mode fiber",
+      "description": "Optical fiber with a very small core that carries a single light path, supporting long distances and high bandwidth. Used for campus and metro links and increasingly inside data halls.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-single-mode-fiber",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-sla",
+      "name": "SLA (Service Level Agreement)",
+      "description": "The contract terms that define a provider's commitments, such as power availability, temperature range, and response times, and the credits owed if they are missed.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-sla",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-snmp",
+      "name": "SNMP (Simple Network Management Protocol)",
+      "description": "A protocol for monitoring and managing network-connected devices. UPS systems, rack PDUs, and sensors often report to DCIM through SNMP.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-snmp",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-soc-2",
+      "name": "SOC 2",
+      "description": "An attestation report, issued by an independent CPA firm under AICPA standards, on controls relevant to the Trust Services Criteria: security, availability, processing integrity, confidentiality, and privacy. Type 2 reports test controls over a period of time.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-soc-2",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-sop",
+      "name": "SOP (Standard Operating Procedure)",
+      "description": "A written procedure for a routine task, such as facility rounds or generator testing. Compare with a MOP for specific changes and an EOP for emergencies.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-sop",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-spcc",
+      "name": "SPCC plan",
+      "description": "A Spill Prevention, Control, and Countermeasure plan required by EPA under 40 CFR 112 for facilities that store oil, including diesel fuel, above set thresholds. See Facility Environmental Compliance.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-spcc",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-spine-leaf",
+      "name": "Spine-leaf architecture",
+      "description": "A data center network design in which every leaf (access) switch connects to every spine switch, giving predictable latency and simple scaling.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-spine-leaf",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-static-bypass",
+      "name": "Static bypass",
+      "description": "An automatic electronic switch inside a UPS that transfers the load directly to the bypass source if the UPS has a fault or overload.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-static-bypass",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-step-load",
+      "name": "Step load",
+      "description": "A sudden increase or decrease in load. Generators and UPS systems are rated for how large a step they can accept while holding voltage and frequency.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-step-load",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-stranded-capacity",
+      "name": "Stranded capacity",
+      "description": "Power, cooling, or space that exists but cannot be used, for example a rack position with power but no cooling, or cooling but no floor space.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-stranded-capacity",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-structured-cabling",
+      "name": "Structured cabling",
+      "description": "A standards-based cabling system of backbone and horizontal cabling, patch panels, and pathways, as described in ANSI/TIA-942 and related standards. See Fiber Optics & Network Cabling.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-structured-cabling",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-sts",
+      "name": "STS (Static Transfer Switch)",
+      "description": "A solid-state switch that moves a load between two independent power sources within milliseconds, fast enough that single-corded equipment rides through.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-sts",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-substation",
+      "name": "Substation",
+      "description": "A facility that transforms voltage between transmission and distribution levels and switches circuits. Large campuses often have dedicated utility substations.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-substation",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-supply-air",
+      "name": "Supply air",
+      "description": "Cooled air delivered from the cooling units to equipment inlets.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-supply-air",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-spd",
+      "name": "Surge protective device (SPD)",
+      "description": "A device that limits transient overvoltages, such as from lightning or switching, by diverting surge current to ground.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-spd",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-switchgear",
+      "name": "Switchgear",
+      "description": "Assemblies of circuit breakers, relays, and switches that control, protect, and isolate electrical equipment. It holds large amounts of energy, so switching follows written procedures.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-switchgear",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-tailgating",
+      "name": "Tailgating",
+      "description": "Following an authorized person through a secure door without badging in. Mantraps, anti-passback rules, and staff awareness counter it.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-tailgating",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-tco",
+      "name": "TCO (Total Cost of Ownership)",
+      "description": "The full cost of an asset over its life, including purchase, installation, energy, maintenance, and disposal. Used to compare design options.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-tco",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-tcs",
+      "name": "Technology cooling system (TCS)",
+      "description": "In liquid cooling, the secondary loop that circulates treated coolant through rack manifolds and cold plates. A CDU separates it from the facility water system.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-tcs",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-thermal-runaway",
+      "name": "Thermal runaway",
+      "description": "An uncontrolled, self-heating reaction in a battery cell that can spread to neighboring cells and cause fire or the release of flammable and toxic gases. A key lithium-ion risk.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-thermal-runaway",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-three-phase-power",
+      "name": "Three-phase power",
+      "description": "AC power delivered on three conductors with voltages offset by 120 degrees. It moves more power with less conductor material than single-phase and is standard for data center distribution.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-three-phase-power",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-tia-942",
+      "name": "TIA-942",
+      "description": "ANSI/TIA-942, the Telecommunications Industry Association standard for data center infrastructure, covering spaces, cabling, and facility systems, with ratings from Rated-1 to Rated-4.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-tia-942",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-tier-i",
+      "name": "Tier I",
+      "description": "Uptime Institute's basic capacity level: dedicated site infrastructure with a single path for power and cooling and no redundant components. Planned maintenance requires a shutdown.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-tier-i",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-tier-ii",
+      "name": "Tier II",
+      "description": "Uptime Institute's redundant capacity components level: a single distribution path, but with redundant components such as extra UPS modules, chillers, or generators.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-tier-ii",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-tier-iii",
+      "name": "Tier III",
+      "description": "Uptime Institute's concurrently maintainable level: redundant components and multiple distribution paths, so any component can be removed for planned maintenance without affecting IT. A “Tier III” claim without Uptime certification describes design intent. See Tier levels explained.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-tier-iii",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-tier-iv",
+      "name": "Tier IV",
+      "description": "Uptime Institute's fault tolerant level: concurrently maintainable and able to withstand any single unplanned failure without affecting IT, with independent, physically separated paths.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-tier-iv",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-ton-of-refrigeration",
+      "name": "Ton of refrigeration",
+      "description": "A unit of cooling capacity equal to 12,000 BTU/hr, or about 3.517 kW of heat removal. Try the cooling load calculator.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-ton-of-refrigeration",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-top-of-rack-switch",
+      "name": "Top-of-rack (ToR) switch",
+      "description": "A network switch mounted in each rack that connects the servers in that rack, with uplinks to aggregation or spine switches.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-top-of-rack-switch",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-transceiver",
+      "name": "Transceiver",
+      "description": "A pluggable optical or electrical module, such as an SFP or QSFP, that converts signals between a switch port and the cable.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-transceiver",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-transformer",
+      "name": "Transformer",
+      "description": "A device that changes AC voltage from one level to another, such as stepping medium-voltage utility power down to 480 V, or 480 V down to rack voltage in a PDU.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-transformer",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-ups",
+      "name": "UPS (Uninterruptible Power Supply)",
+      "description": "Equipment that conditions power and carries the IT load from stored energy, usually batteries, during the seconds to minutes before generators take over. See how data center power works and UPS Systems Fundamentals.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-ups",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-uptime-institute",
+      "name": "Uptime Institute",
+      "description": "An organization known for its Tier Classification System and Tier Certification of data center designs, constructed facilities, and operations, and for industry research such as its annual global survey.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-uptime-institute",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-utility-feed",
+      "name": "Utility feed",
+      "description": "The incoming power service from the electric utility. Critical sites often take two feeds from separate substations or circuits.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-utility-feed",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-vfd",
+      "name": "VFD (Variable Frequency Drive)",
+      "description": "A motor controller that varies the speed of fans and pumps by changing the supply frequency. Because fan and pump power drops steeply with speed, VFDs are a major efficiency tool.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-vfd",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-vrla-battery",
+      "name": "VRLA battery",
+      "description": "A valve-regulated lead-acid battery: a sealed lead-acid design that was long the default for UPS systems. It needs temperature control, regular monitoring, and periodic replacement.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-vrla-battery",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-water-side-economizer",
+      "name": "Water-side economizer",
+      "description": "A cooling mode that uses cooling towers or dry coolers to chill water through a heat exchanger when outdoor conditions allow, bypassing or assisting the chillers.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-water-side-economizer",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-wet-stacking",
+      "name": "Wet stacking",
+      "description": "Unburned fuel and carbon building up in a diesel engine's exhaust when it runs lightly loaded for long periods. Load-bank testing helps prevent it.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-wet-stacking",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-white-space",
+      "name": "White space",
+      "description": "The area of a data center where IT equipment is installed, as opposed to the gray space that holds support infrastructure.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-white-space",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-wholesale-colocation",
+      "name": "Wholesale colocation",
+      "description": "Leasing large blocks of data center capacity, such as a whole hall or building, usually to a single large tenant under a long-term contract. Compare with retail colocation.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-wholesale-colocation",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-work-order",
+      "name": "Work order",
+      "description": "A documented request or assignment for maintenance work, tracked in a CMMS from creation through completion and sign-off.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-work-order",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://datacentertraining.us/learn/glossary.html#term-wue",
+      "name": "WUE (Water Usage Effectiveness)",
+      "description": "A Green Grid metric of water use: liters of site water consumed per kWh of IT energy. Evaporative cooling raises WUE; dry cooling lowers it.",
+      "url": "https://datacentertraining.us/learn/glossary.html#term-wue",
+      "inDefinedTermSet": "https://datacentertraining.us/learn/glossary.html#terms"
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
 <a class="skip-link" href="#main">Skip to content</a>
-<header class="glass-nav"></header>
+<header class="glass-nav">
+  <div class="container nav-inner">
+    <a href="../" class="logo">
+      <img src="../images/favicon.svg" alt="" width="30" height="30">
+      <span>
+        <span class="logo-mark">datacentertraining.us</span>
+        <span class="logo-sub">Data Center Professional Training</span>
+      </span>
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Main">
+      <div class="nav-item">
+        <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="navMenu-training">Courses<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-3" id="navMenu-training">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Online Training</p>
+            <a href="../courses.html"><span class="nav-link-title">Course Catalog</span><span class="nav-link-desc">All 43 self-paced courses</span></a>
+            <a href="../bundles.html"><span class="nav-link-title">Course Bundles</span><span class="nav-link-desc">Role-based bundles, save up to 52%</span></a>
+            <a href="../who.html"><span class="nav-link-title">Courses by Role</span><span class="nav-link-desc">Find the track for your job</span></a>
+            <a href="../tools/training-plan-builder.html"><span class="nav-link-title">Training Plan Builder</span><span class="nav-link-desc">Build and price a plan in minutes</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Enrolling</p>
+            <a href="../#teams"><span class="nav-link-title">Team Training</span><span class="nav-link-desc">Seats, progress tracking, PO billing</span></a>
+            <a href="../certifications.html"><span class="nav-link-title">Certificates &amp; Accreditation</span><span class="nav-link-desc">What your certificate means</span></a>
+            <a href="../faq.html"><span class="nav-link-title">FAQ</span><span class="nav-link-desc">Pricing, access, and policies</span></a>
+          </div>
+          <a class="nav-feature" href="../bundles.html"><span class="nav-feature-kicker">Best value</span><span class="nav-feature-title">Complete Data Center Professional Bundle</span><span class="nav-feature-text">43 courses and 184 hours of training in one enrollment. Save 52%.</span><span class="nav-feature-cta">Compare bundles &rarr;</span></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button type="button" class="nav-trigger active" aria-expanded="false" aria-controls="navMenu-learn">Learn<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-3" id="navMenu-learn">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Start Here</p>
+            <a href="../learn/"><span class="nav-link-title">Knowledge Center</span><span class="nav-link-desc">Every guide in one place</span></a>
+            <a href="../learn/what-is-a-data-center.html"><span class="nav-link-title">Data Center 101</span><span class="nav-link-desc">How data centers work</span></a>
+            <a href="../learn/glossary.html" aria-current="page"><span class="nav-link-title">Glossary</span><span class="nav-link-desc">Data center terms, A to Z</span></a>
+            <a href="../learn/data-center-standards.html"><span class="nav-link-title">Standards &amp; Regulations</span><span class="nav-link-desc">TIA-942, NFPA, OSHA, ASHRAE, ISO</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Systems</p>
+            <a href="../learn/data-center-power.html"><span class="nav-link-title">Power Systems</span></a>
+            <a href="../learn/data-center-cooling.html"><span class="nav-link-title">Cooling Systems</span></a>
+            <a href="../learn/data-center-tiers.html"><span class="nav-link-title">Tier Levels &amp; Redundancy</span></a>
+            <a href="../learn/energy-efficiency-pue.html"><span class="nav-link-title">Energy Efficiency &amp; PUE</span></a>
+            <a href="../learn/ai-data-centers.html"><span class="nav-link-title">AI &amp; High-Density Facilities</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Operations</p>
+            <a href="../learn/data-center-safety.html"><span class="nav-link-title">Safety Guide</span></a>
+            <a href="../learn/data-center-security-compliance.html"><span class="nav-link-title">Security &amp; Compliance</span></a>
+            <a href="../learn/data-center-operations.html"><span class="nav-link-title">Operations &amp; Maintenance</span></a>
+            <a href="../learn/data-center-commissioning.html"><span class="nav-link-title">Commissioning (Levels 1-5)</span></a>
+            <a href="../blog/"><span class="nav-link-title">Blog: Field Guidance</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="navMenu-careers">Careers<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-2" id="navMenu-careers">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Data Center Careers</p>
+            <a href="../careers/"><span class="nav-link-title">Careers Hub</span><span class="nav-link-desc">Why the industry is hiring</span></a>
+            <a href="../careers/data-center-jobs.html"><span class="nav-link-title">Job Roles Explained</span><span class="nav-link-desc">What each role does day to day</span></a>
+            <a href="../careers/how-to-get-into-data-centers.html"><span class="nav-link-title">How to Get Into Data Centers</span><span class="nav-link-desc">A step-by-step starting plan</span></a>
+            <a href="../careers/career-changers.html"><span class="nav-link-title">Career Changers</span><span class="nav-link-desc">Electricians, HVAC techs, veterans, IT</span></a>
+            <a href="../careers/interview-questions.html"><span class="nav-link-title">Interview Questions</span><span class="nav-link-desc">Practice answers for technician roles</span></a>
+          </div>
+          <a class="nav-feature" href="../quizzes/career-quiz.html"><span class="nav-feature-kicker">2-minute quiz</span><span class="nav-feature-title">Which Data Center Career Fits You?</span><span class="nav-feature-text">Answer 10 quick questions and get a matching role and training track.</span><span class="nav-feature-cta">Take the career quiz &rarr;</span></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="navMenu-quizzes">Quizzes &amp; Tools<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-2" id="navMenu-quizzes">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Quizzes</p>
+            <a href="../quizzes/"><span class="nav-link-title">All Quizzes</span></a>
+            <a href="../quizzes/career-quiz.html"><span class="nav-link-title">Career Match Quiz</span></a>
+            <a href="../quizzes/data-center-basics-quiz.html"><span class="nav-link-title">Data Center Basics</span></a>
+            <a href="../quizzes/power-electrical-quiz.html"><span class="nav-link-title">Power &amp; Electrical</span></a>
+            <a href="../quizzes/cooling-quiz.html"><span class="nav-link-title">Cooling &amp; HVAC</span></a>
+            <a href="../quizzes/safety-quiz.html"><span class="nav-link-title">Safety</span></a>
+            <a href="../quizzes/security-compliance-quiz.html"><span class="nav-link-title">Security &amp; Compliance</span></a>
+            <a href="../quizzes/tiers-design-quiz.html"><span class="nav-link-title">Tiers &amp; Design</span></a>
+            <a href="../quizzes/operations-quiz.html"><span class="nav-link-title">Operations &amp; Monitoring</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Tools</p>
+            <a href="../tools/"><span class="nav-link-title">All Tools</span></a>
+            <a href="../tools/training-plan-builder.html"><span class="nav-link-title">Training Plan Builder</span></a>
+            <a href="../tools/pue-calculator.html"><span class="nav-link-title">PUE Calculator</span></a>
+            <a href="../tools/uptime-calculator.html"><span class="nav-link-title">Uptime &amp; Downtime Calculator</span></a>
+            <a href="../tools/cooling-load-calculator.html"><span class="nav-link-title">Cooling Load Calculator</span></a>
+          </div>
+        </div>
+      </div>
+      <a href="../blog/" class="nav-link">Blog</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="../search.html" class="nav-search" data-search-open aria-label="Search the site" title="Search (Ctrl+K)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><span class="nav-search-label">Search</span><kbd class="nav-search-kbd">Ctrl K</kbd></a>
+      <a href="../courses.html" class="btn btn-primary btn-sm nav-cta">View Courses</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
 
 <main id="main">
   <div class="container">
@@ -51,7 +2080,7 @@
   <section class="course-hero">
     <div class="container">
       <div class="course-hero-eyebrow">Knowledge Center &middot; Reference</div>
-      <h1>Data Center Glossary: 150+ Terms Explained</h1>
+      <h1>Data Center Glossary: 200+ Terms Explained</h1>
       <p class="course-hero-hook">Plain-English definitions of the power, cooling, safety, security, networking, monitoring, sustainability, and business terms you will hear on a data center floor. Filter the list or jump to a letter.</p>
       <div class="course-pills">
         <span class="course-pill">233 terms</span>
@@ -76,9 +2105,9 @@
   <section class="glossary-section" id="letter-0-9" aria-labelledby="letter-0-9-h">
     <h2 class="glossary-letter" id="letter-0-9-h">0-9</h2>
     <dl class="glossary-list">
-      <div class="glossary-item" id="term-19-inch-rack"><dt>19-inch rack</dt><dd>The standard equipment rack defined by the EIA-310 standard, in which equipment front panels are 19 inches wide. Equipment height is measured in <a href="#term-rack-unit">rack units</a>.</dd></div>
       <div class="glossary-item" id="term-2n"><dt>2N</dt><dd>A redundancy design with two complete, independent systems (A and B), each able to carry the full load alone. A failure or maintenance anywhere in one path leaves the other carrying the load. See <a href="data-center-power.html">how data center power works</a>.</dd></div>
       <div class="glossary-item" id="term-2n-plus-1"><dt>2N+1</dt><dd>A <a href="#term-2n">2N</a> design with an additional spare unit, so the facility keeps full redundancy even while one component is out of service.</dd></div>
+      <div class="glossary-item" id="term-19-inch-rack"><dt>19-inch rack</dt><dd>The standard equipment rack defined by the EIA-310 standard, in which equipment front panels are 19 inches wide. Equipment height is measured in <a href="#term-rack-unit">rack units</a>.</dd></div>
     </dl>
   </section>
   <section class="glossary-section" id="letter-a" aria-labelledby="letter-a-h">
@@ -436,10 +2465,21 @@
         <p>Turn vocabulary into job skills with self-paced, standards-aligned courses. Each awards a certificate of completion.</p>
       </div>
       <!-- dct:courses power-systems-electrical-fundamentals cooling-systems-design-optimization data-center-operations-management data-center-design-fundamentals tier-infrastructure-fundamentals electrical-safety-best-practices security-compliance-data-centers monitoring-automation-bms-systems -->
-      <!-- /dct:courses -->
+<div class="panel course-panel">
+<div class="course-row"><div class="course-main"><h3><a href="../courses/power-systems-electrical-fundamentals.html">Power Systems &amp; Electrical Fundamentals</a></h3><div class="course-meta"><span>Power &amp; Electrical</span><span class="sep">&middot;</span><span>Comprehensive Program</span><span class="sep">&middot;</span><span>NFPA 70E</span></div><p class="course-hook">Master data center electrical infrastructure — from utility interconnection to UPS and PDU architecture.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">8 hrs</div><div class="course-price">$303.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=power-systems-electrical-fundamentals" aria-label="Enroll in Power Systems &amp; Electrical Fundamentals">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/cooling-systems-design-optimization.html">Cooling Systems Design &amp; Optimization</a></h3><div class="course-meta"><span>Cooling &amp; Efficiency</span><span class="sep">&middot;</span><span>Comprehensive Program</span><span class="sep">&middot;</span><span>PUE / ASHRAE Thermal Guidelines</span></div><p class="course-hook">Cut cooling costs and improve reliability with modern thermal management strategy.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">8 hrs</div><div class="course-price">$298.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=cooling-systems-design-optimization" aria-label="Enroll in Cooling Systems Design &amp; Optimization">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/data-center-operations-management.html">Data Center Operations Management</a></h3><div class="course-meta"><span>Operations</span><span class="sep">&middot;</span><span>Comprehensive Program</span><span class="sep">&middot;</span><span>DCIM / SLA Frameworks</span></div><p class="course-hook">Run daily operations like the teams behind Tier 3/4 facilities — maintenance, incident response, and SLAs.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">8 hrs</div><div class="course-price">$325.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=data-center-operations-management" aria-label="Enroll in Data Center Operations Management">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/data-center-design-fundamentals.html">Data Center Design Fundamentals</a></h3><div class="course-meta"><span>Design &amp; Planning</span><span class="sep">&middot;</span><span>Comprehensive Program</span><span class="sep">&middot;</span><span>ANSI/TIA-942</span></div><p class="course-hook">Design data center facilities that scale — from site selection to redundancy strategy.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">8 hrs</div><div class="course-price">$312.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=data-center-design-fundamentals" aria-label="Enroll in Data Center Design Fundamentals">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/tier-infrastructure-fundamentals.html">Tier Infrastructure Fundamentals</a></h3><div class="course-meta"><span>Design &amp; Planning</span><span class="sep">&middot;</span><span>Comprehensive Program</span><span class="sep">&middot;</span><span>Uptime Institute Tier Framework</span></div><p class="course-hook">Understand and assess TIER I–IV infrastructure without the formal certification track.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">8 hrs</div><div class="course-price">$280.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=tier-infrastructure-fundamentals" aria-label="Enroll in Tier Infrastructure Fundamentals">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/electrical-safety-best-practices.html">Electrical Safety &amp; Best Practices</a></h3><div class="course-meta"><span>Power &amp; Electrical</span><span class="sep">&middot;</span><span>Modular Specialization</span><span class="sep">&middot;</span><span>NFPA 70E</span></div><p class="course-hook">NFPA 70E-aligned electrical safety fundamentals for facility staff.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">4 hrs</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=electrical-safety-best-practices" aria-label="Enroll in Electrical Safety &amp; Best Practices">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/security-compliance-data-centers.html">Security &amp; Compliance for Data Centers</a></h3><div class="course-meta"><span>Security &amp; Compliance</span><span class="sep">&middot;</span><span>Comprehensive Program</span><span class="sep">&middot;</span><span>SOC 2 / ISO 27001</span></div><p class="course-hook">Build a facility security program that satisfies SOC 2, ISO 27001, and physical audit requirements.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">8 hrs</div><div class="course-price">$291.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=security-compliance-data-centers" aria-label="Enroll in Security &amp; Compliance for Data Centers">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/monitoring-automation-bms-systems.html">Monitoring, Automation &amp; BMS Systems</a></h3><div class="course-meta"><span>Monitoring &amp; Automation</span><span class="sep">&middot;</span><span>Comprehensive Program</span><span class="sep">&middot;</span><span>BMS / DCIM</span></div><p class="course-hook">Design a monitoring and BMS strategy that catches problems before they cause downtime.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">8 hrs</div><div class="course-price">$276.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=monitoring-automation-bms-systems" aria-label="Enroll in Monitoring, Automation &amp; BMS Systems">Enroll</a></div></div>
+</div>
+<!-- /dct:courses -->
       <div style="margin-top:16px;">
       <!-- dct:bundle bundle-complete-catalog -->
-      <!-- /dct:bundle -->
+<div class="bundle-offer"><div class="bundle-offer-copy"><p class="bundle-offer-kicker">Save 52% with the bundle</p><p class="bundle-offer-name">Complete Data Center Professional Bundle</p><p class="bundle-offer-meta">43 courses &middot; 184 hours &middot; <strong>$2,928.99</strong> per seat, instead of <s>$6,067.57</s> bought separately</p></div><div class="bundle-offer-actions"><a class="btn btn-primary" href="../checkout.html?item=bundle-complete-catalog">Enroll in the Bundle</a><a class="btn btn-secondary" href="../bundles.html">Compare Bundles</a></div></div>
+<!-- /dct:bundle -->
       </div>
     </div>
   </section>
@@ -476,7 +2516,115 @@
   </section>
 </main>
 
-<footer class="site-footer" id="contact"></footer>
+<footer class="site-footer" id="contact">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="../" class="logo">
+          <img src="../images/favicon.svg" alt="" width="28" height="28">
+          <span>
+            <span class="logo-mark">datacentertraining.us</span>
+            <span class="logo-sub">Data Center Professional Training</span>
+          </span>
+        </a>
+        <p class="footer-legal">Data Center Training is a specialty training division of <a href="https://hazwoper-osha.com/" target="_blank" rel="noopener">HAZWOPER-OSHA Training, LLC</a>, an IACET-accredited provider of professional data center and safety compliance training.</p>
+        <p class="footer-legal" style="margin-top:8px;">HAZWOPER OSHA Training, LLC &middot; 11901 Santa Monica Blvd., Suite #414, Los Angeles, CA 90025</p>
+        <div class="footer-badges">
+          <img src="https://media.hazwoper-osha.com/wp-content/uploads/2023/11/1698821020/IACET-small.webp" alt="IACET Accredited Provider" width="40" height="24" loading="lazy">
+          <img src="https://media.hazwoper-osha.com/wp-content/uploads/2026/07/1784291935/bbb.webp" alt="BBB A+ Rating" width="40" height="24" loading="lazy">
+          <img src="https://media.hazwoper-osha.com/wp-content/uploads/2026/07/1784292027/trust.webp" alt="Google Trust Services" width="141" height="20" loading="lazy" style="height:20px;">
+        </div>
+      </div>
+      <div class="footer-cta">
+        <p class="footer-cta-title">Not sure where to start?</p>
+        <p class="footer-cta-text">Find the data center role that fits you, then get a training plan built around it.</p>
+        <div class="footer-cta-actions">
+          <a href="../quizzes/career-quiz.html" class="btn btn-primary btn-sm">Take the Career Quiz</a>
+          <a href="../tools/training-plan-builder.html" class="btn btn-secondary btn-sm">Build a Training Plan</a>
+        </div>
+        <div class="footer-contact-links">
+          <a href="tel:18664296742">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            1-866-429-6742
+          </a>
+          <a href="mailto:info@hazwoper-osha.com">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            info@hazwoper-osha.com
+          </a>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/HazwoperOsha/" target="_blank" rel="noopener" aria-label="Facebook"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/hazwoper_osha_training/?hl=en" target="_blank" rel="noopener" aria-label="Instagram"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="https://www.youtube.com/@hazwoper-osha" target="_blank" rel="noopener" aria-label="YouTube"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33zM9.75 15.02V8.48l5.75 3.27z"/></svg></a>
+          <a href="https://x.com/HazwoperOsha" target="_blank" rel="noopener" aria-label="X"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.4 8.4L23 22h-6.6l-5.2-6.8L5.1 22H2l7.9-9L1.6 2h6.8l4.7 6.2z"/></svg></a>
+          <a href="https://www.linkedin.com/company/hazwoper-osha" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM8.34 18.34V10.1H5.67v8.24zM7.01 8.97a1.55 1.55 0 1 0 0-3.1 1.55 1.55 0 0 0 0 3.1zM18.34 18.34v-4.6c0-2.46-1.31-3.6-3.06-3.6a2.64 2.64 0 0 0-2.39 1.32V10.1H10.2s.04.86 0 8.24h2.68v-4.6c0-.25.02-.5.09-.68a1.5 1.5 0 0 1 1.37-1c.96 0 1.35.73 1.35 1.8v4.48z"/></svg></a>
+          <a href="https://www.pinterest.com/hazwoperosha/" target="_blank" rel="noopener" aria-label="Pinterest"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.64 7.86 6.36 9.32-.09-.79-.17-2.01.03-2.88.19-.79 1.22-5.03 1.22-5.03s-.31-.63-.31-1.55c0-1.45.84-2.54 1.89-2.54.89 0 1.32.67 1.32 1.47 0 .89-.57 2.23-.86 3.47-.25 1.03.52 1.88 1.53 1.88 1.84 0 3.07-2.36 3.07-5.15 0-2.12-1.43-3.71-4.02-3.71-2.93 0-4.76 2.19-4.76 4.63 0 .84.25 1.44.63 1.9.18.21.2.3.14.54-.05.18-.16.63-.21.81-.07.26-.28.35-.51.26-1.44-.59-2.11-2.16-2.11-3.93 0-2.92 2.46-6.43 7.34-6.43 3.92 0 6.5 2.84 6.5 5.89 0 4.03-2.24 7.04-5.55 7.04-1.11 0-2.16-.6-2.51-1.28 0 0-.6 2.36-.73 2.82-.22.8-.66 1.6-1.06 2.22.95.29 1.95.45 3 .45 5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-grid">
+    <div class="footer-col">
+      <h3>Training</h3>
+      <a href="../courses.html">Course Catalog</a>
+      <a href="../bundles.html">Course Bundles</a>
+      <a href="../who.html">Courses by Role</a>
+      <a href="../tools/training-plan-builder.html">Training Plan Builder</a>
+      <a href="../#teams">Team Training</a>
+      <a href="../certifications.html">Certificates &amp; Accreditation</a>
+      <a href="../faq.html">FAQ</a>
+    </div>
+    <div class="footer-col">
+      <h3>Learn</h3>
+      <a href="../learn/">Knowledge Center</a>
+      <a href="../learn/what-is-a-data-center.html">Data Center 101</a>
+      <a href="../learn/data-center-power.html">Power Systems</a>
+      <a href="../learn/data-center-cooling.html">Cooling Systems</a>
+      <a href="../learn/data-center-tiers.html">Tier Levels</a>
+      <a href="../learn/data-center-safety.html">Safety Guide</a>
+      <a href="../learn/data-center-standards.html">Standards Guide</a>
+      <a href="../learn/glossary.html">Glossary</a>
+      <a href="../blog/">Blog</a>
+    </div>
+    <div class="footer-col">
+      <h3>Careers</h3>
+      <a href="../careers/">Careers Hub</a>
+      <a href="../careers/data-center-jobs.html">Job Roles Explained</a>
+      <a href="../careers/how-to-get-into-data-centers.html">Get Into Data Centers</a>
+      <a href="../careers/career-changers.html">Career Changers</a>
+      <a href="../careers/interview-questions.html">Interview Questions</a>
+      <a href="../quizzes/career-quiz.html">Career Match Quiz</a>
+    </div>
+    <div class="footer-col">
+      <h3>Quizzes &amp; Tools</h3>
+      <a href="../quizzes/">All Quizzes</a>
+      <a href="../quizzes/data-center-basics-quiz.html">Data Center Basics Quiz</a>
+      <a href="../tools/">All Tools</a>
+      <a href="../tools/pue-calculator.html">PUE Calculator</a>
+      <a href="../tools/uptime-calculator.html">Uptime Calculator</a>
+      <a href="../tools/cooling-load-calculator.html">Cooling Load Calculator</a>
+      <a href="../search.html">Search the Site</a>
+    </div>
+    <div class="footer-col">
+      <h3>Company</h3>
+      <a href="https://hazwoper-osha.com/" target="_blank" rel="noopener">HAZWOPER-OSHA Training</a>
+      <a href="https://hazwoper-osha.com/certificate-verification" target="_blank" rel="noopener">Verify Certificate</a>
+      <a href="../privacy.html">Privacy Policy</a>
+      <a href="../terms.html">Terms of Service</a>
+      <a href="../accessibility.html">Accessibility</a>
+      <a href="../privacy.html#choices" data-privacy-choices>Your Privacy Choices</a>
+      <a href="https://hazwoper-osha.com/refund-policy" target="_blank" rel="noopener">Refund Policy</a>
+    </div>
+    </div>
+
+    <p class="footer-agents"><span>For AI agents:</span> <a href="/llms.txt">llms.txt</a> <a href="/llms-full.txt">llms-full.txt</a> <a href="/.well-known/mcp.json">WebMCP Manifest</a> <a href="/api/index.json">JSON Catalog API</a> <a href="/openapi.json">API Docs (OpenAPI)</a> <a href="/sitemap.xml">Sitemap</a></p>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; 2026 HAZWOPER-OSHA Training, LLC. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
 <script src="../js/main.js" defer></script>
 
 </body>

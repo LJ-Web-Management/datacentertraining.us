@@ -670,7 +670,7 @@ a { color: inherit; }
 }
 .hub-hero .eyebrow { color: #a78bfa; }
 .hub-hero h1 { margin: 12px auto 0; max-width: 820px; font-size: clamp(30px, 4.6vw, 48px); font-weight: 700; letter-spacing: -0.03em; line-height: 1.08; }
-.hub-hero h1 .accent-text { color: #a78bfa; }
+.hub-hero h1 .accent-text { display: block; color: #a78bfa; }
 .hub-hero .lede { margin: 16px auto 0; max-width: 640px; font-size: clamp(15px, 2vw, 17px); color: #c7c7cc; line-height: 1.7; }
 .hub-hero .hero-ctas { justify-content: center; }
 .hub-hero .hero-meta { justify-content: center; }
@@ -899,11 +899,12 @@ a.topic-card:hover { transform: translateY(-3px); box-shadow: var(--sh-lift); }
 .career-results-title { margin: 32px 0 14px; font-size: 18px; font-weight: 700; }
 .quiz-js ~ .career-results-static { display: none; }
 .career-result { text-align: left; max-width: 640px; margin: 18px auto 0; }
-.career-result-match { font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent-link); }
-.career-result h3 { margin-top: 4px; font-size: 24px; font-weight: 700; letter-spacing: -0.02em; color: var(--text); }
-.career-result p { margin-top: 8px; font-size: 15px; line-height: 1.7; color: var(--text-body); }
-.career-result ul { margin-top: 10px; padding-left: 20px; font-size: 14.5px; line-height: 1.65; color: var(--text-body); }
-.career-result a:not(.btn) { color: var(--accent-link); font-weight: 600; }
+.career-result > .career-result-match { margin-top: 0; font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent-link); }
+.career-result > h3 { margin-top: 4px; font-size: 24px; font-weight: 700; letter-spacing: -0.02em; color: var(--text); }
+.career-result > p { margin-top: 8px; font-size: 15px; line-height: 1.7; color: var(--text-body); }
+.career-result > ul { margin-top: 10px; padding-left: 20px; font-size: 14.5px; line-height: 1.65; color: var(--text-body); }
+.career-result > p a, .career-result > ul a { color: var(--accent-link); font-weight: 600; }
+.career-result .course-panel { margin-top: 8px; }
 .career-also { margin-top: 14px; font-size: 14px; color: var(--text-2); }
 
 /* ── Calculators and builders ── */
@@ -976,7 +977,7 @@ a.topic-card:hover { transform: translateY(-3px); box-shadow: var(--sh-lift); }
 }
 
 @media (max-width: 900px) {
-  .tool-layout { grid-template-columns: 1fr; }
+  .tool-layout { grid-template-columns: minmax(0, 1fr); }
 }
 @media (max-width: 560px) {
   .plan-summary { grid-template-columns: 1fr; }

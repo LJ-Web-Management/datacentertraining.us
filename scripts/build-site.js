@@ -56,6 +56,11 @@ function json(obj) {
   return JSON.stringify(obj, null, 2) + '\n';
 }
 
+const ENTITIES = {
+  sup2: '²', sup3: '³', deg: '°', times: '×', divide: '÷', asymp: '≈', plusmn: '±', micro: 'µ', le: '≤', ge: '≥',
+  hellip: '…', ldquo: '“', rdquo: '”', rsaquo: '›', lsaquo: '‹', raquo: '»', laquo: '«', larr: '←', uarr: '↑', darr: '↓', copy: '©', reg: '®', trade: '™'
+};
+
 function decode(s) {
   return String(s)
     .replace(/<[^>]+>/g, '')
@@ -64,6 +69,8 @@ function decode(s) {
     .replace(/&quot;/g, '"').replace(/&#39;|&rsquo;|&lsquo;/g, "'")
     .replace(/&mdash;/g, '—').replace(/&ndash;/g, '–').replace(/&middot;/g, '·')
     .replace(/&rarr;/g, '→').replace(/&#(\d+);/g, (m, n) => String.fromCharCode(+n))
+    .replace(/&#x([0-9a-f]+);/gi, (m, n) => String.fromCodePoint(parseInt(n, 16)))
+    .replace(/&([a-z0-9]+);/gi, (m, n) => ENTITIES[n] || m)
     .replace(/\s+/g, ' ')
     .trim();
 }
@@ -1357,8 +1364,11 @@ function applyChrome(rel, html, d) {
 
 const SEARCH_SKIP = new Set(['index.html', '404.html', 'checkout.html', 'search.html', 'blog/scripts/templates/post-template.html']);
 
+// Visible text: inline tags vanish, block tags become word breaks.
 function text(html) {
-  return decode(String(html || '').replace(/<[^>]+>/g, ' '));
+  return decode(String(html || '')
+    .replace(/<\/?(a|strong|em|b|i|span|code|abbr|sup|sub|small|mark|s)\b[^>]*>/gi, '')
+    .replace(/<[^>]+>/g, ' '));
 }
 
 function clip(s, n) {
