@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How Data Centers Are Run: Operations and Maintenance</title>
+<meta name="description" content="How data centers are run day to day: 24/7 shifts, SOPs and MOPs, change control, maintenance, monitoring, incident response, DR testing, and key KPIs.">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+<link rel="canonical" href="https://datacentertraining.us/learn/data-center-operations.html">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="How Data Centers Are Run: Operations and Maintenance">
+<meta property="og:description" content="How data centers are run day to day: 24/7 shifts, SOPs and MOPs, change control, maintenance, monitoring, incident response, DR testing, and key KPIs.">
+<meta property="og:url" content="https://datacentertraining.us/learn/data-center-operations.html">
+<meta property="og:image" content="https://datacentertraining.us/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Data Center Training">
+
+<link rel="stylesheet" href="../css/site.min.css">
+<script src="../js/nav.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How Data Centers Are Run: Operations and Maintenance",
+  "description": "How data centers are run day to day: 24/7 shifts, SOPs and MOPs, change control, maintenance, monitoring, incident response, DR testing, and key KPIs.",
+  "url": "https://datacentertraining.us/learn/data-center-operations.html",
+  "mainEntityOfPage": "https://datacentertraining.us/learn/data-center-operations.html",
+  "image": "https://datacentertraining.us/images/og-image.jpg",
+  "datePublished": "2026-10-19",
+  "dateModified": "2026-10-19",
+  "inLanguage": "en-US",
+  "author": {"@type": "Organization", "name": "Data Center Training", "url": "https://datacentertraining.us/"},
+  "publisher": {"@type": "EducationalOrganization", "@id": "https://datacentertraining.us/#organization", "name": "Data Center Training", "url": "https://datacentertraining.us/"},
+  "about": ["Data center operations", "Preventive maintenance", "Change management", "Incident response", "Disaster recovery"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://datacentertraining.us/"},
+    {"@type": "ListItem", "position": 2, "name": "Knowledge Center", "item": "https://datacentertraining.us/learn/"},
+    {"@type": "ListItem", "position": 3, "name": "Operations & Maintenance", "item": "https://datacentertraining.us/learn/data-center-operations.html"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "What is the difference between an SOP and a MOP?", "acceptedAnswer": {"@type": "Answer", "text": "A standard operating procedure (SOP) describes a routine task that is done the same way every time, such as a daily round or a generator monthly run. A method of procedure (MOP) is written for a specific piece of work on critical equipment, such as transferring a UPS to maintenance bypass, and includes step-by-step actions, expected readings, hold points, approvals, and a back-out plan. Emergency operating procedures (EOPs) cover how to respond when something fails."}},
+    {"@type": "Question", "name": "What does a critical facilities technician do on a shift?", "acceptedAnswer": {"@type": "Answer", "text": "A typical shift starts with a turnover briefing, then rounds through electrical rooms, the central plant, and data halls to record readings and spot problems. The rest of the shift is scheduled maintenance from work orders, supporting vendors and contractors, responding to alarms, and updating logs. On nights and weekends the technician may be the most senior person on site and the first responder to any failure."}},
+    {"@type": "Question", "name": "What is the difference between RTO and RPO?", "acceptedAnswer": {"@type": "Answer", "text": "The recovery time objective (RTO) is how long a service can be down before the business impact is unacceptable. The recovery point objective (RPO) is how much data, measured in time, the business can afford to lose. An RTO of four hours and an RPO of fifteen minutes means the service must be back within four hours and lose no more than the last fifteen minutes of data."}},
+    {"@type": "Question", "name": "What is alarm fatigue and how do data centers prevent it?", "acceptedAnswer": {"@type": "Answer", "text": "Alarm fatigue happens when operators see so many nuisance or low-value alarms that they start ignoring or silencing them, and miss the one that matters. Sites prevent it by rationalizing alarms so each one needs a specific action, setting clear priorities, fixing chattering points, tracking standing alarms, and reviewing alarm counts every week."}}
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="glass-nav"></header>
+
+<main id="main">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../">Home</a>
+      <span>&rsaquo;</span>
+      <a href="./">Knowledge Center</a>
+      <span>&rsaquo;</span>
+      <span aria-current="page">Operations &amp; Maintenance</span>
+    </nav>
+  </div>
+
+  <section class="course-hero">
+    <div class="container">
+      <div class="course-hero-eyebrow">Knowledge Center &middot; Operations</div>
+      <h1>How Data Centers Are Run: Operations and Maintenance</h1>
+      <p class="course-hero-hook">Redundant equipment only delivers uptime when people operate and maintain it well. Here is how critical facilities teams staff a site around the clock, control every change, keep equipment healthy, and respond when something breaks.</p>
+      <div class="course-pills">
+        <span class="course-pill">12 min read</span>
+        <span class="course-pill">Beginner to intermediate</span>
+        <span class="course-pill">Updated October 2026</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="container guide-layout">
+    <aside class="guide-toc" aria-label="On this page">
+      <p class="guide-toc-title">On this page</p>
+      <ol>
+        <li><a href="#shifts">The 24/7 shift model</a></li>
+        <li><a href="#procedures">SOPs, MOPs, and EOPs</a></li>
+        <li><a href="#change-management">Change management</a></li>
+        <li><a href="#maintenance">Maintenance</a></li>
+        <li><a href="#rounds">Rounds and logs</a></li>
+        <li><a href="#monitoring">Monitoring and alarms</a></li>
+        <li><a href="#incidents">Incident response</a></li>
+        <li><a href="#capacity">Capacity and vendors</a></li>
+        <li><a href="#dr-bc">DR and business continuity</a></li>
+        <li><a href="#training">Documentation and training</a></li>
+        <li><a href="#kpis">Operations KPIs</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ol>
+      <a class="guide-toc-cta" href="../quizzes/operations-quiz.html"><strong>Test yourself</strong>Take the Operations quiz.</a>
+    </aside>
+
+    <article class="guide-body prose">
+      <div class="key-takeaways">
+        <p class="key-takeaways-title">Key takeaways</p>
+        <ul>
+          <li>Data centers are staffed or covered 24/7 by a shift team that runs rounds, maintenance, and first response.</li>
+          <li>Routine work follows SOPs, risky work follows an approved MOP, and failures are handled with EOPs.</li>
+          <li>Change management, preventive maintenance, and good alarm handling prevent more outages than any single piece of equipment.</li>
+          <li>Measure the program with a few honest KPIs, such as availability, MTTR, and PM completion, and review them every month.</li>
+        </ul>
+      </div>
+
+      <h2 id="shifts">The 24/7 shift model</h2>
+      <p>A data center never closes, so operations are built around shifts. Many sites run 12-hour shifts on a rotating schedule, while others use three 8-hour shifts. Smaller or edge sites may staff days only and rely on remote monitoring and on-call technicians at night. Whatever the pattern, someone qualified to respond must be reachable within the time the site's risk assessment allows.</p>
+      <p>A typical large site has these people on, or on call:</p>
+      <ul>
+        <li><strong>Critical facilities technicians and engineers</strong> who run the electrical and mechanical plant, perform rounds and maintenance, and respond first to failures.</li>
+        <li><strong>A shift lead or chief engineer</strong> who directs the shift and makes the first escalation decisions.</li>
+        <li><strong>Security officers</strong> who control access and monitor alarms.</li>
+        <li><strong>Data center technicians</strong> who rack, cable, and handle remote-hands requests for IT customers.</li>
+        <li><strong>A network operations center (NOC)</strong>, on site or remote, watching IT and network health.</li>
+        <li><strong>On-call managers, subject matter experts, and vendors</strong> reachable through an escalation list.</li>
+      </ul>
+      <p>The most important minutes of any shift are the <strong>turnover</strong>. The outgoing team briefs the incoming team on open work orders, equipment out of service, active alarms, abnormal configurations (for example, a UPS on maintenance bypass), and weather or utility warnings. Good sites use a written turnover log so nothing depends on memory. <a href="../courses/data-center-operations-management.html">Data Center Operations Management</a> covers how to organize shifts, staffing, and handoffs.</p>
+
+      <h2 id="procedures">SOPs, MOPs, and EOPs</h2>
+      <p>Written procedures are the backbone of critical operations, because most outages trace back to human actions rather than equipment. Three types cover nearly everything:</p>
+      <ul>
+        <li><strong>Standard operating procedures (SOPs)</strong> cover routine, repeatable tasks: rounds, generator monthly runs, filter changes, receiving a delivery.</li>
+        <li><strong>Methods of procedure (<a href="glossary.html#term-mop">MOPs</a>)</strong> are written for specific work on critical systems, such as transferring a UPS to maintenance bypass or replacing a breaker. They are reviewed, approved, and executed step by step.</li>
+        <li><strong>Emergency operating procedures (EOPs)</strong> tell responders what to do when something fails: loss of utility, a generator that does not start, a chiller trip, a water leak, or a fire alarm.</li>
+      </ul>
+      <h3>What a MOP looks like</h3>
+      <p>A short MOP for transferring a UPS module to maintenance bypass might be outlined like this:</p>
+      <ol>
+        <li><strong>Header:</strong> MOP number, title, revision, author, and approvers.</li>
+        <li><strong>Scope and risk:</strong> what equipment is affected, which loads lose redundancy, and the risk level.</li>
+        <li><strong>Prerequisites:</strong> approved change ticket, customer notifications, alternate source confirmed healthy, no severe weather, required PPE and permits.</li>
+        <li><strong>Roles:</strong> who performs, who reads back each step, and who monitors the BMS and power monitoring system.</li>
+        <li><strong>Pre-checks:</strong> expected UPS load, bypass source voltage, alarm status, and generator availability.</li>
+        <li><strong>Procedure:</strong> numbered steps, each with the expected indication and a space to initial, plus hold points that require a pause and check.</li>
+        <li><strong>Back-out plan:</strong> how to return to normal safely if any step does not produce the expected result.</li>
+        <li><strong>Post-checks and close-out:</strong> verify normal configuration, clear alarms, record readings, and sign off.</li>
+      </ol>
+
+      <h2 id="change-management">Change management and the CAB</h2>
+      <p>Any change to critical infrastructure, whether maintenance, a new installation, a setpoint change, or a firmware update, goes through change management. A change request describes the work, the risk, the affected systems and customers, the timing, and the MOP. A <strong>change advisory board (CAB)</strong>, usually including facilities, operations, security, and sometimes IT or customer representatives, reviews and approves normal changes on a regular schedule.</p>
+      <p>Most sites classify changes as <strong>standard</strong> (pre-approved, low risk, done often), <strong>normal</strong> (reviewed by the CAB), or <strong>emergency</strong> (approved quickly by a designated manager, then reviewed after the fact). They also set change windows, freeze periods around busy business seasons, and a post-implementation review so lessons from each change improve the next.</p>
+
+      <h2 id="maintenance">Preventive, predictive, and corrective maintenance</h2>
+      <div class="table-panel">
+        <table class="data-table">
+          <caption>Three kinds of maintenance</caption>
+          <thead><tr><th>Type</th><th>How it is triggered</th><th>Data center examples</th></tr></thead>
+          <tbody>
+            <tr><td>Preventive (PM)</td><td>Time or run-hours, on a fixed schedule</td><td>UPS service visits, generator oil changes, filter changes, breaker exercising</td></tr>
+            <tr><td>Predictive (PdM)</td><td>Measured condition crossing a limit</td><td>Infrared scans, vibration analysis on pumps and fans, oil analysis, battery impedance trends</td></tr>
+            <tr><td>Corrective</td><td>A failure or a defect found during other work</td><td>Replacing a failed fan, repairing a leaking valve, fixing a deficiency from an infrared scan</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>A healthy program leans on preventive and predictive work so corrective work is planned instead of urgent. Manufacturer recommendations, NFPA 70B for electrical equipment maintenance (a full standard since its 2023 edition), and NFPA 110 for generators set the baseline intervals.</p>
+      <h3>CMMS and work orders</h3>
+      <p>A <strong>computerized maintenance management system (CMMS)</strong> holds the asset list, PM schedules, work orders, parts, and history. Every task becomes a work order that moves through a lifecycle: created, planned, scheduled, executed, and closed with notes, readings, and time spent. That history is what lets you spot a fan that fails every six months or a PM that keeps getting deferred. When the backlog grows, rank work by risk to the critical load, not by age; see <a href="../blog/posts/preventive-maintenance-backlog-triage-how-data-center-facility-managers-should-rank-critical-work-orders.html">how to triage a PM backlog</a>. The <a href="../courses/preventive-maintenance-planning.html">Preventive Maintenance Planning</a> course covers building schedules and work order discipline.</p>
+
+      <h2 id="rounds">Rounds and logs</h2>
+      <p>Rounds are scheduled walk-throughs, often once or more per shift, where technicians check equipment in person and record readings. A round might capture UPS load and battery status, generator fuel levels and block heater temperatures, switchgear indications, chiller and pump status, supply and return water temperatures, CRAH status, leak detection panels, and battery room conditions.</p>
+      <p>Rounds catch what sensors miss: a new noise, a smell of hot insulation, a drip under a pipe, a door left open, a tile out of place. Many sites now record rounds on tablets so readings are trended automatically and out-of-range values raise a work order.</p>
+
+      <h2 id="monitoring">The monitoring stack and alarm management</h2>
+      <p>Operators watch the site through several overlapping systems:</p>
+      <ul>
+        <li><strong>Building management system (<a href="glossary.html#term-bms">BMS</a>)</strong>: monitors and controls mechanical equipment such as chillers, pumps, CRAHs, and air handlers, usually over protocols like BACnet and Modbus.</li>
+        <li><strong>Electrical power monitoring system (EPMS)</strong>: meters, breaker status, and power quality data from switchgear, UPS, and PDUs, often with waveform capture for event analysis.</li>
+        <li><strong>Data center infrastructure management (<a href="glossary.html#term-dcim">DCIM</a>)</strong>: assets, space, rack power, and capacity, tying the facility to the IT equipment it supports.</li>
+      </ul>
+      <p>The hard part is not collecting data but acting on it. <strong>Alarm fatigue</strong> sets in when operators see hundreds of low-value alarms and start silencing them, then miss the one that matters. Good alarm management means every alarm has a defined priority and a required response, chattering and nuisance points are fixed rather than ignored, standing alarms are tracked and cleared, and alarm counts are reviewed weekly. ANSI/ISA-18.2, written for process industries, is a useful model. See <a href="../courses/monitoring-automation-bms-systems.html">Monitoring, Automation &amp; BMS Systems</a> and <a href="../courses/dcim-platform-fundamentals.html">DCIM Platform Fundamentals</a>.</p>
+
+      <h2 id="incidents">Incident response</h2>
+      <p>When something fails, a practiced sequence keeps a small problem from becoming an outage:</p>
+      <ol class="flow flow-3" aria-label="Incident response sequence">
+        <li><strong>Detect</strong>An alarm, a round, or a customer report flags the problem.</li>
+        <li><strong>Triage</strong>Confirm what is affected, whether the critical load is at risk, and which EOP applies.</li>
+        <li><strong>Escalate</strong>Call the shift lead, on-call manager, and vendors on a defined timeline.</li>
+        <li><strong>Communicate</strong>Update the NOC, customers, and leadership at set intervals, even if nothing has changed.</li>
+        <li><strong>Restore</strong>Stabilize, restore redundancy, and return to normal configuration under a MOP.</li>
+        <li><strong>Root cause analysis</strong>Find why it happened and fix the cause, not just the symptom.</li>
+      </ol>
+      <p>Assign one <strong>incident lead</strong> who coordinates while others work the problem. After the event, run a blameless post-incident review using tools like the five whys or a cause-and-effect diagram, and track corrective actions to completion. The first minutes matter most; read <a href="../blog/posts/data-center-incident-response-handoffs-what-facilities-and-noc-teams-should-confirm-in-the-first-15-minutes.html">what facilities and NOC teams should confirm in the first 15 minutes</a>. The <a href="../courses/incident-response-troubleshooting.html">Incident Response &amp; Troubleshooting</a> course builds these skills.</p>
+
+      <h2 id="capacity">Capacity, vendor, and contractor management</h2>
+      <h3>Capacity management</h3>
+      <p>Capacity has four dimensions: space, power, cooling, and network connectivity. Operations tracks each at the room, row, and rack level, because a hall can have plenty of floor space but no cooling left in one row. Watch for <strong>stranded capacity</strong>, power or cooling that exists but cannot be used because of how it is distributed, and protect redundancy limits such as keeping each side of a 2N feed below half its rating. Forecast demand with IT and sales so expansions start before the site runs out.</p>
+      <h3>Vendor and contractor management</h3>
+      <p>Original equipment manufacturer (OEM) service contracts cover UPS, generators, switchgear, chillers, and fire systems. Manage them with clear response-time commitments, approved MOPs for every visit, site orientation, escorting, and a review of each service report. Track vendor performance like any other KPI.</p>
+
+      <h2 id="dr-bc">Disaster recovery and business continuity</h2>
+      <p><strong>Business continuity</strong> keeps the organization running through a disruption; <strong>disaster recovery</strong> restores IT services after one. Two numbers drive the design: the <strong>recovery time objective (RTO)</strong>, how long a service can be down, and the <strong>recovery point objective (RPO)</strong>, how much data loss is tolerable. They decide whether a workload needs a second site, replication, or just good backups.</p>
+      <p>The facility side of continuity includes fuel delivery agreements, spare parts, staff coverage during severe weather or illness, alternate communication paths, and plans for losing the site entirely. Test plans regularly:</p>
+      <ul>
+        <li><strong>Tabletop exercises</strong> walk a team through a scenario around a table to find gaps in roles, decisions, and communication.</li>
+        <li><strong>Functional drills</strong> exercise one part of the plan, such as an EOP for loss of a chiller.</li>
+        <li><strong>Failover tests</strong> actually move workloads to an alternate site or system and measure the results against the RTO and RPO.</li>
+      </ul>
+      <p>ISO 22301 is the international standard for business continuity management systems. The <a href="../courses/disaster-recovery-business-continuity.html">Disaster Recovery &amp; Business Continuity</a> course covers planning and testing.</p>
+
+      <h2 id="training">Documentation and training</h2>
+      <p>A site is only as good as its documentation: current single-line diagrams, sequences of operation, as-built drawings, equipment manuals, SOPs, MOPs, EOPs, and the site's own lessons learned. Review procedures on a schedule and after every incident.</p>
+      <p>Staffing is a real constraint. The <a href="https://intelligence.uptimeinstitute.com/resource/uptime-institute-global-data-center-survey-2025">Uptime Institute Global Data Center Survey 2025</a> found that nearly two-thirds of operators report difficulty retaining staff, finding qualified candidates, or both. That makes structured onboarding, cross-training, and documented qualification on each system essential, not optional.</p>
+
+      <h2 id="kpis">Operations KPIs</h2>
+      <div class="table-panel">
+        <table class="data-table">
+          <caption>Common data center operations KPIs</caption>
+          <thead><tr><th>KPI</th><th>How it is calculated</th><th>What to watch</th></tr></thead>
+          <tbody>
+            <tr><td>Availability</td><td>Uptime divided by total time, for the critical load or each service</td><td>Report it alongside the number of events, not alone</td></tr>
+            <tr><td>MTBF</td><td>Total operating time divided by the number of failures</td><td>Falling MTBF on one asset class points to a maintenance or design issue</td></tr>
+            <tr><td>MTTR</td><td>Total repair or restoration time divided by the number of repairs</td><td>Parts, vendor response, and procedures drive it down</td></tr>
+            <tr><td>PM completion rate</td><td>PMs completed on time divided by PMs scheduled</td><td>Deferred critical PMs matter more than the headline percentage</td></tr>
+            <tr><td>PUE</td><td>Total facility energy divided by IT equipment energy</td><td>Track the trend at your site; compare across sites with care</td></tr>
+            <tr><td>Alarm counts</td><td>Alarms per shift or per week, and standing alarms</td><td>A rising count usually means nuisance alarms are hiding real ones</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>For more on PUE, see the <a href="energy-efficiency-pue.html">Energy Efficiency &amp; PUE guide</a> or try the <a href="../tools/pue-calculator.html">PUE Calculator</a>.</p>
+
+      <div class="inline-cta">
+        <p><strong>Think you could run a shift?</strong> Test yourself on procedures, maintenance, and incident response.</p>
+        <a class="btn btn-primary btn-sm" href="../quizzes/operations-quiz.html">Take the Operations Quiz</a>
+      </div>
+
+      <h2 id="courses">Courses that go deeper</h2>
+      <p>These self-paced courses cover the operations disciplines above, and each awards a certificate of completion.</p>
+      <!-- dct:courses data-center-operations-management preventive-maintenance-planning incident-response-troubleshooting monitoring-automation-bms-systems dcim-platform-fundamentals disaster-recovery-business-continuity facility-management-fundamentals building-maintenance-fundamentals -->
+<!-- /dct:courses -->
+      <!-- dct:bundle bundle-operations-reliability -->
+<!-- /dct:bundle -->
+
+      <h2 id="faq">Frequently asked questions</h2>
+      <div class="guide-faq">
+        <h3>What is the difference between an SOP and a MOP?</h3>
+        <p>A standard operating procedure (SOP) describes a routine task that is done the same way every time, such as a daily round or a generator monthly run. A method of procedure (MOP) is written for a specific piece of work on critical equipment, such as transferring a UPS to maintenance bypass, and includes step-by-step actions, expected readings, hold points, approvals, and a back-out plan. Emergency operating procedures (EOPs) cover how to respond when something fails.</p>
+        <h3>What does a critical facilities technician do on a shift?</h3>
+        <p>A typical shift starts with a turnover briefing, then rounds through electrical rooms, the central plant, and data halls to record readings and spot problems. The rest of the shift is scheduled maintenance from work orders, supporting vendors and contractors, responding to alarms, and updating logs. On nights and weekends the technician may be the most senior person on site and the first responder to any failure.</p>
+        <h3>What is the difference between RTO and RPO?</h3>
+        <p>The recovery time objective (RTO) is how long a service can be down before the business impact is unacceptable. The recovery point objective (RPO) is how much data, measured in time, the business can afford to lose. An RTO of four hours and an RPO of fifteen minutes means the service must be back within four hours and lose no more than the last fifteen minutes of data.</p>
+        <h3>What is alarm fatigue and how do data centers prevent it?</h3>
+        <p>Alarm fatigue happens when operators see so many nuisance or low-value alarms that they start ignoring or silencing them, and miss the one that matters. Sites prevent it by rationalizing alarms so each one needs a specific action, setting clear priorities, fixing chattering points, tracking standing alarms, and reviewing alarm counts every week.</p>
+      </div>
+
+      <h2 id="related">Keep learning</h2>
+      <div class="card-grid card-grid-2">
+        <a class="topic-card" href="data-center-commissioning.html"><span class="topic-card-kicker">Guide</span><h3>Commissioning Explained</h3><p>How a new site is tested, Levels 1 to 5, before operations takes over.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+        <a class="topic-card" href="data-center-power.html"><span class="topic-card-kicker">Guide</span><h3>How Data Center Power Works</h3><p>The UPS, generator, and distribution systems operators run every day.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+        <a class="topic-card" href="../careers/data-center-jobs.html#critical-facilities-technician"><span class="topic-card-kicker">Careers</span><h3>Critical Facilities Technician</h3><p>The shift role at the center of data center operations.</p><span class="topic-card-cta">See the role &rarr;</span></a>
+        <a class="topic-card" href="../tools/uptime-calculator.html"><span class="topic-card-kicker">Tool</span><h3>Uptime &amp; Downtime Calculator</h3><p>Turn availability percentages into minutes of downtime.</p><span class="topic-card-cta">Open the calculator &rarr;</span></a>
+      </div>
+      <p class="guide-updated">This guide is general educational information, not engineering, legal, or compliance advice. Follow your site's procedures, the equipment manufacturer's instructions, and the codes adopted in your jurisdiction.</p>
+    </article>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta-block">
+        <h2>Train Your Team on Data Center Operations</h2>
+        <p>Our Operations &amp; Reliability courses cover operations management, maintenance planning, monitoring, incident response, and disaster recovery.</p>
+        <div class="hero-ctas">
+          <a href="../bundles.html" class="btn glass-chip">See the Operations Bundle</a>
+          <a href="../courses.html" class="btn glass-chip">Browse All Courses</a>
+          <a href="tel:18664296742" class="btn glass-chip">Call 1-866-429-6742</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="contact"></footer>
+<script src="../js/main.js" defer></script>
+
+</body>
+</html>

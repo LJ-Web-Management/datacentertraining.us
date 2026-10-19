@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Center Safety Guide: Hazards, Rules, and Training</title>
+<meta name="description" content="Data center safety explained: arc flash and NFPA 70E, lockout/tagout, battery and EPO hazards, clean agent systems, confined spaces, and safety training.">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+<link rel="canonical" href="https://datacentertraining.us/learn/data-center-safety.html">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Data Center Safety Guide: Hazards, Rules, and Training">
+<meta property="og:description" content="Data center safety explained: arc flash and NFPA 70E, lockout/tagout, battery and EPO hazards, clean agent systems, confined spaces, and safety training.">
+<meta property="og:url" content="https://datacentertraining.us/learn/data-center-safety.html">
+<meta property="og:image" content="https://datacentertraining.us/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Data Center Training">
+
+<link rel="stylesheet" href="../css/site.min.css">
+<script src="../js/nav.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Data Center Safety Guide: Hazards, Rules, and Training",
+  "description": "Data center safety explained: arc flash and NFPA 70E, lockout/tagout, battery and EPO hazards, clean agent systems, confined spaces, and safety training.",
+  "url": "https://datacentertraining.us/learn/data-center-safety.html",
+  "mainEntityOfPage": "https://datacentertraining.us/learn/data-center-safety.html",
+  "image": "https://datacentertraining.us/images/og-image.jpg",
+  "datePublished": "2026-10-19",
+  "dateModified": "2026-10-19",
+  "inLanguage": "en-US",
+  "author": {"@type": "Organization", "name": "Data Center Training", "url": "https://datacentertraining.us/"},
+  "publisher": {"@type": "EducationalOrganization", "@id": "https://datacentertraining.us/#organization", "name": "Data Center Training", "url": "https://datacentertraining.us/"},
+  "about": ["Data center safety", "Arc flash", "Lockout/tagout", "Clean agent fire suppression", "Battery safety"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://datacentertraining.us/"},
+    {"@type": "ListItem", "position": 2, "name": "Knowledge Center", "item": "https://datacentertraining.us/learn/"},
+    {"@type": "ListItem", "position": 3, "name": "Safety", "item": "https://datacentertraining.us/learn/data-center-safety.html"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "What is the arc flash boundary?", "acceptedAnswer": {"@type": "Answer", "text": "Under NFPA 70E, the arc flash boundary is the distance from an arc source at which the incident energy would equal 1.2 cal/cm2, the level associated with the onset of a second-degree burn on bare skin. Anyone inside that boundary while an arc flash hazard exists must wear arc-rated PPE. The boundary for a specific piece of equipment comes from an arc flash risk assessment and is shown on the equipment label."}},
+    {"@type": "Question", "name": "Does a data center safety course make me a qualified person?", "acceptedAnswer": {"@type": "Answer", "text": "No. Under OSHA and NFPA 70E, only your employer can designate you as a qualified person for specific equipment and tasks, after you have the training, skills, and demonstrated knowledge for that work. A course gives you knowledge and a certificate of completion that can support that decision, but it does not make the designation."}},
+    {"@type": "Question", "name": "Is it safe to be in a room when a clean agent system discharges?", "acceptedAnswer": {"@type": "Answer", "text": "Clean agent systems are designed for occupied spaces, but you should still leave as soon as the pre-discharge alarm sounds. A discharge is loud and turbulent, can blow ceiling tiles and debris around, reduces visibility, and a fire produces its own toxic smoke and decomposition products. Evacuate, close the doors, and do not re-enter until the space has been ventilated and cleared by the fire department or your site's authorized person."}},
+    {"@type": "Question", "name": "Can UPS batteries still shock you when the UPS is turned off?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. A battery string stays energized no matter what the UPS is doing, and large UPS strings commonly operate at several hundred volts DC. Opening the battery breaker isolates the string from the UPS, but the terminals and inter-cell connections are still live. Battery work calls for its own risk assessment, insulated tools, and PPE."}}
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="glass-nav"></header>
+
+<main id="main">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../">Home</a>
+      <span>&rsaquo;</span>
+      <a href="./">Knowledge Center</a>
+      <span>&rsaquo;</span>
+      <span aria-current="page">Safety</span>
+    </nav>
+  </div>
+
+  <section class="course-hero">
+    <div class="container">
+      <div class="course-hero-eyebrow">Knowledge Center &middot; Safety</div>
+      <h1>Data Center Safety Guide: Hazards, Rules, and Training</h1>
+      <p class="course-hero-hook">A data center looks clean and quiet, but it holds high-energy electrical gear, battery rooms, gas-based fire suppression, pressurized refrigerant, and heavy equipment. Here is what can hurt you, which rules apply, and how good sites keep people safe.</p>
+      <div class="course-pills">
+        <span class="course-pill">14 min read</span>
+        <span class="course-pill">Beginner to intermediate</span>
+        <span class="course-pill">Updated October 2026</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="container guide-layout">
+    <aside class="guide-toc" aria-label="On this page">
+      <p class="guide-toc-title">On this page</p>
+      <ol>
+        <li><a href="#hazards">Hazards at a glance</a></li>
+        <li><a href="#electrical">Shock and arc flash</a></li>
+        <li><a href="#loto">Lockout/tagout</a></li>
+        <li><a href="#batteries">Batteries</a></li>
+        <li><a href="#epo">Emergency power off</a></li>
+        <li><a href="#fire-suppression">Fire suppression</a></li>
+        <li><a href="#raised-floor">Raised floors and confined spaces</a></li>
+        <li><a href="#other-hazards">Refrigerant, lifting, noise, heat</a></li>
+        <li><a href="#contractors">Contractors and permits</a></li>
+        <li><a href="#training">Building a training program</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ol>
+      <a class="guide-toc-cta" href="../quizzes/safety-quiz.html"><strong>Test yourself</strong>Take the Data Center Safety quiz.</a>
+    </aside>
+
+    <article class="guide-body prose">
+      <div class="key-takeaways">
+        <p class="key-takeaways-title">Key takeaways</p>
+        <ul>
+          <li>Electrical energy is the biggest serious hazard in a data center. The default is to establish an electrically safe work condition, not to work energized.</li>
+          <li>OSHA sets the legal requirements (29 CFR 1910 Subpart S, 1910.147, 1910.146) and NFPA 70E explains how to meet the electrical ones in practice.</li>
+          <li>Batteries, EPO buttons, and clean agent systems are specific to data centers and need site-specific training, not just general safety awareness.</li>
+          <li>Only the employer designates a qualified person. Training supports that decision; it does not replace it.</li>
+        </ul>
+      </div>
+
+      <h2 id="hazards">Data center hazards at a glance</h2>
+      <p>Most serious injuries in critical facilities come from a short list of hazards. Here is where each one shows up, how it is controlled, and what governs it.</p>
+      <div class="table-panel">
+        <table class="data-table">
+          <caption>Common data center hazards and their controls</caption>
+          <thead><tr><th>Hazard</th><th>Where it shows up</th><th>Key controls</th><th>Governing standard</th><th>Course</th></tr></thead>
+          <tbody>
+            <tr><td>Shock and arc flash</td><td>Switchgear, UPS, PDUs, panels, busway</td><td>De-energize and verify, boundaries, arc-rated PPE, permits</td><td>OSHA 1910 Subpart S, NFPA 70E</td><td><a href="../courses/data-center-arc-flash-safety.html">Arc Flash Safety</a></td></tr>
+            <tr><td>Hazardous energy during service</td><td>Breakers, CRAH fans, pumps, chillers</td><td>Written procedures, personal locks, verification</td><td>OSHA 1910.147 and 1910.333</td><td><a href="../courses/electrical-safety-best-practices.html">Electrical Safety &amp; Best Practices</a></td></tr>
+            <tr><td>Battery hazards</td><td>UPS battery rooms and cabinets</td><td>Ventilation, eyewash, insulated tools, monitoring</td><td>NFPA 70E Article 320, NFPA 855 for lithium-ion</td><td><a href="../courses/data-center-ups-battery-safety.html">UPS &amp; Battery Safety</a></td></tr>
+            <tr><td>Accidental power-off</td><td>EPO stations at data hall exits</td><td>Covers, labeling, training</td><td>NFPA 70 Article 645, NFPA 75</td><td><a href="../courses/data-center-epo-procedures.html">EPO Procedures</a></td></tr>
+            <tr><td>Fire suppression discharge</td><td>Clean agent and inert gas protected rooms</td><td>Pre-discharge alarms, evacuation, controlled re-entry</td><td>NFPA 2001, NFPA 72</td><td><a href="../courses/data-center-fire-suppression-safety.html">Fire Suppression Safety</a></td></tr>
+            <tr><td>Open floors and confined spaces</td><td>Raised floor plenums, vaults, tanks, tunnels</td><td>Barricades, space evaluation, entry permits</td><td>OSHA 1910.22, 1910.146</td><td><a href="../courses/data-center-raised-floor-confined-space.html">Raised Floor &amp; Confined Space</a></td></tr>
+            <tr><td>Refrigerant release</td><td>CRAC units, chillers, mechanical rooms</td><td>Leak detection, ventilation, certified technicians</td><td>EPA Section 608, ASHRAE Standard 15</td><td><a href="../courses/data-center-cooling-refrigerant-safety.html">Cooling &amp; Refrigerant Safety</a></td></tr>
+            <tr><td>Lifting and handling</td><td>Loading dock, rack installs</td><td>Server lifts, team lifts</td><td>OSHA General Duty Clause, NIOSH guidance</td><td><a href="../courses/server-room-ergonomics-manual-handling.html">Ergonomics &amp; Manual Handling</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="electrical">Electrical shock and arc flash</h2>
+      <p><strong>Shock</strong> happens when current passes through your body after contact with an energized part. <strong>Arc flash</strong> happens when current jumps through the air between conductors, releasing intense heat, light, pressure, and molten metal in a fraction of a second. A dropped tool, a failed insulator, or a breaker racked in under fault can start one, and large data center switchgear can produce severe incidents. That is why <a href="glossary.html#term-arc-flash">arc flash</a> gets so much attention in this industry.</p>
+      <h3>The first rule: make it safe</h3>
+      <p>NFPA 70E, the Standard for Electrical Safety in the Workplace, starts from one principle: put equipment in an <strong>electrically safe work condition</strong> before anyone works on it. Identify every source, open the disconnects, visually confirm the contacts are open, release stored energy, apply locks and tags, and test for absence of voltage with a rated meter checked on a known live source before and after. Until then, the equipment is energized.</p>
+      <h3>Approach boundaries</h3>
+      <p>NFPA 70E defines distances around exposed energized parts that control who may get close:</p>
+      <ul>
+        <li><strong>Limited approach boundary</strong> (shock): unqualified persons may not cross it unless a qualified person is advising and escorting them.</li>
+        <li><strong>Restricted approach boundary</strong> (shock): only qualified persons, using shock protection techniques and PPE, may cross it. For a typical 480 V system, the NFPA 70E table sets the restricted approach boundary at 1 ft and, for exposed fixed parts, the limited approach boundary at 3 ft 6 in.</li>
+        <li><strong>Arc flash boundary</strong>: the distance at which incident energy would fall to 1.2 cal/cm&sup2;, the level associated with the onset of a second-degree burn. Inside it, arc-rated PPE is required while an arc flash hazard exists.</li>
+      </ul>
+      <h3>Labels, PPE categories, and permits</h3>
+      <p>Equipment labels from the arc flash risk assessment show the nominal voltage, the arc flash boundary, and either the incident energy at a working distance or the PPE category. If a label is missing or older than the last system change, stop and ask. NFPA 70E groups arc-rated clothing into <strong>PPE categories 1 through 4</strong>, with minimum arc ratings of 4, 8, 25, and 40 cal/cm&sup2;.</p>
+      <p>When work inside the restricted approach boundary, or where an arc flash hazard exists, truly cannot be done de-energized, NFPA 70E requires an <strong>energized electrical work permit</strong> recording the justification, risk assessments, PPE, access control, job briefing, and management approval. Convenience is not a justification. Concurrently maintainable designs exist so maintenance can be done de-energized while the load runs on the other path.</p>
+      <div class="callout callout-safety">
+        <span class="callout-title">Only qualified persons do energized work</span>
+        <p>OSHA and NFPA 70E limit work on or near exposed energized parts to qualified persons: people trained and able to demonstrate the skills and knowledge for that equipment and its hazards. The employer makes that designation, task by task. Everyone else needs awareness training. Our <a href="../courses/data-center-electrical-safety.html">Data Center Electrical Safety</a> course is built around NFPA 70E for that audience.</p>
+      </div>
+
+      <h2 id="loto">Lockout/tagout</h2>
+      <p>Lockout/tagout (<a href="glossary.html#term-loto">LOTO</a>) keeps equipment from being energized or started while someone works on it. OSHA 29 CFR 1910.147 covers servicing of machines and equipment such as CRAH fans, pumps, and chillers. Electrical work on conductors falls under the Subpart S lockout provisions (1910.333), and NFPA 70E aligns with both, so most sites write one energy control program for all energy types.</p>
+      <p>The program needs written, equipment-specific procedures, standardized locks and tags, training for authorized and affected employees, and a periodic inspection of each procedure at least annually. The basic sequence:</p>
+      <ol class="steps">
+        <li><h3>Prepare and notify</h3><p>Review the procedure, identify every energy source (including backfeeds and capacitors), and tell affected employees and the control room.</p></li>
+        <li><h3>Shut down the equipment</h3><p>Use the normal stopping method, so a disconnect never has to break load it was not rated for.</p></li>
+        <li><h3>Isolate every source</h3><p>Open breakers and disconnects, close and secure valves, and visually confirm isolation where the equipment allows it.</p></li>
+        <li><h3>Apply locks and tags</h3><p>Each authorized worker applies a personal lock to every isolation point, or to a group lockbox. Your lock, your key, your body.</p></li>
+        <li><h3>Release or restrain stored energy</h3><p>Discharge capacitors, bleed pressure, block moving parts, and apply grounds where voltage could return.</p></li>
+        <li><h3>Verify isolation</h3><p>Attempt a normal start and test for absence of voltage (live-dead-live) before work begins. Afterward, inspect the area, account for everyone, remove locks, and notify affected employees before re-energizing.</p></li>
+      </ol>
+
+      <h2 id="batteries">Battery hazards: VRLA and lithium-ion</h2>
+      <p>UPS batteries are stored energy that cannot be switched off. Large strings commonly operate at several hundred volts DC, and DC arcs lack the current zero crossing that helps AC arcs extinguish. NFPA 70E Article 320 covers batteries and battery rooms.</p>
+      <p><strong>Valve-regulated lead-acid (VRLA)</strong> batteries hold sulfuric acid electrolyte in glass mat or gel. They release hydrogen, especially when overcharged, so battery rooms need ventilation to keep hydrogen well below flammable levels. Damaged jars can leak electrolyte, and OSHA 1910.151(c) requires eyewash or drench facilities where corrosive exposure is possible. VRLA cells can also go into thermal runaway if overcharged or overheated.</p>
+      <p><strong>Lithium-ion</strong> batteries are smaller and last longer, but a damaged or overcharged cell can enter <strong>thermal runaway</strong>: a self-heating reaction that vents flammable and toxic gases and can spread cell to cell. Off-gas detection gives early warning, and gas trapped in a closed room is an explosion hazard. NFPA 855 governs stationary energy storage installations. Response differs from an ordinary fire: evacuate, call the fire department, do not open the room to look, and expect re-ignition. See <a href="../courses/lithium-ion-thermal-runaway-emergency-response.html">Lithium-Ion Thermal Runaway &amp; Emergency Response</a>.</p>
+      <div class="callout callout-tip">
+        <span class="callout-title">Battery work basics</span>
+        <p>Remove jewelry, use insulated tools rated for the DC voltage, cover adjacent terminals, wear face and hand protection, and locate the eyewash station and spill kit before you start.</p>
+      </div>
+
+      <h2 id="epo">Emergency power off (EPO) systems</h2>
+      <p>An <a href="glossary.html#term-epo">EPO</a> system disconnects power to IT equipment, and in many designs the room's HVAC, with one action from buttons at the data hall exits. Whether a room has one depends on the code path used, mainly NFPA 70 Article 645 and NFPA 75, and on the authority having jurisdiction.</p>
+      <p>Responders get a fast way to de-energize the room. The catch: accidental EPO activation is a well-known cause of data center outages. Someone mistakes the button for a door release, a cart bumps it, or a visitor presses it out of curiosity. Good sites reduce the risk with:</p>
+      <ul>
+        <li>Hinged or lift covers, with an alarm when a cover is lifted.</li>
+        <li>Clear labeling and distance from door release buttons and light switches.</li>
+        <li>EPO awareness in every site orientation, including visitors and contractors.</li>
+        <li>Written procedures for when to use it and how to recover, and testing only under a method of procedure.</li>
+      </ul>
+      <p>Recovery is its own procedure: reset the system and restore power in a controlled sequence. The <a href="../courses/data-center-epo-procedures.html">EPO Procedures</a> course covers both sides.</p>
+
+      <h2 id="fire-suppression">Clean agent and inert gas fire suppression</h2>
+      <p>Many data halls and electrical rooms are protected by gaseous systems governed by NFPA 2001. <strong>Clean agents</strong> such as HFC-227ea (sold as FM-200) and FK-5-1-12 (sold as Novec 1230 and others) mainly absorb heat. <strong>Inert gas</strong> systems such as IG-541 (Inergen), IG-55, and IG-100 lower oxygen below the level that supports combustion. Neither leaves residue. Many rooms also have pre-action sprinklers under NFPA 13, with detection governed by NFPA 72. What everyone in a protected room should know:</p>
+      <ul>
+        <li><strong>Pre-discharge alarm.</strong> Detection usually needs two devices in alarm. Horns and strobes then start a time delay before discharge. That delay is your exit window.</li>
+        <li><strong>Abort switch.</strong> Many systems have a switch that holds discharge while pressed. Only trained people use it, and only after confirming there is no fire.</li>
+        <li><strong>Evacuate.</strong> Leave at the first alarm and close doors. A discharge is loud and violent, a real fire produces toxic smoke, and clean agents exposed to fire form decomposition products such as hydrogen fluoride.</li>
+        <li><strong>Re-entry.</strong> Do not go back in until the room has been ventilated and the fire department or an authorized person has cleared it.</li>
+        <li><strong>Impairments.</strong> Dust, smoke, or heat from work can trigger detection. Disabling a system requires an impairment procedure, notifications, and often a fire watch.</li>
+      </ul>
+      <p>Room integrity matters too: unsealed penetrations and propped doors let agent escape before it has held for the design period. See <a href="../courses/data-center-fire-suppression-safety.html">Fire Suppression System Safety</a>.</p>
+
+      <h2 id="raised-floor">Raised floor work and confined spaces</h2>
+      <p>An open floor tile is a hole in the floor. Use a proper tile lifter, barricade every opening, never leave one unattended, and limit how many adjacent tiles come up at once, because removing tiles can weaken the floor grid. Check concentrated and rolling load ratings before moving heavy equipment across tiles. OSHA's walking-working surfaces rules (1910.22 and related sections) apply to floor openings.</p>
+      <p>Whether a space is a <strong>confined space</strong> under OSHA 1910.146 depends on three things: it is large enough to bodily enter, it has limited means of entry or exit, and it is not designed for continuous occupancy. Most shallow raised floor plenums are too small to enter. Deep plenums, cable vaults, utility tunnels, manholes, fuel tank vaults, sumps, and large ducts may qualify. It becomes a <strong>permit-required</strong> confined space if it has or could have a hazardous atmosphere (for example, from a gaseous suppression discharge or a refrigerant leak), engulfment, a configuration that could trap someone, or another serious hazard such as exposed electrical parts. The employer must evaluate the workplace, mark permit spaces, and either run a permit entry program or keep employees out.</p>
+
+      <h2 id="other-hazards">Refrigerant, lifting, noise, and heat</h2>
+      <h3>Refrigerant hazards</h3>
+      <p>Most refrigerants are heavier than air and can displace oxygen in low or enclosed spaces. Liquid refrigerant causes frostbite, systems run at high pressure, and many refrigerants form toxic products in a flame. ASHRAE Standard 15 sets requirements such as detection and ventilation in machinery rooms, and newer A2L (mildly flammable) refrigerants add ignition concerns. Opening a system requires EPA Section 608 certification from an EPA-approved certifying program.</p>
+      <h3>Ergonomics and manual handling</h3>
+      <p>Servers, GPU nodes, and battery modules are heavy and often lifted at shoulder height. The revised NIOSH lifting equation starts from 51 lb (23 kg) for an ideal lift and lowers it for reach, height, twisting, and frequency, which is why server lifts and two-person lifts are standard. Extend rack stabilizer feet before sliding equipment out on rails, and load racks from the bottom up.</p>
+      <h3>Noise and heat</h3>
+      <p>OSHA 1910.95 requires a hearing conservation program when exposures reach an 85 dBA eight-hour time-weighted average, and sets a permissible exposure limit of 90 dBA. Running generators, chiller plants, and some high-density halls call for a noise survey and hearing protection. Contained hot aisles can run well above 100 &deg;F (38 &deg;C): limit time there, drink water, take breaks in cooler space, and know the signs of heat illness. There is no single OSHA rule for hot aisle work, but employers are expected to address heat hazards, and some states have their own heat rules.</p>
+
+      <h2 id="contractors">Contractors, permits, and hot work</h2>
+      <p>Much of the highest-risk work is done by contractors: testing firms, UPS and generator field engineers, and mechanical and construction crews. The site still coordinates that work. A strong contractor program includes:</p>
+      <ul>
+        <li>Prequalification of safety records, training, and insurance.</li>
+        <li>Site orientation on EPO, suppression alarms, evacuation, and restricted areas.</li>
+        <li>A method of procedure (<a href="glossary.html#term-mop">MOP</a>) reviewed and approved before any work on critical systems.</li>
+        <li>Permits for energized electrical work, confined space entry, hot work, work at heights, roof access, and fire protection impairments.</li>
+        <li>A site representative with authority to stop the work.</li>
+      </ul>
+      <p><strong>Hot work</strong> (welding, cutting, brazing, grinding) needs a hot work permit under NFPA 51B and OSHA 1910.252, a fire watch during the work and for a set period afterward, and coordination with the fire alarm and suppression systems so the work does not trigger a discharge or an evacuation.</p>
+
+      <h2 id="training">Building a safety training program</h2>
+      <p>OSHA requires training under several standards, including electrical safety-related work practices (1910.332), lockout/tagout (1910.147), confined spaces (1910.146), PPE (1910.132), hearing conservation (1910.95), and hazard communication (1910.1200) for chemicals such as battery electrolyte and diesel. NFPA 70E adds retraining at intervals not exceeding three years. A practical data center program layers three things:</p>
+      <ol>
+        <li><strong>Awareness for everyone</strong> who enters the white space.</li>
+        <li><strong>Role-based training</strong> for technicians: NFPA 70E, LOTO, batteries, and their systems.</li>
+        <li><strong>Site-specific qualification</strong>: supervisors observe each person on the actual equipment before the employer designates them qualified.</li>
+      </ol>
+      <p>Keep training records, procedure sign-offs, and qualification decisions together; inspectors, insurers, and customer auditors ask for them. The <a href="../tools/training-plan-builder.html">Training Plan Builder</a> helps map roles to courses.</p>
+
+      <div class="inline-cta">
+        <p><strong>How well do you know data center safety?</strong> Test yourself on arc flash, LOTO, batteries, and suppression.</p>
+        <a class="btn btn-primary btn-sm" href="../quizzes/safety-quiz.html">Take the Safety Quiz</a>
+      </div>
+
+      <h2 id="courses">Courses that go deeper</h2>
+      <p>These self-paced courses are standards-aligned and award a certificate of completion that documents your training.</p>
+      <!-- dct:courses data-center-electrical-safety data-center-arc-flash-safety electrical-safety-best-practices data-center-ups-battery-safety lithium-ion-thermal-runaway-emergency-response data-center-epo-procedures data-center-fire-suppression-safety data-center-raised-floor-confined-space -->
+<!-- /dct:courses -->
+      <!-- dct:bundle bundle-complete-catalog -->
+<!-- /dct:bundle -->
+
+      <h2 id="faq">Frequently asked questions</h2>
+      <div class="guide-faq">
+        <h3>What is the arc flash boundary?</h3>
+        <p>Under NFPA 70E, the arc flash boundary is the distance from an arc source at which the incident energy would equal 1.2 cal/cm2, the level associated with the onset of a second-degree burn on bare skin. Anyone inside that boundary while an arc flash hazard exists must wear arc-rated PPE. The boundary for a specific piece of equipment comes from an arc flash risk assessment and is shown on the equipment label.</p>
+        <h3>Does a data center safety course make me a qualified person?</h3>
+        <p>No. Under OSHA and NFPA 70E, only your employer can designate you as a qualified person for specific equipment and tasks, after you have the training, skills, and demonstrated knowledge for that work. A course gives you knowledge and a certificate of completion that can support that decision, but it does not make the designation.</p>
+        <h3>Is it safe to be in a room when a clean agent system discharges?</h3>
+        <p>Clean agent systems are designed for occupied spaces, but you should still leave as soon as the pre-discharge alarm sounds. A discharge is loud and turbulent, can blow ceiling tiles and debris around, reduces visibility, and a fire produces its own toxic smoke and decomposition products. Evacuate, close the doors, and do not re-enter until the space has been ventilated and cleared by the fire department or your site's authorized person.</p>
+        <h3>Can UPS batteries still shock you when the UPS is turned off?</h3>
+        <p>Yes. A battery string stays energized no matter what the UPS is doing, and large UPS strings commonly operate at several hundred volts DC. Opening the battery breaker isolates the string from the UPS, but the terminals and inter-cell connections are still live. Battery work calls for its own risk assessment, insulated tools, and PPE.</p>
+      </div>
+
+      <h2 id="related">Keep learning</h2>
+      <div class="card-grid card-grid-2">
+        <a class="topic-card" href="data-center-power.html"><span class="topic-card-kicker">Guide</span><h3>How Data Center Power Works</h3><p>The equipment behind the hazards, from switchgear to rack PDUs.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+        <a class="topic-card" href="data-center-standards.html"><span class="topic-card-kicker">Guide</span><h3>Standards &amp; Regulations</h3><p>OSHA, NFPA, ASHRAE, and TIA rules in one map.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+        <a class="topic-card" href="../careers/data-center-jobs.html#ehs-manager"><span class="topic-card-kicker">Careers</span><h3>EHS Manager</h3><p>The role that runs safety programs at critical facilities.</p><span class="topic-card-cta">See the role &rarr;</span></a>
+        <a class="topic-card" href="../quizzes/safety-quiz.html"><span class="topic-card-kicker">Quiz</span><h3>Data Center Safety Quiz</h3><p>Check what you learned with instant explanations.</p><span class="topic-card-cta">Take the quiz &rarr;</span></a>
+      </div>
+      <p class="guide-updated">This guide is general educational information, not engineering, legal, or compliance advice. Follow your employer's safety program, the equipment manufacturer's instructions, and the codes and regulations that apply at your site.</p>
+    </article>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta-block">
+        <h2>Train Your Team on Data Center Safety</h2>
+        <p>Our safety courses cover arc flash, electrical safety, batteries, EPO, fire suppression, and confined spaces, with a certificate of completion for every course.</p>
+        <div class="hero-ctas">
+          <a href="../bundles.html" class="btn glass-chip">See the Complete Bundle</a>
+          <a href="../courses.html" class="btn glass-chip">Browse All Courses</a>
+          <a href="tel:18664296742" class="btn glass-chip">Call 1-866-429-6742</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="contact"></footer>
+<script src="../js/main.js" defer></script>
+
+</body>
+</html>

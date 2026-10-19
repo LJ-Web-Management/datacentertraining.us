@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Center Training Plan Builder (Free Tool)</title>
+<meta name="description" content="Build a data center training plan for your role in a minute. Pick your job, experience, topics, and time budget to get a course list, hours, and price.">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+<link rel="canonical" href="https://datacentertraining.us/tools/training-plan-builder.html">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Data Center Training Plan Builder (Free Tool)">
+<meta property="og:description" content="Build a data center training plan for your role in a minute. Pick your job, experience, topics, and time budget to get a course list, hours, and price.">
+<meta property="og:url" content="https://datacentertraining.us/tools/training-plan-builder.html">
+<meta property="og:image" content="https://datacentertraining.us/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Data Center Training">
+
+<link rel="stylesheet" href="../css/site.min.css">
+<script src="../js/nav.js" defer></script>
+<script src="../js/config.js" defer></script>
+<script src="../js/tools.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Data Center Training Plan Builder",
+  "url": "https://datacentertraining.us/tools/training-plan-builder.html",
+  "description": "Builds a role-based data center training plan from the Data Center Training course catalog, with total hours, per-seat price, volume pricing, and bundle savings.",
+  "applicationCategory": "EducationalApplication",
+  "operatingSystem": "Any (web browser)",
+  "isAccessibleForFree": true,
+  "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
+  "publisher": {"@type": "EducationalOrganization", "@id": "https://datacentertraining.us/#organization", "name": "Data Center Training", "url": "https://datacentertraining.us/"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://datacentertraining.us/"},
+    {"@type": "ListItem", "position": 2, "name": "Tools", "item": "https://datacentertraining.us/tools/"},
+    {"@type": "ListItem", "position": 3, "name": "Training Plan Builder", "item": "https://datacentertraining.us/tools/training-plan-builder.html"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "How does the training plan builder choose courses?", "acceptedAnswer": {"@type": "Answer", "text": "It starts with the core courses for the role you pick, ordered for your experience level, adds the top courses for any extra topics you select, and then fills your time budget in priority order. You can uncheck any course, and the hours and prices update."}},
+    {"@type": "Question", "name": "Can I buy the plan for a whole team?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Enter the number of seats and the total includes the seat-count volume discount. You can enroll through checkout, or email the plan to us and we will set up learner accounts and send an invoice or quote, including purchase-order billing."}},
+    {"@type": "Question", "name": "Is a bundle cheaper than the courses in my plan?", "acceptedAnswer": {"@type": "Answer", "text": "Sometimes. The builder checks every bundle, and when one contains all of your courses for less than buying them separately, it tells you. Otherwise it shows the bundle for your track so you can compare."}}
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="glass-nav"></header>
+
+<main id="main">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../">Home</a>
+      <span>&rsaquo;</span>
+      <a href="./">Tools</a>
+      <span>&rsaquo;</span>
+      <span aria-current="page">Training Plan Builder</span>
+    </nav>
+  </div>
+
+  <section class="course-hero">
+    <div class="container">
+      <div class="course-hero-eyebrow">Tool &middot; Training Planning</div>
+      <h1>Build Your Data Center Training Plan</h1>
+      <p class="course-hero-hook">Answer four questions and get a course plan for your role, with total hours, price per seat, team pricing, and any bundle that saves you money.</p>
+      <div class="course-pills">
+        <span class="course-pill">Takes about a minute</span>
+        <span class="course-pill">Live catalog prices</span>
+        <span class="course-pill">Share or email your plan</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <h2 class="visually-hidden">Plan builder</h2>
+    <div data-tool="plan">
+      <form class="tool-layout" novalidate>
+        <div class="tool-panel tool-panel-form">
+          <fieldset class="tool-fieldset">
+            <legend class="tool-legend">1. Which best describes you?</legend>
+            <div class="choice-grid">
+              <label class="choice"><input type="radio" name="role" value="newcomer" checked><span>New to data centers<small>Starting or switching careers</small></span></label>
+              <label class="choice"><input type="radio" name="role" value="electrician"><span>Electrician or power tech<small>UPS, generators, switchgear</small></span></label>
+              <label class="choice"><input type="radio" name="role" value="hvac"><span>HVAC or mechanical tech<small>CRAC/CRAH, chillers, airflow</small></span></label>
+              <label class="choice"><input type="radio" name="role" value="operations"><span>Facility or operations manager<small>Uptime, maintenance, DR</small></span></label>
+              <label class="choice"><input type="radio" name="role" value="security"><span>Security or compliance<small>Access control, audits</small></span></label>
+              <label class="choice"><input type="radio" name="role" value="design"><span>Engineer or project lead<small>Design, Tiers, commissioning</small></span></label>
+              <label class="choice"><input type="radio" name="role" value="it"><span>DCIM, monitoring, or network<small>BMS, DCIM, fiber</small></span></label>
+            </div>
+          </fieldset>
+          <fieldset class="tool-fieldset">
+            <legend class="tool-legend">2. How much experience do you have in that role?</legend>
+            <div class="choice-grid">
+              <label class="choice"><input type="radio" name="level" value="newbie" checked><span>New to this work<small>Start with fundamentals</small></span></label>
+              <label class="choice"><input type="radio" name="level" value="experienced"><span>Already doing this work<small>Lead with advanced courses</small></span></label>
+            </div>
+          </fieldset>
+          <fieldset class="tool-fieldset">
+            <legend class="tool-legend">3. Anything else you must cover? (optional)</legend>
+            <div class="choice-grid">
+              <label class="choice"><input type="checkbox" name="topic" value="safety"><span>Safety</span></label>
+              <label class="choice"><input type="checkbox" name="topic" value="power"><span>Power</span></label>
+              <label class="choice"><input type="checkbox" name="topic" value="cooling"><span>Cooling</span></label>
+              <label class="choice"><input type="checkbox" name="topic" value="operations"><span>Operations</span></label>
+              <label class="choice"><input type="checkbox" name="topic" value="security"><span>Security</span></label>
+              <label class="choice"><input type="checkbox" name="topic" value="design"><span>Design and planning</span></label>
+              <label class="choice"><input type="checkbox" name="topic" value="monitoring"><span>Monitoring</span></label>
+            </div>
+          </fieldset>
+          <div class="tool-field">
+            <label for="planHours">4. How much training time per person?</label>
+            <select class="tool-select" id="planHours" name="hours">
+              <option value="8">Up to 8 hours</option>
+              <option value="16" selected>Up to 16 hours</option>
+              <option value="24">Up to 24 hours</option>
+              <option value="40">Up to 40 hours</option>
+              <option value="any">No limit</option>
+            </select>
+          </div>
+          <div class="tool-field">
+            <label for="planSeats">Number of learners</label>
+            <div class="tool-input-wrap"><input class="tool-input" id="planSeats" name="seats" type="number" inputmode="numeric" min="1" max="1000" step="1" value="1"><span class="tool-unit">seats</span></div>
+            <span class="tool-hint">Volume discounts apply automatically from 2 seats.</span>
+          </div>
+        </div>
+
+        <div class="tool-panel" aria-live="polite">
+          <p class="tool-panel-title">Your training plan</p>
+          <div class="plan-summary">
+            <div class="tool-stat"><div class="tool-stat-value" data-out="hours">-</div><div class="tool-stat-label">Training time</div></div>
+            <div class="tool-stat"><div class="tool-stat-value" data-out="perSeat">-</div><div class="tool-stat-label">Per seat</div></div>
+            <div class="tool-stat"><div class="tool-stat-value" data-out="total">-</div><div class="tool-stat-label" data-out="totalLabel">Total for 1 seat</div></div>
+          </div>
+          <ul class="plan-list"></ul>
+          <p class="plan-empty" hidden>No course fits that time budget. Choose a larger budget to see a plan.</p>
+          <div class="plan-bundle" hidden></div>
+          <div class="plan-actions" hidden>
+            <a class="btn btn-primary" data-plan="bundle" href="../bundles.html">Enroll in the Bundle</a>
+            <a class="btn btn-primary" data-plan="single" href="../courses.html" hidden>Enroll in This Course</a>
+            <a class="btn btn-secondary" data-plan="email" href="mailto:info@hazwoper-osha.com">Email This Plan to Us</a>
+            <button type="button" class="btn btn-secondary" data-plan="share">Copy Link to Plan</button>
+            <button type="button" class="btn btn-secondary" data-plan="print">Print</button>
+          </div>
+          <noscript><p class="plan-noscript">Turn on JavaScript to build a plan, or see <a href="../who.html">recommended courses by role</a>.</p></noscript>
+          <p class="tool-note">Uncheck any course to remove it. Prices are per seat in USD before tax. Emailing the plan opens your email app with the plan filled in, and we reply with enrollment details or a quote.</p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="container-read">
+    <section class="section">
+      <div class="prose">
+        <h2 id="how">How the plan is built</h2>
+        <p>Every role on a data center floor needs a different mix of training. The builder starts with the core courses for the role you pick, ordered for your experience: fundamentals first if you are new, advanced courses first if you already do the work. It adds the top courses for any extra topics you choose, then fills your time budget in priority order.</p>
+        <p>The plan is a starting point. Employers decide who is qualified for which duties, and some tasks also require hands-on training, site-specific procedures, or licenses that no online course replaces. Each course awards a certificate of completion from HAZWOPER OSHA Training, LLC, an IACET Accredited Provider. See <a href="../certifications.html">what the certificate means</a>.</p>
+        <div class="inline-cta">
+          <p><strong>Not sure which role fits?</strong> Take the 2-minute career quiz first.</p>
+          <a class="btn btn-primary btn-sm" href="../quizzes/career-quiz.html">Take the Career Quiz</a>
+        </div>
+        <h2 id="bundle">Training a whole team?</h2>
+        <p>If several roles need training, the complete catalog bundle usually costs less than assembling plans one by one.</p>
+        <!-- dct:bundle bundle-complete-catalog -->
+        <!-- /dct:bundle -->
+        <h2 id="faq">Frequently asked questions</h2>
+        <div class="guide-faq">
+          <h3>How does the training plan builder choose courses?</h3>
+          <p>It starts with the core courses for the role you pick, ordered for your experience level, adds the top courses for any extra topics you select, and then fills your time budget in priority order. You can uncheck any course, and the hours and prices update.</p>
+          <h3>Can I buy the plan for a whole team?</h3>
+          <p>Yes. Enter the number of seats and the total includes the seat-count volume discount. You can enroll through checkout, or email the plan to us and we will set up learner accounts and send an invoice or quote, including purchase-order billing.</p>
+          <h3>Is a bundle cheaper than the courses in my plan?</h3>
+          <p>Sometimes. The builder checks every bundle, and when one contains all of your courses for less than buying them separately, it tells you. Otherwise it shows the bundle for your track so you can compare.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta-block">
+        <h2>Prefer to Talk It Through?</h2>
+        <p>Tell us about your team and we will put together a plan, a quote, and purchase-order billing if you need it.</p>
+        <div class="hero-ctas">
+          <a href="tel:18664296742" class="btn glass-chip">Call 1-866-429-6742</a>
+          <a href="mailto:info@hazwoper-osha.com" class="btn glass-chip">Email Us</a>
+          <a href="../who.html" class="btn glass-chip">Courses by Role</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="contact"></footer>
+<script src="../js/main.js" defer></script>
+
+</body>
+</html>

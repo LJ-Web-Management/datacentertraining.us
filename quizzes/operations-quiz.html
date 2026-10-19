@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Center Operations &amp; Monitoring Quiz (10 Questions)</title>
+<meta name="description" content="Free data center operations quiz: SOP vs MOP vs EOP, change management, predictive maintenance, CMMS, MTTR, RTO vs RPO, BMS vs DCIM vs EPMS, and root cause.">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+<link rel="canonical" href="https://datacentertraining.us/quizzes/operations-quiz.html">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Data Center Operations &amp; Monitoring Quiz (10 Questions)">
+<meta property="og:description" content="Free data center operations quiz: SOP vs MOP vs EOP, change management, predictive maintenance, CMMS, MTTR, RTO vs RPO, BMS vs DCIM vs EPMS, and root cause.">
+<meta property="og:url" content="https://datacentertraining.us/quizzes/operations-quiz.html">
+<meta property="og:image" content="https://datacentertraining.us/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Data Center Training">
+
+<link rel="stylesheet" href="../css/site.min.css">
+<script src="../js/nav.js" defer></script>
+<script src="../js/quiz.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://datacentertraining.us/"},
+    {"@type": "ListItem", "position": 2, "name": "Quizzes", "item": "https://datacentertraining.us/quizzes/"},
+    {"@type": "ListItem", "position": 3, "name": "Operations & Monitoring Quiz", "item": "https://datacentertraining.us/quizzes/operations-quiz.html"}
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="glass-nav"></header>
+
+<main id="main">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../">Home</a>
+      <span>&rsaquo;</span>
+      <a href="./">Quizzes</a>
+      <span>&rsaquo;</span>
+      <span aria-current="page">Operations &amp; Monitoring Quiz</span>
+    </nav>
+  </div>
+
+  <section class="course-hero">
+    <div class="container">
+      <div class="course-hero-eyebrow">Quiz &middot; Operations &amp; Monitoring</div>
+      <h1>Data Center Operations &amp; Monitoring Quiz</h1>
+      <p class="course-hero-hook">Ten questions on how critical facilities run day to day: procedures, change control, maintenance strategy, monitoring, and incident response. Each answer comes with a short explanation.</p>
+      <div class="course-pills">
+        <span class="course-pill">10 questions</span>
+        <span class="course-pill">About 5 minutes</span>
+        <span class="course-pill">Intermediate</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="container-read">
+    <h2 class="visually-hidden">Quiz questions</h2>
+    <section class="quiz" data-quiz-id="operations" data-quiz-type="knowledge" data-quiz-title="Data Center Operations &amp; Monitoring Quiz" aria-label="Operations and monitoring quiz">
+      <div class="quiz-progress" aria-hidden="true"><span class="quiz-progress-text">Question 1 of 10</span><div class="quiz-progress-track"><div class="quiz-progress-bar"></div></div><span class="quiz-progress-score">Score 0</span></div>
+      <ol class="quiz-questions">
+        <li class="quiz-q" data-answer="b">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 1</span><span class="quiz-q-text">Which document is a step-by-step plan for a specific, planned change to live critical infrastructure, such as putting a UPS on maintenance bypass?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="q1" value="a"><span>SOP (standard operating procedure)</span></label>
+            <label class="quiz-opt"><input type="radio" name="q1" value="b"><span>MOP (method of procedure)</span></label>
+            <label class="quiz-opt"><input type="radio" name="q1" value="c"><span>EOP (emergency operating procedure)</span></label>
+            <label class="quiz-opt"><input type="radio" name="q1" value="d"><span>SLA (service level agreement)</span></label>
+          </fieldset>
+          <details class="quiz-explain"><summary>Show answer</summary><p><strong class="quiz-key">Answer: a MOP.</strong> SOPs cover routine, repeatable tasks like equipment rounds, while MOPs cover planned work on critical systems with exact steps, hold points, approvals, and a back-out plan. EOPs tell responders what to do when something fails. <a href="../learn/data-center-operations.html">Read the operations guide</a>.</p></details>
+        </li>
+        <li class="quiz-q" data-answer="d">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 2</span><span class="quiz-q-text">Which statement about change management in a critical facility is correct?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="q2" value="a"><span>Emergency changes skip review and documentation entirely</span></label>
+            <label class="quiz-opt"><input type="radio" name="q2" value="b"><span>It applies only to IT software, not to power and cooling systems</span></label>
+            <label class="quiz-opt"><input type="radio" name="q2" value="c"><span>Approval is needed only when a change is expected to cause an outage</span></label>
+            <label class="quiz-opt"><input type="radio" name="q2" value="d"><span>Changes to critical infrastructure are risk-assessed, approved, scheduled, and documented, with a back-out plan, before work starts</span></label>
+          </fieldset>
+          <details class="quiz-explain"><summary>Show answer</summary><p><strong class="quiz-key">Answer: every change is assessed, approved, and documented first.</strong> Many outages start with a change or maintenance task, so change review is where risk gets caught. Emergency changes still follow an expedited path and are documented afterward. <a href="../courses/data-center-operations-management.html">Data Center Operations Management</a> covers change control.</p></details>
+        </li>
+        <li class="quiz-q" data-answer="a">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 3</span><span class="quiz-q-text">What is the difference between preventive and predictive maintenance?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="q3" value="a"><span>Preventive is done on a fixed schedule or run hours; predictive uses condition data, such as vibration or infrared scans, to act when indicators show it is needed</span></label>
+            <label class="quiz-opt"><input type="radio" name="q3" value="b"><span>Preventive is done after a failure; predictive is done before one</span></label>
+            <label class="quiz-opt"><input type="radio" name="q3" value="c"><span>They are two names for the same calendar-based practice</span></label>
+            <label class="quiz-opt"><input type="radio" name="q3" value="d"><span>Predictive maintenance applies only to IT equipment, not facility systems</span></label>
+          </fieldset>
+          <details class="quiz-explain"><summary>Show answer</summary><p><strong class="quiz-key">Answer: schedule-based versus condition-based.</strong> Preventive work follows the calendar or run hours, like quarterly filter changes. Predictive work watches condition, like rising bearing vibration or a hot lug on an infrared scan, and fixes it before it fails; repairing after failure is reactive maintenance. <a href="../courses/preventive-maintenance-planning.html">Preventive Maintenance Planning</a> covers both strategies.</p></details>
+        </li>
+        <li class="quiz-q" data-answer="c">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 4</span><span class="quiz-q-text">What does a CMMS do for a facilities team?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="q4" value="a"><span>Controls chiller staging in real time</span></label>
+            <label class="quiz-opt"><input type="radio" name="q4" value="b"><span>Tracks rack power, space, and network ports for capacity planning</span></label>
+            <label class="quiz-opt"><input type="radio" name="q4" value="c"><span>Schedules and tracks work orders, preventive maintenance tasks, asset history, and spare parts</span></label>
+            <label class="quiz-opt"><input type="radio" name="q4" value="d"><span>Monitors network traffic for intrusions</span></label>
+          </fieldset>
+          <details class="quiz-explain"><summary>Show answer</summary><p><strong class="quiz-key">Answer: it manages maintenance work and asset history.</strong> A computerized maintenance management system is the system of record for what was done, when, and by whom. Real-time control belongs to the BMS, and rack-level capacity tracking belongs to DCIM. <a href="../courses/preventive-maintenance-planning.html">Preventive Maintenance Planning</a> covers CMMS use.</p></details>
+        </li>
+        <li class="quiz-q" data-answer="b">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 5</span><span class="quiz-q-text">Inherent availability is often estimated as MTBF / (MTBF + MTTR). What does shortening MTTR do?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="q5" value="a"><span>Lowers availability</span></label>
+            <label class="quiz-opt"><input type="radio" name="q5" value="b"><span>Raises availability, because each failure keeps the system down for less time</span></label>
+            <label class="quiz-opt"><input type="radio" name="q5" value="c"><span>Has no effect, because only MTBF matters</span></label>
+            <label class="quiz-opt"><input type="radio" name="q5" value="d"><span>Raises MTBF by the same amount</span></label>
+          </fieldset>
+          <details class="quiz-explain"><summary>Show answer</summary><p><strong class="quiz-key">Answer: it raises availability.</strong> MTBF is mean time between failures and MTTR is mean time to repair. With an MTBF of 10,000 hours, cutting MTTR from 10 hours to 2 hours lifts availability from about 99.90 to 99.98 percent, which is why on-site spares, clear EOPs, and trained staff matter. <a href="../courses/incident-response-troubleshooting.html">Incident Response &amp; Troubleshooting</a> covers faster recovery.</p></details>
+        </li>
+        <li class="quiz-q" data-answer="a">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 6</span><span class="quiz-q-text">What is the difference between RTO and RPO?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="q6" value="a"><span>RTO is the maximum acceptable time to restore a service; RPO is the maximum acceptable data loss, measured as time since the last good copy</span></label>
+            <label class="quiz-opt"><input type="radio" name="q6" value="b"><span>RTO is the maximum acceptable data loss; RPO is the time it takes to recover</span></label>
+            <label class="quiz-opt"><input type="radio" name="q6" value="c"><span>Both measure how long the UPS batteries can carry the load</span></label>
+            <label class="quiz-opt"><input type="radio" name="q6" value="d"><span>RTO applies to facility systems, while RPO applies only to networks</span></label>
+          </fieldset>
+          <details class="quiz-explain"><summary>Show answer</summary><p><strong class="quiz-key">Answer: RTO is restore time; RPO is data loss.</strong> An RPO of 15 minutes means backups or replication can never be more than 15 minutes behind. RTO drives recovery site and staffing decisions, while RPO drives backup and replication design. <a href="../courses/disaster-recovery-business-continuity.html">Disaster Recovery &amp; Business Continuity</a> covers both.</p></details>
+        </li>
+        <li class="quiz-q" data-answer="d">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 7</span><span class="quiz-q-text">Which system is built to monitor the electrical distribution system in detail, including power quality and breaker status, often with waveform capture?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="q7" value="a"><span>BMS (building management system)</span></label>
+            <label class="quiz-opt"><input type="radio" name="q7" value="b"><span>DCIM (data center infrastructure management)</span></label>
+            <label class="quiz-opt"><input type="radio" name="q7" value="c"><span>CMMS (computerized maintenance management system)</span></label>
+            <label class="quiz-opt"><input type="radio" name="q7" value="d"><span>EPMS (electrical power monitoring system)</span></label>
+          </fieldset>
+          <details class="quiz-explain"><summary>Show answer</summary><p><strong class="quiz-key">Answer: the EPMS.</strong> An EPMS reads meters, relays, and breaker trip units to capture power quality events and sequence-of-events data. A BMS monitors and controls mechanical systems like CRAHs, chillers, and pumps, and DCIM ties facility data to IT assets and capacity. <a href="../courses/monitoring-automation-bms-systems.html">Monitoring, Automation &amp; BMS Systems</a> compares the platforms.</p></details>
+        </li>
+        <li class="quiz-q" data-answer="c">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 8</span><span class="quiz-q-text">What is the best way to reduce alarm fatigue in a monitoring center?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="q8" value="a"><span>Turn off any alarm that sounds more than once a day</span></label>
+            <label class="quiz-opt"><input type="radio" name="q8" value="b"><span>Add louder alarm tones so operators pay attention</span></label>
+            <label class="quiz-opt"><input type="radio" name="q8" value="c"><span>Rationalize alarms: tune setpoints and deadbands, set priorities, suppress follow-on alarms, and remove nuisance points</span></label>
+            <label class="quiz-opt"><input type="radio" name="q8" value="d"><span>Send every alarm to email instead of the console</span></label>
+          </fieldset>
+          <details class="quiz-explain"><summary>Show answer</summary><p><strong class="quiz-key">Answer: rationalize the alarms.</strong> When operators see hundreds of low-value alarms, they start acknowledging without reading, and a critical one gets missed. Rationalization gives every alarm a cause, a priority, and a defined response. <a href="../courses/dcim-platform-fundamentals.html">DCIM Platform Fundamentals</a> covers alarm management.</p></details>
+        </li>
+        <li class="quiz-q" data-answer="d">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 9</span><span class="quiz-q-text">After an incident is resolved, what is the goal of a root cause analysis (RCA)?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="q9" value="a"><span>Identify which employee should be disciplined for the failure</span></label>
+            <label class="quiz-opt"><input type="radio" name="q9" value="b"><span>Calculate the service credits owed to affected customers</span></label>
+            <label class="quiz-opt"><input type="radio" name="q9" value="c"><span>Replace the failed part as quickly as possible and close the ticket</span></label>
+            <label class="quiz-opt"><input type="radio" name="q9" value="d"><span>Find the underlying causes, often in process, design, or training, and set corrective actions that prevent a repeat</span></label>
+          </fieldset>
+          <details class="quiz-explain"><summary>Show answer</summary><p><strong class="quiz-key">Answer: find underlying causes and prevent a repeat.</strong> Methods like the 5 Whys and fishbone diagrams dig past "the breaker tripped" to why it tripped and why nobody caught it. A blameless approach gets honest answers, and corrective actions are tracked to closure. <a href="../courses/incident-response-troubleshooting.html">Incident Response &amp; Troubleshooting</a> covers RCA methods.</p></details>
+        </li>
+        <li class="quiz-q" data-answer="a">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 10</span><span class="quiz-q-text">What makes a good shift handoff in a 24/7 critical facility?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="q10" value="a"><span>A structured turnover of active alarms, systems in abnormal or bypass states, work in progress, and planned work, written down and reviewed together</span></label>
+            <label class="quiz-opt"><input type="radio" name="q10" value="b"><span>A quick verbal "all good" as the next shift walks in</span></label>
+            <label class="quiz-opt"><input type="radio" name="q10" value="c"><span>Notes left in each technician's personal email</span></label>
+            <label class="quiz-opt"><input type="radio" name="q10" value="d"><span>A formal handoff only when there is an active incident</span></label>
+          </fieldset>
+          <details class="quiz-explain"><summary>Show answer</summary><p><strong class="quiz-key">Answer: a structured, written, face-to-face turnover.</strong> Incidents can start when the incoming shift does not know a system was left in bypass or a valve was left closed. A written log plus a walk-through keeps that knowledge from leaving with the outgoing shift. <a href="../courses/data-center-operations-management.html">Data Center Operations Management</a> covers shift practices.</p></details>
+        </li>
+      </ol>
+      <div class="quiz-nav">
+        <span class="quiz-nav-hint">Choose an answer to continue.</span>
+        <button type="button" class="btn btn-primary quiz-next" disabled>Next question</button>
+      </div>
+      <div class="quiz-result" hidden>
+        <div class="quiz-score">0/10</div>
+        <p class="quiz-score-label">Your score</p>
+        <div class="quiz-tier" data-min="9" hidden>
+          <p class="quiz-tier-title">Operations pro</p>
+          <p>You run a facility the way customers and auditors hope it is run. Put it on paper: the Operations &amp; Reliability Bundle documents that knowledge with a certificate of completion for every course.</p>
+        </div>
+        <div class="quiz-tier" data-min="6" hidden>
+          <p class="quiz-tier-title">Solid foundation</p>
+          <p>You have the core ideas. Gaps in maintenance strategy or post-incident work are exactly what Preventive Maintenance Planning and Incident Response &amp; Troubleshooting close.</p>
+        </div>
+        <div class="quiz-tier" data-min="0" hidden>
+          <p class="quiz-tier-title">Room to grow</p>
+          <p>Everyone starts somewhere. Read the operations guide, then start with Data Center Operations Management.</p>
+        </div>
+        <p class="quiz-best"></p>
+        <div class="quiz-result-actions">
+          <a class="btn btn-primary" href="#courses">See Matching Courses</a>
+          <button type="button" class="btn btn-secondary quiz-share">Share My Score</button>
+          <button type="button" class="btn btn-secondary quiz-retake">Retake Quiz</button>
+        </div>
+        <div class="quiz-review"><p class="quiz-review-title">Your answers</p><ol></ol></div>
+      </div>
+    </section>
+  </div>
+
+  <section class="section" id="courses">
+    <div class="container">
+      <div class="section-head">
+        <h2>Courses That Cover These Topics</h2>
+        <p>Every question above maps to a self-paced course. Each awards a certificate of completion.</p>
+      </div>
+      <!-- dct:courses data-center-operations-management preventive-maintenance-planning incident-response-troubleshooting monitoring-automation-bms-systems dcim-platform-fundamentals disaster-recovery-business-continuity -->
+<!-- /dct:courses -->
+      <div style="margin-top:16px;">
+      <!-- dct:bundle bundle-operations-reliability -->
+<!-- /dct:bundle -->
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <h2>Keep Going</h2>
+        <p>Brush up with a guide, or try another quiz.</p>
+      </div>
+      <div class="card-grid">
+        <a class="topic-card" href="../learn/data-center-operations.html"><span class="topic-card-icon" aria-hidden="true">&#128736;&#65039;</span><h3>Data Center Operations Guide</h3><p>The guide behind this quiz: procedures, maintenance, and monitoring.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+        <a class="topic-card" href="tiers-design-quiz.html"><span class="topic-card-icon" aria-hidden="true">&#128208;</span><h3>Tiers &amp; Design Quiz</h3><p>Tier I to IV, redundancy, commissioning, and availability math.</p><span class="topic-card-cta">Take the quiz &rarr;</span></a>
+        <a class="topic-card" href="career-quiz.html"><span class="topic-card-icon" aria-hidden="true">&#129517;</span><h3>Which Career Fits You?</h3><p>Find your data center role in ten questions.</p><span class="topic-card-cta">Find my match &rarr;</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="contact"></footer>
+<script src="../js/main.js" defer></script>
+
+</body>
+</html>

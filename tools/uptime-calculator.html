@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Uptime Calculator: Availability % to Downtime</title>
+<meta name="description" content="Convert availability percentages like 99.99% into allowed downtime per year, month, week, and day, or work backward from downtime. Tier figures included.">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+<link rel="canonical" href="https://datacentertraining.us/tools/uptime-calculator.html">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Uptime Calculator: Availability % to Downtime">
+<meta property="og:description" content="Convert availability percentages like 99.99% into allowed downtime per year, month, week, and day, or work backward from downtime. Tier figures included.">
+<meta property="og:url" content="https://datacentertraining.us/tools/uptime-calculator.html">
+<meta property="og:image" content="https://datacentertraining.us/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Data Center Training">
+
+<link rel="stylesheet" href="../css/site.min.css">
+<script src="../js/nav.js" defer></script>
+<script src="../js/tools.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Uptime and Downtime Calculator",
+  "url": "https://datacentertraining.us/tools/uptime-calculator.html",
+  "description": "Convert an availability percentage into allowed downtime per year, month, week, and day, or convert yearly downtime into availability.",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Any (web browser)",
+  "isAccessibleForFree": true,
+  "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
+  "publisher": {"@type": "EducationalOrganization", "@id": "https://datacentertraining.us/#organization", "name": "Data Center Training", "url": "https://datacentertraining.us/"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://datacentertraining.us/"},
+    {"@type": "ListItem", "position": 2, "name": "Tools", "item": "https://datacentertraining.us/tools/"},
+    {"@type": "ListItem", "position": 3, "name": "Uptime Calculator", "item": "https://datacentertraining.us/tools/uptime-calculator.html"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "How much downtime is 99.99% availability?", "acceptedAnswer": {"@type": "Answer", "text": "99.99 percent availability, often called four nines, allows about 52.6 minutes of downtime per year, roughly 4.4 minutes per month."}},
+    {"@type": "Question", "name": "How much downtime does a Tier III data center allow?", "acceptedAnswer": {"@type": "Answer", "text": "The figure commonly quoted for Tier III is 99.982 percent availability, about 1.6 hours of downtime per year. That number is an industry rule of thumb, not part of the Uptime Institute Tier Standard, which defines Tiers by topology (Tier III means concurrently maintainable) rather than by an availability percentage."}},
+    {"@type": "Question", "name": "Does planned maintenance count as downtime?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on the agreement. Many service level agreements exclude announced maintenance windows, while others count any time the service is unavailable. A concurrently maintainable (Tier III) or fault tolerant (Tier IV) facility is designed so that planned maintenance on infrastructure does not require shutting down the IT load."}}
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="glass-nav"></header>
+
+<main id="main">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../">Home</a>
+      <span>&rsaquo;</span>
+      <a href="./">Tools</a>
+      <span>&rsaquo;</span>
+      <span aria-current="page">Uptime Calculator</span>
+    </nav>
+  </div>
+
+  <section class="course-hero">
+    <div class="container">
+      <div class="course-hero-eyebrow">Tool &middot; Reliability</div>
+      <h1>Uptime &amp; Downtime Calculator</h1>
+      <p class="course-hero-hook">What does 99.99% really allow? Convert any availability target into minutes and hours of downtime, or work backward from the downtime you can tolerate.</p>
+      <div class="course-pills">
+        <span class="course-pill">Works both ways</span>
+        <span class="course-pill">Year, month, week, day</span>
+        <span class="course-pill">Tier reference figures</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <h2 class="visually-hidden">Calculator</h2>
+    <div class="tool-layout" data-tool="uptime">
+      <form class="tool-panel tool-panel-form" novalidate>
+        <p class="tool-panel-title">Availability target</p>
+        <div class="tool-field">
+          <label for="upAvail">Availability</label>
+          <div class="tool-input-wrap"><input class="tool-input" id="upAvail" name="availability" type="number" inputmode="decimal" min="0" max="100" step="any" value="99.982"><span class="tool-unit">%</span></div>
+          <div class="preset-row" role="group" aria-label="Common targets">
+            <button type="button" class="search-chip" data-preset="99.9">99.9%</button>
+            <button type="button" class="search-chip" data-preset="99.95">99.95%</button>
+            <button type="button" class="search-chip" data-preset="99.99">99.99%</button>
+            <button type="button" class="search-chip" data-preset="99.999">99.999%</button>
+          </div>
+        </div>
+        <div class="tool-field">
+          <span class="tool-legend">Commonly cited Tier figures</span>
+          <div class="preset-row" role="group" aria-label="Tier figures">
+            <button type="button" class="search-chip" data-preset="99.671">Tier I</button>
+            <button type="button" class="search-chip" data-preset="99.741">Tier II</button>
+            <button type="button" class="search-chip" data-preset="99.982">Tier III</button>
+            <button type="button" class="search-chip" data-preset="99.995">Tier IV</button>
+          </div>
+        </div>
+        <div class="tool-field">
+          <label for="upDown">Or enter downtime per year</label>
+          <div class="tool-input-wrap"><input class="tool-input" id="upDown" name="downtime" type="number" inputmode="decimal" min="0" max="8760" step="any" value="1.58"><span class="tool-unit">hours</span></div>
+          <span class="tool-hint">Change either box and the other updates.</span>
+        </div>
+      </form>
+      <div class="tool-panel" aria-live="polite">
+        <p class="tool-panel-title">Allowed downtime</p>
+        <div class="tool-result-main" data-out="year">1 hr 34 min</div>
+        <div class="tool-result-label">per year</div>
+        <span class="tool-rating" data-out="nines">3 nines</span>
+        <div class="tool-stats">
+          <div class="tool-stat"><div class="tool-stat-value" data-out="month">7 min 53 sec</div><div class="tool-stat-label">per month</div></div>
+          <div class="tool-stat"><div class="tool-stat-value" data-out="week">1 min 49 sec</div><div class="tool-stat-label">per week</div></div>
+          <div class="tool-stat"><div class="tool-stat-value" data-out="day">16 sec</div><div class="tool-stat-label">per day</div></div>
+          <div class="tool-stat"><div class="tool-stat-value">8,760 hrs</div><div class="tool-stat-label">in a year (365 days)</div></div>
+        </div>
+        <p class="tool-error" data-out="error" hidden></p>
+        <p class="tool-note">A month is treated as one twelfth of a year. Tier percentages are commonly cited industry figures, not part of the Uptime Institute Tier Standard.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container guide-layout" style="margin-top:clamp(32px,5vw,48px);">
+    <aside class="guide-toc" aria-label="On this page">
+      <p class="guide-toc-title">On this page</p>
+      <ol>
+        <li><a href="#nines">The nines, in time</a></li>
+        <li><a href="#tiers">Tier figures, with a caveat</a></li>
+        <li><a href="#improve">What actually drives uptime</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ol>
+      <a class="guide-toc-cta" href="../learn/data-center-tiers.html"><strong>Go deeper</strong>Read Data Center Tier Levels Explained.</a>
+    </aside>
+    <article class="guide-body prose">
+      <h2 id="nines">The nines, in time</h2>
+      <p>Availability is the share of time a system is up. Each extra "nine" cuts allowed downtime by a factor of ten, and each one is far harder and more expensive to deliver than the last.</p>
+      <div class="table-panel">
+        <table class="data-table">
+          <thead><tr><th>Availability</th><th>Downtime per year</th><th>Per month</th></tr></thead>
+          <tbody>
+            <tr><td>99% (two nines)</td><td>87.6 hours (about 3.65 days)</td><td>7.3 hours</td></tr>
+            <tr><td>99.9% (three nines)</td><td>8.76 hours</td><td>43.8 minutes</td></tr>
+            <tr><td>99.95%</td><td>4.38 hours</td><td>21.9 minutes</td></tr>
+            <tr><td>99.99% (four nines)</td><td>52.6 minutes</td><td>4.4 minutes</td></tr>
+            <tr><td>99.999% (five nines)</td><td>5.26 minutes</td><td>26.3 seconds</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Two details matter when you read an SLA. First, check the measurement window: 99.9% per month is stricter than 99.9% per year, because a single bad day can't be averaged out. Second, check what counts as downtime: many agreements exclude announced maintenance, and a facility outage and an application outage are not the same thing.</p>
+
+      <h2 id="tiers">Tier figures, with a caveat</h2>
+      <div class="table-panel">
+        <table class="data-table">
+          <thead><tr><th>Tier</th><th>Defining idea</th><th>Commonly cited availability</th><th>Downtime per year</th></tr></thead>
+          <tbody>
+            <tr><td>Tier I</td><td>Basic capacity, single path</td><td>99.671%</td><td>about 28.8 hours</td></tr>
+            <tr><td>Tier II</td><td>Redundant capacity components</td><td>99.741%</td><td>about 22.7 hours</td></tr>
+            <tr><td>Tier III</td><td>Concurrently maintainable</td><td>99.982%</td><td>about 1.6 hours</td></tr>
+            <tr><td>Tier IV</td><td>Fault tolerant</td><td>99.995%</td><td>about 26.3 minutes</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="callout">
+        <span class="callout-title">Why the caveat?</span>
+        <p>These percentages circulate widely, but the Uptime Institute Tier Standard defines Tiers by infrastructure topology, not by an availability number. A Tier IV design operated carelessly can still go down. Treat the figures as a rough sense of scale, not a promise.</p>
+      </div>
+
+      <h2 id="improve">What actually drives uptime</h2>
+      <p>Redundant equipment sets the ceiling. People and procedures decide how close a site gets to it. Uptime Institute's outage research has repeatedly found that human error, especially not following procedures, plays a part in a large share of significant outages. The highest-leverage improvements are usually:</p>
+      <ul>
+        <li><strong>Written, practiced procedures</strong> (SOPs, MOPs, and emergency operating procedures) for every switching and maintenance task.</li>
+        <li><strong>Change management</strong> so risky work is reviewed, scheduled, and has a rollback plan.</li>
+        <li><strong>Preventive maintenance</strong> that is actually completed, plus testing of generators, UPS systems, and transfers under load.</li>
+        <li><strong>Monitoring and alarm management</strong> that surfaces real problems instead of burying them in noise.</li>
+        <li><strong>Training</strong>, so every technician understands the systems and the consequences of each step.</li>
+      </ul>
+      <div class="inline-cta">
+        <p><strong>Think you know your Tiers?</strong> Ten questions on redundancy, Tiers, and commissioning.</p>
+        <a class="btn btn-primary btn-sm" href="../quizzes/tiers-design-quiz.html">Take the Tiers Quiz</a>
+      </div>
+
+      <h2 id="courses">Courses that protect uptime</h2>
+      <p>Design for availability, then run the site so it delivers.</p>
+      <!-- dct:courses tier-infrastructure-fundamentals data-center-operations-management incident-response-troubleshooting disaster-recovery-business-continuity preventive-maintenance-planning -->
+      <!-- /dct:courses -->
+      <!-- dct:bundle bundle-operations-reliability -->
+      <!-- /dct:bundle -->
+
+      <h2 id="faq">Frequently asked questions</h2>
+      <div class="guide-faq">
+        <h3>How much downtime is 99.99% availability?</h3>
+        <p>99.99 percent availability, often called four nines, allows about 52.6 minutes of downtime per year, roughly 4.4 minutes per month.</p>
+        <h3>How much downtime does a Tier III data center allow?</h3>
+        <p>The figure commonly quoted for Tier III is 99.982 percent availability, about 1.6 hours of downtime per year. That number is an industry rule of thumb, not part of the Uptime Institute Tier Standard, which defines Tiers by topology (Tier III means concurrently maintainable) rather than by an availability percentage.</p>
+        <h3>Does planned maintenance count as downtime?</h3>
+        <p>It depends on the agreement. Many service level agreements exclude announced maintenance windows, while others count any time the service is unavailable. A concurrently maintainable (Tier III) or fault tolerant (Tier IV) facility is designed so that planned maintenance on infrastructure does not require shutting down the IT load.</p>
+      </div>
+      <p class="guide-updated">For planning and education only. Contract terms and design requirements should come from your agreements and your engineering team.</p>
+    </article>
+  </div>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <h2>More Tools and Quizzes</h2>
+      </div>
+      <div class="card-grid">
+        <a class="topic-card" href="pue-calculator.html"><span class="topic-card-icon" aria-hidden="true">&#9889;</span><h3>PUE Calculator</h3><p>See how much energy goes to overhead and what it costs.</p><span class="topic-card-cta">Open the calculator &rarr;</span></a>
+        <a class="topic-card" href="cooling-load-calculator.html"><span class="topic-card-icon" aria-hidden="true">&#10052;&#65039;</span><h3>Cooling Load Calculator</h3><p>IT kW to BTU/hr, tons, airflow, and cooling units.</p><span class="topic-card-cta">Open the calculator &rarr;</span></a>
+        <a class="topic-card" href="../quizzes/operations-quiz.html"><span class="topic-card-icon" aria-hidden="true">&#128736;&#65039;</span><h3>Operations Quiz</h3><p>MOPs, change management, MTTR, and monitoring.</p><span class="topic-card-cta">Take the quiz &rarr;</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta-block">
+        <h2>Uptime Is a Team Skill</h2>
+        <p>Give your operations team the procedures, troubleshooting, and recovery skills that keep the nines intact.</p>
+        <div class="hero-ctas">
+          <a href="../bundles.html" class="btn glass-chip">See the Operations Bundle</a>
+          <a href="../courses.html" class="btn glass-chip">Browse All Courses</a>
+          <a href="tel:18664296742" class="btn glass-chip">Call 1-866-429-6742</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="contact"></footer>
+<script src="../js/main.js" defer></script>
+
+</body>
+</html>

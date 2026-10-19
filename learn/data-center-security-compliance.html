@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Center Physical Security and Compliance Explained</title>
+<meta name="description" content="How data centers secure facilities: layered access control, mantraps, visitors, video, and what SOC 2, ISO 27001, PCI DSS, and HIPAA auditors check on site.">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+<link rel="canonical" href="https://datacentertraining.us/learn/data-center-security-compliance.html">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Data Center Physical Security and Compliance Explained">
+<meta property="og:description" content="How data centers secure facilities: layered access control, mantraps, visitors, video, and what SOC 2, ISO 27001, PCI DSS, and HIPAA auditors check on site.">
+<meta property="og:url" content="https://datacentertraining.us/learn/data-center-security-compliance.html">
+<meta property="og:image" content="https://datacentertraining.us/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Data Center Training">
+
+<link rel="stylesheet" href="../css/site.min.css">
+<script src="../js/nav.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Data Center Physical Security and Compliance Explained",
+  "description": "How data centers secure facilities: layered access control, mantraps, visitors, video, and what SOC 2, ISO 27001, PCI DSS, and HIPAA auditors check on site.",
+  "url": "https://datacentertraining.us/learn/data-center-security-compliance.html",
+  "mainEntityOfPage": "https://datacentertraining.us/learn/data-center-security-compliance.html",
+  "image": "https://datacentertraining.us/images/og-image.jpg",
+  "datePublished": "2026-10-19",
+  "dateModified": "2026-10-19",
+  "inLanguage": "en-US",
+  "author": {"@type": "Organization", "name": "Data Center Training", "url": "https://datacentertraining.us/"},
+  "publisher": {"@type": "EducationalOrganization", "@id": "https://datacentertraining.us/#organization", "name": "Data Center Training", "url": "https://datacentertraining.us/"},
+  "about": ["Data center physical security", "Access control", "SOC 2", "ISO/IEC 27001", "PCI DSS", "Environmental compliance"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://datacentertraining.us/"},
+    {"@type": "ListItem", "position": 2, "name": "Knowledge Center", "item": "https://datacentertraining.us/learn/"},
+    {"@type": "ListItem", "position": 3, "name": "Security & Compliance", "item": "https://datacentertraining.us/learn/data-center-security-compliance.html"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "What is a mantrap in a data center?", "acceptedAnswer": {"@type": "Answer", "text": "A mantrap, also called a security vestibule or portal, is a small space between two interlocked doors. The second door will not open until the first has closed, and many mantraps use sensors to confirm only one person is inside. It stops tailgating, where an unauthorized person follows an authorized one through a door."}},
+    {"@type": "Question", "name": "What is the difference between a SOC 2 Type 1 and Type 2 report?", "acceptedAnswer": {"@type": "Answer", "text": "A Type 1 report describes the controls and whether they were suitably designed at a single point in time. A Type 2 report also tests whether the controls operated effectively over a period, often six to twelve months. Customers of colocation and cloud providers usually ask for the Type 2 report because it shows the controls actually worked."}},
+    {"@type": "Question", "name": "How long should data center video footage be kept?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on the frameworks and contracts that apply. PCI DSS calls for video or access control data covering sensitive areas to be kept for at least three months unless the law restricts it, and many customer contracts set their own minimums. Set a written retention period that meets the strictest requirement you are under, then confirm the recording system actually keeps that much."}},
+    {"@type": "Question", "name": "Who needs EPA Section 608 certification at a data center?", "acceptedAnswer": {"@type": "Answer", "text": "Any technician who maintains, services, repairs, or disposes of equipment in a way that could release refrigerant, such as opening a CRAC unit or chiller circuit, needs Section 608 certification from an EPA-approved certifying program. Facility managers do not need it to oversee the work, but they should keep copies of contractor certifications and service records."}}
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="glass-nav"></header>
+
+<main id="main">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../">Home</a>
+      <span>&rsaquo;</span>
+      <a href="./">Knowledge Center</a>
+      <span>&rsaquo;</span>
+      <span aria-current="page">Security &amp; Compliance</span>
+    </nav>
+  </div>
+
+  <section class="course-hero">
+    <div class="container">
+      <div class="course-hero-eyebrow">Knowledge Center &middot; Security</div>
+      <h1>Data Center Physical Security and Compliance Explained</h1>
+      <p class="course-hero-hook">Cyber controls mean little if someone can walk up to a rack and pull a drive. Here is how data centers layer physical security, which compliance frameworks reach into the building, and what auditors actually look at when they visit.</p>
+      <div class="course-pills">
+        <span class="course-pill">12 min read</span>
+        <span class="course-pill">Beginner to intermediate</span>
+        <span class="course-pill">Updated October 2026</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="container guide-layout">
+    <aside class="guide-toc" aria-label="On this page">
+      <p class="guide-toc-title">On this page</p>
+      <ol>
+        <li><a href="#layers">Defense in depth</a></li>
+        <li><a href="#access-control">Access control</a></li>
+        <li><a href="#visitors">Visitors and contractors</a></li>
+        <li><a href="#video">Video surveillance</a></li>
+        <li><a href="#security-operations">Guards and security operations</a></li>
+        <li><a href="#assets">Assets, keys, and media</a></li>
+        <li><a href="#frameworks">Compliance frameworks</a></li>
+        <li><a href="#evidence">Audit evidence</a></li>
+        <li><a href="#environmental">Environmental compliance</a></li>
+        <li><a href="#life-safety">Fire and life safety</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ol>
+      <a class="guide-toc-cta" href="../quizzes/security-compliance-quiz.html"><strong>Test yourself</strong>Take the Security &amp; Compliance quiz.</a>
+    </aside>
+
+    <article class="guide-body prose">
+      <div class="key-takeaways">
+        <p class="key-takeaways-title">Key takeaways</p>
+        <ul>
+          <li>Physical security works in layers, from the property line to the rack, so one failed control does not expose the equipment.</li>
+          <li>Most real-world failures are procedural: tailgating, unescorted visitors, stale access lists, and propped doors.</li>
+          <li>SOC 2, ISO/IEC 27001, PCI DSS, HIPAA, and NIST SP 800-53 all include physical controls, and auditors expect records that prove those controls operate.</li>
+          <li>Data centers also carry environmental obligations for refrigerants, generators, and fuel storage, and security must never block emergency egress.</li>
+        </ul>
+      </div>
+
+      <h2 id="layers">Defense in depth: six layers</h2>
+      <p>No single lock, guard, or camera is enough. Data centers stack controls so an intruder has to defeat several independent barriers, and each layer is a chance to detect them. A typical layout:</p>
+      <ol class="flow flow-3" aria-label="Physical security layers from outside in">
+        <li><strong>Perimeter</strong>Fencing, gates, bollards, and setbacks that keep vehicles and people at a distance.</li>
+        <li><strong>Site</strong>Guarded entry, vehicle inspection, lighting, and cameras covering parking and the loading dock.</li>
+        <li><strong>Building</strong>A staffed lobby, ID checks, badge readers, and hardened walls with few entry points.</li>
+        <li><strong>Data hall</strong>Mantraps, multi-factor access, and cameras on every entry and aisle.</li>
+        <li><strong>Cage or suite</strong>Customer-specific access lists, locked cage doors, and separate badge zones.</li>
+        <li><strong>Rack</strong>Locked cabinet doors with keys, combination locks, or electronic handles that log each opening.</li>
+      </ol>
+      <p>The deeper you go, the fewer people should have access and the stronger the authentication should be. A delivery driver might reach the dock, a contractor the electrical room, and only a customer's named staff their cage.</p>
+
+      <h2 id="access-control">Access control</h2>
+      <h3>Credentials: something you have, know, and are</h3>
+      <p>Most sites issue <strong>badges</strong> (smart cards or proximity cards) and add a second factor at sensitive doors: a <strong>PIN</strong> or a <strong>biometric</strong> such as fingerprint, hand geometry, iris, or face recognition. Older low-frequency proximity cards are easy to clone, so many operators have moved to encrypted smart card credentials. Every reader event goes to the access control system, which records who, where, when, and whether access was granted.</p>
+      <h3>Mantraps and anti-tailgating</h3>
+      <p><strong>Tailgating</strong> (following someone through a door) is the most common way physical controls fail, usually through politeness rather than malice. <strong>Mantraps</strong>, also called security vestibules, use two interlocked doors so the inner one will not open until the outer one has closed, often with sensors that detect more than one person. Optical turnstiles and <strong>anti-passback</strong> rules, which refuse a badge that was never logged in, close other gaps. Controls only work if they are tested; see <a href="../blog/posts/data-center-anti-tailgating-drills-how-security-leads-should-test-badge-and-mantrap-controls.html">how security leads run anti-tailgating drills</a>.</p>
+      <h3>Two-person rules and access reviews</h3>
+      <p>High-risk areas and tasks, such as media destruction rooms, key cabinets, or a customer's cage holding regulated data, often require <strong>two-person integrity</strong>: two authorized people present, or two credentials presented, before access is granted. Just as important is keeping access lists current. Remove access the same day someone leaves or changes roles, and run <strong>periodic access reviews</strong>, commonly quarterly, where each area owner confirms every name on the list. Stale access is one of the findings auditors raise most often. The <a href="../courses/access-control-physical-security.html">Access Control &amp; Physical Security</a> course covers system design and administration.</p>
+
+      <h2 id="visitors">Visitor and contractor management</h2>
+      <p>Visitors and contractors are where security, safety, and operations meet. A sound process looks like this:</p>
+      <ul>
+        <li><strong>Pre-registration</strong> by an authorized sponsor, with the purpose, areas, and dates of the visit.</li>
+        <li><strong>Identity verification</strong> against a government-issued photo ID at the lobby.</li>
+        <li><strong>Visibly different badges</strong> that expire automatically at the end of the visit or work window.</li>
+        <li><strong>Escorting</strong> for anyone without unescorted access, for the entire time they are in controlled areas.</li>
+        <li><strong>Sign-in and sign-out</strong> records that tie each visitor to a host and, for contractors, to an approved work order or method of procedure.</li>
+        <li><strong>Inspection</strong> of tools, bags, and equipment coming in and going out.</li>
+      </ul>
+      <p>Long-term contractors are a special risk because they often hold badges for months. Tie their access to a contract end date and review it with the same rigor as staff access. See <a href="../blog/posts/how-data-center-security-leads-should-audit-contractor-access-controls.html">how to audit contractor access controls</a>.</p>
+
+      <h2 id="video">Video surveillance and retention</h2>
+      <p>Cameras deter, detect, and document. Coverage should include perimeter and gates, building entrances, the loading dock, lobbies, mantraps, data hall entries, aisles, and cage doors. Cameras at access points should capture a usable view of faces, not just tops of heads.</p>
+      <p>Retention is set by policy, contracts, and frameworks. PCI DSS, for example, calls for video or access control data covering sensitive areas to be kept for at least three months unless the law restricts it. Whatever period you choose, verify the recorders actually hold it at the current camera count and resolution, monitor camera health so a dead camera is noticed in hours rather than weeks, and integrate video with access control so a forced-door alarm pops up the matching footage. Organizations that do federal work should also check the procurement restrictions on certain video surveillance manufacturers under Section 889 of the FY2019 National Defense Authorization Act.</p>
+
+      <h2 id="security-operations">Guards and security operations</h2>
+      <p>Most large sites run a staffed security operations center around the clock. Officers monitor alarms and video, staff the lobby, patrol on a logged guard tour, process visitors, and respond to events such as a door forced open, a door held open, or a badge used at an unexpected hour. Written <strong>post orders</strong> tell each officer exactly what that post does, and incident reports record every event. Security also works closely with the facilities team and the network operations center: a door alarm at 3 a.m. may be an intruder, or it may be an engineer responding to a chiller alarm.</p>
+
+      <h2 id="assets">Asset, key, and media handling</h2>
+      <p><strong>Assets</strong> are tagged and tracked from the loading dock to the rack and back out. Deliveries go to a controlled receiving area, and anything leaving the building needs a property pass that matches serial numbers to an authorized request.</p>
+      <p><strong>Keys</strong> still matter in a badge-controlled building: rack keys, cage keys, electrical room keys, and override keys for electronic locks. Store them in a controlled key cabinet that logs who took each key, use restricted keyways that cannot be copied at a hardware store, and audit the key inventory on a schedule.</p>
+      <p><strong>Media</strong> such as failed drives and decommissioned servers can hold sensitive data long after they stop working. Keep them in locked containers with a chain-of-custody record, and sanitize or destroy them following NIST SP 800-88, which describes clearing, purging, and destroying media. Physical destruction methods include shredding, crushing, and degaussing for magnetic media. Get a certificate of destruction listing serial numbers, and reconcile it against your inventory. Many customers require destruction on site, witnessed by their own staff.</p>
+
+      <h2 id="frameworks">Compliance frameworks that reach into the building</h2>
+      <p>Most data center compliance work maps physical controls to one or more of these frameworks. A colocation provider may be audited against several at once on behalf of its customers.</p>
+      <div class="table-panel">
+        <table class="data-table">
+          <caption>Physical security in major compliance frameworks</caption>
+          <thead><tr><th>Framework</th><th>Physical requirements</th><th>What auditors look for on site</th></tr></thead>
+          <tbody>
+            <tr><td>SOC 2</td><td>AICPA Trust Services Criteria (security, availability, processing integrity, confidentiality, privacy). The common criteria include restricting physical access to facilities and protected assets.</td><td>Access lists matched to HR records, access review sign-offs, visitor logs, and working mantraps and cameras during a walkthrough.</td></tr>
+            <tr><td>ISO/IEC 27001:2022</td><td>Annex A physical controls (A.7.1 to A.7.14) cover perimeters, entry, monitoring, utilities, cabling, equipment maintenance, and secure disposal.</td><td>Controls traced to the risk assessment and Statement of Applicability, plus evidence the controls run as documented.</td></tr>
+            <tr><td>PCI DSS Requirement 9</td><td>Restrict physical access to cardholder data: entry controls, visitor management, monitoring of sensitive areas, and media handling and destruction.</td><td>Camera or access data retained at least three months, distinct visitor badges, visitor logs, and media inventories.</td></tr>
+            <tr><td>HIPAA Security Rule, 45 CFR 164.310</td><td>Physical safeguards: facility access controls, workstation use and security, and device and media controls.</td><td>A facility security plan, maintenance records for doors and locks, and media disposal and re-use records.</td></tr>
+            <tr><td>NIST SP 800-53 PE family</td><td>Physical and environmental protection controls, including access authorizations, visitor records, emergency shutoff, emergency power, fire protection, and environmental controls.</td><td>Authorization lists, monitoring logs, and test records for power, fire, and environmental systems.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Notice how far these reach beyond locks. ISO/IEC 27001 and NIST SP 800-53 both cover supporting utilities and environmental protection, so a generator test log or a temperature trend can become audit evidence. Our <a href="../courses/security-compliance-data-centers.html">Security &amp; Compliance for Data Centers</a> course maps these frameworks to day-to-day facility work.</p>
+
+      <h2 id="evidence">Audit evidence: proving controls work</h2>
+      <p>Auditors test controls by sampling records, so a control that is not documented effectively did not happen. Keep these organized and easy to retrieve:</p>
+      <ul>
+        <li>Access control logs and alarm histories, with exports you can filter by date, door, and person.</li>
+        <li>Badge issuance and termination records, matched to HR start and end dates.</li>
+        <li>Signed access reviews for each controlled area.</li>
+        <li>Visitor and contractor logs with sponsors and escorts.</li>
+        <li>Video retention settings and evidence that footage is retrievable.</li>
+        <li>Drill and test records: anti-tailgating tests, evacuation drills, alarm response tests.</li>
+        <li>Training records for security officers and staff with physical access.</li>
+        <li>Maintenance and inspection records for security, fire, and power systems.</li>
+      </ul>
+      <p>On the walkthrough, auditors watch behavior as much as paperwork: whether people hold doors, whether visitors wear badges, whether media sits unattended. See <a href="../blog/posts/iso-27001-physical-evidence-what-data-center-facility-managers-should-organize-before-an-audit.html">what to organize before an ISO 27001 audit</a>.</p>
+
+      <div class="inline-cta">
+        <p><strong>Ready to check your knowledge?</strong> Questions on access control, frameworks, and audit evidence.</p>
+        <a class="btn btn-primary btn-sm" href="../quizzes/security-compliance-quiz.html">Take the Security Quiz</a>
+      </div>
+
+      <h2 id="environmental">Environmental compliance basics</h2>
+      <p>Data centers hold refrigerant, burn diesel, and store fuel, which brings environmental rules that facility teams own. The common ones in the United States:</p>
+      <ul>
+        <li><strong>Refrigerants (EPA Section 608).</strong> The Clean Air Act requires certified technicians, proper recovery, and, for larger appliances, leak inspection, repair, and recordkeeping. Rules under the AIM Act add requirements for HFC systems, so confirm current EPA requirements. Keep service records, refrigerant added and recovered, and technician certifications.</li>
+        <li><strong>Generator air permits.</strong> Diesel standby generators are stationary engines regulated under federal emissions rules and usually a state or local air permit. Emergency engines are limited in how many hours they may run for testing and maintenance, so accurate run-hour logs and fuel records matter.</li>
+        <li><strong>SPCC plans (40 CFR 112).</strong> Facilities with more than 1,320 gallons of aboveground oil storage capacity (counting containers of 55 gallons or more) that could reasonably discharge to navigable waters need a Spill Prevention, Control, and Countermeasure plan. Generator day tanks and bulk diesel tanks often trigger it. Expect secondary containment, inspections, a five-year plan review, and annual discharge prevention briefings for oil-handling staff.</li>
+        <li><strong>Stormwater.</strong> Construction that disturbs one acre or more needs NPDES construction stormwater coverage, and operating sites may have stormwater conditions tied to fuel deliveries and outdoor equipment under state rules.</li>
+      </ul>
+      <p>Spent batteries, used oil, and coolant also need proper waste handling. The <a href="../courses/facility-environmental-compliance.html">Facility Environmental Compliance</a> course covers these programs.</p>
+
+      <h2 id="life-safety">Fire and life safety interfaces</h2>
+      <p>Security and life safety pull in opposite directions: security wants doors locked, and fire codes want people out fast. Building and fire codes require that locked doors still allow free egress in an emergency. In practice, that means:</p>
+      <ul>
+        <li>Electrified locks on egress paths release on fire alarm or loss of power, where the code requires it, and delayed egress hardware is used only where the code allows.</li>
+        <li>Mantraps have a defined emergency egress mode that does not trap anyone.</li>
+        <li>Fire department access is planned, often with a key box at the entrance.</li>
+        <li>Security officers have a role in evacuation, headcounts, and meeting responders.</li>
+        <li>Officers understand clean agent pre-discharge alarms and EPO stations, because they are often first on scene.</li>
+      </ul>
+      <p>Coordinate any change to access control hardware with the fire alarm designer and the authority having jurisdiction. The <a href="data-center-safety.html">Data Center Safety Guide</a> covers suppression systems and EPO in depth.</p>
+
+      <h2 id="courses">Courses that go deeper</h2>
+      <p>These self-paced courses cover physical security, compliance frameworks, and environmental programs, and each awards a certificate of completion.</p>
+      <!-- dct:courses security-compliance-data-centers access-control-physical-security data-center-physical-security-access-control facility-environmental-compliance data-center-fire-suppression-safety -->
+<!-- /dct:courses -->
+      <!-- dct:bundle bundle-security-compliance -->
+<!-- /dct:bundle -->
+
+      <h2 id="faq">Frequently asked questions</h2>
+      <div class="guide-faq">
+        <h3>What is a mantrap in a data center?</h3>
+        <p>A mantrap, also called a security vestibule or portal, is a small space between two interlocked doors. The second door will not open until the first has closed, and many mantraps use sensors to confirm only one person is inside. It stops tailgating, where an unauthorized person follows an authorized one through a door.</p>
+        <h3>What is the difference between a SOC 2 Type 1 and Type 2 report?</h3>
+        <p>A Type 1 report describes the controls and whether they were suitably designed at a single point in time. A Type 2 report also tests whether the controls operated effectively over a period, often six to twelve months. Customers of colocation and cloud providers usually ask for the Type 2 report because it shows the controls actually worked.</p>
+        <h3>How long should data center video footage be kept?</h3>
+        <p>It depends on the frameworks and contracts that apply. PCI DSS calls for video or access control data covering sensitive areas to be kept for at least three months unless the law restricts it, and many customer contracts set their own minimums. Set a written retention period that meets the strictest requirement you are under, then confirm the recording system actually keeps that much.</p>
+        <h3>Who needs EPA Section 608 certification at a data center?</h3>
+        <p>Any technician who maintains, services, repairs, or disposes of equipment in a way that could release refrigerant, such as opening a CRAC unit or chiller circuit, needs Section 608 certification from an EPA-approved certifying program. Facility managers do not need it to oversee the work, but they should keep copies of contractor certifications and service records.</p>
+      </div>
+
+      <h2 id="related">Keep learning</h2>
+      <div class="card-grid card-grid-2">
+        <a class="topic-card" href="data-center-standards.html"><span class="topic-card-kicker">Guide</span><h3>Standards &amp; Regulations</h3><p>How TIA-942, NFPA, OSHA, ASHRAE, and ISO fit together.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+        <a class="topic-card" href="data-center-operations.html"><span class="topic-card-kicker">Guide</span><h3>Operations &amp; Maintenance</h3><p>Shifts, procedures, change control, and the records auditors sample.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+        <a class="topic-card" href="../careers/data-center-jobs.html#security-officer"><span class="topic-card-kicker">Careers</span><h3>Data Center Security Officer</h3><p>What the role involves and how to prepare for it.</p><span class="topic-card-cta">See the role &rarr;</span></a>
+        <a class="topic-card" href="../careers/data-center-jobs.html#compliance-specialist"><span class="topic-card-kicker">Careers</span><h3>Compliance Specialist</h3><p>The people who keep audits on track and evidence in order.</p><span class="topic-card-cta">See the role &rarr;</span></a>
+      </div>
+      <p class="guide-updated">This guide is general educational information, not legal, compliance, or engineering advice. Requirements depend on your contracts, the frameworks you are audited against, and the laws and codes in your jurisdiction.</p>
+    </article>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta-block">
+        <h2>Train Your Team on Security &amp; Compliance</h2>
+        <p>Our Security &amp; Compliance courses cover access control, physical security, compliance frameworks, environmental programs, and fire suppression safety.</p>
+        <div class="hero-ctas">
+          <a href="../bundles.html" class="btn glass-chip">See the Security Bundle</a>
+          <a href="../courses.html" class="btn glass-chip">Browse All Courses</a>
+          <a href="tel:18664296742" class="btn glass-chip">Call 1-866-429-6742</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="contact"></footer>
+<script src="../js/main.js" defer></script>
+
+</body>
+</html>

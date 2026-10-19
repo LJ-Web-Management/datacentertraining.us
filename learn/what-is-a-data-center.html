@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Center 101: What a Data Center Is and How It Works</title>
+<meta name="description" content="What a data center is, what is inside one, the main types from colocation to hyperscale and edge, and how power, cooling, and security keep it running.">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+<link rel="canonical" href="https://datacentertraining.us/learn/what-is-a-data-center.html">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Data Center 101: What a Data Center Is and How It Works">
+<meta property="og:description" content="What a data center is, what is inside one, the main types from colocation to hyperscale and edge, and how power, cooling, and security keep it running.">
+<meta property="og:url" content="https://datacentertraining.us/learn/what-is-a-data-center.html">
+<meta property="og:image" content="https://datacentertraining.us/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Data Center Training">
+
+<link rel="stylesheet" href="../css/site.min.css">
+<script src="../js/nav.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Data Center 101: What Is a Data Center and How Does It Work?",
+  "description": "What a data center is, what is inside one, the main types from colocation to hyperscale and edge, and how power, cooling, and security keep it running.",
+  "url": "https://datacentertraining.us/learn/what-is-a-data-center.html",
+  "mainEntityOfPage": "https://datacentertraining.us/learn/what-is-a-data-center.html",
+  "image": "https://datacentertraining.us/images/og-image.jpg",
+  "datePublished": "2026-10-19",
+  "dateModified": "2026-10-19",
+  "inLanguage": "en-US",
+  "author": {"@type": "Organization", "name": "Data Center Training", "url": "https://datacentertraining.us/"},
+  "publisher": {"@type": "EducationalOrganization", "@id": "https://datacentertraining.us/#organization", "name": "Data Center Training", "url": "https://datacentertraining.us/"},
+  "about": ["Data centers", "Data center infrastructure", "Colocation", "Hyperscale data centers", "Edge data centers"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://datacentertraining.us/"},
+    {"@type": "ListItem", "position": 2, "name": "Knowledge Center", "item": "https://datacentertraining.us/learn/"},
+    {"@type": "ListItem", "position": 3, "name": "Data Center 101", "item": "https://datacentertraining.us/learn/what-is-a-data-center.html"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "What is the difference between a data center and a server room?", "acceptedAnswer": {"@type": "Answer", "text": "A server room is usually a single room inside an office or other building, often with basic cooling and a small UPS. A data center is built around the IT load, with redundant power and cooling, standby generators, layered physical security, fire protection designed for IT equipment, and monitoring around the clock. The line between them is blurry, but the more a business depends on the equipment, the more its space needs to look like a true data center."}},
+    {"@type": "Question", "name": "What is colocation?", "acceptedAnswer": {"@type": "Answer", "text": "Colocation means renting space, power, cooling, and connectivity in a data center owned by a provider, while you own and manage your own IT equipment. Retail colocation leases individual cabinets, cages, or suites. Wholesale colocation leases whole data halls or buildings, usually sized in megawatts. The provider runs the building infrastructure and security, and you run the servers."}},
+    {"@type": "Question", "name": "How much electricity do data centers use?", "acceptedAnswer": {"@type": "Answer", "text": "According to the U.S. Department of Energy and Lawrence Berkeley National Laboratory, U.S. data centers used about 4.4 percent of total U.S. electricity in 2023, about 176 terawatt-hours, and could use about 6.7 to 12 percent by 2028. A single facility can range from a few kilowatts for a small server room to tens of megawatts for a large building."}},
+    {"@type": "Question", "name": "Do you need an IT degree to work in a data center?", "acceptedAnswer": {"@type": "Answer", "text": "No. Many data center roles are filled by people with trade, military, or technical backgrounds rather than computer science degrees. Facility roles value electrical, HVAC, and mechanical experience, and technician roles value hands-on hardware skills, attention to detail, and the discipline to follow written procedures. Requirements vary by employer, so check job postings for the roles that interest you."}}
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="glass-nav"></header>
+
+<main id="main">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../">Home</a>
+      <span>&rsaquo;</span>
+      <a href="./">Knowledge Center</a>
+      <span>&rsaquo;</span>
+      <span aria-current="page">Data Center 101</span>
+    </nav>
+  </div>
+
+  <section class="course-hero">
+    <div class="container">
+      <div class="course-hero-eyebrow">Knowledge Center &middot; Basics</div>
+      <h1>Data Center 101: What Is a Data Center and How Does It Work?</h1>
+      <p class="course-hero-hook">A data center is a building designed to keep computers running no matter what happens outside it. Here is what is inside one, the main types, how the core systems work together, and who keeps it all running.</p>
+      <div class="course-pills">
+        <span class="course-pill">13 min read</span>
+        <span class="course-pill">Beginner</span>
+        <span class="course-pill">Updated October 2026</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="container guide-layout">
+    <aside class="guide-toc" aria-label="On this page">
+      <p class="guide-toc-title">On this page</p>
+      <ol>
+        <li><a href="#definition">What is a data center?</a></li>
+        <li><a href="#inside">What is inside a facility</a></li>
+        <li><a href="#types">Types of data centers</a></li>
+        <li><a href="#systems">How the main systems work</a></li>
+        <li><a href="#metrics">Key metrics</a></li>
+        <li><a href="#industry">Industry snapshot</a></li>
+        <li><a href="#lifecycle">The facility lifecycle</a></li>
+        <li><a href="#people">Who works there</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ol>
+      <a class="guide-toc-cta" href="../quizzes/data-center-basics-quiz.html"><strong>Test yourself</strong>Take the 10-question Data Center Basics quiz.</a>
+    </aside>
+
+    <article class="guide-body prose">
+      <div class="key-takeaways">
+        <p class="key-takeaways-title">Key takeaways</p>
+        <ul>
+          <li>A data center keeps IT equipment running continuously by supplying it with conditioned power, cooling, network connectivity, and physical protection.</li>
+          <li>A large share of a facility's space and construction budget goes to supporting infrastructure (the gray space), not to the rooms where the servers sit.</li>
+          <li>Enterprise rooms, colocation buildings, hyperscale campuses, and edge sites differ in scale and ownership, but they all rely on the same core systems.</li>
+          <li>The industry describes facilities with a few numbers: megawatts of critical IT capacity, kilowatts per rack, PUE, and availability.</li>
+        </ul>
+      </div>
+
+      <h2 id="definition">What is a data center?</h2>
+      <p>A data center is a building, or a dedicated space inside a building, that houses servers, storage systems, and network equipment along with the infrastructure that keeps them running around the clock. That infrastructure includes the power system, cooling, network connectivity, fire protection, physical security, and the monitoring that ties it all together.</p>
+      <p>The scale varies enormously. A data center can be a single room in a hospital basement, a colocation building in a city center, or a campus of several large buildings that each draw tens of megawatts. What they share is a purpose: keep the computing equipment, which the industry calls the <strong>IT load</strong> or <strong>critical load</strong>, powered, cooled, connected, and protected, with as little downtime as possible.</p>
+      <p>It helps to think of a data center as two systems layered on top of each other. The <strong>IT side</strong> is the servers, storage, and networking that run applications. The <strong>facility side</strong>, often called critical facilities or critical infrastructure, is everything that keeps the IT side alive: switchgear, generators, UPS systems, chillers, air handlers, fire suppression, and access control. Different teams usually own each side, and a lot of real data center work happens where the two meet.</p>
+
+      <h2 id="inside">What is inside a data center</h2>
+      <p>Data center people divide a facility into <strong>white space</strong>, where the IT equipment lives, and <strong>gray space</strong>, which holds the infrastructure that supports it. A walk through a typical multi-megawatt building takes you through most of these areas.</p>
+      <div class="table-panel">
+        <table class="data-table">
+          <caption>The main spaces in a data center</caption>
+          <thead><tr><th>Space</th><th>What is in it</th><th>Why it matters</th></tr></thead>
+          <tbody>
+            <tr><td>Data halls (white space)</td><td>Rows of racks and cabinets, hot and cold aisles, containment, overhead cable trays or busway, sometimes a raised floor.</td><td>Where the IT load runs. Space, power, and cooling here are what colocation customers buy.</td></tr>
+            <tr><td>Meet-me room and network rooms</td><td>Carrier fiber entrances, cross-connect panels, carrier and customer network gear.</td><td>Where outside networks enter and connect to customers.</td></tr>
+            <tr><td>Electrical rooms</td><td>Medium- and low-voltage switchgear, transformers, transfer switches, distribution panels.</td><td>Receive utility power and route it through the building.</td></tr>
+            <tr><td>UPS and battery rooms</td><td>UPS modules, battery strings or cabinets, sometimes flywheels.</td><td>Carry the IT load for the seconds to minutes between a utility failure and generator pickup.</td></tr>
+            <tr><td>Mechanical plant</td><td>Chillers, cooling towers or dry coolers, pumps, heat exchangers, air handlers.</td><td>Remove the heat the IT equipment produces and reject it outdoors.</td></tr>
+            <tr><td>Generator yard</td><td>Diesel or gas engine-generators, fuel tanks, fuel transfer and polishing systems.</td><td>Carry the facility through long utility outages.</td></tr>
+            <tr><td>Security spaces</td><td>Guard station, security operations center, mantraps, badge and biometric readers, camera systems.</td><td>Control who gets in and record what happens.</td></tr>
+            <tr><td>NOC or control room</td><td>Screens for the building management system, power monitoring, DCIM, and network status.</td><td>Where operators watch the whole facility and coordinate response to alarms.</td></tr>
+            <tr><td>Support spaces</td><td>Loading dock, staging and burn-in rooms, storage, offices.</td><td>Keep dust and cardboard out of the data hall while equipment is unpacked and tested.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Gray space is not an afterthought. The electrical and mechanical systems are a large part of what it costs to build a data center, and they are where most hands-on facility work happens. To understand a building, follow the power from the utility entrance to the rack, and the heat from the rack to the cooling tower.</p>
+      <div class="callout callout-tip">
+        <span class="callout-title">White space vocabulary</span>
+        <p>Equipment height is measured in <strong>rack units (U)</strong>, where 1U is 1.75 inches. A <strong>cage</strong> is a fenced area for one customer, a <strong>suite</strong> is a private room, and a <strong>pod</strong> is a group of rows managed as one block.</p>
+      </div>
+
+      <h2 id="types">Types of data centers</h2>
+      <p>Data centers are usually classified by who owns them and who uses them. The engineering is similar; the business model changes.</p>
+      <h3>Enterprise data centers</h3>
+      <p>An enterprise data center is built, owned, and operated by a single organization for its own use. Banks, hospitals, universities, government agencies, and manufacturers run them on their own campuses or in dedicated buildings. It controls everything and carries all of the cost and staffing. Many enterprises now run a mix: some systems on premises, some in colocation, some in public cloud.</p>
+      <h3>Colocation: retail and wholesale</h3>
+      <p>A colocation (colo) provider owns the building and its power, cooling, and security, and rents capacity to customers who bring their own IT equipment.</p>
+      <ul>
+        <li><strong>Retail colocation</strong> leases individual cabinets, cages, or small suites inside a shared data hall. The provider runs the infrastructure and sells remote hands and cross-connects, short cables that link a customer directly to carriers, clouds, and partners in the same building.</li>
+        <li><strong>Wholesale colocation</strong> leases an entire data hall, a floor, or a whole building, usually measured in megawatts of critical IT capacity and on longer contracts. The tenant often has more say in the design and fit-out.</li>
+      </ul>
+      <h3>Hyperscale and cloud</h3>
+      <p>Hyperscale data centers are operated by large cloud and internet companies. They are built at very large scale, often as multi-building campuses, with standardized designs repeated across many sites. Hyperscalers often design their own servers and handle resilience partly in software, spreading workloads across buildings and regions.</p>
+      <h3>Edge data centers</h3>
+      <p>Edge data centers are small facilities placed close to users or devices to cut latency and backhaul traffic: at cell tower sites, in regional telecom offices, in retail stores, or on factory floors. Many hold only a few racks and run unstaffed, relying on remote monitoring.</p>
+      <h3>Modular and prefabricated data centers</h3>
+      <p>Modular data centers are built from factory-assembled units: prefabricated power skids, containerized IT modules, or whole prefabricated data halls that are shipped and set on site. Building in a factory can shorten the schedule and improve quality control, and capacity can be added in blocks as demand grows.</p>
+
+      <h2 id="systems">How the main systems work</h2>
+      <p>Every data center depends on the same handful of systems. Each one is designed with some level of redundancy so that a single failure, or a planned maintenance task, does not take down the IT load.</p>
+      <h3>Power</h3>
+      <p>Utility power arrives at medium voltage, passes through switchgear and step-down transformers, and reaches the IT equipment through uninterruptible power supplies (UPS) and power distribution units (PDUs). When the utility fails, UPS batteries carry the load for the seconds it takes standby generators to start, and the generators carry it until utility power returns. Most servers have two power supplies fed from separate A and B paths. Read <a href="data-center-power.html">How Data Center Power Works</a> for the full chain.</p>
+      <h3>Cooling</h3>
+      <p>Nearly every watt the IT equipment uses ends up as heat. Cooling units in or beside the data hall move air across cold coils, and a chilled water plant or refrigerant system carries the heat outdoors. Containment keeps supply and exhaust air from mixing, and liquid cooling is spreading fast for high-density racks. See <a href="data-center-cooling.html">How Data Center Cooling Works</a>.</p>
+      <h3>Connectivity</h3>
+      <p>Telecom carriers bring fiber into the building through diverse entrances, ideally on physically separate routes, and terminate it in the meet-me room. From there, structured cabling runs fiber and copper trunks through overhead trays to network racks and rows, where switches connect each server to the network. Cabling standards such as ANSI/TIA-942 and disciplined labeling keep the plant maintainable. Our <a href="../courses/fiber-optics-network-cabling.html">Fiber Optics &amp; Network Cabling</a> course covers this physical layer.</p>
+      <h3>Physical security</h3>
+      <p>Security is layered from the property line inward: fencing and vehicle barriers, staffed guard posts, badge readers paired with PINs or biometrics, mantraps that pass one person at a time, recorded video, and locked cages and cabinets. Customers and auditors check these controls against frameworks such as SOC 2, ISO/IEC 27001, and PCI DSS. See the <a href="data-center-security-compliance.html">Security &amp; Compliance guide</a>.</p>
+      <h3>Fire protection</h3>
+      <p>Data halls typically combine aspirating smoke detection that samples the air, pre-action sprinklers whose pipes fill with water only after detection, and in some rooms clean agent suppression. NFPA 75 covers protection of IT equipment, NFPA 72 fire alarm systems, NFPA 13 sprinklers, and NFPA 2001 clean agent systems. The <a href="data-center-safety.html">Data Center Safety guide</a> covers what technicians need to know.</p>
+      <h3>Monitoring and control</h3>
+      <p>A <strong>building management system (<a href="glossary.html#term-bms">BMS</a>)</strong> controls and monitors the mechanical plant. An <strong>electrical power monitoring system (EPMS)</strong> watches switchgear, UPS systems, and generators. <strong>Data center infrastructure management (<a href="glossary.html#term-dcim">DCIM</a>)</strong> software tracks assets, rack power, space, and capacity. Operators in the NOC respond to alarms and run maintenance under written procedures. The <a href="data-center-operations.html">Operations guide</a> explains how that work is organized.</p>
+
+      <h2 id="metrics">Key data center metrics</h2>
+      <p>A handful of numbers describe most facilities. You will see them in sales sheets, design documents, and job interviews.</p>
+      <div class="table-panel">
+        <table class="data-table">
+          <caption>Four numbers that describe a data center</caption>
+          <thead><tr><th>Metric</th><th>What it measures</th><th>How to read it</th></tr></thead>
+          <tbody>
+            <tr><td>Availability (uptime)</td><td>The percentage of time the IT load has power and cooling.</td><td>99.99% sounds close to perfect, but it still allows about 53 minutes of downtime a year. 99.999% ("five nines") allows about 5 minutes.</td></tr>
+            <tr><td>PUE (power usage effectiveness)</td><td>Total facility energy divided by IT equipment energy.</td><td>1.0 would mean every kilowatt-hour goes to IT. Higher numbers mean more overhead for cooling and power losses.</td></tr>
+            <tr><td>kW per rack (density)</td><td>The average or peak power each rack draws.</td><td>Traditional enterprise racks draw a few kilowatts. AI and high-performance computing racks can draw many times that, which changes the cooling design.</td></tr>
+            <tr><td>MW of critical IT capacity</td><td>The power available to IT equipment, not counting cooling and other overhead.</td><td>The headline size of a facility. Total utility demand is higher because of cooling and losses.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Floor area still matters, but power is now the constraint that decides how much IT a building can hold. A 1 MW data hall can support 100 racks at 10 kW each or 50 racks at 20 kW each, and those two layouts need very different cooling. Go deeper in <a href="energy-efficiency-pue.html">Energy Efficiency and PUE Explained</a> and in <a href="data-center-tiers.html">Data Center Tier Levels Explained</a>, which shows how availability relates to design.</p>
+
+      <h2 id="industry">Industry snapshot</h2>
+      <p>Data centers are a fast-growing share of electricity demand, and the people who run them are in short supply. These figures come from the U.S. Department of Energy and Lawrence Berkeley National Laboratory, and from Uptime Institute's annual survey of operators.</p>
+      <div class="stat-grid">
+        <div class="stat-tile">
+          <div class="stat-value">4.4%</div>
+          <div class="stat-label">Share of total U.S. electricity used by data centers in 2023.</div>
+          <div class="stat-source">Source: <a href="https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers" target="_blank" rel="noopener noreferrer">U.S. DOE / LBNL</a></div>
+        </div>
+        <div class="stat-tile">
+          <div class="stat-value">176 TWh</div>
+          <div class="stat-label">Electricity used by U.S. data centers in 2023.</div>
+          <div class="stat-source">Source: <a href="https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers" target="_blank" rel="noopener noreferrer">U.S. DOE / LBNL</a></div>
+        </div>
+        <div class="stat-tile">
+          <div class="stat-value">6.7% to 12%</div>
+          <div class="stat-label">Projected data center share of U.S. electricity by 2028.</div>
+          <div class="stat-source">Source: <a href="https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers" target="_blank" rel="noopener noreferrer">U.S. DOE / LBNL</a></div>
+        </div>
+        <div class="stat-tile">
+          <div class="stat-value">325 to 580 TWh</div>
+          <div class="stat-label">Projected U.S. data center electricity use in 2028.</div>
+          <div class="stat-source">Source: <a href="https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers" target="_blank" rel="noopener noreferrer">U.S. DOE / LBNL</a></div>
+        </div>
+        <div class="stat-tile">
+          <div class="stat-value">Nearly 2 in 3</div>
+          <div class="stat-label">Operators reporting difficulty retaining staff, finding qualified candidates, or both.</div>
+          <div class="stat-source">Source: <a href="https://intelligence.uptimeinstitute.com/resource/uptime-institute-global-data-center-survey-2025" target="_blank" rel="noopener noreferrer">Uptime Institute, 2025 survey</a></div>
+        </div>
+        <div class="stat-tile">
+          <div class="stat-value">1.56</div>
+          <div class="stat-label">Average PUE in Uptime's 2024 survey. The 2025 survey found little change for six consecutive years.</div>
+          <div class="stat-source">Source: <a href="https://intelligence.uptimeinstitute.com/resource/uptime-institute-global-data-center-survey-2025" target="_blank" rel="noopener noreferrer">Uptime Institute</a></div>
+        </div>
+      </div>
+      <p>The short version: demand is rising quickly, efficiency gains have leveled off, and operators report trouble finding and keeping qualified people.</p>
+
+      <h2 id="lifecycle">The data center lifecycle</h2>
+      <p>A facility goes through the same phases whether it is a single enterprise room or a hyperscale campus. Each phase has its own specialists.</p>
+      <ol class="flow flow-3" aria-label="Data center facility lifecycle">
+        <li><strong>Site selection</strong>Power availability, fiber routes, water, land, natural hazards, incentives, and permitting decide where a facility can go.</li>
+        <li><strong>Design</strong>Architects and electrical, mechanical, and controls engineers set capacity, redundancy, density, and layout.</li>
+        <li><strong>Construction</strong>Contractors and trades build the shell, then install switchgear, generators, UPS, cooling, and cabling.</li>
+        <li><strong>Commissioning</strong>Independent agents verify every system, from factory tests to integrated systems testing, before IT load arrives.</li>
+        <li><strong>Operations</strong>Facility teams run, monitor, and maintain the site around the clock under written procedures and change control.</li>
+        <li><strong>Refresh</strong>Equipment is upgraded or replaced as it ages and densities rise. Eventually spaces are retrofitted or decommissioned.</li>
+      </ol>
+      <p>Commissioning deserves special attention because it is where design intent meets reality. Industry practice usually describes five levels: factory witness testing (L1), delivery and installation inspection (L2), pre-functional checks and start-up (L3), functional performance testing (L4), and integrated systems testing (L5), where the team pulls utility power on purpose and confirms that everything responds as designed. Terms vary by company. Read the <a href="data-center-commissioning.html">Commissioning guide</a> for details.</p>
+      <p>Operations is the longest phase: the building serves for decades while IT equipment turns over every few years, and lessons from incidents and maintenance shape the next design. <a href="../courses/data-center-design-fundamentals.html">Data Center Design Fundamentals</a> and <a href="../courses/data-center-operations-management.html">Data Center Operations Management</a> cover both ends of that loop.</p>
+
+      <div class="inline-cta">
+        <p><strong>How well do you know the basics?</strong> Ten questions on data center spaces, systems, and metrics, with instant answers.</p>
+        <a class="btn btn-primary btn-sm" href="../quizzes/data-center-basics-quiz.html">Take the Basics Quiz</a>
+      </div>
+
+      <h2 id="people">Who works in a data center</h2>
+      <p>A data center runs on a mix of IT specialists, skilled trades, and operations staff. Common roles include:</p>
+      <ul>
+        <li><a href="../careers/data-center-jobs.html#data-center-technician">Data center technicians</a>, who rack, cable, and repair servers.</li>
+        <li><a href="../careers/data-center-jobs.html#critical-facilities-technician">Critical facilities technicians</a>, who operate and maintain power and cooling equipment.</li>
+        <li><a href="../careers/data-center-jobs.html#electrician">Electricians</a> and <a href="../careers/data-center-jobs.html#hvac-technician">HVAC technicians</a>, who maintain switchgear, UPS systems, chillers, and air handlers.</li>
+        <li><a href="../careers/data-center-jobs.html#controls-technician">Controls technicians</a>, who manage the BMS, power monitoring, and sensors.</li>
+        <li><a href="../careers/data-center-jobs.html#noc-technician">NOC technicians</a>, who watch alarms and coordinate response around the clock.</li>
+        <li><a href="../careers/data-center-jobs.html#security-officer">Security officers</a>, who control access and patrol the site.</li>
+        <li><a href="../careers/data-center-jobs.html#facility-manager">Facility managers</a> and <a href="../careers/data-center-jobs.html#operations-manager">operations managers</a>, who run the site, the budget, and the maintenance program.</li>
+        <li><a href="../careers/data-center-jobs.html#commissioning-agent">Commissioning agents</a>, <a href="../careers/data-center-jobs.html#design-engineer">design engineers</a>, and <a href="../careers/data-center-jobs.html#capacity-planner">capacity planners</a>, who plan and verify new capacity.</li>
+      </ul>
+      <p>People reach these jobs from the military, the building trades, IT help desks, and many other starting points. The <a href="../careers/how-to-get-into-data-centers.html">How to Get Into Data Centers</a> guide lays out common paths, and the <a href="../quizzes/career-quiz.html">career quiz</a> can help you pick a starting point. If you are heading toward the facilities side, <a href="../courses/facility-management-fundamentals.html">Facility Management Fundamentals</a> is a practical first course.</p>
+
+      <h2 id="courses">Courses that go deeper</h2>
+      <p>These self-paced courses build on this overview, from design to daily operations. Each awards a certificate of completion.</p>
+      <!-- dct:courses data-center-design-fundamentals facility-management-fundamentals data-center-operations-management tier-infrastructure-fundamentals power-systems-electrical-fundamentals cooling-systems-design-optimization -->
+      <!-- /dct:courses -->
+      <!-- dct:bundle bundle-complete-catalog -->
+      <!-- /dct:bundle -->
+
+      <h2 id="faq">Frequently asked questions</h2>
+      <div class="guide-faq">
+        <h3>What is the difference between a data center and a server room?</h3>
+        <p>A server room is usually a single room inside an office or other building, often with basic cooling and a small UPS. A data center is built around the IT load, with redundant power and cooling, standby generators, layered physical security, fire protection designed for IT equipment, and monitoring around the clock. The line between them is blurry, but the more a business depends on the equipment, the more its space needs to look like a true data center.</p>
+        <h3>What is colocation?</h3>
+        <p>Colocation means renting space, power, cooling, and connectivity in a data center owned by a provider, while you own and manage your own IT equipment. Retail colocation leases individual cabinets, cages, or suites. Wholesale colocation leases whole data halls or buildings, usually sized in megawatts. The provider runs the building infrastructure and security, and you run the servers.</p>
+        <h3>How much electricity do data centers use?</h3>
+        <p>According to the U.S. Department of Energy and Lawrence Berkeley National Laboratory, U.S. data centers used about 4.4 percent of total U.S. electricity in 2023, about 176 terawatt-hours, and could use about 6.7 to 12 percent by 2028. A single facility can range from a few kilowatts for a small server room to tens of megawatts for a large building.</p>
+        <h3>Do you need an IT degree to work in a data center?</h3>
+        <p>No. Many data center roles are filled by people with trade, military, or technical backgrounds rather than computer science degrees. Facility roles value electrical, HVAC, and mechanical experience, and technician roles value hands-on hardware skills, attention to detail, and the discipline to follow written procedures. Requirements vary by employer, so check job postings for the roles that interest you.</p>
+      </div>
+
+      <h2 id="related">Keep learning</h2>
+      <div class="card-grid card-grid-2">
+        <a class="topic-card" href="data-center-power.html"><span class="topic-card-kicker">Guide</span><h3>How Data Center Power Works</h3><p>Follow power from the utility to the rack, through generators and UPS systems.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+        <a class="topic-card" href="data-center-cooling.html"><span class="topic-card-kicker">Guide</span><h3>How Data Center Cooling Works</h3><p>Every watt becomes heat. See how air and liquid systems remove it.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+        <a class="topic-card" href="../careers/how-to-get-into-data-centers.html"><span class="topic-card-kicker">Careers</span><h3>How to Get Into Data Centers</h3><p>Entry points, skills to build, and how people move up.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+        <a class="topic-card" href="glossary.html"><span class="topic-card-kicker">Reference</span><h3>Data Center Glossary</h3><p>UPS, PDU, CRAH, PUE, and every other acronym in one place.</p><span class="topic-card-cta">Open the glossary &rarr;</span></a>
+      </div>
+      <p class="guide-updated">This guide is general educational information, not engineering, legal, or compliance advice. Facility designs, procedures, and requirements vary by site, owner, and jurisdiction.</p>
+    </article>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta-block">
+        <h2>Build Your Data Center Foundation</h2>
+        <p>Our self-paced courses cover design, power, cooling, operations, safety, and security, so you can learn the whole facility or focus on one system.</p>
+        <div class="hero-ctas">
+          <a href="../bundles.html" class="btn glass-chip">See the Complete Bundle</a>
+          <a href="../courses.html" class="btn glass-chip">Browse All Courses</a>
+          <a href="tel:18664296742" class="btn glass-chip">Call 1-866-429-6742</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="contact"></footer>
+<script src="../js/main.js" defer></script>
+
+</body>
+</html>

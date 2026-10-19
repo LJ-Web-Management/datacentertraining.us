@@ -35,6 +35,10 @@ Courses start at $99.99 per seat, or enroll the complete 43-course catalog bundl
 - [Certifications & Accreditations](https://datacentertraining.us/certifications.html): IACET provider accreditation and credential transparency.
 - [FAQ](https://datacentertraining.us/faq.html): programs, pricing, certificates, and policies.
 - [Blog](https://datacentertraining.us/blog/): field guidance for data center teams.
+- [Knowledge Center](https://datacentertraining.us/learn/): guides to data center power, cooling, Tier levels, safety, security, operations, commissioning, energy efficiency, standards, and a glossary.
+- [Careers](https://datacentertraining.us/careers/): data center job roles, how to get started, career changers, and interview questions.
+- [Quizzes](https://datacentertraining.us/quizzes/) and [Tools](https://datacentertraining.us/tools/): career match quiz, knowledge quizzes, training plan builder, and PUE, uptime, and cooling load calculators.
+- [Site search](https://datacentertraining.us/search.html): every course, guide, FAQ answer, and glossary term (index: https://datacentertraining.us/api/search.json).
 
 ## Learning Tracks
 

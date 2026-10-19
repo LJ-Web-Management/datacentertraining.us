@@ -2,7 +2,7 @@
   "publisher": "Data Center Training (datacentertraining.us)",
   "last_updated": "2026-10-19",
   "license": "Public information; quote with attribution and a link to the source URL.",
-  "count": 48,
+  "count": 50,
   "resources": [
     {
       "source": "Data Center Training (first party)",
@@ -163,6 +163,33 @@
       "audience": [
         "hvac"
       ]
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "How Data Center Power Works: From the Grid to the Rack",
+      "url": "https://datacentertraining.us/learn/data-center-power.html",
+      "description": "How data center power works, from utility switchgear and generators to UPS systems, PDUs, and A/B feeds. Redundancy, testing, and safety explained.",
+      "topics": [
+        "guide",
+        "ups",
+        "generator"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Power & Electrical Quiz",
+      "url": "https://datacentertraining.us/quizzes/power-electrical-quiz.html",
+      "description": "Test your knowledge of data center power: UPS topologies, generators, transfer switches, N+1 vs 2N redundancy, and NFPA 70E arc flash basics. Free quiz.",
+      "topics": [
+        "quiz",
+        "electrical",
+        "ups",
+        "generator"
+      ],
+      "audience": []
     },
     {
       "type": "blog_post",

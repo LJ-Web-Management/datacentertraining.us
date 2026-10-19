@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How Data Center Cooling Works: Air, Water, and Liquid</title>
+<meta name="description" content="How data center cooling works: heat loads, ASHRAE inlet ranges, CRAC vs CRAH, chilled water, economizers, containment, liquid cooling, and refrigerant safety.">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+<link rel="canonical" href="https://datacentertraining.us/learn/data-center-cooling.html">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="How Data Center Cooling Works: Air, Water, and Liquid">
+<meta property="og:description" content="How data center cooling works: heat loads, ASHRAE inlet ranges, CRAC vs CRAH, chilled water, economizers, containment, liquid cooling, and refrigerant safety.">
+<meta property="og:url" content="https://datacentertraining.us/learn/data-center-cooling.html">
+<meta property="og:image" content="https://datacentertraining.us/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Data Center Training">
+
+<link rel="stylesheet" href="../css/site.min.css">
+<script src="../js/nav.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How Data Center Cooling Works",
+  "description": "How data center cooling works: heat loads, ASHRAE inlet ranges, CRAC vs CRAH, chilled water, economizers, containment, liquid cooling, and refrigerant safety.",
+  "url": "https://datacentertraining.us/learn/data-center-cooling.html",
+  "mainEntityOfPage": "https://datacentertraining.us/learn/data-center-cooling.html",
+  "image": "https://datacentertraining.us/images/og-image.jpg",
+  "datePublished": "2026-10-19",
+  "dateModified": "2026-10-19",
+  "inLanguage": "en-US",
+  "author": {"@type": "Organization", "name": "Data Center Training", "url": "https://datacentertraining.us/"},
+  "publisher": {"@type": "EducationalOrganization", "@id": "https://datacentertraining.us/#organization", "name": "Data Center Training", "url": "https://datacentertraining.us/"},
+  "about": ["Data center cooling", "Chilled water systems", "Airflow management", "Liquid cooling", "Refrigerant safety"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://datacentertraining.us/"},
+    {"@type": "ListItem", "position": 2, "name": "Knowledge Center", "item": "https://datacentertraining.us/learn/"},
+    {"@type": "ListItem", "position": 3, "name": "Cooling Systems", "item": "https://datacentertraining.us/learn/data-center-cooling.html"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "What temperature should a data center be kept at?", "acceptedAnswer": {"@type": "Answer", "text": "ASHRAE TC 9.9 recommends server inlet air between 18 and 27°C (64.4 and 80.6°F) for most equipment classes. Measure at the server inlets, not at the cooling unit return. Many facilities now run toward the warmer end of that range to save energy, as long as airflow is well managed and there are no hot spots."}},
+    {"@type": "Question", "name": "What is the difference between a CRAC and a CRAH?", "acceptedAnswer": {"@type": "Answer", "text": "A CRAC (computer room air conditioner) has its own refrigeration circuit with a compressor and rejects heat through a condenser. A CRAH (computer room air handler) has no compressor. It uses chilled water from a central chiller plant, with a valve controlling flow through its coil. CRACs are common in smaller rooms, and CRAHs in larger facilities with chilled water plants."}},
+    {"@type": "Question", "name": "How many tons of cooling does a 10 kW rack need?", "acceptedAnswer": {"@type": "Answer", "text": "Multiply 10 kW by 3,412 to get 34,120 BTU per hour, then divide by 12,000 BTU per hour per ton. The answer is about 2.8 tons for the IT load alone. Real designs add other heat sources and redundancy, and the cold air or liquid has to reach the rack, not just be produced somewhere in the room."}},
+    {"@type": "Question", "name": "Do I need EPA Section 608 certification to work on data center cooling?", "acceptedAnswer": {"@type": "Answer", "text": "You need Section 608 certification, from an EPA-approved certifying program, to maintain, service, repair, or dispose of equipment in ways that could release refrigerant. Many other cooling tasks, such as changing filters, watching alarms, or checking chilled water units, do not involve opening refrigerant circuits, but your employer decides who may perform each task."}}
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="glass-nav"></header>
+
+<main id="main">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../">Home</a>
+      <span>&rsaquo;</span>
+      <a href="./">Knowledge Center</a>
+      <span>&rsaquo;</span>
+      <span aria-current="page">Cooling Systems</span>
+    </nav>
+  </div>
+
+  <section class="course-hero">
+    <div class="container">
+      <div class="course-hero-eyebrow">Knowledge Center &middot; Cooling</div>
+      <h1>How Data Center Cooling Works</h1>
+      <p class="course-hero-hook">Every watt a server uses turns into heat, and that heat has to leave the building as fast as it is made. Here is how air, water, and liquid systems do it, and what happens when they stop.</p>
+      <div class="course-pills">
+        <span class="course-pill">14 min read</span>
+        <span class="course-pill">Beginner to intermediate</span>
+        <span class="course-pill">Updated October 2026</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="container guide-layout">
+    <aside class="guide-toc" aria-label="On this page">
+      <p class="guide-toc-title">On this page</p>
+      <ol>
+        <li><a href="#heat">Every watt becomes heat</a></li>
+        <li><a href="#ashrae">Temperature targets</a></li>
+        <li><a href="#air-cooling">CRAC and CRAH units</a></li>
+        <li><a href="#heat-rejection">Chilled water and DX</a></li>
+        <li><a href="#economizers">Economizers</a></li>
+        <li><a href="#airflow">Airflow management</a></li>
+        <li><a href="#liquid">Liquid cooling</a></li>
+        <li><a href="#high-density">High density and AI</a></li>
+        <li><a href="#monitoring">Monitoring and maintenance</a></li>
+        <li><a href="#refrigerant">Refrigerant safety</a></li>
+        <li><a href="#failure">When cooling fails</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ol>
+      <a class="guide-toc-cta" href="../quizzes/cooling-quiz.html"><strong>Test yourself</strong>Take the 10-question Cooling quiz.</a>
+    </aside>
+
+    <article class="guide-body prose">
+      <div class="key-takeaways">
+        <p class="key-takeaways-title">Key takeaways</p>
+        <ul>
+          <li>Nearly all the power IT equipment uses becomes heat. 1 kW of load is about 3,412 BTU/hr, and one ton of cooling is 12,000 BTU/hr.</li>
+          <li>ASHRAE TC 9.9 recommends server inlet air of 18 to 27°C (64.4 to 80.6°F) for most equipment. Measure it at the server inlet.</li>
+          <li>Airflow management (containment, blanking panels, sealed openings) is usually the cheapest way to gain capacity and efficiency.</li>
+          <li>At high densities, a room can overheat within minutes of losing cooling, so ride-through and restart planning matter as much as capacity.</li>
+        </ul>
+      </div>
+
+      <h2 id="heat">Every watt becomes heat</h2>
+      <p>Almost all the electrical energy IT equipment uses ends up as heat in the room. For cooling purposes, treat the IT load in kilowatts as the heat load in kilowatts. Add heat from UPS losses, lighting, people, and the building envelope, and you have the total the cooling system must remove.</p>
+      <p>Two conversions do most of the work:</p>
+      <ul>
+        <li><strong>1 watt = 3.412 BTU/hr</strong>, so 1 kW = 3,412 BTU/hr.</li>
+        <li><strong>1 ton of cooling = 12,000 BTU/hr</strong>, which is about 3.52 kW.</li>
+      </ul>
+      <p><strong>Worked example:</strong> a row of ten racks at 8 kW each is 80 kW of IT load. 80 &times; 3,412 = 272,960 BTU/hr. Divide by 12,000 and the IT load alone needs about 22.7 tons of cooling, before redundancy and other heat sources.</p>
+      <p>Air also has to carry that heat to the coil. The standard sensible heat formula for air near sea level is BTU/hr = 1.08 &times; CFM &times; &Delta;T (°F). A 10 kW rack (34,120 BTU/hr) with a 20°F temperature rise across the servers needs roughly 34,120 &divide; (1.08 &times; 20), or about 1,580 CFM. If the room cannot deliver that much cold air to the rack inlets, the servers pull in their own hot exhaust instead.</p>
+      <div class="inline-cta">
+        <p><strong>Size a room in seconds.</strong> Convert kW to BTU/hr and tons, with room for redundancy.</p>
+        <a class="btn btn-primary btn-sm" href="../tools/cooling-load-calculator.html">Try the Cooling Load Calculator</a>
+      </div>
+
+      <h2 id="ashrae">Temperature and humidity targets</h2>
+      <p>The reference for IT environments is the ASHRAE Technical Committee 9.9 publication <em>Thermal Guidelines for Data Processing Environments</em>. Its <strong>recommended</strong> range for server inlet air is 18 to 27°C (64.4 to 80.6°F) for most equipment classes. Wider <strong>allowable</strong> ranges exist for each class, but running there usually costs more server fan energy and can affect reliability.</p>
+      <ul>
+        <li><strong>Measure at the inlet.</strong> What matters is the air entering the front of the servers, not the return air at the cooling unit.</li>
+        <li><strong>Colder is not safer.</strong> Very cold supply air wastes energy and hides airflow problems. Many sites now run toward the upper part of the recommended range.</li>
+        <li><strong>Humidity is managed by dew point.</strong> Very dry air raises the risk of static discharge, and humid air risks condensation and corrosion. ASHRAE sets limits on both ends.</li>
+      </ul>
+
+      <h2 id="air-cooling">Air cooling: CRAC and CRAH units</h2>
+      <p>Most data halls are still cooled with air. Cooling units push cold air into the room, server fans draw it through the equipment, and warm exhaust returns to the units. The two classic unit types differ in where their cooling comes from. (See the glossary entries for <a href="glossary.html#term-crac">CRAC</a> and <a href="glossary.html#term-crah">CRAH</a>.)</p>
+      <div class="table-panel">
+        <table class="data-table">
+          <caption>CRAC vs CRAH</caption>
+          <thead><tr><th>Feature</th><th>CRAC (computer room air conditioner)</th><th>CRAH (computer room air handler)</th></tr></thead>
+          <tbody>
+            <tr><td>Cooling source</td><td>Its own refrigeration circuit (direct expansion, or DX)</td><td>Chilled water from a central plant</td></tr>
+            <tr><td>Compressor in the unit</td><td>Yes</td><td>No. A control valve modulates chilled water through the coil.</td></tr>
+            <tr><td>Heat rejection</td><td>Remote air-cooled condenser, or a water or glycol condenser with a dry cooler</td><td>The chiller plant and its cooling towers or dry coolers</td></tr>
+            <tr><td>Typical setting</td><td>Small and mid-size rooms, edge sites, buildings without a chiller plant</td><td>Mid-size and large facilities with a chilled water plant</td></tr>
+            <tr><td>Maintenance focus</td><td>Compressors, refrigerant circuit, condensers, filters, fans</td><td>Coils, valves and actuators, filters, fans, water leaks</td></tr>
+            <tr><td>Refrigerant work</td><td>At the unit, by EPA Section 608 certified technicians</td><td>At the chillers, not the unit</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>You will also see in-row coolers between racks and fan walls that supply a whole hall from an adjacent gallery. The goal is the same: cold air at the server inlets, and hot exhaust back to the coil without mixing.</p>
+
+      <h2 id="heat-rejection">Chilled water plants and DX systems</h2>
+      <p>Data hall units only move heat from air into a coil. Something else carries it outdoors.</p>
+      <h3>Chilled water plants</h3>
+      <p>A chilled water plant makes cold water centrally and pumps it to CRAHs, fan walls, or coolant distribution units. Its main parts are:</p>
+      <ul>
+        <li><strong>Chillers</strong>, refrigeration machines with centrifugal, screw, or scroll compressors that pull heat out of the chilled water loop.</li>
+        <li><strong>Pumps</strong>, increasingly on variable speed drives, that circulate chilled and condenser water.</li>
+        <li><strong>Heat rejection</strong>: water-cooled chillers send heat through a condenser water loop to <strong>cooling towers</strong>, where evaporation carries it away. <strong>Air-cooled chillers</strong> reject heat straight to outdoor air with fans.</li>
+        <li><strong>Controls</strong> in the BMS that stage equipment as load and weather change.</li>
+      </ul>
+      <p>Water-cooled plants are usually more efficient, especially in hot weather, because evaporation lets them reject heat close to the outdoor wet-bulb temperature. The trade-offs are water use, water treatment, and more equipment. Air-cooled chillers use little or no water but work harder on hot days. Many plants add chilled water storage tanks that can carry the load for a short time if the chillers stop.</p>
+      <h3>DX systems</h3>
+      <p>In a direct expansion (DX) system, refrigerant evaporates directly in the indoor unit's coil, and a compressor and condenser reject the heat outdoors. DX units need no chilled water plant, so they are common in smaller facilities, edge sites, and telecom rooms. Each unit stands alone, which simplifies redundancy, but you have many refrigerant circuits to maintain.</p>
+
+      <h2 id="economizers">Economizers and free cooling</h2>
+      <p>When outdoor conditions allow, a facility can reject heat without running compressors. This is economization, or free cooling, and it is a big lever on energy use.</p>
+      <ul>
+        <li><strong>Airside economizers</strong> bring filtered outdoor air into the data hall (direct), or use it to cool indoor air through a heat exchanger without mixing (indirect, including indirect evaporative units). Direct systems need careful control of humidity, dust, and smoke from wildfires or nearby industry.</li>
+        <li><strong>Waterside economizers</strong> use cooling towers or dry coolers to chill water through a plate heat exchanger, bypassing the chillers when the outdoor wet-bulb temperature is low enough. Partial economization pre-cools the water so the chillers do less work.</li>
+      </ul>
+      <p>Raising supply air and chilled water temperatures within the ASHRAE recommended range increases the hours each year the economizer can carry the load. <a href="energy-efficiency-pue.html">Energy Efficiency and PUE Explained</a> shows how that shows up in the numbers.</p>
+
+      <h2 id="airflow">Airflow management</h2>
+      <p>Cooling capacity is wasted if cold air never reaches the server inlets or if hot exhaust gets back into them. Fixing that is usually the cheapest efficiency project in an air-cooled room.</p>
+      <h3>Hot aisle and cold aisle</h3>
+      <p>Racks face front to front and back to back. Servers pull cold air from the cold aisle and exhaust into the hot aisle. One rack turned backward blows hot air into its neighbor's inlet.</p>
+      <h3>Containment</h3>
+      <p><strong>Cold aisle containment</strong> closes the ends and top of the cold aisle with doors and panels, so supply air can only pass through the equipment. <strong>Hot aisle containment</strong> encloses the hot aisle and ducts exhaust to a ceiling plenum or back to the cooling units. Chimney cabinets do the same at the rack level. Containment must be coordinated with fire detection and suppression.</p>
+      <h3>Blanking panels, tiles, and floors</h3>
+      <p>Every empty rack unit needs a blanking panel, and every cable cutout needs a brush grommet or seal; missing blanking panels are a classic cause of hot spots. On a <strong>raised floor</strong>, cooling units pressurize the underfloor plenum, and perforated tiles or grates in the cold aisle release the air. Tile placement, underfloor obstructions, and floor pressure all affect delivery, and a perforated tile in a hot aisle is pure waste. Many new facilities build on <strong>slab</strong> instead, supplying air from fan walls or overhead and relying on containment to keep hot and cold air apart.</p>
+      <h3>Bypass, recirculation, and delta T</h3>
+      <p><strong>Bypass airflow</strong> is cold air that returns to the cooling units without passing through IT equipment. <strong>Recirculation</strong> is hot exhaust drawn back into server inlets. The quick diagnostic is <strong>delta T</strong>, the temperature difference across a device. If the cooling units see a much smaller delta T than the servers do, cold air is bypassing the load and the units are moving more air than needed. Fix bypass first, then raise setpoints or slow fans.</p>
+
+      <h2 id="liquid">Liquid cooling</h2>
+      <p>Water carries heat far more effectively than air, which is why liquid cooling is spreading as rack densities climb. There are three main approaches.</p>
+      <h3>Rear-door heat exchangers</h3>
+      <p>A water coil replaces the rack's rear door, so server exhaust leaves near room temperature. Passive doors rely on server fans; active doors add their own. They are a common retrofit for denser racks in an air-cooled room.</p>
+      <h3>Direct-to-chip cooling</h3>
+      <p>Cold plates on the processors and GPUs carry coolant through the server. A <strong>coolant distribution unit (CDU)</strong> uses a heat exchanger, pumps, and filtration to separate the facility water system from the technology cooling loop that runs to the racks, holding coolant temperature, pressure, and flow. Memory, drives, and power supplies still shed some heat to air, so most deployments are hybrids. Because chips tolerate warm coolant, these systems can often run on warmer water, which extends economizer hours.</p>
+      <h3>Immersion cooling</h3>
+      <p>In <strong>single-phase immersion</strong>, servers sit in tanks of dielectric fluid that is pumped through a heat exchanger. In <strong>two-phase immersion</strong>, the fluid boils on hot components and condenses on a coil above the bath. Immersion handles very high densities, but it changes how hardware is serviced, and some two-phase fluids face environmental and regulatory scrutiny.</p>
+      <div class="callout callout-safety">
+        <span class="callout-title">Liquid near electronics</span>
+        <p>Leak detection cable along piping, drip trays, dripless quick-disconnect couplings, pressure testing, and coolant quality checks are standard parts of a liquid cooling deployment. Follow the manufacturer's procedures for connecting and disconnecting manifolds, and never break into a pressurized loop without isolation.</p>
+      </div>
+
+      <h2 id="high-density">High density and AI</h2>
+      <p>Traditional enterprise racks draw a few kilowatts. GPU servers for AI training and inference can push a single rack to tens of kilowatts, and the newest systems go well beyond that. At those densities you cannot practically move enough air through a cabinet, so facilities turn to direct-to-chip cooling and rear doors, often in hybrid rooms with air-cooled racks alongside. More heat in less space also means temperatures rise faster when cooling stops. Read <a href="ai-data-centers.html">AI Data Centers</a> for how designs are changing.</p>
+
+      <h2 id="monitoring">Monitoring, alarms, and maintenance</h2>
+      <p>A well-instrumented system tracks rack inlet temperatures (top, middle, and bottom, since the top usually runs warmest), supply and return conditions at each unit, underfloor pressure, chilled water temperatures and flows, CDU conditions, and leak detection zones. The <a href="glossary.html#term-bms">BMS</a> controls the plant and raises alarms, and <a href="glossary.html#term-dcim">DCIM</a> tools add rack-level thermal maps. Good alarm design uses warning and critical thresholds, rate-of-change alarms that catch a fast temperature rise early, and clear escalation.</p>
+      <p>Cooling equipment runs every hour of every day, so preventive maintenance keeps it reliable:</p>
+      <ul>
+        <li><strong>Filters:</strong> replace on schedule or by pressure drop.</li>
+        <li><strong>Coils:</strong> clean evaporator and condenser coils, which lose capacity when dirty.</li>
+        <li><strong>Fans and belts:</strong> check belt tension, bearings, and vibration. Many newer units use beltless EC fans.</li>
+        <li><strong>Condensate:</strong> keep drain pans, traps, and pumps clear and test their alarms. A blocked drain is a classic source of water under the floor.</li>
+        <li><strong>Leak checks:</strong> inspect chilled water piping and valves, test leak detection, and check refrigerant circuits.</li>
+        <li><strong>Plant and controls:</strong> chiller tube cleaning, cooling tower water treatment with a Legionella management program, sensor calibration, and tests of failover between units.</li>
+      </ul>
+      <p>All of this runs under written procedures and change control. <a href="../courses/mechanical-systems-maintenance.html">Mechanical Systems &amp; Equipment Maintenance</a> and <a href="../courses/hvac-troubleshooting-essentials.html">HVAC Systems Troubleshooting Essentials</a> cover the hands-on side.</p>
+
+      <h2 id="refrigerant">Refrigerant safety and EPA Section 608</h2>
+      <p>Chillers and DX units hold refrigerant under pressure. The main hazards are:</p>
+      <ul>
+        <li><strong>Oxygen displacement.</strong> Many refrigerants are heavier than air and collect in low or enclosed spaces. Machinery rooms typically have refrigerant detectors and emergency ventilation under ASHRAE Standard 15 and the mechanical code.</li>
+        <li><strong>Cold and pressure.</strong> Released liquid refrigerant flashes to very cold vapor that can cause frostbite, and systems operate at high pressure.</li>
+        <li><strong>Flammability.</strong> Many newer low global warming potential refrigerants are classed A2L (mildly flammable) under ASHRAE Standard 34, which brings new handling rules.</li>
+      </ul>
+      <p>In the United States, Section 608 of the Clean Air Act governs refrigerant handling. EPA rules prohibit knowingly venting refrigerant and require technicians who maintain, service, repair, or dispose of equipment that could release refrigerant to be certified through an EPA-approved certifying program. Certification types cover small appliances (Type I), high-pressure systems (Type II), low-pressure systems (Type III), or all three (Universal). Data center chillers and DX units generally fall under Type II or Type III.</p>
+      <div class="callout">
+        <span class="callout-title">Awareness training is not Section 608 certification</span>
+        <p>Our <a href="../courses/data-center-cooling-refrigerant-safety.html">Cooling System and Refrigerant Safety</a> course builds hazard awareness and awards a certificate of completion. EPA Section 608 certification is a separate credential offered by EPA-approved certifying organizations.</p>
+      </div>
+
+      <h2 id="failure">What happens when cooling fails</h2>
+      <p>IT equipment keeps producing heat when cooling stops, so inlet temperatures start rising immediately. A lightly loaded legacy room may have some cushion. A high-density room can heat past the allowable range within minutes, and servers start throttling or shutting down to protect themselves.</p>
+      <p>The most common trigger is a power event. During a utility outage, the UPS carries the IT load instantly, but most chillers and many cooling units are not on UPS. They stop until the generators pick them up, and chillers then need time to restart and reach full capacity. That gap is why designs include:</p>
+      <ul>
+        <li>UPS-backed fans and pumps, so air and water keep moving while chillers restart.</li>
+        <li>Chilled water storage tanks that supply cold water during the restart window.</li>
+        <li>Fast-restart chillers and carefully tuned restart sequences.</li>
+        <li>Redundant cooling capacity (N+1 or better), so one failed unit does not overheat the room.</li>
+      </ul>
+      <p>Operators back this up with emergency procedures: confirm units restarted after a transfer, recover a chiller that did not, bring in temporary cooling, or ask IT to shed non-critical load. Commissioning should prove how long the room rides through a cooling interruption at full design load. See <a href="data-center-power.html">How Data Center Power Works</a> for the electrical side of that sequence.</p>
+
+      <div class="inline-cta">
+        <p><strong>How well do you know data center cooling?</strong> Ten questions, instant answers.</p>
+        <a class="btn btn-primary btn-sm" href="../quizzes/cooling-quiz.html">Take the Cooling Quiz</a>
+      </div>
+
+      <h2 id="courses">Courses that go deeper</h2>
+      <p>Each of these self-paced courses awards a certificate of completion. Start with <a href="../courses/cooling-systems-design-optimization.html">Cooling Systems Design &amp; Optimization</a> for the full picture.</p>
+      <!-- dct:courses cooling-systems-design-optimization hvac-troubleshooting-essentials mechanical-systems-maintenance data-center-cooling-refrigerant-safety energy-efficiency-pue-optimization building-envelope-fundamentals -->
+      <!-- /dct:courses -->
+      <!-- dct:bundle bundle-cooling-efficiency -->
+      <!-- /dct:bundle -->
+
+      <h2 id="faq">Frequently asked questions</h2>
+      <div class="guide-faq">
+        <h3>What temperature should a data center be kept at?</h3>
+        <p>ASHRAE TC 9.9 recommends server inlet air between 18 and 27°C (64.4 and 80.6°F) for most equipment classes. Measure at the server inlets, not at the cooling unit return. Many facilities now run toward the warmer end of that range to save energy, as long as airflow is well managed and there are no hot spots.</p>
+        <h3>What is the difference between a CRAC and a CRAH?</h3>
+        <p>A CRAC (computer room air conditioner) has its own refrigeration circuit with a compressor and rejects heat through a condenser. A CRAH (computer room air handler) has no compressor. It uses chilled water from a central chiller plant, with a valve controlling flow through its coil. CRACs are common in smaller rooms, and CRAHs in larger facilities with chilled water plants.</p>
+        <h3>How many tons of cooling does a 10 kW rack need?</h3>
+        <p>Multiply 10 kW by 3,412 to get 34,120 BTU per hour, then divide by 12,000 BTU per hour per ton. The answer is about 2.8 tons for the IT load alone. Real designs add other heat sources and redundancy, and the cold air or liquid has to reach the rack, not just be produced somewhere in the room.</p>
+        <h3>Do I need EPA Section 608 certification to work on data center cooling?</h3>
+        <p>You need Section 608 certification, from an EPA-approved certifying program, to maintain, service, repair, or dispose of equipment in ways that could release refrigerant. Many other cooling tasks, such as changing filters, watching alarms, or checking chilled water units, do not involve opening refrigerant circuits, but your employer decides who may perform each task.</p>
+      </div>
+
+      <h2 id="related">Keep learning</h2>
+      <div class="card-grid card-grid-2">
+        <a class="topic-card" href="energy-efficiency-pue.html"><span class="topic-card-kicker">Guide</span><h3>Energy Efficiency and PUE</h3><p>How cooling choices show up in PUE, and how to improve it.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+        <a class="topic-card" href="ai-data-centers.html"><span class="topic-card-kicker">Guide</span><h3>AI Data Centers</h3><p>Why GPU racks are pushing facilities toward liquid cooling.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+        <a class="topic-card" href="../careers/data-center-jobs.html#hvac-technician"><span class="topic-card-kicker">Careers</span><h3>Data Center HVAC Technician</h3><p>What the job involves and how to prepare for it.</p><span class="topic-card-cta">See the role &rarr;</span></a>
+        <a class="topic-card" href="data-center-power.html"><span class="topic-card-kicker">Guide</span><h3>How Data Center Power Works</h3><p>The other half of the critical infrastructure, from utility to rack.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+      </div>
+      <p class="guide-updated">This guide is general educational information, not engineering, legal, or compliance advice. Follow your site's procedures, manufacturer instructions, and applicable codes and regulations.</p>
+    </article>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta-block">
+        <h2>Train Your Team on Data Center Cooling</h2>
+        <p>Our Cooling &amp; Facilities Efficiency courses cover design, troubleshooting, maintenance, refrigerant safety, and PUE improvement.</p>
+        <div class="hero-ctas">
+          <a href="../bundles.html" class="btn glass-chip">See the Cooling Bundle</a>
+          <a href="../courses.html" class="btn glass-chip">Browse All Courses</a>
+          <a href="tel:18664296742" class="btn glass-chip">Call 1-866-429-6742</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="contact"></footer>
+<script src="../js/main.js" defer></script>
+
+</body>
+</html>

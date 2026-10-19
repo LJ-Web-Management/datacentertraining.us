@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Center Tier Levels Explained: Tier I to Tier IV</title>
+<meta name="description" content="Uptime Institute Tier I to IV explained: concurrent maintainability vs fault tolerance, downtime figures, TIA-942 Rated levels, certifications, and myths.">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+<link rel="canonical" href="https://datacentertraining.us/learn/data-center-tiers.html">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Data Center Tier Levels Explained: Tier I to Tier IV">
+<meta property="og:description" content="Uptime Institute Tier I to IV explained: concurrent maintainability vs fault tolerance, downtime figures, TIA-942 Rated levels, certifications, and myths.">
+<meta property="og:url" content="https://datacentertraining.us/learn/data-center-tiers.html">
+<meta property="og:image" content="https://datacentertraining.us/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Data Center Training">
+
+<link rel="stylesheet" href="../css/site.min.css">
+<script src="../js/nav.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Data Center Tier Levels Explained: Tier I to Tier IV",
+  "description": "Uptime Institute Tier I to IV explained: concurrent maintainability vs fault tolerance, downtime figures, TIA-942 Rated levels, certifications, and myths.",
+  "url": "https://datacentertraining.us/learn/data-center-tiers.html",
+  "mainEntityOfPage": "https://datacentertraining.us/learn/data-center-tiers.html",
+  "image": "https://datacentertraining.us/images/og-image.jpg",
+  "datePublished": "2026-10-19",
+  "dateModified": "2026-10-19",
+  "inLanguage": "en-US",
+  "author": {"@type": "Organization", "name": "Data Center Training", "url": "https://datacentertraining.us/"},
+  "publisher": {"@type": "EducationalOrganization", "@id": "https://datacentertraining.us/#organization", "name": "Data Center Training", "url": "https://datacentertraining.us/"},
+  "about": ["Uptime Institute Tier Classification System", "Data center redundancy", "Concurrent maintainability", "Fault tolerance", "ANSI/TIA-942"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://datacentertraining.us/"},
+    {"@type": "ListItem", "position": 2, "name": "Knowledge Center", "item": "https://datacentertraining.us/learn/"},
+    {"@type": "ListItem", "position": 3, "name": "Tier Levels", "item": "https://datacentertraining.us/learn/data-center-tiers.html"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "What is the difference between Tier III and Tier IV?", "acceptedAnswer": {"@type": "Answer", "text": "Tier III is concurrently maintainable: any component or distribution path can be taken out of service for planned work without affecting the IT load. Tier IV is fault tolerant: it also survives any single unplanned failure, such as a tripped breaker or a fire in one electrical room, without affecting the IT load and without operator action. Tier IV requires simultaneously active, physically isolated systems and continuous cooling."}},
+    {"@type": "Question", "name": "Is Tier IV always better than Tier III?", "acceptedAnswer": {"@type": "Answer", "text": "Not necessarily. Tier IV costs more to build and operate and has more equipment to maintain. Many organizations get better overall resilience by running critical applications across two or more Tier III sites. The right Tier depends on the cost of downtime, how applications fail over, and the budget."}},
+    {"@type": "Question", "name": "What does Tier III certified mean?", "acceptedAnswer": {"@type": "Answer", "text": "It means Uptime Institute has awarded the facility a Tier III certification. Check which one: a design documents certification covers the drawings, a constructed facility certification verifies the built site through on-site testing, and an operational sustainability certification reviews how the site is run. Claims such as Tier III design or Tier III-ready without an Uptime award describe design intent, not certification."}},
+    {"@type": "Question", "name": "What is the difference between Uptime Tiers and TIA-942 ratings?", "acceptedAnswer": {"@type": "Answer", "text": "Uptime Institute's Tier Classification System uses Tier I to Tier IV, is performance-based, focuses on site infrastructure, and is certified only by Uptime. ANSI/TIA-942 is a standard from the Telecommunications Industry Association that uses Rated-1 to Rated-4, covers telecommunications cabling plus architectural, electrical, mechanical, and security criteria, and is assessed by independent auditors. The levels address similar ideas, but the criteria are not identical."}},
+    {"@type": "Question", "name": "How much downtime does a Tier III data center have per year?", "acceptedAnswer": {"@type": "Answer", "text": "The commonly cited figure is 99.982 percent availability, or about 1.6 hours of downtime per year. That number is an industry rule of thumb, not part of Uptime Institute's Tier Standard. Actual downtime depends heavily on how well the site is operated and maintained."}}
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="glass-nav"></header>
+
+<main id="main">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../">Home</a>
+      <span>&rsaquo;</span>
+      <a href="./">Knowledge Center</a>
+      <span>&rsaquo;</span>
+      <span aria-current="page">Tier Levels</span>
+    </nav>
+  </div>
+
+  <section class="course-hero">
+    <div class="container">
+      <div class="course-hero-eyebrow">Knowledge Center &middot; Design</div>
+      <h1>Data Center Tier Levels Explained: Tier I to Tier IV</h1>
+      <p class="course-hero-hook">"Tier III" is one of the most used and most misused phrases in the industry. Here is what each Tier actually requires, what it survives, how the Tiers relate to TIA-942, and how to tell a certified facility from a marketing claim.</p>
+      <div class="course-pills">
+        <span class="course-pill">13 min read</span>
+        <span class="course-pill">Beginner to intermediate</span>
+        <span class="course-pill">Updated October 2026</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="container guide-layout">
+    <aside class="guide-toc" aria-label="On this page">
+      <p class="guide-toc-title">On this page</p>
+      <ol>
+        <li><a href="#what-tiers-are">What the Tier system is</a></li>
+        <li><a href="#four-tiers">The four Tiers at a glance</a></li>
+        <li><a href="#maintainability">Maintainable vs fault tolerant</a></li>
+        <li><a href="#availability">Availability figures</a></li>
+        <li><a href="#tia-942">ANSI/TIA-942 Rated levels</a></li>
+        <li><a href="#certification">Uptime certifications</a></li>
+        <li><a href="#misconceptions">Common misconceptions</a></li>
+        <li><a href="#choosing">How to choose a Tier</a></li>
+        <li><a href="#redundancy">Redundancy recap</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ol>
+      <a class="guide-toc-cta" href="../quizzes/tiers-design-quiz.html"><strong>Test yourself</strong>Take the 10-question Tiers &amp; Design quiz.</a>
+    </aside>
+
+    <article class="guide-body prose">
+      <div class="key-takeaways">
+        <p class="key-takeaways-title">Key takeaways</p>
+        <ul>
+          <li>Uptime Institute's Tier Classification System rates site infrastructure from Tier I (basic capacity) to Tier IV (fault tolerant), based on what the facility can survive.</li>
+          <li>Tier III means any component or path can be taken out for planned work without affecting IT. Tier IV adds survival of any single unplanned failure without operator action.</li>
+          <li>The availability percentages often attached to the Tiers are commonly cited industry figures, not part of Uptime's Tier Standard.</li>
+          <li>Only Uptime Institute awards Tier Certification. "Tier III design" or "Tier III-ready" without it describes intent, not a verified result.</li>
+          <li>Topology sets the ceiling; operations decide how close a site gets to it.</li>
+        </ul>
+      </div>
+
+      <h2 id="what-tiers-are">What the Tier Classification System is</h2>
+      <p>Uptime Institute created the Tier Classification System to give owners, designers, and operators a common language for data center infrastructure performance. It is defined in two documents: the <strong>Tier Standard: Topology</strong>, which sets infrastructure requirements for each Tier, and the <strong>Tier Standard: Operational Sustainability</strong>, which covers how a site is staffed, maintained, and managed.</p>
+      <p>The Tiers are outcome-based. Instead of prescribing specific equipment, they define what the infrastructure must be able to do: keep the IT load running through planned maintenance, through an unplanned failure, or neither. Engineers can meet those objectives with different designs. Three ideas shape how they are applied:</p>
+      <ul>
+        <li><strong>The weakest subsystem sets the Tier.</strong> A building with a Tier IV electrical system and a Tier II cooling plant is a Tier II facility.</li>
+        <li><strong>Tiers cover site infrastructure.</strong> Power, cooling, and the systems that support them. They do not rate the network, the servers, or the applications.</li>
+        <li><strong>Generators are the primary source.</strong> For Tier purposes, Uptime treats on-site engine generators as the facility's primary power source and the utility as an economic alternative, so the site must be able to carry its load on its own generators.</li>
+      </ul>
+
+      <h2 id="four-tiers">The four Tiers at a glance</h2>
+      <p>Each Tier includes the requirements of the Tiers below it. Every step up adds equipment, space, cost, and operational complexity.</p>
+      <div class="compare-grid">
+        <div class="compare-card">
+          <div class="compare-card-label">Tier I</div>
+          <div class="compare-card-title">Basic Capacity</div>
+          <ul>
+            <li>Dedicated UPS, cooling, and engine generator for the IT space.</li>
+            <li>Single path, no redundant components.</li>
+            <li>Survives: utility outages, within the limits of that one path. Planned maintenance needs a shutdown, and any failure can drop the load.</li>
+            <li>Typical use: small sites and workloads that can tolerate downtime.</li>
+          </ul>
+        </div>
+        <div class="compare-card">
+          <div class="compare-card-label">Tier II</div>
+          <div class="compare-card-title">Redundant Capacity Components</div>
+          <ul>
+            <li>Adds redundant capacity components: UPS modules, chillers, pumps, generators.</li>
+            <li>Still a single distribution path.</li>
+            <li>Survives: removal or failure of a capacity component. Work on the path itself needs a shutdown.</li>
+            <li>Typical use: sites that want fewer interruptions at moderate cost.</li>
+          </ul>
+        </div>
+        <div class="compare-card">
+          <div class="compare-card-label">Tier III</div>
+          <div class="compare-card-title">Concurrently Maintainable</div>
+          <ul>
+            <li>Redundant components plus independent distribution paths for power and cooling.</li>
+            <li>IT equipment must be dual-corded, or fed through point-of-use transfer switches.</li>
+            <li>Survives: planned removal of any component or path element without affecting IT. An unplanned failure can still.</li>
+            <li>Typical use: many enterprise and colocation sites with business-critical loads.</li>
+          </ul>
+        </div>
+        <div class="compare-card">
+          <div class="compare-card-label">Tier IV</div>
+          <div class="compare-card-title">Fault Tolerant</div>
+          <ul>
+            <li>Multiple independent, physically isolated systems, simultaneously active.</li>
+            <li>Compartmentalization and continuous cooling.</li>
+            <li>Survives: any single unplanned failure or event, with no operator action, plus planned maintenance.</li>
+            <li>Typical use: sites where any interruption is extremely costly.</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2 id="maintainability">Concurrent maintainability vs fault tolerance</h2>
+      <p>The jump from Tier II to Tier III, and from Tier III to Tier IV, is where most confusion lives. The difference comes down to planned versus unplanned events.</p>
+      <h3>Concurrent maintainability (Tier III)</h3>
+      <p>Concurrently maintainable means every capacity component and every element of the distribution path can be taken out of service on a planned basis without affecting the IT load. Example: a site has two UPS systems, each feeding one side of the dual-corded servers. To service UPS A, operators follow a written method of procedure, confirm the B side can carry the full load, and shut UPS A down. The servers keep running on B. The same must be true for a switchgear lineup, a chilled water valve, or a section of pipe: there must be a way to isolate it without dropping the load.</p>
+      <p>The catch is that during that maintenance window, the site is running on one path. If something on the B side fails while A is out, the load can drop. Tier III also allows one active path with an alternate path that is not normally carrying load, so recovering from a failure may require an operator to act.</p>
+      <h3>Fault tolerance (Tier IV)</h3>
+      <p>Fault tolerant means the infrastructure can sustain any single unplanned failure or event, such as a breaker trip, a burst pipe, or a fire in one electrical room, without affecting the IT load and without anyone having to do anything. Example: a breaker on path A trips unexpectedly. Path B is already active and carrying load, so the servers ride through on their second power supplies while controls keep cooling running automatically. Because the systems are compartmentalized in separate rooms, one fire or flood cannot take out both paths.</p>
+      <p>Tier IV also requires <strong>continuous cooling</strong>, so IT equipment does not see a temperature excursion during a utility-to-generator transfer. One subtlety: while a Tier IV site has a path down for maintenance, it is still concurrently maintainable but temporarily not fault tolerant.</p>
+      <div class="callout callout-tip">
+        <span class="callout-title">Two questions that separate the Tiers</span>
+        <p>Ask "What happens if I turn this off on purpose?" If the IT load is unaffected for every component and path, the site is concurrently maintainable. Then ask "What happens if this fails right now, unannounced?" If the load rides through every single failure with no operator action, the site is fault tolerant.</p>
+      </div>
+
+      <h2 id="availability">Availability and downtime figures</h2>
+      <p>You will often see the Tiers paired with availability percentages. These are <strong>commonly cited industry figures, not part of Uptime Institute's Tier Standard</strong>, which defines Tiers by topology, not by an uptime number. Treat them as rough illustrations of relative performance, not as a design target or a guarantee.</p>
+      <div class="table-panel">
+        <table class="data-table">
+          <caption>Commonly cited availability figures (not part of the Tier Standard)</caption>
+          <thead><tr><th>Tier</th><th>Commonly cited availability</th><th>Equivalent downtime per year</th></tr></thead>
+          <tbody>
+            <tr><td>Tier I</td><td>99.671%</td><td>About 28.8 hours</td></tr>
+            <tr><td>Tier II</td><td>99.741%</td><td>About 22.7 hours</td></tr>
+            <tr><td>Tier III</td><td>99.982%</td><td>About 1.6 hours (about 95 minutes)</td></tr>
+            <tr><td>Tier IV</td><td>99.995%</td><td>About 26.3 minutes</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>The math is simple: downtime hours per year = (1 &minus; availability) &times; 8,760. For Tier III, (1 &minus; 0.99982) &times; 8,760 = 0.00018 &times; 8,760, or about 1.6 hours. Real-world availability depends on how the site is operated and maintained and how fast staff respond. A well-run Tier II site can outperform a poorly run Tier III site.</p>
+      <div class="inline-cta">
+        <p><strong>Turn percentages into minutes.</strong> Convert any availability target into allowed downtime per year, month, and week.</p>
+        <a class="btn btn-primary btn-sm" href="../tools/uptime-calculator.html">Try the Uptime Calculator</a>
+      </div>
+
+      <h2 id="tia-942">ANSI/TIA-942 Rated-1 to Rated-4</h2>
+      <p>ANSI/TIA-942, the Telecommunications Infrastructure Standard for Data Centers from the Telecommunications Industry Association, is the other framework you will hear about. It uses <strong>Rated-1 through Rated-4</strong>, wording chosen to avoid confusion with Uptime's Tiers.</p>
+      <div class="table-panel">
+        <table class="data-table">
+          <caption>Uptime Tiers vs ANSI/TIA-942 Rated levels</caption>
+          <thead><tr><th>Aspect</th><th>Uptime Institute Tiers</th><th>ANSI/TIA-942</th></tr></thead>
+          <tbody>
+            <tr><td>Levels</td><td>Tier I to Tier IV</td><td>Rated-1 to Rated-4</td></tr>
+            <tr><td>Approach</td><td>Performance-based objectives</td><td>More prescriptive, with detailed tables of criteria</td></tr>
+            <tr><td>Scope</td><td>Site infrastructure (power, cooling, support systems), plus a separate operations standard</td><td>Telecommunications cabling and spaces, plus architectural, electrical, mechanical, safety, and security criteria</td></tr>
+            <tr><td>Who assesses</td><td>Only Uptime Institute awards Tier Certification</td><td>Independent auditors and certification bodies assess conformity</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>The levels map onto similar ideas: Rated-1 basic, Rated-2 redundant components, Rated-3 concurrently maintainable, Rated-4 fault tolerant. The criteria are not identical, so a Rated-3 facility is not automatically Tier III, and the reverse is also true. TIA-942 also defines the cabling spaces of a data center, such as the entrance room and main distribution area. Other frameworks exist, including BICSI 002 (availability Classes F0 to F4) and the European EN 50600 series (availability classes 1 to 4).</p>
+
+      <h2 id="certification">Uptime Institute certifications</h2>
+      <p>Only Uptime Institute can award Tier Certification, and its certifications mean different things:</p>
+      <div class="table-panel">
+        <table class="data-table">
+          <caption>Uptime Institute certification types</caption>
+          <thead><tr><th>Certification</th><th>What Uptime reviews</th><th>What it proves</th></tr></thead>
+          <tbody>
+            <tr><td>Tier Certification of Design Documents</td><td>Design drawings and specifications</td><td>The design, on paper, meets the Tier objective.</td></tr>
+            <tr><td>Tier Certification of Constructed Facility</td><td>The built site, through on-site inspection and live demonstrations</td><td>The building actually performs as the design claims.</td></tr>
+            <tr><td>Tier Certification of Operational Sustainability</td><td>Staffing, training, maintenance, planning, and management, rated Gold, Silver, or Bronze</td><td>The site is run in a way that protects its Tier performance over time.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>A design certification is a milestone, not the finish line. Plenty changes between drawings and a finished building, and the constructed facility certification is what verifies the result. Uptime publishes a list of certified facilities, so a claim can be checked. Separately, Uptime offers accreditations for individuals, such as Accredited Tier Designer. Our <a href="../courses/tier-infrastructure-fundamentals.html">Tier Infrastructure Fundamentals</a> course teaches the concepts behind the Tiers and awards a certificate of completion, not an Uptime credential.</p>
+
+      <h2 id="misconceptions">Common misconceptions</h2>
+      <h3>"Tier III-ready" means Tier III</h3>
+      <p>Phrases like "Tier III-ready," "Tier III design," or "built to Tier III standards" describe intent. Without an Uptime certification of the constructed facility, nobody has independently verified that the building performs to the Tier. Ask which certification, if any, was awarded, and for which building.</p>
+      <h3>"Tier 3+" is a real level</h3>
+      <p>There is no Tier 3+ or Tier 3.5 in Uptime's system. A facility is classified at the highest Tier it fully meets. A plus sign usually means "Tier III with some extra redundancy," which may be valuable, but it is not a Tier. Uptime writes its Tiers in Roman numerals.</p>
+      <h3>Higher is always better</h3>
+      <p>Each step up costs more to build and operate, and a Tier IV design has more equipment to maintain and more complex switching. Many organizations protect critical applications by running them in two or more Tier III sites instead of one Tier IV site, and some cloud operators handle much of their resilience in software.</p>
+      <h3>A Tier rating guarantees uptime</h3>
+      <p>Tiers describe topology: what the infrastructure is capable of. They do not guarantee that people will execute procedures correctly, and most outages trace back to people, procedures, and maintenance rather than missing redundancy. A concurrently maintainable site can still go dark if someone opens the wrong breaker during maintenance. That is why the Operational Sustainability standard exists, and why training, written procedures, and change control matter.</p>
+
+      <h2 id="choosing">How to choose a Tier</h2>
+      <ol class="steps">
+        <li><h3>Quantify the cost of downtime</h3><p>What does an hour of outage cost in revenue, penalties, safety, and reputation? A payment processor, a hospital, and an internal test lab will give very different answers.</p></li>
+        <li><h3>Look at the application architecture</h3><p>If workloads fail over to another site automatically, each site may need less infrastructure redundancy. If one site carries everything, the building has to be more resilient. Plan this alongside <a href="../courses/disaster-recovery-business-continuity.html">disaster recovery and business continuity</a>.</p></li>
+        <li><h3>Decide what you must survive</h3><p>Planned maintenance without shutdowns (Tier III), or also unplanned failures without impact (Tier IV)? Equipment has to be maintained, and shutdowns are hard to schedule, so most business-critical sites need at least concurrent maintainability.</p></li>
+        <li><h3>Weigh cost and growth</h3><p>Higher Tiers need more equipment, space, and capital. Model total cost of ownership, and use <a href="../courses/capacity-planning-forecasting.html">capacity planning</a> to keep redundancy intact as load grows.</p></li>
+        <li><h3>Verify, then keep verifying</h3><p>For colocation, ask for Uptime certificates, commissioning reports, maintenance records, and incident history. For your own build, plan commissioning through integrated systems testing. See the <a href="data-center-commissioning.html">Commissioning guide</a>.</p></li>
+      </ol>
+
+      <h2 id="redundancy">Redundancy notation recap</h2>
+      <p>Tier discussions lean on redundancy notation, where N is the capacity the load needs. <strong>N+1</strong> adds one spare unit, <strong>2N</strong> provides two complete independent systems that can each carry the load, and <strong>2N+1</strong> adds a spare on top of that. (See the glossary for <a href="glossary.html#term-n-plus-1">N+1</a> and <a href="glossary.html#term-2n">2N</a>.)</p>
+      <p>Notation and Tiers are related but not the same. Tier II is typically built with N+1 components on a single path. Tier III needs redundant components and an independent alternate path, which can be met with N+1 equipment. And 2N equipment does not automatically make a site Tier IV: fault tolerance also needs active paths, compartmentalization, continuous cooling, and controls that respond without operator action. For the full table, see <a href="data-center-power.html#redundancy">Redundancy: N, N+1, and 2N</a> in the power guide.</p>
+
+      <div class="inline-cta">
+        <p><strong>Can you tell Tier III from Tier IV?</strong> Ten questions on Tiers, redundancy, and design, with instant answers.</p>
+        <a class="btn btn-primary btn-sm" href="../quizzes/tiers-design-quiz.html">Take the Tiers &amp; Design Quiz</a>
+      </div>
+
+      <h2 id="courses">Courses that go deeper</h2>
+      <p>These self-paced courses cover Tier concepts, design, commissioning, and planning. Each awards a certificate of completion. <a href="../courses/infrastructure-commissioning-startup.html">Infrastructure Commissioning &amp; Startup</a> shows how design intent gets verified.</p>
+      <!-- dct:courses tier-infrastructure-fundamentals data-center-design-fundamentals infrastructure-commissioning-startup capacity-planning-forecasting disaster-recovery-business-continuity -->
+      <!-- /dct:courses -->
+      <!-- dct:bundle bundle-design-planning -->
+      <!-- /dct:bundle -->
+
+      <h2 id="faq">Frequently asked questions</h2>
+      <div class="guide-faq">
+        <h3>What is the difference between Tier III and Tier IV?</h3>
+        <p>Tier III is concurrently maintainable: any component or distribution path can be taken out of service for planned work without affecting the IT load. Tier IV is fault tolerant: it also survives any single unplanned failure, such as a tripped breaker or a fire in one electrical room, without affecting the IT load and without operator action. Tier IV requires simultaneously active, physically isolated systems and continuous cooling.</p>
+        <h3>Is Tier IV always better than Tier III?</h3>
+        <p>Not necessarily. Tier IV costs more to build and operate and has more equipment to maintain. Many organizations get better overall resilience by running critical applications across two or more Tier III sites. The right Tier depends on the cost of downtime, how applications fail over, and the budget.</p>
+        <h3>What does Tier III certified mean?</h3>
+        <p>It means Uptime Institute has awarded the facility a Tier III certification. Check which one: a design documents certification covers the drawings, a constructed facility certification verifies the built site through on-site testing, and an operational sustainability certification reviews how the site is run. Claims such as Tier III design or Tier III-ready without an Uptime award describe design intent, not certification.</p>
+        <h3>What is the difference between Uptime Tiers and TIA-942 ratings?</h3>
+        <p>Uptime Institute's Tier Classification System uses Tier I to Tier IV, is performance-based, focuses on site infrastructure, and is certified only by Uptime. ANSI/TIA-942 is a standard from the Telecommunications Industry Association that uses Rated-1 to Rated-4, covers telecommunications cabling plus architectural, electrical, mechanical, and security criteria, and is assessed by independent auditors. The levels address similar ideas, but the criteria are not identical.</p>
+        <h3>How much downtime does a Tier III data center have per year?</h3>
+        <p>The commonly cited figure is 99.982 percent availability, or about 1.6 hours of downtime per year. That number is an industry rule of thumb, not part of Uptime Institute's Tier Standard. Actual downtime depends heavily on how well the site is operated and maintained.</p>
+      </div>
+
+      <h2 id="related">Keep learning</h2>
+      <div class="card-grid card-grid-2">
+        <a class="topic-card" href="data-center-power.html"><span class="topic-card-kicker">Guide</span><h3>How Data Center Power Works</h3><p>UPS, generators, A/B feeds, and the redundancy behind every Tier.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+        <a class="topic-card" href="data-center-commissioning.html"><span class="topic-card-kicker">Guide</span><h3>Data Center Commissioning</h3><p>How Level 1 to Level 5 testing proves a design works.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+        <a class="topic-card" href="../careers/data-center-jobs.html#design-engineer"><span class="topic-card-kicker">Careers</span><h3>Data Center Design Engineer</h3><p>What the role involves and the skills it takes.</p><span class="topic-card-cta">See the role &rarr;</span></a>
+        <a class="topic-card" href="what-is-a-data-center.html"><span class="topic-card-kicker">Guide</span><h3>Data Center 101</h3><p>New to the industry? Start with how a data center works.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+      </div>
+      <p class="guide-updated">This guide is general educational information, not engineering, legal, or compliance advice. Tier Certification is awarded only by Uptime Institute; consult Uptime Institute and the current standards for official requirements.</p>
+    </article>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta-block">
+        <h2>Design and Verify Resilient Facilities</h2>
+        <p>Our Design, Planning &amp; Commissioning courses cover Tier concepts, design fundamentals, commissioning, and capacity planning.</p>
+        <div class="hero-ctas">
+          <a href="../bundles.html" class="btn glass-chip">See the Design Bundle</a>
+          <a href="../courses.html" class="btn glass-chip">Browse All Courses</a>
+          <a href="tel:18664296742" class="btn glass-chip">Call 1-866-429-6742</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="contact"></footer>
+<script src="../js/main.js" defer></script>
+
+</body>
+</html>

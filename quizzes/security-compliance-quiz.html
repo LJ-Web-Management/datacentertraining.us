@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Center Security &amp; Compliance Quiz (10 Questions)</title>
+<meta name="description" content="Test your data center security and compliance knowledge: security layers, mantraps, visitors, SOC 2, ISO/IEC 27001, PCI DSS, HIPAA, media destruction, and SPCC.">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+<link rel="canonical" href="https://datacentertraining.us/quizzes/security-compliance-quiz.html">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Data Center Security &amp; Compliance Quiz (10 Questions)">
+<meta property="og:description" content="Test your data center security and compliance knowledge: security layers, mantraps, visitors, SOC 2, ISO/IEC 27001, PCI DSS, HIPAA, media destruction, and SPCC.">
+<meta property="og:url" content="https://datacentertraining.us/quizzes/security-compliance-quiz.html">
+<meta property="og:image" content="https://datacentertraining.us/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Data Center Training">
+
+<link rel="stylesheet" href="../css/site.min.css">
+<script src="../js/nav.js" defer></script>
+<script src="../js/quiz.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://datacentertraining.us/"},
+    {"@type": "ListItem", "position": 2, "name": "Quizzes", "item": "https://datacentertraining.us/quizzes/"},
+    {"@type": "ListItem", "position": 3, "name": "Security & Compliance Quiz", "item": "https://datacentertraining.us/quizzes/security-compliance-quiz.html"}
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="glass-nav"></header>
+
+<main id="main">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../">Home</a>
+      <span>&rsaquo;</span>
+      <a href="./">Quizzes</a>
+      <span>&rsaquo;</span>
+      <span aria-current="page">Security &amp; Compliance Quiz</span>
+    </nav>
+  </div>
+
+  <section class="course-hero">
+    <div class="container">
+      <div class="course-hero-eyebrow">Quiz &middot; Security &amp; Compliance</div>
+      <h1>Data Center Security &amp; Compliance Quiz</h1>
+      <p class="course-hero-hook">Ten questions on how data centers control who gets in and how auditors check it, from mantraps to SOC 2 and PCI DSS. Each answer comes with a short explanation.</p>
+      <div class="course-pills">
+        <span class="course-pill">10 questions</span>
+        <span class="course-pill">About 5 minutes</span>
+        <span class="course-pill">Intermediate</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="container-read">
+    <h2 class="visually-hidden">Quiz questions</h2>
+    <section class="quiz" data-quiz-id="security-compliance" data-quiz-type="knowledge" data-quiz-title="Data Center Security &amp; Compliance Quiz" aria-label="Security and compliance quiz">
+      <div class="quiz-progress" aria-hidden="true"><span class="quiz-progress-text">Question 1 of 10</span><div class="quiz-progress-track"><div class="quiz-progress-bar"></div></div><span class="quiz-progress-score">Score 0</span></div>
+      <ol class="quiz-questions">
+        <li class="quiz-q" data-answer="b">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 1</span><span class="quiz-q-text">Data center physical security is built in layers. Which order runs from the outside in?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="q1" value="a"><span>Data hall, building entry, perimeter, cabinet</span></label>
+            <label class="quiz-opt"><input type="radio" name="q1" value="b"><span>Perimeter fence and gate, building entry, data hall entry, cage or cabinet lock</span></label>
+            <label class="quiz-opt"><input type="radio" name="q1" value="c"><span>Cabinet lock, cage, lobby, perimeter</span></label>
+            <label class="quiz-opt"><input type="radio" name="q1" value="d"><span>Lobby, perimeter, cabinet, data hall</span></label>
+          </fieldset>
+          <details class="quiz-explain"><summary>Show answer</summary><p><strong class="quiz-key">Answer: perimeter, building, data hall, cabinet.</strong> Each layer delays and detects an intruder and needs its own authorization, so one failed control does not expose the equipment. Cameras, guards, and alarms back up every layer. <a href="../learn/data-center-security-compliance.html">Read the security and compliance guide</a>.</p></details>
+        </li>
+        <li class="quiz-q" data-answer="d">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 2</span><span class="quiz-q-text">What is a mantrap (access control vestibule) designed to prevent?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="q2" value="a"><span>Fire and smoke spreading between rooms</span></label>
+            <label class="quiz-opt"><input type="radio" name="q2" value="b"><span>Dust and contaminants entering the data hall</span></label>
+            <label class="quiz-opt"><input type="radio" name="q2" value="c"><span>Unauthorized logins to the corporate network</span></label>
+            <label class="quiz-opt"><input type="radio" name="q2" value="d"><span>Tailgating and piggybacking, by letting only one authorized person through at a time</span></label>
+          </fieldset>
+          <details class="quiz-explain"><summary>Show answer</summary><p><strong class="quiz-key">Answer: tailgating and piggybacking.</strong> A mantrap has two interlocked doors, and the second will not open until the first has closed. Many add a second factor such as biometrics, or sensors that detect more than one person inside. <a href="../courses/access-control-physical-security.html">Access Control &amp; Physical Security</a> covers entry design.</p></details>
+        </li>
+        <li class="quiz-q" data-answer="c">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 3</span><span class="quiz-q-text">A vendor technician arrives to service a CRAH but is not on the access list. What is the correct practice?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="q3" value="a"><span>Let them in, since they have a company uniform and a signed work order</span></label>
+            <label class="quiz-opt"><input type="radio" name="q3" value="b"><span>Lend them a staff badge for the day so they can move around freely</span></label>
+            <label class="quiz-opt"><input type="radio" name="q3" value="c"><span>Verify the visit with the requester, check ID, log them in, badge them, and escort them throughout</span></label>
+            <label class="quiz-opt"><input type="radio" name="q3" value="d"><span>Give them the door code and ask them to sign out when they finish</span></label>
+          </fieldset>
+          <details class="quiz-explain"><summary>Show answer</summary><p><strong class="quiz-key">Answer: verify, log, badge, and escort.</strong> Visitors are checked against a scheduled request, identified, logged, badged, and escorted at all times inside controlled areas. Sharing badges or codes breaks the audit trail that SOC 2, ISO/IEC 27001, and PCI DSS assessors look for. <a href="../courses/data-center-physical-security-access-control.html">Data Center Physical Security and Access Control Training</a> covers visitor handling.</p></details>
+        </li>
+        <li class="quiz-q" data-answer="a">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 4</span><span class="quiz-q-text">Which list matches the five AICPA Trust Services Criteria used in SOC 2 reports?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="q4" value="a"><span>Security, availability, processing integrity, confidentiality, and privacy</span></label>
+            <label class="quiz-opt"><input type="radio" name="q4" value="b"><span>Identify, protect, detect, respond, and recover</span></label>
+            <label class="quiz-opt"><input type="radio" name="q4" value="c"><span>Confidentiality, integrity, availability, authentication, and authorization</span></label>
+            <label class="quiz-opt"><input type="radio" name="q4" value="d"><span>Plan, do, check, act, and improve</span></label>
+          </fieldset>
+          <details class="quiz-explain"><summary>Show answer</summary><p><strong class="quiz-key">Answer: security, availability, processing integrity, confidentiality, and privacy.</strong> Security is included in every SOC 2 report, and the other criteria are added when they fit the service; data centers often include availability. Option b lists functions from the NIST Cybersecurity Framework. <a href="../courses/security-compliance-data-centers.html">Security &amp; Compliance for Data Centers</a> covers SOC 2 audits.</p></details>
+        </li>
+        <li class="quiz-q" data-answer="d">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 5</span><span class="quiz-q-text">Which statement about ISO/IEC 27001 is correct?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="q5" value="a"><span>It is a U.S. federal law that protects health information</span></label>
+            <label class="quiz-opt"><input type="radio" name="q5" value="b"><span>It is the AICPA standard for attestation reports</span></label>
+            <label class="quiz-opt"><input type="radio" name="q5" value="c"><span>It rates data center redundancy from level 1 to level 4</span></label>
+            <label class="quiz-opt"><input type="radio" name="q5" value="d"><span>It is an international standard for an information security management system, and organizations can be certified against it</span></label>
+          </fieldset>
+          <details class="quiz-explain"><summary>Show answer</summary><p><strong class="quiz-key">Answer: it is the international ISMS standard.</strong> Accredited certification bodies audit and certify organizations against ISO/IEC 27001. Its Annex A controls include physical security, such as secure perimeters, entry controls, equipment protection, and secure disposal. <a href="../courses/security-compliance-data-centers.html">Security &amp; Compliance for Data Centers</a> compares the frameworks.</p></details>
+        </li>
+        <li class="quiz-q" data-answer="b">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 6</span><span class="quiz-q-text">In PCI DSS, what does Requirement 9 cover?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="q6" value="a"><span>Encrypting cardholder data sent over public networks</span></label>
+            <label class="quiz-opt"><input type="radio" name="q6" value="b"><span>Restricting physical access to cardholder data</span></label>
+            <label class="quiz-opt"><input type="radio" name="q6" value="c"><span>Installing and maintaining network security controls such as firewalls</span></label>
+            <label class="quiz-opt"><input type="radio" name="q6" value="d"><span>Running regular penetration tests</span></label>
+          </fieldset>
+          <details class="quiz-explain"><summary>Show answer</summary><p><strong class="quiz-key">Answer: restricting physical access to cardholder data.</strong> Requirement 9 covers facility entry controls, visitor handling, and the protection and destruction of media. In a colocation facility, the provider often covers part of it for customers, which is documented in a responsibility matrix. <a href="../learn/data-center-security-compliance.html">Read the security and compliance guide</a>.</p></details>
+        </li>
+        <li class="quiz-q" data-answer="c">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 7</span><span class="quiz-q-text">Which of these is a HIPAA Security Rule physical safeguard?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="q7" value="a"><span>A risk analysis and workforce security training</span></label>
+            <label class="quiz-opt"><input type="radio" name="q7" value="b"><span>Unique user IDs and audit logs</span></label>
+            <label class="quiz-opt"><input type="radio" name="q7" value="c"><span>Facility access controls, workstation security, and device and media controls</span></label>
+            <label class="quiz-opt"><input type="radio" name="q7" value="d"><span>Encrypting data sent over the internet</span></label>
+          </fieldset>
+          <details class="quiz-explain"><summary>Show answer</summary><p><strong class="quiz-key">Answer: facility access, workstation, and device and media controls.</strong> Physical safeguards are listed in 45 CFR 164.310. Risk analysis and training are administrative safeguards, and user IDs, audit logs, and transmission security are technical safeguards. <a href="../courses/security-compliance-data-centers.html">Security &amp; Compliance for Data Centers</a> covers HIPAA requirements.</p></details>
+        </li>
+        <li class="quiz-q" data-answer="a">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 8</span><span class="quiz-q-text">Why do data centers run periodic access reviews?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="q8" value="a"><span>To confirm each person's access is still needed and remove access for people who left or changed roles</span></label>
+            <label class="quiz-opt"><input type="radio" name="q8" value="b"><span>To check that badge readers and door controllers have fresh batteries</span></label>
+            <label class="quiz-opt"><input type="radio" name="q8" value="c"><span>To count how many visitors entered the building during the quarter</span></label>
+            <label class="quiz-opt"><input type="radio" name="q8" value="d"><span>To give everyone the same access level so the system is simpler to run</span></label>
+          </fieldset>
+          <details class="quiz-explain"><summary>Show answer</summary><p><strong class="quiz-key">Answer: to remove access that is no longer needed.</strong> Reviews compare access lists against HR records and customer authorizations, and access for people who are no longer authorized is a classic audit finding. Terminations should be removed right away, not at the next review. <a href="../courses/data-center-physical-security-access-control.html">Data Center Physical Security and Access Control Training</a> covers access governance.</p></details>
+        </li>
+        <li class="quiz-q" data-answer="c">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 9</span><span class="quiz-q-text">A failed hard drive held customer data. What is the accepted way to handle it?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="q9" value="a"><span>Put it in the regular e-waste bin with other failed parts</span></label>
+            <label class="quiz-opt"><input type="radio" name="q9" value="b"><span>Reformat it and resell it through an IT asset reseller</span></label>
+            <label class="quiz-opt"><input type="radio" name="q9" value="c"><span>Keep it under chain of custody until it is sanitized or destroyed, with a destruction record</span></label>
+            <label class="quiz-opt"><input type="radio" name="q9" value="d"><span>Ship it back to the manufacturer under warranty without wiping it</span></label>
+          </fieldset>
+          <details class="quiz-explain"><summary>Show answer</summary><p><strong class="quiz-key">Answer: chain of custody, then sanitize or destroy.</strong> NIST SP 800-88 describes clear, purge, and destroy methods, and degaussing works only on magnetic media, not SSDs. Many customers require that drives never leave the site intact. <a href="../courses/security-compliance-data-centers.html">Security &amp; Compliance for Data Centers</a> covers media handling.</p></details>
+        </li>
+        <li class="quiz-q" data-answer="b">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 10</span><span class="quiz-q-text">When does EPA's SPCC rule (40 CFR Part 112) generally apply to a data center?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="q10" value="a"><span>Whenever the site has any generator, no matter how much fuel it stores</span></label>
+            <label class="quiz-opt"><input type="radio" name="q10" value="b"><span>When aboveground oil storage exceeds 1,320 U.S. gallons and a spill could reach navigable waters or shorelines</span></label>
+            <label class="quiz-opt"><input type="radio" name="q10" value="c"><span>Only when the site stores refrigerant cylinders in a mechanical room</span></label>
+            <label class="quiz-opt"><input type="radio" name="q10" value="d"><span>Only when the site sits directly on an ocean coastline</span></label>
+          </fieldset>
+          <details class="quiz-explain"><summary>Show answer</summary><p><strong class="quiz-key">Answer: above 1,320 gallons aboveground, with a path to water.</strong> Bulk diesel tanks, generator day tanks, and oil-filled transformers of 55 gallons or more count toward capacity. The Spill Prevention, Control, and Countermeasure plan covers containment, inspections, training, and spill response. <a href="../courses/facility-environmental-compliance.html">Facility Environmental Compliance</a> covers SPCC plans.</p></details>
+        </li>
+      </ol>
+      <div class="quiz-nav">
+        <span class="quiz-nav-hint">Choose an answer to continue.</span>
+        <button type="button" class="btn btn-primary quiz-next" disabled>Next question</button>
+      </div>
+      <div class="quiz-result" hidden>
+        <div class="quiz-score">0/10</div>
+        <p class="quiz-score-label">Your score</p>
+        <div class="quiz-tier" data-min="9" hidden>
+          <p class="quiz-tier-title">Security pro</p>
+          <p>You understand both the controls and the audits that test them. Put it on paper: the Security &amp; Compliance Bundle documents that knowledge with a certificate of completion for every course.</p>
+        </div>
+        <div class="quiz-tier" data-min="6" hidden>
+          <p class="quiz-tier-title">Solid foundation</p>
+          <p>You have the core ideas. Gaps in audit frameworks or access control are exactly what Security &amp; Compliance for Data Centers and Access Control &amp; Physical Security close.</p>
+        </div>
+        <div class="quiz-tier" data-min="0" hidden>
+          <p class="quiz-tier-title">Room to grow</p>
+          <p>Everyone starts somewhere. Read the security and compliance guide, then start with Data Center Physical Security and Access Control Training.</p>
+        </div>
+        <p class="quiz-best"></p>
+        <div class="quiz-result-actions">
+          <a class="btn btn-primary" href="#courses">See Matching Courses</a>
+          <button type="button" class="btn btn-secondary quiz-share">Share My Score</button>
+          <button type="button" class="btn btn-secondary quiz-retake">Retake Quiz</button>
+        </div>
+        <div class="quiz-review"><p class="quiz-review-title">Your answers</p><ol></ol></div>
+      </div>
+    </section>
+  </div>
+
+  <section class="section" id="courses">
+    <div class="container">
+      <div class="section-head">
+        <h2>Courses That Cover These Topics</h2>
+        <p>Every question above maps to a self-paced course. Each awards a certificate of completion.</p>
+      </div>
+      <!-- dct:courses security-compliance-data-centers access-control-physical-security data-center-physical-security-access-control facility-environmental-compliance data-center-fire-suppression-safety -->
+<!-- /dct:courses -->
+      <div style="margin-top:16px;">
+      <!-- dct:bundle bundle-security-compliance -->
+<!-- /dct:bundle -->
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <h2>Keep Going</h2>
+        <p>Brush up with a guide, or try another quiz.</p>
+      </div>
+      <div class="card-grid">
+        <a class="topic-card" href="../learn/data-center-security-compliance.html"><span class="topic-card-icon" aria-hidden="true">&#128274;</span><h3>Data Center Security &amp; Compliance</h3><p>The guide behind this quiz: physical security layers and audit frameworks.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+        <a class="topic-card" href="safety-quiz.html"><span class="topic-card-icon" aria-hidden="true">&#9888;&#65039;</span><h3>Data Center Safety Quiz</h3><p>Arc flash, LOTO, batteries, and confined spaces.</p><span class="topic-card-cta">Take the quiz &rarr;</span></a>
+        <a class="topic-card" href="career-quiz.html"><span class="topic-card-icon" aria-hidden="true">&#129517;</span><h3>Which Career Fits You?</h3><p>Find your data center role in ten questions.</p><span class="topic-card-cta">Find my match &rarr;</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="contact"></footer>
+<script src="../js/main.js" defer></script>
+
+</body>
+</html>

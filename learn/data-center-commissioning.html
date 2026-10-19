@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Center Commissioning Explained: Levels 1 to 5</title>
+<meta name="description" content="Data center commissioning explained: the five levels from factory witness testing to integrated systems testing, key documents, roles, and handover.">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+<link rel="canonical" href="https://datacentertraining.us/learn/data-center-commissioning.html">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Data Center Commissioning Explained: Levels 1 to 5">
+<meta property="og:description" content="Data center commissioning explained: the five levels from factory witness testing to integrated systems testing, key documents, roles, and handover.">
+<meta property="og:url" content="https://datacentertraining.us/learn/data-center-commissioning.html">
+<meta property="og:image" content="https://datacentertraining.us/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Data Center Training">
+
+<link rel="stylesheet" href="../css/site.min.css">
+<script src="../js/nav.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Data Center Commissioning Explained: Levels 1 to 5",
+  "description": "Data center commissioning explained: the five levels from factory witness testing to integrated systems testing, key documents, roles, and handover.",
+  "url": "https://datacentertraining.us/learn/data-center-commissioning.html",
+  "mainEntityOfPage": "https://datacentertraining.us/learn/data-center-commissioning.html",
+  "image": "https://datacentertraining.us/images/og-image.jpg",
+  "datePublished": "2026-10-19",
+  "dateModified": "2026-10-19",
+  "inLanguage": "en-US",
+  "author": {"@type": "Organization", "name": "Data Center Training", "url": "https://datacentertraining.us/"},
+  "publisher": {"@type": "EducationalOrganization", "@id": "https://datacentertraining.us/#organization", "name": "Data Center Training", "url": "https://datacentertraining.us/"},
+  "about": ["Data center commissioning", "Integrated systems testing", "Functional performance testing", "Factory witness testing", "Retro-commissioning"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://datacentertraining.us/"},
+    {"@type": "ListItem", "position": 2, "name": "Knowledge Center", "item": "https://datacentertraining.us/learn/"},
+    {"@type": "ListItem", "position": 3, "name": "Commissioning", "item": "https://datacentertraining.us/learn/data-center-commissioning.html"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "What is the difference between Level 4 and Level 5 commissioning?", "acceptedAnswer": {"@type": "Answer", "text": "Level 4 functional performance testing proves each system works on its own across all of its operating modes, such as a UPS transferring to battery and bypass on a load bank. Level 5 integrated systems testing proves all the systems work together, for example by simulating a utility failure with the data hall under load and watching the UPS, generators, transfer equipment, cooling, controls, and monitoring respond as one facility."}},
+    {"@type": "Question", "name": "Who should be the commissioning authority on a data center project?", "acceptedAnswer": {"@type": "Answer", "text": "Ideally an experienced commissioning provider who reports to the owner and is independent of the designers and installing contractors. Independence matters because the commissioning authority has to report problems candidly, including design gaps and installation defects, even when that delays the schedule."}},
+    {"@type": "Question", "name": "Is commissioning the same as Uptime Institute Tier certification?", "acceptedAnswer": {"@type": "Answer", "text": "No. Commissioning is the owner's quality process for proving the facility meets its requirements. Uptime Institute Tier Certification is a separate program run by Uptime Institute, which reviews design documents and, for a constructed facility certification, observes demonstrations on site. A thorough commissioning program helps a site prepare for certification, but it does not grant it."}},
+    {"@type": "Question", "name": "What is retro-commissioning?", "acceptedAnswer": {"@type": "Answer", "text": "Retro-commissioning applies the commissioning process to an existing facility that was never commissioned, or whose documentation and performance have drifted over the years. It documents current conditions, tests sequences and failure responses under controlled procedures, and corrects problems, often finding both reliability risks and wasted energy."}}
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="glass-nav"></header>
+
+<main id="main">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../">Home</a>
+      <span>&rsaquo;</span>
+      <a href="./">Knowledge Center</a>
+      <span>&rsaquo;</span>
+      <span aria-current="page">Commissioning</span>
+    </nav>
+  </div>
+
+  <section class="course-hero">
+    <div class="container">
+      <div class="course-hero-eyebrow">Knowledge Center &middot; Commissioning</div>
+      <h1>Data Center Commissioning Explained: Levels 1 to 5</h1>
+      <p class="course-hero-hook">A new data center has to prove it can survive failures before it carries a single server. Commissioning is how that proof is built, one level at a time, from the factory floor to a full simulated utility outage.</p>
+      <div class="course-pills">
+        <span class="course-pill">12 min read</span>
+        <span class="course-pill">Intermediate</span>
+        <span class="course-pill">Updated October 2026</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="container guide-layout">
+    <aside class="guide-toc" aria-label="On this page">
+      <p class="guide-toc-title">On this page</p>
+      <ol>
+        <li><a href="#what-is-cx">What commissioning is</a></li>
+        <li><a href="#who">Who is involved</a></li>
+        <li><a href="#levels">The five levels</a></li>
+        <li><a href="#documents">Key documents</a></li>
+        <li><a href="#ist">Integrated systems testing</a></li>
+        <li><a href="#handover">Handover to operations</a></li>
+        <li><a href="#pitfalls">Common pitfalls</a></li>
+        <li><a href="#retro-cx">Retro-commissioning</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ol>
+      <a class="guide-toc-cta" href="../quizzes/tiers-design-quiz.html"><strong>Test yourself</strong>Take the Tiers &amp; Design quiz.</a>
+    </aside>
+
+    <article class="guide-body prose">
+      <div class="key-takeaways">
+        <p class="key-takeaways-title">Key takeaways</p>
+        <ul>
+          <li>Commissioning (Cx) verifies that a facility is designed, built, tested, and documented to meet the owner's requirements, and that staff can operate it.</li>
+          <li>Data center Cx is commonly organized into five levels, from factory witness testing (Level 1) to integrated systems testing (Level 5). Terms vary by owner and provider.</li>
+          <li>Each level depends on the one before it. Skipping or rushing early levels shows up as failures during integrated testing, or later, in production.</li>
+          <li>The real deliverable is an operations team that knows the site, backed by tested procedures and complete documentation.</li>
+        </ul>
+      </div>
+
+      <h2 id="what-is-cx">What commissioning is, and why data centers need more</h2>
+      <p>Commissioning is a quality process that runs from design through occupancy. It verifies that systems are designed, installed, tested, and able to be operated and maintained according to the <strong>owner's project requirements</strong>. ASHRAE Standard 202 and ASHRAE Guideline 0 describe the general commissioning process for buildings, and ANSI/NETA ATS is widely used for electrical acceptance testing.</p>
+      <p>In an office building, commissioning mostly confirms that HVAC and lighting controls work and save energy. In a data center, the stakes are different. The design promises that the IT load will ride through a utility outage, a failed UPS module, or a chiller trip, and that equipment can be taken out for maintenance without dropping the load. Those promises involve automatic sequences across electrical, mechanical, controls, and fire systems from different vendors. The only way to know they work is to make them happen, under load, before customers move in. That is why critical facility Cx is more rigorous, more failure-focused, and more integrated than typical building Cx.</p>
+
+      <h2 id="who">Who is involved</h2>
+      <ul>
+        <li><strong>Owner:</strong> sets the requirements, funds the program, and accepts the facility. On many projects the owner is also the future operator.</li>
+        <li><strong>Commissioning authority or agent (CxA):</strong> plans and leads the Cx program, writes or reviews test scripts, directs testing, and reports issues. Ideally independent of the designers and installers and reporting to the owner.</li>
+        <li><strong>Designers (engineers of record):</strong> write the basis of design and sequences of operation, and resolve design issues found in testing.</li>
+        <li><strong>General contractor and trade contractors:</strong> electrical, mechanical, and controls contractors who install the systems and execute most test steps.</li>
+        <li><strong>Equipment vendors (OEMs):</strong> perform factory tests and start-up for UPS, switchgear, generators, chillers, and controls.</li>
+        <li><strong>Testing agencies:</strong> independent firms that perform electrical acceptance testing, often NETA-accredited.</li>
+        <li><strong>Operations staff:</strong> the people who will run the site. They should witness tests and learn the systems from Level 3 onward.</li>
+        <li><strong>Authority having jurisdiction:</strong> fire marshals and inspectors who witness life safety acceptance tests.</li>
+      </ul>
+
+      <h2 id="levels">The five levels of commissioning</h2>
+      <p>Data center commissioning is commonly described in five levels. The names and boundaries vary between owners and Cx providers, but the progression is consistent: prove each component, then each system, then the whole facility.</p>
+      <ol class="flow flow-5" aria-label="Commissioning levels 1 to 5">
+        <li><strong>Level 1: Factory witness</strong>Major equipment is tested at the factory before it ships.</li>
+        <li><strong>Level 2: Delivery and installation</strong>Equipment is inspected on arrival and after it is installed.</li>
+        <li><strong>Level 3: Pre-functional and start-up</strong>Checks, electrical tests, and vendor start-up bring each unit to life.</li>
+        <li><strong>Level 4: Functional performance</strong>Each system is tested on its own through all its modes.</li>
+        <li><strong>Level 5: Integrated systems</strong>All systems are tested together under load and failure scenarios.</li>
+      </ol>
+      <div class="table-panel">
+        <table class="data-table">
+          <caption>What happens at each commissioning level</caption>
+          <thead><tr><th>Level</th><th>What is tested</th><th>Where</th><th>Who witnesses</th><th>Typical evidence</th></tr></thead>
+          <tbody>
+            <tr><td>L1 Factory witness test</td><td>UPS modules, switchgear, generators, paralleling gear, chillers, and other long-lead equipment against the specification</td><td>Manufacturer's factory</td><td>Owner's representative, CxA, often the design engineer</td><td>Factory acceptance test report, test data, punch list, release to ship</td></tr>
+            <tr><td>L2 Delivery and installation inspection</td><td>Model and ratings against approved submittals, shipping damage, storage conditions, installation, anchoring, clearances, connections</td><td>Site, at delivery and after setting</td><td>Contractor and CxA</td><td>Receiving checklists, installation checklists, photos, issues log entries</td></tr>
+            <tr><td>L3 Pre-functional checks and start-up</td><td>Electrical acceptance tests, torque and insulation checks, rotation, point-to-point controls checkout, flushing, first energization, OEM start-up</td><td>Site, equipment by equipment</td><td>Contractor, testing agency, OEM, CxA spot checks, operations staff</td><td>Pre-functional checklists, start-up reports, acceptance test reports, point-to-point records</td></tr>
+            <tr><td>L4 Functional performance testing</td><td>Each system through normal, failure, and maintenance modes: UPS on load bank, generator load tests, transfer switch operations, chiller staging, CRAH failover, control sequences</td><td>Site, system by system</td><td>CxA directs, contractor performs, owner and operations witness</td><td>Signed test scripts with recorded data, trend logs, issues and retest records</td></tr>
+            <tr><td>L5 Integrated systems testing</td><td>The whole facility under simulated IT load: utility failure, equipment failures, maintenance scenarios, return to normal</td><td>Entire site</td><td>CxA leads, with owner, operations, designers, contractors, and vendors</td><td>IST report, time-synchronized power and temperature data, final issues log</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>The rule that makes the levels work: <strong>do not start a level until the prior level is complete for the systems involved.</strong> Running functional tests on equipment with open start-up issues wastes days and can damage equipment. The <a href="../courses/infrastructure-commissioning-startup.html">Infrastructure Commissioning &amp; Startup</a> course walks through each level in detail.</p>
+
+      <h2 id="documents">Key commissioning documents</h2>
+      <div class="table-panel">
+        <table class="data-table">
+          <caption>Documents that drive a commissioning program</caption>
+          <thead><tr><th>Document</th><th>What it contains</th></tr></thead>
+          <tbody>
+            <tr><td>Owner's project requirements (OPR)</td><td>What the owner needs: capacity, redundancy, availability goals, Tier or Rated design intent, environmental ranges, and operational expectations.</td></tr>
+            <tr><td>Basis of design (BOD)</td><td>How the designers will meet the OPR: system choices, assumptions, and design criteria.</td></tr>
+            <tr><td>Commissioning plan</td><td>Scope, roles, schedule, communication, the systems to be commissioned, and the level of testing for each.</td></tr>
+            <tr><td>Test scripts</td><td>Step-by-step checklists and procedures for each level, with expected results and acceptance criteria written before testing.</td></tr>
+            <tr><td>Issues log</td><td>Every deficiency found, its owner, its status, and proof of resolution and retest.</td></tr>
+            <tr><td>Final commissioning report</td><td>Summary of the program, test results, open issues, and deferred or seasonal tests.</td></tr>
+            <tr><td>Systems manual</td><td>How the facility is meant to work: design intent, sequences of operation, single-line diagrams, setpoints, and O&amp;M references.</td></tr>
+            <tr><td>Operator training records</td><td>Who was trained on what, by whom, with the training materials and any recordings.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Tier or Rated design intent is not the same as certification. Read <a href="data-center-tiers.html">Data Center Tier Levels Explained</a> for how Uptime Institute certification and ANSI/TIA-942 ratings work.</p>
+
+      <h2 id="ist">Integrated systems testing in detail</h2>
+      <p>Integrated systems testing (IST) is the closest a team gets to a real disaster without one. It proves that electrical, mechanical, controls, monitoring, and fire systems behave as one facility.</p>
+      <h3>Load banks</h3>
+      <p>Because there are no servers yet, the IT load is simulated. <strong>Resistive load banks</strong> load generators and UPS systems; resistive-reactive units test at a realistic power factor. Inside the data hall, <strong>heat load banks</strong>, often rack-mounted or cart-mounted electric heaters with fans, recreate both the electrical draw and the heat and airflow of IT equipment, so the cooling system is tested along with the power path. Load is usually stepped up in stages so problems show up before the facility is at full design load. The <a href="../courses/ups-operations-load-testing.html">UPS Operations &amp; Load Testing</a> course covers load bank practice.</p>
+      <h3>Simulated utility failure</h3>
+      <p>The centerpiece of most ISTs is opening the utility supply on purpose with the hall at load. The team then watches the chain respond: UPS systems carry the load on batteries, generators start and synchronize, transfer equipment moves the load, chillers and pumps restart, and temperatures rise and recover. After a stable run on generators, the site retransfers to utility. Every step is timed and compared with the sequence of operations. <a href="../courses/generator-operations-maintenance.html">Generator Operations &amp; Maintenance</a> covers the generator side of these tests.</p>
+      <h3>Failure scenarios</h3>
+      <p>A good IST also tests what happens when things go wrong during the event:</p>
+      <ul>
+        <li>A generator fails to start or trips while carrying load.</li>
+        <li>A UPS module fails, or one side of a 2N system is lost entirely.</li>
+        <li>A chiller, pump, or CRAH fails, and standby units must pick up.</li>
+        <li>A controls network or BMS controller fails, and equipment must fall back to safe states.</li>
+        <li>Each major component is isolated for maintenance while the load stays up, proving concurrent maintainability.</li>
+        <li>Fire alarm cause-and-effect sequences operate as designed; see <a href="../blog/posts/data-center-fire-alarm-cause-and-effect-testing-what-commissioning-teams-should-verify-before-handover.html">fire alarm cause-and-effect testing before handover</a>.</li>
+      </ul>
+      <h3>Pass/fail criteria</h3>
+      <p>Criteria are written into the scripts before testing starts, not decided afterward. Typical criteria include:</p>
+      <ul>
+        <li>No interruption to the simulated critical load, confirmed by power quality recorders.</li>
+        <li>Voltage and frequency stay within the tolerances the design specifies.</li>
+        <li>Rack inlet temperatures stay within the range the OPR sets, such as the ASHRAE recommended 18-27 &deg;C (64.4-80.6 &deg;F).</li>
+        <li>Sequences complete within their design times.</li>
+        <li>Alarms reach the BMS and power monitoring system with correct names and priorities.</li>
+        <li>The facility returns to its normal configuration as designed.</li>
+      </ul>
+      <p>Time-synchronize every data source, from power analyzers to BMS trends, so the team can rebuild the event second by second. IST is high-energy work, so it runs under its own method of procedure with a safety lead and defined stop criteria. If the owner is pursuing Uptime Institute Tier Certification of a constructed facility, Uptime's demonstrations are a separate activity from the Cx program.</p>
+
+      <div class="inline-cta">
+        <p><strong>How well do you know Tiers and design?</strong> Test yourself on redundancy, Tier levels, and testing.</p>
+        <a class="btn btn-primary btn-sm" href="../quizzes/tiers-design-quiz.html">Take the Tiers &amp; Design Quiz</a>
+      </div>
+
+      <h2 id="handover">Handover to operations</h2>
+      <p>Commissioning ends when the operations team can run the facility, not when the last test passes. A strong handover includes:</p>
+      <ul>
+        <li>Operations staff who witnessed Level 3 to Level 5 testing and practiced key procedures on the real equipment.</li>
+        <li>SOPs, MOPs, and EOPs drafted during construction and validated during functional testing and IST.</li>
+        <li>The CMMS loaded with every asset, its nameplate data, and its preventive maintenance schedule.</li>
+        <li>BMS and power monitoring alarms configured, named consistently, and prioritized.</li>
+        <li>As-built drawings, O&amp;M manuals, the systems manual, and warranty start dates.</li>
+        <li>Spare parts and special tools on site.</li>
+        <li>An open issues list with owners and due dates, plus deferred and seasonal tests scheduled.</li>
+      </ul>
+      <p>For a detailed list, see the <a href="../blog/posts/data-center-commissioning-handover-checklist-what-facilities-managers-should-verify-before-operations-takeover.html">commissioning handover checklist</a>. The <a href="data-center-operations.html">Operations &amp; Maintenance guide</a> explains what the team does once it takes over.</p>
+
+      <h2 id="pitfalls">Common commissioning pitfalls</h2>
+      <ul>
+        <li><strong>Starting Cx too late.</strong> A CxA brought in after design misses the chance to fix problems on paper, where they are cheapest.</li>
+        <li><strong>Letting the schedule eat testing time.</strong> Construction delays push into the Cx window, and testing gets compressed or skipped.</li>
+        <li><strong>Testing incomplete systems.</strong> Temporary power, temporary controls, or missing alarm points make results meaningless.</li>
+        <li><strong>Undersized load banks.</strong> Testing at partial load hides problems that only appear near design capacity.</li>
+        <li><strong>Only testing the happy path.</strong> The value of IST is in the failure scenarios.</li>
+        <li><strong>Closing issues without retest.</strong> A fix is not done until the test that found the problem passes.</li>
+        <li><strong>Changes after testing.</strong> Firmware updates, setpoint edits, or wiring changes after IST can invalidate results.</li>
+        <li><strong>Leaving operations out.</strong> A team that first sees the systems on handover day starts with a knowledge gap.</li>
+      </ul>
+
+      <h2 id="retro-cx">Retro-commissioning existing sites</h2>
+      <p>Many operating data centers were never fully commissioned, or have changed so much since opening that the original results no longer apply. <strong>Retro-commissioning</strong> applies the process to an existing site; <strong>re-commissioning</strong> repeats it for a site that was commissioned before.</p>
+      <p>The approach is careful because the load is live. Teams start by documenting current conditions: walking down single-line diagrams against the field, comparing control sequences in the BMS to the written design, and reviewing alarm and maintenance history. Testing is then done system by system under approved MOPs and change control, with risk assessments and back-out plans for every step. Full IST on a live site is possible but requires extensive planning and customer coordination. Retro-commissioning commonly uncovers hidden single points of failure, sequences that no longer match the design, drifted setpoints, and wasted energy.</p>
+      <p>To understand how design choices set up a project for commissioning, see <a href="../courses/data-center-design-fundamentals.html">Data Center Design Fundamentals</a> and <a href="../courses/tier-infrastructure-fundamentals.html">Tier Infrastructure Fundamentals</a>.</p>
+
+      <h2 id="courses">Courses that go deeper</h2>
+      <p>These self-paced courses cover commissioning, design, and the systems you will test, and each awards a certificate of completion.</p>
+      <!-- dct:courses infrastructure-commissioning-startup data-center-design-fundamentals tier-infrastructure-fundamentals ups-operations-load-testing generator-operations-maintenance monitoring-automation-bms-systems -->
+<!-- /dct:courses -->
+      <!-- dct:bundle bundle-design-planning -->
+<!-- /dct:bundle -->
+
+      <h2 id="faq">Frequently asked questions</h2>
+      <div class="guide-faq">
+        <h3>What is the difference between Level 4 and Level 5 commissioning?</h3>
+        <p>Level 4 functional performance testing proves each system works on its own across all of its operating modes, such as a UPS transferring to battery and bypass on a load bank. Level 5 integrated systems testing proves all the systems work together, for example by simulating a utility failure with the data hall under load and watching the UPS, generators, transfer equipment, cooling, controls, and monitoring respond as one facility.</p>
+        <h3>Who should be the commissioning authority on a data center project?</h3>
+        <p>Ideally an experienced commissioning provider who reports to the owner and is independent of the designers and installing contractors. Independence matters because the commissioning authority has to report problems candidly, including design gaps and installation defects, even when that delays the schedule.</p>
+        <h3>Is commissioning the same as Uptime Institute Tier certification?</h3>
+        <p>No. Commissioning is the owner's quality process for proving the facility meets its requirements. Uptime Institute Tier Certification is a separate program run by Uptime Institute, which reviews design documents and, for a constructed facility certification, observes demonstrations on site. A thorough commissioning program helps a site prepare for certification, but it does not grant it.</p>
+        <h3>What is retro-commissioning?</h3>
+        <p>Retro-commissioning applies the commissioning process to an existing facility that was never commissioned, or whose documentation and performance have drifted over the years. It documents current conditions, tests sequences and failure responses under controlled procedures, and corrects problems, often finding both reliability risks and wasted energy.</p>
+      </div>
+
+      <h2 id="related">Keep learning</h2>
+      <div class="card-grid card-grid-2">
+        <a class="topic-card" href="data-center-tiers.html"><span class="topic-card-kicker">Guide</span><h3>Tier Levels Explained</h3><p>Concurrent maintainability, fault tolerance, and what certification means.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+        <a class="topic-card" href="data-center-power.html"><span class="topic-card-kicker">Guide</span><h3>How Data Center Power Works</h3><p>The UPS, generator, and transfer systems that IST puts to the test.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+        <a class="topic-card" href="../careers/data-center-jobs.html#commissioning-agent"><span class="topic-card-kicker">Careers</span><h3>Commissioning Agent</h3><p>What the role involves and how people move into it.</p><span class="topic-card-cta">See the role &rarr;</span></a>
+        <a class="topic-card" href="data-center-cooling.html"><span class="topic-card-kicker">Guide</span><h3>How Data Center Cooling Works</h3><p>Chillers, CRAHs, and containment, the systems behind the temperature criteria.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+      </div>
+      <p class="guide-updated">This guide is general educational information, not engineering, legal, or compliance advice. Commissioning scope, terms, and acceptance criteria vary by owner and project; follow your project's commissioning plan, the manufacturer's instructions, and the codes adopted in your jurisdiction.</p>
+    </article>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta-block">
+        <h2>Train Your Team on Commissioning and Design</h2>
+        <p>Our Design, Planning &amp; Commissioning courses cover design fundamentals, Tier infrastructure, capacity planning, and commissioning and start-up.</p>
+        <div class="hero-ctas">
+          <a href="../bundles.html" class="btn glass-chip">See the Design Bundle</a>
+          <a href="../courses.html" class="btn glass-chip">Browse All Courses</a>
+          <a href="tel:18664296742" class="btn glass-chip">Call 1-866-429-6742</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="contact"></footer>
+<script src="../js/main.js" defer></script>
+
+</body>
+</html>

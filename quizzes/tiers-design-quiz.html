@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Center Tiers &amp; Design Quiz (10 Questions)</title>
+<meta name="description" content="Test your knowledge of data center Tiers and design: Tier I-IV, N+1 vs 2N, TIA-942 Rated levels, commissioning L1-L5, capacity, and availability math.">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+<link rel="canonical" href="https://datacentertraining.us/quizzes/tiers-design-quiz.html">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Data Center Tiers &amp; Design Quiz (10 Questions)">
+<meta property="og:description" content="Test your knowledge of data center Tiers and design: Tier I-IV, N+1 vs 2N, TIA-942 Rated levels, commissioning L1-L5, capacity, and availability math.">
+<meta property="og:url" content="https://datacentertraining.us/quizzes/tiers-design-quiz.html">
+<meta property="og:image" content="https://datacentertraining.us/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Data Center Training">
+
+<link rel="stylesheet" href="../css/site.min.css">
+<script src="../js/nav.js" defer></script>
+<script src="../js/quiz.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://datacentertraining.us/"},
+    {"@type": "ListItem", "position": 2, "name": "Quizzes", "item": "https://datacentertraining.us/quizzes/"},
+    {"@type": "ListItem", "position": 3, "name": "Tiers & Design Quiz", "item": "https://datacentertraining.us/quizzes/tiers-design-quiz.html"}
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="glass-nav"></header>
+
+<main id="main">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../">Home</a>
+      <span>&rsaquo;</span>
+      <a href="./">Quizzes</a>
+      <span>&rsaquo;</span>
+      <span aria-current="page">Tiers &amp; Design Quiz</span>
+    </nav>
+  </div>
+
+  <section class="course-hero">
+    <div class="container">
+      <div class="course-hero-eyebrow">Quiz &middot; Tiers &amp; Design</div>
+      <h1>Data Center Tiers &amp; Design Quiz</h1>
+      <p class="course-hero-hook">Ten questions on how data centers are rated, built, and proven: Tiers, redundancy, commissioning, and the math behind availability. Each answer comes with a short explanation.</p>
+      <div class="course-pills">
+        <span class="course-pill">10 questions</span>
+        <span class="course-pill">About 5 minutes</span>
+        <span class="course-pill">Intermediate to advanced</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="container-read">
+    <h2 class="visually-hidden">Quiz questions</h2>
+    <section class="quiz" data-quiz-id="tiers-design" data-quiz-type="knowledge" data-quiz-title="Data Center Tiers &amp; Design Quiz" aria-label="Tiers and design quiz">
+      <div class="quiz-progress" aria-hidden="true"><span class="quiz-progress-text">Question 1 of 10</span><div class="quiz-progress-track"><div class="quiz-progress-bar"></div></div><span class="quiz-progress-score">Score 0</span></div>
+      <ol class="quiz-questions">
+        <li class="quiz-q" data-answer="b">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 1</span><span class="quiz-q-text">What distinguishes an Uptime Institute Tier II facility from Tier I?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="q1" value="a"><span>Two independent utility feeds</span></label>
+            <label class="quiz-opt"><input type="radio" name="q1" value="b"><span>Redundant capacity components, such as extra UPS modules or chillers, on a single distribution path</span></label>
+            <label class="quiz-opt"><input type="radio" name="q1" value="c"><span>Fault tolerance against any single failure</span></label>
+            <label class="quiz-opt"><input type="radio" name="q1" value="d"><span>Concurrent maintainability of every component and path</span></label>
+          </fieldset>
+          <details class="quiz-explain"><summary>Show answer</summary><p><strong class="quiz-key">Answer: redundant capacity components.</strong> Tier I is basic capacity with no redundancy, and Tier II adds redundant components but keeps a single distribution path, so path maintenance still needs a shutdown. Concurrent maintainability is Tier III and fault tolerance is Tier IV. <a href="../learn/data-center-tiers.html">Read the Tiers guide</a>.</p></details>
+        </li>
+        <li class="quiz-q" data-answer="c">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 2</span><span class="quiz-q-text">A facility can take any component or distribution path offline for planned maintenance without shutting down IT, but it is not designed to ride through every unplanned failure automatically. Which Tier does that describe?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="q2" value="a"><span>Tier I</span></label>
+            <label class="quiz-opt"><input type="radio" name="q2" value="b"><span>Tier II</span></label>
+            <label class="quiz-opt"><input type="radio" name="q2" value="c"><span>Tier III</span></label>
+            <label class="quiz-opt"><input type="radio" name="q2" value="d"><span>Tier IV</span></label>
+          </fieldset>
+          <details class="quiz-explain"><summary>Show answer</summary><p><strong class="quiz-key">Answer: Tier III, concurrently maintainable.</strong> Tier III has redundant components and multiple distribution paths, so planned work never forces an outage. Tier IV adds fault tolerance: a single unplanned failure of any component or path does not affect the critical load. <a href="../courses/tier-infrastructure-fundamentals.html">Tier Infrastructure Fundamentals</a> compares the two.</p></details>
+        </li>
+        <li class="quiz-q" data-answer="d">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 3</span><span class="quiz-q-text">A site needs 1,000 kW of UPS capacity for its IT load. How much UPS capacity does a 2N design install?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="q3" value="a"><span>1,000 kW, the same as N</span></label>
+            <label class="quiz-opt"><input type="radio" name="q3" value="b"><span>1,250 kW, with one spare 250 kW module</span></label>
+            <label class="quiz-opt"><input type="radio" name="q3" value="c"><span>1,500 kW, with half again the load in reserve</span></label>
+            <label class="quiz-opt"><input type="radio" name="q3" value="d"><span>2,000 kW, as two independent 1,000 kW systems</span></label>
+          </fieldset>
+          <details class="quiz-explain"><summary>Show answer</summary><p><strong class="quiz-key">Answer: 2,000 kW in two independent systems.</strong> N is 1,000 kW, and 2N means two complete systems that can each carry the full load alone. An N+1 design built from four 250 kW modules would install 1,250 kW. <a href="../learn/data-center-power.html#redundancy">See the redundancy table</a>.</p></details>
+        </li>
+        <li class="quiz-q" data-answer="a">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 4</span><span class="quiz-q-text">How does ANSI/TIA-942 label its levels of data center infrastructure?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="q4" value="a"><span>Rated-1 to Rated-4</span></label>
+            <label class="quiz-opt"><input type="radio" name="q4" value="b"><span>Tier I to Tier IV</span></label>
+            <label class="quiz-opt"><input type="radio" name="q4" value="c"><span>Class A to Class D</span></label>
+            <label class="quiz-opt"><input type="radio" name="q4" value="d"><span>Level 1 to Level 5</span></label>
+          </fieldset>
+          <details class="quiz-explain"><summary>Show answer</summary><p><strong class="quiz-key">Answer: Rated-1 to Rated-4.</strong> TIA uses "Rated" levels to avoid confusion with Uptime Institute Tiers, and it rates telecommunications, electrical, architectural, and mechanical infrastructure. A TIA-942 rating and an Uptime Tier certification come from different organizations with different criteria. <a href="../courses/data-center-design-fundamentals.html">Data Center Design Fundamentals</a> covers both systems.</p></details>
+        </li>
+        <li class="quiz-q" data-answer="c">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 5</span><span class="quiz-q-text">A provider markets a new building as "Tier III", but Uptime Institute has never certified it. What does that claim usually mean?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="q5" value="a"><span>It is automatically certified because it follows the Tier Standard</span></label>
+            <label class="quiz-opt"><input type="radio" name="q5" value="b"><span>It meets ANSI/TIA-942 Rated-3</span></label>
+            <label class="quiz-opt"><input type="radio" name="q5" value="c"><span>It was designed with Tier III intent, but no Uptime certification verifies it</span></label>
+            <label class="quiz-opt"><input type="radio" name="q5" value="d"><span>It guarantees 99.982 percent availability</span></label>
+          </fieldset>
+          <details class="quiz-explain"><summary>Show answer</summary><p><strong class="quiz-key">Answer: Tier III design intent, not a certification.</strong> Uptime Institute certifies design documents, constructed facilities, and operational sustainability, and a buyer can ask for those certificates. The 99.982 percent figure is a commonly quoted industry number, not part of the Tier Standard. <a href="../learn/data-center-tiers.html">Read the Tiers guide</a>.</p></details>
+        </li>
+        <li class="quiz-q" data-answer="d">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 6</span><span class="quiz-q-text">In common industry usage, what happens during Level 5 commissioning?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="q6" value="a"><span>Factory witness testing of equipment before it ships to the site</span></label>
+            <label class="quiz-opt"><input type="radio" name="q6" value="b"><span>Inspection of equipment as it is delivered and set in place</span></label>
+            <label class="quiz-opt"><input type="radio" name="q6" value="c"><span>Functional performance testing of each system on its own</span></label>
+            <label class="quiz-opt"><input type="radio" name="q6" value="d"><span>Integrated systems testing (IST) of all systems working together under load and failure scenarios</span></label>
+          </fieldset>
+          <details class="quiz-explain"><summary>Show answer</summary><p><strong class="quiz-key">Answer: integrated systems testing.</strong> The common sequence is L1 factory acceptance, L2 delivery and installation inspection, L3 pre-functional checks and start-up, L4 functional performance testing, and L5 IST, such as a simulated utility outage with load banks running. Terms vary between firms. <a href="../learn/data-center-commissioning.html">Read the commissioning guide</a>.</p></details>
+        </li>
+        <li class="quiz-q" data-answer="a">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 7</span><span class="quiz-q-text">What is "stranded capacity" in a data center?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="q7" value="a"><span>Power, cooling, or space that exists but cannot be used because another resource runs out first</span></label>
+            <label class="quiz-opt"><input type="radio" name="q7" value="b"><span>Capacity reserved under contract for a future customer</span></label>
+            <label class="quiz-opt"><input type="radio" name="q7" value="c"><span>Generator fuel that has degraded in storage</span></label>
+            <label class="quiz-opt"><input type="radio" name="q7" value="d"><span>Spare servers kept in inventory</span></label>
+          </fieldset>
+          <details class="quiz-explain"><summary>Show answer</summary><p><strong class="quiz-key">Answer: capacity that cannot be used because another resource runs out first.</strong> For example, a row may have spare UPS capacity while its cooling is maxed out, so that power is stranded. Planners track power, cooling, space, and network together to avoid it. <a href="../courses/capacity-planning-forecasting.html">Capacity Planning &amp; Forecasting</a> covers how to measure it.</p></details>
+        </li>
+        <li class="quiz-q" data-answer="c">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 8</span><span class="quiz-q-text">All else being equal, which candidate site is the poorest choice for a new data center?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="q8" value="a"><span>Near two utility substations with available capacity</span></label>
+            <label class="quiz-opt"><input type="radio" name="q8" value="b"><span>Near several fiber routes from different carriers</span></label>
+            <label class="quiz-opt"><input type="radio" name="q8" value="c"><span>Inside a 100-year floodplain and under an airport approach path</span></label>
+            <label class="quiz-opt"><input type="radio" name="q8" value="d"><span>In a mild climate with many economizer hours</span></label>
+          </fieldset>
+          <details class="quiz-explain"><summary>Show answer</summary><p><strong class="quiz-key">Answer: the floodplain under the flight path.</strong> Site selection screens for natural hazards like floods, earthquakes, and wildfire, and for man-made ones like flight paths, rail lines, and pipelines. Power availability, diverse fiber, water, and permitting are weighed alongside them. <a href="../courses/data-center-design-fundamentals.html">Data Center Design Fundamentals</a> covers site selection.</p></details>
+        </li>
+        <li class="quiz-q" data-answer="a">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 9</span><span class="quiz-q-text">A facility is quoted at 99.982 percent availability. About how much downtime per year does that allow?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="q9" value="a"><span>About 1.6 hours</span></label>
+            <label class="quiz-opt"><input type="radio" name="q9" value="b"><span>About 8.8 hours</span></label>
+            <label class="quiz-opt"><input type="radio" name="q9" value="c"><span>About 22.7 hours</span></label>
+            <label class="quiz-opt"><input type="radio" name="q9" value="d"><span>About 26 minutes</span></label>
+          </fieldset>
+          <details class="quiz-explain"><summary>Show answer</summary><p><strong class="quiz-key">Answer: about 1.6 hours.</strong> 100 minus 99.982 leaves 0.018 percent, and 0.018 percent of 8,760 hours is about 1.6 hours. This percentage is often quoted for Tier III, but it is an industry rule of thumb, not part of Uptime's Tier Standard. <a href="../tools/uptime-calculator.html">Try the uptime calculator</a>.</p></details>
+        </li>
+        <li class="quiz-q" data-answer="b">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 10</span><span class="quiz-q-text">Why does a design with N+1 UPS modules feeding a single output path fall short of concurrent maintainability?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="q10" value="a"><span>Because N+1 never provides enough capacity</span></label>
+            <label class="quiz-opt"><input type="radio" name="q10" value="b"><span>Because the single distribution path still has to be shut down to maintain it</span></label>
+            <label class="quiz-opt"><input type="radio" name="q10" value="c"><span>Because UPS modules cannot be isolated for maintenance</span></label>
+            <label class="quiz-opt"><input type="radio" name="q10" value="d"><span>Because concurrent maintainability requires 2N generators</span></label>
+          </fieldset>
+          <details class="quiz-explain"><summary>Show answer</summary><p><strong class="quiz-key">Answer: the single path still needs a shutdown.</strong> Redundant modules protect against a module failure, but concurrent maintainability also needs redundant distribution paths, so switchboards, PDUs, and feeders can be serviced while IT stays up. N+1 on one path is a Tier II-style design. <a href="../courses/tier-infrastructure-fundamentals.html">Tier Infrastructure Fundamentals</a> covers path redundancy.</p></details>
+        </li>
+      </ol>
+      <div class="quiz-nav">
+        <span class="quiz-nav-hint">Choose an answer to continue.</span>
+        <button type="button" class="btn btn-primary quiz-next" disabled>Next question</button>
+      </div>
+      <div class="quiz-result" hidden>
+        <div class="quiz-score">0/10</div>
+        <p class="quiz-score-label">Your score</p>
+        <div class="quiz-tier" data-min="9" hidden>
+          <p class="quiz-tier-title">Design pro</p>
+          <p>You can tell redundant components from redundant paths, and a Tier claim from a certification. Put it on paper: the Design, Planning &amp; Commissioning Bundle documents that knowledge with a certificate of completion for every course.</p>
+        </div>
+        <div class="quiz-tier" data-min="6" hidden>
+          <p class="quiz-tier-title">Solid foundation</p>
+          <p>You have the core ideas. Gaps in path redundancy or commissioning levels are exactly what Tier Infrastructure Fundamentals and Infrastructure Commissioning &amp; Startup close.</p>
+        </div>
+        <div class="quiz-tier" data-min="0" hidden>
+          <p class="quiz-tier-title">Room to grow</p>
+          <p>Everyone starts somewhere. Read the Tiers guide, then start with Data Center Design Fundamentals.</p>
+        </div>
+        <p class="quiz-best"></p>
+        <div class="quiz-result-actions">
+          <a class="btn btn-primary" href="#courses">See Matching Courses</a>
+          <button type="button" class="btn btn-secondary quiz-share">Share My Score</button>
+          <button type="button" class="btn btn-secondary quiz-retake">Retake Quiz</button>
+        </div>
+        <div class="quiz-review"><p class="quiz-review-title">Your answers</p><ol></ol></div>
+      </div>
+    </section>
+  </div>
+
+  <section class="section" id="courses">
+    <div class="container">
+      <div class="section-head">
+        <h2>Courses That Cover These Topics</h2>
+        <p>Every question above maps to a self-paced course. Each awards a certificate of completion.</p>
+      </div>
+      <!-- dct:courses tier-infrastructure-fundamentals data-center-design-fundamentals infrastructure-commissioning-startup capacity-planning-forecasting -->
+<!-- /dct:courses -->
+      <div style="margin-top:16px;">
+      <!-- dct:bundle bundle-design-planning -->
+<!-- /dct:bundle -->
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <h2>Keep Going</h2>
+        <p>Brush up with a guide, run the numbers, or read about commissioning.</p>
+      </div>
+      <div class="card-grid">
+        <a class="topic-card" href="../learn/data-center-tiers.html"><span class="topic-card-icon" aria-hidden="true">&#127959;&#65039;</span><h3>Data Center Tiers Explained</h3><p>The guide behind this quiz: Tier I to IV and what certification means.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+        <a class="topic-card" href="../tools/uptime-calculator.html"><span class="topic-card-icon" aria-hidden="true">&#9201;&#65039;</span><h3>Uptime Calculator</h3><p>Turn an availability percentage into hours of downtime.</p><span class="topic-card-cta">Try the calculator &rarr;</span></a>
+        <a class="topic-card" href="../learn/data-center-commissioning.html"><span class="topic-card-icon" aria-hidden="true">&#9989;</span><h3>Data Center Commissioning</h3><p>Levels 1 to 5, from factory tests to integrated systems testing.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="contact"></footer>
+<script src="../js/main.js" defer></script>
+
+</body>
+</html>

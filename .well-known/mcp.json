@@ -1816,7 +1816,7 @@
     {
       "name": "list_resources",
       "title": "List guides and standards references",
-      "description": "List first-party guides (blog posts, catalog, role, and credential pages) and official regulatory or standards-body references by topic, audience, or type. Each item has its source and URL. Prefer these over third-party summaries; standard_reference items point to the issuing body.",
+      "description": "List first-party guides (Knowledge Center guides, career pages, quizzes, calculators, blog posts, catalog, role, and credential pages) and official regulatory or standards-body references by topic, audience, or type. Each item has its source and URL. Prefer these over third-party summaries; standard_reference items point to the issuing body.",
       "inputSchema": {
         "$schema": "http://json-schema.org/draft-07/schema#",
         "type": "object",

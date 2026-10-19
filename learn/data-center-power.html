@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- dct:head -->
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; object-src 'none'; base-uri 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#f5f5f7">
+<link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt">
+<link rel="alternate" type="application/json" href="/.well-known/mcp.json" title="WebMCP manifest">
+<link rel="service-desc" type="application/vnd.oai.openapi+json" href="/openapi.json">
+<script>
+/* Analytics, session recording, and chat load for every visitor unless they opt out or send a GPC signal
+   (see /js/consent.js), on the first interaction (scroll, tap, key, mouse move) so they never delay rendering. */
+(function(w,d){
+  w.dataLayer=w.dataLayer||[];w.gtag=function(){w.dataLayer.push(arguments);};
+  w.clarity=w.clarity||function(){(w.clarity.q=w.clarity.q||[]).push(arguments);};
+  w.Tawk_API=w.Tawk_API||{};w.Tawk_API.onLoad=function(){w.Tawk_API.minimize();};
+  var ev=['pointerdown','keydown','touchstart','scroll','mousemove'];
+  function add(src,attrs){var s=d.createElement('script');s.async=true;s.src=src;for(var k in attrs)s.setAttribute(k,attrs[k]);d.head.appendChild(s);}
+  function once(fn){var done=0;return function(now){if(done)return;function go(){if(done)return;done=1;ev.forEach(function(e){w.removeEventListener(e,go,{passive:true});});fn();}
+    if(now)go();else ev.forEach(function(e){w.addEventListener(e,go,{passive:true});});};}
+  w.dctLoad={
+    analytics:once(function(){
+      w.gtag('js',new Date());w.gtag('config','G-Z3T42KYK64');
+      add('https://www.googletagmanager.com/gtag/js?id=G-Z3T42KYK64');
+      add('https://analytics.ahrefs.com/analytics.js',{'data-key':'tVAd7KxwKax+pAfHx46Zgg'});
+      add('https://www.clarity.ms/tag/ylza43nm4m');
+    }),
+    chat:once(function(){
+      w.Tawk_LoadStart=new Date();add('https://embed.tawk.to/6a5a95a2096ab21d402a762c/1jtoth11r',{charset:'UTF-8',crossorigin:'*'});
+    })
+  };
+})(window,document);
+if(navigator.modelContext){var m=document.createElement('script');m.src='/js/webmcp.js';m.defer=true;document.head.appendChild(m);}
+</script>
+<script src="/js/consent.js" defer></script>
+<!-- /dct:head -->
+<title>How Data Center Power Works: Grid to Rack Guide</title>
+<meta name="description" content="How data center power works, from utility switchgear and generators to UPS systems, PDUs, and A/B feeds. Redundancy, testing, and safety explained.">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+<link rel="canonical" href="https://datacentertraining.us/learn/data-center-power.html">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="How Data Center Power Works: Grid to Rack Guide">
+<meta property="og:description" content="How data center power works, from utility switchgear and generators to UPS systems, PDUs, and A/B feeds. Redundancy, testing, and safety explained.">
+<meta property="og:url" content="https://datacentertraining.us/learn/data-center-power.html">
+<meta property="og:image" content="https://datacentertraining.us/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Data Center Training">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@HazwoperOsha">
+<meta name="twitter:title" content="How Data Center Power Works: Grid to Rack Guide">
+<meta name="twitter:description" content="How data center power works, from utility switchgear and generators to UPS systems, PDUs, and A/B feeds. Redundancy, testing, and safety explained.">
+<meta name="twitter:image" content="https://datacentertraining.us/images/og-image.jpg">
+
+<link rel="stylesheet" href="../css/site.min.css">
+<script src="../js/nav.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How Data Center Power Works: From the Grid to the Rack",
+  "description": "How data center power works, from utility switchgear and generators to UPS systems, PDUs, and A/B feeds. Redundancy, testing, and safety explained.",
+  "url": "https://datacentertraining.us/learn/data-center-power.html",
+  "mainEntityOfPage": "https://datacentertraining.us/learn/data-center-power.html",
+  "image": "https://datacentertraining.us/images/og-image.jpg",
+  "datePublished": "2026-10-19",
+  "dateModified": "2026-10-19",
+  "inLanguage": "en-US",
+  "author": {"@type": "Organization", "name": "Data Center Training", "url": "https://datacentertraining.us/"},
+  "publisher": {"@type": "EducationalOrganization", "@id": "https://datacentertraining.us/#organization", "name": "Data Center Training", "url": "https://datacentertraining.us/"},
+  "about": ["Data center power distribution", "Uninterruptible power supply", "Standby generators", "Electrical redundancy"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://datacentertraining.us/"},
+    {"@type": "ListItem", "position": 2, "name": "Knowledge Center", "item": "https://datacentertraining.us/learn/"},
+    {"@type": "ListItem", "position": 3, "name": "Power Systems", "item": "https://datacentertraining.us/learn/data-center-power.html"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "How long do data center UPS batteries last during an outage?", "acceptedAnswer": {"@type": "Answer", "text": "UPS batteries are usually sized to carry the load for a few minutes, often somewhere between about 5 and 15 minutes at full load, which is enough time for the standby generators to start and take over. They are a bridge to the generators, not a replacement for them. The exact runtime depends on the battery design, its age, and how much load is on the UPS."}},
+    {"@type": "Question", "name": "What is the difference between N+1 and 2N power?", "acceptedAnswer": {"@type": "Answer", "text": "N is the capacity the load needs. N+1 adds one spare unit, such as one extra UPS module or generator, so a single unit can fail or be serviced. 2N duplicates the entire system into two independent paths (A and B), so either path can carry the full load by itself. 2N costs more but survives failures and maintenance anywhere in one path."}},
+    {"@type": "Question", "name": "Why do servers have two power cords?", "acceptedAnswer": {"@type": "Answer", "text": "Dual-corded servers connect one power supply to the A feed and the other to the B feed. If one feed is lost or shut down for maintenance, the server keeps running on the other. This only works if each feed is loaded so it can carry the whole load on its own, which is why A/B feeds are usually kept below about half of their rated capacity."}},
+    {"@type": "Question", "name": "Do I need to be an electrician to work on data center power systems?", "acceptedAnswer": {"@type": "Answer", "text": "Work on or near exposed energized parts is limited to people the employer has designated as qualified under OSHA and NFPA 70E, which usually means licensed or trained electricians and power technicians. Other technicians still need electrical safety awareness training so they understand the hazards, the approach boundaries, and what they must not touch."}}
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="glass-nav">
+  <div class="container nav-inner">
+    <a href="../" class="logo">
+      <img src="../images/favicon.svg" alt="" width="30" height="30">
+      <span>
+        <span class="logo-mark">datacentertraining.us</span>
+        <span class="logo-sub">Data Center Professional Training</span>
+      </span>
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Main">
+      <div class="nav-item">
+        <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="navMenu-training">Courses<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-3" id="navMenu-training">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Online Training</p>
+            <a href="../courses.html"><span class="nav-link-title">Course Catalog</span><span class="nav-link-desc">All 43 self-paced courses</span></a>
+            <a href="../bundles.html"><span class="nav-link-title">Course Bundles</span><span class="nav-link-desc">Role-based bundles, save up to 52%</span></a>
+            <a href="../who.html"><span class="nav-link-title">Courses by Role</span><span class="nav-link-desc">Find the track for your job</span></a>
+            <a href="../tools/training-plan-builder.html"><span class="nav-link-title">Training Plan Builder</span><span class="nav-link-desc">Build and price a plan in minutes</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Enrolling</p>
+            <a href="../#teams"><span class="nav-link-title">Team Training</span><span class="nav-link-desc">Seats, progress tracking, PO billing</span></a>
+            <a href="../certifications.html"><span class="nav-link-title">Certificates &amp; Accreditation</span><span class="nav-link-desc">What your certificate means</span></a>
+            <a href="../faq.html"><span class="nav-link-title">FAQ</span><span class="nav-link-desc">Pricing, access, and policies</span></a>
+          </div>
+          <a class="nav-feature" href="../bundles.html"><span class="nav-feature-kicker">Best value</span><span class="nav-feature-title">Complete Data Center Professional Bundle</span><span class="nav-feature-text">43 courses and 184 hours of training in one enrollment. Save 52%.</span><span class="nav-feature-cta">Compare bundles &rarr;</span></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button type="button" class="nav-trigger active" aria-expanded="false" aria-controls="navMenu-learn">Learn<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-3" id="navMenu-learn">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Start Here</p>
+            <a href="../learn/"><span class="nav-link-title">Knowledge Center</span><span class="nav-link-desc">Every guide in one place</span></a>
+            <a href="../learn/what-is-a-data-center.html"><span class="nav-link-title">Data Center 101</span><span class="nav-link-desc">How data centers work</span></a>
+            <a href="../learn/glossary.html"><span class="nav-link-title">Glossary</span><span class="nav-link-desc">Data center terms, A to Z</span></a>
+            <a href="../learn/data-center-standards.html"><span class="nav-link-title">Standards &amp; Regulations</span><span class="nav-link-desc">TIA-942, NFPA, OSHA, ASHRAE, ISO</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Systems</p>
+            <a href="../learn/data-center-power.html" aria-current="page"><span class="nav-link-title">Power Systems</span></a>
+            <a href="../learn/data-center-cooling.html"><span class="nav-link-title">Cooling Systems</span></a>
+            <a href="../learn/data-center-tiers.html"><span class="nav-link-title">Tier Levels &amp; Redundancy</span></a>
+            <a href="../learn/energy-efficiency-pue.html"><span class="nav-link-title">Energy Efficiency &amp; PUE</span></a>
+            <a href="../learn/ai-data-centers.html"><span class="nav-link-title">AI &amp; High-Density Facilities</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Operations</p>
+            <a href="../learn/data-center-safety.html"><span class="nav-link-title">Safety Guide</span></a>
+            <a href="../learn/data-center-security-compliance.html"><span class="nav-link-title">Security &amp; Compliance</span></a>
+            <a href="../learn/data-center-operations.html"><span class="nav-link-title">Operations &amp; Maintenance</span></a>
+            <a href="../learn/data-center-commissioning.html"><span class="nav-link-title">Commissioning (Levels 1-5)</span></a>
+            <a href="../blog/"><span class="nav-link-title">Blog: Field Guidance</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="navMenu-careers">Careers<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-2" id="navMenu-careers">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Data Center Careers</p>
+            <a href="../careers/"><span class="nav-link-title">Careers Hub</span><span class="nav-link-desc">Why the industry is hiring</span></a>
+            <a href="../careers/data-center-jobs.html"><span class="nav-link-title">Job Roles Explained</span><span class="nav-link-desc">What each role does day to day</span></a>
+            <a href="../careers/how-to-get-into-data-centers.html"><span class="nav-link-title">How to Get Into Data Centers</span><span class="nav-link-desc">A step-by-step starting plan</span></a>
+            <a href="../careers/career-changers.html"><span class="nav-link-title">Career Changers</span><span class="nav-link-desc">Electricians, HVAC techs, veterans, IT</span></a>
+            <a href="../careers/interview-questions.html"><span class="nav-link-title">Interview Questions</span><span class="nav-link-desc">Practice answers for technician roles</span></a>
+          </div>
+          <a class="nav-feature" href="../quizzes/career-quiz.html"><span class="nav-feature-kicker">2-minute quiz</span><span class="nav-feature-title">Which Data Center Career Fits You?</span><span class="nav-feature-text">Answer 10 quick questions and get a matching role and training track.</span><span class="nav-feature-cta">Take the career quiz &rarr;</span></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="navMenu-quizzes">Quizzes &amp; Tools<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-2" id="navMenu-quizzes">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Quizzes</p>
+            <a href="../quizzes/"><span class="nav-link-title">All Quizzes</span></a>
+            <a href="../quizzes/career-quiz.html"><span class="nav-link-title">Career Match Quiz</span></a>
+            <a href="../quizzes/data-center-basics-quiz.html"><span class="nav-link-title">Data Center Basics</span></a>
+            <a href="../quizzes/power-electrical-quiz.html"><span class="nav-link-title">Power &amp; Electrical</span></a>
+            <a href="../quizzes/cooling-quiz.html"><span class="nav-link-title">Cooling &amp; HVAC</span></a>
+            <a href="../quizzes/safety-quiz.html"><span class="nav-link-title">Safety</span></a>
+            <a href="../quizzes/security-compliance-quiz.html"><span class="nav-link-title">Security &amp; Compliance</span></a>
+            <a href="../quizzes/tiers-design-quiz.html"><span class="nav-link-title">Tiers &amp; Design</span></a>
+            <a href="../quizzes/operations-quiz.html"><span class="nav-link-title">Operations &amp; Monitoring</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Tools</p>
+            <a href="../tools/"><span class="nav-link-title">All Tools</span></a>
+            <a href="../tools/training-plan-builder.html"><span class="nav-link-title">Training Plan Builder</span></a>
+            <a href="../tools/pue-calculator.html"><span class="nav-link-title">PUE Calculator</span></a>
+            <a href="../tools/uptime-calculator.html"><span class="nav-link-title">Uptime &amp; Downtime Calculator</span></a>
+            <a href="../tools/cooling-load-calculator.html"><span class="nav-link-title">Cooling Load Calculator</span></a>
+          </div>
+        </div>
+      </div>
+      <a href="../blog/" class="nav-link">Blog</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="../search.html" class="nav-search" data-search-open aria-label="Search the site" title="Search (Ctrl+K)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><span class="nav-search-label">Search</span><kbd class="nav-search-kbd">Ctrl K</kbd></a>
+      <a href="../courses.html" class="btn btn-primary btn-sm nav-cta">View Courses</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../">Home</a>
+      <span>&rsaquo;</span>
+      <a href="./">Knowledge Center</a>
+      <span>&rsaquo;</span>
+      <span aria-current="page">Power Systems</span>
+    </nav>
+  </div>
+
+  <section class="course-hero">
+    <div class="container">
+      <div class="course-hero-eyebrow">Knowledge Center &middot; Power</div>
+      <h1>How Data Center Power Works: From the Grid to the Rack</h1>
+      <p class="course-hero-hook">Every server in a data center depends on a chain of equipment that turns utility power into clean, uninterrupted power at the rack. Here is how each link works, how facilities keep it running through failures, and who maintains it.</p>
+      <div class="course-pills">
+        <span class="course-pill">14 min read</span>
+        <span class="course-pill">Beginner to intermediate</span>
+        <span class="course-pill">Updated October 2026</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="container guide-layout">
+    <aside class="guide-toc" aria-label="On this page">
+      <p class="guide-toc-title">On this page</p>
+      <ol>
+        <li><a href="#power-path">The power path</a></li>
+        <li><a href="#utility">Utility service and switchgear</a></li>
+        <li><a href="#generators">Generators and transfer switches</a></li>
+        <li><a href="#ups">UPS systems and batteries</a></li>
+        <li><a href="#distribution">Distribution to the rack</a></li>
+        <li><a href="#redundancy">Redundancy: N, N+1, 2N</a></li>
+        <li><a href="#testing">Maintenance and testing</a></li>
+        <li><a href="#safety">Electrical safety</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ol>
+      <a class="guide-toc-cta" href="../quizzes/power-electrical-quiz.html"><strong>Test yourself</strong>Take the 10-question Power &amp; Electrical quiz.</a>
+    </aside>
+
+    <article class="guide-body prose">
+      <div class="key-takeaways">
+        <p class="key-takeaways-title">Key takeaways</p>
+        <ul>
+          <li>Power reaches a server through a chain: utility service, switchgear, transformers, transfer switches, UPS, and power distribution units.</li>
+          <li>The UPS and its batteries carry the load for the seconds to minutes it takes standby generators to start. Generators carry it for hours or days.</li>
+          <li>Redundancy (N+1, 2N) lets a facility lose or service a component without dropping the IT load, but only if loading limits are respected.</li>
+          <li>Most outages trace back to people and procedures, not equipment, which is why switching procedures, testing, and training matter as much as hardware.</li>
+        </ul>
+      </div>
+
+      <h2 id="power-path">The power path, from grid to server</h2>
+      <p>A data center's electrical system has one job: deliver power to the IT equipment without interruption, even when the utility fails or a component is out for maintenance. To do that, power passes through several stages, and each stage either conditions the power, protects it, or provides a backup source.</p>
+      <ol class="flow" aria-label="Typical data center power path">
+        <li><strong>Utility service</strong>Medium-voltage feed from the electric utility, often from two substations.</li>
+        <li><strong>Switchgear</strong>Breakers and relays that protect and switch large blocks of power.</li>
+        <li><strong>Transformers</strong>Step medium voltage down to the low voltage the building uses.</li>
+        <li><strong>Transfer switch</strong>Moves the load between utility and generator power.</li>
+        <li><strong>Generators</strong>Diesel or gas engines that carry the site through long outages.</li>
+        <li><strong>UPS and batteries</strong>Condition power and bridge the gap until generators take over.</li>
+        <li><strong>PDUs and panels</strong>Power distribution units and remote power panels feed the rows.</li>
+        <li><strong>Rack PDUs and servers</strong>Power strips in each rack feed dual-corded IT equipment.</li>
+      </ol>
+      <p>Real facilities vary. Some use busway overhead instead of floor-standing PDUs, some parallel many generators on one bus, and hyperscale campuses build their own substations. The logic stays the same: every stage has a backup, and every backup gets tested.</p>
+
+      <h2 id="utility">Utility service and switchgear</h2>
+      <p>Large data centers usually take power at medium voltage, commonly somewhere in the range of 4 kV to 35 kV in North America, because moving megawatts at low voltage would take enormous conductors. Where the site can get it, the utility provides two feeds from different substations so one upstream failure does not take out both.</p>
+      <p><strong>Medium-voltage switchgear</strong> receives that power. It contains circuit breakers, protective relays that detect faults and trip breakers in milliseconds, and metering. <strong>Step-down transformers</strong> then convert medium voltage to the low voltage used inside the building, typically 480/277 V three-phase in the United States. Low-voltage switchgear and switchboards split that power into the feeders that serve UPS systems, mechanical equipment, and building loads.</p>
+      <p>Switchgear is where some of the largest arc flash hazards in a facility live, which is why switching it is a planned, procedure-driven task done by qualified people. See the <a href="data-center-safety.html">Data Center Safety Guide</a> for how that work is controlled.</p>
+
+      <h2 id="generators">Generators and transfer switches</h2>
+      <p>When utility power fails, standby generators take over. Most data center generators are diesel engines driving alternators, sized in the megawatt range, with enough fuel stored on site to run for a day or more before refueling. Natural gas and other fuels are used too, and some campuses are adding battery energy storage and on-site generation.</p>
+      <p>The handoff is controlled by an <strong>automatic transfer switch (ATS)</strong> or by <strong>paralleling switchgear</strong> that synchronizes several generators onto one bus. The sequence during an outage looks like this:</p>
+      <ol>
+        <li>Utility power drops or goes out of tolerance. The UPS instantly carries the IT load from its batteries.</li>
+        <li>The transfer controls signal the generators to start. Engines crank, reach speed, and stabilize voltage and frequency, typically within seconds.</li>
+        <li>The transfer switch moves the load to generator power. The UPS returns to normal operation and begins recharging its batteries.</li>
+        <li>When the utility is stable again, the system retransfers to utility power after a set delay, and the generators cool down and stop.</li>
+      </ol>
+      <p>Most mechanical cooling equipment is not on the UPS, so chillers and pumps can stop briefly until the generators pick them up, while some designs put critical fans and pumps on a separate mechanical UPS. How fast cooling recovers after a transfer is a key part of design and commissioning, because high-density rooms heat up quickly. The <a href="data-center-cooling.html">cooling guide</a> explains why.</p>
+      <div class="callout">
+        <span class="callout-title">Why generators need regular exercise</span>
+        <p>NFPA 110, the standard for emergency and standby power systems, sets monthly exercise and periodic load-testing requirements for generators. Engines that only run unloaded can build up unburned fuel in the exhaust ("wet stacking"), and fuel that sits for long periods can degrade. Facilities that test under real load find problems before an outage does.</p>
+      </div>
+
+      <h2 id="ups">UPS systems and batteries</h2>
+      <p>The <strong>uninterruptible power supply (UPS)</strong> sits between the building's electrical system and the IT load. It does two things: it cleans up the power (filtering sags, surges, and noise), and it carries the load from stored energy during the seconds or minutes before generators take over.</p>
+      <div class="table-panel">
+        <table class="data-table">
+          <caption>The three UPS topologies</caption>
+          <thead><tr><th>Topology</th><th>How it works</th><th>Where you see it</th></tr></thead>
+          <tbody>
+            <tr><td>Double conversion (online)</td><td>Converts incoming AC to DC and back to clean AC continuously. The load always runs from the inverter, so there is no transfer time when the utility fails.</td><td>The standard choice for data center critical loads.</td></tr>
+            <tr><td>Line-interactive</td><td>Passes utility power through and regulates voltage with a transformer. Switches to the inverter when the utility fails.</td><td>Smaller rooms, network closets, edge sites.</td></tr>
+            <tr><td>Standby (offline)</td><td>Load runs on utility power until it fails, then switches to battery and inverter.</td><td>Desktop and small office equipment.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Many large UPS systems also offer an "eco" or high-efficiency mode that runs the load on bypass and switches to the inverter only when needed, trading some protection for efficiency. Whether to use it is an engineering and risk decision for each site.</p>
+      <h3>Bypass: the most misunderstood part of a UPS</h3>
+      <p>A UPS has two kinds of bypass. The <strong>static bypass</strong> is an automatic electronic switch that moves the load straight to the bypass source if the UPS has an internal fault or overload. The <strong>maintenance bypass</strong> is a set of manually operated breakers that route power around the UPS entirely so it can be serviced. While the load is on either bypass, it is not protected by the batteries. Operating the maintenance bypass in the wrong sequence is a classic cause of outages, which is why sites use written, step-by-step switching procedures.</p>
+      <h3>Batteries and stored energy</h3>
+      <p>UPS batteries are usually sized to carry full load for a few minutes, commonly in the 5 to 15 minute range, which is plenty of time for generators to start. Valve-regulated lead-acid (VRLA) batteries were the default for decades. Lithium-ion batteries are now common because they are smaller, lighter, and last longer, but they bring a different fire risk profile that has to be managed. Some sites use flywheels, which store energy for seconds rather than minutes.</p>
+      <div class="callout callout-safety">
+        <span class="callout-title">Stored energy is always live</span>
+        <p>Battery strings stay energized when the UPS is switched off, and DC arc flash and shock hazards remain. Lithium-ion systems add the risk of thermal runaway. Our <a href="../courses/data-center-ups-battery-safety.html">UPS and Battery System Safety</a> and <a href="../courses/lithium-ion-thermal-runaway-emergency-response.html">Lithium-Ion Thermal Runaway</a> courses cover both.</p>
+      </div>
+
+      <h2 id="distribution">Distribution to the rack</h2>
+      <p>After the UPS, power is distributed to the data hall. A <strong>power distribution unit (PDU)</strong> is a floor-standing cabinet with a transformer and panelboards that steps 480 V down to the 208/120 V or 415/240 V used by IT equipment. <strong>Remote power panels (RPPs)</strong> extend those circuits closer to the racks, and <strong>overhead busway</strong> is increasingly used instead of under-floor cables because it is easier to reconfigure.</p>
+      <p>Inside each rack, <strong>rack PDUs</strong> (intelligent power strips) feed the servers and often meter power per outlet. Most enterprise IT equipment has two power supplies, connected to separate <strong>A and B feeds</strong> that trace back to separate UPS systems. Equipment with only one power supply can be protected with a <strong>static transfer switch (STS)</strong> or a rack-mounted automatic transfer switch that picks between the two sources.</p>
+      <div class="callout callout-tip">
+        <span class="callout-title">The 50 percent rule on A/B feeds</span>
+        <p>If both feeds share a dual-corded load, each one normally carries about half. When one feed is lost, the other suddenly carries all of it. So in a 2N design, each feed must be kept below roughly half of its rated capacity, with margin. Capacity planning and monitoring are how sites keep that promise. See <a href="../courses/capacity-planning-forecasting.html">Capacity Planning &amp; Forecasting</a>.</p>
+      </div>
+
+      <h2 id="redundancy">Redundancy: N, N+1, and 2N</h2>
+      <p>Redundancy notation describes how much spare capacity and how many independent paths a system has. "N" is the amount of equipment needed to carry the load.</p>
+      <div class="table-panel">
+        <table class="data-table">
+          <thead><tr><th>Design</th><th>What it means</th><th>What it survives</th></tr></thead>
+          <tbody>
+            <tr><td>N</td><td>Exactly enough capacity for the load, with no spare.</td><td>Nothing. Any failure or maintenance affects the load.</td></tr>
+            <tr><td>N+1</td><td>One extra unit beyond what the load needs, such as five UPS modules where four would do.</td><td>The failure or maintenance of any single unit, but the distribution path is still shared.</td></tr>
+            <tr><td>2N</td><td>Two complete, independent systems (A and B), each able to carry the full load.</td><td>Failure or maintenance of anything in one path, from switchgear to rack.</td></tr>
+            <tr><td>2N+1 / distributed redundant</td><td>Variations that add spare units within each path, or spread the load across three or more systems so any one can fail.</td><td>Multiple concurrent failures, depending on the design.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Redundancy is the foundation of the Uptime Institute Tier levels. Read <a href="data-center-tiers.html">Data Center Tier Levels Explained</a> to see how concurrent maintainability and fault tolerance build on these ideas, or try the <a href="../tools/uptime-calculator.html">Uptime &amp; Downtime Calculator</a>.</p>
+
+      <h2 id="testing">Maintenance and testing</h2>
+      <p>Electrical equipment that is never tested will fail when it is finally needed. A mature power maintenance program typically includes:</p>
+      <ul>
+        <li><strong>Infrared (thermographic) scans</strong> of switchgear, panels, and connections to find loose or overheating joints.</li>
+        <li><strong>Battery monitoring and testing</strong>, such as impedance or conductance readings and periodic discharge tests, to catch weak cells before they fail.</li>
+        <li><strong>Generator exercise and load-bank testing</strong> to prove engines can carry real load, plus fuel quality checks.</li>
+        <li><strong>UPS preventive maintenance</strong>, including capacitor and fan replacement on manufacturer schedules.</li>
+        <li><strong>Breaker testing and protective relay checks</strong>, so breakers trip when, and only when, they should.</li>
+        <li><strong>Integrated systems tests</strong> that pull the utility on purpose and watch the whole chain respond.</li>
+      </ul>
+      <p>Each of these is done under a written method of procedure (MOP), with change control and a rollback plan. The <a href="data-center-operations.html">Operations &amp; Maintenance guide</a> explains how that process works.</p>
+
+      <h2 id="safety">Electrical safety</h2>
+      <p>Data center power systems carry enough energy to kill or seriously injure, and many hazards remain after a breaker is opened. In the United States, OSHA's electrical standards (29 CFR 1910 Subpart S) and lockout/tagout rule (1910.147) set the legal requirements, and NFPA 70E describes how to meet them in practice: establish an electrically safe work condition whenever possible, assess shock and arc flash risk, use the right PPE, and limit energized work to qualified persons with a justified, permitted reason.</p>
+      <p>Even technicians who never open a panel need awareness training, because they work near energized equipment every day. Our <a href="data-center-safety.html">Data Center Safety Guide</a> covers arc flash boundaries, LOTO, batteries, and EPO systems in more depth.</p>
+
+      <div class="inline-cta">
+        <p><strong>How much do you know about data center power?</strong> Ten questions, instant answers.</p>
+        <a class="btn btn-primary btn-sm" href="../quizzes/power-electrical-quiz.html">Take the Power Quiz</a>
+      </div>
+
+      <h2 id="courses">Courses that go deeper</h2>
+      <p>These self-paced courses turn the concepts above into job skills. Each awards a certificate of completion.</p>
+      <!-- dct:courses power-systems-electrical-fundamentals ups-systems-fundamentals ups-operations-load-testing generator-fundamentals emergency-standby-power-systems-fundamentals power-distribution-systems-fundamentals data-center-arc-flash-safety -->
+<div class="panel course-panel">
+<div class="course-row"><div class="course-main"><h3><a href="../courses/power-systems-electrical-fundamentals.html">Power Systems &amp; Electrical Fundamentals</a></h3><div class="course-meta"><span>Power &amp; Electrical</span><span class="sep">&middot;</span><span>Comprehensive Program</span><span class="sep">&middot;</span><span>NFPA 70E</span></div><p class="course-hook">Master data center electrical infrastructure — from utility interconnection to UPS and PDU architecture.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">8 hrs</div><div class="course-price">$303.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=power-systems-electrical-fundamentals" aria-label="Enroll in Power Systems &amp; Electrical Fundamentals">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/ups-systems-fundamentals.html">UPS Systems Fundamentals</a></h3><div class="course-meta"><span>Power &amp; Electrical</span><span class="sep">&middot;</span><span>Modular Specialization</span></div><p class="course-hook">Foundational UPS theory to complement hands-on operations and load testing.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">2 hrs</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=ups-systems-fundamentals" aria-label="Enroll in UPS Systems Fundamentals">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/ups-operations-load-testing.html">UPS Operations &amp; Load Testing</a></h3><div class="course-meta"><span>Power &amp; Electrical</span><span class="sep">&middot;</span><span>Modular Specialization</span></div><p class="course-hook">Master UPS operations, battery testing, and load-bank procedures.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">4 hrs</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=ups-operations-load-testing" aria-label="Enroll in UPS Operations &amp; Load Testing">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/generator-fundamentals.html">Generator Fundamentals</a></h3><div class="course-meta"><span>Power &amp; Electrical</span><span class="sep">&middot;</span><span>Modular Specialization</span></div><p class="course-hook">Foundational generator theory to complement hands-on operations and load-bank training.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">4 hrs</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=generator-fundamentals" aria-label="Enroll in Generator Fundamentals">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/emergency-standby-power-systems-fundamentals.html">Emergency/Standby Power Systems Fundamentals</a></h3><div class="course-meta"><span>Power &amp; Electrical</span><span class="sep">&middot;</span><span>Modular Specialization</span></div><p class="course-hook">Understand the standby power systems that carry a facility through a utility outage.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">4 hrs</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=emergency-standby-power-systems-fundamentals" aria-label="Enroll in Emergency/Standby Power Systems Fundamentals">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/power-distribution-systems-fundamentals.html">Power Distribution Systems Fundamentals</a></h3><div class="course-meta"><span>Power &amp; Electrical</span><span class="sep">&middot;</span><span>Modular Specialization</span></div><p class="course-hook">Core power distribution theory behind PDUs, panels, and branch circuits.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">4 hrs</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=power-distribution-systems-fundamentals" aria-label="Enroll in Power Distribution Systems Fundamentals">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/data-center-arc-flash-safety.html">Data Center Arc Flash Safety Training</a></h3><div class="course-meta"><span>Power &amp; Electrical</span><span class="sep">&middot;</span><span>Modular Specialization</span><span class="sep">&middot;</span><span>NFPA 70E</span></div><p class="course-hook">NFPA 70E arc flash safety specific to data center switchgear and power distribution.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">2 hrs</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=data-center-arc-flash-safety" aria-label="Enroll in Data Center Arc Flash Safety Training">Enroll</a></div></div>
+</div>
+<!-- /dct:courses -->
+      <!-- dct:bundle bundle-power-electrical -->
+<div class="bundle-offer"><div class="bundle-offer-copy"><p class="bundle-offer-kicker">Save 38% with the bundle</p><p class="bundle-offer-name">Power &amp; Electrical Systems Bundle</p><p class="bundle-offer-meta">14 courses &middot; 47 hours &middot; <strong>$986.99</strong> per seat, instead of <s>$1,603.86</s> bought separately</p></div><div class="bundle-offer-actions"><a class="btn btn-primary" href="../checkout.html?item=bundle-power-electrical">Enroll in the Bundle</a><a class="btn btn-secondary" href="../bundles.html">Compare Bundles</a></div></div>
+<!-- /dct:bundle -->
+
+      <h2 id="faq">Frequently asked questions</h2>
+      <div class="guide-faq">
+        <h3>How long do data center UPS batteries last during an outage?</h3>
+        <p>UPS batteries are usually sized to carry the load for a few minutes, often somewhere between about 5 and 15 minutes at full load, which is enough time for the standby generators to start and take over. They are a bridge to the generators, not a replacement for them. The exact runtime depends on the battery design, its age, and how much load is on the UPS.</p>
+        <h3>What is the difference between N+1 and 2N power?</h3>
+        <p>N is the capacity the load needs. N+1 adds one spare unit, such as one extra UPS module or generator, so a single unit can fail or be serviced. 2N duplicates the entire system into two independent paths (A and B), so either path can carry the full load by itself. 2N costs more but survives failures and maintenance anywhere in one path.</p>
+        <h3>Why do servers have two power cords?</h3>
+        <p>Dual-corded servers connect one power supply to the A feed and the other to the B feed. If one feed is lost or shut down for maintenance, the server keeps running on the other. This only works if each feed is loaded so it can carry the whole load on its own, which is why A/B feeds are usually kept below about half of their rated capacity.</p>
+        <h3>Do I need to be an electrician to work on data center power systems?</h3>
+        <p>Work on or near exposed energized parts is limited to people the employer has designated as qualified under OSHA and NFPA 70E, which usually means licensed or trained electricians and power technicians. Other technicians still need electrical safety awareness training so they understand the hazards, the approach boundaries, and what they must not touch.</p>
+      </div>
+
+      <h2 id="related">Keep learning</h2>
+      <div class="card-grid card-grid-2">
+        <a class="topic-card" href="data-center-cooling.html"><span class="topic-card-kicker">Guide</span><h3>How Data Center Cooling Works</h3><p>Every watt of power becomes heat. See how it gets removed.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+        <a class="topic-card" href="data-center-tiers.html"><span class="topic-card-kicker">Guide</span><h3>Tier Levels Explained</h3><p>How redundancy turns into Tier I through Tier IV.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+        <a class="topic-card" href="../careers/data-center-jobs.html#electrician"><span class="topic-card-kicker">Careers</span><h3>Data Center Electrician</h3><p>What the job involves and how to prepare for it.</p><span class="topic-card-cta">See the role &rarr;</span></a>
+        <a class="topic-card" href="glossary.html"><span class="topic-card-kicker">Reference</span><h3>Data Center Glossary</h3><p>ATS, STS, PDU, RPP, and every other acronym in one place.</p><span class="topic-card-cta">Open the glossary &rarr;</span></a>
+      </div>
+      <p class="guide-updated">This guide is general educational information, not engineering, legal, or compliance advice. Follow your site's procedures, the equipment manufacturer's instructions, and the codes adopted in your jurisdiction.</p>
+    </article>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta-block">
+        <h2>Train Your Team on Data Center Power</h2>
+        <p>Our Power &amp; Electrical courses cover the full electrical chain, from fundamentals to UPS, generators, batteries, and arc flash safety.</p>
+        <div class="hero-ctas">
+          <a href="../bundles.html" class="btn glass-chip">See the Power Bundle</a>
+          <a href="../courses.html" class="btn glass-chip">Browse All Courses</a>
+          <a href="tel:18664296742" class="btn glass-chip">Call 1-866-429-6742</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="contact">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="../" class="logo">
+          <img src="../images/favicon.svg" alt="" width="28" height="28">
+          <span>
+            <span class="logo-mark">datacentertraining.us</span>
+            <span class="logo-sub">Data Center Professional Training</span>
+          </span>
+        </a>
+        <p class="footer-legal">Data Center Training is a specialty training division of <a href="https://hazwoper-osha.com/" target="_blank" rel="noopener">HAZWOPER-OSHA Training, LLC</a>, an IACET-accredited provider of professional data center and safety compliance training.</p>
+        <p class="footer-legal" style="margin-top:8px;">HAZWOPER OSHA Training, LLC &middot; 11901 Santa Monica Blvd., Suite #414, Los Angeles, CA 90025</p>
+        <div class="footer-badges">
+          <img src="https://media.hazwoper-osha.com/wp-content/uploads/2023/11/1698821020/IACET-small.webp" alt="IACET Accredited Provider" width="40" height="24" loading="lazy">
+          <img src="https://media.hazwoper-osha.com/wp-content/uploads/2026/07/1784291935/bbb.webp" alt="BBB A+ Rating" width="40" height="24" loading="lazy">
+          <img src="https://media.hazwoper-osha.com/wp-content/uploads/2026/07/1784292027/trust.webp" alt="Google Trust Services" width="141" height="20" loading="lazy" style="height:20px;">
+        </div>
+      </div>
+      <div class="footer-cta">
+        <p class="footer-cta-title">Not sure where to start?</p>
+        <p class="footer-cta-text">Find the data center role that fits you, then get a training plan built around it.</p>
+        <div class="footer-cta-actions">
+          <a href="../quizzes/career-quiz.html" class="btn btn-primary btn-sm">Take the Career Quiz</a>
+          <a href="../tools/training-plan-builder.html" class="btn btn-secondary btn-sm">Build a Training Plan</a>
+        </div>
+        <div class="footer-contact-links">
+          <a href="tel:18664296742">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            1-866-429-6742
+          </a>
+          <a href="mailto:info@hazwoper-osha.com">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            info@hazwoper-osha.com
+          </a>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/HazwoperOsha/" target="_blank" rel="noopener" aria-label="Facebook"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/hazwoper_osha_training/?hl=en" target="_blank" rel="noopener" aria-label="Instagram"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="https://www.youtube.com/@hazwoper-osha" target="_blank" rel="noopener" aria-label="YouTube"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33zM9.75 15.02V8.48l5.75 3.27z"/></svg></a>
+          <a href="https://x.com/HazwoperOsha" target="_blank" rel="noopener" aria-label="X"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.4 8.4L23 22h-6.6l-5.2-6.8L5.1 22H2l7.9-9L1.6 2h6.8l4.7 6.2z"/></svg></a>
+          <a href="https://www.linkedin.com/company/hazwoper-osha" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM8.34 18.34V10.1H5.67v8.24zM7.01 8.97a1.55 1.55 0 1 0 0-3.1 1.55 1.55 0 0 0 0 3.1zM18.34 18.34v-4.6c0-2.46-1.31-3.6-3.06-3.6a2.64 2.64 0 0 0-2.39 1.32V10.1H10.2s.04.86 0 8.24h2.68v-4.6c0-.25.02-.5.09-.68a1.5 1.5 0 0 1 1.37-1c.96 0 1.35.73 1.35 1.8v4.48z"/></svg></a>
+          <a href="https://www.pinterest.com/hazwoperosha/" target="_blank" rel="noopener" aria-label="Pinterest"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.64 7.86 6.36 9.32-.09-.79-.17-2.01.03-2.88.19-.79 1.22-5.03 1.22-5.03s-.31-.63-.31-1.55c0-1.45.84-2.54 1.89-2.54.89 0 1.32.67 1.32 1.47 0 .89-.57 2.23-.86 3.47-.25 1.03.52 1.88 1.53 1.88 1.84 0 3.07-2.36 3.07-5.15 0-2.12-1.43-3.71-4.02-3.71-2.93 0-4.76 2.19-4.76 4.63 0 .84.25 1.44.63 1.9.18.21.2.3.14.54-.05.18-.16.63-.21.81-.07.26-.28.35-.51.26-1.44-.59-2.11-2.16-2.11-3.93 0-2.92 2.46-6.43 7.34-6.43 3.92 0 6.5 2.84 6.5 5.89 0 4.03-2.24 7.04-5.55 7.04-1.11 0-2.16-.6-2.51-1.28 0 0-.6 2.36-.73 2.82-.22.8-.66 1.6-1.06 2.22.95.29 1.95.45 3 .45 5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-grid">
+    <div class="footer-col">
+      <h3>Training</h3>
+      <a href="../courses.html">Course Catalog</a>
+      <a href="../bundles.html">Course Bundles</a>
+      <a href="../who.html">Courses by Role</a>
+      <a href="../tools/training-plan-builder.html">Training Plan Builder</a>
+      <a href="../#teams">Team Training</a>
+      <a href="../certifications.html">Certificates &amp; Accreditation</a>
+      <a href="../faq.html">FAQ</a>
+    </div>
+    <div class="footer-col">
+      <h3>Learn</h3>
+      <a href="../learn/">Knowledge Center</a>
+      <a href="../learn/what-is-a-data-center.html">Data Center 101</a>
+      <a href="../learn/data-center-power.html">Power Systems</a>
+      <a href="../learn/data-center-cooling.html">Cooling Systems</a>
+      <a href="../learn/data-center-tiers.html">Tier Levels</a>
+      <a href="../learn/data-center-safety.html">Safety Guide</a>
+      <a href="../learn/data-center-standards.html">Standards Guide</a>
+      <a href="../learn/glossary.html">Glossary</a>
+      <a href="../blog/">Blog</a>
+    </div>
+    <div class="footer-col">
+      <h3>Careers</h3>
+      <a href="../careers/">Careers Hub</a>
+      <a href="../careers/data-center-jobs.html">Job Roles Explained</a>
+      <a href="../careers/how-to-get-into-data-centers.html">Get Into Data Centers</a>
+      <a href="../careers/career-changers.html">Career Changers</a>
+      <a href="../careers/interview-questions.html">Interview Questions</a>
+      <a href="../quizzes/career-quiz.html">Career Match Quiz</a>
+    </div>
+    <div class="footer-col">
+      <h3>Quizzes &amp; Tools</h3>
+      <a href="../quizzes/">All Quizzes</a>
+      <a href="../quizzes/data-center-basics-quiz.html">Data Center Basics Quiz</a>
+      <a href="../tools/">All Tools</a>
+      <a href="../tools/pue-calculator.html">PUE Calculator</a>
+      <a href="../tools/uptime-calculator.html">Uptime Calculator</a>
+      <a href="../tools/cooling-load-calculator.html">Cooling Load Calculator</a>
+      <a href="../search.html">Search the Site</a>
+    </div>
+    <div class="footer-col">
+      <h3>Company</h3>
+      <a href="https://hazwoper-osha.com/" target="_blank" rel="noopener">HAZWOPER-OSHA Training</a>
+      <a href="https://hazwoper-osha.com/certificate-verification" target="_blank" rel="noopener">Verify Certificate</a>
+      <a href="../privacy.html">Privacy Policy</a>
+      <a href="../terms.html">Terms of Service</a>
+      <a href="../accessibility.html">Accessibility</a>
+      <a href="../privacy.html#choices" data-privacy-choices>Your Privacy Choices</a>
+      <a href="https://hazwoper-osha.com/refund-policy" target="_blank" rel="noopener">Refund Policy</a>
+    </div>
+    </div>
+
+    <p class="footer-agents"><span>For AI agents:</span> <a href="/llms.txt">llms.txt</a> <a href="/llms-full.txt">llms-full.txt</a> <a href="/.well-known/mcp.json">WebMCP Manifest</a> <a href="/api/index.json">JSON Catalog API</a> <a href="/openapi.json">API Docs (OpenAPI)</a> <a href="/sitemap.xml">Sitemap</a></p>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; 2026 HAZWOPER-OSHA Training, LLC. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+<script src="../js/main.js" defer></script>
+
+</body>
+</html>

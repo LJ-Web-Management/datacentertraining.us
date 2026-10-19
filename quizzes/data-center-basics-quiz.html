@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Center Basics Quiz for Beginners (10 Questions)</title>
+<meta name="description" content="Free beginner quiz on data center basics: white space, UPS, CRAH, PUE, Tiers, hot and cold aisles, colocation, meet-me rooms, and redundancy, with explanations.">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+<link rel="canonical" href="https://datacentertraining.us/quizzes/data-center-basics-quiz.html">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Data Center Basics Quiz for Beginners (10 Questions)">
+<meta property="og:description" content="Free beginner quiz on data center basics: white space, UPS, CRAH, PUE, Tiers, hot and cold aisles, colocation, meet-me rooms, and redundancy, with explanations.">
+<meta property="og:url" content="https://datacentertraining.us/quizzes/data-center-basics-quiz.html">
+<meta property="og:image" content="https://datacentertraining.us/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Data Center Training">
+
+<link rel="stylesheet" href="../css/site.min.css">
+<script src="../js/nav.js" defer></script>
+<script src="../js/quiz.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://datacentertraining.us/"},
+    {"@type": "ListItem", "position": 2, "name": "Quizzes", "item": "https://datacentertraining.us/quizzes/"},
+    {"@type": "ListItem", "position": 3, "name": "Data Center Basics Quiz", "item": "https://datacentertraining.us/quizzes/data-center-basics-quiz.html"}
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="glass-nav"></header>
+
+<main id="main">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../">Home</a>
+      <span>&rsaquo;</span>
+      <a href="./">Quizzes</a>
+      <span>&rsaquo;</span>
+      <span aria-current="page">Data Center Basics Quiz</span>
+    </nav>
+  </div>
+
+  <section class="course-hero">
+    <div class="container">
+      <div class="course-hero-eyebrow">Quiz &middot; Data Center Basics</div>
+      <h1>Data Center Basics Quiz</h1>
+      <p class="course-hero-hook">Ten beginner questions on what a data center is, how it is laid out, and the equipment that keeps it running. Each answer comes with a short explanation.</p>
+      <div class="course-pills">
+        <span class="course-pill">10 questions</span>
+        <span class="course-pill">About 5 minutes</span>
+        <span class="course-pill">Beginner</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="container-read">
+    <h2 class="visually-hidden">Quiz questions</h2>
+    <section class="quiz" data-quiz-id="data-center-basics" data-quiz-type="knowledge" data-quiz-title="Data Center Basics Quiz" aria-label="Data center basics quiz">
+      <div class="quiz-progress" aria-hidden="true"><span class="quiz-progress-text">Question 1 of 10</span><div class="quiz-progress-track"><div class="quiz-progress-bar"></div></div><span class="quiz-progress-score">Score 0</span></div>
+      <ol class="quiz-questions">
+        <li class="quiz-q" data-answer="a">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 1</span><span class="quiz-q-text">In data center terms, what is "white space"?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="q1" value="a"><span>The data hall floor area where IT racks and servers are installed</span></label>
+            <label class="quiz-opt"><input type="radio" name="q1" value="b"><span>The electrical and mechanical rooms that support the IT equipment</span></label>
+            <label class="quiz-opt"><input type="radio" name="q1" value="c"><span>Land on the campus held for future expansion</span></label>
+            <label class="quiz-opt"><input type="radio" name="q1" value="d"><span>Empty rack units left open inside a cabinet</span></label>
+          </fieldset>
+          <details class="quiz-explain"><summary>Show answer</summary><p><strong class="quiz-key">Answer: the data hall where IT equipment lives.</strong> White space is the raised floor or slab area that holds racks, cabinets, and cages. The switchgear, UPS, battery, and mechanical rooms that support it are often called gray space. <a href="../learn/what-is-a-data-center.html">Read What Is a Data Center?</a></p></details>
+        </li>
+        <li class="quiz-q" data-answer="c">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 2</span><span class="quiz-q-text">What is an edge data center?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="q2" value="a"><span>The largest building on a hyperscale campus</span></label>
+            <label class="quiz-opt"><input type="radio" name="q2" value="b"><span>A facility built at the edge of a city to avoid zoning rules</span></label>
+            <label class="quiz-opt"><input type="radio" name="q2" value="c"><span>A smaller facility placed close to users or devices to cut latency</span></label>
+            <label class="quiz-opt"><input type="radio" name="q2" value="d"><span>A standby site that is used only during disasters</span></label>
+          </fieldset>
+          <details class="quiz-explain"><summary>Show answer</summary><p><strong class="quiz-key">Answer: a smaller facility close to users or devices.</strong> Edge sites put compute near where data is created or used, such as a metro area, a factory, or a cell site, so round trips are short. They are often remotely monitored and connect back to larger regional or hyperscale facilities. <a href="../courses/data-center-design-fundamentals.html">Data Center Design Fundamentals</a> compares facility types.</p></details>
+        </li>
+        <li class="quiz-q" data-answer="d">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 3</span><span class="quiz-q-text">What is the main job of a UPS (uninterruptible power supply) in a data center?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="q3" value="a"><span>Stepping medium-voltage utility power down to 480 V for the building</span></label>
+            <label class="quiz-opt"><input type="radio" name="q3" value="b"><span>Switching the building from utility power to generator power during an outage</span></label>
+            <label class="quiz-opt"><input type="radio" name="q3" value="c"><span>Measuring how much energy each rack uses so customers can be billed</span></label>
+            <label class="quiz-opt"><input type="radio" name="q3" value="d"><span>Conditioning power and carrying the IT load from stored energy until generators take over</span></label>
+          </fieldset>
+          <details class="quiz-explain"><summary>Show answer</summary><p><strong class="quiz-key">Answer: conditioning power and bridging to the generators.</strong> The UPS filters disturbances and, when the utility fails, carries the load from batteries or a flywheel for the seconds to minutes generators need to start. Transformers step voltage down, and a transfer switch moves the building to generator power. <a href="../learn/data-center-power.html#ups">Read how UPS systems work</a>.</p></details>
+        </li>
+        <li class="quiz-q" data-answer="b">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 4</span><span class="quiz-q-text">Which equipment cools the data hall by blowing room air across a chilled-water coil?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="q4" value="a"><span>A power distribution unit (PDU)</span></label>
+            <label class="quiz-opt"><input type="radio" name="q4" value="b"><span>A computer room air handler (CRAH)</span></label>
+            <label class="quiz-opt"><input type="radio" name="q4" value="c"><span>An uninterruptible power supply (UPS)</span></label>
+            <label class="quiz-opt"><input type="radio" name="q4" value="d"><span>An automatic transfer switch (ATS)</span></label>
+          </fieldset>
+          <details class="quiz-explain"><summary>Show answer</summary><p><strong class="quiz-key">Answer: a CRAH.</strong> A CRAH uses fans and a coil fed with chilled water from the central plant. Its cousin, the CRAC, has its own refrigerant compressor, while a PDU distributes power to the racks. <a href="../learn/data-center-cooling.html">Read the cooling guide</a>.</p></details>
+        </li>
+        <li class="quiz-q" data-answer="a">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 5</span><span class="quiz-q-text">How is Power Usage Effectiveness (PUE) calculated?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="q5" value="a"><span>Total facility energy divided by IT equipment energy</span></label>
+            <label class="quiz-opt"><input type="radio" name="q5" value="b"><span>IT equipment energy divided by total facility energy</span></label>
+            <label class="quiz-opt"><input type="radio" name="q5" value="c"><span>Cooling energy divided by total facility energy</span></label>
+            <label class="quiz-opt"><input type="radio" name="q5" value="d"><span>IT equipment energy minus cooling energy</span></label>
+          </fieldset>
+          <details class="quiz-explain"><summary>Show answer</summary><p><strong class="quiz-key">Answer: total facility energy divided by IT equipment energy.</strong> A PUE of 1.0 would mean every kilowatt-hour reaches IT equipment, and a site at 1.5 spends 0.5 kWh on cooling, power losses, and lighting for every kWh of IT. The inverse, IT energy over total energy, is called DCiE. <a href="../learn/energy-efficiency-pue.html">Read the PUE guide</a>.</p></details>
+        </li>
+        <li class="quiz-q" data-answer="c">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 6</span><span class="quiz-q-text">Which Uptime Institute Tier is defined as "concurrently maintainable"?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="q6" value="a"><span>Tier I</span></label>
+            <label class="quiz-opt"><input type="radio" name="q6" value="b"><span>Tier II</span></label>
+            <label class="quiz-opt"><input type="radio" name="q6" value="c"><span>Tier III</span></label>
+            <label class="quiz-opt"><input type="radio" name="q6" value="d"><span>Tier IV</span></label>
+          </fieldset>
+          <details class="quiz-explain"><summary>Show answer</summary><p><strong class="quiz-key">Answer: Tier III.</strong> Concurrently maintainable means any component or distribution path can be taken out for planned maintenance without shutting down IT. Tier IV adds fault tolerance, so a single unplanned failure does not affect the load either. <a href="../learn/data-center-tiers.html">Read the Tiers guide</a>.</p></details>
+        </li>
+        <li class="quiz-q" data-answer="b">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 7</span><span class="quiz-q-text">In a hot aisle/cold aisle layout, how are the rack rows arranged?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="q7" value="a"><span>Every row faces the same direction, so each row exhausts into the next row's fronts</span></label>
+            <label class="quiz-opt"><input type="radio" name="q7" value="b"><span>Rows alternate so fronts face fronts across a cold aisle and backs face backs across a hot aisle</span></label>
+            <label class="quiz-opt"><input type="radio" name="q7" value="c"><span>Racks face the cooling units, with servers mounted sideways in the cabinets</span></label>
+            <label class="quiz-opt"><input type="radio" name="q7" value="d"><span>Hot and cold racks alternate within each row to even out temperatures</span></label>
+          </fieldset>
+          <details class="quiz-explain"><summary>Show answer</summary><p><strong class="quiz-key">Answer: fronts face fronts, backs face backs.</strong> Servers pull cool air in the front and exhaust hot air out the back. Facing the rows this way keeps cold supply air in one aisle and hot exhaust in the next, so the two streams mix less. <a href="../courses/data-center-design-fundamentals.html">Data Center Design Fundamentals</a> covers white space layout.</p></details>
+        </li>
+        <li class="quiz-q" data-answer="d">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 8</span><span class="quiz-q-text">What happens in a meet-me room?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="q8" value="a"><span>Visitors sign in, show ID, and receive badges before entering</span></label>
+            <label class="quiz-opt"><input type="radio" name="q8" value="b"><span>Operators watch alarms from every building system around the clock</span></label>
+            <label class="quiz-opt"><input type="radio" name="q8" value="c"><span>Customers meet sales staff before a tour of the facility</span></label>
+            <label class="quiz-opt"><input type="radio" name="q8" value="d"><span>Carriers and customers connect their networks to each other with cross-connects</span></label>
+          </fieldset>
+          <details class="quiz-explain"><summary>Show answer</summary><p><strong class="quiz-key">Answer: carriers and customers interconnect.</strong> The meet-me room (MMR) is the interconnection hub of a colocation or carrier facility. Network providers terminate their fiber there, and a cross-connect cable links a customer cage to a carrier or to another customer. <a href="../courses/fiber-optics-network-cabling.html">Fiber Optics &amp; Network Cabling</a> covers the cabling side.</p></details>
+        </li>
+        <li class="quiz-q" data-answer="b">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 9</span><span class="quiz-q-text">A data hall needs four cooling units to carry its full heat load. The design installs five. What is that redundancy called?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="q9" value="a"><span>N</span></label>
+            <label class="quiz-opt"><input type="radio" name="q9" value="b"><span>N+1</span></label>
+            <label class="quiz-opt"><input type="radio" name="q9" value="c"><span>2N</span></label>
+            <label class="quiz-opt"><input type="radio" name="q9" value="d"><span>2(N+1)</span></label>
+          </fieldset>
+          <details class="quiz-explain"><summary>Show answer</summary><p><strong class="quiz-key">Answer: N+1.</strong> N is the capacity the load needs, here four units, and one extra unit makes N+1, so any single unit can fail or be serviced. A 2N design would install eight units as two complete sets. <a href="../learn/data-center-power.html#redundancy">See the redundancy table</a>.</p></details>
+        </li>
+        <li class="quiz-q" data-answer="a">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 10</span><span class="quiz-q-text">In a typical retail colocation data center, who owns and maintains the servers inside a customer's cage?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="q10" value="a"><span>The customer</span></label>
+            <label class="quiz-opt"><input type="radio" name="q10" value="b"><span>The colocation provider</span></label>
+            <label class="quiz-opt"><input type="radio" name="q10" value="c"><span>The electric utility</span></label>
+            <label class="quiz-opt"><input type="radio" name="q10" value="d"><span>The carrier in the meet-me room</span></label>
+          </fieldset>
+          <details class="quiz-explain"><summary>Show answer</summary><p><strong class="quiz-key">Answer: the customer.</strong> A colocation provider sells space, power, cooling, physical security, and connectivity, while customers bring and manage their own IT equipment. Many providers also offer "remote hands" for simple tasks. <a href="../courses/data-center-operations-management.html">Data Center Operations Management</a> covers how the facility side runs.</p></details>
+        </li>
+      </ol>
+      <div class="quiz-nav">
+        <span class="quiz-nav-hint">Choose an answer to continue.</span>
+        <button type="button" class="btn btn-primary quiz-next" disabled>Next question</button>
+      </div>
+      <div class="quiz-result" hidden>
+        <div class="quiz-score">0/10</div>
+        <p class="quiz-score-label">Your score</p>
+        <div class="quiz-tier" data-min="9" hidden>
+          <p class="quiz-tier-title">Data center pro</p>
+          <p>You have the fundamentals down. Go deeper across power, cooling, safety, and operations with the Complete Data Center Professional Bundle, which awards a certificate of completion for every course.</p>
+        </div>
+        <div class="quiz-tier" data-min="6" hidden>
+          <p class="quiz-tier-title">Solid foundation</p>
+          <p>You know the core ideas. Gaps in redundancy and Tier definitions are exactly what Data Center Design Fundamentals and Tier Infrastructure Fundamentals close.</p>
+        </div>
+        <div class="quiz-tier" data-min="0" hidden>
+          <p class="quiz-tier-title">Room to grow</p>
+          <p>Everyone starts somewhere. Read What Is a Data Center?, then start with Data Center Design Fundamentals.</p>
+        </div>
+        <p class="quiz-best"></p>
+        <div class="quiz-result-actions">
+          <a class="btn btn-primary" href="#courses">See Matching Courses</a>
+          <button type="button" class="btn btn-secondary quiz-share">Share My Score</button>
+          <button type="button" class="btn btn-secondary quiz-retake">Retake Quiz</button>
+        </div>
+        <div class="quiz-review"><p class="quiz-review-title">Your answers</p><ol></ol></div>
+      </div>
+    </section>
+  </div>
+
+  <section class="section" id="courses">
+    <div class="container">
+      <div class="section-head">
+        <h2>Courses That Cover These Topics</h2>
+        <p>Every question above maps to a self-paced course. Each awards a certificate of completion.</p>
+      </div>
+      <!-- dct:courses data-center-design-fundamentals facility-management-fundamentals data-center-operations-management tier-infrastructure-fundamentals -->
+<!-- /dct:courses -->
+      <div style="margin-top:16px;">
+      <!-- dct:bundle bundle-complete-catalog -->
+<!-- /dct:bundle -->
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <h2>Keep Going</h2>
+        <p>Brush up with a guide, or try another quiz.</p>
+      </div>
+      <div class="card-grid">
+        <a class="topic-card" href="../learn/what-is-a-data-center.html"><span class="topic-card-icon" aria-hidden="true">&#127970;</span><h3>What Is a Data Center?</h3><p>The guide behind this quiz: types, layout, and key systems.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+        <a class="topic-card" href="career-quiz.html"><span class="topic-card-icon" aria-hidden="true">&#129517;</span><h3>Which Career Fits You?</h3><p>Find your data center role in ten questions.</p><span class="topic-card-cta">Find my match &rarr;</span></a>
+        <a class="topic-card" href="power-electrical-quiz.html"><span class="topic-card-icon" aria-hidden="true">&#9889;</span><h3>Power &amp; Electrical Quiz</h3><p>UPS topologies, generators, transfer switches, and redundancy.</p><span class="topic-card-cta">Take the quiz &rarr;</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="contact"></footer>
+<script src="../js/main.js" defer></script>
+
+</body>
+</html>
