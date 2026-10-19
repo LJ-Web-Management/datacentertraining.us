@@ -348,5 +348,15 @@
     "date": "2026-10-18",
     "dateDisplay": "October 18, 2026",
     "excerpt": "An environmental audit at a data center is rarely limited to a single permit or a single piece of equipment. The difficult question is whether the site can…"
+  },
+  {
+    "title": "Data Center Fire Alarm Cause and Effect Testing: What Commissioning Teams Should Verify Before Handover",
+    "slug": "data-center-fire-alarm-cause-and-effect-testing-what-commissioning-teams-should-verify-before-handover",
+    "seoTitle": "Data Center Fire Alarm Cause and Effect Testing",
+    "description": "When a data center fire alarm system is tested before handover, is the team proving a complete, documented chain of cause and effect, or only confirming that…",
+    "image": "assets/img/posts/data-center-fire-alarm-cause-and-effect-testing-what-commissioning-teams-should-verify-before-handover.jpg",
+    "date": "2026-10-19",
+    "dateDisplay": "October 19, 2026",
+    "excerpt": "When a data center fire alarm system is tested before handover, is the team proving a complete, documented chain of cause and effect, or only confirming that…"
   }
 ]

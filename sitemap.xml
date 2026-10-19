@@ -314,7 +314,7 @@
   </url>
   <url>
     <loc>https://datacentertraining.us/blog/</loc>
-    <lastmod>2026-10-18</lastmod>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -525,6 +525,12 @@
   <url>
     <loc>https://datacentertraining.us/blog/posts/data-center-environmental-compliance-walkthrough-what-ehs-managers-should-verify-before-an-audit.html</loc>
     <lastmod>2026-10-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://datacentertraining.us/blog/posts/data-center-fire-alarm-cause-and-effect-testing-what-commissioning-teams-should-verify-before-handover.html</loc>
+    <lastmod>2026-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

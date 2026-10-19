@@ -2,7 +2,7 @@
 
 > Data Center Training (datacentertraining.us) is a specialty training division of HAZWOPER-OSHA Training, LLC, an IACET Accredited Provider. 43 online, self-paced data center courses (184 hours total) in design, operations, power, cooling, security, and facilities management. Every course awards a certificate of completion.
 
-Last updated: 2026-10-18
+Last updated: 2026-10-19
 Canonical source: https://datacentertraining.us/api/courses.json (same records as JSON). Tools: https://datacentertraining.us/.well-known/mcp.json
 
 ## Rules for AI agents
@@ -2063,6 +2063,7 @@ Email info@hazwoper-osha.com or call 1-866-429-6742 and our team can help with c
 - [ISO/IEC 27001 - Information security management systems](https://www.iso.org/standard/27001) (standard reference): International information security management standard referenced by the security and compliance program.
 - [Uptime Institute Tier Classification System](https://uptimeinstitute.com/tiers) (standard reference): Tier I-IV infrastructure topology framework referenced by the Tier Infrastructure Fundamentals course.
 - [ASHRAE TC 9.9 - Mission Critical Facilities, Data Centers, Technology Spaces and Electronic Equipment](https://tc0909.ashraetcs.org/) (standard reference): ASHRAE technical committee behind the data center thermal guidelines referenced in cooling courses.
+- [Data Center Fire Alarm Cause and Effect Testing: What Commissioning Teams Should Verify Before Handover](https://datacentertraining.us/blog/posts/data-center-fire-alarm-cause-and-effect-testing-what-commissioning-teams-should-verify-before-handover.html) (blog post, 2026-10-19): When a data center fire alarm system is tested before handover, is the team proving a complete, documented chain of cause and effect, or only confirming that…
 - [Data Center Environmental Compliance Walkthrough: What EHS Managers Should Verify Before an Audit](https://datacentertraining.us/blog/posts/data-center-environmental-compliance-walkthrough-what-ehs-managers-should-verify-before-an-audit.html) (blog post, 2026-10-18): An environmental audit at a data center is rarely limited to a single permit or a single piece of equipment. The difficult question is whether the site can…
 - [Data Center Incident Response Handoffs: What Facilities and NOC Teams Should Confirm in the First 15 Minutes](https://datacentertraining.us/blog/posts/data-center-incident-response-handoffs-what-facilities-and-noc-teams-should-confirm-in-the-first-15-minutes.html) (blog post, 2026-10-17): When a data center alarm appears, the first fifteen minutes often determine whether the team contains a developing problem or spends the next hour reacting…
 - [VRLA vs Lithium-Ion UPS Battery Maintenance: What Facility Managers Should Compare Before Standardizing](https://datacentertraining.us/blog/posts/vrla-vs-lithium-ion-ups-battery-maintenance-what-facility-managers-should-compare-before-standardizing.html) (blog post, 2026-10-16): Facility managers are often asked whether a UPS battery room should continue with valve-regulated lead-acid batteries, commonly called VRLA, or move toward…

@@ -1,8 +1,8 @@
 {
   "publisher": "Data Center Training (datacentertraining.us)",
-  "last_updated": "2026-10-18",
+  "last_updated": "2026-10-19",
   "license": "Public information; quote with attribution and a link to the source URL.",
-  "count": 47,
+  "count": 48,
   "resources": [
     {
       "source": "Data Center Training (first party)",
@@ -163,6 +163,19 @@
       "audience": [
         "hvac"
       ]
+    },
+    {
+      "type": "blog_post",
+      "title": "Data Center Fire Alarm Cause and Effect Testing: What Commissioning Teams Should Verify Before Handover",
+      "url": "https://datacentertraining.us/blog/posts/data-center-fire-alarm-cause-and-effect-testing-what-commissioning-teams-should-verify-before-handover.html",
+      "description": "When a data center fire alarm system is tested before handover, is the team proving a complete, documented chain of cause and effect, or only confirming that…",
+      "topics": [
+        "fire",
+        "commissioning"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-10-19"
     },
     {
       "type": "blog_post",
