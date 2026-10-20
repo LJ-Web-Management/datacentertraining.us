@@ -47,7 +47,7 @@ function targetFile(target) {
 
 function sectionOf(rel) {
   const p = pagePath(rel);
-  if (/^(courses\.html|courses\/|bundles\.html|who\.html|certifications\.html|faq\.html|checkout\.html)/.test(p)) return 'training';
+  if (/^(courses\.html|courses\/|bundles\.html|who\.html|certifications\.html|faq\.html|checkout\.html|training\/)/.test(p)) return 'training';
   if (p.startsWith('learn/')) return 'learn';
   if (p.startsWith('careers/')) return 'careers';
   if (p.startsWith('quizzes/') || p.startsWith('tools/')) return 'quizzes';
@@ -71,6 +71,19 @@ function navData(d) {
             { href: 'bundles.html', title: 'Course Bundles', desc: 'Role-based bundles, save up to ' + save + '%' },
             { href: 'who.html', title: 'Courses by Role', desc: 'Find the track for your job' },
             { href: 'tools/training-plan-builder.html', title: 'Training Plan Builder', desc: 'Build and price a plan in minutes' }
+          ]
+        },
+        {
+          label: 'Training by Topic',
+          links: [
+            { href: 'training/', title: 'All Training Programs' },
+            { href: 'training/data-center-technician-training.html', title: 'Data Center Technician Training' },
+            { href: 'training/nfpa-70e-training.html', title: 'NFPA 70E Training' },
+            { href: 'training/arc-flash-training.html', title: 'Arc Flash Training' },
+            { href: 'training/lockout-tagout-training.html', title: 'Lockout/Tagout Training' },
+            { href: 'training/ups-battery-training.html', title: 'UPS & Battery Training' },
+            { href: 'training/generator-training.html', title: 'Generator Training' },
+            { href: 'training/bms-dcim-training.html', title: 'BMS & DCIM Training' }
           ]
         },
         {
@@ -124,13 +137,34 @@ function navData(d) {
       label: 'Careers',
       columns: [
         {
-          label: 'Data Center Careers',
+          label: 'Get Started',
           links: [
             { href: 'careers/', title: 'Careers Hub', desc: 'Why the industry is hiring' },
-            { href: 'careers/data-center-jobs.html', title: 'Job Roles Explained', desc: 'What each role does day to day' },
+            { href: 'careers/data-center-technician.html', title: 'Data Center Technician', desc: 'The most common way in' },
+            { href: 'careers/entry-level-data-center-jobs.html', title: 'Entry-Level Jobs', desc: 'Roles you can get without experience' },
             { href: 'careers/how-to-get-into-data-centers.html', title: 'How to Get Into Data Centers', desc: 'A step-by-step starting plan' },
-            { href: 'careers/career-changers.html', title: 'Career Changers', desc: 'Electricians, HVAC techs, veterans, IT' },
-            { href: 'careers/interview-questions.html', title: 'Interview Questions', desc: 'Practice answers for technician roles' }
+            { href: 'careers/data-center-technician-salary.html', title: 'Salary Guide', desc: 'What the pay data shows' }
+          ]
+        },
+        {
+          label: 'Jobs & Roles',
+          links: [
+            { href: 'careers/data-center-jobs.html', title: 'All Job Roles Explained' },
+            { href: 'careers/data-center-electrician.html', title: 'Data Center Electrician' },
+            { href: 'careers/critical-facilities-technician.html', title: 'Critical Facilities Technician' },
+            { href: 'careers/data-center-engineer.html', title: 'Data Center Engineer' },
+            { href: 'careers/data-center-jobs-by-location.html', title: 'Jobs by Location' },
+            { href: 'careers/hyperscale-data-center-jobs.html', title: 'Big Tech Data Center Jobs' }
+          ]
+        },
+        {
+          label: 'Get Hired',
+          links: [
+            { href: 'careers/data-center-certifications.html', title: 'Certifications Guide' },
+            { href: 'careers/data-center-apprenticeships.html', title: 'Apprenticeships & Programs' },
+            { href: 'careers/data-center-technician-resume.html', title: 'Resume Guide' },
+            { href: 'careers/interview-questions.html', title: 'Interview Questions' },
+            { href: 'careers/career-changers.html', title: 'Career Changers' }
           ]
         }
       ],
@@ -238,6 +272,9 @@ function footerData() {
       links: [
         ['courses.html', 'Course Catalog'],
         ['bundles.html', 'Course Bundles'],
+        ['training/', 'Training by Topic'],
+        ['training/nfpa-70e-training.html', 'NFPA 70E Training'],
+        ['training/arc-flash-training.html', 'Arc Flash Training'],
         ['who.html', 'Courses by Role'],
         ['tools/training-plan-builder.html', 'Training Plan Builder'],
         ['#teams', 'Team Training'],
@@ -263,9 +300,12 @@ function footerData() {
       label: 'Careers',
       links: [
         ['careers/', 'Careers Hub'],
+        ['careers/data-center-technician.html', 'Data Center Technician'],
         ['careers/data-center-jobs.html', 'Job Roles Explained'],
-        ['careers/how-to-get-into-data-centers.html', 'Get Into Data Centers'],
-        ['careers/career-changers.html', 'Career Changers'],
+        ['careers/entry-level-data-center-jobs.html', 'Entry-Level Jobs'],
+        ['careers/data-center-technician-salary.html', 'Salary Guide'],
+        ['careers/data-center-jobs-by-location.html', 'Jobs by Location'],
+        ['careers/data-center-certifications.html', 'Certifications Guide'],
         ['careers/interview-questions.html', 'Interview Questions'],
         ['quizzes/career-quiz.html', 'Career Match Quiz']
       ]
@@ -285,6 +325,7 @@ function footerData() {
     {
       label: 'Company',
       links: [
+        ['about.html', 'About Us'],
         ['https://hazwoper-osha.com/', 'HAZWOPER-OSHA Training'],
         ['https://hazwoper-osha.com/certificate-verification', 'Verify Certificate'],
         ['privacy.html', 'Privacy Policy'],

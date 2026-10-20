@@ -89,8 +89,8 @@ a { color: inherit; }
 .nav-item.open > .nav-menu { display: grid; }
 .nav-menu-1 { grid-template-columns: 260px; }
 .nav-menu-2 { grid-template-columns: 250px 250px; }
-.nav-menu-3 { grid-template-columns: repeat(3, 230px); }
-.nav-menu-4 { grid-template-columns: repeat(4, 210px); }
+.nav-menu-3 { grid-template-columns: repeat(3, minmax(0, 230px)); }
+.nav-menu-4 { grid-template-columns: repeat(4, minmax(0, 210px)); }
 .nav-menu-col { display: flex; flex-direction: column; min-width: 0; }
 .nav-menu-label { font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-3); padding: 4px 10px 8px; }
 .main-nav .nav-menu a { display: flex; flex-direction: column; gap: 1px; padding: 8px 10px; border-radius: var(--r-thumb); white-space: normal; color: var(--text); }
@@ -1070,3 +1070,9 @@ body.search-open { overflow: hidden; }
 .compare-card li + li { margin-top: 4px; }
 @media (max-width: 900px) { .compare-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 520px) { .compare-grid { grid-template-columns: 1fr; } }
+
+/* Short, direct answer at the top of a guide (what search snippets and AI answers quote) */
+.answer-box { background: var(--surface); border-left: 4px solid var(--accent); border-radius: 0 var(--r-card) var(--r-card) 0; box-shadow: var(--sh-card); padding: 18px 22px; }
+.answer-box p { font-size: 16px; line-height: 1.75; color: var(--text-body); }
+.answer-box p + p { margin-top: 8px; }
+.answer-box strong { color: var(--text); }
