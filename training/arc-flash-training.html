@@ -48,7 +48,19 @@
   ]
 }
 </script>
-<!--FAQJSON-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Does OSHA require arc flash training?", "acceptedAnswer": {"@type": "Answer", "text": "OSHA does not have a standard titled arc flash training, but its electrical rules require training for workers exposed to electrical hazards and require suitable protective equipment. OSHA treats NFPA 70E, which covers arc flash risk assessment, labels, and PPE in detail, as an acceptable way to meet those obligations."}},
+    {"@type": "Question", "name": "What are the NFPA 70E arc flash training requirements?", "acceptedAnswer": {"@type": "Answer", "text": "NFPA 70E requires qualified workers to be trained to identify electrical hazards, assess risk, and select controls including arc-rated PPE, and to know the approach boundaries for the voltages they work on. Unqualified workers need training on the hazards they may encounter. Retraining is required at intervals not exceeding three years."}},
+    {"@type": "Question", "name": "Can I take arc flash training online?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Online arc flash safety training covers the knowledge portion well, including boundaries, labels, and PPE categories. Hands-on PPE practice, equipment-specific instruction, and the employer's qualification decision still happen on site."}},
+    {"@type": "Question", "name": "What is arc flash analysis training?", "acceptedAnswer": {"@type": "Answer", "text": "Arc flash analysis training teaches engineers to perform arc flash studies: modeling the power system, calculating incident energy using methods such as IEEE 1584, and producing equipment labels. It is different from arc flash safety training, which teaches workers how to stay safe around the hazard."}},
+    {"@type": "Question", "name": "What does 1.2 cal/cm2 mean?", "acceptedAnswer": {"@type": "Answer", "text": "It is the incident energy level associated with the onset of a second-degree burn on bare skin. NFPA 70E uses it to define the arc flash boundary: inside that distance, arc-rated PPE is required while an arc flash hazard exists."}}
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -178,7 +190,7 @@
       <div class="table-panel">
         <table class="data-table">
           <caption>Arc flash safety training compared with arc flash analysis training</caption>
-          <thead><tr><th></th><th>Arc flash safety training</th><th>Arc flash analysis (study) training</th></tr></thead>
+          <thead><tr><th>Topic</th><th>Arc flash safety training</th><th>Arc flash analysis (study) training</th></tr></thead>
           <tbody>
             <tr><td>Audience</td><td>Electricians, technicians, field engineers, supervisors</td><td>Electrical engineers and power system analysts</td></tr>
             <tr><td>Main topics</td><td>Hazards, boundaries, labels, PPE, safe work practices, permits</td><td>Short-circuit and protective device coordination studies, incident energy calculations, modeling software</td></tr>
