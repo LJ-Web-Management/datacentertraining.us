@@ -36,10 +36,10 @@ Edit the **sources**, never the generated files. To change a price, edit
 `js/config.js`; to change analytics or chat, edit `THIRD_PARTY` in
 `build-site.js`; to change the menu or footer, edit `scripts/site-chrome.js`.
 
-## Adding a guide, career page, quiz, or tool
+## Adding a guide, training page, career page, quiz, or tool
 
-Pages under `learn/`, `careers/`, `quizzes/`, and `tools/` start from an
-existing page in the same folder. Leave `<header class="glass-nav"></header>`
+Pages under `learn/`, `training/`, `careers/`, `quizzes/`, and `tools/` start
+from an existing page in the same folder. Leave `<header class="glass-nav"></header>`
 and `<footer class="site-footer" id="contact"></footer>` empty, and leave
 `dct:courses` / `dct:bundle` blocks empty: the build fills them in. Never
 type a course price or hour count into the text. Then add the page to
