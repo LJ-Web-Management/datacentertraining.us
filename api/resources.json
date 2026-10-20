@@ -1,8 +1,8 @@
 {
   "publisher": "Data Center Training (datacentertraining.us)",
-  "last_updated": "2026-10-19",
+  "last_updated": "2026-10-20",
   "license": "Public information; quote with attribution and a link to the source URL.",
-  "count": 48,
+  "count": 49,
   "resources": [
     {
       "source": "Data Center Training (first party)",
@@ -163,6 +163,16 @@
       "audience": [
         "hvac"
       ]
+    },
+    {
+      "type": "blog_post",
+      "title": "BAS Manual Override Review: What Data Center Operators Should Verify Before Returning a Control Point to Auto",
+      "url": "https://datacentertraining.us/blog/posts/bas-manual-override-review-what-data-center-operators-should-verify-before-returning-a-control-point-to-auto.html",
+      "description": "When a building automation system (BAS) point has been placed in manual override, how does the data center team know it is safe to return that point…",
+      "topics": [],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-10-20"
     },
     {
       "type": "blog_post",
