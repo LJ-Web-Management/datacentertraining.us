@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- dct:head -->
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; object-src 'none'; base-uri 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#f5f5f7">
+<link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt">
+<link rel="alternate" type="application/json" href="/.well-known/mcp.json" title="WebMCP manifest">
+<link rel="service-desc" type="application/vnd.oai.openapi+json" href="/openapi.json">
+<script>
+/* Analytics, session recording, and chat load for every visitor unless they opt out or send a GPC signal
+   (see /js/consent.js), on the first interaction (scroll, tap, key, mouse move) so they never delay rendering. */
+(function(w,d){
+  w.dataLayer=w.dataLayer||[];w.gtag=function(){w.dataLayer.push(arguments);};
+  w.clarity=w.clarity||function(){(w.clarity.q=w.clarity.q||[]).push(arguments);};
+  w.Tawk_API=w.Tawk_API||{};w.Tawk_API.onLoad=function(){w.Tawk_API.minimize();};
+  var ev=['pointerdown','keydown','touchstart','scroll','mousemove'];
+  function add(src,attrs){var s=d.createElement('script');s.async=true;s.src=src;for(var k in attrs)s.setAttribute(k,attrs[k]);d.head.appendChild(s);}
+  function once(fn){var done=0;return function(now){if(done)return;function go(){if(done)return;done=1;ev.forEach(function(e){w.removeEventListener(e,go,{passive:true});});fn();}
+    if(now)go();else ev.forEach(function(e){w.addEventListener(e,go,{passive:true});});};}
+  w.dctLoad={
+    analytics:once(function(){
+      w.gtag('js',new Date());w.gtag('config','G-Z3T42KYK64');
+      add('https://www.googletagmanager.com/gtag/js?id=G-Z3T42KYK64');
+      add('https://analytics.ahrefs.com/analytics.js',{'data-key':'tVAd7KxwKax+pAfHx46Zgg'});
+      add('https://www.clarity.ms/tag/ylza43nm4m');
+    }),
+    chat:once(function(){
+      w.Tawk_LoadStart=new Date();add('https://embed.tawk.to/6a5a95a2096ab21d402a762c/1jtoth11r',{charset:'UTF-8',crossorigin:'*'});
+    })
+  };
+})(window,document);
+if(navigator.modelContext){var m=document.createElement('script');m.src='/js/webmcp.js';m.defer=true;document.head.appendChild(m);}
+</script>
+<script src="/js/consent.js" defer></script>
+<!-- /dct:head -->
+<title>Data Center Technician Interview Questions and Answers</title>
+<meta name="description" content="34 data center technician interview questions with what interviewers look for and strong answers on safety, power, cooling, procedures, and scenarios.">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+<link rel="canonical" href="https://datacentertraining.us/careers/interview-questions.html">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Data Center Technician Interview Questions and Answers">
+<meta property="og:description" content="34 data center technician interview questions with what interviewers look for and strong answers on safety, power, cooling, procedures, and scenarios.">
+<meta property="og:url" content="https://datacentertraining.us/careers/interview-questions.html">
+<meta property="og:image" content="https://datacentertraining.us/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Data Center Training">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@HazwoperOsha">
+<meta name="twitter:title" content="Data Center Technician Interview Questions and Answers">
+<meta name="twitter:description" content="34 data center technician interview questions with what interviewers look for and strong answers on safety, power, cooling, procedures, and scenarios.">
+<meta name="twitter:image" content="https://datacentertraining.us/images/og-image.jpg">
+
+<link rel="stylesheet" href="../css/site.min.css">
+<script src="../js/nav.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Data Center Technician Interview Questions and Answers",
+  "description": "34 data center technician interview questions with what interviewers look for and strong answers on safety, power, cooling, procedures, and scenarios.",
+  "url": "https://datacentertraining.us/careers/interview-questions.html",
+  "mainEntityOfPage": "https://datacentertraining.us/careers/interview-questions.html",
+  "image": "https://datacentertraining.us/images/og-image.jpg",
+  "datePublished": "2026-10-19",
+  "dateModified": "2026-10-19",
+  "inLanguage": "en-US",
+  "author": {"@type": "Organization", "name": "Data Center Training", "url": "https://datacentertraining.us/"},
+  "publisher": {"@type": "EducationalOrganization", "@id": "https://datacentertraining.us/#organization", "name": "Data Center Training", "url": "https://datacentertraining.us/"},
+  "about": ["Data center technician interview", "Critical facilities technician interview", "Interview questions and answers", "Data center careers"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://datacentertraining.us/"},
+    {"@type": "ListItem", "position": 2, "name": "Careers", "item": "https://datacentertraining.us/careers/"},
+    {"@type": "ListItem", "position": 3, "name": "Interview Questions", "item": "https://datacentertraining.us/careers/interview-questions.html"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "What should I wear to a data center interview?", "acceptedAnswer": {"@type": "Answer", "text": "Business casual is a safe choice for most technician interviews. If the interview includes a site tour, wear sturdy closed-toe shoes, avoid loose jewelry and dangling accessories, and follow any PPE or escort instructions you are given. Data halls are loud and often cold, so a layer helps."}},
+    {"@type": "Question", "name": "Will a data center interview include a technical test?", "acceptedAnswer": {"@type": "Answer", "text": "Some do. Employers may ask technical questions, give a short written test, or walk you through the site and ask you to identify equipment or trace a one-line diagram. Others focus on behavioral and scenario questions. Ask the recruiter what format to expect so you can prepare."}},
+    {"@type": "Question", "name": "What if I do not know the answer to a technical question?", "acceptedAnswer": {"@type": "Answer", "text": "Say so honestly, then explain how you would find out: checking the procedure, the manufacturer's manual, the drawings, or asking your lead. Never guess on a safety question. Interviewers in critical facilities trust a candidate who knows their limits far more than one who bluffs."}},
+    {"@type": "Question", "name": "What questions should I ask the interviewer?", "acceptedAnswer": {"@type": "Answer", "text": "Ask how new technicians are trained and qualified, how the shift rotation works, how MOPs are written and approved, who you would shadow in your first weeks, and how the team reviews incidents afterward. These questions show you care about doing the job safely and well."}}
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="glass-nav">
+  <div class="container nav-inner">
+    <a href="../" class="logo">
+      <img src="../images/favicon.svg" alt="" width="30" height="30">
+      <span>
+        <span class="logo-mark">datacentertraining.us</span>
+        <span class="logo-sub">Data Center Professional Training</span>
+      </span>
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Main">
+      <div class="nav-item">
+        <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="navMenu-training">Courses<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-3" id="navMenu-training">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Online Training</p>
+            <a href="../courses.html"><span class="nav-link-title">Course Catalog</span><span class="nav-link-desc">All 43 self-paced courses</span></a>
+            <a href="../bundles.html"><span class="nav-link-title">Course Bundles</span><span class="nav-link-desc">Role-based bundles, save up to 52%</span></a>
+            <a href="../who.html"><span class="nav-link-title">Courses by Role</span><span class="nav-link-desc">Find the track for your job</span></a>
+            <a href="../tools/training-plan-builder.html"><span class="nav-link-title">Training Plan Builder</span><span class="nav-link-desc">Build and price a plan in minutes</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Enrolling</p>
+            <a href="../#teams"><span class="nav-link-title">Team Training</span><span class="nav-link-desc">Seats, progress tracking, PO billing</span></a>
+            <a href="../certifications.html"><span class="nav-link-title">Certificates &amp; Accreditation</span><span class="nav-link-desc">What your certificate means</span></a>
+            <a href="../faq.html"><span class="nav-link-title">FAQ</span><span class="nav-link-desc">Pricing, access, and policies</span></a>
+          </div>
+          <a class="nav-feature" href="../bundles.html"><span class="nav-feature-kicker">Best value</span><span class="nav-feature-title">Complete Data Center Professional Bundle</span><span class="nav-feature-text">43 courses and 192 hours of training in one enrollment. Save 52%.</span><span class="nav-feature-cta">Compare bundles &rarr;</span></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="navMenu-learn">Learn<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-3" id="navMenu-learn">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Start Here</p>
+            <a href="../learn/"><span class="nav-link-title">Knowledge Center</span><span class="nav-link-desc">Every guide in one place</span></a>
+            <a href="../learn/what-is-a-data-center.html"><span class="nav-link-title">Data Center 101</span><span class="nav-link-desc">How data centers work</span></a>
+            <a href="../learn/glossary.html"><span class="nav-link-title">Glossary</span><span class="nav-link-desc">Data center terms, A to Z</span></a>
+            <a href="../learn/data-center-standards.html"><span class="nav-link-title">Standards &amp; Regulations</span><span class="nav-link-desc">TIA-942, NFPA, OSHA, ASHRAE, ISO</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Systems</p>
+            <a href="../learn/data-center-power.html"><span class="nav-link-title">Power Systems</span></a>
+            <a href="../learn/data-center-cooling.html"><span class="nav-link-title">Cooling Systems</span></a>
+            <a href="../learn/data-center-tiers.html"><span class="nav-link-title">Tier Levels &amp; Redundancy</span></a>
+            <a href="../learn/energy-efficiency-pue.html"><span class="nav-link-title">Energy Efficiency &amp; PUE</span></a>
+            <a href="../learn/ai-data-centers.html"><span class="nav-link-title">AI &amp; High-Density Facilities</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Operations</p>
+            <a href="../learn/data-center-safety.html"><span class="nav-link-title">Safety Guide</span></a>
+            <a href="../learn/data-center-security-compliance.html"><span class="nav-link-title">Security &amp; Compliance</span></a>
+            <a href="../learn/data-center-operations.html"><span class="nav-link-title">Operations &amp; Maintenance</span></a>
+            <a href="../learn/data-center-commissioning.html"><span class="nav-link-title">Commissioning (Levels 1-5)</span></a>
+            <a href="../blog/"><span class="nav-link-title">Blog: Field Guidance</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button type="button" class="nav-trigger active" aria-expanded="false" aria-controls="navMenu-careers">Careers<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-2" id="navMenu-careers">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Data Center Careers</p>
+            <a href="../careers/"><span class="nav-link-title">Careers Hub</span><span class="nav-link-desc">Why the industry is hiring</span></a>
+            <a href="../careers/data-center-jobs.html"><span class="nav-link-title">Job Roles Explained</span><span class="nav-link-desc">What each role does day to day</span></a>
+            <a href="../careers/how-to-get-into-data-centers.html"><span class="nav-link-title">How to Get Into Data Centers</span><span class="nav-link-desc">A step-by-step starting plan</span></a>
+            <a href="../careers/career-changers.html"><span class="nav-link-title">Career Changers</span><span class="nav-link-desc">Electricians, HVAC techs, veterans, IT</span></a>
+            <a href="../careers/interview-questions.html" aria-current="page"><span class="nav-link-title">Interview Questions</span><span class="nav-link-desc">Practice answers for technician roles</span></a>
+          </div>
+          <a class="nav-feature" href="../quizzes/career-quiz.html"><span class="nav-feature-kicker">2-minute quiz</span><span class="nav-feature-title">Which Data Center Career Fits You?</span><span class="nav-feature-text">Answer 10 quick questions and get a matching role and training track.</span><span class="nav-feature-cta">Take the career quiz &rarr;</span></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="navMenu-quizzes">Quizzes &amp; Tools<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-2" id="navMenu-quizzes">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Quizzes</p>
+            <a href="../quizzes/"><span class="nav-link-title">All Quizzes</span></a>
+            <a href="../quizzes/career-quiz.html"><span class="nav-link-title">Career Match Quiz</span></a>
+            <a href="../quizzes/data-center-basics-quiz.html"><span class="nav-link-title">Data Center Basics</span></a>
+            <a href="../quizzes/power-electrical-quiz.html"><span class="nav-link-title">Power &amp; Electrical</span></a>
+            <a href="../quizzes/cooling-quiz.html"><span class="nav-link-title">Cooling &amp; HVAC</span></a>
+            <a href="../quizzes/safety-quiz.html"><span class="nav-link-title">Safety</span></a>
+            <a href="../quizzes/security-compliance-quiz.html"><span class="nav-link-title">Security &amp; Compliance</span></a>
+            <a href="../quizzes/tiers-design-quiz.html"><span class="nav-link-title">Tiers &amp; Design</span></a>
+            <a href="../quizzes/operations-quiz.html"><span class="nav-link-title">Operations &amp; Monitoring</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Tools</p>
+            <a href="../tools/"><span class="nav-link-title">All Tools</span></a>
+            <a href="../tools/training-plan-builder.html"><span class="nav-link-title">Training Plan Builder</span></a>
+            <a href="../tools/pue-calculator.html"><span class="nav-link-title">PUE Calculator</span></a>
+            <a href="../tools/uptime-calculator.html"><span class="nav-link-title">Uptime &amp; Downtime Calculator</span></a>
+            <a href="../tools/cooling-load-calculator.html"><span class="nav-link-title">Cooling Load Calculator</span></a>
+          </div>
+        </div>
+      </div>
+      <a href="../blog/" class="nav-link">Blog</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="../search.html" class="nav-search" data-search-open aria-label="Search the site" title="Search (Ctrl+K)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><span class="nav-search-label">Search</span><kbd class="nav-search-kbd">Ctrl K</kbd></a>
+      <a href="../courses.html" class="btn btn-primary btn-sm nav-cta">View Courses</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../">Home</a>
+      <span>&rsaquo;</span>
+      <a href="./">Careers</a>
+      <span>&rsaquo;</span>
+      <span aria-current="page">Interview Questions</span>
+    </nav>
+  </div>
+
+  <section class="course-hero">
+    <div class="container">
+      <div class="course-hero-eyebrow">Careers &middot; Interview Prep</div>
+      <h1>Data Center Technician Interview Questions and Answers</h1>
+      <p class="course-hero-hook">Data center interviews test more than technical knowledge. Hiring managers want to know you will work safely, follow procedures, escalate early, and communicate clearly at 2 a.m. These 34 questions show what they ask, what they are listening for, and what a strong answer sounds like.</p>
+      <div class="course-pills">
+        <span class="course-pill">18 min read</span>
+        <span class="course-pill">Entry to intermediate</span>
+        <span class="course-pill">Updated October 2026</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="container guide-layout">
+    <aside class="guide-toc" aria-label="On this page">
+      <p class="guide-toc-title">On this page</p>
+      <ol>
+        <li><a href="#how-to-use">How to use this guide</a></li>
+        <li><a href="#general">General and behavioral</a></li>
+        <li><a href="#safety">Safety</a></li>
+        <li><a href="#power">Power and electrical</a></li>
+        <li><a href="#cooling">Cooling and mechanical</a></li>
+        <li><a href="#operations">Operations and procedures</a></li>
+        <li><a href="#it-technician">IT and data center technician</a></li>
+        <li><a href="#scenarios">Scenario questions</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ol>
+      <a class="guide-toc-cta" href="../quizzes/safety-quiz.html"><strong>Warm up</strong>Take the data center safety quiz before your interview.</a>
+    </aside>
+
+    <article class="guide-body prose">
+      <div class="key-takeaways">
+        <p class="key-takeaways-title">Key takeaways</p>
+        <ul>
+          <li>Almost every answer should touch four things: safety, procedures, escalation, and communication.</li>
+          <li>Use real examples from your own work for behavioral questions. Specific beats impressive.</li>
+          <li>For scenario questions, interviewers want a calm, structured response, not heroics.</li>
+          <li>"I don't know, but here is how I would find out" is a good answer. Guessing on a safety question is not.</li>
+        </ul>
+      </div>
+
+      <h2 id="how-to-use">How to use this guide</h2>
+      <p>Read each question, then answer it out loud before you read the sample. The sample answers are models, not scripts. Swap in your own experience, equipment, and numbers so the answer sounds like you.</p>
+      <p>For behavioral questions ("Tell me about a time..."), use the STAR structure: the <strong>situation</strong>, the <strong>task</strong> you were responsible for, the <strong>action</strong> you took, and the <strong>result</strong>. Keep each answer to about a minute or two.</p>
+      <div class="callout callout-tip">
+        <span class="callout-title">The four things every answer should show</span>
+        <p>Safety first, the procedure is followed, the right people are told early, and everything is written down. If your answer covers those four, you are most of the way to a strong one.</p>
+      </div>
+
+      <h2 id="general">General and behavioral questions</h2>
+
+      <h3>1. Why do you want to work in a data center?</h3>
+      <p><strong>What they're looking for:</strong> Genuine interest, a realistic picture of the job (shifts, procedures, on-call), and signs you will stay.</p>
+      <p><strong>Strong answer:</strong> "I like work where details matter and the stakes are real. In my current maintenance job I enjoy preventive maintenance and troubleshooting, and a data center takes that to a higher standard: redundant systems, written procedures for everything, and a team that plans every task. I know the role includes rotating shifts and on-call time, and I'm ready for that. I've been studying how UPS systems and chilled water plants work so I can contribute quickly."</p>
+
+      <h3>2. Tell me about a time you followed a procedure even though a shortcut looked faster.</h3>
+      <p><strong>What they're looking for:</strong> Proof that you respect written procedures under time pressure. In a data center, shortcuts cause outages and injuries.</p>
+      <p><strong>Strong answer:</strong> "We were replacing a pump, and the lockout procedure required isolating and verifying three valves. A coworker suggested skipping verification on one because it was always closed. I verified it anyway and found it was passing water. We replaced the valve before opening the system, and I reported it so the procedure was updated. It took a few extra minutes and prevented a flood in the mechanical room."</p>
+
+      <h3>3. Tell me about a mistake you made at work and what you did about it.</h3>
+      <p><strong>What they're looking for:</strong> Honesty, ownership, and whether you report problems right away instead of hiding them.</p>
+      <p><strong>Strong answer:</strong> Choose a real, moderate mistake. "On a rounds sheet, I once recorded a reading from the wrong unit because two panels looked alike. I caught it on my next pass, told my lead right away, and corrected the log. Since then I read the equipment tag out loud before I write any value. I'd much rather report a small mistake than let someone make a decision on bad data."</p>
+
+      <h3>4. How do you feel about rotating shifts, nights, weekends, and on-call duty?</h3>
+      <p><strong>What they're looking for:</strong> A realistic yes. Facilities run around the clock, and the team depends on every shift being covered.</p>
+      <p><strong>Strong answer:</strong> "I understand it's part of the job. I've worked nights before and I keep a steady sleep routine to stay sharp. I'd like to know how your rotation works and how call-outs are handled so I can plan my life around it."</p>
+
+      <h3>5. How would you explain a technical problem to someone who isn't technical?</h3>
+      <p><strong>What they're looking for:</strong> Clear communication with customers, managers, and incident bridges.</p>
+      <p><strong>Strong answer:</strong> "I lead with impact, then what we're doing, then when they'll hear next. For example: 'One of the two power feeds to your cabinet is down for repair. Your equipment is running normally on the other feed. We expect the repair to finish by 3 p.m., and I'll update you then.' I skip jargon unless they ask for detail."</p>
+
+      <h2 id="safety">Safety questions</h2>
+
+      <h3>6. What is lockout/tagout, and how do you perform it?</h3>
+      <p><strong>What they're looking for:</strong> That you know the steps and treat verification as non-negotiable. The OSHA standard is 29 CFR 1910.147.</p>
+      <p><strong>Strong answer:</strong> "Lockout/tagout controls hazardous energy so equipment can't start or be energized while someone is working on it. I notify affected people, shut the equipment down with its normal controls, isolate every energy source (electrical, mechanical, hydraulic, pneumatic, and stored energy), and apply my own lock and tag at each isolation point. Then I release or block stored energy and verify zero energy, with a try-start or a properly rated meter. Each worker applies their own lock, and only that person removes it, unless the employer's formal removal procedure is used."</p>
+
+      <h3>7. What does the arc flash boundary on an equipment label tell you?</h3>
+      <p><strong>What they're looking for:</strong> Basic NFPA 70E knowledge and respect for arc flash hazards.</p>
+      <p><strong>Strong answer:</strong> "It's the distance at which the incident energy from an arc flash would reach 1.2 cal/cm&sup2;, roughly the level that can cause a second-degree burn on bare skin. Anyone inside that boundary needs arc-rated PPE suited to the hazard. The label also shows the voltage and either the incident energy at a working distance or the PPE required, and many labels list the shock approach boundaries. My first choice is always to put the equipment in an electrically safe work condition so energized work isn't needed."</p>
+
+      <h3>8. How do you verify that a circuit is de-energized?</h3>
+      <p><strong>What they're looking for:</strong> The live-dead-live method with a properly rated meter, done every time.</p>
+      <p><strong>Strong answer:</strong> "After the circuit is locked and tagged, I treat it as energized until I prove otherwise, so I wear the PPE required for the test. I use a meter rated for the voltage and measurement category, prove it on a known live source, test every conductor phase to phase and phase to ground, then prove the meter again on the known source. That's live-dead-live. Only then do I have an electrically safe work condition."</p>
+
+      <h3>9. What would you do if you were asked to do a task you weren't trained for?</h3>
+      <p><strong>What they're looking for:</strong> That you will stop and speak up. Data centers want people who know their limits.</p>
+      <p><strong>Strong answer:</strong> "I'd say so right away and politely. I'd tell my lead I haven't been trained on that task or equipment and ask to shadow someone qualified or get trained first. If it's urgent, the answer is to find a qualified person, not to try it myself. Most sites give everyone stop-work authority, and I'd use it."</p>
+
+      <h3>10. What hazards would you watch for in a battery room?</h3>
+      <p><strong>What they're looking for:</strong> Awareness that batteries are always energized and carry electrical, chemical, and fire hazards.</p>
+      <p><strong>Strong answer:</strong> "Battery strings stay energized even when the UPS is off, so there's DC shock and arc flash risk. Lead-acid batteries can release hydrogen, especially while charging, so ventilation matters and ignition sources stay out. Electrolyte is corrosive, so I'd know where the eyewash station is and wear face and hand protection. Lithium-ion batteries add the risk of thermal runaway, so I'd know the warning signs and the site's response plan. I'd use insulated tools and take off metal jewelry."</p>
+
+      <h2 id="power">Power and electrical questions</h2>
+
+      <h3>11. Walk me through what happens when utility power fails.</h3>
+      <p><strong>What they're looking for:</strong> That you understand the sequence and the role of each piece of equipment.</p>
+      <p><strong>Strong answer:</strong> "The UPS carries the critical load instantly from its batteries or flywheel. The transfer controls sense the outage and start the generators. Once generator voltage and frequency are stable, the ATS or paralleling switchgear moves the load to generator power, usually within seconds. The UPS returns to normal and recharges its batteries, and mechanical equipment restarts on generator power. When the utility has been stable for a set time, the system retransfers and the generators cool down. My job is to confirm each step happened, watch for alarms, and report."</p>
+
+      <h3>12. What is the difference between N+1 and 2N redundancy?</h3>
+      <p><strong>What they're looking for:</strong> Clear definitions and what each design protects against.</p>
+      <p><strong>Strong answer:</strong> "N is the capacity the load needs. N+1 adds one spare component, like five UPS modules where four would carry the load, so any one can fail or be serviced. 2N is two complete, independent systems, A and B, each able to carry the full load, so you can lose or maintain anything in one path. In 2N, each side is normally kept below about half its capacity so the other side can pick up everything."</p>
+
+      <h3>13. What is the difference between a UPS static bypass and maintenance bypass?</h3>
+      <p><strong>What they're looking for:</strong> Understanding of a well-known outage risk.</p>
+      <p><strong>Strong answer:</strong> "Static bypass is an automatic electronic switch inside the UPS that moves the load to the bypass source if the UPS faults or is overloaded. Maintenance bypass is a set of manually operated breakers that route power around the UPS so it can be serviced. On either bypass, the load isn't protected by the batteries. Maintenance bypass is only operated step by step under the MOP, because operating breakers out of sequence is a classic cause of outages."</p>
+
+      <h3>14. What is the difference between an ATS and an STS?</h3>
+      <p><strong>What they're looking for:</strong> That you can tell the two transfer devices apart.</p>
+      <p><strong>Strong answer:</strong> "An automatic transfer switch moves a load between utility and generator power, usually at the building or system level, and the UPS rides through any brief interruption during the transfer. A static transfer switch uses solid-state switching to move a load between two live sources, typically two UPS systems, fast enough that IT equipment rides through. STSs are often used to give single-corded equipment a second source."</p>
+
+      <h3>15. Why are standby generators tested under load?</h3>
+      <p><strong>What they're looking for:</strong> Practical knowledge of generator reliability.</p>
+      <p><strong>Strong answer:</strong> "To prove they can actually carry the load, not just start. Diesels that run lightly loaded can wet stack, building up unburned fuel and carbon in the exhaust. NFPA 110 sets monthly exercise and periodic load-testing requirements, and many sites add load bank tests. Testing also finds problems with fuel, starting batteries, cooling, and transfer controls before a real outage does."</p>
+
+      <h2 id="cooling">Cooling and mechanical questions</h2>
+
+      <h3>16. What is the difference between a CRAC and a CRAH unit?</h3>
+      <p><strong>What they're looking for:</strong> Precision cooling basics.</p>
+      <p><strong>Strong answer:</strong> "A CRAC, or computer room air conditioner, has its own refrigeration circuit with a compressor. It's a direct expansion unit that rejects heat through a condenser or a glycol loop. A CRAH, or computer room air handler, has no compressor. Its fans blow air across a chilled water coil, and the central chiller plant does the refrigeration. CRAHs are common in large facilities with a chilled water plant, and CRACs are common in smaller rooms."</p>
+
+      <h3>17. What is hot aisle/cold aisle containment, and why does it matter?</h3>
+      <p><strong>What they're looking for:</strong> Airflow management fundamentals.</p>
+      <p><strong>Strong answer:</strong> "Racks face each other so cold air enters server inlets from one aisle and hot exhaust goes into the next. Containment separates the two with doors, roofs, or chimneys, so hot air can't recirculate into server inlets and cold air doesn't bypass straight back to the cooling units. That makes inlet temperatures predictable, allows warmer supply air, and saves energy. Blanking panels in empty rack spaces matter for the same reason."</p>
+
+      <h3>18. What inlet temperature range does ASHRAE recommend for IT equipment?</h3>
+      <p><strong>What they're looking for:</strong> Knowledge of the standard reference and where to measure it.</p>
+      <p><strong>Strong answer:</strong> "The ASHRAE TC 9.9 thermal guidelines recommend 18 to 27 &deg;C, or 64.4 to 80.6 &deg;F, at the server inlet for most equipment classes. There is a wider allowable range, but the recommended range is the target for long-term reliability. What matters is the temperature at the front of the equipment, not the return air at the cooling unit."</p>
+
+      <h3>19. What do you need before opening a refrigerant circuit?</h3>
+      <p><strong>What they're looking for:</strong> Regulatory awareness and safe work practices.</p>
+      <p><strong>Strong answer:</strong> "First, EPA Section 608 certification, which technicians need to open systems containing refrigerant. Then an approved work order or MOP, because in a live data hall I need to confirm the unit's load is covered by redundant units. I'd lock out and tag out the unit, use proper recovery equipment and never vent refrigerant, wear eye and hand protection, and make sure the space is ventilated, since refrigerant can displace oxygen in enclosed areas. Recovered amounts and repairs go in the records."</p>
+
+      <h3>20. What is PUE?</h3>
+      <p><strong>What they're looking for:</strong> Awareness of how efficiency is measured, especially for cooling roles.</p>
+      <p><strong>Strong answer:</strong> "Power usage effectiveness is total facility energy divided by IT equipment energy. A PUE of 1.0 would mean every watt goes to IT equipment, so lower is better. Cooling is usually the biggest non-IT load, which is why containment, warmer supply temperatures, and economizers improve it. Industry averages have barely moved in years. The <a href="https://intelligence.uptimeinstitute.com/resource/uptime-institute-global-data-center-survey-2025" target="_blank" rel="noopener">Uptime Institute survey</a> average was 1.56 in 2024."</p>
+
+      <h2 id="operations">Operations and procedures questions</h2>
+
+      <h3>21. What is a MOP, and what should it include?</h3>
+      <p><strong>What they're looking for:</strong> That you understand how planned work on critical systems is controlled.</p>
+      <p><strong>Strong answer:</strong> "A method of procedure is a written, step-by-step plan for a specific job on critical systems. A good MOP covers the scope, the risk and which redundancy is lost during the work, prerequisites and approvals, the people, tools, and PPE required, each step with its expected result and verification point, a back-out plan, and who gets notified and when. During the work, one person reads each step, another performs it, and both confirm the result."</p>
+
+      <h3>22. What is the difference between an SOP, a MOP, and an EOP?</h3>
+      <p><strong>What they're looking for:</strong> That you know which document covers which situation.</p>
+      <p><strong>Strong answer:</strong> "A standard operating procedure covers routine, repeatable tasks like rounds or rotating pumps. A method of procedure covers planned, non-routine work on critical systems, like UPS maintenance. An emergency operating procedure covers the response to abnormal conditions, like a utility failure or a cooling unit trip. Together they mean nobody has to improvise on critical equipment."</p>
+
+      <h3>23. Why does change management matter in a data center?</h3>
+      <p><strong>What they're looking for:</strong> An understanding that many outages start with human error during changes.</p>
+      <p><strong>Strong answer:</strong> "Changes are when things break. Change management makes sure every change to a critical system is planned, reviewed for risk, scheduled at the right time, communicated to everyone affected, and approved before work starts. It also stops two teams from working on related systems at the same time. Afterward, the change record helps with troubleshooting if something goes wrong."</p>
+
+      <h3>24. What goes into a good shift turnover?</h3>
+      <p><strong>What they're looking for:</strong> Communication habits. Turnovers are where information gets lost.</p>
+      <p><strong>Strong answer:</strong> "The current state of the site: any equipment out of service or in an abnormal configuration, like a UPS on bypass or a cooling unit in manual. Active alarms and what's being done about them, work in progress and open MOPs, vendors on site, work scheduled for the next shift, and anything odd I noticed that isn't a problem yet. I do it face to face when I can, walk down anything unusual, and back it up in the log."</p>
+
+      <h2 id="it-technician">IT and data center technician questions</h2>
+
+      <h3>25. How would you install a new server in a rack?</h3>
+      <p><strong>What they're looking for:</strong> Planning, attention to detail, and protecting what is already running.</p>
+      <p><strong>Strong answer:</strong> "I'd confirm the ticket, the exact rack, and the U position, and check that the rack has power, weight, and cooling capacity for it. I'd install the rails, and use a second person or a lift for heavy equipment, keeping heavy gear low in the rack. I'd connect one power supply to the A rack PDU and one to the B, cable neatly without blocking airflow, label both ends of every cable, and fill gaps with blanking panels. Then I'd confirm it's running on both supplies, update DCIM or the asset records, and close the ticket with notes."</p>
+
+      <h3>26. What is the difference between single-mode and multimode fiber?</h3>
+      <p><strong>What they're looking for:</strong> Cabling fundamentals for technician roles.</p>
+      <p><strong>Strong answer:</strong> "Single-mode fiber has a very small core, about 9 microns, and carries a single light path, so it supports long distances with laser optics. Multimode has a larger core, 50 or 62.5 microns, and carries many light paths, which limits distance but allows cheaper optics, so it's common for short links inside the data hall. Yellow jackets usually mean single-mode and aqua usually means OM3 or OM4 multimode, but I'd always confirm with the label and the documentation."</p>
+
+      <h3>27. How do you handle and clean fiber connectors?</h3>
+      <p><strong>What they're looking for:</strong> Habits that prevent one of the most common causes of fiber link problems.</p>
+      <p><strong>Strong answer:</strong> "Inspect, clean, inspect. I check the end face with a fiber scope before every connection, clean it with a proper fiber cleaner if it's dirty, and inspect it again. I keep dust caps on unused connectors and ports. I never look into a fiber or port that could be live, and I use the scope, not my eyes."</p>
+
+      <h3>28. A customer submits a remote hands ticket to reboot a server. What do you do?</h3>
+      <p><strong>What they're looking for:</strong> Verification and documentation. Rebooting the wrong server is a classic mistake.</p>
+      <p><strong>Strong answer:</strong> "First I confirm the request came from an authorized contact for that customer. Then I find the device by cage, rack, U position, and asset tag or serial number, and I make sure the label matches the ticket before I touch anything. If anything doesn't match, I stop and contact the customer. I do exactly what was asked, note the times and what I saw, add photos if the site allows them, and update the ticket."</p>
+
+      <h2 id="scenarios">Scenario questions</h2>
+      <p>Scenario questions test judgment. Interviewers want to hear a calm sequence: assess, follow the procedure, escalate, communicate, and document.</p>
+
+      <h3>29. A UPS alarm sounds at 2 a.m. What do you do?</h3>
+      <p><strong>What they're looking for:</strong> A structured response that follows the emergency operating procedure and escalates early, without heroics.</p>
+      <p><strong>Strong answer:</strong> "I'd go to the UPS display or the BMS and read the exact alarm instead of silencing it and walking away. I'd find out the UPS state: normal, on battery, on static bypass, or faulted. Then I'd check upstream: is utility power present, and did the generators start? If the UPS is on battery and generators aren't picking up the load, that's urgent, and I'd escalate to the shift lead and on-call engineer immediately. For any UPS alarm, I'd follow the EOP, only operate equipment I'm trained and authorized to operate, notify the NOC so customer communication can start if needed, and log every time, reading, and action until it's resolved or handed off."</p>
+
+      <h3>30. You notice a rack's inlet temperature climbing. What do you do?</h3>
+      <p><strong>What they're looking for:</strong> Logical troubleshooting from small to large, plus early communication.</p>
+      <p><strong>Strong answer:</strong> "I'd confirm the reading with a second sensor or a handheld thermometer, then figure out the scope: one rack, a row, or the whole room. For one rack, I'd look for missing blanking panels, blocked perforated tiles, open containment doors, or a new high-density deployment. For a row or room, I'd check the cooling units serving it, the chilled water supply temperature, and BMS alarms. I'd tell my lead and the NOC early, follow the cooling EOP, and not change setpoints or unit modes without authorization."</p>
+
+      <h3>31. You see someone follow an employee through a badge-controlled door without badging in. What do you do?</h3>
+      <p><strong>What they're looking for:</strong> That you take physical security seriously and handle it professionally.</p>
+      <p><strong>Strong answer:</strong> "That's tailgating, and it defeats access control. If it's safe, I'd politely stop the person and ask them to badge in or wait while I verify their access. If they can't, I'd take them to security or reception. I wouldn't get confrontational. I'd report it to security right away with the time, place, and description so they can check the cameras and access logs. Even if it was a coworker, it gets reported, because audits depend on every entry being recorded."</p>
+
+      <h3>32. A contractor is ready to start work, but the MOP hasn't been approved. What do you do?</h3>
+      <p><strong>What they're looking for:</strong> Whether you will hold the line on change control under pressure.</p>
+      <p><strong>Strong answer:</strong> "The work doesn't start. I'd explain that the site requires an approved MOP before any work on critical systems, contact my lead or the change manager to check on the approval, and keep the contractor informed. If the work is truly urgent, it goes through the site's emergency change process, not around it. I'd note the delay in the log. Unapproved changes are exactly how outages happen."</p>
+
+      <h3>33. During a maintenance window, a step in the MOP doesn't match what you see in the field. What do you do?</h3>
+      <p><strong>What they're looking for:</strong> That you stop instead of improvising.</p>
+      <p><strong>Strong answer:</strong> "I stop at that step. I'd hold the system in a safe, stable state as the MOP defines and contact the MOP author and my lead. We'd compare the drawings, the MOP, and the field condition. If the difference can't be resolved safely, we execute the back-out plan and reschedule. Afterward, the MOP or drawings get corrected so the next team doesn't hit the same problem."</p>
+
+      <h3>34. You smell something burning near electrical equipment. What do you do?</h3>
+      <p><strong>What they're looking for:</strong> Treating it as a fire and arc flash hazard, protecting people first, and escalating fast.</p>
+      <p><strong>Strong answer:</strong> "I wouldn't open any panels or enclosures. I'd look for smoke or fire from a safe distance. If there's fire, I'd activate the fire alarm, call emergency services as the site procedure directs, and evacuate. If there's no visible fire, I'd stay outside the arc flash boundary, notify my lead and the on-call electrical engineer immediately, and check the BMS and power monitoring for alarms or abnormal readings. Qualified people decide whether and how to de-energize, following the EOP, and I'd log everything."</p>
+
+      <div class="inline-cta">
+        <p><strong>Want more practice?</strong> Test yourself with free quizzes on power, cooling, safety, and operations, with an explanation for every answer.</p>
+        <a class="btn btn-primary btn-sm" href="../quizzes/">Browse the Quizzes</a>
+      </div>
+
+      <h2 id="courses">Courses that prepare you for these questions</h2>
+      <p>Each question above maps to a self-paced course. Every course awards a certificate of completion, which you can mention in your interview.</p>
+      <!-- dct:courses data-center-electrical-safety data-center-arc-flash-safety ups-operations-load-testing hvac-troubleshooting-essentials data-center-operations-management incident-response-troubleshooting fiber-optics-network-cabling -->
+<div class="panel course-panel">
+<div class="course-row"><div class="course-main"><h3><a href="../courses/data-center-electrical-safety.html">Data Center Electrical Safety Training</a></h3><div class="course-meta"><span>Power &amp; Electrical</span><span class="sep">&middot;</span><span>Modular Specialization</span></div><p class="course-hook">Foundational electrical safety practices for anyone working around data center power systems.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">2 hrs</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=data-center-electrical-safety" aria-label="Enroll in Data Center Electrical Safety Training">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/data-center-arc-flash-safety.html">Data Center Arc Flash Safety Training</a></h3><div class="course-meta"><span>Power &amp; Electrical</span><span class="sep">&middot;</span><span>Modular Specialization</span><span class="sep">&middot;</span><span>NFPA 70E</span></div><p class="course-hook">NFPA 70E arc flash safety specific to data center switchgear and power distribution.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">2 hrs</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=data-center-arc-flash-safety" aria-label="Enroll in Data Center Arc Flash Safety Training">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/ups-operations-load-testing.html">UPS Operations &amp; Load Testing</a></h3><div class="course-meta"><span>Power &amp; Electrical</span><span class="sep">&middot;</span><span>Modular Specialization</span></div><p class="course-hook">Master UPS operations, battery testing, and load-bank procedures.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">4 hrs</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=ups-operations-load-testing" aria-label="Enroll in UPS Operations &amp; Load Testing">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/hvac-troubleshooting-essentials.html">HVAC Systems Troubleshooting Essentials</a></h3><div class="course-meta"><span>Cooling &amp; Efficiency</span><span class="sep">&middot;</span><span>Modular Specialization</span></div><p class="course-hook">Hands-on troubleshooting skills for CRAC/CRAH systems and common cooling failures.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">4 hrs</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=hvac-troubleshooting-essentials" aria-label="Enroll in HVAC Systems Troubleshooting Essentials">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/data-center-operations-management.html">Data Center Operations Management</a></h3><div class="course-meta"><span>Operations</span><span class="sep">&middot;</span><span>Comprehensive Program</span><span class="sep">&middot;</span><span>DCIM / SLA Frameworks</span></div><p class="course-hook">Run daily operations like the teams behind Tier 3/4 facilities — maintenance, incident response, and SLAs.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">8 hrs</div><div class="course-price">$325.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=data-center-operations-management" aria-label="Enroll in Data Center Operations Management">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/incident-response-troubleshooting.html">Incident Response &amp; Troubleshooting</a></h3><div class="course-meta"><span>Operations</span><span class="sep">&middot;</span><span>Modular Specialization</span></div><p class="course-hook">Systematic troubleshooting and root-cause analysis to cut MTTR.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">4 hrs</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=incident-response-troubleshooting" aria-label="Enroll in Incident Response &amp; Troubleshooting">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/fiber-optics-network-cabling.html">Fiber Optics &amp; Network Cabling</a></h3><div class="course-meta"><span>Monitoring &amp; Automation</span><span class="sep">&middot;</span><span>Modular Specialization</span><span class="sep">&middot;</span><span>ANSI/TIA-942</span></div><p class="course-hook">Terminate, test, and troubleshoot data center fiber to ANSI/TIA-942 standards.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">4 hrs</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=fiber-optics-network-cabling" aria-label="Enroll in Fiber Optics &amp; Network Cabling">Enroll</a></div></div>
+</div>
+<!-- /dct:courses -->
+      <!-- dct:bundle bundle-complete-catalog -->
+<div class="bundle-offer"><div class="bundle-offer-copy"><p class="bundle-offer-kicker">Save 52% with the bundle</p><p class="bundle-offer-name">Complete Data Center Professional Bundle</p><p class="bundle-offer-meta">43 courses &middot; 192 hours &middot; <strong>$2,928.99</strong> per seat, instead of <s>$6,067.57</s> bought separately</p></div><div class="bundle-offer-actions"><a class="btn btn-primary" href="../checkout.html?item=bundle-complete-catalog">Enroll in the Bundle</a><a class="btn btn-secondary" href="../bundles.html">Compare Bundles</a></div></div>
+<!-- /dct:bundle -->
+
+      <h2 id="faq">Frequently asked questions</h2>
+      <div class="guide-faq">
+        <h3>What should I wear to a data center interview?</h3>
+        <p>Business casual is a safe choice for most technician interviews. If the interview includes a site tour, wear sturdy closed-toe shoes, avoid loose jewelry and dangling accessories, and follow any PPE or escort instructions you are given. Data halls are loud and often cold, so a layer helps.</p>
+        <h3>Will a data center interview include a technical test?</h3>
+        <p>Some do. Employers may ask technical questions, give a short written test, or walk you through the site and ask you to identify equipment or trace a one-line diagram. Others focus on behavioral and scenario questions. Ask the recruiter what format to expect so you can prepare.</p>
+        <h3>What if I do not know the answer to a technical question?</h3>
+        <p>Say so honestly, then explain how you would find out: checking the procedure, the manufacturer's manual, the drawings, or asking your lead. Never guess on a safety question. Interviewers in critical facilities trust a candidate who knows their limits far more than one who bluffs.</p>
+        <h3>What questions should I ask the interviewer?</h3>
+        <p>Ask how new technicians are trained and qualified, how the shift rotation works, how MOPs are written and approved, who you would shadow in your first weeks, and how the team reviews incidents afterward. These questions show you care about doing the job safely and well.</p>
+      </div>
+
+      <h2 id="related">Keep learning</h2>
+      <div class="card-grid card-grid-2">
+        <a class="topic-card" href="data-center-jobs.html"><span class="topic-card-kicker">Careers</span><h3>Data Center Jobs Explained</h3><p>Know exactly what the role you are interviewing for involves.</p><span class="topic-card-cta">Explore the roles &rarr;</span></a>
+        <a class="topic-card" href="how-to-get-into-data-centers.html"><span class="topic-card-kicker">Careers</span><h3>How to Get Into Data Centers</h3><p>Resume keywords, where to look, and your first 90 days.</p><span class="topic-card-cta">Read the plan &rarr;</span></a>
+        <a class="topic-card" href="../learn/data-center-power.html"><span class="topic-card-kicker">Guide</span><h3>How Data Center Power Works</h3><p>UPS, generators, transfer switches, and redundancy explained.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+        <a class="topic-card" href="../quizzes/power-electrical-quiz.html"><span class="topic-card-kicker">Quiz</span><h3>Power &amp; Electrical Quiz</h3><p>Ten questions on the topics interviewers ask about most.</p><span class="topic-card-cta">Take the quiz &rarr;</span></a>
+      </div>
+      <p class="guide-updated">This guide is general career and educational information, not engineering, legal, or compliance advice. On the job, always follow your site's procedures, the equipment manufacturer's instructions, and your employer's safety program.</p>
+    </article>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta-block">
+        <h2>Walk Into Your Interview Prepared</h2>
+        <p>Learn the systems, safety practices, and procedures interviewers ask about, at your own pace, with a certificate of completion for every course.</p>
+        <div class="hero-ctas">
+          <a href="../bundles.html" class="btn glass-chip">See the Complete Bundle</a>
+          <a href="../courses.html" class="btn glass-chip">Browse All Courses</a>
+          <a href="tel:18664296742" class="btn glass-chip">Call 1-866-429-6742</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="contact">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="../" class="logo">
+          <img src="../images/favicon.svg" alt="" width="28" height="28">
+          <span>
+            <span class="logo-mark">datacentertraining.us</span>
+            <span class="logo-sub">Data Center Professional Training</span>
+          </span>
+        </a>
+        <p class="footer-legal">Data Center Training is a specialty training division of <a href="https://hazwoper-osha.com/" target="_blank" rel="noopener">HAZWOPER-OSHA Training, LLC</a>, an IACET-accredited provider of professional data center and safety compliance training.</p>
+        <p class="footer-legal" style="margin-top:8px;">HAZWOPER OSHA Training, LLC &middot; 11901 Santa Monica Blvd., Suite #414, Los Angeles, CA 90025</p>
+        <div class="footer-badges">
+          <img src="https://media.hazwoper-osha.com/wp-content/uploads/2023/11/1698821020/IACET-small.webp" alt="IACET Accredited Provider" width="40" height="24" loading="lazy">
+          <img src="https://media.hazwoper-osha.com/wp-content/uploads/2026/07/1784291935/bbb.webp" alt="BBB A+ Rating" width="40" height="24" loading="lazy">
+          <img src="https://media.hazwoper-osha.com/wp-content/uploads/2026/07/1784292027/trust.webp" alt="Google Trust Services" width="141" height="20" loading="lazy" style="height:20px;">
+        </div>
+      </div>
+      <div class="footer-cta">
+        <p class="footer-cta-title">Not sure where to start?</p>
+        <p class="footer-cta-text">Find the data center role that fits you, then get a training plan built around it.</p>
+        <div class="footer-cta-actions">
+          <a href="../quizzes/career-quiz.html" class="btn btn-primary btn-sm">Take the Career Quiz</a>
+          <a href="../tools/training-plan-builder.html" class="btn btn-secondary btn-sm">Build a Training Plan</a>
+        </div>
+        <div class="footer-contact-links">
+          <a href="tel:18664296742">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            1-866-429-6742
+          </a>
+          <a href="mailto:info@hazwoper-osha.com">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            info@hazwoper-osha.com
+          </a>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/HazwoperOsha/" target="_blank" rel="noopener" aria-label="Facebook"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/hazwoper_osha_training/?hl=en" target="_blank" rel="noopener" aria-label="Instagram"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="https://www.youtube.com/@hazwoper-osha" target="_blank" rel="noopener" aria-label="YouTube"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33zM9.75 15.02V8.48l5.75 3.27z"/></svg></a>
+          <a href="https://x.com/HazwoperOsha" target="_blank" rel="noopener" aria-label="X"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.4 8.4L23 22h-6.6l-5.2-6.8L5.1 22H2l7.9-9L1.6 2h6.8l4.7 6.2z"/></svg></a>
+          <a href="https://www.linkedin.com/company/hazwoper-osha" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM8.34 18.34V10.1H5.67v8.24zM7.01 8.97a1.55 1.55 0 1 0 0-3.1 1.55 1.55 0 0 0 0 3.1zM18.34 18.34v-4.6c0-2.46-1.31-3.6-3.06-3.6a2.64 2.64 0 0 0-2.39 1.32V10.1H10.2s.04.86 0 8.24h2.68v-4.6c0-.25.02-.5.09-.68a1.5 1.5 0 0 1 1.37-1c.96 0 1.35.73 1.35 1.8v4.48z"/></svg></a>
+          <a href="https://www.pinterest.com/hazwoperosha/" target="_blank" rel="noopener" aria-label="Pinterest"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.64 7.86 6.36 9.32-.09-.79-.17-2.01.03-2.88.19-.79 1.22-5.03 1.22-5.03s-.31-.63-.31-1.55c0-1.45.84-2.54 1.89-2.54.89 0 1.32.67 1.32 1.47 0 .89-.57 2.23-.86 3.47-.25 1.03.52 1.88 1.53 1.88 1.84 0 3.07-2.36 3.07-5.15 0-2.12-1.43-3.71-4.02-3.71-2.93 0-4.76 2.19-4.76 4.63 0 .84.25 1.44.63 1.9.18.21.2.3.14.54-.05.18-.16.63-.21.81-.07.26-.28.35-.51.26-1.44-.59-2.11-2.16-2.11-3.93 0-2.92 2.46-6.43 7.34-6.43 3.92 0 6.5 2.84 6.5 5.89 0 4.03-2.24 7.04-5.55 7.04-1.11 0-2.16-.6-2.51-1.28 0 0-.6 2.36-.73 2.82-.22.8-.66 1.6-1.06 2.22.95.29 1.95.45 3 .45 5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-grid">
+    <div class="footer-col">
+      <h3>Training</h3>
+      <a href="../courses.html">Course Catalog</a>
+      <a href="../bundles.html">Course Bundles</a>
+      <a href="../who.html">Courses by Role</a>
+      <a href="../tools/training-plan-builder.html">Training Plan Builder</a>
+      <a href="../#teams">Team Training</a>
+      <a href="../certifications.html">Certificates &amp; Accreditation</a>
+      <a href="../faq.html">FAQ</a>
+    </div>
+    <div class="footer-col">
+      <h3>Learn</h3>
+      <a href="../learn/">Knowledge Center</a>
+      <a href="../learn/what-is-a-data-center.html">Data Center 101</a>
+      <a href="../learn/data-center-power.html">Power Systems</a>
+      <a href="../learn/data-center-cooling.html">Cooling Systems</a>
+      <a href="../learn/data-center-tiers.html">Tier Levels</a>
+      <a href="../learn/data-center-safety.html">Safety Guide</a>
+      <a href="../learn/data-center-standards.html">Standards Guide</a>
+      <a href="../learn/glossary.html">Glossary</a>
+      <a href="../blog/">Blog</a>
+    </div>
+    <div class="footer-col">
+      <h3>Careers</h3>
+      <a href="../careers/">Careers Hub</a>
+      <a href="../careers/data-center-jobs.html">Job Roles Explained</a>
+      <a href="../careers/how-to-get-into-data-centers.html">Get Into Data Centers</a>
+      <a href="../careers/career-changers.html">Career Changers</a>
+      <a href="../careers/interview-questions.html">Interview Questions</a>
+      <a href="../quizzes/career-quiz.html">Career Match Quiz</a>
+    </div>
+    <div class="footer-col">
+      <h3>Quizzes &amp; Tools</h3>
+      <a href="../quizzes/">All Quizzes</a>
+      <a href="../quizzes/data-center-basics-quiz.html">Data Center Basics Quiz</a>
+      <a href="../tools/">All Tools</a>
+      <a href="../tools/pue-calculator.html">PUE Calculator</a>
+      <a href="../tools/uptime-calculator.html">Uptime Calculator</a>
+      <a href="../tools/cooling-load-calculator.html">Cooling Load Calculator</a>
+      <a href="../search.html">Search the Site</a>
+    </div>
+    <div class="footer-col">
+      <h3>Company</h3>
+      <a href="https://hazwoper-osha.com/" target="_blank" rel="noopener">HAZWOPER-OSHA Training</a>
+      <a href="https://hazwoper-osha.com/certificate-verification" target="_blank" rel="noopener">Verify Certificate</a>
+      <a href="../privacy.html">Privacy Policy</a>
+      <a href="../terms.html">Terms of Service</a>
+      <a href="../accessibility.html">Accessibility</a>
+      <a href="../privacy.html#choices" data-privacy-choices>Your Privacy Choices</a>
+      <a href="https://hazwoper-osha.com/refund-policy" target="_blank" rel="noopener">Refund Policy</a>
+    </div>
+    </div>
+
+    <p class="footer-agents"><span>For AI agents:</span> <a href="/llms.txt">llms.txt</a> <a href="/llms-full.txt">llms-full.txt</a> <a href="/.well-known/mcp.json">WebMCP Manifest</a> <a href="/api/index.json">JSON Catalog API</a> <a href="/openapi.json">API Docs (OpenAPI)</a> <a href="/sitemap.xml">Sitemap</a></p>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; 2026 HAZWOPER-OSHA Training, LLC. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+<script src="../js/main.js" defer></script>
+
+</body>
+</html>

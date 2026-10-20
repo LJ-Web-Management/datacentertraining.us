@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- dct:head -->
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; object-src 'none'; base-uri 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#f5f5f7">
+<link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt">
+<link rel="alternate" type="application/json" href="/.well-known/mcp.json" title="WebMCP manifest">
+<link rel="service-desc" type="application/vnd.oai.openapi+json" href="/openapi.json">
+<script>
+/* Analytics, session recording, and chat load for every visitor unless they opt out or send a GPC signal
+   (see /js/consent.js), on the first interaction (scroll, tap, key, mouse move) so they never delay rendering. */
+(function(w,d){
+  w.dataLayer=w.dataLayer||[];w.gtag=function(){w.dataLayer.push(arguments);};
+  w.clarity=w.clarity||function(){(w.clarity.q=w.clarity.q||[]).push(arguments);};
+  w.Tawk_API=w.Tawk_API||{};w.Tawk_API.onLoad=function(){w.Tawk_API.minimize();};
+  var ev=['pointerdown','keydown','touchstart','scroll','mousemove'];
+  function add(src,attrs){var s=d.createElement('script');s.async=true;s.src=src;for(var k in attrs)s.setAttribute(k,attrs[k]);d.head.appendChild(s);}
+  function once(fn){var done=0;return function(now){if(done)return;function go(){if(done)return;done=1;ev.forEach(function(e){w.removeEventListener(e,go,{passive:true});});fn();}
+    if(now)go();else ev.forEach(function(e){w.addEventListener(e,go,{passive:true});});};}
+  w.dctLoad={
+    analytics:once(function(){
+      w.gtag('js',new Date());w.gtag('config','G-Z3T42KYK64');
+      add('https://www.googletagmanager.com/gtag/js?id=G-Z3T42KYK64');
+      add('https://analytics.ahrefs.com/analytics.js',{'data-key':'tVAd7KxwKax+pAfHx46Zgg'});
+      add('https://www.clarity.ms/tag/ylza43nm4m');
+    }),
+    chat:once(function(){
+      w.Tawk_LoadStart=new Date();add('https://embed.tawk.to/6a5a95a2096ab21d402a762c/1jtoth11r',{charset:'UTF-8',crossorigin:'*'});
+    })
+  };
+})(window,document);
+if(navigator.modelContext){var m=document.createElement('script');m.src='/js/webmcp.js';m.defer=true;document.head.appendChild(m);}
+</script>
+<script src="/js/consent.js" defer></script>
+<!-- /dct:head -->
+<title>Which Data Center Career Fits You? (Free Quiz)</title>
+<meta name="description" content="Answer 10 quick questions to find the data center career that fits you: power, cooling, operations, security, design, or monitoring. Plus where to start.">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+<link rel="canonical" href="https://datacentertraining.us/quizzes/career-quiz.html">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Which Data Center Career Fits You? (Free Quiz)">
+<meta property="og:description" content="Answer 10 quick questions to find the data center career that fits you: power, cooling, operations, security, design, or monitoring. Plus where to start.">
+<meta property="og:url" content="https://datacentertraining.us/quizzes/career-quiz.html">
+<meta property="og:image" content="https://datacentertraining.us/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Data Center Training">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@HazwoperOsha">
+<meta name="twitter:title" content="Which Data Center Career Fits You? (Free Quiz)">
+<meta name="twitter:description" content="Answer 10 quick questions to find the data center career that fits you: power, cooling, operations, security, design, or monitoring. Plus where to start.">
+<meta name="twitter:image" content="https://datacentertraining.us/images/og-image.jpg">
+
+<link rel="stylesheet" href="../css/site.min.css">
+<script src="../js/nav.js" defer></script>
+<script src="../js/quiz.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://datacentertraining.us/"},
+    {"@type": "ListItem", "position": 2, "name": "Quizzes", "item": "https://datacentertraining.us/quizzes/"},
+    {"@type": "ListItem", "position": 3, "name": "Career Match Quiz", "item": "https://datacentertraining.us/quizzes/career-quiz.html"}
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="glass-nav">
+  <div class="container nav-inner">
+    <a href="../" class="logo">
+      <img src="../images/favicon.svg" alt="" width="30" height="30">
+      <span>
+        <span class="logo-mark">datacentertraining.us</span>
+        <span class="logo-sub">Data Center Professional Training</span>
+      </span>
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Main">
+      <div class="nav-item">
+        <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="navMenu-training">Courses<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-3" id="navMenu-training">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Online Training</p>
+            <a href="../courses.html"><span class="nav-link-title">Course Catalog</span><span class="nav-link-desc">All 43 self-paced courses</span></a>
+            <a href="../bundles.html"><span class="nav-link-title">Course Bundles</span><span class="nav-link-desc">Role-based bundles, save up to 52%</span></a>
+            <a href="../who.html"><span class="nav-link-title">Courses by Role</span><span class="nav-link-desc">Find the track for your job</span></a>
+            <a href="../tools/training-plan-builder.html"><span class="nav-link-title">Training Plan Builder</span><span class="nav-link-desc">Build and price a plan in minutes</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Enrolling</p>
+            <a href="../#teams"><span class="nav-link-title">Team Training</span><span class="nav-link-desc">Seats, progress tracking, PO billing</span></a>
+            <a href="../certifications.html"><span class="nav-link-title">Certificates &amp; Accreditation</span><span class="nav-link-desc">What your certificate means</span></a>
+            <a href="../faq.html"><span class="nav-link-title">FAQ</span><span class="nav-link-desc">Pricing, access, and policies</span></a>
+          </div>
+          <a class="nav-feature" href="../bundles.html"><span class="nav-feature-kicker">Best value</span><span class="nav-feature-title">Complete Data Center Professional Bundle</span><span class="nav-feature-text">43 courses and 192 hours of training in one enrollment. Save 52%.</span><span class="nav-feature-cta">Compare bundles &rarr;</span></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="navMenu-learn">Learn<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-3" id="navMenu-learn">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Start Here</p>
+            <a href="../learn/"><span class="nav-link-title">Knowledge Center</span><span class="nav-link-desc">Every guide in one place</span></a>
+            <a href="../learn/what-is-a-data-center.html"><span class="nav-link-title">Data Center 101</span><span class="nav-link-desc">How data centers work</span></a>
+            <a href="../learn/glossary.html"><span class="nav-link-title">Glossary</span><span class="nav-link-desc">Data center terms, A to Z</span></a>
+            <a href="../learn/data-center-standards.html"><span class="nav-link-title">Standards &amp; Regulations</span><span class="nav-link-desc">TIA-942, NFPA, OSHA, ASHRAE, ISO</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Systems</p>
+            <a href="../learn/data-center-power.html"><span class="nav-link-title">Power Systems</span></a>
+            <a href="../learn/data-center-cooling.html"><span class="nav-link-title">Cooling Systems</span></a>
+            <a href="../learn/data-center-tiers.html"><span class="nav-link-title">Tier Levels &amp; Redundancy</span></a>
+            <a href="../learn/energy-efficiency-pue.html"><span class="nav-link-title">Energy Efficiency &amp; PUE</span></a>
+            <a href="../learn/ai-data-centers.html"><span class="nav-link-title">AI &amp; High-Density Facilities</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Operations</p>
+            <a href="../learn/data-center-safety.html"><span class="nav-link-title">Safety Guide</span></a>
+            <a href="../learn/data-center-security-compliance.html"><span class="nav-link-title">Security &amp; Compliance</span></a>
+            <a href="../learn/data-center-operations.html"><span class="nav-link-title">Operations &amp; Maintenance</span></a>
+            <a href="../learn/data-center-commissioning.html"><span class="nav-link-title">Commissioning (Levels 1-5)</span></a>
+            <a href="../blog/"><span class="nav-link-title">Blog: Field Guidance</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="navMenu-careers">Careers<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-2" id="navMenu-careers">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Data Center Careers</p>
+            <a href="../careers/"><span class="nav-link-title">Careers Hub</span><span class="nav-link-desc">Why the industry is hiring</span></a>
+            <a href="../careers/data-center-jobs.html"><span class="nav-link-title">Job Roles Explained</span><span class="nav-link-desc">What each role does day to day</span></a>
+            <a href="../careers/how-to-get-into-data-centers.html"><span class="nav-link-title">How to Get Into Data Centers</span><span class="nav-link-desc">A step-by-step starting plan</span></a>
+            <a href="../careers/career-changers.html"><span class="nav-link-title">Career Changers</span><span class="nav-link-desc">Electricians, HVAC techs, veterans, IT</span></a>
+            <a href="../careers/interview-questions.html"><span class="nav-link-title">Interview Questions</span><span class="nav-link-desc">Practice answers for technician roles</span></a>
+          </div>
+          <a class="nav-feature" href="../quizzes/career-quiz.html"><span class="nav-feature-kicker">2-minute quiz</span><span class="nav-feature-title">Which Data Center Career Fits You?</span><span class="nav-feature-text">Answer 10 quick questions and get a matching role and training track.</span><span class="nav-feature-cta">Take the career quiz &rarr;</span></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button type="button" class="nav-trigger active" aria-expanded="false" aria-controls="navMenu-quizzes">Quizzes &amp; Tools<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-2" id="navMenu-quizzes">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Quizzes</p>
+            <a href="../quizzes/"><span class="nav-link-title">All Quizzes</span></a>
+            <a href="../quizzes/career-quiz.html" aria-current="page"><span class="nav-link-title">Career Match Quiz</span></a>
+            <a href="../quizzes/data-center-basics-quiz.html"><span class="nav-link-title">Data Center Basics</span></a>
+            <a href="../quizzes/power-electrical-quiz.html"><span class="nav-link-title">Power &amp; Electrical</span></a>
+            <a href="../quizzes/cooling-quiz.html"><span class="nav-link-title">Cooling &amp; HVAC</span></a>
+            <a href="../quizzes/safety-quiz.html"><span class="nav-link-title">Safety</span></a>
+            <a href="../quizzes/security-compliance-quiz.html"><span class="nav-link-title">Security &amp; Compliance</span></a>
+            <a href="../quizzes/tiers-design-quiz.html"><span class="nav-link-title">Tiers &amp; Design</span></a>
+            <a href="../quizzes/operations-quiz.html"><span class="nav-link-title">Operations &amp; Monitoring</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Tools</p>
+            <a href="../tools/"><span class="nav-link-title">All Tools</span></a>
+            <a href="../tools/training-plan-builder.html"><span class="nav-link-title">Training Plan Builder</span></a>
+            <a href="../tools/pue-calculator.html"><span class="nav-link-title">PUE Calculator</span></a>
+            <a href="../tools/uptime-calculator.html"><span class="nav-link-title">Uptime &amp; Downtime Calculator</span></a>
+            <a href="../tools/cooling-load-calculator.html"><span class="nav-link-title">Cooling Load Calculator</span></a>
+          </div>
+        </div>
+      </div>
+      <a href="../blog/" class="nav-link">Blog</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="../search.html" class="nav-search" data-search-open aria-label="Search the site" title="Search (Ctrl+K)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><span class="nav-search-label">Search</span><kbd class="nav-search-kbd">Ctrl K</kbd></a>
+      <a href="../courses.html" class="btn btn-primary btn-sm nav-cta">View Courses</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../">Home</a>
+      <span>&rsaquo;</span>
+      <a href="./">Quizzes</a>
+      <span>&rsaquo;</span>
+      <span aria-current="page">Career Match Quiz</span>
+    </nav>
+  </div>
+
+  <section class="course-hero">
+    <div class="container">
+      <div class="course-hero-eyebrow">Quiz &middot; Careers</div>
+      <h1>Which Data Center Career Fits You?</h1>
+      <p class="course-hero-hook">Data centers need electricians, HVAC techs, operators, security pros, engineers, and monitoring specialists. Answer ten quick questions to see which path matches how you like to work, and where to start.</p>
+      <div class="course-pills">
+        <span class="course-pill">10 questions</span>
+        <span class="course-pill">About 2 minutes</span>
+        <span class="course-pill">No right or wrong answers</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="container-read">
+    <h2 class="visually-hidden">Career quiz</h2>
+    <section class="quiz" data-quiz-id="career" data-quiz-type="career" data-quiz-title="Data Center Career Match Quiz" aria-label="Career match quiz">
+      <div class="quiz-progress" aria-hidden="true"><span class="quiz-progress-text">Question 1 of 10</span><div class="quiz-progress-track"><div class="quiz-progress-bar"></div></div></div>
+      <ol class="quiz-questions">
+        <li class="quiz-q">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 1</span><span class="quiz-q-text">What kind of problem do you most enjoy solving?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="c1" value="electrician"><span>Tracing a fault through breakers, panels, and wiring</span></label>
+            <label class="quiz-opt"><input type="radio" name="c1" value="hvac"><span>Figuring out why a room is running hot</span></label>
+            <label class="quiz-opt"><input type="radio" name="c1" value="operations"><span>Keeping a busy team on schedule and on procedure</span></label>
+            <label class="quiz-opt"><input type="radio" name="c1" value="security"><span>Spotting the gap in a security plan before anyone else does</span></label>
+            <label class="quiz-opt"><input type="radio" name="c1" value="design"><span>Planning something big on paper before it gets built</span></label>
+            <label class="quiz-opt"><input type="radio" name="c1" value="it"><span>Digging through data and dashboards to find the root cause</span></label>
+          </fieldset>
+        </li>
+        <li class="quiz-q">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 2</span><span class="quiz-q-text">Pick the tool you would most like to master.</span></legend>
+            <label class="quiz-opt"><input type="radio" name="c2" value="electrician hvac"><span>A clamp meter and an infrared camera</span></label>
+            <label class="quiz-opt"><input type="radio" name="c2" value="hvac"><span>Refrigerant gauges and an airflow meter</span></label>
+            <label class="quiz-opt"><input type="radio" name="c2" value="operations"><span>A maintenance work order system</span></label>
+            <label class="quiz-opt"><input type="radio" name="c2" value="security"><span>An access control and video management system</span></label>
+            <label class="quiz-opt"><input type="radio" name="c2" value="design"><span>Design software and a load calculation spreadsheet</span></label>
+            <label class="quiz-opt"><input type="radio" name="c2" value="it"><span>A DCIM or building management dashboard</span></label>
+          </fieldset>
+        </li>
+        <li class="quiz-q">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 3</span><span class="quiz-q-text">Where would you most like to spend your workday?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="c3" value="electrician"><span>Switchgear rooms, UPS rooms, and the generator yard</span></label>
+            <label class="quiz-opt"><input type="radio" name="c3" value="hvac"><span>Mechanical rooms, the chiller plant, and the roof</span></label>
+            <label class="quiz-opt"><input type="radio" name="c3" value="operations"><span>Everywhere: walking the floor, then planning in the office</span></label>
+            <label class="quiz-opt"><input type="radio" name="c3" value="security"><span>Entrances, the security operations center, and audits</span></label>
+            <label class="quiz-opt"><input type="radio" name="c3" value="design"><span>Design reviews, job sites, and commissioning tests</span></label>
+            <label class="quiz-opt"><input type="radio" name="c3" value="it"><span>The network operations center or the data hall, laptop in hand</span></label>
+          </fieldset>
+        </li>
+        <li class="quiz-q">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 4</span><span class="quiz-q-text">Which statement sounds most like you?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="c4" value="electrician operations"><span>I respect hazardous energy and follow the procedure every time.</span></label>
+            <label class="quiz-opt"><input type="radio" name="c4" value="hvac electrician"><span>I like getting my hands on equipment and making it run better.</span></label>
+            <label class="quiz-opt"><input type="radio" name="c4" value="operations"><span>I like being the person people call when something goes wrong.</span></label>
+            <label class="quiz-opt"><input type="radio" name="c4" value="security"><span>Rules exist for a reason, and I am comfortable enforcing them.</span></label>
+            <label class="quiz-opt"><input type="radio" name="c4" value="design"><span>I like asking “what if it fails?” before anything is built.</span></label>
+            <label class="quiz-opt"><input type="radio" name="c4" value="it"><span>If something can be measured or automated, I want to do it.</span></label>
+          </fieldset>
+        </li>
+        <li class="quiz-q">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 5</span><span class="quiz-q-text">Which background do you have, or wish you had?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="c5" value="electrician"><span>An electrical apprenticeship or license</span></label>
+            <label class="quiz-opt"><input type="radio" name="c5" value="hvac"><span>HVAC, refrigeration, or another mechanical trade</span></label>
+            <label class="quiz-opt"><input type="radio" name="c5" value="operations security"><span>Facilities supervision or military service</span></label>
+            <label class="quiz-opt"><input type="radio" name="c5" value="security"><span>Security, law enforcement, or compliance work</span></label>
+            <label class="quiz-opt"><input type="radio" name="c5" value="design"><span>An engineering degree or construction project management</span></label>
+            <label class="quiz-opt"><input type="radio" name="c5" value="it"><span>IT help desk, networking, or building controls</span></label>
+          </fieldset>
+        </li>
+        <li class="quiz-q">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 6</span><span class="quiz-q-text">The utility fails at 2 a.m. What is your first instinct?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="c6" value="electrician"><span>Watch the transfer to generator and check the UPS status</span></label>
+            <label class="quiz-opt"><input type="radio" name="c6" value="hvac"><span>Make sure chillers and cooling units restart and temperatures hold</span></label>
+            <label class="quiz-opt"><input type="radio" name="c6" value="operations"><span>Run the emergency procedure and keep everyone informed</span></label>
+            <label class="quiz-opt"><input type="radio" name="c6" value="security"><span>Secure the building and account for everyone on site</span></label>
+            <label class="quiz-opt"><input type="radio" name="c6" value="design"><span>Afterward, find the weak point in the design and fix it for next time</span></label>
+            <label class="quiz-opt"><input type="radio" name="c6" value="it"><span>Pull up the alarms and trend data to see exactly what happened</span></label>
+          </fieldset>
+        </li>
+        <li class="quiz-q">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 7</span><span class="quiz-q-text">Which project would you volunteer for?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="c7" value="electrician"><span>A generator load-bank test</span></label>
+            <label class="quiz-opt"><input type="radio" name="c7" value="hvac"><span>A hot aisle containment retrofit</span></label>
+            <label class="quiz-opt"><input type="radio" name="c7" value="operations"><span>Rebuilding the preventive maintenance program</span></label>
+            <label class="quiz-opt"><input type="radio" name="c7" value="security"><span>Preparing for a SOC 2 audit</span></label>
+            <label class="quiz-opt"><input type="radio" name="c7" value="design"><span>Designing and commissioning a new data hall</span></label>
+            <label class="quiz-opt"><input type="radio" name="c7" value="it"><span>Rolling out a new DCIM platform</span></label>
+          </fieldset>
+        </li>
+        <li class="quiz-q">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 8</span><span class="quiz-q-text">How do you prefer to work?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="c8" value="electrician"><span>Hands-on with a crew, following detailed switching steps</span></label>
+            <label class="quiz-opt"><input type="radio" name="c8" value="hvac"><span>Hands-on, often on my own, troubleshooting equipment</span></label>
+            <label class="quiz-opt"><input type="radio" name="c8" value="operations"><span>Leading people and coordinating vendors</span></label>
+            <label class="quiz-opt"><input type="radio" name="c8" value="security"><span>Observing, checking, and documenting</span></label>
+            <label class="quiz-opt"><input type="radio" name="c8" value="design"><span>Analyzing, modeling, and planning</span></label>
+            <label class="quiz-opt"><input type="radio" name="c8" value="it"><span>At a screen, connecting systems and data</span></label>
+          </fieldset>
+        </li>
+        <li class="quiz-q">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 9</span><span class="quiz-q-text">Pick the skill you would love to be known for.</span></legend>
+            <label class="quiz-opt"><input type="radio" name="c9" value="electrician"><span>Arc flash safety and power distribution</span></label>
+            <label class="quiz-opt"><input type="radio" name="c9" value="hvac"><span>Airflow management and cooling efficiency</span></label>
+            <label class="quiz-opt"><input type="radio" name="c9" value="operations"><span>Staying calm and in command during an incident</span></label>
+            <label class="quiz-opt"><input type="radio" name="c9" value="security"><span>Access control and audit readiness</span></label>
+            <label class="quiz-opt"><input type="radio" name="c9" value="design"><span>Redundancy design and Tier strategy</span></label>
+            <label class="quiz-opt"><input type="radio" name="c9" value="it"><span>Monitoring, automation, and fiber networks</span></label>
+          </fieldset>
+        </li>
+        <li class="quiz-q">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 10</span><span class="quiz-q-text">Where do you see yourself in five years?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="c10" value="electrician"><span>Lead critical power technician or electrical supervisor</span></label>
+            <label class="quiz-opt"><input type="radio" name="c10" value="hvac"><span>Chief engineer running the mechanical plant</span></label>
+            <label class="quiz-opt"><input type="radio" name="c10" value="operations"><span>Facility or site operations manager</span></label>
+            <label class="quiz-opt"><input type="radio" name="c10" value="security"><span>Security or compliance manager</span></label>
+            <label class="quiz-opt"><input type="radio" name="c10" value="design"><span>Commissioning lead or data center design engineer</span></label>
+            <label class="quiz-opt"><input type="radio" name="c10" value="it"><span>DCIM, controls, or monitoring specialist</span></label>
+          </fieldset>
+        </li>
+      </ol>
+      <div class="quiz-nav">
+        <button type="button" class="btn btn-secondary btn-sm quiz-back" hidden>Back</button>
+        <span class="quiz-nav-hint">Choose an answer to continue.</span>
+        <button type="button" class="btn btn-primary quiz-next" disabled>Next question</button>
+      </div>
+      <div class="quiz-result" hidden>
+        <p class="quiz-score-label">Your best-fit data center career</p>
+
+        <div class="career-result" data-role="electrician" data-href="../careers/data-center-jobs.html#electrician" hidden>
+          <p class="career-result-match">Your match</p>
+          <h3>Critical Power Technician or Data Center Electrician</h3>
+          <p>You are drawn to the electrical backbone of the facility: switchgear, UPS systems, batteries, and generators. Critical power technicians keep that chain healthy, perform switching under strict procedures, and are the first responders when power misbehaves.</p>
+          <ul>
+            <li>Day to day: inspections, UPS and battery checks, generator tests, and planned switching.</li>
+            <li>Typical path in: an electrical apprenticeship or license, or military electrical experience.</li>
+            <li>Where it leads: lead technician, electrical supervisor, or chief engineer.</li>
+          </ul>
+          <p><strong>Where to start:</strong></p>
+          <!-- dct:courses data-center-electrical-safety power-systems-electrical-fundamentals ups-systems-fundamentals data-center-arc-flash-safety -->
+<div class="panel course-panel">
+<div class="course-row"><div class="course-main"><h3><a href="../courses/data-center-electrical-safety.html">Data Center Electrical Safety Training</a></h3><div class="course-meta"><span>Power &amp; Electrical</span><span class="sep">&middot;</span><span>Modular Specialization</span></div><p class="course-hook">Foundational electrical safety practices for anyone working around data center power systems.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">2 hrs</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=data-center-electrical-safety" aria-label="Enroll in Data Center Electrical Safety Training">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/power-systems-electrical-fundamentals.html">Power Systems &amp; Electrical Fundamentals</a></h3><div class="course-meta"><span>Power &amp; Electrical</span><span class="sep">&middot;</span><span>Comprehensive Program</span><span class="sep">&middot;</span><span>NFPA 70E</span></div><p class="course-hook">Master data center electrical infrastructure — from utility interconnection to UPS and PDU architecture.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">8 hrs</div><div class="course-price">$303.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=power-systems-electrical-fundamentals" aria-label="Enroll in Power Systems &amp; Electrical Fundamentals">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/ups-systems-fundamentals.html">UPS Systems Fundamentals</a></h3><div class="course-meta"><span>Power &amp; Electrical</span><span class="sep">&middot;</span><span>Modular Specialization</span></div><p class="course-hook">Foundational UPS theory to complement hands-on operations and load testing.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">2 hrs</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=ups-systems-fundamentals" aria-label="Enroll in UPS Systems Fundamentals">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/data-center-arc-flash-safety.html">Data Center Arc Flash Safety Training</a></h3><div class="course-meta"><span>Power &amp; Electrical</span><span class="sep">&middot;</span><span>Modular Specialization</span><span class="sep">&middot;</span><span>NFPA 70E</span></div><p class="course-hook">NFPA 70E arc flash safety specific to data center switchgear and power distribution.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">2 hrs</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=data-center-arc-flash-safety" aria-label="Enroll in Data Center Arc Flash Safety Training">Enroll</a></div></div>
+</div>
+<!-- /dct:courses -->
+        </div>
+
+        <div class="career-result" data-role="hvac" data-href="../careers/data-center-jobs.html#hvac-technician" hidden>
+          <p class="career-result-match">Your match</p>
+          <h3>Critical Facilities HVAC or Mechanical Technician</h3>
+          <p>You like equipment you can put your hands on and problems you can measure. Every watt in a data center becomes heat, and mechanical technicians keep chillers, CRAHs, pumps, and airflow working so the IT load never overheats.</p>
+          <ul>
+            <li>Day to day: rounds on cooling equipment, preventive maintenance, troubleshooting alarms, and airflow fixes.</li>
+            <li>Typical path in: HVAC or refrigeration training, plus EPA Section 608 certification for refrigerant work.</li>
+            <li>Where it leads: senior mechanical technician, chief engineer, or efficiency specialist.</li>
+          </ul>
+          <p><strong>Where to start:</strong></p>
+          <!-- dct:courses data-center-cooling-refrigerant-safety hvac-troubleshooting-essentials cooling-systems-design-optimization mechanical-systems-maintenance -->
+<div class="panel course-panel">
+<div class="course-row"><div class="course-main"><h3><a href="../courses/data-center-cooling-refrigerant-safety.html">Data Center Cooling System and Refrigerant Safety Training</a></h3><div class="course-meta"><span>Cooling &amp; Efficiency</span><span class="sep">&middot;</span><span>Modular Specialization</span><span class="sep">&middot;</span><span>EPA/OSHA</span></div><p class="course-hook">Refrigerant handling and cooling system safety practices specific to data center CRAC/CRAH environments.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">2 hrs</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=data-center-cooling-refrigerant-safety" aria-label="Enroll in Data Center Cooling System and Refrigerant Safety Training">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/hvac-troubleshooting-essentials.html">HVAC Systems Troubleshooting Essentials</a></h3><div class="course-meta"><span>Cooling &amp; Efficiency</span><span class="sep">&middot;</span><span>Modular Specialization</span></div><p class="course-hook">Hands-on troubleshooting skills for CRAC/CRAH systems and common cooling failures.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">4 hrs</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=hvac-troubleshooting-essentials" aria-label="Enroll in HVAC Systems Troubleshooting Essentials">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/cooling-systems-design-optimization.html">Cooling Systems Design &amp; Optimization</a></h3><div class="course-meta"><span>Cooling &amp; Efficiency</span><span class="sep">&middot;</span><span>Comprehensive Program</span><span class="sep">&middot;</span><span>PUE / ASHRAE Thermal Guidelines</span></div><p class="course-hook">Cut cooling costs and improve reliability with modern thermal management strategy.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">8 hrs</div><div class="course-price">$298.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=cooling-systems-design-optimization" aria-label="Enroll in Cooling Systems Design &amp; Optimization">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/mechanical-systems-maintenance.html">Mechanical Systems &amp; Equipment Maintenance</a></h3><div class="course-meta"><span>Cooling &amp; Efficiency</span><span class="sep">&middot;</span><span>Modular Specialization</span></div><p class="course-hook">Hands-on mechanical maintenance — piping, chillers, and vibration diagnostics.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">4 hrs</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=mechanical-systems-maintenance" aria-label="Enroll in Mechanical Systems &amp; Equipment Maintenance">Enroll</a></div></div>
+</div>
+<!-- /dct:courses -->
+        </div>
+
+        <div class="career-result" data-role="operations" data-href="../careers/data-center-jobs.html#critical-facilities-technician" hidden>
+          <p class="career-result-match">Your match</p>
+          <h3>Critical Facilities Operations, From Technician to Manager</h3>
+          <p>You are the steady hand people call when something goes wrong. Operations staff run the site around the clock: they follow and write procedures, coordinate maintenance and vendors, lead incident response, and keep uptime promises.</p>
+          <ul>
+            <li>Day to day: shift rounds, work orders, change management, and incident response.</li>
+            <li>Typical path in: facilities maintenance, building engineering, or military operations experience.</li>
+            <li>Where it leads: shift lead, facility manager, and director of critical facilities.</li>
+          </ul>
+          <p><strong>Where to start:</strong></p>
+          <!-- dct:courses facility-management-fundamentals data-center-operations-management preventive-maintenance-planning incident-response-troubleshooting -->
+<div class="panel course-panel">
+<div class="course-row"><div class="course-main"><h3><a href="../courses/facility-management-fundamentals.html">Facility Management Fundamentals</a></h3><div class="course-meta"><span>Operations</span><span class="sep">&middot;</span><span>Modular Specialization</span></div><p class="course-hook">Core facility management principles for teams running critical infrastructure.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">4 hrs</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=facility-management-fundamentals" aria-label="Enroll in Facility Management Fundamentals">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/data-center-operations-management.html">Data Center Operations Management</a></h3><div class="course-meta"><span>Operations</span><span class="sep">&middot;</span><span>Comprehensive Program</span><span class="sep">&middot;</span><span>DCIM / SLA Frameworks</span></div><p class="course-hook">Run daily operations like the teams behind Tier 3/4 facilities — maintenance, incident response, and SLAs.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">8 hrs</div><div class="course-price">$325.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=data-center-operations-management" aria-label="Enroll in Data Center Operations Management">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/preventive-maintenance-planning.html">Preventive Maintenance Planning</a></h3><div class="course-meta"><span>Operations</span><span class="sep">&middot;</span><span>Modular Specialization</span></div><p class="course-hook">Reduce emergency repairs with a structured preventive maintenance program.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">4 hrs</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=preventive-maintenance-planning" aria-label="Enroll in Preventive Maintenance Planning">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/incident-response-troubleshooting.html">Incident Response &amp; Troubleshooting</a></h3><div class="course-meta"><span>Operations</span><span class="sep">&middot;</span><span>Modular Specialization</span></div><p class="course-hook">Systematic troubleshooting and root-cause analysis to cut MTTR.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">4 hrs</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=incident-response-troubleshooting" aria-label="Enroll in Incident Response &amp; Troubleshooting">Enroll</a></div></div>
+</div>
+<!-- /dct:courses -->
+        </div>
+
+        <div class="career-result" data-role="security" data-href="../careers/data-center-jobs.html#security-officer" hidden>
+          <p class="career-result-match">Your match</p>
+          <h3>Data Center Security and Compliance</h3>
+          <p>You notice details others miss and you are comfortable enforcing rules. Data centers protect some of the world's most valuable equipment and data, and security and compliance teams control who gets in, document everything, and keep the site audit-ready.</p>
+          <ul>
+            <li>Day to day: access control, visitor escort, monitoring cameras and alarms, and audit evidence.</li>
+            <li>Typical path in: security, law enforcement, military, or compliance experience.</li>
+            <li>Where it leads: security supervisor, compliance specialist, or security manager.</li>
+          </ul>
+          <p><strong>Where to start:</strong></p>
+          <!-- dct:courses data-center-physical-security-access-control access-control-physical-security security-compliance-data-centers data-center-fire-suppression-safety -->
+<div class="panel course-panel">
+<div class="course-row"><div class="course-main"><h3><a href="../courses/data-center-physical-security-access-control.html">Data Center Physical Security and Access Control Training</a></h3><div class="course-meta"><span>Security &amp; Compliance</span><span class="sep">&middot;</span><span>Modular Specialization</span></div><p class="course-hook">Foundational physical security and access control practices for data hall environments.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">1 hr</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=data-center-physical-security-access-control" aria-label="Enroll in Data Center Physical Security and Access Control Training">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/access-control-physical-security.html">Access Control &amp; Physical Security</a></h3><div class="course-meta"><span>Security &amp; Compliance</span><span class="sep">&middot;</span><span>Modular Specialization</span></div><p class="course-hook">Practical security training for facility staff — access control, surveillance, and incident reporting.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">4 hrs</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=access-control-physical-security" aria-label="Enroll in Access Control &amp; Physical Security">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/security-compliance-data-centers.html">Security &amp; Compliance for Data Centers</a></h3><div class="course-meta"><span>Security &amp; Compliance</span><span class="sep">&middot;</span><span>Comprehensive Program</span><span class="sep">&middot;</span><span>SOC 2 / ISO 27001</span></div><p class="course-hook">Build a facility security program that satisfies SOC 2, ISO 27001, and physical audit requirements.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">16 hrs</div><div class="course-price">$291.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=security-compliance-data-centers" aria-label="Enroll in Security &amp; Compliance for Data Centers">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/data-center-fire-suppression-safety.html">Data Center Fire Suppression System Safety Training (Clean Agent Systems)</a></h3><div class="course-meta"><span>Security &amp; Compliance</span><span class="sep">&middot;</span><span>Modular Specialization</span><span class="sep">&middot;</span><span>NFPA 2001</span></div><p class="course-hook">Clean agent fire suppression safety for occupied data hall environments.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">2 hrs</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=data-center-fire-suppression-safety" aria-label="Enroll in Data Center Fire Suppression System Safety Training (Clean Agent Systems)">Enroll</a></div></div>
+</div>
+<!-- /dct:courses -->
+        </div>
+
+        <div class="career-result" data-role="design" data-href="../careers/data-center-jobs.html#design-engineer" hidden>
+          <p class="career-result-match">Your match</p>
+          <h3>Data Center Design and Commissioning Engineer</h3>
+          <p>You like to think a system through before it exists. Design engineers, planners, and commissioning agents decide how much redundancy a facility needs, how power and cooling are laid out, and prove it all works before the first server arrives.</p>
+          <ul>
+            <li>Day to day: design reviews, capacity models, test scripts, and witnessing commissioning tests.</li>
+            <li>Typical path in: an engineering degree, construction project management, or senior field experience.</li>
+            <li>Where it leads: commissioning lead, design manager, or capacity planning lead.</li>
+          </ul>
+          <p><strong>Where to start:</strong></p>
+          <!-- dct:courses data-center-design-fundamentals tier-infrastructure-fundamentals infrastructure-commissioning-startup capacity-planning-forecasting -->
+<div class="panel course-panel">
+<div class="course-row"><div class="course-main"><h3><a href="../courses/data-center-design-fundamentals.html">Data Center Design Fundamentals</a></h3><div class="course-meta"><span>Design &amp; Planning</span><span class="sep">&middot;</span><span>Comprehensive Program</span><span class="sep">&middot;</span><span>ANSI/TIA-942</span></div><p class="course-hook">Design data center facilities that scale — from site selection to redundancy strategy.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">8 hrs</div><div class="course-price">$312.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=data-center-design-fundamentals" aria-label="Enroll in Data Center Design Fundamentals">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/tier-infrastructure-fundamentals.html">Tier Infrastructure Fundamentals</a></h3><div class="course-meta"><span>Design &amp; Planning</span><span class="sep">&middot;</span><span>Comprehensive Program</span><span class="sep">&middot;</span><span>Uptime Institute Tier Framework</span></div><p class="course-hook">Understand and assess TIER I–IV infrastructure without the formal certification track.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">8 hrs</div><div class="course-price">$280.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=tier-infrastructure-fundamentals" aria-label="Enroll in Tier Infrastructure Fundamentals">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/infrastructure-commissioning-startup.html">Infrastructure Commissioning &amp; Startup</a></h3><div class="course-meta"><span>Design &amp; Planning</span><span class="sep">&middot;</span><span>Comprehensive Program</span><span class="sep">&middot;</span><span>Commissioning Test Protocols</span></div><p class="course-hook">Lead new facility launches and major upgrades with a proven commissioning framework.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">8 hrs</div><div class="course-price">$267.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=infrastructure-commissioning-startup" aria-label="Enroll in Infrastructure Commissioning &amp; Startup">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/capacity-planning-forecasting.html">Capacity Planning &amp; Forecasting</a></h3><div class="course-meta"><span>Design &amp; Planning</span><span class="sep">&middot;</span><span>Modular Specialization</span></div><p class="course-hook">Build a 3–5 year capacity plan before you run out of power, cooling, or space.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">4 hrs</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=capacity-planning-forecasting" aria-label="Enroll in Capacity Planning &amp; Forecasting">Enroll</a></div></div>
+</div>
+<!-- /dct:courses -->
+        </div>
+
+        <div class="career-result" data-role="it" data-href="../careers/data-center-jobs.html#noc-technician" hidden>
+          <p class="career-result-match">Your match</p>
+          <h3>Monitoring, DCIM, and Data Center Technician</h3>
+          <p>You think in systems and data. Monitoring and data center technicians watch the BMS and DCIM platforms, chase down alarms, manage cabling and capacity records, and connect what the building is doing to what the IT load needs.</p>
+          <ul>
+            <li>Day to day: alarm response, DCIM records, cabling and rack work, and trend analysis.</li>
+            <li>Typical path in: IT help desk, networking, or building controls experience.</li>
+            <li>Where it leads: NOC lead, controls or DCIM specialist, or capacity analyst.</li>
+          </ul>
+          <p><strong>Where to start:</strong></p>
+          <!-- dct:courses monitoring-automation-bms-systems dcim-platform-fundamentals fiber-optics-network-cabling building-automation-systems-fundamentals -->
+<div class="panel course-panel">
+<div class="course-row"><div class="course-main"><h3><a href="../courses/monitoring-automation-bms-systems.html">Monitoring, Automation &amp; BMS Systems</a></h3><div class="course-meta"><span>Monitoring &amp; Automation</span><span class="sep">&middot;</span><span>Comprehensive Program</span><span class="sep">&middot;</span><span>BMS / DCIM</span></div><p class="course-hook">Design a monitoring and BMS strategy that catches problems before they cause downtime.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">8 hrs</div><div class="course-price">$276.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=monitoring-automation-bms-systems" aria-label="Enroll in Monitoring, Automation &amp; BMS Systems">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/dcim-platform-fundamentals.html">DCIM Platform Fundamentals</a></h3><div class="course-meta"><span>Monitoring &amp; Automation</span><span class="sep">&middot;</span><span>Modular Specialization</span><span class="sep">&middot;</span><span>DCIM</span></div><p class="course-hook">Understand DCIM strategy and build the ROI case for implementation.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">4 hrs</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=dcim-platform-fundamentals" aria-label="Enroll in DCIM Platform Fundamentals">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/fiber-optics-network-cabling.html">Fiber Optics &amp; Network Cabling</a></h3><div class="course-meta"><span>Monitoring &amp; Automation</span><span class="sep">&middot;</span><span>Modular Specialization</span><span class="sep">&middot;</span><span>ANSI/TIA-942</span></div><p class="course-hook">Terminate, test, and troubleshoot data center fiber to ANSI/TIA-942 standards.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">4 hrs</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=fiber-optics-network-cabling" aria-label="Enroll in Fiber Optics &amp; Network Cabling">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/building-automation-systems-fundamentals.html">Building Automation Systems (BAS) Fundamentals</a></h3><div class="course-meta"><span>Monitoring &amp; Automation</span><span class="sep">&middot;</span><span>Modular Specialization</span><span class="sep">&middot;</span><span>BMS/BAS</span></div><p class="course-hook">Understand the building automation systems that tie HVAC, power, and monitoring together.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">6 hrs</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=building-automation-systems-fundamentals" aria-label="Enroll in Building Automation Systems (BAS) Fundamentals">Enroll</a></div></div>
+</div>
+<!-- /dct:courses -->
+        </div>
+
+        <p class="career-also"></p>
+        <div class="quiz-result-actions">
+          <a class="btn btn-primary" href="../tools/training-plan-builder.html">Build My Training Plan</a>
+          <button type="button" class="btn btn-secondary quiz-share">Share My Result</button>
+          <button type="button" class="btn btn-secondary quiz-retake">Retake Quiz</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>The Six Data Center Career Paths</h2>
+        <p>Every path below has room to grow from entry-level technician to leadership. Explore each one in detail.</p>
+      </div>
+      <div class="card-grid">
+        <a class="topic-card" href="../careers/data-center-jobs.html#electrician"><span class="topic-card-icon" aria-hidden="true">&#9889;</span><h3>Critical Power</h3><p>Electricians and power technicians who keep switchgear, UPS systems, and generators ready.</p><span class="topic-card-cta">See the role &rarr;</span></a>
+        <a class="topic-card" href="../careers/data-center-jobs.html#hvac-technician"><span class="topic-card-icon" aria-hidden="true">&#10052;&#65039;</span><h3>Cooling and Mechanical</h3><p>HVAC and mechanical technicians who move the heat out of the building.</p><span class="topic-card-cta">See the role &rarr;</span></a>
+        <a class="topic-card" href="../careers/data-center-jobs.html#critical-facilities-technician"><span class="topic-card-icon" aria-hidden="true">&#128736;&#65039;</span><h3>Facilities Operations</h3><p>The 24/7 team that runs procedures, maintenance, and incident response.</p><span class="topic-card-cta">See the role &rarr;</span></a>
+        <a class="topic-card" href="../careers/data-center-jobs.html#security-officer"><span class="topic-card-icon" aria-hidden="true">&#128272;</span><h3>Security and Compliance</h3><p>Access control, surveillance, and audit readiness.</p><span class="topic-card-cta">See the role &rarr;</span></a>
+        <a class="topic-card" href="../careers/data-center-jobs.html#design-engineer"><span class="topic-card-icon" aria-hidden="true">&#128208;</span><h3>Design and Commissioning</h3><p>Engineers who plan redundancy and prove systems work before go-live.</p><span class="topic-card-cta">See the role &rarr;</span></a>
+        <a class="topic-card" href="../careers/data-center-jobs.html#noc-technician"><span class="topic-card-icon" aria-hidden="true">&#128225;</span><h3>Monitoring and IT</h3><p>NOC, DCIM, controls, and data center technicians.</p><span class="topic-card-cta">See the role &rarr;</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <h2>Ready for More?</h2>
+        <p>Learn how to break in, then test your technical knowledge.</p>
+      </div>
+      <div class="card-grid">
+        <a class="topic-card" href="../careers/how-to-get-into-data-centers.html"><span class="topic-card-kicker">Careers</span><h3>How to Get Into Data Centers</h3><p>A step-by-step plan from first course to first job.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+        <a class="topic-card" href="data-center-basics-quiz.html"><span class="topic-card-kicker">Quiz</span><h3>Data Center Basics Quiz</h3><p>Ten beginner questions on how facilities work.</p><span class="topic-card-cta">Take the quiz &rarr;</span></a>
+        <a class="topic-card" href="../careers/interview-questions.html"><span class="topic-card-kicker">Careers</span><h3>Interview Questions</h3><p>Practice answers for data center technician interviews.</p><span class="topic-card-cta">Start practicing &rarr;</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta-block">
+        <h2>Start Training for Your Path</h2>
+        <p>Every course is self-paced and online, with a certificate of completion when you finish. Start with one course or save with a bundle for your track.</p>
+        <div class="hero-ctas">
+          <a href="../bundles.html" class="btn glass-chip">Compare Bundles</a>
+          <a href="../courses.html" class="btn glass-chip">Browse All Courses</a>
+          <a href="../who.html" class="btn glass-chip">Courses by Role</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="contact">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="../" class="logo">
+          <img src="../images/favicon.svg" alt="" width="28" height="28">
+          <span>
+            <span class="logo-mark">datacentertraining.us</span>
+            <span class="logo-sub">Data Center Professional Training</span>
+          </span>
+        </a>
+        <p class="footer-legal">Data Center Training is a specialty training division of <a href="https://hazwoper-osha.com/" target="_blank" rel="noopener">HAZWOPER-OSHA Training, LLC</a>, an IACET-accredited provider of professional data center and safety compliance training.</p>
+        <p class="footer-legal" style="margin-top:8px;">HAZWOPER OSHA Training, LLC &middot; 11901 Santa Monica Blvd., Suite #414, Los Angeles, CA 90025</p>
+        <div class="footer-badges">
+          <img src="https://media.hazwoper-osha.com/wp-content/uploads/2023/11/1698821020/IACET-small.webp" alt="IACET Accredited Provider" width="40" height="24" loading="lazy">
+          <img src="https://media.hazwoper-osha.com/wp-content/uploads/2026/07/1784291935/bbb.webp" alt="BBB A+ Rating" width="40" height="24" loading="lazy">
+          <img src="https://media.hazwoper-osha.com/wp-content/uploads/2026/07/1784292027/trust.webp" alt="Google Trust Services" width="141" height="20" loading="lazy" style="height:20px;">
+        </div>
+      </div>
+      <div class="footer-cta">
+        <p class="footer-cta-title">Not sure where to start?</p>
+        <p class="footer-cta-text">Find the data center role that fits you, then get a training plan built around it.</p>
+        <div class="footer-cta-actions">
+          <a href="../quizzes/career-quiz.html" class="btn btn-primary btn-sm">Take the Career Quiz</a>
+          <a href="../tools/training-plan-builder.html" class="btn btn-secondary btn-sm">Build a Training Plan</a>
+        </div>
+        <div class="footer-contact-links">
+          <a href="tel:18664296742">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            1-866-429-6742
+          </a>
+          <a href="mailto:info@hazwoper-osha.com">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            info@hazwoper-osha.com
+          </a>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/HazwoperOsha/" target="_blank" rel="noopener" aria-label="Facebook"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/hazwoper_osha_training/?hl=en" target="_blank" rel="noopener" aria-label="Instagram"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="https://www.youtube.com/@hazwoper-osha" target="_blank" rel="noopener" aria-label="YouTube"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33zM9.75 15.02V8.48l5.75 3.27z"/></svg></a>
+          <a href="https://x.com/HazwoperOsha" target="_blank" rel="noopener" aria-label="X"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.4 8.4L23 22h-6.6l-5.2-6.8L5.1 22H2l7.9-9L1.6 2h6.8l4.7 6.2z"/></svg></a>
+          <a href="https://www.linkedin.com/company/hazwoper-osha" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM8.34 18.34V10.1H5.67v8.24zM7.01 8.97a1.55 1.55 0 1 0 0-3.1 1.55 1.55 0 0 0 0 3.1zM18.34 18.34v-4.6c0-2.46-1.31-3.6-3.06-3.6a2.64 2.64 0 0 0-2.39 1.32V10.1H10.2s.04.86 0 8.24h2.68v-4.6c0-.25.02-.5.09-.68a1.5 1.5 0 0 1 1.37-1c.96 0 1.35.73 1.35 1.8v4.48z"/></svg></a>
+          <a href="https://www.pinterest.com/hazwoperosha/" target="_blank" rel="noopener" aria-label="Pinterest"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.64 7.86 6.36 9.32-.09-.79-.17-2.01.03-2.88.19-.79 1.22-5.03 1.22-5.03s-.31-.63-.31-1.55c0-1.45.84-2.54 1.89-2.54.89 0 1.32.67 1.32 1.47 0 .89-.57 2.23-.86 3.47-.25 1.03.52 1.88 1.53 1.88 1.84 0 3.07-2.36 3.07-5.15 0-2.12-1.43-3.71-4.02-3.71-2.93 0-4.76 2.19-4.76 4.63 0 .84.25 1.44.63 1.9.18.21.2.3.14.54-.05.18-.16.63-.21.81-.07.26-.28.35-.51.26-1.44-.59-2.11-2.16-2.11-3.93 0-2.92 2.46-6.43 7.34-6.43 3.92 0 6.5 2.84 6.5 5.89 0 4.03-2.24 7.04-5.55 7.04-1.11 0-2.16-.6-2.51-1.28 0 0-.6 2.36-.73 2.82-.22.8-.66 1.6-1.06 2.22.95.29 1.95.45 3 .45 5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-grid">
+    <div class="footer-col">
+      <h3>Training</h3>
+      <a href="../courses.html">Course Catalog</a>
+      <a href="../bundles.html">Course Bundles</a>
+      <a href="../who.html">Courses by Role</a>
+      <a href="../tools/training-plan-builder.html">Training Plan Builder</a>
+      <a href="../#teams">Team Training</a>
+      <a href="../certifications.html">Certificates &amp; Accreditation</a>
+      <a href="../faq.html">FAQ</a>
+    </div>
+    <div class="footer-col">
+      <h3>Learn</h3>
+      <a href="../learn/">Knowledge Center</a>
+      <a href="../learn/what-is-a-data-center.html">Data Center 101</a>
+      <a href="../learn/data-center-power.html">Power Systems</a>
+      <a href="../learn/data-center-cooling.html">Cooling Systems</a>
+      <a href="../learn/data-center-tiers.html">Tier Levels</a>
+      <a href="../learn/data-center-safety.html">Safety Guide</a>
+      <a href="../learn/data-center-standards.html">Standards Guide</a>
+      <a href="../learn/glossary.html">Glossary</a>
+      <a href="../blog/">Blog</a>
+    </div>
+    <div class="footer-col">
+      <h3>Careers</h3>
+      <a href="../careers/">Careers Hub</a>
+      <a href="../careers/data-center-jobs.html">Job Roles Explained</a>
+      <a href="../careers/how-to-get-into-data-centers.html">Get Into Data Centers</a>
+      <a href="../careers/career-changers.html">Career Changers</a>
+      <a href="../careers/interview-questions.html">Interview Questions</a>
+      <a href="../quizzes/career-quiz.html">Career Match Quiz</a>
+    </div>
+    <div class="footer-col">
+      <h3>Quizzes &amp; Tools</h3>
+      <a href="../quizzes/">All Quizzes</a>
+      <a href="../quizzes/data-center-basics-quiz.html">Data Center Basics Quiz</a>
+      <a href="../tools/">All Tools</a>
+      <a href="../tools/pue-calculator.html">PUE Calculator</a>
+      <a href="../tools/uptime-calculator.html">Uptime Calculator</a>
+      <a href="../tools/cooling-load-calculator.html">Cooling Load Calculator</a>
+      <a href="../search.html">Search the Site</a>
+    </div>
+    <div class="footer-col">
+      <h3>Company</h3>
+      <a href="https://hazwoper-osha.com/" target="_blank" rel="noopener">HAZWOPER-OSHA Training</a>
+      <a href="https://hazwoper-osha.com/certificate-verification" target="_blank" rel="noopener">Verify Certificate</a>
+      <a href="../privacy.html">Privacy Policy</a>
+      <a href="../terms.html">Terms of Service</a>
+      <a href="../accessibility.html">Accessibility</a>
+      <a href="../privacy.html#choices" data-privacy-choices>Your Privacy Choices</a>
+      <a href="https://hazwoper-osha.com/refund-policy" target="_blank" rel="noopener">Refund Policy</a>
+    </div>
+    </div>
+
+    <p class="footer-agents"><span>For AI agents:</span> <a href="/llms.txt">llms.txt</a> <a href="/llms-full.txt">llms-full.txt</a> <a href="/.well-known/mcp.json">WebMCP Manifest</a> <a href="/api/index.json">JSON Catalog API</a> <a href="/openapi.json">API Docs (OpenAPI)</a> <a href="/sitemap.xml">Sitemap</a></p>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; 2026 HAZWOPER-OSHA Training, LLC. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+<script src="../js/main.js" defer></script>
+
+</body>
+</html>

@@ -100,7 +100,7 @@ const openapi = readJson('openapi.json');
 const oa = new Ajv({ strict: false, allErrors: true });
 addFormats(oa);
 for (const [name, schema] of Object.entries(openapi.components.schemas)) oa.addSchema(schema, '#/components/schemas/' + name);
-const docChecks = { 'api/courses.json': 'CourseList', 'api/bundles.json': 'BundleList', 'api/roles.json': 'RoleList', 'api/faq.json': 'FaqList', 'api/resources.json': 'ResourceList', 'api/credentials.json': 'Credentials', 'api/index.json': 'ApiIndex' };
+const docChecks = { 'api/courses.json': 'CourseList', 'api/bundles.json': 'BundleList', 'api/roles.json': 'RoleList', 'api/faq.json': 'FaqList', 'api/resources.json': 'ResourceList', 'api/credentials.json': 'Credentials', 'api/index.json': 'ApiIndex', 'api/search.json': 'SearchIndex' };
 for (const [file, ref] of Object.entries(docChecks)) {
   const v = oa.getSchema('#/components/schemas/' + ref);
   if (!v(readJson(file))) fail(file + ' does not match OpenAPI ' + ref + ': ' + oa.errorsText(v.errors));

@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- dct:head -->
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; object-src 'none'; base-uri 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#f5f5f7">
+<link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt">
+<link rel="alternate" type="application/json" href="/.well-known/mcp.json" title="WebMCP manifest">
+<link rel="service-desc" type="application/vnd.oai.openapi+json" href="/openapi.json">
+<script>
+/* Analytics, session recording, and chat load for every visitor unless they opt out or send a GPC signal
+   (see /js/consent.js), on the first interaction (scroll, tap, key, mouse move) so they never delay rendering. */
+(function(w,d){
+  w.dataLayer=w.dataLayer||[];w.gtag=function(){w.dataLayer.push(arguments);};
+  w.clarity=w.clarity||function(){(w.clarity.q=w.clarity.q||[]).push(arguments);};
+  w.Tawk_API=w.Tawk_API||{};w.Tawk_API.onLoad=function(){w.Tawk_API.minimize();};
+  var ev=['pointerdown','keydown','touchstart','scroll','mousemove'];
+  function add(src,attrs){var s=d.createElement('script');s.async=true;s.src=src;for(var k in attrs)s.setAttribute(k,attrs[k]);d.head.appendChild(s);}
+  function once(fn){var done=0;return function(now){if(done)return;function go(){if(done)return;done=1;ev.forEach(function(e){w.removeEventListener(e,go,{passive:true});});fn();}
+    if(now)go();else ev.forEach(function(e){w.addEventListener(e,go,{passive:true});});};}
+  w.dctLoad={
+    analytics:once(function(){
+      w.gtag('js',new Date());w.gtag('config','G-Z3T42KYK64');
+      add('https://www.googletagmanager.com/gtag/js?id=G-Z3T42KYK64');
+      add('https://analytics.ahrefs.com/analytics.js',{'data-key':'tVAd7KxwKax+pAfHx46Zgg'});
+      add('https://www.clarity.ms/tag/ylza43nm4m');
+    }),
+    chat:once(function(){
+      w.Tawk_LoadStart=new Date();add('https://embed.tawk.to/6a5a95a2096ab21d402a762c/1jtoth11r',{charset:'UTF-8',crossorigin:'*'});
+    })
+  };
+})(window,document);
+if(navigator.modelContext){var m=document.createElement('script');m.src='/js/webmcp.js';m.defer=true;document.head.appendChild(m);}
+</script>
+<script src="/js/consent.js" defer></script>
+<!-- /dct:head -->
+<title>Data Center Commissioning Explained: Levels 1 to 5</title>
+<meta name="description" content="Data center commissioning explained: the five levels from factory witness testing to integrated systems testing, key documents, roles, and handover.">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+<link rel="canonical" href="https://datacentertraining.us/learn/data-center-commissioning.html">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Data Center Commissioning Explained: Levels 1 to 5">
+<meta property="og:description" content="Data center commissioning explained: the five levels from factory witness testing to integrated systems testing, key documents, roles, and handover.">
+<meta property="og:url" content="https://datacentertraining.us/learn/data-center-commissioning.html">
+<meta property="og:image" content="https://datacentertraining.us/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Data Center Training">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@HazwoperOsha">
+<meta name="twitter:title" content="Data Center Commissioning Explained: Levels 1 to 5">
+<meta name="twitter:description" content="Data center commissioning explained: the five levels from factory witness testing to integrated systems testing, key documents, roles, and handover.">
+<meta name="twitter:image" content="https://datacentertraining.us/images/og-image.jpg">
+
+<link rel="stylesheet" href="../css/site.min.css">
+<script src="../js/nav.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Data Center Commissioning Explained: Levels 1 to 5",
+  "description": "Data center commissioning explained: the five levels from factory witness testing to integrated systems testing, key documents, roles, and handover.",
+  "url": "https://datacentertraining.us/learn/data-center-commissioning.html",
+  "mainEntityOfPage": "https://datacentertraining.us/learn/data-center-commissioning.html",
+  "image": "https://datacentertraining.us/images/og-image.jpg",
+  "datePublished": "2026-10-19",
+  "dateModified": "2026-10-19",
+  "inLanguage": "en-US",
+  "author": {"@type": "Organization", "name": "Data Center Training", "url": "https://datacentertraining.us/"},
+  "publisher": {"@type": "EducationalOrganization", "@id": "https://datacentertraining.us/#organization", "name": "Data Center Training", "url": "https://datacentertraining.us/"},
+  "about": ["Data center commissioning", "Integrated systems testing", "Functional performance testing", "Factory witness testing", "Retro-commissioning"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://datacentertraining.us/"},
+    {"@type": "ListItem", "position": 2, "name": "Knowledge Center", "item": "https://datacentertraining.us/learn/"},
+    {"@type": "ListItem", "position": 3, "name": "Commissioning", "item": "https://datacentertraining.us/learn/data-center-commissioning.html"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "What is the difference between Level 4 and Level 5 commissioning?", "acceptedAnswer": {"@type": "Answer", "text": "Level 4 functional performance testing proves each system works on its own across all of its operating modes, such as a UPS transferring to battery and bypass on a load bank. Level 5 integrated systems testing proves all the systems work together, for example by simulating a utility failure with the data hall under load and watching the UPS, generators, transfer equipment, cooling, controls, and monitoring respond as one facility."}},
+    {"@type": "Question", "name": "Who should be the commissioning authority on a data center project?", "acceptedAnswer": {"@type": "Answer", "text": "Ideally an experienced commissioning provider who reports to the owner and is independent of the designers and installing contractors. Independence matters because the commissioning authority has to report problems candidly, including design gaps and installation defects, even when that delays the schedule."}},
+    {"@type": "Question", "name": "Is commissioning the same as Uptime Institute Tier certification?", "acceptedAnswer": {"@type": "Answer", "text": "No. Commissioning is the owner's quality process for proving the facility meets its requirements. Uptime Institute Tier Certification is a separate program run by Uptime Institute, which reviews design documents and, for a constructed facility certification, observes demonstrations on site. A thorough commissioning program helps a site prepare for certification, but it does not grant it."}},
+    {"@type": "Question", "name": "What is retro-commissioning?", "acceptedAnswer": {"@type": "Answer", "text": "Retro-commissioning applies the commissioning process to an existing facility that was never commissioned, or whose documentation and performance have drifted over the years. It documents current conditions, tests sequences and failure responses under controlled procedures, and corrects problems, often finding both reliability risks and wasted energy."}}
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="glass-nav">
+  <div class="container nav-inner">
+    <a href="../" class="logo">
+      <img src="../images/favicon.svg" alt="" width="30" height="30">
+      <span>
+        <span class="logo-mark">datacentertraining.us</span>
+        <span class="logo-sub">Data Center Professional Training</span>
+      </span>
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Main">
+      <div class="nav-item">
+        <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="navMenu-training">Courses<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-3" id="navMenu-training">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Online Training</p>
+            <a href="../courses.html"><span class="nav-link-title">Course Catalog</span><span class="nav-link-desc">All 43 self-paced courses</span></a>
+            <a href="../bundles.html"><span class="nav-link-title">Course Bundles</span><span class="nav-link-desc">Role-based bundles, save up to 52%</span></a>
+            <a href="../who.html"><span class="nav-link-title">Courses by Role</span><span class="nav-link-desc">Find the track for your job</span></a>
+            <a href="../tools/training-plan-builder.html"><span class="nav-link-title">Training Plan Builder</span><span class="nav-link-desc">Build and price a plan in minutes</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Enrolling</p>
+            <a href="../#teams"><span class="nav-link-title">Team Training</span><span class="nav-link-desc">Seats, progress tracking, PO billing</span></a>
+            <a href="../certifications.html"><span class="nav-link-title">Certificates &amp; Accreditation</span><span class="nav-link-desc">What your certificate means</span></a>
+            <a href="../faq.html"><span class="nav-link-title">FAQ</span><span class="nav-link-desc">Pricing, access, and policies</span></a>
+          </div>
+          <a class="nav-feature" href="../bundles.html"><span class="nav-feature-kicker">Best value</span><span class="nav-feature-title">Complete Data Center Professional Bundle</span><span class="nav-feature-text">43 courses and 192 hours of training in one enrollment. Save 52%.</span><span class="nav-feature-cta">Compare bundles &rarr;</span></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button type="button" class="nav-trigger active" aria-expanded="false" aria-controls="navMenu-learn">Learn<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-3" id="navMenu-learn">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Start Here</p>
+            <a href="../learn/"><span class="nav-link-title">Knowledge Center</span><span class="nav-link-desc">Every guide in one place</span></a>
+            <a href="../learn/what-is-a-data-center.html"><span class="nav-link-title">Data Center 101</span><span class="nav-link-desc">How data centers work</span></a>
+            <a href="../learn/glossary.html"><span class="nav-link-title">Glossary</span><span class="nav-link-desc">Data center terms, A to Z</span></a>
+            <a href="../learn/data-center-standards.html"><span class="nav-link-title">Standards &amp; Regulations</span><span class="nav-link-desc">TIA-942, NFPA, OSHA, ASHRAE, ISO</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Systems</p>
+            <a href="../learn/data-center-power.html"><span class="nav-link-title">Power Systems</span></a>
+            <a href="../learn/data-center-cooling.html"><span class="nav-link-title">Cooling Systems</span></a>
+            <a href="../learn/data-center-tiers.html"><span class="nav-link-title">Tier Levels &amp; Redundancy</span></a>
+            <a href="../learn/energy-efficiency-pue.html"><span class="nav-link-title">Energy Efficiency &amp; PUE</span></a>
+            <a href="../learn/ai-data-centers.html"><span class="nav-link-title">AI &amp; High-Density Facilities</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Operations</p>
+            <a href="../learn/data-center-safety.html"><span class="nav-link-title">Safety Guide</span></a>
+            <a href="../learn/data-center-security-compliance.html"><span class="nav-link-title">Security &amp; Compliance</span></a>
+            <a href="../learn/data-center-operations.html"><span class="nav-link-title">Operations &amp; Maintenance</span></a>
+            <a href="../learn/data-center-commissioning.html" aria-current="page"><span class="nav-link-title">Commissioning (Levels 1-5)</span></a>
+            <a href="../blog/"><span class="nav-link-title">Blog: Field Guidance</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="navMenu-careers">Careers<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-2" id="navMenu-careers">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Data Center Careers</p>
+            <a href="../careers/"><span class="nav-link-title">Careers Hub</span><span class="nav-link-desc">Why the industry is hiring</span></a>
+            <a href="../careers/data-center-jobs.html"><span class="nav-link-title">Job Roles Explained</span><span class="nav-link-desc">What each role does day to day</span></a>
+            <a href="../careers/how-to-get-into-data-centers.html"><span class="nav-link-title">How to Get Into Data Centers</span><span class="nav-link-desc">A step-by-step starting plan</span></a>
+            <a href="../careers/career-changers.html"><span class="nav-link-title">Career Changers</span><span class="nav-link-desc">Electricians, HVAC techs, veterans, IT</span></a>
+            <a href="../careers/interview-questions.html"><span class="nav-link-title">Interview Questions</span><span class="nav-link-desc">Practice answers for technician roles</span></a>
+          </div>
+          <a class="nav-feature" href="../quizzes/career-quiz.html"><span class="nav-feature-kicker">2-minute quiz</span><span class="nav-feature-title">Which Data Center Career Fits You?</span><span class="nav-feature-text">Answer 10 quick questions and get a matching role and training track.</span><span class="nav-feature-cta">Take the career quiz &rarr;</span></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="navMenu-quizzes">Quizzes &amp; Tools<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-2" id="navMenu-quizzes">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Quizzes</p>
+            <a href="../quizzes/"><span class="nav-link-title">All Quizzes</span></a>
+            <a href="../quizzes/career-quiz.html"><span class="nav-link-title">Career Match Quiz</span></a>
+            <a href="../quizzes/data-center-basics-quiz.html"><span class="nav-link-title">Data Center Basics</span></a>
+            <a href="../quizzes/power-electrical-quiz.html"><span class="nav-link-title">Power &amp; Electrical</span></a>
+            <a href="../quizzes/cooling-quiz.html"><span class="nav-link-title">Cooling &amp; HVAC</span></a>
+            <a href="../quizzes/safety-quiz.html"><span class="nav-link-title">Safety</span></a>
+            <a href="../quizzes/security-compliance-quiz.html"><span class="nav-link-title">Security &amp; Compliance</span></a>
+            <a href="../quizzes/tiers-design-quiz.html"><span class="nav-link-title">Tiers &amp; Design</span></a>
+            <a href="../quizzes/operations-quiz.html"><span class="nav-link-title">Operations &amp; Monitoring</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Tools</p>
+            <a href="../tools/"><span class="nav-link-title">All Tools</span></a>
+            <a href="../tools/training-plan-builder.html"><span class="nav-link-title">Training Plan Builder</span></a>
+            <a href="../tools/pue-calculator.html"><span class="nav-link-title">PUE Calculator</span></a>
+            <a href="../tools/uptime-calculator.html"><span class="nav-link-title">Uptime &amp; Downtime Calculator</span></a>
+            <a href="../tools/cooling-load-calculator.html"><span class="nav-link-title">Cooling Load Calculator</span></a>
+          </div>
+        </div>
+      </div>
+      <a href="../blog/" class="nav-link">Blog</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="../search.html" class="nav-search" data-search-open aria-label="Search the site" title="Search (Ctrl+K)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><span class="nav-search-label">Search</span><kbd class="nav-search-kbd">Ctrl K</kbd></a>
+      <a href="../courses.html" class="btn btn-primary btn-sm nav-cta">View Courses</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../">Home</a>
+      <span>&rsaquo;</span>
+      <a href="./">Knowledge Center</a>
+      <span>&rsaquo;</span>
+      <span aria-current="page">Commissioning</span>
+    </nav>
+  </div>
+
+  <section class="course-hero">
+    <div class="container">
+      <div class="course-hero-eyebrow">Knowledge Center &middot; Commissioning</div>
+      <h1>Data Center Commissioning Explained: Levels 1 to 5</h1>
+      <p class="course-hero-hook">A new data center has to prove it can survive failures before it carries a single server. Commissioning is how that proof is built, one level at a time, from the factory floor to a full simulated utility outage.</p>
+      <div class="course-pills">
+        <span class="course-pill">12 min read</span>
+        <span class="course-pill">Intermediate</span>
+        <span class="course-pill">Updated October 2026</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="container guide-layout">
+    <aside class="guide-toc" aria-label="On this page">
+      <p class="guide-toc-title">On this page</p>
+      <ol>
+        <li><a href="#what-is-cx">What commissioning is</a></li>
+        <li><a href="#who">Who is involved</a></li>
+        <li><a href="#levels">The five levels</a></li>
+        <li><a href="#documents">Key documents</a></li>
+        <li><a href="#ist">Integrated systems testing</a></li>
+        <li><a href="#handover">Handover to operations</a></li>
+        <li><a href="#pitfalls">Common pitfalls</a></li>
+        <li><a href="#retro-cx">Retro-commissioning</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ol>
+      <a class="guide-toc-cta" href="../quizzes/tiers-design-quiz.html"><strong>Test yourself</strong>Take the Tiers &amp; Design quiz.</a>
+    </aside>
+
+    <article class="guide-body prose">
+      <div class="key-takeaways">
+        <p class="key-takeaways-title">Key takeaways</p>
+        <ul>
+          <li>Commissioning (Cx) verifies that a facility is designed, built, tested, and documented to meet the owner's requirements, and that staff can operate it.</li>
+          <li>Data center Cx is commonly organized into five levels, from factory witness testing (Level 1) to integrated systems testing (Level 5). Terms vary by owner and provider.</li>
+          <li>Each level depends on the one before it. Skipping or rushing early levels shows up as failures during integrated testing, or later, in production.</li>
+          <li>The real deliverable is an operations team that knows the site, backed by tested procedures and complete documentation.</li>
+        </ul>
+      </div>
+
+      <h2 id="what-is-cx">What commissioning is, and why data centers need more</h2>
+      <p>Commissioning is a quality process that runs from design through occupancy. It verifies that systems are designed, installed, tested, and able to be operated and maintained according to the <strong>owner's project requirements</strong>. ASHRAE Standard 202 and ASHRAE Guideline 0 describe the general commissioning process for buildings, and ANSI/NETA ATS is widely used for electrical acceptance testing.</p>
+      <p>In an office building, commissioning mostly confirms that HVAC and lighting controls work and save energy. In a data center, the stakes are different. The design promises that the IT load will ride through a utility outage, a failed UPS module, or a chiller trip, and that equipment can be taken out for maintenance without dropping the load. Those promises involve automatic sequences across electrical, mechanical, controls, and fire systems from different vendors. The only way to know they work is to make them happen, under load, before customers move in. That is why critical facility Cx is more rigorous, more failure-focused, and more integrated than typical building Cx.</p>
+
+      <h2 id="who">Who is involved</h2>
+      <ul>
+        <li><strong>Owner:</strong> sets the requirements, funds the program, and accepts the facility. On many projects the owner is also the future operator.</li>
+        <li><strong>Commissioning authority or agent (CxA):</strong> plans and leads the Cx program, writes or reviews test scripts, directs testing, and reports issues. Ideally independent of the designers and installers and reporting to the owner.</li>
+        <li><strong>Designers (engineers of record):</strong> write the basis of design and sequences of operation, and resolve design issues found in testing.</li>
+        <li><strong>General contractor and trade contractors:</strong> electrical, mechanical, and controls contractors who install the systems and execute most test steps.</li>
+        <li><strong>Equipment vendors (OEMs):</strong> perform factory tests and start-up for UPS, switchgear, generators, chillers, and controls.</li>
+        <li><strong>Testing agencies:</strong> independent firms that perform electrical acceptance testing, often NETA-accredited.</li>
+        <li><strong>Operations staff:</strong> the people who will run the site. They should witness tests and learn the systems from Level 3 onward.</li>
+        <li><strong>Authority having jurisdiction:</strong> fire marshals and inspectors who witness life safety acceptance tests.</li>
+      </ul>
+
+      <h2 id="levels">The five levels of commissioning</h2>
+      <p>Data center commissioning is commonly described in five levels. The names and boundaries vary between owners and Cx providers, but the progression is consistent: prove each component, then each system, then the whole facility.</p>
+      <ol class="flow flow-5" aria-label="Commissioning levels 1 to 5">
+        <li><strong>Level 1: Factory witness</strong>Major equipment is tested at the factory before it ships.</li>
+        <li><strong>Level 2: Delivery and installation</strong>Equipment is inspected on arrival and after it is installed.</li>
+        <li><strong>Level 3: Pre-functional and start-up</strong>Checks, electrical tests, and vendor start-up bring each unit to life.</li>
+        <li><strong>Level 4: Functional performance</strong>Each system is tested on its own through all its modes.</li>
+        <li><strong>Level 5: Integrated systems</strong>All systems are tested together under load and failure scenarios.</li>
+      </ol>
+      <div class="table-panel">
+        <table class="data-table">
+          <caption>What happens at each commissioning level</caption>
+          <thead><tr><th>Level</th><th>What is tested</th><th>Where</th><th>Who witnesses</th><th>Typical evidence</th></tr></thead>
+          <tbody>
+            <tr><td>L1 Factory witness test</td><td>UPS modules, switchgear, generators, paralleling gear, chillers, and other long-lead equipment against the specification</td><td>Manufacturer's factory</td><td>Owner's representative, CxA, often the design engineer</td><td>Factory acceptance test report, test data, punch list, release to ship</td></tr>
+            <tr><td>L2 Delivery and installation inspection</td><td>Model and ratings against approved submittals, shipping damage, storage conditions, installation, anchoring, clearances, connections</td><td>Site, at delivery and after setting</td><td>Contractor and CxA</td><td>Receiving checklists, installation checklists, photos, issues log entries</td></tr>
+            <tr><td>L3 Pre-functional checks and start-up</td><td>Electrical acceptance tests, torque and insulation checks, rotation, point-to-point controls checkout, flushing, first energization, OEM start-up</td><td>Site, equipment by equipment</td><td>Contractor, testing agency, OEM, CxA spot checks, operations staff</td><td>Pre-functional checklists, start-up reports, acceptance test reports, point-to-point records</td></tr>
+            <tr><td>L4 Functional performance testing</td><td>Each system through normal, failure, and maintenance modes: UPS on load bank, generator load tests, transfer switch operations, chiller staging, CRAH failover, control sequences</td><td>Site, system by system</td><td>CxA directs, contractor performs, owner and operations witness</td><td>Signed test scripts with recorded data, trend logs, issues and retest records</td></tr>
+            <tr><td>L5 Integrated systems testing</td><td>The whole facility under simulated IT load: utility failure, equipment failures, maintenance scenarios, return to normal</td><td>Entire site</td><td>CxA leads, with owner, operations, designers, contractors, and vendors</td><td>IST report, time-synchronized power and temperature data, final issues log</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>The rule that makes the levels work: <strong>do not start a level until the prior level is complete for the systems involved.</strong> Running functional tests on equipment with open start-up issues wastes days and can damage equipment. The <a href="../courses/infrastructure-commissioning-startup.html">Infrastructure Commissioning &amp; Startup</a> course walks through each level in detail.</p>
+
+      <h2 id="documents">Key commissioning documents</h2>
+      <div class="table-panel">
+        <table class="data-table">
+          <caption>Documents that drive a commissioning program</caption>
+          <thead><tr><th>Document</th><th>What it contains</th></tr></thead>
+          <tbody>
+            <tr><td>Owner's project requirements (OPR)</td><td>What the owner needs: capacity, redundancy, availability goals, Tier or Rated design intent, environmental ranges, and operational expectations.</td></tr>
+            <tr><td>Basis of design (BOD)</td><td>How the designers will meet the OPR: system choices, assumptions, and design criteria.</td></tr>
+            <tr><td>Commissioning plan</td><td>Scope, roles, schedule, communication, the systems to be commissioned, and the level of testing for each.</td></tr>
+            <tr><td>Test scripts</td><td>Step-by-step checklists and procedures for each level, with expected results and acceptance criteria written before testing.</td></tr>
+            <tr><td>Issues log</td><td>Every deficiency found, its owner, its status, and proof of resolution and retest.</td></tr>
+            <tr><td>Final commissioning report</td><td>Summary of the program, test results, open issues, and deferred or seasonal tests.</td></tr>
+            <tr><td>Systems manual</td><td>How the facility is meant to work: design intent, sequences of operation, single-line diagrams, setpoints, and O&amp;M references.</td></tr>
+            <tr><td>Operator training records</td><td>Who was trained on what, by whom, with the training materials and any recordings.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Tier or Rated design intent is not the same as certification. Read <a href="data-center-tiers.html">Data Center Tier Levels Explained</a> for how Uptime Institute certification and ANSI/TIA-942 ratings work.</p>
+
+      <h2 id="ist">Integrated systems testing in detail</h2>
+      <p>Integrated systems testing (IST) is the closest a team gets to a real disaster without one. It proves that electrical, mechanical, controls, monitoring, and fire systems behave as one facility.</p>
+      <h3>Load banks</h3>
+      <p>Because there are no servers yet, the IT load is simulated. <strong>Resistive load banks</strong> load generators and UPS systems; resistive-reactive units test at a realistic power factor. Inside the data hall, <strong>heat load banks</strong>, often rack-mounted or cart-mounted electric heaters with fans, recreate both the electrical draw and the heat and airflow of IT equipment, so the cooling system is tested along with the power path. Load is usually stepped up in stages so problems show up before the facility is at full design load. The <a href="../courses/ups-operations-load-testing.html">UPS Operations &amp; Load Testing</a> course covers load bank practice.</p>
+      <h3>Simulated utility failure</h3>
+      <p>The centerpiece of most ISTs is opening the utility supply on purpose with the hall at load. The team then watches the chain respond: UPS systems carry the load on batteries, generators start and synchronize, transfer equipment moves the load, chillers and pumps restart, and temperatures rise and recover. After a stable run on generators, the site retransfers to utility. Every step is timed and compared with the sequence of operations. <a href="../courses/generator-operations-maintenance.html">Generator Operations &amp; Maintenance</a> covers the generator side of these tests.</p>
+      <h3>Failure scenarios</h3>
+      <p>A good IST also tests what happens when things go wrong during the event:</p>
+      <ul>
+        <li>A generator fails to start or trips while carrying load.</li>
+        <li>A UPS module fails, or one side of a 2N system is lost entirely.</li>
+        <li>A chiller, pump, or CRAH fails, and standby units must pick up.</li>
+        <li>A controls network or BMS controller fails, and equipment must fall back to safe states.</li>
+        <li>Each major component is isolated for maintenance while the load stays up, proving concurrent maintainability.</li>
+        <li>Fire alarm cause-and-effect sequences operate as designed; see <a href="../blog/posts/data-center-fire-alarm-cause-and-effect-testing-what-commissioning-teams-should-verify-before-handover.html">fire alarm cause-and-effect testing before handover</a>.</li>
+      </ul>
+      <h3>Pass/fail criteria</h3>
+      <p>Criteria are written into the scripts before testing starts, not decided afterward. Typical criteria include:</p>
+      <ul>
+        <li>No interruption to the simulated critical load, confirmed by power quality recorders.</li>
+        <li>Voltage and frequency stay within the tolerances the design specifies.</li>
+        <li>Rack inlet temperatures stay within the range the OPR sets, such as the ASHRAE recommended 18-27 &deg;C (64.4-80.6 &deg;F).</li>
+        <li>Sequences complete within their design times.</li>
+        <li>Alarms reach the BMS and power monitoring system with correct names and priorities.</li>
+        <li>The facility returns to its normal configuration as designed.</li>
+      </ul>
+      <p>Time-synchronize every data source, from power analyzers to BMS trends, so the team can rebuild the event second by second. IST is high-energy work, so it runs under its own method of procedure with a safety lead and defined stop criteria. If the owner is pursuing Uptime Institute Tier Certification of a constructed facility, Uptime's demonstrations are a separate activity from the Cx program.</p>
+
+      <div class="inline-cta">
+        <p><strong>How well do you know Tiers and design?</strong> Test yourself on redundancy, Tier levels, and testing.</p>
+        <a class="btn btn-primary btn-sm" href="../quizzes/tiers-design-quiz.html">Take the Tiers &amp; Design Quiz</a>
+      </div>
+
+      <h2 id="handover">Handover to operations</h2>
+      <p>Commissioning ends when the operations team can run the facility, not when the last test passes. A strong handover includes:</p>
+      <ul>
+        <li>Operations staff who witnessed Level 3 to Level 5 testing and practiced key procedures on the real equipment.</li>
+        <li>SOPs, MOPs, and EOPs drafted during construction and validated during functional testing and IST.</li>
+        <li>The CMMS loaded with every asset, its nameplate data, and its preventive maintenance schedule.</li>
+        <li>BMS and power monitoring alarms configured, named consistently, and prioritized.</li>
+        <li>As-built drawings, O&amp;M manuals, the systems manual, and warranty start dates.</li>
+        <li>Spare parts and special tools on site.</li>
+        <li>An open issues list with owners and due dates, plus deferred and seasonal tests scheduled.</li>
+      </ul>
+      <p>For a detailed list, see the <a href="../blog/posts/data-center-commissioning-handover-checklist-what-facilities-managers-should-verify-before-operations-takeover.html">commissioning handover checklist</a>. The <a href="data-center-operations.html">Operations &amp; Maintenance guide</a> explains what the team does once it takes over.</p>
+
+      <h2 id="pitfalls">Common commissioning pitfalls</h2>
+      <ul>
+        <li><strong>Starting Cx too late.</strong> A CxA brought in after design misses the chance to fix problems on paper, where they are cheapest.</li>
+        <li><strong>Letting the schedule eat testing time.</strong> Construction delays push into the Cx window, and testing gets compressed or skipped.</li>
+        <li><strong>Testing incomplete systems.</strong> Temporary power, temporary controls, or missing alarm points make results meaningless.</li>
+        <li><strong>Undersized load banks.</strong> Testing at partial load hides problems that only appear near design capacity.</li>
+        <li><strong>Only testing the happy path.</strong> The value of IST is in the failure scenarios.</li>
+        <li><strong>Closing issues without retest.</strong> A fix is not done until the test that found the problem passes.</li>
+        <li><strong>Changes after testing.</strong> Firmware updates, setpoint edits, or wiring changes after IST can invalidate results.</li>
+        <li><strong>Leaving operations out.</strong> A team that first sees the systems on handover day starts with a knowledge gap.</li>
+      </ul>
+
+      <h2 id="retro-cx">Retro-commissioning existing sites</h2>
+      <p>Many operating data centers were never fully commissioned, or have changed so much since opening that the original results no longer apply. <strong>Retro-commissioning</strong> applies the process to an existing site; <strong>re-commissioning</strong> repeats it for a site that was commissioned before.</p>
+      <p>The approach is careful because the load is live. Teams start by documenting current conditions: walking down single-line diagrams against the field, comparing control sequences in the BMS to the written design, and reviewing alarm and maintenance history. Testing is then done system by system under approved MOPs and change control, with risk assessments and back-out plans for every step. Full IST on a live site is possible but requires extensive planning and customer coordination. Retro-commissioning commonly uncovers hidden single points of failure, sequences that no longer match the design, drifted setpoints, and wasted energy.</p>
+      <p>To understand how design choices set up a project for commissioning, see <a href="../courses/data-center-design-fundamentals.html">Data Center Design Fundamentals</a> and <a href="../courses/tier-infrastructure-fundamentals.html">Tier Infrastructure Fundamentals</a>.</p>
+
+      <h2 id="courses">Courses that go deeper</h2>
+      <p>These self-paced courses cover commissioning, design, and the systems you will test, and each awards a certificate of completion.</p>
+      <!-- dct:courses infrastructure-commissioning-startup data-center-design-fundamentals tier-infrastructure-fundamentals ups-operations-load-testing generator-operations-maintenance monitoring-automation-bms-systems -->
+<div class="panel course-panel">
+<div class="course-row"><div class="course-main"><h3><a href="../courses/infrastructure-commissioning-startup.html">Infrastructure Commissioning &amp; Startup</a></h3><div class="course-meta"><span>Design &amp; Planning</span><span class="sep">&middot;</span><span>Comprehensive Program</span><span class="sep">&middot;</span><span>Commissioning Test Protocols</span></div><p class="course-hook">Lead new facility launches and major upgrades with a proven commissioning framework.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">8 hrs</div><div class="course-price">$267.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=infrastructure-commissioning-startup" aria-label="Enroll in Infrastructure Commissioning &amp; Startup">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/data-center-design-fundamentals.html">Data Center Design Fundamentals</a></h3><div class="course-meta"><span>Design &amp; Planning</span><span class="sep">&middot;</span><span>Comprehensive Program</span><span class="sep">&middot;</span><span>ANSI/TIA-942</span></div><p class="course-hook">Design data center facilities that scale — from site selection to redundancy strategy.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">8 hrs</div><div class="course-price">$312.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=data-center-design-fundamentals" aria-label="Enroll in Data Center Design Fundamentals">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/tier-infrastructure-fundamentals.html">Tier Infrastructure Fundamentals</a></h3><div class="course-meta"><span>Design &amp; Planning</span><span class="sep">&middot;</span><span>Comprehensive Program</span><span class="sep">&middot;</span><span>Uptime Institute Tier Framework</span></div><p class="course-hook">Understand and assess TIER I–IV infrastructure without the formal certification track.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">8 hrs</div><div class="course-price">$280.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=tier-infrastructure-fundamentals" aria-label="Enroll in Tier Infrastructure Fundamentals">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/ups-operations-load-testing.html">UPS Operations &amp; Load Testing</a></h3><div class="course-meta"><span>Power &amp; Electrical</span><span class="sep">&middot;</span><span>Modular Specialization</span></div><p class="course-hook">Master UPS operations, battery testing, and load-bank procedures.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">4 hrs</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=ups-operations-load-testing" aria-label="Enroll in UPS Operations &amp; Load Testing">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/generator-operations-maintenance.html">Generator Operations &amp; Maintenance</a></h3><div class="course-meta"><span>Power &amp; Electrical</span><span class="sep">&middot;</span><span>Modular Specialization</span></div><p class="course-hook">Size, test, and maintain backup generators with confidence.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">4 hrs</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=generator-operations-maintenance" aria-label="Enroll in Generator Operations &amp; Maintenance">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/monitoring-automation-bms-systems.html">Monitoring, Automation &amp; BMS Systems</a></h3><div class="course-meta"><span>Monitoring &amp; Automation</span><span class="sep">&middot;</span><span>Comprehensive Program</span><span class="sep">&middot;</span><span>BMS / DCIM</span></div><p class="course-hook">Design a monitoring and BMS strategy that catches problems before they cause downtime.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">8 hrs</div><div class="course-price">$276.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=monitoring-automation-bms-systems" aria-label="Enroll in Monitoring, Automation &amp; BMS Systems">Enroll</a></div></div>
+</div>
+<!-- /dct:courses -->
+      <!-- dct:bundle bundle-design-planning -->
+<div class="bundle-offer"><div class="bundle-offer-copy"><p class="bundle-offer-kicker">Save 42% with the bundle</p><p class="bundle-offer-name">Design, Planning &amp; Commissioning Bundle</p><p class="bundle-offer-meta">4 courses &middot; 28 hours &middot; <strong>$557.99</strong> per seat, instead of <s>$961.96</s> bought separately</p></div><div class="bundle-offer-actions"><a class="btn btn-primary" href="../checkout.html?item=bundle-design-planning">Enroll in the Bundle</a><a class="btn btn-secondary" href="../bundles.html">Compare Bundles</a></div></div>
+<!-- /dct:bundle -->
+
+      <h2 id="faq">Frequently asked questions</h2>
+      <div class="guide-faq">
+        <h3>What is the difference between Level 4 and Level 5 commissioning?</h3>
+        <p>Level 4 functional performance testing proves each system works on its own across all of its operating modes, such as a UPS transferring to battery and bypass on a load bank. Level 5 integrated systems testing proves all the systems work together, for example by simulating a utility failure with the data hall under load and watching the UPS, generators, transfer equipment, cooling, controls, and monitoring respond as one facility.</p>
+        <h3>Who should be the commissioning authority on a data center project?</h3>
+        <p>Ideally an experienced commissioning provider who reports to the owner and is independent of the designers and installing contractors. Independence matters because the commissioning authority has to report problems candidly, including design gaps and installation defects, even when that delays the schedule.</p>
+        <h3>Is commissioning the same as Uptime Institute Tier certification?</h3>
+        <p>No. Commissioning is the owner's quality process for proving the facility meets its requirements. Uptime Institute Tier Certification is a separate program run by Uptime Institute, which reviews design documents and, for a constructed facility certification, observes demonstrations on site. A thorough commissioning program helps a site prepare for certification, but it does not grant it.</p>
+        <h3>What is retro-commissioning?</h3>
+        <p>Retro-commissioning applies the commissioning process to an existing facility that was never commissioned, or whose documentation and performance have drifted over the years. It documents current conditions, tests sequences and failure responses under controlled procedures, and corrects problems, often finding both reliability risks and wasted energy.</p>
+      </div>
+
+      <h2 id="related">Keep learning</h2>
+      <div class="card-grid card-grid-2">
+        <a class="topic-card" href="data-center-tiers.html"><span class="topic-card-kicker">Guide</span><h3>Tier Levels Explained</h3><p>Concurrent maintainability, fault tolerance, and what certification means.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+        <a class="topic-card" href="data-center-power.html"><span class="topic-card-kicker">Guide</span><h3>How Data Center Power Works</h3><p>The UPS, generator, and transfer systems that IST puts to the test.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+        <a class="topic-card" href="../careers/data-center-jobs.html#commissioning-agent"><span class="topic-card-kicker">Careers</span><h3>Commissioning Agent</h3><p>What the role involves and how people move into it.</p><span class="topic-card-cta">See the role &rarr;</span></a>
+        <a class="topic-card" href="data-center-cooling.html"><span class="topic-card-kicker">Guide</span><h3>How Data Center Cooling Works</h3><p>Chillers, CRAHs, and containment, the systems behind the temperature criteria.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+      </div>
+      <p class="guide-updated">This guide is general educational information, not engineering, legal, or compliance advice. Commissioning scope, terms, and acceptance criteria vary by owner and project; follow your project's commissioning plan, the manufacturer's instructions, and the codes adopted in your jurisdiction.</p>
+    </article>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta-block">
+        <h2>Train Your Team on Commissioning and Design</h2>
+        <p>Our Design, Planning &amp; Commissioning courses cover design fundamentals, Tier infrastructure, capacity planning, and commissioning and start-up.</p>
+        <div class="hero-ctas">
+          <a href="../bundles.html" class="btn glass-chip">See the Design Bundle</a>
+          <a href="../courses.html" class="btn glass-chip">Browse All Courses</a>
+          <a href="tel:18664296742" class="btn glass-chip">Call 1-866-429-6742</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="contact">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="../" class="logo">
+          <img src="../images/favicon.svg" alt="" width="28" height="28">
+          <span>
+            <span class="logo-mark">datacentertraining.us</span>
+            <span class="logo-sub">Data Center Professional Training</span>
+          </span>
+        </a>
+        <p class="footer-legal">Data Center Training is a specialty training division of <a href="https://hazwoper-osha.com/" target="_blank" rel="noopener">HAZWOPER-OSHA Training, LLC</a>, an IACET-accredited provider of professional data center and safety compliance training.</p>
+        <p class="footer-legal" style="margin-top:8px;">HAZWOPER OSHA Training, LLC &middot; 11901 Santa Monica Blvd., Suite #414, Los Angeles, CA 90025</p>
+        <div class="footer-badges">
+          <img src="https://media.hazwoper-osha.com/wp-content/uploads/2023/11/1698821020/IACET-small.webp" alt="IACET Accredited Provider" width="40" height="24" loading="lazy">
+          <img src="https://media.hazwoper-osha.com/wp-content/uploads/2026/07/1784291935/bbb.webp" alt="BBB A+ Rating" width="40" height="24" loading="lazy">
+          <img src="https://media.hazwoper-osha.com/wp-content/uploads/2026/07/1784292027/trust.webp" alt="Google Trust Services" width="141" height="20" loading="lazy" style="height:20px;">
+        </div>
+      </div>
+      <div class="footer-cta">
+        <p class="footer-cta-title">Not sure where to start?</p>
+        <p class="footer-cta-text">Find the data center role that fits you, then get a training plan built around it.</p>
+        <div class="footer-cta-actions">
+          <a href="../quizzes/career-quiz.html" class="btn btn-primary btn-sm">Take the Career Quiz</a>
+          <a href="../tools/training-plan-builder.html" class="btn btn-secondary btn-sm">Build a Training Plan</a>
+        </div>
+        <div class="footer-contact-links">
+          <a href="tel:18664296742">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            1-866-429-6742
+          </a>
+          <a href="mailto:info@hazwoper-osha.com">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            info@hazwoper-osha.com
+          </a>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/HazwoperOsha/" target="_blank" rel="noopener" aria-label="Facebook"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/hazwoper_osha_training/?hl=en" target="_blank" rel="noopener" aria-label="Instagram"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="https://www.youtube.com/@hazwoper-osha" target="_blank" rel="noopener" aria-label="YouTube"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33zM9.75 15.02V8.48l5.75 3.27z"/></svg></a>
+          <a href="https://x.com/HazwoperOsha" target="_blank" rel="noopener" aria-label="X"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.4 8.4L23 22h-6.6l-5.2-6.8L5.1 22H2l7.9-9L1.6 2h6.8l4.7 6.2z"/></svg></a>
+          <a href="https://www.linkedin.com/company/hazwoper-osha" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM8.34 18.34V10.1H5.67v8.24zM7.01 8.97a1.55 1.55 0 1 0 0-3.1 1.55 1.55 0 0 0 0 3.1zM18.34 18.34v-4.6c0-2.46-1.31-3.6-3.06-3.6a2.64 2.64 0 0 0-2.39 1.32V10.1H10.2s.04.86 0 8.24h2.68v-4.6c0-.25.02-.5.09-.68a1.5 1.5 0 0 1 1.37-1c.96 0 1.35.73 1.35 1.8v4.48z"/></svg></a>
+          <a href="https://www.pinterest.com/hazwoperosha/" target="_blank" rel="noopener" aria-label="Pinterest"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.64 7.86 6.36 9.32-.09-.79-.17-2.01.03-2.88.19-.79 1.22-5.03 1.22-5.03s-.31-.63-.31-1.55c0-1.45.84-2.54 1.89-2.54.89 0 1.32.67 1.32 1.47 0 .89-.57 2.23-.86 3.47-.25 1.03.52 1.88 1.53 1.88 1.84 0 3.07-2.36 3.07-5.15 0-2.12-1.43-3.71-4.02-3.71-2.93 0-4.76 2.19-4.76 4.63 0 .84.25 1.44.63 1.9.18.21.2.3.14.54-.05.18-.16.63-.21.81-.07.26-.28.35-.51.26-1.44-.59-2.11-2.16-2.11-3.93 0-2.92 2.46-6.43 7.34-6.43 3.92 0 6.5 2.84 6.5 5.89 0 4.03-2.24 7.04-5.55 7.04-1.11 0-2.16-.6-2.51-1.28 0 0-.6 2.36-.73 2.82-.22.8-.66 1.6-1.06 2.22.95.29 1.95.45 3 .45 5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-grid">
+    <div class="footer-col">
+      <h3>Training</h3>
+      <a href="../courses.html">Course Catalog</a>
+      <a href="../bundles.html">Course Bundles</a>
+      <a href="../who.html">Courses by Role</a>
+      <a href="../tools/training-plan-builder.html">Training Plan Builder</a>
+      <a href="../#teams">Team Training</a>
+      <a href="../certifications.html">Certificates &amp; Accreditation</a>
+      <a href="../faq.html">FAQ</a>
+    </div>
+    <div class="footer-col">
+      <h3>Learn</h3>
+      <a href="../learn/">Knowledge Center</a>
+      <a href="../learn/what-is-a-data-center.html">Data Center 101</a>
+      <a href="../learn/data-center-power.html">Power Systems</a>
+      <a href="../learn/data-center-cooling.html">Cooling Systems</a>
+      <a href="../learn/data-center-tiers.html">Tier Levels</a>
+      <a href="../learn/data-center-safety.html">Safety Guide</a>
+      <a href="../learn/data-center-standards.html">Standards Guide</a>
+      <a href="../learn/glossary.html">Glossary</a>
+      <a href="../blog/">Blog</a>
+    </div>
+    <div class="footer-col">
+      <h3>Careers</h3>
+      <a href="../careers/">Careers Hub</a>
+      <a href="../careers/data-center-jobs.html">Job Roles Explained</a>
+      <a href="../careers/how-to-get-into-data-centers.html">Get Into Data Centers</a>
+      <a href="../careers/career-changers.html">Career Changers</a>
+      <a href="../careers/interview-questions.html">Interview Questions</a>
+      <a href="../quizzes/career-quiz.html">Career Match Quiz</a>
+    </div>
+    <div class="footer-col">
+      <h3>Quizzes &amp; Tools</h3>
+      <a href="../quizzes/">All Quizzes</a>
+      <a href="../quizzes/data-center-basics-quiz.html">Data Center Basics Quiz</a>
+      <a href="../tools/">All Tools</a>
+      <a href="../tools/pue-calculator.html">PUE Calculator</a>
+      <a href="../tools/uptime-calculator.html">Uptime Calculator</a>
+      <a href="../tools/cooling-load-calculator.html">Cooling Load Calculator</a>
+      <a href="../search.html">Search the Site</a>
+    </div>
+    <div class="footer-col">
+      <h3>Company</h3>
+      <a href="https://hazwoper-osha.com/" target="_blank" rel="noopener">HAZWOPER-OSHA Training</a>
+      <a href="https://hazwoper-osha.com/certificate-verification" target="_blank" rel="noopener">Verify Certificate</a>
+      <a href="../privacy.html">Privacy Policy</a>
+      <a href="../terms.html">Terms of Service</a>
+      <a href="../accessibility.html">Accessibility</a>
+      <a href="../privacy.html#choices" data-privacy-choices>Your Privacy Choices</a>
+      <a href="https://hazwoper-osha.com/refund-policy" target="_blank" rel="noopener">Refund Policy</a>
+    </div>
+    </div>
+
+    <p class="footer-agents"><span>For AI agents:</span> <a href="/llms.txt">llms.txt</a> <a href="/llms-full.txt">llms-full.txt</a> <a href="/.well-known/mcp.json">WebMCP Manifest</a> <a href="/api/index.json">JSON Catalog API</a> <a href="/openapi.json">API Docs (OpenAPI)</a> <a href="/sitemap.xml">Sitemap</a></p>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; 2026 HAZWOPER-OSHA Training, LLC. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+<script src="../js/main.js" defer></script>
+
+</body>
+</html>

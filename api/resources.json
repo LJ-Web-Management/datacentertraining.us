@@ -2,7 +2,7 @@
   "publisher": "Data Center Training (datacentertraining.us)",
   "last_updated": "2026-10-20",
   "license": "Public information; quote with attribution and a link to the source URL.",
-  "count": 49,
+  "count": 81,
   "resources": [
     {
       "source": "Data Center Training (first party)",
@@ -163,6 +163,413 @@
       "audience": [
         "hvac"
       ]
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "AI Data Centers: What High-Density Computing Changes for Facility Teams",
+      "url": "https://datacentertraining.us/learn/ai-data-centers.html",
+      "description": "How AI and GPU clusters change data center power, liquid cooling, floor loading, safety, and commissioning, and the skills facility teams need next.",
+      "topics": [
+        "guide",
+        "cooling",
+        "commissioning"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Commissioning Explained: Levels 1 to 5",
+      "url": "https://datacentertraining.us/learn/data-center-commissioning.html",
+      "description": "Data center commissioning explained: the five levels from factory witness testing to integrated systems testing, key documents, roles, and handover.",
+      "topics": [
+        "guide",
+        "commissioning"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "How Data Center Cooling Works",
+      "url": "https://datacentertraining.us/learn/data-center-cooling.html",
+      "description": "How data center cooling works: heat loads, ASHRAE inlet ranges, CRAC vs CRAH, chilled water, economizers, containment, liquid cooling, and refrigerant safety.",
+      "topics": [
+        "guide",
+        "cooling",
+        "refrigerant"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "How Data Centers Are Run: Operations and Maintenance",
+      "url": "https://datacentertraining.us/learn/data-center-operations.html",
+      "description": "How data centers are run day to day: 24/7 shifts, SOPs and MOPs, change control, maintenance, monitoring, incident response, DR testing, and key KPIs.",
+      "topics": [
+        "guide",
+        "maintenance"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "How Data Center Power Works: From the Grid to the Rack",
+      "url": "https://datacentertraining.us/learn/data-center-power.html",
+      "description": "How data center power works, from utility switchgear and generators to UPS systems, PDUs, and A/B feeds. Redundancy, testing, and safety explained.",
+      "topics": [
+        "guide",
+        "ups",
+        "generator"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Safety Guide: Hazards, Rules, and Training",
+      "url": "https://datacentertraining.us/learn/data-center-safety.html",
+      "description": "Data center safety explained: arc flash and NFPA 70E, lockout/tagout, battery and EPO hazards, clean agent systems, confined spaces, and safety training.",
+      "topics": [
+        "guide",
+        "battery",
+        "confined"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Physical Security and Compliance Explained",
+      "url": "https://datacentertraining.us/learn/data-center-security-compliance.html",
+      "description": "How data centers secure facilities: layered access control, mantraps, visitors, video, and what SOC 2, ISO 27001, PCI DSS, and HIPAA auditors check on site.",
+      "topics": [
+        "guide",
+        "security",
+        "access",
+        "visitor"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Standards and Regulations: A Practical Guide",
+      "url": "https://datacentertraining.us/learn/data-center-standards.html",
+      "description": "Data center codes, standards, and regulations explained: TIA-942, Uptime Tiers, NEC, NFPA 70E, ASHRAE, ISO 27001, SOC 2, EPA, and OSHA, and who enforces each.",
+      "topics": [
+        "guide",
+        "tier"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Tier Levels Explained: Tier I to Tier IV",
+      "url": "https://datacentertraining.us/learn/data-center-tiers.html",
+      "description": "Uptime Institute Tier I to IV explained: concurrent maintainability vs fault tolerance, downtime figures, TIA-942 Rated levels, certifications, and myths.",
+      "topics": [
+        "guide",
+        "tier"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Energy Efficiency and PUE Explained",
+      "url": "https://datacentertraining.us/learn/energy-efficiency-pue.html",
+      "description": "What PUE is, how to calculate it with a worked example, where facility energy goes, PUE's limits, WUE and CUE, and a practical checklist to cut overhead.",
+      "topics": [
+        "guide",
+        "pue"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Glossary: 200+ Terms Explained",
+      "url": "https://datacentertraining.us/learn/glossary.html",
+      "description": "Plain-English definitions of 200+ data center terms: UPS, PUE, ATS, CRAH, Tier III, arc flash, LOTO, DCIM, colocation, cross-connects, and more.",
+      "topics": [
+        "guide",
+        "ups",
+        "dcim",
+        "pue",
+        "tier"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Everything You Need to Know About Data Centers",
+      "url": "https://datacentertraining.us/learn/",
+      "description": "Free guides to how data centers work: power, cooling, Tier levels, safety, security, operations, commissioning, energy efficiency, standards, and a glossary.",
+      "topics": [
+        "guide",
+        "cooling",
+        "security",
+        "commissioning",
+        "tier"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center 101: What Is a Data Center and How Does It Work?",
+      "url": "https://datacentertraining.us/learn/what-is-a-data-center.html",
+      "description": "What a data center is, what is inside one, the main types from colocation to hyperscale and edge, and how power, cooling, and security keep it running.",
+      "topics": [
+        "guide",
+        "cooling",
+        "security"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Switching to a Data Center Career: A Guide for Career Changers",
+      "url": "https://datacentertraining.us/careers/career-changers.html",
+      "description": "Moving into data centers from the trades, the military, IT, or facilities work? See what transfers, what is new, and which courses close the gap.",
+      "topics": [
+        "careers"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Jobs Explained: 15 Roles and What They Do",
+      "url": "https://datacentertraining.us/careers/data-center-jobs.html",
+      "description": "What 15 data center jobs involve day to day, from technicians and electricians to NOC, security, and commissioning roles, plus how to prepare for each.",
+      "topics": [
+        "careers",
+        "security",
+        "commissioning"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "How to Get Into the Data Center Industry (Step by Step)",
+      "url": "https://datacentertraining.us/careers/how-to-get-into-data-centers.html",
+      "description": "A step-by-step plan to break into data center work: learn how facilities run, pick a role, build safety basics, gain hands-on experience, and get hired.",
+      "topics": [
+        "careers"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Build a Career That Keeps the Internet Running",
+      "url": "https://datacentertraining.us/careers/",
+      "description": "Explore data center careers: the main job roles, a typical career ladder, where you could work, the skills employers want, and the training that helps.",
+      "topics": [
+        "careers"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Technician Interview Questions and Answers",
+      "url": "https://datacentertraining.us/careers/interview-questions.html",
+      "description": "34 data center technician interview questions with what interviewers look for and strong answers on safety, power, cooling, procedures, and scenarios.",
+      "topics": [
+        "careers",
+        "cooling"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Which Data Center Career Fits You?",
+      "url": "https://datacentertraining.us/quizzes/career-quiz.html",
+      "description": "Answer 10 quick questions to find the data center career that fits you: power, cooling, operations, security, design, or monitoring. Plus where to start.",
+      "topics": [
+        "quiz",
+        "cooling",
+        "security"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Cooling & HVAC Quiz",
+      "url": "https://datacentertraining.us/quizzes/cooling-quiz.html",
+      "description": "Test your data center cooling knowledge: CRAC vs CRAH, ASHRAE inlet ranges, tons and BTUs, containment, economizers, chilled water, and liquid cooling.",
+      "topics": [
+        "quiz",
+        "cooling"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Basics Quiz",
+      "url": "https://datacentertraining.us/quizzes/data-center-basics-quiz.html",
+      "description": "Free beginner quiz on data center basics: white space, UPS, CRAH, PUE, Tiers, hot and cold aisles, colocation, meet-me rooms, and redundancy, with explanations.",
+      "topics": [
+        "quiz",
+        "ups",
+        "pue",
+        "tier"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "What's Your Data Center IQ?",
+      "url": "https://datacentertraining.us/quizzes/",
+      "description": "Free data center quizzes: find your career match, then test yourself on basics, power, cooling, safety, security, Tiers, and operations with explanations.",
+      "topics": [
+        "quiz",
+        "cooling",
+        "security",
+        "tier"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Operations & Monitoring Quiz",
+      "url": "https://datacentertraining.us/quizzes/operations-quiz.html",
+      "description": "Free data center operations quiz: SOP vs MOP vs EOP, change management, predictive maintenance, CMMS, MTTR, RTO vs RPO, BMS vs DCIM vs EPMS, and root cause.",
+      "topics": [
+        "quiz",
+        "dcim",
+        "bms",
+        "maintenance"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Power & Electrical Quiz",
+      "url": "https://datacentertraining.us/quizzes/power-electrical-quiz.html",
+      "description": "Test your knowledge of data center power: UPS topologies, generators, transfer switches, N+1 vs 2N redundancy, and NFPA 70E arc flash basics. Free quiz.",
+      "topics": [
+        "quiz",
+        "electrical",
+        "ups",
+        "generator"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Safety Quiz",
+      "url": "https://datacentertraining.us/quizzes/safety-quiz.html",
+      "description": "Free data center safety quiz: NFPA 70E safe work, energized work, lockout/tagout, batteries, EPO, clean agent alarms, confined spaces, and refrigerants.",
+      "topics": [
+        "quiz",
+        "refrigerant",
+        "confined"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Security & Compliance Quiz",
+      "url": "https://datacentertraining.us/quizzes/security-compliance-quiz.html",
+      "description": "Test your data center security and compliance knowledge: security layers, mantraps, visitors, SOC 2, ISO/IEC 27001, PCI DSS, HIPAA, media destruction, and SPCC.",
+      "topics": [
+        "quiz",
+        "security",
+        "visitor"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Tiers & Design Quiz",
+      "url": "https://datacentertraining.us/quizzes/tiers-design-quiz.html",
+      "description": "Test your knowledge of data center Tiers and design: Tier I-IV, N+1 vs 2N, TIA-942 Rated levels, commissioning L1-L5, capacity, and availability math.",
+      "topics": [
+        "quiz",
+        "commissioning",
+        "tier"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Cooling Load Calculator",
+      "url": "https://datacentertraining.us/tools/cooling-load-calculator.html",
+      "description": "Convert data center IT load to BTU/hr, tons of cooling, and server airflow in CFM, then size cooling units at N, N+1, or 2N redundancy. Free calculator.",
+      "topics": [
+        "tool",
+        "cooling"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Free Tools for Data Center Teams",
+      "url": "https://datacentertraining.us/tools/",
+      "description": "Free data center tools: build a role-based training plan, calculate PUE and overhead cost, convert availability to downtime, and size cooling load in tons.",
+      "topics": [
+        "tool",
+        "cooling",
+        "pue"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center PUE Calculator",
+      "url": "https://datacentertraining.us/tools/pue-calculator.html",
+      "description": "Free data center PUE calculator. Enter facility and IT load to get PUE, DCiE, overhead energy cost, and the yearly savings from hitting a target PUE.",
+      "topics": [
+        "tool",
+        "pue"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Build Your Data Center Training Plan",
+      "url": "https://datacentertraining.us/tools/training-plan-builder.html",
+      "description": "Build a data center training plan for your role in a minute. Pick your job, experience, topics, and time budget to get a course list, hours, and price.",
+      "topics": [
+        "tool"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Uptime & Downtime Calculator",
+      "url": "https://datacentertraining.us/tools/uptime-calculator.html",
+      "description": "Convert availability percentages like 99.99% into allowed downtime per year, month, week, and day, or work backward from downtime. Tier figures included.",
+      "topics": [
+        "tool",
+        "tier"
+      ],
+      "audience": []
     },
     {
       "type": "blog_post",

@@ -41,5 +41,5 @@ into `index.html` so crawlers see links without JavaScript, and refreshes each p
 
 The workflow then runs `node scripts/build-site.js` from the repo root so new posts
 also appear in `llms-full.txt`, `/api/resources.json`, and the MCP manifest. The
-`<!-- dct:head -->` block and X card tags in the template are maintained by that
-script too (see `scripts/README.md`).
+`<!-- dct:head -->` block, X card tags, header menu, and footer in the template are
+maintained by that script too (see `scripts/README.md`).

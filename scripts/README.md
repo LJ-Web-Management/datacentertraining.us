@@ -26,10 +26,32 @@ requests fail if a generated file is out of date.
 | `<!-- dct:head -->` block in every page | `headBlock()` in `build-site.js` (security meta, agent links, deferred analytics/chat, WebMCP loader) |
 | `twitter:*` meta | Mirrors each page's `og:*` tags |
 | Course / catalog / bundle JSON-LD | Course records |
+| Header menu and footer on every page | `scripts/site-chrome.js` (one menu definition; links are made page-relative) |
+| `<!-- dct:courses a b c -->` and `<!-- dct:bundle id -->` blocks | Course rows and bundle offers with live names, hours, and prices from `js/config.js` |
+| Quiz JSON-LD on `quizzes/*-quiz.html` | The visible questions, answers, and explanations |
+| Glossary JSON-LD (`DefinedTermSet`) | The terms in `learn/glossary.html` |
+| `api/search.json` (site search index) | Every course, bundle, page, FAQ answer, and glossary term |
 
 Edit the **sources**, never the generated files. To change a price, edit
 `js/config.js`; to change analytics or chat, edit `THIRD_PARTY` in
-`build-site.js`.
+`build-site.js`; to change the menu or footer, edit `scripts/site-chrome.js`.
+
+## Adding a guide, career page, quiz, or tool
+
+Pages under `learn/`, `careers/`, `quizzes/`, and `tools/` start from an
+existing page in the same folder. Leave `<header class="glass-nav"></header>`
+and `<footer class="site-footer" id="contact"></footer>` empty, and leave
+`dct:courses` / `dct:bundle` blocks empty: the build fills them in. Never
+type a course price or hour count into the text. Then add the page to
+`sitemap.xml` (and to the menu in `site-chrome.js` if it belongs there), and
+run the build: the page is added to the site search, `api/resources.json`,
+and `llms-full.txt` automatically.
+
+Quiz pages use `js/quiz.js` (`data-quiz-type="knowledge"` with
+`data-answer` on each question, or `"career"` for the career match quiz).
+Calculators and the training plan builder use `js/tools.js`. Site search is
+`js/search.js`, loaded on demand by `js/nav.js` (header button, Ctrl/Cmd+K,
+or `/`) and directly by `search.html`.
 
 ## Adding a course
 

@@ -10,19 +10,19 @@
   "faqs": [
     {
       "question": "What's the difference between Comprehensive Programs and Modular Specializations?",
-      "answer": "Comprehensive Programs are multi-module courses (8 hours) covering a full discipline in depth, like data center design or operations management. Modular Specializations are focused 1-8 hour courses on a single skill, like UPS load testing or fiber termination. Many teams combine one comprehensive program with several modular courses for their role, which is exactly how our bundles are put together.",
+      "answer": "Comprehensive Programs are multi-module courses (8 to 16 hours) covering a full discipline in depth, like data center design or operations management. Modular Specializations are focused 1-8 hour courses on a single skill, like UPS load testing or fiber termination. Many teams combine one comprehensive program with several modular courses for their role, which is exactly how our bundles are put together.",
       "category": "Programs & Curriculum",
       "source_url": "https://datacentertraining.us/faq.html"
     },
     {
       "question": "How long does each course take?",
-      "answer": "Comprehensive Programs run 8 hours; Modular Specializations run 1-8 hours. All courses are self-paced, so learners can start and stop and pick up where they left off. A certificate is issued immediately on completion.",
+      "answer": "Comprehensive Programs run 8 to 16 hours; Modular Specializations run 1-8 hours. All courses are self-paced, so learners can start and stop and pick up where they left off. A certificate is issued immediately on completion.",
       "category": "Programs & Curriculum",
       "source_url": "https://datacentertraining.us/faq.html"
     },
     {
       "question": "What topics does the course catalog cover?",
-      "answer": "The catalog spans six tracks: Power &amp; Electrical, Cooling &amp; Facilities Efficiency, Operations &amp; Reliability, Security &amp; Compliance, Design, Planning &amp; Commissioning, and Monitoring &amp; Smart Facility. Together they cover 43 courses and 184 hours of training.",
+      "answer": "The catalog spans six tracks: Power &amp; Electrical, Cooling &amp; Facilities Efficiency, Operations &amp; Reliability, Security &amp; Compliance, Design, Planning &amp; Commissioning, and Monitoring &amp; Smart Facility. Together they cover 43 courses and 192 hours of training.",
       "category": "Programs & Curriculum",
       "source_url": "https://datacentertraining.us/faq.html"
     },
@@ -124,7 +124,7 @@
     },
     {
       "question": "What's included in a bundle, and how much do I save?",
-      "answer": "Each bundle groups a comprehensive program with the modular courses most relevant to the same role — for example, the Power &amp; Electrical Systems Bundle includes 14 courses and 47 hours of training on power systems, UPS, generators, and electrical safety for $986.99. The Complete Data Center Professional Bundle covers all 43 courses and 250 hours for $2,928.99, the deepest discount we offer. Every learner still gets a certificate for each course completed.",
+      "answer": "Each bundle groups a comprehensive program with the modular courses most relevant to the same role — for example, the Power &amp; Electrical Systems Bundle includes 14 courses and 47 hours of training on power systems, UPS, generators, and electrical safety for $986.99. The Complete Data Center Professional Bundle covers all 43 courses and 192 hours for $2,928.99, the deepest discount we offer. Every learner still gets a certificate for each course completed.",
       "category": "Pricing & Bundles",
       "source_url": "https://datacentertraining.us/faq.html"
     },

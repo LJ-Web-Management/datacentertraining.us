@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- dct:head -->
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; object-src 'none'; base-uri 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#f5f5f7">
+<link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt">
+<link rel="alternate" type="application/json" href="/.well-known/mcp.json" title="WebMCP manifest">
+<link rel="service-desc" type="application/vnd.oai.openapi+json" href="/openapi.json">
+<script>
+/* Analytics, session recording, and chat load for every visitor unless they opt out or send a GPC signal
+   (see /js/consent.js), on the first interaction (scroll, tap, key, mouse move) so they never delay rendering. */
+(function(w,d){
+  w.dataLayer=w.dataLayer||[];w.gtag=function(){w.dataLayer.push(arguments);};
+  w.clarity=w.clarity||function(){(w.clarity.q=w.clarity.q||[]).push(arguments);};
+  w.Tawk_API=w.Tawk_API||{};w.Tawk_API.onLoad=function(){w.Tawk_API.minimize();};
+  var ev=['pointerdown','keydown','touchstart','scroll','mousemove'];
+  function add(src,attrs){var s=d.createElement('script');s.async=true;s.src=src;for(var k in attrs)s.setAttribute(k,attrs[k]);d.head.appendChild(s);}
+  function once(fn){var done=0;return function(now){if(done)return;function go(){if(done)return;done=1;ev.forEach(function(e){w.removeEventListener(e,go,{passive:true});});fn();}
+    if(now)go();else ev.forEach(function(e){w.addEventListener(e,go,{passive:true});});};}
+  w.dctLoad={
+    analytics:once(function(){
+      w.gtag('js',new Date());w.gtag('config','G-Z3T42KYK64');
+      add('https://www.googletagmanager.com/gtag/js?id=G-Z3T42KYK64');
+      add('https://analytics.ahrefs.com/analytics.js',{'data-key':'tVAd7KxwKax+pAfHx46Zgg'});
+      add('https://www.clarity.ms/tag/ylza43nm4m');
+    }),
+    chat:once(function(){
+      w.Tawk_LoadStart=new Date();add('https://embed.tawk.to/6a5a95a2096ab21d402a762c/1jtoth11r',{charset:'UTF-8',crossorigin:'*'});
+    })
+  };
+})(window,document);
+if(navigator.modelContext){var m=document.createElement('script');m.src='/js/webmcp.js';m.defer=true;document.head.appendChild(m);}
+</script>
+<script src="/js/consent.js" defer></script>
+<!-- /dct:head -->
+<title>Data Center Standards and Regulations Guide</title>
+<meta name="description" content="Data center codes, standards, and regulations explained: TIA-942, Uptime Tiers, NEC, NFPA 70E, ASHRAE, ISO 27001, SOC 2, EPA, and OSHA, and who enforces each.">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+<link rel="canonical" href="https://datacentertraining.us/learn/data-center-standards.html">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Data Center Standards and Regulations Guide">
+<meta property="og:description" content="Data center codes, standards, and regulations explained: TIA-942, Uptime Tiers, NEC, NFPA 70E, ASHRAE, ISO 27001, SOC 2, EPA, and OSHA, and who enforces each.">
+<meta property="og:url" content="https://datacentertraining.us/learn/data-center-standards.html">
+<meta property="og:image" content="https://datacentertraining.us/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Data Center Training">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@HazwoperOsha">
+<meta name="twitter:title" content="Data Center Standards and Regulations Guide">
+<meta name="twitter:description" content="Data center codes, standards, and regulations explained: TIA-942, Uptime Tiers, NEC, NFPA 70E, ASHRAE, ISO 27001, SOC 2, EPA, and OSHA, and who enforces each.">
+<meta name="twitter:image" content="https://datacentertraining.us/images/og-image.jpg">
+
+<link rel="stylesheet" href="../css/site.min.css">
+<script src="../js/nav.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Data Center Standards and Regulations: A Practical Guide",
+  "description": "Data center codes, standards, and regulations explained: TIA-942, Uptime Tiers, NEC, NFPA 70E, ASHRAE, ISO 27001, SOC 2, EPA, and OSHA, and who enforces each.",
+  "url": "https://datacentertraining.us/learn/data-center-standards.html",
+  "mainEntityOfPage": "https://datacentertraining.us/learn/data-center-standards.html",
+  "image": "https://datacentertraining.us/images/og-image.jpg",
+  "datePublished": "2026-10-19",
+  "dateModified": "2026-10-19",
+  "inLanguage": "en-US",
+  "author": {"@type": "Organization", "name": "Data Center Training", "url": "https://datacentertraining.us/"},
+  "publisher": {"@type": "EducationalOrganization", "@id": "https://datacentertraining.us/#organization", "name": "Data Center Training", "url": "https://datacentertraining.us/"},
+  "about": ["Data center standards", "Building and electrical codes", "OSHA regulations", "Security compliance frameworks", "ANSI/TIA-942", "NFPA 70E"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://datacentertraining.us/"},
+    {"@type": "ListItem", "position": 2, "name": "Knowledge Center", "item": "https://datacentertraining.us/learn/"},
+    {"@type": "ListItem", "position": 3, "name": "Standards & Regulations", "item": "https://datacentertraining.us/learn/data-center-standards.html"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Is ANSI/TIA-942 the same as the Uptime Institute Tier Standard?", "acceptedAnswer": {"@type": "Answer", "text": "No. ANSI/TIA-942 is a TIA standard for data center infrastructure, with ratings from Rated-1 to Rated-4. The Uptime Institute Tier Standard defines Tier I through Tier IV, and only Uptime Institute issues Tier Certification. A facility can be designed to one, both, or neither."}},
+    {"@type": "Question", "name": "Is NFPA 70E the law?", "acceptedAnswer": {"@type": "Answer", "text": "Not by itself. OSHA has not adopted NFPA 70E into its regulations, but OSHA's electrical rules require employers to protect workers from electrical hazards, and NFPA 70E is the recognized consensus standard for how to do that. In practice, following NFPA 70E is how most employers meet those requirements."}},
+    {"@type": "Question", "name": "Does a data center need SOC 2 or ISO/IEC 27001?", "acceptedAnswer": {"@type": "Answer", "text": "No law requires either for most data centers, but customers often do. Colocation and cloud providers commonly obtain both because customers ask for them in contracts and security reviews. Note that SOC 2 is an attestation report from a CPA firm, not a certification."}},
+    {"@type": "Question", "name": "Will a standards-aligned course make me certified in that standard?", "acceptedAnswer": {"@type": "Answer", "text": "No. A standards-aligned course teaches how a standard applies to your work and awards a certificate of completion. It is not a certification or license, and it does not mean the standards body approved the course. Credentials such as EPA Section 608 certification, state electrician licenses, and Uptime Institute accreditations are offered by those organizations."}}
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="glass-nav">
+  <div class="container nav-inner">
+    <a href="../" class="logo">
+      <img src="../images/favicon.svg" alt="" width="30" height="30">
+      <span>
+        <span class="logo-mark">datacentertraining.us</span>
+        <span class="logo-sub">Data Center Professional Training</span>
+      </span>
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Main">
+      <div class="nav-item">
+        <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="navMenu-training">Courses<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-3" id="navMenu-training">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Online Training</p>
+            <a href="../courses.html"><span class="nav-link-title">Course Catalog</span><span class="nav-link-desc">All 43 self-paced courses</span></a>
+            <a href="../bundles.html"><span class="nav-link-title">Course Bundles</span><span class="nav-link-desc">Role-based bundles, save up to 52%</span></a>
+            <a href="../who.html"><span class="nav-link-title">Courses by Role</span><span class="nav-link-desc">Find the track for your job</span></a>
+            <a href="../tools/training-plan-builder.html"><span class="nav-link-title">Training Plan Builder</span><span class="nav-link-desc">Build and price a plan in minutes</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Enrolling</p>
+            <a href="../#teams"><span class="nav-link-title">Team Training</span><span class="nav-link-desc">Seats, progress tracking, PO billing</span></a>
+            <a href="../certifications.html"><span class="nav-link-title">Certificates &amp; Accreditation</span><span class="nav-link-desc">What your certificate means</span></a>
+            <a href="../faq.html"><span class="nav-link-title">FAQ</span><span class="nav-link-desc">Pricing, access, and policies</span></a>
+          </div>
+          <a class="nav-feature" href="../bundles.html"><span class="nav-feature-kicker">Best value</span><span class="nav-feature-title">Complete Data Center Professional Bundle</span><span class="nav-feature-text">43 courses and 192 hours of training in one enrollment. Save 52%.</span><span class="nav-feature-cta">Compare bundles &rarr;</span></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button type="button" class="nav-trigger active" aria-expanded="false" aria-controls="navMenu-learn">Learn<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-3" id="navMenu-learn">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Start Here</p>
+            <a href="../learn/"><span class="nav-link-title">Knowledge Center</span><span class="nav-link-desc">Every guide in one place</span></a>
+            <a href="../learn/what-is-a-data-center.html"><span class="nav-link-title">Data Center 101</span><span class="nav-link-desc">How data centers work</span></a>
+            <a href="../learn/glossary.html"><span class="nav-link-title">Glossary</span><span class="nav-link-desc">Data center terms, A to Z</span></a>
+            <a href="../learn/data-center-standards.html" aria-current="page"><span class="nav-link-title">Standards &amp; Regulations</span><span class="nav-link-desc">TIA-942, NFPA, OSHA, ASHRAE, ISO</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Systems</p>
+            <a href="../learn/data-center-power.html"><span class="nav-link-title">Power Systems</span></a>
+            <a href="../learn/data-center-cooling.html"><span class="nav-link-title">Cooling Systems</span></a>
+            <a href="../learn/data-center-tiers.html"><span class="nav-link-title">Tier Levels &amp; Redundancy</span></a>
+            <a href="../learn/energy-efficiency-pue.html"><span class="nav-link-title">Energy Efficiency &amp; PUE</span></a>
+            <a href="../learn/ai-data-centers.html"><span class="nav-link-title">AI &amp; High-Density Facilities</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Operations</p>
+            <a href="../learn/data-center-safety.html"><span class="nav-link-title">Safety Guide</span></a>
+            <a href="../learn/data-center-security-compliance.html"><span class="nav-link-title">Security &amp; Compliance</span></a>
+            <a href="../learn/data-center-operations.html"><span class="nav-link-title">Operations &amp; Maintenance</span></a>
+            <a href="../learn/data-center-commissioning.html"><span class="nav-link-title">Commissioning (Levels 1-5)</span></a>
+            <a href="../blog/"><span class="nav-link-title">Blog: Field Guidance</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="navMenu-careers">Careers<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-2" id="navMenu-careers">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Data Center Careers</p>
+            <a href="../careers/"><span class="nav-link-title">Careers Hub</span><span class="nav-link-desc">Why the industry is hiring</span></a>
+            <a href="../careers/data-center-jobs.html"><span class="nav-link-title">Job Roles Explained</span><span class="nav-link-desc">What each role does day to day</span></a>
+            <a href="../careers/how-to-get-into-data-centers.html"><span class="nav-link-title">How to Get Into Data Centers</span><span class="nav-link-desc">A step-by-step starting plan</span></a>
+            <a href="../careers/career-changers.html"><span class="nav-link-title">Career Changers</span><span class="nav-link-desc">Electricians, HVAC techs, veterans, IT</span></a>
+            <a href="../careers/interview-questions.html"><span class="nav-link-title">Interview Questions</span><span class="nav-link-desc">Practice answers for technician roles</span></a>
+          </div>
+          <a class="nav-feature" href="../quizzes/career-quiz.html"><span class="nav-feature-kicker">2-minute quiz</span><span class="nav-feature-title">Which Data Center Career Fits You?</span><span class="nav-feature-text">Answer 10 quick questions and get a matching role and training track.</span><span class="nav-feature-cta">Take the career quiz &rarr;</span></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="navMenu-quizzes">Quizzes &amp; Tools<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-2" id="navMenu-quizzes">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Quizzes</p>
+            <a href="../quizzes/"><span class="nav-link-title">All Quizzes</span></a>
+            <a href="../quizzes/career-quiz.html"><span class="nav-link-title">Career Match Quiz</span></a>
+            <a href="../quizzes/data-center-basics-quiz.html"><span class="nav-link-title">Data Center Basics</span></a>
+            <a href="../quizzes/power-electrical-quiz.html"><span class="nav-link-title">Power &amp; Electrical</span></a>
+            <a href="../quizzes/cooling-quiz.html"><span class="nav-link-title">Cooling &amp; HVAC</span></a>
+            <a href="../quizzes/safety-quiz.html"><span class="nav-link-title">Safety</span></a>
+            <a href="../quizzes/security-compliance-quiz.html"><span class="nav-link-title">Security &amp; Compliance</span></a>
+            <a href="../quizzes/tiers-design-quiz.html"><span class="nav-link-title">Tiers &amp; Design</span></a>
+            <a href="../quizzes/operations-quiz.html"><span class="nav-link-title">Operations &amp; Monitoring</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Tools</p>
+            <a href="../tools/"><span class="nav-link-title">All Tools</span></a>
+            <a href="../tools/training-plan-builder.html"><span class="nav-link-title">Training Plan Builder</span></a>
+            <a href="../tools/pue-calculator.html"><span class="nav-link-title">PUE Calculator</span></a>
+            <a href="../tools/uptime-calculator.html"><span class="nav-link-title">Uptime &amp; Downtime Calculator</span></a>
+            <a href="../tools/cooling-load-calculator.html"><span class="nav-link-title">Cooling Load Calculator</span></a>
+          </div>
+        </div>
+      </div>
+      <a href="../blog/" class="nav-link">Blog</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="../search.html" class="nav-search" data-search-open aria-label="Search the site" title="Search (Ctrl+K)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><span class="nav-search-label">Search</span><kbd class="nav-search-kbd">Ctrl K</kbd></a>
+      <a href="../courses.html" class="btn btn-primary btn-sm nav-cta">View Courses</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../">Home</a>
+      <span>&rsaquo;</span>
+      <a href="./">Knowledge Center</a>
+      <span>&rsaquo;</span>
+      <span aria-current="page">Standards &amp; Regulations</span>
+    </nav>
+  </div>
+
+  <section class="course-hero">
+    <div class="container">
+      <div class="course-hero-eyebrow">Knowledge Center &middot; Standards</div>
+      <h1>Data Center Standards and Regulations: A Practical Guide</h1>
+      <p class="course-hero-hook">Data centers answer to dozens of codes, standards, and frameworks, from the National Electrical Code to SOC 2. This guide sorts them by topic, explains who enforces each one, and shows what &ldquo;aligned with&rdquo; really means.</p>
+      <div class="course-pills">
+        <span class="course-pill">13 min read</span>
+        <span class="course-pill">All levels</span>
+        <span class="course-pill">Updated October 2026</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="container guide-layout">
+    <aside class="guide-toc" aria-label="On this page">
+      <p class="guide-toc-title">On this page</p>
+      <ol>
+        <li><a href="#codes-standards">Codes vs. standards</a></li>
+        <li><a href="#enforcement">Who enforces them</a></li>
+        <li><a href="#aligned-certified">Aligned vs. certified</a></li>
+        <li><a href="#design">Design and topology</a></li>
+        <li><a href="#electrical">Electrical</a></li>
+        <li><a href="#fire">Fire and life safety</a></li>
+        <li><a href="#thermal-energy">Thermal and energy</a></li>
+        <li><a href="#environmental">Environmental</a></li>
+        <li><a href="#security">Security and compliance</a></li>
+        <li><a href="#workplace">Workplace safety</a></li>
+        <li><a href="#on-the-job">Using standards on the job</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ol>
+      <a class="guide-toc-cta" href="../quizzes/security-compliance-quiz.html"><strong>Test yourself</strong>Take the Security &amp; Compliance quiz.</a>
+    </aside>
+
+    <article class="guide-body prose">
+      <div class="key-takeaways">
+        <p class="key-takeaways-title">Key takeaways</p>
+        <ul>
+          <li>Codes become law when a state or city adopts them. Standards and guidelines are voluntary until a code, regulation, contract, or insurer makes them mandatory.</li>
+          <li>The authority having jurisdiction (AHJ) enforces adopted codes. OSHA and EPA enforce federal regulations. Auditors, customers, and insurers enforce the rest through reports and contracts.</li>
+          <li>Only the issuing body, or an organization it licenses or accredits, can certify against a standard. &ldquo;Aligned with&rdquo; means built around it, nothing more.</li>
+          <li>Always confirm which edition applies. The edition your jurisdiction or contract names is often not the latest one.</li>
+        </ul>
+      </div>
+
+      <h2 id="codes-standards">Codes, standards, regulations, and guidelines</h2>
+      <p>People use these words interchangeably, but the difference decides whether something is a legal requirement or a best practice.</p>
+      <div class="table-panel">
+        <table class="data-table">
+          <caption>Four kinds of requirements</caption>
+          <thead><tr><th>Type</th><th>What it is</th><th>Data center example</th></tr></thead>
+          <tbody>
+            <tr><td>Regulation</td><td>A rule issued by a government agency under a statute. It has the force of law.</td><td>OSHA 29 CFR 1910.147 (lockout/tagout); EPA refrigerant rules under Section 608 of the Clean Air Act</td></tr>
+            <tr><td>Code</td><td>A model document written to be adopted into law. It becomes mandatory where a state or local government adopts it, often with amendments.</td><td>NFPA 70, the National Electrical Code; the local building and fire codes</td></tr>
+            <tr><td>Standard</td><td>A consensus document that sets requirements or practices. Voluntary unless a code, regulation, contract, or insurer requires it.</td><td>NFPA 70E, ANSI/TIA-942, ISO/IEC 27001</td></tr>
+            <tr><td>Guideline or framework</td><td>Recommendations or criteria used as a benchmark or an audit basis, rather than strict requirements.</td><td>ASHRAE TC 9.9 thermal guidelines; the AICPA Trust Services Criteria used for SOC 2</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Standards often become mandatory indirectly. An adopted fire code, for example, typically references NFPA 72 and NFPA 13, which pulls them into law. OSHA has not adopted NFPA 70E into its regulations, but OSHA points to 70E as the consensus standard employers can use to meet its electrical safety requirements. A colocation contract can make a SOC 2 report a deliverable, and an insurer can make a fire protection feature a condition of coverage.</p>
+
+      <h2 id="enforcement">Who enforces what</h2>
+      <ul>
+        <li><strong>The authority having jurisdiction (AHJ).</strong> The building official, electrical inspector, and fire marshal enforce adopted codes: they review plans, inspect construction, and witness fire protection acceptance tests. Their interpretation is what counts on your site.</li>
+        <li><strong>Federal and state agencies.</strong> OSHA, or a state OSHA plan, enforces workplace safety regulations. EPA and state environmental agencies enforce air permits, spill prevention, refrigerant, and waste rules.</li>
+        <li><strong>Auditors and certification bodies.</strong> Independent CPA firms issue SOC 2 reports. Accredited certification bodies audit against ISO management system standards. Qualified Security Assessors assess PCI DSS compliance where required.</li>
+        <li><strong>Customers.</strong> Enterprise and colocation customers write standards into contracts and service level agreements and ask for audit reports.</li>
+        <li><strong>Insurers.</strong> Property insurers inspect fire protection, generator testing, and housekeeping, and can set conditions for coverage.</li>
+      </ul>
+      <p>Your employer's own policies sit on top of all of this, and they often go further than any code.</p>
+
+      <h2 id="aligned-certified">&ldquo;Aligned with&rdquo; vs. &ldquo;certified by&rdquo;</h2>
+      <p>A certification means the issuing body, or an organization it licenses or accredits, evaluated something against the standard and issued a certificate. &ldquo;Aligned with,&rdquo; &ldquo;designed to,&rdquo; or &ldquo;built around&rdquo; means someone used the standard as a reference. How it works for the names you will hear most:</p>
+      <ul>
+        <li><strong>Uptime Institute Tiers.</strong> Only Uptime Institute issues Tier Certification, separately for design documents, the constructed facility, and Operational Sustainability. A &ldquo;Tier III&rdquo; claim without that certification describes design intent.</li>
+        <li><strong>ANSI/TIA-942.</strong> Certification is performed through certification bodies licensed by TIA. The standard rates facilities from Rated-1 to Rated-4.</li>
+        <li><strong>ISO/IEC 27001 and ISO 50001.</strong> Certificates are issued by accredited certification bodies after an audit. ISO itself does not certify organizations.</li>
+        <li><strong>SOC 2.</strong> An attestation report by an independent CPA firm, not a certificate. Customers read the report, including any exceptions.</li>
+        <li><strong>NFPA and OSHA.</strong> Neither certifies facilities or approves training courses. OSHA's Outreach Training Program (10- and 30-hour cards) is delivered by OSHA-authorized trainers.</li>
+      </ul>
+      <div class="callout">
+        <span class="callout-title">How our courses fit</span>
+        <p>Our courses are standards-aligned and award a certificate of completion. They are not a certification or license, and no standards body has approved or endorsed them. Employers decide who is qualified for a task. The <a href="../certifications.html">certifications page</a> lists which courses are built around which standards.</p>
+      </div>
+      <p>In the tables below, the Related course column points to the course closest to each topic. Where the certifications page names a standard, that course is built around it; otherwise the course covers the related subject, not the full standard.</p>
+
+      <h2 id="design">Design and topology</h2>
+      <div class="table-panel">
+        <table class="data-table">
+          <caption>Design and topology standards</caption>
+          <thead><tr><th>Standard</th><th>What it covers</th><th>Who uses it</th><th>Related course</th></tr></thead>
+          <tbody>
+            <tr><td><a href="https://tiaonline.org/products-and-services/tia942certification/" rel="noopener" target="_blank">ANSI/TIA-942</a></td><td>Data center telecommunications infrastructure, spaces, cabling, and facility requirements, rated from Rated-1 to Rated-4.</td><td>Designers, cabling contractors, owners pursuing TIA-942 certification</td><td><a href="../courses/data-center-design-fundamentals.html">Data Center Design Fundamentals</a>; <a href="../courses/fiber-optics-network-cabling.html">Fiber Optics &amp; Network Cabling</a></td></tr>
+            <tr><td><a href="https://uptimeinstitute.com/tiers" rel="noopener" target="_blank">Uptime Institute Tier Standard: Topology</a></td><td>Performance definitions for Tier I (basic capacity), Tier II (redundant capacity components), Tier III (concurrently maintainable), and Tier IV (fault tolerant).</td><td>Owners and designers pursuing Tier Certification</td><td><a href="../courses/tier-infrastructure-fundamentals.html">Tier Infrastructure Fundamentals</a></td></tr>
+            <tr><td><a href="https://uptimeinstitute.com/tiers" rel="noopener" target="_blank">Uptime Institute Tier Standard: Operational Sustainability</a></td><td>How staffing, maintenance, training, and management practices keep a facility performing to its Tier over time.</td><td>Operations teams</td><td><a href="../courses/data-center-operations-management.html">Data Center Operations Management</a></td></tr>
+            <tr><td><a href="https://www.bicsi.org/standards" rel="noopener" target="_blank">ANSI/BICSI 002</a></td><td>Data center design and implementation practices covering site, architecture, power, cooling, cabling, security, and operations, with its own availability classes.</td><td>Designers, engineers, consultants</td><td><a href="../courses/data-center-design-fundamentals.html">Data Center Design Fundamentals</a></td></tr>
+            <tr><td><a href="https://www.cencenelec.eu/" rel="noopener" target="_blank">EN 50600</a></td><td>European standard series for data center facilities and infrastructures, from construction and power to security and efficiency metrics. Its international counterpart is the ISO/IEC 22237 series.</td><td>Operators and designers in Europe; multinational owners</td><td><a href="../courses/data-center-design-fundamentals.html">Data Center Design Fundamentals</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>TIA-942 and the Uptime Tier Standard overlap but use different criteria and certification programs. The <a href="data-center-tiers.html">Tier levels guide</a> explains the differences, and the <a href="../tools/uptime-calculator.html">uptime calculator</a> converts availability into downtime.</p>
+
+      <h2 id="electrical">Electrical</h2>
+      <div class="table-panel">
+        <table class="data-table">
+          <caption>Electrical codes, standards, and regulations</caption>
+          <thead><tr><th>Standard</th><th>What it covers</th><th>Who uses it</th><th>Related course</th></tr></thead>
+          <tbody>
+            <tr><td><a href="https://www.nfpa.org/codes-and-standards/nfpa-70-standard-development/70" rel="noopener" target="_blank">NFPA 70, National Electrical Code (NEC)</a></td><td>Installation requirements for electrical wiring and equipment. Article 645 has special provisions for information technology equipment rooms that meet its conditions, including a disconnecting means for IT equipment and cooling.</td><td>Electrical engineers, electricians, electrical inspectors</td><td><a href="../courses/power-distribution-systems-fundamentals.html">Power Distribution Systems Fundamentals</a></td></tr>
+            <tr><td><a href="https://www.nfpa.org/codes-and-standards/nfpa-70e-standard-development/70e" rel="noopener" target="_blank">NFPA 70E</a></td><td>Electrical safety in the workplace: electrically safe work conditions, risk assessment, approach boundaries, arc flash PPE, and training.</td><td>Employers, electricians, facility technicians</td><td><a href="../courses/electrical-safety-best-practices.html">Electrical Safety &amp; Best Practices</a>; <a href="../courses/data-center-arc-flash-safety.html">Data Center Arc Flash Safety</a></td></tr>
+            <tr><td><a href="https://www.nfpa.org/codes-and-standards/nfpa-70b-standard-development/70b" rel="noopener" target="_blank">NFPA 70B</a></td><td>Electrical equipment maintenance programs, intervals, and testing. Since its 2023 edition it is a standard with mandatory language rather than a recommended practice.</td><td>Facility managers, maintenance and testing contractors</td><td><a href="../courses/preventive-maintenance-planning.html">Preventive Maintenance Planning</a></td></tr>
+            <tr><td><a href="https://www.nfpa.org/codes-and-standards/nfpa-110-standard-development/110" rel="noopener" target="_blank">NFPA 110</a></td><td>Emergency and standby power systems: generator performance, installation, fuel, transfer switches, and routine testing and maintenance.</td><td>Generator technicians, facility managers, AHJs</td><td><a href="../courses/emergency-standby-power-systems-fundamentals.html">Emergency/Standby Power Systems Fundamentals</a>; <a href="../courses/generator-operations-maintenance.html">Generator Operations &amp; Maintenance</a></td></tr>
+            <tr><td><a href="https://www.nfpa.org/codes-and-standards/nfpa-111-standard-development/111" rel="noopener" target="_blank">NFPA 111</a></td><td>Stored electrical energy emergency and standby power systems, such as UPS and battery systems that serve as the emergency or standby source.</td><td>Power engineers, UPS technicians</td><td><a href="../courses/ups-systems-fundamentals.html">UPS Systems Fundamentals</a></td></tr>
+            <tr><td><a href="https://standards.ieee.org/standard/1584-2018.html" rel="noopener" target="_blank">IEEE 1584</a></td><td>The guide for performing arc flash hazard calculations, used to find incident energy and arc flash boundaries for equipment labels.</td><td>Electrical engineers performing arc flash studies</td><td><a href="../courses/data-center-arc-flash-safety.html">Data Center Arc Flash Safety</a></td></tr>
+            <tr><td><a href="https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910SubpartS" rel="noopener" target="_blank">OSHA 29 CFR 1910 Subpart S</a></td><td>Federal electrical requirements for general industry, including design safety standards and safety-related work practices (1910.331 to 1910.335).</td><td>All U.S. employers with electrical hazards</td><td><a href="../courses/data-center-electrical-safety.html">Data Center Electrical Safety</a></td></tr>
+            <tr><td><a href="https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.147" rel="noopener" target="_blank">OSHA 29 CFR 1910.147</a></td><td>Control of hazardous energy (lockout/tagout) during servicing and maintenance of machines and equipment.</td><td>All employers; every technician who services equipment</td><td><a href="../courses/electrical-safety-best-practices.html">Electrical Safety &amp; Best Practices</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>One nuance: 1910.147 covers mechanical, hydraulic, thermal, and other energy, but work on or near electrical conductors falls under Subpart S, including the lockout rules in 1910.333. Site LOTO programs usually cover both. The <a href="data-center-safety.html">Data Center Safety Guide</a> and <a href="data-center-power.html">power guide</a> show how these rules play out on the floor.</p>
+
+      <h2 id="fire">Fire and life safety</h2>
+      <div class="table-panel">
+        <table class="data-table">
+          <caption>Fire and life safety codes and standards</caption>
+          <thead><tr><th>Standard</th><th>What it covers</th><th>Who uses it</th><th>Related course</th></tr></thead>
+          <tbody>
+            <tr><td><a href="https://www.nfpa.org/codes-and-standards/nfpa-72-standard-development/72" rel="noopener" target="_blank">NFPA 72</a></td><td>The National Fire Alarm and Signaling Code: detection, notification, releasing service for suppression systems, and inspection and testing.</td><td>Fire alarm contractors, AHJs, facility managers</td><td><a href="../courses/data-center-fire-suppression-safety.html">Data Center Fire Suppression System Safety</a></td></tr>
+            <tr><td><a href="https://www.nfpa.org/codes-and-standards/nfpa-75-standard-development/75" rel="noopener" target="_blank">NFPA 75</a></td><td>Fire protection of information technology equipment: room construction, detection and suppression, and emergency disconnect for IT areas.</td><td>Designers, owners, insurers</td><td><a href="../courses/data-center-fire-suppression-safety.html">Data Center Fire Suppression System Safety</a></td></tr>
+            <tr><td><a href="https://www.nfpa.org/codes-and-standards/nfpa-76-standard-development/76" rel="noopener" target="_blank">NFPA 76</a></td><td>Fire protection of telecommunications facilities, such as carrier central offices and telecom spaces.</td><td>Carriers and operators of telecom spaces</td><td><a href="../courses/data-center-fire-suppression-safety.html">Data Center Fire Suppression System Safety</a></td></tr>
+            <tr><td><a href="https://www.nfpa.org/codes-and-standards/nfpa-13-standard-development/13" rel="noopener" target="_blank">NFPA 13</a></td><td>Sprinkler system installation, including the pre-action systems common in data halls, which keep piping dry until a detection system (and, in double-interlock designs, a sprinkler head) activates.</td><td>Fire protection engineers, sprinkler contractors</td><td><a href="../courses/data-center-fire-suppression-safety.html">Data Center Fire Suppression System Safety</a></td></tr>
+            <tr><td><a href="https://www.nfpa.org/codes-and-standards/nfpa-2001-standard-development/2001" rel="noopener" target="_blank">NFPA 2001</a></td><td>Clean agent systems using HFC-227ea (sold as FM-200), FK-5-1-12 (sold as Novec 1230 and others), or inert gases such as IG-541, including enclosure integrity and personnel safety.</td><td>Fire protection contractors, facility technicians</td><td><a href="../courses/data-center-fire-suppression-safety.html">Data Center Fire Suppression System Safety</a></td></tr>
+            <tr><td><a href="https://www.nfpa.org/codes-and-standards/nfpa-855-standard-development/855" rel="noopener" target="_blank">NFPA 855</a></td><td>Installation of stationary energy storage systems, including lithium-ion UPS batteries and battery energy storage.</td><td>Designers, AHJs, battery vendors</td><td><a href="../courses/lithium-ion-thermal-runaway-emergency-response.html">Lithium-Ion Battery Thermal Runaway and Emergency Response</a></td></tr>
+            <tr><td>Local fire code</td><td>The fire code your state or city adopts, usually the International Fire Code or NFPA 1, which pulls in the standards above and adds local permits and inspections.</td><td>Fire marshals and every facility</td><td><a href="../courses/data-center-fire-suppression-safety.html">Data Center Fire Suppression System Safety</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="callout callout-safety">
+        <span class="callout-title">Suppression systems are hazardous energy too</span>
+        <p>Before work in a protected room, follow your site's procedure for placing the suppression system in a safe condition and notifying the monitoring company. Inert gas systems lower oxygen levels when they discharge, and every clean agent room needs clear evacuation rules.</p>
+      </div>
+
+      <h2 id="thermal-energy">Thermal and energy</h2>
+      <div class="table-panel">
+        <table class="data-table">
+          <caption>Thermal and energy standards and programs</caption>
+          <thead><tr><th>Standard</th><th>What it covers</th><th>Who uses it</th><th>Related course</th></tr></thead>
+          <tbody>
+            <tr><td><a href="https://www.ashrae.org/technical-resources/bookstore/datacom-series" rel="noopener" target="_blank">ASHRAE TC 9.9 thermal guidelines</a></td><td>Recommended and allowable temperature and humidity ranges by equipment class. The recommended inlet range for most classes is 18-27 &deg;C (64.4-80.6 &deg;F). TC 9.9 also publishes liquid cooling guidance.</td><td>Cooling engineers, operators, IT hardware vendors</td><td><a href="../courses/cooling-systems-design-optimization.html">Cooling Systems Design &amp; Optimization</a></td></tr>
+            <tr><td><a href="https://www.ashrae.org/technical-resources/bookstore/datacom-series" rel="noopener" target="_blank">ASHRAE Standard 90.4</a></td><td>The Energy Standard for Data Centers: minimum efficiency requirements for data center mechanical and electrical systems, used in energy code compliance.</td><td>Designers, energy code reviewers</td><td><a href="../courses/energy-efficiency-pue-optimization.html">Energy Efficiency &amp; PUE Optimization</a></td></tr>
+            <tr><td><a href="https://www.iso.org/" rel="noopener" target="_blank">ISO/IEC 30134 series</a></td><td>Data center key performance indicators. Part 2 defines power usage effectiveness (PUE); other parts define metrics such as renewable energy factor, energy reuse factor, and water usage effectiveness.</td><td>Operators reporting efficiency, sustainability teams</td><td><a href="../courses/energy-efficiency-pue-optimization.html">Energy Efficiency &amp; PUE Optimization</a></td></tr>
+            <tr><td><a href="https://www.iso.org/" rel="noopener" target="_blank">ISO 50001</a></td><td>Energy management systems: a plan-do-check-act framework for continual energy performance improvement, certifiable by accredited bodies.</td><td>Owners and operators running energy programs</td><td><a href="../courses/energy-efficiency-pue-optimization.html">Energy Efficiency &amp; PUE Optimization</a></td></tr>
+            <tr><td><a href="https://www.energystar.gov/buildings/tools-and-resources/energy-star-score-data-centers" rel="noopener" target="_blank">ENERGY STAR for data centers</a></td><td>EPA's 1-100 ENERGY STAR score for data centers, calculated in Portfolio Manager from facility and IT energy data, with certification available for top performers.</td><td>Owners benchmarking energy performance</td><td><a href="../courses/energy-efficiency-pue-optimization.html">Energy Efficiency &amp; PUE Optimization</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>PUE equals total facility energy divided by IT equipment energy; the ideal is 1.0. The metric originated with The Green Grid and is now standardized in ISO/IEC 30134-2. Try the <a href="../tools/pue-calculator.html">PUE calculator</a> or read the <a href="energy-efficiency-pue.html">energy efficiency guide</a>.</p>
+
+      <h2 id="environmental">Environmental</h2>
+      <div class="table-panel">
+        <table class="data-table">
+          <caption>Environmental regulations</caption>
+          <thead><tr><th>Standard</th><th>What it covers</th><th>Who uses it</th><th>Related course</th></tr></thead>
+          <tbody>
+            <tr><td><a href="https://www.epa.gov/" rel="noopener" target="_blank">EPA Section 608 (Clean Air Act)</a></td><td>Refrigerant management: leak repair, recovery, recordkeeping, and technician certification. Technicians who open refrigerant systems need Section 608 certification from an EPA-approved program.</td><td>HVAC technicians, facility managers</td><td><a href="../courses/data-center-cooling-refrigerant-safety.html">Data Center Cooling System and Refrigerant Safety</a></td></tr>
+            <tr><td><a href="https://www.epa.gov/" rel="noopener" target="_blank">SPCC rule (40 CFR 112)</a></td><td>Spill Prevention, Control, and Countermeasure plans for facilities that store oil above regulatory thresholds, such as diesel for generators, where a spill could reach navigable waters.</td><td>Facility managers, environmental staff</td><td><a href="../courses/facility-environmental-compliance.html">Facility Environmental Compliance</a></td></tr>
+            <tr><td><a href="https://www.epa.gov/" rel="noopener" target="_blank">Air permits for generators</a></td><td>State and local air permits for diesel and gas engines, plus federal engine emission standards that limit how many hours emergency generators may run for maintenance and testing.</td><td>Facility managers, environmental staff</td><td><a href="../courses/facility-environmental-compliance.html">Facility Environmental Compliance</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Chemical inventory reporting for battery electrolyte and fuel, waste rules for batteries, and stormwater permits can apply too. Requirements vary by state and local agency, so each site needs its own register.</p>
+
+      <h2 id="security">Security and compliance</h2>
+      <div class="table-panel">
+        <table class="data-table">
+          <caption>Security and compliance frameworks</caption>
+          <thead><tr><th>Standard</th><th>What it covers</th><th>Who uses it</th><th>Related course</th></tr></thead>
+          <tbody>
+            <tr><td><a href="https://www.iso.org/" rel="noopener" target="_blank">ISO/IEC 27001</a></td><td>Information security management systems. Annex A of the 2022 edition includes physical controls such as perimeters, entry controls, and equipment protection.</td><td>Operators, colocation and cloud providers</td><td><a href="../courses/security-compliance-data-centers.html">Security &amp; Compliance for Data Centers</a></td></tr>
+            <tr><td><a href="https://www.aicpa-cima.com/topic/audit-assurance/audit-and-assurance-greater-than-soc-2" rel="noopener" target="_blank">SOC 2</a></td><td>A CPA firm's report on controls relevant to the AICPA Trust Services Criteria: security, availability, processing integrity, confidentiality, and privacy. Type 2 reports test controls over a period of time.</td><td>Colocation and cloud providers and their customers</td><td><a href="../courses/security-compliance-data-centers.html">Security &amp; Compliance for Data Centers</a></td></tr>
+            <tr><td><a href="https://www.pcisecuritystandards.org/" rel="noopener" target="_blank">PCI DSS</a></td><td>Payment card data security. Requirement 9 restricts physical access to cardholder data, including facility entry controls, visitor handling, and media protection.</td><td>Facilities hosting payment systems and their providers</td><td><a href="../courses/access-control-physical-security.html">Access Control &amp; Physical Security</a></td></tr>
+            <tr><td><a href="https://www.hhs.gov/" rel="noopener" target="_blank">HIPAA Security Rule</a></td><td>Safeguards for electronic protected health information. The physical safeguards in 45 CFR 164.310 cover facility access controls, workstation security, and device and media controls.</td><td>Facilities hosting health data; business associates</td><td><a href="../courses/security-compliance-data-centers.html">Security &amp; Compliance for Data Centers</a></td></tr>
+            <tr><td><a href="https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final" rel="noopener" target="_blank">NIST SP 800-53, PE family</a></td><td>The federal security control catalog. Its Physical and Environmental Protection family covers physical access, visitors, power, emergency shutoff, fire protection, and environmental controls.</td><td>Federal agencies and contractors</td><td><a href="../courses/access-control-physical-security.html">Access Control &amp; Physical Security</a></td></tr>
+            <tr><td><a href="https://www.iso.org/" rel="noopener" target="_blank">ISO 22301</a></td><td>Business continuity management systems: planning, exercising, and improving the ability to keep critical services running through disruption.</td><td>Operators, enterprise continuity teams</td><td><a href="../courses/business-continuity-disaster-recovery-planning.html">Business Continuity and Disaster Recovery Planning</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Most of these frameworks ask the same physical questions: who can get in, how you know, and what happens to media when it leaves. The <a href="data-center-security-compliance.html">security and compliance guide</a> walks through how sites answer them.</p>
+
+      <h2 id="workplace">Workplace safety</h2>
+      <div class="table-panel">
+        <table class="data-table">
+          <caption>OSHA workplace safety rules beyond electrical</caption>
+          <thead><tr><th>Standard</th><th>What it covers</th><th>Who uses it</th><th>Related course</th></tr></thead>
+          <tbody>
+            <tr><td><a href="https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.146" rel="noopener" target="_blank">OSHA 29 CFR 1910.146</a></td><td>Permit-required confined spaces: evaluation, permits, attendants, and rescue. Some vaults, tanks, pits, and deep under-floor spaces can qualify.</td><td>Employers, EHS managers, technicians</td><td><a href="../courses/data-center-raised-floor-confined-space.html">Data Center Raised Floor and Confined Space Awareness</a></td></tr>
+            <tr><td><a href="https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.132" rel="noopener" target="_blank">OSHA 29 CFR 1910.132</a></td><td>General PPE requirements: hazard assessment, selection, fit, and training. Electrical PPE is covered in 1910.137 and 1910.335.</td><td>All employers</td><td><a href="../courses/data-center-electrical-safety.html">Data Center Electrical Safety</a></td></tr>
+            <tr><td><a href="https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.95" rel="noopener" target="_blank">OSHA 29 CFR 1910.95</a></td><td>Occupational noise exposure and hearing conservation programs. Generator rooms and dense, fan-heavy halls can be loud.</td><td>EHS managers, technicians</td><td><a href="../courses/generator-operations-maintenance.html">Generator Operations &amp; Maintenance</a></td></tr>
+            <tr><td><a href="https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.1200" rel="noopener" target="_blank">OSHA 29 CFR 1910.1200</a></td><td>Hazard communication: labels, Safety Data Sheets, and training for hazardous chemicals such as battery electrolyte, diesel fuel, refrigerants, and coolants.</td><td>All employers with hazardous chemicals</td><td><a href="../courses/data-center-cooling-refrigerant-safety.html">Data Center Cooling System and Refrigerant Safety</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>States with their own OSHA-approved plans may add requirements, and state electrician licenses come from state licensing boards.</p>
+
+      <h2 id="on-the-job">How to use standards on the job</h2>
+      <ol class="steps">
+        <li><h3>Know which edition applies</h3><p>Jurisdictions adopt specific editions, sometimes several cycles old, and contracts name editions too.</p></li>
+        <li><h3>Read the scope first</h3><p>Every standard starts by saying what it covers and what it does not. Many arguments end there.</p></li>
+        <li><h3>Keep a register</h3><p>List every code, standard, permit, and audit that applies to your site, with the edition, an owner, and the next due date.</p></li>
+        <li><h3>Escalate conflicts</h3><p>When documents disagree, the adopted code and the AHJ's interpretation govern. Take conflicts to engineering rather than picking the convenient answer.</p></li>
+        <li><h3>Go to the source</h3><p>Summaries, including this one, are no substitute for the current text. NFPA offers free read-only access to many of its codes and standards online.</p></li>
+      </ol>
+      <div class="inline-cta">
+        <p><strong>Which training does your team need?</strong> Pick a role, topics, and time budget to get a course plan.</p>
+        <a class="btn btn-primary btn-sm" href="../tools/training-plan-builder.html">Build a Training Plan</a>
+      </div>
+
+      <h2 id="courses">Courses that go deeper</h2>
+      <p>These self-paced, standards-aligned courses cover the standards above in the context of real data center work. Each awards a certificate of completion.</p>
+      <!-- dct:courses data-center-design-fundamentals tier-infrastructure-fundamentals electrical-safety-best-practices data-center-fire-suppression-safety security-compliance-data-centers facility-environmental-compliance energy-efficiency-pue-optimization data-center-raised-floor-confined-space -->
+<div class="panel course-panel">
+<div class="course-row"><div class="course-main"><h3><a href="../courses/data-center-design-fundamentals.html">Data Center Design Fundamentals</a></h3><div class="course-meta"><span>Design &amp; Planning</span><span class="sep">&middot;</span><span>Comprehensive Program</span><span class="sep">&middot;</span><span>ANSI/TIA-942</span></div><p class="course-hook">Design data center facilities that scale — from site selection to redundancy strategy.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">8 hrs</div><div class="course-price">$312.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=data-center-design-fundamentals" aria-label="Enroll in Data Center Design Fundamentals">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/tier-infrastructure-fundamentals.html">Tier Infrastructure Fundamentals</a></h3><div class="course-meta"><span>Design &amp; Planning</span><span class="sep">&middot;</span><span>Comprehensive Program</span><span class="sep">&middot;</span><span>Uptime Institute Tier Framework</span></div><p class="course-hook">Understand and assess TIER I–IV infrastructure without the formal certification track.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">8 hrs</div><div class="course-price">$280.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=tier-infrastructure-fundamentals" aria-label="Enroll in Tier Infrastructure Fundamentals">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/electrical-safety-best-practices.html">Electrical Safety &amp; Best Practices</a></h3><div class="course-meta"><span>Power &amp; Electrical</span><span class="sep">&middot;</span><span>Modular Specialization</span><span class="sep">&middot;</span><span>NFPA 70E</span></div><p class="course-hook">NFPA 70E-aligned electrical safety fundamentals for facility staff.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">4 hrs</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=electrical-safety-best-practices" aria-label="Enroll in Electrical Safety &amp; Best Practices">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/data-center-fire-suppression-safety.html">Data Center Fire Suppression System Safety Training (Clean Agent Systems)</a></h3><div class="course-meta"><span>Security &amp; Compliance</span><span class="sep">&middot;</span><span>Modular Specialization</span><span class="sep">&middot;</span><span>NFPA 2001</span></div><p class="course-hook">Clean agent fire suppression safety for occupied data hall environments.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">2 hrs</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=data-center-fire-suppression-safety" aria-label="Enroll in Data Center Fire Suppression System Safety Training (Clean Agent Systems)">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/security-compliance-data-centers.html">Security &amp; Compliance for Data Centers</a></h3><div class="course-meta"><span>Security &amp; Compliance</span><span class="sep">&middot;</span><span>Comprehensive Program</span><span class="sep">&middot;</span><span>SOC 2 / ISO 27001</span></div><p class="course-hook">Build a facility security program that satisfies SOC 2, ISO 27001, and physical audit requirements.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">16 hrs</div><div class="course-price">$291.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=security-compliance-data-centers" aria-label="Enroll in Security &amp; Compliance for Data Centers">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/facility-environmental-compliance.html">Facility Environmental Compliance</a></h3><div class="course-meta"><span>Security &amp; Compliance</span><span class="sep">&middot;</span><span>Modular Specialization</span></div><p class="course-hook">Understand the environmental regulations that apply to your facility.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">4 hrs</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=facility-environmental-compliance" aria-label="Enroll in Facility Environmental Compliance">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/energy-efficiency-pue-optimization.html">Energy Efficiency &amp; PUE Optimization</a></h3><div class="course-meta"><span>Cooling &amp; Efficiency</span><span class="sep">&middot;</span><span>Modular Specialization</span><span class="sep">&middot;</span><span>PUE</span></div><p class="course-hook">Cut operating costs with a measurable PUE optimization roadmap.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">4 hrs</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=energy-efficiency-pue-optimization" aria-label="Enroll in Energy Efficiency &amp; PUE Optimization">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/data-center-raised-floor-confined-space.html">Data Center Raised Floor and Confined Space Awareness Training</a></h3><div class="course-meta"><span>Operations</span><span class="sep">&middot;</span><span>Modular Specialization</span><span class="sep">&middot;</span><span>OSHA 1910.146</span></div><p class="course-hook">Confined space awareness and safe practices for working under a raised floor.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">1 hr</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=data-center-raised-floor-confined-space" aria-label="Enroll in Data Center Raised Floor and Confined Space Awareness Training">Enroll</a></div></div>
+</div>
+<!-- /dct:courses -->
+      <!-- dct:bundle bundle-complete-catalog -->
+<div class="bundle-offer"><div class="bundle-offer-copy"><p class="bundle-offer-kicker">Save 52% with the bundle</p><p class="bundle-offer-name">Complete Data Center Professional Bundle</p><p class="bundle-offer-meta">43 courses &middot; 192 hours &middot; <strong>$2,928.99</strong> per seat, instead of <s>$6,067.57</s> bought separately</p></div><div class="bundle-offer-actions"><a class="btn btn-primary" href="../checkout.html?item=bundle-complete-catalog">Enroll in the Bundle</a><a class="btn btn-secondary" href="../bundles.html">Compare Bundles</a></div></div>
+<!-- /dct:bundle -->
+
+      <h2 id="faq">Frequently asked questions</h2>
+      <div class="guide-faq">
+        <h3>Is ANSI/TIA-942 the same as the Uptime Institute Tier Standard?</h3>
+        <p>No. ANSI/TIA-942 is a TIA standard for data center infrastructure, with ratings from Rated-1 to Rated-4. The Uptime Institute Tier Standard defines Tier I through Tier IV, and only Uptime Institute issues Tier Certification. A facility can be designed to one, both, or neither.</p>
+        <h3>Is NFPA 70E the law?</h3>
+        <p>Not by itself. OSHA has not adopted NFPA 70E into its regulations, but OSHA's electrical rules require employers to protect workers from electrical hazards, and NFPA 70E is the recognized consensus standard for how to do that. In practice, following NFPA 70E is how most employers meet those requirements.</p>
+        <h3>Does a data center need SOC 2 or ISO/IEC 27001?</h3>
+        <p>No law requires either for most data centers, but customers often do. Colocation and cloud providers commonly obtain both because customers ask for them in contracts and security reviews. Note that SOC 2 is an attestation report from a CPA firm, not a certification.</p>
+        <h3>Will a standards-aligned course make me certified in that standard?</h3>
+        <p>No. A standards-aligned course teaches how a standard applies to your work and awards a certificate of completion. It is not a certification or license, and it does not mean the standards body approved the course. Credentials such as EPA Section 608 certification, state electrician licenses, and Uptime Institute accreditations are offered by those organizations.</p>
+      </div>
+
+      <h2 id="related">Keep learning</h2>
+      <div class="card-grid card-grid-2">
+        <a class="topic-card" href="data-center-tiers.html"><span class="topic-card-kicker">Guide</span><h3>Tier Levels Explained</h3><p>Tier I to IV, Rated-1 to Rated-4, and what certification really covers.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+        <a class="topic-card" href="data-center-safety.html"><span class="topic-card-kicker">Guide</span><h3>Data Center Safety Guide</h3><p>NFPA 70E, LOTO, batteries, and confined spaces in practice.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+        <a class="topic-card" href="data-center-security-compliance.html"><span class="topic-card-kicker">Guide</span><h3>Security &amp; Compliance</h3><p>How SOC 2, ISO/IEC 27001, and PCI DSS shape physical security.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+        <a class="topic-card" href="glossary.html"><span class="topic-card-kicker">Reference</span><h3>Data Center Glossary</h3><p>AHJ, SPCC, MOP, and every other acronym in one place.</p><span class="topic-card-cta">Open the glossary &rarr;</span></a>
+      </div>
+      <p class="guide-updated">This guide is general educational information, not engineering, legal, or compliance advice. Requirements depend on your jurisdiction, contracts, and the editions in force; confirm them with the AHJ, your counsel, and the current text of each document.</p>
+    </article>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta-block">
+        <h2>Train Your Team on the Standards That Apply</h2>
+        <p>Standards-aligned courses across power, cooling, fire protection, security, environmental compliance, and operations, each with a certificate of completion.</p>
+        <div class="hero-ctas">
+          <a href="../bundles.html" class="btn glass-chip">See the Complete Bundle</a>
+          <a href="../courses.html" class="btn glass-chip">Browse All Courses</a>
+          <a href="tel:18664296742" class="btn glass-chip">Call 1-866-429-6742</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="contact">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="../" class="logo">
+          <img src="../images/favicon.svg" alt="" width="28" height="28">
+          <span>
+            <span class="logo-mark">datacentertraining.us</span>
+            <span class="logo-sub">Data Center Professional Training</span>
+          </span>
+        </a>
+        <p class="footer-legal">Data Center Training is a specialty training division of <a href="https://hazwoper-osha.com/" target="_blank" rel="noopener">HAZWOPER-OSHA Training, LLC</a>, an IACET-accredited provider of professional data center and safety compliance training.</p>
+        <p class="footer-legal" style="margin-top:8px;">HAZWOPER OSHA Training, LLC &middot; 11901 Santa Monica Blvd., Suite #414, Los Angeles, CA 90025</p>
+        <div class="footer-badges">
+          <img src="https://media.hazwoper-osha.com/wp-content/uploads/2023/11/1698821020/IACET-small.webp" alt="IACET Accredited Provider" width="40" height="24" loading="lazy">
+          <img src="https://media.hazwoper-osha.com/wp-content/uploads/2026/07/1784291935/bbb.webp" alt="BBB A+ Rating" width="40" height="24" loading="lazy">
+          <img src="https://media.hazwoper-osha.com/wp-content/uploads/2026/07/1784292027/trust.webp" alt="Google Trust Services" width="141" height="20" loading="lazy" style="height:20px;">
+        </div>
+      </div>
+      <div class="footer-cta">
+        <p class="footer-cta-title">Not sure where to start?</p>
+        <p class="footer-cta-text">Find the data center role that fits you, then get a training plan built around it.</p>
+        <div class="footer-cta-actions">
+          <a href="../quizzes/career-quiz.html" class="btn btn-primary btn-sm">Take the Career Quiz</a>
+          <a href="../tools/training-plan-builder.html" class="btn btn-secondary btn-sm">Build a Training Plan</a>
+        </div>
+        <div class="footer-contact-links">
+          <a href="tel:18664296742">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            1-866-429-6742
+          </a>
+          <a href="mailto:info@hazwoper-osha.com">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            info@hazwoper-osha.com
+          </a>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/HazwoperOsha/" target="_blank" rel="noopener" aria-label="Facebook"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/hazwoper_osha_training/?hl=en" target="_blank" rel="noopener" aria-label="Instagram"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="https://www.youtube.com/@hazwoper-osha" target="_blank" rel="noopener" aria-label="YouTube"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33zM9.75 15.02V8.48l5.75 3.27z"/></svg></a>
+          <a href="https://x.com/HazwoperOsha" target="_blank" rel="noopener" aria-label="X"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.4 8.4L23 22h-6.6l-5.2-6.8L5.1 22H2l7.9-9L1.6 2h6.8l4.7 6.2z"/></svg></a>
+          <a href="https://www.linkedin.com/company/hazwoper-osha" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM8.34 18.34V10.1H5.67v8.24zM7.01 8.97a1.55 1.55 0 1 0 0-3.1 1.55 1.55 0 0 0 0 3.1zM18.34 18.34v-4.6c0-2.46-1.31-3.6-3.06-3.6a2.64 2.64 0 0 0-2.39 1.32V10.1H10.2s.04.86 0 8.24h2.68v-4.6c0-.25.02-.5.09-.68a1.5 1.5 0 0 1 1.37-1c.96 0 1.35.73 1.35 1.8v4.48z"/></svg></a>
+          <a href="https://www.pinterest.com/hazwoperosha/" target="_blank" rel="noopener" aria-label="Pinterest"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.64 7.86 6.36 9.32-.09-.79-.17-2.01.03-2.88.19-.79 1.22-5.03 1.22-5.03s-.31-.63-.31-1.55c0-1.45.84-2.54 1.89-2.54.89 0 1.32.67 1.32 1.47 0 .89-.57 2.23-.86 3.47-.25 1.03.52 1.88 1.53 1.88 1.84 0 3.07-2.36 3.07-5.15 0-2.12-1.43-3.71-4.02-3.71-2.93 0-4.76 2.19-4.76 4.63 0 .84.25 1.44.63 1.9.18.21.2.3.14.54-.05.18-.16.63-.21.81-.07.26-.28.35-.51.26-1.44-.59-2.11-2.16-2.11-3.93 0-2.92 2.46-6.43 7.34-6.43 3.92 0 6.5 2.84 6.5 5.89 0 4.03-2.24 7.04-5.55 7.04-1.11 0-2.16-.6-2.51-1.28 0 0-.6 2.36-.73 2.82-.22.8-.66 1.6-1.06 2.22.95.29 1.95.45 3 .45 5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-grid">
+    <div class="footer-col">
+      <h3>Training</h3>
+      <a href="../courses.html">Course Catalog</a>
+      <a href="../bundles.html">Course Bundles</a>
+      <a href="../who.html">Courses by Role</a>
+      <a href="../tools/training-plan-builder.html">Training Plan Builder</a>
+      <a href="../#teams">Team Training</a>
+      <a href="../certifications.html">Certificates &amp; Accreditation</a>
+      <a href="../faq.html">FAQ</a>
+    </div>
+    <div class="footer-col">
+      <h3>Learn</h3>
+      <a href="../learn/">Knowledge Center</a>
+      <a href="../learn/what-is-a-data-center.html">Data Center 101</a>
+      <a href="../learn/data-center-power.html">Power Systems</a>
+      <a href="../learn/data-center-cooling.html">Cooling Systems</a>
+      <a href="../learn/data-center-tiers.html">Tier Levels</a>
+      <a href="../learn/data-center-safety.html">Safety Guide</a>
+      <a href="../learn/data-center-standards.html">Standards Guide</a>
+      <a href="../learn/glossary.html">Glossary</a>
+      <a href="../blog/">Blog</a>
+    </div>
+    <div class="footer-col">
+      <h3>Careers</h3>
+      <a href="../careers/">Careers Hub</a>
+      <a href="../careers/data-center-jobs.html">Job Roles Explained</a>
+      <a href="../careers/how-to-get-into-data-centers.html">Get Into Data Centers</a>
+      <a href="../careers/career-changers.html">Career Changers</a>
+      <a href="../careers/interview-questions.html">Interview Questions</a>
+      <a href="../quizzes/career-quiz.html">Career Match Quiz</a>
+    </div>
+    <div class="footer-col">
+      <h3>Quizzes &amp; Tools</h3>
+      <a href="../quizzes/">All Quizzes</a>
+      <a href="../quizzes/data-center-basics-quiz.html">Data Center Basics Quiz</a>
+      <a href="../tools/">All Tools</a>
+      <a href="../tools/pue-calculator.html">PUE Calculator</a>
+      <a href="../tools/uptime-calculator.html">Uptime Calculator</a>
+      <a href="../tools/cooling-load-calculator.html">Cooling Load Calculator</a>
+      <a href="../search.html">Search the Site</a>
+    </div>
+    <div class="footer-col">
+      <h3>Company</h3>
+      <a href="https://hazwoper-osha.com/" target="_blank" rel="noopener">HAZWOPER-OSHA Training</a>
+      <a href="https://hazwoper-osha.com/certificate-verification" target="_blank" rel="noopener">Verify Certificate</a>
+      <a href="../privacy.html">Privacy Policy</a>
+      <a href="../terms.html">Terms of Service</a>
+      <a href="../accessibility.html">Accessibility</a>
+      <a href="../privacy.html#choices" data-privacy-choices>Your Privacy Choices</a>
+      <a href="https://hazwoper-osha.com/refund-policy" target="_blank" rel="noopener">Refund Policy</a>
+    </div>
+    </div>
+
+    <p class="footer-agents"><span>For AI agents:</span> <a href="/llms.txt">llms.txt</a> <a href="/llms-full.txt">llms-full.txt</a> <a href="/.well-known/mcp.json">WebMCP Manifest</a> <a href="/api/index.json">JSON Catalog API</a> <a href="/openapi.json">API Docs (OpenAPI)</a> <a href="/sitemap.xml">Sitemap</a></p>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; 2026 HAZWOPER-OSHA Training, LLC. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+<script src="../js/main.js" defer></script>
+
+</body>
+</html>

@@ -1,6 +1,6 @@
 # Data Center Training - Full Catalog
 
-> Data Center Training (datacentertraining.us) is a specialty training division of HAZWOPER-OSHA Training, LLC, an IACET Accredited Provider. 43 online, self-paced data center courses (184 hours total) in design, operations, power, cooling, security, and facilities management. Every course awards a certificate of completion.
+> Data Center Training (datacentertraining.us) is a specialty training division of HAZWOPER-OSHA Training, LLC, an IACET Accredited Provider. 43 online, self-paced data center courses (192 hours total) in design, operations, power, cooling, security, and facilities management. Every course awards a certificate of completion.
 
 Last updated: 2026-10-20
 Canonical source: https://datacentertraining.us/api/courses.json (same records as JSON). Tools: https://datacentertraining.us/.well-known/mcp.json
@@ -1250,7 +1250,7 @@ Modules:
 - track: Security & Compliance Track
 - category: Security & Compliance
 - course_type: Comprehensive Program
-- duration_hours: 8
+- duration_hours: 16
 - modules: 6
 - price_usd: 291.99
 - standards_aligned: SOC 2; ISO 27001
@@ -1828,7 +1828,7 @@ Prices are per seat in USD. Seat-count volume discounts apply at checkout: 2-10 
 - price_usd: 400.99
 - list_price_usd: 691.95 (sum of individual course prices)
 - savings: $290.96 (42%)
-- courses: 5, 19 hrs
+- courses: 5, 27 hrs
 - audience: For security and compliance leads building an audit-ready physical security, fire safety, and environmental compliance program.
 - url: https://datacentertraining.us/bundles.html
 - course_ids: security-compliance-data-centers, access-control-physical-security, facility-environmental-compliance, data-center-fire-suppression-safety, data-center-physical-security-access-control
@@ -1864,7 +1864,7 @@ Prices are per seat in USD. Seat-count volume discounts apply at checkout: 2-10 
 - price_usd: 2928.99
 - list_price_usd: 6067.57 (sum of individual course prices)
 - savings: $3138.58 (52%)
-- courses: 43, 184 hrs
+- courses: 43, 192 hrs
 - audience: Every course in the catalog — all 6 role-based tracks in one enrollment. The single path for a team that wants full coverage across design, power, cooling, security, operations, and monitoring, at the deepest discount we offer.
 - url: https://datacentertraining.us/bundles.html
 - course_ids: access-control-physical-security, batteries-dc-circuits, building-automation-systems-fundamentals, building-envelope-fundamentals, building-maintenance-fundamentals, business-continuity-disaster-recovery-planning, capacity-planning-forecasting, cooling-systems-design-optimization, data-center-arc-flash-safety, data-center-cooling-refrigerant-safety, data-center-design-fundamentals, data-center-electrical-safety, data-center-epo-procedures, data-center-fire-suppression-safety, data-center-operations-management, data-center-physical-security-access-control, data-center-raised-floor-confined-space, data-center-ups-battery-safety, dcim-platform-fundamentals, disaster-recovery-business-continuity, electrical-safety-best-practices, emergency-standby-power-systems-fundamentals, energy-efficiency-pue-optimization, facility-environmental-compliance, facility-management-fundamentals, fiber-optics-network-cabling, generator-fundamentals, generator-operations-maintenance, hvac-troubleshooting-essentials, incident-response-troubleshooting, infrastructure-commissioning-startup, lithium-ion-thermal-runaway-emergency-response, mechanical-systems-maintenance, monitoring-automation-bms-systems, power-distribution-systems-fundamentals, power-systems-electrical-fundamentals, preventive-maintenance-planning, roofing-systems-maintenance-fundamentals, security-compliance-data-centers, server-room-ergonomics-manual-handling, tier-infrastructure-fundamentals, ups-operations-load-testing, ups-systems-fundamentals
@@ -1874,7 +1874,7 @@ Prices are per seat in USD. Seat-count volume discounts apply at checkout: 2-10 
 - electrician ("I'm an electrician or power technician"): Power & Electrical Systems Track. Electricians and power technicians working on utility interconnection, UPS systems, generators, batteries, and daily electrical safety should complete this 14-course, 47-hour track.
 - hvac ("I work on HVAC, cooling, or mechanical systems"): Cooling & Facilities Efficiency Track. HVAC and facilities technicians who need both cooling design fundamentals and hands-on maintenance skills should complete this 6-course, 24-hour track.
 - operations ("I manage daily facility operations and uptime"): Operations & Reliability Track. Facility and operations managers who own uptime should complete this 10-course, 44-hour track covering daily operations, disaster recovery, maintenance, and incident response.
-- security ("I handle security or compliance"): Security & Compliance Track. Security and compliance leads building an audit-ready program should complete this 5-course, 19-hour track.
+- security ("I handle security or compliance"): Security & Compliance Track. Security and compliance leads building an audit-ready program should complete this 5-course, 27-hour track.
 - design ("I design, plan, or commission facilities"): Design, Planning & Commissioning Track. Engineers and project leads taking a facility from design through launch should complete all four of these courses, 28 hours total.
 - it ("I work on monitoring, DCIM, or network cabling"): Monitoring & Smart Facility Track. Teams building out monitoring, DCIM, building automation, and network cabling infrastructure should complete all four of these courses, 22 hours total.
 
@@ -1899,15 +1899,15 @@ Do not claim:
 
 ### What's the difference between Comprehensive Programs and Modular Specializations?
 
-Comprehensive Programs are multi-module courses (8 hours) covering a full discipline in depth, like data center design or operations management. Modular Specializations are focused 1-8 hour courses on a single skill, like UPS load testing or fiber termination. Many teams combine one comprehensive program with several modular courses for their role, which is exactly how our bundles are put together.
+Comprehensive Programs are multi-module courses (8 to 16 hours) covering a full discipline in depth, like data center design or operations management. Modular Specializations are focused 1-8 hour courses on a single skill, like UPS load testing or fiber termination. Many teams combine one comprehensive program with several modular courses for their role, which is exactly how our bundles are put together.
 
 ### How long does each course take?
 
-Comprehensive Programs run 8 hours; Modular Specializations run 1-8 hours. All courses are self-paced, so learners can start and stop and pick up where they left off. A certificate is issued immediately on completion.
+Comprehensive Programs run 8 to 16 hours; Modular Specializations run 1-8 hours. All courses are self-paced, so learners can start and stop and pick up where they left off. A certificate is issued immediately on completion.
 
 ### What topics does the course catalog cover?
 
-The catalog spans six tracks: Power &amp; Electrical, Cooling &amp; Facilities Efficiency, Operations &amp; Reliability, Security &amp; Compliance, Design, Planning &amp; Commissioning, and Monitoring &amp; Smart Facility. Together they cover 43 courses and 184 hours of training.
+The catalog spans six tracks: Power &amp; Electrical, Cooling &amp; Facilities Efficiency, Operations &amp; Reliability, Security &amp; Compliance, Design, Planning &amp; Commissioning, and Monitoring &amp; Smart Facility. Together they cover 43 courses and 192 hours of training.
 
 ### Do I need a background in data center design or operations to take these courses?
 
@@ -1975,7 +1975,7 @@ Data Center Training courses are published as online, self-paced courses. HAZWOP
 
 ### What's included in a bundle, and how much do I save?
 
-Each bundle groups a comprehensive program with the modular courses most relevant to the same role — for example, the Power &amp; Electrical Systems Bundle includes 14 courses and 47 hours of training on power systems, UPS, generators, and electrical safety for $986.99. The Complete Data Center Professional Bundle covers all 43 courses and 250 hours for $2,928.99, the deepest discount we offer. Every learner still gets a certificate for each course completed.
+Each bundle groups a comprehensive program with the modular courses most relevant to the same role — for example, the Power &amp; Electrical Systems Bundle includes 14 courses and 47 hours of training on power systems, UPS, generators, and electrical safety for $986.99. The Complete Data Center Professional Bundle covers all 43 courses and 192 hours for $2,928.99, the deepest discount we offer. Every learner still gets a certificate for each course completed.
 
 ### Which bundle is the best fit for a facilities generalist?
 
@@ -2063,6 +2063,38 @@ Email info@hazwoper-osha.com or call 1-866-429-6742 and our team can help with c
 - [ISO/IEC 27001 - Information security management systems](https://www.iso.org/standard/27001) (standard reference): International information security management standard referenced by the security and compliance program.
 - [Uptime Institute Tier Classification System](https://uptimeinstitute.com/tiers) (standard reference): Tier I-IV infrastructure topology framework referenced by the Tier Infrastructure Fundamentals course.
 - [ASHRAE TC 9.9 - Mission Critical Facilities, Data Centers, Technology Spaces and Electronic Equipment](https://tc0909.ashraetcs.org/) (standard reference): ASHRAE technical committee behind the data center thermal guidelines referenced in cooling courses.
+- [AI Data Centers: What High-Density Computing Changes for Facility Teams](https://datacentertraining.us/learn/ai-data-centers.html) (site page): How AI and GPU clusters change data center power, liquid cooling, floor loading, safety, and commissioning, and the skills facility teams need next.
+- [Data Center Commissioning Explained: Levels 1 to 5](https://datacentertraining.us/learn/data-center-commissioning.html) (site page): Data center commissioning explained: the five levels from factory witness testing to integrated systems testing, key documents, roles, and handover.
+- [How Data Center Cooling Works](https://datacentertraining.us/learn/data-center-cooling.html) (site page): How data center cooling works: heat loads, ASHRAE inlet ranges, CRAC vs CRAH, chilled water, economizers, containment, liquid cooling, and refrigerant safety.
+- [How Data Centers Are Run: Operations and Maintenance](https://datacentertraining.us/learn/data-center-operations.html) (site page): How data centers are run day to day: 24/7 shifts, SOPs and MOPs, change control, maintenance, monitoring, incident response, DR testing, and key KPIs.
+- [How Data Center Power Works: From the Grid to the Rack](https://datacentertraining.us/learn/data-center-power.html) (site page): How data center power works, from utility switchgear and generators to UPS systems, PDUs, and A/B feeds. Redundancy, testing, and safety explained.
+- [Data Center Safety Guide: Hazards, Rules, and Training](https://datacentertraining.us/learn/data-center-safety.html) (site page): Data center safety explained: arc flash and NFPA 70E, lockout/tagout, battery and EPO hazards, clean agent systems, confined spaces, and safety training.
+- [Data Center Physical Security and Compliance Explained](https://datacentertraining.us/learn/data-center-security-compliance.html) (site page): How data centers secure facilities: layered access control, mantraps, visitors, video, and what SOC 2, ISO 27001, PCI DSS, and HIPAA auditors check on site.
+- [Data Center Standards and Regulations: A Practical Guide](https://datacentertraining.us/learn/data-center-standards.html) (site page): Data center codes, standards, and regulations explained: TIA-942, Uptime Tiers, NEC, NFPA 70E, ASHRAE, ISO 27001, SOC 2, EPA, and OSHA, and who enforces each.
+- [Data Center Tier Levels Explained: Tier I to Tier IV](https://datacentertraining.us/learn/data-center-tiers.html) (site page): Uptime Institute Tier I to IV explained: concurrent maintainability vs fault tolerance, downtime figures, TIA-942 Rated levels, certifications, and myths.
+- [Data Center Energy Efficiency and PUE Explained](https://datacentertraining.us/learn/energy-efficiency-pue.html) (site page): What PUE is, how to calculate it with a worked example, where facility energy goes, PUE's limits, WUE and CUE, and a practical checklist to cut overhead.
+- [Data Center Glossary: 200+ Terms Explained](https://datacentertraining.us/learn/glossary.html) (site page): Plain-English definitions of 200+ data center terms: UPS, PUE, ATS, CRAH, Tier III, arc flash, LOTO, DCIM, colocation, cross-connects, and more.
+- [Everything You Need to Know About Data Centers](https://datacentertraining.us/learn/) (site page): Free guides to how data centers work: power, cooling, Tier levels, safety, security, operations, commissioning, energy efficiency, standards, and a glossary.
+- [Data Center 101: What Is a Data Center and How Does It Work?](https://datacentertraining.us/learn/what-is-a-data-center.html) (site page): What a data center is, what is inside one, the main types from colocation to hyperscale and edge, and how power, cooling, and security keep it running.
+- [Switching to a Data Center Career: A Guide for Career Changers](https://datacentertraining.us/careers/career-changers.html) (site page): Moving into data centers from the trades, the military, IT, or facilities work? See what transfers, what is new, and which courses close the gap.
+- [Data Center Jobs Explained: 15 Roles and What They Do](https://datacentertraining.us/careers/data-center-jobs.html) (site page): What 15 data center jobs involve day to day, from technicians and electricians to NOC, security, and commissioning roles, plus how to prepare for each.
+- [How to Get Into the Data Center Industry (Step by Step)](https://datacentertraining.us/careers/how-to-get-into-data-centers.html) (site page): A step-by-step plan to break into data center work: learn how facilities run, pick a role, build safety basics, gain hands-on experience, and get hired.
+- [Build a Career That Keeps the Internet Running](https://datacentertraining.us/careers/) (site page): Explore data center careers: the main job roles, a typical career ladder, where you could work, the skills employers want, and the training that helps.
+- [Data Center Technician Interview Questions and Answers](https://datacentertraining.us/careers/interview-questions.html) (site page): 34 data center technician interview questions with what interviewers look for and strong answers on safety, power, cooling, procedures, and scenarios.
+- [Which Data Center Career Fits You?](https://datacentertraining.us/quizzes/career-quiz.html) (site page): Answer 10 quick questions to find the data center career that fits you: power, cooling, operations, security, design, or monitoring. Plus where to start.
+- [Data Center Cooling & HVAC Quiz](https://datacentertraining.us/quizzes/cooling-quiz.html) (site page): Test your data center cooling knowledge: CRAC vs CRAH, ASHRAE inlet ranges, tons and BTUs, containment, economizers, chilled water, and liquid cooling.
+- [Data Center Basics Quiz](https://datacentertraining.us/quizzes/data-center-basics-quiz.html) (site page): Free beginner quiz on data center basics: white space, UPS, CRAH, PUE, Tiers, hot and cold aisles, colocation, meet-me rooms, and redundancy, with explanations.
+- [What's Your Data Center IQ?](https://datacentertraining.us/quizzes/) (site page): Free data center quizzes: find your career match, then test yourself on basics, power, cooling, safety, security, Tiers, and operations with explanations.
+- [Data Center Operations & Monitoring Quiz](https://datacentertraining.us/quizzes/operations-quiz.html) (site page): Free data center operations quiz: SOP vs MOP vs EOP, change management, predictive maintenance, CMMS, MTTR, RTO vs RPO, BMS vs DCIM vs EPMS, and root cause.
+- [Data Center Power & Electrical Quiz](https://datacentertraining.us/quizzes/power-electrical-quiz.html) (site page): Test your knowledge of data center power: UPS topologies, generators, transfer switches, N+1 vs 2N redundancy, and NFPA 70E arc flash basics. Free quiz.
+- [Data Center Safety Quiz](https://datacentertraining.us/quizzes/safety-quiz.html) (site page): Free data center safety quiz: NFPA 70E safe work, energized work, lockout/tagout, batteries, EPO, clean agent alarms, confined spaces, and refrigerants.
+- [Data Center Security & Compliance Quiz](https://datacentertraining.us/quizzes/security-compliance-quiz.html) (site page): Test your data center security and compliance knowledge: security layers, mantraps, visitors, SOC 2, ISO/IEC 27001, PCI DSS, HIPAA, media destruction, and SPCC.
+- [Data Center Tiers & Design Quiz](https://datacentertraining.us/quizzes/tiers-design-quiz.html) (site page): Test your knowledge of data center Tiers and design: Tier I-IV, N+1 vs 2N, TIA-942 Rated levels, commissioning L1-L5, capacity, and availability math.
+- [Data Center Cooling Load Calculator](https://datacentertraining.us/tools/cooling-load-calculator.html) (site page): Convert data center IT load to BTU/hr, tons of cooling, and server airflow in CFM, then size cooling units at N, N+1, or 2N redundancy. Free calculator.
+- [Free Tools for Data Center Teams](https://datacentertraining.us/tools/) (site page): Free data center tools: build a role-based training plan, calculate PUE and overhead cost, convert availability to downtime, and size cooling load in tons.
+- [Data Center PUE Calculator](https://datacentertraining.us/tools/pue-calculator.html) (site page): Free data center PUE calculator. Enter facility and IT load to get PUE, DCiE, overhead energy cost, and the yearly savings from hitting a target PUE.
+- [Build Your Data Center Training Plan](https://datacentertraining.us/tools/training-plan-builder.html) (site page): Build a data center training plan for your role in a minute. Pick your job, experience, topics, and time budget to get a course list, hours, and price.
+- [Uptime & Downtime Calculator](https://datacentertraining.us/tools/uptime-calculator.html) (site page): Convert availability percentages like 99.99% into allowed downtime per year, month, week, and day, or work backward from downtime. Tier figures included.
 - [BAS Manual Override Review: What Data Center Operators Should Verify Before Returning a Control Point to Auto](https://datacentertraining.us/blog/posts/bas-manual-override-review-what-data-center-operators-should-verify-before-returning-a-control-point-to-auto.html) (blog post, 2026-10-20): When a building automation system (BAS) point has been placed in manual override, how does the data center team know it is safe to return that point…
 - [Data Center Fire Alarm Cause and Effect Testing: What Commissioning Teams Should Verify Before Handover](https://datacentertraining.us/blog/posts/data-center-fire-alarm-cause-and-effect-testing-what-commissioning-teams-should-verify-before-handover.html) (blog post, 2026-10-19): When a data center fire alarm system is tested before handover, is the team proving a complete, documented chain of cause and effect, or only confirming that…
 - [Data Center Environmental Compliance Walkthrough: What EHS Managers Should Verify Before an Audit](https://datacentertraining.us/blog/posts/data-center-environmental-compliance-walkthrough-what-ehs-managers-should-verify-before-an-audit.html) (blog post, 2026-10-18): An environmental audit at a data center is rarely limited to a single permit or a single piece of equipment. The difficult question is whether the site can…

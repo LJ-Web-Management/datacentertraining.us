@@ -142,7 +142,7 @@
       "savings_usd": 290.96,
       "savings_percent": 42,
       "course_count": 5,
-      "total_hours": 19,
+      "total_hours": 27,
       "course_ids": [
         "security-compliance-data-centers",
         "access-control-physical-security",
@@ -209,7 +209,7 @@
       "savings_usd": 3138.58,
       "savings_percent": 52,
       "course_count": 43,
-      "total_hours": 184,
+      "total_hours": 192,
       "course_ids": [
         "access-control-physical-security",
         "batteries-dc-circuits",

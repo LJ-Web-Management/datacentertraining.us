@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- dct:head -->
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; object-src 'none'; base-uri 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#f5f5f7">
+<link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt">
+<link rel="alternate" type="application/json" href="/.well-known/mcp.json" title="WebMCP manifest">
+<link rel="service-desc" type="application/vnd.oai.openapi+json" href="/openapi.json">
+<script>
+/* Analytics, session recording, and chat load for every visitor unless they opt out or send a GPC signal
+   (see /js/consent.js), on the first interaction (scroll, tap, key, mouse move) so they never delay rendering. */
+(function(w,d){
+  w.dataLayer=w.dataLayer||[];w.gtag=function(){w.dataLayer.push(arguments);};
+  w.clarity=w.clarity||function(){(w.clarity.q=w.clarity.q||[]).push(arguments);};
+  w.Tawk_API=w.Tawk_API||{};w.Tawk_API.onLoad=function(){w.Tawk_API.minimize();};
+  var ev=['pointerdown','keydown','touchstart','scroll','mousemove'];
+  function add(src,attrs){var s=d.createElement('script');s.async=true;s.src=src;for(var k in attrs)s.setAttribute(k,attrs[k]);d.head.appendChild(s);}
+  function once(fn){var done=0;return function(now){if(done)return;function go(){if(done)return;done=1;ev.forEach(function(e){w.removeEventListener(e,go,{passive:true});});fn();}
+    if(now)go();else ev.forEach(function(e){w.addEventListener(e,go,{passive:true});});};}
+  w.dctLoad={
+    analytics:once(function(){
+      w.gtag('js',new Date());w.gtag('config','G-Z3T42KYK64');
+      add('https://www.googletagmanager.com/gtag/js?id=G-Z3T42KYK64');
+      add('https://analytics.ahrefs.com/analytics.js',{'data-key':'tVAd7KxwKax+pAfHx46Zgg'});
+      add('https://www.clarity.ms/tag/ylza43nm4m');
+    }),
+    chat:once(function(){
+      w.Tawk_LoadStart=new Date();add('https://embed.tawk.to/6a5a95a2096ab21d402a762c/1jtoth11r',{charset:'UTF-8',crossorigin:'*'});
+    })
+  };
+})(window,document);
+if(navigator.modelContext){var m=document.createElement('script');m.src='/js/webmcp.js';m.defer=true;document.head.appendChild(m);}
+</script>
+<script src="/js/consent.js" defer></script>
+<!-- /dct:head -->
+<title>Data Center Tier Levels Explained: Tier I to Tier IV</title>
+<meta name="description" content="Uptime Institute Tier I to IV explained: concurrent maintainability vs fault tolerance, downtime figures, TIA-942 Rated levels, certifications, and myths.">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+<link rel="canonical" href="https://datacentertraining.us/learn/data-center-tiers.html">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Data Center Tier Levels Explained: Tier I to Tier IV">
+<meta property="og:description" content="Uptime Institute Tier I to IV explained: concurrent maintainability vs fault tolerance, downtime figures, TIA-942 Rated levels, certifications, and myths.">
+<meta property="og:url" content="https://datacentertraining.us/learn/data-center-tiers.html">
+<meta property="og:image" content="https://datacentertraining.us/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Data Center Training">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@HazwoperOsha">
+<meta name="twitter:title" content="Data Center Tier Levels Explained: Tier I to Tier IV">
+<meta name="twitter:description" content="Uptime Institute Tier I to IV explained: concurrent maintainability vs fault tolerance, downtime figures, TIA-942 Rated levels, certifications, and myths.">
+<meta name="twitter:image" content="https://datacentertraining.us/images/og-image.jpg">
+
+<link rel="stylesheet" href="../css/site.min.css">
+<script src="../js/nav.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Data Center Tier Levels Explained: Tier I to Tier IV",
+  "description": "Uptime Institute Tier I to IV explained: concurrent maintainability vs fault tolerance, downtime figures, TIA-942 Rated levels, certifications, and myths.",
+  "url": "https://datacentertraining.us/learn/data-center-tiers.html",
+  "mainEntityOfPage": "https://datacentertraining.us/learn/data-center-tiers.html",
+  "image": "https://datacentertraining.us/images/og-image.jpg",
+  "datePublished": "2026-10-19",
+  "dateModified": "2026-10-19",
+  "inLanguage": "en-US",
+  "author": {"@type": "Organization", "name": "Data Center Training", "url": "https://datacentertraining.us/"},
+  "publisher": {"@type": "EducationalOrganization", "@id": "https://datacentertraining.us/#organization", "name": "Data Center Training", "url": "https://datacentertraining.us/"},
+  "about": ["Uptime Institute Tier Classification System", "Data center redundancy", "Concurrent maintainability", "Fault tolerance", "ANSI/TIA-942"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://datacentertraining.us/"},
+    {"@type": "ListItem", "position": 2, "name": "Knowledge Center", "item": "https://datacentertraining.us/learn/"},
+    {"@type": "ListItem", "position": 3, "name": "Tier Levels", "item": "https://datacentertraining.us/learn/data-center-tiers.html"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "What is the difference between Tier III and Tier IV?", "acceptedAnswer": {"@type": "Answer", "text": "Tier III is concurrently maintainable: any component or distribution path can be taken out of service for planned work without affecting the IT load. Tier IV is fault tolerant: it also survives any single unplanned failure, such as a tripped breaker or a fire in one electrical room, without affecting the IT load and without operator action. Tier IV requires simultaneously active, physically isolated systems and continuous cooling."}},
+    {"@type": "Question", "name": "Is Tier IV always better than Tier III?", "acceptedAnswer": {"@type": "Answer", "text": "Not necessarily. Tier IV costs more to build and operate and has more equipment to maintain. Many organizations get better overall resilience by running critical applications across two or more Tier III sites. The right Tier depends on the cost of downtime, how applications fail over, and the budget."}},
+    {"@type": "Question", "name": "What does Tier III certified mean?", "acceptedAnswer": {"@type": "Answer", "text": "It means Uptime Institute has awarded the facility a Tier III certification. Check which one: a design documents certification covers the drawings, a constructed facility certification verifies the built site through on-site testing, and an operational sustainability certification reviews how the site is run. Claims such as Tier III design or Tier III-ready without an Uptime award describe design intent, not certification."}},
+    {"@type": "Question", "name": "What is the difference between Uptime Tiers and TIA-942 ratings?", "acceptedAnswer": {"@type": "Answer", "text": "Uptime Institute's Tier Classification System uses Tier I to Tier IV, is performance-based, focuses on site infrastructure, and is certified only by Uptime. ANSI/TIA-942 is a standard from the Telecommunications Industry Association that uses Rated-1 to Rated-4, covers telecommunications cabling plus architectural, electrical, mechanical, and security criteria, and is assessed by independent auditors. The levels address similar ideas, but the criteria are not identical."}},
+    {"@type": "Question", "name": "How much downtime does a Tier III data center have per year?", "acceptedAnswer": {"@type": "Answer", "text": "The commonly cited figure is 99.982 percent availability, or about 1.6 hours of downtime per year. That number is an industry rule of thumb, not part of Uptime Institute's Tier Standard. Actual downtime depends heavily on how well the site is operated and maintained."}}
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="glass-nav">
+  <div class="container nav-inner">
+    <a href="../" class="logo">
+      <img src="../images/favicon.svg" alt="" width="30" height="30">
+      <span>
+        <span class="logo-mark">datacentertraining.us</span>
+        <span class="logo-sub">Data Center Professional Training</span>
+      </span>
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Main">
+      <div class="nav-item">
+        <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="navMenu-training">Courses<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-3" id="navMenu-training">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Online Training</p>
+            <a href="../courses.html"><span class="nav-link-title">Course Catalog</span><span class="nav-link-desc">All 43 self-paced courses</span></a>
+            <a href="../bundles.html"><span class="nav-link-title">Course Bundles</span><span class="nav-link-desc">Role-based bundles, save up to 52%</span></a>
+            <a href="../who.html"><span class="nav-link-title">Courses by Role</span><span class="nav-link-desc">Find the track for your job</span></a>
+            <a href="../tools/training-plan-builder.html"><span class="nav-link-title">Training Plan Builder</span><span class="nav-link-desc">Build and price a plan in minutes</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Enrolling</p>
+            <a href="../#teams"><span class="nav-link-title">Team Training</span><span class="nav-link-desc">Seats, progress tracking, PO billing</span></a>
+            <a href="../certifications.html"><span class="nav-link-title">Certificates &amp; Accreditation</span><span class="nav-link-desc">What your certificate means</span></a>
+            <a href="../faq.html"><span class="nav-link-title">FAQ</span><span class="nav-link-desc">Pricing, access, and policies</span></a>
+          </div>
+          <a class="nav-feature" href="../bundles.html"><span class="nav-feature-kicker">Best value</span><span class="nav-feature-title">Complete Data Center Professional Bundle</span><span class="nav-feature-text">43 courses and 192 hours of training in one enrollment. Save 52%.</span><span class="nav-feature-cta">Compare bundles &rarr;</span></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button type="button" class="nav-trigger active" aria-expanded="false" aria-controls="navMenu-learn">Learn<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-3" id="navMenu-learn">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Start Here</p>
+            <a href="../learn/"><span class="nav-link-title">Knowledge Center</span><span class="nav-link-desc">Every guide in one place</span></a>
+            <a href="../learn/what-is-a-data-center.html"><span class="nav-link-title">Data Center 101</span><span class="nav-link-desc">How data centers work</span></a>
+            <a href="../learn/glossary.html"><span class="nav-link-title">Glossary</span><span class="nav-link-desc">Data center terms, A to Z</span></a>
+            <a href="../learn/data-center-standards.html"><span class="nav-link-title">Standards &amp; Regulations</span><span class="nav-link-desc">TIA-942, NFPA, OSHA, ASHRAE, ISO</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Systems</p>
+            <a href="../learn/data-center-power.html"><span class="nav-link-title">Power Systems</span></a>
+            <a href="../learn/data-center-cooling.html"><span class="nav-link-title">Cooling Systems</span></a>
+            <a href="../learn/data-center-tiers.html" aria-current="page"><span class="nav-link-title">Tier Levels &amp; Redundancy</span></a>
+            <a href="../learn/energy-efficiency-pue.html"><span class="nav-link-title">Energy Efficiency &amp; PUE</span></a>
+            <a href="../learn/ai-data-centers.html"><span class="nav-link-title">AI &amp; High-Density Facilities</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Operations</p>
+            <a href="../learn/data-center-safety.html"><span class="nav-link-title">Safety Guide</span></a>
+            <a href="../learn/data-center-security-compliance.html"><span class="nav-link-title">Security &amp; Compliance</span></a>
+            <a href="../learn/data-center-operations.html"><span class="nav-link-title">Operations &amp; Maintenance</span></a>
+            <a href="../learn/data-center-commissioning.html"><span class="nav-link-title">Commissioning (Levels 1-5)</span></a>
+            <a href="../blog/"><span class="nav-link-title">Blog: Field Guidance</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="navMenu-careers">Careers<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-2" id="navMenu-careers">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Data Center Careers</p>
+            <a href="../careers/"><span class="nav-link-title">Careers Hub</span><span class="nav-link-desc">Why the industry is hiring</span></a>
+            <a href="../careers/data-center-jobs.html"><span class="nav-link-title">Job Roles Explained</span><span class="nav-link-desc">What each role does day to day</span></a>
+            <a href="../careers/how-to-get-into-data-centers.html"><span class="nav-link-title">How to Get Into Data Centers</span><span class="nav-link-desc">A step-by-step starting plan</span></a>
+            <a href="../careers/career-changers.html"><span class="nav-link-title">Career Changers</span><span class="nav-link-desc">Electricians, HVAC techs, veterans, IT</span></a>
+            <a href="../careers/interview-questions.html"><span class="nav-link-title">Interview Questions</span><span class="nav-link-desc">Practice answers for technician roles</span></a>
+          </div>
+          <a class="nav-feature" href="../quizzes/career-quiz.html"><span class="nav-feature-kicker">2-minute quiz</span><span class="nav-feature-title">Which Data Center Career Fits You?</span><span class="nav-feature-text">Answer 10 quick questions and get a matching role and training track.</span><span class="nav-feature-cta">Take the career quiz &rarr;</span></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="navMenu-quizzes">Quizzes &amp; Tools<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-2" id="navMenu-quizzes">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Quizzes</p>
+            <a href="../quizzes/"><span class="nav-link-title">All Quizzes</span></a>
+            <a href="../quizzes/career-quiz.html"><span class="nav-link-title">Career Match Quiz</span></a>
+            <a href="../quizzes/data-center-basics-quiz.html"><span class="nav-link-title">Data Center Basics</span></a>
+            <a href="../quizzes/power-electrical-quiz.html"><span class="nav-link-title">Power &amp; Electrical</span></a>
+            <a href="../quizzes/cooling-quiz.html"><span class="nav-link-title">Cooling &amp; HVAC</span></a>
+            <a href="../quizzes/safety-quiz.html"><span class="nav-link-title">Safety</span></a>
+            <a href="../quizzes/security-compliance-quiz.html"><span class="nav-link-title">Security &amp; Compliance</span></a>
+            <a href="../quizzes/tiers-design-quiz.html"><span class="nav-link-title">Tiers &amp; Design</span></a>
+            <a href="../quizzes/operations-quiz.html"><span class="nav-link-title">Operations &amp; Monitoring</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Tools</p>
+            <a href="../tools/"><span class="nav-link-title">All Tools</span></a>
+            <a href="../tools/training-plan-builder.html"><span class="nav-link-title">Training Plan Builder</span></a>
+            <a href="../tools/pue-calculator.html"><span class="nav-link-title">PUE Calculator</span></a>
+            <a href="../tools/uptime-calculator.html"><span class="nav-link-title">Uptime &amp; Downtime Calculator</span></a>
+            <a href="../tools/cooling-load-calculator.html"><span class="nav-link-title">Cooling Load Calculator</span></a>
+          </div>
+        </div>
+      </div>
+      <a href="../blog/" class="nav-link">Blog</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="../search.html" class="nav-search" data-search-open aria-label="Search the site" title="Search (Ctrl+K)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><span class="nav-search-label">Search</span><kbd class="nav-search-kbd">Ctrl K</kbd></a>
+      <a href="../courses.html" class="btn btn-primary btn-sm nav-cta">View Courses</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../">Home</a>
+      <span>&rsaquo;</span>
+      <a href="./">Knowledge Center</a>
+      <span>&rsaquo;</span>
+      <span aria-current="page">Tier Levels</span>
+    </nav>
+  </div>
+
+  <section class="course-hero">
+    <div class="container">
+      <div class="course-hero-eyebrow">Knowledge Center &middot; Design</div>
+      <h1>Data Center Tier Levels Explained: Tier I to Tier IV</h1>
+      <p class="course-hero-hook">"Tier III" is one of the most used and most misused phrases in the industry. Here is what each Tier actually requires, what it survives, how the Tiers relate to TIA-942, and how to tell a certified facility from a marketing claim.</p>
+      <div class="course-pills">
+        <span class="course-pill">13 min read</span>
+        <span class="course-pill">Beginner to intermediate</span>
+        <span class="course-pill">Updated October 2026</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="container guide-layout">
+    <aside class="guide-toc" aria-label="On this page">
+      <p class="guide-toc-title">On this page</p>
+      <ol>
+        <li><a href="#what-tiers-are">What the Tier system is</a></li>
+        <li><a href="#four-tiers">The four Tiers at a glance</a></li>
+        <li><a href="#maintainability">Maintainable vs fault tolerant</a></li>
+        <li><a href="#availability">Availability figures</a></li>
+        <li><a href="#tia-942">ANSI/TIA-942 Rated levels</a></li>
+        <li><a href="#certification">Uptime certifications</a></li>
+        <li><a href="#misconceptions">Common misconceptions</a></li>
+        <li><a href="#choosing">How to choose a Tier</a></li>
+        <li><a href="#redundancy">Redundancy recap</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ol>
+      <a class="guide-toc-cta" href="../quizzes/tiers-design-quiz.html"><strong>Test yourself</strong>Take the 10-question Tiers &amp; Design quiz.</a>
+    </aside>
+
+    <article class="guide-body prose">
+      <div class="key-takeaways">
+        <p class="key-takeaways-title">Key takeaways</p>
+        <ul>
+          <li>Uptime Institute's Tier Classification System rates site infrastructure from Tier I (basic capacity) to Tier IV (fault tolerant), based on what the facility can survive.</li>
+          <li>Tier III means any component or path can be taken out for planned work without affecting IT. Tier IV adds survival of any single unplanned failure without operator action.</li>
+          <li>The availability percentages often attached to the Tiers are commonly cited industry figures, not part of Uptime's Tier Standard.</li>
+          <li>Only Uptime Institute awards Tier Certification. "Tier III design" or "Tier III-ready" without it describes intent, not a verified result.</li>
+          <li>Topology sets the ceiling; operations decide how close a site gets to it.</li>
+        </ul>
+      </div>
+
+      <h2 id="what-tiers-are">What the Tier Classification System is</h2>
+      <p>Uptime Institute created the Tier Classification System to give owners, designers, and operators a common language for data center infrastructure performance. It is defined in two documents: the <strong>Tier Standard: Topology</strong>, which sets infrastructure requirements for each Tier, and the <strong>Tier Standard: Operational Sustainability</strong>, which covers how a site is staffed, maintained, and managed.</p>
+      <p>The Tiers are outcome-based. Instead of prescribing specific equipment, they define what the infrastructure must be able to do: keep the IT load running through planned maintenance, through an unplanned failure, or neither. Engineers can meet those objectives with different designs. Three ideas shape how they are applied:</p>
+      <ul>
+        <li><strong>The weakest subsystem sets the Tier.</strong> A building with a Tier IV electrical system and a Tier II cooling plant is a Tier II facility.</li>
+        <li><strong>Tiers cover site infrastructure.</strong> Power, cooling, and the systems that support them. They do not rate the network, the servers, or the applications.</li>
+        <li><strong>Generators are the primary source.</strong> For Tier purposes, Uptime treats on-site engine generators as the facility's primary power source and the utility as an economic alternative, so the site must be able to carry its load on its own generators.</li>
+      </ul>
+
+      <h2 id="four-tiers">The four Tiers at a glance</h2>
+      <p>Each Tier includes the requirements of the Tiers below it. Every step up adds equipment, space, cost, and operational complexity.</p>
+      <div class="compare-grid">
+        <div class="compare-card">
+          <div class="compare-card-label">Tier I</div>
+          <div class="compare-card-title">Basic Capacity</div>
+          <ul>
+            <li>Dedicated UPS, cooling, and engine generator for the IT space.</li>
+            <li>Single path, no redundant components.</li>
+            <li>Survives: a utility outage, on its UPS and generator. Planned maintenance needs a shutdown, and any component failure can drop the load.</li>
+            <li>Typical use: small sites and workloads that can tolerate downtime.</li>
+          </ul>
+        </div>
+        <div class="compare-card">
+          <div class="compare-card-label">Tier II</div>
+          <div class="compare-card-title">Redundant Capacity Components</div>
+          <ul>
+            <li>Adds redundant capacity components: UPS modules, chillers, pumps, generators.</li>
+            <li>Still a single distribution path.</li>
+            <li>Survives: removal or failure of a capacity component. Work on the path itself needs a shutdown.</li>
+            <li>Typical use: sites that want fewer interruptions at moderate cost.</li>
+          </ul>
+        </div>
+        <div class="compare-card">
+          <div class="compare-card-label">Tier III</div>
+          <div class="compare-card-title">Concurrently Maintainable</div>
+          <ul>
+            <li>Redundant components plus independent distribution paths for power and cooling.</li>
+            <li>IT equipment must be dual-corded, or fed through point-of-use transfer switches.</li>
+            <li>Survives: planned removal of any component or path element without affecting IT. An unplanned failure can still.</li>
+            <li>Typical use: many enterprise and colocation sites with business-critical loads.</li>
+          </ul>
+        </div>
+        <div class="compare-card">
+          <div class="compare-card-label">Tier IV</div>
+          <div class="compare-card-title">Fault Tolerant</div>
+          <ul>
+            <li>Multiple independent, physically isolated systems, simultaneously active.</li>
+            <li>Compartmentalization and continuous cooling.</li>
+            <li>Survives: any single unplanned failure or event, with no operator action, plus planned maintenance.</li>
+            <li>Typical use: sites where any interruption is extremely costly.</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2 id="maintainability">Concurrent maintainability vs fault tolerance</h2>
+      <p>The jump from Tier II to Tier III, and from Tier III to Tier IV, is where most confusion lives. The difference comes down to planned versus unplanned events.</p>
+      <h3>Concurrent maintainability (Tier III)</h3>
+      <p>Concurrently maintainable means every capacity component and every element of the distribution path can be taken out of service on a planned basis without affecting the IT load. Example: a site has two UPS systems, each feeding one side of the dual-corded servers. To service UPS A, operators follow a written method of procedure, confirm the B side can carry the full load, and shut UPS A down. The servers keep running on B. The same must be true for a switchgear lineup, a chilled water valve, or a section of pipe: there must be a way to isolate it without dropping the load.</p>
+      <p>The catch is that during that maintenance window, the site is running on one path. If something on the B side fails while A is out, the load can drop. Tier III also allows one active path with an alternate path that is not normally carrying load, so recovering from a failure may require an operator to act.</p>
+      <h3>Fault tolerance (Tier IV)</h3>
+      <p>Fault tolerant means the infrastructure can sustain any single unplanned failure or event, such as a breaker trip, a burst pipe, or a fire in one electrical room, without affecting the IT load and without anyone having to do anything. Example: a breaker on path A trips unexpectedly. Path B is already active and carrying load, so the servers ride through on their second power supplies while controls keep cooling running automatically. Because the systems are compartmentalized in separate rooms, one fire or flood cannot take out both paths.</p>
+      <p>Tier IV also requires <strong>continuous cooling</strong>, so IT equipment does not see a temperature excursion during a utility-to-generator transfer. One subtlety: while a Tier IV site has a path down for maintenance, it is still concurrently maintainable but temporarily not fault tolerant.</p>
+      <div class="callout callout-tip">
+        <span class="callout-title">Two questions that separate the Tiers</span>
+        <p>Ask "What happens if I turn this off on purpose?" If the IT load is unaffected for every component and path, the site is concurrently maintainable. Then ask "What happens if this fails right now, unannounced?" If the load rides through every single failure with no operator action, the site is fault tolerant.</p>
+      </div>
+
+      <h2 id="availability">Availability and downtime figures</h2>
+      <p>You will often see the Tiers paired with availability percentages. These are <strong>commonly cited industry figures, not part of Uptime Institute's Tier Standard</strong>, which defines Tiers by topology, not by an uptime number. Treat them as rough illustrations of relative performance, not as a design target or a guarantee.</p>
+      <div class="table-panel">
+        <table class="data-table">
+          <caption>Commonly cited availability figures (not part of the Tier Standard)</caption>
+          <thead><tr><th>Tier</th><th>Commonly cited availability</th><th>Equivalent downtime per year</th></tr></thead>
+          <tbody>
+            <tr><td>Tier I</td><td>99.671%</td><td>About 28.8 hours</td></tr>
+            <tr><td>Tier II</td><td>99.741%</td><td>About 22.7 hours</td></tr>
+            <tr><td>Tier III</td><td>99.982%</td><td>About 1.6 hours (about 95 minutes)</td></tr>
+            <tr><td>Tier IV</td><td>99.995%</td><td>About 26.3 minutes</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>The math is simple: downtime hours per year = (1 &minus; availability) &times; 8,760. For Tier III, (1 &minus; 0.99982) &times; 8,760 = 0.00018 &times; 8,760, or about 1.6 hours. Real-world availability depends on how the site is operated and maintained and how fast staff respond. A well-run Tier II site can outperform a poorly run Tier III site.</p>
+      <div class="inline-cta">
+        <p><strong>Turn percentages into minutes.</strong> Convert any availability target into allowed downtime per year, month, and week.</p>
+        <a class="btn btn-primary btn-sm" href="../tools/uptime-calculator.html">Try the Uptime Calculator</a>
+      </div>
+
+      <h2 id="tia-942">ANSI/TIA-942 Rated-1 to Rated-4</h2>
+      <p>ANSI/TIA-942, the Telecommunications Infrastructure Standard for Data Centers from the Telecommunications Industry Association, is the other framework you will hear about. It uses <strong>Rated-1 through Rated-4</strong>, wording chosen to avoid confusion with Uptime's Tiers.</p>
+      <div class="table-panel">
+        <table class="data-table">
+          <caption>Uptime Tiers vs ANSI/TIA-942 Rated levels</caption>
+          <thead><tr><th>Aspect</th><th>Uptime Institute Tiers</th><th>ANSI/TIA-942</th></tr></thead>
+          <tbody>
+            <tr><td>Levels</td><td>Tier I to Tier IV</td><td>Rated-1 to Rated-4</td></tr>
+            <tr><td>Approach</td><td>Performance-based objectives</td><td>More prescriptive, with detailed tables of criteria</td></tr>
+            <tr><td>Scope</td><td>Site infrastructure (power, cooling, support systems), plus a separate operations standard</td><td>Telecommunications cabling and spaces, plus architectural, electrical, mechanical, safety, and security criteria</td></tr>
+            <tr><td>Who assesses</td><td>Only Uptime Institute awards Tier Certification</td><td>Independent auditors and certification bodies assess conformity</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>The levels map onto similar ideas: Rated-1 basic, Rated-2 redundant components, Rated-3 concurrently maintainable, Rated-4 fault tolerant. The criteria are not identical, so a Rated-3 facility is not automatically Tier III, and the reverse is also true. TIA-942 also defines the cabling spaces of a data center, such as the entrance room and main distribution area. Other frameworks exist, including BICSI 002 (availability Classes F0 to F4) and the European EN 50600 series (availability classes 1 to 4).</p>
+
+      <h2 id="certification">Uptime Institute certifications</h2>
+      <p>Only Uptime Institute can award Tier Certification, and its certifications mean different things:</p>
+      <div class="table-panel">
+        <table class="data-table">
+          <caption>Uptime Institute certification types</caption>
+          <thead><tr><th>Certification</th><th>What Uptime reviews</th><th>What it proves</th></tr></thead>
+          <tbody>
+            <tr><td>Tier Certification of Design Documents</td><td>Design drawings and specifications</td><td>The design, on paper, meets the Tier objective.</td></tr>
+            <tr><td>Tier Certification of Constructed Facility</td><td>The built site, through on-site inspection and live demonstrations</td><td>The building actually performs as the design claims.</td></tr>
+            <tr><td>Tier Certification of Operational Sustainability</td><td>Staffing, training, maintenance, planning, and management, rated Gold, Silver, or Bronze</td><td>The site is run in a way that protects its Tier performance over time.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>A design certification is a milestone, not the finish line. Plenty changes between drawings and a finished building, and the constructed facility certification is what verifies the result. Uptime publishes a list of certified facilities, so a claim can be checked. Separately, Uptime offers accreditations for individuals, such as Accredited Tier Designer. Our <a href="../courses/tier-infrastructure-fundamentals.html">Tier Infrastructure Fundamentals</a> course teaches the concepts behind the Tiers and awards a certificate of completion, not an Uptime credential.</p>
+
+      <h2 id="misconceptions">Common misconceptions</h2>
+      <h3>"Tier III-ready" means Tier III</h3>
+      <p>Phrases like "Tier III-ready," "Tier III design," or "built to Tier III standards" describe intent. Without an Uptime certification of the constructed facility, nobody has independently verified that the building performs to the Tier. Ask which certification, if any, was awarded, and for which building.</p>
+      <h3>"Tier 3+" is a real level</h3>
+      <p>There is no Tier 3+ or Tier 3.5 in Uptime's system. A facility is classified at the highest Tier it fully meets. A plus sign usually means "Tier III with some extra redundancy," which may be valuable, but it is not a Tier. Uptime writes its Tiers in Roman numerals.</p>
+      <h3>Higher is always better</h3>
+      <p>Each step up costs more to build and operate, and a Tier IV design has more equipment to maintain and more complex switching. Many organizations protect critical applications by running them in two or more Tier III sites instead of one Tier IV site, and some cloud operators handle much of their resilience in software.</p>
+      <h3>A Tier rating guarantees uptime</h3>
+      <p>Tiers describe topology: what the infrastructure is capable of. They do not guarantee that people will execute procedures correctly, and most outages trace back to people, procedures, and maintenance rather than missing redundancy. A concurrently maintainable site can still go dark if someone opens the wrong breaker during maintenance. That is why the Operational Sustainability standard exists, and why training, written procedures, and change control matter.</p>
+
+      <h2 id="choosing">How to choose a Tier</h2>
+      <ol class="steps">
+        <li><h3>Quantify the cost of downtime</h3><p>What does an hour of outage cost in revenue, penalties, safety, and reputation? A payment processor, a hospital, and an internal test lab will give very different answers.</p></li>
+        <li><h3>Look at the application architecture</h3><p>If workloads fail over to another site automatically, each site may need less infrastructure redundancy. If one site carries everything, the building has to be more resilient. Plan this alongside <a href="../courses/disaster-recovery-business-continuity.html">disaster recovery and business continuity</a>.</p></li>
+        <li><h3>Decide what you must survive</h3><p>Planned maintenance without shutdowns (Tier III), or also unplanned failures without impact (Tier IV)? Equipment has to be maintained, and shutdowns are hard to schedule, so most business-critical sites need at least concurrent maintainability.</p></li>
+        <li><h3>Weigh cost and growth</h3><p>Higher Tiers need more equipment, space, and capital. Model total cost of ownership, and use <a href="../courses/capacity-planning-forecasting.html">capacity planning</a> to keep redundancy intact as load grows.</p></li>
+        <li><h3>Verify, then keep verifying</h3><p>For colocation, ask for Uptime certificates, commissioning reports, maintenance records, and incident history. For your own build, plan commissioning through integrated systems testing. See the <a href="data-center-commissioning.html">Commissioning guide</a>.</p></li>
+      </ol>
+
+      <h2 id="redundancy">Redundancy notation recap</h2>
+      <p>Tier discussions lean on redundancy notation, where N is the capacity the load needs. <strong>N+1</strong> adds one spare unit, <strong>2N</strong> provides two complete independent systems that can each carry the load, and <strong>2N+1</strong> adds a spare on top of that. (See the glossary for <a href="glossary.html#term-n-plus-1">N+1</a> and <a href="glossary.html#term-2n">2N</a>.)</p>
+      <p>Notation and Tiers are related but not the same. Tier II is typically built with N+1 components on a single path. Tier III needs redundant components and an independent alternate path, which can be met with N+1 equipment. And 2N equipment does not automatically make a site Tier IV: fault tolerance also needs active paths, compartmentalization, continuous cooling, and controls that respond without operator action. For the full table, see <a href="data-center-power.html#redundancy">Redundancy: N, N+1, and 2N</a> in the power guide.</p>
+
+      <div class="inline-cta">
+        <p><strong>Can you tell Tier III from Tier IV?</strong> Ten questions on Tiers, redundancy, and design, with instant answers.</p>
+        <a class="btn btn-primary btn-sm" href="../quizzes/tiers-design-quiz.html">Take the Tiers &amp; Design Quiz</a>
+      </div>
+
+      <h2 id="courses">Courses that go deeper</h2>
+      <p>These self-paced courses cover Tier concepts, design, commissioning, and planning. Each awards a certificate of completion. <a href="../courses/infrastructure-commissioning-startup.html">Infrastructure Commissioning &amp; Startup</a> shows how design intent gets verified.</p>
+      <!-- dct:courses tier-infrastructure-fundamentals data-center-design-fundamentals infrastructure-commissioning-startup capacity-planning-forecasting disaster-recovery-business-continuity -->
+<div class="panel course-panel">
+<div class="course-row"><div class="course-main"><h3><a href="../courses/tier-infrastructure-fundamentals.html">Tier Infrastructure Fundamentals</a></h3><div class="course-meta"><span>Design &amp; Planning</span><span class="sep">&middot;</span><span>Comprehensive Program</span><span class="sep">&middot;</span><span>Uptime Institute Tier Framework</span></div><p class="course-hook">Understand and assess TIER I–IV infrastructure without the formal certification track.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">8 hrs</div><div class="course-price">$280.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=tier-infrastructure-fundamentals" aria-label="Enroll in Tier Infrastructure Fundamentals">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/data-center-design-fundamentals.html">Data Center Design Fundamentals</a></h3><div class="course-meta"><span>Design &amp; Planning</span><span class="sep">&middot;</span><span>Comprehensive Program</span><span class="sep">&middot;</span><span>ANSI/TIA-942</span></div><p class="course-hook">Design data center facilities that scale — from site selection to redundancy strategy.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">8 hrs</div><div class="course-price">$312.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=data-center-design-fundamentals" aria-label="Enroll in Data Center Design Fundamentals">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/infrastructure-commissioning-startup.html">Infrastructure Commissioning &amp; Startup</a></h3><div class="course-meta"><span>Design &amp; Planning</span><span class="sep">&middot;</span><span>Comprehensive Program</span><span class="sep">&middot;</span><span>Commissioning Test Protocols</span></div><p class="course-hook">Lead new facility launches and major upgrades with a proven commissioning framework.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">8 hrs</div><div class="course-price">$267.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=infrastructure-commissioning-startup" aria-label="Enroll in Infrastructure Commissioning &amp; Startup">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/capacity-planning-forecasting.html">Capacity Planning &amp; Forecasting</a></h3><div class="course-meta"><span>Design &amp; Planning</span><span class="sep">&middot;</span><span>Modular Specialization</span></div><p class="course-hook">Build a 3–5 year capacity plan before you run out of power, cooling, or space.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">4 hrs</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=capacity-planning-forecasting" aria-label="Enroll in Capacity Planning &amp; Forecasting">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/disaster-recovery-business-continuity.html">Disaster Recovery &amp; Business Continuity</a></h3><div class="course-meta"><span>Operations</span><span class="sep">&middot;</span><span>Comprehensive Program</span><span class="sep">&middot;</span><span>RTO/RPO Frameworks</span></div><p class="course-hook">Design resilient infrastructure and DR plans that survive real failures — not just tabletop exercises.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">8 hrs</div><div class="course-price">$307.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=disaster-recovery-business-continuity" aria-label="Enroll in Disaster Recovery &amp; Business Continuity">Enroll</a></div></div>
+</div>
+<!-- /dct:courses -->
+      <!-- dct:bundle bundle-design-planning -->
+<div class="bundle-offer"><div class="bundle-offer-copy"><p class="bundle-offer-kicker">Save 42% with the bundle</p><p class="bundle-offer-name">Design, Planning &amp; Commissioning Bundle</p><p class="bundle-offer-meta">4 courses &middot; 28 hours &middot; <strong>$557.99</strong> per seat, instead of <s>$961.96</s> bought separately</p></div><div class="bundle-offer-actions"><a class="btn btn-primary" href="../checkout.html?item=bundle-design-planning">Enroll in the Bundle</a><a class="btn btn-secondary" href="../bundles.html">Compare Bundles</a></div></div>
+<!-- /dct:bundle -->
+
+      <h2 id="faq">Frequently asked questions</h2>
+      <div class="guide-faq">
+        <h3>What is the difference between Tier III and Tier IV?</h3>
+        <p>Tier III is concurrently maintainable: any component or distribution path can be taken out of service for planned work without affecting the IT load. Tier IV is fault tolerant: it also survives any single unplanned failure, such as a tripped breaker or a fire in one electrical room, without affecting the IT load and without operator action. Tier IV requires simultaneously active, physically isolated systems and continuous cooling.</p>
+        <h3>Is Tier IV always better than Tier III?</h3>
+        <p>Not necessarily. Tier IV costs more to build and operate and has more equipment to maintain. Many organizations get better overall resilience by running critical applications across two or more Tier III sites. The right Tier depends on the cost of downtime, how applications fail over, and the budget.</p>
+        <h3>What does Tier III certified mean?</h3>
+        <p>It means Uptime Institute has awarded the facility a Tier III certification. Check which one: a design documents certification covers the drawings, a constructed facility certification verifies the built site through on-site testing, and an operational sustainability certification reviews how the site is run. Claims such as Tier III design or Tier III-ready without an Uptime award describe design intent, not certification.</p>
+        <h3>What is the difference between Uptime Tiers and TIA-942 ratings?</h3>
+        <p>Uptime Institute's Tier Classification System uses Tier I to Tier IV, is performance-based, focuses on site infrastructure, and is certified only by Uptime. ANSI/TIA-942 is a standard from the Telecommunications Industry Association that uses Rated-1 to Rated-4, covers telecommunications cabling plus architectural, electrical, mechanical, and security criteria, and is assessed by independent auditors. The levels address similar ideas, but the criteria are not identical.</p>
+        <h3>How much downtime does a Tier III data center have per year?</h3>
+        <p>The commonly cited figure is 99.982 percent availability, or about 1.6 hours of downtime per year. That number is an industry rule of thumb, not part of Uptime Institute's Tier Standard. Actual downtime depends heavily on how well the site is operated and maintained.</p>
+      </div>
+
+      <h2 id="related">Keep learning</h2>
+      <div class="card-grid card-grid-2">
+        <a class="topic-card" href="data-center-power.html"><span class="topic-card-kicker">Guide</span><h3>How Data Center Power Works</h3><p>UPS, generators, A/B feeds, and the redundancy behind every Tier.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+        <a class="topic-card" href="data-center-commissioning.html"><span class="topic-card-kicker">Guide</span><h3>Data Center Commissioning</h3><p>How Level 1 to Level 5 testing proves a design works.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+        <a class="topic-card" href="../careers/data-center-jobs.html#design-engineer"><span class="topic-card-kicker">Careers</span><h3>Data Center Design Engineer</h3><p>What the role involves and the skills it takes.</p><span class="topic-card-cta">See the role &rarr;</span></a>
+        <a class="topic-card" href="what-is-a-data-center.html"><span class="topic-card-kicker">Guide</span><h3>Data Center 101</h3><p>New to the industry? Start with how a data center works.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+      </div>
+      <p class="guide-updated">This guide is general educational information, not engineering, legal, or compliance advice. Tier Certification is awarded only by Uptime Institute; consult Uptime Institute and the current standards for official requirements.</p>
+    </article>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta-block">
+        <h2>Design and Verify Resilient Facilities</h2>
+        <p>Our Design, Planning &amp; Commissioning courses cover Tier concepts, design fundamentals, commissioning, and capacity planning.</p>
+        <div class="hero-ctas">
+          <a href="../bundles.html" class="btn glass-chip">See the Design Bundle</a>
+          <a href="../courses.html" class="btn glass-chip">Browse All Courses</a>
+          <a href="tel:18664296742" class="btn glass-chip">Call 1-866-429-6742</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="contact">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="../" class="logo">
+          <img src="../images/favicon.svg" alt="" width="28" height="28">
+          <span>
+            <span class="logo-mark">datacentertraining.us</span>
+            <span class="logo-sub">Data Center Professional Training</span>
+          </span>
+        </a>
+        <p class="footer-legal">Data Center Training is a specialty training division of <a href="https://hazwoper-osha.com/" target="_blank" rel="noopener">HAZWOPER-OSHA Training, LLC</a>, an IACET-accredited provider of professional data center and safety compliance training.</p>
+        <p class="footer-legal" style="margin-top:8px;">HAZWOPER OSHA Training, LLC &middot; 11901 Santa Monica Blvd., Suite #414, Los Angeles, CA 90025</p>
+        <div class="footer-badges">
+          <img src="https://media.hazwoper-osha.com/wp-content/uploads/2023/11/1698821020/IACET-small.webp" alt="IACET Accredited Provider" width="40" height="24" loading="lazy">
+          <img src="https://media.hazwoper-osha.com/wp-content/uploads/2026/07/1784291935/bbb.webp" alt="BBB A+ Rating" width="40" height="24" loading="lazy">
+          <img src="https://media.hazwoper-osha.com/wp-content/uploads/2026/07/1784292027/trust.webp" alt="Google Trust Services" width="141" height="20" loading="lazy" style="height:20px;">
+        </div>
+      </div>
+      <div class="footer-cta">
+        <p class="footer-cta-title">Not sure where to start?</p>
+        <p class="footer-cta-text">Find the data center role that fits you, then get a training plan built around it.</p>
+        <div class="footer-cta-actions">
+          <a href="../quizzes/career-quiz.html" class="btn btn-primary btn-sm">Take the Career Quiz</a>
+          <a href="../tools/training-plan-builder.html" class="btn btn-secondary btn-sm">Build a Training Plan</a>
+        </div>
+        <div class="footer-contact-links">
+          <a href="tel:18664296742">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            1-866-429-6742
+          </a>
+          <a href="mailto:info@hazwoper-osha.com">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            info@hazwoper-osha.com
+          </a>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/HazwoperOsha/" target="_blank" rel="noopener" aria-label="Facebook"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/hazwoper_osha_training/?hl=en" target="_blank" rel="noopener" aria-label="Instagram"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="https://www.youtube.com/@hazwoper-osha" target="_blank" rel="noopener" aria-label="YouTube"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33zM9.75 15.02V8.48l5.75 3.27z"/></svg></a>
+          <a href="https://x.com/HazwoperOsha" target="_blank" rel="noopener" aria-label="X"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.4 8.4L23 22h-6.6l-5.2-6.8L5.1 22H2l7.9-9L1.6 2h6.8l4.7 6.2z"/></svg></a>
+          <a href="https://www.linkedin.com/company/hazwoper-osha" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM8.34 18.34V10.1H5.67v8.24zM7.01 8.97a1.55 1.55 0 1 0 0-3.1 1.55 1.55 0 0 0 0 3.1zM18.34 18.34v-4.6c0-2.46-1.31-3.6-3.06-3.6a2.64 2.64 0 0 0-2.39 1.32V10.1H10.2s.04.86 0 8.24h2.68v-4.6c0-.25.02-.5.09-.68a1.5 1.5 0 0 1 1.37-1c.96 0 1.35.73 1.35 1.8v4.48z"/></svg></a>
+          <a href="https://www.pinterest.com/hazwoperosha/" target="_blank" rel="noopener" aria-label="Pinterest"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.64 7.86 6.36 9.32-.09-.79-.17-2.01.03-2.88.19-.79 1.22-5.03 1.22-5.03s-.31-.63-.31-1.55c0-1.45.84-2.54 1.89-2.54.89 0 1.32.67 1.32 1.47 0 .89-.57 2.23-.86 3.47-.25 1.03.52 1.88 1.53 1.88 1.84 0 3.07-2.36 3.07-5.15 0-2.12-1.43-3.71-4.02-3.71-2.93 0-4.76 2.19-4.76 4.63 0 .84.25 1.44.63 1.9.18.21.2.3.14.54-.05.18-.16.63-.21.81-.07.26-.28.35-.51.26-1.44-.59-2.11-2.16-2.11-3.93 0-2.92 2.46-6.43 7.34-6.43 3.92 0 6.5 2.84 6.5 5.89 0 4.03-2.24 7.04-5.55 7.04-1.11 0-2.16-.6-2.51-1.28 0 0-.6 2.36-.73 2.82-.22.8-.66 1.6-1.06 2.22.95.29 1.95.45 3 .45 5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-grid">
+    <div class="footer-col">
+      <h3>Training</h3>
+      <a href="../courses.html">Course Catalog</a>
+      <a href="../bundles.html">Course Bundles</a>
+      <a href="../who.html">Courses by Role</a>
+      <a href="../tools/training-plan-builder.html">Training Plan Builder</a>
+      <a href="../#teams">Team Training</a>
+      <a href="../certifications.html">Certificates &amp; Accreditation</a>
+      <a href="../faq.html">FAQ</a>
+    </div>
+    <div class="footer-col">
+      <h3>Learn</h3>
+      <a href="../learn/">Knowledge Center</a>
+      <a href="../learn/what-is-a-data-center.html">Data Center 101</a>
+      <a href="../learn/data-center-power.html">Power Systems</a>
+      <a href="../learn/data-center-cooling.html">Cooling Systems</a>
+      <a href="../learn/data-center-tiers.html">Tier Levels</a>
+      <a href="../learn/data-center-safety.html">Safety Guide</a>
+      <a href="../learn/data-center-standards.html">Standards Guide</a>
+      <a href="../learn/glossary.html">Glossary</a>
+      <a href="../blog/">Blog</a>
+    </div>
+    <div class="footer-col">
+      <h3>Careers</h3>
+      <a href="../careers/">Careers Hub</a>
+      <a href="../careers/data-center-jobs.html">Job Roles Explained</a>
+      <a href="../careers/how-to-get-into-data-centers.html">Get Into Data Centers</a>
+      <a href="../careers/career-changers.html">Career Changers</a>
+      <a href="../careers/interview-questions.html">Interview Questions</a>
+      <a href="../quizzes/career-quiz.html">Career Match Quiz</a>
+    </div>
+    <div class="footer-col">
+      <h3>Quizzes &amp; Tools</h3>
+      <a href="../quizzes/">All Quizzes</a>
+      <a href="../quizzes/data-center-basics-quiz.html">Data Center Basics Quiz</a>
+      <a href="../tools/">All Tools</a>
+      <a href="../tools/pue-calculator.html">PUE Calculator</a>
+      <a href="../tools/uptime-calculator.html">Uptime Calculator</a>
+      <a href="../tools/cooling-load-calculator.html">Cooling Load Calculator</a>
+      <a href="../search.html">Search the Site</a>
+    </div>
+    <div class="footer-col">
+      <h3>Company</h3>
+      <a href="https://hazwoper-osha.com/" target="_blank" rel="noopener">HAZWOPER-OSHA Training</a>
+      <a href="https://hazwoper-osha.com/certificate-verification" target="_blank" rel="noopener">Verify Certificate</a>
+      <a href="../privacy.html">Privacy Policy</a>
+      <a href="../terms.html">Terms of Service</a>
+      <a href="../accessibility.html">Accessibility</a>
+      <a href="../privacy.html#choices" data-privacy-choices>Your Privacy Choices</a>
+      <a href="https://hazwoper-osha.com/refund-policy" target="_blank" rel="noopener">Refund Policy</a>
+    </div>
+    </div>
+
+    <p class="footer-agents"><span>For AI agents:</span> <a href="/llms.txt">llms.txt</a> <a href="/llms-full.txt">llms-full.txt</a> <a href="/.well-known/mcp.json">WebMCP Manifest</a> <a href="/api/index.json">JSON Catalog API</a> <a href="/openapi.json">API Docs (OpenAPI)</a> <a href="/sitemap.xml">Sitemap</a></p>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; 2026 HAZWOPER-OSHA Training, LLC. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+<script src="../js/main.js" defer></script>
+
+</body>
+</html>

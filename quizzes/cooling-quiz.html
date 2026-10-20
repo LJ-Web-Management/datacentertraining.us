@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- dct:head -->
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; object-src 'none'; base-uri 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#f5f5f7">
+<link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt">
+<link rel="alternate" type="application/json" href="/.well-known/mcp.json" title="WebMCP manifest">
+<link rel="service-desc" type="application/vnd.oai.openapi+json" href="/openapi.json">
+<script>
+/* Analytics, session recording, and chat load for every visitor unless they opt out or send a GPC signal
+   (see /js/consent.js), on the first interaction (scroll, tap, key, mouse move) so they never delay rendering. */
+(function(w,d){
+  w.dataLayer=w.dataLayer||[];w.gtag=function(){w.dataLayer.push(arguments);};
+  w.clarity=w.clarity||function(){(w.clarity.q=w.clarity.q||[]).push(arguments);};
+  w.Tawk_API=w.Tawk_API||{};w.Tawk_API.onLoad=function(){w.Tawk_API.minimize();};
+  var ev=['pointerdown','keydown','touchstart','scroll','mousemove'];
+  function add(src,attrs){var s=d.createElement('script');s.async=true;s.src=src;for(var k in attrs)s.setAttribute(k,attrs[k]);d.head.appendChild(s);}
+  function once(fn){var done=0;return function(now){if(done)return;function go(){if(done)return;done=1;ev.forEach(function(e){w.removeEventListener(e,go,{passive:true});});fn();}
+    if(now)go();else ev.forEach(function(e){w.addEventListener(e,go,{passive:true});});};}
+  w.dctLoad={
+    analytics:once(function(){
+      w.gtag('js',new Date());w.gtag('config','G-Z3T42KYK64');
+      add('https://www.googletagmanager.com/gtag/js?id=G-Z3T42KYK64');
+      add('https://analytics.ahrefs.com/analytics.js',{'data-key':'tVAd7KxwKax+pAfHx46Zgg'});
+      add('https://www.clarity.ms/tag/ylza43nm4m');
+    }),
+    chat:once(function(){
+      w.Tawk_LoadStart=new Date();add('https://embed.tawk.to/6a5a95a2096ab21d402a762c/1jtoth11r',{charset:'UTF-8',crossorigin:'*'});
+    })
+  };
+})(window,document);
+if(navigator.modelContext){var m=document.createElement('script');m.src='/js/webmcp.js';m.defer=true;document.head.appendChild(m);}
+</script>
+<script src="/js/consent.js" defer></script>
+<!-- /dct:head -->
+<title>Data Center Cooling &amp; HVAC Quiz (10 Questions)</title>
+<meta name="description" content="Test your data center cooling knowledge: CRAC vs CRAH, ASHRAE inlet ranges, tons and BTUs, containment, economizers, chilled water, and liquid cooling.">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+<link rel="canonical" href="https://datacentertraining.us/quizzes/cooling-quiz.html">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Data Center Cooling &amp; HVAC Quiz (10 Questions)">
+<meta property="og:description" content="Test your data center cooling knowledge: CRAC vs CRAH, ASHRAE inlet ranges, tons and BTUs, containment, economizers, chilled water, and liquid cooling.">
+<meta property="og:url" content="https://datacentertraining.us/quizzes/cooling-quiz.html">
+<meta property="og:image" content="https://datacentertraining.us/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Data Center Training">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@HazwoperOsha">
+<meta name="twitter:title" content="Data Center Cooling &amp; HVAC Quiz (10 Questions)">
+<meta name="twitter:description" content="Test your data center cooling knowledge: CRAC vs CRAH, ASHRAE inlet ranges, tons and BTUs, containment, economizers, chilled water, and liquid cooling.">
+<meta name="twitter:image" content="https://datacentertraining.us/images/og-image.jpg">
+
+<link rel="stylesheet" href="../css/site.min.css">
+<script src="../js/nav.js" defer></script>
+<script src="../js/quiz.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://datacentertraining.us/"},
+    {"@type": "ListItem", "position": 2, "name": "Quizzes", "item": "https://datacentertraining.us/quizzes/"},
+    {"@type": "ListItem", "position": 3, "name": "Cooling & HVAC Quiz", "item": "https://datacentertraining.us/quizzes/cooling-quiz.html"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Quiz",
+  "name": "Data Center Cooling & HVAC Quiz",
+  "description": "Test your data center cooling knowledge: CRAC vs CRAH, ASHRAE inlet ranges, tons and BTUs, containment, economizers, chilled water, and liquid cooling.",
+  "url": "https://datacentertraining.us/quizzes/cooling-quiz.html",
+  "inLanguage": "en-US",
+  "learningResourceType": "Quiz",
+  "isAccessibleForFree": true,
+  "publisher": {
+    "@type": "EducationalOrganization",
+    "@id": "https://datacentertraining.us/#organization",
+    "name": "Data Center Training",
+    "url": "https://datacentertraining.us/"
+  },
+  "hasPart": [
+    {
+      "@type": "Question",
+      "eduQuestionType": "Multiple choice",
+      "text": "What is the key difference between a CRAC and a CRAH?",
+      "suggestedAnswer": [
+        {
+          "@type": "Answer",
+          "text": "A CRAC cools the hot aisle, while a CRAH cools the cold aisle"
+        },
+        {
+          "@type": "Answer",
+          "text": "A CRAH has its own refrigerant compressor, while a CRAC uses chilled water"
+        },
+        {
+          "@type": "Answer",
+          "text": "They are the same unit sold under different brand names"
+        }
+      ],
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A CRAC has its own refrigerant compressor, while a CRAH uses chilled water from a central plant",
+        "answerExplanation": {
+          "@type": "Comment",
+          "text": "Answer: the CRAC has a compressor; the CRAH uses chilled water. A computer room air conditioner runs its own refrigeration cycle and rejects heat through a condenser. A computer room air handler is fans plus a chilled-water coil, so it depends on the chiller plant. Read the cooling guide."
+        }
+      }
+    },
+    {
+      "@type": "Question",
+      "eduQuestionType": "Multiple choice",
+      "text": "What is the ASHRAE recommended range for server inlet air temperature for most equipment classes?",
+      "suggestedAnswer": [
+        {
+          "@type": "Answer",
+          "text": "10 to 15 °C (50 to 59 °F)"
+        },
+        {
+          "@type": "Answer",
+          "text": "15 to 20 °C (59 to 68 °F)"
+        },
+        {
+          "@type": "Answer",
+          "text": "27 to 35 °C (80.6 to 95 °F)"
+        }
+      ],
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "18 to 27 °C (64.4 to 80.6 °F)",
+        "answerExplanation": {
+          "@type": "Comment",
+          "text": "Answer: 18 to 27 °C (64.4 to 80.6 °F). The ASHRAE TC 9.9 thermal guidelines measure this at the server inlet, not at the cooling unit return. Allowable ranges are wider, and running cold aisles colder than needed wastes energy. Cooling Systems Design & Optimization covers the guidelines."
+        }
+      }
+    },
+    {
+      "@type": "Question",
+      "eduQuestionType": "Multiple choice",
+      "text": "A row of racks draws 35 kW. About how much cooling does that heat load need?",
+      "suggestedAnswer": [
+        {
+          "@type": "Answer",
+          "text": "About 3 tons"
+        },
+        {
+          "@type": "Answer",
+          "text": "About 35 tons"
+        },
+        {
+          "@type": "Answer",
+          "text": "About 120 tons"
+        }
+      ],
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "About 10 tons",
+        "answerExplanation": {
+          "@type": "Comment",
+          "text": "Answer: about 10 tons. Nearly all power used by IT equipment becomes heat. One kW equals 3,412 BTU/hr and one ton equals 12,000 BTU/hr, so 35 kW is about 119,400 BTU/hr, or roughly 10 tons. Try the cooling load calculator."
+        }
+      }
+    },
+    {
+      "@type": "Question",
+      "eduQuestionType": "Multiple choice",
+      "text": "In a room with hot aisle containment, the open room outside the containment runs close to which temperature?",
+      "suggestedAnswer": [
+        {
+          "@type": "Answer",
+          "text": "The hot aisle exhaust temperature"
+        },
+        {
+          "@type": "Answer",
+          "text": "The outdoor air temperature"
+        },
+        {
+          "@type": "Answer",
+          "text": "Halfway between supply and return temperature"
+        }
+      ],
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The cold supply air temperature",
+        "answerExplanation": {
+          "@type": "Comment",
+          "text": "Answer: the cold supply air temperature. Hot aisle containment captures exhaust behind the racks and returns it to the cooling units through a ceiling plenum or chimney, so the rest of the room becomes one large cold aisle. Cold aisle containment does the opposite: only the contained aisle is cool and the room runs warm. Cooling Systems Design & Optimization compares both approaches."
+        }
+      }
+    },
+    {
+      "@type": "Question",
+      "eduQuestionType": "Multiple choice",
+      "text": "What is bypass airflow?",
+      "suggestedAnswer": [
+        {
+          "@type": "Answer",
+          "text": "Hot exhaust air that curls over the tops of racks into server inlets"
+        },
+        {
+          "@type": "Answer",
+          "text": "Air that flows through the electrical rooms instead of the data hall"
+        },
+        {
+          "@type": "Answer",
+          "text": "Outdoor air brought in by an economizer"
+        }
+      ],
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cold supply air that returns to the cooling units without passing through any IT equipment",
+        "answerExplanation": {
+          "@type": "Comment",
+          "text": "Answer: supply air that never passes through IT equipment. Bypass air is cooling capacity you paid for that never touches a server. Common causes are unsealed cable cutouts, perforated tiles in hot aisles, and supplying more air than the servers draw, while hot air curling into inlets is recirculation, the opposite problem. Energy Efficiency & PUE Optimization covers airflow fixes."
+        }
+      }
+    },
+    {
+      "@type": "Question",
+      "eduQuestionType": "Multiple choice",
+      "text": "Why are blanking panels installed in empty rack spaces?",
+      "suggestedAnswer": [
+        {
+          "@type": "Answer",
+          "text": "To meet electrical code requirements for rack grounding"
+        },
+        {
+          "@type": "Answer",
+          "text": "To reduce fan noise in the data hall"
+        },
+        {
+          "@type": "Answer",
+          "text": "To keep dust off unused mounting rails"
+        }
+      ],
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "To stop hot exhaust from flowing back through the rack to server intakes",
+        "answerExplanation": {
+          "@type": "Comment",
+          "text": "Answer: to stop exhaust from recirculating to server intakes. Open rack units let hot air flow from the back of the rack to the front, where servers pull it in, and let cold air short-circuit to the hot side. Blanking panels are one of the cheapest airflow fixes in a data hall. HVAC Systems Troubleshooting Essentials covers hot spot diagnosis."
+        }
+      }
+    },
+    {
+      "@type": "Question",
+      "eduQuestionType": "Multiple choice",
+      "text": "What does an economizer do in a data center cooling system?",
+      "suggestedAnswer": [
+        {
+          "@type": "Answer",
+          "text": "Lowers the chilled water setpoint so the pumps use less energy"
+        },
+        {
+          "@type": "Answer",
+          "text": "Slows the CRAH fans automatically whenever the IT load drops"
+        },
+        {
+          "@type": "Answer",
+          "text": "Recovers refrigerant from the chillers during maintenance work"
+        }
+      ],
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Uses cool outdoor air or water to reduce or replace compressor cooling when conditions allow",
+        "answerExplanation": {
+          "@type": "Comment",
+          "text": "Answer: it uses outdoor conditions to cut compressor cooling. An airside economizer uses outdoor air directly or through a heat exchanger. A waterside economizer uses cooling towers or dry coolers to cool the chilled water loop through a heat exchanger, so the chillers can slow down or shut off. Energy Efficiency & PUE Optimization covers free cooling."
+        }
+      }
+    },
+    {
+      "@type": "Question",
+      "eduQuestionType": "Multiple choice",
+      "text": "For water, heat flow is roughly BTU/hr = 500 × gpm × delta T (°F). If the chilled water delta T falls by half while the load stays the same, what happens to the flow needed?",
+      "suggestedAnswer": [
+        {
+          "@type": "Answer",
+          "text": "It falls by half"
+        },
+        {
+          "@type": "Answer",
+          "text": "It stays the same"
+        },
+        {
+          "@type": "Answer",
+          "text": "It quadruples"
+        }
+      ],
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It doubles",
+        "answerExplanation": {
+          "@type": "Comment",
+          "text": "Answer: it doubles. With a fixed load, flow and delta T are inversely related, so half the delta T needs twice the water. That is why \"low delta T syndrome\" drives up pump energy and can force extra chillers online; dirty coils, open bypass valves, and poor setpoints are common causes. Mechanical Systems & Equipment Maintenance covers the chilled water plant."
+        }
+      }
+    },
+    {
+      "@type": "Question",
+      "eduQuestionType": "Multiple choice",
+      "text": "In a direct-to-chip liquid cooling system, what does the coolant distribution unit (CDU) do?",
+      "suggestedAnswer": [
+        {
+          "@type": "Answer",
+          "text": "Sprays dielectric fluid directly onto the server boards to cool them"
+        },
+        {
+          "@type": "Answer",
+          "text": "Converts AC power to DC power for high-density GPU servers"
+        },
+        {
+          "@type": "Answer",
+          "text": "Distributes cold supply air through the raised floor plenum"
+        }
+      ],
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Isolates the cold plate coolant loop from facility water and controls its flow, temperature, and pressure",
+        "answerExplanation": {
+          "@type": "Comment",
+          "text": "Answer: it isolates and controls the coolant loop to the cold plates. The CDU uses a heat exchanger and pumps to keep the clean, tightly controlled technology cooling loop separate from the facility water system. It also filters the loop and alarms on leaks or pressure changes. Read how AI data centers use liquid cooling."
+        }
+      }
+    },
+    {
+      "@type": "Question",
+      "eduQuestionType": "Multiple choice",
+      "text": "Under EPA Section 608 of the Clean Air Act, who needs Section 608 technician certification?",
+      "suggestedAnswer": [
+        {
+          "@type": "Answer",
+          "text": "Anyone who works in a data hall that contains CRAC units"
+        },
+        {
+          "@type": "Answer",
+          "text": "Facility managers who approve refrigerant purchase orders"
+        },
+        {
+          "@type": "Answer",
+          "text": "Only contractors who install new chillers, not those who service them"
+        }
+      ],
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Technicians who maintain, service, repair, or dispose of equipment in ways that could release refrigerant",
+        "answerExplanation": {
+          "@type": "Comment",
+          "text": "Answer: technicians whose work could release refrigerant. Section 608 certification is earned through EPA-approved certifying programs in Type I, II, III, or Universal categories, based on the equipment serviced. Data Center Cooling System and Refrigerant Safety Training covers refrigerant hazards and handling awareness; it does not replace Section 608 certification."
+        }
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="glass-nav">
+  <div class="container nav-inner">
+    <a href="../" class="logo">
+      <img src="../images/favicon.svg" alt="" width="30" height="30">
+      <span>
+        <span class="logo-mark">datacentertraining.us</span>
+        <span class="logo-sub">Data Center Professional Training</span>
+      </span>
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Main">
+      <div class="nav-item">
+        <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="navMenu-training">Courses<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-3" id="navMenu-training">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Online Training</p>
+            <a href="../courses.html"><span class="nav-link-title">Course Catalog</span><span class="nav-link-desc">All 43 self-paced courses</span></a>
+            <a href="../bundles.html"><span class="nav-link-title">Course Bundles</span><span class="nav-link-desc">Role-based bundles, save up to 52%</span></a>
+            <a href="../who.html"><span class="nav-link-title">Courses by Role</span><span class="nav-link-desc">Find the track for your job</span></a>
+            <a href="../tools/training-plan-builder.html"><span class="nav-link-title">Training Plan Builder</span><span class="nav-link-desc">Build and price a plan in minutes</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Enrolling</p>
+            <a href="../#teams"><span class="nav-link-title">Team Training</span><span class="nav-link-desc">Seats, progress tracking, PO billing</span></a>
+            <a href="../certifications.html"><span class="nav-link-title">Certificates &amp; Accreditation</span><span class="nav-link-desc">What your certificate means</span></a>
+            <a href="../faq.html"><span class="nav-link-title">FAQ</span><span class="nav-link-desc">Pricing, access, and policies</span></a>
+          </div>
+          <a class="nav-feature" href="../bundles.html"><span class="nav-feature-kicker">Best value</span><span class="nav-feature-title">Complete Data Center Professional Bundle</span><span class="nav-feature-text">43 courses and 192 hours of training in one enrollment. Save 52%.</span><span class="nav-feature-cta">Compare bundles &rarr;</span></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="navMenu-learn">Learn<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-3" id="navMenu-learn">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Start Here</p>
+            <a href="../learn/"><span class="nav-link-title">Knowledge Center</span><span class="nav-link-desc">Every guide in one place</span></a>
+            <a href="../learn/what-is-a-data-center.html"><span class="nav-link-title">Data Center 101</span><span class="nav-link-desc">How data centers work</span></a>
+            <a href="../learn/glossary.html"><span class="nav-link-title">Glossary</span><span class="nav-link-desc">Data center terms, A to Z</span></a>
+            <a href="../learn/data-center-standards.html"><span class="nav-link-title">Standards &amp; Regulations</span><span class="nav-link-desc">TIA-942, NFPA, OSHA, ASHRAE, ISO</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Systems</p>
+            <a href="../learn/data-center-power.html"><span class="nav-link-title">Power Systems</span></a>
+            <a href="../learn/data-center-cooling.html"><span class="nav-link-title">Cooling Systems</span></a>
+            <a href="../learn/data-center-tiers.html"><span class="nav-link-title">Tier Levels &amp; Redundancy</span></a>
+            <a href="../learn/energy-efficiency-pue.html"><span class="nav-link-title">Energy Efficiency &amp; PUE</span></a>
+            <a href="../learn/ai-data-centers.html"><span class="nav-link-title">AI &amp; High-Density Facilities</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Operations</p>
+            <a href="../learn/data-center-safety.html"><span class="nav-link-title">Safety Guide</span></a>
+            <a href="../learn/data-center-security-compliance.html"><span class="nav-link-title">Security &amp; Compliance</span></a>
+            <a href="../learn/data-center-operations.html"><span class="nav-link-title">Operations &amp; Maintenance</span></a>
+            <a href="../learn/data-center-commissioning.html"><span class="nav-link-title">Commissioning (Levels 1-5)</span></a>
+            <a href="../blog/"><span class="nav-link-title">Blog: Field Guidance</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="navMenu-careers">Careers<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-2" id="navMenu-careers">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Data Center Careers</p>
+            <a href="../careers/"><span class="nav-link-title">Careers Hub</span><span class="nav-link-desc">Why the industry is hiring</span></a>
+            <a href="../careers/data-center-jobs.html"><span class="nav-link-title">Job Roles Explained</span><span class="nav-link-desc">What each role does day to day</span></a>
+            <a href="../careers/how-to-get-into-data-centers.html"><span class="nav-link-title">How to Get Into Data Centers</span><span class="nav-link-desc">A step-by-step starting plan</span></a>
+            <a href="../careers/career-changers.html"><span class="nav-link-title">Career Changers</span><span class="nav-link-desc">Electricians, HVAC techs, veterans, IT</span></a>
+            <a href="../careers/interview-questions.html"><span class="nav-link-title">Interview Questions</span><span class="nav-link-desc">Practice answers for technician roles</span></a>
+          </div>
+          <a class="nav-feature" href="../quizzes/career-quiz.html"><span class="nav-feature-kicker">2-minute quiz</span><span class="nav-feature-title">Which Data Center Career Fits You?</span><span class="nav-feature-text">Answer 10 quick questions and get a matching role and training track.</span><span class="nav-feature-cta">Take the career quiz &rarr;</span></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button type="button" class="nav-trigger active" aria-expanded="false" aria-controls="navMenu-quizzes">Quizzes &amp; Tools<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-2" id="navMenu-quizzes">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Quizzes</p>
+            <a href="../quizzes/"><span class="nav-link-title">All Quizzes</span></a>
+            <a href="../quizzes/career-quiz.html"><span class="nav-link-title">Career Match Quiz</span></a>
+            <a href="../quizzes/data-center-basics-quiz.html"><span class="nav-link-title">Data Center Basics</span></a>
+            <a href="../quizzes/power-electrical-quiz.html"><span class="nav-link-title">Power &amp; Electrical</span></a>
+            <a href="../quizzes/cooling-quiz.html" aria-current="page"><span class="nav-link-title">Cooling &amp; HVAC</span></a>
+            <a href="../quizzes/safety-quiz.html"><span class="nav-link-title">Safety</span></a>
+            <a href="../quizzes/security-compliance-quiz.html"><span class="nav-link-title">Security &amp; Compliance</span></a>
+            <a href="../quizzes/tiers-design-quiz.html"><span class="nav-link-title">Tiers &amp; Design</span></a>
+            <a href="../quizzes/operations-quiz.html"><span class="nav-link-title">Operations &amp; Monitoring</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Tools</p>
+            <a href="../tools/"><span class="nav-link-title">All Tools</span></a>
+            <a href="../tools/training-plan-builder.html"><span class="nav-link-title">Training Plan Builder</span></a>
+            <a href="../tools/pue-calculator.html"><span class="nav-link-title">PUE Calculator</span></a>
+            <a href="../tools/uptime-calculator.html"><span class="nav-link-title">Uptime &amp; Downtime Calculator</span></a>
+            <a href="../tools/cooling-load-calculator.html"><span class="nav-link-title">Cooling Load Calculator</span></a>
+          </div>
+        </div>
+      </div>
+      <a href="../blog/" class="nav-link">Blog</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="../search.html" class="nav-search" data-search-open aria-label="Search the site" title="Search (Ctrl+K)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><span class="nav-search-label">Search</span><kbd class="nav-search-kbd">Ctrl K</kbd></a>
+      <a href="../courses.html" class="btn btn-primary btn-sm nav-cta">View Courses</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../">Home</a>
+      <span>&rsaquo;</span>
+      <a href="./">Quizzes</a>
+      <span>&rsaquo;</span>
+      <span aria-current="page">Cooling &amp; HVAC Quiz</span>
+    </nav>
+  </div>
+
+  <section class="course-hero">
+    <div class="container">
+      <div class="course-hero-eyebrow">Quiz &middot; Cooling &amp; HVAC</div>
+      <h1>Data Center Cooling &amp; HVAC Quiz</h1>
+      <p class="course-hero-hook">Ten questions on how heat leaves the data hall, from airflow management to chilled water math and liquid cooling. Each answer comes with a short explanation.</p>
+      <div class="course-pills">
+        <span class="course-pill">10 questions</span>
+        <span class="course-pill">About 5 minutes</span>
+        <span class="course-pill">Intermediate</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="container-read">
+    <h2 class="visually-hidden">Quiz questions</h2>
+    <section class="quiz" data-quiz-id="cooling" data-quiz-type="knowledge" data-quiz-title="Data Center Cooling &amp; HVAC Quiz" aria-label="Cooling and HVAC quiz">
+      <div class="quiz-progress" aria-hidden="true"><span class="quiz-progress-text">Question 1 of 10</span><div class="quiz-progress-track"><div class="quiz-progress-bar"></div></div><span class="quiz-progress-score">Score 0</span></div>
+      <ol class="quiz-questions">
+        <li class="quiz-q" data-answer="a">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 1</span><span class="quiz-q-text">What is the key difference between a CRAC and a CRAH?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="q1" value="a"><span>A CRAC has its own refrigerant compressor, while a CRAH uses chilled water from a central plant</span></label>
+            <label class="quiz-opt"><input type="radio" name="q1" value="b"><span>A CRAC cools the hot aisle, while a CRAH cools the cold aisle</span></label>
+            <label class="quiz-opt"><input type="radio" name="q1" value="c"><span>A CRAH has its own refrigerant compressor, while a CRAC uses chilled water</span></label>
+            <label class="quiz-opt"><input type="radio" name="q1" value="d"><span>They are the same unit sold under different brand names</span></label>
+          </fieldset>
+          <details class="quiz-explain"><summary>Show answer</summary><p><strong class="quiz-key">Answer: the CRAC has a compressor; the CRAH uses chilled water.</strong> A computer room air conditioner runs its own refrigeration cycle and rejects heat through a condenser. A computer room air handler is fans plus a chilled-water coil, so it depends on the chiller plant. <a href="../learn/data-center-cooling.html">Read the cooling guide</a>.</p></details>
+        </li>
+        <li class="quiz-q" data-answer="c">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 2</span><span class="quiz-q-text">What is the ASHRAE recommended range for server inlet air temperature for most equipment classes?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="q2" value="a"><span>10 to 15 &deg;C (50 to 59 &deg;F)</span></label>
+            <label class="quiz-opt"><input type="radio" name="q2" value="b"><span>15 to 20 &deg;C (59 to 68 &deg;F)</span></label>
+            <label class="quiz-opt"><input type="radio" name="q2" value="c"><span>18 to 27 &deg;C (64.4 to 80.6 &deg;F)</span></label>
+            <label class="quiz-opt"><input type="radio" name="q2" value="d"><span>27 to 35 &deg;C (80.6 to 95 &deg;F)</span></label>
+          </fieldset>
+          <details class="quiz-explain"><summary>Show answer</summary><p><strong class="quiz-key">Answer: 18 to 27 &deg;C (64.4 to 80.6 &deg;F).</strong> The ASHRAE TC 9.9 thermal guidelines measure this at the server inlet, not at the cooling unit return. Allowable ranges are wider, and running cold aisles colder than needed wastes energy. <a href="../courses/cooling-systems-design-optimization.html">Cooling Systems Design &amp; Optimization</a> covers the guidelines.</p></details>
+        </li>
+        <li class="quiz-q" data-answer="b">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 3</span><span class="quiz-q-text">A row of racks draws 35 kW. About how much cooling does that heat load need?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="q3" value="a"><span>About 3 tons</span></label>
+            <label class="quiz-opt"><input type="radio" name="q3" value="b"><span>About 10 tons</span></label>
+            <label class="quiz-opt"><input type="radio" name="q3" value="c"><span>About 35 tons</span></label>
+            <label class="quiz-opt"><input type="radio" name="q3" value="d"><span>About 120 tons</span></label>
+          </fieldset>
+          <details class="quiz-explain"><summary>Show answer</summary><p><strong class="quiz-key">Answer: about 10 tons.</strong> Nearly all power used by IT equipment becomes heat. One kW equals 3,412 BTU/hr and one ton equals 12,000 BTU/hr, so 35 kW is about 119,400 BTU/hr, or roughly 10 tons. <a href="../tools/cooling-load-calculator.html">Try the cooling load calculator</a>.</p></details>
+        </li>
+        <li class="quiz-q" data-answer="d">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 4</span><span class="quiz-q-text">In a room with hot aisle containment, the open room outside the containment runs close to which temperature?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="q4" value="a"><span>The hot aisle exhaust temperature</span></label>
+            <label class="quiz-opt"><input type="radio" name="q4" value="b"><span>The outdoor air temperature</span></label>
+            <label class="quiz-opt"><input type="radio" name="q4" value="c"><span>Halfway between supply and return temperature</span></label>
+            <label class="quiz-opt"><input type="radio" name="q4" value="d"><span>The cold supply air temperature</span></label>
+          </fieldset>
+          <details class="quiz-explain"><summary>Show answer</summary><p><strong class="quiz-key">Answer: the cold supply air temperature.</strong> Hot aisle containment captures exhaust behind the racks and returns it to the cooling units through a ceiling plenum or chimney, so the rest of the room becomes one large cold aisle. Cold aisle containment does the opposite: only the contained aisle is cool and the room runs warm. <a href="../courses/cooling-systems-design-optimization.html">Cooling Systems Design &amp; Optimization</a> compares both approaches.</p></details>
+        </li>
+        <li class="quiz-q" data-answer="d">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 5</span><span class="quiz-q-text">What is bypass airflow?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="q5" value="a"><span>Hot exhaust air that curls over the tops of racks into server inlets</span></label>
+            <label class="quiz-opt"><input type="radio" name="q5" value="b"><span>Air that flows through the electrical rooms instead of the data hall</span></label>
+            <label class="quiz-opt"><input type="radio" name="q5" value="c"><span>Outdoor air brought in by an economizer</span></label>
+            <label class="quiz-opt"><input type="radio" name="q5" value="d"><span>Cold supply air that returns to the cooling units without passing through any IT equipment</span></label>
+          </fieldset>
+          <details class="quiz-explain"><summary>Show answer</summary><p><strong class="quiz-key">Answer: supply air that never passes through IT equipment.</strong> Bypass air is cooling capacity you paid for that never touches a server. Common causes are unsealed cable cutouts, perforated tiles in hot aisles, and supplying more air than the servers draw, while hot air curling into inlets is recirculation, the opposite problem. <a href="../courses/energy-efficiency-pue-optimization.html">Energy Efficiency &amp; PUE Optimization</a> covers airflow fixes.</p></details>
+        </li>
+        <li class="quiz-q" data-answer="a">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 6</span><span class="quiz-q-text">Why are blanking panels installed in empty rack spaces?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="q6" value="a"><span>To stop hot exhaust from flowing back through the rack to server intakes</span></label>
+            <label class="quiz-opt"><input type="radio" name="q6" value="b"><span>To meet electrical code requirements for rack grounding</span></label>
+            <label class="quiz-opt"><input type="radio" name="q6" value="c"><span>To reduce fan noise in the data hall</span></label>
+            <label class="quiz-opt"><input type="radio" name="q6" value="d"><span>To keep dust off unused mounting rails</span></label>
+          </fieldset>
+          <details class="quiz-explain"><summary>Show answer</summary><p><strong class="quiz-key">Answer: to stop exhaust from recirculating to server intakes.</strong> Open rack units let hot air flow from the back of the rack to the front, where servers pull it in, and let cold air short-circuit to the hot side. Blanking panels are one of the cheapest airflow fixes in a data hall. <a href="../courses/hvac-troubleshooting-essentials.html">HVAC Systems Troubleshooting Essentials</a> covers hot spot diagnosis.</p></details>
+        </li>
+        <li class="quiz-q" data-answer="b">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 7</span><span class="quiz-q-text">What does an economizer do in a data center cooling system?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="q7" value="a"><span>Lowers the chilled water setpoint so the pumps use less energy</span></label>
+            <label class="quiz-opt"><input type="radio" name="q7" value="b"><span>Uses cool outdoor air or water to reduce or replace compressor cooling when conditions allow</span></label>
+            <label class="quiz-opt"><input type="radio" name="q7" value="c"><span>Slows the CRAH fans automatically whenever the IT load drops</span></label>
+            <label class="quiz-opt"><input type="radio" name="q7" value="d"><span>Recovers refrigerant from the chillers during maintenance work</span></label>
+          </fieldset>
+          <details class="quiz-explain"><summary>Show answer</summary><p><strong class="quiz-key">Answer: it uses outdoor conditions to cut compressor cooling.</strong> An airside economizer uses outdoor air directly or through a heat exchanger. A waterside economizer uses cooling towers or dry coolers to cool the chilled water loop through a heat exchanger, so the chillers can slow down or shut off. <a href="../courses/energy-efficiency-pue-optimization.html">Energy Efficiency &amp; PUE Optimization</a> covers free cooling.</p></details>
+        </li>
+        <li class="quiz-q" data-answer="c">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 8</span><span class="quiz-q-text">For water, heat flow is roughly BTU/hr = 500 &times; gpm &times; delta T (&deg;F). If the chilled water delta T falls by half while the load stays the same, what happens to the flow needed?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="q8" value="a"><span>It falls by half</span></label>
+            <label class="quiz-opt"><input type="radio" name="q8" value="b"><span>It stays the same</span></label>
+            <label class="quiz-opt"><input type="radio" name="q8" value="c"><span>It doubles</span></label>
+            <label class="quiz-opt"><input type="radio" name="q8" value="d"><span>It quadruples</span></label>
+          </fieldset>
+          <details class="quiz-explain"><summary>Show answer</summary><p><strong class="quiz-key">Answer: it doubles.</strong> With a fixed load, flow and delta T are inversely related, so half the delta T needs twice the water. That is why "low delta T syndrome" drives up pump energy and can force extra chillers online; dirty coils, open bypass valves, and poor setpoints are common causes. <a href="../courses/mechanical-systems-maintenance.html">Mechanical Systems &amp; Equipment Maintenance</a> covers the chilled water plant.</p></details>
+        </li>
+        <li class="quiz-q" data-answer="d">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 9</span><span class="quiz-q-text">In a direct-to-chip liquid cooling system, what does the coolant distribution unit (CDU) do?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="q9" value="a"><span>Sprays dielectric fluid directly onto the server boards to cool them</span></label>
+            <label class="quiz-opt"><input type="radio" name="q9" value="b"><span>Converts AC power to DC power for high-density GPU servers</span></label>
+            <label class="quiz-opt"><input type="radio" name="q9" value="c"><span>Distributes cold supply air through the raised floor plenum</span></label>
+            <label class="quiz-opt"><input type="radio" name="q9" value="d"><span>Isolates the cold plate coolant loop from facility water and controls its flow, temperature, and pressure</span></label>
+          </fieldset>
+          <details class="quiz-explain"><summary>Show answer</summary><p><strong class="quiz-key">Answer: it isolates and controls the coolant loop to the cold plates.</strong> The CDU uses a heat exchanger and pumps to keep the clean, tightly controlled technology cooling loop separate from the facility water system. It also filters the loop and alarms on leaks or pressure changes. <a href="../learn/ai-data-centers.html">Read how AI data centers use liquid cooling</a>.</p></details>
+        </li>
+        <li class="quiz-q" data-answer="a">
+          <fieldset>
+            <legend><span class="quiz-q-num">Question 10</span><span class="quiz-q-text">Under EPA Section 608 of the Clean Air Act, who needs Section 608 technician certification?</span></legend>
+            <label class="quiz-opt"><input type="radio" name="q10" value="a"><span>Technicians who maintain, service, repair, or dispose of equipment in ways that could release refrigerant</span></label>
+            <label class="quiz-opt"><input type="radio" name="q10" value="b"><span>Anyone who works in a data hall that contains CRAC units</span></label>
+            <label class="quiz-opt"><input type="radio" name="q10" value="c"><span>Facility managers who approve refrigerant purchase orders</span></label>
+            <label class="quiz-opt"><input type="radio" name="q10" value="d"><span>Only contractors who install new chillers, not those who service them</span></label>
+          </fieldset>
+          <details class="quiz-explain"><summary>Show answer</summary><p><strong class="quiz-key">Answer: technicians whose work could release refrigerant.</strong> Section 608 certification is earned through EPA-approved certifying programs in Type I, II, III, or Universal categories, based on the equipment serviced. <a href="../courses/data-center-cooling-refrigerant-safety.html">Data Center Cooling System and Refrigerant Safety Training</a> covers refrigerant hazards and handling awareness; it does not replace Section 608 certification.</p></details>
+        </li>
+      </ol>
+      <div class="quiz-nav">
+        <span class="quiz-nav-hint">Choose an answer to continue.</span>
+        <button type="button" class="btn btn-primary quiz-next" disabled>Next question</button>
+      </div>
+      <div class="quiz-result" hidden>
+        <div class="quiz-score">0/10</div>
+        <p class="quiz-score-label">Your score</p>
+        <div class="quiz-tier" data-min="9" hidden>
+          <p class="quiz-tier-title">Cooling pro</p>
+          <p>You think in airflow, delta T, and tons. Put it on paper: the Cooling &amp; Facilities Efficiency Bundle documents that knowledge with a certificate of completion for every course.</p>
+        </div>
+        <div class="quiz-tier" data-min="6" hidden>
+          <p class="quiz-tier-title">Solid foundation</p>
+          <p>You have the core ideas. Gaps in airflow management or chilled water math are exactly what Cooling Systems Design &amp; Optimization and HVAC Systems Troubleshooting Essentials close.</p>
+        </div>
+        <div class="quiz-tier" data-min="0" hidden>
+          <p class="quiz-tier-title">Room to grow</p>
+          <p>Everyone starts somewhere. Read the cooling guide, then start with Cooling Systems Design &amp; Optimization.</p>
+        </div>
+        <p class="quiz-best"></p>
+        <div class="quiz-result-actions">
+          <a class="btn btn-primary" href="#courses">See Matching Courses</a>
+          <button type="button" class="btn btn-secondary quiz-share">Share My Score</button>
+          <button type="button" class="btn btn-secondary quiz-retake">Retake Quiz</button>
+        </div>
+        <div class="quiz-review"><p class="quiz-review-title">Your answers</p><ol></ol></div>
+      </div>
+    </section>
+  </div>
+
+  <section class="section" id="courses">
+    <div class="container">
+      <div class="section-head">
+        <h2>Courses That Cover These Topics</h2>
+        <p>Every question above maps to a self-paced course. Each awards a certificate of completion.</p>
+      </div>
+      <!-- dct:courses cooling-systems-design-optimization hvac-troubleshooting-essentials mechanical-systems-maintenance data-center-cooling-refrigerant-safety energy-efficiency-pue-optimization -->
+<div class="panel course-panel">
+<div class="course-row"><div class="course-main"><h3><a href="../courses/cooling-systems-design-optimization.html">Cooling Systems Design &amp; Optimization</a></h3><div class="course-meta"><span>Cooling &amp; Efficiency</span><span class="sep">&middot;</span><span>Comprehensive Program</span><span class="sep">&middot;</span><span>PUE / ASHRAE Thermal Guidelines</span></div><p class="course-hook">Cut cooling costs and improve reliability with modern thermal management strategy.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">8 hrs</div><div class="course-price">$298.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=cooling-systems-design-optimization" aria-label="Enroll in Cooling Systems Design &amp; Optimization">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/hvac-troubleshooting-essentials.html">HVAC Systems Troubleshooting Essentials</a></h3><div class="course-meta"><span>Cooling &amp; Efficiency</span><span class="sep">&middot;</span><span>Modular Specialization</span></div><p class="course-hook">Hands-on troubleshooting skills for CRAC/CRAH systems and common cooling failures.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">4 hrs</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=hvac-troubleshooting-essentials" aria-label="Enroll in HVAC Systems Troubleshooting Essentials">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/mechanical-systems-maintenance.html">Mechanical Systems &amp; Equipment Maintenance</a></h3><div class="course-meta"><span>Cooling &amp; Efficiency</span><span class="sep">&middot;</span><span>Modular Specialization</span></div><p class="course-hook">Hands-on mechanical maintenance — piping, chillers, and vibration diagnostics.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">4 hrs</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=mechanical-systems-maintenance" aria-label="Enroll in Mechanical Systems &amp; Equipment Maintenance">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/data-center-cooling-refrigerant-safety.html">Data Center Cooling System and Refrigerant Safety Training</a></h3><div class="course-meta"><span>Cooling &amp; Efficiency</span><span class="sep">&middot;</span><span>Modular Specialization</span><span class="sep">&middot;</span><span>EPA/OSHA</span></div><p class="course-hook">Refrigerant handling and cooling system safety practices specific to data center CRAC/CRAH environments.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">2 hrs</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=data-center-cooling-refrigerant-safety" aria-label="Enroll in Data Center Cooling System and Refrigerant Safety Training">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/energy-efficiency-pue-optimization.html">Energy Efficiency &amp; PUE Optimization</a></h3><div class="course-meta"><span>Cooling &amp; Efficiency</span><span class="sep">&middot;</span><span>Modular Specialization</span><span class="sep">&middot;</span><span>PUE</span></div><p class="course-hook">Cut operating costs with a measurable PUE optimization roadmap.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">4 hrs</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=energy-efficiency-pue-optimization" aria-label="Enroll in Energy Efficiency &amp; PUE Optimization">Enroll</a></div></div>
+</div>
+<!-- /dct:courses -->
+      <div style="margin-top:16px;">
+      <!-- dct:bundle bundle-cooling-efficiency -->
+<div class="bundle-offer"><div class="bundle-offer-copy"><p class="bundle-offer-kicker">Save 42% with the bundle</p><p class="bundle-offer-name">Cooling &amp; Facilities Efficiency Bundle</p><p class="bundle-offer-meta">6 courses &middot; 24 hours &middot; <strong>$462.99</strong> per seat, instead of <s>$798.94</s> bought separately</p></div><div class="bundle-offer-actions"><a class="btn btn-primary" href="../checkout.html?item=bundle-cooling-efficiency">Enroll in the Bundle</a><a class="btn btn-secondary" href="../bundles.html">Compare Bundles</a></div></div>
+<!-- /dct:bundle -->
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <h2>Keep Going</h2>
+        <p>Brush up with the guide, size a load with the calculator, or try another quiz.</p>
+      </div>
+      <div class="card-grid">
+        <a class="topic-card" href="../learn/data-center-cooling.html"><span class="topic-card-icon" aria-hidden="true">&#10052;&#65039;</span><h3>How Data Center Cooling Works</h3><p>The guide behind this quiz, from airflow to chilled water.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+        <a class="topic-card" href="../tools/cooling-load-calculator.html"><span class="topic-card-icon" aria-hidden="true">&#129518;</span><h3>Cooling Load Calculator</h3><p>Convert IT kW to BTU/hr and tons of cooling.</p><span class="topic-card-cta">Try the calculator &rarr;</span></a>
+        <a class="topic-card" href="safety-quiz.html"><span class="topic-card-icon" aria-hidden="true">&#9888;&#65039;</span><h3>Data Center Safety Quiz</h3><p>Arc flash, LOTO, batteries, and confined spaces.</p><span class="topic-card-cta">Take the quiz &rarr;</span></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="contact">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="../" class="logo">
+          <img src="../images/favicon.svg" alt="" width="28" height="28">
+          <span>
+            <span class="logo-mark">datacentertraining.us</span>
+            <span class="logo-sub">Data Center Professional Training</span>
+          </span>
+        </a>
+        <p class="footer-legal">Data Center Training is a specialty training division of <a href="https://hazwoper-osha.com/" target="_blank" rel="noopener">HAZWOPER-OSHA Training, LLC</a>, an IACET-accredited provider of professional data center and safety compliance training.</p>
+        <p class="footer-legal" style="margin-top:8px;">HAZWOPER OSHA Training, LLC &middot; 11901 Santa Monica Blvd., Suite #414, Los Angeles, CA 90025</p>
+        <div class="footer-badges">
+          <img src="https://media.hazwoper-osha.com/wp-content/uploads/2023/11/1698821020/IACET-small.webp" alt="IACET Accredited Provider" width="40" height="24" loading="lazy">
+          <img src="https://media.hazwoper-osha.com/wp-content/uploads/2026/07/1784291935/bbb.webp" alt="BBB A+ Rating" width="40" height="24" loading="lazy">
+          <img src="https://media.hazwoper-osha.com/wp-content/uploads/2026/07/1784292027/trust.webp" alt="Google Trust Services" width="141" height="20" loading="lazy" style="height:20px;">
+        </div>
+      </div>
+      <div class="footer-cta">
+        <p class="footer-cta-title">Not sure where to start?</p>
+        <p class="footer-cta-text">Find the data center role that fits you, then get a training plan built around it.</p>
+        <div class="footer-cta-actions">
+          <a href="../quizzes/career-quiz.html" class="btn btn-primary btn-sm">Take the Career Quiz</a>
+          <a href="../tools/training-plan-builder.html" class="btn btn-secondary btn-sm">Build a Training Plan</a>
+        </div>
+        <div class="footer-contact-links">
+          <a href="tel:18664296742">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            1-866-429-6742
+          </a>
+          <a href="mailto:info@hazwoper-osha.com">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            info@hazwoper-osha.com
+          </a>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/HazwoperOsha/" target="_blank" rel="noopener" aria-label="Facebook"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/hazwoper_osha_training/?hl=en" target="_blank" rel="noopener" aria-label="Instagram"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="https://www.youtube.com/@hazwoper-osha" target="_blank" rel="noopener" aria-label="YouTube"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33zM9.75 15.02V8.48l5.75 3.27z"/></svg></a>
+          <a href="https://x.com/HazwoperOsha" target="_blank" rel="noopener" aria-label="X"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.4 8.4L23 22h-6.6l-5.2-6.8L5.1 22H2l7.9-9L1.6 2h6.8l4.7 6.2z"/></svg></a>
+          <a href="https://www.linkedin.com/company/hazwoper-osha" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM8.34 18.34V10.1H5.67v8.24zM7.01 8.97a1.55 1.55 0 1 0 0-3.1 1.55 1.55 0 0 0 0 3.1zM18.34 18.34v-4.6c0-2.46-1.31-3.6-3.06-3.6a2.64 2.64 0 0 0-2.39 1.32V10.1H10.2s.04.86 0 8.24h2.68v-4.6c0-.25.02-.5.09-.68a1.5 1.5 0 0 1 1.37-1c.96 0 1.35.73 1.35 1.8v4.48z"/></svg></a>
+          <a href="https://www.pinterest.com/hazwoperosha/" target="_blank" rel="noopener" aria-label="Pinterest"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.64 7.86 6.36 9.32-.09-.79-.17-2.01.03-2.88.19-.79 1.22-5.03 1.22-5.03s-.31-.63-.31-1.55c0-1.45.84-2.54 1.89-2.54.89 0 1.32.67 1.32 1.47 0 .89-.57 2.23-.86 3.47-.25 1.03.52 1.88 1.53 1.88 1.84 0 3.07-2.36 3.07-5.15 0-2.12-1.43-3.71-4.02-3.71-2.93 0-4.76 2.19-4.76 4.63 0 .84.25 1.44.63 1.9.18.21.2.3.14.54-.05.18-.16.63-.21.81-.07.26-.28.35-.51.26-1.44-.59-2.11-2.16-2.11-3.93 0-2.92 2.46-6.43 7.34-6.43 3.92 0 6.5 2.84 6.5 5.89 0 4.03-2.24 7.04-5.55 7.04-1.11 0-2.16-.6-2.51-1.28 0 0-.6 2.36-.73 2.82-.22.8-.66 1.6-1.06 2.22.95.29 1.95.45 3 .45 5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-grid">
+    <div class="footer-col">
+      <h3>Training</h3>
+      <a href="../courses.html">Course Catalog</a>
+      <a href="../bundles.html">Course Bundles</a>
+      <a href="../who.html">Courses by Role</a>
+      <a href="../tools/training-plan-builder.html">Training Plan Builder</a>
+      <a href="../#teams">Team Training</a>
+      <a href="../certifications.html">Certificates &amp; Accreditation</a>
+      <a href="../faq.html">FAQ</a>
+    </div>
+    <div class="footer-col">
+      <h3>Learn</h3>
+      <a href="../learn/">Knowledge Center</a>
+      <a href="../learn/what-is-a-data-center.html">Data Center 101</a>
+      <a href="../learn/data-center-power.html">Power Systems</a>
+      <a href="../learn/data-center-cooling.html">Cooling Systems</a>
+      <a href="../learn/data-center-tiers.html">Tier Levels</a>
+      <a href="../learn/data-center-safety.html">Safety Guide</a>
+      <a href="../learn/data-center-standards.html">Standards Guide</a>
+      <a href="../learn/glossary.html">Glossary</a>
+      <a href="../blog/">Blog</a>
+    </div>
+    <div class="footer-col">
+      <h3>Careers</h3>
+      <a href="../careers/">Careers Hub</a>
+      <a href="../careers/data-center-jobs.html">Job Roles Explained</a>
+      <a href="../careers/how-to-get-into-data-centers.html">Get Into Data Centers</a>
+      <a href="../careers/career-changers.html">Career Changers</a>
+      <a href="../careers/interview-questions.html">Interview Questions</a>
+      <a href="../quizzes/career-quiz.html">Career Match Quiz</a>
+    </div>
+    <div class="footer-col">
+      <h3>Quizzes &amp; Tools</h3>
+      <a href="../quizzes/">All Quizzes</a>
+      <a href="../quizzes/data-center-basics-quiz.html">Data Center Basics Quiz</a>
+      <a href="../tools/">All Tools</a>
+      <a href="../tools/pue-calculator.html">PUE Calculator</a>
+      <a href="../tools/uptime-calculator.html">Uptime Calculator</a>
+      <a href="../tools/cooling-load-calculator.html">Cooling Load Calculator</a>
+      <a href="../search.html">Search the Site</a>
+    </div>
+    <div class="footer-col">
+      <h3>Company</h3>
+      <a href="https://hazwoper-osha.com/" target="_blank" rel="noopener">HAZWOPER-OSHA Training</a>
+      <a href="https://hazwoper-osha.com/certificate-verification" target="_blank" rel="noopener">Verify Certificate</a>
+      <a href="../privacy.html">Privacy Policy</a>
+      <a href="../terms.html">Terms of Service</a>
+      <a href="../accessibility.html">Accessibility</a>
+      <a href="../privacy.html#choices" data-privacy-choices>Your Privacy Choices</a>
+      <a href="https://hazwoper-osha.com/refund-policy" target="_blank" rel="noopener">Refund Policy</a>
+    </div>
+    </div>
+
+    <p class="footer-agents"><span>For AI agents:</span> <a href="/llms.txt">llms.txt</a> <a href="/llms-full.txt">llms-full.txt</a> <a href="/.well-known/mcp.json">WebMCP Manifest</a> <a href="/api/index.json">JSON Catalog API</a> <a href="/openapi.json">API Docs (OpenAPI)</a> <a href="/sitemap.xml">Sitemap</a></p>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; 2026 HAZWOPER-OSHA Training, LLC. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+<script src="../js/main.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- dct:head -->
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; object-src 'none'; base-uri 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#f5f5f7">
+<link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt">
+<link rel="alternate" type="application/json" href="/.well-known/mcp.json" title="WebMCP manifest">
+<link rel="service-desc" type="application/vnd.oai.openapi+json" href="/openapi.json">
+<script>
+/* Analytics, session recording, and chat load for every visitor unless they opt out or send a GPC signal
+   (see /js/consent.js), on the first interaction (scroll, tap, key, mouse move) so they never delay rendering. */
+(function(w,d){
+  w.dataLayer=w.dataLayer||[];w.gtag=function(){w.dataLayer.push(arguments);};
+  w.clarity=w.clarity||function(){(w.clarity.q=w.clarity.q||[]).push(arguments);};
+  w.Tawk_API=w.Tawk_API||{};w.Tawk_API.onLoad=function(){w.Tawk_API.minimize();};
+  var ev=['pointerdown','keydown','touchstart','scroll','mousemove'];
+  function add(src,attrs){var s=d.createElement('script');s.async=true;s.src=src;for(var k in attrs)s.setAttribute(k,attrs[k]);d.head.appendChild(s);}
+  function once(fn){var done=0;return function(now){if(done)return;function go(){if(done)return;done=1;ev.forEach(function(e){w.removeEventListener(e,go,{passive:true});});fn();}
+    if(now)go();else ev.forEach(function(e){w.addEventListener(e,go,{passive:true});});};}
+  w.dctLoad={
+    analytics:once(function(){
+      w.gtag('js',new Date());w.gtag('config','G-Z3T42KYK64');
+      add('https://www.googletagmanager.com/gtag/js?id=G-Z3T42KYK64');
+      add('https://analytics.ahrefs.com/analytics.js',{'data-key':'tVAd7KxwKax+pAfHx46Zgg'});
+      add('https://www.clarity.ms/tag/ylza43nm4m');
+    }),
+    chat:once(function(){
+      w.Tawk_LoadStart=new Date();add('https://embed.tawk.to/6a5a95a2096ab21d402a762c/1jtoth11r',{charset:'UTF-8',crossorigin:'*'});
+    })
+  };
+})(window,document);
+if(navigator.modelContext){var m=document.createElement('script');m.src='/js/webmcp.js';m.defer=true;document.head.appendChild(m);}
+</script>
+<script src="/js/consent.js" defer></script>
+<!-- /dct:head -->
+<title>Data Center Physical Security and Compliance Explained</title>
+<meta name="description" content="How data centers secure facilities: layered access control, mantraps, visitors, video, and what SOC 2, ISO 27001, PCI DSS, and HIPAA auditors check on site.">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+<link rel="canonical" href="https://datacentertraining.us/learn/data-center-security-compliance.html">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Data Center Physical Security and Compliance Explained">
+<meta property="og:description" content="How data centers secure facilities: layered access control, mantraps, visitors, video, and what SOC 2, ISO 27001, PCI DSS, and HIPAA auditors check on site.">
+<meta property="og:url" content="https://datacentertraining.us/learn/data-center-security-compliance.html">
+<meta property="og:image" content="https://datacentertraining.us/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Data Center Training">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@HazwoperOsha">
+<meta name="twitter:title" content="Data Center Physical Security and Compliance Explained">
+<meta name="twitter:description" content="How data centers secure facilities: layered access control, mantraps, visitors, video, and what SOC 2, ISO 27001, PCI DSS, and HIPAA auditors check on site.">
+<meta name="twitter:image" content="https://datacentertraining.us/images/og-image.jpg">
+
+<link rel="stylesheet" href="../css/site.min.css">
+<script src="../js/nav.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Data Center Physical Security and Compliance Explained",
+  "description": "How data centers secure facilities: layered access control, mantraps, visitors, video, and what SOC 2, ISO 27001, PCI DSS, and HIPAA auditors check on site.",
+  "url": "https://datacentertraining.us/learn/data-center-security-compliance.html",
+  "mainEntityOfPage": "https://datacentertraining.us/learn/data-center-security-compliance.html",
+  "image": "https://datacentertraining.us/images/og-image.jpg",
+  "datePublished": "2026-10-19",
+  "dateModified": "2026-10-19",
+  "inLanguage": "en-US",
+  "author": {"@type": "Organization", "name": "Data Center Training", "url": "https://datacentertraining.us/"},
+  "publisher": {"@type": "EducationalOrganization", "@id": "https://datacentertraining.us/#organization", "name": "Data Center Training", "url": "https://datacentertraining.us/"},
+  "about": ["Data center physical security", "Access control", "SOC 2", "ISO/IEC 27001", "PCI DSS", "Environmental compliance"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://datacentertraining.us/"},
+    {"@type": "ListItem", "position": 2, "name": "Knowledge Center", "item": "https://datacentertraining.us/learn/"},
+    {"@type": "ListItem", "position": 3, "name": "Security & Compliance", "item": "https://datacentertraining.us/learn/data-center-security-compliance.html"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "What is a mantrap in a data center?", "acceptedAnswer": {"@type": "Answer", "text": "A mantrap, also called a security vestibule or portal, is a small space between two interlocked doors. The second door will not open until the first has closed, and many mantraps use sensors to confirm only one person is inside. It stops tailgating, where an unauthorized person follows an authorized one through a door."}},
+    {"@type": "Question", "name": "What is the difference between a SOC 2 Type 1 and Type 2 report?", "acceptedAnswer": {"@type": "Answer", "text": "A Type 1 report describes the controls and whether they were suitably designed at a single point in time. A Type 2 report also tests whether the controls operated effectively over a period, often six to twelve months. Customers of colocation and cloud providers usually ask for the Type 2 report because it shows the controls actually worked."}},
+    {"@type": "Question", "name": "How long should data center video footage be kept?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on the frameworks and contracts that apply. PCI DSS calls for video or access control data covering sensitive areas to be kept for at least three months unless the law restricts it, and many customer contracts set their own minimums. Set a written retention period that meets the strictest requirement you are under, then confirm the recording system actually keeps that much."}},
+    {"@type": "Question", "name": "Who needs EPA Section 608 certification at a data center?", "acceptedAnswer": {"@type": "Answer", "text": "Any technician who maintains, services, repairs, or disposes of equipment in a way that could release refrigerant, such as opening a CRAC unit or chiller circuit, needs Section 608 certification from an EPA-approved certifying program. Facility managers do not need it to oversee the work, but they should keep copies of contractor certifications and service records."}}
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="glass-nav">
+  <div class="container nav-inner">
+    <a href="../" class="logo">
+      <img src="../images/favicon.svg" alt="" width="30" height="30">
+      <span>
+        <span class="logo-mark">datacentertraining.us</span>
+        <span class="logo-sub">Data Center Professional Training</span>
+      </span>
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Main">
+      <div class="nav-item">
+        <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="navMenu-training">Courses<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-3" id="navMenu-training">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Online Training</p>
+            <a href="../courses.html"><span class="nav-link-title">Course Catalog</span><span class="nav-link-desc">All 43 self-paced courses</span></a>
+            <a href="../bundles.html"><span class="nav-link-title">Course Bundles</span><span class="nav-link-desc">Role-based bundles, save up to 52%</span></a>
+            <a href="../who.html"><span class="nav-link-title">Courses by Role</span><span class="nav-link-desc">Find the track for your job</span></a>
+            <a href="../tools/training-plan-builder.html"><span class="nav-link-title">Training Plan Builder</span><span class="nav-link-desc">Build and price a plan in minutes</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Enrolling</p>
+            <a href="../#teams"><span class="nav-link-title">Team Training</span><span class="nav-link-desc">Seats, progress tracking, PO billing</span></a>
+            <a href="../certifications.html"><span class="nav-link-title">Certificates &amp; Accreditation</span><span class="nav-link-desc">What your certificate means</span></a>
+            <a href="../faq.html"><span class="nav-link-title">FAQ</span><span class="nav-link-desc">Pricing, access, and policies</span></a>
+          </div>
+          <a class="nav-feature" href="../bundles.html"><span class="nav-feature-kicker">Best value</span><span class="nav-feature-title">Complete Data Center Professional Bundle</span><span class="nav-feature-text">43 courses and 192 hours of training in one enrollment. Save 52%.</span><span class="nav-feature-cta">Compare bundles &rarr;</span></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button type="button" class="nav-trigger active" aria-expanded="false" aria-controls="navMenu-learn">Learn<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-3" id="navMenu-learn">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Start Here</p>
+            <a href="../learn/"><span class="nav-link-title">Knowledge Center</span><span class="nav-link-desc">Every guide in one place</span></a>
+            <a href="../learn/what-is-a-data-center.html"><span class="nav-link-title">Data Center 101</span><span class="nav-link-desc">How data centers work</span></a>
+            <a href="../learn/glossary.html"><span class="nav-link-title">Glossary</span><span class="nav-link-desc">Data center terms, A to Z</span></a>
+            <a href="../learn/data-center-standards.html"><span class="nav-link-title">Standards &amp; Regulations</span><span class="nav-link-desc">TIA-942, NFPA, OSHA, ASHRAE, ISO</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Systems</p>
+            <a href="../learn/data-center-power.html"><span class="nav-link-title">Power Systems</span></a>
+            <a href="../learn/data-center-cooling.html"><span class="nav-link-title">Cooling Systems</span></a>
+            <a href="../learn/data-center-tiers.html"><span class="nav-link-title">Tier Levels &amp; Redundancy</span></a>
+            <a href="../learn/energy-efficiency-pue.html"><span class="nav-link-title">Energy Efficiency &amp; PUE</span></a>
+            <a href="../learn/ai-data-centers.html"><span class="nav-link-title">AI &amp; High-Density Facilities</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Operations</p>
+            <a href="../learn/data-center-safety.html"><span class="nav-link-title">Safety Guide</span></a>
+            <a href="../learn/data-center-security-compliance.html" aria-current="page"><span class="nav-link-title">Security &amp; Compliance</span></a>
+            <a href="../learn/data-center-operations.html"><span class="nav-link-title">Operations &amp; Maintenance</span></a>
+            <a href="../learn/data-center-commissioning.html"><span class="nav-link-title">Commissioning (Levels 1-5)</span></a>
+            <a href="../blog/"><span class="nav-link-title">Blog: Field Guidance</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="navMenu-careers">Careers<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-2" id="navMenu-careers">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Data Center Careers</p>
+            <a href="../careers/"><span class="nav-link-title">Careers Hub</span><span class="nav-link-desc">Why the industry is hiring</span></a>
+            <a href="../careers/data-center-jobs.html"><span class="nav-link-title">Job Roles Explained</span><span class="nav-link-desc">What each role does day to day</span></a>
+            <a href="../careers/how-to-get-into-data-centers.html"><span class="nav-link-title">How to Get Into Data Centers</span><span class="nav-link-desc">A step-by-step starting plan</span></a>
+            <a href="../careers/career-changers.html"><span class="nav-link-title">Career Changers</span><span class="nav-link-desc">Electricians, HVAC techs, veterans, IT</span></a>
+            <a href="../careers/interview-questions.html"><span class="nav-link-title">Interview Questions</span><span class="nav-link-desc">Practice answers for technician roles</span></a>
+          </div>
+          <a class="nav-feature" href="../quizzes/career-quiz.html"><span class="nav-feature-kicker">2-minute quiz</span><span class="nav-feature-title">Which Data Center Career Fits You?</span><span class="nav-feature-text">Answer 10 quick questions and get a matching role and training track.</span><span class="nav-feature-cta">Take the career quiz &rarr;</span></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="navMenu-quizzes">Quizzes &amp; Tools<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-2" id="navMenu-quizzes">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Quizzes</p>
+            <a href="../quizzes/"><span class="nav-link-title">All Quizzes</span></a>
+            <a href="../quizzes/career-quiz.html"><span class="nav-link-title">Career Match Quiz</span></a>
+            <a href="../quizzes/data-center-basics-quiz.html"><span class="nav-link-title">Data Center Basics</span></a>
+            <a href="../quizzes/power-electrical-quiz.html"><span class="nav-link-title">Power &amp; Electrical</span></a>
+            <a href="../quizzes/cooling-quiz.html"><span class="nav-link-title">Cooling &amp; HVAC</span></a>
+            <a href="../quizzes/safety-quiz.html"><span class="nav-link-title">Safety</span></a>
+            <a href="../quizzes/security-compliance-quiz.html"><span class="nav-link-title">Security &amp; Compliance</span></a>
+            <a href="../quizzes/tiers-design-quiz.html"><span class="nav-link-title">Tiers &amp; Design</span></a>
+            <a href="../quizzes/operations-quiz.html"><span class="nav-link-title">Operations &amp; Monitoring</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Tools</p>
+            <a href="../tools/"><span class="nav-link-title">All Tools</span></a>
+            <a href="../tools/training-plan-builder.html"><span class="nav-link-title">Training Plan Builder</span></a>
+            <a href="../tools/pue-calculator.html"><span class="nav-link-title">PUE Calculator</span></a>
+            <a href="../tools/uptime-calculator.html"><span class="nav-link-title">Uptime &amp; Downtime Calculator</span></a>
+            <a href="../tools/cooling-load-calculator.html"><span class="nav-link-title">Cooling Load Calculator</span></a>
+          </div>
+        </div>
+      </div>
+      <a href="../blog/" class="nav-link">Blog</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="../search.html" class="nav-search" data-search-open aria-label="Search the site" title="Search (Ctrl+K)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><span class="nav-search-label">Search</span><kbd class="nav-search-kbd">Ctrl K</kbd></a>
+      <a href="../courses.html" class="btn btn-primary btn-sm nav-cta">View Courses</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../">Home</a>
+      <span>&rsaquo;</span>
+      <a href="./">Knowledge Center</a>
+      <span>&rsaquo;</span>
+      <span aria-current="page">Security &amp; Compliance</span>
+    </nav>
+  </div>
+
+  <section class="course-hero">
+    <div class="container">
+      <div class="course-hero-eyebrow">Knowledge Center &middot; Security</div>
+      <h1>Data Center Physical Security and Compliance Explained</h1>
+      <p class="course-hero-hook">Cyber controls mean little if someone can walk up to a rack and pull a drive. Here is how data centers layer physical security, which compliance frameworks reach into the building, and what auditors actually look at when they visit.</p>
+      <div class="course-pills">
+        <span class="course-pill">12 min read</span>
+        <span class="course-pill">Beginner to intermediate</span>
+        <span class="course-pill">Updated October 2026</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="container guide-layout">
+    <aside class="guide-toc" aria-label="On this page">
+      <p class="guide-toc-title">On this page</p>
+      <ol>
+        <li><a href="#layers">Defense in depth</a></li>
+        <li><a href="#access-control">Access control</a></li>
+        <li><a href="#visitors">Visitors and contractors</a></li>
+        <li><a href="#video">Video surveillance</a></li>
+        <li><a href="#security-operations">Guards and security operations</a></li>
+        <li><a href="#assets">Assets, keys, and media</a></li>
+        <li><a href="#frameworks">Compliance frameworks</a></li>
+        <li><a href="#evidence">Audit evidence</a></li>
+        <li><a href="#environmental">Environmental compliance</a></li>
+        <li><a href="#life-safety">Fire and life safety</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ol>
+      <a class="guide-toc-cta" href="../quizzes/security-compliance-quiz.html"><strong>Test yourself</strong>Take the Security &amp; Compliance quiz.</a>
+    </aside>
+
+    <article class="guide-body prose">
+      <div class="key-takeaways">
+        <p class="key-takeaways-title">Key takeaways</p>
+        <ul>
+          <li>Physical security works in layers, from the property line to the rack, so one failed control does not expose the equipment.</li>
+          <li>Most real-world failures are procedural: tailgating, unescorted visitors, stale access lists, and propped doors.</li>
+          <li>SOC 2, ISO/IEC 27001, PCI DSS, HIPAA, and NIST SP 800-53 all include physical controls, and auditors expect records that prove those controls operate.</li>
+          <li>Data centers also carry environmental obligations for refrigerants, generators, and fuel storage, and security must never block emergency egress.</li>
+        </ul>
+      </div>
+
+      <h2 id="layers">Defense in depth: six layers</h2>
+      <p>No single lock, guard, or camera is enough. Data centers stack controls so an intruder has to defeat several independent barriers, and each layer is a chance to detect them. A typical layout:</p>
+      <ol class="flow flow-3" aria-label="Physical security layers from outside in">
+        <li><strong>Perimeter</strong>Fencing, gates, bollards, and setbacks that keep vehicles and people at a distance.</li>
+        <li><strong>Site</strong>Guarded entry, vehicle inspection, lighting, and cameras covering parking and the loading dock.</li>
+        <li><strong>Building</strong>A staffed lobby, ID checks, badge readers, and hardened walls with few entry points.</li>
+        <li><strong>Data hall</strong>Mantraps, multi-factor access, and cameras on every entry and aisle.</li>
+        <li><strong>Cage or suite</strong>Customer-specific access lists, locked cage doors, and separate badge zones.</li>
+        <li><strong>Rack</strong>Locked cabinet doors with keys, combination locks, or electronic handles that log each opening.</li>
+      </ol>
+      <p>The deeper you go, the fewer people should have access and the stronger the authentication should be. A delivery driver might reach the dock, a contractor the electrical room, and only a customer's named staff their cage.</p>
+
+      <h2 id="access-control">Access control</h2>
+      <h3>Credentials: something you have, know, and are</h3>
+      <p>Most sites issue <strong>badges</strong> (smart cards or proximity cards) and add a second factor at sensitive doors: a <strong>PIN</strong> or a <strong>biometric</strong> such as fingerprint, hand geometry, iris, or face recognition. Older low-frequency proximity cards are easy to clone, so many operators have moved to encrypted smart card credentials. Every reader event goes to the access control system, which records who, where, when, and whether access was granted.</p>
+      <h3>Mantraps and anti-tailgating</h3>
+      <p><strong>Tailgating</strong> (following someone through a door) is the most common way physical controls fail, usually through politeness rather than malice. <strong>Mantraps</strong>, also called security vestibules, use two interlocked doors so the inner one will not open until the outer one has closed, often with sensors that detect more than one person. Optical turnstiles and <strong>anti-passback</strong> rules, which refuse a badge that was never logged in, close other gaps. Controls only work if they are tested; see <a href="../blog/posts/data-center-anti-tailgating-drills-how-security-leads-should-test-badge-and-mantrap-controls.html">how security leads run anti-tailgating drills</a>.</p>
+      <h3>Two-person rules and access reviews</h3>
+      <p>High-risk areas and tasks, such as media destruction rooms, key cabinets, or a customer's cage holding regulated data, often require <strong>two-person integrity</strong>: two authorized people present, or two credentials presented, before access is granted. Just as important is keeping access lists current. Remove access the same day someone leaves or changes roles, and run <strong>periodic access reviews</strong>, commonly quarterly, where each area owner confirms every name on the list. Stale access is one of the findings auditors raise most often. The <a href="../courses/access-control-physical-security.html">Access Control &amp; Physical Security</a> course covers system design and administration.</p>
+
+      <h2 id="visitors">Visitor and contractor management</h2>
+      <p>Visitors and contractors are where security, safety, and operations meet. A sound process looks like this:</p>
+      <ul>
+        <li><strong>Pre-registration</strong> by an authorized sponsor, with the purpose, areas, and dates of the visit.</li>
+        <li><strong>Identity verification</strong> against a government-issued photo ID at the lobby.</li>
+        <li><strong>Visibly different badges</strong> that expire automatically at the end of the visit or work window.</li>
+        <li><strong>Escorting</strong> for anyone without unescorted access, for the entire time they are in controlled areas.</li>
+        <li><strong>Sign-in and sign-out</strong> records that tie each visitor to a host and, for contractors, to an approved work order or method of procedure.</li>
+        <li><strong>Inspection</strong> of tools, bags, and equipment coming in and going out.</li>
+      </ul>
+      <p>Long-term contractors are a special risk because they often hold badges for months. Tie their access to a contract end date and review it with the same rigor as staff access. See <a href="../blog/posts/how-data-center-security-leads-should-audit-contractor-access-controls.html">how to audit contractor access controls</a>.</p>
+
+      <h2 id="video">Video surveillance and retention</h2>
+      <p>Cameras deter, detect, and document. Coverage should include perimeter and gates, building entrances, the loading dock, lobbies, mantraps, data hall entries, aisles, and cage doors. Cameras at access points should capture a usable view of faces, not just tops of heads.</p>
+      <p>Retention is set by policy, contracts, and frameworks. PCI DSS, for example, calls for video or access control data covering sensitive areas to be kept for at least three months unless the law restricts it. Whatever period you choose, verify the recorders actually hold it at the current camera count and resolution, monitor camera health so a dead camera is noticed in hours rather than weeks, and integrate video with access control so a forced-door alarm pops up the matching footage. Organizations that do federal work should also check the procurement restrictions on certain video surveillance manufacturers under Section 889 of the FY2019 National Defense Authorization Act.</p>
+
+      <h2 id="security-operations">Guards and security operations</h2>
+      <p>Most large sites run a staffed security operations center around the clock. Officers monitor alarms and video, staff the lobby, patrol on a logged guard tour, process visitors, and respond to events such as a door forced open, a door held open, or a badge used at an unexpected hour. Written <strong>post orders</strong> tell each officer exactly what that post does, and incident reports record every event. Security also works closely with the facilities team and the network operations center: a door alarm at 3 a.m. may be an intruder, or it may be an engineer responding to a chiller alarm.</p>
+
+      <h2 id="assets">Asset, key, and media handling</h2>
+      <p><strong>Assets</strong> are tagged and tracked from the loading dock to the rack and back out. Deliveries go to a controlled receiving area, and anything leaving the building needs a property pass that matches serial numbers to an authorized request.</p>
+      <p><strong>Keys</strong> still matter in a badge-controlled building: rack keys, cage keys, electrical room keys, and override keys for electronic locks. Store them in a controlled key cabinet that logs who took each key, use restricted keyways that cannot be copied at a hardware store, and audit the key inventory on a schedule.</p>
+      <p><strong>Media</strong> such as failed drives and decommissioned servers can hold sensitive data long after they stop working. Keep them in locked containers with a chain-of-custody record, and sanitize or destroy them following NIST SP 800-88, which describes clearing, purging, and destroying media. Physical destruction methods include shredding, crushing, and degaussing for magnetic media. Get a certificate of destruction listing serial numbers, and reconcile it against your inventory. Many customers require destruction on site, witnessed by their own staff.</p>
+
+      <h2 id="frameworks">Compliance frameworks that reach into the building</h2>
+      <p>Most data center compliance work maps physical controls to one or more of these frameworks. A colocation provider may be audited against several at once on behalf of its customers.</p>
+      <div class="table-panel">
+        <table class="data-table">
+          <caption>Physical security in major compliance frameworks</caption>
+          <thead><tr><th>Framework</th><th>Physical requirements</th><th>What auditors look for on site</th></tr></thead>
+          <tbody>
+            <tr><td>SOC 2</td><td>AICPA Trust Services Criteria (security, availability, processing integrity, confidentiality, privacy). The common criteria include restricting physical access to facilities and protected assets.</td><td>Access lists matched to HR records, access review sign-offs, visitor logs, and working mantraps and cameras during a walkthrough.</td></tr>
+            <tr><td>ISO/IEC 27001:2022</td><td>Annex A physical controls (A.7.1 to A.7.14) cover perimeters, entry, monitoring, utilities, cabling, equipment maintenance, and secure disposal.</td><td>Controls traced to the risk assessment and Statement of Applicability, plus evidence the controls run as documented.</td></tr>
+            <tr><td>PCI DSS Requirement 9</td><td>Restrict physical access to cardholder data: entry controls, visitor management, monitoring of sensitive areas, and media handling and destruction.</td><td>Camera or access data retained at least three months, distinct visitor badges, visitor logs, and media inventories.</td></tr>
+            <tr><td>HIPAA Security Rule, 45 CFR 164.310</td><td>Physical safeguards: facility access controls, workstation use and security, and device and media controls.</td><td>A facility security plan, maintenance records for doors and locks, and media disposal and re-use records.</td></tr>
+            <tr><td>NIST SP 800-53 PE family</td><td>Physical and environmental protection controls, including access authorizations, visitor records, emergency shutoff, emergency power, fire protection, and environmental controls.</td><td>Authorization lists, monitoring logs, and test records for power, fire, and environmental systems.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Notice how far these reach beyond locks. ISO/IEC 27001 and NIST SP 800-53 both cover supporting utilities and environmental protection, so a generator test log or a temperature trend can become audit evidence. Our <a href="../courses/security-compliance-data-centers.html">Security &amp; Compliance for Data Centers</a> course maps these frameworks to day-to-day facility work.</p>
+
+      <h2 id="evidence">Audit evidence: proving controls work</h2>
+      <p>Auditors test controls by sampling records, so a control that is not documented effectively did not happen. Keep these organized and easy to retrieve:</p>
+      <ul>
+        <li>Access control logs and alarm histories, with exports you can filter by date, door, and person.</li>
+        <li>Badge issuance and termination records, matched to HR start and end dates.</li>
+        <li>Signed access reviews for each controlled area.</li>
+        <li>Visitor and contractor logs with sponsors and escorts.</li>
+        <li>Video retention settings and evidence that footage is retrievable.</li>
+        <li>Drill and test records: anti-tailgating tests, evacuation drills, alarm response tests.</li>
+        <li>Training records for security officers and staff with physical access.</li>
+        <li>Maintenance and inspection records for security, fire, and power systems.</li>
+      </ul>
+      <p>On the walkthrough, auditors watch behavior as much as paperwork: whether people hold doors, whether visitors wear badges, whether media sits unattended. See <a href="../blog/posts/iso-27001-physical-evidence-what-data-center-facility-managers-should-organize-before-an-audit.html">what to organize before an ISO 27001 audit</a>.</p>
+
+      <div class="inline-cta">
+        <p><strong>Ready to check your knowledge?</strong> Questions on access control, frameworks, and audit evidence.</p>
+        <a class="btn btn-primary btn-sm" href="../quizzes/security-compliance-quiz.html">Take the Security Quiz</a>
+      </div>
+
+      <h2 id="environmental">Environmental compliance basics</h2>
+      <p>Data centers hold refrigerant, burn diesel, and store fuel, which brings environmental rules that facility teams own. The common ones in the United States:</p>
+      <ul>
+        <li><strong>Refrigerants (EPA Section 608).</strong> The Clean Air Act requires certified technicians, proper recovery, and, for larger appliances, leak inspection, repair, and recordkeeping. Rules under the AIM Act add requirements for HFC systems, so confirm current EPA requirements. Keep service records, refrigerant added and recovered, and technician certifications.</li>
+        <li><strong>Generator air permits.</strong> Diesel standby generators are stationary engines regulated under federal emissions rules and usually a state or local air permit. Emergency engines are limited in how many hours they may run for testing and maintenance, so accurate run-hour logs and fuel records matter.</li>
+        <li><strong>SPCC plans (40 CFR 112).</strong> Facilities with more than 1,320 gallons of aboveground oil storage capacity (counting containers of 55 gallons or more) that could reasonably discharge to navigable waters need a Spill Prevention, Control, and Countermeasure plan. Generator day tanks and bulk diesel tanks often trigger it. Expect secondary containment, inspections, a five-year plan review, and annual discharge prevention briefings for oil-handling staff.</li>
+        <li><strong>Stormwater.</strong> Construction that disturbs one acre or more needs NPDES construction stormwater coverage, and operating sites may have stormwater conditions tied to fuel deliveries and outdoor equipment under state rules.</li>
+      </ul>
+      <p>Spent batteries, used oil, and coolant also need proper waste handling. The <a href="../courses/facility-environmental-compliance.html">Facility Environmental Compliance</a> course covers these programs.</p>
+
+      <h2 id="life-safety">Fire and life safety interfaces</h2>
+      <p>Security and life safety pull in opposite directions: security wants doors locked, and fire codes want people out fast. Building and fire codes require that locked doors still allow free egress in an emergency. In practice, that means:</p>
+      <ul>
+        <li>Electrified locks on egress paths release on fire alarm or loss of power, where the code requires it, and delayed egress hardware is used only where the code allows.</li>
+        <li>Mantraps have a defined emergency egress mode that does not trap anyone.</li>
+        <li>Fire department access is planned, often with a key box at the entrance.</li>
+        <li>Security officers have a role in evacuation, headcounts, and meeting responders.</li>
+        <li>Officers understand clean agent pre-discharge alarms and EPO stations, because they are often first on scene.</li>
+      </ul>
+      <p>Coordinate any change to access control hardware with the fire alarm designer and the authority having jurisdiction. The <a href="data-center-safety.html">Data Center Safety Guide</a> covers suppression systems and EPO in depth.</p>
+
+      <h2 id="courses">Courses that go deeper</h2>
+      <p>These self-paced courses cover physical security, compliance frameworks, and environmental programs, and each awards a certificate of completion.</p>
+      <!-- dct:courses security-compliance-data-centers access-control-physical-security data-center-physical-security-access-control facility-environmental-compliance data-center-fire-suppression-safety -->
+<div class="panel course-panel">
+<div class="course-row"><div class="course-main"><h3><a href="../courses/security-compliance-data-centers.html">Security &amp; Compliance for Data Centers</a></h3><div class="course-meta"><span>Security &amp; Compliance</span><span class="sep">&middot;</span><span>Comprehensive Program</span><span class="sep">&middot;</span><span>SOC 2 / ISO 27001</span></div><p class="course-hook">Build a facility security program that satisfies SOC 2, ISO 27001, and physical audit requirements.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">16 hrs</div><div class="course-price">$291.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=security-compliance-data-centers" aria-label="Enroll in Security &amp; Compliance for Data Centers">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/access-control-physical-security.html">Access Control &amp; Physical Security</a></h3><div class="course-meta"><span>Security &amp; Compliance</span><span class="sep">&middot;</span><span>Modular Specialization</span></div><p class="course-hook">Practical security training for facility staff — access control, surveillance, and incident reporting.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">4 hrs</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=access-control-physical-security" aria-label="Enroll in Access Control &amp; Physical Security">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/data-center-physical-security-access-control.html">Data Center Physical Security and Access Control Training</a></h3><div class="course-meta"><span>Security &amp; Compliance</span><span class="sep">&middot;</span><span>Modular Specialization</span></div><p class="course-hook">Foundational physical security and access control practices for data hall environments.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">1 hr</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=data-center-physical-security-access-control" aria-label="Enroll in Data Center Physical Security and Access Control Training">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/facility-environmental-compliance.html">Facility Environmental Compliance</a></h3><div class="course-meta"><span>Security &amp; Compliance</span><span class="sep">&middot;</span><span>Modular Specialization</span></div><p class="course-hook">Understand the environmental regulations that apply to your facility.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">4 hrs</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=facility-environmental-compliance" aria-label="Enroll in Facility Environmental Compliance">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/data-center-fire-suppression-safety.html">Data Center Fire Suppression System Safety Training (Clean Agent Systems)</a></h3><div class="course-meta"><span>Security &amp; Compliance</span><span class="sep">&middot;</span><span>Modular Specialization</span><span class="sep">&middot;</span><span>NFPA 2001</span></div><p class="course-hook">Clean agent fire suppression safety for occupied data hall environments.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">2 hrs</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=data-center-fire-suppression-safety" aria-label="Enroll in Data Center Fire Suppression System Safety Training (Clean Agent Systems)">Enroll</a></div></div>
+</div>
+<!-- /dct:courses -->
+      <!-- dct:bundle bundle-security-compliance -->
+<div class="bundle-offer"><div class="bundle-offer-copy"><p class="bundle-offer-kicker">Save 42% with the bundle</p><p class="bundle-offer-name">Security &amp; Compliance Bundle</p><p class="bundle-offer-meta">5 courses &middot; 27 hours &middot; <strong>$400.99</strong> per seat, instead of <s>$691.95</s> bought separately</p></div><div class="bundle-offer-actions"><a class="btn btn-primary" href="../checkout.html?item=bundle-security-compliance">Enroll in the Bundle</a><a class="btn btn-secondary" href="../bundles.html">Compare Bundles</a></div></div>
+<!-- /dct:bundle -->
+
+      <h2 id="faq">Frequently asked questions</h2>
+      <div class="guide-faq">
+        <h3>What is a mantrap in a data center?</h3>
+        <p>A mantrap, also called a security vestibule or portal, is a small space between two interlocked doors. The second door will not open until the first has closed, and many mantraps use sensors to confirm only one person is inside. It stops tailgating, where an unauthorized person follows an authorized one through a door.</p>
+        <h3>What is the difference between a SOC 2 Type 1 and Type 2 report?</h3>
+        <p>A Type 1 report describes the controls and whether they were suitably designed at a single point in time. A Type 2 report also tests whether the controls operated effectively over a period, often six to twelve months. Customers of colocation and cloud providers usually ask for the Type 2 report because it shows the controls actually worked.</p>
+        <h3>How long should data center video footage be kept?</h3>
+        <p>It depends on the frameworks and contracts that apply. PCI DSS calls for video or access control data covering sensitive areas to be kept for at least three months unless the law restricts it, and many customer contracts set their own minimums. Set a written retention period that meets the strictest requirement you are under, then confirm the recording system actually keeps that much.</p>
+        <h3>Who needs EPA Section 608 certification at a data center?</h3>
+        <p>Any technician who maintains, services, repairs, or disposes of equipment in a way that could release refrigerant, such as opening a CRAC unit or chiller circuit, needs Section 608 certification from an EPA-approved certifying program. Facility managers do not need it to oversee the work, but they should keep copies of contractor certifications and service records.</p>
+      </div>
+
+      <h2 id="related">Keep learning</h2>
+      <div class="card-grid card-grid-2">
+        <a class="topic-card" href="data-center-standards.html"><span class="topic-card-kicker">Guide</span><h3>Standards &amp; Regulations</h3><p>How TIA-942, NFPA, OSHA, ASHRAE, and ISO fit together.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+        <a class="topic-card" href="data-center-operations.html"><span class="topic-card-kicker">Guide</span><h3>Operations &amp; Maintenance</h3><p>Shifts, procedures, change control, and the records auditors sample.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+        <a class="topic-card" href="../careers/data-center-jobs.html#security-officer"><span class="topic-card-kicker">Careers</span><h3>Data Center Security Officer</h3><p>What the role involves and how to prepare for it.</p><span class="topic-card-cta">See the role &rarr;</span></a>
+        <a class="topic-card" href="../careers/data-center-jobs.html#compliance-specialist"><span class="topic-card-kicker">Careers</span><h3>Compliance Specialist</h3><p>The people who keep audits on track and evidence in order.</p><span class="topic-card-cta">See the role &rarr;</span></a>
+      </div>
+      <p class="guide-updated">This guide is general educational information, not legal, compliance, or engineering advice. Requirements depend on your contracts, the frameworks you are audited against, and the laws and codes in your jurisdiction.</p>
+    </article>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta-block">
+        <h2>Train Your Team on Security &amp; Compliance</h2>
+        <p>Our Security &amp; Compliance courses cover access control, physical security, compliance frameworks, environmental programs, and fire suppression safety.</p>
+        <div class="hero-ctas">
+          <a href="../bundles.html" class="btn glass-chip">See the Security Bundle</a>
+          <a href="../courses.html" class="btn glass-chip">Browse All Courses</a>
+          <a href="tel:18664296742" class="btn glass-chip">Call 1-866-429-6742</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="contact">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="../" class="logo">
+          <img src="../images/favicon.svg" alt="" width="28" height="28">
+          <span>
+            <span class="logo-mark">datacentertraining.us</span>
+            <span class="logo-sub">Data Center Professional Training</span>
+          </span>
+        </a>
+        <p class="footer-legal">Data Center Training is a specialty training division of <a href="https://hazwoper-osha.com/" target="_blank" rel="noopener">HAZWOPER-OSHA Training, LLC</a>, an IACET-accredited provider of professional data center and safety compliance training.</p>
+        <p class="footer-legal" style="margin-top:8px;">HAZWOPER OSHA Training, LLC &middot; 11901 Santa Monica Blvd., Suite #414, Los Angeles, CA 90025</p>
+        <div class="footer-badges">
+          <img src="https://media.hazwoper-osha.com/wp-content/uploads/2023/11/1698821020/IACET-small.webp" alt="IACET Accredited Provider" width="40" height="24" loading="lazy">
+          <img src="https://media.hazwoper-osha.com/wp-content/uploads/2026/07/1784291935/bbb.webp" alt="BBB A+ Rating" width="40" height="24" loading="lazy">
+          <img src="https://media.hazwoper-osha.com/wp-content/uploads/2026/07/1784292027/trust.webp" alt="Google Trust Services" width="141" height="20" loading="lazy" style="height:20px;">
+        </div>
+      </div>
+      <div class="footer-cta">
+        <p class="footer-cta-title">Not sure where to start?</p>
+        <p class="footer-cta-text">Find the data center role that fits you, then get a training plan built around it.</p>
+        <div class="footer-cta-actions">
+          <a href="../quizzes/career-quiz.html" class="btn btn-primary btn-sm">Take the Career Quiz</a>
+          <a href="../tools/training-plan-builder.html" class="btn btn-secondary btn-sm">Build a Training Plan</a>
+        </div>
+        <div class="footer-contact-links">
+          <a href="tel:18664296742">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            1-866-429-6742
+          </a>
+          <a href="mailto:info@hazwoper-osha.com">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            info@hazwoper-osha.com
+          </a>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/HazwoperOsha/" target="_blank" rel="noopener" aria-label="Facebook"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/hazwoper_osha_training/?hl=en" target="_blank" rel="noopener" aria-label="Instagram"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="https://www.youtube.com/@hazwoper-osha" target="_blank" rel="noopener" aria-label="YouTube"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33zM9.75 15.02V8.48l5.75 3.27z"/></svg></a>
+          <a href="https://x.com/HazwoperOsha" target="_blank" rel="noopener" aria-label="X"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.4 8.4L23 22h-6.6l-5.2-6.8L5.1 22H2l7.9-9L1.6 2h6.8l4.7 6.2z"/></svg></a>
+          <a href="https://www.linkedin.com/company/hazwoper-osha" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM8.34 18.34V10.1H5.67v8.24zM7.01 8.97a1.55 1.55 0 1 0 0-3.1 1.55 1.55 0 0 0 0 3.1zM18.34 18.34v-4.6c0-2.46-1.31-3.6-3.06-3.6a2.64 2.64 0 0 0-2.39 1.32V10.1H10.2s.04.86 0 8.24h2.68v-4.6c0-.25.02-.5.09-.68a1.5 1.5 0 0 1 1.37-1c.96 0 1.35.73 1.35 1.8v4.48z"/></svg></a>
+          <a href="https://www.pinterest.com/hazwoperosha/" target="_blank" rel="noopener" aria-label="Pinterest"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.64 7.86 6.36 9.32-.09-.79-.17-2.01.03-2.88.19-.79 1.22-5.03 1.22-5.03s-.31-.63-.31-1.55c0-1.45.84-2.54 1.89-2.54.89 0 1.32.67 1.32 1.47 0 .89-.57 2.23-.86 3.47-.25 1.03.52 1.88 1.53 1.88 1.84 0 3.07-2.36 3.07-5.15 0-2.12-1.43-3.71-4.02-3.71-2.93 0-4.76 2.19-4.76 4.63 0 .84.25 1.44.63 1.9.18.21.2.3.14.54-.05.18-.16.63-.21.81-.07.26-.28.35-.51.26-1.44-.59-2.11-2.16-2.11-3.93 0-2.92 2.46-6.43 7.34-6.43 3.92 0 6.5 2.84 6.5 5.89 0 4.03-2.24 7.04-5.55 7.04-1.11 0-2.16-.6-2.51-1.28 0 0-.6 2.36-.73 2.82-.22.8-.66 1.6-1.06 2.22.95.29 1.95.45 3 .45 5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-grid">
+    <div class="footer-col">
+      <h3>Training</h3>
+      <a href="../courses.html">Course Catalog</a>
+      <a href="../bundles.html">Course Bundles</a>
+      <a href="../who.html">Courses by Role</a>
+      <a href="../tools/training-plan-builder.html">Training Plan Builder</a>
+      <a href="../#teams">Team Training</a>
+      <a href="../certifications.html">Certificates &amp; Accreditation</a>
+      <a href="../faq.html">FAQ</a>
+    </div>
+    <div class="footer-col">
+      <h3>Learn</h3>
+      <a href="../learn/">Knowledge Center</a>
+      <a href="../learn/what-is-a-data-center.html">Data Center 101</a>
+      <a href="../learn/data-center-power.html">Power Systems</a>
+      <a href="../learn/data-center-cooling.html">Cooling Systems</a>
+      <a href="../learn/data-center-tiers.html">Tier Levels</a>
+      <a href="../learn/data-center-safety.html">Safety Guide</a>
+      <a href="../learn/data-center-standards.html">Standards Guide</a>
+      <a href="../learn/glossary.html">Glossary</a>
+      <a href="../blog/">Blog</a>
+    </div>
+    <div class="footer-col">
+      <h3>Careers</h3>
+      <a href="../careers/">Careers Hub</a>
+      <a href="../careers/data-center-jobs.html">Job Roles Explained</a>
+      <a href="../careers/how-to-get-into-data-centers.html">Get Into Data Centers</a>
+      <a href="../careers/career-changers.html">Career Changers</a>
+      <a href="../careers/interview-questions.html">Interview Questions</a>
+      <a href="../quizzes/career-quiz.html">Career Match Quiz</a>
+    </div>
+    <div class="footer-col">
+      <h3>Quizzes &amp; Tools</h3>
+      <a href="../quizzes/">All Quizzes</a>
+      <a href="../quizzes/data-center-basics-quiz.html">Data Center Basics Quiz</a>
+      <a href="../tools/">All Tools</a>
+      <a href="../tools/pue-calculator.html">PUE Calculator</a>
+      <a href="../tools/uptime-calculator.html">Uptime Calculator</a>
+      <a href="../tools/cooling-load-calculator.html">Cooling Load Calculator</a>
+      <a href="../search.html">Search the Site</a>
+    </div>
+    <div class="footer-col">
+      <h3>Company</h3>
+      <a href="https://hazwoper-osha.com/" target="_blank" rel="noopener">HAZWOPER-OSHA Training</a>
+      <a href="https://hazwoper-osha.com/certificate-verification" target="_blank" rel="noopener">Verify Certificate</a>
+      <a href="../privacy.html">Privacy Policy</a>
+      <a href="../terms.html">Terms of Service</a>
+      <a href="../accessibility.html">Accessibility</a>
+      <a href="../privacy.html#choices" data-privacy-choices>Your Privacy Choices</a>
+      <a href="https://hazwoper-osha.com/refund-policy" target="_blank" rel="noopener">Refund Policy</a>
+    </div>
+    </div>
+
+    <p class="footer-agents"><span>For AI agents:</span> <a href="/llms.txt">llms.txt</a> <a href="/llms-full.txt">llms-full.txt</a> <a href="/.well-known/mcp.json">WebMCP Manifest</a> <a href="/api/index.json">JSON Catalog API</a> <a href="/openapi.json">API Docs (OpenAPI)</a> <a href="/sitemap.xml">Sitemap</a></p>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; 2026 HAZWOPER-OSHA Training, LLC. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+<script src="../js/main.js" defer></script>
+
+</body>
+</html>
