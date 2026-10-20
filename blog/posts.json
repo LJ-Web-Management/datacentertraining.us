@@ -358,5 +358,15 @@
     "date": "2026-10-19",
     "dateDisplay": "October 19, 2026",
     "excerpt": "When a data center fire alarm system is tested before handover, is the team proving a complete, documented chain of cause and effect, or only confirming that…"
+  },
+  {
+    "title": "BAS Manual Override Review: What Data Center Operators Should Verify Before Returning a Control Point to Auto",
+    "slug": "bas-manual-override-review-what-data-center-operators-should-verify-before-returning-a-control-point-to-auto",
+    "seoTitle": "BAS Manual Override Review: What Data Center Operators",
+    "description": "When a building automation system (BAS) point has been placed in manual override, how does the data center team know it is safe to return that point…",
+    "image": "assets/img/posts/bas-manual-override-review-what-data-center-operators-should-verify-before-returning-a-control-point-to-auto.jpg",
+    "date": "2026-10-20",
+    "dateDisplay": "October 20, 2026",
+    "excerpt": "When a building automation system (BAS) point has been placed in manual override, how does the data center team know it is safe to return that point…"
   }
 ]
