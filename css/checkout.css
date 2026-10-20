@@ -54,6 +54,7 @@ textarea.form-control { height: auto; min-height: 88px; padding: 10px 14px; line
   background: var(--surface); border-radius: var(--r-panel); box-shadow: var(--sh-panel); padding: clamp(20px, 3vw, 26px); position: sticky; top: 84px;
 }
 .order-summary-card h2 { font-size: 15.5px; font-weight: 650; margin-bottom: 16px; }
+.summary-edit-cart { float: right; font-size: 13px; font-weight: 600; color: var(--accent-link); }
 .summary-line-item { display: flex; justify-content: space-between; gap: 12px; padding-bottom: 14px; }
 .summary-course-info { display: flex; flex-direction: column; gap: 4px; }
 .summary-course-name { font-size: 14.5px; font-weight: 600; letter-spacing: -0.005em; }

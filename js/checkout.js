@@ -26,16 +26,43 @@ document.addEventListener('DOMContentLoaded', function () {
     try { return JSON.stringify(err); } catch (e) { return 'An unexpected error occurred during payment processing.'; }
   };
 
-  // Parse URL search params — ?item=<slug from DC_COURSES in config.js>
+  // Parse URL search params: ?item=<course or bundle slug from config.js>, or
+  // ?items=<slug>,<slug>,... for several courses at their own prices (the
+  // training plan builder links here with the courses in a plan).
   var urlParams = new URLSearchParams(window.location.search);
   var itemSlug = urlParams.get('item') || (typeof DC_COURSES !== 'undefined' && DC_COURSES[0] ? DC_COURSES[0].slug : 'electrical-safety');
+  var cartSlugs = (urlParams.get('items') || '').split(',').filter(function (slug, i, all) {
+    var item = slug && typeof findDcItem === 'function' ? findDcItem(slug) : null;
+    return item && item.type === 'course' && all.indexOf(slug) === i;
+  });
+  if (cartSlugs.length === 1) itemSlug = cartSlugs[0];
   var selected = (typeof findDcItem === 'function') ? findDcItem(itemSlug) : null;
   if (!selected) {
     selected = { type: 'course', name: 'Data Center Design Fundamentals', price: 312.99, courseId: 842 };
   }
+  if (cartSlugs.length > 1) {
+    var cartLines = cartSlugs.map(function (slug) {
+      var c = findDcItem(slug);
+      return { slug: slug, name: c.name, price: c.price, courseId: c.courseId };
+    });
+    itemSlug = cartSlugs.join(',');
+    selected = {
+      type: 'cart',
+      name: cartLines.length + ' courses',
+      price: Math.round(cartLines.reduce(function (sum, l) { return sum + l.price; }, 0) * 100) / 100,
+      courseIds: cartLines.map(function (l) { return l.courseId; }),
+      lines: cartLines
+    };
+  }
+  // Orders placed from the cart page (cart.html) empty the cart once paid.
+  var fromCart = urlParams.get('from') === 'cart' && !!window.DCTCart;
+
+  // Every order is a list of courses at their own per-seat prices: one course,
+  // the courses in a cart, or a bundle (one line at the bundle price).
+  var lines = selected.lines || [{ slug: itemSlug, name: selected.name, price: selected.price }];
 
   var basePrice = selected.price;
-  var selectedCourseIds = selected.type === 'bundle' ? selected.courseIds : [selected.courseId];
+  var selectedCourseIds = selected.type === 'course' ? [selected.courseId] : selected.courseIds;
 
   // While online payment is off, this page sends an enrollment request by
   // email instead of charging a card. Flip CHECKOUT_DISABLED in config.js to
@@ -55,10 +82,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var priceFor = function (seats) {
     var tier = typeof tierForSeats === 'function' ? tierForSeats(seats) : { discount: 0 };
-    var unit = typeof tierPrice === 'function' ? tierPrice(basePrice, tier) : basePrice;
+    var unitOf = function (price) { return typeof tierPrice === 'function' ? tierPrice(price, tier) : price; };
     var subtotal = Math.round(basePrice * seats * 100) / 100;
-    var total = Math.round(unit * seats * 100) / 100;
-    return { tier: tier, unit: unit, subtotal: subtotal, total: total, discount: Math.round((subtotal - total) * 100) / 100 };
+    // The volume discount applies to each course's per-seat price.
+    var total = Math.round(lines.reduce(function (sum, l) { return sum + unitOf(l.price) * seats; }, 0) * 100) / 100;
+    return { tier: tier, subtotal: subtotal, total: total, discount: Math.round((subtotal - total) * 100) / 100 };
   };
 
   var fmt = function (amt) {
@@ -70,8 +98,15 @@ document.addEventListener('DOMContentLoaded', function () {
     var seats = getSeats();
     var p = priceFor(seats);
     var set = function (id, text) { var el = document.getElementById(id); if (el) el.textContent = text; };
-    set('summaryCourseQty', (selected.type === 'bundle' ? 'Bundle · ' : '') + seats + (seats === 1 ? ' seat' : ' seats') + ' × $' + fmt(basePrice));
-    set('summaryCourseAmount', '$' + fmt(p.subtotal));
+    if (selected.type === 'cart') {
+      lines.forEach(function (l, i) {
+        set('summaryCartQty' + i, seats + (seats === 1 ? ' seat' : ' seats') + ' × $' + fmt(l.price));
+        set('summaryCartAmount' + i, '$' + fmt(Math.round(l.price * seats * 100) / 100));
+      });
+    } else {
+      set('summaryCourseQty', (selected.type === 'bundle' ? 'Bundle · ' : '') + seats + (seats === 1 ? ' seat' : ' seats') + ' × $' + fmt(basePrice));
+      set('summaryCourseAmount', '$' + fmt(p.subtotal));
+    }
     set('summarySubtotal', '$' + fmt(p.subtotal));
     set('summaryTotal', '$' + fmt(p.total));
     var discountRow = document.getElementById('summaryDiscountRow');
@@ -127,6 +162,19 @@ document.addEventListener('DOMContentLoaded', function () {
     var summaryIncludesEl = document.getElementById('summaryCourseIncludes');
 
     if (summaryNameEl) summaryNameEl.textContent = selected.name;
+    if (selected.type === 'cart' && summaryNameEl) {
+      // One summary line per course.
+      var firstLine = summaryNameEl.closest('.summary-line-item');
+      lines.forEach(function (l, i) {
+        var row = document.createElement('div');
+        row.className = 'summary-line-item';
+        row.innerHTML = '<div class="summary-course-info"><span class="summary-course-name"></span><span class="summary-qty" id="summaryCartQty' + i + '"></span></div>' +
+          '<span class="summary-amount" id="summaryCartAmount' + i + '"></span>';
+        row.querySelector('.summary-course-name').textContent = l.name;
+        firstLine.parentNode.insertBefore(row, firstLine);
+      });
+      firstLine.parentNode.removeChild(firstLine);
+    }
     if (summaryIncludesEl) {
       if (selected.type === 'bundle' && selected.includedNames) {
         summaryIncludesEl.hidden = false;
@@ -137,8 +185,21 @@ document.addEventListener('DOMContentLoaded', function () {
         summaryIncludesEl.hidden = true;
       }
     }
+    if (fromCart) {
+      var summaryTitle = document.querySelector('.order-summary-card h2');
+      if (summaryTitle) {
+        var editCart = document.createElement('a');
+        editCart.className = 'summary-edit-cart';
+        editCart.href = 'cart.html';
+        editCart.textContent = 'Edit cart';
+        summaryTitle.appendChild(editCart);
+      }
+    }
     updateSummary();
-    if (seatInput) seatInput.addEventListener('input', updateSummary);
+    if (seatInput) seatInput.addEventListener('input', function () {
+      updateSummary();
+      if (fromCart) window.DCTCart.setSeats(getSeats());
+    });
 
     var requestSection = document.getElementById('requestSection');
     var paymentSection = document.getElementById('paymentSection');
@@ -249,10 +310,13 @@ document.addEventListener('DOMContentLoaded', function () {
     var seats = getSeats();
     var p = updateSummary();
     var phone = (iti && typeof iti.getNumber === 'function' && iti.getNumber()) || fieldValue('billingPhone');
-    var lines = [
+    var msg = [
       'Enrollment request from datacentertraining.us',
       '',
-      (selected.type === 'bundle' ? 'Bundle: ' : 'Course: ') + selected.name + ' (' + itemSlug + ')',
+    ].concat(selected.type === 'cart'
+      ? ['Courses:'].concat(lines.map(function (l) { return '- ' + l.name + ' (' + l.slug + '), $' + fmt(l.price) + ' per seat'; }))
+      : [(selected.type === 'bundle' ? 'Bundle: ' : 'Course: ') + selected.name + ' (' + itemSlug + ')']
+    ).concat([
       'Seats: ' + seats,
       'List price: $' + fmt(basePrice) + ' per seat',
       'Estimated total: $' + fmt(p.total) + (p.discount > 0 ? ' after ' + Math.round(p.tier.discount * 100) + '% volume discount' : ''),
@@ -262,10 +326,10 @@ document.addEventListener('DOMContentLoaded', function () {
       'Company: ' + (fieldValue('billingCompany') || '-'),
       'Email: ' + fieldValue('billingEmail'),
       'Phone: ' + phone
-    ];
+    ]);
     var notes = fieldValue('requestNotes');
-    if (notes) lines.push('', 'Notes: ' + notes);
-    var body = lines.join('\n');
+    if (notes) msg.push('', 'Notes: ' + notes);
+    var body = msg.join('\n');
     var subject = 'Enrollment request: ' + selected.name + ' (' + seats + (seats === 1 ? ' seat)' : ' seats)');
     var href = 'mailto:' + ENROLL_EMAIL + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
 
@@ -284,7 +348,7 @@ document.addEventListener('DOMContentLoaded', function () {
       sentView.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
     if (typeof window.gtag === 'function') {
-      window.gtag('event', 'generate_lead', { currency: 'USD', value: p.total, items: [{ item_id: itemSlug, item_name: selected.name, quantity: seats }] });
+      window.gtag('event', 'generate_lead', { currency: 'USD', value: p.total, items: lines.map(function (l) { return { item_id: l.slug, item_name: l.name, price: l.price, quantity: seats }; }) });
     }
     window.location.href = href;
   };
@@ -493,6 +557,8 @@ document.addEventListener('DOMContentLoaded', function () {
       setButtonLoading(false);
       return;
     }
+
+    if (fromCart) window.DCTCart.clear();
 
     // Render Order Confirmation View ONLY after complete success
     stripeCheckoutForm.hidden = true;

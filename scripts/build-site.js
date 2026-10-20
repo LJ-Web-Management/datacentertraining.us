@@ -1329,6 +1329,11 @@ function hoursLabel(h) {
   return h + (h === 1 ? ' hr' : ' hrs');
 }
 
+// Add to Cart works without JavaScript too: the link opens cart.html?add=<slug>.
+function cartButtonHtml(P, slug, title, cls) {
+  return '<a class="' + cls + '" href="' + P + 'cart.html?add=' + slug + '" data-cart-add="' + slug + '" data-cart-name="' + esc(title) + '" rel="nofollow">Add to Cart</a>';
+}
+
 function courseRowsHtml(slugs, d, P, rel) {
   const rows = slugs.map((slug) => {
     const c = d.courses.find((x) => x.id === slug);
@@ -1338,7 +1343,8 @@ function courseRowsHtml(slugs, d, P, rel) {
     return '<div class="course-row"><div class="course-main"><h3><a href="' + P + 'courses/' + c.id + '.html">' + esc(c.title) + '</a></h3>' +
       '<div class="course-meta">' + meta + '</div><p class="course-hook">' + esc(c.summary) + '</p></div>' +
       '<div class="course-side"><div class="course-figures"><div class="course-duration">' + hoursLabel(c.duration_hours) + '</div><div class="course-price">' + usd(c.price_usd) + '</div></div>' +
-      '<a class="btn btn-primary btn-sm" href="' + P + 'checkout.html?item=' + c.id + '" aria-label="Enroll in ' + esc(c.title) + '">Enroll</a></div></div>';
+      '<div class="course-buttons"><a class="btn btn-primary btn-sm" href="' + P + 'checkout.html?item=' + c.id + '" aria-label="Enroll in ' + esc(c.title) + '">Enroll</a>' +
+      cartButtonHtml(P, c.id, c.title, 'btn btn-secondary btn-sm') + '</div></div></div>';
   });
   return '<div class="panel course-panel">\n' + rows.join('\n') + '\n</div>';
 }
@@ -1374,7 +1380,7 @@ function applyChrome(rel, html, d) {
 // and headings, b opening body text, m price/length line.
 // ---------------------------------------------------------------------------
 
-const SEARCH_SKIP = new Set(['index.html', '404.html', 'checkout.html', 'search.html', 'blog/scripts/templates/post-template.html']);
+const SEARCH_SKIP = new Set(['index.html', '404.html', 'checkout.html', 'cart.html', 'search.html', 'blog/scripts/templates/post-template.html']);
 
 // Visible text: inline tags vanish, block tags become word breaks.
 function text(html) {

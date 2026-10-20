@@ -4,7 +4,7 @@
 //
 //   <div data-tool="pue|uptime|cooling|plan"> ... [data-out="key"] outputs ...
 //
-// The plan builder reads DC_COURSES, DC_BUNDLES, and the volume discount
+// The plan builder reads DC_COURSES and the volume discount
 // helpers from js/config.js, so it always quotes current catalog prices.
 (function () {
   'use strict';
@@ -187,37 +187,37 @@
   // ── Training plan builder ─────────────────────────────────────────────
   var ROLES = {
     electrician: {
-      label: 'Electrician or power technician', bundle: 'bundle-power-electrical',
+      label: 'Electrician or power technician',
       newbie: ['data-center-electrical-safety', 'electrical-safety-best-practices', 'power-systems-electrical-fundamentals', 'batteries-dc-circuits', 'ups-systems-fundamentals', 'power-distribution-systems-fundamentals', 'generator-fundamentals', 'data-center-arc-flash-safety', 'data-center-ups-battery-safety', 'data-center-epo-procedures', 'emergency-standby-power-systems-fundamentals', 'ups-operations-load-testing', 'generator-operations-maintenance', 'lithium-ion-thermal-runaway-emergency-response'],
       experienced: ['power-systems-electrical-fundamentals', 'data-center-arc-flash-safety', 'ups-operations-load-testing', 'generator-operations-maintenance', 'emergency-standby-power-systems-fundamentals', 'lithium-ion-thermal-runaway-emergency-response', 'data-center-ups-battery-safety', 'data-center-epo-procedures', 'power-distribution-systems-fundamentals', 'electrical-safety-best-practices', 'data-center-electrical-safety', 'ups-systems-fundamentals', 'generator-fundamentals', 'batteries-dc-circuits']
     },
     hvac: {
-      label: 'HVAC or mechanical technician', bundle: 'bundle-cooling-efficiency',
+      label: 'HVAC or mechanical technician',
       newbie: ['data-center-cooling-refrigerant-safety', 'hvac-troubleshooting-essentials', 'building-envelope-fundamentals', 'mechanical-systems-maintenance', 'cooling-systems-design-optimization', 'energy-efficiency-pue-optimization'],
       experienced: ['cooling-systems-design-optimization', 'hvac-troubleshooting-essentials', 'mechanical-systems-maintenance', 'energy-efficiency-pue-optimization', 'data-center-cooling-refrigerant-safety', 'building-envelope-fundamentals']
     },
     operations: {
-      label: 'Facility or operations manager', bundle: 'bundle-operations-reliability',
+      label: 'Facility or operations manager',
       newbie: ['facility-management-fundamentals', 'data-center-operations-management', 'building-maintenance-fundamentals', 'preventive-maintenance-planning', 'incident-response-troubleshooting', 'data-center-raised-floor-confined-space', 'server-room-ergonomics-manual-handling', 'business-continuity-disaster-recovery-planning', 'disaster-recovery-business-continuity', 'roofing-systems-maintenance-fundamentals'],
       experienced: ['data-center-operations-management', 'disaster-recovery-business-continuity', 'incident-response-troubleshooting', 'preventive-maintenance-planning', 'business-continuity-disaster-recovery-planning', 'facility-management-fundamentals', 'building-maintenance-fundamentals', 'data-center-raised-floor-confined-space', 'server-room-ergonomics-manual-handling', 'roofing-systems-maintenance-fundamentals']
     },
     security: {
-      label: 'Security or compliance', bundle: 'bundle-security-compliance',
+      label: 'Security or compliance',
       newbie: ['data-center-physical-security-access-control', 'access-control-physical-security', 'data-center-fire-suppression-safety', 'security-compliance-data-centers', 'facility-environmental-compliance'],
       experienced: ['security-compliance-data-centers', 'access-control-physical-security', 'facility-environmental-compliance', 'data-center-fire-suppression-safety', 'data-center-physical-security-access-control']
     },
     design: {
-      label: 'Engineer or project lead', bundle: 'bundle-design-planning',
+      label: 'Engineer or project lead',
       newbie: ['data-center-design-fundamentals', 'tier-infrastructure-fundamentals', 'capacity-planning-forecasting', 'infrastructure-commissioning-startup'],
       experienced: ['tier-infrastructure-fundamentals', 'infrastructure-commissioning-startup', 'capacity-planning-forecasting', 'data-center-design-fundamentals']
     },
     it: {
-      label: 'DCIM, monitoring, or network', bundle: 'bundle-monitoring-smart-facility',
+      label: 'DCIM, monitoring, or network',
       newbie: ['dcim-platform-fundamentals', 'fiber-optics-network-cabling', 'building-automation-systems-fundamentals', 'monitoring-automation-bms-systems'],
       experienced: ['monitoring-automation-bms-systems', 'dcim-platform-fundamentals', 'building-automation-systems-fundamentals', 'fiber-optics-network-cabling']
     },
     newcomer: {
-      label: 'New to data centers', bundle: null,
+      label: 'New to data centers',
       newbie: ['data-center-electrical-safety', 'facility-management-fundamentals', 'data-center-physical-security-access-control', 'server-room-ergonomics-manual-handling', 'data-center-raised-floor-confined-space', 'data-center-epo-procedures', 'ups-systems-fundamentals', 'data-center-operations-management'],
       experienced: ['data-center-electrical-safety', 'facility-management-fundamentals', 'data-center-physical-security-access-control', 'server-room-ergonomics-manual-handling', 'data-center-raised-floor-confined-space', 'data-center-epo-procedures', 'ups-systems-fundamentals', 'data-center-operations-management']
     }
@@ -242,7 +242,6 @@
     var form = root.querySelector('form');
     var list = root.querySelector('.plan-list');
     var empty = root.querySelector('.plan-empty');
-    var bundleBox = root.querySelector('.plan-bundle');
     var actions = root.querySelector('.plan-actions');
     var course = function (slug) { return DC_COURSES.find(function (c) { return c.slug === slug; }); };
     var hoursOf = function (c) { return parseFloat(c.duration); };
@@ -292,7 +291,6 @@
       if (!plan.length) {
         list.innerHTML = '';
         empty.hidden = false;
-        bundleBox.hidden = true;
         actions.hidden = true;
         ['hours', 'perSeat', 'total'].forEach(function (k) { set(root, k, '-'); });
         return;
@@ -327,40 +325,16 @@
       set(root, 'totalLabel', s.seats === 1 ? 'Total for 1 seat' : 'Total for ' + s.seats + ' seats' + (tier.discount ? ' (' + Math.round(tier.discount * 100) + '% volume discount)' : ''));
       var slugs = chosen.map(function (c) { return c.slug; });
 
-      // Bundle advice: the cheapest bundle that contains the whole plan, or the role's track bundle.
-      var covering = DC_BUNDLES.filter(function (b) { return slugs.length && slugs.every(function (x) { return b.courses.indexOf(x) !== -1; }); })
-        .sort(function (a, b) { return a.price - b.price; })[0];
+      // Enroll in exactly the courses in the plan, each at its own price.
+      var enroll = actions.querySelector('[data-plan="enroll"]');
+      enroll.href = '../checkout.html?' + (slugs.length === 1 ? 'item=' + slugs[0] : 'items=' + slugs.join(',')) + '&seats=' + s.seats;
+      enroll.textContent = slugs.length === 1 ? 'Enroll in This Course' : 'Enroll in All ' + slugs.length + ' Courses';
+      enroll.hidden = !slugs.length;
+      var addToCart = actions.querySelector('[data-plan="cart"]');
+      addToCart.setAttribute('data-cart-add', slugs.join(','));
+      addToCart.hidden = !slugs.length;
+      if (window.DCTCart) window.DCTCart.refresh();
       var role = ROLES[s.role];
-      var html = '';
-      var bundleSlug = null;
-      if (covering && covering.price < perSeat) {
-        bundleSlug = covering.slug;
-        html = '<strong>Save with a bundle:</strong> the ' + escapeHtml(covering.name) + ' includes every course in your plan' +
-          (covering.courses.length > slugs.length ? ' plus ' + (covering.courses.length - slugs.length) + ' more' : '') +
-          ' for ' + usd(covering.price) + ' per seat, ' + usd(perSeat - covering.price) + ' less than buying these courses separately.';
-      } else if (role.bundle) {
-        var b = DC_BUNDLES.find(function (x) { return x.slug === role.bundle; });
-        var listPrice = bundleListPrice(b);
-        bundleSlug = b.slug;
-        html = '<strong>Going further?</strong> The ' + escapeHtml(b.name) + ' has all ' + b.courses.length + ' courses in your track for ' + usd(b.price) +
-          ' per seat, ' + Math.round((1 - b.price / listPrice) * 100) + '% less than buying them one at a time.';
-      } else {
-        var all = DC_BUNDLES.find(function (x) { return x.slug === 'bundle-complete-catalog'; });
-        bundleSlug = all.slug;
-        html = '<strong>Training a whole team?</strong> The ' + escapeHtml(all.name) + ' covers all ' + all.courses.length + ' courses for ' + usd(all.price) + ' per seat.';
-      }
-      bundleBox.innerHTML = html;
-      bundleBox.hidden = !slugs.length;
-      var bundleBtn = actions.querySelector('[data-plan="bundle"]');
-      bundleBtn.href = '../checkout.html?item=' + bundleSlug + '&seats=' + s.seats;
-      bundleBtn.hidden = !slugs.length;
-      var single = actions.querySelector('[data-plan="single"]');
-      if (single) {
-        // One course left: enroll straight into it rather than a bundle.
-        single.hidden = slugs.length !== 1;
-        if (slugs.length === 1) single.href = '../checkout.html?item=' + slugs[0] + '&seats=' + s.seats;
-        bundleBtn.hidden = bundleBtn.hidden || slugs.length === 1;
-      }
       var lines = ['Training plan request', '', 'Role: ' + role.label, 'Seats: ' + s.seats, ''].concat(chosen.map(function (c) {
         return '- ' + c.name + ' (' + c.duration + ', ' + usd(c.msrp) + ')';
       })).concat(['', 'Total: ' + fmt(hours, hours % 1 ? 1 : 0) + ' hours, ' + usd(perSeat) + ' per seat, ' + usd(total) + ' for ' + s.seats + (s.seats === 1 ? ' seat' : ' seats'), '', 'Built with ' + window.location.href.split('#')[0]]);

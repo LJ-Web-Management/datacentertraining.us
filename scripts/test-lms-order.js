@@ -4,12 +4,14 @@
 //
 //   node scripts/test-lms-order.js --item data-center-epo-procedures --email you+test@example.com
 //   node scripts/test-lms-order.js --item data-center-epo-procedures --email you+test@example.com --send
+//   node scripts/test-lms-order.js --items data-center-epo-procedures,ups-systems-fundamentals --email you+test@example.com
 //
 // Without --send it only prints the requests. With --send it calls the LIVE
 // API: it creates a real user and a real pending order in the LMS. No card is
 // charged unless you pass --payment-method-id with a real Stripe payment method.
 //
-// Options: --item <slug>  --email <address>  --seats <n> (default 1)
+// Options: --item <slug> or --items <slug>,<slug>,... (several courses, as the
+//          training plan builder sends them)  --email <address>  --seats <n> (default 1)
 //          --first <name> --last <name>  --payment-method-id <pm_...>
 //          --api <base url> (default API_BASE_URL in js/config.js)  --send
 
@@ -29,9 +31,19 @@ vm.createContext(ctx);
 const cfgSrc = fs.readFileSync(path.join(__dirname, '..', 'js', 'config.js'), 'utf8').replace(/^const /gm, 'var ');
 vm.runInContext(cfgSrc, ctx);
 
-const item = args.item ? ctx.findDcItem(args.item) : null;
+let item = args.item ? ctx.findDcItem(args.item) : null;
+if (typeof args.items === 'string') {
+  const slugs = args.items.split(',').filter(Boolean);
+  const courses = slugs.map((slug) => ctx.findDcItem(slug));
+  const bad = slugs.filter((slug, i) => !courses[i] || courses[i].type !== 'course');
+  if (bad.length) {
+    console.error('Not a course slug: ' + bad.join(', ') + '. Slugs are in js/config.js.');
+    process.exit(1);
+  }
+  item = { type: 'cart', name: courses.map((c) => c.name).join(' + '), courseIds: courses.map((c) => c.courseId) };
+}
 if (!item || !args.email) {
-  console.error('Usage: node scripts/test-lms-order.js --item <course-or-bundle-slug> --email <address> [--seats n] [--send]');
+  console.error('Usage: node scripts/test-lms-order.js --item <course-or-bundle-slug> | --items <course>,<course> --email <address> [--seats n] [--send]');
   if (args.item && !item) console.error('Unknown item "' + args.item + '". Slugs are in js/config.js.');
   process.exit(1);
 }
@@ -44,7 +56,7 @@ const api = (typeof args.api === 'string' ? args.api : ctx.API_BASE_URL).replace
 const seats = parseInt(args.seats, 10) > 0 ? parseInt(args.seats, 10) : 1;
 const first = args.first || 'DCT';
 const last = args.last || 'API Test';
-const courseIds = item.type === 'bundle' ? item.courseIds : [item.courseId];
+const courseIds = item.type === 'course' ? [item.courseId] : item.courseIds;
 
 const userPayload = {
   first_name: first, last_name: last, email: args.email,

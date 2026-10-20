@@ -1,5 +1,70 @@
 // Header behavior shared by every page: mobile menu toggle, dropdown menus,
-// and the site search launcher (loads /js/search.js the first time it's used).
+// the site search launcher (loads /js/search.js the first time it's used), and
+// the course cart.
+
+// Cart: the course slugs a visitor has added, plus a seat count, saved in this
+// browser's localStorage. Bundles are bought on their own, so only courses go
+// in the cart. Buttons opt in with data-cart-add="slug[,slug...]" and work as
+// plain links to cart.html?add=... when this script isn't running.
+window.DCTCart = (function () {
+  var KEY = 'dctCart';
+  var valid = function (slug) { return /^[a-z0-9-]+$/.test(slug) && slug.indexOf('bundle-') !== 0; };
+  var read = function () {
+    var c = null;
+    try { c = JSON.parse(window.localStorage.getItem(KEY)); } catch (e) { c = null; }
+    var items = c && Array.isArray(c.items) ? c.items.filter(function (x, i, all) { return typeof x === 'string' && valid(x) && all.indexOf(x) === i; }) : [];
+    var seats = c && c.seats > 0 ? Math.min(1000, Math.floor(c.seats)) : 1;
+    return { items: items, seats: seats };
+  };
+  var write = function (cart) {
+    try { window.localStorage.setItem(KEY, JSON.stringify({ items: cart.items, seats: cart.seats })); } catch (e) { /* storage blocked: the cart lasts for this page only */ }
+    refresh();
+    document.dispatchEvent(new CustomEvent('dct:cart'));
+  };
+  var add = function (slugs) {
+    var cart = read();
+    slugs.filter(valid).forEach(function (slug) { if (cart.items.indexOf(slug) === -1) cart.items.push(slug); });
+    write(cart);
+  };
+  var remove = function (slug) {
+    var cart = read();
+    cart.items = cart.items.filter(function (x) { return x !== slug; });
+    write(cart);
+  };
+  var setSeats = function (n) {
+    var cart = read();
+    cart.seats = n > 0 ? Math.min(1000, Math.floor(n)) : 1;
+    write(cart);
+  };
+  var clear = function () { write({ items: [], seats: 1 }); };
+  var slugsOf = function (el) { return (el.getAttribute('data-cart-add') || '').split(',').filter(valid); };
+  // Update the header count and every Add to Cart button to match the cart.
+  var refresh = function () {
+    var items = read().items;
+    Array.prototype.forEach.call(document.querySelectorAll('[data-cart-count]'), function (el) {
+      el.textContent = String(items.length);
+      el.hidden = !items.length;
+    });
+    Array.prototype.forEach.call(document.querySelectorAll('.nav-cart'), function (el) {
+      el.setAttribute('aria-label', items.length ? 'Cart, ' + items.length + (items.length === 1 ? ' course' : ' courses') : 'Cart');
+    });
+    Array.prototype.forEach.call(document.querySelectorAll('[data-cart-add]'), function (el) {
+      if (!el.hasAttribute('data-cart-label')) el.setAttribute('data-cart-label', el.textContent);
+      var slugs = slugsOf(el);
+      var inCart = slugs.length > 0 && slugs.every(function (x) { return items.indexOf(x) !== -1; });
+      el.classList.toggle('in-cart', inCart);
+      el.textContent = inCart ? 'In Cart \u2713' : el.getAttribute('data-cart-label');
+      var name = el.getAttribute('data-cart-name');
+      if (name) el.setAttribute('aria-label', (inCart ? 'In your cart: ' : 'Add to cart: ') + name);
+      if (el.tagName === 'A') {
+        var base = el.getAttribute('href').split('?')[0];
+        el.setAttribute('href', inCart ? base : base + '?add=' + slugs.join(','));
+      }
+    });
+  };
+  return { read: read, add: add, remove: remove, setSeats: setSeats, clear: clear, refresh: refresh, slugsOf: slugsOf };
+})();
+
 document.addEventListener('DOMContentLoaded', function () {
   var navToggle = document.getElementById('navToggle');
   var mainNav = document.getElementById('mainNav');
@@ -93,6 +158,36 @@ document.addEventListener('DOMContentLoaded', function () {
       openSearch();
     }
   });
+  // Cart: Add to Cart buttons add their courses and say so; once a course is
+  // in the cart, the same button links to the cart page.
+  var cart = window.DCTCart;
+  var toast;
+  var showAdded = function (n) {
+    if (!toast) {
+      toast = document.createElement('div');
+      toast.className = 'cart-toast';
+      toast.setAttribute('role', 'status');
+      document.body.appendChild(toast);
+    }
+    var cartLink = document.querySelector('.nav-cart');
+    toast.innerHTML = '<span>' + (n === 1 ? 'Course added to your cart.' : n + ' courses added to your cart.') + '</span><a href="' + (cartLink ? cartLink.getAttribute('href') : '/cart.html') + '">View cart &rarr;</a>';
+    toast.classList.add('show');
+    clearTimeout(toast.timer);
+    toast.timer = setTimeout(function () { toast.classList.remove('show'); }, 4000);
+  };
+  document.addEventListener('click', function (e) {
+    var btn = e.target.closest && e.target.closest('[data-cart-add]');
+    if (!btn || btn.classList.contains('in-cart') || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    var slugs = cart.slugsOf(btn);
+    if (!slugs.length) return;
+    e.preventDefault();
+    var before = cart.read().items.length;
+    cart.add(slugs);
+    showAdded(cart.read().items.length - before || slugs.length);
+  });
+  window.addEventListener('storage', function (e) { if (e.key === 'dctCart') cart.refresh(); });
+  cart.refresh();
+
   // Show the Mac shortcut on Macs.
   if (/Mac|iPhone|iPad/.test(navigator.platform || navigator.userAgent)) {
     document.querySelectorAll('.nav-search-kbd').forEach(function (k) { k.textContent = '⌘K'; });

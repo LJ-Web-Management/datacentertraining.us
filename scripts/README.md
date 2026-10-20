@@ -53,6 +53,15 @@ Calculators and the training plan builder use `js/tools.js`. Site search is
 `js/search.js`, loaded on demand by `js/nav.js` (header button, Ctrl/Cmd+K,
 or `/`) and directly by `search.html`.
 
+The cart is saved in the visitor's browser (`localStorage`, key `dctCart`) by
+`window.DCTCart` in `js/nav.js`, which also keeps the header count current.
+Any link with `data-cart-add="<course-slug>[,<slug>...]"` becomes an Add to
+Cart button (generated course rows get one automatically; without JavaScript
+the link opens `cart.html?add=<slug>`). `cart.html` (`js/cart.js`) sends the
+cart to `checkout.html?items=<slug>,<slug>&seats=<n>&from=cart`, which bills
+each course at its own per-seat price and empties the cart after payment.
+Only courses go in the cart; bundles are bought on their own.
+
 ## Adding a course
 
 1. Add it to `DC_COURSES` (and any bundles) in `js/config.js`.
@@ -93,6 +102,7 @@ LMS course ids (`lmsId` in `js/config.js`):
 ```bash
 node scripts/test-lms-order.js --item data-center-epo-procedures --email you+test@example.com          # print only
 node scripts/test-lms-order.js --item data-center-epo-procedures --email you+test@example.com --send   # live call
+node scripts/test-lms-order.js --items data-center-epo-procedures,ups-systems-fundamentals --email you+test@example.com   # a cart
 ```
 
 `--send` creates a real user and a pending order in the live LMS; no card is
