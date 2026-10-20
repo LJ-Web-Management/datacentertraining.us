@@ -531,11 +531,29 @@
         }
       }
     },
+    "/training/": {
+      "get": {
+        "operationId": "getTrainingHub",
+        "summary": "Training programs hub",
+        "description": "Data center training by topic: technician, NFPA 70E, arc flash, lockout/tagout, safety, UPS and battery, generator, and BMS/DCIM training.",
+        "tags": [
+          "Pages"
+        ],
+        "responses": {
+          "200": {
+            "description": "HTML document",
+            "content": {
+              "text/html": {}
+            }
+          }
+        }
+      }
+    },
     "/careers/": {
       "get": {
         "operationId": "getCareersHub",
         "summary": "Careers hub",
-        "description": "Data center job roles, how to get started, career changers, and interview questions.",
+        "description": "Data center technician, electrician, HVAC, critical facilities, engineer, manager, and security roles; salary data, entry-level jobs, jobs by location, certifications, apprenticeships, resumes, and interview questions.",
         "tags": [
           "Pages"
         ],

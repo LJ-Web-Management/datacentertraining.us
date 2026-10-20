@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- dct:head -->
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; object-src 'none'; base-uri 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#f5f5f7">
+<link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt">
+<link rel="alternate" type="application/json" href="/.well-known/mcp.json" title="WebMCP manifest">
+<link rel="service-desc" type="application/vnd.oai.openapi+json" href="/openapi.json">
+<script>
+/* Analytics, session recording, and chat load for every visitor unless they opt out or send a GPC signal
+   (see /js/consent.js), on the first interaction (scroll, tap, key, mouse move) so they never delay rendering. */
+(function(w,d){
+  w.dataLayer=w.dataLayer||[];w.gtag=function(){w.dataLayer.push(arguments);};
+  w.clarity=w.clarity||function(){(w.clarity.q=w.clarity.q||[]).push(arguments);};
+  w.Tawk_API=w.Tawk_API||{};w.Tawk_API.onLoad=function(){w.Tawk_API.minimize();};
+  var ev=['pointerdown','keydown','touchstart','scroll','mousemove'];
+  function add(src,attrs){var s=d.createElement('script');s.async=true;s.src=src;for(var k in attrs)s.setAttribute(k,attrs[k]);d.head.appendChild(s);}
+  function once(fn){var done=0;return function(now){if(done)return;function go(){if(done)return;done=1;ev.forEach(function(e){w.removeEventListener(e,go,{passive:true});});fn();}
+    if(now)go();else ev.forEach(function(e){w.addEventListener(e,go,{passive:true});});};}
+  w.dctLoad={
+    analytics:once(function(){
+      w.gtag('js',new Date());w.gtag('config','G-Z3T42KYK64');
+      add('https://www.googletagmanager.com/gtag/js?id=G-Z3T42KYK64');
+      add('https://analytics.ahrefs.com/analytics.js',{'data-key':'tVAd7KxwKax+pAfHx46Zgg'});
+      add('https://www.clarity.ms/tag/ylza43nm4m');
+    }),
+    chat:once(function(){
+      w.Tawk_LoadStart=new Date();add('https://embed.tawk.to/6a5a95a2096ab21d402a762c/1jtoth11r',{charset:'UTF-8',crossorigin:'*'});
+    })
+  };
+})(window,document);
+if(navigator.modelContext){var m=document.createElement('script');m.src='/js/webmcp.js';m.defer=true;document.head.appendChild(m);}
+</script>
+<script src="/js/consent.js" defer></script>
+<!-- /dct:head -->
+<title>Data Center Water Usage: How Much, Why &amp; vs. Golf</title>
+<meta name="description" content="Data center water usage explained: how much U.S. data centers use, why, how designs cut it, and how it compares with golf courses, citing LBNL and GCSAA data.">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+<link rel="canonical" href="https://datacentertraining.us/learn/data-center-water-usage.html">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Data Center Water Usage: How Much, Why &amp; vs. Golf">
+<meta property="og:description" content="Data center water usage explained: how much U.S. data centers use, why, how designs cut it, and how it compares with golf courses, citing LBNL and GCSAA data.">
+<meta property="og:url" content="https://datacentertraining.us/learn/data-center-water-usage.html">
+<meta property="og:image" content="https://datacentertraining.us/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Data Center Training">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@HazwoperOsha">
+<meta name="twitter:title" content="Data Center Water Usage: How Much, Why &amp; vs. Golf">
+<meta name="twitter:description" content="Data center water usage explained: how much U.S. data centers use, why, how designs cut it, and how it compares with golf courses, citing LBNL and GCSAA data.">
+<meta name="twitter:image" content="https://datacentertraining.us/images/og-image.jpg">
+
+<link rel="stylesheet" href="../css/site.min.css">
+<script src="../js/nav.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Data Center Water Usage: How Much, Why, and How It Compares to Golf Courses",
+  "description": "Data center water usage explained: how much U.S. data centers use, why, how designs cut it, and how it compares with golf courses, citing LBNL and GCSAA data.",
+  "url": "https://datacentertraining.us/learn/data-center-water-usage.html",
+  "mainEntityOfPage": "https://datacentertraining.us/learn/data-center-water-usage.html",
+  "image": "https://datacentertraining.us/images/og-image.jpg",
+  "datePublished": "2026-10-19",
+  "dateModified": "2026-10-20",
+  "inLanguage": "en-US",
+  "author": {"@type": "Organization", "name": "Data Center Training", "url": "https://datacentertraining.us/"},
+  "publisher": {"@type": "EducationalOrganization", "@id": "https://datacentertraining.us/#organization", "name": "Data Center Training", "url": "https://datacentertraining.us/"},
+  "about": ["Data center water use", "Water usage effectiveness", "Evaporative cooling", "Golf course irrigation"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://datacentertraining.us/"},
+    {"@type": "ListItem", "position": 2, "name": "Knowledge Center", "item": "https://datacentertraining.us/learn/"},
+    {"@type": "ListItem", "position": 3, "name": "Water Usage", "item": "https://datacentertraining.us/learn/data-center-water-usage.html"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Do golf courses use more water than data centers?", "acceptedAnswer": {"@type": "Answer", "text": "On U.S. national totals, yes. Golf facilities applied a projected 1.63 million acre-feet of water in 2024, about 2 trillion liters, according to the GCSAA. Lawrence Berkeley National Laboratory estimates that data centers directly consumed about 66 billion liters in 2023, plus nearly 800 billion liters indirectly through electricity. The figures measure different things, so the comparison says little about local water impact."}},
+    {"@type": "Question", "name": "How much water does a data center use per day?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on size, climate, and cooling design, so no single number is accurate. You can estimate on-site use by multiplying daily IT energy by the site's water usage effectiveness (WUE). For example, a facility with 10 MW of IT load uses 240,000 kWh a day; at the 2023 U.S. average site WUE of about 0.36 liters per kWh, that is roughly 86,000 liters a day. Evaporatively cooled sites can use much more, and air-cooled sites far less."}},
+    {"@type": "Question", "name": "What is the difference between water withdrawal and water consumption?", "acceptedAnswer": {"@type": "Answer", "text": "Withdrawal is all the water taken from a source. Consumption is the part that is not returned to the immediate water cycle, mostly because it evaporates. In a cooling tower, the water that evaporates is consumed, while blowdown is discharged and can be treated and reused downstream."}},
+    {"@type": "Question", "name": "Does liquid cooling use more or less water?", "acceptedAnswer": {"@type": "Answer", "text": "The liquid loop to the chips is closed and does not consume water by itself. Total water use depends on how the facility rejects the heat. Liquid cooling allows warmer water temperatures, which can extend economizer hours and allow dry coolers, but if the heat ends up in evaporative cooling towers, the site still consumes water."}},
+    {"@type": "Question", "name": "Is data center water usage increasing?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Lawrence Berkeley National Laboratory estimates U.S. data center direct water consumption rose from 21.2 billion liters in 2014 to about 66 billion liters in 2023, and projects that hyperscale data centers alone could consume 60 to 124 billion liters in 2028. Indirect water use also grows with electricity demand."}}
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="glass-nav">
+  <div class="container nav-inner">
+    <a href="../" class="logo">
+      <img src="../images/favicon.svg" alt="" width="30" height="30">
+      <span>
+        <span class="logo-mark">datacentertraining.us</span>
+        <span class="logo-sub">Data Center Professional Training</span>
+      </span>
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Main">
+      <div class="nav-item">
+        <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="navMenu-training">Courses<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-4" id="navMenu-training">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Online Training</p>
+            <a href="../courses.html"><span class="nav-link-title">Course Catalog</span><span class="nav-link-desc">All 43 self-paced courses</span></a>
+            <a href="../bundles.html"><span class="nav-link-title">Course Bundles</span><span class="nav-link-desc">Role-based bundles, save up to 52%</span></a>
+            <a href="../who.html"><span class="nav-link-title">Courses by Role</span><span class="nav-link-desc">Find the track for your job</span></a>
+            <a href="../tools/training-plan-builder.html"><span class="nav-link-title">Training Plan Builder</span><span class="nav-link-desc">Build and price a plan in minutes</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Training by Topic</p>
+            <a href="../training/"><span class="nav-link-title">All Training Programs</span></a>
+            <a href="../training/data-center-technician-training.html"><span class="nav-link-title">Data Center Technician Training</span></a>
+            <a href="../training/nfpa-70e-training.html"><span class="nav-link-title">NFPA 70E Training</span></a>
+            <a href="../training/arc-flash-training.html"><span class="nav-link-title">Arc Flash Training</span></a>
+            <a href="../training/lockout-tagout-training.html"><span class="nav-link-title">Lockout/Tagout Training</span></a>
+            <a href="../training/ups-battery-training.html"><span class="nav-link-title">UPS &amp; Battery Training</span></a>
+            <a href="../training/generator-training.html"><span class="nav-link-title">Generator Training</span></a>
+            <a href="../training/bms-dcim-training.html"><span class="nav-link-title">BMS &amp; DCIM Training</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Enrolling</p>
+            <a href="../#teams"><span class="nav-link-title">Team Training</span><span class="nav-link-desc">Seats, progress tracking, PO billing</span></a>
+            <a href="../certifications.html"><span class="nav-link-title">Certificates &amp; Accreditation</span><span class="nav-link-desc">What your certificate means</span></a>
+            <a href="../faq.html"><span class="nav-link-title">FAQ</span><span class="nav-link-desc">Pricing, access, and policies</span></a>
+          </div>
+          <a class="nav-feature" href="../bundles.html"><span class="nav-feature-kicker">Best value</span><span class="nav-feature-title">Complete Data Center Professional Bundle</span><span class="nav-feature-text">43 courses and 192 hours of training in one enrollment. Save 52%.</span><span class="nav-feature-cta">Compare bundles &rarr;</span></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button type="button" class="nav-trigger active" aria-expanded="false" aria-controls="navMenu-learn">Learn<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-3" id="navMenu-learn">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Start Here</p>
+            <a href="../learn/"><span class="nav-link-title">Knowledge Center</span><span class="nav-link-desc">Every guide in one place</span></a>
+            <a href="../learn/what-is-a-data-center.html"><span class="nav-link-title">Data Center 101</span><span class="nav-link-desc">How data centers work</span></a>
+            <a href="../learn/glossary.html"><span class="nav-link-title">Glossary</span><span class="nav-link-desc">Data center terms, A to Z</span></a>
+            <a href="../learn/data-center-standards.html"><span class="nav-link-title">Standards &amp; Regulations</span><span class="nav-link-desc">TIA-942, NFPA, OSHA, ASHRAE, ISO</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Systems</p>
+            <a href="../learn/data-center-power.html"><span class="nav-link-title">Power Systems</span></a>
+            <a href="../learn/data-center-cooling.html"><span class="nav-link-title">Cooling Systems</span></a>
+            <a href="../learn/data-center-tiers.html"><span class="nav-link-title">Tier Levels &amp; Redundancy</span></a>
+            <a href="../learn/energy-efficiency-pue.html"><span class="nav-link-title">Energy Efficiency &amp; PUE</span></a>
+            <a href="../learn/ai-data-centers.html"><span class="nav-link-title">AI &amp; High-Density Facilities</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Operations</p>
+            <a href="../learn/data-center-safety.html"><span class="nav-link-title">Safety Guide</span></a>
+            <a href="../learn/data-center-security-compliance.html"><span class="nav-link-title">Security &amp; Compliance</span></a>
+            <a href="../learn/data-center-operations.html"><span class="nav-link-title">Operations &amp; Maintenance</span></a>
+            <a href="../learn/data-center-commissioning.html"><span class="nav-link-title">Commissioning (Levels 1-5)</span></a>
+            <a href="../blog/"><span class="nav-link-title">Blog: Field Guidance</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="navMenu-careers">Careers<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-4" id="navMenu-careers">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Get Started</p>
+            <a href="../careers/"><span class="nav-link-title">Careers Hub</span><span class="nav-link-desc">Why the industry is hiring</span></a>
+            <a href="../careers/data-center-technician.html"><span class="nav-link-title">Data Center Technician</span><span class="nav-link-desc">The most common way in</span></a>
+            <a href="../careers/entry-level-data-center-jobs.html"><span class="nav-link-title">Entry-Level Jobs</span><span class="nav-link-desc">Roles you can get without experience</span></a>
+            <a href="../careers/how-to-get-into-data-centers.html"><span class="nav-link-title">How to Get Into Data Centers</span><span class="nav-link-desc">A step-by-step starting plan</span></a>
+            <a href="../careers/data-center-technician-salary.html"><span class="nav-link-title">Salary Guide</span><span class="nav-link-desc">What the pay data shows</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Jobs & Roles</p>
+            <a href="../careers/data-center-jobs.html"><span class="nav-link-title">All Job Roles Explained</span></a>
+            <a href="../careers/data-center-electrician.html"><span class="nav-link-title">Data Center Electrician</span></a>
+            <a href="../careers/critical-facilities-technician.html"><span class="nav-link-title">Critical Facilities Technician</span></a>
+            <a href="../careers/data-center-engineer.html"><span class="nav-link-title">Data Center Engineer</span></a>
+            <a href="../careers/data-center-jobs-by-location.html"><span class="nav-link-title">Jobs by Location</span></a>
+            <a href="../careers/hyperscale-data-center-jobs.html"><span class="nav-link-title">Big Tech Data Center Jobs</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Get Hired</p>
+            <a href="../careers/data-center-certifications.html"><span class="nav-link-title">Certifications Guide</span></a>
+            <a href="../careers/data-center-apprenticeships.html"><span class="nav-link-title">Apprenticeships &amp; Programs</span></a>
+            <a href="../careers/data-center-technician-resume.html"><span class="nav-link-title">Resume Guide</span></a>
+            <a href="../careers/interview-questions.html"><span class="nav-link-title">Interview Questions</span></a>
+            <a href="../careers/career-changers.html"><span class="nav-link-title">Career Changers</span></a>
+          </div>
+          <a class="nav-feature" href="../quizzes/career-quiz.html"><span class="nav-feature-kicker">2-minute quiz</span><span class="nav-feature-title">Which Data Center Career Fits You?</span><span class="nav-feature-text">Answer 10 quick questions and get a matching role and training track.</span><span class="nav-feature-cta">Take the career quiz &rarr;</span></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="navMenu-quizzes">Quizzes &amp; Tools<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-2" id="navMenu-quizzes">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Quizzes</p>
+            <a href="../quizzes/"><span class="nav-link-title">All Quizzes</span></a>
+            <a href="../quizzes/career-quiz.html"><span class="nav-link-title">Career Match Quiz</span></a>
+            <a href="../quizzes/data-center-basics-quiz.html"><span class="nav-link-title">Data Center Basics</span></a>
+            <a href="../quizzes/power-electrical-quiz.html"><span class="nav-link-title">Power &amp; Electrical</span></a>
+            <a href="../quizzes/cooling-quiz.html"><span class="nav-link-title">Cooling &amp; HVAC</span></a>
+            <a href="../quizzes/safety-quiz.html"><span class="nav-link-title">Safety</span></a>
+            <a href="../quizzes/security-compliance-quiz.html"><span class="nav-link-title">Security &amp; Compliance</span></a>
+            <a href="../quizzes/tiers-design-quiz.html"><span class="nav-link-title">Tiers &amp; Design</span></a>
+            <a href="../quizzes/operations-quiz.html"><span class="nav-link-title">Operations &amp; Monitoring</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Tools</p>
+            <a href="../tools/"><span class="nav-link-title">All Tools</span></a>
+            <a href="../tools/training-plan-builder.html"><span class="nav-link-title">Training Plan Builder</span></a>
+            <a href="../tools/pue-calculator.html"><span class="nav-link-title">PUE Calculator</span></a>
+            <a href="../tools/uptime-calculator.html"><span class="nav-link-title">Uptime &amp; Downtime Calculator</span></a>
+            <a href="../tools/cooling-load-calculator.html"><span class="nav-link-title">Cooling Load Calculator</span></a>
+          </div>
+        </div>
+      </div>
+      <a href="../blog/" class="nav-link">Blog</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="../search.html" class="nav-search" data-search-open aria-label="Search the site" title="Search (Ctrl+K)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><span class="nav-search-label">Search</span><kbd class="nav-search-kbd">Ctrl K</kbd></a>
+      <a href="../courses.html" class="btn btn-primary btn-sm nav-cta">View Courses</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../">Home</a>
+      <span>&rsaquo;</span>
+      <a href="./">Knowledge Center</a>
+      <span>&rsaquo;</span>
+      <span aria-current="page">Water Usage</span>
+    </nav>
+  </div>
+
+  <section class="course-hero">
+    <div class="container">
+      <div class="course-hero-eyebrow">Knowledge Center &middot; Water</div>
+      <h1>Data Center Water Usage: How Much, Why, and How It Compares to Golf Courses</h1>
+      <p class="course-hero-hook">Data center water use has become a local flashpoint, and the comparison with golf courses shows up in nearly every debate. Here are the best available U.S. figures, with the year and scope of each, why data centers use water at all, how designs reduce it, and what the golf comparison can and cannot tell you.</p>
+      <div class="course-pills">
+        <span class="course-pill">11 min read</span>
+        <span class="course-pill">All levels</span>
+        <span class="course-pill">Updated October 2026</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="container guide-layout">
+    <aside class="guide-toc" aria-label="On this page">
+      <p class="guide-toc-title">On this page</p>
+      <ol>
+        <li><a href="#how-much">How much water data centers use</a></li>
+        <li><a href="#why">Why data centers use water</a></li>
+        <li><a href="#direct-indirect">Direct vs. indirect water</a></li>
+        <li><a href="#wue">What WUE measures</a></li>
+        <li><a href="#reduce">How designs reduce water use</a></li>
+        <li><a href="#golf">Data centers vs. golf courses</a></li>
+        <li><a href="#apples-oranges">Why the comparison is apples to oranges</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#sources">Sources</a></li>
+      </ol>
+      <a class="guide-toc-cta" href="../tools/pue-calculator.html"><strong>Try the calculator</strong>Work out PUE for your facility in seconds.</a>
+    </aside>
+
+    <article class="guide-body prose">
+      <div class="answer-box"><p><strong>Short answer:</strong> U.S. data center water usage was about 66 billion liters (about 17 billion gallons) of direct consumption in 2023, mostly for cooling, according to Lawrence Berkeley National Laboratory. U.S. golf facilities applied a projected 1.63 million acre-feet (about 531 billion gallons) in 2024, according to the GCSAA. Golf's total is larger, but the two figures measure different things.</p></div>
+
+      <div class="key-takeaways">
+        <p class="key-takeaways-title">Key takeaways</p>
+        <ul>
+          <li>Direct (on-site) data center water consumption was about 66 billion liters in 2023, roughly three times the 2014 level, with hyperscale and colocation sites accounting for 84 percent.</li>
+          <li>Water consumed indirectly to generate data centers' electricity was nearly 800 billion liters in 2023, far more than direct use.</li>
+          <li>U.S. golf facilities applied a projected 1.63 million acre-feet of water in 2024, 31 percent less than in 2005.</li>
+          <li>The golf comparison mixes consumption with application, direct with indirect, and national totals with local impact. Treat it as context, not a verdict.</li>
+          <li>Cooling design trades water against energy: waterless systems use more electricity, which carries its own indirect water footprint.</li>
+        </ul>
+      </div>
+
+      <h2 id="how-much">How much water do data centers use?</h2>
+      <p>U.S. data centers directly consumed about 66 billion liters of water in 2023, according to the 2024 United States Data Center Energy Usage Report from Lawrence Berkeley National Laboratory (LBNL), prepared for the U.S. Department of Energy. That is on-site consumption, mostly from cooling. The same report estimates nearly 800 billion liters of indirect consumption at the power plants that generated the facilities' electricity.</p>
+      <div class="stat-grid">
+        <div class="stat-tile"><div class="stat-value">~66 billion L</div><div class="stat-label">Direct U.S. data center water consumption, 2023 (about 17 billion gallons)</div><div class="stat-source">Source: <a href="https://escholarship.org/uc/item/32d6m0d1" rel="noopener">LBNL, 2024</a></div></div>
+        <div class="stat-tile"><div class="stat-value">~800 billion L</div><div class="stat-label">Indirect consumption through electricity generation, 2023 (about 211 billion gallons)</div><div class="stat-source">Source: <a href="https://escholarship.org/uc/item/32d6m0d1" rel="noopener">LBNL, 2024</a></div></div>
+        <div class="stat-tile"><div class="stat-value">1.63 million acre-feet</div><div class="stat-label">Water applied on U.S. golf facilities, 2024 (about 531 billion gallons)</div><div class="stat-source">Source: <a href="https://www.gcsaa.org/who-we-are/media/news-release/2025/12/30/golf-courses-reduce-water-usage-by-31-percent-according-to-national-survey" rel="noopener">GCSAA, 2025</a></div></div>
+      </div>
+      <div class="table-panel">
+        <table class="data-table">
+          <caption>U.S. data center water figures from the LBNL 2024 report</caption>
+          <thead><tr><th>Measure</th><th>Figure</th><th>Year</th><th>Scope</th></tr></thead>
+          <tbody>
+            <tr><td>Direct water consumption</td><td>21.2 billion liters</td><td>2014</td><td>All U.S. data centers, on site; 64% in internal (enterprise) data centers</td></tr>
+            <tr><td>Direct water consumption</td><td>About 66 billion liters</td><td>2023</td><td>All U.S. data centers, on site; 84% hyperscale and colocation, 12% internal</td></tr>
+            <tr><td>Direct water consumption, hyperscale only</td><td>60 to 124 billion liters</td><td>2028 (projection)</td><td>Hyperscale data centers, on site</td></tr>
+            <tr><td>Indirect water consumption</td><td>Nearly 800 billion liters</td><td>2023</td><td>Water consumed generating the electricity U.S. data centers used, based on regional grid mixes</td></tr>
+            <tr><td>Average site WUE</td><td>Just over 0.36 L/kWh</td><td>Through 2023</td><td>Average across all U.S. data centers; projected 0.45 to 0.48 L/kWh after 2023</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>For scale on the energy side, the same LBNL work found that data centers used about 4.4 percent of total U.S. electricity in 2023 (176 TWh), with projections of about 6.7 to 12 percent by 2028. Indirect water use rises with that electricity demand unless the grid mix changes.</p>
+
+      <h2 id="why">Why do data centers use water?</h2>
+      <p>Data centers use water mainly to reject heat. Every watt of IT power becomes heat, and evaporating water is one of the most energy-efficient ways to move that heat outdoors.</p>
+      <ul>
+        <li><strong>Cooling towers.</strong> Water-cooled chillers send heat through a condenser water loop to cooling towers, where a portion of the water evaporates and carries the heat away. LBNL found that facilities with water-cooled chillers and no economizers have the highest water usage effectiveness of the systems it modeled, largely because of cooling tower water use.</li>
+        <li><strong>Evaporative and adiabatic cooling.</strong> Some air handlers and dry coolers spray or wet media to pre-cool air on hot days. Water is used only when that wet mode runs, but on hot sites that can be often.</li>
+        <li><strong>Humidification.</strong> Some sites add moisture to the air at times to stay within humidity limits, which uses a smaller amount of water.</li>
+        <li><strong>Electricity generation.</strong> Thermoelectric power plants need cooling, and hydroelectric reservoirs lose water through surface evaporation. That water is consumed off site, on behalf of every kilowatt-hour the data center buys.</li>
+      </ul>
+      <p>The <a href="data-center-cooling.html">cooling guide</a> explains chillers, towers, and economizers in more detail.</p>
+
+      <h2 id="direct-indirect">Direct vs. indirect water use</h2>
+      <p>Direct (site) water is what the data center itself consumes, mostly in its cooling system. Indirect (source) water is what power plants consume to make the facility's electricity. LBNL reports both, and notes that including both "reflects the true water cost of data centers," although the indirect part is complex to calculate and depends heavily on the electricity source.</p>
+      <p>Two definitions matter here. <strong>Withdrawal</strong> is all the water taken from a river, aquifer, or utility. <strong>Consumption</strong> is the part of withdrawn water that is permanently removed from the immediate water cycle, usually by evaporation. The LBNL data center figures are consumption figures.</p>
+      <p>LBNL's national average for indirect water was 4.52 liters per kWh of data center electricity in 2023, compared with 4.35 L/kWh for U.S. electricity overall, reflecting the grid regions where data centers are located. The report also notes that its method does not account for power purchase agreements or on-site generation, which could change the result for individual facilities.</p>
+
+      <h2 id="wue">What is WUE (water usage effectiveness)?</h2>
+      <p>Water usage effectiveness (WUE) is a facility's annual water consumption in liters divided by its IT equipment energy in kWh. It is the water counterpart of PUE, and like PUE it should be reported with its scope: site WUE counts only on-site water, while source WUE adds the water used to generate the electricity.</p>
+      <p>A low site WUE is not automatically better. LBNL points out that water-cooled and evaporative systems are generally more energy efficient than air-cooled chillers and other waterless systems, which use no water on site but more electricity. A site that cuts water by switching to air-cooled equipment can raise its PUE and its indirect water and carbon footprint. The <a href="energy-efficiency-pue.html">energy efficiency and PUE guide</a> covers PUE, WUE, and CUE together.</p>
+      <div class="inline-cta">
+        <p><strong>Tracking efficiency at your site?</strong> Calculate PUE from your facility and IT energy readings.</p>
+        <a class="btn btn-primary btn-sm" href="../tools/pue-calculator.html">Open the PUE Calculator</a>
+      </div>
+
+      <h2 id="reduce">How data center designs reduce water use</h2>
+      <p>Designs reduce water use by rejecting heat without evaporation for more hours of the year, or by using water that does not compete with drinking supplies. Each choice has an energy cost or a climate limit.</p>
+      <div class="table-panel">
+        <table class="data-table">
+          <caption>Water-saving cooling approaches and their trade-offs</caption>
+          <thead><tr><th>Approach</th><th>How it saves water</th><th>Trade-off</th></tr></thead>
+          <tbody>
+            <tr><td>Air-cooled chillers</td><td>Reject heat to outdoor air with fans; no cooling tower water.</td><td>More electricity, especially in hot weather, which raises indirect water use.</td></tr>
+            <tr><td>Dry coolers (with or without adiabatic assist)</td><td>Closed coils cooled by air; water is sprayed only on the hottest days if adiabatic assist is fitted.</td><td>Larger equipment; in hot climates the wet mode can run often.</td></tr>
+            <tr><td>Airside economizers</td><td>Use outdoor air for cooling so chilled water systems can shut down in favorable weather. LBNL notes this is common at hyperscale sites, with only sporadic adiabatic cooling.</td><td>Depends on climate and air quality; needs careful humidity and filtration control.</td></tr>
+            <tr><td>Closed-loop liquid cooling</td><td>Coolant runs in a closed loop to the chips, and warmer water temperatures allow more economizer hours or dry coolers.</td><td>Saves water only if the facility's heat rejection is waterless or mostly so; heat sent to cooling towers is still evaporated.</td></tr>
+            <tr><td>Reclaimed or non-potable water</td><td>Supplies cooling towers with treated wastewater or other non-drinking water.</td><td>Does not reduce consumption; needs suitable supply, treatment, and permits.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Operations matter too. Good cooling tower water treatment lets towers run more cycles before blowdown, leak detection catches losses early, and raising supply temperatures within the ASHRAE recommended range (18-27 &deg;C, or 64.4-80.6 &deg;F, for most equipment) increases economizer hours. <a href="../courses/mechanical-systems-maintenance.html">Mechanical Systems &amp; Equipment Maintenance</a> covers water treatment and chiller operation, and <a href="../courses/cooling-systems-design-optimization.html">Cooling Systems Design &amp; Optimization</a> covers economizers, containment, and liquid cooling.</p>
+
+      <h2 id="golf">Do golf courses use more water than data centers?</h2>
+      <p>On U.S. national totals, golf's figure is larger. U.S. golf facilities applied a projected 1.63 million acre-feet of water in 2024, about 2 trillion liters, according to the Golf Course Superintendents Association of America (GCSAA). U.S. data centers directly consumed about 66 billion liters in 2023 and indirectly consumed nearly 800 billion liters through electricity, according to LBNL.</p>
+      <div class="table-panel">
+        <table class="data-table">
+          <caption>Data center vs. golf course water figures, side by side</caption>
+          <thead><tr><th></th><th>U.S. data centers</th><th>U.S. golf facilities</th></tr></thead>
+          <tbody>
+            <tr><td>Headline figure</td><td>About 66 billion liters direct (about 17 billion gallons); nearly 800 billion liters indirect (about 211 billion gallons)</td><td>Projected 1.63 million acre-feet (about 531 billion gallons, or about 2 trillion liters)</td></tr>
+            <tr><td>Year</td><td>2023</td><td>2024</td></tr>
+            <tr><td>What is counted</td><td>Water consumed: on site (direct) and at power plants (indirect)</td><td>Water applied to the facility, mostly irrigation</td></tr>
+            <tr><td>How it was estimated</td><td>Model of the U.S. data center stock, cooling systems, and grid water intensity</td><td>Survey of nearly 1,700 golf facilities, projected to all U.S. facilities</td></tr>
+            <tr><td>Water sources</td><td>Varies by site; not broken out nationally</td><td>Wells 32%, lakes and ponds 27%, recycled water 19%</td></tr>
+            <tr><td>Trend</td><td>Direct use about three times the 2014 level; projected to keep rising</td><td>31% less than in 2005</td></tr>
+            <tr><td>Publisher</td><td>Lawrence Berkeley National Laboratory for the U.S. DOE, December 2024</td><td>GCSAA, survey funded in part by the USGA, released December 2025</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Taken at face value, golf's applied water is roughly 30 times data centers' direct consumption and a little over twice direct and indirect combined. Gallon and liter conversions are ours, using 325,851 gallons per acre-foot (the GCSAA's figure) and 3.785 liters per gallon.</p>
+
+      <h2 id="apples-oranges">Why the golf course comparison is apples to oranges</h2>
+      <p>The golf course vs. data center comparison is popular because both are visible, local land uses that draw water. But the two national figures differ in what they count, so neither side of the debate should lean on them too hard.</p>
+      <ol>
+        <li><strong>Consumption vs. application.</strong> LBNL counts water consumed, meaning removed from the immediate water cycle. The GCSAA counts water applied to turf and grounds. Its survey does not report how much of that water evaporates or is taken up by plants versus how much returns to the ground.</li>
+        <li><strong>Direct vs. indirect.</strong> The data center figure can include power plant water; the golf figure includes none of the indirect water behind irrigation pumps or course maintenance. Comparing data centers' direct plus indirect water with golf's direct water alone is not like for like either.</li>
+        <li><strong>National vs. local.</strong> Water stress is local. One large campus drawing on a stressed municipal system can matter more to a town than any national total, and the same is true of a course in a dry basin. In the GCSAA's 2020 survey, the Southeast and Southwest regions accounted for 58 percent of golf's applied water.</li>
+        <li><strong>Different sources and quality.</strong> The GCSAA lists recycled water as 19 percent of golf's irrigation water sources in 2024. Data centers draw on municipal, reclaimed, and groundwater supplies depending on the site. A liter of treated drinking water and a liter of reclaimed wastewater are not equal in value to a community.</li>
+        <li><strong>Different years, methods, and directions.</strong> The figures are a year apart, one is a model and the other a survey, and they are moving in opposite directions: golf's applied water fell 31 percent from 2005 to 2024, while data center direct consumption roughly tripled from 2014 to 2023.</li>
+      </ol>
+      <p>What the evidence supports: nationally, golf irrigation is the larger water user by these published measures, and data center water use is smaller but growing quickly and concentrated in specific places. Whether any given project is a good use of local water is a local question that needs local data: the site's cooling design, its WUE, its water source, and the condition of the watershed.</p>
+
+      <h2 id="courses">Courses on cooling, efficiency, and environmental compliance</h2>
+      <p>These self-paced courses cover the cooling, efficiency, maintenance, and permitting decisions that drive a facility's water use. Each awards a certificate of completion.</p>
+      <!-- dct:courses cooling-systems-design-optimization energy-efficiency-pue-optimization mechanical-systems-maintenance facility-environmental-compliance -->
+<div class="panel course-panel">
+<div class="course-row"><div class="course-main"><h3><a href="../courses/cooling-systems-design-optimization.html">Cooling Systems Design &amp; Optimization</a></h3><div class="course-meta"><span>Cooling &amp; Efficiency</span><span class="sep">&middot;</span><span>Comprehensive Program</span><span class="sep">&middot;</span><span>PUE / ASHRAE Thermal Guidelines</span></div><p class="course-hook">Cut cooling costs and improve reliability with modern thermal management strategy.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">8 hrs</div><div class="course-price">$298.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=cooling-systems-design-optimization" aria-label="Enroll in Cooling Systems Design &amp; Optimization">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/energy-efficiency-pue-optimization.html">Energy Efficiency &amp; PUE Optimization</a></h3><div class="course-meta"><span>Cooling &amp; Efficiency</span><span class="sep">&middot;</span><span>Modular Specialization</span><span class="sep">&middot;</span><span>PUE</span></div><p class="course-hook">Cut operating costs with a measurable PUE optimization roadmap.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">4 hrs</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=energy-efficiency-pue-optimization" aria-label="Enroll in Energy Efficiency &amp; PUE Optimization">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/mechanical-systems-maintenance.html">Mechanical Systems &amp; Equipment Maintenance</a></h3><div class="course-meta"><span>Cooling &amp; Efficiency</span><span class="sep">&middot;</span><span>Modular Specialization</span></div><p class="course-hook">Hands-on mechanical maintenance — piping, chillers, and vibration diagnostics.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">4 hrs</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=mechanical-systems-maintenance" aria-label="Enroll in Mechanical Systems &amp; Equipment Maintenance">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/facility-environmental-compliance.html">Facility Environmental Compliance</a></h3><div class="course-meta"><span>Security &amp; Compliance</span><span class="sep">&middot;</span><span>Modular Specialization</span></div><p class="course-hook">Understand the environmental regulations that apply to your facility.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">4 hrs</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=facility-environmental-compliance" aria-label="Enroll in Facility Environmental Compliance">Enroll</a></div></div>
+</div>
+<!-- /dct:courses -->
+      <!-- dct:bundle bundle-cooling-efficiency -->
+<div class="bundle-offer"><div class="bundle-offer-copy"><p class="bundle-offer-kicker">Save 42% with the bundle</p><p class="bundle-offer-name">Cooling &amp; Facilities Efficiency Bundle</p><p class="bundle-offer-meta">6 courses &middot; 24 hours &middot; <strong>$462.99</strong> per seat, instead of <s>$798.94</s> bought separately</p></div><div class="bundle-offer-actions"><a class="btn btn-primary" href="../checkout.html?item=bundle-cooling-efficiency">Enroll in the Bundle</a><a class="btn btn-secondary" href="../bundles.html">Compare Bundles</a></div></div>
+<!-- /dct:bundle -->
+      <p>Facility managers responsible for permits and reporting should also see <a href="../courses/facility-environmental-compliance.html">Facility Environmental Compliance</a>, and teams tracking efficiency targets should see <a href="../courses/energy-efficiency-pue-optimization.html">Energy Efficiency &amp; PUE Optimization</a>.</p>
+
+      <h2 id="faq">Frequently asked questions</h2>
+      <div class="guide-faq">
+        <h3>Do golf courses use more water than data centers?</h3>
+        <p>On U.S. national totals, yes. Golf facilities applied a projected 1.63 million acre-feet of water in 2024, about 2 trillion liters, according to the GCSAA. Lawrence Berkeley National Laboratory estimates that data centers directly consumed about 66 billion liters in 2023, plus nearly 800 billion liters indirectly through electricity. The figures measure different things, so the comparison says little about local water impact.</p>
+        <h3>How much water does a data center use per day?</h3>
+        <p>It depends on size, climate, and cooling design, so no single number is accurate. You can estimate on-site use by multiplying daily IT energy by the site's water usage effectiveness (WUE). For example, a facility with 10 MW of IT load uses 240,000 kWh a day; at the 2023 U.S. average site WUE of about 0.36 liters per kWh, that is roughly 86,000 liters a day. Evaporatively cooled sites can use much more, and air-cooled sites far less.</p>
+        <h3>What is the difference between water withdrawal and water consumption?</h3>
+        <p>Withdrawal is all the water taken from a source. Consumption is the part that is not returned to the immediate water cycle, mostly because it evaporates. In a cooling tower, the water that evaporates is consumed, while blowdown is discharged and can be treated and reused downstream.</p>
+        <h3>Does liquid cooling use more or less water?</h3>
+        <p>The liquid loop to the chips is closed and does not consume water by itself. Total water use depends on how the facility rejects the heat. Liquid cooling allows warmer water temperatures, which can extend economizer hours and allow dry coolers, but if the heat ends up in evaporative cooling towers, the site still consumes water.</p>
+        <h3>Is data center water usage increasing?</h3>
+        <p>Yes. Lawrence Berkeley National Laboratory estimates U.S. data center direct water consumption rose from 21.2 billion liters in 2014 to about 66 billion liters in 2023, and projects that hyperscale data centers alone could consume 60 to 124 billion liters in 2028. Indirect water use also grows with electricity demand.</p>
+      </div>
+
+      <h2 id="sources">Sources</h2>
+      <ul class="guide-sources">
+        <li>Shehabi, A., et al., Lawrence Berkeley National Laboratory, <a href="https://escholarship.org/uc/item/32d6m0d1" rel="noopener">2024 United States Data Center Energy Usage Report</a>, LBNL-2001637, December 2024 (direct and indirect water consumption, WUE, cooling system trade-offs).</li>
+        <li>U.S. Department of Energy, <a href="https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers" rel="noopener">DOE releases new report evaluating increase in electricity demand from data centers</a> (electricity share in 2023 and 2028 projections).</li>
+        <li>Golf Course Superintendents Association of America, <a href="https://www.gcsaa.org/who-we-are/media/news-release/2025/12/30/golf-courses-reduce-water-usage-by-31-percent-according-to-national-survey" rel="noopener">Golf courses reduce water usage by 31 percent according to national survey</a>, December 30, 2025 (2024 applied water and water sources).</li>
+        <li>Golf Course Superintendents Association of America, <a href="https://www.gcsaa.org/docs/default-source/environment/phase-3-water-survey-full-report.pdf" rel="noopener">Golf Course Environmental Profile, Phase III, Volume I: Water Use and Management Practices on U.S. Golf Courses</a>, 2022 (acre-foot definition, survey method, 2020 regional shares).</li>
+      </ul>
+
+      <h2 id="related">Keep learning</h2>
+      <div class="card-grid">
+        <a class="topic-card" href="energy-efficiency-pue.html"><span class="topic-card-kicker">Guide</span><h3>Energy Efficiency &amp; PUE</h3><p>PUE, WUE, and CUE, and how to cut facility overhead.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+        <a class="topic-card" href="data-center-cooling.html"><span class="topic-card-kicker">Guide</span><h3>How Data Center Cooling Works</h3><p>Chillers, towers, economizers, and liquid cooling explained.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+        <a class="topic-card" href="ai-data-centers.html"><span class="topic-card-kicker">Guide</span><h3>AI &amp; High-Density Data Centers</h3><p>Why AI racks push cooling, power, and water decisions.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+        <a class="topic-card" href="../careers/data-center-hvac-technician.html"><span class="topic-card-kicker">Careers</span><h3>Data Center HVAC Technician</h3><p>The people who run chillers, towers, and water treatment.</p><span class="topic-card-cta">See the role &rarr;</span></a>
+        <a class="topic-card" href="../careers/how-many-jobs-does-a-data-center-create.html"><span class="topic-card-kicker">Research</span><h3>How Many Jobs Does a Data Center Create?</h3><p>Construction and permanent jobs, with sources.</p><span class="topic-card-cta">Read the research &rarr;</span></a>
+        <a class="topic-card" href="../careers/ai-data-center-jobs.html"><span class="topic-card-kicker">Careers</span><h3>AI Data Center Jobs</h3><p>Roles opening up as AI campuses are built and operated.</p><span class="topic-card-cta">Explore jobs &rarr;</span></a>
+      </div>
+      <p class="guide-updated">This guide is general educational information, not engineering, environmental, or legal advice. Figures are national estimates with the years and scopes stated; check local utility, permit, and watershed data for any specific site.</p>
+    </article>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta-block">
+        <h2>Train Your Team on Efficient Cooling</h2>
+        <p>Our Cooling &amp; Facilities Efficiency courses cover cooling design, PUE optimization, chillers, water treatment, and the maintenance that keeps them efficient.</p>
+        <div class="hero-ctas">
+          <a href="../bundles.html" class="btn glass-chip">See the Cooling Bundle</a>
+          <a href="../courses.html" class="btn glass-chip">Browse All Courses</a>
+          <a href="tel:18664296742" class="btn glass-chip">Call 1-866-429-6742</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="contact">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="../" class="logo">
+          <img src="../images/favicon.svg" alt="" width="28" height="28">
+          <span>
+            <span class="logo-mark">datacentertraining.us</span>
+            <span class="logo-sub">Data Center Professional Training</span>
+          </span>
+        </a>
+        <p class="footer-legal">Data Center Training is a specialty training division of <a href="https://hazwoper-osha.com/" target="_blank" rel="noopener">HAZWOPER-OSHA Training, LLC</a>, an IACET-accredited provider of professional data center and safety compliance training.</p>
+        <p class="footer-legal" style="margin-top:8px;">HAZWOPER OSHA Training, LLC &middot; 11901 Santa Monica Blvd., Suite #414, Los Angeles, CA 90025</p>
+        <div class="footer-badges">
+          <img src="https://media.hazwoper-osha.com/wp-content/uploads/2023/11/1698821020/IACET-small.webp" alt="IACET Accredited Provider" width="40" height="24" loading="lazy">
+          <img src="https://media.hazwoper-osha.com/wp-content/uploads/2026/07/1784291935/bbb.webp" alt="BBB A+ Rating" width="40" height="24" loading="lazy">
+          <img src="https://media.hazwoper-osha.com/wp-content/uploads/2026/07/1784292027/trust.webp" alt="Google Trust Services" width="141" height="20" loading="lazy" style="height:20px;">
+        </div>
+      </div>
+      <div class="footer-cta">
+        <p class="footer-cta-title">Not sure where to start?</p>
+        <p class="footer-cta-text">Find the data center role that fits you, then get a training plan built around it.</p>
+        <div class="footer-cta-actions">
+          <a href="../quizzes/career-quiz.html" class="btn btn-primary btn-sm">Take the Career Quiz</a>
+          <a href="../tools/training-plan-builder.html" class="btn btn-secondary btn-sm">Build a Training Plan</a>
+        </div>
+        <div class="footer-contact-links">
+          <a href="tel:18664296742">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            1-866-429-6742
+          </a>
+          <a href="mailto:info@hazwoper-osha.com">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            info@hazwoper-osha.com
+          </a>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/HazwoperOsha/" target="_blank" rel="noopener" aria-label="Facebook"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/hazwoper_osha_training/?hl=en" target="_blank" rel="noopener" aria-label="Instagram"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="https://www.youtube.com/@hazwoper-osha" target="_blank" rel="noopener" aria-label="YouTube"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33zM9.75 15.02V8.48l5.75 3.27z"/></svg></a>
+          <a href="https://x.com/HazwoperOsha" target="_blank" rel="noopener" aria-label="X"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.4 8.4L23 22h-6.6l-5.2-6.8L5.1 22H2l7.9-9L1.6 2h6.8l4.7 6.2z"/></svg></a>
+          <a href="https://www.linkedin.com/company/hazwoper-osha" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM8.34 18.34V10.1H5.67v8.24zM7.01 8.97a1.55 1.55 0 1 0 0-3.1 1.55 1.55 0 0 0 0 3.1zM18.34 18.34v-4.6c0-2.46-1.31-3.6-3.06-3.6a2.64 2.64 0 0 0-2.39 1.32V10.1H10.2s.04.86 0 8.24h2.68v-4.6c0-.25.02-.5.09-.68a1.5 1.5 0 0 1 1.37-1c.96 0 1.35.73 1.35 1.8v4.48z"/></svg></a>
+          <a href="https://www.pinterest.com/hazwoperosha/" target="_blank" rel="noopener" aria-label="Pinterest"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.64 7.86 6.36 9.32-.09-.79-.17-2.01.03-2.88.19-.79 1.22-5.03 1.22-5.03s-.31-.63-.31-1.55c0-1.45.84-2.54 1.89-2.54.89 0 1.32.67 1.32 1.47 0 .89-.57 2.23-.86 3.47-.25 1.03.52 1.88 1.53 1.88 1.84 0 3.07-2.36 3.07-5.15 0-2.12-1.43-3.71-4.02-3.71-2.93 0-4.76 2.19-4.76 4.63 0 .84.25 1.44.63 1.9.18.21.2.3.14.54-.05.18-.16.63-.21.81-.07.26-.28.35-.51.26-1.44-.59-2.11-2.16-2.11-3.93 0-2.92 2.46-6.43 7.34-6.43 3.92 0 6.5 2.84 6.5 5.89 0 4.03-2.24 7.04-5.55 7.04-1.11 0-2.16-.6-2.51-1.28 0 0-.6 2.36-.73 2.82-.22.8-.66 1.6-1.06 2.22.95.29 1.95.45 3 .45 5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-grid">
+    <div class="footer-col">
+      <h3>Training</h3>
+      <a href="../courses.html">Course Catalog</a>
+      <a href="../bundles.html">Course Bundles</a>
+      <a href="../training/">Training by Topic</a>
+      <a href="../training/nfpa-70e-training.html">NFPA 70E Training</a>
+      <a href="../training/arc-flash-training.html">Arc Flash Training</a>
+      <a href="../who.html">Courses by Role</a>
+      <a href="../tools/training-plan-builder.html">Training Plan Builder</a>
+      <a href="../#teams">Team Training</a>
+      <a href="../certifications.html">Certificates &amp; Accreditation</a>
+      <a href="../faq.html">FAQ</a>
+    </div>
+    <div class="footer-col">
+      <h3>Learn</h3>
+      <a href="../learn/">Knowledge Center</a>
+      <a href="../learn/what-is-a-data-center.html">Data Center 101</a>
+      <a href="../learn/data-center-power.html">Power Systems</a>
+      <a href="../learn/data-center-cooling.html">Cooling Systems</a>
+      <a href="../learn/data-center-tiers.html">Tier Levels</a>
+      <a href="../learn/data-center-safety.html">Safety Guide</a>
+      <a href="../learn/data-center-standards.html">Standards Guide</a>
+      <a href="../learn/glossary.html">Glossary</a>
+      <a href="../blog/">Blog</a>
+    </div>
+    <div class="footer-col">
+      <h3>Careers</h3>
+      <a href="../careers/">Careers Hub</a>
+      <a href="../careers/data-center-technician.html">Data Center Technician</a>
+      <a href="../careers/data-center-jobs.html">Job Roles Explained</a>
+      <a href="../careers/entry-level-data-center-jobs.html">Entry-Level Jobs</a>
+      <a href="../careers/data-center-technician-salary.html">Salary Guide</a>
+      <a href="../careers/data-center-jobs-by-location.html">Jobs by Location</a>
+      <a href="../careers/data-center-certifications.html">Certifications Guide</a>
+      <a href="../careers/interview-questions.html">Interview Questions</a>
+      <a href="../quizzes/career-quiz.html">Career Match Quiz</a>
+    </div>
+    <div class="footer-col">
+      <h3>Quizzes &amp; Tools</h3>
+      <a href="../quizzes/">All Quizzes</a>
+      <a href="../quizzes/data-center-basics-quiz.html">Data Center Basics Quiz</a>
+      <a href="../tools/">All Tools</a>
+      <a href="../tools/pue-calculator.html">PUE Calculator</a>
+      <a href="../tools/uptime-calculator.html">Uptime Calculator</a>
+      <a href="../tools/cooling-load-calculator.html">Cooling Load Calculator</a>
+      <a href="../search.html">Search the Site</a>
+    </div>
+    <div class="footer-col">
+      <h3>Company</h3>
+      <a href="../about.html">About Us</a>
+      <a href="https://hazwoper-osha.com/" target="_blank" rel="noopener">HAZWOPER-OSHA Training</a>
+      <a href="https://hazwoper-osha.com/certificate-verification" target="_blank" rel="noopener">Verify Certificate</a>
+      <a href="../privacy.html">Privacy Policy</a>
+      <a href="../terms.html">Terms of Service</a>
+      <a href="../accessibility.html">Accessibility</a>
+      <a href="../privacy.html#choices" data-privacy-choices>Your Privacy Choices</a>
+      <a href="https://hazwoper-osha.com/refund-policy" target="_blank" rel="noopener">Refund Policy</a>
+    </div>
+    </div>
+
+    <p class="footer-agents"><span>For AI agents:</span> <a href="/llms.txt">llms.txt</a> <a href="/llms-full.txt">llms-full.txt</a> <a href="/.well-known/mcp.json">WebMCP Manifest</a> <a href="/api/index.json">JSON Catalog API</a> <a href="/openapi.json">API Docs (OpenAPI)</a> <a href="/sitemap.xml">Sitemap</a></p>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; 2026 HAZWOPER-OSHA Training, LLC. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+<script src="../js/main.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- dct:head -->
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; object-src 'none'; base-uri 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#f5f5f7">
+<link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt">
+<link rel="alternate" type="application/json" href="/.well-known/mcp.json" title="WebMCP manifest">
+<link rel="service-desc" type="application/vnd.oai.openapi+json" href="/openapi.json">
+<script>
+/* Analytics, session recording, and chat load for every visitor unless they opt out or send a GPC signal
+   (see /js/consent.js), on the first interaction (scroll, tap, key, mouse move) so they never delay rendering. */
+(function(w,d){
+  w.dataLayer=w.dataLayer||[];w.gtag=function(){w.dataLayer.push(arguments);};
+  w.clarity=w.clarity||function(){(w.clarity.q=w.clarity.q||[]).push(arguments);};
+  w.Tawk_API=w.Tawk_API||{};w.Tawk_API.onLoad=function(){w.Tawk_API.minimize();};
+  var ev=['pointerdown','keydown','touchstart','scroll','mousemove'];
+  function add(src,attrs){var s=d.createElement('script');s.async=true;s.src=src;for(var k in attrs)s.setAttribute(k,attrs[k]);d.head.appendChild(s);}
+  function once(fn){var done=0;return function(now){if(done)return;function go(){if(done)return;done=1;ev.forEach(function(e){w.removeEventListener(e,go,{passive:true});});fn();}
+    if(now)go();else ev.forEach(function(e){w.addEventListener(e,go,{passive:true});});};}
+  w.dctLoad={
+    analytics:once(function(){
+      w.gtag('js',new Date());w.gtag('config','G-Z3T42KYK64');
+      add('https://www.googletagmanager.com/gtag/js?id=G-Z3T42KYK64');
+      add('https://analytics.ahrefs.com/analytics.js',{'data-key':'tVAd7KxwKax+pAfHx46Zgg'});
+      add('https://www.clarity.ms/tag/ylza43nm4m');
+    }),
+    chat:once(function(){
+      w.Tawk_LoadStart=new Date();add('https://embed.tawk.to/6a5a95a2096ab21d402a762c/1jtoth11r',{charset:'UTF-8',crossorigin:'*'});
+    })
+  };
+})(window,document);
+if(navigator.modelContext){var m=document.createElement('script');m.src='/js/webmcp.js';m.defer=true;document.head.appendChild(m);}
+</script>
+<script src="/js/consent.js" defer></script>
+<!-- /dct:head -->
+<title>Lockout/Tagout (LOTO) Training for Data Centers</title>
+<meta name="description" content="Lockout tagout training under OSHA 1910.147: authorized vs affected employees, retraining triggers, electrical LOTO, and how LOTO works in data centers.">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+<link rel="canonical" href="https://datacentertraining.us/training/lockout-tagout-training.html">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Lockout/Tagout (LOTO) Training for Data Centers">
+<meta property="og:description" content="Lockout tagout training under OSHA 1910.147: authorized vs affected employees, retraining triggers, electrical LOTO, and how LOTO works in data centers.">
+<meta property="og:url" content="https://datacentertraining.us/training/lockout-tagout-training.html">
+<meta property="og:image" content="https://datacentertraining.us/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Data Center Training">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@HazwoperOsha">
+<meta name="twitter:title" content="Lockout/Tagout (LOTO) Training for Data Centers">
+<meta name="twitter:description" content="Lockout tagout training under OSHA 1910.147: authorized vs affected employees, retraining triggers, electrical LOTO, and how LOTO works in data centers.">
+<meta name="twitter:image" content="https://datacentertraining.us/images/og-image.jpg">
+
+<link rel="stylesheet" href="../css/site.min.css">
+<script src="../js/nav.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Lockout/Tagout (LOTO) Training for Data Centers",
+  "description": "Lockout tagout training under OSHA 1910.147: authorized vs affected employees, retraining triggers, electrical LOTO, and how LOTO works in data centers.",
+  "url": "https://datacentertraining.us/training/lockout-tagout-training.html",
+  "mainEntityOfPage": "https://datacentertraining.us/training/lockout-tagout-training.html",
+  "image": "https://datacentertraining.us/images/og-image.jpg",
+  "datePublished": "2026-10-19",
+  "dateModified": "2026-10-20",
+  "inLanguage": "en-US",
+  "author": {"@type": "Organization", "name": "Data Center Training", "url": "https://datacentertraining.us/"},
+  "publisher": {"@type": "EducationalOrganization", "@id": "https://datacentertraining.us/#organization", "name": "Data Center Training", "url": "https://datacentertraining.us/"},
+  "about": ["Lockout/tagout", "Control of hazardous energy", "OSHA 1910.147", "Electrical safety", "Data center maintenance"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://datacentertraining.us/"},
+    {"@type": "ListItem", "position": 2, "name": "Training", "item": "https://datacentertraining.us/training/"},
+    {"@type": "ListItem", "position": 3, "name": "Lockout/Tagout Training", "item": "https://datacentertraining.us/training/lockout-tagout-training.html"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Does OSHA require lockout tagout training?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. OSHA 29 CFR 1910.147 requires employers to train authorized, affected, and other employees at levels matched to their roles, and to certify that the training has been accomplished and kept up to date, with each employee's name and training dates."}},
+    {"@type": "Question", "name": "How often is lockout tagout training required?", "acceptedAnswer": {"@type": "Answer", "text": "OSHA does not set a fixed interval. Retraining is required when job assignments change, when equipment or processes change in a way that presents a new hazard, when procedures change, or when a periodic inspection shows deviations or gaps. Periodic inspections of each procedure must happen at least annually, and many employers refresh training on the same cycle."}},
+    {"@type": "Question", "name": "What is the difference between an authorized and an affected employee?", "acceptedAnswer": {"@type": "Answer", "text": "An authorized employee locks or tags out equipment to service or maintain it. An affected employee operates or uses that equipment, or works in the area where the servicing is done. Authorized employees need in-depth training on energy sources and isolation; affected employees need to understand the purpose and use of the procedure."}},
+    {"@type": "Question", "name": "Is online lockout tagout training enough?", "acceptedAnswer": {"@type": "Answer", "text": "For awareness, often yes. For authorized employees, no. Their training must cover the employer's own energy control procedures and the specific equipment they will lock out, with hands-on practice, before they apply locks on their own."}},
+    {"@type": "Question", "name": "Does lockout tagout apply to electrical work in a data center?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Electrical work on conductors and equipment is covered by OSHA's electrical work practice rule, 29 CFR 1910.333, which accepts 1910.147-compliant procedures if they also address electrical hazards and include its testing and tagging provisions. Most data centers run one energy control program covering electrical and mechanical work."}}
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="glass-nav">
+  <div class="container nav-inner">
+    <a href="../" class="logo">
+      <img src="../images/favicon.svg" alt="" width="30" height="30">
+      <span>
+        <span class="logo-mark">datacentertraining.us</span>
+        <span class="logo-sub">Data Center Professional Training</span>
+      </span>
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Main">
+      <div class="nav-item">
+        <button type="button" class="nav-trigger active" aria-expanded="false" aria-controls="navMenu-training">Courses<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-4" id="navMenu-training">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Online Training</p>
+            <a href="../courses.html"><span class="nav-link-title">Course Catalog</span><span class="nav-link-desc">All 43 self-paced courses</span></a>
+            <a href="../bundles.html"><span class="nav-link-title">Course Bundles</span><span class="nav-link-desc">Role-based bundles, save up to 52%</span></a>
+            <a href="../who.html"><span class="nav-link-title">Courses by Role</span><span class="nav-link-desc">Find the track for your job</span></a>
+            <a href="../tools/training-plan-builder.html"><span class="nav-link-title">Training Plan Builder</span><span class="nav-link-desc">Build and price a plan in minutes</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Training by Topic</p>
+            <a href="../training/"><span class="nav-link-title">All Training Programs</span></a>
+            <a href="../training/data-center-technician-training.html"><span class="nav-link-title">Data Center Technician Training</span></a>
+            <a href="../training/nfpa-70e-training.html"><span class="nav-link-title">NFPA 70E Training</span></a>
+            <a href="../training/arc-flash-training.html"><span class="nav-link-title">Arc Flash Training</span></a>
+            <a href="../training/lockout-tagout-training.html" aria-current="page"><span class="nav-link-title">Lockout/Tagout Training</span></a>
+            <a href="../training/ups-battery-training.html"><span class="nav-link-title">UPS &amp; Battery Training</span></a>
+            <a href="../training/generator-training.html"><span class="nav-link-title">Generator Training</span></a>
+            <a href="../training/bms-dcim-training.html"><span class="nav-link-title">BMS &amp; DCIM Training</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Enrolling</p>
+            <a href="../#teams"><span class="nav-link-title">Team Training</span><span class="nav-link-desc">Seats, progress tracking, PO billing</span></a>
+            <a href="../certifications.html"><span class="nav-link-title">Certificates &amp; Accreditation</span><span class="nav-link-desc">What your certificate means</span></a>
+            <a href="../faq.html"><span class="nav-link-title">FAQ</span><span class="nav-link-desc">Pricing, access, and policies</span></a>
+          </div>
+          <a class="nav-feature" href="../bundles.html"><span class="nav-feature-kicker">Best value</span><span class="nav-feature-title">Complete Data Center Professional Bundle</span><span class="nav-feature-text">43 courses and 192 hours of training in one enrollment. Save 52%.</span><span class="nav-feature-cta">Compare bundles &rarr;</span></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="navMenu-learn">Learn<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-3" id="navMenu-learn">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Start Here</p>
+            <a href="../learn/"><span class="nav-link-title">Knowledge Center</span><span class="nav-link-desc">Every guide in one place</span></a>
+            <a href="../learn/what-is-a-data-center.html"><span class="nav-link-title">Data Center 101</span><span class="nav-link-desc">How data centers work</span></a>
+            <a href="../learn/glossary.html"><span class="nav-link-title">Glossary</span><span class="nav-link-desc">Data center terms, A to Z</span></a>
+            <a href="../learn/data-center-standards.html"><span class="nav-link-title">Standards &amp; Regulations</span><span class="nav-link-desc">TIA-942, NFPA, OSHA, ASHRAE, ISO</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Systems</p>
+            <a href="../learn/data-center-power.html"><span class="nav-link-title">Power Systems</span></a>
+            <a href="../learn/data-center-cooling.html"><span class="nav-link-title">Cooling Systems</span></a>
+            <a href="../learn/data-center-tiers.html"><span class="nav-link-title">Tier Levels &amp; Redundancy</span></a>
+            <a href="../learn/energy-efficiency-pue.html"><span class="nav-link-title">Energy Efficiency &amp; PUE</span></a>
+            <a href="../learn/ai-data-centers.html"><span class="nav-link-title">AI &amp; High-Density Facilities</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Operations</p>
+            <a href="../learn/data-center-safety.html"><span class="nav-link-title">Safety Guide</span></a>
+            <a href="../learn/data-center-security-compliance.html"><span class="nav-link-title">Security &amp; Compliance</span></a>
+            <a href="../learn/data-center-operations.html"><span class="nav-link-title">Operations &amp; Maintenance</span></a>
+            <a href="../learn/data-center-commissioning.html"><span class="nav-link-title">Commissioning (Levels 1-5)</span></a>
+            <a href="../blog/"><span class="nav-link-title">Blog: Field Guidance</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="navMenu-careers">Careers<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-4" id="navMenu-careers">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Get Started</p>
+            <a href="../careers/"><span class="nav-link-title">Careers Hub</span><span class="nav-link-desc">Why the industry is hiring</span></a>
+            <a href="../careers/data-center-technician.html"><span class="nav-link-title">Data Center Technician</span><span class="nav-link-desc">The most common way in</span></a>
+            <a href="../careers/entry-level-data-center-jobs.html"><span class="nav-link-title">Entry-Level Jobs</span><span class="nav-link-desc">Roles you can get without experience</span></a>
+            <a href="../careers/how-to-get-into-data-centers.html"><span class="nav-link-title">How to Get Into Data Centers</span><span class="nav-link-desc">A step-by-step starting plan</span></a>
+            <a href="../careers/data-center-technician-salary.html"><span class="nav-link-title">Salary Guide</span><span class="nav-link-desc">What the pay data shows</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Jobs & Roles</p>
+            <a href="../careers/data-center-jobs.html"><span class="nav-link-title">All Job Roles Explained</span></a>
+            <a href="../careers/data-center-electrician.html"><span class="nav-link-title">Data Center Electrician</span></a>
+            <a href="../careers/critical-facilities-technician.html"><span class="nav-link-title">Critical Facilities Technician</span></a>
+            <a href="../careers/data-center-engineer.html"><span class="nav-link-title">Data Center Engineer</span></a>
+            <a href="../careers/data-center-jobs-by-location.html"><span class="nav-link-title">Jobs by Location</span></a>
+            <a href="../careers/hyperscale-data-center-jobs.html"><span class="nav-link-title">Big Tech Data Center Jobs</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Get Hired</p>
+            <a href="../careers/data-center-certifications.html"><span class="nav-link-title">Certifications Guide</span></a>
+            <a href="../careers/data-center-apprenticeships.html"><span class="nav-link-title">Apprenticeships &amp; Programs</span></a>
+            <a href="../careers/data-center-technician-resume.html"><span class="nav-link-title">Resume Guide</span></a>
+            <a href="../careers/interview-questions.html"><span class="nav-link-title">Interview Questions</span></a>
+            <a href="../careers/career-changers.html"><span class="nav-link-title">Career Changers</span></a>
+          </div>
+          <a class="nav-feature" href="../quizzes/career-quiz.html"><span class="nav-feature-kicker">2-minute quiz</span><span class="nav-feature-title">Which Data Center Career Fits You?</span><span class="nav-feature-text">Answer 10 quick questions and get a matching role and training track.</span><span class="nav-feature-cta">Take the career quiz &rarr;</span></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="navMenu-quizzes">Quizzes &amp; Tools<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-2" id="navMenu-quizzes">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Quizzes</p>
+            <a href="../quizzes/"><span class="nav-link-title">All Quizzes</span></a>
+            <a href="../quizzes/career-quiz.html"><span class="nav-link-title">Career Match Quiz</span></a>
+            <a href="../quizzes/data-center-basics-quiz.html"><span class="nav-link-title">Data Center Basics</span></a>
+            <a href="../quizzes/power-electrical-quiz.html"><span class="nav-link-title">Power &amp; Electrical</span></a>
+            <a href="../quizzes/cooling-quiz.html"><span class="nav-link-title">Cooling &amp; HVAC</span></a>
+            <a href="../quizzes/safety-quiz.html"><span class="nav-link-title">Safety</span></a>
+            <a href="../quizzes/security-compliance-quiz.html"><span class="nav-link-title">Security &amp; Compliance</span></a>
+            <a href="../quizzes/tiers-design-quiz.html"><span class="nav-link-title">Tiers &amp; Design</span></a>
+            <a href="../quizzes/operations-quiz.html"><span class="nav-link-title">Operations &amp; Monitoring</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Tools</p>
+            <a href="../tools/"><span class="nav-link-title">All Tools</span></a>
+            <a href="../tools/training-plan-builder.html"><span class="nav-link-title">Training Plan Builder</span></a>
+            <a href="../tools/pue-calculator.html"><span class="nav-link-title">PUE Calculator</span></a>
+            <a href="../tools/uptime-calculator.html"><span class="nav-link-title">Uptime &amp; Downtime Calculator</span></a>
+            <a href="../tools/cooling-load-calculator.html"><span class="nav-link-title">Cooling Load Calculator</span></a>
+          </div>
+        </div>
+      </div>
+      <a href="../blog/" class="nav-link">Blog</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="../search.html" class="nav-search" data-search-open aria-label="Search the site" title="Search (Ctrl+K)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><span class="nav-search-label">Search</span><kbd class="nav-search-kbd">Ctrl K</kbd></a>
+      <a href="../courses.html" class="btn btn-primary btn-sm nav-cta">View Courses</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../">Home</a>
+      <span>&rsaquo;</span>
+      <a href="./">Training</a>
+      <span>&rsaquo;</span>
+      <span aria-current="page">Lockout/Tagout Training</span>
+    </nav>
+  </div>
+
+  <section class="course-hero">
+    <div class="container">
+      <div class="course-hero-eyebrow">Training &middot; Lockout/Tagout</div>
+      <h1>Lockout/Tagout (LOTO) Training for Data Centers</h1>
+      <p class="course-hero-hook">A data center rarely has just one source of energy feeding a piece of equipment. Here is what OSHA requires for lockout tagout training, who needs which level, when to retrain, and how LOTO works when a UPS, a generator, and two utility feeds are all in play.</p>
+      <div class="course-pills">
+        <span class="course-pill">10 min read</span>
+        <span class="course-pill">Workers and employers</span>
+        <span class="course-pill">Updated October 2026</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="container guide-layout">
+    <aside class="guide-toc" aria-label="On this page">
+      <p class="guide-toc-title">On this page</p>
+      <ol>
+        <li><a href="#courses">LOTO courses</a></li>
+        <li><a href="#standard">OSHA 1910.147 basics</a></li>
+        <li><a href="#roles">Authorized, affected, other</a></li>
+        <li><a href="#requirements">Training requirements</a></li>
+        <li><a href="#retraining">Retraining triggers</a></li>
+        <li><a href="#electrical">Electrical LOTO (1910.333)</a></li>
+        <li><a href="#data-centers">LOTO in data centers</a></li>
+        <li><a href="#online">Online LOTO training</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#sources">Sources</a></li>
+      </ol>
+      <a class="guide-toc-cta" href="../quizzes/safety-quiz.html"><strong>Test yourself</strong>Take the Data Center Safety quiz.</a>
+    </aside>
+
+    <article class="guide-body prose">
+      <div class="answer-box"><p><strong>Short answer:</strong> Lockout tagout training teaches employees how hazardous energy is isolated before equipment is serviced. Under OSHA 1910.147, authorized employees learn to recognize energy sources and isolate them, affected employees learn the procedure's purpose and use, and everyone else learns never to restart locked-out equipment. Retraining follows job, equipment, or procedure changes and gaps found in inspections.</p></div>
+
+      <div class="key-takeaways">
+        <p class="key-takeaways-title">Key takeaways</p>
+        <ul>
+          <li>OSHA 1910.147 sets three training levels: authorized, affected, and other employees. The employer must certify that training is done and kept current.</li>
+          <li>Retraining is event-driven: new job assignments, new equipment or hazards, changed procedures, or deviations found during the at-least-annual periodic inspection.</li>
+          <li>Electrical work on conductors falls under 29 CFR 1910.333, which adds requirements such as a qualified person testing to verify the circuit is deenergized.</li>
+          <li>Online courses build awareness. Authorized-employee training must be specific to your employer's energy control program and equipment.</li>
+        </ul>
+      </div>
+
+      <h2 id="courses">Lockout/tagout training courses for data center teams</h2>
+      <p>Our <a href="../courses/data-center-electrical-safety.html">Data Center Electrical Safety</a> course includes a lockout/tagout awareness module covering what every employee should know, even when they are not the one applying the lock. <a href="../courses/electrical-safety-best-practices.html">Electrical Safety &amp; Best Practices</a> covers lockout/tagout concepts within a broader NFPA 70E-aligned course, and the UPS and generator courses explain the stored and remote-start energy sources that LOTO has to control in a data center.</p>
+      <!-- dct:courses data-center-electrical-safety electrical-safety-best-practices data-center-arc-flash-safety data-center-ups-battery-safety generator-operations-maintenance -->
+<div class="panel course-panel">
+<div class="course-row"><div class="course-main"><h3><a href="../courses/data-center-electrical-safety.html">Data Center Electrical Safety Training</a></h3><div class="course-meta"><span>Power &amp; Electrical</span><span class="sep">&middot;</span><span>Modular Specialization</span></div><p class="course-hook">Foundational electrical safety practices for anyone working around data center power systems.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">2 hrs</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=data-center-electrical-safety" aria-label="Enroll in Data Center Electrical Safety Training">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/electrical-safety-best-practices.html">Electrical Safety &amp; Best Practices</a></h3><div class="course-meta"><span>Power &amp; Electrical</span><span class="sep">&middot;</span><span>Modular Specialization</span><span class="sep">&middot;</span><span>NFPA 70E</span></div><p class="course-hook">NFPA 70E-aligned electrical safety fundamentals for facility staff.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">4 hrs</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=electrical-safety-best-practices" aria-label="Enroll in Electrical Safety &amp; Best Practices">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/data-center-arc-flash-safety.html">Data Center Arc Flash Safety Training</a></h3><div class="course-meta"><span>Power &amp; Electrical</span><span class="sep">&middot;</span><span>Modular Specialization</span><span class="sep">&middot;</span><span>NFPA 70E</span></div><p class="course-hook">NFPA 70E arc flash safety specific to data center switchgear and power distribution.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">2 hrs</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=data-center-arc-flash-safety" aria-label="Enroll in Data Center Arc Flash Safety Training">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/data-center-ups-battery-safety.html">Data Center UPS and Battery System Safety Training</a></h3><div class="course-meta"><span>Power &amp; Electrical</span><span class="sep">&middot;</span><span>Modular Specialization</span></div><p class="course-hook">Safety-focused training for anyone working around data center UPS and battery systems.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">2 hrs</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=data-center-ups-battery-safety" aria-label="Enroll in Data Center UPS and Battery System Safety Training">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/generator-operations-maintenance.html">Generator Operations &amp; Maintenance</a></h3><div class="course-meta"><span>Power &amp; Electrical</span><span class="sep">&middot;</span><span>Modular Specialization</span></div><p class="course-hook">Size, test, and maintain backup generators with confidence.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">4 hrs</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=generator-operations-maintenance" aria-label="Enroll in Generator Operations &amp; Maintenance">Enroll</a></div></div>
+</div>
+<!-- /dct:courses -->
+      <!-- dct:bundle bundle-power-electrical -->
+<div class="bundle-offer"><div class="bundle-offer-copy"><p class="bundle-offer-kicker">Save 38% with the bundle</p><p class="bundle-offer-name">Power &amp; Electrical Systems Bundle</p><p class="bundle-offer-meta">14 courses &middot; 47 hours &middot; <strong>$986.99</strong> per seat, instead of <s>$1,603.86</s> bought separately</p></div><div class="bundle-offer-actions"><a class="btn btn-primary" href="../checkout.html?item=bundle-power-electrical">Enroll in the Bundle</a><a class="btn btn-secondary" href="../bundles.html">Compare Bundles</a></div></div>
+<!-- /dct:bundle -->
+      <div class="callout callout-safety">
+        <span class="callout-title">Awareness is not authorization</span>
+        <p>These online courses are self-paced knowledge and awareness training with a certificate of completion. They do not authorize you to perform lockout/tagout. Authorized-employee training must cover your employer's written energy control procedures and the specific equipment you will lock out, with hands-on practice, and the employer certifies it.</p>
+      </div>
+
+      <h2 id="standard">What is OSHA's lockout/tagout standard?</h2>
+      <p>OSHA 29 CFR 1910.147, The Control of Hazardous Energy, covers servicing and maintenance where the unexpected energization or start-up of equipment, or the release of stored energy, could injure workers. It applies to electrical, mechanical, hydraulic, pneumatic, thermal, and other energy.</p>
+      <p>The standard requires an energy control program with three parts:</p>
+      <ol>
+        <li><strong>Written energy control procedures</strong> for the equipment being serviced.</li>
+        <li><strong>Training</strong> so employees understand the program and have the knowledge and skills to apply, use, and remove energy controls safely.</li>
+        <li><strong>Periodic inspections</strong> of each energy control procedure at least annually, performed by an authorized employee other than the ones using the procedure being inspected.</li>
+      </ol>
+      <p>One important exclusion: exposure to electrical hazards from work on, near, or with conductors or equipment in electric-utilization installations is governed by OSHA's electrical standards in Subpart S instead. That is why data centers deal with both rules, as described below.</p>
+
+      <h2 id="roles">Authorized vs affected vs other employees</h2>
+      <p>OSHA 1910.147 sorts employees by what they do around locked-out equipment, and each group gets a different level of training.</p>
+      <div class="table-panel">
+        <table class="data-table">
+          <caption>Lockout/tagout employee categories in a data center</caption>
+          <thead><tr><th>Category</th><th>OSHA definition (summary)</th><th>Data center examples</th><th>Training they need</th></tr></thead>
+          <tbody>
+            <tr><td>Authorized</td><td>Locks or tags out machines or equipment to perform servicing or maintenance</td><td>Facility electricians, critical facilities and HVAC technicians, UPS and generator field engineers</td><td>Recognizing hazardous energy sources, the type and magnitude of energy present, and the methods and means to isolate and control it</td></tr>
+            <tr><td>Affected</td><td>Operates or uses equipment being serviced under LOTO, or works in the area where the servicing happens</td><td>Operations engineers and NOC staff who monitor the equipment, technicians working in the same electrical or mechanical room</td><td>The purpose and use of the energy control procedure</td></tr>
+            <tr><td>Other</td><td>Works in an area where energy control procedures may be used</td><td>IT technicians, cabling crews, security officers, janitorial staff</td><td>That the procedure exists, and that they must never try to restart or reenergize locked or tagged equipment</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>People move between categories. An operations engineer is affected when a contractor services a CRAH unit, and becomes authorized the day their own duties include servicing covered equipment.</p>
+
+      <h2 id="requirements">Lockout tagout training requirements</h2>
+      <p>OSHA lockout tagout training must give each employee the knowledge and skills for their category, and the employer must certify that it has been done and kept up to date.</p>
+      <ul>
+        <li><strong>Authorized employees</strong> must be trained to recognize applicable hazardous energy sources, the type and magnitude of energy in the workplace, and the methods and means necessary for energy isolation and control.</li>
+        <li><strong>Affected employees</strong> must be instructed in the purpose and use of the energy control procedure.</li>
+        <li><strong>All other employees</strong> whose work may be in an area where energy control procedures are used must be instructed about the procedure and the prohibition on attempting to restart or reenergize locked or tagged equipment.</li>
+        <li><strong>Where tags are used without locks</strong>, employees must also be trained in the limitations of tags, which are warnings and do not physically stop anyone from operating a switch.</li>
+        <li><strong>Certification.</strong> The training record must include each employee's name and the dates of training.</li>
+      </ul>
+      <p>For electrical work, NFPA 70E adds its own lockout/tagout program, training, and audit expectations, so most data centers run a single program that satisfies OSHA and 70E together. See <a href="nfpa-70e-training.html">NFPA 70E Training</a>.</p>
+
+      <h2 id="retraining">When is lockout tagout retraining required?</h2>
+      <p>OSHA 1910.147 does not set a fixed calendar interval for retraining. It requires retraining for authorized and affected employees whenever:</p>
+      <ul>
+        <li>Their job assignments change.</li>
+        <li>Machines, equipment, or processes change in a way that presents a new hazard.</li>
+        <li>The energy control procedures change.</li>
+        <li>A periodic inspection reveals deviations from or inadequacies in the employee's knowledge or use of the procedures, or the employer has reason to believe they exist.</li>
+      </ul>
+      <p>Retraining must reestablish proficiency and introduce new or revised control methods. Many data centers also refresh LOTO training annually, alongside the required annual inspection, because the equipment, contractors, and procedures change so often.</p>
+
+      <h2 id="electrical">Electrical lockout/tagout under OSHA 1910.333</h2>
+      <p>When employees work on or near exposed deenergized electrical parts, OSHA's electrical work practice rule, 29 CFR 1910.333, sets the lockout and tagging requirements. Procedures that comply with 1910.147 are accepted if they also address the electrical hazards and include 1910.333's verification and tagging provisions. Key electrical points:</p>
+      <ul>
+        <li>The employer keeps a written copy of the procedures available for inspection.</li>
+        <li>A lock and a tag go on each disconnecting means used to deenergize the circuits and equipment.</li>
+        <li>Control circuit devices, such as push buttons, selector switches, and interlocks, may not be the only means of deenergizing.</li>
+        <li>Stored electric energy that could endanger personnel must be released, and stored non-electrical energy that could reenergize circuit parts must be blocked or relieved.</li>
+        <li>A qualified person must use test equipment to verify that the circuit elements and equipment parts are deenergized, including checking for induced voltage. Above 600 volts nominal, the tester must be checked immediately before and after the test.</li>
+      </ul>
+
+      <h2 id="data-centers">How lockout/tagout works in a data center</h2>
+      <p>In a data center, LOTO is planned inside a method of procedure (MOP) because almost every piece of critical equipment has more than one source and the IT load has to stay up while it is isolated.</p>
+      <ol class="steps">
+        <li><h3>Map every source in the MOP</h3><p>Use the one-line diagram to list normal and alternate feeds, the UPS input, bypass, and battery, generator and transfer switch connections, and any backfeed from paralleled or dual-fed equipment.</p></li>
+        <li><h3>Move the load, then notify</h3><p>Transfer the load to the redundant path, confirm it is carried, and notify the control room, affected employees, and customers as the change process requires.</p></li>
+        <li><h3>Isolate and lock each point</h3><p>Open and lock every breaker and disconnect, including UPS battery breakers and maintenance bypass positions, and disable generator auto-start so a utility blip cannot start the engine mid-task.</p></li>
+        <li><h3>Deal with stored energy</h3><p>Battery strings stay live regardless of the UPS, and UPS capacitors and drive DC buses need the manufacturer's discharge time. Mechanical systems may need valves closed and pressure bled.</p></li>
+        <li><h3>Verify, then work</h3><p>A qualified person tests for absence of voltage with a tester checked on a known live source before and after. Group lockboxes keep multi-crew jobs and shift changes under control.</p></li>
+      </ol>
+      <p>Contractors add another layer. OSHA requires the on-site employer and outside employers to inform each other of their energy control procedures, so a UPS field engineer and the site team agree on whose locks go where before work starts. Mechanical LOTO matters just as much: <a href="../courses/data-center-cooling-refrigerant-safety.html">Cooling System &amp; Refrigerant Safety</a> covers isolating CRAC and CRAH units, whose fans can restart automatically.</p>
+
+      <h2 id="online">Can lockout tagout training be done online?</h2>
+      <p>Partly. Online training works well for awareness: affected and other employees can learn what LOTO is, why locks and tags must never be removed or bypassed, and how energy control fits into a data center MOP. Authorized employees also benefit from online modules for the concepts.</p>
+      <p>What online training cannot replace is authorized-employee training on your program: your written procedures, your lock and tag hardware, your switchgear and UPS isolation points, and supervised practice. OSHA expects employees to have the skills to apply and remove energy controls, which takes hands-on instruction.</p>
+      <h3>Lockout tagout training near me</h3>
+      <p>Our courses are online and available anywhere in the United States, so teams across shifts and sites can complete the awareness portion on their own schedule. For hands-on authorized-employee training, start with your employer's safety program and the equipment manufacturers' field service teams.</p>
+
+      <div class="inline-cta">
+        <p><strong>Know your LOTO steps?</strong> Test yourself on lockout/tagout, arc flash, and battery hazards.</p>
+        <a class="btn btn-primary btn-sm" href="../quizzes/safety-quiz.html">Take the Safety Quiz</a>
+      </div>
+
+      <h2 id="faq">Frequently asked questions</h2>
+      <div class="guide-faq">
+        <h3>Does OSHA require lockout tagout training?</h3>
+        <p>Yes. OSHA 29 CFR 1910.147 requires employers to train authorized, affected, and other employees at levels matched to their roles, and to certify that the training has been accomplished and kept up to date, with each employee's name and training dates.</p>
+        <h3>How often is lockout tagout training required?</h3>
+        <p>OSHA does not set a fixed interval. Retraining is required when job assignments change, when equipment or processes change in a way that presents a new hazard, when procedures change, or when a periodic inspection shows deviations or gaps. Periodic inspections of each procedure must happen at least annually, and many employers refresh training on the same cycle.</p>
+        <h3>What is the difference between an authorized and an affected employee?</h3>
+        <p>An authorized employee locks or tags out equipment to service or maintain it. An affected employee operates or uses that equipment, or works in the area where the servicing is done. Authorized employees need in-depth training on energy sources and isolation; affected employees need to understand the purpose and use of the procedure.</p>
+        <h3>Is online lockout tagout training enough?</h3>
+        <p>For awareness, often yes. For authorized employees, no. Their training must cover the employer's own energy control procedures and the specific equipment they will lock out, with hands-on practice, before they apply locks on their own.</p>
+        <h3>Does lockout tagout apply to electrical work in a data center?</h3>
+        <p>Yes. Electrical work on conductors and equipment is covered by OSHA's electrical work practice rule, 29 CFR 1910.333, which accepts 1910.147-compliant procedures if they also address electrical hazards and include its testing and tagging provisions. Most data centers run one energy control program covering electrical and mechanical work.</p>
+      </div>
+
+      <h2 id="sources">Sources</h2>
+      <ul class="guide-sources">
+        <li>OSHA, <a href="https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.147" rel="noopener">29 CFR 1910.147, The control of hazardous energy (lockout/tagout)</a>.</li>
+        <li>OSHA, <a href="https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.333" rel="noopener">29 CFR 1910.333, Selection and use of work practices</a>.</li>
+        <li>OSHA letter of interpretation, August 5, 2015, <a href="https://www.osha.gov/laws-regs/standardinterpretations/2015-08-05-1" rel="noopener">Lockout/tagout of electrical hazards by workers who install, maintain, repair or replace premises wiring systems</a>.</li>
+      </ul>
+
+      <h2 id="related">Keep learning</h2>
+      <div class="card-grid card-grid-2">
+        <a class="topic-card" href="nfpa-70e-training.html"><span class="topic-card-kicker">Training</span><h3>NFPA 70E Training</h3><p>Who needs it, what it covers, and how often to retrain.</p><span class="topic-card-cta">Read the page &rarr;</span></a>
+        <a class="topic-card" href="arc-flash-training.html"><span class="topic-card-kicker">Training</span><h3>Arc Flash Training</h3><p>Boundaries, labels, and PPE categories explained.</p><span class="topic-card-cta">Read the page &rarr;</span></a>
+        <a class="topic-card" href="ups-battery-training.html"><span class="topic-card-kicker">Training</span><h3>UPS &amp; Battery Training</h3><p>The stored energy that LOTO cannot switch off.</p><span class="topic-card-cta">Read the page &rarr;</span></a>
+        <a class="topic-card" href="../learn/data-center-safety.html"><span class="topic-card-kicker">Guide</span><h3>Data Center Safety Guide</h3><p>Every major data center hazard and how it is controlled.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+      </div>
+      <p class="guide-updated">This page is general educational information, not legal or compliance advice. Follow your employer's energy control program, written procedures, and the regulations that apply at your site. Data Center Training is not affiliated with OSHA.</p>
+    </article>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta-block">
+        <h2>Build Lockout/Tagout Awareness Across Your Team</h2>
+        <p>Self-paced electrical safety courses with lockout/tagout awareness for everyone with floor access, plus a certificate of completion for every learner.</p>
+        <div class="hero-ctas">
+          <a href="../bundles.html" class="btn glass-chip">See the Power Bundle</a>
+          <a href="../courses.html" class="btn glass-chip">Browse All Courses</a>
+          <a href="tel:18664296742" class="btn glass-chip">Call 1-866-429-6742</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="contact">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="../" class="logo">
+          <img src="../images/favicon.svg" alt="" width="28" height="28">
+          <span>
+            <span class="logo-mark">datacentertraining.us</span>
+            <span class="logo-sub">Data Center Professional Training</span>
+          </span>
+        </a>
+        <p class="footer-legal">Data Center Training is a specialty training division of <a href="https://hazwoper-osha.com/" target="_blank" rel="noopener">HAZWOPER-OSHA Training, LLC</a>, an IACET-accredited provider of professional data center and safety compliance training.</p>
+        <p class="footer-legal" style="margin-top:8px;">HAZWOPER OSHA Training, LLC &middot; 11901 Santa Monica Blvd., Suite #414, Los Angeles, CA 90025</p>
+        <div class="footer-badges">
+          <img src="https://media.hazwoper-osha.com/wp-content/uploads/2023/11/1698821020/IACET-small.webp" alt="IACET Accredited Provider" width="40" height="24" loading="lazy">
+          <img src="https://media.hazwoper-osha.com/wp-content/uploads/2026/07/1784291935/bbb.webp" alt="BBB A+ Rating" width="40" height="24" loading="lazy">
+          <img src="https://media.hazwoper-osha.com/wp-content/uploads/2026/07/1784292027/trust.webp" alt="Google Trust Services" width="141" height="20" loading="lazy" style="height:20px;">
+        </div>
+      </div>
+      <div class="footer-cta">
+        <p class="footer-cta-title">Not sure where to start?</p>
+        <p class="footer-cta-text">Find the data center role that fits you, then get a training plan built around it.</p>
+        <div class="footer-cta-actions">
+          <a href="../quizzes/career-quiz.html" class="btn btn-primary btn-sm">Take the Career Quiz</a>
+          <a href="../tools/training-plan-builder.html" class="btn btn-secondary btn-sm">Build a Training Plan</a>
+        </div>
+        <div class="footer-contact-links">
+          <a href="tel:18664296742">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            1-866-429-6742
+          </a>
+          <a href="mailto:info@hazwoper-osha.com">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            info@hazwoper-osha.com
+          </a>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/HazwoperOsha/" target="_blank" rel="noopener" aria-label="Facebook"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/hazwoper_osha_training/?hl=en" target="_blank" rel="noopener" aria-label="Instagram"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="https://www.youtube.com/@hazwoper-osha" target="_blank" rel="noopener" aria-label="YouTube"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33zM9.75 15.02V8.48l5.75 3.27z"/></svg></a>
+          <a href="https://x.com/HazwoperOsha" target="_blank" rel="noopener" aria-label="X"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.4 8.4L23 22h-6.6l-5.2-6.8L5.1 22H2l7.9-9L1.6 2h6.8l4.7 6.2z"/></svg></a>
+          <a href="https://www.linkedin.com/company/hazwoper-osha" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM8.34 18.34V10.1H5.67v8.24zM7.01 8.97a1.55 1.55 0 1 0 0-3.1 1.55 1.55 0 0 0 0 3.1zM18.34 18.34v-4.6c0-2.46-1.31-3.6-3.06-3.6a2.64 2.64 0 0 0-2.39 1.32V10.1H10.2s.04.86 0 8.24h2.68v-4.6c0-.25.02-.5.09-.68a1.5 1.5 0 0 1 1.37-1c.96 0 1.35.73 1.35 1.8v4.48z"/></svg></a>
+          <a href="https://www.pinterest.com/hazwoperosha/" target="_blank" rel="noopener" aria-label="Pinterest"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.64 7.86 6.36 9.32-.09-.79-.17-2.01.03-2.88.19-.79 1.22-5.03 1.22-5.03s-.31-.63-.31-1.55c0-1.45.84-2.54 1.89-2.54.89 0 1.32.67 1.32 1.47 0 .89-.57 2.23-.86 3.47-.25 1.03.52 1.88 1.53 1.88 1.84 0 3.07-2.36 3.07-5.15 0-2.12-1.43-3.71-4.02-3.71-2.93 0-4.76 2.19-4.76 4.63 0 .84.25 1.44.63 1.9.18.21.2.3.14.54-.05.18-.16.63-.21.81-.07.26-.28.35-.51.26-1.44-.59-2.11-2.16-2.11-3.93 0-2.92 2.46-6.43 7.34-6.43 3.92 0 6.5 2.84 6.5 5.89 0 4.03-2.24 7.04-5.55 7.04-1.11 0-2.16-.6-2.51-1.28 0 0-.6 2.36-.73 2.82-.22.8-.66 1.6-1.06 2.22.95.29 1.95.45 3 .45 5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-grid">
+    <div class="footer-col">
+      <h3>Training</h3>
+      <a href="../courses.html">Course Catalog</a>
+      <a href="../bundles.html">Course Bundles</a>
+      <a href="../training/">Training by Topic</a>
+      <a href="../training/nfpa-70e-training.html">NFPA 70E Training</a>
+      <a href="../training/arc-flash-training.html">Arc Flash Training</a>
+      <a href="../who.html">Courses by Role</a>
+      <a href="../tools/training-plan-builder.html">Training Plan Builder</a>
+      <a href="../#teams">Team Training</a>
+      <a href="../certifications.html">Certificates &amp; Accreditation</a>
+      <a href="../faq.html">FAQ</a>
+    </div>
+    <div class="footer-col">
+      <h3>Learn</h3>
+      <a href="../learn/">Knowledge Center</a>
+      <a href="../learn/what-is-a-data-center.html">Data Center 101</a>
+      <a href="../learn/data-center-power.html">Power Systems</a>
+      <a href="../learn/data-center-cooling.html">Cooling Systems</a>
+      <a href="../learn/data-center-tiers.html">Tier Levels</a>
+      <a href="../learn/data-center-safety.html">Safety Guide</a>
+      <a href="../learn/data-center-standards.html">Standards Guide</a>
+      <a href="../learn/glossary.html">Glossary</a>
+      <a href="../blog/">Blog</a>
+    </div>
+    <div class="footer-col">
+      <h3>Careers</h3>
+      <a href="../careers/">Careers Hub</a>
+      <a href="../careers/data-center-technician.html">Data Center Technician</a>
+      <a href="../careers/data-center-jobs.html">Job Roles Explained</a>
+      <a href="../careers/entry-level-data-center-jobs.html">Entry-Level Jobs</a>
+      <a href="../careers/data-center-technician-salary.html">Salary Guide</a>
+      <a href="../careers/data-center-jobs-by-location.html">Jobs by Location</a>
+      <a href="../careers/data-center-certifications.html">Certifications Guide</a>
+      <a href="../careers/interview-questions.html">Interview Questions</a>
+      <a href="../quizzes/career-quiz.html">Career Match Quiz</a>
+    </div>
+    <div class="footer-col">
+      <h3>Quizzes &amp; Tools</h3>
+      <a href="../quizzes/">All Quizzes</a>
+      <a href="../quizzes/data-center-basics-quiz.html">Data Center Basics Quiz</a>
+      <a href="../tools/">All Tools</a>
+      <a href="../tools/pue-calculator.html">PUE Calculator</a>
+      <a href="../tools/uptime-calculator.html">Uptime Calculator</a>
+      <a href="../tools/cooling-load-calculator.html">Cooling Load Calculator</a>
+      <a href="../search.html">Search the Site</a>
+    </div>
+    <div class="footer-col">
+      <h3>Company</h3>
+      <a href="../about.html">About Us</a>
+      <a href="https://hazwoper-osha.com/" target="_blank" rel="noopener">HAZWOPER-OSHA Training</a>
+      <a href="https://hazwoper-osha.com/certificate-verification" target="_blank" rel="noopener">Verify Certificate</a>
+      <a href="../privacy.html">Privacy Policy</a>
+      <a href="../terms.html">Terms of Service</a>
+      <a href="../accessibility.html">Accessibility</a>
+      <a href="../privacy.html#choices" data-privacy-choices>Your Privacy Choices</a>
+      <a href="https://hazwoper-osha.com/refund-policy" target="_blank" rel="noopener">Refund Policy</a>
+    </div>
+    </div>
+
+    <p class="footer-agents"><span>For AI agents:</span> <a href="/llms.txt">llms.txt</a> <a href="/llms-full.txt">llms-full.txt</a> <a href="/.well-known/mcp.json">WebMCP Manifest</a> <a href="/api/index.json">JSON Catalog API</a> <a href="/openapi.json">API Docs (OpenAPI)</a> <a href="/sitemap.xml">Sitemap</a></p>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; 2026 HAZWOPER-OSHA Training, LLC. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+<script src="../js/main.js" defer></script>
+
+</body>
+</html>

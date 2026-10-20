@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- dct:head -->
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; object-src 'none'; base-uri 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#f5f5f7">
+<link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt">
+<link rel="alternate" type="application/json" href="/.well-known/mcp.json" title="WebMCP manifest">
+<link rel="service-desc" type="application/vnd.oai.openapi+json" href="/openapi.json">
+<script>
+/* Analytics, session recording, and chat load for every visitor unless they opt out or send a GPC signal
+   (see /js/consent.js), on the first interaction (scroll, tap, key, mouse move) so they never delay rendering. */
+(function(w,d){
+  w.dataLayer=w.dataLayer||[];w.gtag=function(){w.dataLayer.push(arguments);};
+  w.clarity=w.clarity||function(){(w.clarity.q=w.clarity.q||[]).push(arguments);};
+  w.Tawk_API=w.Tawk_API||{};w.Tawk_API.onLoad=function(){w.Tawk_API.minimize();};
+  var ev=['pointerdown','keydown','touchstart','scroll','mousemove'];
+  function add(src,attrs){var s=d.createElement('script');s.async=true;s.src=src;for(var k in attrs)s.setAttribute(k,attrs[k]);d.head.appendChild(s);}
+  function once(fn){var done=0;return function(now){if(done)return;function go(){if(done)return;done=1;ev.forEach(function(e){w.removeEventListener(e,go,{passive:true});});fn();}
+    if(now)go();else ev.forEach(function(e){w.addEventListener(e,go,{passive:true});});};}
+  w.dctLoad={
+    analytics:once(function(){
+      w.gtag('js',new Date());w.gtag('config','G-Z3T42KYK64');
+      add('https://www.googletagmanager.com/gtag/js?id=G-Z3T42KYK64');
+      add('https://analytics.ahrefs.com/analytics.js',{'data-key':'tVAd7KxwKax+pAfHx46Zgg'});
+      add('https://www.clarity.ms/tag/ylza43nm4m');
+    }),
+    chat:once(function(){
+      w.Tawk_LoadStart=new Date();add('https://embed.tawk.to/6a5a95a2096ab21d402a762c/1jtoth11r',{charset:'UTF-8',crossorigin:'*'});
+    })
+  };
+})(window,document);
+if(navigator.modelContext){var m=document.createElement('script');m.src='/js/webmcp.js';m.defer=true;document.head.appendChild(m);}
+</script>
+<script src="/js/consent.js" defer></script>
+<!-- /dct:head -->
+<title>UPS &amp; Battery Training for Data Centers</title>
+<meta name="description" content="UPS and battery training for data center teams: who needs it, what it covers from bypass to lithium-ion thermal runaway, how often to refresh, and courses.">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+<link rel="canonical" href="https://datacentertraining.us/training/ups-battery-training.html">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="UPS &amp; Battery Training for Data Centers">
+<meta property="og:description" content="UPS and battery training for data center teams: who needs it, what it covers from bypass to lithium-ion thermal runaway, how often to refresh, and courses.">
+<meta property="og:url" content="https://datacentertraining.us/training/ups-battery-training.html">
+<meta property="og:image" content="https://datacentertraining.us/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Data Center Training">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@HazwoperOsha">
+<meta name="twitter:title" content="UPS &amp; Battery Training for Data Centers">
+<meta name="twitter:description" content="UPS and battery training for data center teams: who needs it, what it covers from bypass to lithium-ion thermal runaway, how often to refresh, and courses.">
+<meta name="twitter:image" content="https://datacentertraining.us/images/og-image.jpg">
+
+<link rel="stylesheet" href="../css/site.min.css">
+<script src="../js/nav.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "UPS & Battery Training for Data Centers",
+  "description": "UPS and battery training for data center teams: who needs it, what it covers from bypass to lithium-ion thermal runaway, how often to refresh, and courses.",
+  "url": "https://datacentertraining.us/training/ups-battery-training.html",
+  "mainEntityOfPage": "https://datacentertraining.us/training/ups-battery-training.html",
+  "image": "https://datacentertraining.us/images/og-image.jpg",
+  "datePublished": "2026-10-19",
+  "dateModified": "2026-10-20",
+  "inLanguage": "en-US",
+  "author": {"@type": "Organization", "name": "Data Center Training", "url": "https://datacentertraining.us/"},
+  "publisher": {"@type": "EducationalOrganization", "@id": "https://datacentertraining.us/#organization", "name": "Data Center Training", "url": "https://datacentertraining.us/"},
+  "about": ["Uninterruptible power supply", "UPS battery maintenance", "Battery safety", "Lithium-ion thermal runaway"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://datacentertraining.us/"},
+    {"@type": "ListItem", "position": 2, "name": "Training", "item": "https://datacentertraining.us/training/"},
+    {"@type": "ListItem", "position": 3, "name": "UPS and Battery Training", "item": "https://datacentertraining.us/training/ups-battery-training.html"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Who should take UPS systems training courses?", "acceptedAnswer": {"@type": "Answer", "text": "Critical facilities technicians, electricians, and power technicians need the deepest UPS training because they operate, test, and support maintenance on the equipment. Data center technicians, NOC and BMS operators, facility managers, and anyone who enters battery rooms need awareness-level training on UPS states, alarms, and battery hazards."}},
+    {"@type": "Question", "name": "Can uninterruptible power supply training be done online?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, the knowledge part can. Online courses cover UPS theory, operating modes, alarms, testing concepts, and battery hazards well. Hands-on switching, battery service, and load-bank connections still have to be learned on your site's equipment under the manufacturer's procedures and your employer's supervision."}},
+    {"@type": "Question", "name": "Does UPS battery training cover lithium-ion batteries?", "acceptedAnswer": {"@type": "Answer", "text": "It should. Lithium-ion UPS batteries are now common, and they bring a different emergency than lead-acid: thermal runaway, where overheating cells release flammable and toxic gases and heat can spread from cell to cell. Staff need to recognize the warning signs and follow the site's evacuation and notification steps."}},
+    {"@type": "Question", "name": "Does a UPS course qualify me to perform UPS maintenance?", "acceptedAnswer": {"@type": "Answer", "text": "No. A course builds knowledge and awareness. Only your employer can designate you as qualified for switching, battery replacement, or other work on or near energized parts, after equipment-specific training and demonstrated skill, and much UPS maintenance is performed by manufacturer-trained service technicians."}},
+    {"@type": "Question", "name": "How often should UPS and battery training be repeated?", "acceptedAnswer": {"@type": "Answer", "text": "Follow your employer's electrical safety program. NFPA 70E calls for electrical safety retraining at intervals not exceeding three years, and sooner when work practices, equipment, or procedures change. Many sites also review UPS switching procedures and battery emergency response every year and before major tests."}}
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="glass-nav">
+  <div class="container nav-inner">
+    <a href="../" class="logo">
+      <img src="../images/favicon.svg" alt="" width="30" height="30">
+      <span>
+        <span class="logo-mark">datacentertraining.us</span>
+        <span class="logo-sub">Data Center Professional Training</span>
+      </span>
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Main">
+      <div class="nav-item">
+        <button type="button" class="nav-trigger active" aria-expanded="false" aria-controls="navMenu-training">Courses<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-4" id="navMenu-training">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Online Training</p>
+            <a href="../courses.html"><span class="nav-link-title">Course Catalog</span><span class="nav-link-desc">All 43 self-paced courses</span></a>
+            <a href="../bundles.html"><span class="nav-link-title">Course Bundles</span><span class="nav-link-desc">Role-based bundles, save up to 52%</span></a>
+            <a href="../who.html"><span class="nav-link-title">Courses by Role</span><span class="nav-link-desc">Find the track for your job</span></a>
+            <a href="../tools/training-plan-builder.html"><span class="nav-link-title">Training Plan Builder</span><span class="nav-link-desc">Build and price a plan in minutes</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Training by Topic</p>
+            <a href="../training/"><span class="nav-link-title">All Training Programs</span></a>
+            <a href="../training/data-center-technician-training.html"><span class="nav-link-title">Data Center Technician Training</span></a>
+            <a href="../training/nfpa-70e-training.html"><span class="nav-link-title">NFPA 70E Training</span></a>
+            <a href="../training/arc-flash-training.html"><span class="nav-link-title">Arc Flash Training</span></a>
+            <a href="../training/lockout-tagout-training.html"><span class="nav-link-title">Lockout/Tagout Training</span></a>
+            <a href="../training/ups-battery-training.html" aria-current="page"><span class="nav-link-title">UPS &amp; Battery Training</span></a>
+            <a href="../training/generator-training.html"><span class="nav-link-title">Generator Training</span></a>
+            <a href="../training/bms-dcim-training.html"><span class="nav-link-title">BMS &amp; DCIM Training</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Enrolling</p>
+            <a href="../#teams"><span class="nav-link-title">Team Training</span><span class="nav-link-desc">Seats, progress tracking, PO billing</span></a>
+            <a href="../certifications.html"><span class="nav-link-title">Certificates &amp; Accreditation</span><span class="nav-link-desc">What your certificate means</span></a>
+            <a href="../faq.html"><span class="nav-link-title">FAQ</span><span class="nav-link-desc">Pricing, access, and policies</span></a>
+          </div>
+          <a class="nav-feature" href="../bundles.html"><span class="nav-feature-kicker">Best value</span><span class="nav-feature-title">Complete Data Center Professional Bundle</span><span class="nav-feature-text">43 courses and 192 hours of training in one enrollment. Save 52%.</span><span class="nav-feature-cta">Compare bundles &rarr;</span></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="navMenu-learn">Learn<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-3" id="navMenu-learn">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Start Here</p>
+            <a href="../learn/"><span class="nav-link-title">Knowledge Center</span><span class="nav-link-desc">Every guide in one place</span></a>
+            <a href="../learn/what-is-a-data-center.html"><span class="nav-link-title">Data Center 101</span><span class="nav-link-desc">How data centers work</span></a>
+            <a href="../learn/glossary.html"><span class="nav-link-title">Glossary</span><span class="nav-link-desc">Data center terms, A to Z</span></a>
+            <a href="../learn/data-center-standards.html"><span class="nav-link-title">Standards &amp; Regulations</span><span class="nav-link-desc">TIA-942, NFPA, OSHA, ASHRAE, ISO</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Systems</p>
+            <a href="../learn/data-center-power.html"><span class="nav-link-title">Power Systems</span></a>
+            <a href="../learn/data-center-cooling.html"><span class="nav-link-title">Cooling Systems</span></a>
+            <a href="../learn/data-center-tiers.html"><span class="nav-link-title">Tier Levels &amp; Redundancy</span></a>
+            <a href="../learn/energy-efficiency-pue.html"><span class="nav-link-title">Energy Efficiency &amp; PUE</span></a>
+            <a href="../learn/ai-data-centers.html"><span class="nav-link-title">AI &amp; High-Density Facilities</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Operations</p>
+            <a href="../learn/data-center-safety.html"><span class="nav-link-title">Safety Guide</span></a>
+            <a href="../learn/data-center-security-compliance.html"><span class="nav-link-title">Security &amp; Compliance</span></a>
+            <a href="../learn/data-center-operations.html"><span class="nav-link-title">Operations &amp; Maintenance</span></a>
+            <a href="../learn/data-center-commissioning.html"><span class="nav-link-title">Commissioning (Levels 1-5)</span></a>
+            <a href="../blog/"><span class="nav-link-title">Blog: Field Guidance</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="navMenu-careers">Careers<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-4" id="navMenu-careers">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Get Started</p>
+            <a href="../careers/"><span class="nav-link-title">Careers Hub</span><span class="nav-link-desc">Why the industry is hiring</span></a>
+            <a href="../careers/data-center-technician.html"><span class="nav-link-title">Data Center Technician</span><span class="nav-link-desc">The most common way in</span></a>
+            <a href="../careers/entry-level-data-center-jobs.html"><span class="nav-link-title">Entry-Level Jobs</span><span class="nav-link-desc">Roles you can get without experience</span></a>
+            <a href="../careers/how-to-get-into-data-centers.html"><span class="nav-link-title">How to Get Into Data Centers</span><span class="nav-link-desc">A step-by-step starting plan</span></a>
+            <a href="../careers/data-center-technician-salary.html"><span class="nav-link-title">Salary Guide</span><span class="nav-link-desc">What the pay data shows</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Jobs & Roles</p>
+            <a href="../careers/data-center-jobs.html"><span class="nav-link-title">All Job Roles Explained</span></a>
+            <a href="../careers/data-center-electrician.html"><span class="nav-link-title">Data Center Electrician</span></a>
+            <a href="../careers/critical-facilities-technician.html"><span class="nav-link-title">Critical Facilities Technician</span></a>
+            <a href="../careers/data-center-engineer.html"><span class="nav-link-title">Data Center Engineer</span></a>
+            <a href="../careers/data-center-jobs-by-location.html"><span class="nav-link-title">Jobs by Location</span></a>
+            <a href="../careers/hyperscale-data-center-jobs.html"><span class="nav-link-title">Big Tech Data Center Jobs</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Get Hired</p>
+            <a href="../careers/data-center-certifications.html"><span class="nav-link-title">Certifications Guide</span></a>
+            <a href="../careers/data-center-apprenticeships.html"><span class="nav-link-title">Apprenticeships &amp; Programs</span></a>
+            <a href="../careers/data-center-technician-resume.html"><span class="nav-link-title">Resume Guide</span></a>
+            <a href="../careers/interview-questions.html"><span class="nav-link-title">Interview Questions</span></a>
+            <a href="../careers/career-changers.html"><span class="nav-link-title">Career Changers</span></a>
+          </div>
+          <a class="nav-feature" href="../quizzes/career-quiz.html"><span class="nav-feature-kicker">2-minute quiz</span><span class="nav-feature-title">Which Data Center Career Fits You?</span><span class="nav-feature-text">Answer 10 quick questions and get a matching role and training track.</span><span class="nav-feature-cta">Take the career quiz &rarr;</span></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="navMenu-quizzes">Quizzes &amp; Tools<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-2" id="navMenu-quizzes">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Quizzes</p>
+            <a href="../quizzes/"><span class="nav-link-title">All Quizzes</span></a>
+            <a href="../quizzes/career-quiz.html"><span class="nav-link-title">Career Match Quiz</span></a>
+            <a href="../quizzes/data-center-basics-quiz.html"><span class="nav-link-title">Data Center Basics</span></a>
+            <a href="../quizzes/power-electrical-quiz.html"><span class="nav-link-title">Power &amp; Electrical</span></a>
+            <a href="../quizzes/cooling-quiz.html"><span class="nav-link-title">Cooling &amp; HVAC</span></a>
+            <a href="../quizzes/safety-quiz.html"><span class="nav-link-title">Safety</span></a>
+            <a href="../quizzes/security-compliance-quiz.html"><span class="nav-link-title">Security &amp; Compliance</span></a>
+            <a href="../quizzes/tiers-design-quiz.html"><span class="nav-link-title">Tiers &amp; Design</span></a>
+            <a href="../quizzes/operations-quiz.html"><span class="nav-link-title">Operations &amp; Monitoring</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Tools</p>
+            <a href="../tools/"><span class="nav-link-title">All Tools</span></a>
+            <a href="../tools/training-plan-builder.html"><span class="nav-link-title">Training Plan Builder</span></a>
+            <a href="../tools/pue-calculator.html"><span class="nav-link-title">PUE Calculator</span></a>
+            <a href="../tools/uptime-calculator.html"><span class="nav-link-title">Uptime &amp; Downtime Calculator</span></a>
+            <a href="../tools/cooling-load-calculator.html"><span class="nav-link-title">Cooling Load Calculator</span></a>
+          </div>
+        </div>
+      </div>
+      <a href="../blog/" class="nav-link">Blog</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="../search.html" class="nav-search" data-search-open aria-label="Search the site" title="Search (Ctrl+K)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><span class="nav-search-label">Search</span><kbd class="nav-search-kbd">Ctrl K</kbd></a>
+      <a href="../courses.html" class="btn btn-primary btn-sm nav-cta">View Courses</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../">Home</a>
+      <span>&rsaquo;</span>
+      <a href="./">Training</a>
+      <span>&rsaquo;</span>
+      <span aria-current="page">UPS &amp; Battery Training</span>
+    </nav>
+  </div>
+
+  <section class="course-hero">
+    <div class="container">
+      <div class="course-hero-eyebrow">Training &middot; UPS &amp; Batteries</div>
+      <h1>UPS &amp; Battery Training for Data Centers</h1>
+      <p class="course-hero-hook">The UPS carries every server through the seconds between a utility failure and generator pickup, and its batteries hold energy even when everything else is switched off. Here is who needs UPS training, what it should cover, how to work safely around it, and the course path that builds it.</p>
+      <div class="course-pills">
+        <span class="course-pill">8 min read</span>
+        <span class="course-pill">Beginner to intermediate</span>
+        <span class="course-pill">Updated October 2026</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="container guide-layout">
+    <aside class="guide-toc" aria-label="On this page">
+      <p class="guide-toc-title">On this page</p>
+      <ol>
+        <li><a href="#courses">UPS training courses</a></li>
+        <li><a href="#who-needs">Who needs UPS training</a></li>
+        <li><a href="#what-it-covers">What UPS training covers</a></li>
+        <li><a href="#batteries">Battery types and battery safety</a></li>
+        <li><a href="#lithium-ion">Lithium-ion thermal runaway</a></li>
+        <li><a href="#safe-practices">Safe practices</a></li>
+        <li><a href="#refresh">How often to refresh</a></li>
+        <li><a href="#course-path">The course path</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#sources">Sources</a></li>
+      </ol>
+      <a class="guide-toc-cta" href="../quizzes/power-electrical-quiz.html"><strong>Test yourself</strong>Take the 10-question Power &amp; Electrical quiz.</a>
+    </aside>
+
+    <article class="guide-body prose">
+      <div class="answer-box"><p><strong>Short answer:</strong> UPS and battery training teaches data center staff how uninterruptible power supply systems work, what their alarms mean, how bypass and load transfers are done safely, how batteries are tested and maintained, and how to recognize lead-acid and lithium-ion battery hazards. Many roles need the knowledge, but only employer-qualified people perform switching and battery service.</p></div>
+
+      <div class="key-takeaways">
+        <p class="key-takeaways-title">Key takeaways</p>
+        <ul>
+          <li>Power technicians need deep UPS training. Everyone else who works near UPS and battery rooms needs awareness of operating states, alarms, and hazards.</li>
+          <li>Bypass operations are where people drop load. Training should make written, step-by-step switching procedures a habit.</li>
+          <li>Batteries stay energized when the UPS is off. Lithium-ion adds thermal runaway, which needs its own recognition and response training.</li>
+          <li>Refresh training on your employer's schedule, and whenever equipment, procedures, or battery chemistry change.</li>
+        </ul>
+      </div>
+
+      <h2 id="courses">UPS systems training courses</h2>
+      <p>These self-paced online courses cover UPS theory, operations and load testing, DC fundamentals, battery safety, and lithium-ion emergency response. Each awards a certificate of completion.</p>
+      <!-- dct:courses ups-systems-fundamentals ups-operations-load-testing batteries-dc-circuits data-center-ups-battery-safety lithium-ion-thermal-runaway-emergency-response -->
+<div class="panel course-panel">
+<div class="course-row"><div class="course-main"><h3><a href="../courses/ups-systems-fundamentals.html">UPS Systems Fundamentals</a></h3><div class="course-meta"><span>Power &amp; Electrical</span><span class="sep">&middot;</span><span>Modular Specialization</span></div><p class="course-hook">Foundational UPS theory to complement hands-on operations and load testing.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">2 hrs</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=ups-systems-fundamentals" aria-label="Enroll in UPS Systems Fundamentals">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/ups-operations-load-testing.html">UPS Operations &amp; Load Testing</a></h3><div class="course-meta"><span>Power &amp; Electrical</span><span class="sep">&middot;</span><span>Modular Specialization</span></div><p class="course-hook">Master UPS operations, battery testing, and load-bank procedures.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">4 hrs</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=ups-operations-load-testing" aria-label="Enroll in UPS Operations &amp; Load Testing">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/batteries-dc-circuits.html">Batteries and DC Circuits</a></h3><div class="course-meta"><span>Power &amp; Electrical</span><span class="sep">&middot;</span><span>Modular Specialization</span></div><p class="course-hook">Master DC circuit fundamentals and battery behavior behind every backup power system.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">2 hrs</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=batteries-dc-circuits" aria-label="Enroll in Batteries and DC Circuits">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/data-center-ups-battery-safety.html">Data Center UPS and Battery System Safety Training</a></h3><div class="course-meta"><span>Power &amp; Electrical</span><span class="sep">&middot;</span><span>Modular Specialization</span></div><p class="course-hook">Safety-focused training for anyone working around data center UPS and battery systems.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">2 hrs</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=data-center-ups-battery-safety" aria-label="Enroll in Data Center UPS and Battery System Safety Training">Enroll</a></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/lithium-ion-thermal-runaway-emergency-response.html">Lithium-Ion Battery Thermal Runaway and Emergency Response Training</a></h3><div class="course-meta"><span>Power &amp; Electrical</span><span class="sep">&middot;</span><span>Modular Specialization</span></div><p class="course-hook">Recognize and respond to lithium-ion battery thermal runaway before it escalates.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">4 hrs</div><div class="course-price">$99.99</div></div><a class="btn btn-primary btn-sm" href="../checkout.html?item=lithium-ion-thermal-runaway-emergency-response" aria-label="Enroll in Lithium-Ion Battery Thermal Runaway and Emergency Response Training">Enroll</a></div></div>
+</div>
+<!-- /dct:courses -->
+      <!-- dct:bundle bundle-power-electrical -->
+<div class="bundle-offer"><div class="bundle-offer-copy"><p class="bundle-offer-kicker">Save 38% with the bundle</p><p class="bundle-offer-name">Power &amp; Electrical Systems Bundle</p><p class="bundle-offer-meta">14 courses &middot; 47 hours &middot; <strong>$986.99</strong> per seat, instead of <s>$1,603.86</s> bought separately</p></div><div class="bundle-offer-actions"><a class="btn btn-primary" href="../checkout.html?item=bundle-power-electrical">Enroll in the Bundle</a><a class="btn btn-secondary" href="../bundles.html">Compare Bundles</a></div></div>
+<!-- /dct:bundle -->
+
+      <h2 id="who-needs">Who needs UPS training?</h2>
+      <p>Anyone who operates, maintains, monitors, or works near UPS and battery systems needs UPS training, but the depth differs by role. A power technician needs to understand transfers and testing in detail; an IT technician needs to know what "on bypass" means and why they must stay out of the battery room.</p>
+      <div class="table-panel">
+        <table class="data-table">
+          <caption>UPS training needs by role</caption>
+          <thead><tr><th>Role</th><th>What they need to know</th><th>Depth</th></tr></thead>
+          <tbody>
+            <tr><td>Critical facilities and power technicians, electricians</td><td>Topologies, operating modes, static and maintenance bypass, switching procedures, battery testing, load-bank tests, and battery hazards</td><td>Deep, plus hands-on training on site equipment</td></tr>
+            <tr><td>Data center and IT technicians</td><td>What the UPS does, A and B feeds, what alarms mean, and battery room hazards</td><td>Awareness</td></tr>
+            <tr><td>NOC and BMS operators</td><td>Which UPS alarms are urgent, what each state means, and who to escalate to</td><td>Awareness plus alarm response</td></tr>
+            <tr><td>Facility managers</td><td>Maintenance and testing programs, vendor oversight, MOP review, and battery replacement planning</td><td>Program level</td></tr>
+            <tr><td>Security and emergency response staff</td><td>Battery room hazards, thermal runaway warning signs, evacuation and notification steps</td><td>Awareness plus emergency response</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="what-it-covers">What does UPS training cover?</h2>
+      <p>Solid uninterruptible power supply training covers five topics: topologies, operating modes and bypass, alarms, testing, and batteries. The <a href="../learn/data-center-power.html">data center power guide</a> gives the big picture of where the UPS sits in the power chain.</p>
+      <h3>Topologies and operating modes</h3>
+      <p>Data centers almost always use double-conversion (online) UPS systems, which feed the load from the inverter continuously, so there is no transfer time when the utility fails. Line-interactive and standby designs, and high-efficiency "eco" modes, show up in smaller rooms and edge sites. <a href="../courses/ups-systems-fundamentals.html">UPS Systems Fundamentals</a> covers topologies, how the UPS manages its batteries, and how to read status panels.</p>
+      <h3>Bypass operations</h3>
+      <p>A UPS has two bypass paths. The static bypass is an automatic electronic switch that moves the load to the bypass source on an internal fault or overload. The maintenance bypass is a set of manually operated breakers that route power around the UPS so it can be serviced. On either bypass, the load has no battery protection. Operating breakers in the wrong order is a well-known way to drop a data hall, which is why switching is done only by authorized staff from a written method of procedure (MOP), with a second person verifying each step.</p>
+      <h3>Alarms and what to do about them</h3>
+      <div class="table-panel">
+        <table class="data-table">
+          <caption>Common UPS alarms and typical first responses</caption>
+          <thead><tr><th>Alarm or state</th><th>What it usually means</th><th>Typical first response</th></tr></thead>
+          <tbody>
+            <tr><td>On battery</td><td>Input power is lost or out of tolerance and the batteries are carrying the load.</td><td>Urgent. Confirm generator start and transfer, watch remaining runtime, escalate immediately.</td></tr>
+            <tr><td>Load on bypass</td><td>The load is fed from the bypass source, not the inverter, and has no battery protection.</td><td>Urgent unless it is part of a planned MOP. Escalate to the power team.</td></tr>
+            <tr><td>Low battery or battery fault</td><td>Runtime is reduced, or a string, cell, or connection has a problem.</td><td>Escalate; review recent battery test data; avoid risky work on that system.</td></tr>
+            <tr><td>Overload</td><td>Load exceeds the UPS rating, which can force a transfer to bypass.</td><td>Escalate; check recent installs and A/B feed loading.</td></tr>
+            <tr><td>High battery or room temperature</td><td>Cooling problem in the battery space; heat shortens battery life and raises risk.</td><td>Check room cooling and escalate; on lithium-ion systems, treat as a possible early warning.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Your site's alarm procedures take priority over any generic table. The point of training is that nobody acknowledges an "on battery" alarm the way they would a filter alarm.</p>
+      <h3>Load testing</h3>
+      <p>A load-bank test connects a temporary resistive load to prove that the UPS and its batteries can carry rated load for the expected runtime. Tests are planned like any critical change, with a written procedure, a backout plan, and qualified staff or the manufacturer's service team making the connections. <a href="../courses/ups-operations-load-testing.html">UPS Operations &amp; Load Testing</a> covers battery management, load transfer procedures, and how load-bank tests are planned and interpreted.</p>
+
+      <h2 id="batteries">Battery types and battery safety</h2>
+      <p>UPS batteries are DC systems that store a large amount of energy, and that energy is present whether the UPS is running or not. Training should cover the chemistry on your site and the hazards that come with it.</p>
+      <div class="table-panel">
+        <table class="data-table">
+          <caption>UPS battery types at a glance</caption>
+          <thead><tr><th>Type</th><th>Where you see it</th><th>What training should stress</th></tr></thead>
+          <tbody>
+            <tr><td>Valve-regulated lead-acid (VRLA)</td><td>The long-time default for UPS cabinets and racks</td><td>Heat shortens life sharply; regular voltage, internal resistance, and temperature checks catch weak cells early.</td></tr>
+            <tr><td>Vented (flooded) lead-acid</td><td>Larger and older battery rooms</td><td>Hydrogen off-gassing and ventilation, corrosive electrolyte, eyewash and drench equipment.</td></tr>
+            <tr><td>Lithium-ion</td><td>Increasingly common in new UPS systems</td><td>Battery management system alarms, thermal runaway warning signs, and site emergency response.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>IEEE publishes recommended practices for battery maintenance and testing, such as IEEE 450 for vented lead-acid and IEEE 1188 for VRLA batteries, and manufacturers set their own schedules. <a href="../courses/batteries-dc-circuits.html">Batteries and DC Circuits</a> builds the DC theory behind those test results: series and parallel strings, internal resistance, and why readings change as batteries age.</p>
+      <p>On the safety side, NFPA 70E includes specific requirements for work on batteries and battery rooms, and OSHA requires facilities for quick drenching or flushing of the eyes and body where workers may be exposed to injurious corrosive materials. <a href="../courses/data-center-ups-battery-safety.html">Data Center UPS and Battery System Safety Training</a> covers off-gassing, stored energy, PPE and ventilation, and incident response.</p>
+
+      <h2 id="lithium-ion">Lithium-ion thermal runaway: what training must add</h2>
+      <p>Lithium-ion batteries need their own emergency training because they fail differently. In thermal runaway, a cell overheats and releases flammable and toxic gases, heat can spread from cell to cell, and a fire that looks extinguished can reignite.</p>
+      <ul>
+        <li><strong>Codes and testing:</strong> NFPA 855 covers the installation of stationary energy storage systems, and UL 9540A is the test method used to evaluate how thermal runaway propagates in a battery system.</li>
+        <li><strong>Warning signs:</strong> off-gas detector alarms, battery management system alarms, rising cell or cabinet temperatures, unusual odors, swelling, or venting.</li>
+        <li><strong>Response:</strong> raise the alarm, evacuate, notify the fire department, and follow the facility's emergency action plan. Facility staff are not trained or equipped to fight a battery fire.</li>
+      </ul>
+      <p><a href="../courses/lithium-ion-thermal-runaway-emergency-response.html">Lithium-Ion Battery Thermal Runaway and Emergency Response Training</a> covers recognition, containment steps, and coordination with fire services.</p>
+
+      <h2 id="safe-practices">Safe practices around UPS and battery systems</h2>
+      <p>The safest UPS work is planned, written down, and done by the right people. These habits should come out of any UPS and battery training program:</p>
+      <ul>
+        <li>Treat every battery string as energized. Opening the UPS output does not de-energize the batteries.</li>
+        <li>Use insulated tools and remove jewelry. A dropped wrench across battery terminals can cause an arc and severe burns.</li>
+        <li>Never operate bypass or battery breakers without authorization and a written procedure; use a second person to verify each step.</li>
+        <li>Know where the eyewash station, spill kit, and emergency stops are before you enter a battery room.</li>
+        <li>Keep battery rooms clean, cool, ventilated, and free of ignition sources and stored combustibles.</li>
+      </ul>
+      <div class="callout callout-safety">
+        <span class="callout-title">Training is not authorization</span>
+        <p>Online UPS and battery courses build knowledge and awareness. They do not make anyone a qualified person, authorize switching or lockout/tagout, or replace the manufacturer's procedures and hands-on training on your site's equipment. Your employer decides who may do that work.</p>
+      </div>
+
+      <h2 id="refresh">How often should UPS training be refreshed?</h2>
+      <p>Follow your employer's electrical safety program. NFPA 70E calls for electrical safety retraining at intervals not exceeding three years, and sooner when there is a reason, such as new equipment or work practices or evidence that someone is not following procedures.</p>
+      <p>Many sites go further as a practice, not a legal requirement: they review bypass procedures every year, walk through the MOP before every planned transfer or load test, drill battery room emergency response, and retrain when the UPS model or battery chemistry changes or after an incident.</p>
+
+      <div class="inline-cta">
+        <p><strong>How well do you know UPS systems and batteries?</strong> Ten questions on data center power, instant answers.</p>
+        <a class="btn btn-primary btn-sm" href="../quizzes/power-electrical-quiz.html">Take the Power Quiz</a>
+      </div>
+
+      <h2 id="course-path">The UPS and battery training path, course by course</h2>
+      <p>Take the safety course first if you will enter battery rooms, then build theory before operations. Add lithium-ion response if your site has lithium-ion batteries.</p>
+      <ol class="steps">
+        <li>
+          <h3>Battery room safety</h3>
+          <p><a href="../courses/data-center-ups-battery-safety.html">UPS and Battery System Safety</a> for anyone who works near UPS and battery installations.</p>
+        </li>
+        <li>
+          <h3>DC and UPS theory</h3>
+          <p><a href="../courses/batteries-dc-circuits.html">Batteries and DC Circuits</a>, then <a href="../courses/ups-systems-fundamentals.html">UPS Systems Fundamentals</a>, so test results, displays, and alarms make sense.</p>
+        </li>
+        <li>
+          <h3>Operations and load testing</h3>
+          <p><a href="../courses/ups-operations-load-testing.html">UPS Operations &amp; Load Testing</a> for power technicians and electricians who support transfers and load-bank tests.</p>
+        </li>
+        <li>
+          <h3>Lithium-ion emergency response</h3>
+          <p><a href="../courses/lithium-ion-thermal-runaway-emergency-response.html">Lithium-Ion Thermal Runaway and Emergency Response</a> for facilities and response staff on sites with lithium-ion batteries.</p>
+        </li>
+      </ol>
+
+      <h2 id="faq">Frequently asked questions</h2>
+      <div class="guide-faq">
+        <h3>Who should take UPS systems training courses?</h3>
+        <p>Critical facilities technicians, electricians, and power technicians need the deepest UPS training because they operate, test, and support maintenance on the equipment. Data center technicians, NOC and BMS operators, facility managers, and anyone who enters battery rooms need awareness-level training on UPS states, alarms, and battery hazards.</p>
+        <h3>Can uninterruptible power supply training be done online?</h3>
+        <p>Yes, the knowledge part can. Online courses cover UPS theory, operating modes, alarms, testing concepts, and battery hazards well. Hands-on switching, battery service, and load-bank connections still have to be learned on your site's equipment under the manufacturer's procedures and your employer's supervision.</p>
+        <h3>Does UPS battery training cover lithium-ion batteries?</h3>
+        <p>It should. Lithium-ion UPS batteries are now common, and they bring a different emergency than lead-acid: thermal runaway, where overheating cells release flammable and toxic gases and heat can spread from cell to cell. Staff need to recognize the warning signs and follow the site's evacuation and notification steps.</p>
+        <h3>Does a UPS course qualify me to perform UPS maintenance?</h3>
+        <p>No. A course builds knowledge and awareness. Only your employer can designate you as qualified for switching, battery replacement, or other work on or near energized parts, after equipment-specific training and demonstrated skill, and much UPS maintenance is performed by manufacturer-trained service technicians.</p>
+        <h3>How often should UPS and battery training be repeated?</h3>
+        <p>Follow your employer's electrical safety program. NFPA 70E calls for electrical safety retraining at intervals not exceeding three years, and sooner when work practices, equipment, or procedures change. Many sites also review UPS switching procedures and battery emergency response every year and before major tests.</p>
+      </div>
+
+      <h2 id="sources">Sources</h2>
+      <ul class="guide-sources">
+        <li>OSHA, <a href="https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.151" rel="noopener">29 CFR 1910.151, Medical services and first aid</a> (eyewash and drench facilities where corrosive materials are present).</li>
+        <li>NFPA, <a href="https://www.nfpa.org/codes-and-standards/nfpa-70e-standard-development/70e" rel="noopener">NFPA 70E, Standard for Electrical Safety in the Workplace: document information</a>.</li>
+        <li>Electrical Contractor magazine, <a href="https://www.ecmag.com/magazine/articles/article-detail/has-it-been-three-years-already-updates-to-nfpa-70e-s-training-requirements" rel="noopener">Has it been three years already? Updates to NFPA 70E's training requirements</a> (retraining interval).</li>
+        <li>NFPA, <a href="https://www.nfpa.org/codes-and-standards/nfpa-855-standard-development/855" rel="noopener">NFPA 855, Standard for the Installation of Stationary Energy Storage Systems: document information</a>.</li>
+        <li>UL Solutions, <a href="https://www.ul.com/services/UL-9540A-test-method" rel="noopener">UL 9540A test method</a> (evaluating thermal runaway fire propagation in battery energy storage systems).</li>
+        <li>European Commission Joint Research Centre, <a href="https://ses.jrc.ec.europa.eu/eirie/en/standard-regulations/ieee-recommended-practice-maintenance-testing-and-replacement-vented-lead-acid" rel="noopener">IEEE 450, Recommended practice for maintenance, testing, and replacement of vented lead-acid batteries</a> (standard summary).</li>
+      </ul>
+
+      <h2 id="related">Keep learning</h2>
+      <div class="card-grid card-grid-2">
+        <a class="topic-card" href="../learn/data-center-power.html"><span class="topic-card-kicker">Guide</span><h3>How Data Center Power Works</h3><p>Where the UPS sits between the utility, the generators, and the racks.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+        <a class="topic-card" href="generator-training.html"><span class="topic-card-kicker">Training</span><h3>Generator Training</h3><p>The other half of backup power: generators, transfer switches, and load banks.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+        <a class="topic-card" href="arc-flash-training.html"><span class="topic-card-kicker">Training</span><h3>Arc Flash Training</h3><p>Arc flash hazards, boundaries, and PPE around switchgear and UPS systems.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+        <a class="topic-card" href="../careers/data-center-electrician.html"><span class="topic-card-kicker">Careers</span><h3>Data Center Electrician</h3><p>What electricians do in data centers and how to move into the field.</p><span class="topic-card-cta">See the role &rarr;</span></a>
+      </div>
+      <p class="guide-updated">This guide is general educational information, not engineering, legal, safety, or compliance advice. Follow your site's procedures, the equipment manufacturer's instructions, and the codes adopted in your jurisdiction. Your employer decides who is qualified for each task.</p>
+    </article>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta-block">
+        <h2>Train Your Team on UPS and Battery Systems</h2>
+        <p>Our Power &amp; Electrical courses cover UPS theory and operations, load testing, DC fundamentals, battery safety, and lithium-ion emergency response.</p>
+        <div class="hero-ctas">
+          <a href="../bundles.html" class="btn glass-chip">See the Power Bundle</a>
+          <a href="../courses.html" class="btn glass-chip">Browse All Courses</a>
+          <a href="tel:18664296742" class="btn glass-chip">Call 1-866-429-6742</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="contact">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="../" class="logo">
+          <img src="../images/favicon.svg" alt="" width="28" height="28">
+          <span>
+            <span class="logo-mark">datacentertraining.us</span>
+            <span class="logo-sub">Data Center Professional Training</span>
+          </span>
+        </a>
+        <p class="footer-legal">Data Center Training is a specialty training division of <a href="https://hazwoper-osha.com/" target="_blank" rel="noopener">HAZWOPER-OSHA Training, LLC</a>, an IACET-accredited provider of professional data center and safety compliance training.</p>
+        <p class="footer-legal" style="margin-top:8px;">HAZWOPER OSHA Training, LLC &middot; 11901 Santa Monica Blvd., Suite #414, Los Angeles, CA 90025</p>
+        <div class="footer-badges">
+          <img src="https://media.hazwoper-osha.com/wp-content/uploads/2023/11/1698821020/IACET-small.webp" alt="IACET Accredited Provider" width="40" height="24" loading="lazy">
+          <img src="https://media.hazwoper-osha.com/wp-content/uploads/2026/07/1784291935/bbb.webp" alt="BBB A+ Rating" width="40" height="24" loading="lazy">
+          <img src="https://media.hazwoper-osha.com/wp-content/uploads/2026/07/1784292027/trust.webp" alt="Google Trust Services" width="141" height="20" loading="lazy" style="height:20px;">
+        </div>
+      </div>
+      <div class="footer-cta">
+        <p class="footer-cta-title">Not sure where to start?</p>
+        <p class="footer-cta-text">Find the data center role that fits you, then get a training plan built around it.</p>
+        <div class="footer-cta-actions">
+          <a href="../quizzes/career-quiz.html" class="btn btn-primary btn-sm">Take the Career Quiz</a>
+          <a href="../tools/training-plan-builder.html" class="btn btn-secondary btn-sm">Build a Training Plan</a>
+        </div>
+        <div class="footer-contact-links">
+          <a href="tel:18664296742">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            1-866-429-6742
+          </a>
+          <a href="mailto:info@hazwoper-osha.com">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            info@hazwoper-osha.com
+          </a>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/HazwoperOsha/" target="_blank" rel="noopener" aria-label="Facebook"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/hazwoper_osha_training/?hl=en" target="_blank" rel="noopener" aria-label="Instagram"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="https://www.youtube.com/@hazwoper-osha" target="_blank" rel="noopener" aria-label="YouTube"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33zM9.75 15.02V8.48l5.75 3.27z"/></svg></a>
+          <a href="https://x.com/HazwoperOsha" target="_blank" rel="noopener" aria-label="X"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.4 8.4L23 22h-6.6l-5.2-6.8L5.1 22H2l7.9-9L1.6 2h6.8l4.7 6.2z"/></svg></a>
+          <a href="https://www.linkedin.com/company/hazwoper-osha" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM8.34 18.34V10.1H5.67v8.24zM7.01 8.97a1.55 1.55 0 1 0 0-3.1 1.55 1.55 0 0 0 0 3.1zM18.34 18.34v-4.6c0-2.46-1.31-3.6-3.06-3.6a2.64 2.64 0 0 0-2.39 1.32V10.1H10.2s.04.86 0 8.24h2.68v-4.6c0-.25.02-.5.09-.68a1.5 1.5 0 0 1 1.37-1c.96 0 1.35.73 1.35 1.8v4.48z"/></svg></a>
+          <a href="https://www.pinterest.com/hazwoperosha/" target="_blank" rel="noopener" aria-label="Pinterest"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.64 7.86 6.36 9.32-.09-.79-.17-2.01.03-2.88.19-.79 1.22-5.03 1.22-5.03s-.31-.63-.31-1.55c0-1.45.84-2.54 1.89-2.54.89 0 1.32.67 1.32 1.47 0 .89-.57 2.23-.86 3.47-.25 1.03.52 1.88 1.53 1.88 1.84 0 3.07-2.36 3.07-5.15 0-2.12-1.43-3.71-4.02-3.71-2.93 0-4.76 2.19-4.76 4.63 0 .84.25 1.44.63 1.9.18.21.2.3.14.54-.05.18-.16.63-.21.81-.07.26-.28.35-.51.26-1.44-.59-2.11-2.16-2.11-3.93 0-2.92 2.46-6.43 7.34-6.43 3.92 0 6.5 2.84 6.5 5.89 0 4.03-2.24 7.04-5.55 7.04-1.11 0-2.16-.6-2.51-1.28 0 0-.6 2.36-.73 2.82-.22.8-.66 1.6-1.06 2.22.95.29 1.95.45 3 .45 5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-grid">
+    <div class="footer-col">
+      <h3>Training</h3>
+      <a href="../courses.html">Course Catalog</a>
+      <a href="../bundles.html">Course Bundles</a>
+      <a href="../training/">Training by Topic</a>
+      <a href="../training/nfpa-70e-training.html">NFPA 70E Training</a>
+      <a href="../training/arc-flash-training.html">Arc Flash Training</a>
+      <a href="../who.html">Courses by Role</a>
+      <a href="../tools/training-plan-builder.html">Training Plan Builder</a>
+      <a href="../#teams">Team Training</a>
+      <a href="../certifications.html">Certificates &amp; Accreditation</a>
+      <a href="../faq.html">FAQ</a>
+    </div>
+    <div class="footer-col">
+      <h3>Learn</h3>
+      <a href="../learn/">Knowledge Center</a>
+      <a href="../learn/what-is-a-data-center.html">Data Center 101</a>
+      <a href="../learn/data-center-power.html">Power Systems</a>
+      <a href="../learn/data-center-cooling.html">Cooling Systems</a>
+      <a href="../learn/data-center-tiers.html">Tier Levels</a>
+      <a href="../learn/data-center-safety.html">Safety Guide</a>
+      <a href="../learn/data-center-standards.html">Standards Guide</a>
+      <a href="../learn/glossary.html">Glossary</a>
+      <a href="../blog/">Blog</a>
+    </div>
+    <div class="footer-col">
+      <h3>Careers</h3>
+      <a href="../careers/">Careers Hub</a>
+      <a href="../careers/data-center-technician.html">Data Center Technician</a>
+      <a href="../careers/data-center-jobs.html">Job Roles Explained</a>
+      <a href="../careers/entry-level-data-center-jobs.html">Entry-Level Jobs</a>
+      <a href="../careers/data-center-technician-salary.html">Salary Guide</a>
+      <a href="../careers/data-center-jobs-by-location.html">Jobs by Location</a>
+      <a href="../careers/data-center-certifications.html">Certifications Guide</a>
+      <a href="../careers/interview-questions.html">Interview Questions</a>
+      <a href="../quizzes/career-quiz.html">Career Match Quiz</a>
+    </div>
+    <div class="footer-col">
+      <h3>Quizzes &amp; Tools</h3>
+      <a href="../quizzes/">All Quizzes</a>
+      <a href="../quizzes/data-center-basics-quiz.html">Data Center Basics Quiz</a>
+      <a href="../tools/">All Tools</a>
+      <a href="../tools/pue-calculator.html">PUE Calculator</a>
+      <a href="../tools/uptime-calculator.html">Uptime Calculator</a>
+      <a href="../tools/cooling-load-calculator.html">Cooling Load Calculator</a>
+      <a href="../search.html">Search the Site</a>
+    </div>
+    <div class="footer-col">
+      <h3>Company</h3>
+      <a href="../about.html">About Us</a>
+      <a href="https://hazwoper-osha.com/" target="_blank" rel="noopener">HAZWOPER-OSHA Training</a>
+      <a href="https://hazwoper-osha.com/certificate-verification" target="_blank" rel="noopener">Verify Certificate</a>
+      <a href="../privacy.html">Privacy Policy</a>
+      <a href="../terms.html">Terms of Service</a>
+      <a href="../accessibility.html">Accessibility</a>
+      <a href="../privacy.html#choices" data-privacy-choices>Your Privacy Choices</a>
+      <a href="https://hazwoper-osha.com/refund-policy" target="_blank" rel="noopener">Refund Policy</a>
+    </div>
+    </div>
+
+    <p class="footer-agents"><span>For AI agents:</span> <a href="/llms.txt">llms.txt</a> <a href="/llms-full.txt">llms-full.txt</a> <a href="/.well-known/mcp.json">WebMCP Manifest</a> <a href="/api/index.json">JSON Catalog API</a> <a href="/openapi.json">API Docs (OpenAPI)</a> <a href="/sitemap.xml">Sitemap</a></p>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; 2026 HAZWOPER-OSHA Training, LLC. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+<script src="../js/main.js" defer></script>
+
+</body>
+</html>
