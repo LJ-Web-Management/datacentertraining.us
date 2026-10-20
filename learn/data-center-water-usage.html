@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Data Center Water Usage: How Much, Why &amp; vs. Golf</title>
+<meta name="description" content="Data center water usage explained: how much U.S. data centers use, why, how designs cut it, and how it compares with golf courses, citing LBNL and GCSAA data.">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+<link rel="canonical" href="https://datacentertraining.us/learn/data-center-water-usage.html">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Data Center Water Usage: How Much, Why &amp; vs. Golf">
+<meta property="og:description" content="Data center water usage explained: how much U.S. data centers use, why, how designs cut it, and how it compares with golf courses, citing LBNL and GCSAA data.">
+<meta property="og:url" content="https://datacentertraining.us/learn/data-center-water-usage.html">
+<meta property="og:image" content="https://datacentertraining.us/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Data Center Training">
+
+<link rel="stylesheet" href="../css/site.min.css">
+<script src="../js/nav.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Data Center Water Usage: How Much, Why, and How It Compares to Golf Courses",
+  "description": "Data center water usage explained: how much U.S. data centers use, why, how designs cut it, and how it compares with golf courses, citing LBNL and GCSAA data.",
+  "url": "https://datacentertraining.us/learn/data-center-water-usage.html",
+  "mainEntityOfPage": "https://datacentertraining.us/learn/data-center-water-usage.html",
+  "image": "https://datacentertraining.us/images/og-image.jpg",
+  "datePublished": "2026-10-19",
+  "dateModified": "2026-10-20",
+  "inLanguage": "en-US",
+  "author": {"@type": "Organization", "name": "Data Center Training", "url": "https://datacentertraining.us/"},
+  "publisher": {"@type": "EducationalOrganization", "@id": "https://datacentertraining.us/#organization", "name": "Data Center Training", "url": "https://datacentertraining.us/"},
+  "about": ["Data center water use", "Water usage effectiveness", "Evaporative cooling", "Golf course irrigation"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://datacentertraining.us/"},
+    {"@type": "ListItem", "position": 2, "name": "Knowledge Center", "item": "https://datacentertraining.us/learn/"},
+    {"@type": "ListItem", "position": 3, "name": "Water Usage", "item": "https://datacentertraining.us/learn/data-center-water-usage.html"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Do golf courses use more water than data centers?", "acceptedAnswer": {"@type": "Answer", "text": "On U.S. national totals, yes. Golf facilities applied a projected 1.63 million acre-feet of water in 2024, about 2 trillion liters, according to the GCSAA. Lawrence Berkeley National Laboratory estimates that data centers directly consumed about 66 billion liters in 2023, plus nearly 800 billion liters indirectly through electricity. The figures measure different things, so the comparison says little about local water impact."}},
+    {"@type": "Question", "name": "How much water does a data center use per day?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on size, climate, and cooling design, so no single number is accurate. You can estimate on-site use by multiplying daily IT energy by the site's water usage effectiveness (WUE). For example, a facility with 10 MW of IT load uses 240,000 kWh a day; at the 2023 U.S. average site WUE of about 0.36 liters per kWh, that is roughly 86,000 liters a day. Evaporatively cooled sites can use much more, and air-cooled sites far less."}},
+    {"@type": "Question", "name": "What is the difference between water withdrawal and water consumption?", "acceptedAnswer": {"@type": "Answer", "text": "Withdrawal is all the water taken from a source. Consumption is the part that is not returned to the immediate water cycle, mostly because it evaporates. A cooling tower consumes most of the water it evaporates, while some withdrawn water, such as blowdown, is discharged and can be treated and reused downstream."}},
+    {"@type": "Question", "name": "Does liquid cooling use more or less water?", "acceptedAnswer": {"@type": "Answer", "text": "The liquid loop to the chips is closed and does not consume water by itself. Total water use depends on how the facility rejects the heat. Liquid cooling allows warmer water temperatures, which can extend economizer hours and allow dry coolers, but if the heat ends up in evaporative cooling towers, the site still consumes water."}},
+    {"@type": "Question", "name": "Is data center water usage increasing?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Lawrence Berkeley National Laboratory estimates U.S. data center direct water consumption rose from 21.2 billion liters in 2014 to about 66 billion liters in 2023, and projects that hyperscale data centers alone could consume 60 to 124 billion liters in 2028. Indirect water use also grows with electricity demand."}}
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="glass-nav"></header>
+
+<main id="main">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../">Home</a>
+      <span>&rsaquo;</span>
+      <a href="./">Knowledge Center</a>
+      <span>&rsaquo;</span>
+      <span aria-current="page">Water Usage</span>
+    </nav>
+  </div>
+
+  <section class="course-hero">
+    <div class="container">
+      <div class="course-hero-eyebrow">Knowledge Center &middot; Water</div>
+      <h1>Data Center Water Usage: How Much, Why, and How It Compares to Golf Courses</h1>
+      <p class="course-hero-hook">Data center water use has become a local flashpoint, and the comparison with golf courses shows up in nearly every debate. Here are the best available U.S. figures, with the year and scope of each, why data centers use water at all, how designs reduce it, and what the golf comparison can and cannot tell you.</p>
+      <div class="course-pills">
+        <span class="course-pill">11 min read</span>
+        <span class="course-pill">All levels</span>
+        <span class="course-pill">Updated October 2026</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="container guide-layout">
+    <aside class="guide-toc" aria-label="On this page">
+      <p class="guide-toc-title">On this page</p>
+      <ol>
+        <li><a href="#how-much">How much water data centers use</a></li>
+        <li><a href="#why">Why data centers use water</a></li>
+        <li><a href="#direct-indirect">Direct vs. indirect water</a></li>
+        <li><a href="#wue">What WUE measures</a></li>
+        <li><a href="#reduce">How designs reduce water use</a></li>
+        <li><a href="#golf">Data centers vs. golf courses</a></li>
+        <li><a href="#apples-oranges">Why the comparison is apples to oranges</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#sources">Sources</a></li>
+      </ol>
+      <a class="guide-toc-cta" href="../tools/pue-calculator.html"><strong>Try the calculator</strong>Work out PUE for your facility in seconds.</a>
+    </aside>
+
+    <article class="guide-body prose">
+      <div class="answer-box"><p><strong>Short answer:</strong> U.S. data center water usage was about 66 billion liters (about 17 billion gallons) of direct consumption in 2023, mostly for cooling, according to Lawrence Berkeley National Laboratory. U.S. golf facilities applied a projected 1.63 million acre-feet (about 531 billion gallons) in 2024, according to the GCSAA. Golf's total is larger, but the two figures measure different things.</p></div>
+
+      <div class="key-takeaways">
+        <p class="key-takeaways-title">Key takeaways</p>
+        <ul>
+          <li>Direct (on-site) data center water consumption was about 66 billion liters in 2023, roughly three times the 2014 level, with hyperscale and colocation sites accounting for 84 percent.</li>
+          <li>Water consumed indirectly to generate data centers' electricity was nearly 800 billion liters in 2023, far more than direct use.</li>
+          <li>U.S. golf facilities applied a projected 1.63 million acre-feet of water in 2024, 31 percent less than in 2005.</li>
+          <li>The golf comparison mixes consumption with application, direct with indirect, and national totals with local impact. Treat it as context, not a verdict.</li>
+          <li>Cooling design trades water against energy: waterless systems use more electricity, which carries its own indirect water footprint.</li>
+        </ul>
+      </div>
+
+      <h2 id="how-much">How much water do data centers use?</h2>
+      <p>U.S. data centers directly consumed about 66 billion liters of water in 2023, according to the 2024 United States Data Center Energy Usage Report from Lawrence Berkeley National Laboratory (LBNL), prepared for the U.S. Department of Energy. That is on-site consumption, mostly from cooling. The same report estimates nearly 800 billion liters of indirect consumption at the power plants that generated the facilities' electricity.</p>
+      <div class="stat-grid">
+        <div class="stat-tile"><div class="stat-value">~66 billion L</div><div class="stat-label">Direct U.S. data center water consumption, 2023 (about 17 billion gallons)</div><div class="stat-source">Source: <a href="https://escholarship.org/uc/item/32d6m0d1" rel="noopener">LBNL, 2024</a></div></div>
+        <div class="stat-tile"><div class="stat-value">~800 billion L</div><div class="stat-label">Indirect consumption through electricity generation, 2023 (about 211 billion gallons)</div><div class="stat-source">Source: <a href="https://escholarship.org/uc/item/32d6m0d1" rel="noopener">LBNL, 2024</a></div></div>
+        <div class="stat-tile"><div class="stat-value">1.63 million acre-feet</div><div class="stat-label">Water applied on U.S. golf facilities, 2024 (about 531 billion gallons)</div><div class="stat-source">Source: <a href="https://www.gcsaa.org/who-we-are/media/news-release/2025/12/30/golf-courses-reduce-water-usage-by-31-percent-according-to-national-survey" rel="noopener">GCSAA, 2025</a></div></div>
+      </div>
+      <div class="table-panel">
+        <table class="data-table">
+          <caption>U.S. data center water figures from the LBNL 2024 report</caption>
+          <thead><tr><th>Measure</th><th>Figure</th><th>Year</th><th>Scope</th></tr></thead>
+          <tbody>
+            <tr><td>Direct water consumption</td><td>21.2 billion liters</td><td>2014</td><td>All U.S. data centers, on site; 64% in internal (enterprise) data centers</td></tr>
+            <tr><td>Direct water consumption</td><td>About 66 billion liters</td><td>2023</td><td>All U.S. data centers, on site; 84% hyperscale and colocation, 12% internal</td></tr>
+            <tr><td>Direct water consumption, hyperscale only</td><td>60 to 124 billion liters</td><td>2028 (projection)</td><td>Hyperscale data centers, on site</td></tr>
+            <tr><td>Indirect water consumption</td><td>Nearly 800 billion liters</td><td>2023</td><td>Water consumed generating the electricity U.S. data centers used, based on regional grid mixes</td></tr>
+            <tr><td>Average site WUE</td><td>Just over 0.36 L/kWh</td><td>Through 2023</td><td>Average across all U.S. data centers; projected 0.45 to 0.48 L/kWh after 2023</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>For scale on the energy side, the same LBNL work found that data centers used about 4.4 percent of total U.S. electricity in 2023 (176 TWh), with projections of about 6.7 to 12 percent by 2028. Indirect water use rises with that electricity demand unless the grid mix changes.</p>
+
+      <h2 id="why">Why do data centers use water?</h2>
+      <p>Data centers use water mainly to reject heat. Every watt of IT power becomes heat, and evaporating water is one of the most energy-efficient ways to move that heat outdoors.</p>
+      <ul>
+        <li><strong>Cooling towers.</strong> Water-cooled chillers send heat through a condenser water loop to cooling towers, where a portion of the water evaporates and carries the heat away. LBNL found that facilities with water-cooled chillers and no economizers have the highest water usage effectiveness of the systems it modeled, largely because of cooling tower water use.</li>
+        <li><strong>Evaporative and adiabatic cooling.</strong> Some air handlers and dry coolers spray or wet media to pre-cool air on hot days. Water is used only when that wet mode runs, but on hot sites that can be often.</li>
+        <li><strong>Humidification.</strong> Some sites add moisture to the air at times to stay within humidity limits, which uses a smaller amount of water.</li>
+        <li><strong>Electricity generation.</strong> Thermoelectric power plants need cooling, and hydroelectric reservoirs lose water through surface evaporation. That water is consumed off site, on behalf of every kilowatt-hour the data center buys.</li>
+      </ul>
+      <p>The <a href="data-center-cooling.html">cooling guide</a> explains chillers, towers, and economizers in more detail.</p>
+
+      <h2 id="direct-indirect">Direct vs. indirect water use</h2>
+      <p>Direct (site) water is what the data center itself consumes, mostly in its cooling system. Indirect (source) water is what power plants consume to make the facility's electricity. LBNL reports both, and notes that including both "reflects the true water cost of data centers," although the indirect part is complex to calculate and depends heavily on the electricity source.</p>
+      <p>Two definitions matter here. <strong>Withdrawal</strong> is all the water taken from a river, aquifer, or utility. <strong>Consumption</strong> is the part of withdrawn water that is permanently removed from the immediate water cycle, usually by evaporation. The LBNL data center figures are consumption figures.</p>
+      <p>LBNL's national average for indirect water was 4.52 liters per kWh of data center electricity in 2023, compared with 4.35 L/kWh for U.S. electricity overall, because data centers cluster in particular grid regions. The report also notes that its method does not account for power purchase agreements or on-site generation, which could change the result for individual facilities.</p>
+
+      <h2 id="wue">What is WUE (water usage effectiveness)?</h2>
+      <p>Water usage effectiveness (WUE) is a facility's annual water consumption in liters divided by its IT equipment energy in kWh. It is the water counterpart of PUE, and like PUE it should be reported with its scope: site WUE counts only on-site water, while source WUE adds the water used to generate the electricity.</p>
+      <p>A low site WUE is not automatically better. LBNL points out that water-cooled and evaporative systems are generally more energy efficient than air-cooled chillers and other waterless systems, which use no water on site but more electricity. A site that cuts water by switching to air-cooled equipment can raise its PUE and its indirect water and carbon footprint. The <a href="energy-efficiency-pue.html">energy efficiency and PUE guide</a> covers PUE, WUE, and CUE together.</p>
+      <div class="inline-cta">
+        <p><strong>Tracking efficiency at your site?</strong> Calculate PUE from your facility and IT energy readings.</p>
+        <a class="btn btn-primary btn-sm" href="../tools/pue-calculator.html">Open the PUE Calculator</a>
+      </div>
+
+      <h2 id="reduce">How data center designs reduce water use</h2>
+      <p>Designs reduce water use by rejecting heat without evaporation for more hours of the year, or by using water that does not compete with drinking supplies. Each choice has an energy cost or a climate limit.</p>
+      <div class="table-panel">
+        <table class="data-table">
+          <caption>Water-saving cooling approaches and their trade-offs</caption>
+          <thead><tr><th>Approach</th><th>How it saves water</th><th>Trade-off</th></tr></thead>
+          <tbody>
+            <tr><td>Air-cooled chillers</td><td>Reject heat to outdoor air with fans; no cooling tower water.</td><td>More electricity, especially in hot weather, which raises indirect water use.</td></tr>
+            <tr><td>Dry coolers (with or without adiabatic assist)</td><td>Closed coils cooled by air; water is sprayed only on the hottest days if adiabatic assist is fitted.</td><td>Larger equipment; in hot climates the wet mode can run often.</td></tr>
+            <tr><td>Airside economizers</td><td>Use outdoor air for cooling so chilled water systems can shut down in favorable weather. LBNL notes this is common at hyperscale sites, with only sporadic adiabatic cooling.</td><td>Depends on climate and air quality; needs careful humidity and filtration control.</td></tr>
+            <tr><td>Closed-loop liquid cooling</td><td>Coolant runs in a closed loop to the chips, and warmer water temperatures allow more economizer hours or dry coolers.</td><td>Saves water only if the facility's heat rejection is waterless or mostly so; heat sent to cooling towers is still evaporated.</td></tr>
+            <tr><td>Reclaimed or non-potable water</td><td>Supplies cooling towers with treated wastewater or other non-drinking water.</td><td>Does not reduce consumption; needs suitable supply, treatment, and permits.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Operations matter too. Good cooling tower water treatment lets towers run more cycles before blowdown, leak detection catches losses early, and raising supply temperatures within the ASHRAE recommended range (18-27 &deg;C, or 64.4-80.6 &deg;F, for most equipment) increases economizer hours. <a href="../courses/mechanical-systems-maintenance.html">Mechanical Systems &amp; Equipment Maintenance</a> covers water treatment and chiller operation, and <a href="../courses/cooling-systems-design-optimization.html">Cooling Systems Design &amp; Optimization</a> covers economizers, containment, and liquid cooling.</p>
+
+      <h2 id="golf">Do golf courses use more water than data centers?</h2>
+      <p>On U.S. national totals, golf's figure is larger. U.S. golf facilities applied a projected 1.63 million acre-feet of water in 2024, about 2 trillion liters, according to the Golf Course Superintendents Association of America (GCSAA). U.S. data centers directly consumed about 66 billion liters in 2023 and indirectly consumed nearly 800 billion liters through electricity, according to LBNL.</p>
+      <div class="table-panel">
+        <table class="data-table">
+          <caption>Data center vs. golf course water figures, side by side</caption>
+          <thead><tr><th></th><th>U.S. data centers</th><th>U.S. golf facilities</th></tr></thead>
+          <tbody>
+            <tr><td>Headline figure</td><td>About 66 billion liters direct (about 17 billion gallons); nearly 800 billion liters indirect (about 211 billion gallons)</td><td>Projected 1.63 million acre-feet (about 531 billion gallons, or about 2 trillion liters)</td></tr>
+            <tr><td>Year</td><td>2023</td><td>2024</td></tr>
+            <tr><td>What is counted</td><td>Water consumed: on site (direct) and at power plants (indirect)</td><td>Water applied to the facility, mostly irrigation</td></tr>
+            <tr><td>How it was estimated</td><td>Model of the U.S. data center stock, cooling systems, and grid water intensity</td><td>Survey of nearly 1,700 golf facilities, projected to all U.S. facilities</td></tr>
+            <tr><td>Water sources</td><td>Varies by site; not broken out nationally</td><td>Wells 32%, lakes and ponds 27%, recycled water 19%</td></tr>
+            <tr><td>Trend</td><td>Direct use about three times the 2014 level; projected to keep rising</td><td>31% less than in 2005</td></tr>
+            <tr><td>Publisher</td><td>Lawrence Berkeley National Laboratory for the U.S. DOE, December 2024</td><td>GCSAA, survey funded in part by the USGA, released December 2025</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Taken at face value, golf's applied water is roughly 30 times data centers' direct consumption and a little over twice direct and indirect combined. Gallon and liter conversions are ours, using 325,851 gallons per acre-foot (the GCSAA's figure) and 3.785 liters per gallon.</p>
+
+      <h2 id="apples-oranges">Why the golf course comparison is apples to oranges</h2>
+      <p>The golf course vs. data center comparison is popular because both are visible, local land uses that draw water. But the two national figures differ in what they count, so neither side of the debate should lean on them too hard.</p>
+      <ol>
+        <li><strong>Consumption vs. application.</strong> LBNL counts water consumed, meaning removed from the immediate water cycle. The GCSAA counts water applied to turf and grounds. Its survey does not report how much of that water evaporates or is taken up by plants versus how much returns to the ground.</li>
+        <li><strong>Direct vs. indirect.</strong> The data center figure can include power plant water; the golf figure includes none of the indirect water behind irrigation pumps or course maintenance. Comparing data centers' direct plus indirect water with golf's direct water alone is not like for like either.</li>
+        <li><strong>National vs. local.</strong> Water stress is local. One large campus drawing on a stressed municipal system can matter more to a town than any national total, and the same is true of a course in a dry basin. In the GCSAA's 2020 survey, the Southeast and Southwest regions accounted for 58 percent of golf's applied water.</li>
+        <li><strong>Different sources and quality.</strong> About 19 percent of golf's applied water in 2024 was recycled water. Data centers draw on municipal, reclaimed, and groundwater supplies depending on the site. A liter of treated drinking water and a liter of reclaimed wastewater are not equal in value to a community.</li>
+        <li><strong>Different years, methods, and directions.</strong> The figures are a year apart, one is a model and the other a survey, and they are moving in opposite directions: golf's applied water fell 31 percent from 2005 to 2024, while data center direct consumption roughly tripled from 2014 to 2023.</li>
+      </ol>
+      <p>What the evidence supports: nationally, golf irrigation is the larger water user by these published measures, and data center water use is smaller but growing quickly and concentrated in specific places. Whether any given project is a good use of local water is a local question that needs local data: the site's cooling design, its WUE, its water source, and the condition of the watershed.</p>
+
+      <h2 id="courses">Courses on cooling, efficiency, and environmental compliance</h2>
+      <p>These self-paced courses cover the cooling, efficiency, maintenance, and permitting decisions that drive a facility's water use. Each awards a certificate of completion.</p>
+      <!-- dct:courses cooling-systems-design-optimization energy-efficiency-pue-optimization mechanical-systems-maintenance facility-environmental-compliance -->
+<!-- /dct:courses -->
+      <!-- dct:bundle bundle-cooling-efficiency -->
+<!-- /dct:bundle -->
+      <p>Facility managers responsible for permits and reporting should also see <a href="../courses/facility-environmental-compliance.html">Facility Environmental Compliance</a>, and teams tracking efficiency targets should see <a href="../courses/energy-efficiency-pue-optimization.html">Energy Efficiency &amp; PUE Optimization</a>.</p>
+
+      <h2 id="faq">Frequently asked questions</h2>
+      <div class="guide-faq">
+        <h3>Do golf courses use more water than data centers?</h3>
+        <p>On U.S. national totals, yes. Golf facilities applied a projected 1.63 million acre-feet of water in 2024, about 2 trillion liters, according to the GCSAA. Lawrence Berkeley National Laboratory estimates that data centers directly consumed about 66 billion liters in 2023, plus nearly 800 billion liters indirectly through electricity. The figures measure different things, so the comparison says little about local water impact.</p>
+        <h3>How much water does a data center use per day?</h3>
+        <p>It depends on size, climate, and cooling design, so no single number is accurate. You can estimate on-site use by multiplying daily IT energy by the site's water usage effectiveness (WUE). For example, a facility with 10 MW of IT load uses 240,000 kWh a day; at the 2023 U.S. average site WUE of about 0.36 liters per kWh, that is roughly 86,000 liters a day. Evaporatively cooled sites can use much more, and air-cooled sites far less.</p>
+        <h3>What is the difference between water withdrawal and water consumption?</h3>
+        <p>Withdrawal is all the water taken from a source. Consumption is the part that is not returned to the immediate water cycle, mostly because it evaporates. A cooling tower consumes most of the water it evaporates, while some withdrawn water, such as blowdown, is discharged and can be treated and reused downstream.</p>
+        <h3>Does liquid cooling use more or less water?</h3>
+        <p>The liquid loop to the chips is closed and does not consume water by itself. Total water use depends on how the facility rejects the heat. Liquid cooling allows warmer water temperatures, which can extend economizer hours and allow dry coolers, but if the heat ends up in evaporative cooling towers, the site still consumes water.</p>
+        <h3>Is data center water usage increasing?</h3>
+        <p>Yes. Lawrence Berkeley National Laboratory estimates U.S. data center direct water consumption rose from 21.2 billion liters in 2014 to about 66 billion liters in 2023, and projects that hyperscale data centers alone could consume 60 to 124 billion liters in 2028. Indirect water use also grows with electricity demand.</p>
+      </div>
+
+      <h2 id="sources">Sources</h2>
+      <ul class="guide-sources">
+        <li>Shehabi, A., et al., Lawrence Berkeley National Laboratory, <a href="https://escholarship.org/uc/item/32d6m0d1" rel="noopener">2024 United States Data Center Energy Usage Report</a>, LBNL-2001637, December 2024 (direct and indirect water consumption, WUE, cooling system trade-offs).</li>
+        <li>U.S. Department of Energy, <a href="https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers" rel="noopener">DOE releases new report evaluating increase in electricity demand from data centers</a> (electricity share in 2023 and 2028 projections).</li>
+        <li>Golf Course Superintendents Association of America, <a href="https://www.gcsaa.org/who-we-are/media/news-release/2025/12/30/golf-courses-reduce-water-usage-by-31-percent-according-to-national-survey" rel="noopener">Golf courses reduce water usage by 31 percent according to national survey</a>, December 30, 2025 (2024 applied water and water sources).</li>
+        <li>Golf Course Superintendents Association of America, <a href="https://www.gcsaa.org/docs/default-source/environment/phase-3-water-survey-full-report.pdf" rel="noopener">Golf Course Environmental Profile, Phase III, Volume I: Water Use and Management Practices on U.S. Golf Courses</a>, 2022 (acre-foot definition, survey method, 2020 regional shares).</li>
+      </ul>
+
+      <h2 id="related">Keep learning</h2>
+      <div class="card-grid">
+        <a class="topic-card" href="energy-efficiency-pue.html"><span class="topic-card-kicker">Guide</span><h3>Energy Efficiency &amp; PUE</h3><p>PUE, WUE, and CUE, and how to cut facility overhead.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+        <a class="topic-card" href="data-center-cooling.html"><span class="topic-card-kicker">Guide</span><h3>How Data Center Cooling Works</h3><p>Chillers, towers, economizers, and liquid cooling explained.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+        <a class="topic-card" href="ai-data-centers.html"><span class="topic-card-kicker">Guide</span><h3>AI &amp; High-Density Data Centers</h3><p>Why AI racks push cooling, power, and water decisions.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+        <a class="topic-card" href="../careers/data-center-hvac-technician.html"><span class="topic-card-kicker">Careers</span><h3>Data Center HVAC Technician</h3><p>The people who run chillers, towers, and water treatment.</p><span class="topic-card-cta">See the role &rarr;</span></a>
+        <a class="topic-card" href="../careers/how-many-jobs-does-a-data-center-create.html"><span class="topic-card-kicker">Research</span><h3>How Many Jobs Does a Data Center Create?</h3><p>Construction and permanent jobs, with sources.</p><span class="topic-card-cta">Read the research &rarr;</span></a>
+        <a class="topic-card" href="../careers/ai-data-center-jobs.html"><span class="topic-card-kicker">Careers</span><h3>AI Data Center Jobs</h3><p>Roles opening up as AI campuses are built and operated.</p><span class="topic-card-cta">Explore jobs &rarr;</span></a>
+      </div>
+      <p class="guide-updated">This guide is general educational information, not engineering, environmental, or legal advice. Figures are national estimates with the years and scopes stated; check local utility, permit, and watershed data for any specific site.</p>
+    </article>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta-block">
+        <h2>Train Your Team on Efficient Cooling</h2>
+        <p>Our Cooling &amp; Facilities Efficiency courses cover cooling design, PUE optimization, chillers, water treatment, and the maintenance that keeps them efficient.</p>
+        <div class="hero-ctas">
+          <a href="../bundles.html" class="btn glass-chip">See the Cooling Bundle</a>
+          <a href="../courses.html" class="btn glass-chip">Browse All Courses</a>
+          <a href="tel:18664296742" class="btn glass-chip">Call 1-866-429-6742</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="contact"></footer>
+<script src="../js/main.js" defer></script>
+
+</body>
+</html>
