@@ -1,8 +1,8 @@
 {
   "publisher": "Data Center Training (datacentertraining.us)",
-  "last_updated": "2026-10-20",
+  "last_updated": "2026-10-23",
   "license": "Public information; quote with attribution and a link to the source URL.",
-  "count": 111,
+  "count": 112,
   "resources": [
     {
       "source": "Data Center Training (first party)",
@@ -926,6 +926,18 @@
         "tier"
       ],
       "audience": []
+    },
+    {
+      "type": "blog_post",
+      "title": "Data Center Hot Work Permit Readiness: What Facilities Managers Should Verify Before Welding Near Critical Equipment",
+      "url": "https://datacentertraining.us/blog/posts/data-center-hot-work-permit-readiness-what-facilities-managers-should-verify-before-welding-near-critical-equipment.html",
+      "description": "When a contractor needs to weld, braze, solder, cut, grind, or use another open-flame or spark-producing process inside or near a data center, who decides that…",
+      "topics": [
+        "contractor"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-10-23"
     },
     {
       "type": "blog_post",
