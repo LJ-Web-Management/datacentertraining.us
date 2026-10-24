@@ -51,7 +51,7 @@ textarea.form-control { height: auto; min-height: 88px; padding: 10px 14px; line
 @keyframes spin { to { transform: rotate(360deg); } }
 
 .order-summary-card {
-  background: var(--surface); border-radius: var(--r-panel); box-shadow: var(--sh-panel); padding: clamp(20px, 3vw, 26px); position: sticky; top: 84px;
+  background: var(--surface); border-radius: var(--r-panel); box-shadow: var(--sh-panel); padding: clamp(20px, 3vw, 26px); position: sticky; top: calc(var(--nav-offset, 60px) + 24px); transition: top .3s var(--ease-out-quart);
 }
 .order-summary-card h2 { font-size: 15.5px; font-weight: 650; margin-bottom: 16px; }
 .summary-edit-cart { float: right; font-size: 13px; font-weight: 600; color: var(--accent-link); }
