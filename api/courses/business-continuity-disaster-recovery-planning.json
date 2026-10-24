@@ -89,6 +89,10 @@
     {
       "question": "What is a business impact analysis?",
       "answer": "A business impact analysis (BIA) identifies critical business processes, the systems they depend on and how long each can be interrupted before the damage becomes unacceptable. It sets the priorities and recovery targets the rest of the plan is built around."
+    },
+    {
+      "question": "Does this course lead to a business continuity certification like CBCP?",
+      "answer": "No. The CBCP is awarded by DRI International and the CBCI by the Business Continuity Institute, each through its own exam and requirements. This course awards a certificate of completion and teaches practical planning skills (frameworks, ICS/NIMS, plan stress-testing and audit-ready documentation) that help whether or not you go on to one of those certifications."
     }
   ],
   "related_course_ids": [
@@ -98,5 +102,5 @@
     "incident-response-troubleshooting",
     "building-maintenance-fundamentals"
   ],
-  "last_updated": "2026-10-23"
+  "last_updated": "2026-10-24"
 }

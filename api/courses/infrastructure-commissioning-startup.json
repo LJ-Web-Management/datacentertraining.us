@@ -98,6 +98,10 @@
     {
       "question": "Is commissioning only for new builds?",
       "answer": "No. Expansions, major equipment replacements and control upgrades also need commissioning, and recommissioning an existing facility can find problems that have developed over time."
+    },
+    {
+      "question": "What is commissioning and startup?",
+      "answer": "Startup is the first energization and operation of a piece of equipment, usually by its manufacturer. Commissioning is the broader process that verifies each system, and all systems working together, meet the design intent before the facility carries live load. In data centers it is usually organized in five levels, ending with integrated systems testing."
     }
   ],
   "related_course_ids": [
@@ -105,5 +109,5 @@
     "tier-infrastructure-fundamentals",
     "capacity-planning-forecasting"
   ],
-  "last_updated": "2026-10-23"
+  "last_updated": "2026-10-24"
 }

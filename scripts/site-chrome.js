@@ -80,6 +80,7 @@ function navData(d) {
             { href: 'training/', title: 'All Training Programs' },
             { href: 'training/data-center-technician-training.html', title: 'Data Center Technician Training' },
             { href: 'training/nfpa-70e-training.html', title: 'NFPA 70E Training' },
+            { href: 'training/osha-electrical-safety-training.html', title: 'OSHA Electrical Safety Training' },
             { href: 'training/arc-flash-training.html', title: 'Arc Flash Training' },
             { href: 'training/lockout-tagout-training.html', title: 'Lockout/Tagout Training' },
             { href: 'training/ups-battery-training.html', title: 'UPS & Battery Training' },
@@ -118,7 +119,8 @@ function navData(d) {
             { href: 'learn/data-center-cooling.html', title: 'Cooling Systems' },
             { href: 'learn/data-center-tiers.html', title: 'Tier Levels & Redundancy' },
             { href: 'learn/energy-efficiency-pue.html', title: 'Energy Efficiency & PUE' },
-            { href: 'learn/ai-data-centers.html', title: 'AI & High-Density Facilities' }
+            { href: 'learn/ai-data-centers.html', title: 'AI & High-Density Facilities' },
+            { href: 'learn/800-vdc-data-center-safety.html', title: '800 VDC Power Safety' }
           ]
         },
         {

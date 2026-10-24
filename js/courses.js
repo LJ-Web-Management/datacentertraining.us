@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var categorySelect = document.getElementById('courseCategoryFilter');
   var resultCount = document.getElementById('courseResultCount');
   var emptyState = document.getElementById('courseEmptyState');
+  var requestLink = document.getElementById('courseRequestLink');
   var subheads = {
     comprehensive: document.getElementById('courseSubheadComprehensive'),
     modular: document.getElementById('courseSubheadModular')
@@ -95,6 +96,8 @@ document.addEventListener('DOMContentLoaded', function () {
       resultCount.textContent = totalVisible === 1 ? '1 course' : totalVisible + ' courses';
     }
     if (emptyState) emptyState.hidden = totalVisible !== 0;
+    // "Request this course" carries the search that found nothing.
+    if (requestLink) requestLink.href = 'course-request.html' + (query ? '?topic=' + encodeURIComponent(searchInput.value.trim()) : '');
   }
 
   // Pre-fill from ?q=&type=&track=&sort= so filtered views are linkable (and

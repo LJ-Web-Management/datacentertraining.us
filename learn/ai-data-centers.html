@@ -69,7 +69,7 @@ if(navigator.modelContext){var m=document.createElement('script');m.src='/js/web
   "mainEntityOfPage": "https://datacentertraining.us/learn/ai-data-centers.html",
   "image": "https://datacentertraining.us/images/og-image.jpg",
   "datePublished": "2026-10-19",
-  "dateModified": "2026-10-19",
+  "dateModified": "2026-10-24",
   "inLanguage": "en-US",
   "author": {"@type": "Organization", "name": "Data Center Training", "url": "https://datacentertraining.us/"},
   "publisher": {"@type": "EducationalOrganization", "@id": "https://datacentertraining.us/#organization", "name": "Data Center Training", "url": "https://datacentertraining.us/"},
@@ -95,7 +95,9 @@ if(navigator.modelContext){var m=document.createElement('script');m.src='/js/web
     {"@type": "Question", "name": "What rack density counts as high density?", "acceptedAnswer": {"@type": "Answer", "text": "There is no official cutoff. Traditional enterprise racks commonly draw single-digit kilowatts, and many operators call a rack high density once it reaches the low tens of kilowatts, where air cooling starts to struggle. AI training racks commonly run at tens of kilowatts, and some current GPU systems exceed 100 kW per rack."}},
     {"@type": "Question", "name": "Does liquid cooling eliminate the need for air cooling?", "acceptedAnswer": {"@type": "Answer", "text": "Usually not. Cold plates remove most of the heat from GPUs and CPUs, but power supplies, memory, storage, and network gear still shed heat into the air. Most liquid-cooled halls keep a smaller air system alongside the liquid loop. Immersion comes closest to removing air cooling at the rack."}},
     {"@type": "Question", "name": "Is it safe to run water near servers?", "acceptedAnswer": {"@type": "Answer", "text": "It can be, when the system is designed and run for it: a separate treated technology cooling loop, dripless quick-disconnects, layered leak detection, and alarms tied to the BMS. Thorough commissioning, water quality management, and written leak response procedures keep the risk low."}},
-    {"@type": "Question", "name": "What should a facility technician learn first to work in AI data centers?", "acceptedAnswer": {"@type": "Answer", "text": "Start with fundamentals you will use every shift: power distribution and electrical safety, how heat moves through air and liquid cooling systems, and how the BMS reports what is happening. Then add CDU operation, coolant chemistry, leak response, and commissioning procedures."}}
+    {"@type": "Question", "name": "What should a facility technician learn first to work in AI data centers?", "acceptedAnswer": {"@type": "Answer", "text": "Start with fundamentals you will use every shift: power distribution and electrical safety, how heat moves through air and liquid cooling systems, and how the BMS reports what is happening. Then add CDU operation, coolant chemistry, leak response, and commissioning procedures."}},
+    {"@type": "Question", "name": "What training and safety procedures do staff need for liquid-cooled servers?", "acceptedAnswer": {"@type": "Answer", "text": "Staff need training on the coolant loop as well as the IT: how the CDU, manifolds and quick disconnects work, how to isolate and drain a loop, leak detection and response, safe fluid handling (PPE and the safety data sheet for the glycol or dielectric fluid in use), and the electrical hazards of working on energized racks where fluid is present. Written procedures should cover connecting and disconnecting servers, leak alarms, spill cleanup, filling and venting, and lockout/tagout of pumps and CDUs. Manufacturer training covers each system's specifics."}},
+    {"@type": "Question", "name": "What does 800 VDC power change for data center safety?", "acceptedAnswer": {"@type": "Answer", "text": "Higher-voltage DC distribution to AI racks raises shock and arc flash exposure and adds DC-specific hazards, such as arcs that do not self-extinguish and stored energy in capacitors and batteries. See the 800 VDC data center safety guide for what NFPA 70E covers and how teams build a qualification path."}}
   ]
 }
 </script>
@@ -129,6 +131,7 @@ if(navigator.modelContext){var m=document.createElement('script');m.src='/js/web
             <a href="../training/"><span class="nav-link-title">All Training Programs</span></a>
             <a href="../training/data-center-technician-training.html"><span class="nav-link-title">Data Center Technician Training</span></a>
             <a href="../training/nfpa-70e-training.html"><span class="nav-link-title">NFPA 70E Training</span></a>
+            <a href="../training/osha-electrical-safety-training.html"><span class="nav-link-title">OSHA Electrical Safety Training</span></a>
             <a href="../training/arc-flash-training.html"><span class="nav-link-title">Arc Flash Training</span></a>
             <a href="../training/lockout-tagout-training.html"><span class="nav-link-title">Lockout/Tagout Training</span></a>
             <a href="../training/ups-battery-training.html"><span class="nav-link-title">UPS &amp; Battery Training</span></a>
@@ -161,6 +164,7 @@ if(navigator.modelContext){var m=document.createElement('script');m.src='/js/web
             <a href="../learn/data-center-tiers.html"><span class="nav-link-title">Tier Levels &amp; Redundancy</span></a>
             <a href="../learn/energy-efficiency-pue.html"><span class="nav-link-title">Energy Efficiency &amp; PUE</span></a>
             <a href="../learn/ai-data-centers.html" aria-current="page"><span class="nav-link-title">AI &amp; High-Density Facilities</span></a>
+            <a href="../learn/800-vdc-data-center-safety.html"><span class="nav-link-title">800 VDC Power Safety</span></a>
           </div>
           <div class="nav-menu-col">
             <p class="nav-menu-label">Operations</p>
@@ -448,12 +452,17 @@ if(navigator.modelContext){var m=document.createElement('script');m.src='/js/web
         <p>It can be, when the system is designed and run for it: a separate treated technology cooling loop, dripless quick-disconnects, layered leak detection, and alarms tied to the BMS. Thorough commissioning, water quality management, and written leak response procedures keep the risk low.</p>
         <h3>What should a facility technician learn first to work in AI data centers?</h3>
         <p>Start with fundamentals you will use every shift: power distribution and electrical safety, how heat moves through air and liquid cooling systems, and how the BMS reports what is happening. Then add CDU operation, coolant chemistry, leak response, and commissioning procedures.</p>
+        <h3>What training and safety procedures do staff need for liquid-cooled servers?</h3>
+        <p>Staff need training on the coolant loop as well as the IT: how the CDU, manifolds and quick disconnects work, how to isolate and drain a loop, leak detection and response, safe fluid handling (PPE and the safety data sheet for the glycol or dielectric fluid in use), and the electrical hazards of working on energized racks where fluid is present. Written procedures should cover connecting and disconnecting servers, leak alarms, spill cleanup, filling and venting, and lockout/tagout of pumps and CDUs. Manufacturer training covers each system's specifics.</p>
+        <h3>What does 800 VDC power change for data center safety?</h3>
+        <p>Higher-voltage DC distribution to AI racks raises shock and arc flash exposure and adds DC-specific hazards, such as arcs that do not self-extinguish and stored energy in capacitors and batteries. See the <a href="800-vdc-data-center-safety.html">800 VDC data center safety guide</a> for what NFPA 70E covers and how teams build a qualification path.</p>
       </div>
 
       <h2 id="related">Keep learning</h2>
       <div class="card-grid card-grid-2">
         <a class="topic-card" href="data-center-cooling.html"><span class="topic-card-kicker">Guide</span><h3>How Data Center Cooling Works</h3><p>Chillers, CRAHs, and containment: the base liquid cooling builds on.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
         <a class="topic-card" href="data-center-power.html"><span class="topic-card-kicker">Guide</span><h3>How Data Center Power Works</h3><p>Follow power from the utility to the rack.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+        <a class="topic-card" href="800-vdc-data-center-safety.html"><span class="topic-card-kicker">Guide</span><h3>800 VDC Power Safety</h3><p>What high-voltage DC rack power changes for the people who maintain it.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
         <a class="topic-card" href="data-center-commissioning.html"><span class="topic-card-kicker">Guide</span><h3>Data Center Commissioning</h3><p>The levels of testing that prove a facility works before it goes live.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
         <a class="topic-card" href="../careers/data-center-jobs.html#hvac-technician"><span class="topic-card-kicker">Careers</span><h3>Data Center HVAC Technician</h3><p>The role liquid cooling is reshaping fastest.</p><span class="topic-card-cta">See the role &rarr;</span></a>
       </div>

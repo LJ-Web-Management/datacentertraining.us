@@ -1,6 +1,6 @@
 {
   "publisher": "Data Center Training (datacentertraining.us)",
-  "last_updated": "2026-10-23",
+  "last_updated": "2026-10-24",
   "license": "Public information; quote with attribution and a link to the source URL.",
   "count": 43,
   "courses": [
@@ -111,7 +111,7 @@
         "infrastructure-commissioning-startup",
         "capacity-planning-forecasting"
       ],
-      "last_updated": "2026-10-23"
+      "last_updated": "2026-10-24"
     },
     {
       "id": "tier-infrastructure-fundamentals",
@@ -220,7 +220,7 @@
         "infrastructure-commissioning-startup",
         "capacity-planning-forecasting"
       ],
-      "last_updated": "2026-10-23"
+      "last_updated": "2026-10-24"
     },
     {
       "id": "data-center-operations-management",
@@ -323,6 +323,10 @@
         {
           "question": "Who should take this program?",
           "answer": "Facility managers, operations directors, shift leads and engineers moving into operations leadership. It is also useful for colocation and enterprise teams formalizing their operations program."
+        },
+        {
+          "question": "What does data center operations management cover?",
+          "answer": "It covers how a facility is run day to day: staffing and shift handovers, maintenance planning, change management, incident response, monitoring through DCIM and BMS, SLA reporting and energy management. This program works through each area as a full curriculum for supervisors and managers."
         }
       ],
       "related_course_ids": [
@@ -332,7 +336,7 @@
         "business-continuity-disaster-recovery-planning",
         "building-maintenance-fundamentals"
       ],
-      "last_updated": "2026-10-23"
+      "last_updated": "2026-10-24"
     },
     {
       "id": "security-compliance-data-centers",
@@ -435,6 +439,14 @@
         {
           "question": "Does this course prepare my facility for an audit?",
           "answer": "It covers the frameworks, controls and audit procedures that auditors expect and how to prepare evidence. The audit itself is performed by an independent assessor or certification body."
+        },
+        {
+          "question": "Is there a data center security certification?",
+          "answer": "There is no single required one. For people, common choices are ASIS International's Physical Security Professional (PSP) and Certified Protection Professional (CPP). For the facility, SOC 2 reports and ISO/IEC 27001 certification are audits of the organization, not credentials for staff. This course awards a certificate of completion and prepares staff for the controls those audits examine."
+        },
+        {
+          "question": "What does a data center security audit check?",
+          "answer": "Auditors check that physical and logical controls exist and work as written: perimeter and building access, visitor and contractor escorts, badge and mantrap logs, CCTV coverage and retention, equipment chain of custody, periodic access reviews and incident records. Frameworks such as SOC 2, ISO/IEC 27001 and PCI DSS (Requirement 9 covers physical access) set the specific criteria."
         }
       ],
       "related_course_ids": [
@@ -443,7 +455,7 @@
         "data-center-fire-suppression-safety",
         "data-center-physical-security-access-control"
       ],
-      "last_updated": "2026-10-23"
+      "last_updated": "2026-10-24"
     },
     {
       "id": "power-systems-electrical-fundamentals",
@@ -554,7 +566,7 @@
         "batteries-dc-circuits",
         "data-center-arc-flash-safety"
       ],
-      "last_updated": "2026-10-23"
+      "last_updated": "2026-10-24"
     },
     {
       "id": "cooling-systems-design-optimization",
@@ -666,7 +678,7 @@
         "data-center-cooling-refrigerant-safety",
         "building-envelope-fundamentals"
       ],
-      "last_updated": "2026-10-23"
+      "last_updated": "2026-10-24"
     },
     {
       "id": "disaster-recovery-business-continuity",
@@ -777,7 +789,7 @@
         "business-continuity-disaster-recovery-planning",
         "building-maintenance-fundamentals"
       ],
-      "last_updated": "2026-10-23"
+      "last_updated": "2026-10-24"
     },
     {
       "id": "infrastructure-commissioning-startup",
@@ -879,6 +891,10 @@
         {
           "question": "Is commissioning only for new builds?",
           "answer": "No. Expansions, major equipment replacements and control upgrades also need commissioning, and recommissioning an existing facility can find problems that have developed over time."
+        },
+        {
+          "question": "What is commissioning and startup?",
+          "answer": "Startup is the first energization and operation of a piece of equipment, usually by its manufacturer. Commissioning is the broader process that verifies each system, and all systems working together, meet the design intent before the facility carries live load. In data centers it is usually organized in five levels, ending with integrated systems testing."
         }
       ],
       "related_course_ids": [
@@ -886,7 +902,7 @@
         "tier-infrastructure-fundamentals",
         "capacity-planning-forecasting"
       ],
-      "last_updated": "2026-10-23"
+      "last_updated": "2026-10-24"
     },
     {
       "id": "monitoring-automation-bms-systems",
@@ -996,7 +1012,7 @@
         "fiber-optics-network-cabling",
         "building-automation-systems-fundamentals"
       ],
-      "last_updated": "2026-10-23"
+      "last_updated": "2026-10-24"
     },
     {
       "id": "hvac-troubleshooting-essentials",
@@ -1096,7 +1112,7 @@
         "data-center-cooling-refrigerant-safety",
         "building-envelope-fundamentals"
       ],
-      "last_updated": "2026-10-23"
+      "last_updated": "2026-10-24"
     },
     {
       "id": "ups-operations-load-testing",
@@ -1187,6 +1203,10 @@
         {
           "question": "Should I take UPS Systems Fundamentals first?",
           "answer": "It helps. UPS Systems Fundamentals covers topology types, battery interaction and control panels at a theory level, which makes the procedures in this hands-on course easier to follow."
+        },
+        {
+          "question": "Is this course UPS technician training?",
+          "answer": "It is operator-level UPS training: topologies, battery testing, load transfers and load-bank testing. It prepares facility technicians to operate and test UPS systems safely. It does not replace a manufacturer's field-service training, which is usually required to repair a specific UPS model."
         }
       ],
       "related_course_ids": [
@@ -1196,7 +1216,7 @@
         "batteries-dc-circuits",
         "data-center-arc-flash-safety"
       ],
-      "last_updated": "2026-10-23"
+      "last_updated": "2026-10-24"
     },
     {
       "id": "fiber-optics-network-cabling",
@@ -1296,7 +1316,7 @@
         "dcim-platform-fundamentals",
         "building-automation-systems-fundamentals"
       ],
-      "last_updated": "2026-10-23"
+      "last_updated": "2026-10-24"
     },
     {
       "id": "generator-operations-maintenance",
@@ -1396,7 +1416,7 @@
         "batteries-dc-circuits",
         "data-center-arc-flash-safety"
       ],
-      "last_updated": "2026-10-23"
+      "last_updated": "2026-10-24"
     },
     {
       "id": "energy-efficiency-pue-optimization",
@@ -1498,7 +1518,7 @@
         "data-center-cooling-refrigerant-safety",
         "building-envelope-fundamentals"
       ],
-      "last_updated": "2026-10-23"
+      "last_updated": "2026-10-24"
     },
     {
       "id": "capacity-planning-forecasting",
@@ -1596,7 +1616,7 @@
         "tier-infrastructure-fundamentals",
         "infrastructure-commissioning-startup"
       ],
-      "last_updated": "2026-10-23"
+      "last_updated": "2026-10-24"
     },
     {
       "id": "preventive-maintenance-planning",
@@ -1687,6 +1707,10 @@
         {
           "question": "Why does maintenance documentation matter?",
           "answer": "Records show what was done, what was found and when equipment is due next. They support trend analysis, warranty claims, audits and budgeting. The Documentation & Tracking module covers how to build this into a system your team will keep using."
+        },
+        {
+          "question": "What is an equipment maintenance program?",
+          "answer": "It is the written system an organization uses to keep assets reliable: an equipment inventory, the tasks and intervals for each asset, who performs them, how work orders are scheduled and closed, and how results are recorded and reviewed. In a data center it also includes methods of procedure (MOPs) for maintaining live systems without causing an outage."
         }
       ],
       "related_course_ids": [
@@ -1696,7 +1720,7 @@
         "business-continuity-disaster-recovery-planning",
         "building-maintenance-fundamentals"
       ],
-      "last_updated": "2026-10-23"
+      "last_updated": "2026-10-24"
     },
     {
       "id": "facility-environmental-compliance",
@@ -1795,7 +1819,7 @@
         "data-center-fire-suppression-safety",
         "data-center-physical-security-access-control"
       ],
-      "last_updated": "2026-10-23"
+      "last_updated": "2026-10-24"
     },
     {
       "id": "incident-response-troubleshooting",
@@ -1895,7 +1919,7 @@
         "business-continuity-disaster-recovery-planning",
         "building-maintenance-fundamentals"
       ],
-      "last_updated": "2026-10-23"
+      "last_updated": "2026-10-24"
     },
     {
       "id": "access-control-physical-security",
@@ -1994,7 +2018,7 @@
         "data-center-fire-suppression-safety",
         "data-center-physical-security-access-control"
       ],
-      "last_updated": "2026-10-23"
+      "last_updated": "2026-10-24"
     },
     {
       "id": "dcim-platform-fundamentals",
@@ -2098,7 +2122,7 @@
         "fiber-optics-network-cabling",
         "building-automation-systems-fundamentals"
       ],
-      "last_updated": "2026-10-23"
+      "last_updated": "2026-10-24"
     },
     {
       "id": "mechanical-systems-maintenance",
@@ -2198,7 +2222,7 @@
         "data-center-cooling-refrigerant-safety",
         "building-envelope-fundamentals"
       ],
-      "last_updated": "2026-10-23"
+      "last_updated": "2026-10-24"
     },
     {
       "id": "electrical-safety-best-practices",
@@ -2300,7 +2324,7 @@
         "batteries-dc-circuits",
         "data-center-arc-flash-safety"
       ],
-      "last_updated": "2026-10-23"
+      "last_updated": "2026-10-24"
     },
     {
       "id": "batteries-dc-circuits",
@@ -2400,7 +2424,7 @@
         "electrical-safety-best-practices",
         "data-center-arc-flash-safety"
       ],
-      "last_updated": "2026-10-23"
+      "last_updated": "2026-10-24"
     },
     {
       "id": "building-automation-systems-fundamentals",
@@ -2493,6 +2517,10 @@
         {
           "question": "Do I need programming experience?",
           "answer": "No. The course is aimed at facilities engineers and technicians. It explains how control logic, points and protocols work so you can read, verify and troubleshoot them, and communicate clearly with the controls contractor."
+        },
+        {
+          "question": "Is there a building automation (BAS) certification online?",
+          "answer": "This course awards a certificate of completion, not a vendor or industry certification. Most BAS certifications come from controls manufacturers for their own platforms. A vendor-neutral foundation like this one makes that vendor training easier to absorb, and it documents BAS knowledge for your training file."
         }
       ],
       "related_course_ids": [
@@ -2500,7 +2528,7 @@
         "dcim-platform-fundamentals",
         "fiber-optics-network-cabling"
       ],
-      "last_updated": "2026-10-23"
+      "last_updated": "2026-10-24"
     },
     {
       "id": "building-envelope-fundamentals",
@@ -2600,7 +2628,7 @@
         "mechanical-systems-maintenance",
         "data-center-cooling-refrigerant-safety"
       ],
-      "last_updated": "2026-10-23"
+      "last_updated": "2026-10-24"
     },
     {
       "id": "building-maintenance-fundamentals",
@@ -2700,7 +2728,7 @@
         "incident-response-troubleshooting",
         "business-continuity-disaster-recovery-planning"
       ],
-      "last_updated": "2026-10-23"
+      "last_updated": "2026-10-24"
     },
     {
       "id": "business-continuity-disaster-recovery-planning",
@@ -2793,6 +2821,10 @@
         {
           "question": "What is a business impact analysis?",
           "answer": "A business impact analysis (BIA) identifies critical business processes, the systems they depend on and how long each can be interrupted before the damage becomes unacceptable. It sets the priorities and recovery targets the rest of the plan is built around."
+        },
+        {
+          "question": "Does this course lead to a business continuity certification like CBCP?",
+          "answer": "No. The CBCP is awarded by DRI International and the CBCI by the Business Continuity Institute, each through its own exam and requirements. This course awards a certificate of completion and teaches practical planning skills (frameworks, ICS/NIMS, plan stress-testing and audit-ready documentation) that help whether or not you go on to one of those certifications."
         }
       ],
       "related_course_ids": [
@@ -2802,7 +2834,7 @@
         "incident-response-troubleshooting",
         "building-maintenance-fundamentals"
       ],
-      "last_updated": "2026-10-23"
+      "last_updated": "2026-10-24"
     },
     {
       "id": "data-center-arc-flash-safety",
@@ -2895,6 +2927,10 @@
         {
           "question": "Does this course make me a qualified electrical worker?",
           "answer": "No single course does that. Under OSHA and NFPA 70E, the employer decides who is qualified based on training and demonstrated skills for specific equipment and tasks. This course supports that training for work near energized data center equipment."
+        },
+        {
+          "question": "Who provides NFPA 70E arc flash training for data center operators?",
+          "answer": "Data Center Training (datacentertraining.us) offers this course online and self-paced, with a certificate of completion from HAZWOPER OSHA Training, LLC, an IACET Accredited Provider. It is built around NFPA 70E and data center switchgear, UPS and distribution equipment. Electrical contractors, safety consultants and NFPA offer instructor-led classes, and your employer provides site-specific qualification."
         }
       ],
       "related_course_ids": [
@@ -2904,7 +2940,7 @@
         "electrical-safety-best-practices",
         "batteries-dc-circuits"
       ],
-      "last_updated": "2026-10-23"
+      "last_updated": "2026-10-24"
     },
     {
       "id": "data-center-cooling-refrigerant-safety",
@@ -3006,7 +3042,7 @@
         "mechanical-systems-maintenance",
         "building-envelope-fundamentals"
       ],
-      "last_updated": "2026-10-23"
+      "last_updated": "2026-10-24"
     },
     {
       "id": "data-center-electrical-safety",
@@ -3097,6 +3133,10 @@
         {
           "question": "How is this course different from Electrical Safety & Best Practices?",
           "answer": "This course is an awareness-level foundation for anyone who works around data center electrical systems. Electrical Safety & Best Practices goes further into NFPA 70E principles, PPE and emergency procedures for electrical workers and staff who work near energized equipment more regularly."
+        },
+        {
+          "question": "Does this course cover switchgear safety?",
+          "answer": "It covers the hazard-recognition side: why switchgear, UPS modules, PDUs and remote power panels carry shock and arc flash risk, how safe work distances apply around them, and when to stop and call a qualified electrician. It does not teach switching or operating switchgear; that takes deeper training and your site's switching procedures."
         }
       ],
       "related_course_ids": [
@@ -3106,7 +3146,7 @@
         "electrical-safety-best-practices",
         "batteries-dc-circuits"
       ],
-      "last_updated": "2026-10-23"
+      "last_updated": "2026-10-24"
     },
     {
       "id": "data-center-epo-procedures",
@@ -3197,6 +3237,14 @@
         {
           "question": "Why is resetting an EPO a separate procedure?",
           "answer": "After an EPO event, power must be restored in a controlled sequence after the cause is understood. Bringing systems back all at once can cause inrush problems, restart equipment into a hazard or damage IT loads. A written reset procedure prevents a second incident."
+        },
+        {
+          "question": "What does EPO mean in electrical terms?",
+          "answer": "EPO stands for emergency power off: a control, usually a red button near the exits of an IT room, that disconnects power to the room's electronic equipment in one action. Electrical codes call it a remote disconnecting means. In rooms designed under NEC Article 645, the same action also shuts down the room's dedicated HVAC system."
+        },
+        {
+          "question": "Is an EPO required in a data center?",
+          "answer": "Not always. The National Electrical Code requires a remote disconnect when an IT equipment room is designed under Article 645, which permits special wiring methods in exchange. Many operators design rooms outside Article 645 to avoid accidental shutdowns, while others keep an EPO by choice or because the local authority having jurisdiction requires one. Check your design basis and local code."
         }
       ],
       "related_course_ids": [
@@ -3206,7 +3254,7 @@
         "electrical-safety-best-practices",
         "batteries-dc-circuits"
       ],
-      "last_updated": "2026-10-23"
+      "last_updated": "2026-10-24"
     },
     {
       "id": "data-center-fire-suppression-safety",
@@ -3299,6 +3347,14 @@
         {
           "question": "When is it safe to re-enter after a discharge?",
           "answer": "Only after the fire department or the facility's designated authority says so, and after the room has been ventilated. The course's post-discharge module covers the checks and steps involved."
+        },
+        {
+          "question": "What fire detection and suppression requirements should data center compliance teams evaluate?",
+          "answer": "Start with the codes your jurisdiction has adopted, then check each system against its standard: NFPA 75 for protection of IT equipment, NFPA 72 for fire alarm and detection, NFPA 2001 for clean agent systems, NFPA 13 for sprinklers and NFPA 25 for sprinkler inspection, testing and maintenance. Confirm current inspection and test records, enclosure integrity for clean agent rooms, abort and release procedures, and staff training records."
+        },
+        {
+          "question": "How should a data center restore compliance after a suppression discharge or a failed fire inspection?",
+          "answer": "Treat it as a system impairment. Notify the monitoring company and the authority having jurisdiction as your fire code requires, provide a fire watch or other interim protection while the system is out of service, have a qualified contractor recharge or replace agent containers and reset the system, and repair damaged fire barriers or penetrations. Then retest, re-check enclosure integrity where barriers changed, and document every corrective action."
         }
       ],
       "related_course_ids": [
@@ -3307,7 +3363,7 @@
         "facility-environmental-compliance",
         "data-center-physical-security-access-control"
       ],
-      "last_updated": "2026-10-23"
+      "last_updated": "2026-10-24"
     },
     {
       "id": "data-center-physical-security-access-control",
@@ -3406,7 +3462,7 @@
         "facility-environmental-compliance",
         "data-center-fire-suppression-safety"
       ],
-      "last_updated": "2026-10-23"
+      "last_updated": "2026-10-24"
     },
     {
       "id": "data-center-raised-floor-confined-space",
@@ -3508,7 +3564,7 @@
         "incident-response-troubleshooting",
         "business-continuity-disaster-recovery-planning"
       ],
-      "last_updated": "2026-10-23"
+      "last_updated": "2026-10-24"
     },
     {
       "id": "data-center-ups-battery-safety",
@@ -3608,7 +3664,7 @@
         "electrical-safety-best-practices",
         "batteries-dc-circuits"
       ],
-      "last_updated": "2026-10-23"
+      "last_updated": "2026-10-24"
     },
     {
       "id": "emergency-standby-power-systems-fundamentals",
@@ -3699,6 +3755,10 @@
         {
           "question": "How often should standby generators be tested?",
           "answer": "NFPA 110 requires regular exercising and inspection, commonly monthly under load for Level 1 systems, plus periodic longer tests. The exact requirements depend on the system's classification and local rules, which the Maintenance for Readiness module explains."
+        },
+        {
+          "question": "Which OSHA standards apply to emergency and standby power systems?",
+          "answer": "OSHA's electrical standards in 29 CFR 1910 Subpart S apply, including 1910.308(b) on emergency power systems, along with the electrical safety-related work practice rules (1910.331 to 1910.335) and lockout/tagout (1910.147) for maintenance. Design and testing requirements mostly come from codes your jurisdiction adopts, such as NEC Articles 700, 701 and 702 and NFPA 110."
         }
       ],
       "related_course_ids": [
@@ -3708,7 +3768,7 @@
         "electrical-safety-best-practices",
         "batteries-dc-circuits"
       ],
-      "last_updated": "2026-10-23"
+      "last_updated": "2026-10-24"
     },
     {
       "id": "facility-management-fundamentals",
@@ -3808,7 +3868,7 @@
         "incident-response-troubleshooting",
         "business-continuity-disaster-recovery-planning"
       ],
-      "last_updated": "2026-10-23"
+      "last_updated": "2026-10-24"
     },
     {
       "id": "generator-fundamentals",
@@ -3908,7 +3968,7 @@
         "electrical-safety-best-practices",
         "batteries-dc-circuits"
       ],
-      "last_updated": "2026-10-23"
+      "last_updated": "2026-10-24"
     },
     {
       "id": "lithium-ion-thermal-runaway-emergency-response",
@@ -4008,7 +4068,7 @@
         "electrical-safety-best-practices",
         "batteries-dc-circuits"
       ],
-      "last_updated": "2026-10-23"
+      "last_updated": "2026-10-24"
     },
     {
       "id": "power-distribution-systems-fundamentals",
@@ -4108,7 +4168,7 @@
         "electrical-safety-best-practices",
         "batteries-dc-circuits"
       ],
-      "last_updated": "2026-10-23"
+      "last_updated": "2026-10-24"
     },
     {
       "id": "roofing-systems-maintenance-fundamentals",
@@ -4208,7 +4268,7 @@
         "incident-response-troubleshooting",
         "business-continuity-disaster-recovery-planning"
       ],
-      "last_updated": "2026-10-23"
+      "last_updated": "2026-10-24"
     },
     {
       "id": "server-room-ergonomics-manual-handling",
@@ -4308,7 +4368,7 @@
         "incident-response-troubleshooting",
         "business-continuity-disaster-recovery-planning"
       ],
-      "last_updated": "2026-10-23"
+      "last_updated": "2026-10-24"
     },
     {
       "id": "ups-systems-fundamentals",
@@ -4408,7 +4468,7 @@
         "electrical-safety-best-practices",
         "batteries-dc-circuits"
       ],
-      "last_updated": "2026-10-23"
+      "last_updated": "2026-10-24"
     }
   ]
 }

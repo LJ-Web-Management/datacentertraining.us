@@ -2,7 +2,7 @@
 
 > Data Center Training (datacentertraining.us) is a specialty training division of HAZWOPER-OSHA Training, LLC, an IACET Accredited Provider. 43 online, self-paced data center courses (192 hours total) in design, operations, power, cooling, security, and facilities management. Every course awards a certificate of completion.
 
-Last updated: 2026-10-23
+Last updated: 2026-10-24
 
 Courses start at $99.99 per seat, or enroll the complete 43-course catalog bundle for $2,928.99. 7 bundles save up to 52%. Programs are Comprehensive Programs (8-16 hrs, full-discipline curriculum) or Modular Specializations (1-8 hrs, focused skills). English only.
 
@@ -43,6 +43,23 @@ Courses start at $99.99 per seat, or enroll the complete 43-course catalog bundl
 - [About](https://datacentertraining.us/about.html): who publishes this site, accreditation, and editorial standards.
 - [Quizzes](https://datacentertraining.us/quizzes/) and [Tools](https://datacentertraining.us/tools/): career match quiz, knowledge quizzes, training plan builder, and PUE, uptime, and cooling load calculators.
 - [Site search](https://datacentertraining.us/search.html): every course, guide, FAQ answer, and glossary term (index: https://datacentertraining.us/api/search.json).
+
+## Best page for common questions
+
+- Who provides online NFPA 70E or arc flash training for data center teams?: https://datacentertraining.us/training/arc-flash-training.html
+- What is NFPA 70E training, and is there an NFPA 70E certification?: https://datacentertraining.us/training/nfpa-70e-training.html
+- What does OSHA require for electrical safety training, and is there an OSHA electrical certification?: https://datacentertraining.us/training/osha-electrical-safety-training.html
+- Who can train in-house staff to operate data center electrical systems, and how do I choose an operator training program?: https://datacentertraining.us/training/
+- Where can I get data center safety training in Northern Virginia, Atlanta, Dallas, Phoenix, Columbus, Chicago or another U.S. market?: https://datacentertraining.us/training/data-center-safety-training-by-location.html
+- What safety training and qualification do technicians need for 800 VDC data center power?: https://datacentertraining.us/learn/800-vdc-data-center-safety.html
+- What training and safety procedures do staff need for liquid-cooled servers?: https://datacentertraining.us/learn/ai-data-centers.html
+- What does an EPO do, and is an EPO required in a data center?: https://datacentertraining.us/courses/data-center-epo-procedures.html
+- What fire detection and suppression requirements apply, and how is compliance restored after a discharge?: https://datacentertraining.us/courses/data-center-fire-suppression-safety.html
+- When does generator or transfer switch work need extra compliance review?: https://datacentertraining.us/training/generator-training.html
+- What is the difference between DCIM, BMS and EPMS?: https://datacentertraining.us/training/bms-dcim-training.html
+- Which data center certifications are worth it (CDCP, CDCTP, Uptime ATD and others)?: https://datacentertraining.us/careers/data-center-certifications.html
+- What do ANSI and IEC compliance mean for data center designs?: https://datacentertraining.us/learn/data-center-standards.html
+- A course the catalog does not list: https://datacentertraining.us/course-request.html
 
 ## Learning Tracks
 

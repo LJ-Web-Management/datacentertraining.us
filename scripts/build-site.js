@@ -1012,6 +1012,25 @@ function writeOpenApi(d, s, defs, updated) {
   write('openapi.json', json(openapi));
 }
 
+// Questions people ask search engines and AI assistants (from Search Console),
+// and the page that answers each one. Listed in llms.txt.
+const QUESTION_MAP = [
+  ['Who provides online NFPA 70E or arc flash training for data center teams?', 'training/arc-flash-training.html'],
+  ['What is NFPA 70E training, and is there an NFPA 70E certification?', 'training/nfpa-70e-training.html'],
+  ['What does OSHA require for electrical safety training, and is there an OSHA electrical certification?', 'training/osha-electrical-safety-training.html'],
+  ['Who can train in-house staff to operate data center electrical systems, and how do I choose an operator training program?', 'training/'],
+  ['Where can I get data center safety training in Northern Virginia, Atlanta, Dallas, Phoenix, Columbus, Chicago or another U.S. market?', 'training/data-center-safety-training-by-location.html'],
+  ['What safety training and qualification do technicians need for 800 VDC data center power?', 'learn/800-vdc-data-center-safety.html'],
+  ['What training and safety procedures do staff need for liquid-cooled servers?', 'learn/ai-data-centers.html'],
+  ['What does an EPO do, and is an EPO required in a data center?', 'courses/data-center-epo-procedures.html'],
+  ['What fire detection and suppression requirements apply, and how is compliance restored after a discharge?', 'courses/data-center-fire-suppression-safety.html'],
+  ['When does generator or transfer switch work need extra compliance review?', 'training/generator-training.html'],
+  ['What is the difference between DCIM, BMS and EPMS?', 'training/bms-dcim-training.html'],
+  ['Which data center certifications are worth it (CDCP, CDCTP, Uptime ATD and others)?', 'careers/data-center-certifications.html'],
+  ['What do ANSI and IEC compliance mean for data center designs?', 'learn/data-center-standards.html'],
+  ['A course the catalog does not list', 'course-request.html']
+];
+
 function writeLlms(d, courses, updated) {
   const total = courses.reduce((sum, c) => sum + c.duration_hours, 0);
   const complete = d.bundles.find((b) => b.id === 'bundle-complete-catalog');
@@ -1059,6 +1078,10 @@ function writeLlms(d, courses, updated) {
     '- [About](' + ORIGIN + '/about.html): who publishes this site, accreditation, and editorial standards.',
     '- [Quizzes](' + ORIGIN + '/quizzes/) and [Tools](' + ORIGIN + '/tools/): career match quiz, knowledge quizzes, training plan builder, and PUE, uptime, and cooling load calculators.',
     '- [Site search](' + ORIGIN + '/search.html): every course, guide, FAQ answer, and glossary term (index: ' + ORIGIN + '/api/search.json).',
+    '',
+    '## Best page for common questions',
+    '',
+    QUESTION_MAP.map((q) => '- ' + q[0] + ': ' + ORIGIN + '/' + q[1]).join('\n'),
     '',
     '## Learning Tracks',
     '',
@@ -1529,6 +1552,8 @@ function processPages(d) {
   const searchDocs = [];
   for (const rel of files.sort()) {
     let html = read(rel);
+    // Redirect stubs (a retired URL forwarding to its replacement) stay as written.
+    if (/<meta http-equiv="refresh"/.test(html)) continue;
     html = processHead(rel, html);
     html = applyChrome(rel, html, d);
     html = applyBlocks(rel, html, d);

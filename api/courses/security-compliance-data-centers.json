@@ -99,6 +99,14 @@
     {
       "question": "Does this course prepare my facility for an audit?",
       "answer": "It covers the frameworks, controls and audit procedures that auditors expect and how to prepare evidence. The audit itself is performed by an independent assessor or certification body."
+    },
+    {
+      "question": "Is there a data center security certification?",
+      "answer": "There is no single required one. For people, common choices are ASIS International's Physical Security Professional (PSP) and Certified Protection Professional (CPP). For the facility, SOC 2 reports and ISO/IEC 27001 certification are audits of the organization, not credentials for staff. This course awards a certificate of completion and prepares staff for the controls those audits examine."
+    },
+    {
+      "question": "What does a data center security audit check?",
+      "answer": "Auditors check that physical and logical controls exist and work as written: perimeter and building access, visitor and contractor escorts, badge and mantrap logs, CCTV coverage and retention, equipment chain of custody, periodic access reviews and incident records. Frameworks such as SOC 2, ISO/IEC 27001 and PCI DSS (Requirement 9 covers physical access) set the specific criteria."
     }
   ],
   "related_course_ids": [
@@ -107,5 +115,5 @@
     "data-center-fire-suppression-safety",
     "data-center-physical-security-access-control"
   ],
-  "last_updated": "2026-10-23"
+  "last_updated": "2026-10-24"
 }

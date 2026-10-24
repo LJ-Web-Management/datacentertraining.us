@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- dct:head -->
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; object-src 'none'; base-uri 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#f5f5f7">
+<link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt">
+<link rel="alternate" type="application/json" href="/.well-known/mcp.json" title="WebMCP manifest">
+<link rel="service-desc" type="application/vnd.oai.openapi+json" href="/openapi.json">
+<script>
+/* Analytics, session recording, and chat load for every visitor unless they opt out or send a GPC signal
+   (see /js/consent.js), on the first interaction (scroll, tap, key, mouse move) so they never delay rendering. */
+(function(w,d){
+  w.dataLayer=w.dataLayer||[];w.gtag=function(){w.dataLayer.push(arguments);};
+  w.clarity=w.clarity||function(){(w.clarity.q=w.clarity.q||[]).push(arguments);};
+  w.Tawk_API=w.Tawk_API||{};w.Tawk_API.onLoad=function(){w.Tawk_API.minimize();};
+  var ev=['pointerdown','keydown','touchstart','scroll','mousemove'];
+  function add(src,attrs){var s=d.createElement('script');s.async=true;s.src=src;for(var k in attrs)s.setAttribute(k,attrs[k]);d.head.appendChild(s);}
+  function once(fn){var done=0;return function(now){if(done)return;function go(){if(done)return;done=1;ev.forEach(function(e){w.removeEventListener(e,go,{passive:true});});fn();}
+    if(now)go();else ev.forEach(function(e){w.addEventListener(e,go,{passive:true});});};}
+  w.dctLoad={
+    analytics:once(function(){
+      w.gtag('js',new Date());w.gtag('config','G-Z3T42KYK64');
+      add('https://www.googletagmanager.com/gtag/js?id=G-Z3T42KYK64');
+      add('https://analytics.ahrefs.com/analytics.js',{'data-key':'tVAd7KxwKax+pAfHx46Zgg'});
+      add('https://www.clarity.ms/tag/ylza43nm4m');
+    }),
+    chat:once(function(){
+      w.Tawk_LoadStart=new Date();add('https://embed.tawk.to/6a5a95a2096ab21d402a762c/1jtoth11r',{charset:'UTF-8',crossorigin:'*'});
+    })
+  };
+})(window,document);
+if(navigator.modelContext){var m=document.createElement('script');m.src='/js/webmcp.js';m.defer=true;document.head.appendChild(m);}
+</script>
+<script src="/js/consent.js" defer></script>
+<!-- /dct:head -->
+<title>800 VDC Data Center Power: Safety &amp; Training Guide</title>
+<meta name="description" content="What 800 VDC rack power means for data center safety: DC shock and arc hazards, test equipment, NFPA 70E, and how technicians build a qualification path.">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+<link rel="canonical" href="https://datacentertraining.us/learn/800-vdc-data-center-safety.html">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="800 VDC Data Center Power: Safety &amp; Training Guide">
+<meta property="og:description" content="What 800 VDC rack power means for data center safety: DC shock and arc hazards, test equipment, NFPA 70E, and how technicians build a qualification path.">
+<meta property="og:url" content="https://datacentertraining.us/learn/800-vdc-data-center-safety.html">
+<meta property="og:image" content="https://datacentertraining.us/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Data Center Training">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@HazwoperOsha">
+<meta name="twitter:title" content="800 VDC Data Center Power: Safety &amp; Training Guide">
+<meta name="twitter:description" content="What 800 VDC rack power means for data center safety: DC shock and arc hazards, test equipment, NFPA 70E, and how technicians build a qualification path.">
+<meta name="twitter:image" content="https://datacentertraining.us/images/og-image.jpg">
+
+<link rel="stylesheet" href="../css/site.min.css">
+<script src="../js/nav.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "800 VDC Data Center Power: Safety & Training Guide",
+  "description": "What 800 VDC rack power means for data center safety: DC shock and arc hazards, test equipment, NFPA 70E, and how technicians build a qualification path.",
+  "url": "https://datacentertraining.us/learn/800-vdc-data-center-safety.html",
+  "mainEntityOfPage": "https://datacentertraining.us/learn/800-vdc-data-center-safety.html",
+  "image": "https://datacentertraining.us/images/og-image.jpg",
+  "datePublished": "2026-10-24",
+  "dateModified": "2026-10-24",
+  "inLanguage": "en-US",
+  "author": {"@type": "Organization", "name": "Data Center Training", "url": "https://datacentertraining.us/"},
+  "publisher": {"@type": "EducationalOrganization", "@id": "https://datacentertraining.us/#organization", "name": "Data Center Training", "url": "https://datacentertraining.us/"},
+  "about": ["800 VDC power distribution", "High-voltage DC", "AI data centers", "DC arc flash", "NFPA 70E", "Electrical qualification"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://datacentertraining.us/"},
+    {"@type": "ListItem", "position": 2, "name": "Knowledge Center", "item": "https://datacentertraining.us/learn/"},
+    {"@type": "ListItem", "position": 3, "name": "800 VDC Data Center Safety", "item": "https://datacentertraining.us/learn/800-vdc-data-center-safety.html"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Is there a recognized safety certification path for technicians working on 800 VDC data center systems?", "acceptedAnswer": {"@type": "Answer", "text": "As of this writing there is no single standards-body certification dedicated to 800 VDC data center work. Technicians build qualification in layers: electrical safety training built on NFPA 70E, including its DC requirements; DC and battery fundamentals; the equipment manufacturer's training on the specific power racks, rectifiers and busway; and documented site-specific qualification by the employer. Installation work also needs the electrical license your state or city requires."}},
+    {"@type": "Question", "name": "Who provides technician safety training for 800 VDC data center maintenance?", "acceptedAnswer": {"@type": "Answer", "text": "No single provider covers every layer. Data Center Training (datacentertraining.us), a division of HAZWOPER OSHA Training, LLC, an IACET Accredited Provider, offers online DC fundamentals, battery safety and NFPA 70E-based electrical safety courses. The vendors building 800 VDC equipment train on their own systems, and the employer delivers site-specific training and decides who is qualified."}},
+    {"@type": "Question", "name": "Does NFPA 70E cover DC systems?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. NFPA 70E applies to DC as well as AC. It has separate DC shock approach boundary values, DC arc flash guidance and calculation methods, and requirements for batteries and battery rooms. Check whether your system falls within the limits of its DC tables; outside them, an incident energy analysis is needed."}},
+    {"@type": "Question", "name": "Is 800 VDC more dangerous than 480 VAC?", "acceptedAnswer": {"@type": "Answer", "text": "Both are lethal, and both need an electrically safe work condition before work. 800 VDC adds DC-specific problems: arcs do not self-extinguish at a current zero, protective devices and meters must be DC-rated, many non-contact testers do not detect DC, and capacitors and batteries can keep the bus energized after it is switched off."}},
+    {"@type": "Question", "name": "When will data centers use 800 VDC?", "acceptedAnswer": {"@type": "Answer", "text": "NVIDIA announced its 800 VDC architecture in May 2025 and targets full-scale production with its Kyber rack systems in 2027, for racks of about 1 MW. Adoption will vary by operator, and many facilities will run 54 VDC in-rack power and AC distribution for years alongside it."}}
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="glass-nav">
+  <div class="container nav-inner">
+    <a href="../" class="logo">
+      <img src="../images/favicon.svg" alt="" width="30" height="30">
+      <span>
+        <span class="logo-mark">datacentertraining.us</span>
+        <span class="logo-sub">Data Center Professional Training</span>
+      </span>
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Main">
+      <div class="nav-item">
+        <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="navMenu-training">Courses<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-4" id="navMenu-training">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Online Training</p>
+            <a href="../courses.html"><span class="nav-link-title">Course Catalog</span><span class="nav-link-desc">All 43 self-paced courses</span></a>
+            <a href="../bundles.html"><span class="nav-link-title">Course Bundles</span><span class="nav-link-desc">Role-based bundles, save up to 52%</span></a>
+            <a href="../who.html"><span class="nav-link-title">Courses by Role</span><span class="nav-link-desc">Find the track for your job</span></a>
+            <a href="../tools/training-plan-builder.html"><span class="nav-link-title">Training Plan Builder</span><span class="nav-link-desc">Build and price a plan in minutes</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Training by Topic</p>
+            <a href="../training/"><span class="nav-link-title">All Training Programs</span></a>
+            <a href="../training/data-center-technician-training.html"><span class="nav-link-title">Data Center Technician Training</span></a>
+            <a href="../training/nfpa-70e-training.html"><span class="nav-link-title">NFPA 70E Training</span></a>
+            <a href="../training/osha-electrical-safety-training.html"><span class="nav-link-title">OSHA Electrical Safety Training</span></a>
+            <a href="../training/arc-flash-training.html"><span class="nav-link-title">Arc Flash Training</span></a>
+            <a href="../training/lockout-tagout-training.html"><span class="nav-link-title">Lockout/Tagout Training</span></a>
+            <a href="../training/ups-battery-training.html"><span class="nav-link-title">UPS &amp; Battery Training</span></a>
+            <a href="../training/generator-training.html"><span class="nav-link-title">Generator Training</span></a>
+            <a href="../training/bms-dcim-training.html"><span class="nav-link-title">BMS &amp; DCIM Training</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Enrolling</p>
+            <a href="../#teams"><span class="nav-link-title">Team Training</span><span class="nav-link-desc">Seats, progress tracking, PO billing</span></a>
+            <a href="../certifications.html"><span class="nav-link-title">Certificates &amp; Accreditation</span><span class="nav-link-desc">What your certificate means</span></a>
+            <a href="../faq.html"><span class="nav-link-title">FAQ</span><span class="nav-link-desc">Pricing, access, and policies</span></a>
+          </div>
+          <a class="nav-feature" href="../bundles.html"><span class="nav-feature-kicker">Best value</span><span class="nav-feature-title">Complete Data Center Professional Bundle</span><span class="nav-feature-text">43 courses and 192 hours of training in one enrollment. Save 52%.</span><span class="nav-feature-cta">Compare bundles &rarr;</span></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button type="button" class="nav-trigger active" aria-expanded="false" aria-controls="navMenu-learn">Learn<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-3" id="navMenu-learn">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Start Here</p>
+            <a href="../learn/"><span class="nav-link-title">Knowledge Center</span><span class="nav-link-desc">Every guide in one place</span></a>
+            <a href="../learn/what-is-a-data-center.html"><span class="nav-link-title">Data Center 101</span><span class="nav-link-desc">How data centers work</span></a>
+            <a href="../learn/glossary.html"><span class="nav-link-title">Glossary</span><span class="nav-link-desc">Data center terms, A to Z</span></a>
+            <a href="../learn/data-center-standards.html"><span class="nav-link-title">Standards &amp; Regulations</span><span class="nav-link-desc">TIA-942, NFPA, OSHA, ASHRAE, ISO</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Systems</p>
+            <a href="../learn/data-center-power.html"><span class="nav-link-title">Power Systems</span></a>
+            <a href="../learn/data-center-cooling.html"><span class="nav-link-title">Cooling Systems</span></a>
+            <a href="../learn/data-center-tiers.html"><span class="nav-link-title">Tier Levels &amp; Redundancy</span></a>
+            <a href="../learn/energy-efficiency-pue.html"><span class="nav-link-title">Energy Efficiency &amp; PUE</span></a>
+            <a href="../learn/ai-data-centers.html"><span class="nav-link-title">AI &amp; High-Density Facilities</span></a>
+            <a href="../learn/800-vdc-data-center-safety.html" aria-current="page"><span class="nav-link-title">800 VDC Power Safety</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Operations</p>
+            <a href="../learn/data-center-safety.html"><span class="nav-link-title">Safety Guide</span></a>
+            <a href="../learn/data-center-security-compliance.html"><span class="nav-link-title">Security &amp; Compliance</span></a>
+            <a href="../learn/data-center-operations.html"><span class="nav-link-title">Operations &amp; Maintenance</span></a>
+            <a href="../learn/data-center-commissioning.html"><span class="nav-link-title">Commissioning (Levels 1-5)</span></a>
+            <a href="../blog/"><span class="nav-link-title">Blog: Field Guidance</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="navMenu-careers">Careers<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-4" id="navMenu-careers">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Get Started</p>
+            <a href="../careers/"><span class="nav-link-title">Careers Hub</span><span class="nav-link-desc">Why the industry is hiring</span></a>
+            <a href="../careers/data-center-technician.html"><span class="nav-link-title">Data Center Technician</span><span class="nav-link-desc">The most common way in</span></a>
+            <a href="../careers/entry-level-data-center-jobs.html"><span class="nav-link-title">Entry-Level Jobs</span><span class="nav-link-desc">Roles you can get without experience</span></a>
+            <a href="../careers/how-to-get-into-data-centers.html"><span class="nav-link-title">How to Get Into Data Centers</span><span class="nav-link-desc">A step-by-step starting plan</span></a>
+            <a href="../careers/data-center-technician-salary.html"><span class="nav-link-title">Salary Guide</span><span class="nav-link-desc">What the pay data shows</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Jobs & Roles</p>
+            <a href="../careers/data-center-jobs.html"><span class="nav-link-title">All Job Roles Explained</span></a>
+            <a href="../careers/data-center-electrician.html"><span class="nav-link-title">Data Center Electrician</span></a>
+            <a href="../careers/critical-facilities-technician.html"><span class="nav-link-title">Critical Facilities Technician</span></a>
+            <a href="../careers/data-center-engineer.html"><span class="nav-link-title">Data Center Engineer</span></a>
+            <a href="../careers/data-center-jobs-by-location.html"><span class="nav-link-title">Jobs by Location</span></a>
+            <a href="../careers/hyperscale-data-center-jobs.html"><span class="nav-link-title">Big Tech Data Center Jobs</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Get Hired</p>
+            <a href="../careers/data-center-certifications.html"><span class="nav-link-title">Certifications Guide</span></a>
+            <a href="../careers/data-center-apprenticeships.html"><span class="nav-link-title">Apprenticeships &amp; Programs</span></a>
+            <a href="../careers/data-center-technician-resume.html"><span class="nav-link-title">Resume Guide</span></a>
+            <a href="../careers/interview-questions.html"><span class="nav-link-title">Interview Questions</span></a>
+            <a href="../careers/career-changers.html"><span class="nav-link-title">Career Changers</span></a>
+          </div>
+          <a class="nav-feature" href="../quizzes/career-quiz.html"><span class="nav-feature-kicker">2-minute quiz</span><span class="nav-feature-title">Which Data Center Career Fits You?</span><span class="nav-feature-text">Answer 10 quick questions and get a matching role and training track.</span><span class="nav-feature-cta">Take the career quiz &rarr;</span></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="navMenu-quizzes">Quizzes &amp; Tools<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-2" id="navMenu-quizzes">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Quizzes</p>
+            <a href="../quizzes/"><span class="nav-link-title">All Quizzes</span></a>
+            <a href="../quizzes/career-quiz.html"><span class="nav-link-title">Career Match Quiz</span></a>
+            <a href="../quizzes/data-center-basics-quiz.html"><span class="nav-link-title">Data Center Basics</span></a>
+            <a href="../quizzes/power-electrical-quiz.html"><span class="nav-link-title">Power &amp; Electrical</span></a>
+            <a href="../quizzes/cooling-quiz.html"><span class="nav-link-title">Cooling &amp; HVAC</span></a>
+            <a href="../quizzes/safety-quiz.html"><span class="nav-link-title">Safety</span></a>
+            <a href="../quizzes/security-compliance-quiz.html"><span class="nav-link-title">Security &amp; Compliance</span></a>
+            <a href="../quizzes/tiers-design-quiz.html"><span class="nav-link-title">Tiers &amp; Design</span></a>
+            <a href="../quizzes/operations-quiz.html"><span class="nav-link-title">Operations &amp; Monitoring</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Tools</p>
+            <a href="../tools/"><span class="nav-link-title">All Tools</span></a>
+            <a href="../tools/training-plan-builder.html"><span class="nav-link-title">Training Plan Builder</span></a>
+            <a href="../tools/pue-calculator.html"><span class="nav-link-title">PUE Calculator</span></a>
+            <a href="../tools/uptime-calculator.html"><span class="nav-link-title">Uptime &amp; Downtime Calculator</span></a>
+            <a href="../tools/cooling-load-calculator.html"><span class="nav-link-title">Cooling Load Calculator</span></a>
+          </div>
+        </div>
+      </div>
+      <a href="../blog/" class="nav-link">Blog</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="../search.html" class="nav-search" data-search-open aria-label="Search the site" title="Search (Ctrl+K)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><span class="nav-search-label">Search</span><kbd class="nav-search-kbd">Ctrl K</kbd></a>
+      <a href="../cart.html" class="nav-cart" aria-label="Cart"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="nav-cart-count" data-cart-count hidden>0</span></a>
+      <a href="../courses.html" class="btn btn-primary btn-sm nav-cta">View Courses</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../">Home</a>
+      <span>&rsaquo;</span>
+      <a href="./">Knowledge Center</a>
+      <span>&rsaquo;</span>
+      <span aria-current="page">800 VDC Data Center Safety</span>
+    </nav>
+  </div>
+
+  <section class="course-hero">
+    <div class="container">
+      <div class="course-hero-eyebrow">Knowledge Center &middot; AI &amp; High Density</div>
+      <h1>800 VDC Data Center Power: Safety, Standards, and Training</h1>
+      <p class="course-hero-hook">AI racks are heading toward 1 MW, and the industry is moving rack power to 800 volts DC to carry it. Here is what that changes for the people who maintain it: the hazards, the test equipment, what NFPA 70E says, and how a technician builds a qualification path.</p>
+      <div class="course-pills">
+        <span class="course-pill">9 min read</span>
+        <span class="course-pill">Intermediate</span>
+        <span class="course-pill">Updated October 2026</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="container guide-layout">
+    <aside class="guide-toc" aria-label="On this page">
+      <p class="guide-toc-title">On this page</p>
+      <ol>
+        <li><a href="#what-is">What 800 VDC is</a></li>
+        <li><a href="#why">Why the industry is moving</a></li>
+        <li><a href="#hazards">What changes for safety</a></li>
+        <li><a href="#standards">Standards that apply</a></li>
+        <li><a href="#certification">Certification path</a></li>
+        <li><a href="#procedures">Procedures to write now</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#sources">Sources</a></li>
+      </ol>
+      <a class="guide-toc-cta" href="../quizzes/power-electrical-quiz.html"><strong>Test yourself</strong>Take the Power &amp; Electrical quiz.</a>
+    </aside>
+
+    <article class="guide-body prose">
+      <div class="answer-box"><p><strong>Short answer:</strong> 800 VDC is a power architecture for AI data centers that converts utility AC to 800 volts DC at the edge of the facility and carries it on busway to the racks, replacing several AC stages and the 54-volt in-rack busbar. It is far above the 50-volt level where NFPA 70E shock protection starts, and DC behaves differently from AC when it arcs. There is no single 800 VDC certification yet: technicians qualify through NFPA 70E-based training, DC and battery fundamentals, manufacturer training, and employer sign-off.</p></div>
+
+      <div class="key-takeaways">
+        <p class="key-takeaways-title">Key takeaways</p>
+        <ul>
+          <li>NVIDIA's published plan targets 800 VDC with 1 MW racks starting in 2027; other groups have proposed &plusmn;400 VDC designs.</li>
+          <li>DC arcs do not self-extinguish at a current zero, so breakers, fuses, switches and meters must be rated for DC.</li>
+          <li>Many non-contact voltage testers do not detect DC. Test for absence of voltage with a DC-rated meter.</li>
+          <li>Capacitors and battery storage can keep a DC bus energized after it is switched off.</li>
+        </ul>
+      </div>
+
+      <h2 id="what-is">What is 800 VDC power in a data center?</h2>
+      <p>In NVIDIA's published architecture, 13.8 kV utility AC is converted to 800 VDC at the facility perimeter by industrial rectifiers. The DC then runs on 800-volt busway to each row, and compute racks take the 800-volt feed directly, with DC/DC conversion inside the rack to power the GPUs. The feed is two conductors.</p>
+      <p>Today's GPU racks mostly receive AC and convert it to 54 VDC on power shelves inside the rack. NVIDIA writes that 54 VDC distribution hits physical limits as racks pass 200 kW, which is why the industry is looking at higher-voltage DC for the next generation.</p>
+
+      <h2 id="why">Why AI data centers are moving to higher-voltage DC</h2>
+      <p>Power equals voltage times current. Raising the voltage lowers the current needed for the same power, which shrinks the copper.</p>
+      <ul>
+        <li><strong>Copper:</strong> NVIDIA estimates a 1 MW rack at 54 VDC would need up to 200 kg of copper busbar, and that 800 VDC needs 45% less copper than 415 VAC for the same load.</li>
+        <li><strong>Efficiency:</strong> fewer AC-to-DC conversions mean fewer losses and fewer parts that can fail. NVIDIA cites up to 5% end-to-end efficiency gains.</li>
+        <li><strong>Space:</strong> moving conversion out of the rack frees room for compute and cooling.</li>
+      </ul>
+      <p>The same post names the companies building parts of the power chain, including Eaton, Schneider Electric and Vertiv for data center power systems. Protection at the power room, hall and row is planned with fuse-and-disconnect combinations, solid-state devices or safety breakers, and solid-state transformers are being studied.</p>
+
+      <h2 id="hazards">What changes for safety at 800 VDC?</h2>
+      <p>The basic rule does not change: put equipment in an electrically safe work condition before work, and justify any energized work. What changes is how DC behaves and what you need to control it.</p>
+      <div class="table-panel">
+        <table class="data-table">
+          <caption>480/415 VAC distribution vs 800 VDC distribution: what technicians should know</caption>
+          <thead><tr><th>Topic</th><th>Typical AC distribution</th><th>800 VDC distribution</th></tr></thead>
+          <tbody>
+            <tr><td>Interrupting an arc</td><td>Current crosses zero 120 times a second (60 Hz), which helps arcs go out</td><td>No current zero; an arc can sustain itself, so protective devices must be DC-rated</td></tr>
+            <tr><td>Breakers, fuses, switches</td><td>AC ratings</td><td>Must carry a DC rating at the system voltage; an AC rating says nothing about DC</td></tr>
+            <tr><td>Test equipment</td><td>Common meters and non-contact testers work</td><td>Meter must be rated for the DC voltage and measurement category; many non-contact testers do not detect DC</td></tr>
+            <tr><td>Stored energy</td><td>Some capacitors in drives and UPS</td><td>Capacitors in rectifiers, power shelves and DC/DC converters, plus energy storage on the bus; follow discharge times and verify at every point</td></tr>
+            <tr><td>Grounding</td><td>Usually solidly grounded</td><td>Designs vary; a mid-point grounded &plusmn;400 V system has 400 V to ground. Some use insulation monitoring, where a first ground fault may only raise an alarm</td></tr>
+            <tr><td>Arc flash labels</td><td>From an AC incident energy study</td><td>Need DC calculation methods or DC tables, within their limits</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="callout callout-safety">
+        <span class="callout-title">Liquid and high voltage together</span>
+        <p>Many 800 VDC racks will also be liquid cooled. Leak response procedures need to account for energized DC equipment, and only people qualified for both the electrical and fluid hazards should respond inside the rack.</p>
+      </div>
+
+      <h2 id="standards">Which standards apply to 800 VDC work?</h2>
+      <ul>
+        <li><strong>OSHA 29 CFR 1910 Subpart S</strong> applies to DC as well as AC: training (1910.332), work practices (1910.333) and protective equipment. See <a href="../training/osha-electrical-safety-training.html">OSHA electrical safety training</a>.</li>
+        <li><strong>NFPA 70E</strong> covers DC: DC shock approach boundaries, DC arc flash guidance and calculation methods, and safety requirements for batteries and battery rooms.</li>
+        <li><strong>NFPA 70 (NEC)</strong> and local amendments govern installation. Expect authorities having jurisdiction to look closely at new DC equipment listings and installation methods.</li>
+        <li><strong>Equipment standards</strong> such as IEC 62368-1 for IT equipment safety apply to the hardware, along with each manufacturer's installation and maintenance instructions.</li>
+      </ul>
+
+      <h2 id="certification">Is there a recognized certification path for 800 VDC work?</h2>
+      <p>As of this writing there is no single standards-body certification for 800 VDC data center systems. Qualification is built in layers, and the employer decides when someone is qualified:</p>
+      <ol>
+        <li><strong>Electrical safety training built on NFPA 70E,</strong> including its DC requirements, renewed at least every three years.</li>
+        <li><strong>DC and battery fundamentals:</strong> DC circuits, battery chemistry, stored energy and thermal runaway.</li>
+        <li><strong>Manufacturer training</strong> on the specific rectifiers, power racks, busway, DC breakers and converters at your site.</li>
+        <li><strong>Site-specific procedures and sign-off:</strong> DC lockout/tagout, test points, discharge times and energized work permits, with each person observed before the employer designates them qualified.</li>
+        <li><strong>Licensing</strong> for installation work, where your state or city requires an electrical license.</li>
+      </ol>
+
+      <h2 id="procedures">Procedures to write before 800 VDC racks arrive</h2>
+      <ul>
+        <li>DC lockout/tagout steps that isolate every source, including energy storage and back-feed from adjacent racks.</li>
+        <li>Verification of absence of voltage with a DC-rated meter at each isolation point, after the stated capacitor discharge time.</li>
+        <li>Updated arc flash labels and PPE selection based on a DC analysis.</li>
+        <li>Rules for connecting and disconnecting racks from live busway, if the manufacturer permits it at all.</li>
+        <li>Ground fault and insulation monitoring alarm response.</li>
+        <li>Combined electrical and coolant leak response for liquid-cooled racks.</li>
+        <li>Retraining triggers: NFPA 70E and OSHA both call for retraining when new equipment or procedures arrive.</li>
+      </ul>
+
+      <h2 id="courses">Courses for the training layers you can take online</h2>
+      <p>Data Center Training (datacentertraining.us), a division of HAZWOPER OSHA Training, LLC, an IACET Accredited Provider, offers the DC fundamentals and NFPA 70E-based safety layers online. They do not replace manufacturer training or employer qualification.</p>
+      <!-- dct:courses batteries-dc-circuits electrical-safety-best-practices data-center-arc-flash-safety data-center-ups-battery-safety lithium-ion-thermal-runaway-emergency-response power-systems-electrical-fundamentals -->
+<div class="panel course-panel">
+<div class="course-row"><div class="course-main"><h3><a href="../courses/batteries-dc-circuits.html">Batteries and DC Circuits</a></h3><div class="course-meta"><span>Power &amp; Electrical</span><span class="sep">&middot;</span><span>Modular Specialization</span></div><p class="course-hook">Master DC circuit fundamentals and battery behavior behind every backup power system.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">2 hrs</div><div class="course-price">$99.99</div></div><div class="course-buttons"><a class="btn btn-primary btn-sm" href="../checkout.html?item=batteries-dc-circuits" aria-label="Enroll in Batteries and DC Circuits">Enroll</a><a class="btn btn-secondary btn-sm" href="../cart.html?add=batteries-dc-circuits" data-cart-add="batteries-dc-circuits" data-cart-name="Batteries and DC Circuits" rel="nofollow">Add to Cart</a></div></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/electrical-safety-best-practices.html">Electrical Safety &amp; Best Practices</a></h3><div class="course-meta"><span>Power &amp; Electrical</span><span class="sep">&middot;</span><span>Modular Specialization</span><span class="sep">&middot;</span><span>NFPA 70E</span></div><p class="course-hook">NFPA 70E-aligned electrical safety fundamentals for facility staff.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">4 hrs</div><div class="course-price">$99.99</div></div><div class="course-buttons"><a class="btn btn-primary btn-sm" href="../checkout.html?item=electrical-safety-best-practices" aria-label="Enroll in Electrical Safety &amp; Best Practices">Enroll</a><a class="btn btn-secondary btn-sm" href="../cart.html?add=electrical-safety-best-practices" data-cart-add="electrical-safety-best-practices" data-cart-name="Electrical Safety &amp; Best Practices" rel="nofollow">Add to Cart</a></div></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/data-center-arc-flash-safety.html">Data Center Arc Flash Safety Training</a></h3><div class="course-meta"><span>Power &amp; Electrical</span><span class="sep">&middot;</span><span>Modular Specialization</span><span class="sep">&middot;</span><span>NFPA 70E</span></div><p class="course-hook">NFPA 70E arc flash safety specific to data center switchgear and power distribution.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">2 hrs</div><div class="course-price">$99.99</div></div><div class="course-buttons"><a class="btn btn-primary btn-sm" href="../checkout.html?item=data-center-arc-flash-safety" aria-label="Enroll in Data Center Arc Flash Safety Training">Enroll</a><a class="btn btn-secondary btn-sm" href="../cart.html?add=data-center-arc-flash-safety" data-cart-add="data-center-arc-flash-safety" data-cart-name="Data Center Arc Flash Safety Training" rel="nofollow">Add to Cart</a></div></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/data-center-ups-battery-safety.html">Data Center UPS and Battery System Safety Training</a></h3><div class="course-meta"><span>Power &amp; Electrical</span><span class="sep">&middot;</span><span>Modular Specialization</span></div><p class="course-hook">Safety-focused training for anyone working around data center UPS and battery systems.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">2 hrs</div><div class="course-price">$99.99</div></div><div class="course-buttons"><a class="btn btn-primary btn-sm" href="../checkout.html?item=data-center-ups-battery-safety" aria-label="Enroll in Data Center UPS and Battery System Safety Training">Enroll</a><a class="btn btn-secondary btn-sm" href="../cart.html?add=data-center-ups-battery-safety" data-cart-add="data-center-ups-battery-safety" data-cart-name="Data Center UPS and Battery System Safety Training" rel="nofollow">Add to Cart</a></div></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/lithium-ion-thermal-runaway-emergency-response.html">Lithium-Ion Battery Thermal Runaway and Emergency Response Training</a></h3><div class="course-meta"><span>Power &amp; Electrical</span><span class="sep">&middot;</span><span>Modular Specialization</span></div><p class="course-hook">Recognize and respond to lithium-ion battery thermal runaway before it escalates.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">4 hrs</div><div class="course-price">$99.99</div></div><div class="course-buttons"><a class="btn btn-primary btn-sm" href="../checkout.html?item=lithium-ion-thermal-runaway-emergency-response" aria-label="Enroll in Lithium-Ion Battery Thermal Runaway and Emergency Response Training">Enroll</a><a class="btn btn-secondary btn-sm" href="../cart.html?add=lithium-ion-thermal-runaway-emergency-response" data-cart-add="lithium-ion-thermal-runaway-emergency-response" data-cart-name="Lithium-Ion Battery Thermal Runaway and Emergency Response Training" rel="nofollow">Add to Cart</a></div></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/power-systems-electrical-fundamentals.html">Power Systems &amp; Electrical Fundamentals</a></h3><div class="course-meta"><span>Power &amp; Electrical</span><span class="sep">&middot;</span><span>Comprehensive Program</span><span class="sep">&middot;</span><span>NFPA 70E</span></div><p class="course-hook">Master data center electrical infrastructure — from utility interconnection to UPS and PDU architecture.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">8 hrs</div><div class="course-price">$303.99</div></div><div class="course-buttons"><a class="btn btn-primary btn-sm" href="../checkout.html?item=power-systems-electrical-fundamentals" aria-label="Enroll in Power Systems &amp; Electrical Fundamentals">Enroll</a><a class="btn btn-secondary btn-sm" href="../cart.html?add=power-systems-electrical-fundamentals" data-cart-add="power-systems-electrical-fundamentals" data-cart-name="Power Systems &amp; Electrical Fundamentals" rel="nofollow">Add to Cart</a></div></div></div>
+</div>
+<!-- /dct:courses -->
+
+      <h2 id="faq">Frequently asked questions</h2>
+      <div class="guide-faq">
+        <h3>Is there a recognized safety certification path for technicians working on 800 VDC data center systems?</h3>
+        <p>As of this writing there is no single standards-body certification dedicated to 800 VDC data center work. Technicians build qualification in layers: electrical safety training built on NFPA 70E, including its DC requirements; DC and battery fundamentals; the equipment manufacturer's training on the specific power racks, rectifiers and busway; and documented site-specific qualification by the employer. Installation work also needs the electrical license your state or city requires.</p>
+        <h3>Who provides technician safety training for 800 VDC data center maintenance?</h3>
+        <p>No single provider covers every layer. Data Center Training (datacentertraining.us), a division of HAZWOPER OSHA Training, LLC, an IACET Accredited Provider, offers online DC fundamentals, battery safety and NFPA 70E-based electrical safety courses. The vendors building 800 VDC equipment train on their own systems, and the employer delivers site-specific training and decides who is qualified.</p>
+        <h3>Does NFPA 70E cover DC systems?</h3>
+        <p>Yes. NFPA 70E applies to DC as well as AC. It has separate DC shock approach boundary values, DC arc flash guidance and calculation methods, and requirements for batteries and battery rooms. Check whether your system falls within the limits of its DC tables; outside them, an incident energy analysis is needed.</p>
+        <h3>Is 800 VDC more dangerous than 480 VAC?</h3>
+        <p>Both are lethal, and both need an electrically safe work condition before work. 800 VDC adds DC-specific problems: arcs do not self-extinguish at a current zero, protective devices and meters must be DC-rated, many non-contact testers do not detect DC, and capacitors and batteries can keep the bus energized after it is switched off.</p>
+        <h3>When will data centers use 800 VDC?</h3>
+        <p>NVIDIA announced its 800 VDC architecture in May 2025 and targets full-scale production with its Kyber rack systems in 2027, for racks of about 1 MW. Adoption will vary by operator, and many facilities will run 54 VDC in-rack power and AC distribution for years alongside it.</p>
+      </div>
+
+      <h2 id="sources">Sources</h2>
+      <ul class="guide-sources">
+        <li>NVIDIA Technical Blog, May 20, 2025 (updated July 31, 2025), <a href="https://developer.nvidia.com/blog/nvidia-800-v-hvdc-architecture-will-power-the-next-generation-of-ai-factories/" rel="noopener">NVIDIA 800 V HVDC Architecture Will Power the Next Generation of AI Factories</a>.</li>
+        <li>NFPA, <a href="https://www.nfpa.org/codes-and-standards/nfpa-70e-standard-development/70e" rel="noopener">NFPA 70E, Standard for Electrical Safety in the Workplace: document information</a>.</li>
+        <li>OSHA, <a href="https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.332" rel="noopener">29 CFR 1910.332, Training</a>.</li>
+        <li>OSHA, <a href="https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.333" rel="noopener">29 CFR 1910.333, Selection and use of work practices</a>.</li>
+      </ul>
+
+      <h2 id="related">Keep learning</h2>
+      <div class="card-grid card-grid-2">
+        <a class="topic-card" href="ai-data-centers.html"><span class="topic-card-kicker">Guide</span><h3>AI Data Centers</h3><p>What high-density GPU racks change for power, cooling and operations.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+        <a class="topic-card" href="data-center-power.html"><span class="topic-card-kicker">Guide</span><h3>How Data Center Power Works</h3><p>Follow power from the utility to the rack.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+        <a class="topic-card" href="../training/nfpa-70e-training.html"><span class="topic-card-kicker">Training</span><h3>NFPA 70E Training &amp; Certification</h3><p>What 70E training covers and what a 70E certificate means.</p><span class="topic-card-cta">Read the page &rarr;</span></a>
+        <a class="topic-card" href="../training/ups-battery-training.html"><span class="topic-card-kicker">Training</span><h3>UPS &amp; Battery Training</h3><p>Batteries, stored energy and safe work around backup power.</p><span class="topic-card-cta">Read the page &rarr;</span></a>
+      </div>
+      <p class="guide-updated">This guide is general educational information, not engineering, legal, or compliance advice. 800 VDC designs are still evolving: follow the equipment manufacturers' instructions, your site's procedures, and the codes adopted in your jurisdiction.</p>
+    </article>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="cta-block">
+        <h2>Prepare Your Team for High-Voltage DC</h2>
+        <p>Start with DC fundamentals and NFPA 70E-based electrical safety, then add manufacturer training and site sign-off.</p>
+        <div class="hero-ctas">
+          <a href="../courses/batteries-dc-circuits.html" class="btn glass-chip">Batteries &amp; DC Circuits</a>
+          <a href="../courses.html" class="btn glass-chip">Browse All Courses</a>
+          <a href="tel:18664296742" class="btn glass-chip">Call 1-866-429-6742</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="contact">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="../" class="logo">
+          <img src="../images/favicon.svg" alt="" width="28" height="28">
+          <span>
+            <span class="logo-mark">datacentertraining.us</span>
+            <span class="logo-sub">Data Center Professional Training</span>
+          </span>
+        </a>
+        <p class="footer-legal">Data Center Training is a specialty training division of <a href="https://hazwoper-osha.com/" target="_blank" rel="noopener">HAZWOPER-OSHA Training, LLC</a>, an IACET-accredited provider of professional data center and safety compliance training.</p>
+        <p class="footer-legal" style="margin-top:8px;">HAZWOPER OSHA Training, LLC &middot; 11901 Santa Monica Blvd., Suite #414, Los Angeles, CA 90025</p>
+        <div class="footer-badges">
+          <img src="https://media.hazwoper-osha.com/wp-content/uploads/2023/11/1698821020/IACET-small.webp" alt="IACET Accredited Provider" width="40" height="24" loading="lazy">
+          <img src="https://media.hazwoper-osha.com/wp-content/uploads/2026/07/1784291935/bbb.webp" alt="BBB A+ Rating" width="40" height="24" loading="lazy">
+          <img src="https://media.hazwoper-osha.com/wp-content/uploads/2026/07/1784292027/trust.webp" alt="Google Trust Services" width="141" height="20" loading="lazy" style="height:20px;">
+        </div>
+      </div>
+      <div class="footer-cta">
+        <p class="footer-cta-title">Not sure where to start?</p>
+        <p class="footer-cta-text">Find the data center role that fits you, then get a training plan built around it.</p>
+        <div class="footer-cta-actions">
+          <a href="../quizzes/career-quiz.html" class="btn btn-primary btn-sm">Take the Career Quiz</a>
+          <a href="../tools/training-plan-builder.html" class="btn btn-secondary btn-sm">Build a Training Plan</a>
+        </div>
+        <div class="footer-contact-links">
+          <a href="tel:18664296742">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            1-866-429-6742
+          </a>
+          <a href="mailto:info@hazwoper-osha.com">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            info@hazwoper-osha.com
+          </a>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/HazwoperOsha/" target="_blank" rel="noopener" aria-label="Facebook"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/hazwoper_osha_training/?hl=en" target="_blank" rel="noopener" aria-label="Instagram"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="https://www.youtube.com/@hazwoper-osha" target="_blank" rel="noopener" aria-label="YouTube"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33zM9.75 15.02V8.48l5.75 3.27z"/></svg></a>
+          <a href="https://x.com/HazwoperOsha" target="_blank" rel="noopener" aria-label="X"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.4 8.4L23 22h-6.6l-5.2-6.8L5.1 22H2l7.9-9L1.6 2h6.8l4.7 6.2z"/></svg></a>
+          <a href="https://www.linkedin.com/company/hazwoper-osha" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM8.34 18.34V10.1H5.67v8.24zM7.01 8.97a1.55 1.55 0 1 0 0-3.1 1.55 1.55 0 0 0 0 3.1zM18.34 18.34v-4.6c0-2.46-1.31-3.6-3.06-3.6a2.64 2.64 0 0 0-2.39 1.32V10.1H10.2s.04.86 0 8.24h2.68v-4.6c0-.25.02-.5.09-.68a1.5 1.5 0 0 1 1.37-1c.96 0 1.35.73 1.35 1.8v4.48z"/></svg></a>
+          <a href="https://www.pinterest.com/hazwoperosha/" target="_blank" rel="noopener" aria-label="Pinterest"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.64 7.86 6.36 9.32-.09-.79-.17-2.01.03-2.88.19-.79 1.22-5.03 1.22-5.03s-.31-.63-.31-1.55c0-1.45.84-2.54 1.89-2.54.89 0 1.32.67 1.32 1.47 0 .89-.57 2.23-.86 3.47-.25 1.03.52 1.88 1.53 1.88 1.84 0 3.07-2.36 3.07-5.15 0-2.12-1.43-3.71-4.02-3.71-2.93 0-4.76 2.19-4.76 4.63 0 .84.25 1.44.63 1.9.18.21.2.3.14.54-.05.18-.16.63-.21.81-.07.26-.28.35-.51.26-1.44-.59-2.11-2.16-2.11-3.93 0-2.92 2.46-6.43 7.34-6.43 3.92 0 6.5 2.84 6.5 5.89 0 4.03-2.24 7.04-5.55 7.04-1.11 0-2.16-.6-2.51-1.28 0 0-.6 2.36-.73 2.82-.22.8-.66 1.6-1.06 2.22.95.29 1.95.45 3 .45 5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-grid">
+    <div class="footer-col">
+      <h3>Training</h3>
+      <a href="../courses.html">Course Catalog</a>
+      <a href="../bundles.html">Course Bundles</a>
+      <a href="../training/">Training by Topic</a>
+      <a href="../training/nfpa-70e-training.html">NFPA 70E Training</a>
+      <a href="../training/arc-flash-training.html">Arc Flash Training</a>
+      <a href="../who.html">Courses by Role</a>
+      <a href="../tools/training-plan-builder.html">Training Plan Builder</a>
+      <a href="../#teams">Team Training</a>
+      <a href="../certifications.html">Certificates &amp; Accreditation</a>
+      <a href="../faq.html">FAQ</a>
+    </div>
+    <div class="footer-col">
+      <h3>Learn</h3>
+      <a href="../learn/">Knowledge Center</a>
+      <a href="../learn/what-is-a-data-center.html">Data Center 101</a>
+      <a href="../learn/data-center-power.html">Power Systems</a>
+      <a href="../learn/data-center-cooling.html">Cooling Systems</a>
+      <a href="../learn/data-center-tiers.html">Tier Levels</a>
+      <a href="../learn/data-center-safety.html">Safety Guide</a>
+      <a href="../learn/data-center-standards.html">Standards Guide</a>
+      <a href="../learn/glossary.html">Glossary</a>
+      <a href="../blog/">Blog</a>
+    </div>
+    <div class="footer-col">
+      <h3>Careers</h3>
+      <a href="../careers/">Careers Hub</a>
+      <a href="../careers/data-center-technician.html">Data Center Technician</a>
+      <a href="../careers/data-center-jobs.html">Job Roles Explained</a>
+      <a href="../careers/entry-level-data-center-jobs.html">Entry-Level Jobs</a>
+      <a href="../careers/data-center-technician-salary.html">Salary Guide</a>
+      <a href="../careers/data-center-jobs-by-location.html">Jobs by Location</a>
+      <a href="../careers/data-center-certifications.html">Certifications Guide</a>
+      <a href="../careers/interview-questions.html">Interview Questions</a>
+      <a href="../quizzes/career-quiz.html">Career Match Quiz</a>
+    </div>
+    <div class="footer-col">
+      <h3>Quizzes &amp; Tools</h3>
+      <a href="../quizzes/">All Quizzes</a>
+      <a href="../quizzes/data-center-basics-quiz.html">Data Center Basics Quiz</a>
+      <a href="../tools/">All Tools</a>
+      <a href="../tools/pue-calculator.html">PUE Calculator</a>
+      <a href="../tools/uptime-calculator.html">Uptime Calculator</a>
+      <a href="../tools/cooling-load-calculator.html">Cooling Load Calculator</a>
+      <a href="../search.html">Search the Site</a>
+    </div>
+    <div class="footer-col">
+      <h3>Company</h3>
+      <a href="../about.html">About Us</a>
+      <a href="https://hazwoper-osha.com/" target="_blank" rel="noopener">HAZWOPER-OSHA Training</a>
+      <a href="https://hazwoper-osha.com/certificate-verification" target="_blank" rel="noopener">Verify Certificate</a>
+      <a href="../privacy.html">Privacy Policy</a>
+      <a href="../terms.html">Terms of Service</a>
+      <a href="../accessibility.html">Accessibility</a>
+      <a href="../privacy.html#choices" data-privacy-choices>Your Privacy Choices</a>
+      <a href="https://hazwoper-osha.com/refund-policy" target="_blank" rel="noopener">Refund Policy</a>
+    </div>
+    </div>
+
+    <p class="footer-agents"><span>For AI agents:</span> <a href="/llms.txt">llms.txt</a> <a href="/llms-full.txt">llms-full.txt</a> <a href="/.well-known/mcp.json">WebMCP Manifest</a> <a href="/api/index.json">JSON Catalog API</a> <a href="/openapi.json">API Docs (OpenAPI)</a> <a href="/sitemap.xml">Sitemap</a></p>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; 2026 HAZWOPER-OSHA Training, LLC. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+<script src="../js/main.js" defer></script>
+
+</body>
+</html>

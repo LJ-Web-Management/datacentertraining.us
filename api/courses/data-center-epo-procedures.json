@@ -87,6 +87,14 @@
     {
       "question": "Why is resetting an EPO a separate procedure?",
       "answer": "After an EPO event, power must be restored in a controlled sequence after the cause is understood. Bringing systems back all at once can cause inrush problems, restart equipment into a hazard or damage IT loads. A written reset procedure prevents a second incident."
+    },
+    {
+      "question": "What does EPO mean in electrical terms?",
+      "answer": "EPO stands for emergency power off: a control, usually a red button near the exits of an IT room, that disconnects power to the room's electronic equipment in one action. Electrical codes call it a remote disconnecting means. In rooms designed under NEC Article 645, the same action also shuts down the room's dedicated HVAC system."
+    },
+    {
+      "question": "Is an EPO required in a data center?",
+      "answer": "Not always. The National Electrical Code requires a remote disconnect when an IT equipment room is designed under Article 645, which permits special wiring methods in exchange. Many operators design rooms outside Article 645 to avoid accidental shutdowns, while others keep an EPO by choice or because the local authority having jurisdiction requires one. Check your design basis and local code."
     }
   ],
   "related_course_ids": [
@@ -96,5 +104,5 @@
     "electrical-safety-best-practices",
     "batteries-dc-circuits"
   ],
-  "last_updated": "2026-10-23"
+  "last_updated": "2026-10-24"
 }

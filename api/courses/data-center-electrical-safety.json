@@ -87,6 +87,10 @@
     {
       "question": "How is this course different from Electrical Safety & Best Practices?",
       "answer": "This course is an awareness-level foundation for anyone who works around data center electrical systems. Electrical Safety & Best Practices goes further into NFPA 70E principles, PPE and emergency procedures for electrical workers and staff who work near energized equipment more regularly."
+    },
+    {
+      "question": "Does this course cover switchgear safety?",
+      "answer": "It covers the hazard-recognition side: why switchgear, UPS modules, PDUs and remote power panels carry shock and arc flash risk, how safe work distances apply around them, and when to stop and call a qualified electrician. It does not teach switching or operating switchgear; that takes deeper training and your site's switching procedures."
     }
   ],
   "related_course_ids": [
@@ -96,5 +100,5 @@
     "electrical-safety-best-practices",
     "batteries-dc-circuits"
   ],
-  "last_updated": "2026-10-23"
+  "last_updated": "2026-10-24"
 }
