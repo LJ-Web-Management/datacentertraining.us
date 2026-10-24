@@ -73,13 +73,8 @@ body {
 }
 */
 
-/* Liquid-glass frost — ONLY on sticky nav / overlay / colored-CTA labels */
-.glass-nav {
-  background: rgba(245,245,247,0.72);
-  backdrop-filter: saturate(180%) blur(20px);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
-  border-bottom: 1px solid var(--hairline);
-}
+/* The sticky nav is solid (see .glass-nav in style.css); glass frost is only
+   for chips on a colored ground. */
 .glass-chip {            /* glass element ON a colored ground (needs blur orbs behind) */
   background: rgba(255,255,255,0.16);
   border: 1px solid rgba(255,255,255,0.22);
