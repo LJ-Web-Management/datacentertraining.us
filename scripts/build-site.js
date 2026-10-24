@@ -1425,6 +1425,13 @@ function applyIcons(rel, html) {
   });
 }
 
+// The closing call-to-action block sits in a full-width purple band: mark the
+// section that holds it so the CSS can color the whole section.
+function applyCtaSections(html) {
+  return html.replace(/<section class="section([^"]*)">(\s*<div class="container">\s*<div class="cta-block">)/g,
+    (m, cls, rest) => (/\bcta-section\b/.test(cls) ? m : '<section class="section' + cls + ' cta-section">' + rest));
+}
+
 function applyChrome(rel, html, d) {
   html = html.replace(/<header class="glass-nav">[\s\S]*?<\/header>/, () => chrome.header(rel, d));
   return html.replace(/<footer class="site-footer" id="contact">[\s\S]*?<\/footer>/, () => chrome.footer(rel));
@@ -1593,6 +1600,7 @@ function processPages(d) {
     html = applyChrome(rel, html, d);
     html = applyBlocks(rel, html, d);
     html = applyIcons(rel, html);
+    html = applyCtaSections(html);
     searchDocs.push(...pageSearchDocs(rel, html));
 
     const cm = rel.match(/^courses\/([a-z0-9-]+)\.html$/);
