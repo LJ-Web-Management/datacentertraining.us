@@ -2,7 +2,7 @@
   "publisher": "Data Center Training (datacentertraining.us)",
   "last_updated": "2026-10-24",
   "license": "Public information; quote with attribution and a link to the source URL.",
-  "count": 115,
+  "count": 116,
   "resources": [
     {
       "source": "Data Center Training (first party)",
@@ -961,6 +961,18 @@
         "tier"
       ],
       "audience": []
+    },
+    {
+      "type": "blog_post",
+      "title": "Data Center Fire Door Walkthrough: What Facility Managers Should Verify Before a Critical-Facilities Audit",
+      "url": "https://datacentertraining.us/blog/posts/data-center-fire-door-walkthrough-what-facility-managers-should-verify-before-a-critical-facilities-audit.html",
+      "description": "During a critical-facilities walkthrough, a fire door can look like a simple building component until a technician finds it propped open, blocked by a cart…",
+      "topics": [
+        "fire"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-10-24"
     },
     {
       "type": "blog_post",
