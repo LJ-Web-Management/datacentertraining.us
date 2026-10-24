@@ -370,7 +370,7 @@ function footer(rel) {
     '        <p class="footer-cta-text">Find the data center role that fits you, then get a training plan built around it.</p>',
     '        <div class="footer-cta-actions">',
     '          <a href="' + link(P, 'quizzes/career-quiz.html') + '" class="btn btn-primary btn-sm">Take the Career Quiz</a>',
-    '          <a href="' + link(P, 'tools/training-plan-builder.html') + '" class="btn btn-secondary btn-sm">Build a Training Plan</a>',
+    '          <a href="' + link(P, 'tools/training-plan-builder.html') + '" class="text-link">Build a training plan &rarr;</a>',
     '        </div>',
     '        <div class="footer-contact-links">',
     '          <a href="tel:18664296742">',

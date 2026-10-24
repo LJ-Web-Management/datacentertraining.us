@@ -188,6 +188,7 @@ html.nav-hidden .glass-nav { transform: translateY(-100%); box-shadow: none; }
 .cart-note { margin-top: 14px; font-size: 12.5px; line-height: 1.6; color: var(--text-3); }
 .cart-note a { color: var(--accent-link); }
 .cart-empty { padding: 36px 24px; text-align: center; }
+.cart-empty.panel { background: none; box-shadow: none; }
 .cart-empty h2 { font-size: 21px; font-weight: 700; }
 .cart-empty p { margin: 8px auto 18px; max-width: 460px; color: var(--text-2); }
 .cart-empty .hero-ctas { justify-content: center; }
@@ -285,6 +286,10 @@ html.nav-hidden .glass-nav { transform: translateY(-100%); box-shadow: none; }
 .hero h1 .accent-text { display: block; color: #a78bfa; font-size: 1em; margin-top: 0.1em; }
 .hero p.lede { margin: 16px 0 0; max-width: 560px; font-size: clamp(15px, 2vw, 17px); color: #c7c7cc; line-height: 1.7; }
 .hero-ctas { display: flex; align-items: center; justify-content: flex-start; gap: 12px; margin-top: 26px; flex-wrap: wrap; }
+/* One button and a plain text link: two pill buttons side by side read as a toggle. */
+.cta-row { display: flex; align-items: center; justify-content: center; gap: 12px 24px; flex-wrap: wrap; margin-top: 28px; }
+.text-link { font-size: 14.5px; font-weight: 650; color: var(--accent-link); text-decoration: none; }
+.text-link:hover { text-decoration: underline; }
 .hero-meta { display: flex; flex-wrap: wrap; gap: 22px; margin-top: 30px; list-style: none; padding: 0; }
 .hero-meta li { font-size: 12.5px; color: var(--text-4); }
 .hero-meta strong { display: block; color: #fff; font-size: 17px; font-variant-numeric: tabular-nums; letter-spacing: -0.01em; }
@@ -1200,3 +1205,36 @@ body.search-open { overflow: hidden; }
 .prose > ul.checklist > li { position: relative; padding-left: 30px; font-size: 16px; line-height: 1.7; color: var(--text-body); }
 .prose > ul.checklist > li + li { margin-top: 8px; }
 .checklist-box { position: absolute; left: 0; top: 0; font-size: 19px; line-height: 1.45; color: var(--text-2); }
+
+/* ── Only links are cards ──
+   A raised white card tells people "this is clickable". Blocks that are not
+   links (stats, explanations, steps, comparisons, notes) sit flat on the page
+   so the real cards stand out. Cards stay for links, forms, tools, quizzes,
+   tables, the course purchase box, and menus. */
+div.feature-card { background: none; box-shadow: none; border-radius: 0; padding: 0; }
+div.feature-card:hover { transform: none; box-shadow: none; }
+.feature-grid:has(> div.feature-card) { gap: 28px 32px; }
+.stat-grid { gap: 28px 32px; }
+.stat-tile { background: none; box-shadow: none; border-radius: 0; padding: 0; }
+.stat-value { font-size: clamp(28px, 3.4vw, 36px); }
+.footer-cta { background: none; box-shadow: none; border-radius: 0; padding: 0; }
+.footer-cta-actions { align-items: center; gap: 10px 18px; }
+.footer-cta-actions .text-link { font-size: 13.5px; }
+.key-takeaways { background: none; box-shadow: none; border-radius: 0; padding: 0; }
+.course-scope { background: none; box-shadow: none; border-radius: 0; padding: 0; }
+.panel.module-list { background: none; box-shadow: none; border-radius: 0; overflow: visible; border-top: 1px solid var(--hairline); border-bottom: 1px solid var(--hairline); }
+.module-list .module-item { padding: 14px 0; }
+.steps { gap: 0; }
+.steps > li { background: none; box-shadow: none; border-radius: 0; padding: 16px 0 16px 50px; border-top: 1px solid var(--hairline); }
+.steps > li:first-child { border-top: none; }
+.steps > li::before { left: 0; top: 16px; }
+.flow > li { background: none; box-shadow: none; border-radius: 0; padding: 0; }
+.compare-card { background: none; box-shadow: none; border-radius: 0; padding: 14px 0 0; border-top: 2px solid var(--accent); }
+.compare-grid { gap: 24px; }
+.glossary-list { background: none; box-shadow: none; border-radius: 0; overflow: visible; }
+.glossary-item { padding-left: 0; padding-right: 0; }
+.answer-box { background: none; box-shadow: none; border-radius: 0; padding: 2px 0 2px 20px; }
+.course-pills { gap: 4px 0; }
+.course-pill { background: none; border: 0; box-shadow: none; border-radius: 0; padding: 0; color: var(--text-2); font-weight: 550; }
+.course-pill + .course-pill::before { content: "\00B7"; margin: 0 10px; color: var(--text-4); }
+.disclosure-banner { background: none; color: var(--text-2); padding: 0; font-weight: 450; }
