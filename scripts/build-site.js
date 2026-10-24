@@ -1260,8 +1260,20 @@ function metaContent(html, attr, key) {
   return m ? m[1] : null;
 }
 
+// Browser tab, home-screen, and touch icons (images made from the brand mark).
+function iconLinks(rel) {
+  const P = chrome.prefixFor(rel);
+  return [
+    '<link rel="icon" href="' + P + 'favicon.ico" sizes="48x48">',
+    '<link rel="icon" type="image/png" sizes="192x192" href="' + P + 'images/icon-192.png">',
+    '<link rel="apple-touch-icon" href="' + P + 'images/apple-touch-icon.png">'
+  ].join('\n');
+}
+
 function processHead(rel, html) {
   html = html.replace(OLD_ANALYTICS, '').replace(OLD_TAWK, '\n');
+  html = html.replace(/<link rel="(?:icon|apple-touch-icon)"[^>]*>\n/g, '');
+  html = html.replace(/(<link rel="canonical"[^>]*>\n|<meta name="robots"[^>]*>\n)/, (m) => (m.startsWith('<meta') ? m + iconLinks(rel) + '\n' : iconLinks(rel) + '\n' + m));
   html = html.replace(/<!-- dct:head -->[\s\S]*?<!-- \/dct:head -->\n?/, '');
   html = html.replace(/(<meta name="viewport"[^>]*>\n)/, '$1' + headBlock() + '\n');
 

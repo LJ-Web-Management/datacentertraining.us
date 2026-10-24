@@ -56,11 +56,10 @@ a { color: inherit; }
   border-bottom: 1px solid var(--hairline);
 }
 .nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; height: 60px; }
-.logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--text); min-width: 0; flex: 0 1 auto; }
-.logo img { flex-shrink: 0; }
-.logo > span { min-width: 0; overflow: hidden; }
-.logo-mark { display: block; font-size: 15px; font-weight: 700; letter-spacing: -0.01em; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.logo-sub { display: block; font-size: 10.5px; color: var(--text-3); font-weight: 500; margin-top: 1px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.logo { display: flex; align-items: center; text-decoration: none; color: var(--text); min-width: 0; flex: 0 1 auto; }
+/* The wordmark scales down (never crops) when the header runs out of room. */
+.logo-img { display: block; height: 34px; width: auto; max-width: 100%; object-fit: contain; object-position: left center; }
+.footer-brand .logo-img { height: 38px; }
 
 .main-nav { display: flex; align-items: center; gap: 22px; }
 .main-nav a { font-size: 13.5px; font-weight: 550; color: var(--text-2); text-decoration: none; transition: color .15s; white-space: nowrap; }
@@ -648,7 +647,7 @@ a { color: inherit; }
   .nav-cta { display: none; }
   .nav-search { width: 36px; padding: 0; justify-content: center; }
   .nav-search-label { display: none; }
-  .logo-sub { display: none; }
+  .logo-img { height: 30px; }
 }
 
 /* Course catalog search / sort / filter toolbar */
