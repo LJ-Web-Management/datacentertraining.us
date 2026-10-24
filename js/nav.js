@@ -1,6 +1,6 @@
 // Header behavior shared by every page: mobile menu toggle, dropdown menus,
-// the site search launcher (loads /js/search.js the first time it's used), and
-// the course cart.
+// hide-on-scroll, the site search launcher (loads /js/search.js the first time
+// it's used), and the course cart.
 
 // Cart: the course slugs a visitor has added, plus a seat count, saved in this
 // browser's localStorage. Bundles are bought on their own, so only courses go
@@ -125,6 +125,43 @@ document.addEventListener('DOMContentLoaded', function () {
     document.addEventListener('click', function (e) {
       if (!mainNav.contains(e.target)) closeAll();
     });
+  }
+
+  // Hide on scroll: the header slides away while scrolling down and comes back
+  // on any scroll up (css: html.nav-hidden). It stays put near the top of the
+  // page, while a menu is open, and while keyboard focus is inside it.
+  var header = document.querySelector('.glass-nav');
+  if (header) {
+    var root = document.documentElement;
+    var lastY = Math.max(0, window.scrollY);
+    var ticking = false;
+    // Keyboard focus only: a mouse click also leaves focus on the button.
+    var keyboardFocus = function () {
+      try { return !!header.querySelector(':focus-visible'); } catch (e) { return header.contains(document.activeElement); }
+    };
+    var pinned = function (y) {
+      return y < header.offsetHeight * 2 ||
+        (mainNav && (mainNav.classList.contains('open') || mainNav.querySelector('.nav-item.open'))) ||
+        keyboardFocus();
+    };
+    var onScroll = function () {
+      ticking = false;
+      var y = Math.max(0, window.scrollY);
+      // iOS rubber-banding past the bottom reads as a scroll up; ignore it.
+      if (y + window.innerHeight >= document.documentElement.scrollHeight - 1 && y > lastY) { lastY = y; }
+      var dy = y - lastY;
+      var hidden = root.classList.contains('nav-hidden');
+      // lastY follows the scroll in the header's current direction, so the
+      // first couple of pixels the other way always count.
+      if (pinned(y)) { root.classList.remove('nav-hidden'); lastY = y; }
+      else if (hidden) {
+        if (dy < -1) { root.classList.remove('nav-hidden'); lastY = y; } else if (dy > 0) { lastY = y; }
+      } else if (dy > 6) { root.classList.add('nav-hidden'); lastY = y; } else if (dy < 0) { lastY = y; }
+    };
+    window.addEventListener('scroll', function () {
+      if (!ticking) { ticking = true; window.requestAnimationFrame(onScroll); }
+    }, { passive: true });
+    header.addEventListener('focusin', function () { root.classList.remove('nav-hidden'); });
   }
 
   // Site search: header button, Ctrl/Cmd+K, or "/" opens the search dialog.
