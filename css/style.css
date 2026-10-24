@@ -52,8 +52,7 @@ a { color: inherit; }
 
 /* ── Nav ── */
 .glass-nav { position: sticky; top: 0; z-index: 50;
-  background: rgba(245,245,247,0.72); backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px);
-  border-bottom: 1px solid var(--hairline);
+  background: var(--surface); border-bottom: 1px solid var(--hairline); box-shadow: 0 1px 3px rgba(0,0,0,0.04);
 }
 .nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; height: 60px; }
 .logo { display: flex; align-items: center; text-decoration: none; color: var(--text); min-width: 0; flex: 0 1 auto; }
@@ -928,7 +927,7 @@ a.topic-card:hover { transform: translateY(-3px); box-shadow: var(--sh-lift); }
 /* ── Glossary ── */
 .glossary-tools {
   position: sticky; top: 60px; z-index: 5; padding: 12px 0; margin-bottom: 8px;
-  background: rgba(245,245,247,0.92); backdrop-filter: saturate(180%) blur(12px); -webkit-backdrop-filter: saturate(180%) blur(12px);
+  background: var(--bg);
 }
 .glossary-tools .catalog-toolbar { margin-bottom: 0; }
 .az-nav { display: flex; flex-wrap: wrap; gap: 2px; margin-top: 10px; }

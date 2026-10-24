@@ -1244,7 +1244,7 @@ function headBlock() {
     '<!-- dct:head -->',
     '<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; object-src \'none\'; base-uri \'self\'">',
     '<meta name="referrer" content="strict-origin-when-cross-origin">',
-    '<meta name="theme-color" content="#f5f5f7">',
+    '<meta name="theme-color" content="#ffffff">',
     '<link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt">',
     '<link rel="alternate" type="application/json" href="/.well-known/mcp.json" title="WebMCP manifest">',
     '<link rel="service-desc" type="application/vnd.oai.openapi+json" href="/openapi.json">',
