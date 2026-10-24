@@ -89,6 +89,10 @@
     {
       "question": "Do I need programming experience?",
       "answer": "No. The course is aimed at facilities engineers and technicians. It explains how control logic, points and protocols work so you can read, verify and troubleshoot them, and communicate clearly with the controls contractor."
+    },
+    {
+      "question": "Is there a building automation (BAS) certification online?",
+      "answer": "This course awards a certificate of completion, not a vendor or industry certification. Most BAS certifications come from controls manufacturers for their own platforms. A vendor-neutral foundation like this one makes that vendor training easier to absorb, and it documents BAS knowledge for your training file."
     }
   ],
   "related_course_ids": [
@@ -96,5 +100,5 @@
     "dcim-platform-fundamentals",
     "fiber-optics-network-cabling"
   ],
-  "last_updated": "2026-10-23"
+  "last_updated": "2026-10-24"
 }

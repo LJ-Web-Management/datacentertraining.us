@@ -12,7 +12,7 @@
     "url": "https://datacentertraining.us/openapi.json",
     "is_user_authenticated": false
   },
-  "logo_url": "https://datacentertraining.us/images/favicon.svg",
+  "logo_url": "https://datacentertraining.us/images/icon-512.png",
   "contact_email": "info@hazwoper-osha.com",
   "legal_info_url": "https://hazwoper-osha.com/privacy-policy"
 }

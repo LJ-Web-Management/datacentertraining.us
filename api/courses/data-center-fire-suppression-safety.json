@@ -89,6 +89,14 @@
     {
       "question": "When is it safe to re-enter after a discharge?",
       "answer": "Only after the fire department or the facility's designated authority says so, and after the room has been ventilated. The course's post-discharge module covers the checks and steps involved."
+    },
+    {
+      "question": "What fire detection and suppression requirements should data center compliance teams evaluate?",
+      "answer": "Start with the codes your jurisdiction has adopted, then check each system against its standard: NFPA 75 for protection of IT equipment, NFPA 72 for fire alarm and detection, NFPA 2001 for clean agent systems, NFPA 13 for sprinklers and NFPA 25 for sprinkler inspection, testing and maintenance. Confirm current inspection and test records, enclosure integrity for clean agent rooms, abort and release procedures, and staff training records."
+    },
+    {
+      "question": "How should a data center restore compliance after a suppression discharge or a failed fire inspection?",
+      "answer": "Treat it as a system impairment. Notify the monitoring company and the authority having jurisdiction as your fire code requires, provide a fire watch or other interim protection while the system is out of service, have a qualified contractor recharge or replace agent containers and reset the system, and repair damaged fire barriers or penetrations. Then retest, re-check enclosure integrity where barriers changed, and document every corrective action."
     }
   ],
   "related_course_ids": [
@@ -97,5 +105,5 @@
     "facility-environmental-compliance",
     "data-center-physical-security-access-control"
   ],
-  "last_updated": "2026-10-23"
+  "last_updated": "2026-10-24"
 }

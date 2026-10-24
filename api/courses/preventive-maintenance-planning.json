@@ -87,6 +87,10 @@
     {
       "question": "Why does maintenance documentation matter?",
       "answer": "Records show what was done, what was found and when equipment is due next. They support trend analysis, warranty claims, audits and budgeting. The Documentation & Tracking module covers how to build this into a system your team will keep using."
+    },
+    {
+      "question": "What is an equipment maintenance program?",
+      "answer": "It is the written system an organization uses to keep assets reliable: an equipment inventory, the tasks and intervals for each asset, who performs them, how work orders are scheduled and closed, and how results are recorded and reviewed. In a data center it also includes methods of procedure (MOPs) for maintaining live systems without causing an outage."
     }
   ],
   "related_course_ids": [
@@ -96,5 +100,5 @@
     "business-continuity-disaster-recovery-planning",
     "building-maintenance-fundamentals"
   ],
-  "last_updated": "2026-10-23"
+  "last_updated": "2026-10-24"
 }

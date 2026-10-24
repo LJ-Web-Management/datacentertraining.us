@@ -40,7 +40,9 @@ if(navigator.modelContext){var m=document.createElement('script');m.src='/js/web
 <title>How Data Center Cooling Works: Air, Water, and Liquid</title>
 <meta name="description" content="How data center cooling works: heat loads, ASHRAE inlet ranges, CRAC vs CRAH, chilled water, economizers, containment, liquid cooling, and refrigerant safety.">
 <meta name="robots" content="index, follow">
-<link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+<link rel="icon" href="../favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="192x192" href="../images/icon-192.png">
+<link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
 <link rel="canonical" href="https://datacentertraining.us/learn/data-center-cooling.html">
 
 <meta property="og:type" content="article">
@@ -69,7 +71,7 @@ if(navigator.modelContext){var m=document.createElement('script');m.src='/js/web
   "mainEntityOfPage": "https://datacentertraining.us/learn/data-center-cooling.html",
   "image": "https://datacentertraining.us/images/og-image.jpg",
   "datePublished": "2026-10-19",
-  "dateModified": "2026-10-19",
+  "dateModified": "2026-10-24",
   "inLanguage": "en-US",
   "author": {"@type": "Organization", "name": "Data Center Training", "url": "https://datacentertraining.us/"},
   "publisher": {"@type": "EducationalOrganization", "@id": "https://datacentertraining.us/#organization", "name": "Data Center Training", "url": "https://datacentertraining.us/"},
@@ -95,7 +97,8 @@ if(navigator.modelContext){var m=document.createElement('script');m.src='/js/web
     {"@type": "Question", "name": "What temperature should a data center be kept at?", "acceptedAnswer": {"@type": "Answer", "text": "ASHRAE TC 9.9 recommends server inlet air between 18 and 27°C (64.4 and 80.6°F) for most equipment classes. Measure at the server inlets, not at the cooling unit return. Many facilities now run toward the warmer end of that range to save energy, as long as airflow is well managed and there are no hot spots."}},
     {"@type": "Question", "name": "What is the difference between a CRAC and a CRAH?", "acceptedAnswer": {"@type": "Answer", "text": "A CRAC (computer room air conditioner) has its own refrigeration circuit with a compressor and rejects heat through a condenser. A CRAH (computer room air handler) has no compressor. It uses chilled water from a central chiller plant, with a valve controlling flow through its coil. CRACs are common in smaller rooms, and CRAHs in larger facilities with chilled water plants."}},
     {"@type": "Question", "name": "How many tons of cooling does a 10 kW rack need?", "acceptedAnswer": {"@type": "Answer", "text": "Multiply 10 kW by 3,412 to get 34,120 BTU per hour, then divide by 12,000 BTU per hour per ton. The answer is about 2.8 tons for the IT load alone. Real designs add other heat sources and redundancy, and the cold air or liquid has to reach the rack, not just be produced somewhere in the room."}},
-    {"@type": "Question", "name": "Do I need EPA Section 608 certification to work on data center cooling?", "acceptedAnswer": {"@type": "Answer", "text": "You need Section 608 certification, from an EPA-approved certifying program, to maintain, service, repair, or dispose of equipment in ways that could release refrigerant. Many other cooling tasks, such as changing filters, watching alarms, or checking chilled water units, do not involve opening refrigerant circuits, but your employer decides who may perform each task."}}
+    {"@type": "Question", "name": "Do I need EPA Section 608 certification to work on data center cooling?", "acceptedAnswer": {"@type": "Answer", "text": "You need Section 608 certification, from an EPA-approved certifying program, to maintain, service, repair, or dispose of equipment in ways that could release refrigerant. Many other cooling tasks, such as changing filters, watching alarms, or checking chilled water units, do not involve opening refrigerant circuits, but your employer decides who may perform each task."}},
+    {"@type": "Question", "name": "What should a facility manager check in the first week of a new data center cooling system?", "acceptedAnswer": {"@type": "Answer", "text": "Confirm that alarms reach the BMS and the on-call team, that setpoints and sequences match the commissioning record, and that the integrated systems test covered failover. Trend supply and return temperatures and humidity at the racks, check for leaks, vibration and unusual noise, and start the filter, water treatment and refrigerant logs. Keep the commissioning punch list open until every item is closed, and walk staff through the emergency operating procedures."}}
   ]
 }
 </script>
@@ -106,11 +109,7 @@ if(navigator.modelContext){var m=document.createElement('script');m.src='/js/web
 <header class="glass-nav">
   <div class="container nav-inner">
     <a href="../" class="logo">
-      <img src="../images/favicon.svg" alt="" width="30" height="30">
-      <span>
-        <span class="logo-mark">datacentertraining.us</span>
-        <span class="logo-sub">Data Center Professional Training</span>
-      </span>
+      <img class="logo-img" src="../images/logo.png" alt="datacentertraining.us" width="537" height="96">
     </a>
 
     <nav class="main-nav" id="mainNav" aria-label="Main">
@@ -129,6 +128,7 @@ if(navigator.modelContext){var m=document.createElement('script');m.src='/js/web
             <a href="../training/"><span class="nav-link-title">All Training Programs</span></a>
             <a href="../training/data-center-technician-training.html"><span class="nav-link-title">Data Center Technician Training</span></a>
             <a href="../training/nfpa-70e-training.html"><span class="nav-link-title">NFPA 70E Training</span></a>
+            <a href="../training/osha-electrical-safety-training.html"><span class="nav-link-title">OSHA Electrical Safety Training</span></a>
             <a href="../training/arc-flash-training.html"><span class="nav-link-title">Arc Flash Training</span></a>
             <a href="../training/lockout-tagout-training.html"><span class="nav-link-title">Lockout/Tagout Training</span></a>
             <a href="../training/ups-battery-training.html"><span class="nav-link-title">UPS &amp; Battery Training</span></a>
@@ -161,6 +161,7 @@ if(navigator.modelContext){var m=document.createElement('script');m.src='/js/web
             <a href="../learn/data-center-tiers.html"><span class="nav-link-title">Tier Levels &amp; Redundancy</span></a>
             <a href="../learn/energy-efficiency-pue.html"><span class="nav-link-title">Energy Efficiency &amp; PUE</span></a>
             <a href="../learn/ai-data-centers.html"><span class="nav-link-title">AI &amp; High-Density Facilities</span></a>
+            <a href="../learn/800-vdc-data-center-safety.html"><span class="nav-link-title">800 VDC Power Safety</span></a>
           </div>
           <div class="nav-menu-col">
             <p class="nav-menu-label">Operations</p>
@@ -455,6 +456,8 @@ if(navigator.modelContext){var m=document.createElement('script');m.src='/js/web
         <p>Multiply 10 kW by 3,412 to get 34,120 BTU per hour, then divide by 12,000 BTU per hour per ton. The answer is about 2.8 tons for the IT load alone. Real designs add other heat sources and redundancy, and the cold air or liquid has to reach the rack, not just be produced somewhere in the room.</p>
         <h3>Do I need EPA Section 608 certification to work on data center cooling?</h3>
         <p>You need Section 608 certification, from an EPA-approved certifying program, to maintain, service, repair, or dispose of equipment in ways that could release refrigerant. Many other cooling tasks, such as changing filters, watching alarms, or checking chilled water units, do not involve opening refrigerant circuits, but your employer decides who may perform each task.</p>
+        <h3>What should a facility manager check in the first week of a new data center cooling system?</h3>
+        <p>Confirm that alarms reach the BMS and the on-call team, that setpoints and sequences match the commissioning record, and that the integrated systems test covered failover. Trend supply and return temperatures and humidity at the racks, check for leaks, vibration and unusual noise, and start the filter, water treatment and refrigerant logs. Keep the commissioning punch list open until every item is closed, and walk staff through the emergency operating procedures.</p>
       </div>
 
       <h2 id="related">Keep learning</h2>
@@ -488,11 +491,7 @@ if(navigator.modelContext){var m=document.createElement('script');m.src='/js/web
     <div class="footer-top">
       <div class="footer-brand">
         <a href="../" class="logo">
-          <img src="../images/favicon.svg" alt="" width="28" height="28">
-          <span>
-            <span class="logo-mark">datacentertraining.us</span>
-            <span class="logo-sub">Data Center Professional Training</span>
-          </span>
+          <img class="logo-img" src="../images/logo.png" alt="datacentertraining.us" width="537" height="96" loading="lazy">
         </a>
         <p class="footer-legal">Data Center Training is a specialty training division of <a href="https://hazwoper-osha.com/" target="_blank" rel="noopener">HAZWOPER-OSHA Training, LLC</a>, an IACET-accredited provider of professional data center and safety compliance training.</p>
         <p class="footer-legal" style="margin-top:8px;">HAZWOPER OSHA Training, LLC &middot; 11901 Santa Monica Blvd., Suite #414, Los Angeles, CA 90025</p>

@@ -87,6 +87,10 @@
     {
       "question": "How often should standby generators be tested?",
       "answer": "NFPA 110 requires regular exercising and inspection, commonly monthly under load for Level 1 systems, plus periodic longer tests. The exact requirements depend on the system's classification and local rules, which the Maintenance for Readiness module explains."
+    },
+    {
+      "question": "Which OSHA standards apply to emergency and standby power systems?",
+      "answer": "OSHA's electrical standards in 29 CFR 1910 Subpart S apply, including 1910.308(b) on emergency power systems, along with the electrical safety-related work practice rules (1910.331 to 1910.335) and lockout/tagout (1910.147) for maintenance. Design and testing requirements mostly come from codes your jurisdiction adopts, such as NEC Articles 700, 701 and 702 and NFPA 110."
     }
   ],
   "related_course_ids": [
@@ -96,5 +100,5 @@
     "electrical-safety-best-practices",
     "batteries-dc-circuits"
   ],
-  "last_updated": "2026-10-23"
+  "last_updated": "2026-10-24"
 }

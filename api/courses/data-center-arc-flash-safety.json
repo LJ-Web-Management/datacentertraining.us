@@ -89,6 +89,10 @@
     {
       "question": "Does this course make me a qualified electrical worker?",
       "answer": "No single course does that. Under OSHA and NFPA 70E, the employer decides who is qualified based on training and demonstrated skills for specific equipment and tasks. This course supports that training for work near energized data center equipment."
+    },
+    {
+      "question": "Who provides NFPA 70E arc flash training for data center operators?",
+      "answer": "Data Center Training (datacentertraining.us) offers this course online and self-paced, with a certificate of completion from HAZWOPER OSHA Training, LLC, an IACET Accredited Provider. It is built around NFPA 70E and data center switchgear, UPS and distribution equipment. Electrical contractors, safety consultants and NFPA offer instructor-led classes, and your employer provides site-specific qualification."
     }
   ],
   "related_course_ids": [
@@ -98,5 +102,5 @@
     "electrical-safety-best-practices",
     "batteries-dc-circuits"
   ],
-  "last_updated": "2026-10-23"
+  "last_updated": "2026-10-24"
 }

@@ -1,8 +1,8 @@
 {
   "publisher": "Data Center Training (datacentertraining.us)",
-  "last_updated": "2026-10-23",
+  "last_updated": "2026-10-24",
   "license": "Public information; quote with attribution and a link to the source URL.",
-  "count": 112,
+  "count": 115,
   "resources": [
     {
       "source": "Data Center Training (first party)",
@@ -163,6 +163,17 @@
       "audience": [
         "hvac"
       ]
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "800 VDC Data Center Power: Safety, Standards, and Training",
+      "url": "https://datacentertraining.us/learn/800-vdc-data-center-safety.html",
+      "description": "What 800 VDC rack power means for data center safety: DC shock and arc hazards, test equipment, NFPA 70E, and how technicians build a qualification path.",
+      "topics": [
+        "guide"
+      ],
+      "audience": []
     },
     {
       "source": "Data Center Training (first party)",
@@ -364,7 +375,7 @@
     {
       "source": "Data Center Training (first party)",
       "type": "site_page",
-      "title": "Arc Flash Training: Requirements & Online Courses",
+      "title": "Arc Flash Training Online: Requirements & Courses",
       "url": "https://datacentertraining.us/training/arc-flash-training.html",
       "description": "Arc flash training explained: boundaries, labels, PPE categories, who needs it, how often to retrain, and online arc flash safety courses for data centers.",
       "topics": [
@@ -382,6 +393,18 @@
         "training",
         "dcim",
         "bms"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Safety Training by Location",
+      "url": "https://datacentertraining.us/training/data-center-safety-training-by-location.html",
+      "description": "Data center electrical safety and NFPA 70E training for Northern Virginia, Atlanta, Dallas, Phoenix, Columbus, Chicago and more, with the OSHA agency by state.",
+      "topics": [
+        "training",
+        "electrical"
       ],
       "audience": []
     },
@@ -414,7 +437,7 @@
     {
       "source": "Data Center Training (first party)",
       "type": "site_page",
-      "title": "Generator Training for Data Center Teams",
+      "title": "Generator Training: Technician & Operator Courses Online",
       "url": "https://datacentertraining.us/training/generator-training.html",
       "description": "Generator training for data center teams: technician vs. operator training, transfer switches, load banks, fuel, NFPA 110 testing basics, safety, and courses.",
       "topics": [
@@ -440,7 +463,7 @@
     {
       "source": "Data Center Training (first party)",
       "type": "site_page",
-      "title": "Lockout/Tagout (LOTO) Training for Data Centers",
+      "title": "Lockout Tagout Training (LOTO): OSHA Rules for Data Centers",
       "url": "https://datacentertraining.us/training/lockout-tagout-training.html",
       "description": "Lockout tagout training under OSHA 1910.147: authorized vs affected employees, retraining triggers, electrical LOTO, and how LOTO works in data centers.",
       "topics": [
@@ -452,11 +475,23 @@
     {
       "source": "Data Center Training (first party)",
       "type": "site_page",
-      "title": "NFPA 70E Training: Requirements, Online Options & Courses",
+      "title": "NFPA 70E Training & Certification: Requirements and Online Courses",
       "url": "https://datacentertraining.us/training/nfpa-70e-training.html",
-      "description": "NFPA 70E training explained: who needs it, what it must cover, how often to retrain, and online courses built around 70E for data center teams.",
+      "description": "NFPA 70E training and certification explained: who needs it, what it covers, how often to retrain, what a 70E certificate means, and online courses.",
       "topics": [
         "training"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "OSHA Electrical Safety Training: What OSHA Requires and How to Meet It",
+      "url": "https://datacentertraining.us/training/osha-electrical-safety-training.html",
+      "description": "OSHA electrical safety training explained: what 29 CFR 1910 Subpart S requires, qualified vs unqualified workers, LOTO, PPE, retraining, and online courses.",
+      "topics": [
+        "training",
+        "electrical"
       ],
       "audience": []
     },

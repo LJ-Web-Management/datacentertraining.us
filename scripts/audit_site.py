@@ -48,6 +48,7 @@ class Page(HTMLParser):
         self._buf = []
         self.lang = None
         self.ids = set()
+        self.refresh = None
 
     def handle_starttag(self, tag, attrs):
         a = dict(attrs)
@@ -62,6 +63,8 @@ class Page(HTMLParser):
             key = a.get("name") or a.get("property")
             if key:
                 self.meta[key] = a.get("content", "")
+            if (a.get("http-equiv") or "").lower() == "refresh":
+                self.refresh = a.get("content", "")
         elif tag == "link" and a.get("rel") == "canonical":
             self.canonical = a.get("href")
         elif tag == "a" and a.get("href") is not None:
@@ -120,6 +123,24 @@ def main():
             p = Page()
             p.feed(fh.read())
             pages[rel] = p
+
+    # Redirect stubs: a retired URL that forwards to its replacement with an
+    # instant meta refresh (GitHub Pages has no server redirects). Its canonical
+    # must name the target, the target must exist, and nothing may link to it.
+    redirects = {}
+    for rel, p in list(pages.items()):
+        if p.refresh is None:
+            continue
+        m = re.match(r"\s*0\s*;\s*url=(.+)$", p.refresh, re.I)
+        target = urljoin(url_for(rel), m.group(1).strip()) if m else None
+        if not target:
+            err(rel, f"redirect must be an instant meta refresh: {p.refresh!r}")
+        elif p.canonical != target:
+            err(rel, f"redirect canonical {p.canonical!r} != target {target}")
+        elif path_for(target) not in pages or pages[path_for(target)].refresh is not None:
+            err(rel, f"redirect target is not a page: {target}")
+        redirects[rel] = target
+        del pages[rel]
 
     inlinks = {rel: 0 for rel in pages}
     titles, descs = {}, {}
@@ -192,6 +213,9 @@ def main():
             target = path_for(absu)
             if pu.path.endswith("/index.html"):
                 err(rel, f"links to non-canonical index.html URL: {href}")
+            if target in redirects:
+                err(rel, f"links to a redirect; link to {redirects[target]} instead: {href}")
+                continue
             if not os.path.exists(os.path.join(ROOT, target)):
                 err(rel, f"broken internal link {href}")
                 continue
@@ -219,6 +243,8 @@ def main():
     for u in sm_urls:
         if not os.path.exists(os.path.join(ROOT, path_for(u))):
             err("sitemap.xml", f"URL does not exist: {u}")
+        elif path_for(u) in redirects:
+            err("sitemap.xml", f"redirect listed: {u}")
         elif u not in indexable:
             err("sitemap.xml", f"non-indexable URL listed: {u}")
     for u in sorted(indexable - set(sm_urls)):
@@ -231,7 +257,7 @@ def main():
         print("WARN ", w)
     for e in errors:
         print("ERROR", e)
-    print(f"{len(pages)} pages, {len(errors)} errors, {len(warnings)} warnings")
+    print(f"{len(pages)} pages, {len(redirects)} redirects, {len(errors)} errors, {len(warnings)} warnings")
     return 1 if errors else 0
 
 

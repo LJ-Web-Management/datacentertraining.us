@@ -80,6 +80,7 @@ function navData(d) {
             { href: 'training/', title: 'All Training Programs' },
             { href: 'training/data-center-technician-training.html', title: 'Data Center Technician Training' },
             { href: 'training/nfpa-70e-training.html', title: 'NFPA 70E Training' },
+            { href: 'training/osha-electrical-safety-training.html', title: 'OSHA Electrical Safety Training' },
             { href: 'training/arc-flash-training.html', title: 'Arc Flash Training' },
             { href: 'training/lockout-tagout-training.html', title: 'Lockout/Tagout Training' },
             { href: 'training/ups-battery-training.html', title: 'UPS & Battery Training' },
@@ -118,7 +119,8 @@ function navData(d) {
             { href: 'learn/data-center-cooling.html', title: 'Cooling Systems' },
             { href: 'learn/data-center-tiers.html', title: 'Tier Levels & Redundancy' },
             { href: 'learn/energy-efficiency-pue.html', title: 'Energy Efficiency & PUE' },
-            { href: 'learn/ai-data-centers.html', title: 'AI & High-Density Facilities' }
+            { href: 'learn/ai-data-centers.html', title: 'AI & High-Density Facilities' },
+            { href: 'learn/800-vdc-data-center-safety.html', title: '800 VDC Power Safety' }
           ]
         },
         {
@@ -242,11 +244,7 @@ function header(rel, d) {
     '<header class="glass-nav">',
     '  <div class="container nav-inner">',
     '    <a href="' + (page === 'index.html' ? '#top' : link(P, '')) + '" class="logo">',
-    '      <img src="' + P + 'images/favicon.svg" alt="" width="30" height="30">',
-    '      <span>',
-    '        <span class="logo-mark">datacentertraining.us</span>',
-    '        <span class="logo-sub">Data Center Professional Training</span>',
-    '      </span>',
+    '      <img class="logo-img" src="' + P + 'images/logo.png" alt="datacentertraining.us" width="537" height="96">',
     '    </a>',
     '',
     '    <nav class="main-nav" id="mainNav" aria-label="Main">',
@@ -357,11 +355,7 @@ function footer(rel) {
     '    <div class="footer-top">',
     '      <div class="footer-brand">',
     '        <a href="' + link(P, '') + '" class="logo">',
-    '          <img src="' + P + 'images/favicon.svg" alt="" width="28" height="28">',
-    '          <span>',
-    '            <span class="logo-mark">datacentertraining.us</span>',
-    '            <span class="logo-sub">Data Center Professional Training</span>',
-    '          </span>',
+    '          <img class="logo-img" src="' + P + 'images/logo.png" alt="datacentertraining.us" width="537" height="96" loading="lazy">',
     '        </a>',
     '        <p class="footer-legal">Data Center Training is a specialty training division of <a href="https://hazwoper-osha.com/" target="_blank" rel="noopener">HAZWOPER-OSHA Training, LLC</a>, an IACET-accredited provider of professional data center and safety compliance training.</p>',
     '        <p class="footer-legal" style="margin-top:8px;">HAZWOPER OSHA Training, LLC &middot; 11901 Santa Monica Blvd., Suite #414, Los Angeles, CA 90025</p>',

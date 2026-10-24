@@ -56,11 +56,10 @@ a { color: inherit; }
   border-bottom: 1px solid var(--hairline);
 }
 .nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; height: 60px; }
-.logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--text); min-width: 0; flex: 0 1 auto; }
-.logo img { flex-shrink: 0; }
-.logo > span { min-width: 0; overflow: hidden; }
-.logo-mark { display: block; font-size: 15px; font-weight: 700; letter-spacing: -0.01em; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.logo-sub { display: block; font-size: 10.5px; color: var(--text-3); font-weight: 500; margin-top: 1px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.logo { display: flex; align-items: center; text-decoration: none; color: var(--text); min-width: 0; flex: 0 1 auto; }
+/* The wordmark scales down (never crops) when the header runs out of room. */
+.logo-img { display: block; height: 34px; width: auto; max-width: 100%; object-fit: contain; object-position: left center; }
+.footer-brand .logo-img { height: 38px; }
 
 .main-nav { display: flex; align-items: center; gap: 22px; }
 .main-nav a { font-size: 13.5px; font-weight: 550; color: var(--text-2); text-decoration: none; transition: color .15s; white-space: nowrap; }
@@ -194,6 +193,46 @@ a { color: inherit; }
   .cart-item-price span { display: inline; margin-left: 4px; }
   .cart-remove { margin-left: auto; }
 }
+
+/* Course request form (course-request.html, behavior in js/course-request.js) */
+.request-title { font-size: clamp(28px, 4vw, 38px); font-weight: 700; letter-spacing: -0.02em; margin-top: 14px; }
+.request-lede { margin: 8px 0 24px; font-size: 15.5px; line-height: 1.6; color: var(--text-2); }
+.request-form, .request-sent { padding: clamp(20px, 3vw, 28px); overflow: visible; }
+.request-form[hidden], .request-sent[hidden] { display: none; }
+.request-fieldset { border: 0; min-width: 0; margin: 0 0 8px; padding: 0; }
+.request-fieldset + .request-fieldset { margin-top: 12px; padding-top: 20px; border-top: 1px solid var(--hairline); }
+/* Floated so the fieldset's top border runs above the legend, not through it. */
+.request-legend { float: left; width: 100%; margin-bottom: 14px; padding: 0; font-size: 16px; font-weight: 700; color: var(--text); }
+.request-legend + * { clear: both; }
+.request-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 16px; }
+.request-required { color: var(--heat); }
+.request-textarea {
+  width: 100%; min-height: 110px; padding: 10px 14px; border: 1px solid rgba(0,0,0,0.12); border-radius: var(--r-thumb);
+  background: var(--hover); font: inherit; font-size: 15px; line-height: 1.5; color: var(--text); resize: vertical;
+  transition: border-color .15s, box-shadow .15s;
+}
+.request-textarea:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 4px var(--accent-tint); background: #fff; }
+.tool-input-wrap.is-invalid { border-color: #c62828; }
+.request-error { font-size: 12.5px; font-weight: 600; color: #c62828; }
+.request-error[hidden] { display: none; }
+.request-note { margin: 4px 0 16px; font-size: 13px; line-height: 1.6; color: var(--text-3); }
+.request-note a, .request-sent a, .request-alt a { color: var(--accent-link); }
+.request-sent h2 { font-size: 21px; font-weight: 700; }
+.request-sent p { margin-top: 8px; font-size: 15px; line-height: 1.6; color: var(--text-body); }
+.request-sent:focus { outline: none; }
+.request-copy-label { display: block; margin: 18px 0 6px; font-size: 13.5px; font-weight: 650; color: var(--text); }
+.request-sent-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; margin-top: 12px; font-size: 14px; }
+.request-sent-actions .link-button { color: var(--accent-link); }
+.request-copied { font-size: 13px; color: var(--text-2); }
+.request-alt { margin-top: 18px; font-size: 14px; line-height: 1.6; color: var(--text-2); }
+@media (max-width: 600px) {
+  .request-grid { grid-template-columns: minmax(0, 1fr); }
+  .request-submit { width: 100%; }
+}
+
+/* The quiet "request a course" pointer under the catalog */
+.catalog-request { margin-top: 18px; font-size: 14px; line-height: 1.6; color: var(--text-3); text-align: center; }
+.catalog-request a { color: var(--accent-link); }
 
 .btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 8px;
@@ -608,7 +647,7 @@ a { color: inherit; }
   .nav-cta { display: none; }
   .nav-search { width: 36px; padding: 0; justify-content: center; }
   .nav-search-label { display: none; }
-  .logo-sub { display: none; }
+  .logo-img { height: 30px; }
 }
 
 /* Course catalog search / sort / filter toolbar */
@@ -721,7 +760,7 @@ a { color: inherit; }
 .not-found-links span { font-size: 13px; color: var(--text-3); }
 .not-found-help { margin-top: 28px; font-size: 14px; color: var(--text-2); }
 .not-found-help a { color: var(--accent-link); }
-@media (max-width: 560px) { .not-found-search { flex-direction: column; } .not-found-links { grid-template-columns: 1fr; } }
+@media (max-width: 560px) { .not-found-search { flex-direction: column; } .not-found-search input { flex: none; } .not-found-links { grid-template-columns: 1fr; } }
 /* Phones: the panel spans the width, so sit above the chat bubble in the bottom-right corner. */
 @media (max-width: 600px) { .consent-banner { bottom: 88px; max-height: calc(100vh - 104px); } }
 

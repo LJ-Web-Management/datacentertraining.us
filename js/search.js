@@ -252,7 +252,7 @@
       var r = search(docs, q);
       current = r.results;
       if (!current.length) {
-        list.innerHTML = '<div class="search-empty">No results for <strong>' + escapeHtml(q) + '</strong>. Try a shorter word, or browse the <a href="/courses.html">course catalog</a> or the <a href="/learn/">Knowledge Center</a>.</div>' +
+        list.innerHTML = '<div class="search-empty">No results for <strong>' + escapeHtml(q) + '</strong>. Try a shorter word, or browse the <a href="/courses.html">course catalog</a> or the <a href="/learn/">Knowledge Center</a>. Need a course we don\'t offer? <a href="/course-request.html?topic=' + encodeURIComponent(q) + '">Request it</a>.</div>' +
           '<div class="search-section-label">Try</div><div class="search-chips">' + POPULAR.slice(0, 6).map(function (p) { return '<button type="button" class="search-chip" data-q="' + p + '">' + p + '</button>'; }).join('') + '</div>';
         return;
       }
@@ -318,7 +318,7 @@
         return;
       }
       if (!list.length) {
-        status.innerHTML = 'No results for <strong>' + escapeHtml(q) + '</strong>. Check the spelling, try fewer words, or call <a href="tel:18664296742">1-866-429-6742</a> and we will point you to the right course.';
+        status.innerHTML = 'No results for <strong>' + escapeHtml(q) + '</strong>. Check the spelling, try fewer words, or call <a href="tel:18664296742">1-866-429-6742</a> and we will point you to the right course. Need a course we don\'t offer? <a href="/course-request.html?topic=' + encodeURIComponent(q) + '">Request it</a>.';
         out.innerHTML = QUICK_LINKS.map(function (l) { return hitHtml({ u: l[0], t: l[1], y: l[2] }, []); }).join('');
         more.hidden = true;
         return;

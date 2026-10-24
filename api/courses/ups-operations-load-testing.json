@@ -87,6 +87,10 @@
     {
       "question": "Should I take UPS Systems Fundamentals first?",
       "answer": "It helps. UPS Systems Fundamentals covers topology types, battery interaction and control panels at a theory level, which makes the procedures in this hands-on course easier to follow."
+    },
+    {
+      "question": "Is this course UPS technician training?",
+      "answer": "It is operator-level UPS training: topologies, battery testing, load transfers and load-bank testing. It prepares facility technicians to operate and test UPS systems safely. It does not replace a manufacturer's field-service training, which is usually required to repair a specific UPS model."
     }
   ],
   "related_course_ids": [
@@ -96,5 +100,5 @@
     "batteries-dc-circuits",
     "data-center-arc-flash-safety"
   ],
-  "last_updated": "2026-10-23"
+  "last_updated": "2026-10-24"
 }
