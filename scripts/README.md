@@ -28,6 +28,8 @@ requests fail if a generated file is out of date.
 | Course / catalog / bundle JSON-LD | Course records |
 | Header menu and footer on every page | `scripts/site-chrome.js` (one menu definition; links are made page-relative) |
 | `<!-- dct:courses a b c -->` and `<!-- dct:bundle id -->` blocks | Course rows and bundle offers with live names, hours, and prices from `js/config.js` |
+| "Part of the X bundle" box in each course sidebar | The course's track bundle in `js/config.js` (course count, prices, savings) |
+| Card icons (`.topic-card-icon`, `.feature-icon`) | Write an emoji; the build swaps in the matching line icon from `scripts/icons.js` (Lucide, ISC). An emoji with no entry stops the build. |
 | Quiz JSON-LD on `quizzes/*-quiz.html` | The visible questions, answers, and explanations |
 | Glossary JSON-LD (`DefinedTermSet`) | The terms in `learn/glossary.html` |
 | `api/search.json` (site search index) | Every course, bundle, page, FAQ answer, and glossary term |

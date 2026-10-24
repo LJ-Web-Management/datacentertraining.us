@@ -27,6 +27,7 @@ const vm = require('vm');
 const crypto = require('crypto');
 const tools = require('../js/webmcp.js');
 const chrome = require('./site-chrome.js');
+const icons = require('./icons.js');
 
 const ROOT = path.resolve(__dirname, '..');
 const ORIGIN = 'https://datacentertraining.us';
@@ -1402,6 +1403,28 @@ function applyBlocks(rel, html, d) {
     (m, open, id, close) => open + '\n' + bundleOfferHtml(id, d, P, rel) + '\n' + close);
 }
 
+// The "part of the X bundle" box in each course sidebar, from the course's
+// track bundle, so its course count, prices and savings always match js/config.js.
+function bundleUpsellHtml(course, d, P) {
+  const b = d.bundles.find((x) => x.track === course.track);
+  return '<div class="bundle-upsell">\n                This course is part of the <strong>' + esc(b.name) + '</strong> (' + b.course_count + ' courses). ' +
+    'Buy the bundle for ' + usd(b.price_usd) + ' instead of ' + usd(b.list_price_usd) + ' separately &mdash; ' +
+    '<a href="' + P + 'checkout.html?item=' + b.id + '">save ' + usd(b.savings_usd) + ' &rarr;</a>\n              </div>';
+}
+
+// Card icons: an emoji in .topic-card-icon or .feature-icon becomes the
+// matching line icon from scripts/icons.js.
+function applyIcons(rel, html) {
+  return html.replace(/<(span|div) class="(topic-card-icon|feature-icon)"([^>]*)>([^<]+)<\/\1>/g, (m, tag, cls, attrs, text) => {
+    const emoji = text.trim()
+      .replace(/&#(\d+);/g, (e, n) => String.fromCodePoint(+n))
+      .replace(/&#x([0-9a-f]+);/gi, (e, n) => String.fromCodePoint(parseInt(n, 16)));
+    const svg = icons.iconSvg(emoji);
+    if (!svg) throw new Error(rel + ': no icon for "' + emoji + '"; add it to scripts/icons.js');
+    return '<' + tag + ' class="' + cls + '"' + (/aria-hidden/.test(attrs) ? attrs : attrs + ' aria-hidden="true"') + '>' + svg + '</' + tag + '>';
+  });
+}
+
 function applyChrome(rel, html, d) {
   html = html.replace(/<header class="glass-nav">[\s\S]*?<\/header>/, () => chrome.header(rel, d));
   return html.replace(/<footer class="site-footer" id="contact">[\s\S]*?<\/footer>/, () => chrome.footer(rel));
@@ -1569,11 +1592,13 @@ function processPages(d) {
     html = processHead(rel, html);
     html = applyChrome(rel, html, d);
     html = applyBlocks(rel, html, d);
+    html = applyIcons(rel, html);
     searchDocs.push(...pageSearchDocs(rel, html));
 
     const cm = rel.match(/^courses\/([a-z0-9-]+)\.html$/);
     if (cm && byId[cm[1]]) {
       html = replaceLd(html, (x) => x['@type'] === 'Course', jsonLd(courseLd(byId[cm[1]])));
+      html = html.replace(/<div class="bundle-upsell">[\s\S]*?<\/div>/, () => bundleUpsellHtml(byId[cm[1]], d, chrome.prefixFor(rel)));
     }
     if (html.includes('<div class="glossary-item" id="')) {
       html = replaceLd(html, (x) => x['@type'] === 'DefinedTermSet', jsonLd(glossaryLd(rel, html)));
