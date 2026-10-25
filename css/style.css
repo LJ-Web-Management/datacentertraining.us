@@ -667,7 +667,7 @@ html.nav-hidden .glass-nav { transform: translateY(-100%); box-shadow: none; }
   .nav-toggle span { display: block; height: 2px; background: var(--text); border-radius: 2px; }
   .nav-cta { display: none; }
   .nav-search { width: 36px; padding: 0; justify-content: center; }
-  .nav-search-label { display: none; }
+  .nav-search-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
   .logo-img { height: 30px; }
 }
 
@@ -832,9 +832,9 @@ a.topic-card:hover { transform: translateY(-3px); box-shadow: var(--sh-lift); }
 .guide-toc a { display: block; margin-left: -2px; padding: 5px 0 5px 14px; border-left: 2px solid transparent; color: var(--text-2); text-decoration: none; line-height: 1.4; }
 .guide-toc a:hover { color: var(--text); }
 .guide-toc a.active { color: var(--accent-link); border-left-color: var(--accent); font-weight: 600; }
-.guide-toc-cta { display: block; margin-top: 20px; padding: 14px; border-radius: var(--r-card); background: var(--accent-tint); color: var(--text-body); text-decoration: none; font-size: 12.5px; line-height: 1.5; }
-.guide-toc-cta strong { display: block; color: var(--accent-link); font-size: 13px; margin-bottom: 2px; }
-.guide-toc-cta:hover { background: rgba(79,70,229,0.16); }
+.guide-toc .guide-toc-cta { display: block; margin: 20px 0 0; padding: 14px; border: 0; border-radius: var(--r-card); background: var(--accent-tint); color: var(--text-body); text-decoration: none; font-size: 12.5px; line-height: 1.5; }
+.guide-toc .guide-toc-cta strong { display: block; color: var(--accent-link); font-size: 13px; margin-bottom: 2px; }
+.guide-toc .guide-toc-cta:hover { background: rgba(79,70,229,0.16); color: var(--text); }
 .guide-body { min-width: 0; max-width: 760px; }
 
 .prose > * + * { margin-top: 16px; }
@@ -933,7 +933,7 @@ a.topic-card:hover { transform: translateY(-3px); box-shadow: var(--sh-lift); }
 @media (max-width: 960px) {
   .guide-layout { grid-template-columns: 1fr; gap: 0; }
   .guide-toc { position: static; max-height: none; margin-bottom: 24px; background: var(--surface); border-radius: var(--r-card); box-shadow: var(--sh-card); padding: 16px 18px; }
-  .guide-toc-cta { display: none; }
+  .guide-toc .guide-toc-cta { display: none; }
   .card-grid, .card-grid-4 { grid-template-columns: repeat(2, 1fr); }
   .stat-grid { grid-template-columns: repeat(2, 1fr); }
 }
