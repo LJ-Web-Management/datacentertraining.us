@@ -710,7 +710,7 @@
   </url>
   <url>
     <loc>https://datacentertraining.us/blog/</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -945,6 +945,12 @@
   <url>
     <loc>https://datacentertraining.us/blog/posts/data-center-fire-door-walkthrough-what-facility-managers-should-verify-before-a-critical-facilities-audit.html</loc>
     <lastmod>2026-10-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://datacentertraining.us/blog/posts/server-room-ergonomics-checklist-how-data-center-managers-can-reduce-manual-handling-risk-during-rack-work.html</loc>
+    <lastmod>2026-10-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

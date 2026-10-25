@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- dct:head -->
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; object-src 'none'; base-uri 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#ffffff">
+<link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt">
+<link rel="alternate" type="application/json" href="/.well-known/mcp.json" title="WebMCP manifest">
+<link rel="service-desc" type="application/vnd.oai.openapi+json" href="/openapi.json">
+<script>
+/* Analytics, session recording, and chat load for every visitor unless they opt out or send a GPC signal
+   (see /js/consent.js), on the first interaction (scroll, tap, key, mouse move) so they never delay rendering. */
+(function(w,d){
+  w.dataLayer=w.dataLayer||[];w.gtag=function(){w.dataLayer.push(arguments);};
+  w.clarity=w.clarity||function(){(w.clarity.q=w.clarity.q||[]).push(arguments);};
+  w.Tawk_API=w.Tawk_API||{};w.Tawk_API.onLoad=function(){w.Tawk_API.minimize();};
+  var ev=['pointerdown','keydown','touchstart','scroll','mousemove'];
+  function add(src,attrs){var s=d.createElement('script');s.async=true;s.src=src;for(var k in attrs)s.setAttribute(k,attrs[k]);d.head.appendChild(s);}
+  function once(fn){var done=0;return function(now){if(done)return;function go(){if(done)return;done=1;ev.forEach(function(e){w.removeEventListener(e,go,{passive:true});});fn();}
+    if(now)go();else ev.forEach(function(e){w.addEventListener(e,go,{passive:true});});};}
+  w.dctLoad={
+    analytics:once(function(){
+      w.gtag('js',new Date());w.gtag('config','G-Z3T42KYK64');
+      add('https://www.googletagmanager.com/gtag/js?id=G-Z3T42KYK64');
+      add('https://analytics.ahrefs.com/analytics.js',{'data-key':'tVAd7KxwKax+pAfHx46Zgg'});
+      add('https://www.clarity.ms/tag/ylza43nm4m');
+    }),
+    chat:once(function(){
+      w.Tawk_LoadStart=new Date();add('https://embed.tawk.to/6a5a95a2096ab21d402a762c/1jtoth11r',{charset:'UTF-8',crossorigin:'*'});
+    })
+  };
+})(window,document);
+if(navigator.modelContext){var m=document.createElement('script');m.src='/js/webmcp.js';m.defer=true;document.head.appendChild(m);}
+</script>
+<script src="/js/consent.js" defer></script>
+<!-- /dct:head -->
+<title>Server Room Ergonomics Checklist | Data Center Training</title>
+<meta name="description" content="Rack work looks routine until a technician has to move a dense server, lift a battery module, pull a cable bundle from an awkward position, or hold a tool…">
+<meta name="robots" content="index, follow">
+<link rel="icon" href="../../favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="192x192" href="../../images/icon-192.png">
+<link rel="apple-touch-icon" href="../../images/apple-touch-icon.png">
+<link rel="canonical" href="https://datacentertraining.us/blog/posts/server-room-ergonomics-checklist-how-data-center-managers-can-reduce-manual-handling-risk-during-rack-work.html">
+
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://datacentertraining.us/blog/posts/server-room-ergonomics-checklist-how-data-center-managers-can-reduce-manual-handling-risk-during-rack-work.html">
+<meta property="og:title" content="Server Room Ergonomics Checklist: How Data Center Managers Can Reduce Manual-Handling Risk During Rack Work">
+<meta property="og:description" content="Rack work looks routine until a technician has to move a dense server, lift a battery module, pull a cable bundle from an awkward position, or hold a tool…">
+<meta property="og:image" content="https://datacentertraining.us/blog/assets/img/posts/server-room-ergonomics-checklist-how-data-center-managers-can-reduce-manual-handling-risk-during-rack-work.jpg">
+<meta property="og:site_name" content="Data Center Training">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@HazwoperOsha">
+<meta name="twitter:title" content="Server Room Ergonomics Checklist: How Data Center Managers Can Reduce Manual-Handling Risk During Rack Work">
+<meta name="twitter:description" content="Rack work looks routine until a technician has to move a dense server, lift a battery module, pull a cable bundle from an awkward position, or hold a tool…">
+<meta name="twitter:image" content="https://datacentertraining.us/blog/assets/img/posts/server-room-ergonomics-checklist-how-data-center-managers-can-reduce-manual-handling-risk-during-rack-work.jpg">
+
+<link rel="stylesheet" href="../assets/css/blog.min.css">
+<script src="../../js/nav.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://datacentertraining.us/"},
+        {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://datacentertraining.us/blog/"},
+        {"@type": "ListItem", "position": 3, "name": "Server Room Ergonomics Checklist: How Data Center Managers Can Reduce Manual-Handling Risk During Rack Work", "item": "https://datacentertraining.us/blog/posts/server-room-ergonomics-checklist-how-data-center-managers-can-reduce-manual-handling-risk-during-rack-work.html"}
+      ]
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Server Room Ergonomics Checklist: How Data Center Managers Can Reduce Manual-Handling Risk During Rack Work",
+      "image": "https://datacentertraining.us/blog/assets/img/posts/server-room-ergonomics-checklist-how-data-center-managers-can-reduce-manual-handling-risk-during-rack-work.jpg",
+      "datePublished": "2026-10-25",
+      "dateModified": "2026-10-25",
+      "author": {
+        "@type": "Organization",
+        "name": "Data Center Training",
+        "url": "https://datacentertraining.us/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "HAZWOPER OSHA Training, LLC",
+        "logo": "https://datacentertraining.us/images/icon-512.png"
+      },
+      "description": "Rack work looks routine until a technician has to move a dense server, lift a battery module, pull a cable bundle from an awkward position, or hold a tool…"
+    }
+  ]
+}
+</script>
+</head>
+<body class="blog-page">
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="glass-nav">
+  <div class="container nav-inner">
+    <a href="../../" class="logo">
+      <img class="logo-img" src="../../images/logo.png" alt="datacentertraining.us" width="537" height="96">
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Main">
+      <div class="nav-item">
+        <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="navMenu-training">Courses<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-4" id="navMenu-training">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Online Training</p>
+            <a href="../../courses.html"><span class="nav-link-title">Course Catalog</span><span class="nav-link-desc">All 43 self-paced courses</span></a>
+            <a href="../../bundles.html"><span class="nav-link-title">Course Bundles</span><span class="nav-link-desc">Role-based bundles, save up to 52%</span></a>
+            <a href="../../who.html"><span class="nav-link-title">Courses by Role</span><span class="nav-link-desc">Find the track for your job</span></a>
+            <a href="../../tools/training-plan-builder.html"><span class="nav-link-title">Training Plan Builder</span><span class="nav-link-desc">Build and price a plan in minutes</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Training by Topic</p>
+            <a href="../../training/"><span class="nav-link-title">All Training Programs</span></a>
+            <a href="../../training/data-center-technician-training.html"><span class="nav-link-title">Data Center Technician Training</span></a>
+            <a href="../../training/nfpa-70e-training.html"><span class="nav-link-title">NFPA 70E Training</span></a>
+            <a href="../../training/osha-electrical-safety-training.html"><span class="nav-link-title">OSHA Electrical Safety Training</span></a>
+            <a href="../../training/arc-flash-training.html"><span class="nav-link-title">Arc Flash Training</span></a>
+            <a href="../../training/lockout-tagout-training.html"><span class="nav-link-title">Lockout/Tagout Training</span></a>
+            <a href="../../training/ups-battery-training.html"><span class="nav-link-title">UPS &amp; Battery Training</span></a>
+            <a href="../../training/generator-training.html"><span class="nav-link-title">Generator Training</span></a>
+            <a href="../../training/bms-dcim-training.html"><span class="nav-link-title">BMS &amp; DCIM Training</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Enrolling</p>
+            <a href="../../#teams"><span class="nav-link-title">Team Training</span><span class="nav-link-desc">Seats, progress tracking, PO billing</span></a>
+            <a href="../../certifications.html"><span class="nav-link-title">Certificates &amp; Accreditation</span><span class="nav-link-desc">What your certificate means</span></a>
+            <a href="../../faq.html"><span class="nav-link-title">FAQ</span><span class="nav-link-desc">Pricing, access, and policies</span></a>
+          </div>
+          <a class="nav-feature" href="../../bundles.html"><span class="nav-feature-kicker">Best value</span><span class="nav-feature-title">Complete Data Center Professional Bundle</span><span class="nav-feature-text">43 courses and 192 hours of training in one enrollment. Save 52%.</span><span class="nav-feature-cta">Compare bundles &rarr;</span></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="navMenu-learn">Learn<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-3" id="navMenu-learn">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Start Here</p>
+            <a href="../../learn/"><span class="nav-link-title">Knowledge Center</span><span class="nav-link-desc">Every guide in one place</span></a>
+            <a href="../../learn/what-is-a-data-center.html"><span class="nav-link-title">Data Center 101</span><span class="nav-link-desc">How data centers work</span></a>
+            <a href="../../learn/glossary.html"><span class="nav-link-title">Glossary</span><span class="nav-link-desc">Data center terms, A to Z</span></a>
+            <a href="../../learn/data-center-standards.html"><span class="nav-link-title">Standards &amp; Regulations</span><span class="nav-link-desc">TIA-942, NFPA, OSHA, ASHRAE, ISO</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Systems</p>
+            <a href="../../learn/data-center-power.html"><span class="nav-link-title">Power Systems</span></a>
+            <a href="../../learn/data-center-cooling.html"><span class="nav-link-title">Cooling Systems</span></a>
+            <a href="../../learn/data-center-tiers.html"><span class="nav-link-title">Tier Levels &amp; Redundancy</span></a>
+            <a href="../../learn/energy-efficiency-pue.html"><span class="nav-link-title">Energy Efficiency &amp; PUE</span></a>
+            <a href="../../learn/ai-data-centers.html"><span class="nav-link-title">AI &amp; High-Density Facilities</span></a>
+            <a href="../../learn/800-vdc-data-center-safety.html"><span class="nav-link-title">800 VDC Power Safety</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Operations</p>
+            <a href="../../learn/data-center-safety.html"><span class="nav-link-title">Safety Guide</span></a>
+            <a href="../../learn/data-center-security-compliance.html"><span class="nav-link-title">Security &amp; Compliance</span></a>
+            <a href="../../learn/data-center-operations.html"><span class="nav-link-title">Operations &amp; Maintenance</span></a>
+            <a href="../../learn/data-center-commissioning.html"><span class="nav-link-title">Commissioning (Levels 1-5)</span></a>
+            <a href="../../blog/"><span class="nav-link-title">Blog: Field Guidance</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="navMenu-careers">Careers<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-4" id="navMenu-careers">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Get Started</p>
+            <a href="../../careers/"><span class="nav-link-title">Careers Hub</span><span class="nav-link-desc">Why the industry is hiring</span></a>
+            <a href="../../careers/data-center-technician.html"><span class="nav-link-title">Data Center Technician</span><span class="nav-link-desc">The most common way in</span></a>
+            <a href="../../careers/entry-level-data-center-jobs.html"><span class="nav-link-title">Entry-Level Jobs</span><span class="nav-link-desc">Roles you can get without experience</span></a>
+            <a href="../../careers/how-to-get-into-data-centers.html"><span class="nav-link-title">How to Get Into Data Centers</span><span class="nav-link-desc">A step-by-step starting plan</span></a>
+            <a href="../../careers/data-center-technician-salary.html"><span class="nav-link-title">Salary Guide</span><span class="nav-link-desc">What the pay data shows</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Jobs & Roles</p>
+            <a href="../../careers/data-center-jobs.html"><span class="nav-link-title">All Job Roles Explained</span></a>
+            <a href="../../careers/data-center-electrician.html"><span class="nav-link-title">Data Center Electrician</span></a>
+            <a href="../../careers/critical-facilities-technician.html"><span class="nav-link-title">Critical Facilities Technician</span></a>
+            <a href="../../careers/data-center-engineer.html"><span class="nav-link-title">Data Center Engineer</span></a>
+            <a href="../../careers/data-center-jobs-by-location.html"><span class="nav-link-title">Jobs by Location</span></a>
+            <a href="../../careers/hyperscale-data-center-jobs.html"><span class="nav-link-title">Big Tech Data Center Jobs</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Get Hired</p>
+            <a href="../../careers/data-center-certifications.html"><span class="nav-link-title">Certifications Guide</span></a>
+            <a href="../../careers/data-center-apprenticeships.html"><span class="nav-link-title">Apprenticeships &amp; Programs</span></a>
+            <a href="../../careers/data-center-technician-resume.html"><span class="nav-link-title">Resume Guide</span></a>
+            <a href="../../careers/interview-questions.html"><span class="nav-link-title">Interview Questions</span></a>
+            <a href="../../careers/career-changers.html"><span class="nav-link-title">Career Changers</span></a>
+          </div>
+          <a class="nav-feature" href="../../quizzes/career-quiz.html"><span class="nav-feature-kicker">2-minute quiz</span><span class="nav-feature-title">Which Data Center Career Fits You?</span><span class="nav-feature-text">Answer 10 quick questions and get a matching role and training track.</span><span class="nav-feature-cta">Take the career quiz &rarr;</span></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="navMenu-quizzes">Quizzes &amp; Tools<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-2" id="navMenu-quizzes">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Quizzes</p>
+            <a href="../../quizzes/"><span class="nav-link-title">All Quizzes</span></a>
+            <a href="../../quizzes/career-quiz.html"><span class="nav-link-title">Career Match Quiz</span></a>
+            <a href="../../quizzes/data-center-basics-quiz.html"><span class="nav-link-title">Data Center Basics</span></a>
+            <a href="../../quizzes/power-electrical-quiz.html"><span class="nav-link-title">Power &amp; Electrical</span></a>
+            <a href="../../quizzes/cooling-quiz.html"><span class="nav-link-title">Cooling &amp; HVAC</span></a>
+            <a href="../../quizzes/safety-quiz.html"><span class="nav-link-title">Safety</span></a>
+            <a href="../../quizzes/security-compliance-quiz.html"><span class="nav-link-title">Security &amp; Compliance</span></a>
+            <a href="../../quizzes/tiers-design-quiz.html"><span class="nav-link-title">Tiers &amp; Design</span></a>
+            <a href="../../quizzes/operations-quiz.html"><span class="nav-link-title">Operations &amp; Monitoring</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Tools</p>
+            <a href="../../tools/"><span class="nav-link-title">All Tools</span></a>
+            <a href="../../tools/training-plan-builder.html"><span class="nav-link-title">Training Plan Builder</span></a>
+            <a href="../../tools/pue-calculator.html"><span class="nav-link-title">PUE Calculator</span></a>
+            <a href="../../tools/uptime-calculator.html"><span class="nav-link-title">Uptime &amp; Downtime Calculator</span></a>
+            <a href="../../tools/cooling-load-calculator.html"><span class="nav-link-title">Cooling Load Calculator</span></a>
+          </div>
+        </div>
+      </div>
+      <a href="../../blog/" class="nav-link active">Blog</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="../../search.html" class="nav-search" data-search-open aria-keyshortcuts="Control+K" title="Search (Ctrl+K)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><span class="nav-search-label">Search</span><kbd class="nav-search-kbd">Ctrl K</kbd></a>
+      <a href="../../cart.html" class="nav-cart" aria-label="Cart"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="nav-cart-count" data-cart-count hidden>0</span></a>
+      <a href="../../courses.html" class="btn btn-primary btn-sm nav-cta">View Courses</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="provider-trust-bar" role="region" aria-label="Training provider accreditation">
+  Training delivered by <strong>HAZWOPER OSHA Training, LLC</strong>, an <a href="https://www.iacet.org/affiliates/accredited-providers-list/accredited-provider-overview/?providerID=131618" target="_blank" rel="noopener">IACET-accredited provider &rarr;</a>
+</div>
+
+<main id="main" class="blog-container blog-container-read">
+  <a class="back-link" href="../">&larr; Back to Blog</a>
+  <div class="post-header">
+    <div class="post-date">October 25, 2026</div>
+    <h1>Server Room Ergonomics Checklist: How Data Center Managers Can Reduce Manual-Handling Risk During Rack Work</h1>
+  </div>
+  <div class="post-featured-image">
+    <img src="../assets/img/posts/server-room-ergonomics-checklist-how-data-center-managers-can-reduce-manual-handling-risk-during-rack-work.jpg" srcset="../assets/img/posts/server-room-ergonomics-checklist-how-data-center-managers-can-reduce-manual-handling-risk-during-rack-work-480w.webp 480w, ../assets/img/posts/server-room-ergonomics-checklist-how-data-center-managers-can-reduce-manual-handling-risk-during-rack-work-800w.webp 800w, ../assets/img/posts/server-room-ergonomics-checklist-how-data-center-managers-can-reduce-manual-handling-risk-during-rack-work-1200w.webp 1200w" sizes="(max-width: 900px) calc(100vw - 32px), 860px" alt="Server Room Ergonomics Checklist: How Data Center Managers Can Reduce Manual-Handling Risk During Rack Work" width="1200" height="675" fetchpriority="high">
+  </div>
+  <article class="post-content">
+<h2>The Operational Question</h2>
+<p>Rack work looks routine until a technician has to move a dense server, lift a battery module, pull a cable bundle from an awkward position, or hold a tool above shoulder height while standing on a narrow aisle. In a live data center, the physical strain is joined by uptime pressure, restricted access, hot and cold aisle constraints, and the need to keep hands, carts, and materials away from energized equipment. The question for a facility manager is not whether people should “lift correctly.” It is whether the task, equipment, route, and work sequence have been designed so the safest practical method is also the easiest method to follow.</p>
+<p>This checklist helps managers identify manual-handling risks before rack installation, removal, inspection, or maintenance begins. It explains how to look at load weight, grip, reach distance, posture, repetition, floor conditions, cart selection, team lifting, and recovery time as one work system. It also shows how server-room ergonomics connects to preventive maintenance planning, contractor coordination, and role-based training. The goal is a repeatable pre-task review that protects people and reduces the chance that a strain, dropped component, blocked aisle, or hurried recovery creates a larger operational problem.</p>
+<p>Ergonomics is not a substitute for electrical safety, lockout/tagout, fall protection, or equipment-specific procedures. It is a layer that makes those controls easier to carry out because technicians can see, reach, position, and handle what the procedure requires.</p>
+<hr class="post-divider">
+<h2>Who This Affects</h2>
+<p>The immediate audience is the critical facilities technician or data center technician who works in or around racks, cabinets, PDUs, battery systems, raised floors, and maintenance staging areas. The issue also affects the manager who schedules the work and the people who control the room before the first tool is unpacked.</p>
+<ul><li>Enterprise sites where a small facilities team handles server moves, cabinet repairs, and building-maintenance work between operational priorities.</li><li>Colocation facilities where customer equipment, contractor access, and shared aisles create more coordination steps than a simple warehouse move.</li><li>Hyperscale campuses where repetitive work, standardized rack rows, and material-handling equipment can reduce risk only if the standard method is actually used.</li><li>Edge and smaller sites where there may be less room for a lift table, fewer people for a team lift, and more dependence on one technician improvising.</li><li>Operations managers who own work permits, method statements, maintenance windows, and vendor expectations.</li><li>EHS managers and training coordinators who need evidence that employees and contractors received task-relevant instruction.</li><li>Electricians, HVAC technicians, cabling teams, and commissioning agents who may not think of their work as “server-room work” but still handle heavy or awkward components in a critical space.</li></ul>
+<p>It is especially relevant when a project changes the physical workflow: a new row of cabinets, a battery replacement, a raised-floor repair, a cable pathway expansion, a chiller-control upgrade, or a decommissioning campaign. A task that was manageable with empty racks can become difficult when a room is occupied, a corridor is narrowed, or equipment must be staged farther away.</p>
+<hr class="post-divider">
+<h2>What Can Go Wrong</h2>
+<p>The most visible consequence is a sprain or other musculoskeletal injury. Less obvious is the chain of operational effects that can follow. A technician who is fatigued, in pain, or trying to recover a slipping load may lose attention to an exclusion zone, a cabinet door, a live adjacent assembly, or a required communication step. A dropped component can damage equipment, a raised floor tile, a cable, or the technician’s foot. A cart parked across an egress path can create a second hazard for everyone in the room.</p>
+<p>Manual-handling risk is shaped by more than the number on a shipping label. The same component becomes harder to control when it is lifted from floor level, carried with the hands far from the body, rotated through a narrow aisle, or placed above chest height. A box with poor handholds may be more difficult than a heavier box with a stable grip. Repeated small lifts can also create cumulative strain when the work continues for hours without a task rotation or recovery plan.</p>
+<p>NIOSH’s Revised NIOSH Lifting Equation is a useful assessment tool for two-handed lifting tasks. It considers variables such as load weight, horizontal and vertical hand position, travel distance, twisting, frequency, duration, and coupling quality. It is not a universal permission slip or a replacement for a site’s job hazard analysis. It helps a manager see why a load that seems acceptable in one setup may need redesign in another.</p>
+<p>Poor workstation setup creates a different but related problem. A technician may spend a long maintenance window kneeling, leaning into a rack, reaching across a cabinet, or working at a temporary console with the monitor too low. Awkward neck, shoulder, wrist, and back positions can make troubleshooting slower and increase fatigue even when no single lift is heavy. OSHA’s workstation guidance emphasizes neutral positioning and adjustability because there is no single posture that works for every person or task.</p>
+<p>There are also uptime and cost consequences:</p>
+<ul><li>A component can be installed at the wrong height or with damaged rails because the team rushed a difficult lift.</li><li>A technician may skip a planned inspection after discomfort develops, allowing a small maintenance finding to remain open.</li><li>A contractor may use an unapproved cart, remove a cabinet door without coordination, or stage packaging where it obstructs airflow or egress.</li><li>A manager may extend a maintenance window because the team underestimated setup, rest, or material movement time.</li><li>A near miss may be recorded as an individual mistake even though the route, tool, or staffing plan made the mistake predictable.</li></ul>
+<p>The compliance context matters too. Ergonomics guidance does not create a blanket rule that every data center task requires a particular lift limit, certification, or medical evaluation. Managers should follow applicable OSHA requirements, manufacturer instructions, site procedures, and local policy, while using recognized ergonomic assessment methods to improve the work. Training should support the program, not be presented as a regulatory certification.</p>
+<hr class="post-divider">
+<h2>What Managers Should Check</h2>
+<p>Use this review before the work order is released, and repeat it when the actual room conditions differ from the plan.</p>
+<ol><li>Define the exact handling task.</li></ol>
+<p>Write down what will be moved, from where, to where, how many times, and by whom. “Install equipment in Row C” is too broad. A useful description might say that two technicians will move a server from a staging cart to a rail set at chest height, then slide it into a cabinet while a third person manages the cable path. Include removal, packaging, and return trips. The empty-cart trip and the awkward repositioning often create more exposure than the planned placement.</p>
+<ol><li>Confirm the load and its grip.</li></ol>
+<p>Record the actual weight when available, not just the shipping weight. Check whether the load has handles, a stable center of gravity, sharp edges, loose covers, or a shape that prevents two-handed control. For batteries, power supplies, dense networking hardware, and mechanical parts, ask whether the manufacturer specifies a lifting aid or a two-person method. Do not let a familiar label such as “hot-swappable” hide the physical work required to remove and support the item.</p>
+<ol><li>Review the reach, height, and route.</li></ol>
+<p>Look at the origin and destination of the lift. Floor-level pickup, overhead placement, deep cabinet reach, and twisting around a door all change the task. Measure the route for cart width, door clearance, turning radius, floor transitions, ramps, raised-floor conditions, and temporary barriers. Keep the load close to the body when possible, but do not trade a back strain for a hand or electrical hazard by reaching into an unsafe space.</p>
+<ol><li>Choose the handling aid before the window.</li></ol>
+<p>Select a cart, lift table, rail support, cabinet dolly, shelf, or other aid that matches the load and the aisle. Verify its capacity, brakes, wheel condition, height range, and compatibility with the floor. Place the aid where it is needed before the component is unboxed. If the right equipment is unavailable, reschedule or change the method. A last-minute search for a cart is exactly when teams start sliding equipment across the floor or carrying it farther than planned.</p>
+<ol><li>Make team lifting specific.</li></ol>
+<p>“Get help if needed” is not a procedure. Identify the number of people, the person giving commands, the hand positions, the route, and the set-down location. Make sure everyone understands whether the load will be lifted, slid, tilted, or transferred to an aid. Team lifting does not remove risk if one person cannot see the path or if the load is too large for the group to control. Practice the motion with an empty or representative load when the task is unfamiliar.</p>
+<ol><li>Protect the room while protecting the worker.</li></ol>
+<p>Establish a clear staging area and keep packaging, tools, and carts out of egress paths, fire equipment access, and required clearances. Coordinate cabinet doors, aisle containment, temporary lighting, and customer access. Check that a lift or cart will not contact exposed conductors, overhead busway, sprinkler components, leak-detection cable, or the rack’s front and rear airflow path. The work plan should state who stops the task if the route changes.</p>
+<ol><li>Plan posture changes and recovery.</li></ol>
+<p>For longer jobs, break the work into stages that allow technicians to change position. Provide a suitable stool, kneeling support, height-adjustable work surface, or temporary console where appropriate. Rotate tasks only when the replacement task uses different muscle groups and does not introduce another hazard. A rotation that simply moves the same awkward reach to another person is not a control. Include reasonable recovery time in the schedule rather than treating it as lost productivity.</p>
+<ol><li>Verify the technician’s training and boundaries.</li></ol>
+<p>The person doing the work should know how to inspect the handling aid, recognize an unstable load, communicate a stop, and report discomfort or a near miss. They also need the separate electrical, mechanical, fire, access-control, and permit training that the task requires. A technician trained in manual handling is not automatically authorized to operate a powered industrial truck or work on energized equipment. Keep those permissions explicit.</p>
+<ol><li>Capture learning after the task.</li></ol>
+<p>Ask what was heavier, lower, farther, tighter, or more repetitive than expected. Record whether the cart height worked, whether a cabinet door had to be removed, whether the staging area was large enough, and whether the team needed another person. Feed those observations into the next work order and preventive-maintenance plan. A short after-action note can prevent the same improvisation across every row.</p>
+<hr class="post-divider">
+<h2>Which Training Fits This Situation</h2>
+<p>For a technician who handles equipment in server rooms, the most direct catalog match is <strong>Server Room Ergonomics and Manual Handling Training</strong>. Its focused subject makes it useful as a pre-assignment module for new technicians, contractors, and staff who do occasional rack or cabinet work. The course should sit beside, not replace, the site’s task-specific method statements and practical demonstrations.</p>
+<p>Managers who own the broader workflow can pair it with <strong>Data Center Operations Management</strong> to connect safe physical work with maintenance windows, communications, work control, and uptime decisions. <strong>Preventive Maintenance Planning</strong> is relevant when the goal is to build ergonomic checks into recurring work orders rather than add a reminder after an injury or near miss. <strong>Building Maintenance Fundamentals</strong> can help staff who move between server-room tasks and the wider facility, where doors, floors, access routes, and building conditions affect handling risk.</p>
+<p>For a team that needs coverage across daily operations, maintenance, incident response, and general facility-management skills, the site’s <strong>Operations &amp; Reliability Bundle</strong> includes these kinds of role-based subjects, including Server Room Ergonomics and Manual Handling Training. A bundle is not automatically the right choice. A single course may be enough for a narrowly defined onboarding need, while a broader plan may make sense for a multi-role team with different responsibilities.</p>
+<p>A practical role-based sequence could look like this:</p>
+<ul><li>New technician: Server Room Ergonomics and Manual Handling Training, followed by a supervised walkthrough of carts, staging areas, and cabinet access.</li><li>Facilities technician: add Data Center Operations Management and the site’s electrical or mechanical safety modules that match the assigned equipment.</li><li>Maintenance planner: add Preventive Maintenance Planning and require an ergonomic task review for recurring heavy or awkward work orders.</li><li>Supervisor or contractor coordinator: review the method statement, staffing plan, equipment inspection, and stop-work expectations before authorizing the window.</li></ul>
+<p>The training outcome should be observable. Ask the learner to identify the handling variables, select the aid, explain the team-lift communication, and point out when the job must stop for a different method. Learners receive a certificate of completion from the course, but the certificate is not a regulatory license or certification to perform unrelated work.</p>
+<hr class="post-divider">
+<h2>Common Mistakes to Avoid</h2>
+<ul><li>Using a generic “lift safely” paragraph for every work order instead of describing the actual load, route, and placement height.</li><li>Treating a two-person lift as safe without assigning a leader, checking visibility, or planning the set-down.</li><li>Buying a cart based only on rated capacity while ignoring wheel condition, height, brakes, turning radius, and floor compatibility.</li><li>Removing cabinet doors, rails, or panels without checking the manufacturer procedure and the effect on stability, cooling, or access controls.</li><li>Scheduling all of the heavy work at the end of a long maintenance window, when attention and grip quality are already declining.</li><li>Counting a worker’s willingness to “push through” discomfort as evidence that the method is acceptable.</li><li>Staging boxes, tools, and wrapping in the aisle because the designated area is inconvenient.</li><li>Assuming contractors understand the site’s ergonomics, access, and stop-work expectations without a pre-task briefing.</li><li>Measuring success only by whether the equipment was installed. A successful task also leaves the room orderly, the equipment undamaged, the route clear, and the lessons recorded.</li></ul>
+<hr class="post-divider">
+<h2>Key Takeaway</h2>
+<p>Server-room ergonomics is a design and planning problem, not just a lifting reminder. When managers specify the load, route, aid, staffing, posture changes, and stop-work conditions before a rack task begins, technicians have a safer and more predictable way to protect both themselves and the facility. This week, choose one recurring rack or cabinet work order, walk the real route with the technician who performs it, and add one concrete ergonomic control to the next job plan.</p>
+<hr class="post-divider">
+<h2>Sources</h2>
+<ul class="sources-list"><li><a href="https://www.osha.gov/etools/computer-workstations" target="_blank" rel="noopener noreferrer">Occupational Safety and Health Administration, Computer Workstations eTool</a></li><li><a href="https://www.cdc.gov/niosh/ergonomics/about/rnle.html" target="_blank" rel="noopener noreferrer">Centers for Disease Control and Prevention, NIOSH Revised NIOSH Lifting Equation</a></li><li><a href="https://www.cdc.gov/niosh/docs/94-110/default.html" target="_blank" rel="noopener noreferrer">Centers for Disease Control and Prevention, NIOSH Applications Manual for the Revised NIOSH Lifting Equation</a></li></ul>
+  </article>
+  <section class="related-posts" aria-labelledby="related-heading">
+    <h2 id="related-heading">More from the blog</h2>
+    <div class="related-grid"><a class="post-card" href="data-center-fire-door-walkthrough-what-facility-managers-should-verify-before-a-critical-facilities-audit.html"><img class="post-card-thumb" src="../assets/img/posts/data-center-fire-door-walkthrough-what-facility-managers-should-verify-before-a-critical-facilities-audit.jpg" srcset="../assets/img/posts/data-center-fire-door-walkthrough-what-facility-managers-should-verify-before-a-critical-facilities-audit-480w.webp 480w, ../assets/img/posts/data-center-fire-door-walkthrough-what-facility-managers-should-verify-before-a-critical-facilities-audit-800w.webp 800w, ../assets/img/posts/data-center-fire-door-walkthrough-what-facility-managers-should-verify-before-a-critical-facilities-audit-1200w.webp 1200w" sizes="(max-width: 640px) calc(100vw - 32px), (max-width: 1024px) 50vw, 380px" alt="Data Center Fire Door Walkthrough: What Facility Managers Should Verify Before a Critical-Facilities Audit" width="1200" height="675" loading="lazy" decoding="async"><div class="post-card-body"><div class="post-date">October 24, 2026</div><h3>Data Center Fire Door Walkthrough: What Facility Managers Should Verify Before a Critical-Facilities Audit</h3></div></a><a class="post-card" href="data-center-hot-work-permit-readiness-what-facilities-managers-should-verify-before-welding-near-critical-equipment.html"><img class="post-card-thumb" src="../assets/img/posts/data-center-hot-work-permit-readiness-what-facilities-managers-should-verify-before-welding-near-critical-equipment.jpg" srcset="../assets/img/posts/data-center-hot-work-permit-readiness-what-facilities-managers-should-verify-before-welding-near-critical-equipment-480w.webp 480w, ../assets/img/posts/data-center-hot-work-permit-readiness-what-facilities-managers-should-verify-before-welding-near-critical-equipment-800w.webp 800w, ../assets/img/posts/data-center-hot-work-permit-readiness-what-facilities-managers-should-verify-before-welding-near-critical-equipment-1200w.webp 1200w" sizes="(max-width: 640px) calc(100vw - 32px), (max-width: 1024px) 50vw, 380px" alt="Data Center Hot Work Permit Readiness: What Facilities Managers Should Verify Before Welding Near Critical Equipment" width="1200" height="675" loading="lazy" decoding="async"><div class="post-card-body"><div class="post-date">October 23, 2026</div><h3>Data Center Hot Work Permit Readiness: What Facilities Managers Should Verify Before Welding Near Critical Equipment</h3></div></a></div>
+    <a class="related-all" href="../">View all posts &rarr;</a>
+  </section>
+</main>
+
+<footer class="site-footer" id="contact">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="../../" class="logo">
+          <img class="logo-img" src="../../images/logo.png" alt="datacentertraining.us" width="537" height="96" loading="lazy">
+        </a>
+        <p class="footer-legal">Data Center Training is a specialty training division of <a href="https://hazwoper-osha.com/" target="_blank" rel="noopener">HAZWOPER-OSHA Training, LLC</a>, an IACET-accredited provider of professional data center and safety compliance training.</p>
+        <p class="footer-legal" style="margin-top:8px;">HAZWOPER OSHA Training, LLC &middot; 11901 Santa Monica Blvd., Suite #414, Los Angeles, CA 90025</p>
+        <div class="footer-badges">
+          <img src="https://media.hazwoper-osha.com/wp-content/uploads/2023/11/1698821020/IACET-small.webp" alt="IACET Accredited Provider" width="40" height="24" loading="lazy">
+          <img src="https://media.hazwoper-osha.com/wp-content/uploads/2026/07/1784291935/bbb.webp" alt="BBB A+ Rating" width="40" height="24" loading="lazy">
+          <img src="https://media.hazwoper-osha.com/wp-content/uploads/2026/07/1784292027/trust.webp" alt="Google Trust Services" width="141" height="20" loading="lazy" style="height:20px;">
+        </div>
+      </div>
+      <div class="footer-cta">
+        <p class="footer-cta-title">Not sure where to start?</p>
+        <p class="footer-cta-text">Find the data center role that fits you, then get a training plan built around it.</p>
+        <div class="footer-cta-actions">
+          <a href="../../quizzes/career-quiz.html" class="btn btn-primary btn-sm">Take the Career Quiz</a>
+          <a href="../../tools/training-plan-builder.html" class="text-link">Build a training plan &rarr;</a>
+        </div>
+        <div class="footer-contact-links">
+          <a href="tel:18664296742">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            1-866-429-6742
+          </a>
+          <a href="mailto:info@hazwoper-osha.com">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            info@hazwoper-osha.com
+          </a>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/HazwoperOsha/" target="_blank" rel="noopener" aria-label="Facebook"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/hazwoper_osha_training/?hl=en" target="_blank" rel="noopener" aria-label="Instagram"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="https://www.youtube.com/@hazwoper-osha" target="_blank" rel="noopener" aria-label="YouTube"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33zM9.75 15.02V8.48l5.75 3.27z"/></svg></a>
+          <a href="https://x.com/HazwoperOsha" target="_blank" rel="noopener" aria-label="X"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.4 8.4L23 22h-6.6l-5.2-6.8L5.1 22H2l7.9-9L1.6 2h6.8l4.7 6.2z"/></svg></a>
+          <a href="https://www.linkedin.com/company/hazwoper-osha" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM8.34 18.34V10.1H5.67v8.24zM7.01 8.97a1.55 1.55 0 1 0 0-3.1 1.55 1.55 0 0 0 0 3.1zM18.34 18.34v-4.6c0-2.46-1.31-3.6-3.06-3.6a2.64 2.64 0 0 0-2.39 1.32V10.1H10.2s.04.86 0 8.24h2.68v-4.6c0-.25.02-.5.09-.68a1.5 1.5 0 0 1 1.37-1c.96 0 1.35.73 1.35 1.8v4.48z"/></svg></a>
+          <a href="https://www.pinterest.com/hazwoperosha/" target="_blank" rel="noopener" aria-label="Pinterest"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.64 7.86 6.36 9.32-.09-.79-.17-2.01.03-2.88.19-.79 1.22-5.03 1.22-5.03s-.31-.63-.31-1.55c0-1.45.84-2.54 1.89-2.54.89 0 1.32.67 1.32 1.47 0 .89-.57 2.23-.86 3.47-.25 1.03.52 1.88 1.53 1.88 1.84 0 3.07-2.36 3.07-5.15 0-2.12-1.43-3.71-4.02-3.71-2.93 0-4.76 2.19-4.76 4.63 0 .84.25 1.44.63 1.9.18.21.2.3.14.54-.05.18-.16.63-.21.81-.07.26-.28.35-.51.26-1.44-.59-2.11-2.16-2.11-3.93 0-2.92 2.46-6.43 7.34-6.43 3.92 0 6.5 2.84 6.5 5.89 0 4.03-2.24 7.04-5.55 7.04-1.11 0-2.16-.6-2.51-1.28 0 0-.6 2.36-.73 2.82-.22.8-.66 1.6-1.06 2.22.95.29 1.95.45 3 .45 5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-grid">
+    <div class="footer-col">
+      <h3>Training</h3>
+      <a href="../../courses.html">Course Catalog</a>
+      <a href="../../bundles.html">Course Bundles</a>
+      <a href="../../training/">Training by Topic</a>
+      <a href="../../training/nfpa-70e-training.html">NFPA 70E Training</a>
+      <a href="../../training/arc-flash-training.html">Arc Flash Training</a>
+      <a href="../../who.html">Courses by Role</a>
+      <a href="../../tools/training-plan-builder.html">Training Plan Builder</a>
+      <a href="../../#teams">Team Training</a>
+      <a href="../../certifications.html">Certificates &amp; Accreditation</a>
+      <a href="../../faq.html">FAQ</a>
+    </div>
+    <div class="footer-col">
+      <h3>Learn</h3>
+      <a href="../../learn/">Knowledge Center</a>
+      <a href="../../learn/what-is-a-data-center.html">Data Center 101</a>
+      <a href="../../learn/data-center-power.html">Power Systems</a>
+      <a href="../../learn/data-center-cooling.html">Cooling Systems</a>
+      <a href="../../learn/data-center-tiers.html">Tier Levels</a>
+      <a href="../../learn/data-center-safety.html">Safety Guide</a>
+      <a href="../../learn/data-center-standards.html">Standards Guide</a>
+      <a href="../../learn/glossary.html">Glossary</a>
+      <a href="../../blog/">Blog</a>
+    </div>
+    <div class="footer-col">
+      <h3>Careers</h3>
+      <a href="../../careers/">Careers Hub</a>
+      <a href="../../careers/data-center-technician.html">Data Center Technician</a>
+      <a href="../../careers/data-center-jobs.html">Job Roles Explained</a>
+      <a href="../../careers/entry-level-data-center-jobs.html">Entry-Level Jobs</a>
+      <a href="../../careers/data-center-technician-salary.html">Salary Guide</a>
+      <a href="../../careers/data-center-jobs-by-location.html">Jobs by Location</a>
+      <a href="../../careers/data-center-certifications.html">Certifications Guide</a>
+      <a href="../../careers/interview-questions.html">Interview Questions</a>
+      <a href="../../quizzes/career-quiz.html">Career Match Quiz</a>
+    </div>
+    <div class="footer-col">
+      <h3>Quizzes &amp; Tools</h3>
+      <a href="../../quizzes/">All Quizzes</a>
+      <a href="../../quizzes/data-center-basics-quiz.html">Data Center Basics Quiz</a>
+      <a href="../../tools/">All Tools</a>
+      <a href="../../tools/pue-calculator.html">PUE Calculator</a>
+      <a href="../../tools/uptime-calculator.html">Uptime Calculator</a>
+      <a href="../../tools/cooling-load-calculator.html">Cooling Load Calculator</a>
+      <a href="../../search.html">Search the Site</a>
+    </div>
+    <div class="footer-col">
+      <h3>Company</h3>
+      <a href="../../about.html">About Us</a>
+      <a href="https://hazwoper-osha.com/" target="_blank" rel="noopener">HAZWOPER-OSHA Training</a>
+      <a href="https://hazwoper-osha.com/certificate-verification" target="_blank" rel="noopener">Verify Certificate</a>
+      <a href="../../privacy.html">Privacy Policy</a>
+      <a href="../../terms.html">Terms of Service</a>
+      <a href="../../accessibility.html">Accessibility</a>
+      <a href="../../privacy.html#choices" data-privacy-choices>Your Privacy Choices</a>
+      <a href="https://hazwoper-osha.com/refund-policy" target="_blank" rel="noopener">Refund Policy</a>
+    </div>
+    </div>
+
+    <p class="footer-agents"><span>For AI agents:</span> <a href="/llms.txt">llms.txt</a> <a href="/llms-full.txt">llms-full.txt</a> <a href="/.well-known/mcp.json">WebMCP Manifest</a> <a href="/api/index.json">JSON Catalog API</a> <a href="/openapi.json">API Docs (OpenAPI)</a> <a href="/sitemap.xml">Sitemap</a></p>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; 2026 HAZWOPER-OSHA Training, LLC. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+<script src="../../js/main.js" defer></script>
+
+</body>
+</html>

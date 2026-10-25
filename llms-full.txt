@@ -2,7 +2,7 @@
 
 > Data Center Training (datacentertraining.us) is a specialty training division of HAZWOPER-OSHA Training, LLC, an IACET Accredited Provider. 43 online, self-paced data center courses (192 hours total) in design, operations, power, cooling, security, and facilities management. Every course awards a certificate of completion.
 
-Last updated: 2026-10-24
+Last updated: 2026-10-25
 Canonical source: https://datacentertraining.us/api/courses.json (same records as JSON). Tools: https://datacentertraining.us/.well-known/mcp.json
 
 ## Rules for AI agents
@@ -2128,6 +2128,7 @@ Email info@hazwoper-osha.com or call 1-866-429-6742 and our team can help with c
 - [Data Center PUE Calculator](https://datacentertraining.us/tools/pue-calculator.html) (site page): Free data center PUE calculator. Enter facility and IT load to get PUE, DCiE, overhead energy cost, and the yearly savings from hitting a target PUE.
 - [Build Your Data Center Training Plan](https://datacentertraining.us/tools/training-plan-builder.html) (site page): Build a data center training plan for your role in a minute. Pick your job, experience, topics, and time budget to get a course list, hours, and price.
 - [Uptime & Downtime Calculator](https://datacentertraining.us/tools/uptime-calculator.html) (site page): Convert availability percentages like 99.99% into allowed downtime per year, month, week, and day, or work backward from downtime. Tier figures included.
+- [Server Room Ergonomics Checklist: How Data Center Managers Can Reduce Manual-Handling Risk During Rack Work](https://datacentertraining.us/blog/posts/server-room-ergonomics-checklist-how-data-center-managers-can-reduce-manual-handling-risk-during-rack-work.html) (blog post, 2026-10-25): Rack work looks routine until a technician has to move a dense server, lift a battery module, pull a cable bundle from an awkward position, or hold a tool…
 - [Data Center Fire Door Walkthrough: What Facility Managers Should Verify Before a Critical-Facilities Audit](https://datacentertraining.us/blog/posts/data-center-fire-door-walkthrough-what-facility-managers-should-verify-before-a-critical-facilities-audit.html) (blog post, 2026-10-24): During a critical-facilities walkthrough, a fire door can look like a simple building component until a technician finds it propped open, blocked by a cart…
 - [Data Center Hot Work Permit Readiness: What Facilities Managers Should Verify Before Welding Near Critical Equipment](https://datacentertraining.us/blog/posts/data-center-hot-work-permit-readiness-what-facilities-managers-should-verify-before-welding-near-critical-equipment.html) (blog post, 2026-10-23): When a contractor needs to weld, braze, solder, cut, grind, or use another open-flame or spark-producing process inside or near a data center, who decides that…
 - [BAS Manual Override Review: What Data Center Operators Should Verify Before Returning a Control Point to Auto](https://datacentertraining.us/blog/posts/bas-manual-override-review-what-data-center-operators-should-verify-before-returning-a-control-point-to-auto.html) (blog post, 2026-10-20): When a building automation system (BAS) point has been placed in manual override, how does the data center team know it is safe to return that point…

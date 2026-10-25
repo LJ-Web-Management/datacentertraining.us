@@ -388,5 +388,15 @@
     "date": "2026-10-24",
     "dateDisplay": "October 24, 2026",
     "excerpt": "During a critical-facilities walkthrough, a fire door can look like a simple building component until a technician finds it propped open, blocked by a cart…"
+  },
+  {
+    "title": "Server Room Ergonomics Checklist: How Data Center Managers Can Reduce Manual-Handling Risk During Rack Work",
+    "slug": "server-room-ergonomics-checklist-how-data-center-managers-can-reduce-manual-handling-risk-during-rack-work",
+    "seoTitle": "Server Room Ergonomics Checklist | Data Center Training",
+    "description": "Rack work looks routine until a technician has to move a dense server, lift a battery module, pull a cable bundle from an awkward position, or hold a tool…",
+    "image": "assets/img/posts/server-room-ergonomics-checklist-how-data-center-managers-can-reduce-manual-handling-risk-during-rack-work.jpg",
+    "date": "2026-10-25",
+    "dateDisplay": "October 25, 2026",
+    "excerpt": "Rack work looks routine until a technician has to move a dense server, lift a battery module, pull a cable bundle from an awkward position, or hold a tool…"
   }
 ]
