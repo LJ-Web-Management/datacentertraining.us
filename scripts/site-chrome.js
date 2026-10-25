@@ -253,7 +253,7 @@ function header(rel, d) {
     '    </nav>',
     '',
     '    <div class="nav-actions">',
-    '      <a href="' + link(P, 'search.html') + '" class="nav-search" data-search-open aria-label="Search the site" title="Search (Ctrl+K)">' + ICON_SEARCH + '<span class="nav-search-label">Search</span><kbd class="nav-search-kbd">Ctrl K</kbd></a>',
+    '      <a href="' + link(P, 'search.html') + '" class="nav-search" data-search-open aria-keyshortcuts="Control+K" title="Search (Ctrl+K)">' + ICON_SEARCH + '<span class="nav-search-label">Search</span><kbd class="nav-search-kbd">Ctrl K</kbd></a>',
     '      <a href="' + link(P, 'cart.html') + '" class="nav-cart" aria-label="Cart"' + (page === 'cart.html' ? ' aria-current="page"' : '') + '>' + ICON_CART + '<span class="nav-cart-count" data-cart-count hidden>0</span></a>',
     '      ' + cta,
     '      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">',

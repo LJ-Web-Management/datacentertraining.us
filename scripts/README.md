@@ -21,8 +21,8 @@ requests fail if a generated file is out of date.
 | `api/*.json`, `api/courses/<id>.json` | `js/config.js` (courses, bundles, prices), each `courses/<id>.html` (description, outcomes, modules, audience, FAQ), `faq.html`, `who.html`, `blog/posts.json` |
 | `.well-known/mcp.json` | Tool contract in `scripts/build-site.js`; examples are produced by running `js/webmcp.js` |
 | `openapi.json`, `llms.txt`, `llms-full.txt` | Same data |
-| `css/site.min.css` | `css/tokens.css` + `css/style.css` |
-| `blog/assets/css/blog.min.css` | the above + `blog/assets/css/blog.css` |
+| `css/site.min.css` | `css/tokens.css` + `css/style.css`, keeping only rules whose classes appear in a non-blog page or a script those pages load |
+| `blog/assets/css/blog.min.css` | the above + `blog/assets/css/blog.css`, keeping only rules the blog pages, their scripts, or `blog/scripts/` (the post converter) can use |
 | `<!-- dct:head -->` block in every page | `headBlock()` in `build-site.js` (security meta, agent links, deferred analytics/chat, WebMCP loader) |
 | `twitter:*` meta | Mirrors each page's `og:*` tags |
 | Course / catalog / bundle JSON-LD | Course records |
@@ -85,6 +85,16 @@ Only courses go in the cart; bundles are bought on their own.
   Open Graph + X card tags, image `alt`/`width`/`height`, no broken or
   non-canonical internal links, no orphan pages, sitemap exactly matches the
   indexable pages.
+
+## IndexNow
+
+After every GitHub Pages deploy, `.github/workflows/indexnow.yml` runs
+`indexnow.js`, which sends the sitemap URLs whose HTML changed since the
+previous deploy to IndexNow (Bing, Yandex, Seznam, Naver, Yep). Search engines
+confirm the site owns the key by fetching `/47dc0a274417ffac423a26dcc4089056.txt`,
+so keep that file at the root. To announce every page, run the workflow from
+the Actions tab with "all" checked, or `node scripts/indexnow.js --all`. Add
+`--dry-run` to see the list without sending it.
 
 ## Why analytics load late
 

@@ -1,0 +1,61 @@
+name: IndexNow (notify search engines of changed pages)
+
+# Runs after each GitHub Pages deploy, once the new pages are live, and sends
+# IndexNow the sitemap URLs whose HTML changed since the previous successful
+# deploy (see scripts/indexnow.js). Run it by hand with "all" checked to
+# announce every URL in sitemap.xml.
+on:
+  workflow_run:
+    workflows: ["pages-build-deployment"]
+    types: [completed]
+  workflow_dispatch:
+    inputs:
+      all:
+        description: "Submit every URL in sitemap.xml"
+        type: boolean
+        default: false
+
+concurrency:
+  group: indexnow
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  submit:
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Submit changed pages
+        env:
+          GH_TOKEN: ${{ github.token }}
+          EVENT: ${{ github.event_name }}
+          ALL: ${{ inputs.all }}
+          RUN_ID: ${{ github.event.workflow_run.id }}
+          RUN_CREATED: ${{ github.event.workflow_run.created_at }}
+          WORKFLOW_ID: ${{ github.event.workflow_run.workflow_id }}
+          HEAD_SHA: ${{ github.event.workflow_run.head_sha }}
+        run: |
+          if [ "$EVENT" = "workflow_dispatch" ]; then
+            if [ "$ALL" = "true" ]; then node scripts/indexnow.js --all; else node scripts/indexnow.js HEAD~1 HEAD; fi
+            exit 0
+          fi
+          # The commit the previous successful deploy published.
+          PREV=$(gh api "repos/${{ github.repository }}/actions/workflows/$WORKFLOW_ID/runs?status=success&per_page=30" \
+            --jq "[.workflow_runs[] | select(.id != $RUN_ID and .head_sha != \"$HEAD_SHA\" and .created_at < \"$RUN_CREATED\")][0].head_sha // empty")
+          if [ -z "$PREV" ] || ! git cat-file -e "$PREV^{commit}" 2>/dev/null; then
+            PREV="$HEAD_SHA~1"
+          fi
+          echo "Changes from $PREV to $HEAD_SHA"
+          node scripts/indexnow.js "$PREV" "$HEAD_SHA"
