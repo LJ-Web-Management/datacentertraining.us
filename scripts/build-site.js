@@ -1347,6 +1347,39 @@ function courseLd(c) {
   };
 }
 
+// The same course as something you can buy, for product and merchant results.
+// The return terms summarize terms.html section 3; the linked policy controls.
+function productLd(c) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    '@id': c.url + '#product',
+    name: c.title,
+    description: c.description,
+    url: c.url,
+    sku: 'DCT-' + c.catalog_number,
+    image: ORIGIN + '/images/og-image.jpg',
+    brand: { '@type': 'Brand', name: 'Data Center Training' },
+    category: 'Online professional training',
+    offers: {
+      '@type': 'Offer',
+      price: c.price_usd.toFixed(2),
+      priceCurrency: 'USD',
+      availability: c.availability === 'preorder' ? 'https://schema.org/PreOrder' : 'https://schema.org/InStock',
+      url: c.url,
+      seller: PROVIDER,
+      hasMerchantReturnPolicy: {
+        '@type': 'MerchantReturnPolicy',
+        applicableCountry: 'US',
+        returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow',
+        merchantReturnDays: 30,
+        refundType: 'https://schema.org/FullRefund',
+        merchantReturnLink: 'https://hazwoper-osha.com/refund-policy'
+      }
+    }
+  };
+}
+
 // ---------------------------------------------------------------------------
 // Course and bundle blocks on content pages
 //
@@ -1592,8 +1625,10 @@ function processPages(d) {
 
   const byId = Object.fromEntries(d.courses.map((c) => [c.id, c]));
   const searchDocs = [];
+  const pages = {};
   for (const rel of files.sort()) {
     let html = read(rel);
+    pages[rel] = html;
     // Redirect stubs (a retired URL forwarding to its replacement) stay as written.
     if (/<meta http-equiv="refresh"/.test(html)) continue;
     html = processHead(rel, html);
@@ -1606,6 +1641,7 @@ function processPages(d) {
     const cm = rel.match(/^courses\/([a-z0-9-]+)\.html$/);
     if (cm && byId[cm[1]]) {
       html = replaceLd(html, (x) => x['@type'] === 'Course', jsonLd(courseLd(byId[cm[1]])));
+      html = replaceLd(html, (x) => x['@type'] === 'Product', jsonLd(productLd(byId[cm[1]])));
       html = html.replace(/<div class="bundle-upsell">[\s\S]*?<\/div>/, () => bundleUpsellHtml(byId[cm[1]], d, chrome.prefixFor(rel)));
     }
     if (html.includes('<div class="glossary-item" id="')) {
@@ -1676,8 +1712,10 @@ function processPages(d) {
       }
     }
     write(rel, html);
+    pages[rel] = html;
   }
   writeSearchIndex(d, searchDocs);
+  return pages;
 }
 
 // ---------------------------------------------------------------------------
@@ -1694,11 +1732,95 @@ function minifyCss(css) {
     .trim() + '\n';
 }
 
-function buildCss() {
+// Splits a selector list on its top-level commas (not the ones inside :is() or [attr]).
+function splitSelectors(list) {
+  const out = [];
+  let depth = 0, start = 0;
+  for (let i = 0; i < list.length; i++) {
+    const ch = list[i];
+    if (ch === '(' || ch === '[') depth++;
+    else if (ch === ')' || ch === ']') depth--;
+    else if (ch === ',' && !depth) { out.push(list.slice(start, i)); start = i + 1; }
+  }
+  out.push(list.slice(start));
+  return out;
+}
+
+// Drops the selectors (and then whole rules and empty @media blocks) that name
+// a class or id appearing nowhere in `words`. Takes minified CSS. Classes inside
+// :not() and attribute values are ignored, since those match when absent.
+function purgeCss(css, words) {
+  let i = 0;
+  const used = (sel) => (sel
+    .replace(/\[[^\]]*\]/g, '')
+    .replace(/:not\((?:[^()]|\([^()]*\))*\)/g, '')
+    .match(/[.#][A-Za-z_][\w-]*/g) || []).every((t) => words.has(t.slice(1)));
+  function block() {
+    let out = '';
+    while (i < css.length && css[i] !== '}') {
+      const open = css.indexOf('{', i);
+      if (open === -1) break;
+      const prelude = css.slice(i, open).trim();
+      i = open + 1;
+      if (/^@(media|supports)/.test(prelude)) {
+        const inner = block();
+        i++;
+        if (inner) out += prelude + '{' + inner + '}';
+      } else if (prelude[0] === '@') {
+        // @keyframes, @font-face: copied whole.
+        let depth = 1, j = i;
+        while (depth) { if (css[j] === '{') depth++; else if (css[j] === '}') depth--; j++; }
+        out += prelude + '{' + css.slice(i, j);
+        i = j;
+      } else {
+        const close = css.indexOf('}', i);
+        const body = css.slice(i, close);
+        i = close + 1;
+        const sels = splitSelectors(prelude).filter(used);
+        if (sels.length) out += sels.join(',') + '{' + body + '}';
+      }
+    }
+    return out;
+  }
+  return block() + '\n';
+}
+
+// Every word in the given pages and in the scripts they load (plus any
+// /js/*.js those scripts load on demand). A plain word match, so a class that
+// only appears inside a script's string still counts as used.
+function cssWords(pages, rels, extra) {
+  const scripts = new Set(extra);
+  for (const rel of rels) {
+    for (const m of pages[rel].matchAll(/<script[^>]*\ssrc="([^"]+)"/g)) {
+      if (/^(https?:)?\/\//.test(m[1])) continue;
+      const f = m[1].startsWith('/') ? m[1].slice(1) : path.posix.normalize(path.posix.join(path.posix.dirname(rel), m[1]));
+      if (fs.existsSync(path.join(ROOT, f))) scripts.add(f);
+    }
+  }
+  for (const f of [...scripts]) {
+    for (const m of read(f).matchAll(/['"]\/?(js\/[\w-]+\.js)['"]/g)) scripts.add(m[1]);
+  }
+  const words = new Set();
+  for (const text of rels.map((r) => pages[r]).concat([...scripts].map(read))) {
+    for (const w of text.match(/[A-Za-z0-9_-]+/g) || []) words.add(w);
+  }
+  return words;
+}
+
+// Each bundle keeps only the rules its own pages can use: the blog loads none
+// of the course, cart, quiz, or calculator styles. Ahrefs flags a stylesheet
+// over about 15 KB compressed.
+function buildCss(pages) {
   const banner = '/* Generated by scripts/build-site.js from css/tokens.css + css/style.css - edit those, then rebuild. */\n';
   const base = read('css/tokens.css') + '\n' + read('css/style.css');
-  write('css/site.min.css', banner + minifyCss(base));
-  write('blog/assets/css/blog.min.css', banner.replace('css/style.css', 'css/style.css + blog/assets/css/blog.css') + minifyCss(base + '\n' + read('blog/assets/css/blog.css')));
+  const rels = Object.keys(pages);
+  const blogRels = rels.filter((r) => r.startsWith('blog/'));
+  const siteRels = rels.filter((r) => !r.startsWith('blog/'));
+  // The converter writes future posts, so classes it can emit stay in the blog bundle.
+  const blogExtra = fs.readdirSync(path.join(ROOT, 'blog/scripts')).filter((f) => f.endsWith('.js')).map((f) => 'blog/scripts/' + f);
+  write('css/site.min.css', banner + purgeCss(minifyCss(base).trim(), cssWords(pages, siteRels, [])));
+  write('blog/assets/css/blog.min.css', banner.replace('css/style.css', 'css/style.css + blog/assets/css/blog.css') +
+    purgeCss(minifyCss(base + '\n' + read('blog/assets/css/blog.css')).trim(), cssWords(pages, blogRels, blogExtra)));
 }
 
 // ---------------------------------------------------------------------------
@@ -1706,8 +1828,8 @@ function buildCss() {
 function main() {
   const d = buildData();
   const out = buildOutputs(d);
-  processPages(d);
-  buildCss();
+  const pages = processPages(d);
+  buildCss(pages);
   if (process.argv.includes('--print-examples')) console.log(JSON.stringify(out.fullExamples, null, 2));
   if (CHECK) {
     if (changed.length) {
