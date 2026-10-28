@@ -79,6 +79,7 @@ function navData(d) {
           links: [
             { href: 'training/', title: 'All Training Programs' },
             { href: 'training/data-center-technician-training.html', title: 'Data Center Technician Training' },
+            { href: 'training/data-center-electrical-safety-training.html', title: 'Data Center Electrical Safety' },
             { href: 'training/nfpa-70e-training.html', title: 'NFPA 70E Training' },
             { href: 'training/osha-electrical-safety-training.html', title: 'OSHA Electrical Safety Training' },
             { href: 'training/arc-flash-training.html', title: 'Arc Flash Training' },

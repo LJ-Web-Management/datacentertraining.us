@@ -1,8 +1,8 @@
 {
   "publisher": "Data Center Training (datacentertraining.us)",
-  "last_updated": "2026-10-25",
+  "last_updated": "2026-10-28",
   "license": "Public information; quote with attribution and a link to the source URL.",
-  "count": 117,
+  "count": 133,
   "resources": [
     {
       "source": "Data Center Training (first party)",
@@ -191,6 +191,43 @@
     {
       "source": "Data Center Training (first party)",
       "type": "site_page",
+      "title": "Anti-Tailgating in Access Control: How Data Centers Stop Piggybacking",
+      "url": "https://datacentertraining.us/learn/anti-tailgating.html",
+      "description": "What anti-tailgating means in access control, how mantraps, portals, and turnstiles stop piggybacking into data centers, and how it differs from anti-passback.",
+      "topics": [
+        "guide",
+        "access"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "CRAH Units Explained: Components, CRAH vs. CRAC, and Maintenance",
+      "url": "https://datacentertraining.us/learn/crah-units.html",
+      "description": "What a CRAH unit is, its main components, how it differs from a CRAC unit, common failures, and what CRAH technicians check during data center maintenance.",
+      "topics": [
+        "guide",
+        "maintenance"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center BMS: What a Building Management System Does",
+      "url": "https://datacentertraining.us/learn/data-center-bms.html",
+      "description": "What a building management system (BMS) does in a data center, what it monitors, how it differs from BAS, EPMS, and DCIM, and how BMS and DCIM connect.",
+      "topics": [
+        "guide",
+        "dcim",
+        "bms"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
       "title": "Data Center Commissioning Explained: Levels 1 to 5",
       "url": "https://datacentertraining.us/learn/data-center-commissioning.html",
       "description": "Data center commissioning explained: the five levels from factory witness testing to integrated systems testing, key documents, roles, and handover.",
@@ -210,6 +247,42 @@
         "guide",
         "cooling",
         "refrigerant"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center EPO: What Emergency Power Off Is and How It Works",
+      "url": "https://datacentertraining.us/learn/data-center-epo.html",
+      "description": "What an EPO (emergency power off) is in a data center, what NEC Article 645 requires, how EPO systems work, and how to prevent accidental shutdowns.",
+      "topics": [
+        "guide"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Fire Suppression: Clean Agents, Detection, and Compliance",
+      "url": "https://datacentertraining.us/learn/data-center-fire-suppression.html",
+      "description": "How data center fire detection and suppression work: clean agents, preaction sprinklers, VESDA, NFPA 75 and 2001, and restoring compliance after a discharge.",
+      "topics": [
+        "guide",
+        "fire",
+        "suppression"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "How to Build a Data Center Maintenance Program",
+      "url": "https://datacentertraining.us/learn/data-center-maintenance-program.html",
+      "description": "How to build an equipment maintenance program for a data center: preventive, predictive, and corrective work, scheduling, CMMS data, frequencies, and KPIs.",
+      "topics": [
+        "guide",
+        "maintenance"
       ],
       "audience": []
     },
@@ -279,6 +352,18 @@
         "security",
         "access",
         "visitor"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Security Guards: Armed vs. Unarmed, Duties, and Training",
+      "url": "https://datacentertraining.us/learn/data-center-security-guards.html",
+      "description": "What data center security guards do, when sites use armed security, licensing by state, and the training officers need beyond a standard guard license.",
+      "topics": [
+        "guide",
+        "security"
       ],
       "audience": []
     },
@@ -399,6 +484,53 @@
     {
       "source": "Data Center Training (first party)",
       "type": "site_page",
+      "title": "Building Automation System Training: BAS Courses, Certification, and Career Path",
+      "url": "https://datacentertraining.us/training/building-automation-training.html",
+      "description": "Building automation system (BAS) training online: what a BAS course covers, certification options, a learning path for technicians, and BAS for data centers.",
+      "topics": [
+        "training"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Business Continuity Training and Certification: BC/DR Courses Online",
+      "url": "https://datacentertraining.us/training/business-continuity-training.html",
+      "description": "Business continuity and disaster recovery training online: BCP certifications (CBCP, CBCI), ISO 22301, BIA, RTO and RPO, and courses for data center teams.",
+      "topics": [
+        "training"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Commissioning and Startup Training for Data Centers",
+      "url": "https://datacentertraining.us/training/commissioning-training.html",
+      "description": "Commissioning and startup training for data centers: what Cx courses cover, levels 1 to 5, commissioning certifications, UPS startup, and a learning path.",
+      "topics": [
+        "training",
+        "ups",
+        "commissioning"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Electrical Safety Training: NFPA 70E, OSHA, and In-House Programs",
+      "url": "https://datacentertraining.us/training/data-center-electrical-safety-training.html",
+      "description": "Data center electrical safety training: NFPA 70E and OSHA rules, qualified-person training, data hall hazards, in-house operator programs, and top U.S. markets.",
+      "topics": [
+        "training",
+        "electrical"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
       "title": "Data Center Safety Training by Location",
       "url": "https://datacentertraining.us/training/data-center-safety-training-by-location.html",
       "description": "Data center electrical safety and NFPA 70E training for Northern Virginia, Atlanta, Dallas, Phoenix, Columbus, Chicago and more, with the OSHA agency by state.",
@@ -420,6 +552,19 @@
         "fire",
         "suppression",
         "confined"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Security Certification and Training: Options by Role",
+      "url": "https://datacentertraining.us/training/data-center-security-training.html",
+      "description": "Data center security certifications and training compared: physical security, access control, compliance, and auditing credentials, plus courses for every role.",
+      "topics": [
+        "training",
+        "security",
+        "access"
       ],
       "audience": []
     },
@@ -463,6 +608,18 @@
     {
       "source": "Data Center Training (first party)",
       "type": "site_page",
+      "title": "Data Center Liquid Cooling Training: Systems, Safety, and Procedures",
+      "url": "https://datacentertraining.us/training/liquid-cooling-training.html",
+      "description": "Data center liquid cooling training: direct-to-chip and immersion systems, CDUs, coolant handling, leak response, safety procedures, and certification.",
+      "topics": [
+        "training",
+        "cooling"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
       "title": "Lockout Tagout Training (LOTO): OSHA Rules for Data Centers",
       "url": "https://datacentertraining.us/training/lockout-tagout-training.html",
       "description": "Lockout tagout training under OSHA 1910.147: authorized vs affected employees, retraining triggers, electrical LOTO, and how LOTO works in data centers.",
@@ -492,6 +649,41 @@
       "topics": [
         "training",
         "electrical"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Preventive Maintenance Training: Courses for Technicians and Planners",
+      "url": "https://datacentertraining.us/training/preventive-maintenance-training.html",
+      "description": "Preventive maintenance training for technicians and maintenance planners: PM planning and scheduling, mechanical systems maintenance, CMMS, and online courses.",
+      "topics": [
+        "training",
+        "maintenance"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Refrigeration Safety Training: Refrigerant Handling and Safety Programs",
+      "url": "https://datacentertraining.us/training/refrigeration-safety-training.html",
+      "description": "Refrigeration safety training: refrigerant handling and EPA 608, A2L refrigerants, ammonia PSM, ASHRAE 15 and 34, and building a refrigeration safety program.",
+      "topics": [
+        "training",
+        "refrigerant"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Switchgear Safety Training: Switching, Racking, and Arc Flash",
+      "url": "https://datacentertraining.us/training/switchgear-safety-training.html",
+      "description": "Switchgear safety training for data centers: arc flash at switchgear, racking breakers, remote operation, switching procedures, NFPA 70E, and NFPA 70B.",
+      "topics": [
+        "training"
       ],
       "audience": []
     },
