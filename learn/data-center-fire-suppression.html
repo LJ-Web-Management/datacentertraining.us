@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- dct:head -->
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; object-src 'none'; base-uri 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#ffffff">
+<link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt">
+<link rel="alternate" type="application/json" href="/.well-known/mcp.json" title="WebMCP manifest">
+<link rel="service-desc" type="application/vnd.oai.openapi+json" href="/openapi.json">
+<script>
+/* Analytics, session recording, and chat load for every visitor unless they opt out or send a GPC signal
+   (see /js/consent.js), on the first interaction (scroll, tap, key, mouse move) so they never delay rendering. */
+(function(w,d){
+  w.dataLayer=w.dataLayer||[];w.gtag=function(){w.dataLayer.push(arguments);};
+  w.clarity=w.clarity||function(){(w.clarity.q=w.clarity.q||[]).push(arguments);};
+  w.Tawk_API=w.Tawk_API||{};w.Tawk_API.onLoad=function(){w.Tawk_API.minimize();};
+  var ev=['pointerdown','keydown','touchstart','scroll','mousemove'];
+  function add(src,attrs){var s=d.createElement('script');s.async=true;s.src=src;for(var k in attrs)s.setAttribute(k,attrs[k]);d.head.appendChild(s);}
+  function once(fn){var done=0;return function(now){if(done)return;function go(){if(done)return;done=1;ev.forEach(function(e){w.removeEventListener(e,go,{passive:true});});fn();}
+    if(now)go();else ev.forEach(function(e){w.addEventListener(e,go,{passive:true});});};}
+  w.dctLoad={
+    analytics:once(function(){
+      w.gtag('js',new Date());w.gtag('config','G-0CJ4YTW1J8');
+      add('https://www.googletagmanager.com/gtag/js?id=G-0CJ4YTW1J8');
+      add('https://analytics.ahrefs.com/analytics.js',{'data-key':'tVAd7KxwKax+pAfHx46Zgg'});
+      add('https://www.clarity.ms/tag/ylza43nm4m');
+    }),
+    chat:once(function(){
+      w.Tawk_LoadStart=new Date();add('https://embed.tawk.to/6a5a95a2096ab21d402a762c/1jtoth11r',{charset:'UTF-8',crossorigin:'*'});
+    })
+  };
+})(window,document);
+if(navigator.modelContext){var m=document.createElement('script');m.src='/js/webmcp.js';m.defer=true;document.head.appendChild(m);}
+</script>
+<script src="/js/consent.js" defer></script>
+<!-- /dct:head -->
+<title>Data Center Fire Suppression: Clean Agent Guide</title>
+<meta name="description" content="How data center fire detection and suppression work: clean agents, preaction sprinklers, VESDA, NFPA 75 and 2001, and restoring compliance after a discharge.">
+<meta name="robots" content="index, follow">
+<link rel="icon" href="../favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="192x192" href="../images/icon-192.png">
+<link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+<link rel="canonical" href="https://datacentertraining.us/learn/data-center-fire-suppression.html">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Data Center Fire Suppression: Clean Agent Guide">
+<meta property="og:description" content="How data center fire detection and suppression work: clean agents, preaction sprinklers, VESDA, NFPA 75 and 2001, and restoring compliance after a discharge.">
+<meta property="og:url" content="https://datacentertraining.us/learn/data-center-fire-suppression.html">
+<meta property="og:image" content="https://datacentertraining.us/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Data Center Training">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@HazwoperOsha">
+<meta name="twitter:title" content="Data Center Fire Suppression: Clean Agent Guide">
+<meta name="twitter:description" content="How data center fire detection and suppression work: clean agents, preaction sprinklers, VESDA, NFPA 75 and 2001, and restoring compliance after a discharge.">
+<meta name="twitter:image" content="https://datacentertraining.us/images/og-image.jpg">
+
+<link rel="stylesheet" href="../css/site.min.css">
+<script src="../js/nav.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Data Center Fire Suppression: Clean Agents, Detection, and Compliance",
+  "description": "How data center fire detection and suppression work: clean agents, preaction sprinklers, VESDA, NFPA 75 and 2001, and restoring compliance after a discharge.",
+  "url": "https://datacentertraining.us/learn/data-center-fire-suppression.html",
+  "mainEntityOfPage": "https://datacentertraining.us/learn/data-center-fire-suppression.html",
+  "image": "https://datacentertraining.us/images/og-image.jpg",
+  "datePublished": "2026-10-28",
+  "dateModified": "2026-10-28",
+  "inLanguage": "en-US",
+  "author": {
+    "@type": "Organization",
+    "name": "Data Center Training",
+    "url": "https://datacentertraining.us/"
+  },
+  "publisher": {
+    "@type": "EducationalOrganization",
+    "@id": "https://datacentertraining.us/#organization",
+    "name": "Data Center Training",
+    "url": "https://datacentertraining.us/"
+  },
+  "about": [
+    "Clean agent fire suppression",
+    "NFPA 2001",
+    "NFPA 75",
+    "Preaction sprinkler system",
+    "Aspirating smoke detection"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://datacentertraining.us/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Knowledge Center",
+      "item": "https://datacentertraining.us/learn/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Fire Suppression",
+      "item": "https://datacentertraining.us/learn/data-center-fire-suppression.html"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What fire suppression system is used in data centers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most data centers use a clean agent gaseous system such as HFC-227ea, FK-5-1-12, or an inert gas in the IT spaces, with a preaction sprinkler system as the code-required backup, and very early warning aspirating smoke detection."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is clean agent fire suppression safe for people?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Clean agents are designed for use in normally occupied spaces at their design concentrations, but people should still evacuate when the pre-discharge alarm sounds. Inert gases lower oxygen, and smoke and agent breakdown products from a fire are hazardous."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a preaction sprinkler system?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A preaction system keeps the sprinkler pipes dry until a detection system opens a control valve. Water then flows only from sprinkler heads opened by heat. This protects IT equipment from accidental water release."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What standards apply to data center fire suppression?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "NFPA 75 and 76 for IT and telecom spaces, NFPA 2001 for clean agent systems, NFPA 72 for detection and alarm, NFPA 13 for sprinkler design, NFPA 25 for sprinkler inspection and maintenance, and the building and fire codes adopted by your jurisdiction."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should a data center do after a clean agent discharge?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ventilate and make the area safe, notify the monitoring company, fire officials, insurer, and customers as required, put a fire watch or other interim protection in place, find the cause, have a licensed contractor recharge and restore the system, test room integrity if needed, and document everything."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="glass-nav">
+  <div class="container nav-inner">
+    <a href="../" class="logo">
+      <img class="logo-img" src="../images/logo.png" alt="datacentertraining.us" width="537" height="96">
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Main">
+      <div class="nav-item">
+        <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="navMenu-training">Courses<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-4" id="navMenu-training">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Online Training</p>
+            <a href="../courses.html"><span class="nav-link-title">Course Catalog</span><span class="nav-link-desc">All 43 self-paced courses</span></a>
+            <a href="../bundles.html"><span class="nav-link-title">Course Bundles</span><span class="nav-link-desc">Role-based bundles, save up to 52%</span></a>
+            <a href="../who.html"><span class="nav-link-title">Courses by Role</span><span class="nav-link-desc">Find the track for your job</span></a>
+            <a href="../tools/training-plan-builder.html"><span class="nav-link-title">Training Plan Builder</span><span class="nav-link-desc">Build and price a plan in minutes</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Training by Topic</p>
+            <a href="../training/"><span class="nav-link-title">All Training Programs</span></a>
+            <a href="../training/data-center-technician-training.html"><span class="nav-link-title">Data Center Technician Training</span></a>
+            <a href="../training/data-center-electrical-safety-training.html"><span class="nav-link-title">Data Center Electrical Safety</span></a>
+            <a href="../training/nfpa-70e-training.html"><span class="nav-link-title">NFPA 70E Training</span></a>
+            <a href="../training/osha-electrical-safety-training.html"><span class="nav-link-title">OSHA Electrical Safety Training</span></a>
+            <a href="../training/arc-flash-training.html"><span class="nav-link-title">Arc Flash Training</span></a>
+            <a href="../training/lockout-tagout-training.html"><span class="nav-link-title">Lockout/Tagout Training</span></a>
+            <a href="../training/ups-battery-training.html"><span class="nav-link-title">UPS &amp; Battery Training</span></a>
+            <a href="../training/generator-training.html"><span class="nav-link-title">Generator Training</span></a>
+            <a href="../training/bms-dcim-training.html"><span class="nav-link-title">BMS &amp; DCIM Training</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Enrolling</p>
+            <a href="../#teams"><span class="nav-link-title">Team Training</span><span class="nav-link-desc">Seats, progress tracking, PO billing</span></a>
+            <a href="../certifications.html"><span class="nav-link-title">Certificates &amp; Accreditation</span><span class="nav-link-desc">What your certificate means</span></a>
+            <a href="../faq.html"><span class="nav-link-title">FAQ</span><span class="nav-link-desc">Pricing, access, and policies</span></a>
+          </div>
+          <a class="nav-feature" href="../bundles.html"><span class="nav-feature-kicker">Best value</span><span class="nav-feature-title">Complete Data Center Professional Bundle</span><span class="nav-feature-text">43 courses and 192 hours of training in one enrollment. Save 52%.</span><span class="nav-feature-cta">Compare bundles &rarr;</span></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button type="button" class="nav-trigger active" aria-expanded="false" aria-controls="navMenu-learn">Learn<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-3" id="navMenu-learn">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Start Here</p>
+            <a href="../learn/"><span class="nav-link-title">Knowledge Center</span><span class="nav-link-desc">Every guide in one place</span></a>
+            <a href="../learn/what-is-a-data-center.html"><span class="nav-link-title">Data Center 101</span><span class="nav-link-desc">How data centers work</span></a>
+            <a href="../learn/glossary.html"><span class="nav-link-title">Glossary</span><span class="nav-link-desc">Data center terms, A to Z</span></a>
+            <a href="../learn/data-center-standards.html"><span class="nav-link-title">Standards &amp; Regulations</span><span class="nav-link-desc">TIA-942, NFPA, OSHA, ASHRAE, ISO</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Systems</p>
+            <a href="../learn/data-center-power.html"><span class="nav-link-title">Power Systems</span></a>
+            <a href="../learn/data-center-cooling.html"><span class="nav-link-title">Cooling Systems</span></a>
+            <a href="../learn/data-center-tiers.html"><span class="nav-link-title">Tier Levels &amp; Redundancy</span></a>
+            <a href="../learn/energy-efficiency-pue.html"><span class="nav-link-title">Energy Efficiency &amp; PUE</span></a>
+            <a href="../learn/ai-data-centers.html"><span class="nav-link-title">AI &amp; High-Density Facilities</span></a>
+            <a href="../learn/800-vdc-data-center-safety.html"><span class="nav-link-title">800 VDC Power Safety</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Operations</p>
+            <a href="../learn/data-center-safety.html"><span class="nav-link-title">Safety Guide</span></a>
+            <a href="../learn/data-center-security-compliance.html"><span class="nav-link-title">Security &amp; Compliance</span></a>
+            <a href="../learn/data-center-operations.html"><span class="nav-link-title">Operations &amp; Maintenance</span></a>
+            <a href="../learn/data-center-commissioning.html"><span class="nav-link-title">Commissioning (Levels 1-5)</span></a>
+            <a href="../blog/"><span class="nav-link-title">Blog: Field Guidance</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="navMenu-careers">Careers<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-4" id="navMenu-careers">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Get Started</p>
+            <a href="../careers/"><span class="nav-link-title">Careers Hub</span><span class="nav-link-desc">Why the industry is hiring</span></a>
+            <a href="../careers/data-center-technician.html"><span class="nav-link-title">Data Center Technician</span><span class="nav-link-desc">The most common way in</span></a>
+            <a href="../careers/entry-level-data-center-jobs.html"><span class="nav-link-title">Entry-Level Jobs</span><span class="nav-link-desc">Roles you can get without experience</span></a>
+            <a href="../careers/how-to-get-into-data-centers.html"><span class="nav-link-title">How to Get Into Data Centers</span><span class="nav-link-desc">A step-by-step starting plan</span></a>
+            <a href="../careers/data-center-technician-salary.html"><span class="nav-link-title">Salary Guide</span><span class="nav-link-desc">What the pay data shows</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Jobs & Roles</p>
+            <a href="../careers/data-center-jobs.html"><span class="nav-link-title">All Job Roles Explained</span></a>
+            <a href="../careers/data-center-electrician.html"><span class="nav-link-title">Data Center Electrician</span></a>
+            <a href="../careers/critical-facilities-technician.html"><span class="nav-link-title">Critical Facilities Technician</span></a>
+            <a href="../careers/data-center-engineer.html"><span class="nav-link-title">Data Center Engineer</span></a>
+            <a href="../careers/data-center-jobs-by-location.html"><span class="nav-link-title">Jobs by Location</span></a>
+            <a href="../careers/hyperscale-data-center-jobs.html"><span class="nav-link-title">Big Tech Data Center Jobs</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Get Hired</p>
+            <a href="../careers/data-center-certifications.html"><span class="nav-link-title">Certifications Guide</span></a>
+            <a href="../careers/data-center-apprenticeships.html"><span class="nav-link-title">Apprenticeships &amp; Programs</span></a>
+            <a href="../careers/data-center-technician-resume.html"><span class="nav-link-title">Resume Guide</span></a>
+            <a href="../careers/interview-questions.html"><span class="nav-link-title">Interview Questions</span></a>
+            <a href="../careers/career-changers.html"><span class="nav-link-title">Career Changers</span></a>
+          </div>
+          <a class="nav-feature" href="../quizzes/career-quiz.html"><span class="nav-feature-kicker">2-minute quiz</span><span class="nav-feature-title">Which Data Center Career Fits You?</span><span class="nav-feature-text">Answer 10 quick questions and get a matching role and training track.</span><span class="nav-feature-cta">Take the career quiz &rarr;</span></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="navMenu-quizzes">Quizzes &amp; Tools<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-2" id="navMenu-quizzes">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Quizzes</p>
+            <a href="../quizzes/"><span class="nav-link-title">All Quizzes</span></a>
+            <a href="../quizzes/career-quiz.html"><span class="nav-link-title">Career Match Quiz</span></a>
+            <a href="../quizzes/data-center-basics-quiz.html"><span class="nav-link-title">Data Center Basics</span></a>
+            <a href="../quizzes/power-electrical-quiz.html"><span class="nav-link-title">Power &amp; Electrical</span></a>
+            <a href="../quizzes/cooling-quiz.html"><span class="nav-link-title">Cooling &amp; HVAC</span></a>
+            <a href="../quizzes/safety-quiz.html"><span class="nav-link-title">Safety</span></a>
+            <a href="../quizzes/security-compliance-quiz.html"><span class="nav-link-title">Security &amp; Compliance</span></a>
+            <a href="../quizzes/tiers-design-quiz.html"><span class="nav-link-title">Tiers &amp; Design</span></a>
+            <a href="../quizzes/operations-quiz.html"><span class="nav-link-title">Operations &amp; Monitoring</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Tools</p>
+            <a href="../tools/"><span class="nav-link-title">All Tools</span></a>
+            <a href="../tools/training-plan-builder.html"><span class="nav-link-title">Training Plan Builder</span></a>
+            <a href="../tools/pue-calculator.html"><span class="nav-link-title">PUE Calculator</span></a>
+            <a href="../tools/uptime-calculator.html"><span class="nav-link-title">Uptime &amp; Downtime Calculator</span></a>
+            <a href="../tools/cooling-load-calculator.html"><span class="nav-link-title">Cooling Load Calculator</span></a>
+          </div>
+        </div>
+      </div>
+      <a href="../blog/" class="nav-link">Blog</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="../search.html" class="nav-search" data-search-open aria-keyshortcuts="Control+K" title="Search (Ctrl+K)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><span class="nav-search-label">Search</span><kbd class="nav-search-kbd">Ctrl K</kbd></a>
+      <a href="../cart.html" class="nav-cart" aria-label="Cart"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="nav-cart-count" data-cart-count hidden>0</span></a>
+      <a href="../courses.html" class="btn btn-primary btn-sm nav-cta">View Courses</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../">Home</a>
+      <span>&rsaquo;</span>
+      <a href="./">Knowledge Center</a>
+      <span>&rsaquo;</span>
+      <span aria-current="page">Fire Suppression</span>
+    </nav>
+  </div>
+
+  <section class="course-hero">
+    <div class="container">
+      <div class="course-hero-eyebrow">Knowledge Center &middot; Safety</div>
+      <h1>Data Center Fire Suppression: Clean Agents, Detection, and Compliance</h1>
+      <p class="course-hero-hook">A data center has to put out a fire without destroying the equipment it is protecting, and without hurting the people inside. That is why it uses very early smoke detection, clean agent gas, and preaction sprinklers instead of the systems in an office. Here is how each one works, which standards apply, and what to do after a discharge or a failed inspection.</p>
+      <div class="course-pills">
+        <span class="course-pill">11 min read</span>
+        <span class="course-pill">All levels</span>
+        <span class="course-pill">Updated October 2026</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="container guide-layout">
+    <aside class="guide-toc" aria-label="On this page">
+      <p class="guide-toc-title">On this page</p>
+      <ol>
+        <li><a href="#layers">How data center fire protection is layered</a></li>
+        <li><a href="#detection">Fire detection</a></li>
+        <li><a href="#clean-agent">Clean agent systems</a></li>
+        <li><a href="#sprinklers">Preaction sprinklers</a></li>
+        <li><a href="#standards">Standards compliance teams evaluate</a></li>
+        <li><a href="#restore">Restoring compliance after an event</a></li>
+        <li><a href="#people">Safety for people in the room</a></li>
+        <li><a href="#courses">Fire suppression training</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#sources">Sources</a></li>
+      </ol>
+      <a class="guide-toc-cta" href="../quizzes/safety-quiz.html"><strong>Test yourself</strong>Take the Safety quiz.</a>
+    </aside>
+
+    <article class="guide-body prose">
+      <div class="answer-box"><p><strong>Short answer:</strong> Most data centers protect IT spaces with very early warning aspirating smoke detection, a clean agent gaseous system (such as HFC-227ea, FK-5-1-12, or inert gases like IG-541) that puts out a fire without leaving residue, and a preaction sprinkler system as the backup required by the building code. The key standards are NFPA 75 and 76 for IT and telecom spaces, NFPA 2001 for clean agents, NFPA 13 for sprinklers, NFPA 72 for detection and alarm, and NFPA 25 for sprinkler inspection, testing, and maintenance.</p></div>
+
+      <div class="key-takeaways">
+        <p class="key-takeaways-title">Key takeaways</p>
+        <ul>
+          <li>Detection comes first: aspirating (VESDA-style) systems find smoke long before a fire grows.</li>
+          <li>Clean agents put out fires by removing heat or oxygen without water or residue; inert gas systems lower oxygen, so people must evacuate.</li>
+          <li>Preaction sprinklers need two events, a detection signal and a fused sprinkler head, before water flows.</li>
+          <li>A suppression discharge, a damaged fire barrier, or a failed inspection is an impairment that needs a documented plan, often including a fire watch.</li>
+          <li>Room integrity matters: a clean agent only works if the room holds the gas long enough, which is why penetrations and door seals are tested.</li>
+        </ul>
+      </div>
+
+      <h2 id="layers">How data center fire protection is layered</h2>
+      <p>Data center fire protection works in layers, each designed to act before the next one is needed: prevent ignition through good electrical maintenance and housekeeping; detect smoke at the earliest stage; suppress a fire in the room with a clean agent; and, if that fails, control it with sprinklers. Fire barriers separate rooms so a fire in one does not spread to another, and the fire alarm system ties it all together.</p>
+
+      <h2 id="detection">Fire detection: why aspirating systems are standard</h2>
+      <p>The high airflow in a data hall dilutes smoke, so ordinary spot smoke detectors on the ceiling may not see a smoldering cable until it is well developed. Aspirating smoke detection (often called VESDA, after a common brand) draws air continuously through a pipe network to a very sensitive detector and raises staged alerts, from an early warning that sends someone to investigate to a fire signal that starts suppression. Sampling points are often placed at CRAH returns and in the hot aisle, where smoke goes first. Detection and alarm systems are installed, inspected, and tested under NFPA 72.</p>
+
+      <h2 id="clean-agent">Clean agent fire suppression systems</h2>
+      <p>A clean agent is a gas that puts out fire and leaves no residue, so equipment can often be returned to service after cleanup. Systems are designed and maintained under NFPA 2001.</p>
+      <div class="table-panel">
+        <table class="data-table">
+          <caption>Common clean agents in data centers</caption>
+          <thead><tr><th>Agent</th><th>How it works</th><th>Notes</th></tr></thead>
+          <tbody>
+            <tr><td>HFC-227ea (often sold as FM-200)</td><td>Chemical agent that absorbs heat</td><td>Long installed base; it is a hydrofluorocarbon being phased down under the U.S. AIM Act, which affects future supply and cost</td></tr>
+            <tr><td>FK-5-1-12 (often sold as Novec 1230)</td><td>Fluorinated ketone stored as a liquid, absorbs heat</td><td>Low global warming potential; 3M ended its own production, and other manufacturers supply the agent</td></tr>
+            <tr><td>Inert gases (IG-541, IG-55, IG-100)</td><td>Lower oxygen to a level that will not support combustion</td><td>No chemical byproducts; needs more cylinder space and pressure relief venting</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Clean agent systems are usually triggered by two detection signals (cross-zoned or a staged aspirating alarm), sound a pre-discharge alarm, and run a countdown so people can leave. An abort switch can hold the countdown, and a manual release can start it.</p>
+
+      <h2 id="sprinklers">Preaction sprinkler systems</h2>
+      <p>Most building codes still require sprinklers in data centers, and NFPA 75 relies on them as the backstop. To protect against accidental water release, IT spaces usually use preaction systems: the pipes are dry until a detection system opens a valve, and water flows only from sprinkler heads that the heat of a fire has opened. A double-interlock preaction system needs both events before water enters the pipes. Sprinkler systems are designed under NFPA 13 and inspected, tested, and maintained under NFPA 25.</p>
+
+      <h2 id="standards">What fire detection and suppression requirements should compliance teams evaluate?</h2>
+      <ul>
+        <li><strong>NFPA 75</strong>, Fire Protection of Information Technology Equipment, and <strong>NFPA 76</strong>, Fire Protection of Telecommunications Facilities: construction, detection, suppression, and emergency procedures for IT and telecom spaces.</li>
+        <li><strong>NFPA 2001</strong>, Clean Agent Fire Extinguishing Systems: design concentration, hold time, room integrity, safety for people, and inspection.</li>
+        <li><strong>NFPA 72</strong>, National Fire Alarm and Signaling Code: detection, alarm, and the inspection and testing schedule.</li>
+        <li><strong>NFPA 13 and NFPA 25</strong>: sprinkler design and ongoing inspection, testing, and maintenance, including impairment handling.</li>
+        <li><strong>The adopted building and fire codes</strong> (often the International Building and Fire Codes) and any local amendments, enforced by the fire marshal.</li>
+        <li><strong>Insurer requirements</strong>, which may go beyond the code.</li>
+        <li><strong>Lithium-ion battery hazards</strong> in UPS rooms, which can need specific detection, ventilation, and suppression approaches. See <a href="../courses/lithium-ion-thermal-runaway-emergency-response.html">lithium-ion thermal runaway emergency response</a>.</li>
+      </ul>
+      <p>Compliance teams should check that inspection and test records exist for each system on the required schedule, deficiencies are tracked to closure, and impairments are handled under a written procedure.</p>
+
+      <h2 id="restore">How to restore compliance after a discharge, damaged barrier, or failed inspection</h2>
+      <p>Each of these events leaves part of the facility with less fire protection than it was designed for. Treat it as an impairment and work through these steps:</p>
+      <ol class="steps">
+        <li><h3>Make the area safe and notify</h3><p>After a discharge, ventilate before re-entry and confirm the fire is out. Notify the fire alarm monitoring company, the fire department or fire marshal as required, your insurer, and affected customers.</p></li>
+        <li><h3>Put interim protection in place</h3><p>Follow your impairment procedure. That often means a fire watch, extra portable extinguishers, and restricting hot work until protection is restored.</p></li>
+        <li><h3>Find the cause</h3><p>For a discharge, establish whether it was a real fire, a detection fault, or human error. For a failed inspection, list each deficiency.</p></li>
+        <li><h3>Restore the system with licensed contractors</h3><p>Recharge or replace agent cylinders, repair detection, and fix fire barrier penetrations using listed firestop systems. Many states, including Texas through its State Fire Marshal's Office, license the firms that service fire protection systems.</p></li>
+        <li><h3>Test and document</h3><p>Re-test the system, including a room integrity (door fan) test where the enclosure changed, and record the results. Get the fire marshal's sign-off where required.</p></li>
+        <li><h3>Close the loop</h3><p>Update procedures or training if human error was involved and brief the operations team.</p></li>
+      </ol>
+
+      <h2 id="people">Safety for people in a protected room</h2>
+      <p>Clean agents are designed for occupied spaces at their normal concentrations, but no one should stay in a room during a discharge. Inert gas systems lower oxygen, a fire produces toxic smoke, and chemical agents can break down into harmful byproducts in a fire. Everyone who enters an IT space should know what the pre-discharge alarm sounds like, where the abort and manual release stations are, and how to get out.</p>
+
+      <div class="inline-cta">
+        <p><strong>Do you know what the pre-discharge alarm means?</strong> Ten questions on data center safety.</p>
+        <a class="btn btn-primary btn-sm" href="../quizzes/safety-quiz.html">Take the Safety Quiz</a>
+      </div>
+
+      <h2 id="courses">Fire suppression and compliance training</h2>
+      <!-- dct:courses data-center-fire-suppression-safety lithium-ion-thermal-runaway-emergency-response facility-environmental-compliance -->
+<div class="panel course-panel">
+<div class="course-row"><div class="course-main"><h3><a href="../courses/data-center-fire-suppression-safety.html">Data Center Fire Suppression System Safety Training (Clean Agent Systems)</a></h3><div class="course-meta"><span>Security &amp; Compliance</span><span class="sep">&middot;</span><span>Modular Specialization</span><span class="sep">&middot;</span><span>NFPA 2001</span></div><p class="course-hook">Clean agent fire suppression safety for occupied data hall environments.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">2 hrs</div><div class="course-price">$99.99</div></div><div class="course-buttons"><a class="btn btn-primary btn-sm" href="../checkout.html?item=data-center-fire-suppression-safety" aria-label="Enroll in Data Center Fire Suppression System Safety Training (Clean Agent Systems)">Enroll</a><a class="btn btn-secondary btn-sm" href="../cart.html?add=data-center-fire-suppression-safety" data-cart-add="data-center-fire-suppression-safety" data-cart-name="Data Center Fire Suppression System Safety Training (Clean Agent Systems)" rel="nofollow">Add to Cart</a></div></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/lithium-ion-thermal-runaway-emergency-response.html">Lithium-Ion Battery Thermal Runaway and Emergency Response Training</a></h3><div class="course-meta"><span>Power &amp; Electrical</span><span class="sep">&middot;</span><span>Modular Specialization</span></div><p class="course-hook">Recognize and respond to lithium-ion battery thermal runaway before it escalates.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">4 hrs</div><div class="course-price">$99.99</div></div><div class="course-buttons"><a class="btn btn-primary btn-sm" href="../checkout.html?item=lithium-ion-thermal-runaway-emergency-response" aria-label="Enroll in Lithium-Ion Battery Thermal Runaway and Emergency Response Training">Enroll</a><a class="btn btn-secondary btn-sm" href="../cart.html?add=lithium-ion-thermal-runaway-emergency-response" data-cart-add="lithium-ion-thermal-runaway-emergency-response" data-cart-name="Lithium-Ion Battery Thermal Runaway and Emergency Response Training" rel="nofollow">Add to Cart</a></div></div></div>
+<div class="course-row"><div class="course-main"><h3><a href="../courses/facility-environmental-compliance.html">Facility Environmental Compliance</a></h3><div class="course-meta"><span>Security &amp; Compliance</span><span class="sep">&middot;</span><span>Modular Specialization</span></div><p class="course-hook">Understand the environmental regulations that apply to your facility.</p></div><div class="course-side"><div class="course-figures"><div class="course-duration">4 hrs</div><div class="course-price">$99.99</div></div><div class="course-buttons"><a class="btn btn-primary btn-sm" href="../checkout.html?item=facility-environmental-compliance" aria-label="Enroll in Facility Environmental Compliance">Enroll</a><a class="btn btn-secondary btn-sm" href="../cart.html?add=facility-environmental-compliance" data-cart-add="facility-environmental-compliance" data-cart-name="Facility Environmental Compliance" rel="nofollow">Add to Cart</a></div></div></div>
+</div>
+<!-- /dct:courses -->
+
+      <h2 id="faq">Frequently asked questions</h2>
+      <div class="guide-faq">
+        <h3>What fire suppression system is used in data centers?</h3>
+        <p>Most data centers use a clean agent gaseous system such as HFC-227ea, FK-5-1-12, or an inert gas in the IT spaces, with a preaction sprinkler system as the code-required backup, and very early warning aspirating smoke detection.</p>
+        <h3>Is clean agent fire suppression safe for people?</h3>
+        <p>Clean agents are designed for use in normally occupied spaces at their design concentrations, but people should still evacuate when the pre-discharge alarm sounds. Inert gases lower oxygen, and smoke and agent breakdown products from a fire are hazardous.</p>
+        <h3>What is a preaction sprinkler system?</h3>
+        <p>A preaction system keeps the sprinkler pipes dry until a detection system opens a control valve. Water then flows only from sprinkler heads opened by heat. This protects IT equipment from accidental water release.</p>
+        <h3>What standards apply to data center fire suppression?</h3>
+        <p>NFPA 75 and 76 for IT and telecom spaces, NFPA 2001 for clean agent systems, NFPA 72 for detection and alarm, NFPA 13 for sprinkler design, NFPA 25 for sprinkler inspection and maintenance, and the building and fire codes adopted by your jurisdiction.</p>
+        <h3>What should a data center do after a clean agent discharge?</h3>
+        <p>Ventilate and make the area safe, notify the monitoring company, fire officials, insurer, and customers as required, put a fire watch or other interim protection in place, find the cause, have a licensed contractor recharge and restore the system, test room integrity if needed, and document everything.</p>
+      </div>
+
+      <h2 id="sources">Sources</h2>
+      <ul class="guide-sources">
+        <li>NFPA, <a href="https://www.nfpa.org/codes-and-standards/nfpa-75-standard-development/75" rel="noopener">NFPA 75, Fire Protection of Information Technology Equipment</a>.</li>
+        <li>NFPA, <a href="https://www.nfpa.org/codes-and-standards/nfpa-2001-standard-development/2001" rel="noopener">NFPA 2001, Clean Agent Fire Extinguishing Systems</a>.</li>
+        <li>NFPA, <a href="https://www.nfpa.org/codes-and-standards/nfpa-25-standard-development/25" rel="noopener">NFPA 25, Inspection, Testing, and Maintenance of Water-Based Fire Protection Systems</a>.</li>
+        <li>U.S. EPA, <a href="https://www.epa.gov/climate-hfcs-reduction" rel="noopener">Protecting our climate by reducing use of HFCs</a> (AIM Act).</li>
+        <li>Texas Department of Insurance, <a href="https://www.tdi.texas.gov/fire/index.html" rel="noopener">State Fire Marshal's Office</a> (fire protection licensing).</li>
+      </ul>
+
+      <h2 id="related">Keep learning</h2>
+      <div class="card-grid card-grid-2">
+        <a class="topic-card" href="data-center-safety.html"><span class="topic-card-kicker">Guide</span><h3>Data Center Safety Guide</h3><p>Arc flash, LOTO, batteries, EPO, and clean agents.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+        <a class="topic-card" href="data-center-epo.html"><span class="topic-card-kicker">Guide</span><h3>Data Center EPO</h3><p>Emergency power off and how it ties to fire systems.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+        <a class="topic-card" href="data-center-standards.html"><span class="topic-card-kicker">Guide</span><h3>Standards and Regulations</h3><p>NFPA, OSHA, TIA-942, ASHRAE, and ISO in one place.</p><span class="topic-card-cta">Read the guide &rarr;</span></a>
+        <a class="topic-card" href="../courses/data-center-fire-suppression-safety.html"><span class="topic-card-kicker">Course</span><h3>Fire Suppression Safety</h3><p>Clean agents, detection, and safe work in protected rooms.</p><span class="topic-card-cta">View the course &rarr;</span></a>
+      </div>
+      <p class="guide-updated">This guide is general educational information, not fire protection engineering or code compliance advice. Your authority having jurisdiction, your insurer, and a qualified fire protection engineer decide what your facility needs.</p>
+    </article>
+  </div>
+
+  <section class="section cta-section">
+    <div class="container">
+      <div class="cta-block">
+        <h2>Train Your Team on Fire Safety</h2>
+        <p>Online fire suppression, lithium-ion battery emergency response, and compliance courses for data center operators and compliance teams.</p>
+        <div class="hero-ctas">
+          <a href="../courses/data-center-fire-suppression-safety.html" class="btn glass-chip">See the Fire Suppression Course</a>
+          <a href="../courses.html" class="btn glass-chip">Browse All Courses</a>
+          <a href="tel:18664296742" class="btn glass-chip">Call 1-866-429-6742</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="contact">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="../" class="logo">
+          <img class="logo-img" src="../images/logo.png" alt="datacentertraining.us" width="537" height="96" loading="lazy">
+        </a>
+        <p class="footer-legal">Data Center Training is a specialty training division of <a href="https://hazwoper-osha.com/" target="_blank" rel="noopener">HAZWOPER-OSHA Training, LLC</a>, an IACET-accredited provider of professional data center and safety compliance training.</p>
+        <p class="footer-legal" style="margin-top:8px;">HAZWOPER OSHA Training, LLC &middot; 11901 Santa Monica Blvd., Suite #414, Los Angeles, CA 90025</p>
+        <div class="footer-badges">
+          <img src="https://media.hazwoper-osha.com/wp-content/uploads/2023/11/1698821020/IACET-small.webp" alt="IACET Accredited Provider" width="40" height="24" loading="lazy">
+          <img src="https://media.hazwoper-osha.com/wp-content/uploads/2026/07/1784291935/bbb.webp" alt="BBB A+ Rating" width="40" height="24" loading="lazy">
+          <img src="https://media.hazwoper-osha.com/wp-content/uploads/2026/07/1784292027/trust.webp" alt="Google Trust Services" width="141" height="20" loading="lazy" style="height:20px;">
+        </div>
+      </div>
+      <div class="footer-cta">
+        <p class="footer-cta-title">Not sure where to start?</p>
+        <p class="footer-cta-text">Find the data center role that fits you, then get a training plan built around it.</p>
+        <div class="footer-cta-actions">
+          <a href="../quizzes/career-quiz.html" class="btn btn-primary btn-sm">Take the Career Quiz</a>
+          <a href="../tools/training-plan-builder.html" class="text-link">Build a training plan &rarr;</a>
+        </div>
+        <div class="footer-contact-links">
+          <a href="tel:18664296742">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            1-866-429-6742
+          </a>
+          <a href="mailto:info@hazwoper-osha.com">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            info@hazwoper-osha.com
+          </a>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/HazwoperOsha/" target="_blank" rel="noopener" aria-label="Facebook"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/hazwoper_osha_training/?hl=en" target="_blank" rel="noopener" aria-label="Instagram"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="https://www.youtube.com/@hazwoper-osha" target="_blank" rel="noopener" aria-label="YouTube"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33zM9.75 15.02V8.48l5.75 3.27z"/></svg></a>
+          <a href="https://x.com/HazwoperOsha" target="_blank" rel="noopener" aria-label="X"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.4 8.4L23 22h-6.6l-5.2-6.8L5.1 22H2l7.9-9L1.6 2h6.8l4.7 6.2z"/></svg></a>
+          <a href="https://www.linkedin.com/company/hazwoper-osha" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM8.34 18.34V10.1H5.67v8.24zM7.01 8.97a1.55 1.55 0 1 0 0-3.1 1.55 1.55 0 0 0 0 3.1zM18.34 18.34v-4.6c0-2.46-1.31-3.6-3.06-3.6a2.64 2.64 0 0 0-2.39 1.32V10.1H10.2s.04.86 0 8.24h2.68v-4.6c0-.25.02-.5.09-.68a1.5 1.5 0 0 1 1.37-1c.96 0 1.35.73 1.35 1.8v4.48z"/></svg></a>
+          <a href="https://www.pinterest.com/hazwoperosha/" target="_blank" rel="noopener" aria-label="Pinterest"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.64 7.86 6.36 9.32-.09-.79-.17-2.01.03-2.88.19-.79 1.22-5.03 1.22-5.03s-.31-.63-.31-1.55c0-1.45.84-2.54 1.89-2.54.89 0 1.32.67 1.32 1.47 0 .89-.57 2.23-.86 3.47-.25 1.03.52 1.88 1.53 1.88 1.84 0 3.07-2.36 3.07-5.15 0-2.12-1.43-3.71-4.02-3.71-2.93 0-4.76 2.19-4.76 4.63 0 .84.25 1.44.63 1.9.18.21.2.3.14.54-.05.18-.16.63-.21.81-.07.26-.28.35-.51.26-1.44-.59-2.11-2.16-2.11-3.93 0-2.92 2.46-6.43 7.34-6.43 3.92 0 6.5 2.84 6.5 5.89 0 4.03-2.24 7.04-5.55 7.04-1.11 0-2.16-.6-2.51-1.28 0 0-.6 2.36-.73 2.82-.22.8-.66 1.6-1.06 2.22.95.29 1.95.45 3 .45 5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-grid">
+    <div class="footer-col">
+      <h3>Training</h3>
+      <a href="../courses.html">Course Catalog</a>
+      <a href="../bundles.html">Course Bundles</a>
+      <a href="../training/">Training by Topic</a>
+      <a href="../training/nfpa-70e-training.html">NFPA 70E Training</a>
+      <a href="../training/arc-flash-training.html">Arc Flash Training</a>
+      <a href="../who.html">Courses by Role</a>
+      <a href="../tools/training-plan-builder.html">Training Plan Builder</a>
+      <a href="../#teams">Team Training</a>
+      <a href="../certifications.html">Certificates &amp; Accreditation</a>
+      <a href="../faq.html">FAQ</a>
+    </div>
+    <div class="footer-col">
+      <h3>Learn</h3>
+      <a href="../learn/">Knowledge Center</a>
+      <a href="../learn/what-is-a-data-center.html">Data Center 101</a>
+      <a href="../learn/data-center-power.html">Power Systems</a>
+      <a href="../learn/data-center-cooling.html">Cooling Systems</a>
+      <a href="../learn/data-center-tiers.html">Tier Levels</a>
+      <a href="../learn/data-center-safety.html">Safety Guide</a>
+      <a href="../learn/data-center-standards.html">Standards Guide</a>
+      <a href="../learn/glossary.html">Glossary</a>
+      <a href="../blog/">Blog</a>
+    </div>
+    <div class="footer-col">
+      <h3>Careers</h3>
+      <a href="../careers/">Careers Hub</a>
+      <a href="../careers/data-center-technician.html">Data Center Technician</a>
+      <a href="../careers/data-center-jobs.html">Job Roles Explained</a>
+      <a href="../careers/entry-level-data-center-jobs.html">Entry-Level Jobs</a>
+      <a href="../careers/data-center-technician-salary.html">Salary Guide</a>
+      <a href="../careers/data-center-jobs-by-location.html">Jobs by Location</a>
+      <a href="../careers/data-center-certifications.html">Certifications Guide</a>
+      <a href="../careers/interview-questions.html">Interview Questions</a>
+      <a href="../quizzes/career-quiz.html">Career Match Quiz</a>
+    </div>
+    <div class="footer-col">
+      <h3>Quizzes &amp; Tools</h3>
+      <a href="../quizzes/">All Quizzes</a>
+      <a href="../quizzes/data-center-basics-quiz.html">Data Center Basics Quiz</a>
+      <a href="../tools/">All Tools</a>
+      <a href="../tools/pue-calculator.html">PUE Calculator</a>
+      <a href="../tools/uptime-calculator.html">Uptime Calculator</a>
+      <a href="../tools/cooling-load-calculator.html">Cooling Load Calculator</a>
+      <a href="../search.html">Search the Site</a>
+    </div>
+    <div class="footer-col">
+      <h3>Company</h3>
+      <a href="../about.html">About Us</a>
+      <a href="https://hazwoper-osha.com/" target="_blank" rel="noopener">HAZWOPER-OSHA Training</a>
+      <a href="https://hazwoper-osha.com/certificate-verification" target="_blank" rel="noopener">Verify Certificate</a>
+      <a href="../privacy.html">Privacy Policy</a>
+      <a href="../terms.html">Terms of Service</a>
+      <a href="../accessibility.html">Accessibility</a>
+      <a href="../privacy.html#choices" data-privacy-choices>Your Privacy Choices</a>
+      <a href="https://hazwoper-osha.com/refund-policy" target="_blank" rel="noopener">Refund Policy</a>
+    </div>
+    </div>
+
+    <p class="footer-agents"><span>For AI agents:</span> <a href="/llms.txt">llms.txt</a> <a href="/llms-full.txt">llms-full.txt</a> <a href="/.well-known/mcp.json">WebMCP Manifest</a> <a href="/api/index.json">JSON Catalog API</a> <a href="/openapi.json">API Docs (OpenAPI)</a> <a href="/sitemap.xml">Sitemap</a></p>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; 2026 HAZWOPER-OSHA Training, LLC. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+<script src="../js/main.js" defer></script>
+
+</body>
+</html>

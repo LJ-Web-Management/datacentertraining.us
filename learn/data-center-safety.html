@@ -126,6 +126,7 @@ if(navigator.modelContext){var m=document.createElement('script');m.src='/js/web
             <p class="nav-menu-label">Training by Topic</p>
             <a href="../training/"><span class="nav-link-title">All Training Programs</span></a>
             <a href="../training/data-center-technician-training.html"><span class="nav-link-title">Data Center Technician Training</span></a>
+            <a href="../training/data-center-electrical-safety-training.html"><span class="nav-link-title">Data Center Electrical Safety</span></a>
             <a href="../training/nfpa-70e-training.html"><span class="nav-link-title">NFPA 70E Training</span></a>
             <a href="../training/osha-electrical-safety-training.html"><span class="nav-link-title">OSHA Electrical Safety Training</span></a>
             <a href="../training/arc-flash-training.html"><span class="nav-link-title">Arc Flash Training</span></a>
@@ -318,6 +319,7 @@ if(navigator.modelContext){var m=document.createElement('script');m.src='/js/web
 
       <h2 id="electrical">Electrical shock and arc flash</h2>
       <p><strong>Shock</strong> happens when current passes through your body after contact with an energized part. <strong>Arc flash</strong> happens when current jumps through the air between conductors, releasing intense heat, light, pressure, and molten metal in a fraction of a second. A dropped tool, a failed insulator, or a breaker racked in under fault can start one, and large data center switchgear can produce severe incidents. That is why <a href="glossary.html#term-arc-flash">arc flash</a> gets so much attention in this industry.</p>
+      <p>For training requirements, in-house operator programs, and how rules differ across major markets, see <a href="../training/data-center-electrical-safety-training.html">data center electrical safety training</a> and <a href="../training/switchgear-safety-training.html">switchgear safety training</a>.</p>
       <h3>The first rule: make it safe</h3>
       <p>NFPA 70E, the Standard for Electrical Safety in the Workplace, starts from one principle: put equipment in an <strong>electrically safe work condition</strong> before anyone works on it. Identify every source, open the disconnects, visually confirm the contacts are open, release stored energy, apply locks and tags, and test for absence of voltage with a rated meter checked on a known live source before and after. Until then, the equipment is energized.</p>
       <h3>Approach boundaries</h3>
@@ -358,6 +360,7 @@ if(navigator.modelContext){var m=document.createElement('script');m.src='/js/web
 
       <h2 id="epo">Emergency power off (EPO) systems</h2>
       <p>An <a href="glossary.html#term-epo">EPO</a> system disconnects power to IT equipment, and in many designs the room's HVAC, with one action from buttons at the data hall exits. Whether a room has one depends on the code path used, mainly NFPA 70 Article 645 and NFPA 75, and on the authority having jurisdiction.</p>
+      <p>For the full explanation of how EPO systems are wired, what NEC Article 645 requires, and how to prevent accidental activation, read <a href="data-center-epo.html">data center EPO explained</a>.</p>
       <p>Responders get a fast way to de-energize the room. The catch: accidental EPO activation is a well-known cause of data center outages. Someone mistakes the button for a door release, a cart bumps it, or a visitor presses it out of curiosity. Good sites reduce the risk with:</p>
       <ul>
         <li>Hinged or lift covers, with an alarm when a cover is lifted.</li>
@@ -369,6 +372,7 @@ if(navigator.modelContext){var m=document.createElement('script');m.src='/js/web
 
       <h2 id="fire-suppression">Clean agent and inert gas fire suppression</h2>
       <p>Many data halls and electrical rooms are protected by gaseous systems governed by NFPA 2001. <strong>Clean agents</strong> such as HFC-227ea (sold as FM-200) and FK-5-1-12 (sold as Novec 1230 and others) mainly absorb heat. <strong>Inert gas</strong> systems such as IG-541 (Inergen), IG-55, and IG-100 lower oxygen below the level that supports combustion. Neither leaves residue. Many rooms also have pre-action sprinklers under NFPA 13, with detection governed by NFPA 72. What everyone in a protected room should know:</p>
+      <p>Our <a href="data-center-fire-suppression.html">data center fire suppression guide</a> covers detection, clean agents, preaction sprinklers, and how to restore compliance after a discharge.</p>
       <ul>
         <li><strong>Pre-discharge alarm.</strong> Detection usually needs two devices in alarm. Horns and strobes then start a time delay before discharge. That delay is your exit window.</li>
         <li><strong>Abort switch.</strong> Many systems have a switch that holds discharge while pressed. Only trained people use it, and only after confirming there is no fire.</li>
