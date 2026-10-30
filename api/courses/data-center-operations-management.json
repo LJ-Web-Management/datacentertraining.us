@@ -3,7 +3,7 @@
   "catalog_number": 403,
   "title": "Data Center Operations Management",
   "url": "https://datacentertraining.us/courses/data-center-operations-management.html",
-  "api_url": "https://datacentertraining.us/api/courses/data-center-operations-management.json",
+  "api_url": "https://datacentertraining.us/api/v1/courses/data-center-operations-management.json",
   "track": "Operations & Reliability Track",
   "category": "Operations",
   "course_type": "comprehensive",
@@ -112,5 +112,5 @@
     "business-continuity-disaster-recovery-planning",
     "building-maintenance-fundamentals"
   ],
-  "last_updated": "2026-10-28"
+  "last_updated": "2026-10-30"
 }

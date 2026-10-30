@@ -3,7 +3,7 @@
   "catalog_number": 461,
   "title": "Server Room Ergonomics and Manual Handling Training",
   "url": "https://datacentertraining.us/courses/server-room-ergonomics-manual-handling.html",
-  "api_url": "https://datacentertraining.us/api/courses/server-room-ergonomics-manual-handling.json",
+  "api_url": "https://datacentertraining.us/api/v1/courses/server-room-ergonomics-manual-handling.json",
   "track": "Operations & Reliability Track",
   "category": "Operations",
   "course_type": "modular",
@@ -96,5 +96,5 @@
     "incident-response-troubleshooting",
     "business-continuity-disaster-recovery-planning"
   ],
-  "last_updated": "2026-10-28"
+  "last_updated": "2026-10-30"
 }

@@ -3,7 +3,7 @@
   "catalog_number": 429,
   "title": "Incident Response & Troubleshooting",
   "url": "https://datacentertraining.us/courses/incident-response-troubleshooting.html",
-  "api_url": "https://datacentertraining.us/api/courses/incident-response-troubleshooting.json",
+  "api_url": "https://datacentertraining.us/api/v1/courses/incident-response-troubleshooting.json",
   "track": "Operations & Reliability Track",
   "category": "Operations",
   "course_type": "modular",
@@ -96,5 +96,5 @@
     "business-continuity-disaster-recovery-planning",
     "building-maintenance-fundamentals"
   ],
-  "last_updated": "2026-10-28"
+  "last_updated": "2026-10-30"
 }

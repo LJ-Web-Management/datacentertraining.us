@@ -33,5 +33,6 @@ Disallow: /blog/scripts/
 Disallow: /scripts/
 Disallow: /*?
 
-# AI-agent resources: /llms.txt, /llms-full.txt, /.well-known/mcp.json, /openapi.json, /api/index.json
+# AI-agent resources: /llms.txt, /llms-full.txt, /.well-known/mcp.json, /openapi.json, /api/v1/index.json,
+# /developers/ (API, MCP server at /mcp, CLI), and a Markdown copy of every page at <page>.md
 Sitemap: https://datacentertraining.us/sitemap.xml

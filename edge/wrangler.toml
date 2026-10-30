@@ -1,0 +1,23 @@
+# Cloudflare Worker in front of GitHub Pages (see README.md in this folder).
+#
+# Prerequisite: the datacentertraining.us zone is on Cloudflare, with its DNS
+# records still pointing at GitHub Pages and proxied (orange cloud). The Worker
+# runs on the route below; fetch() to the same hostname reaches GitHub Pages.
+name = "datacentertraining-edge"
+main = "src/worker.js"
+compatibility_date = "2026-09-01"
+workers_dev = false
+
+routes = [
+  { pattern = "datacentertraining.us/*", zone_name = "datacentertraining.us" }
+]
+
+# Global rate limiting across Cloudflare locations (Workers Rate Limiting API).
+# Must match rate_limit in contract.json; the Worker also counts per isolate.
+[[ratelimits]]
+name = "RATE_LIMITER"
+namespace_id = "1001"
+
+  [ratelimits.simple]
+  limit = 120
+  period = 60

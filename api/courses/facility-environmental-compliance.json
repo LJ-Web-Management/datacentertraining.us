@@ -3,7 +3,7 @@
   "catalog_number": 428,
   "title": "Facility Environmental Compliance",
   "url": "https://datacentertraining.us/courses/facility-environmental-compliance.html",
-  "api_url": "https://datacentertraining.us/api/courses/facility-environmental-compliance.json",
+  "api_url": "https://datacentertraining.us/api/v1/courses/facility-environmental-compliance.json",
   "track": "Security & Compliance Track",
   "category": "Security & Compliance",
   "course_type": "modular",
@@ -95,5 +95,5 @@
     "data-center-fire-suppression-safety",
     "data-center-physical-security-access-control"
   ],
-  "last_updated": "2026-10-28"
+  "last_updated": "2026-10-30"
 }

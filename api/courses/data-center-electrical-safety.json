@@ -3,7 +3,7 @@
   "catalog_number": 448,
   "title": "Data Center Electrical Safety Training",
   "url": "https://datacentertraining.us/courses/data-center-electrical-safety.html",
-  "api_url": "https://datacentertraining.us/api/courses/data-center-electrical-safety.json",
+  "api_url": "https://datacentertraining.us/api/v1/courses/data-center-electrical-safety.json",
   "track": "Power & Electrical Systems Track",
   "category": "Power & Electrical",
   "course_type": "modular",
@@ -100,5 +100,5 @@
     "electrical-safety-best-practices",
     "batteries-dc-circuits"
   ],
-  "last_updated": "2026-10-28"
+  "last_updated": "2026-10-30"
 }

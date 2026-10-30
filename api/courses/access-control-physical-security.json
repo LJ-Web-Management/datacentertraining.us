@@ -3,7 +3,7 @@
   "catalog_number": 430,
   "title": "Access Control & Physical Security",
   "url": "https://datacentertraining.us/courses/access-control-physical-security.html",
-  "api_url": "https://datacentertraining.us/api/courses/access-control-physical-security.json",
+  "api_url": "https://datacentertraining.us/api/v1/courses/access-control-physical-security.json",
   "track": "Security & Compliance Track",
   "category": "Security & Compliance",
   "course_type": "modular",
@@ -95,5 +95,5 @@
     "data-center-fire-suppression-safety",
     "data-center-physical-security-access-control"
   ],
-  "last_updated": "2026-10-28"
+  "last_updated": "2026-10-30"
 }

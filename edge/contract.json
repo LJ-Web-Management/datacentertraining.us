@@ -1,0 +1,28 @@
+{
+  "description": "Runtime contract of the edge Worker. scripts/build-site.js publishes it in openapi.json, llms.txt, the MCP manifest, and the API index; edge/src reads it at runtime, so the docs and the behavior cannot drift.",
+  "api_version": "1",
+  "api_base": "/api/v1",
+  "tools_path": "/api/v1/tools",
+  "mcp_path": "/mcp",
+  "mcp_protocol_versions": ["2025-11-25", "2025-06-18", "2025-03-26", "2024-11-05"],
+  "rate_limit": { "policy": "default", "requests": 120, "window_seconds": 60 },
+  "versioning": {
+    "scheme": "url-path",
+    "current": "v1",
+    "minimum_support_after_successor_months": 6,
+    "deprecation_header": "RFC 9745",
+    "sunset_header": "RFC 8594"
+  },
+  "errors": {
+    "invalid_json": { "status": 400, "title": "Request body is not valid JSON", "hint": "Send one JSON object with Content-Type: application/json." },
+    "invalid_input": { "status": 400, "title": "Input does not match the tool's input schema", "hint": "Compare the errors array with the tool's inputSchema in /openapi.json or /.well-known/mcp.json, fix the named fields, and retry." },
+    "unsupported_protocol_version": { "status": 400, "title": "Unsupported MCP protocol version", "hint": "Send an MCP-Protocol-Version header with a supported version (see supported_versions), or omit it." },
+    "not_found": { "status": 404, "title": "Not found", "hint": "List valid documents at /api/v1/index.json, course ids at /api/v1/courses.json, and every page at /sitemap.xml. Agent overview: /llms.txt." },
+    "unknown_tool": { "status": 404, "title": "Unknown tool", "hint": "Valid tool names are listed in /.well-known/mcp.json and under /api/v1/tools/ in /openapi.json." },
+    "method_not_allowed": { "status": 405, "title": "Method not allowed", "hint": "See the Allow header. JSON documents and pages are GET-only; /mcp takes POST; tools take POST (or GET with query parameters)." },
+    "unsupported_media_type": { "status": 415, "title": "Unsupported media type", "hint": "Send the request body as application/json." },
+    "rate_limited": { "status": 429, "title": "Too many requests", "hint": "Wait the number of seconds in Retry-After, then retry. Cache documents: they change a few times a week at most." },
+    "internal_error": { "status": 500, "title": "Internal error", "hint": "Retry once. If it keeps failing, email info@hazwoper-osha.com with the request path and time." },
+    "upstream_error": { "status": 502, "title": "Upstream error", "hint": "The static origin did not answer. Retry with exponential backoff." }
+  }
+}

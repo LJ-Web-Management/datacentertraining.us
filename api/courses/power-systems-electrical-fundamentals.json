@@ -3,7 +3,7 @@
   "catalog_number": 405,
   "title": "Power Systems & Electrical Fundamentals",
   "url": "https://datacentertraining.us/courses/power-systems-electrical-fundamentals.html",
-  "api_url": "https://datacentertraining.us/api/courses/power-systems-electrical-fundamentals.json",
+  "api_url": "https://datacentertraining.us/api/v1/courses/power-systems-electrical-fundamentals.json",
   "track": "Power & Electrical Systems Track",
   "category": "Power & Electrical",
   "course_type": "comprehensive",
@@ -107,5 +107,5 @@
     "batteries-dc-circuits",
     "data-center-arc-flash-safety"
   ],
-  "last_updated": "2026-10-28"
+  "last_updated": "2026-10-30"
 }

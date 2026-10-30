@@ -3,7 +3,7 @@
   "catalog_number": 453,
   "title": "Data Center UPS and Battery System Safety Training",
   "url": "https://datacentertraining.us/courses/data-center-ups-battery-safety.html",
-  "api_url": "https://datacentertraining.us/api/courses/data-center-ups-battery-safety.json",
+  "api_url": "https://datacentertraining.us/api/v1/courses/data-center-ups-battery-safety.json",
   "track": "Power & Electrical Systems Track",
   "category": "Power & Electrical",
   "course_type": "modular",
@@ -96,5 +96,5 @@
     "electrical-safety-best-practices",
     "batteries-dc-circuits"
   ],
-  "last_updated": "2026-10-28"
+  "last_updated": "2026-10-30"
 }

@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- dct:head -->
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; object-src 'none'; base-uri 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#ffffff">
+<link rel="alternate" type="text/markdown" href="/developers/index.html.md" title="Markdown">
+<link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt">
+<link rel="alternate" type="application/json" href="/.well-known/mcp.json" title="WebMCP manifest">
+<link rel="service-desc" type="application/vnd.oai.openapi+json" href="/openapi.json">
+<script>
+/* Analytics, session recording, and chat load for every visitor unless they opt out or send a GPC signal
+   (see /js/consent.js), on the first interaction (scroll, tap, key, mouse move) so they never delay rendering. */
+(function(w,d){
+  w.dataLayer=w.dataLayer||[];w.gtag=function(){w.dataLayer.push(arguments);};
+  w.clarity=w.clarity||function(){(w.clarity.q=w.clarity.q||[]).push(arguments);};
+  w.Tawk_API=w.Tawk_API||{};w.Tawk_API.onLoad=function(){w.Tawk_API.minimize();};
+  var ev=['pointerdown','keydown','touchstart','scroll','mousemove'];
+  function add(src,attrs){var s=d.createElement('script');s.async=true;s.src=src;for(var k in attrs)s.setAttribute(k,attrs[k]);d.head.appendChild(s);}
+  function once(fn){var done=0;return function(now){if(done)return;function go(){if(done)return;done=1;ev.forEach(function(e){w.removeEventListener(e,go,{passive:true});});fn();}
+    if(now)go();else ev.forEach(function(e){w.addEventListener(e,go,{passive:true});});};}
+  w.dctLoad={
+    analytics:once(function(){
+      w.gtag('js',new Date());w.gtag('config','G-0CJ4YTW1J8');
+      add('https://www.googletagmanager.com/gtag/js?id=G-0CJ4YTW1J8');
+      add('https://analytics.ahrefs.com/analytics.js',{'data-key':'tVAd7KxwKax+pAfHx46Zgg'});
+      add('https://www.clarity.ms/tag/ylza43nm4m');
+    }),
+    chat:once(function(){
+      w.Tawk_LoadStart=new Date();add('https://embed.tawk.to/6a5a95a2096ab21d402a762c/1jtoth11r',{charset:'UTF-8',crossorigin:'*'});
+    })
+  };
+})(window,document);
+if(navigator.modelContext){var m=document.createElement('script');m.src='/js/webmcp.js';m.defer=true;document.head.appendChild(m);}
+</script>
+<script src="/js/consent.js" defer></script>
+<!-- /dct:head -->
+<title>Data Center Training API & MCP Developer Portal</title>
+<meta name="description" content="Public, read-only API for the Data Center Training catalog: a remote MCP server, REST tool endpoints, versioned JSON, Markdown pages, errors, and rate limits.">
+<meta name="robots" content="index, follow">
+<link rel="icon" href="../favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="192x192" href="../images/icon-192.png">
+<link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+<link rel="canonical" href="https://datacentertraining.us/developers/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Data Center Training API & MCP Developer Portal">
+<meta property="og:description" content="Public, read-only API for the Data Center Training catalog: a remote MCP server, REST tool endpoints, versioned JSON, Markdown pages, errors, and rate limits.">
+<meta property="og:url" content="https://datacentertraining.us/developers/">
+<meta property="og:image" content="https://datacentertraining.us/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:site_name" content="Data Center Training">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@HazwoperOsha">
+<meta name="twitter:title" content="Data Center Training API & MCP Developer Portal">
+<meta name="twitter:description" content="Public, read-only API for the Data Center Training catalog: a remote MCP server, REST tool endpoints, versioned JSON, Markdown pages, errors, and rate limits.">
+<meta name="twitter:image" content="https://datacentertraining.us/images/og-image.jpg">
+
+<link rel="stylesheet" href="../css/site.min.css">
+<script src="../js/nav.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebAPI",
+  "name": "Data Center Training Catalog API",
+  "description": "Public, read-only API and remote MCP server for the Data Center Training course catalog: courses, bundles, roles, FAQ, credentials, and guides.",
+  "url": "https://datacentertraining.us/developers/",
+  "documentation": "https://datacentertraining.us/openapi.json",
+  "termsOfService": "https://datacentertraining.us/terms.html",
+  "provider": {"@type": "EducationalOrganization", "@id": "https://datacentertraining.us/#organization", "name": "Data Center Training", "url": "https://datacentertraining.us/"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://datacentertraining.us/"},
+    {"@type": "ListItem", "position": 2, "name": "Developers", "item": "https://datacentertraining.us/developers/"}
+  ]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="glass-nav">
+  <div class="container nav-inner">
+    <a href="../" class="logo">
+      <img class="logo-img" src="../images/logo.png" alt="datacentertraining.us" width="537" height="96">
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Main">
+      <div class="nav-item">
+        <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="navMenu-training">Courses<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-4" id="navMenu-training">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Online Training</p>
+            <a href="../courses.html"><span class="nav-link-title">Course Catalog</span><span class="nav-link-desc">All 43 self-paced courses</span></a>
+            <a href="../bundles.html"><span class="nav-link-title">Course Bundles</span><span class="nav-link-desc">Role-based bundles, save up to 52%</span></a>
+            <a href="../who.html"><span class="nav-link-title">Courses by Role</span><span class="nav-link-desc">Find the track for your job</span></a>
+            <a href="../tools/training-plan-builder.html"><span class="nav-link-title">Training Plan Builder</span><span class="nav-link-desc">Build and price a plan in minutes</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Training by Topic</p>
+            <a href="../training/"><span class="nav-link-title">All Training Programs</span></a>
+            <a href="../training/data-center-technician-training.html"><span class="nav-link-title">Data Center Technician Training</span></a>
+            <a href="../training/data-center-electrical-safety-training.html"><span class="nav-link-title">Data Center Electrical Safety</span></a>
+            <a href="../training/nfpa-70e-training.html"><span class="nav-link-title">NFPA 70E Training</span></a>
+            <a href="../training/osha-electrical-safety-training.html"><span class="nav-link-title">OSHA Electrical Safety Training</span></a>
+            <a href="../training/arc-flash-training.html"><span class="nav-link-title">Arc Flash Training</span></a>
+            <a href="../training/lockout-tagout-training.html"><span class="nav-link-title">Lockout/Tagout Training</span></a>
+            <a href="../training/ups-battery-training.html"><span class="nav-link-title">UPS &amp; Battery Training</span></a>
+            <a href="../training/generator-training.html"><span class="nav-link-title">Generator Training</span></a>
+            <a href="../training/bms-dcim-training.html"><span class="nav-link-title">BMS &amp; DCIM Training</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Enrolling</p>
+            <a href="../#teams"><span class="nav-link-title">Team Training</span><span class="nav-link-desc">Seats, progress tracking, PO billing</span></a>
+            <a href="../certifications.html"><span class="nav-link-title">Certificates &amp; Accreditation</span><span class="nav-link-desc">What your certificate means</span></a>
+            <a href="../faq.html"><span class="nav-link-title">FAQ</span><span class="nav-link-desc">Pricing, access, and policies</span></a>
+          </div>
+          <a class="nav-feature" href="../bundles.html"><span class="nav-feature-kicker">Best value</span><span class="nav-feature-title">Complete Data Center Professional Bundle</span><span class="nav-feature-text">43 courses and 192 hours of training in one enrollment. Save 52%.</span><span class="nav-feature-cta">Compare bundles &rarr;</span></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="navMenu-learn">Learn<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-3" id="navMenu-learn">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Start Here</p>
+            <a href="../learn/"><span class="nav-link-title">Knowledge Center</span><span class="nav-link-desc">Every guide in one place</span></a>
+            <a href="../learn/what-is-a-data-center.html"><span class="nav-link-title">Data Center 101</span><span class="nav-link-desc">How data centers work</span></a>
+            <a href="../learn/glossary.html"><span class="nav-link-title">Glossary</span><span class="nav-link-desc">Data center terms, A to Z</span></a>
+            <a href="../learn/data-center-standards.html"><span class="nav-link-title">Standards &amp; Regulations</span><span class="nav-link-desc">TIA-942, NFPA, OSHA, ASHRAE, ISO</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Systems</p>
+            <a href="../learn/data-center-power.html"><span class="nav-link-title">Power Systems</span></a>
+            <a href="../learn/data-center-cooling.html"><span class="nav-link-title">Cooling Systems</span></a>
+            <a href="../learn/data-center-tiers.html"><span class="nav-link-title">Tier Levels &amp; Redundancy</span></a>
+            <a href="../learn/energy-efficiency-pue.html"><span class="nav-link-title">Energy Efficiency &amp; PUE</span></a>
+            <a href="../learn/ai-data-centers.html"><span class="nav-link-title">AI &amp; High-Density Facilities</span></a>
+            <a href="../learn/800-vdc-data-center-safety.html"><span class="nav-link-title">800 VDC Power Safety</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Operations</p>
+            <a href="../learn/data-center-safety.html"><span class="nav-link-title">Safety Guide</span></a>
+            <a href="../learn/data-center-security-compliance.html"><span class="nav-link-title">Security &amp; Compliance</span></a>
+            <a href="../learn/data-center-operations.html"><span class="nav-link-title">Operations &amp; Maintenance</span></a>
+            <a href="../learn/data-center-commissioning.html"><span class="nav-link-title">Commissioning (Levels 1-5)</span></a>
+            <a href="../blog/"><span class="nav-link-title">Blog: Field Guidance</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="navMenu-careers">Careers<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-4" id="navMenu-careers">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Get Started</p>
+            <a href="../careers/"><span class="nav-link-title">Careers Hub</span><span class="nav-link-desc">Why the industry is hiring</span></a>
+            <a href="../careers/data-center-technician.html"><span class="nav-link-title">Data Center Technician</span><span class="nav-link-desc">The most common way in</span></a>
+            <a href="../careers/entry-level-data-center-jobs.html"><span class="nav-link-title">Entry-Level Jobs</span><span class="nav-link-desc">Roles you can get without experience</span></a>
+            <a href="../careers/how-to-get-into-data-centers.html"><span class="nav-link-title">How to Get Into Data Centers</span><span class="nav-link-desc">A step-by-step starting plan</span></a>
+            <a href="../careers/data-center-technician-salary.html"><span class="nav-link-title">Salary Guide</span><span class="nav-link-desc">What the pay data shows</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Jobs & Roles</p>
+            <a href="../careers/data-center-jobs.html"><span class="nav-link-title">All Job Roles Explained</span></a>
+            <a href="../careers/data-center-electrician.html"><span class="nav-link-title">Data Center Electrician</span></a>
+            <a href="../careers/critical-facilities-technician.html"><span class="nav-link-title">Critical Facilities Technician</span></a>
+            <a href="../careers/data-center-engineer.html"><span class="nav-link-title">Data Center Engineer</span></a>
+            <a href="../careers/data-center-jobs-by-location.html"><span class="nav-link-title">Jobs by Location</span></a>
+            <a href="../careers/hyperscale-data-center-jobs.html"><span class="nav-link-title">Big Tech Data Center Jobs</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Get Hired</p>
+            <a href="../careers/data-center-certifications.html"><span class="nav-link-title">Certifications Guide</span></a>
+            <a href="../careers/data-center-apprenticeships.html"><span class="nav-link-title">Apprenticeships &amp; Programs</span></a>
+            <a href="../careers/data-center-technician-resume.html"><span class="nav-link-title">Resume Guide</span></a>
+            <a href="../careers/interview-questions.html"><span class="nav-link-title">Interview Questions</span></a>
+            <a href="../careers/career-changers.html"><span class="nav-link-title">Career Changers</span></a>
+          </div>
+          <a class="nav-feature" href="../quizzes/career-quiz.html"><span class="nav-feature-kicker">2-minute quiz</span><span class="nav-feature-title">Which Data Center Career Fits You?</span><span class="nav-feature-text">Answer 10 quick questions and get a matching role and training track.</span><span class="nav-feature-cta">Take the career quiz &rarr;</span></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="navMenu-quizzes">Quizzes &amp; Tools<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-2" id="navMenu-quizzes">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Quizzes</p>
+            <a href="../quizzes/"><span class="nav-link-title">All Quizzes</span></a>
+            <a href="../quizzes/career-quiz.html"><span class="nav-link-title">Career Match Quiz</span></a>
+            <a href="../quizzes/data-center-basics-quiz.html"><span class="nav-link-title">Data Center Basics</span></a>
+            <a href="../quizzes/power-electrical-quiz.html"><span class="nav-link-title">Power &amp; Electrical</span></a>
+            <a href="../quizzes/cooling-quiz.html"><span class="nav-link-title">Cooling &amp; HVAC</span></a>
+            <a href="../quizzes/safety-quiz.html"><span class="nav-link-title">Safety</span></a>
+            <a href="../quizzes/security-compliance-quiz.html"><span class="nav-link-title">Security &amp; Compliance</span></a>
+            <a href="../quizzes/tiers-design-quiz.html"><span class="nav-link-title">Tiers &amp; Design</span></a>
+            <a href="../quizzes/operations-quiz.html"><span class="nav-link-title">Operations &amp; Monitoring</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Tools</p>
+            <a href="../tools/"><span class="nav-link-title">All Tools</span></a>
+            <a href="../tools/training-plan-builder.html"><span class="nav-link-title">Training Plan Builder</span></a>
+            <a href="../tools/pue-calculator.html"><span class="nav-link-title">PUE Calculator</span></a>
+            <a href="../tools/uptime-calculator.html"><span class="nav-link-title">Uptime &amp; Downtime Calculator</span></a>
+            <a href="../tools/cooling-load-calculator.html"><span class="nav-link-title">Cooling Load Calculator</span></a>
+          </div>
+        </div>
+      </div>
+      <a href="../blog/" class="nav-link">Blog</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="../search.html" class="nav-search" data-search-open aria-keyshortcuts="Control+K" title="Search (Ctrl+K)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><span class="nav-search-label">Search</span><kbd class="nav-search-kbd">Ctrl K</kbd></a>
+      <a href="../cart.html" class="nav-cart" aria-label="Cart"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="nav-cart-count" data-cart-count hidden>0</span></a>
+      <a href="../courses.html" class="btn btn-primary btn-sm nav-cta">View Courses</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hub-hero"><div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../">Home</a><span>&rsaquo;</span><span aria-current="page">Developers</span></nav>
+    <div class="eyebrow"><span class="dot"></span>Developers &amp; AI Agents</div>
+    <h1>Data Center Training Developer Portal</h1>
+    <p class="lede">Build on the Data Center Training catalog of online data center courses, bundles, role guides, FAQ answers, and credential facts. Everything is public and read-only: no API key, no account, and nothing an agent calls can enroll, charge, or submit a form.</p>
+  </div></section>
+
+  <section class="section">
+    <div class="container-read prose">
+      <h2 id="quickstart">Quickstart</h2>
+      <p>Three requests cover most integrations. List every document, ask a tool a question, and read a page as Markdown:</p>
+<pre class="code-block"><code>curl -s https://datacentertraining.us/api/v1/index.json
+
+curl -s -X POST https://datacentertraining.us/api/v1/tools/recommend_courses \
+  -H 'Content-Type: application/json' \
+  -d '{"role": "electrician", "budget_usd": 500}'
+
+curl -s -H 'Accept: text/markdown' https://datacentertraining.us/</code></pre>
+      <p>Machine-readable references: <a href="../openapi.json">OpenAPI 3.1 spec</a> (typed schemas for every document, tool, and error), <a href="../.well-known/mcp.json">MCP manifest</a>, <a href="../llms.txt">llms.txt</a>, and <a href="../llms-full.txt">llms-full.txt</a>.</p>
+
+      <h2 id="when-to-use">When to Use This API</h2>
+      <!-- dct:when-to-use --><p>Reach for this API when a user or an agent needs to:</p>
+      <ul>
+        <li>Find online, self-paced training for a data center job role (electrician, HVAC or mechanical technician, critical facilities or operations technician, facility manager, security lead, design engineer, DCIM or network technician) and price it per seat or as a bundle.</li>
+        <li>Answer exact questions about this catalog: which course covers a topic or standard (NFPA 70E, ANSI/TIA-942, Uptime Tier levels, SOC 2, ISO 27001, lithium-ion safety, EPO, UPS, generators, cooling, BMS/DCIM), how long it is, what it costs, its modules and prerequisites, and what its certificate of completion is and is not.</li>
+        <li>Build or price a team training plan within a budget or an hour limit, or compare the role-based and complete-catalog bundles side by side.</li>
+        <li>Point someone to a free, sourced guide on data center power, cooling, safety, security, Tier levels, operations, careers, salaries, or terminology.</li>
+      </ul>
+      <p><strong>Not for:</strong> Licenses or third-party certifications (courses award a certificate of completion), hands-on or site-specific qualification, courses in languages other than English, legal or compliance determinations, and enrolling, paying, or submitting forms for a user.</p>
+      <p>A typical flow: call <code>recommend_courses</code> with a role and budget (or <code>list_courses</code> with a topic or standard), then <code>get_course</code> for details, then give the user the course or bundle URL so they enroll themselves.</p><!-- /dct:when-to-use -->
+
+      <h2 id="authentication">Authentication and API Keys</h2>
+      <p>There are no API keys to request. Every endpoint is public, unauthenticated, and read-only, sends <code>Access-Control-Allow-Origin: *</code>, and sets no cookies. Send no credentials: requests are identified only by IP address, for rate limiting.</p>
+
+      <h2 id="mcp">Remote MCP Server</h2>
+      <p>The catalog tools are available as a remote <a href="https://modelcontextprotocol.io/" target="_blank" rel="noopener">Model Context Protocol</a> server at <code>https://datacentertraining.us/mcp</code>, over the Streamable HTTP transport (JSON-RPC 2.0 over POST). It is stateless: it issues no <code>Mcp-Session-Id</code>, and a GET returns 405 because the server never opens a stream of its own.</p>
+      <!-- dct:mcp-versions --><p>Supported protocol versions: <code>2025-11-25</code>, <code>2025-06-18</code>, <code>2025-03-26</code>, <code>2024-11-05</code>. Methods: <code>initialize</code>, <code>ping</code>, <code>tools/list</code>, <code>tools/call</code>, <code>resources/list</code>, and <code>resources/read</code>. Tools: <code>list_courses</code>, <code>get_course</code>, <code>compare_bundles</code>, <code>recommend_courses</code>, <code>get_credential_info</code>, <code>answer_faq</code>, <code>list_resources</code>.</p><!-- /dct:mcp-versions -->
+      <p>Add it to Claude Code:</p>
+<pre class="code-block"><code>claude mcp add --transport http datacentertraining https://datacentertraining.us/mcp</code></pre>
+      <p>Or to any client that reads an <code>mcpServers</code> configuration:</p>
+<pre class="code-block"><code>{
+  "mcpServers": {
+    "datacentertraining": {
+      "type": "http",
+      "url": "https://datacentertraining.us/mcp"
+    }
+  }
+}</code></pre>
+      <p>The raw handshake, if you are writing your own client:</p>
+<pre class="code-block"><code>curl -s https://datacentertraining.us/mcp \
+  -H 'Content-Type: application/json' \
+  -H 'Accept: application/json, text/event-stream' \
+  -d '{"jsonrpc": "2.0", "id": 1, "method": "initialize",
+       "params": {"protocolVersion": "2025-06-18", "capabilities": {},
+                  "clientInfo": {"name": "my-agent", "version": "1.0.0"}}}'</code></pre>
+      <p>Browser agents get the same tools in the page itself: every page registers them with <code>navigator.modelContext</code> (WebMCP).</p>
+
+      <h2 id="tools">REST Tool Endpoints</h2>
+      <p>Each MCP tool is also a REST endpoint. POST the tool input as a JSON object (send <code>{}</code> for every default), or use GET with the same fields as query parameters (separate list values with commas). The response is the tool output as JSON. Input and output schemas, with examples, are in the <a href="../openapi.json">OpenAPI spec</a> under <code>/api/v1/tools/</code>.</p>
+      <!-- dct:tools --><div class="table-panel">
+        <table class="data-table">
+          <caption>Tool endpoints (POST or GET)</caption>
+          <thead><tr><th>Tool</th><th>Endpoint</th><th>What it does</th></tr></thead>
+          <tbody>
+            <tr><td>list_courses</td><td><code>/api/v1/tools/list_courses</code></td><td>Search and filter the course catalog</td></tr>
+            <tr><td>get_course</td><td><code>/api/v1/tools/get_course</code></td><td>Get one course</td></tr>
+            <tr><td>compare_bundles</td><td><code>/api/v1/tools/compare_bundles</code></td><td>Compare course bundles</td></tr>
+            <tr><td>recommend_courses</td><td><code>/api/v1/tools/recommend_courses</code></td><td>Recommend courses for a role</td></tr>
+            <tr><td>get_credential_info</td><td><code>/api/v1/tools/get_credential_info</code></td><td>Explain certificates and accreditation</td></tr>
+            <tr><td>answer_faq</td><td><code>/api/v1/tools/answer_faq</code></td><td>Answer from the published FAQ</td></tr>
+            <tr><td>list_resources</td><td><code>/api/v1/tools/list_resources</code></td><td>List guides and standards references</td></tr>
+          </tbody>
+        </table>
+      </div><!-- /dct:tools -->
+<pre class="code-block"><code>curl -s 'https://datacentertraining.us/api/v1/tools/list_courses?query=UPS&amp;max_price_usd=150'</code></pre>
+
+      <h2 id="documents">JSON Documents</h2>
+      <p>The tools read a set of static JSON documents, which you can also download and filter yourself. They are regenerated from the site source whenever a course, price, or page changes, and <code>last_updated</code> and <code>content_hash</code> in the index tell you when to refresh a cache.</p>
+      <div class="table-panel">
+        <table class="data-table">
+          <caption>Documents under /api/v1/</caption>
+          <thead><tr><th>Document</th><th>Contents</th></tr></thead>
+          <tbody>
+            <tr><td><a href="../api/v1/index.json">index.json</a></td><td>Links to every document and tool, counts, content hash, versioning and rate-limit policy, and agent rules.</td></tr>
+            <tr><td><a href="../api/v1/courses.json">courses.json</a></td><td>Every course: price, hours, track, standards, modules, outcomes, prerequisites, bundles, certificate facts.</td></tr>
+            <tr><td><code>courses/{course_id}.json</code></td><td>One course record, e.g. <a href="../api/v1/courses/ups-systems-fundamentals.json">ups-systems-fundamentals.json</a>.</td></tr>
+            <tr><td><a href="../api/v1/bundles.json">bundles.json</a></td><td>Bundle prices, list prices, savings, included courses, and seat-count discounts.</td></tr>
+            <tr><td><a href="../api/v1/roles.json">roles.json</a></td><td>Job roles mapped to learning tracks.</td></tr>
+            <tr><td><a href="../api/v1/faq.json">faq.json</a></td><td>Every published FAQ answer with its source page.</td></tr>
+            <tr><td><a href="../api/v1/credentials.json">credentials.json</a></td><td>What the certificate of completion is and is not, and claims to avoid.</td></tr>
+            <tr><td><a href="../api/v1/resources.json">resources.json</a></td><td>Guides, blog posts, and official standards references.</td></tr>
+            <tr><td><a href="../api/v1/search.json">search.json</a></td><td>The site search index: courses, pages, FAQ answers, and glossary terms.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="markdown">Pages as Markdown</h2>
+      <p>Every page on the site has a clean Markdown version without navigation, scripts, or styling. Request the normal page URL with <code>Accept: text/markdown</code> and the response comes back as <code>Content-Type: text/markdown</code> with <code>Vary: Accept</code>; browsers asking for HTML still get HTML. You can also fetch the Markdown file directly by adding <code>.md</code> to the page URL, using <code>index.html.md</code> for directory URLs:</p>
+<pre class="code-block"><code>curl -s -H 'Accept: text/markdown' https://datacentertraining.us/courses.html
+curl -s https://datacentertraining.us/courses.html.md
+curl -s https://datacentertraining.us/learn/index.html.md</code></pre>
+      <p>Each HTML page also links its Markdown version with <code>&lt;link rel="alternate" type="text/markdown"&gt;</code>. For the whole catalog in one file, read <a href="../llms-full.txt">llms-full.txt</a>.</p>
+
+      <h2 id="errors">Errors</h2>
+      <p>Errors from <code>/api/</code>, the tool endpoints, and <code>/mcp</code> are <a href="https://www.rfc-editor.org/rfc/rfc9457" target="_blank" rel="noopener">RFC 9457</a> problem details with <code>Content-Type: application/problem+json</code>. Branch on <code>code</code>, which never changes within a version; <code>detail</code> describes this request and <code>hint</code> says how to recover.</p>
+<pre class="code-block"><code>HTTP/1.1 404 Not Found
+Content-Type: application/problem+json
+
+{
+  "type": "https://datacentertraining.us/developers/#error-not_found",
+  "title": "Not found",
+  "status": 404,
+  "code": "not_found",
+  "detail": "No API document exists at /api/v1/courses/ups-101.json.",
+  "hint": "List valid documents at /api/v1/index.json, course ids at /api/v1/courses.json, and every page at /sitemap.xml. Agent overview: /llms.txt.",
+  "instance": "/api/v1/courses/ups-101.json",
+  "docs": "https://datacentertraining.us/developers/#errors"
+}</code></pre>
+      <!-- dct:errors --><div class="table-panel">
+        <table class="data-table">
+          <caption>Error codes</caption>
+          <thead><tr><th>Code</th><th>Status</th><th>Meaning</th><th>What to do</th></tr></thead>
+          <tbody>
+            <tr id="error-invalid_json"><td>invalid_json</td><td>400</td><td>Request body is not valid JSON</td><td>Send one JSON object with Content-Type: application/json.</td></tr>
+            <tr id="error-invalid_input"><td>invalid_input</td><td>400</td><td>Input does not match the tool's input schema</td><td>Compare the errors array with the tool's inputSchema in /openapi.json or /.well-known/mcp.json, fix the named fields, and retry.</td></tr>
+            <tr id="error-unsupported_protocol_version"><td>unsupported_protocol_version</td><td>400</td><td>Unsupported MCP protocol version</td><td>Send an MCP-Protocol-Version header with a supported version (see supported_versions), or omit it.</td></tr>
+            <tr id="error-not_found"><td>not_found</td><td>404</td><td>Not found</td><td>List valid documents at /api/v1/index.json, course ids at /api/v1/courses.json, and every page at /sitemap.xml. Agent overview: /llms.txt.</td></tr>
+            <tr id="error-unknown_tool"><td>unknown_tool</td><td>404</td><td>Unknown tool</td><td>Valid tool names are listed in /.well-known/mcp.json and under /api/v1/tools/ in /openapi.json.</td></tr>
+            <tr id="error-method_not_allowed"><td>method_not_allowed</td><td>405</td><td>Method not allowed</td><td>See the Allow header. JSON documents and pages are GET-only; /mcp takes POST; tools take POST (or GET with query parameters).</td></tr>
+            <tr id="error-unsupported_media_type"><td>unsupported_media_type</td><td>415</td><td>Unsupported media type</td><td>Send the request body as application/json.</td></tr>
+            <tr id="error-rate_limited"><td>rate_limited</td><td>429</td><td>Too many requests</td><td>Wait the number of seconds in Retry-After, then retry. Cache documents: they change a few times a week at most.</td></tr>
+            <tr id="error-internal_error"><td>internal_error</td><td>500</td><td>Internal error</td><td>Retry once. If it keeps failing, email info@hazwoper-osha.com with the request path and time.</td></tr>
+            <tr id="error-upstream_error"><td>upstream_error</td><td>502</td><td>Upstream error</td><td>The static origin did not answer. Retry with exponential backoff.</td></tr>
+          </tbody>
+        </table>
+      </div><!-- /dct:errors -->
+      <p>A page URL that does not exist returns 404 in the format you asked for: HTML for browsers, Markdown for <code>Accept: text/markdown</code>, and problem details for <code>Accept: application/json</code>. Inside MCP, tool input mistakes come back as a tool result with <code>isError: true</code> so the model can correct itself; malformed JSON-RPC uses the standard JSON-RPC error codes.</p>
+
+      <h2 id="rate-limits">Rate Limits</h2>
+      <!-- dct:rate-limits --><p>Requests to /api/, /mcp, and the tool endpoints are limited to 120 per 60 seconds per client IP. Every response carries RateLimit-Policy and RateLimit (IETF draft-ietf-httpapi-ratelimit-headers) plus RateLimit-Limit, RateLimit-Remaining, and RateLimit-Reset; a 429 adds Retry-After in seconds. Static pages and the Markdown files are not rate limited.</p>
+<pre class="code-block"><code>RateLimit-Policy: "default";q=120;w=60
+RateLimit: "default";r=117;t=42
+RateLimit-Limit: 120
+RateLimit-Remaining: 117
+RateLimit-Reset: 42</code></pre><!-- /dct:rate-limits -->
+      <p>Pace yourself from <code>RateLimit-Remaining</code>, and after a 429 wait the number of seconds in <code>Retry-After</code>. The documents change a few times a week at most, so cache them and check <code>content_hash</code> in the index instead of polling.</p>
+
+      <h2 id="versioning">Versioning and Deprecation</h2>
+      <!-- dct:versioning --><p>The API is versioned in the URL path; v1 (https://datacentertraining.us/api/v1/) is current, and every response from the edge carries an API-Version header. Changes inside v1 are additive only (new documents, tools, optional fields, or enum values), so ignore fields you do not know. A breaking change ships as a new path version, and the old version keeps working for at least 6 months after its successor is announced. Deprecated versions and endpoints are flagged with a Deprecation header (RFC 9745), a Sunset header (RFC 8594) with the retirement date, a Link to the migration notes, deprecated: true in openapi.json, and a changelog entry on https://datacentertraining.us/developers/. The unversioned /api/*.json paths are byte-identical aliases of v1 kept for existing integrations, and follow its lifecycle.</p><!-- /dct:versioning -->
+
+      <h2 id="cli">Command-Line Tool</h2>
+      <p>The <code>datacentertraining</code> CLI wraps the REST tools for scripts and terminal agents. It needs Node.js 18 or later and has no dependencies.</p>
+<pre class="code-block"><code>npx datacentertraining courses --query "NFPA 70E"
+npx datacentertraining course ups-systems-fundamentals
+npx datacentertraining recommend electrician --budget 500
+npx datacentertraining bundles
+npx datacentertraining faq "Do certificates expire?"
+npx datacentertraining help</code></pre>
+      <p>Add <code>--json</code> to any command for the raw tool output. The same single-file script is published on this site at <a href="../cli/datacentertraining.mjs">/cli/datacentertraining.mjs</a> if you would rather download it than install from npm.</p>
+
+      <h2 id="sandbox">Sandbox and Local Testing</h2>
+      <p>Because every endpoint is read-only, the production API is safe to call while you build: no request can create an order, an account, or a charge, so there is no separate sandbox or test key. To work offline or test changes to the site itself, clone the <a href="https://github.com/LJ-Web-Management/datacentertraining.us" target="_blank" rel="noopener">site repository</a> and run the same edge code locally against the checked-out files:</p>
+<pre class="code-block"><code>git clone https://github.com/LJ-Web-Management/datacentertraining.us
+cd datacentertraining.us
+node edge/dev-server.js        # http://localhost:8787 (MCP at /mcp)</code></pre>
+
+      <h2 id="changelog">Changelog</h2>
+      <ul>
+        <li><strong>2026-10-30, API v1.</strong> Remote MCP server at <code>/mcp</code>; REST tool endpoints under <code>/api/v1/tools/</code>; versioned document paths under <code>/api/v1/</code> (the unversioned <code>/api/*.json</code> paths stay as aliases); problem-details errors; rate-limit headers; Markdown versions of every page; the <code>datacentertraining</code> CLI.</li>
+        <li><strong>Before 2026-10-30.</strong> Static JSON documents under <code>/api/</code>, the MCP manifest, and in-page WebMCP tools. All still work unchanged.</li>
+      </ul>
+
+      <h2 id="support">Developer Support</h2>
+      <p>Found a wrong value, a broken link, or a schema that does not match a response? Email <a href="mailto:info@hazwoper-osha.com">info@hazwoper-osha.com</a> with the request you sent and the response you got. For anything else, see the <a href="../contact.html">contact page</a>.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer" id="contact">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="../" class="logo">
+          <img class="logo-img" src="../images/logo.png" alt="datacentertraining.us" width="537" height="96" loading="lazy">
+        </a>
+        <p class="footer-legal">Data Center Training is a specialty training division of <a href="https://hazwoper-osha.com/" target="_blank" rel="noopener">HAZWOPER-OSHA Training, LLC</a>, an IACET-accredited provider of professional data center and safety compliance training.</p>
+        <p class="footer-legal" style="margin-top:8px;">HAZWOPER OSHA Training, LLC &middot; 11901 Santa Monica Blvd., Suite #414, Los Angeles, CA 90025</p>
+        <div class="footer-badges">
+          <img src="https://media.hazwoper-osha.com/wp-content/uploads/2023/11/1698821020/IACET-small.webp" alt="IACET Accredited Provider" width="40" height="24" loading="lazy">
+          <img src="https://media.hazwoper-osha.com/wp-content/uploads/2026/07/1784291935/bbb.webp" alt="BBB A+ Rating" width="40" height="24" loading="lazy">
+          <img src="https://media.hazwoper-osha.com/wp-content/uploads/2026/07/1784292027/trust.webp" alt="Google Trust Services" width="141" height="20" loading="lazy" style="height:20px;">
+        </div>
+      </div>
+      <div class="footer-cta">
+        <p class="footer-cta-title">Not sure where to start?</p>
+        <p class="footer-cta-text">Find the data center role that fits you, then get a training plan built around it.</p>
+        <div class="footer-cta-actions">
+          <a href="../quizzes/career-quiz.html" class="btn btn-primary btn-sm">Take the Career Quiz</a>
+          <a href="../tools/training-plan-builder.html" class="text-link">Build a training plan &rarr;</a>
+        </div>
+        <div class="footer-contact-links">
+          <a href="tel:18664296742">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            1-866-429-6742
+          </a>
+          <a href="mailto:info@hazwoper-osha.com">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            info@hazwoper-osha.com
+          </a>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/HazwoperOsha/" target="_blank" rel="noopener" aria-label="Facebook"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/hazwoper_osha_training/?hl=en" target="_blank" rel="noopener" aria-label="Instagram"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="https://www.youtube.com/@hazwoper-osha" target="_blank" rel="noopener" aria-label="YouTube"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33zM9.75 15.02V8.48l5.75 3.27z"/></svg></a>
+          <a href="https://x.com/HazwoperOsha" target="_blank" rel="noopener" aria-label="X"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.4 8.4L23 22h-6.6l-5.2-6.8L5.1 22H2l7.9-9L1.6 2h6.8l4.7 6.2z"/></svg></a>
+          <a href="https://www.linkedin.com/company/hazwoper-osha" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM8.34 18.34V10.1H5.67v8.24zM7.01 8.97a1.55 1.55 0 1 0 0-3.1 1.55 1.55 0 0 0 0 3.1zM18.34 18.34v-4.6c0-2.46-1.31-3.6-3.06-3.6a2.64 2.64 0 0 0-2.39 1.32V10.1H10.2s.04.86 0 8.24h2.68v-4.6c0-.25.02-.5.09-.68a1.5 1.5 0 0 1 1.37-1c.96 0 1.35.73 1.35 1.8v4.48z"/></svg></a>
+          <a href="https://www.pinterest.com/hazwoperosha/" target="_blank" rel="noopener" aria-label="Pinterest"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.64 7.86 6.36 9.32-.09-.79-.17-2.01.03-2.88.19-.79 1.22-5.03 1.22-5.03s-.31-.63-.31-1.55c0-1.45.84-2.54 1.89-2.54.89 0 1.32.67 1.32 1.47 0 .89-.57 2.23-.86 3.47-.25 1.03.52 1.88 1.53 1.88 1.84 0 3.07-2.36 3.07-5.15 0-2.12-1.43-3.71-4.02-3.71-2.93 0-4.76 2.19-4.76 4.63 0 .84.25 1.44.63 1.9.18.21.2.3.14.54-.05.18-.16.63-.21.81-.07.26-.28.35-.51.26-1.44-.59-2.11-2.16-2.11-3.93 0-2.92 2.46-6.43 7.34-6.43 3.92 0 6.5 2.84 6.5 5.89 0 4.03-2.24 7.04-5.55 7.04-1.11 0-2.16-.6-2.51-1.28 0 0-.6 2.36-.73 2.82-.22.8-.66 1.6-1.06 2.22.95.29 1.95.45 3 .45 5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-grid">
+    <div class="footer-col">
+      <h3>Training</h3>
+      <a href="../courses.html">Course Catalog</a>
+      <a href="../bundles.html">Course Bundles</a>
+      <a href="../training/">Training by Topic</a>
+      <a href="../training/nfpa-70e-training.html">NFPA 70E Training</a>
+      <a href="../training/arc-flash-training.html">Arc Flash Training</a>
+      <a href="../who.html">Courses by Role</a>
+      <a href="../tools/training-plan-builder.html">Training Plan Builder</a>
+      <a href="../#teams">Team Training</a>
+      <a href="../certifications.html">Certificates &amp; Accreditation</a>
+      <a href="../faq.html">FAQ</a>
+    </div>
+    <div class="footer-col">
+      <h3>Learn</h3>
+      <a href="../learn/">Knowledge Center</a>
+      <a href="../learn/what-is-a-data-center.html">Data Center 101</a>
+      <a href="../learn/data-center-power.html">Power Systems</a>
+      <a href="../learn/data-center-cooling.html">Cooling Systems</a>
+      <a href="../learn/data-center-tiers.html">Tier Levels</a>
+      <a href="../learn/data-center-safety.html">Safety Guide</a>
+      <a href="../learn/data-center-standards.html">Standards Guide</a>
+      <a href="../learn/glossary.html">Glossary</a>
+      <a href="../blog/">Blog</a>
+    </div>
+    <div class="footer-col">
+      <h3>Careers</h3>
+      <a href="../careers/">Careers Hub</a>
+      <a href="../careers/data-center-technician.html">Data Center Technician</a>
+      <a href="../careers/data-center-jobs.html">Job Roles Explained</a>
+      <a href="../careers/entry-level-data-center-jobs.html">Entry-Level Jobs</a>
+      <a href="../careers/data-center-technician-salary.html">Salary Guide</a>
+      <a href="../careers/data-center-jobs-by-location.html">Jobs by Location</a>
+      <a href="../careers/data-center-certifications.html">Certifications Guide</a>
+      <a href="../careers/interview-questions.html">Interview Questions</a>
+      <a href="../quizzes/career-quiz.html">Career Match Quiz</a>
+    </div>
+    <div class="footer-col">
+      <h3>Quizzes &amp; Tools</h3>
+      <a href="../quizzes/">All Quizzes</a>
+      <a href="../quizzes/data-center-basics-quiz.html">Data Center Basics Quiz</a>
+      <a href="../tools/">All Tools</a>
+      <a href="../tools/pue-calculator.html">PUE Calculator</a>
+      <a href="../tools/uptime-calculator.html">Uptime Calculator</a>
+      <a href="../tools/cooling-load-calculator.html">Cooling Load Calculator</a>
+      <a href="../search.html">Search the Site</a>
+    </div>
+    <div class="footer-col">
+      <h3>Company</h3>
+      <a href="../about.html">About Us</a>
+      <a href="../contact.html">Contact Us</a>
+      <a href="https://hazwoper-osha.com/" target="_blank" rel="noopener">HAZWOPER-OSHA Training</a>
+      <a href="https://hazwoper-osha.com/certificate-verification" target="_blank" rel="noopener">Verify Certificate</a>
+      <a href="../privacy.html">Privacy Policy</a>
+      <a href="../terms.html">Terms of Service</a>
+      <a href="../accessibility.html">Accessibility</a>
+      <a href="../privacy.html#choices" data-privacy-choices>Your Privacy Choices</a>
+      <a href="https://hazwoper-osha.com/refund-policy" target="_blank" rel="noopener">Refund Policy</a>
+    </div>
+    </div>
+
+    <p class="footer-agents"><span>For AI agents:</span> <a href="../developers/">Developer Portal</a> <a href="/llms.txt">llms.txt</a> <a href="/llms-full.txt">llms-full.txt</a> <a href="/.well-known/mcp.json">WebMCP Manifest</a> <a href="/api/v1/index.json">JSON Catalog API</a> <a href="/openapi.json">API Docs (OpenAPI)</a> <a href="/sitemap.xml">Sitemap</a></p>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; 2026 HAZWOPER-OSHA Training, LLC. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+<script src="../js/main.js" defer></script>
+
+</body>
+</html>

@@ -327,6 +327,7 @@ function footerData() {
       label: 'Company',
       links: [
         ['about.html', 'About Us'],
+        ['contact.html', 'Contact Us'],
         ['https://hazwoper-osha.com/', 'HAZWOPER-OSHA Training'],
         ['https://hazwoper-osha.com/certificate-verification', 'Verify Certificate'],
         ['privacy.html', 'Privacy Policy'],
@@ -393,7 +394,7 @@ function footer(rel) {
     cols,
     '    </div>',
     '',
-    '    <p class="footer-agents"><span>For AI agents:</span> <a href="/llms.txt">llms.txt</a> <a href="/llms-full.txt">llms-full.txt</a> <a href="/.well-known/mcp.json">WebMCP Manifest</a> <a href="/api/index.json">JSON Catalog API</a> <a href="/openapi.json">API Docs (OpenAPI)</a> <a href="/sitemap.xml">Sitemap</a></p>',
+    '    <p class="footer-agents"><span>For AI agents:</span> <a href="' + link(P, 'developers/') + '">Developer Portal</a> <a href="/llms.txt">llms.txt</a> <a href="/llms-full.txt">llms-full.txt</a> <a href="/.well-known/mcp.json">WebMCP Manifest</a> <a href="/api/v1/index.json">JSON Catalog API</a> <a href="/openapi.json">API Docs (OpenAPI)</a> <a href="/sitemap.xml">Sitemap</a></p>',
     '  </div>',
     '  <div class="footer-bottom">',
     '    <div class="container">',

@@ -12,6 +12,7 @@ const path = require('path');
 const Ajv = require('ajv');
 const addFormats = require('ajv-formats');
 const tools = require('../js/webmcp.js');
+const contract = require('../edge/contract.json');
 
 const ROOT = path.resolve(__dirname, '..');
 const ORIGIN = 'https://datacentertraining.us';
@@ -83,28 +84,91 @@ for (const c of data.courses.courses) {
   if (!fs.existsSync(path.join(ROOT, 'api/courses', c.id + '.json'))) fail('missing api/courses/' + c.id + '.json');
 }
 
-// Every first-party URL referenced by the agent files must exist.
-const texts = ['.well-known/mcp.json', 'openapi.json', 'llms.txt', 'llms-full.txt', 'api/index.json', 'api/resources.json', '.well-known/ai-plugin.json']
+// Every first-party URL referenced by the agent files must exist: as a file,
+// or as a route the edge Worker serves (edge/contract.json).
+const edgeRoutes = new Set([contract.mcp_path].concat(tools.names.map((n) => contract.tools_path + '/' + n)));
+const texts = ['.well-known/mcp.json', 'openapi.json', 'llms.txt', 'llms-full.txt', 'api/index.json', 'api/v1/index.json', 'api/resources.json', '.well-known/ai-plugin.json']
   .map((f) => fs.readFileSync(path.join(ROOT, f), 'utf8')).join('\n');
 const seen = new Set();
 for (const m of texts.matchAll(/https:\/\/datacentertraining\.us(\/[^\s"')\]{}]*)?/g)) {
-  let p = (m[1] || '/').split(/[?#]/)[0];
-  if (seen.has(p) || /^\/api\/(courses\/)?$/.test(p)) continue; // directory prefixes of templated URLs
+  let p = (m[1] || '/').split(/[?#]/)[0].replace(/[.,;:]+$/, '');
+  if (seen.has(p) || /^\/api\/(v1\/)?((courses|tools)\/)?$/.test(p)) continue; // directory prefixes of templated URLs
   seen.add(p);
+  if (edgeRoutes.has(p)) continue;
   if (p.endsWith('/')) p += 'index.html';
   if (!fs.existsSync(path.join(ROOT, p))) fail('agent files link to missing ' + ORIGIN + p);
 }
+
+// Versioned documents and their unversioned aliases must be identical.
+(function walkApi(dir) {
+  for (const e of fs.readdirSync(path.join(ROOT, 'api/v1', dir), { withFileTypes: true })) {
+    const rel = dir ? dir + '/' + e.name : e.name;
+    if (e.isDirectory()) walkApi(rel);
+    else if (!fs.existsSync(path.join(ROOT, 'api', rel)) || fs.readFileSync(path.join(ROOT, 'api', rel), 'utf8') !== fs.readFileSync(path.join(ROOT, 'api/v1', rel), 'utf8')) {
+      fail('api/' + rel + ' is not identical to api/v1/' + rel);
+    }
+  }
+})('');
+
+// The MCP manifest must announce the remote endpoint and pass its OpenAPI schema.
+if (manifest.endpoint !== ORIGIN + contract.mcp_path) fail('manifest endpoint is not ' + ORIGIN + contract.mcp_path);
+if (!manifest.transports.some((t) => t.type === 'streamable-http' && t.url === ORIGIN + contract.mcp_path)) fail('manifest has no streamable-http transport');
 
 // OpenAPI component schemas must compile and describe the documents.
 const openapi = readJson('openapi.json');
 const oa = new Ajv({ strict: false, allErrors: true });
 addFormats(oa);
 for (const [name, schema] of Object.entries(openapi.components.schemas)) oa.addSchema(schema, '#/components/schemas/' + name);
-const docChecks = { 'api/courses.json': 'CourseList', 'api/bundles.json': 'BundleList', 'api/roles.json': 'RoleList', 'api/faq.json': 'FaqList', 'api/resources.json': 'ResourceList', 'api/credentials.json': 'Credentials', 'api/index.json': 'ApiIndex', 'api/search.json': 'SearchIndex' };
+const docChecks = { '.well-known/mcp.json': 'McpManifest', 'api/courses.json': 'CourseList', 'api/bundles.json': 'BundleList', 'api/roles.json': 'RoleList', 'api/faq.json': 'FaqList', 'api/resources.json': 'ResourceList', 'api/credentials.json': 'Credentials', 'api/index.json': 'ApiIndex', 'api/search.json': 'SearchIndex' };
 for (const [file, ref] of Object.entries(docChecks)) {
   const v = oa.getSchema('#/components/schemas/' + ref);
   if (!v(readJson(file))) fail(file + ' does not match OpenAPI ' + ref + ': ' + oa.errorsText(v.errors));
 }
+
+// Every operation has a unique operationId and a typed JSON response, every
+// 4xx/5xx uses the Problem schema, and every tool endpoint's request and
+// response schemas are the tool's own input and output schemas.
+const opIds = new Set();
+const resolve = (r) => (r && r.$ref ? r.$ref.split('/').reduce((o, k) => (k === '#' ? openapi : o[k]), null) : r);
+for (const [p, item] of Object.entries(openapi.paths)) {
+  for (const [method, op] of Object.entries(item)) {
+    if (!op.operationId) fail(method.toUpperCase() + ' ' + p + ': no operationId');
+    else if (opIds.has(op.operationId)) fail('duplicate operationId ' + op.operationId);
+    opIds.add(op.operationId);
+    for (const [status, r] of Object.entries(op.responses)) {
+      const res = resolve(r);
+      if (+status >= 400 && !(res.content && res.content['application/problem+json'] && res.content['application/problem+json'].schema.$ref === '#/components/schemas/Problem')) {
+        fail(method.toUpperCase() + ' ' + p + ' ' + status + ': not a Problem response');
+      }
+    }
+  }
+}
+const problem = openapi.components.schemas.Problem;
+if (JSON.stringify(problem.properties.code.enum) !== JSON.stringify(Object.keys(contract.errors))) fail('Problem.code enum does not match edge/contract.json');
+for (const t of manifest.tools) {
+  const op = openapi.paths[contract.tools_path + '/' + t.name] && openapi.paths[contract.tools_path + '/' + t.name].post;
+  if (!op) { fail('openapi.json has no tool endpoint for ' + t.name); continue; }
+  const strip = (x) => JSON.stringify(x, (k, v) => (k === '$schema' ? undefined : v));
+  if (strip(op.requestBody.content['application/json'].schema) !== strip(t.inputSchema)) fail(t.name + ': REST request schema differs from the tool inputSchema');
+  if (strip(op.responses['200'].content['application/json'].schema) !== strip(t.outputSchema)) fail(t.name + ': REST response schema differs from the tool outputSchema');
+}
+
+// Every indexable page has a Markdown copy at <page>.md, linked from its head.
+(function walkPages(dir) {
+  for (const e of fs.readdirSync(path.join(ROOT, dir), { withFileTypes: true })) {
+    if (e.name.startsWith('.') || ['node_modules', 'uploads', 'scripts'].includes(e.name)) continue;
+    const rel = dir ? dir + '/' + e.name : e.name;
+    if (e.isDirectory()) { walkPages(rel); continue; }
+    if (!e.name.endsWith('.html') || rel === '404.html') continue;
+    const html = fs.readFileSync(path.join(ROOT, rel), 'utf8');
+    if (/<meta name="robots" content="[^"]*noindex/.test(html) || /<meta http-equiv="refresh"/.test(html)) continue;
+    const mdFile = path.join(ROOT, rel + '.md');
+    if (!fs.existsSync(mdFile)) { fail(rel + ': no Markdown copy at ' + rel + '.md'); continue; }
+    const md = fs.readFileSync(mdFile, 'utf8');
+    if (!/^# \S/.test(md) || md.length < 200) fail(rel + '.md: does not start with an h1 or is too short');
+    if (!html.includes('<link rel="alternate" type="text/markdown" href="/' + rel + '.md"')) fail(rel + ': head does not link its Markdown copy');
+  }
+})('');
 
 // JSON-LD must parse on every page.
 (function walk(dir) {

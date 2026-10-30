@@ -3,7 +3,7 @@
   "catalog_number": 427,
   "title": "Preventive Maintenance Planning",
   "url": "https://datacentertraining.us/courses/preventive-maintenance-planning.html",
-  "api_url": "https://datacentertraining.us/api/courses/preventive-maintenance-planning.json",
+  "api_url": "https://datacentertraining.us/api/v1/courses/preventive-maintenance-planning.json",
   "track": "Operations & Reliability Track",
   "category": "Operations",
   "course_type": "modular",
@@ -100,5 +100,5 @@
     "business-continuity-disaster-recovery-planning",
     "building-maintenance-fundamentals"
   ],
-  "last_updated": "2026-10-28"
+  "last_updated": "2026-10-30"
 }

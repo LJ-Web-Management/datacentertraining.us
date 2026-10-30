@@ -3,7 +3,7 @@
   "catalog_number": 407,
   "title": "Disaster Recovery & Business Continuity",
   "url": "https://datacentertraining.us/courses/disaster-recovery-business-continuity.html",
-  "api_url": "https://datacentertraining.us/api/courses/disaster-recovery-business-continuity.json",
+  "api_url": "https://datacentertraining.us/api/v1/courses/disaster-recovery-business-continuity.json",
   "track": "Operations & Reliability Track",
   "category": "Operations",
   "course_type": "comprehensive",
@@ -107,5 +107,5 @@
     "business-continuity-disaster-recovery-planning",
     "building-maintenance-fundamentals"
   ],
-  "last_updated": "2026-10-28"
+  "last_updated": "2026-10-30"
 }

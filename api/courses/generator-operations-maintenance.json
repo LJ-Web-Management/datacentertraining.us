@@ -3,7 +3,7 @@
   "catalog_number": 424,
   "title": "Generator Operations & Maintenance",
   "url": "https://datacentertraining.us/courses/generator-operations-maintenance.html",
-  "api_url": "https://datacentertraining.us/api/courses/generator-operations-maintenance.json",
+  "api_url": "https://datacentertraining.us/api/v1/courses/generator-operations-maintenance.json",
   "track": "Power & Electrical Systems Track",
   "category": "Power & Electrical",
   "course_type": "modular",
@@ -96,5 +96,5 @@
     "batteries-dc-circuits",
     "data-center-arc-flash-safety"
   ],
-  "last_updated": "2026-10-28"
+  "last_updated": "2026-10-30"
 }

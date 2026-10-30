@@ -3,7 +3,7 @@
   "catalog_number": 462,
   "title": "UPS Systems Fundamentals",
   "url": "https://datacentertraining.us/courses/ups-systems-fundamentals.html",
-  "api_url": "https://datacentertraining.us/api/courses/ups-systems-fundamentals.json",
+  "api_url": "https://datacentertraining.us/api/v1/courses/ups-systems-fundamentals.json",
   "track": "Power & Electrical Systems Track",
   "category": "Power & Electrical",
   "course_type": "modular",
@@ -96,5 +96,5 @@
     "electrical-safety-best-practices",
     "batteries-dc-circuits"
   ],
-  "last_updated": "2026-10-28"
+  "last_updated": "2026-10-30"
 }

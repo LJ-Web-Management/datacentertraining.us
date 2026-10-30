@@ -3,7 +3,7 @@
   "catalog_number": 401,
   "title": "Data Center Design Fundamentals",
   "url": "https://datacentertraining.us/courses/data-center-design-fundamentals.html",
-  "api_url": "https://datacentertraining.us/api/courses/data-center-design-fundamentals.json",
+  "api_url": "https://datacentertraining.us/api/v1/courses/data-center-design-fundamentals.json",
   "track": "Design, Planning & Commissioning Track",
   "category": "Design & Planning",
   "course_type": "comprehensive",
@@ -105,5 +105,5 @@
     "infrastructure-commissioning-startup",
     "capacity-planning-forecasting"
   ],
-  "last_updated": "2026-10-28"
+  "last_updated": "2026-10-30"
 }

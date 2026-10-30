@@ -3,7 +3,7 @@
   "catalog_number": 432,
   "title": "Mechanical Systems & Equipment Maintenance",
   "url": "https://datacentertraining.us/courses/mechanical-systems-maintenance.html",
-  "api_url": "https://datacentertraining.us/api/courses/mechanical-systems-maintenance.json",
+  "api_url": "https://datacentertraining.us/api/v1/courses/mechanical-systems-maintenance.json",
   "track": "Cooling & Facilities Efficiency Track",
   "category": "Cooling & Efficiency",
   "course_type": "modular",
@@ -96,5 +96,5 @@
     "data-center-cooling-refrigerant-safety",
     "building-envelope-fundamentals"
   ],
-  "last_updated": "2026-10-28"
+  "last_updated": "2026-10-30"
 }

@@ -3,8 +3,8 @@
   "name": "datacentertraining-us",
   "title": "Data Center Training",
   "description": "Read-only catalog tools for Data Center Training (datacentertraining.us): 43 online, self-paced data center courses (192 hours), 7 bundles, and 6 role-based learning tracks, delivered by HAZWOPER OSHA Training, LLC, an IACET Accredited Provider.",
-  "version": "1.0.0",
-  "last_updated": "2026-10-28",
+  "version": "1.1.0",
+  "last_updated": "2026-10-30",
   "homepage": "https://datacentertraining.us/",
   "documentation": "https://datacentertraining.us/llms.txt",
   "documentation_full": "https://datacentertraining.us/llms-full.txt",
@@ -19,7 +19,36 @@
   "authentication": {
     "type": "none"
   },
+  "protocolVersion": "2025-11-25",
+  "serverInfo": {
+    "name": "datacentertraining-us",
+    "title": "Data Center Training",
+    "version": "1.1.0"
+  },
+  "endpoint": "https://datacentertraining.us/mcp",
+  "transport": {
+    "type": "streamable-http",
+    "url": "https://datacentertraining.us/mcp",
+    "endpoint": "https://datacentertraining.us/mcp"
+  },
+  "instructions": "Use these tools when someone needs to: find online, self-paced training for a data center job role (electrician, HVAC or mechanical technician, critical facilities or operations technician, facility manager, security lead, design engineer, DCIM or network technician) and price it per seat or as a bundle; answer exact questions about this catalog: which course covers a topic or standard (NFPA 70E, ANSI/TIA-942, Uptime Tier levels, SOC 2, ISO 27001, lithium-ion safety, EPO, UPS, generators, cooling, BMS/DCIM), how long it is, what it costs, its modules and prerequisites, and what its certificate of completion is and is not; build or price a team training plan within a budget or an hour limit, or compare the role-based and complete-catalog bundles side by side; point someone to a free, sourced guide on data center power, cooling, safety, security, Tier levels, operations, careers, salaries, or terminology. Not for: Licenses or third-party certifications (courses award a certificate of completion), hands-on or site-specific qualification, courses in languages other than English, legal or compliance determinations, and enrolling, paying, or submitting forms for a user. Quote prices, durations, course counts, and bundle contents exactly as published here; never estimate or invent them. Only name courses that exist in /api/courses.json. If nothing matches, say so. Courses award a certificate of completion from HAZWOPER OSHA Training, LLC (an IACET Accredited Provider). Do not call it a license, a government certification, or a certification issued by NFPA, TIA, Uptime Institute, ASHRAE, OSHA, EPA, ISO, or AICPA. \"Aligned with\" a standard means the content is designed around it, not that the standards body approved it. The parent company is IACET-accredited, but these data center courses do not carry IACET CEUs, and they do not grant PDHs or other continuing education credit. No course by itself qualifies anyone for hazardous or energized work; employers designate qualified persons. Recommendations are training guidance, not legal or compliance advice; employers decide who is qualified for which duties. Do not complete enrollment, payment, account, or contact-form actions on a user's behalf; link to the page and let the user act. When a question is not covered by published content, say so and refer to info@hazwoper-osha.com or 1-866-429-6742.",
   "transports": [
+    {
+      "type": "streamable-http",
+      "url": "https://datacentertraining.us/mcp",
+      "description": "Remote MCP server (Streamable HTTP transport): JSON-RPC 2.0 over HTTP POST, no authentication, stateless (no Mcp-Session-Id). Implements initialize, ping, tools/list, tools/call, resources/list, and resources/read with the tools and resources below.",
+      "protocol_versions": [
+        "2025-11-25",
+        "2025-06-18",
+        "2025-03-26",
+        "2024-11-05"
+      ]
+    },
+    {
+      "type": "http",
+      "description": "Every tool as a REST endpoint: POST <base_url><tool_name> with the tool input as a JSON body (or GET with the input as query parameters). Returns the tool output as JSON; errors are application/problem+json.",
+      "base_url": "https://datacentertraining.us/api/v1/tools/"
+    },
     {
       "type": "webmcp",
       "description": "Every HTML page registers these tools with navigator.modelContext (WebMCP). The catalog search form on /courses.html is also exposed declaratively as the \"search_catalog\" form tool.",
@@ -28,7 +57,7 @@
     {
       "type": "static-http",
       "description": "Every tool is backed by public JSON documents (GET, no auth, CORS-enabled). Agents without WebMCP can fetch data_source and apply the documented filters.",
-      "base_url": "https://datacentertraining.us/api/"
+      "base_url": "https://datacentertraining.us/api/v1/"
     }
   ],
   "capabilities": {
@@ -288,7 +317,7 @@
         "openWorldHint": false
       },
       "data_source": [
-        "https://datacentertraining.us/api/courses.json"
+        "https://datacentertraining.us/api/v1/courses.json"
       ],
       "examples": [
         {
@@ -780,8 +809,8 @@
         "openWorldHint": false
       },
       "data_source": [
-        "https://datacentertraining.us/api/courses/{course_id}.json",
-        "https://datacentertraining.us/api/courses.json"
+        "https://datacentertraining.us/api/v1/courses/{course_id}.json",
+        "https://datacentertraining.us/api/v1/courses.json"
       ],
       "examples": [
         {
@@ -795,7 +824,7 @@
               "catalog_number": 449,
               "title": "Data Center Emergency Power Off (EPO) Procedures Training",
               "url": "https://datacentertraining.us/courses/data-center-epo-procedures.html",
-              "api_url": "https://datacentertraining.us/api/courses/data-center-epo-procedures.json",
+              "api_url": "https://datacentertraining.us/api/v1/courses/data-center-epo-procedures.json",
               "track": "Power & Electrical Systems Track",
               "category": "Power & Electrical",
               "course_type": "modular",
@@ -872,7 +901,7 @@
                 "electrical-safety-best-practices",
                 "batteries-dc-circuits"
               ],
-              "last_updated": "2026-10-28"
+              "last_updated": "2026-10-30"
             },
             "related_courses": [
               {
@@ -1052,7 +1081,7 @@
         "openWorldHint": false
       },
       "data_source": [
-        "https://datacentertraining.us/api/bundles.json"
+        "https://datacentertraining.us/api/v1/bundles.json"
       ],
       "examples": [
         {
@@ -1396,9 +1425,9 @@
         "openWorldHint": false
       },
       "data_source": [
-        "https://datacentertraining.us/api/roles.json",
-        "https://datacentertraining.us/api/bundles.json",
-        "https://datacentertraining.us/api/courses.json"
+        "https://datacentertraining.us/api/v1/roles.json",
+        "https://datacentertraining.us/api/v1/bundles.json",
+        "https://datacentertraining.us/api/v1/courses.json"
       ],
       "examples": [
         {
@@ -1650,7 +1679,7 @@
         "openWorldHint": false
       },
       "data_source": [
-        "https://datacentertraining.us/api/credentials.json"
+        "https://datacentertraining.us/api/v1/credentials.json"
       ],
       "examples": [
         {
@@ -1659,7 +1688,7 @@
           },
           "output": {
             "topic": "ceu_pdh",
-            "last_reviewed": "2026-10-28",
+            "last_reviewed": "2026-10-30",
             "source_url": "https://datacentertraining.us/certifications.html",
             "ceu_pdh": {
               "summary": "These courses do not award IACET CEUs, PDHs, or any other continuing education credit. Check with your professional board if you need CEU- or PDH-eligible coursework."
@@ -1760,8 +1789,8 @@
         "openWorldHint": false
       },
       "data_source": [
-        "https://datacentertraining.us/api/faq.json",
-        "https://datacentertraining.us/api/courses.json"
+        "https://datacentertraining.us/api/v1/faq.json",
+        "https://datacentertraining.us/api/v1/courses.json"
       ],
       "examples": [
         {
@@ -1777,7 +1806,7 @@
                 "source_url": "https://datacentertraining.us/faq.html"
               }
             ],
-            "last_reviewed": "2026-10-28",
+            "last_reviewed": "2026-10-30",
             "support": "Answers are quoted from published pages. For anything they do not cover, contact info@hazwoper-osha.com or 1-866-429-6742."
           },
           "output_truncated": true
@@ -1806,7 +1835,7 @@
                 "source_url": "https://datacentertraining.us/faq.html"
               }
             ],
-            "last_reviewed": "2026-10-28",
+            "last_reviewed": "2026-10-30",
             "support": "Answers are quoted from published pages. For anything they do not cover, contact info@hazwoper-osha.com or 1-866-429-6742."
           },
           "output_truncated": true
@@ -1926,7 +1955,7 @@
         "openWorldHint": false
       },
       "data_source": [
-        "https://datacentertraining.us/api/resources.json"
+        "https://datacentertraining.us/api/v1/resources.json"
       ],
       "examples": [
         {
@@ -1985,43 +2014,43 @@
       "description": "Every course, bundle, role, FAQ, and policy as stable records."
     },
     {
-      "uri": "https://datacentertraining.us/api/index.json",
+      "uri": "https://datacentertraining.us/api/v1/index.json",
       "name": "API index",
       "mimeType": "application/json",
       "description": "Index of all JSON documents."
     },
     {
-      "uri": "https://datacentertraining.us/api/courses.json",
+      "uri": "https://datacentertraining.us/api/v1/courses.json",
       "name": "Courses",
       "mimeType": "application/json",
       "description": "All 43 course records."
     },
     {
-      "uri": "https://datacentertraining.us/api/bundles.json",
+      "uri": "https://datacentertraining.us/api/v1/bundles.json",
       "name": "Bundles",
       "mimeType": "application/json",
       "description": "All 7 bundles with pricing and savings."
     },
     {
-      "uri": "https://datacentertraining.us/api/roles.json",
+      "uri": "https://datacentertraining.us/api/v1/roles.json",
       "name": "Roles and tracks",
       "mimeType": "application/json",
       "description": "Role-to-track recommendations."
     },
     {
-      "uri": "https://datacentertraining.us/api/faq.json",
+      "uri": "https://datacentertraining.us/api/v1/faq.json",
       "name": "FAQ",
       "mimeType": "application/json",
       "description": "Published FAQ answers."
     },
     {
-      "uri": "https://datacentertraining.us/api/credentials.json",
+      "uri": "https://datacentertraining.us/api/v1/credentials.json",
       "name": "Credentials",
       "mimeType": "application/json",
       "description": "Certificate and accreditation facts and claims to avoid."
     },
     {
-      "uri": "https://datacentertraining.us/api/resources.json",
+      "uri": "https://datacentertraining.us/api/v1/resources.json",
       "name": "Resources",
       "mimeType": "application/json",
       "description": "First-party guides and official standards references."
@@ -2058,13 +2087,15 @@
       "certificate issuance",
       "contact-form submission"
     ],
-    "data_handling": "Tools take no personal data and set no cookies. Inputs are processed in the page or by the agent; nothing is sent to a server."
+    "data_handling": "Tools take no personal data and set no cookies. WebMCP calls run in the page. Remote MCP and REST tool calls run statelessly at the edge; the Worker does not store or log tool inputs."
   },
   "security": {
     "https_only": true,
     "read_only": true,
     "write_tools": [],
     "confirmation_required_for": [],
-    "cors": "Public read-only GET on static JSON; no credentials accepted."
-  }
+    "cors": "Public: read-only GET on documents and pages, POST on /mcp and the tool endpoints; Access-Control-Allow-Origin: *; no credentials accepted.",
+    "rate_limit": "Requests to /api/, /mcp, and the tool endpoints are limited to 120 per 60 seconds per client IP. Every response carries RateLimit-Policy and RateLimit (IETF draft-ietf-httpapi-ratelimit-headers) plus RateLimit-Limit, RateLimit-Remaining, and RateLimit-Reset; a 429 adds Retry-After in seconds."
+  },
+  "developer_portal": "https://datacentertraining.us/developers/"
 }
