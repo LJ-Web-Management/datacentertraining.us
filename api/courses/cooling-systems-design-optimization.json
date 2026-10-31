@@ -3,7 +3,7 @@
   "catalog_number": 406,
   "title": "Cooling Systems Design & Optimization",
   "url": "https://datacentertraining.us/courses/cooling-systems-design-optimization.html",
-  "api_url": "https://datacentertraining.us/api/courses/cooling-systems-design-optimization.json",
+  "api_url": "https://datacentertraining.us/api/v1/courses/cooling-systems-design-optimization.json",
   "track": "Cooling & Facilities Efficiency Track",
   "category": "Cooling & Efficiency",
   "course_type": "comprehensive",
@@ -108,5 +108,5 @@
     "data-center-cooling-refrigerant-safety",
     "building-envelope-fundamentals"
   ],
-  "last_updated": "2026-10-28"
+  "last_updated": "2026-10-30"
 }

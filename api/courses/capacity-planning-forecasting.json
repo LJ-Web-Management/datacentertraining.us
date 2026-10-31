@@ -3,7 +3,7 @@
   "catalog_number": 426,
   "title": "Capacity Planning & Forecasting",
   "url": "https://datacentertraining.us/courses/capacity-planning-forecasting.html",
-  "api_url": "https://datacentertraining.us/api/courses/capacity-planning-forecasting.json",
+  "api_url": "https://datacentertraining.us/api/v1/courses/capacity-planning-forecasting.json",
   "track": "Design, Planning & Commissioning Track",
   "category": "Design & Planning",
   "course_type": "modular",
@@ -94,5 +94,5 @@
     "tier-infrastructure-fundamentals",
     "infrastructure-commissioning-startup"
   ],
-  "last_updated": "2026-10-28"
+  "last_updated": "2026-10-30"
 }

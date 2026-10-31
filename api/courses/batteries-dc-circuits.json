@@ -3,7 +3,7 @@
   "catalog_number": 441,
   "title": "Batteries and DC Circuits",
   "url": "https://datacentertraining.us/courses/batteries-dc-circuits.html",
-  "api_url": "https://datacentertraining.us/api/courses/batteries-dc-circuits.json",
+  "api_url": "https://datacentertraining.us/api/v1/courses/batteries-dc-circuits.json",
   "track": "Power & Electrical Systems Track",
   "category": "Power & Electrical",
   "course_type": "modular",
@@ -96,5 +96,5 @@
     "electrical-safety-best-practices",
     "data-center-arc-flash-safety"
   ],
-  "last_updated": "2026-10-28"
+  "last_updated": "2026-10-30"
 }

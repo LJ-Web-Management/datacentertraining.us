@@ -3,7 +3,7 @@
   "catalog_number": 450,
   "title": "Data Center Fire Suppression System Safety Training (Clean Agent Systems)",
   "url": "https://datacentertraining.us/courses/data-center-fire-suppression-safety.html",
-  "api_url": "https://datacentertraining.us/api/courses/data-center-fire-suppression-safety.json",
+  "api_url": "https://datacentertraining.us/api/v1/courses/data-center-fire-suppression-safety.json",
   "track": "Security & Compliance Track",
   "category": "Security & Compliance",
   "course_type": "modular",
@@ -105,5 +105,5 @@
     "facility-environmental-compliance",
     "data-center-physical-security-access-control"
   ],
-  "last_updated": "2026-10-28"
+  "last_updated": "2026-10-30"
 }

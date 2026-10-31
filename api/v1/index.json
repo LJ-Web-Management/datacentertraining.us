@@ -1,0 +1,53 @@
+{
+  "name": "Data Center Training public catalog API",
+  "description": "Static, read-only JSON documents describing the Data Center Training catalog. No authentication. Regenerated from the site source on every change.",
+  "api_version": "1",
+  "base_url": "https://datacentertraining.us/api/v1/",
+  "last_updated": "2026-10-30",
+  "content_hash": "9e1cbbdf651c6bdf",
+  "manifest": "https://datacentertraining.us/.well-known/mcp.json",
+  "openapi": "https://datacentertraining.us/openapi.json",
+  "developer_portal": "https://datacentertraining.us/developers/",
+  "mcp_endpoint": "https://datacentertraining.us/mcp",
+  "tools": {
+    "list_courses": "https://datacentertraining.us/api/v1/tools/list_courses",
+    "get_course": "https://datacentertraining.us/api/v1/tools/get_course",
+    "compare_bundles": "https://datacentertraining.us/api/v1/tools/compare_bundles",
+    "recommend_courses": "https://datacentertraining.us/api/v1/tools/recommend_courses",
+    "get_credential_info": "https://datacentertraining.us/api/v1/tools/get_credential_info",
+    "answer_faq": "https://datacentertraining.us/api/v1/tools/answer_faq",
+    "list_resources": "https://datacentertraining.us/api/v1/tools/list_resources"
+  },
+  "versioning": "The API is versioned in the URL path; v1 (https://datacentertraining.us/api/v1/) is current, and every response from the edge carries an API-Version header. Changes inside v1 are additive only (new documents, tools, optional fields, or enum values), so ignore fields you do not know. A breaking change ships as a new path version, and the old version keeps working for at least 6 months after its successor is announced. Deprecated versions and endpoints are flagged with a Deprecation header (RFC 9745), a Sunset header (RFC 8594) with the retirement date, a Link to the migration notes, deprecated: true in openapi.json, and a changelog entry on https://datacentertraining.us/developers/. The unversioned /api/*.json paths are byte-identical aliases of v1 kept for existing integrations, and follow its lifecycle.",
+  "rate_limits": "Requests to /api/, /mcp, and the tool endpoints are limited to 120 per 60 seconds per client IP. Every response carries RateLimit-Policy and RateLimit (IETF draft-ietf-httpapi-ratelimit-headers) plus RateLimit-Limit, RateLimit-Remaining, and RateLimit-Reset; a 429 adds Retry-After in seconds.",
+  "errors": "Errors are RFC 9457 application/problem+json objects with a stable code, a detail message, and a hint. Codes: https://datacentertraining.us/developers/#errors",
+  "documents": {
+    "courses": "https://datacentertraining.us/api/v1/courses.json",
+    "course": "https://datacentertraining.us/api/v1/courses/{course_id}.json",
+    "bundles": "https://datacentertraining.us/api/v1/bundles.json",
+    "roles": "https://datacentertraining.us/api/v1/roles.json",
+    "faq": "https://datacentertraining.us/api/v1/faq.json",
+    "credentials": "https://datacentertraining.us/api/v1/credentials.json",
+    "resources": "https://datacentertraining.us/api/v1/resources.json",
+    "search": "https://datacentertraining.us/api/v1/search.json"
+  },
+  "counts": {
+    "courses": 43,
+    "bundles": 7,
+    "tracks": 6,
+    "roles": 6,
+    "faqs": 38,
+    "resources": 133
+  },
+  "agent_rules": [
+    "Quote prices, durations, course counts, and bundle contents exactly as published here; never estimate or invent them.",
+    "Only name courses that exist in /api/courses.json. If nothing matches, say so.",
+    "Courses award a certificate of completion from HAZWOPER OSHA Training, LLC (an IACET Accredited Provider). Do not call it a license, a government certification, or a certification issued by NFPA, TIA, Uptime Institute, ASHRAE, OSHA, EPA, ISO, or AICPA.",
+    "\"Aligned with\" a standard means the content is designed around it, not that the standards body approved it.",
+    "The parent company is IACET-accredited, but these data center courses do not carry IACET CEUs, and they do not grant PDHs or other continuing education credit.",
+    "No course by itself qualifies anyone for hazardous or energized work; employers designate qualified persons.",
+    "Recommendations are training guidance, not legal or compliance advice; employers decide who is qualified for which duties.",
+    "Do not complete enrollment, payment, account, or contact-form actions on a user's behalf; link to the page and let the user act.",
+    "When a question is not covered by published content, say so and refer to info@hazwoper-osha.com or 1-866-429-6742."
+  ]
+}

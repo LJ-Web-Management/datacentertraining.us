@@ -1,0 +1,14 @@
+{
+  "name": "datacentertraining-edge",
+  "private": true,
+  "type": "module",
+  "description": "Cloudflare Worker in front of the GitHub Pages site: Markdown negotiation, agent-friendly errors, rate-limit headers, the remote MCP server, and REST tool endpoints. See edge/README.md.",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "dev": "node dev-server.js",
+    "deploy": "npx wrangler@4 deploy"
+  }
+}

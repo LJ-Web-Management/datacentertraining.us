@@ -3,7 +3,7 @@
   "catalog_number": 443,
   "title": "Building Envelope Fundamentals",
   "url": "https://datacentertraining.us/courses/building-envelope-fundamentals.html",
-  "api_url": "https://datacentertraining.us/api/courses/building-envelope-fundamentals.json",
+  "api_url": "https://datacentertraining.us/api/v1/courses/building-envelope-fundamentals.json",
   "track": "Cooling & Facilities Efficiency Track",
   "category": "Cooling & Efficiency",
   "course_type": "modular",
@@ -96,5 +96,5 @@
     "mechanical-systems-maintenance",
     "data-center-cooling-refrigerant-safety"
   ],
-  "last_updated": "2026-10-28"
+  "last_updated": "2026-10-30"
 }

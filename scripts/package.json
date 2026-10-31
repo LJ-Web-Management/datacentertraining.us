@@ -4,7 +4,7 @@
   "description": "Build and validation scripts for datacentertraining.us (see scripts/README.md).",
   "scripts": {
     "build": "node build-site.js",
-    "check": "node build-site.js --check && node validate-agent-layer.js && python3 audit_site.py"
+    "check": "node build-site.js --check && node validate-agent-layer.js && node --test html-to-markdown.test.js && python3 audit_site.py"
   },
   "devDependencies": {
     "ajv": "^8.17.1",

@@ -3,7 +3,7 @@
   "catalog_number": 433,
   "title": "Electrical Safety & Best Practices",
   "url": "https://datacentertraining.us/courses/electrical-safety-best-practices.html",
-  "api_url": "https://datacentertraining.us/api/courses/electrical-safety-best-practices.json",
+  "api_url": "https://datacentertraining.us/api/v1/courses/electrical-safety-best-practices.json",
   "track": "Power & Electrical Systems Track",
   "category": "Power & Electrical",
   "course_type": "modular",
@@ -98,5 +98,5 @@
     "batteries-dc-circuits",
     "data-center-arc-flash-safety"
   ],
-  "last_updated": "2026-10-28"
+  "last_updated": "2026-10-30"
 }

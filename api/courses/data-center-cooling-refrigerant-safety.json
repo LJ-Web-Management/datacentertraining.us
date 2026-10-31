@@ -3,7 +3,7 @@
   "catalog_number": 447,
   "title": "Data Center Cooling System and Refrigerant Safety Training",
   "url": "https://datacentertraining.us/courses/data-center-cooling-refrigerant-safety.html",
-  "api_url": "https://datacentertraining.us/api/courses/data-center-cooling-refrigerant-safety.json",
+  "api_url": "https://datacentertraining.us/api/v1/courses/data-center-cooling-refrigerant-safety.json",
   "track": "Cooling & Facilities Efficiency Track",
   "category": "Cooling & Efficiency",
   "course_type": "modular",
@@ -98,5 +98,5 @@
     "mechanical-systems-maintenance",
     "building-envelope-fundamentals"
   ],
-  "last_updated": "2026-10-28"
+  "last_updated": "2026-10-30"
 }

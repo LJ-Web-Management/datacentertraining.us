@@ -3,7 +3,7 @@
   "catalog_number": 402,
   "title": "Tier Infrastructure Fundamentals",
   "url": "https://datacentertraining.us/courses/tier-infrastructure-fundamentals.html",
-  "api_url": "https://datacentertraining.us/api/courses/tier-infrastructure-fundamentals.json",
+  "api_url": "https://datacentertraining.us/api/v1/courses/tier-infrastructure-fundamentals.json",
   "track": "Design, Planning & Commissioning Track",
   "category": "Design & Planning",
   "course_type": "comprehensive",
@@ -105,5 +105,5 @@
     "infrastructure-commissioning-startup",
     "capacity-planning-forecasting"
   ],
-  "last_updated": "2026-10-28"
+  "last_updated": "2026-10-30"
 }

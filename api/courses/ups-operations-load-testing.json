@@ -3,7 +3,7 @@
   "catalog_number": 422,
   "title": "UPS Operations & Load Testing",
   "url": "https://datacentertraining.us/courses/ups-operations-load-testing.html",
-  "api_url": "https://datacentertraining.us/api/courses/ups-operations-load-testing.json",
+  "api_url": "https://datacentertraining.us/api/v1/courses/ups-operations-load-testing.json",
   "track": "Power & Electrical Systems Track",
   "category": "Power & Electrical",
   "course_type": "modular",
@@ -100,5 +100,5 @@
     "batteries-dc-circuits",
     "data-center-arc-flash-safety"
   ],
-  "last_updated": "2026-10-28"
+  "last_updated": "2026-10-30"
 }

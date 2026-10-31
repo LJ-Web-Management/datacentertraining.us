@@ -3,7 +3,7 @@
   "catalog_number": 409,
   "title": "Monitoring, Automation & BMS Systems",
   "url": "https://datacentertraining.us/courses/monitoring-automation-bms-systems.html",
-  "api_url": "https://datacentertraining.us/api/courses/monitoring-automation-bms-systems.json",
+  "api_url": "https://datacentertraining.us/api/v1/courses/monitoring-automation-bms-systems.json",
   "track": "Monitoring & Smart Facility Track",
   "category": "Monitoring & Automation",
   "course_type": "comprehensive",
@@ -106,5 +106,5 @@
     "fiber-optics-network-cabling",
     "building-automation-systems-fundamentals"
   ],
-  "last_updated": "2026-10-28"
+  "last_updated": "2026-10-30"
 }

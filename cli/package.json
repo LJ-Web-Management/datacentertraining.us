@@ -1,0 +1,44 @@
+{
+  "name": "datacentertraining",
+  "version": "1.0.0",
+  "description": "Official command-line client for the Data Center Training catalog API: search data center courses, compare bundles, get role-based recommendations, answer FAQs, and read site pages as Markdown.",
+  "type": "module",
+  "bin": {
+    "datacentertraining": "datacentertraining.mjs",
+    "dct": "datacentertraining.mjs"
+  },
+  "files": [
+    "datacentertraining.mjs",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs"
+  },
+  "keywords": [
+    "data center",
+    "data center training",
+    "courses",
+    "cli",
+    "mcp",
+    "ai-agents",
+    "nfpa-70e"
+  ],
+  "homepage": "https://datacentertraining.us/developers/#cli",
+  "bugs": {
+    "email": "info@hazwoper-osha.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LJ-Web-Management/datacentertraining.us.git",
+    "directory": "cli"
+  },
+  "author": "HAZWOPER OSHA Training, LLC <info@hazwoper-osha.com> (https://datacentertraining.us/)",
+  "license": "UNLICENSED",
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
+}

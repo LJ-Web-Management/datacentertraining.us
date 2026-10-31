@@ -1,0 +1,63 @@
+name: CLI (test + publish to npm)
+
+# Tests the datacentertraining CLI in cli/ against the edge Worker on every
+# change, and publishes it to npm from main when cli/package.json has a version
+# that is not on npm yet and the NPM_TOKEN secret exists.
+on:
+  pull_request:
+    paths:
+      - "cli/**"
+      - "edge/**"
+      - ".github/workflows/cli.yml"
+  push:
+    branches: [main]
+    paths:
+      - "cli/**"
+      - ".github/workflows/cli.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Test the CLI
+        working-directory: cli
+        run: npm test
+
+  publish:
+    needs: test
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write   # npm provenance
+    env:
+      HAS_TOKEN: ${{ secrets.NPM_TOKEN != '' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          registry-url: "https://registry.npmjs.org"
+      - name: Skip when npm is not set up yet
+        if: env.HAS_TOKEN != 'true'
+        run: echo "::warning::NPM_TOKEN is not set, so the CLI was not published to npm."
+      - name: Publish if this version is new
+        if: env.HAS_TOKEN == 'true'
+        working-directory: cli
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          VERSION=$(node -p "require('./package.json').version")
+          if npm view "datacentertraining@$VERSION" version >/dev/null 2>&1; then
+            echo "datacentertraining@$VERSION is already on npm."
+          else
+            npm publish --provenance --access public
+          fi

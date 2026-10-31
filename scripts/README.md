@@ -18,9 +18,11 @@ requests fail if a generated file is out of date.
 
 | Output | Source |
 | --- | --- |
-| `api/*.json`, `api/courses/<id>.json` | `js/config.js` (courses, bundles, prices), each `courses/<id>.html` (description, outcomes, modules, audience, FAQ), `faq.html`, `who.html`, `blog/posts.json` |
-| `.well-known/mcp.json` | Tool contract in `scripts/build-site.js`; examples are produced by running `js/webmcp.js` |
-| `openapi.json`, `llms.txt`, `llms-full.txt` | Same data |
+| `api/v1/*.json`, `api/v1/courses/<id>.json` (and byte-identical `api/*.json` aliases) | `js/config.js` (courses, bundles, prices), each `courses/<id>.html` (description, outcomes, modules, audience, FAQ), `faq.html`, `who.html`, `blog/posts.json` |
+| `.well-known/mcp.json` | Tool contract in `scripts/build-site.js`; examples are produced by running `js/webmcp.js`; the remote endpoint from `edge/contract.json` |
+| `openapi.json`, `llms.txt`, `llms-full.txt` | Same data, plus `edge/contract.json` (error codes, rate limits, MCP versions) and the agent guidance (`WHEN_TO_USE`, `VERSIONING`) in `build-site.js` |
+| `<page>.html.md` next to every indexable page | The page's `<main>`, converted by `scripts/html-to-markdown.js`; served for `Accept: text/markdown` by the edge Worker (`edge/`) |
+| `<!-- dct:errors -->` and the other blocks on `developers/index.html` | `edge/contract.json`, the tool list, and the agent guidance |
 | `css/site.min.css` | `css/tokens.css` + `css/style.css`, keeping only rules whose classes appear in a non-blog page or a script those pages load |
 | `blog/assets/css/blog.min.css` | the above + `blog/assets/css/blog.css`, keeping only rules the blog pages, their scripts, or `blog/scripts/` (the post converter) can use |
 | `<!-- dct:head -->` block in every page | `headBlock()` in `build-site.js` (security meta, agent links, deferred analytics/chat, WebMCP loader) |
@@ -78,8 +80,12 @@ Only courses go in the cart; bundles are bought on their own.
 - `build-site.js --check`: generated files are current.
 - `validate-agent-layer.js`: every tool schema compiles as JSON Schema Draft 7;
   every example and edge-case call validates against the declared input and
-  output schemas; every JSON document matches `openapi.json`; every URL in the
-  agent files exists; all JSON-LD parses.
+  output schemas; every JSON document matches `openapi.json`; every OpenAPI
+  operation has a unique operationId and RFC 9457 error responses; every URL in
+  the agent files exists (as a file or an edge route); `api/` and `api/v1/`
+  match; every indexable page has its Markdown copy; all JSON-LD parses.
+- `html-to-markdown.test.js`: the Markdown converter (`node --test`).
+- `edge/` and `cli/` have their own tests (`npm test` in each) and workflows.
 - `audit_site.py`: Ahrefs-style SEO audit: title 25-60 chars, description
   110-160 chars, one `<h1>`, no skipped heading levels, canonical = URL, full
   Open Graph + X card tags, image `alt`/`width`/`height`, no broken or

@@ -3,7 +3,7 @@
   "catalog_number": 457,
   "title": "Lithium-Ion Battery Thermal Runaway and Emergency Response Training",
   "url": "https://datacentertraining.us/courses/lithium-ion-thermal-runaway-emergency-response.html",
-  "api_url": "https://datacentertraining.us/api/courses/lithium-ion-thermal-runaway-emergency-response.json",
+  "api_url": "https://datacentertraining.us/api/v1/courses/lithium-ion-thermal-runaway-emergency-response.json",
   "track": "Power & Electrical Systems Track",
   "category": "Power & Electrical",
   "course_type": "modular",
@@ -96,5 +96,5 @@
     "electrical-safety-best-practices",
     "batteries-dc-circuits"
   ],
-  "last_updated": "2026-10-28"
+  "last_updated": "2026-10-30"
 }

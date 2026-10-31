@@ -3,7 +3,7 @@
   "catalog_number": 454,
   "title": "Emergency/Standby Power Systems Fundamentals",
   "url": "https://datacentertraining.us/courses/emergency-standby-power-systems-fundamentals.html",
-  "api_url": "https://datacentertraining.us/api/courses/emergency-standby-power-systems-fundamentals.json",
+  "api_url": "https://datacentertraining.us/api/v1/courses/emergency-standby-power-systems-fundamentals.json",
   "track": "Power & Electrical Systems Track",
   "category": "Power & Electrical",
   "course_type": "modular",
@@ -100,5 +100,5 @@
     "electrical-safety-best-practices",
     "batteries-dc-circuits"
   ],
-  "last_updated": "2026-10-28"
+  "last_updated": "2026-10-30"
 }

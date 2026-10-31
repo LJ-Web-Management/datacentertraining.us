@@ -1,0 +1,1645 @@
+{
+  "publisher": "Data Center Training (datacentertraining.us)",
+  "last_updated": "2026-10-30",
+  "license": "Public information; quote with attribution and a link to the source URL.",
+  "count": 133,
+  "resources": [
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Course Catalog",
+      "url": "https://datacentertraining.us/courses.html",
+      "description": "All 43 courses with search, sort, and filters by track, type, duration, or price.",
+      "topics": [
+        "catalog"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Course Bundles",
+      "url": "https://datacentertraining.us/bundles.html",
+      "description": "Seven role-based and complete-catalog bundles with pricing and savings.",
+      "topics": [
+        "pricing",
+        "bundles"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Which Courses Does Your Role Need?",
+      "url": "https://datacentertraining.us/who.html",
+      "description": "Role-to-track recommendations for electricians, HVAC techs, operations managers, security leads, engineers, and IT staff.",
+      "topics": [
+        "roles"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Certifications & Accreditations",
+      "url": "https://datacentertraining.us/certifications.html",
+      "description": "IACET provider accreditation and what a certificate of completion does and does not mean.",
+      "topics": [
+        "certificate",
+        "accreditation",
+        "credentials"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "FAQ",
+      "url": "https://datacentertraining.us/faq.html",
+      "description": "Answers about programs, pricing, certificates, access, team enrollment, and policies.",
+      "topics": [
+        "faq"
+      ],
+      "audience": []
+    },
+    {
+      "source": "HAZWOPER OSHA Training, LLC",
+      "type": "site_page",
+      "title": "Certificate Verification",
+      "url": "https://hazwoper-osha.com/certificate-verification",
+      "description": "Verify a learner certificate using its certificate number and issue date; confirms the named learner enrolled in, completed, and passed the listed course.",
+      "topics": [
+        "certificate",
+        "verification"
+      ],
+      "audience": []
+    },
+    {
+      "source": "U.S. Occupational Safety and Health Administration",
+      "type": "standard_reference",
+      "title": "OSHA 29 CFR 1910.146 - Permit-required confined spaces",
+      "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.146",
+      "description": "Federal OSHA confined space standard referenced by the raised floor and confined space awareness course.",
+      "topics": [
+        "confined",
+        "raised floor",
+        "osha"
+      ],
+      "audience": [
+        "operations",
+        "technician"
+      ]
+    },
+    {
+      "source": "U.S. Occupational Safety and Health Administration",
+      "type": "standard_reference",
+      "title": "OSHA 29 CFR 1910.333 - Selection and use of electrical work practices",
+      "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.333",
+      "description": "Federal OSHA electrical safety-related work practices standard.",
+      "topics": [
+        "electrical",
+        "osha"
+      ],
+      "audience": [
+        "electrician"
+      ]
+    },
+    {
+      "source": "U.S. Environmental Protection Agency",
+      "type": "standard_reference",
+      "title": "EPA Section 608 - Stationary refrigeration and air conditioning",
+      "url": "https://www.epa.gov/section608",
+      "description": "Federal refrigerant management requirements relevant to cooling system work.",
+      "topics": [
+        "refrigerant",
+        "cooling",
+        "epa"
+      ],
+      "audience": [
+        "hvac"
+      ]
+    },
+    {
+      "source": "International Organization for Standardization",
+      "type": "standard_reference",
+      "title": "ISO/IEC 27001 - Information security management systems",
+      "url": "https://www.iso.org/standard/27001",
+      "description": "International information security management standard referenced by the security and compliance program.",
+      "topics": [
+        "security",
+        "compliance",
+        "iso"
+      ],
+      "audience": [
+        "security"
+      ]
+    },
+    {
+      "source": "Uptime Institute",
+      "type": "standard_reference",
+      "title": "Uptime Institute Tier Classification System",
+      "url": "https://uptimeinstitute.com/tiers",
+      "description": "Tier I-IV infrastructure topology framework referenced by the Tier Infrastructure Fundamentals course.",
+      "topics": [
+        "tier",
+        "design"
+      ],
+      "audience": [
+        "design",
+        "engineer"
+      ]
+    },
+    {
+      "source": "ASHRAE",
+      "type": "standard_reference",
+      "title": "ASHRAE TC 9.9 - Mission Critical Facilities, Data Centers, Technology Spaces and Electronic Equipment",
+      "url": "https://tc0909.ashraetcs.org/",
+      "description": "ASHRAE technical committee behind the data center thermal guidelines referenced in cooling courses.",
+      "topics": [
+        "cooling",
+        "thermal",
+        "ashrae"
+      ],
+      "audience": [
+        "hvac"
+      ]
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "800 VDC Data Center Power: Safety, Standards, and Training",
+      "url": "https://datacentertraining.us/learn/800-vdc-data-center-safety.html",
+      "description": "What 800 VDC rack power means for data center safety: DC shock and arc hazards, test equipment, NFPA 70E, and how technicians build a qualification path.",
+      "topics": [
+        "guide"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "AI Data Centers: What High-Density Computing Changes for Facility Teams",
+      "url": "https://datacentertraining.us/learn/ai-data-centers.html",
+      "description": "How AI and GPU clusters change data center power, liquid cooling, floor loading, safety, and commissioning, and the skills facility teams need next.",
+      "topics": [
+        "guide",
+        "cooling",
+        "commissioning"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Anti-Tailgating in Access Control: How Data Centers Stop Piggybacking",
+      "url": "https://datacentertraining.us/learn/anti-tailgating.html",
+      "description": "What anti-tailgating means in access control, how mantraps, portals, and turnstiles stop piggybacking into data centers, and how it differs from anti-passback.",
+      "topics": [
+        "guide",
+        "access"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "CRAH Units Explained: Components, CRAH vs. CRAC, and Maintenance",
+      "url": "https://datacentertraining.us/learn/crah-units.html",
+      "description": "What a CRAH unit is, its main components, how it differs from a CRAC unit, common failures, and what CRAH technicians check during data center maintenance.",
+      "topics": [
+        "guide",
+        "maintenance"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center BMS: What a Building Management System Does",
+      "url": "https://datacentertraining.us/learn/data-center-bms.html",
+      "description": "What a building management system (BMS) does in a data center, what it monitors, how it differs from BAS, EPMS, and DCIM, and how BMS and DCIM connect.",
+      "topics": [
+        "guide",
+        "dcim",
+        "bms"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Commissioning Explained: Levels 1 to 5",
+      "url": "https://datacentertraining.us/learn/data-center-commissioning.html",
+      "description": "Data center commissioning explained: the five levels from factory witness testing to integrated systems testing, key documents, roles, and handover.",
+      "topics": [
+        "guide",
+        "commissioning"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "How Data Center Cooling Works",
+      "url": "https://datacentertraining.us/learn/data-center-cooling.html",
+      "description": "How data center cooling works: heat loads, ASHRAE inlet ranges, CRAC vs CRAH, chilled water, economizers, containment, liquid cooling, and refrigerant safety.",
+      "topics": [
+        "guide",
+        "cooling",
+        "refrigerant"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center EPO: What Emergency Power Off Is and How It Works",
+      "url": "https://datacentertraining.us/learn/data-center-epo.html",
+      "description": "What an EPO (emergency power off) is in a data center, what NEC Article 645 requires, how EPO systems work, and how to prevent accidental shutdowns.",
+      "topics": [
+        "guide"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Fire Suppression: Clean Agents, Detection, and Compliance",
+      "url": "https://datacentertraining.us/learn/data-center-fire-suppression.html",
+      "description": "How data center fire detection and suppression work: clean agents, preaction sprinklers, VESDA, NFPA 75 and 2001, and restoring compliance after a discharge.",
+      "topics": [
+        "guide",
+        "fire",
+        "suppression"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "How to Build a Data Center Maintenance Program",
+      "url": "https://datacentertraining.us/learn/data-center-maintenance-program.html",
+      "description": "How to build an equipment maintenance program for a data center: preventive, predictive, and corrective work, scheduling, CMMS data, frequencies, and KPIs.",
+      "topics": [
+        "guide",
+        "maintenance"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Operations: How Facilities Are Run 24/7",
+      "url": "https://datacentertraining.us/learn/data-center-operations.html",
+      "description": "How data centers are run day to day: 24/7 shifts, SOPs and MOPs, change control, maintenance, monitoring, incident response, DR testing, and key KPIs.",
+      "topics": [
+        "guide",
+        "maintenance"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "How Data Center Power Works: From the Grid to the Rack",
+      "url": "https://datacentertraining.us/learn/data-center-power.html",
+      "description": "How data center power works, from utility switchgear and generators to UPS systems, PDUs, and A/B feeds. Redundancy, testing, and safety explained.",
+      "topics": [
+        "guide",
+        "ups",
+        "generator"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Safety Checklist (Free and Printable)",
+      "url": "https://datacentertraining.us/learn/data-center-safety-checklist.html",
+      "description": "Free, printable data center health and safety checklist by area: electrical and battery rooms, generator yard, data hall, fire suppression, and contractors.",
+      "topics": [
+        "guide",
+        "electrical",
+        "generator",
+        "fire",
+        "suppression",
+        "battery",
+        "contractor"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Safety Guide: Hazards, Rules, and Training",
+      "url": "https://datacentertraining.us/learn/data-center-safety.html",
+      "description": "Data center safety explained: arc flash and NFPA 70E, lockout/tagout, battery and EPO hazards, clean agent systems, confined spaces, and safety training.",
+      "topics": [
+        "guide",
+        "battery",
+        "confined"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Physical Security and Compliance Explained",
+      "url": "https://datacentertraining.us/learn/data-center-security-compliance.html",
+      "description": "How data centers secure facilities: layered access control, mantraps, visitors, video, and what SOC 2, ISO 27001, PCI DSS, and HIPAA auditors check on site.",
+      "topics": [
+        "guide",
+        "security",
+        "access",
+        "visitor"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Security Guards: Armed vs. Unarmed, Duties, and Training",
+      "url": "https://datacentertraining.us/learn/data-center-security-guards.html",
+      "description": "What data center security guards do, when sites use armed security, licensing by state, and the training officers need beyond a standard guard license.",
+      "topics": [
+        "guide",
+        "security"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Standards and Regulations: A Practical Guide",
+      "url": "https://datacentertraining.us/learn/data-center-standards.html",
+      "description": "Data center codes, standards, and regulations explained: TIA-942, Uptime Tiers, NEC, NFPA 70E, ASHRAE, ISO 27001, SOC 2, EPA, and OSHA, and who enforces each.",
+      "topics": [
+        "guide",
+        "tier"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Tier Levels Explained: Tier I to Tier IV",
+      "url": "https://datacentertraining.us/learn/data-center-tiers.html",
+      "description": "Uptime Institute Tier I to IV explained: concurrent maintainability vs fault tolerance, downtime figures, TIA-942 Rated levels, certifications, and myths.",
+      "topics": [
+        "guide",
+        "tier"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Water Usage: How Much, Why, and How It Compares to Golf Courses",
+      "url": "https://datacentertraining.us/learn/data-center-water-usage.html",
+      "description": "Data center water usage explained: how much U.S. data centers use, why, how designs cut it, and how it compares with golf courses, citing LBNL and GCSAA data.",
+      "topics": [
+        "guide"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Energy Efficiency and PUE Explained",
+      "url": "https://datacentertraining.us/learn/energy-efficiency-pue.html",
+      "description": "What PUE is, how to calculate it with a worked example, where facility energy goes, PUE's limits, WUE and CUE, and a practical checklist to cut overhead.",
+      "topics": [
+        "guide",
+        "pue"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Glossary: 200+ Terms Explained",
+      "url": "https://datacentertraining.us/learn/glossary.html",
+      "description": "Plain-English definitions of 200+ data center terms: UPS, PUE, ATS, CRAH, Tier III, arc flash, LOTO, DCIM, colocation, cross-connects, and more.",
+      "topics": [
+        "guide",
+        "ups",
+        "dcim",
+        "pue",
+        "tier"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Everything You Need to Know About Data Centers",
+      "url": "https://datacentertraining.us/learn/",
+      "description": "Free guides to how data centers work: power, cooling, Tier levels, safety, security, operations, commissioning, energy efficiency, standards, and a glossary.",
+      "topics": [
+        "guide",
+        "cooling",
+        "security",
+        "commissioning",
+        "tier"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center 101: What Is a Data Center and How Does It Work?",
+      "url": "https://datacentertraining.us/learn/what-is-a-data-center.html",
+      "description": "What a data center is, what is inside one, the main types from colocation to hyperscale and edge, and how power, cooling, and security keep it running.",
+      "topics": [
+        "guide",
+        "cooling",
+        "security"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Arc Flash Training Online: Requirements & Courses",
+      "url": "https://datacentertraining.us/training/arc-flash-training.html",
+      "description": "Arc flash training explained: boundaries, labels, PPE categories, who needs it, how often to retrain, and online arc flash safety courses for data centers.",
+      "topics": [
+        "training"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "BMS & DCIM Training: Building Automation for Data Centers",
+      "url": "https://datacentertraining.us/training/bms-dcim-training.html",
+      "description": "BMS and DCIM training for data center teams: BMS vs. EPMS vs. DCIM, who needs which skills, alarm management, integration, and vendor-neutral online courses.",
+      "topics": [
+        "training",
+        "dcim",
+        "bms"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Building Automation System Training: BAS Courses, Certification, and Career Path",
+      "url": "https://datacentertraining.us/training/building-automation-training.html",
+      "description": "Building automation system (BAS) training online: what a BAS course covers, certification options, a learning path for technicians, and BAS for data centers.",
+      "topics": [
+        "training"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Business Continuity Training and Certification: BC/DR Courses Online",
+      "url": "https://datacentertraining.us/training/business-continuity-training.html",
+      "description": "Business continuity and disaster recovery training online: BCP certifications (CBCP, CBCI), ISO 22301, BIA, RTO and RPO, and courses for data center teams.",
+      "topics": [
+        "training"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Commissioning and Startup Training for Data Centers",
+      "url": "https://datacentertraining.us/training/commissioning-training.html",
+      "description": "Commissioning and startup training for data centers: what Cx courses cover, levels 1 to 5, commissioning certifications, UPS startup, and a learning path.",
+      "topics": [
+        "training",
+        "ups",
+        "commissioning"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Electrical Safety Training: NFPA 70E, OSHA, and In-House Programs",
+      "url": "https://datacentertraining.us/training/data-center-electrical-safety-training.html",
+      "description": "Data center electrical safety training: NFPA 70E and OSHA rules, qualified-person training, data hall hazards, in-house operator programs, and top U.S. markets.",
+      "topics": [
+        "training",
+        "electrical"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Safety Training by Location",
+      "url": "https://datacentertraining.us/training/data-center-safety-training-by-location.html",
+      "description": "Data center electrical safety and NFPA 70E training for Northern Virginia, Atlanta, Dallas, Phoenix, Columbus, Chicago and more, with the OSHA agency by state.",
+      "topics": [
+        "training",
+        "electrical"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Safety Training: Courses for Every Hazard",
+      "url": "https://datacentertraining.us/training/data-center-safety-training.html",
+      "description": "Data center safety training by hazard: electrical, arc flash, batteries, EPO, fire suppression, and confined space, with a role matrix and refresher rules.",
+      "topics": [
+        "training",
+        "electrical",
+        "fire",
+        "suppression",
+        "confined"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Security Certification and Training: Options by Role",
+      "url": "https://datacentertraining.us/training/data-center-security-training.html",
+      "description": "Data center security certifications and training compared: physical security, access control, compliance, and auditing credentials, plus courses for every role.",
+      "topics": [
+        "training",
+        "security",
+        "access"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Technician Training: Online Courses and a Step-by-Step Path",
+      "url": "https://datacentertraining.us/training/data-center-technician-training.html",
+      "description": "Data center technician training, step by step: what to learn first, a week-one safety plan, online courses, and how to get your employer to pay for it.",
+      "topics": [
+        "training"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Generator Training: Technician & Operator Courses Online",
+      "url": "https://datacentertraining.us/training/generator-training.html",
+      "description": "Generator training for data center teams: technician vs. operator training, transfer switches, load banks, fuel, NFPA 110 testing basics, safety, and courses.",
+      "topics": [
+        "training",
+        "generator"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Training, by Topic",
+      "url": "https://datacentertraining.us/training/",
+      "description": "Data center training programs by topic: technician, NFPA 70E, arc flash, lockout/tagout, UPS, generator, and BMS. Online, self-paced, with certificates.",
+      "topics": [
+        "training",
+        "ups",
+        "generator",
+        "bms"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Liquid Cooling Training: Systems, Safety, and Procedures",
+      "url": "https://datacentertraining.us/training/liquid-cooling-training.html",
+      "description": "Data center liquid cooling training: direct-to-chip and immersion systems, CDUs, coolant handling, leak response, safety procedures, and certification.",
+      "topics": [
+        "training",
+        "cooling"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Lockout Tagout Training (LOTO): OSHA Rules for Data Centers",
+      "url": "https://datacentertraining.us/training/lockout-tagout-training.html",
+      "description": "Lockout tagout training under OSHA 1910.147: authorized vs affected employees, retraining triggers, electrical LOTO, and how LOTO works in data centers.",
+      "topics": [
+        "training",
+        "electrical"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "NFPA 70E Training & Certification: Requirements and Online Courses",
+      "url": "https://datacentertraining.us/training/nfpa-70e-training.html",
+      "description": "NFPA 70E training and certification explained: who needs it, what it covers, how often to retrain, what a 70E certificate means, and online courses.",
+      "topics": [
+        "training"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "OSHA Electrical Safety Training: What OSHA Requires and How to Meet It",
+      "url": "https://datacentertraining.us/training/osha-electrical-safety-training.html",
+      "description": "OSHA electrical safety training explained: what 29 CFR 1910 Subpart S requires, qualified vs unqualified workers, LOTO, PPE, retraining, and online courses.",
+      "topics": [
+        "training",
+        "electrical"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Preventive Maintenance Training: Courses for Technicians and Planners",
+      "url": "https://datacentertraining.us/training/preventive-maintenance-training.html",
+      "description": "Preventive maintenance training for technicians and maintenance planners: PM planning and scheduling, mechanical systems maintenance, CMMS, and online courses.",
+      "topics": [
+        "training",
+        "maintenance"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Refrigeration Safety Training: Refrigerant Handling and Safety Programs",
+      "url": "https://datacentertraining.us/training/refrigeration-safety-training.html",
+      "description": "Refrigeration safety training: refrigerant handling and EPA 608, A2L refrigerants, ammonia PSM, ASHRAE 15 and 34, and building a refrigeration safety program.",
+      "topics": [
+        "training",
+        "refrigerant"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Switchgear Safety Training: Switching, Racking, and Arc Flash",
+      "url": "https://datacentertraining.us/training/switchgear-safety-training.html",
+      "description": "Switchgear safety training for data centers: arc flash at switchgear, racking breakers, remote operation, switching procedures, NFPA 70E, and NFPA 70B.",
+      "topics": [
+        "training"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "UPS & Battery Training for Data Centers",
+      "url": "https://datacentertraining.us/training/ups-battery-training.html",
+      "description": "UPS and battery training for data center teams: who needs it, what it covers from bypass to lithium-ion thermal runaway, how often to refresh, and courses.",
+      "topics": [
+        "training",
+        "ups",
+        "battery",
+        "lithium"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "AI Data Center Jobs: Who's Hiring for the AI Build-Out",
+      "url": "https://datacentertraining.us/careers/ai-data-center-jobs.html",
+      "description": "AI data center jobs explained: who is hiring for the AI build-out, from electricians and pipefitters to commissioning and facilities roles, and how to prepare.",
+      "topics": [
+        "careers",
+        "commissioning"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Switching to a Data Center Career: A Guide for Career Changers",
+      "url": "https://datacentertraining.us/careers/career-changers.html",
+      "description": "Moving into data centers from the trades, the military, IT, or facilities work? See what transfers, what is new, and which courses close the gap.",
+      "topics": [
+        "careers"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Critical Facilities Technician: Role, Skills & Career Path",
+      "url": "https://datacentertraining.us/careers/critical-facilities-technician.html",
+      "description": "Critical facilities technician role explained: multi-trade data center work, MOPs and rounds, BLS pay benchmarks, and the path to chief engineer.",
+      "topics": [
+        "careers"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Apprenticeships & Training Programs",
+      "url": "https://datacentertraining.us/careers/data-center-apprenticeships.html",
+      "description": "Data center apprenticeships and training programs explained: electrician and HVAC routes, Microsoft, Meta, Amazon, and Google programs, and how to choose.",
+      "topics": [
+        "careers"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Cabling Jobs (Including Overnight Shifts)",
+      "url": "https://datacentertraining.us/careers/data-center-cabling-jobs.html",
+      "description": "Overnight data center cabling jobs explained: what cabling techs do, why shifts run at night, skills, safety, credentials, and how to get hired.",
+      "topics": [
+        "careers"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Certifications: Which Ones Are Worth It?",
+      "url": "https://datacentertraining.us/careers/data-center-certifications.html",
+      "description": "Data center certifications compared by career goal: CDCP, CDCTP, Uptime ATD, BICSI DCDC, CompTIA, Cisco, and trade licenses, plus free options.",
+      "topics": [
+        "careers"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Electrician: Jobs, Pay, Training & How to Start",
+      "url": "https://datacentertraining.us/careers/data-center-electrician.html",
+      "description": "Data center electrician jobs explained: construction vs. critical power roles, BLS pay data, apprenticeship and license paths, and how to get started.",
+      "topics": [
+        "careers"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Engineer: Types, Skills & How to Become One",
+      "url": "https://datacentertraining.us/careers/data-center-engineer.html",
+      "description": "Data center engineer roles compared: electrical, mechanical, controls, network, design, commissioning, and operations, with BLS pay and certifications.",
+      "topics": [
+        "careers",
+        "electrical",
+        "commissioning"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Facility Manager & Operations Manager",
+      "url": "https://datacentertraining.us/careers/data-center-facility-manager.html",
+      "description": "Data center facility manager and operations manager roles explained: what each owns, skills, career paths, management certifications, and BLS pay data.",
+      "topics": [
+        "careers"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center HVAC Technician: Jobs, Skills & Training",
+      "url": "https://datacentertraining.us/careers/data-center-hvac-technician.html",
+      "description": "Data center HVAC technician jobs explained: CRAH, chiller, and liquid cooling work, EPA Section 608 rules, BLS pay data, and how to move from commercial HVAC.",
+      "topics": [
+        "careers",
+        "cooling"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Jobs by Location: Top U.S. Markets",
+      "url": "https://datacentertraining.us/careers/data-center-jobs-by-location.html",
+      "description": "Find data center jobs near you: 19 U.S. markets from Ashburn and Dallas to Phoenix, Columbus, and Abilene, with verified employers and the roles in demand.",
+      "topics": [
+        "careers"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Jobs Explained: 15 Roles and What They Do",
+      "url": "https://datacentertraining.us/careers/data-center-jobs.html",
+      "description": "What 15 data center jobs involve day to day, from technicians and electricians to NOC, security, and commissioning roles, plus how to prepare for each.",
+      "topics": [
+        "careers",
+        "security",
+        "commissioning"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Security Jobs: Roles, Skills & Training",
+      "url": "https://datacentertraining.us/careers/data-center-security-jobs.html",
+      "description": "Data center security jobs explained: officer, supervisor, SOC, compliance, and safety roles, licensing, certifications, BLS pay, and how to find openings.",
+      "topics": [
+        "careers",
+        "security"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Technician Career Path: L1, L2, L3 and Beyond",
+      "url": "https://datacentertraining.us/careers/data-center-technician-career-path.html",
+      "description": "The data center technician career path explained: what changes at L1, L2, and L3, where techs go next, whether it is a dead-end job, and how to move up.",
+      "topics": [
+        "careers"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Technician Resume: Example, Skills & Keywords",
+      "url": "https://datacentertraining.us/careers/data-center-technician-resume.html",
+      "description": "A data center technician resume example with skills and keywords, bullet formulas with before and after examples, and how to list training honestly.",
+      "topics": [
+        "careers"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Technician Salary: What the Job Pays and Why",
+      "url": "https://datacentertraining.us/careers/data-center-technician-salary.html",
+      "description": "Data center technician salary explained with BLS pay for comparable jobs, what drives pay (shift, level, region, licenses), and how to raise yours.",
+      "topics": [
+        "careers"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Technician: What the Job Is and How to Become One",
+      "url": "https://datacentertraining.us/careers/data-center-technician.html",
+      "description": "What a data center technician does, a typical shift, job requirements, and how to become one, with honest pros and cons, BLS pay comparables, and courses.",
+      "topics": [
+        "careers"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Entry-Level Data Center Jobs (No Experience Needed?)",
+      "url": "https://datacentertraining.us/careers/entry-level-data-center-jobs.html",
+      "description": "Entry-level data center jobs people actually get hired into, what each one asks for, how to get hired with no experience, and where openings are posted.",
+      "topics": [
+        "careers"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "How Many Jobs Does a Data Center Create?",
+      "url": "https://datacentertraining.us/careers/how-many-jobs-does-a-data-center-create.html",
+      "description": "How many jobs does a data center create? Construction vs. permanent jobs, what impact studies report and who paid for them, and real numbers from projects.",
+      "topics": [
+        "careers"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "How to Get Into the Data Center Industry (Step by Step)",
+      "url": "https://datacentertraining.us/careers/how-to-get-into-data-centers.html",
+      "description": "A step-by-step plan to break into data center work: learn how facilities run, pick a role, build safety basics, gain hands-on experience, and get hired.",
+      "topics": [
+        "careers"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Jobs at Amazon, Google, Microsoft & Meta",
+      "url": "https://datacentertraining.us/careers/hyperscale-data-center-jobs.html",
+      "description": "Data center jobs at Amazon (AWS), Google, Microsoft, Meta, and Oracle: the real job titles, official training programs, where to search, and how to prepare.",
+      "topics": [
+        "careers"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Build a Career That Keeps the Internet Running",
+      "url": "https://datacentertraining.us/careers/",
+      "description": "Explore data center careers: job roles, entry-level jobs, pay data, jobs by location, certifications, and the training that helps you get hired.",
+      "topics": [
+        "careers"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Technician Interview Questions and Answers",
+      "url": "https://datacentertraining.us/careers/interview-questions.html",
+      "description": "34 data center technician interview questions with what interviewers look for and strong answers on safety, power, cooling, procedures, and scenarios.",
+      "topics": [
+        "careers",
+        "cooling"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Remote Data Center Jobs: What Can Really Be Done From Home",
+      "url": "https://datacentertraining.us/careers/remote-data-center-jobs.html",
+      "description": "Remote data center jobs, honestly: which roles can be remote or hybrid, from NOC and DCIM to design and sales, what employers require, and scam red flags.",
+      "topics": [
+        "careers",
+        "dcim"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Which Data Center Career Fits You?",
+      "url": "https://datacentertraining.us/quizzes/career-quiz.html",
+      "description": "Answer 10 quick questions to find the data center career that fits you: power, cooling, operations, security, design, or monitoring. Plus where to start.",
+      "topics": [
+        "quiz",
+        "cooling",
+        "security"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Cooling & HVAC Quiz",
+      "url": "https://datacentertraining.us/quizzes/cooling-quiz.html",
+      "description": "Test your data center cooling knowledge: CRAC vs CRAH, ASHRAE inlet ranges, tons and BTUs, containment, economizers, chilled water, and liquid cooling.",
+      "topics": [
+        "quiz",
+        "cooling"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Basics Quiz",
+      "url": "https://datacentertraining.us/quizzes/data-center-basics-quiz.html",
+      "description": "Free beginner quiz on data center basics: white space, UPS, CRAH, PUE, Tiers, hot and cold aisles, colocation, meet-me rooms, and redundancy, with explanations.",
+      "topics": [
+        "quiz",
+        "ups",
+        "pue",
+        "tier"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "What's Your Data Center IQ?",
+      "url": "https://datacentertraining.us/quizzes/",
+      "description": "Free data center quizzes: find your career match, then test yourself on basics, power, cooling, safety, security, Tiers, and operations with explanations.",
+      "topics": [
+        "quiz",
+        "cooling",
+        "security",
+        "tier"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Operations & Monitoring Quiz",
+      "url": "https://datacentertraining.us/quizzes/operations-quiz.html",
+      "description": "Free data center operations quiz: SOP vs MOP vs EOP, change management, predictive maintenance, CMMS, MTTR, RTO vs RPO, BMS vs DCIM vs EPMS, and root cause.",
+      "topics": [
+        "quiz",
+        "dcim",
+        "bms",
+        "maintenance"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Power & Electrical Quiz",
+      "url": "https://datacentertraining.us/quizzes/power-electrical-quiz.html",
+      "description": "Test your knowledge of data center power: UPS topologies, generators, transfer switches, N+1 vs 2N redundancy, and NFPA 70E arc flash basics. Free quiz.",
+      "topics": [
+        "quiz",
+        "electrical",
+        "ups",
+        "generator"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Safety Quiz",
+      "url": "https://datacentertraining.us/quizzes/safety-quiz.html",
+      "description": "Free data center safety quiz: NFPA 70E safe work, energized work, lockout/tagout, batteries, EPO, clean agent alarms, confined spaces, and refrigerants.",
+      "topics": [
+        "quiz",
+        "refrigerant",
+        "confined"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Security & Compliance Quiz",
+      "url": "https://datacentertraining.us/quizzes/security-compliance-quiz.html",
+      "description": "Test your data center security and compliance knowledge: security layers, mantraps, visitors, SOC 2, ISO/IEC 27001, PCI DSS, HIPAA, media destruction, and SPCC.",
+      "topics": [
+        "quiz",
+        "security",
+        "visitor"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Tiers & Design Quiz",
+      "url": "https://datacentertraining.us/quizzes/tiers-design-quiz.html",
+      "description": "Test your knowledge of data center Tiers and design: Tier I-IV, N+1 vs 2N, TIA-942 Rated levels, commissioning L1-L5, capacity, and availability math.",
+      "topics": [
+        "quiz",
+        "commissioning",
+        "tier"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center Cooling Load Calculator",
+      "url": "https://datacentertraining.us/tools/cooling-load-calculator.html",
+      "description": "Convert data center IT load to BTU/hr, tons of cooling, and server airflow in CFM, then size cooling units at N, N+1, or 2N redundancy. Free calculator.",
+      "topics": [
+        "tool",
+        "cooling"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Free Tools for Data Center Teams",
+      "url": "https://datacentertraining.us/tools/",
+      "description": "Free data center tools: build a role-based training plan, calculate PUE and overhead cost, convert availability to downtime, and size cooling load in tons.",
+      "topics": [
+        "tool",
+        "cooling",
+        "pue"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Data Center PUE Calculator",
+      "url": "https://datacentertraining.us/tools/pue-calculator.html",
+      "description": "Free data center PUE calculator. Enter facility and IT load to get PUE, DCiE, overhead energy cost, and the yearly savings from hitting a target PUE.",
+      "topics": [
+        "tool",
+        "pue"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Build Your Data Center Training Plan",
+      "url": "https://datacentertraining.us/tools/training-plan-builder.html",
+      "description": "Build a data center training plan for your role in a minute. Pick your job, experience, topics, and time budget to get a course list, hours, and price.",
+      "topics": [
+        "tool"
+      ],
+      "audience": []
+    },
+    {
+      "source": "Data Center Training (first party)",
+      "type": "site_page",
+      "title": "Uptime & Downtime Calculator",
+      "url": "https://datacentertraining.us/tools/uptime-calculator.html",
+      "description": "Convert availability percentages like 99.99% into allowed downtime per year, month, week, and day, or work backward from downtime. Tier figures included.",
+      "topics": [
+        "tool",
+        "tier"
+      ],
+      "audience": []
+    },
+    {
+      "type": "blog_post",
+      "title": "Server Room Ergonomics Checklist: How Data Center Managers Can Reduce Manual-Handling Risk During Rack Work",
+      "url": "https://datacentertraining.us/blog/posts/server-room-ergonomics-checklist-how-data-center-managers-can-reduce-manual-handling-risk-during-rack-work.html",
+      "description": "Rack work looks routine until a technician has to move a dense server, lift a battery module, pull a cable bundle from an awkward position, or hold a tool…",
+      "topics": [
+        "battery"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-10-25"
+    },
+    {
+      "type": "blog_post",
+      "title": "Data Center Fire Door Walkthrough: What Facility Managers Should Verify Before a Critical-Facilities Audit",
+      "url": "https://datacentertraining.us/blog/posts/data-center-fire-door-walkthrough-what-facility-managers-should-verify-before-a-critical-facilities-audit.html",
+      "description": "During a critical-facilities walkthrough, a fire door can look like a simple building component until a technician finds it propped open, blocked by a cart…",
+      "topics": [
+        "fire"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-10-24"
+    },
+    {
+      "type": "blog_post",
+      "title": "Data Center Hot Work Permit Readiness: What Facilities Managers Should Verify Before Welding Near Critical Equipment",
+      "url": "https://datacentertraining.us/blog/posts/data-center-hot-work-permit-readiness-what-facilities-managers-should-verify-before-welding-near-critical-equipment.html",
+      "description": "When a contractor needs to weld, braze, solder, cut, grind, or use another open-flame or spark-producing process inside or near a data center, who decides that…",
+      "topics": [
+        "contractor"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-10-23"
+    },
+    {
+      "type": "blog_post",
+      "title": "BAS Manual Override Review: What Data Center Operators Should Verify Before Returning a Control Point to Auto",
+      "url": "https://datacentertraining.us/blog/posts/bas-manual-override-review-what-data-center-operators-should-verify-before-returning-a-control-point-to-auto.html",
+      "description": "When a building automation system (BAS) point has been placed in manual override, how does the data center team know it is safe to return that point…",
+      "topics": [],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-10-20"
+    },
+    {
+      "type": "blog_post",
+      "title": "Data Center Fire Alarm Cause and Effect Testing: What Commissioning Teams Should Verify Before Handover",
+      "url": "https://datacentertraining.us/blog/posts/data-center-fire-alarm-cause-and-effect-testing-what-commissioning-teams-should-verify-before-handover.html",
+      "description": "When a data center fire alarm system is tested before handover, is the team proving a complete, documented chain of cause and effect, or only confirming that…",
+      "topics": [
+        "fire",
+        "commissioning"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-10-19"
+    },
+    {
+      "type": "blog_post",
+      "title": "Data Center Environmental Compliance Walkthrough: What EHS Managers Should Verify Before an Audit",
+      "url": "https://datacentertraining.us/blog/posts/data-center-environmental-compliance-walkthrough-what-ehs-managers-should-verify-before-an-audit.html",
+      "description": "An environmental audit at a data center is rarely limited to a single permit or a single piece of equipment. The difficult question is whether the site can…",
+      "topics": [],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-10-18"
+    },
+    {
+      "type": "blog_post",
+      "title": "Data Center Incident Response Handoffs: What Facilities and NOC Teams Should Confirm in the First 15 Minutes",
+      "url": "https://datacentertraining.us/blog/posts/data-center-incident-response-handoffs-what-facilities-and-noc-teams-should-confirm-in-the-first-15-minutes.html",
+      "description": "When a data center alarm appears, the first fifteen minutes often determine whether the team contains a developing problem or spends the next hour reacting…",
+      "topics": [],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-10-17"
+    },
+    {
+      "type": "blog_post",
+      "title": "VRLA vs Lithium-Ion UPS Battery Maintenance: What Facility Managers Should Compare Before Standardizing",
+      "url": "https://datacentertraining.us/blog/posts/vrla-vs-lithium-ion-ups-battery-maintenance-what-facility-managers-should-compare-before-standardizing.html",
+      "description": "Facility managers are often asked whether a UPS battery room should continue with valve-regulated lead-acid batteries, commonly called VRLA, or move toward…",
+      "topics": [
+        "ups",
+        "battery",
+        "lithium",
+        "maintenance"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-10-16"
+    },
+    {
+      "type": "blog_post",
+      "title": "Chilled Water Valve Position: A Troubleshooting Checklist for Data Center Facilities Teams",
+      "url": "https://datacentertraining.us/blog/posts/chilled-water-valve-position-a-troubleshooting-checklist-for-data-center-facilities-teams.html",
+      "description": "When a data center cooling zone warms up, the first visible symptom may be a high supply-air temperature, a rising return-water temperature, or a CRAH unit…",
+      "topics": [
+        "cooling"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-10-15"
+    },
+    {
+      "type": "blog_post",
+      "title": "Data Center Anti-Tailgating Drills: How Security Leads Should Test Badge-and-Mantrap Controls",
+      "url": "https://datacentertraining.us/blog/posts/data-center-anti-tailgating-drills-how-security-leads-should-test-badge-and-mantrap-controls.html",
+      "description": "Can a person enter a restricted data center zone without presenting the right credential, being challenged, or leaving a reviewable record?",
+      "topics": [
+        "security"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-10-14"
+    },
+    {
+      "type": "blog_post",
+      "title": "Fiber Optic Pathway Readiness: What Data Center Facility Teams Should Verify Before a New Hall Goes Live",
+      "url": "https://datacentertraining.us/blog/posts/fiber-optic-pathway-readiness-what-data-center-facility-teams-should-verify-before-a-new-hall-goes-live.html",
+      "description": "A new data hall can have energized racks, commissioned cooling, and a functioning monitoring platform while still carrying a hidden operational risk: the fiber…",
+      "topics": [
+        "cooling"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-10-13"
+    },
+    {
+      "type": "blog_post",
+      "title": "Data Center Roof Maintenance Planning: How Facility Managers Can Protect Uptime During Exterior Work",
+      "url": "https://datacentertraining.us/blog/posts/data-center-roof-maintenance-planning-how-facility-managers-can-protect-uptime-during-exterior-work.html",
+      "description": "Roof repairs look like an outside-the-building project, but a data center roof protects equipment, power rooms, air-handling spaces, cable pathways…",
+      "topics": [
+        "maintenance"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-10-12"
+    },
+    {
+      "type": "blog_post",
+      "title": "What a New Data Center Technician Should Learn in the First 90 Days",
+      "url": "https://datacentertraining.us/blog/posts/what-a-new-data-center-technician-should-learn-in-the-first-90-days.html",
+      "description": "A new data center technician can be eager, mechanically capable, and still be unready for independent work in a live critical facility.",
+      "topics": [],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-10-11"
+    },
+    {
+      "type": "blog_post",
+      "title": "Generator Fuel System Readiness: What Data Center Teams Should Verify Before a Load Test",
+      "url": "https://datacentertraining.us/blog/posts/generator-fuel-system-readiness-what-data-center-teams-should-verify-before-a-load-test.html",
+      "description": "Before a data center team starts a generator load test, is the fuel system ready to support the test without creating a leak, a nuisance shutdown, or a false…",
+      "topics": [
+        "generator"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-10-10"
+    },
+    {
+      "type": "blog_post",
+      "title": "ANSI/TIA-942 Design Review: What Data Center Facility Teams Should Verify Before Construction",
+      "url": "https://datacentertraining.us/blog/posts/ansi-tia-942-design-review-what-data-center-facility-teams-should-verify-before-construction.html",
+      "description": "Before a data center project moves from drawings into construction, who verifies that the design will be operable, maintainable, and aligned with the site's…",
+      "topics": [],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-10-09"
+    },
+    {
+      "type": "blog_post",
+      "title": "How to Choose a Data Center Training Bundle for a New Maintenance Team",
+      "url": "https://datacentertraining.us/blog/posts/how-to-choose-a-data-center-training-bundle-for-a-new-maintenance-team.html",
+      "description": "A new data center maintenance team can be busy from its first shift: walking electrical rooms, inspecting cooling equipment, responding to alarms, coordinating…",
+      "topics": [
+        "electrical",
+        "cooling",
+        "maintenance"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-10-08"
+    },
+    {
+      "type": "blog_post",
+      "title": "BMS Alarm Setpoint Changes: A Change-Control Checklist for Data Center Facility Managers",
+      "url": "https://datacentertraining.us/blog/posts/bms-alarm-setpoint-changes-a-change-control-checklist-for-data-center-facility-managers.html",
+      "description": "When a building management system alarm is too sensitive, the easy answer is to raise the threshold, add a delay, or silence the notification.",
+      "topics": [
+        "bms"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-10-07"
+    },
+    {
+      "type": "blog_post",
+      "title": "Static Transfer Switch Alarm Response: What Data Center Operators Should Verify Before a Load Transfer",
+      "url": "https://datacentertraining.us/blog/posts/static-transfer-switch-alarm-response-what-data-center-operators-should-verify-before-a-load-transfer.html",
+      "description": "When a static transfer switch (STS) reports a source-quality alarm, a data center operator has to decide whether the event is a nuisance indication…",
+      "topics": [],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-10-06"
+    },
+    {
+      "type": "blog_post",
+      "title": "Preventive Maintenance Backlog Triage: How Data Center Facility Managers Should Rank Critical Work Orders",
+      "url": "https://datacentertraining.us/blog/posts/preventive-maintenance-backlog-triage-how-data-center-facility-managers-should-rank-critical-work-orders.html",
+      "description": "A data center maintenance backlog is not just a list of overdue tasks. It is a live picture of where the facility is carrying technical risk, where…",
+      "topics": [
+        "maintenance"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-10-05"
+    },
+    {
+      "type": "blog_post",
+      "title": "How Data Center Facility Managers Should Review a Capacity Plan Before Adding a New Load",
+      "url": "https://datacentertraining.us/blog/posts/how-data-center-facility-managers-should-review-a-capacity-plan-before-adding-a-new-load.html",
+      "description": "A new rack, high-density enclosure, battery charger, network row, or customer deployment can look like a simple purchasing request until the facility has…",
+      "topics": [
+        "battery"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-10-04"
+    },
+    {
+      "type": "blog_post",
+      "title": "CRAH Unit Maintenance Readiness: What Data Center Technicians Should Verify Before Service",
+      "url": "https://datacentertraining.us/blog/posts/crah-unit-maintenance-readiness-what-data-center-technicians-should-verify-before-service.html",
+      "description": "Before a technician opens a panel, isolates a fan, changes a filter, or works on a CRAH unit, what should the team verify so the maintenance task does not…",
+      "topics": [
+        "maintenance"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-10-03"
+    },
+    {
+      "type": "blog_post",
+      "title": "Arc Flash Boundary Walkthrough: What New Data Center Electricians Should Verify Before Energized Work",
+      "url": "https://datacentertraining.us/blog/posts/arc-flash-boundary-walkthrough-what-new-data-center-electricians-should-verify-before-energized-work.html",
+      "description": "Before a qualified electrical worker opens a switchboard, switchgear lineup, UPS cabinet, panelboard, or power distribution unit, can the team explain exactly…",
+      "topics": [
+        "electrical",
+        "ups"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-10-02"
+    },
+    {
+      "type": "blog_post",
+      "title": "ISO 27001 Physical Evidence: What Data Center Facility Managers Should Organize Before an Audit",
+      "url": "https://datacentertraining.us/blog/posts/iso-27001-physical-evidence-what-data-center-facility-managers-should-organize-before-an-audit.html",
+      "description": "When an ISO 27001 audit reaches the facility, can the data center team show how physical and environmental controls work in practice, or can it only produce…",
+      "topics": [],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-10-01"
+    },
+    {
+      "type": "blog_post",
+      "title": "Disaster Recovery Runbook Testing for Data Center Facilities Teams",
+      "url": "https://datacentertraining.us/blog/posts/disaster-recovery-runbook-testing-for-data-center-facilities-teams.html",
+      "description": "When a data center loses a utility source, cooling path, controls network, building access system, or another facility capability, can the team use its…",
+      "topics": [
+        "cooling",
+        "access"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-09-30"
+    },
+    {
+      "type": "blog_post",
+      "title": "Emergency Power Off (EPO) Drill Readiness: What Data Center Operations Teams Should Verify Before Testing",
+      "url": "https://datacentertraining.us/blog/posts/emergency-power-off-epo-drill-readiness-what-data-center-operations-teams-should-verify-before-testing.html",
+      "description": "An Emergency Power Off (EPO) circuit is intended for a serious emergency, but a data center team still has to prove that the response is understood…",
+      "topics": [],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-09-29"
+    },
+    {
+      "type": "blog_post",
+      "title": "How Facilities Managers Can Use PUE Trends to Separate Cooling Waste from IT Load Growth",
+      "url": "https://datacentertraining.us/blog/posts/how-facilities-managers-can-use-pue-trends-to-separate-cooling-waste-from-it-load-growth.html",
+      "description": "When a data center's power bill rises, the first explanation is often that the IT load grew. That explanation may be right, but it can also hide a cooling…",
+      "topics": [
+        "cooling",
+        "pue"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-09-28"
+    },
+    {
+      "type": "blog_post",
+      "title": "Clean-Agent Fire Suppression Release Procedures: What Data Center Teams Should Practice Before an Alarm",
+      "url": "https://datacentertraining.us/blog/posts/clean-agent-fire-suppression-release-procedures-what-data-center-teams-should-practice-before-an-alarm.html",
+      "description": "Clean-agent fire suppression release procedures data center teams should practice before an alarm: pre-alarm actions, abort use, evacuation, and re-entry.",
+      "topics": [
+        "fire",
+        "suppression"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-09-27"
+    },
+    {
+      "type": "blog_post",
+      "title": "Raised Floor and Confined Space Readiness: A Pre-Task Checklist for Data Center Maintenance Teams",
+      "url": "https://datacentertraining.us/blog/posts/raised-floor-and-confined-space-readiness-a-pre-task-checklist-for-data-center-maintenance-teams.html",
+      "description": "A pre-task checklist for raised floor and confined space work in data centers: space classification, atmosphere, panel handling, cabling, and rescue plans.",
+      "topics": [
+        "confined",
+        "raised floor",
+        "maintenance"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-09-26"
+    },
+    {
+      "type": "blog_post",
+      "title": "Tier Infrastructure Review: What Facility Managers Should Verify Beyond the Label",
+      "url": "https://datacentertraining.us/blog/posts/tier-infrastructure-review-what-facility-managers-should-verify-beyond-the-label.html",
+      "description": "What facility managers should verify when a data center claims Tier alignment: redundancy paths, concurrent maintainability, procedures, and test records.",
+      "topics": [
+        "tier"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-09-25"
+    },
+    {
+      "type": "blog_post",
+      "title": "Data Center Commissioning Handover Checklist: What Facilities Managers Should Verify Before Operations Takeover",
+      "url": "https://datacentertraining.us/blog/posts/data-center-commissioning-handover-checklist-what-facilities-managers-should-verify-before-operations-takeover.html",
+      "description": "A commissioning handover checklist for data center facilities teams: integrated test evidence, documentation, trained staff, and open items before takeover.",
+      "topics": [
+        "commissioning"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-09-24"
+    },
+    {
+      "type": "blog_post",
+      "title": "Data Center Visitor Access: A Practical Checklist for Escorting Maintenance Contractors",
+      "url": "https://datacentertraining.us/blog/posts/data-center-visitor-access-a-practical-checklist-for-escorting-maintenance-contractors.html",
+      "description": "A practical checklist for escorting maintenance contractors in a data center: identity checks, work scope, escort duties, restricted zones, and sign-out.",
+      "topics": [
+        "access",
+        "contractor",
+        "visitor",
+        "maintenance"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-09-24"
+    },
+    {
+      "type": "blog_post",
+      "title": "DCIM vs BMS Alarm Dashboards: What Data Center Operations Teams Should Verify",
+      "url": "https://datacentertraining.us/blog/posts/dcim-vs-bms-alarm-dashboards-what-data-center-operations-teams-should-verify.html",
+      "description": "DCIM vs BMS alarm dashboards: what data center operations teams should verify about naming, priorities, and escalation so each alarm gets the right response.",
+      "topics": [
+        "dcim",
+        "bms"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-09-24"
+    },
+    {
+      "type": "blog_post",
+      "title": "Generator Maintenance Readiness: A Data Center Manager's Pre-Task Checklist",
+      "url": "https://datacentertraining.us/blog/posts/generator-maintenance-readiness-a-data-center-manager-s-pre-task-checklist.html",
+      "description": "A pre-task checklist for data center managers before generator inspection, service, or load testing: transfer plans, fuel, isolation, roles, and records.",
+      "topics": [
+        "generator",
+        "maintenance"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-09-24"
+    },
+    {
+      "type": "blog_post",
+      "title": "How Data Center Managers Should Test Physical Access During a Maintenance Window",
+      "url": "https://datacentertraining.us/blog/posts/how-data-center-managers-should-test-physical-access-during-a-maintenance-window.html",
+      "description": "How data center managers can test physical access controls during a maintenance window, from badge scope and escorts to door alarms and audit logs.",
+      "topics": [
+        "access",
+        "maintenance"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-09-24"
+    },
+    {
+      "type": "blog_post",
+      "title": "How Data Center Security Leads Should Audit Contractor Access Controls",
+      "url": "https://datacentertraining.us/blog/posts/how-data-center-security-leads-should-audit-contractor-access-controls.html",
+      "description": "How data center security leads can audit contractor access: badge scope, approvals, escort records, access logs, and closing gaps before the next audit.",
+      "topics": [
+        "security",
+        "access",
+        "contractor"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-09-24"
+    },
+    {
+      "type": "blog_post",
+      "title": "How to Build a Role-Based Training Matrix for a Colocation Facility",
+      "url": "https://datacentertraining.us/blog/posts/how-to-build-a-role-based-training-matrix-for-a-colocation-facility.html",
+      "description": "How to build a role-based training matrix for a colocation facility: map roles to tasks and risks, assign courses, track completion, and plan refreshers.",
+      "topics": [
+        "training matrix"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-09-24"
+    },
+    {
+      "type": "blog_post",
+      "title": "Lithium-Ion Battery Thermal Runaway: What Data Center Teams Should Rehearse Before an Incident",
+      "url": "https://datacentertraining.us/blog/posts/lithium-ion-battery-thermal-runaway-what-data-center-teams-should-rehearse-before-an-incident.html",
+      "description": "What data center teams should rehearse before a lithium-ion battery thermal runaway incident: detection, isolation, evacuation, and responder coordination.",
+      "topics": [
+        "battery",
+        "lithium"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-09-24"
+    },
+    {
+      "type": "blog_post",
+      "title": "UPS Maintenance Bypass Mistakes That Can Cause a Data Center Outage",
+      "url": "https://datacentertraining.us/blog/posts/ups-maintenance-bypass-mistakes-that-can-cause-a-data-center-outage.html",
+      "description": "Common UPS maintenance bypass mistakes that can drop critical load, and the procedure checks, switching sequence, and training that help teams avoid them.",
+      "topics": [
+        "ups",
+        "maintenance"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-09-24"
+    },
+    {
+      "type": "blog_post",
+      "title": "What Cooling Technicians Should Verify Before Opening a Refrigerant Circuit",
+      "url": "https://datacentertraining.us/blog/posts/what-cooling-technicians-should-verify-before-opening-a-refrigerant-circuit.html",
+      "description": "What data center cooling technicians should verify before opening a refrigerant circuit: isolation, refrigerant recovery, pressure checks, and PPE.",
+      "topics": [
+        "cooling",
+        "refrigerant"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-09-24"
+    },
+    {
+      "type": "blog_post",
+      "title": "What Data Center Facility Managers Should Verify Before Commissioning Handover",
+      "url": "https://datacentertraining.us/blog/posts/what-data-center-facility-managers-should-verify-before-commissioning-handover.html",
+      "description": "What data center facility managers should verify before accepting a commissioning handover: test results, documentation gaps, procedures, and training.",
+      "topics": [
+        "commissioning"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-09-24"
+    }
+  ]
+}

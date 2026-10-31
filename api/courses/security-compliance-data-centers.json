@@ -3,7 +3,7 @@
   "catalog_number": 404,
   "title": "Security & Compliance for Data Centers",
   "url": "https://datacentertraining.us/courses/security-compliance-data-centers.html",
-  "api_url": "https://datacentertraining.us/api/courses/security-compliance-data-centers.json",
+  "api_url": "https://datacentertraining.us/api/v1/courses/security-compliance-data-centers.json",
   "track": "Security & Compliance Track",
   "category": "Security & Compliance",
   "course_type": "comprehensive",
@@ -115,5 +115,5 @@
     "data-center-fire-suppression-safety",
     "data-center-physical-security-access-control"
   ],
-  "last_updated": "2026-10-28"
+  "last_updated": "2026-10-30"
 }

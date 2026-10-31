@@ -28,11 +28,21 @@ const crypto = require('crypto');
 const tools = require('../js/webmcp.js');
 const chrome = require('./site-chrome.js');
 const icons = require('./icons.js');
+const toMarkdown = require('./html-to-markdown.js');
+const CONTRACT = require('../edge/contract.json');
 
 const ROOT = path.resolve(__dirname, '..');
 const ORIGIN = 'https://datacentertraining.us';
+// Versioned base for the JSON API. The unversioned /api/*.json files are
+// byte-identical aliases of v1 (see writeApi()). /mcp and the tool endpoints
+// are served by the edge Worker (edge/), whose contract is edge/contract.json.
+const API = ORIGIN + CONTRACT.api_base;
+const MCP_URL = ORIGIN + CONTRACT.mcp_path;
+const TOOLS_URL = ORIGIN + CONTRACT.tools_path;
+const DEV_URL = ORIGIN + '/developers/';
+const RATE = CONTRACT.rate_limit;
 const CHECK = process.argv.includes('--check');
-const MANIFEST_VERSION = '1.0.0';
+const MANIFEST_VERSION = '1.1.0';
 const SUPPORT = { email: 'info@hazwoper-osha.com', phone: '1-866-429-6742' };
 const CERT_VERIFY_URL = 'https://hazwoper-osha.com/certificate-verification';
 const IACET_URL = 'https://www.iacet.org/affiliates/accredited-providers-list/accredited-provider-overview/?providerID=131618';
@@ -55,6 +65,13 @@ function write(rel, content) {
 
 function json(obj) {
   return JSON.stringify(obj, null, 2) + '\n';
+}
+
+// Every API document is published at /api/v1/<rel> and, byte for byte, at the
+// unversioned /api/<rel> that existing integrations already use.
+function writeApi(rel, content) {
+  write('api/v1/' + rel, content);
+  write('api/' + rel, content);
 }
 
 const ENTITIES = {
@@ -269,7 +286,7 @@ function buildData() {
       catalog_number: c.id,
       title: c.name,
       url: ORIGIN + '/courses/' + c.slug + '.html',
-      api_url: ORIGIN + '/api/courses/' + c.slug + '.json',
+      api_url: API + '/courses/' + c.slug + '.json',
       track: trackOf[primary.slug],
       category: c.category,
       course_type: c.tier,
@@ -558,7 +575,7 @@ function toolDefs(d) {
       name: 'list_courses',
       title: 'Search and filter the course catalog',
       description: 'Search or filter the 43-course Data Center Training catalog. Returns course summaries with canonical URL, track, type, duration in hours, per-seat USD price, and aligned standards. Use this before get_course when the user describes a topic, role, budget, or time limit. Every filter is optional; with no input it returns the full catalog. Only report courses this tool returns - never invent a course, price, or availability.',
-      data_source: [ORIGIN + '/api/courses.json'],
+      data_source: [API + '/courses.json'],
       inputSchema: {
         $schema: D7, type: 'object', additionalProperties: false,
         properties: {
@@ -592,7 +609,7 @@ function toolDefs(d) {
       name: 'get_course',
       title: 'Get one course',
       description: 'Return the full record for one course: description, audience, prerequisites, learning outcomes, modules, bundles that include it, certificate details, availability, course FAQs, and related courses. Pass the course_id from list_courses or a canonical course URL. Returns found=false with error "not_found" rather than guessing when the course does not exist.',
-      data_source: [ORIGIN + '/api/courses/{course_id}.json', ORIGIN + '/api/courses.json'],
+      data_source: [API + '/courses/{course_id}.json', API + '/courses.json'],
       inputSchema: {
         $schema: D7, type: 'object', additionalProperties: false,
         properties: {
@@ -618,7 +635,7 @@ function toolDefs(d) {
       name: 'compare_bundles',
       title: 'Compare course bundles',
       description: 'Compare the 7 course bundles (6 role-based track bundles plus the complete 43-course catalog bundle) side by side: bundle price, sum of individual course prices, savings, course count, total hours, audience, and included course ids. Omit bundle_ids to compare all bundles. Prices are per seat before seat-count volume discounts.',
-      data_source: [ORIGIN + '/api/bundles.json'],
+      data_source: [API + '/bundles.json'],
       inputSchema: {
         $schema: D7, type: 'object', additionalProperties: false,
         properties: {
@@ -636,7 +653,7 @@ function toolDefs(d) {
       name: 'recommend_courses',
       title: 'Recommend courses for a role',
       description: 'Recommend a learning track, bundle, and ranked course list for a job role (e.g. "electrician", "HVAC technician", "facility manager", "security lead", "design engineer", "DCIM/network technician"). Optional work_context refines the match and budget_usd trims the list to what fits. Returns matched=false with the list of supported roles when the role is unclear - ask the user instead of guessing. Training guidance only, not legal or compliance advice.',
-      data_source: [ORIGIN + '/api/roles.json', ORIGIN + '/api/bundles.json', ORIGIN + '/api/courses.json'],
+      data_source: [API + '/roles.json', API + '/bundles.json', API + '/courses.json'],
       inputSchema: {
         $schema: D7, type: 'object', additionalProperties: false, required: ['role'],
         properties: {
@@ -675,7 +692,7 @@ function toolDefs(d) {
       name: 'get_credential_info',
       title: 'Explain certificates and accreditation',
       description: 'Explain exactly what learners receive and what it does and does not mean: certificate of completion, IACET provider-level accreditation, standards alignment, CEU/PDH status, expiration, verification, and employer responsibility. Includes a do_not_claim list. Use this before describing any course as a "certification" or implying approval by NFPA, TIA, Uptime Institute, OSHA, or any other body.',
-      data_source: [ORIGIN + '/api/credentials.json'],
+      data_source: [API + '/credentials.json'],
       inputSchema: {
         $schema: D7, type: 'object', additionalProperties: false,
         properties: { topic: { type: 'string', enum: credTopics.concat(['all']), default: 'all' } }
@@ -694,7 +711,7 @@ function toolDefs(d) {
       name: 'answer_faq',
       title: 'Answer from the published FAQ',
       description: 'Find published answers to a question about programs, pricing, certificates, access, team enrollment, or policies, optionally including one course\'s FAQ (course_id). Returns up to 3 quoted answers with their source URL. When answered=false there is no published answer: say so and route the user to support rather than composing one.',
-      data_source: [ORIGIN + '/api/faq.json', ORIGIN + '/api/courses.json'],
+      data_source: [API + '/faq.json', API + '/courses.json'],
       inputSchema: {
         $schema: D7, type: 'object', additionalProperties: false, required: ['question'],
         properties: {
@@ -718,7 +735,7 @@ function toolDefs(d) {
       name: 'list_resources',
       title: 'List guides and standards references',
       description: 'List first-party guides (Knowledge Center guides, career pages, quizzes, calculators, blog posts, catalog, role, and credential pages) and official regulatory or standards-body references by topic, audience, or type. Each item has its source and URL. Prefer these over third-party summaries; standard_reference items point to the issuing body.',
-      data_source: [ORIGIN + '/api/resources.json'],
+      data_source: [API + '/resources.json'],
       inputSchema: {
         $schema: D7, type: 'object', additionalProperties: false,
         properties: {
@@ -753,7 +770,7 @@ function contentHash(d) {
 // re-running the build (or CI) never creates date-only churn.
 function lastUpdated(hash) {
   try {
-    const prev = JSON.parse(read('api/index.json'));
+    const prev = JSON.parse(read('api/v1/index.json'));
     if (prev.content_hash === hash) return prev.last_updated;
   } catch (e) { /* first build */ }
   return new Date().toISOString().slice(0, 10);
@@ -770,6 +787,35 @@ const AGENT_RULES = [
   'Do not complete enrollment, payment, account, or contact-form actions on a user\'s behalf; link to the page and let the user act.',
   'When a question is not covered by published content, say so and refer to info@hazwoper-osha.com or 1-866-429-6742.'
 ];
+
+// When an agent should reach for this site, and how to call it. Published in
+// llms.txt, the MCP manifest and initialize response, and the developer portal.
+const WHEN_TO_USE = [
+  'Find online, self-paced training for a data center job role (electrician, HVAC or mechanical technician, critical facilities or operations technician, facility manager, security lead, design engineer, DCIM or network technician) and price it per seat or as a bundle.',
+  'Answer exact questions about this catalog: which course covers a topic or standard (NFPA 70E, ANSI/TIA-942, Uptime Tier levels, SOC 2, ISO 27001, lithium-ion safety, EPO, UPS, generators, cooling, BMS/DCIM), how long it is, what it costs, its modules and prerequisites, and what its certificate of completion is and is not.',
+  'Build or price a team training plan within a budget or an hour limit, or compare the role-based and complete-catalog bundles side by side.',
+  'Point someone to a free, sourced guide on data center power, cooling, safety, security, Tier levels, operations, careers, salaries, or terminology.'
+];
+const NOT_FOR = 'Licenses or third-party certifications (courses award a certificate of completion), hands-on or site-specific qualification, courses in languages other than English, legal or compliance determinations, and enrolling, paying, or submitting forms for a user.';
+
+function howToCall(toolNames) {
+  return [
+    'MCP (preferred for agents): connect to ' + MCP_URL + ' (Streamable HTTP transport, JSON-RPC over POST, no authentication). Tools: ' + toolNames.join(', ') + '.',
+    'REST: POST ' + TOOLS_URL + '/{tool_name} with the tool input as a JSON body (typed schemas in ' + ORIGIN + '/openapi.json), e.g. POST ' + TOOLS_URL + '/recommend_courses {"role": "electrician", "budget_usd": 500}',
+    'Static JSON (no server logic): ' + API + '/index.json lists every document; filter client-side.',
+    'Pages as Markdown: request any page URL with Accept: text/markdown, or append .md to it (' + ORIGIN + '/index.html.md for the homepage, ' + ORIGIN + '/learn/index.html.md for /learn/).',
+    'Typical flow: recommend_courses (role, budget) or list_courses (topic, standard) -> get_course (details) -> give the user the course or bundle URL so they can enroll themselves.'
+  ];
+}
+
+const VERSIONING = 'The API is versioned in the URL path; v' + CONTRACT.api_version + ' (' + API + '/) is current, and every response from the edge carries an API-Version header. ' +
+  'Changes inside v' + CONTRACT.api_version + ' are additive only (new documents, tools, optional fields, or enum values), so ignore fields you do not know. ' +
+  'A breaking change ships as a new path version, and the old version keeps working for at least ' + CONTRACT.versioning.minimum_support_after_successor_months + ' months after its successor is announced. ' +
+  'Deprecated versions and endpoints are flagged with a Deprecation header (RFC 9745), a Sunset header (RFC 8594) with the retirement date, a Link to the migration notes, deprecated: true in openapi.json, and a changelog entry on ' + DEV_URL + '. ' +
+  'The unversioned /api/*.json paths are byte-identical aliases of v' + CONTRACT.api_version + ' kept for existing integrations, and follow its lifecycle.';
+
+const RATE_LIMITS = 'Requests to /api/, /mcp, and the tool endpoints are limited to ' + RATE.requests + ' per ' + RATE.window_seconds + ' seconds per client IP. ' +
+  'Every response carries RateLimit-Policy and RateLimit (IETF draft-ietf-httpapi-ratelimit-headers) plus RateLimit-Limit, RateLimit-Remaining, and RateLimit-Reset; a 429 adds Retry-After in seconds.';
 
 function buildOutputs(d) {
   const { defs, s } = toolDefs(d);
@@ -789,8 +835,8 @@ function buildOutputs(d) {
     resources: envelope({ count: d.resources.length, resources: d.resources })
   };
   data.credentials.last_reviewed = updated;
-  for (const [name, obj] of Object.entries(data)) write('api/' + name + '.json', json(obj));
-  for (const c of courses) write('api/courses/' + c.id + '.json', json(c));
+  for (const [name, obj] of Object.entries(data)) writeApi(name + '.json', json(obj));
+  for (const c of courses) writeApi('courses/' + c.id + '.json', json(c));
 
   // Run each example through the real tool engine so published examples are exact.
   const toolData = { courses: data.courses, bundles: data.bundles, roles: data.roles, faq: data.faq, credentials: data.credentials, resources: data.resources };
@@ -835,7 +881,23 @@ function buildOutputs(d) {
       phone: SUPPORT.phone
     },
     authentication: { type: 'none' },
+    protocolVersion: CONTRACT.mcp_protocol_versions[0],
+    serverInfo: { name: 'datacentertraining-us', title: 'Data Center Training', version: MANIFEST_VERSION },
+    endpoint: MCP_URL,
+    transport: { type: 'streamable-http', url: MCP_URL, endpoint: MCP_URL },
+    instructions: 'Use these tools when someone needs to: ' + WHEN_TO_USE.map((w) => w.charAt(0).toLowerCase() + w.slice(1).replace(/\.$/, '')).join('; ') + '. Not for: ' + NOT_FOR + ' ' + AGENT_RULES.join(' '),
     transports: [
+      {
+        type: 'streamable-http',
+        url: MCP_URL,
+        description: 'Remote MCP server (Streamable HTTP transport): JSON-RPC 2.0 over HTTP POST, no authentication, stateless (no Mcp-Session-Id). Implements initialize, ping, tools/list, tools/call, resources/list, and resources/read with the tools and resources below.',
+        protocol_versions: CONTRACT.mcp_protocol_versions
+      },
+      {
+        type: 'http',
+        description: 'Every tool as a REST endpoint: POST <base_url><tool_name> with the tool input as a JSON body (or GET with the input as query parameters). Returns the tool output as JSON; errors are application/problem+json.',
+        base_url: TOOLS_URL + '/'
+      },
       {
         type: 'webmcp',
         description: 'Every HTML page registers these tools with navigator.modelContext (WebMCP). The catalog search form on /courses.html is also exposed declaratively as the "search_catalog" form tool.',
@@ -844,7 +906,7 @@ function buildOutputs(d) {
       {
         type: 'static-http',
         description: 'Every tool is backed by public JSON documents (GET, no auth, CORS-enabled). Agents without WebMCP can fetch data_source and apply the documented filters.',
-        base_url: ORIGIN + '/api/'
+        base_url: API + '/'
       }
     ],
     capabilities: { tools: { listChanged: false }, resources: { subscribe: false, listChanged: false } },
@@ -852,60 +914,85 @@ function buildOutputs(d) {
     resources: [
       { uri: ORIGIN + '/llms.txt', name: 'llms.txt', mimeType: 'text/markdown', description: 'Concise site summary and agent rules.' },
       { uri: ORIGIN + '/llms-full.txt', name: 'llms-full.txt', mimeType: 'text/markdown', description: 'Every course, bundle, role, FAQ, and policy as stable records.' },
-      { uri: ORIGIN + '/api/index.json', name: 'API index', mimeType: 'application/json', description: 'Index of all JSON documents.' },
-      { uri: ORIGIN + '/api/courses.json', name: 'Courses', mimeType: 'application/json', description: 'All 43 course records.' },
-      { uri: ORIGIN + '/api/bundles.json', name: 'Bundles', mimeType: 'application/json', description: 'All 7 bundles with pricing and savings.' },
-      { uri: ORIGIN + '/api/roles.json', name: 'Roles and tracks', mimeType: 'application/json', description: 'Role-to-track recommendations.' },
-      { uri: ORIGIN + '/api/faq.json', name: 'FAQ', mimeType: 'application/json', description: 'Published FAQ answers.' },
-      { uri: ORIGIN + '/api/credentials.json', name: 'Credentials', mimeType: 'application/json', description: 'Certificate and accreditation facts and claims to avoid.' },
-      { uri: ORIGIN + '/api/resources.json', name: 'Resources', mimeType: 'application/json', description: 'First-party guides and official standards references.' },
+      { uri: API + '/index.json', name: 'API index', mimeType: 'application/json', description: 'Index of all JSON documents.' },
+      { uri: API + '/courses.json', name: 'Courses', mimeType: 'application/json', description: 'All 43 course records.' },
+      { uri: API + '/bundles.json', name: 'Bundles', mimeType: 'application/json', description: 'All 7 bundles with pricing and savings.' },
+      { uri: API + '/roles.json', name: 'Roles and tracks', mimeType: 'application/json', description: 'Role-to-track recommendations.' },
+      { uri: API + '/faq.json', name: 'FAQ', mimeType: 'application/json', description: 'Published FAQ answers.' },
+      { uri: API + '/credentials.json', name: 'Credentials', mimeType: 'application/json', description: 'Certificate and accreditation facts and claims to avoid.' },
+      { uri: API + '/resources.json', name: 'Resources', mimeType: 'application/json', description: 'First-party guides and official standards references.' },
       { uri: ORIGIN + '/openapi.json', name: 'OpenAPI', mimeType: 'application/json', description: 'OpenAPI 3.1 description of the JSON documents.' },
       { uri: ORIGIN + '/sitemap.xml', name: 'Sitemap', mimeType: 'application/xml', description: 'All indexable pages with lastmod.' }
     ],
     policies: {
       agent_rules: AGENT_RULES,
       excluded_actions: ['enrollment', 'checkout and payment', 'account access', 'certificate issuance', 'contact-form submission'],
-      data_handling: 'Tools take no personal data and set no cookies. Inputs are processed in the page or by the agent; nothing is sent to a server.'
+      data_handling: 'Tools take no personal data and set no cookies. WebMCP calls run in the page. Remote MCP and REST tool calls run statelessly at the edge; the Worker does not store or log tool inputs.'
     },
     security: {
       https_only: true,
       read_only: true,
       write_tools: [],
       confirmation_required_for: [],
-      cors: 'Public read-only GET on static JSON; no credentials accepted.'
-    }
+      cors: 'Public: read-only GET on documents and pages, POST on /mcp and the tool endpoints; Access-Control-Allow-Origin: *; no credentials accepted.',
+      rate_limit: RATE_LIMITS
+    },
+    developer_portal: DEV_URL
   };
   write('.well-known/mcp.json', json(manifest));
 
-  write('api/index.json', json({
+  writeApi('index.json', json({
     name: 'Data Center Training public catalog API',
     description: 'Static, read-only JSON documents describing the Data Center Training catalog. No authentication. Regenerated from the site source on every change.',
+    api_version: CONTRACT.api_version,
+    base_url: API + '/',
     last_updated: updated,
     content_hash: hash,
     manifest: ORIGIN + '/.well-known/mcp.json',
     openapi: ORIGIN + '/openapi.json',
+    developer_portal: DEV_URL,
+    mcp_endpoint: MCP_URL,
+    tools: Object.fromEntries(defs.map((t) => [t.name, TOOLS_URL + '/' + t.name])),
+    versioning: VERSIONING,
+    rate_limits: RATE_LIMITS,
+    errors: 'Errors are RFC 9457 application/problem+json objects with a stable code, a detail message, and a hint. Codes: ' + ORIGIN + '/developers/#errors',
     documents: {
-      courses: ORIGIN + '/api/courses.json',
-      course: ORIGIN + '/api/courses/{course_id}.json',
-      bundles: ORIGIN + '/api/bundles.json',
-      roles: ORIGIN + '/api/roles.json',
-      faq: ORIGIN + '/api/faq.json',
-      credentials: ORIGIN + '/api/credentials.json',
-      resources: ORIGIN + '/api/resources.json',
-      search: ORIGIN + '/api/search.json'
+      courses: API + '/courses.json',
+      course: API + '/courses/{course_id}.json',
+      bundles: API + '/bundles.json',
+      roles: API + '/roles.json',
+      faq: API + '/faq.json',
+      credentials: API + '/credentials.json',
+      resources: API + '/resources.json',
+      search: API + '/search.json'
     },
     counts: { courses: courses.length, bundles: d.bundles.length, tracks: d.tracks.length, roles: d.roles.length, faqs: d.faqs.length, resources: d.resources.length },
     agent_rules: AGENT_RULES
   }));
 
   writeOpenApi(d, s, defs, updated);
-  writeLlms(d, courses, updated);
+  writeLlms(d, courses, updated, defs.map((t) => t.name));
   return { manifest, data, fullExamples, updated };
 }
 
 function writeOpenApi(d, s, defs, updated) {
-  const page = (id, pathName, summary, description) => ({
-    [pathName]: { get: { operationId: id, summary, description, tags: ['Pages'], responses: { 200: { description: 'HTML document', content: { 'text/html': {} } } } } }
+  const strip = (schema) => JSON.parse(JSON.stringify(schema, (k, v) => (k === '$schema' ? undefined : v)));
+  const ref = (kind, name) => ({ $ref: '#/components/' + kind + '/' + name });
+  const RESPONSE_FOR = { 400: 'BadRequest', 404: 'NotFound', 405: 'MethodNotAllowed', 415: 'UnsupportedMediaType', 429: 'TooManyRequests', 500: 'InternalError', 502: 'BadGateway' };
+  const errors = (...statuses) => Object.fromEntries(statuses.map((st) => [st, ref('responses', RESPONSE_FOR[st])]));
+  const rateHeaders = {
+    'RateLimit-Policy': ref('headers', 'RateLimit-Policy'),
+    RateLimit: ref('headers', 'RateLimit'),
+    'RateLimit-Limit': ref('headers', 'RateLimit-Limit'),
+    'RateLimit-Remaining': ref('headers', 'RateLimit-Remaining'),
+    'RateLimit-Reset': ref('headers', 'RateLimit-Reset')
+  };
+  const okHeaders = Object.assign({ 'API-Version': ref('headers', 'API-Version') }, rateHeaders);
+  const codesFor = (status) => Object.keys(CONTRACT.errors).filter((c) => CONTRACT.errors[c].status === status);
+  const problemResponse = (status, description, extraHeaders) => ({
+    description: description + ' Codes: ' + codesFor(status).join(', ') + '.',
+    headers: Object.assign({}, okHeaders, extraHeaders || {}),
+    content: { 'application/problem+json': { schema: ref('schemas', 'Problem') } }
   });
   const doc = (id, summary, description, schemaRef, extra) => ({
     get: Object.assign({
@@ -913,62 +1000,114 @@ function writeOpenApi(d, s, defs, updated) {
       summary,
       description,
       tags: ['Catalog data'],
-      responses: {
-        200: { description: summary, content: { 'application/json': { schema: { $ref: '#/components/schemas/' + schemaRef } } } },
-        404: { description: 'Not found' }
-      }
+      responses: Object.assign({
+        200: { description: summary, headers: okHeaders, content: { 'application/json': { schema: ref('schemas', schemaRef) } } }
+      }, errors(404, 405, 429, 500, 502))
     }, extra || {})
   });
-  const envelopeOf = (key, item) => ({
-    type: 'object',
-    required: ['last_updated', key],
-    properties: { publisher: { type: 'string' }, last_updated: { type: 'string', format: 'date' }, license: { type: 'string' }, count: { type: 'integer' }, [key]: { type: 'array', items: { $ref: '#/components/schemas/' + item } } }
+  const text = (id, summary, description, type) => ({
+    get: { operationId: id, summary, description, tags: ['Agent discovery'], responses: Object.assign({ 200: { description: summary, content: { [type]: { schema: { type: 'string' } } } } }, errors(404)) }
   });
-  const strip = (schema) => JSON.parse(JSON.stringify(schema, (k, v) => (k === '$schema' ? undefined : v)));
+  const toolPaths = {};
+  for (const t of defs) {
+    toolPaths[CONTRACT.tools_path + '/' + t.name] = {
+      post: {
+        operationId: t.name,
+        summary: t.title,
+        description: t.description + ' REST form of the MCP tool of the same name; the same input is also accepted as GET query parameters.',
+        tags: ['Tools'],
+        requestBody: {
+          required: true,
+          description: 'Tool input. Send {} to use every default.',
+          content: { 'application/json': { schema: strip(t.inputSchema), examples: Object.fromEntries(t.exampleInputs.map((input, i) => ['example' + (i + 1), { value: input }])) } }
+        },
+        responses: Object.assign({
+          200: { description: 'Tool result.', headers: okHeaders, content: { 'application/json': { schema: strip(t.outputSchema) } } }
+        }, errors(400, 404, 405, 415, 429, 500, 502)),
+        'x-mcp-tool': t.name
+      }
+    };
+  }
+  const v = CONTRACT.mcp_protocol_versions;
   const openapi = {
     openapi: '3.1.0',
     info: {
       title: 'Data Center Training - Public Catalog API',
       version: MANIFEST_VERSION,
-      description: 'Read-only, unauthenticated JSON documents describing Data Center Training\'s 43 courses, 7 bundles, 6 learning tracks, roles, FAQ, credentials, and resources, plus the HTML pages they come from. The same data backs the WebMCP tools in /.well-known/mcp.json. Last updated ' + updated + '.',
-      contact: { name: 'HAZWOPER OSHA Training, LLC', email: SUPPORT.email, url: ORIGIN + '/' }
+      summary: 'Read-only catalog of data center training courses, bundles, roles, FAQ, and credentials, with MCP and REST tools.',
+      description: 'Read-only, unauthenticated API for Data Center Training\'s ' + d.courses.length + ' courses, ' + d.bundles.length + ' bundles, ' + d.tracks.length + ' learning tracks, roles, FAQ, credentials, and resources. ' +
+        'Static JSON documents live under ' + CONTRACT.api_base + '/; the same tools as /.well-known/mcp.json run as REST endpoints under ' + CONTRACT.tools_path + '/ and as a remote MCP server at ' + CONTRACT.mcp_path + '. ' +
+        'Authentication: none, no API keys. Errors: RFC 9457 application/problem+json with a stable code and a hint (see the Problem schema). ' +
+        'Rate limits: ' + RATE_LIMITS + ' Versioning and deprecation: ' + VERSIONING + ' Last updated ' + updated + '.',
+      contact: { name: 'HAZWOPER OSHA Training, LLC', email: SUPPORT.email, url: ORIGIN + '/contact.html' },
+      termsOfService: ORIGIN + '/terms.html',
+      'x-api-lifecycle': {
+        current_version: 'v' + CONTRACT.api_version,
+        versioning: CONTRACT.versioning.scheme,
+        minimum_support_after_successor_months: CONTRACT.versioning.minimum_support_after_successor_months,
+        deprecation_signals: ['Deprecation header (RFC 9745)', 'Sunset header (RFC 8594)', 'Link rel="deprecation"', 'deprecated: true in this document', 'Changelog at ' + DEV_URL + '#changelog'],
+        changelog: DEV_URL + '#changelog'
+      }
     },
-    servers: [{ url: ORIGIN }],
-    externalDocs: { description: 'llms-full.txt', url: ORIGIN + '/llms-full.txt' },
-    tags: [{ name: 'Catalog data', description: 'Static JSON documents' }, { name: 'Agent discovery', description: 'Manifests and AI context files' }, { name: 'Pages', description: 'Canonical HTML pages' }],
+    servers: [{ url: ORIGIN, description: 'Production' }],
+    security: [],
+    externalDocs: { description: 'Developer portal: quickstart, MCP setup, errors, rate limits, versioning, CLI', url: DEV_URL },
+    tags: [
+      { name: 'Catalog data', description: 'Versioned static JSON documents (GET).' },
+      { name: 'Tools', description: 'The catalog tools as typed REST endpoints (POST JSON in, JSON out).' },
+      { name: 'MCP', description: 'Remote Model Context Protocol server.' },
+      { name: 'Agent discovery', description: 'Manifests and AI context files.' }
+    ],
     paths: Object.assign(
       {
-        '/api/index.json': doc('getApiIndex', 'API index', 'Links to every JSON document, counts, content hash, and agent rules.', 'ApiIndex'),
-        '/api/courses.json': doc('listCourses', 'All courses', 'Every course as a full record. Filter client-side; see the list_courses tool for the documented filters.', 'CourseList'),
-        '/api/courses/{course_id}.json': doc('getCourse', 'One course', 'Full record for one course. Returns 404 for unknown ids.', 'Course', {
+        [CONTRACT.api_base + '/index.json']: doc('getApiIndex', 'API index', 'Links to every JSON document and tool endpoint, counts, content hash, versioning and rate-limit policy, and agent rules.', 'ApiIndex'),
+        [CONTRACT.api_base + '/courses.json']: doc('listCourses', 'All courses', 'Every course as a full record. Filter client-side, or call the list_courses tool for server-side filters.', 'CourseList'),
+        [CONTRACT.api_base + '/courses/{course_id}.json']: doc('getCourse', 'One course', 'Full record for one course. Returns 404 (code not_found) for unknown ids.', 'Course', {
           parameters: [{ name: 'course_id', in: 'path', required: true, description: 'Course id (URL slug).', schema: { type: 'string', enum: d.courses.map((c) => c.id) } }]
         }),
-        '/api/bundles.json': doc('listBundles', 'All bundles', 'Bundle prices, individual list prices, savings, and included courses; also the seat-count volume discount ladder.', 'BundleList'),
-        '/api/roles.json': doc('listRoles', 'Roles and tracks', 'Role-to-track recommendations and the 6 learning tracks.', 'RoleList'),
-        '/api/faq.json': doc('listFaq', 'FAQ', 'Every published FAQ answer with its category and source URL.', 'FaqList'),
-        '/api/credentials.json': doc('getCredentials', 'Certificate and accreditation facts', 'What the certificate of completion is and is not, with claims agents must not make.', 'Credentials'),
-        '/api/resources.json': doc('listResources', 'Resources', 'First-party guides and official standards references.', 'ResourceList'),
-        '/api/search.json': doc('getSearchIndex', 'Site search index', 'Every course, bundle, page, FAQ answer, and glossary term with short keys (t title, u root-relative URL, y type, d description, k keywords, b body excerpt, m price and length). Backs the search on every page and /search.html.', 'SearchIndex'),
-        '/.well-known/mcp.json': {
-          get: { operationId: 'getMcpManifest', summary: 'WebMCP / MCP manifest', tags: ['Agent discovery'], description: 'Tool definitions (Draft 7 JSON Schema inputs and outputs, examples, safety annotations) for the read-only catalog tools.', responses: { 200: { description: 'Manifest', content: { 'application/json': {} } } } }
-        },
-        '/llms.txt': { get: { operationId: 'getLlmsTxt', summary: 'llms.txt', tags: ['Agent discovery'], description: 'Concise site summary and agent rules.', responses: { 200: { description: 'Markdown', content: { 'text/plain': {} } } } } },
-        '/llms-full.txt': { get: { operationId: 'getLlmsFullTxt', summary: 'llms-full.txt', tags: ['Agent discovery'], description: 'Every course, bundle, role, and FAQ as stable records.', responses: { 200: { description: 'Markdown', content: { 'text/plain': {} } } } } },
-        '/sitemap.xml': { get: { operationId: 'getSitemap', summary: 'XML sitemap', tags: ['Agent discovery'], description: 'All indexable pages; lastmod is the date the page content last changed.', responses: { 200: { description: 'XML', content: { 'application/xml': {} } } } } }
+        [CONTRACT.api_base + '/bundles.json']: doc('listBundles', 'All bundles', 'Bundle prices, individual list prices, savings, and included courses; also the seat-count volume discount ladder.', 'BundleList'),
+        [CONTRACT.api_base + '/roles.json']: doc('listRoles', 'Roles and tracks', 'Role-to-track recommendations and the ' + d.tracks.length + ' learning tracks.', 'RoleList'),
+        [CONTRACT.api_base + '/faq.json']: doc('listFaq', 'FAQ', 'Every published FAQ answer with its category and source URL.', 'FaqList'),
+        [CONTRACT.api_base + '/credentials.json']: doc('getCredentials', 'Certificate and accreditation facts', 'What the certificate of completion is and is not, with claims agents must not make.', 'Credentials'),
+        [CONTRACT.api_base + '/resources.json']: doc('listResources', 'Resources', 'First-party guides and official standards references.', 'ResourceList'),
+        [CONTRACT.api_base + '/search.json']: doc('getSearchIndex', 'Site search index', 'Every course, bundle, page, FAQ answer, and glossary term with short keys (t title, u root-relative URL, y type, d description, k keywords, b body excerpt, m price and length). Backs the search on every page and /search.html.', 'SearchIndex')
       },
-      page('getHomepage', '/', 'Homepage', 'Site overview with EducationalOrganization, WebSite, and FAQPage JSON-LD.'),
-      page('getCourseCatalogPage', '/courses.html', 'Course catalog page', 'All 43 courses with search, sort, and filters; Course ItemList JSON-LD. Accepts ?q=, ?type=, ?track=, ?sort=.'),
-      page('getBundlesPage', '/bundles.html', 'Bundles page', 'All 7 bundles with Product/Offer JSON-LD.'),
-      page('getWhoPage', '/who.html', 'Role guide', 'Role-to-track recommendations.'),
-      page('getCertificationsPage', '/certifications.html', 'Certifications page', 'Accreditation and credential transparency.'),
-      page('getFaqPage', '/faq.html', 'FAQ page', 'FAQ with FAQPage JSON-LD.'),
-      page('getBlogIndex', '/blog/', 'Blog', 'Field guidance articles with Blog JSON-LD.'),
-      page('getKnowledgeCenter', '/learn/', 'Knowledge Center', 'Guides to data center power, cooling, Tier levels, safety, security, operations, standards, and a glossary.'),
-      page('getTrainingHub', '/training/', 'Training programs hub', 'Data center training by topic: technician, NFPA 70E, arc flash, lockout/tagout, safety, UPS and battery, generator, and BMS/DCIM training.'),
-      page('getCareersHub', '/careers/', 'Careers hub', 'Data center technician, electrician, HVAC, critical facilities, engineer, manager, and security roles; salary data, entry-level jobs, jobs by location, certifications, apprenticeships, resumes, and interview questions.'),
-      page('getQuizzes', '/quizzes/', 'Quizzes', 'Career match quiz and data center knowledge quizzes.'),
-      page('getTools', '/tools/', 'Tools', 'Training plan builder, PUE, uptime, and cooling load calculators.'),
-      page('getSearchPage', '/search.html', 'Site search', 'Search every course, guide, career page, quiz, tool, FAQ answer, and glossary term. Accepts ?q= and ?type=.')
+      toolPaths,
+      {
+        [CONTRACT.mcp_path]: {
+          post: {
+            operationId: 'mcp',
+            summary: 'Remote MCP server (Streamable HTTP)',
+            description: 'Model Context Protocol over the Streamable HTTP transport: send one JSON-RPC 2.0 message (or a batch) per POST and get the JSON-RPC response as application/json. Stateless: no Mcp-Session-Id is issued, and GET returns 405 (no server-initiated stream). ' +
+              'Methods: initialize, notifications/initialized, ping, tools/list, tools/call, resources/list, resources/read. Supported protocol versions: ' + v.join(', ') + '. Notifications get 202 Accepted with no body. Tool failures come back as a result with isError: true; protocol errors use JSON-RPC error codes.',
+            tags: ['MCP'],
+            parameters: [{ name: 'MCP-Protocol-Version', in: 'header', required: false, description: 'Negotiated protocol version, sent by clients after initialize. Omitted means ' + (v.includes('2025-03-26') ? '2025-03-26' : v[v.length - 1]) + '.', schema: { type: 'string', enum: v } }],
+            requestBody: {
+              required: true,
+              content: {
+                'application/json': {
+                  schema: { oneOf: [ref('schemas', 'JsonRpcRequest'), { type: 'array', minItems: 1, items: ref('schemas', 'JsonRpcRequest') }] },
+                  examples: {
+                    initialize: { value: { jsonrpc: '2.0', id: 1, method: 'initialize', params: { protocolVersion: v[0], capabilities: {}, clientInfo: { name: 'example-agent', version: '1.0.0' } } } },
+                    listTools: { value: { jsonrpc: '2.0', id: 2, method: 'tools/list' } },
+                    callTool: { value: { jsonrpc: '2.0', id: 3, method: 'tools/call', params: { name: 'recommend_courses', arguments: { role: 'electrician', budget_usd: 500 } } } }
+                  }
+                }
+              }
+            },
+            responses: Object.assign({
+              200: { description: 'JSON-RPC response (an array for a batch).', headers: okHeaders, content: { 'application/json': { schema: { oneOf: [ref('schemas', 'JsonRpcResponse'), { type: 'array', items: ref('schemas', 'JsonRpcResponse') }] } } } },
+              202: { description: 'Notification or response accepted; no body.', headers: okHeaders }
+            }, errors(400, 405, 415, 429, 500))
+          }
+        },
+        '/.well-known/mcp.json': {
+          get: { operationId: 'getMcpManifest', summary: 'MCP manifest', tags: ['Agent discovery'], description: 'Server card and tool definitions (Draft 7 JSON Schema inputs and outputs, examples, safety annotations) for the read-only catalog tools, with the remote MCP endpoint and transports.', responses: Object.assign({ 200: { description: 'Manifest', content: { 'application/json': { schema: ref('schemas', 'McpManifest') } } } }, errors(404)) }
+        },
+        '/llms.txt': text('getLlmsTxt', 'llms.txt', 'Concise site summary, when to use this site, how to call it, and agent rules (Markdown).', 'text/plain'),
+        '/llms-full.txt': text('getLlmsFullTxt', 'llms-full.txt', 'Every course, bundle, role, and FAQ as stable records (Markdown).', 'text/plain'),
+        '/sitemap.xml': text('getSitemap', 'XML sitemap', 'All indexable pages; lastmod is the date the page content last changed. Every page also has a Markdown version at its URL + .md, and is served as Markdown for Accept: text/markdown.', 'application/xml')
+      }
     ),
     components: {
       schemas: {
@@ -1003,14 +1142,110 @@ function writeOpenApi(d, s, defs, updated) {
             }
           }
         },
-        RoleList: { type: 'object', required: ['roles', 'tracks'], properties: { last_updated: { type: 'string', format: 'date' }, roles: { type: 'array', items: { $ref: '#/components/schemas/Role' } }, tracks: { type: 'array', items: { $ref: '#/components/schemas/Track' } } } },
+        RoleList: { type: 'object', required: ['roles', 'tracks'], properties: { last_updated: { type: 'string', format: 'date' }, roles: { type: 'array', items: ref('schemas', 'Role') }, tracks: { type: 'array', items: ref('schemas', 'Track') } } },
         Credentials: { type: 'object', required: ['topics', 'do_not_claim'], properties: { last_updated: { type: 'string', format: 'date' }, source_url: { type: 'string', format: 'uri' }, topics: { type: 'object', additionalProperties: { type: 'object', properties: { summary: { type: 'string' } } } }, do_not_claim: { type: 'array', items: { type: 'string' } } } },
-        ApiIndex: { type: 'object', required: ['last_updated', 'documents'], properties: { last_updated: { type: 'string', format: 'date' }, content_hash: { type: 'string' }, documents: { type: 'object', additionalProperties: { type: 'string' } }, counts: { type: 'object', additionalProperties: { type: 'integer' } }, agent_rules: { type: 'array', items: { type: 'string' } } } }
+        ApiIndex: {
+          type: 'object', required: ['api_version', 'base_url', 'last_updated', 'documents', 'tools'],
+          properties: {
+            name: { type: 'string' }, description: { type: 'string' },
+            api_version: { type: 'string', enum: [CONTRACT.api_version] },
+            base_url: { type: 'string', format: 'uri' },
+            last_updated: { type: 'string', format: 'date' }, content_hash: { type: 'string' },
+            manifest: { type: 'string', format: 'uri' }, openapi: { type: 'string', format: 'uri' }, developer_portal: { type: 'string', format: 'uri' }, mcp_endpoint: { type: 'string', format: 'uri' },
+            documents: { type: 'object', additionalProperties: { type: 'string' } },
+            tools: { type: 'object', additionalProperties: { type: 'string', format: 'uri' } },
+            versioning: { type: 'string' }, rate_limits: { type: 'string' }, errors: { type: 'string' },
+            counts: { type: 'object', additionalProperties: { type: 'integer' } },
+            agent_rules: { type: 'array', items: { type: 'string' } }
+          }
+        },
+        Problem: {
+          type: 'object',
+          description: 'RFC 9457 problem details (Content-Type: application/problem+json), returned for every 4xx and 5xx from /api/, the tool endpoints, and /mcp. Branch on code, not on title or detail.',
+          required: ['type', 'title', 'status', 'code', 'detail'],
+          properties: {
+            type: { type: 'string', format: 'uri', description: 'Documentation URI for this error code.' },
+            title: { type: 'string', description: 'Short summary of the error code.' },
+            status: { type: 'integer', minimum: 400, maximum: 599, description: 'HTTP status code.' },
+            code: { type: 'string', enum: Object.keys(CONTRACT.errors), description: 'Stable machine-readable error code.' },
+            detail: { type: 'string', description: 'What went wrong with this request.' },
+            hint: { type: 'string', description: 'How to fix or recover.' },
+            instance: { type: 'string', description: 'Request path.' },
+            docs: { type: 'string', format: 'uri' },
+            retry_after_seconds: { type: 'integer', minimum: 0, description: 'Present on rate_limited.' },
+            allowed_methods: { type: 'array', items: { type: 'string' }, description: 'Present on method_not_allowed.' },
+            supported_versions: { type: 'array', items: { type: 'string' }, description: 'Present on unsupported_protocol_version.' },
+            errors: {
+              type: 'array', description: 'Present on invalid_input: one entry per schema violation.',
+              items: { type: 'object', required: ['path', 'message'], properties: { path: { type: 'string', description: 'JSON Pointer to the offending input field.' }, message: { type: 'string' } } }
+            }
+          }
+        },
+        JsonRpcRequest: {
+          type: 'object', required: ['jsonrpc', 'method'],
+          properties: {
+            jsonrpc: { type: 'string', enum: ['2.0'] },
+            id: { type: ['string', 'integer'], description: 'Omit for notifications.' },
+            method: { type: 'string', examples: ['initialize', 'notifications/initialized', 'ping', 'tools/list', 'tools/call', 'resources/list', 'resources/read'] },
+            params: { type: 'object' }
+          }
+        },
+        JsonRpcResponse: {
+          type: 'object', required: ['jsonrpc', 'id'],
+          properties: {
+            jsonrpc: { type: 'string', enum: ['2.0'] },
+            id: { type: ['string', 'integer', 'null'] },
+            result: { type: 'object', description: 'Method result, e.g. {tools: [...]} or {content: [...], structuredContent: {...}, isError: false}.' },
+            error: { type: 'object', required: ['code', 'message'], properties: { code: { type: 'integer' }, message: { type: 'string' }, data: {} } }
+          }
+        },
+        McpManifest: {
+          type: 'object', required: ['name', 'version', 'endpoint', 'transports', 'tools'],
+          properties: {
+            name: { type: 'string' }, title: { type: 'string' }, description: { type: 'string' }, version: { type: 'string' },
+            protocolVersion: { type: 'string' }, endpoint: { type: 'string', format: 'uri' }, instructions: { type: 'string' },
+            transports: { type: 'array', items: { type: 'object', required: ['type'], properties: { type: { type: 'string' } } } },
+            tools: {
+              type: 'array',
+              items: { type: 'object', required: ['name', 'description', 'inputSchema', 'outputSchema'], properties: { name: { type: 'string' }, title: { type: 'string' }, description: { type: 'string' }, inputSchema: { type: 'object' }, outputSchema: { type: 'object' }, annotations: { type: 'object' } } }
+            },
+            resources: { type: 'array', items: { type: 'object', required: ['uri', 'name'], properties: { uri: { type: 'string', format: 'uri' }, name: { type: 'string' }, mimeType: { type: 'string' } } } }
+          }
+        }
+      },
+      responses: {
+        BadRequest: problemResponse(400, 'The request or its input is invalid.'),
+        NotFound: problemResponse(404, 'No document, course, or tool at this path.'),
+        MethodNotAllowed: problemResponse(405, 'The method is not supported on this path.', { Allow: { description: 'Methods this path accepts.', schema: { type: 'string' } } }),
+        UnsupportedMediaType: problemResponse(415, 'The request body is not application/json.'),
+        TooManyRequests: problemResponse(429, 'Rate limit exceeded.', { 'Retry-After': ref('headers', 'Retry-After') }),
+        InternalError: problemResponse(500, 'Unexpected error.'),
+        BadGateway: problemResponse(502, 'The static origin did not answer.')
+      },
+      headers: {
+        'API-Version': { description: 'API version that served the response.', schema: { type: 'string', enum: [CONTRACT.api_version] } },
+        'RateLimit-Policy': { description: 'Quota policy (draft-ietf-httpapi-ratelimit-headers): q = requests allowed per window, w = window in seconds.', schema: { type: 'string' }, example: '"' + RATE.policy + '";q=' + RATE.requests + ';w=' + RATE.window_seconds },
+        RateLimit: { description: 'Current quota (draft-ietf-httpapi-ratelimit-headers): r = requests remaining, t = seconds until the window resets.', schema: { type: 'string' }, example: '"' + RATE.policy + '";r=' + (RATE.requests - 1) + ';t=' + RATE.window_seconds },
+        'RateLimit-Limit': { description: 'Requests allowed per window.', schema: { type: 'integer', enum: [RATE.requests] } },
+        'RateLimit-Remaining': { description: 'Requests left in the current window.', schema: { type: 'integer', minimum: 0 } },
+        'RateLimit-Reset': { description: 'Seconds until the window resets.', schema: { type: 'integer', minimum: 0 } },
+        'Retry-After': { description: 'Seconds to wait before retrying (on 429).', schema: { type: 'integer', minimum: 0 } },
+        Deprecation: { description: 'RFC 9745. Sent only on deprecated endpoints or versions: the date deprecation took effect, as @<unix seconds>.', schema: { type: 'string' } },
+        Sunset: { description: 'RFC 8594. Sent only on deprecated endpoints or versions: the HTTP-date after which the endpoint may stop responding.', schema: { type: 'string' } }
       }
     },
-    'x-mcp-tools': defs.map((t) => ({ name: t.name, description: t.description, data_source: t.data_source }))
+    'x-mcp-tools': defs.map((t) => ({ name: t.name, description: t.description, data_source: t.data_source, rest_endpoint: TOOLS_URL + '/' + t.name })),
+    'x-markdown': 'Every HTML page is available as Markdown: send Accept: text/markdown to the page URL (response has Content-Type: text/markdown and Vary: Accept), or fetch the page URL + .md (index.html.md for directory URLs).'
   };
   write('openapi.json', json(openapi));
+}
+
+function envelopeOf(key, item) {
+  return {
+    type: 'object',
+    required: ['last_updated', key],
+    properties: { publisher: { type: 'string' }, last_updated: { type: 'string', format: 'date' }, license: { type: 'string' }, count: { type: 'integer' }, [key]: { type: 'array', items: { $ref: '#/components/schemas/' + item } } }
+  };
 }
 
 // Questions people ask search engines and AI assistants (from Search Console),
@@ -1032,7 +1267,7 @@ const QUESTION_MAP = [
   ['A course the catalog does not list', 'course-request.html']
 ];
 
-function writeLlms(d, courses, updated) {
+function writeLlms(d, courses, updated, toolNames) {
   const total = courses.reduce((sum, c) => sum + c.duration_hours, 0);
   const complete = d.bundles.find((b) => b.id === 'bundle-complete-catalog');
   const maxSave = Math.max(...d.bundles.map((b) => b.savings_percent));
@@ -1050,15 +1285,31 @@ function writeLlms(d, courses, updated) {
     '',
     'Courses start at $' + Math.min(...courses.map((c) => c.price_usd)).toFixed(2) + ' per seat, or enroll the complete ' + courses.length + '-course catalog bundle for $' + complete.price_usd.toLocaleString('en-US', { minimumFractionDigits: 2 }) + '. ' + d.bundles.length + ' bundles save up to ' + maxSave + '%. Programs are Comprehensive Programs (' + hoursRange(courses, 'comprehensive') + ' hrs, full-discipline curriculum) or Modular Specializations (' + hoursRange(courses, 'modular') + ' hrs, focused skills). English only.',
     '',
+    '## When to use this',
+    '',
+    'Reach for Data Center Training when a user or an agent needs to:',
+    '',
+    WHEN_TO_USE.map((w) => '- ' + w).join('\n'),
+    '',
+    'Not for: ' + NOT_FOR,
+    '',
+    '## How to call it',
+    '',
+    howToCall(toolNames).map((w, i) => (i + 1) + '. ' + w).join('\n'),
+    '',
+    'No API key or account is needed. Errors are application/problem+json with a stable code and a hint. ' + RATE_LIMITS + ' Versioning: path-based (' + API + '/); breaking changes ship as a new version with Deprecation and Sunset headers. Details: [Developer portal](' + DEV_URL + ').',
+    '',
     '## Rules for AI agents',
     '',
     rules,
     '',
     '## Machine-readable data',
     '',
-    '- [WebMCP / MCP manifest](' + ORIGIN + '/.well-known/mcp.json): 7 read-only tools (list_courses, get_course, compare_bundles, recommend_courses, get_credential_info, answer_faq, list_resources) with JSON Schemas and examples. Also registered in-page via navigator.modelContext.',
-    '- [OpenAPI 3.1](' + ORIGIN + '/openapi.json): schema for every JSON document below.',
-    '- [API index](' + ORIGIN + '/api/index.json), [courses](' + ORIGIN + '/api/courses.json), [bundles](' + ORIGIN + '/api/bundles.json), [roles](' + ORIGIN + '/api/roles.json), [FAQ](' + ORIGIN + '/api/faq.json), [credentials](' + ORIGIN + '/api/credentials.json), [resources](' + ORIGIN + '/api/resources.json)',
+    '- [Developer portal](' + DEV_URL + '): quickstart, MCP setup, REST tools, errors, rate limits, versioning, and the CLI.',
+    '- [Remote MCP server](' + MCP_URL + '): Streamable HTTP, no auth, ' + toolNames.length + ' read-only tools.',
+    '- [WebMCP / MCP manifest](' + ORIGIN + '/.well-known/mcp.json): ' + toolNames.length + ' read-only tools (' + toolNames.join(', ') + ') with JSON Schemas and examples. Also registered in-page via navigator.modelContext.',
+    '- [OpenAPI 3.1](' + ORIGIN + '/openapi.json): typed schemas for every JSON document, tool endpoint, and error.',
+    '- [API index](' + API + '/index.json), [courses](' + API + '/courses.json), [bundles](' + API + '/bundles.json), [roles](' + API + '/roles.json), [FAQ](' + API + '/faq.json), [credentials](' + API + '/credentials.json), [resources](' + API + '/resources.json)',
     '- [llms-full.txt](' + ORIGIN + '/llms-full.txt): every course, bundle, role, and FAQ as stable records.',
     '- [Sitemap](' + ORIGIN + '/sitemap.xml): every indexable page. lastmod is the date that page\'s content last changed.',
     '',
@@ -1077,8 +1328,9 @@ function writeLlms(d, courses, updated) {
     '- [Data Center Technician Salary Guide](' + ORIGIN + '/careers/data-center-technician-salary.html): U.S. Bureau of Labor Statistics pay data for comparable occupations.',
     '- [Data Center Certifications Guide](' + ORIGIN + '/careers/data-center-certifications.html): third-party data center certifications compared, and how certificates of completion differ.',
     '- [About](' + ORIGIN + '/about.html): who publishes this site, accreditation, and editorial standards.',
+    '- [Contact](' + ORIGIN + '/contact.html): phone, email, mailing address, and who to contact for what.',
     '- [Quizzes](' + ORIGIN + '/quizzes/) and [Tools](' + ORIGIN + '/tools/): career match quiz, knowledge quizzes, training plan builder, and PUE, uptime, and cooling load calculators.',
-    '- [Site search](' + ORIGIN + '/search.html): every course, guide, FAQ answer, and glossary term (index: ' + ORIGIN + '/api/search.json).',
+    '- [Site search](' + ORIGIN + '/search.html): every course, guide, FAQ answer, and glossary term (index: ' + API + '/search.json).',
     '',
     '## Best page for common questions',
     '',
@@ -1149,7 +1401,7 @@ function writeLlms(d, courses, updated) {
     intro,
     '',
     'Last updated: ' + updated,
-    'Canonical source: ' + ORIGIN + '/api/courses.json (same records as JSON). Tools: ' + ORIGIN + '/.well-known/mcp.json',
+    'Canonical source: ' + API + '/courses.json (same records as JSON). Tools: ' + ORIGIN + '/.well-known/mcp.json',
     '',
     '## Rules for AI agents',
     '',
@@ -1239,18 +1491,39 @@ if(navigator.modelContext){var m=document.createElement('script');m.src='/js/web
 </script>
 <script src="/js/consent.js" defer></script>`;
 
-function headBlock() {
+function headBlock(mdPath) {
   return [
     '<!-- dct:head -->',
     '<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; object-src \'none\'; base-uri \'self\'">',
     '<meta name="referrer" content="strict-origin-when-cross-origin">',
     '<meta name="theme-color" content="#ffffff">',
+    mdPath ? '<link rel="alternate" type="text/markdown" href="/' + mdPath + '" title="Markdown">' : null,
     '<link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt">',
     '<link rel="alternate" type="application/json" href="/.well-known/mcp.json" title="WebMCP manifest">',
     '<link rel="service-desc" type="application/vnd.oai.openapi+json" href="/openapi.json">',
     THIRD_PARTY,
     '<!-- /dct:head -->'
-  ].join('\n');
+  ].filter((x) => x !== null).join('\n');
+}
+
+// The Markdown copy of a page, published at <page>.html.md (the llms.txt
+// convention) and served by the edge for Accept: text/markdown. Indexable pages
+// only: not redirects, error pages, noindex pages, or the blog post template.
+function markdownPath(rel, html) {
+  if (rel === '404.html' || rel.startsWith('blog/scripts/')) return null;
+  if (/<meta name="robots" content="[^"]*noindex/.test(html) || /<meta http-equiv="refresh"/.test(html)) return null;
+  return rel + '.md';
+}
+
+function pageMarkdown(rel, html) {
+  const canonical = (html.match(/<link rel="canonical" href="([^"]+)">/) || [])[1] || ORIGIN + '/' + rel.replace(/(^|\/)index\.html$/, '$1');
+  let md = toMarkdown.pageToMarkdown(html, canonical);
+  if (!md) return null;
+  // Lead with the page's <h1>; eyebrow labels that sit above it follow it.
+  const parts = md.trim().split('\n\n');
+  const h = parts.findIndex((p) => /^# /.test(p));
+  if (h > 0 && parts.slice(0, h).every((p) => p.length < 160 && !p.includes('\n'))) parts.unshift(parts.splice(h, 1)[0]);
+  return parts.join('\n\n') + '\n\n---\n\nMarkdown version of ' + canonical + ' · For AI agents: [llms.txt](' + ORIGIN + '/llms.txt) · [Developer portal](' + DEV_URL + ')\n';
 }
 
 const OLD_ANALYTICS = /<!-- Google tag \(gtag\.js\) -->[\s\S]*?"clarity", "script", "ylza43nm4m"\);\s*<\/script>\n?/;
@@ -1272,11 +1545,12 @@ function iconLinks(rel) {
 }
 
 function processHead(rel, html) {
+  const md = markdownPath(rel, html);
   html = html.replace(OLD_ANALYTICS, '').replace(OLD_TAWK, '\n');
   html = html.replace(/<link rel="(?:icon|apple-touch-icon)"[^>]*>\n/g, '');
   html = html.replace(/(<link rel="canonical"[^>]*>\n|<meta name="robots"[^>]*>\n)/, (m) => (m.startsWith('<meta') ? m + iconLinks(rel) + '\n' : iconLinks(rel) + '\n' + m));
   html = html.replace(/<!-- dct:head -->[\s\S]*?<!-- \/dct:head -->\n?/, '');
-  html = html.replace(/(<meta name="viewport"[^>]*>\n)/, '$1' + headBlock() + '\n');
+  html = html.replace(/(<meta name="viewport"[^>]*>\n)/, '$1' + headBlock(md) + '\n');
 
   // X/Twitter cards mirror the Open Graph tags.
   html = html.replace(/<meta name="twitter:[^"]+" content="[^"]*">\n/g, '');
@@ -1460,6 +1734,29 @@ function applyIcons(rel, html) {
 
 // The closing call-to-action block sits in a full-width purple band: mark the
 // section that holds it so the CSS can color the whole section.
+// Generated sections of the developer portal, so the published contract
+// (edge/contract.json, the tool list, the agent guidance) never drifts.
+function applyDevBlocks(html, defs) {
+  const blocks = {
+    'when-to-use': '<p>Reach for this API when a user or an agent needs to:</p>\n      <ul>\n' +
+      WHEN_TO_USE.map((w) => '        <li>' + esc(w) + '</li>').join('\n') + '\n      </ul>\n      <p><strong>Not for:</strong> ' + esc(NOT_FOR) + '</p>\n' +
+      '      <p>A typical flow: call <code>recommend_courses</code> with a role and budget (or <code>list_courses</code> with a topic or standard), then <code>get_course</code> for details, then give the user the course or bundle URL so they enroll themselves.</p>',
+    'mcp-versions': '<p>Supported protocol versions: ' + CONTRACT.mcp_protocol_versions.map((x) => '<code>' + x + '</code>').join(', ') +
+      '. Methods: <code>initialize</code>, <code>ping</code>, <code>tools/list</code>, <code>tools/call</code>, <code>resources/list</code>, and <code>resources/read</code>. Tools: ' + defs.map((t) => '<code>' + t.name + '</code>').join(', ') + '.</p>',
+    tools: '<div class="table-panel">\n        <table class="data-table">\n          <caption>Tool endpoints (POST or GET)</caption>\n          <thead><tr><th>Tool</th><th>Endpoint</th><th>What it does</th></tr></thead>\n          <tbody>\n' +
+      defs.map((t) => '            <tr><td>' + t.name + '</td><td><code>' + CONTRACT.tools_path + '/' + t.name + '</code></td><td>' + esc(t.title) + '</td></tr>').join('\n') +
+      '\n          </tbody>\n        </table>\n      </div>',
+    errors: '<div class="table-panel">\n        <table class="data-table">\n          <caption>Error codes</caption>\n          <thead><tr><th>Code</th><th>Status</th><th>Meaning</th><th>What to do</th></tr></thead>\n          <tbody>\n' +
+      Object.entries(CONTRACT.errors).map(([code, e]) => '            <tr id="error-' + code + '"><td>' + code + '</td><td>' + e.status + '</td><td>' + esc(e.title) + '</td><td>' + esc(e.hint) + '</td></tr>').join('\n') +
+      '\n          </tbody>\n        </table>\n      </div>',
+    'rate-limits': '<p>' + esc(RATE_LIMITS) + ' Static pages and the Markdown files are not rate limited.</p>\n' +
+      '<pre class="code-block"><code>RateLimit-Policy: "' + RATE.policy + '";q=' + RATE.requests + ';w=' + RATE.window_seconds + '\n' +
+      'RateLimit: "' + RATE.policy + '";r=' + (RATE.requests - 3) + ';t=42\nRateLimit-Limit: ' + RATE.requests + '\nRateLimit-Remaining: ' + (RATE.requests - 3) + '\nRateLimit-Reset: 42</code></pre>',
+    versioning: '<p>' + esc(VERSIONING) + '</p>'
+  };
+  return html.replace(/<!-- dct:([a-z-]+) -->[\s\S]*?<!-- \/dct:\1 -->/g, (m, name) => (name in blocks ? '<!-- dct:' + name + ' -->' + blocks[name] + '<!-- /dct:' + name + ' -->' : m));
+}
+
 function applyCtaSections(html) {
   return html.replace(/<section class="section([^"]*)">(\s*<div class="container">\s*<div class="cta-block">)/g,
     (m, cls, rest) => (/\bcta-section\b/.test(cls) ? m : '<section class="section' + cls + ' cta-section">' + rest));
@@ -1552,7 +1849,7 @@ function writeSearchIndex(d, pageDocs) {
     d: clip(f.answer, 260),
     k: f.category
   })), pageDocs.filter((x) => x.y === 'Glossary'));
-  write('api/search.json', '{"count":' + docs.length + ',"docs":[\n' + docs.map((x) => JSON.stringify(x)).join(',\n') + '\n]}\n');
+  writeApi('search.json', '{"count":' + docs.length + ',"docs":[\n' + docs.map((x) => JSON.stringify(x)).join(',\n') + '\n]}\n');
 }
 
 // Quiz JSON-LD, built from the visible questions so the two never disagree.
@@ -1624,6 +1921,7 @@ function processPages(d) {
   })('');
 
   const byId = Object.fromEntries(d.courses.map((c) => [c.id, c]));
+  const mirrors = new Set();
   const searchDocs = [];
   const pages = {};
   for (const rel of files.sort()) {
@@ -1636,6 +1934,7 @@ function processPages(d) {
     html = applyBlocks(rel, html, d);
     html = applyIcons(rel, html);
     html = applyCtaSections(html);
+    if (rel === 'developers/index.html') html = applyDevBlocks(html, toolDefs(d).defs);
     searchDocs.push(...pageSearchDocs(rel, html));
 
     const cm = rel.match(/^courses\/([a-z0-9-]+)\.html$/);
@@ -1713,9 +2012,31 @@ function processPages(d) {
     }
     write(rel, html);
     pages[rel] = html;
+    const md = markdownPath(rel, html);
+    const body = md && pageMarkdown(rel, html);
+    if (body) {
+      write(md, body);
+      mirrors.add(md);
+    }
   }
   writeSearchIndex(d, searchDocs);
+  removeStaleMirrors(mirrors);
   return pages;
+}
+
+// A page that was deleted or set to noindex takes its Markdown copy with it.
+function removeStaleMirrors(keep) {
+  (function walk(dir) {
+    for (const e of fs.readdirSync(path.join(ROOT, dir), { withFileTypes: true })) {
+      if (e.name.startsWith('.') || e.name === 'node_modules') continue;
+      const rel = dir ? dir + '/' + e.name : e.name;
+      if (e.isDirectory()) walk(rel);
+      else if (rel.endsWith('.html.md') && !keep.has(rel)) {
+        changed.push(rel + ' (removed)');
+        if (!CHECK) fs.unlinkSync(path.join(ROOT, rel));
+      }
+    }
+  })('');
 }
 
 // ---------------------------------------------------------------------------

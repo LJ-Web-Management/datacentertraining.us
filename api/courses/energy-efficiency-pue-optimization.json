@@ -3,7 +3,7 @@
   "catalog_number": 425,
   "title": "Energy Efficiency & PUE Optimization",
   "url": "https://datacentertraining.us/courses/energy-efficiency-pue-optimization.html",
-  "api_url": "https://datacentertraining.us/api/courses/energy-efficiency-pue-optimization.json",
+  "api_url": "https://datacentertraining.us/api/v1/courses/energy-efficiency-pue-optimization.json",
   "track": "Cooling & Facilities Efficiency Track",
   "category": "Cooling & Efficiency",
   "course_type": "modular",
@@ -98,5 +98,5 @@
     "data-center-cooling-refrigerant-safety",
     "building-envelope-fundamentals"
   ],
-  "last_updated": "2026-10-28"
+  "last_updated": "2026-10-30"
 }

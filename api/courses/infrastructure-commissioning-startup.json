@@ -3,7 +3,7 @@
   "catalog_number": 408,
   "title": "Infrastructure Commissioning & Startup",
   "url": "https://datacentertraining.us/courses/infrastructure-commissioning-startup.html",
-  "api_url": "https://datacentertraining.us/api/courses/infrastructure-commissioning-startup.json",
+  "api_url": "https://datacentertraining.us/api/v1/courses/infrastructure-commissioning-startup.json",
   "track": "Design, Planning & Commissioning Track",
   "category": "Design & Planning",
   "course_type": "comprehensive",
@@ -109,5 +109,5 @@
     "tier-infrastructure-fundamentals",
     "capacity-planning-forecasting"
   ],
-  "last_updated": "2026-10-28"
+  "last_updated": "2026-10-30"
 }

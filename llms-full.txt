@@ -2,8 +2,8 @@
 
 > Data Center Training (datacentertraining.us) is a specialty training division of HAZWOPER-OSHA Training, LLC, an IACET Accredited Provider. 43 online, self-paced data center courses (192 hours total) in design, operations, power, cooling, security, and facilities management. Every course awards a certificate of completion.
 
-Last updated: 2026-10-28
-Canonical source: https://datacentertraining.us/api/courses.json (same records as JSON). Tools: https://datacentertraining.us/.well-known/mcp.json
+Last updated: 2026-10-30
+Canonical source: https://datacentertraining.us/api/v1/courses.json (same records as JSON). Tools: https://datacentertraining.us/.well-known/mcp.json
 
 ## Rules for AI agents
 
@@ -28,7 +28,7 @@ Each record below is stable: the id never changes, and every field matches the c
 - id: power-systems-electrical-fundamentals
 - catalog_number: 405
 - url: https://datacentertraining.us/courses/power-systems-electrical-fundamentals.html
-- api_url: https://datacentertraining.us/api/courses/power-systems-electrical-fundamentals.json
+- api_url: https://datacentertraining.us/api/v1/courses/power-systems-electrical-fundamentals.json
 - track: Power & Electrical Systems Track
 - category: Power & Electrical
 - course_type: Comprehensive Program
@@ -71,7 +71,7 @@ Modules:
 - id: ups-operations-load-testing
 - catalog_number: 422
 - url: https://datacentertraining.us/courses/ups-operations-load-testing.html
-- api_url: https://datacentertraining.us/api/courses/ups-operations-load-testing.json
+- api_url: https://datacentertraining.us/api/v1/courses/ups-operations-load-testing.json
 - track: Power & Electrical Systems Track
 - category: Power & Electrical
 - course_type: Modular Specialization
@@ -111,7 +111,7 @@ Modules:
 - id: generator-operations-maintenance
 - catalog_number: 424
 - url: https://datacentertraining.us/courses/generator-operations-maintenance.html
-- api_url: https://datacentertraining.us/api/courses/generator-operations-maintenance.json
+- api_url: https://datacentertraining.us/api/v1/courses/generator-operations-maintenance.json
 - track: Power & Electrical Systems Track
 - category: Power & Electrical
 - course_type: Modular Specialization
@@ -151,7 +151,7 @@ Modules:
 - id: electrical-safety-best-practices
 - catalog_number: 433
 - url: https://datacentertraining.us/courses/electrical-safety-best-practices.html
-- api_url: https://datacentertraining.us/api/courses/electrical-safety-best-practices.json
+- api_url: https://datacentertraining.us/api/v1/courses/electrical-safety-best-practices.json
 - track: Power & Electrical Systems Track
 - category: Power & Electrical
 - course_type: Modular Specialization
@@ -191,7 +191,7 @@ Modules:
 - id: batteries-dc-circuits
 - catalog_number: 441
 - url: https://datacentertraining.us/courses/batteries-dc-circuits.html
-- api_url: https://datacentertraining.us/api/courses/batteries-dc-circuits.json
+- api_url: https://datacentertraining.us/api/v1/courses/batteries-dc-circuits.json
 - track: Power & Electrical Systems Track
 - category: Power & Electrical
 - course_type: Modular Specialization
@@ -231,7 +231,7 @@ Modules:
 - id: data-center-arc-flash-safety
 - catalog_number: 446
 - url: https://datacentertraining.us/courses/data-center-arc-flash-safety.html
-- api_url: https://datacentertraining.us/api/courses/data-center-arc-flash-safety.json
+- api_url: https://datacentertraining.us/api/v1/courses/data-center-arc-flash-safety.json
 - track: Power & Electrical Systems Track
 - category: Power & Electrical
 - course_type: Modular Specialization
@@ -271,7 +271,7 @@ Modules:
 - id: data-center-electrical-safety
 - catalog_number: 448
 - url: https://datacentertraining.us/courses/data-center-electrical-safety.html
-- api_url: https://datacentertraining.us/api/courses/data-center-electrical-safety.json
+- api_url: https://datacentertraining.us/api/v1/courses/data-center-electrical-safety.json
 - track: Power & Electrical Systems Track
 - category: Power & Electrical
 - course_type: Modular Specialization
@@ -311,7 +311,7 @@ Modules:
 - id: data-center-epo-procedures
 - catalog_number: 449
 - url: https://datacentertraining.us/courses/data-center-epo-procedures.html
-- api_url: https://datacentertraining.us/api/courses/data-center-epo-procedures.json
+- api_url: https://datacentertraining.us/api/v1/courses/data-center-epo-procedures.json
 - track: Power & Electrical Systems Track
 - category: Power & Electrical
 - course_type: Modular Specialization
@@ -351,7 +351,7 @@ Modules:
 - id: data-center-ups-battery-safety
 - catalog_number: 453
 - url: https://datacentertraining.us/courses/data-center-ups-battery-safety.html
-- api_url: https://datacentertraining.us/api/courses/data-center-ups-battery-safety.json
+- api_url: https://datacentertraining.us/api/v1/courses/data-center-ups-battery-safety.json
 - track: Power & Electrical Systems Track
 - category: Power & Electrical
 - course_type: Modular Specialization
@@ -391,7 +391,7 @@ Modules:
 - id: emergency-standby-power-systems-fundamentals
 - catalog_number: 454
 - url: https://datacentertraining.us/courses/emergency-standby-power-systems-fundamentals.html
-- api_url: https://datacentertraining.us/api/courses/emergency-standby-power-systems-fundamentals.json
+- api_url: https://datacentertraining.us/api/v1/courses/emergency-standby-power-systems-fundamentals.json
 - track: Power & Electrical Systems Track
 - category: Power & Electrical
 - course_type: Modular Specialization
@@ -431,7 +431,7 @@ Modules:
 - id: generator-fundamentals
 - catalog_number: 456
 - url: https://datacentertraining.us/courses/generator-fundamentals.html
-- api_url: https://datacentertraining.us/api/courses/generator-fundamentals.json
+- api_url: https://datacentertraining.us/api/v1/courses/generator-fundamentals.json
 - track: Power & Electrical Systems Track
 - category: Power & Electrical
 - course_type: Modular Specialization
@@ -471,7 +471,7 @@ Modules:
 - id: lithium-ion-thermal-runaway-emergency-response
 - catalog_number: 457
 - url: https://datacentertraining.us/courses/lithium-ion-thermal-runaway-emergency-response.html
-- api_url: https://datacentertraining.us/api/courses/lithium-ion-thermal-runaway-emergency-response.json
+- api_url: https://datacentertraining.us/api/v1/courses/lithium-ion-thermal-runaway-emergency-response.json
 - track: Power & Electrical Systems Track
 - category: Power & Electrical
 - course_type: Modular Specialization
@@ -511,7 +511,7 @@ Modules:
 - id: power-distribution-systems-fundamentals
 - catalog_number: 459
 - url: https://datacentertraining.us/courses/power-distribution-systems-fundamentals.html
-- api_url: https://datacentertraining.us/api/courses/power-distribution-systems-fundamentals.json
+- api_url: https://datacentertraining.us/api/v1/courses/power-distribution-systems-fundamentals.json
 - track: Power & Electrical Systems Track
 - category: Power & Electrical
 - course_type: Modular Specialization
@@ -551,7 +551,7 @@ Modules:
 - id: ups-systems-fundamentals
 - catalog_number: 462
 - url: https://datacentertraining.us/courses/ups-systems-fundamentals.html
-- api_url: https://datacentertraining.us/api/courses/ups-systems-fundamentals.json
+- api_url: https://datacentertraining.us/api/v1/courses/ups-systems-fundamentals.json
 - track: Power & Electrical Systems Track
 - category: Power & Electrical
 - course_type: Modular Specialization
@@ -593,7 +593,7 @@ Modules:
 - id: cooling-systems-design-optimization
 - catalog_number: 406
 - url: https://datacentertraining.us/courses/cooling-systems-design-optimization.html
-- api_url: https://datacentertraining.us/api/courses/cooling-systems-design-optimization.json
+- api_url: https://datacentertraining.us/api/v1/courses/cooling-systems-design-optimization.json
 - track: Cooling & Facilities Efficiency Track
 - category: Cooling & Efficiency
 - course_type: Comprehensive Program
@@ -636,7 +636,7 @@ Modules:
 - id: hvac-troubleshooting-essentials
 - catalog_number: 421
 - url: https://datacentertraining.us/courses/hvac-troubleshooting-essentials.html
-- api_url: https://datacentertraining.us/api/courses/hvac-troubleshooting-essentials.json
+- api_url: https://datacentertraining.us/api/v1/courses/hvac-troubleshooting-essentials.json
 - track: Cooling & Facilities Efficiency Track
 - category: Cooling & Efficiency
 - course_type: Modular Specialization
@@ -676,7 +676,7 @@ Modules:
 - id: energy-efficiency-pue-optimization
 - catalog_number: 425
 - url: https://datacentertraining.us/courses/energy-efficiency-pue-optimization.html
-- api_url: https://datacentertraining.us/api/courses/energy-efficiency-pue-optimization.json
+- api_url: https://datacentertraining.us/api/v1/courses/energy-efficiency-pue-optimization.json
 - track: Cooling & Facilities Efficiency Track
 - category: Cooling & Efficiency
 - course_type: Modular Specialization
@@ -716,7 +716,7 @@ Modules:
 - id: mechanical-systems-maintenance
 - catalog_number: 432
 - url: https://datacentertraining.us/courses/mechanical-systems-maintenance.html
-- api_url: https://datacentertraining.us/api/courses/mechanical-systems-maintenance.json
+- api_url: https://datacentertraining.us/api/v1/courses/mechanical-systems-maintenance.json
 - track: Cooling & Facilities Efficiency Track
 - category: Cooling & Efficiency
 - course_type: Modular Specialization
@@ -756,7 +756,7 @@ Modules:
 - id: data-center-cooling-refrigerant-safety
 - catalog_number: 447
 - url: https://datacentertraining.us/courses/data-center-cooling-refrigerant-safety.html
-- api_url: https://datacentertraining.us/api/courses/data-center-cooling-refrigerant-safety.json
+- api_url: https://datacentertraining.us/api/v1/courses/data-center-cooling-refrigerant-safety.json
 - track: Cooling & Facilities Efficiency Track
 - category: Cooling & Efficiency
 - course_type: Modular Specialization
@@ -796,7 +796,7 @@ Modules:
 - id: building-envelope-fundamentals
 - catalog_number: 443
 - url: https://datacentertraining.us/courses/building-envelope-fundamentals.html
-- api_url: https://datacentertraining.us/api/courses/building-envelope-fundamentals.json
+- api_url: https://datacentertraining.us/api/v1/courses/building-envelope-fundamentals.json
 - track: Cooling & Facilities Efficiency Track
 - category: Cooling & Efficiency
 - course_type: Modular Specialization
@@ -838,7 +838,7 @@ Modules:
 - id: data-center-operations-management
 - catalog_number: 403
 - url: https://datacentertraining.us/courses/data-center-operations-management.html
-- api_url: https://datacentertraining.us/api/courses/data-center-operations-management.json
+- api_url: https://datacentertraining.us/api/v1/courses/data-center-operations-management.json
 - track: Operations & Reliability Track
 - category: Operations
 - course_type: Comprehensive Program
@@ -881,7 +881,7 @@ Modules:
 - id: disaster-recovery-business-continuity
 - catalog_number: 407
 - url: https://datacentertraining.us/courses/disaster-recovery-business-continuity.html
-- api_url: https://datacentertraining.us/api/courses/disaster-recovery-business-continuity.json
+- api_url: https://datacentertraining.us/api/v1/courses/disaster-recovery-business-continuity.json
 - track: Operations & Reliability Track
 - category: Operations
 - course_type: Comprehensive Program
@@ -924,7 +924,7 @@ Modules:
 - id: preventive-maintenance-planning
 - catalog_number: 427
 - url: https://datacentertraining.us/courses/preventive-maintenance-planning.html
-- api_url: https://datacentertraining.us/api/courses/preventive-maintenance-planning.json
+- api_url: https://datacentertraining.us/api/v1/courses/preventive-maintenance-planning.json
 - track: Operations & Reliability Track
 - category: Operations
 - course_type: Modular Specialization
@@ -964,7 +964,7 @@ Modules:
 - id: incident-response-troubleshooting
 - catalog_number: 429
 - url: https://datacentertraining.us/courses/incident-response-troubleshooting.html
-- api_url: https://datacentertraining.us/api/courses/incident-response-troubleshooting.json
+- api_url: https://datacentertraining.us/api/v1/courses/incident-response-troubleshooting.json
 - track: Operations & Reliability Track
 - category: Operations
 - course_type: Modular Specialization
@@ -1004,7 +1004,7 @@ Modules:
 - id: business-continuity-disaster-recovery-planning
 - catalog_number: 445
 - url: https://datacentertraining.us/courses/business-continuity-disaster-recovery-planning.html
-- api_url: https://datacentertraining.us/api/courses/business-continuity-disaster-recovery-planning.json
+- api_url: https://datacentertraining.us/api/v1/courses/business-continuity-disaster-recovery-planning.json
 - track: Operations & Reliability Track
 - category: Operations
 - course_type: Modular Specialization
@@ -1044,7 +1044,7 @@ Modules:
 - id: building-maintenance-fundamentals
 - catalog_number: 444
 - url: https://datacentertraining.us/courses/building-maintenance-fundamentals.html
-- api_url: https://datacentertraining.us/api/courses/building-maintenance-fundamentals.json
+- api_url: https://datacentertraining.us/api/v1/courses/building-maintenance-fundamentals.json
 - track: Operations & Reliability Track
 - category: Operations
 - course_type: Modular Specialization
@@ -1084,7 +1084,7 @@ Modules:
 - id: facility-management-fundamentals
 - catalog_number: 455
 - url: https://datacentertraining.us/courses/facility-management-fundamentals.html
-- api_url: https://datacentertraining.us/api/courses/facility-management-fundamentals.json
+- api_url: https://datacentertraining.us/api/v1/courses/facility-management-fundamentals.json
 - track: Operations & Reliability Track
 - category: Operations
 - course_type: Modular Specialization
@@ -1124,7 +1124,7 @@ Modules:
 - id: roofing-systems-maintenance-fundamentals
 - catalog_number: 460
 - url: https://datacentertraining.us/courses/roofing-systems-maintenance-fundamentals.html
-- api_url: https://datacentertraining.us/api/courses/roofing-systems-maintenance-fundamentals.json
+- api_url: https://datacentertraining.us/api/v1/courses/roofing-systems-maintenance-fundamentals.json
 - track: Operations & Reliability Track
 - category: Operations
 - course_type: Modular Specialization
@@ -1164,7 +1164,7 @@ Modules:
 - id: server-room-ergonomics-manual-handling
 - catalog_number: 461
 - url: https://datacentertraining.us/courses/server-room-ergonomics-manual-handling.html
-- api_url: https://datacentertraining.us/api/courses/server-room-ergonomics-manual-handling.json
+- api_url: https://datacentertraining.us/api/v1/courses/server-room-ergonomics-manual-handling.json
 - track: Operations & Reliability Track
 - category: Operations
 - course_type: Modular Specialization
@@ -1204,7 +1204,7 @@ Modules:
 - id: data-center-raised-floor-confined-space
 - catalog_number: 452
 - url: https://datacentertraining.us/courses/data-center-raised-floor-confined-space.html
-- api_url: https://datacentertraining.us/api/courses/data-center-raised-floor-confined-space.json
+- api_url: https://datacentertraining.us/api/v1/courses/data-center-raised-floor-confined-space.json
 - track: Operations & Reliability Track
 - category: Operations
 - course_type: Modular Specialization
@@ -1246,7 +1246,7 @@ Modules:
 - id: security-compliance-data-centers
 - catalog_number: 404
 - url: https://datacentertraining.us/courses/security-compliance-data-centers.html
-- api_url: https://datacentertraining.us/api/courses/security-compliance-data-centers.json
+- api_url: https://datacentertraining.us/api/v1/courses/security-compliance-data-centers.json
 - track: Security & Compliance Track
 - category: Security & Compliance
 - course_type: Comprehensive Program
@@ -1289,7 +1289,7 @@ Modules:
 - id: access-control-physical-security
 - catalog_number: 430
 - url: https://datacentertraining.us/courses/access-control-physical-security.html
-- api_url: https://datacentertraining.us/api/courses/access-control-physical-security.json
+- api_url: https://datacentertraining.us/api/v1/courses/access-control-physical-security.json
 - track: Security & Compliance Track
 - category: Security & Compliance
 - course_type: Modular Specialization
@@ -1329,7 +1329,7 @@ Modules:
 - id: facility-environmental-compliance
 - catalog_number: 428
 - url: https://datacentertraining.us/courses/facility-environmental-compliance.html
-- api_url: https://datacentertraining.us/api/courses/facility-environmental-compliance.json
+- api_url: https://datacentertraining.us/api/v1/courses/facility-environmental-compliance.json
 - track: Security & Compliance Track
 - category: Security & Compliance
 - course_type: Modular Specialization
@@ -1369,7 +1369,7 @@ Modules:
 - id: data-center-fire-suppression-safety
 - catalog_number: 450
 - url: https://datacentertraining.us/courses/data-center-fire-suppression-safety.html
-- api_url: https://datacentertraining.us/api/courses/data-center-fire-suppression-safety.json
+- api_url: https://datacentertraining.us/api/v1/courses/data-center-fire-suppression-safety.json
 - track: Security & Compliance Track
 - category: Security & Compliance
 - course_type: Modular Specialization
@@ -1409,7 +1409,7 @@ Modules:
 - id: data-center-physical-security-access-control
 - catalog_number: 451
 - url: https://datacentertraining.us/courses/data-center-physical-security-access-control.html
-- api_url: https://datacentertraining.us/api/courses/data-center-physical-security-access-control.json
+- api_url: https://datacentertraining.us/api/v1/courses/data-center-physical-security-access-control.json
 - track: Security & Compliance Track
 - category: Security & Compliance
 - course_type: Modular Specialization
@@ -1451,7 +1451,7 @@ Modules:
 - id: data-center-design-fundamentals
 - catalog_number: 401
 - url: https://datacentertraining.us/courses/data-center-design-fundamentals.html
-- api_url: https://datacentertraining.us/api/courses/data-center-design-fundamentals.json
+- api_url: https://datacentertraining.us/api/v1/courses/data-center-design-fundamentals.json
 - track: Design, Planning & Commissioning Track
 - category: Design & Planning
 - course_type: Comprehensive Program
@@ -1494,7 +1494,7 @@ Modules:
 - id: tier-infrastructure-fundamentals
 - catalog_number: 402
 - url: https://datacentertraining.us/courses/tier-infrastructure-fundamentals.html
-- api_url: https://datacentertraining.us/api/courses/tier-infrastructure-fundamentals.json
+- api_url: https://datacentertraining.us/api/v1/courses/tier-infrastructure-fundamentals.json
 - track: Design, Planning & Commissioning Track
 - category: Design & Planning
 - course_type: Comprehensive Program
@@ -1537,7 +1537,7 @@ Modules:
 - id: infrastructure-commissioning-startup
 - catalog_number: 408
 - url: https://datacentertraining.us/courses/infrastructure-commissioning-startup.html
-- api_url: https://datacentertraining.us/api/courses/infrastructure-commissioning-startup.json
+- api_url: https://datacentertraining.us/api/v1/courses/infrastructure-commissioning-startup.json
 - track: Design, Planning & Commissioning Track
 - category: Design & Planning
 - course_type: Comprehensive Program
@@ -1580,7 +1580,7 @@ Modules:
 - id: capacity-planning-forecasting
 - catalog_number: 426
 - url: https://datacentertraining.us/courses/capacity-planning-forecasting.html
-- api_url: https://datacentertraining.us/api/courses/capacity-planning-forecasting.json
+- api_url: https://datacentertraining.us/api/v1/courses/capacity-planning-forecasting.json
 - track: Design, Planning & Commissioning Track
 - category: Design & Planning
 - course_type: Modular Specialization
@@ -1622,7 +1622,7 @@ Modules:
 - id: monitoring-automation-bms-systems
 - catalog_number: 409
 - url: https://datacentertraining.us/courses/monitoring-automation-bms-systems.html
-- api_url: https://datacentertraining.us/api/courses/monitoring-automation-bms-systems.json
+- api_url: https://datacentertraining.us/api/v1/courses/monitoring-automation-bms-systems.json
 - track: Monitoring & Smart Facility Track
 - category: Monitoring & Automation
 - course_type: Comprehensive Program
@@ -1665,7 +1665,7 @@ Modules:
 - id: dcim-platform-fundamentals
 - catalog_number: 431
 - url: https://datacentertraining.us/courses/dcim-platform-fundamentals.html
-- api_url: https://datacentertraining.us/api/courses/dcim-platform-fundamentals.json
+- api_url: https://datacentertraining.us/api/v1/courses/dcim-platform-fundamentals.json
 - track: Monitoring & Smart Facility Track
 - category: Monitoring & Automation
 - course_type: Modular Specialization
@@ -1706,7 +1706,7 @@ Modules:
 - id: fiber-optics-network-cabling
 - catalog_number: 423
 - url: https://datacentertraining.us/courses/fiber-optics-network-cabling.html
-- api_url: https://datacentertraining.us/api/courses/fiber-optics-network-cabling.json
+- api_url: https://datacentertraining.us/api/v1/courses/fiber-optics-network-cabling.json
 - track: Monitoring & Smart Facility Track
 - category: Monitoring & Automation
 - course_type: Modular Specialization
@@ -1746,7 +1746,7 @@ Modules:
 - id: building-automation-systems-fundamentals
 - catalog_number: 442
 - url: https://datacentertraining.us/courses/building-automation-systems-fundamentals.html
-- api_url: https://datacentertraining.us/api/courses/building-automation-systems-fundamentals.json
+- api_url: https://datacentertraining.us/api/v1/courses/building-automation-systems-fundamentals.json
 - track: Monitoring & Smart Facility Track
 - category: Monitoring & Automation
 - course_type: Modular Specialization

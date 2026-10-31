@@ -1,6 +1,6 @@
 {
   "publisher": "Data Center Training (datacentertraining.us)",
-  "last_updated": "2026-10-28",
+  "last_updated": "2026-10-30",
   "license": "Public information; quote with attribution and a link to the source URL.",
   "count": 43,
   "courses": [
@@ -9,7 +9,7 @@
       "catalog_number": 401,
       "title": "Data Center Design Fundamentals",
       "url": "https://datacentertraining.us/courses/data-center-design-fundamentals.html",
-      "api_url": "https://datacentertraining.us/api/courses/data-center-design-fundamentals.json",
+      "api_url": "https://datacentertraining.us/api/v1/courses/data-center-design-fundamentals.json",
       "track": "Design, Planning & Commissioning Track",
       "category": "Design & Planning",
       "course_type": "comprehensive",
@@ -111,14 +111,14 @@
         "infrastructure-commissioning-startup",
         "capacity-planning-forecasting"
       ],
-      "last_updated": "2026-10-28"
+      "last_updated": "2026-10-30"
     },
     {
       "id": "tier-infrastructure-fundamentals",
       "catalog_number": 402,
       "title": "Tier Infrastructure Fundamentals",
       "url": "https://datacentertraining.us/courses/tier-infrastructure-fundamentals.html",
-      "api_url": "https://datacentertraining.us/api/courses/tier-infrastructure-fundamentals.json",
+      "api_url": "https://datacentertraining.us/api/v1/courses/tier-infrastructure-fundamentals.json",
       "track": "Design, Planning & Commissioning Track",
       "category": "Design & Planning",
       "course_type": "comprehensive",
@@ -220,14 +220,14 @@
         "infrastructure-commissioning-startup",
         "capacity-planning-forecasting"
       ],
-      "last_updated": "2026-10-28"
+      "last_updated": "2026-10-30"
     },
     {
       "id": "data-center-operations-management",
       "catalog_number": 403,
       "title": "Data Center Operations Management",
       "url": "https://datacentertraining.us/courses/data-center-operations-management.html",
-      "api_url": "https://datacentertraining.us/api/courses/data-center-operations-management.json",
+      "api_url": "https://datacentertraining.us/api/v1/courses/data-center-operations-management.json",
       "track": "Operations & Reliability Track",
       "category": "Operations",
       "course_type": "comprehensive",
@@ -336,14 +336,14 @@
         "business-continuity-disaster-recovery-planning",
         "building-maintenance-fundamentals"
       ],
-      "last_updated": "2026-10-28"
+      "last_updated": "2026-10-30"
     },
     {
       "id": "security-compliance-data-centers",
       "catalog_number": 404,
       "title": "Security & Compliance for Data Centers",
       "url": "https://datacentertraining.us/courses/security-compliance-data-centers.html",
-      "api_url": "https://datacentertraining.us/api/courses/security-compliance-data-centers.json",
+      "api_url": "https://datacentertraining.us/api/v1/courses/security-compliance-data-centers.json",
       "track": "Security & Compliance Track",
       "category": "Security & Compliance",
       "course_type": "comprehensive",
@@ -455,14 +455,14 @@
         "data-center-fire-suppression-safety",
         "data-center-physical-security-access-control"
       ],
-      "last_updated": "2026-10-28"
+      "last_updated": "2026-10-30"
     },
     {
       "id": "power-systems-electrical-fundamentals",
       "catalog_number": 405,
       "title": "Power Systems & Electrical Fundamentals",
       "url": "https://datacentertraining.us/courses/power-systems-electrical-fundamentals.html",
-      "api_url": "https://datacentertraining.us/api/courses/power-systems-electrical-fundamentals.json",
+      "api_url": "https://datacentertraining.us/api/v1/courses/power-systems-electrical-fundamentals.json",
       "track": "Power & Electrical Systems Track",
       "category": "Power & Electrical",
       "course_type": "comprehensive",
@@ -566,14 +566,14 @@
         "batteries-dc-circuits",
         "data-center-arc-flash-safety"
       ],
-      "last_updated": "2026-10-28"
+      "last_updated": "2026-10-30"
     },
     {
       "id": "cooling-systems-design-optimization",
       "catalog_number": 406,
       "title": "Cooling Systems Design & Optimization",
       "url": "https://datacentertraining.us/courses/cooling-systems-design-optimization.html",
-      "api_url": "https://datacentertraining.us/api/courses/cooling-systems-design-optimization.json",
+      "api_url": "https://datacentertraining.us/api/v1/courses/cooling-systems-design-optimization.json",
       "track": "Cooling & Facilities Efficiency Track",
       "category": "Cooling & Efficiency",
       "course_type": "comprehensive",
@@ -678,14 +678,14 @@
         "data-center-cooling-refrigerant-safety",
         "building-envelope-fundamentals"
       ],
-      "last_updated": "2026-10-28"
+      "last_updated": "2026-10-30"
     },
     {
       "id": "disaster-recovery-business-continuity",
       "catalog_number": 407,
       "title": "Disaster Recovery & Business Continuity",
       "url": "https://datacentertraining.us/courses/disaster-recovery-business-continuity.html",
-      "api_url": "https://datacentertraining.us/api/courses/disaster-recovery-business-continuity.json",
+      "api_url": "https://datacentertraining.us/api/v1/courses/disaster-recovery-business-continuity.json",
       "track": "Operations & Reliability Track",
       "category": "Operations",
       "course_type": "comprehensive",
@@ -789,14 +789,14 @@
         "business-continuity-disaster-recovery-planning",
         "building-maintenance-fundamentals"
       ],
-      "last_updated": "2026-10-28"
+      "last_updated": "2026-10-30"
     },
     {
       "id": "infrastructure-commissioning-startup",
       "catalog_number": 408,
       "title": "Infrastructure Commissioning & Startup",
       "url": "https://datacentertraining.us/courses/infrastructure-commissioning-startup.html",
-      "api_url": "https://datacentertraining.us/api/courses/infrastructure-commissioning-startup.json",
+      "api_url": "https://datacentertraining.us/api/v1/courses/infrastructure-commissioning-startup.json",
       "track": "Design, Planning & Commissioning Track",
       "category": "Design & Planning",
       "course_type": "comprehensive",
@@ -902,14 +902,14 @@
         "tier-infrastructure-fundamentals",
         "capacity-planning-forecasting"
       ],
-      "last_updated": "2026-10-28"
+      "last_updated": "2026-10-30"
     },
     {
       "id": "monitoring-automation-bms-systems",
       "catalog_number": 409,
       "title": "Monitoring, Automation & BMS Systems",
       "url": "https://datacentertraining.us/courses/monitoring-automation-bms-systems.html",
-      "api_url": "https://datacentertraining.us/api/courses/monitoring-automation-bms-systems.json",
+      "api_url": "https://datacentertraining.us/api/v1/courses/monitoring-automation-bms-systems.json",
       "track": "Monitoring & Smart Facility Track",
       "category": "Monitoring & Automation",
       "course_type": "comprehensive",
@@ -1012,14 +1012,14 @@
         "fiber-optics-network-cabling",
         "building-automation-systems-fundamentals"
       ],
-      "last_updated": "2026-10-28"
+      "last_updated": "2026-10-30"
     },
     {
       "id": "hvac-troubleshooting-essentials",
       "catalog_number": 421,
       "title": "HVAC Systems Troubleshooting Essentials",
       "url": "https://datacentertraining.us/courses/hvac-troubleshooting-essentials.html",
-      "api_url": "https://datacentertraining.us/api/courses/hvac-troubleshooting-essentials.json",
+      "api_url": "https://datacentertraining.us/api/v1/courses/hvac-troubleshooting-essentials.json",
       "track": "Cooling & Facilities Efficiency Track",
       "category": "Cooling & Efficiency",
       "course_type": "modular",
@@ -1112,14 +1112,14 @@
         "data-center-cooling-refrigerant-safety",
         "building-envelope-fundamentals"
       ],
-      "last_updated": "2026-10-28"
+      "last_updated": "2026-10-30"
     },
     {
       "id": "ups-operations-load-testing",
       "catalog_number": 422,
       "title": "UPS Operations & Load Testing",
       "url": "https://datacentertraining.us/courses/ups-operations-load-testing.html",
-      "api_url": "https://datacentertraining.us/api/courses/ups-operations-load-testing.json",
+      "api_url": "https://datacentertraining.us/api/v1/courses/ups-operations-load-testing.json",
       "track": "Power & Electrical Systems Track",
       "category": "Power & Electrical",
       "course_type": "modular",
@@ -1216,14 +1216,14 @@
         "batteries-dc-circuits",
         "data-center-arc-flash-safety"
       ],
-      "last_updated": "2026-10-28"
+      "last_updated": "2026-10-30"
     },
     {
       "id": "fiber-optics-network-cabling",
       "catalog_number": 423,
       "title": "Fiber Optics & Network Cabling",
       "url": "https://datacentertraining.us/courses/fiber-optics-network-cabling.html",
-      "api_url": "https://datacentertraining.us/api/courses/fiber-optics-network-cabling.json",
+      "api_url": "https://datacentertraining.us/api/v1/courses/fiber-optics-network-cabling.json",
       "track": "Monitoring & Smart Facility Track",
       "category": "Monitoring & Automation",
       "course_type": "modular",
@@ -1316,14 +1316,14 @@
         "dcim-platform-fundamentals",
         "building-automation-systems-fundamentals"
       ],
-      "last_updated": "2026-10-28"
+      "last_updated": "2026-10-30"
     },
     {
       "id": "generator-operations-maintenance",
       "catalog_number": 424,
       "title": "Generator Operations & Maintenance",
       "url": "https://datacentertraining.us/courses/generator-operations-maintenance.html",
-      "api_url": "https://datacentertraining.us/api/courses/generator-operations-maintenance.json",
+      "api_url": "https://datacentertraining.us/api/v1/courses/generator-operations-maintenance.json",
       "track": "Power & Electrical Systems Track",
       "category": "Power & Electrical",
       "course_type": "modular",
@@ -1416,14 +1416,14 @@
         "batteries-dc-circuits",
         "data-center-arc-flash-safety"
       ],
-      "last_updated": "2026-10-28"
+      "last_updated": "2026-10-30"
     },
     {
       "id": "energy-efficiency-pue-optimization",
       "catalog_number": 425,
       "title": "Energy Efficiency & PUE Optimization",
       "url": "https://datacentertraining.us/courses/energy-efficiency-pue-optimization.html",
-      "api_url": "https://datacentertraining.us/api/courses/energy-efficiency-pue-optimization.json",
+      "api_url": "https://datacentertraining.us/api/v1/courses/energy-efficiency-pue-optimization.json",
       "track": "Cooling & Facilities Efficiency Track",
       "category": "Cooling & Efficiency",
       "course_type": "modular",
@@ -1518,14 +1518,14 @@
         "data-center-cooling-refrigerant-safety",
         "building-envelope-fundamentals"
       ],
-      "last_updated": "2026-10-28"
+      "last_updated": "2026-10-30"
     },
     {
       "id": "capacity-planning-forecasting",
       "catalog_number": 426,
       "title": "Capacity Planning & Forecasting",
       "url": "https://datacentertraining.us/courses/capacity-planning-forecasting.html",
-      "api_url": "https://datacentertraining.us/api/courses/capacity-planning-forecasting.json",
+      "api_url": "https://datacentertraining.us/api/v1/courses/capacity-planning-forecasting.json",
       "track": "Design, Planning & Commissioning Track",
       "category": "Design & Planning",
       "course_type": "modular",
@@ -1616,14 +1616,14 @@
         "tier-infrastructure-fundamentals",
         "infrastructure-commissioning-startup"
       ],
-      "last_updated": "2026-10-28"
+      "last_updated": "2026-10-30"
     },
     {
       "id": "preventive-maintenance-planning",
       "catalog_number": 427,
       "title": "Preventive Maintenance Planning",
       "url": "https://datacentertraining.us/courses/preventive-maintenance-planning.html",
-      "api_url": "https://datacentertraining.us/api/courses/preventive-maintenance-planning.json",
+      "api_url": "https://datacentertraining.us/api/v1/courses/preventive-maintenance-planning.json",
       "track": "Operations & Reliability Track",
       "category": "Operations",
       "course_type": "modular",
@@ -1720,14 +1720,14 @@
         "business-continuity-disaster-recovery-planning",
         "building-maintenance-fundamentals"
       ],
-      "last_updated": "2026-10-28"
+      "last_updated": "2026-10-30"
     },
     {
       "id": "facility-environmental-compliance",
       "catalog_number": 428,
       "title": "Facility Environmental Compliance",
       "url": "https://datacentertraining.us/courses/facility-environmental-compliance.html",
-      "api_url": "https://datacentertraining.us/api/courses/facility-environmental-compliance.json",
+      "api_url": "https://datacentertraining.us/api/v1/courses/facility-environmental-compliance.json",
       "track": "Security & Compliance Track",
       "category": "Security & Compliance",
       "course_type": "modular",
@@ -1819,14 +1819,14 @@
         "data-center-fire-suppression-safety",
         "data-center-physical-security-access-control"
       ],
-      "last_updated": "2026-10-28"
+      "last_updated": "2026-10-30"
     },
     {
       "id": "incident-response-troubleshooting",
       "catalog_number": 429,
       "title": "Incident Response & Troubleshooting",
       "url": "https://datacentertraining.us/courses/incident-response-troubleshooting.html",
-      "api_url": "https://datacentertraining.us/api/courses/incident-response-troubleshooting.json",
+      "api_url": "https://datacentertraining.us/api/v1/courses/incident-response-troubleshooting.json",
       "track": "Operations & Reliability Track",
       "category": "Operations",
       "course_type": "modular",
@@ -1919,14 +1919,14 @@
         "business-continuity-disaster-recovery-planning",
         "building-maintenance-fundamentals"
       ],
-      "last_updated": "2026-10-28"
+      "last_updated": "2026-10-30"
     },
     {
       "id": "access-control-physical-security",
       "catalog_number": 430,
       "title": "Access Control & Physical Security",
       "url": "https://datacentertraining.us/courses/access-control-physical-security.html",
-      "api_url": "https://datacentertraining.us/api/courses/access-control-physical-security.json",
+      "api_url": "https://datacentertraining.us/api/v1/courses/access-control-physical-security.json",
       "track": "Security & Compliance Track",
       "category": "Security & Compliance",
       "course_type": "modular",
@@ -2018,14 +2018,14 @@
         "data-center-fire-suppression-safety",
         "data-center-physical-security-access-control"
       ],
-      "last_updated": "2026-10-28"
+      "last_updated": "2026-10-30"
     },
     {
       "id": "dcim-platform-fundamentals",
       "catalog_number": 431,
       "title": "DCIM Platform Fundamentals",
       "url": "https://datacentertraining.us/courses/dcim-platform-fundamentals.html",
-      "api_url": "https://datacentertraining.us/api/courses/dcim-platform-fundamentals.json",
+      "api_url": "https://datacentertraining.us/api/v1/courses/dcim-platform-fundamentals.json",
       "track": "Monitoring & Smart Facility Track",
       "category": "Monitoring & Automation",
       "course_type": "modular",
@@ -2122,14 +2122,14 @@
         "fiber-optics-network-cabling",
         "building-automation-systems-fundamentals"
       ],
-      "last_updated": "2026-10-28"
+      "last_updated": "2026-10-30"
     },
     {
       "id": "mechanical-systems-maintenance",
       "catalog_number": 432,
       "title": "Mechanical Systems & Equipment Maintenance",
       "url": "https://datacentertraining.us/courses/mechanical-systems-maintenance.html",
-      "api_url": "https://datacentertraining.us/api/courses/mechanical-systems-maintenance.json",
+      "api_url": "https://datacentertraining.us/api/v1/courses/mechanical-systems-maintenance.json",
       "track": "Cooling & Facilities Efficiency Track",
       "category": "Cooling & Efficiency",
       "course_type": "modular",
@@ -2222,14 +2222,14 @@
         "data-center-cooling-refrigerant-safety",
         "building-envelope-fundamentals"
       ],
-      "last_updated": "2026-10-28"
+      "last_updated": "2026-10-30"
     },
     {
       "id": "electrical-safety-best-practices",
       "catalog_number": 433,
       "title": "Electrical Safety & Best Practices",
       "url": "https://datacentertraining.us/courses/electrical-safety-best-practices.html",
-      "api_url": "https://datacentertraining.us/api/courses/electrical-safety-best-practices.json",
+      "api_url": "https://datacentertraining.us/api/v1/courses/electrical-safety-best-practices.json",
       "track": "Power & Electrical Systems Track",
       "category": "Power & Electrical",
       "course_type": "modular",
@@ -2324,14 +2324,14 @@
         "batteries-dc-circuits",
         "data-center-arc-flash-safety"
       ],
-      "last_updated": "2026-10-28"
+      "last_updated": "2026-10-30"
     },
     {
       "id": "batteries-dc-circuits",
       "catalog_number": 441,
       "title": "Batteries and DC Circuits",
       "url": "https://datacentertraining.us/courses/batteries-dc-circuits.html",
-      "api_url": "https://datacentertraining.us/api/courses/batteries-dc-circuits.json",
+      "api_url": "https://datacentertraining.us/api/v1/courses/batteries-dc-circuits.json",
       "track": "Power & Electrical Systems Track",
       "category": "Power & Electrical",
       "course_type": "modular",
@@ -2424,14 +2424,14 @@
         "electrical-safety-best-practices",
         "data-center-arc-flash-safety"
       ],
-      "last_updated": "2026-10-28"
+      "last_updated": "2026-10-30"
     },
     {
       "id": "building-automation-systems-fundamentals",
       "catalog_number": 442,
       "title": "Building Automation Systems (BAS) Fundamentals",
       "url": "https://datacentertraining.us/courses/building-automation-systems-fundamentals.html",
-      "api_url": "https://datacentertraining.us/api/courses/building-automation-systems-fundamentals.json",
+      "api_url": "https://datacentertraining.us/api/v1/courses/building-automation-systems-fundamentals.json",
       "track": "Monitoring & Smart Facility Track",
       "category": "Monitoring & Automation",
       "course_type": "modular",
@@ -2528,14 +2528,14 @@
         "dcim-platform-fundamentals",
         "fiber-optics-network-cabling"
       ],
-      "last_updated": "2026-10-28"
+      "last_updated": "2026-10-30"
     },
     {
       "id": "building-envelope-fundamentals",
       "catalog_number": 443,
       "title": "Building Envelope Fundamentals",
       "url": "https://datacentertraining.us/courses/building-envelope-fundamentals.html",
-      "api_url": "https://datacentertraining.us/api/courses/building-envelope-fundamentals.json",
+      "api_url": "https://datacentertraining.us/api/v1/courses/building-envelope-fundamentals.json",
       "track": "Cooling & Facilities Efficiency Track",
       "category": "Cooling & Efficiency",
       "course_type": "modular",
@@ -2628,14 +2628,14 @@
         "mechanical-systems-maintenance",
         "data-center-cooling-refrigerant-safety"
       ],
-      "last_updated": "2026-10-28"
+      "last_updated": "2026-10-30"
     },
     {
       "id": "building-maintenance-fundamentals",
       "catalog_number": 444,
       "title": "Building Maintenance Fundamentals",
       "url": "https://datacentertraining.us/courses/building-maintenance-fundamentals.html",
-      "api_url": "https://datacentertraining.us/api/courses/building-maintenance-fundamentals.json",
+      "api_url": "https://datacentertraining.us/api/v1/courses/building-maintenance-fundamentals.json",
       "track": "Operations & Reliability Track",
       "category": "Operations",
       "course_type": "modular",
@@ -2728,14 +2728,14 @@
         "incident-response-troubleshooting",
         "business-continuity-disaster-recovery-planning"
       ],
-      "last_updated": "2026-10-28"
+      "last_updated": "2026-10-30"
     },
     {
       "id": "business-continuity-disaster-recovery-planning",
       "catalog_number": 445,
       "title": "Business Continuity and Disaster Recovery Planning Training",
       "url": "https://datacentertraining.us/courses/business-continuity-disaster-recovery-planning.html",
-      "api_url": "https://datacentertraining.us/api/courses/business-continuity-disaster-recovery-planning.json",
+      "api_url": "https://datacentertraining.us/api/v1/courses/business-continuity-disaster-recovery-planning.json",
       "track": "Operations & Reliability Track",
       "category": "Operations",
       "course_type": "modular",
@@ -2834,14 +2834,14 @@
         "incident-response-troubleshooting",
         "building-maintenance-fundamentals"
       ],
-      "last_updated": "2026-10-28"
+      "last_updated": "2026-10-30"
     },
     {
       "id": "data-center-arc-flash-safety",
       "catalog_number": 446,
       "title": "Data Center Arc Flash Safety Training",
       "url": "https://datacentertraining.us/courses/data-center-arc-flash-safety.html",
-      "api_url": "https://datacentertraining.us/api/courses/data-center-arc-flash-safety.json",
+      "api_url": "https://datacentertraining.us/api/v1/courses/data-center-arc-flash-safety.json",
       "track": "Power & Electrical Systems Track",
       "category": "Power & Electrical",
       "course_type": "modular",
@@ -2940,14 +2940,14 @@
         "electrical-safety-best-practices",
         "batteries-dc-circuits"
       ],
-      "last_updated": "2026-10-28"
+      "last_updated": "2026-10-30"
     },
     {
       "id": "data-center-cooling-refrigerant-safety",
       "catalog_number": 447,
       "title": "Data Center Cooling System and Refrigerant Safety Training",
       "url": "https://datacentertraining.us/courses/data-center-cooling-refrigerant-safety.html",
-      "api_url": "https://datacentertraining.us/api/courses/data-center-cooling-refrigerant-safety.json",
+      "api_url": "https://datacentertraining.us/api/v1/courses/data-center-cooling-refrigerant-safety.json",
       "track": "Cooling & Facilities Efficiency Track",
       "category": "Cooling & Efficiency",
       "course_type": "modular",
@@ -3042,14 +3042,14 @@
         "mechanical-systems-maintenance",
         "building-envelope-fundamentals"
       ],
-      "last_updated": "2026-10-28"
+      "last_updated": "2026-10-30"
     },
     {
       "id": "data-center-electrical-safety",
       "catalog_number": 448,
       "title": "Data Center Electrical Safety Training",
       "url": "https://datacentertraining.us/courses/data-center-electrical-safety.html",
-      "api_url": "https://datacentertraining.us/api/courses/data-center-electrical-safety.json",
+      "api_url": "https://datacentertraining.us/api/v1/courses/data-center-electrical-safety.json",
       "track": "Power & Electrical Systems Track",
       "category": "Power & Electrical",
       "course_type": "modular",
@@ -3146,14 +3146,14 @@
         "electrical-safety-best-practices",
         "batteries-dc-circuits"
       ],
-      "last_updated": "2026-10-28"
+      "last_updated": "2026-10-30"
     },
     {
       "id": "data-center-epo-procedures",
       "catalog_number": 449,
       "title": "Data Center Emergency Power Off (EPO) Procedures Training",
       "url": "https://datacentertraining.us/courses/data-center-epo-procedures.html",
-      "api_url": "https://datacentertraining.us/api/courses/data-center-epo-procedures.json",
+      "api_url": "https://datacentertraining.us/api/v1/courses/data-center-epo-procedures.json",
       "track": "Power & Electrical Systems Track",
       "category": "Power & Electrical",
       "course_type": "modular",
@@ -3254,14 +3254,14 @@
         "electrical-safety-best-practices",
         "batteries-dc-circuits"
       ],
-      "last_updated": "2026-10-28"
+      "last_updated": "2026-10-30"
     },
     {
       "id": "data-center-fire-suppression-safety",
       "catalog_number": 450,
       "title": "Data Center Fire Suppression System Safety Training (Clean Agent Systems)",
       "url": "https://datacentertraining.us/courses/data-center-fire-suppression-safety.html",
-      "api_url": "https://datacentertraining.us/api/courses/data-center-fire-suppression-safety.json",
+      "api_url": "https://datacentertraining.us/api/v1/courses/data-center-fire-suppression-safety.json",
       "track": "Security & Compliance Track",
       "category": "Security & Compliance",
       "course_type": "modular",
@@ -3363,14 +3363,14 @@
         "facility-environmental-compliance",
         "data-center-physical-security-access-control"
       ],
-      "last_updated": "2026-10-28"
+      "last_updated": "2026-10-30"
     },
     {
       "id": "data-center-physical-security-access-control",
       "catalog_number": 451,
       "title": "Data Center Physical Security and Access Control Training",
       "url": "https://datacentertraining.us/courses/data-center-physical-security-access-control.html",
-      "api_url": "https://datacentertraining.us/api/courses/data-center-physical-security-access-control.json",
+      "api_url": "https://datacentertraining.us/api/v1/courses/data-center-physical-security-access-control.json",
       "track": "Security & Compliance Track",
       "category": "Security & Compliance",
       "course_type": "modular",
@@ -3462,14 +3462,14 @@
         "facility-environmental-compliance",
         "data-center-fire-suppression-safety"
       ],
-      "last_updated": "2026-10-28"
+      "last_updated": "2026-10-30"
     },
     {
       "id": "data-center-raised-floor-confined-space",
       "catalog_number": 452,
       "title": "Data Center Raised Floor and Confined Space Awareness Training",
       "url": "https://datacentertraining.us/courses/data-center-raised-floor-confined-space.html",
-      "api_url": "https://datacentertraining.us/api/courses/data-center-raised-floor-confined-space.json",
+      "api_url": "https://datacentertraining.us/api/v1/courses/data-center-raised-floor-confined-space.json",
       "track": "Operations & Reliability Track",
       "category": "Operations",
       "course_type": "modular",
@@ -3564,14 +3564,14 @@
         "incident-response-troubleshooting",
         "business-continuity-disaster-recovery-planning"
       ],
-      "last_updated": "2026-10-28"
+      "last_updated": "2026-10-30"
     },
     {
       "id": "data-center-ups-battery-safety",
       "catalog_number": 453,
       "title": "Data Center UPS and Battery System Safety Training",
       "url": "https://datacentertraining.us/courses/data-center-ups-battery-safety.html",
-      "api_url": "https://datacentertraining.us/api/courses/data-center-ups-battery-safety.json",
+      "api_url": "https://datacentertraining.us/api/v1/courses/data-center-ups-battery-safety.json",
       "track": "Power & Electrical Systems Track",
       "category": "Power & Electrical",
       "course_type": "modular",
@@ -3664,14 +3664,14 @@
         "electrical-safety-best-practices",
         "batteries-dc-circuits"
       ],
-      "last_updated": "2026-10-28"
+      "last_updated": "2026-10-30"
     },
     {
       "id": "emergency-standby-power-systems-fundamentals",
       "catalog_number": 454,
       "title": "Emergency/Standby Power Systems Fundamentals",
       "url": "https://datacentertraining.us/courses/emergency-standby-power-systems-fundamentals.html",
-      "api_url": "https://datacentertraining.us/api/courses/emergency-standby-power-systems-fundamentals.json",
+      "api_url": "https://datacentertraining.us/api/v1/courses/emergency-standby-power-systems-fundamentals.json",
       "track": "Power & Electrical Systems Track",
       "category": "Power & Electrical",
       "course_type": "modular",
@@ -3768,14 +3768,14 @@
         "electrical-safety-best-practices",
         "batteries-dc-circuits"
       ],
-      "last_updated": "2026-10-28"
+      "last_updated": "2026-10-30"
     },
     {
       "id": "facility-management-fundamentals",
       "catalog_number": 455,
       "title": "Facility Management Fundamentals",
       "url": "https://datacentertraining.us/courses/facility-management-fundamentals.html",
-      "api_url": "https://datacentertraining.us/api/courses/facility-management-fundamentals.json",
+      "api_url": "https://datacentertraining.us/api/v1/courses/facility-management-fundamentals.json",
       "track": "Operations & Reliability Track",
       "category": "Operations",
       "course_type": "modular",
@@ -3868,14 +3868,14 @@
         "incident-response-troubleshooting",
         "business-continuity-disaster-recovery-planning"
       ],
-      "last_updated": "2026-10-28"
+      "last_updated": "2026-10-30"
     },
     {
       "id": "generator-fundamentals",
       "catalog_number": 456,
       "title": "Generator Fundamentals",
       "url": "https://datacentertraining.us/courses/generator-fundamentals.html",
-      "api_url": "https://datacentertraining.us/api/courses/generator-fundamentals.json",
+      "api_url": "https://datacentertraining.us/api/v1/courses/generator-fundamentals.json",
       "track": "Power & Electrical Systems Track",
       "category": "Power & Electrical",
       "course_type": "modular",
@@ -3968,14 +3968,14 @@
         "electrical-safety-best-practices",
         "batteries-dc-circuits"
       ],
-      "last_updated": "2026-10-28"
+      "last_updated": "2026-10-30"
     },
     {
       "id": "lithium-ion-thermal-runaway-emergency-response",
       "catalog_number": 457,
       "title": "Lithium-Ion Battery Thermal Runaway and Emergency Response Training",
       "url": "https://datacentertraining.us/courses/lithium-ion-thermal-runaway-emergency-response.html",
-      "api_url": "https://datacentertraining.us/api/courses/lithium-ion-thermal-runaway-emergency-response.json",
+      "api_url": "https://datacentertraining.us/api/v1/courses/lithium-ion-thermal-runaway-emergency-response.json",
       "track": "Power & Electrical Systems Track",
       "category": "Power & Electrical",
       "course_type": "modular",
@@ -4068,14 +4068,14 @@
         "electrical-safety-best-practices",
         "batteries-dc-circuits"
       ],
-      "last_updated": "2026-10-28"
+      "last_updated": "2026-10-30"
     },
     {
       "id": "power-distribution-systems-fundamentals",
       "catalog_number": 459,
       "title": "Power Distribution Systems Fundamentals",
       "url": "https://datacentertraining.us/courses/power-distribution-systems-fundamentals.html",
-      "api_url": "https://datacentertraining.us/api/courses/power-distribution-systems-fundamentals.json",
+      "api_url": "https://datacentertraining.us/api/v1/courses/power-distribution-systems-fundamentals.json",
       "track": "Power & Electrical Systems Track",
       "category": "Power & Electrical",
       "course_type": "modular",
@@ -4168,14 +4168,14 @@
         "electrical-safety-best-practices",
         "batteries-dc-circuits"
       ],
-      "last_updated": "2026-10-28"
+      "last_updated": "2026-10-30"
     },
     {
       "id": "roofing-systems-maintenance-fundamentals",
       "catalog_number": 460,
       "title": "Roofing Systems Maintenance Fundamentals",
       "url": "https://datacentertraining.us/courses/roofing-systems-maintenance-fundamentals.html",
-      "api_url": "https://datacentertraining.us/api/courses/roofing-systems-maintenance-fundamentals.json",
+      "api_url": "https://datacentertraining.us/api/v1/courses/roofing-systems-maintenance-fundamentals.json",
       "track": "Operations & Reliability Track",
       "category": "Operations",
       "course_type": "modular",
@@ -4268,14 +4268,14 @@
         "incident-response-troubleshooting",
         "business-continuity-disaster-recovery-planning"
       ],
-      "last_updated": "2026-10-28"
+      "last_updated": "2026-10-30"
     },
     {
       "id": "server-room-ergonomics-manual-handling",
       "catalog_number": 461,
       "title": "Server Room Ergonomics and Manual Handling Training",
       "url": "https://datacentertraining.us/courses/server-room-ergonomics-manual-handling.html",
-      "api_url": "https://datacentertraining.us/api/courses/server-room-ergonomics-manual-handling.json",
+      "api_url": "https://datacentertraining.us/api/v1/courses/server-room-ergonomics-manual-handling.json",
       "track": "Operations & Reliability Track",
       "category": "Operations",
       "course_type": "modular",
@@ -4368,14 +4368,14 @@
         "incident-response-troubleshooting",
         "business-continuity-disaster-recovery-planning"
       ],
-      "last_updated": "2026-10-28"
+      "last_updated": "2026-10-30"
     },
     {
       "id": "ups-systems-fundamentals",
       "catalog_number": 462,
       "title": "UPS Systems Fundamentals",
       "url": "https://datacentertraining.us/courses/ups-systems-fundamentals.html",
-      "api_url": "https://datacentertraining.us/api/courses/ups-systems-fundamentals.json",
+      "api_url": "https://datacentertraining.us/api/v1/courses/ups-systems-fundamentals.json",
       "track": "Power & Electrical Systems Track",
       "category": "Power & Electrical",
       "course_type": "modular",
@@ -4468,7 +4468,7 @@
         "electrical-safety-best-practices",
         "batteries-dc-circuits"
       ],
-      "last_updated": "2026-10-28"
+      "last_updated": "2026-10-30"
     }
   ]
 }
