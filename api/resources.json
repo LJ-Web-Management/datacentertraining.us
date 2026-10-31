@@ -1,8 +1,8 @@
 {
   "publisher": "Data Center Training (datacentertraining.us)",
-  "last_updated": "2026-10-30",
+  "last_updated": "2026-10-31",
   "license": "Public information; quote with attribution and a link to the source URL.",
-  "count": 133,
+  "count": 134,
   "resources": [
     {
       "source": "Data Center Training (first party)",
@@ -1153,6 +1153,19 @@
         "tier"
       ],
       "audience": []
+    },
+    {
+      "type": "blog_post",
+      "title": "Raised Floor Access Readiness: What Data Center Technicians Should Check Before Opening Panels",
+      "url": "https://datacentertraining.us/blog/posts/raised-floor-access-readiness-what-data-center-technicians-should-check-before-opening-panels.html",
+      "description": "Before a data center technician lifts a raised-floor panel, can the team show that the work area, the panel, the underfloor space, and the equipment below it…",
+      "topics": [
+        "access",
+        "raised floor"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-10-31"
     },
     {
       "type": "blog_post",

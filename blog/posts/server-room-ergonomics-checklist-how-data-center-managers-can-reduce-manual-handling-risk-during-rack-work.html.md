@@ -129,6 +129,12 @@ Server-room ergonomics is a design and planning problem, not just a lifting remi
 
 ## More from the blog
 
+[!\[Raised Floor Access Readiness: What Data Center Technicians Should Check Before Opening Panels\](https://datacentertraining.us/blog/assets/img/posts/raised-floor-access-readiness-what-data-center-technicians-should-check-before-opening-panels.jpg)](https://datacentertraining.us/blog/posts/raised-floor-access-readiness-what-data-center-technicians-should-check-before-opening-panels.html)
+
+October 31, 2026
+
+### Raised Floor Access Readiness: What Data Center Technicians Should Check Before Opening Panels
+
 [!\[Data Center Fire Door Walkthrough: What Facility Managers Should Verify Before a Critical-Facilities Audit\](https://datacentertraining.us/blog/assets/img/posts/data-center-fire-door-walkthrough-what-facility-managers-should-verify-before-a-critical-facilities-audit.jpg)](https://datacentertraining.us/blog/posts/data-center-fire-door-walkthrough-what-facility-managers-should-verify-before-a-critical-facilities-audit.html)
 
 October 24, 2026

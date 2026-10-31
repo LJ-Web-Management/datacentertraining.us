@@ -138,11 +138,11 @@ September 24, 2026
 
 ### How Data Center Managers Should Test Physical Access During a Maintenance Window
 
-[!\[Server Room Ergonomics Checklist: How Data Center Managers Can Reduce Manual-Handling Risk During Rack Work\](https://datacentertraining.us/blog/assets/img/posts/server-room-ergonomics-checklist-how-data-center-managers-can-reduce-manual-handling-risk-during-rack-work.jpg)](https://datacentertraining.us/blog/posts/server-room-ergonomics-checklist-how-data-center-managers-can-reduce-manual-handling-risk-during-rack-work.html)
+[!\[Raised Floor Access Readiness: What Data Center Technicians Should Check Before Opening Panels\](https://datacentertraining.us/blog/assets/img/posts/raised-floor-access-readiness-what-data-center-technicians-should-check-before-opening-panels.jpg)](https://datacentertraining.us/blog/posts/raised-floor-access-readiness-what-data-center-technicians-should-check-before-opening-panels.html)
 
-October 25, 2026
+October 31, 2026
 
-### Server Room Ergonomics Checklist: How Data Center Managers Can Reduce Manual-Handling Risk During Rack Work
+### Raised Floor Access Readiness: What Data Center Technicians Should Check Before Opening Panels
 
 [View all posts →](https://datacentertraining.us/blog/)
 
