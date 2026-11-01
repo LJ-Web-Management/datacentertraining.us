@@ -138,11 +138,11 @@ September 24, 2026
 
 ### How Data Center Managers Should Test Physical Access During a Maintenance Window
 
-[!\[Raised Floor Access Readiness: What Data Center Technicians Should Check Before Opening Panels\](https://datacentertraining.us/blog/assets/img/posts/raised-floor-access-readiness-what-data-center-technicians-should-check-before-opening-panels.jpg)](https://datacentertraining.us/blog/posts/raised-floor-access-readiness-what-data-center-technicians-should-check-before-opening-panels.html)
+[!\[Data Center Electrical One-Line Review: What Supervisors Should Verify Before Switching\](https://datacentertraining.us/blog/assets/img/posts/data-center-electrical-one-line-review-what-supervisors-should-verify-before-switching.jpg)](https://datacentertraining.us/blog/posts/data-center-electrical-one-line-review-what-supervisors-should-verify-before-switching.html)
 
-October 31, 2026
+November 1, 2026
 
-### Raised Floor Access Readiness: What Data Center Technicians Should Check Before Opening Panels
+### Data Center Electrical One-Line Review: What Supervisors Should Verify Before Switching
 
 [View all posts →](https://datacentertraining.us/blog/)
 

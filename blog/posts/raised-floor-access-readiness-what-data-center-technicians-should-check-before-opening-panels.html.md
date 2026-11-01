@@ -140,6 +140,12 @@ Raised-floor access is a small task with a large number of hidden interfaces. A 
 
 ## More from the blog
 
+[!\[Data Center Electrical One-Line Review: What Supervisors Should Verify Before Switching\](https://datacentertraining.us/blog/assets/img/posts/data-center-electrical-one-line-review-what-supervisors-should-verify-before-switching.jpg)](https://datacentertraining.us/blog/posts/data-center-electrical-one-line-review-what-supervisors-should-verify-before-switching.html)
+
+November 1, 2026
+
+### Data Center Electrical One-Line Review: What Supervisors Should Verify Before Switching
+
 [!\[Server Room Ergonomics Checklist: How Data Center Managers Can Reduce Manual-Handling Risk During Rack Work\](https://datacentertraining.us/blog/assets/img/posts/server-room-ergonomics-checklist-how-data-center-managers-can-reduce-manual-handling-risk-during-rack-work.jpg)](https://datacentertraining.us/blog/posts/server-room-ergonomics-checklist-how-data-center-managers-can-reduce-manual-handling-risk-during-rack-work.html)
 
 October 25, 2026

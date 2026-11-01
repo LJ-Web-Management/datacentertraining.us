@@ -1,8 +1,8 @@
 {
   "publisher": "Data Center Training (datacentertraining.us)",
-  "last_updated": "2026-10-31",
+  "last_updated": "2026-11-01",
   "license": "Public information; quote with attribution and a link to the source URL.",
-  "count": 134,
+  "count": 135,
   "resources": [
     {
       "source": "Data Center Training (first party)",
@@ -1153,6 +1153,18 @@
         "tier"
       ],
       "audience": []
+    },
+    {
+      "type": "blog_post",
+      "title": "Data Center Electrical One-Line Review: What Supervisors Should Verify Before Switching",
+      "url": "https://datacentertraining.us/blog/posts/data-center-electrical-one-line-review-what-supervisors-should-verify-before-switching.html",
+      "description": "Before a planned switching event, can the supervisor prove that the one-line diagram, the equipment in front of the crew, and the approved switching procedure…",
+      "topics": [
+        "electrical"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-11-01"
     },
     {
       "type": "blog_post",
