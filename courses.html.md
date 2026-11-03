@@ -6,6 +6,8 @@ Nine in-depth Comprehensive Programs and thirty-four focused Modular Specializat
 
 43 courses
 
+## All Courses
+
 ### [Data Center Design Fundamentals](https://datacentertraining.us/courses/data-center-design-fundamentals.html)
 
 Design & Planning · ANSI/TIA-942
