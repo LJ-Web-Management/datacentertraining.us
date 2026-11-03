@@ -55,3 +55,16 @@ test('nonsense queries match nothing', () => {
   assert.deepStrictEqual(find('zzqx'), []);
   assert.deepStrictEqual(find('ups zzqx'), []);
 });
+
+test('"Most Relevant" ranks name matches above keyword-only matches', () => {
+  const fieldsOf = (m) => {
+    const attr = (n) => { const a = m.match(new RegExp(' data-' + n + '="([^"]*)"')); return a ? unescape(a[1]) : ''; };
+    return { name: attr('name'), standard: attr('standard'), category: attr('category'), keywords: attr('keywords') };
+  };
+  const all = [...html.matchAll(/<div class="course-row"([^>]*)>/g)].map((m) => fieldsOf(m[1]));
+  const rank = (q) => all.filter((f) => search.matches(search.normalize([f.name, f.category, f.standard, '', f.keywords].join(' ')), q))
+    .sort((a, b) => search.score(b, q) - search.score(a, q)).map((f) => f.name);
+  assert.match(rank('ups')[0], /UPS/);
+  assert.match(rank('generator')[0], /Generator/);
+  assert.strictEqual(search.score(all[0], ''), 0);
+});
