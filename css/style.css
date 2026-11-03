@@ -334,7 +334,6 @@ html.nav-hidden .glass-nav { transform: translateY(-100%); box-shadow: none; }
   font-size: 15px; font-weight: 700; letter-spacing: -0.01em; color: var(--text);
   margin: 0 0 12px;
 }
-.catalog-subhead-modular { margin-top: 32px; }
 .catalog-subhead span { font-size: 12.5px; font-weight: 550; color: var(--text-3); text-transform: none; letter-spacing: 0; }
 
 /* ── Unified panel (courses list) ── */

@@ -6,8 +6,6 @@ Nine in-depth Comprehensive Programs and thirty-four focused Modular Specializat
 
 43 courses
 
-## Comprehensive Programs 8–16 hrs · full-discipline curriculum
-
 ### [Data Center Design Fundamentals](https://datacentertraining.us/courses/data-center-design-fundamentals.html)
 
 Design & Planning · ANSI/TIA-942
@@ -106,8 +104,6 @@ $276.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=monitoring-automation-bms-systems)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=monitoring-automation-bms-systems)
-
-## Modular Specializations 1–8 hrs · focused, hands-on skills
 
 ### [HVAC Systems Troubleshooting Essentials](https://datacentertraining.us/courses/hvac-troubleshooting-essentials.html)
 
