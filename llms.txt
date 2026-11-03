@@ -42,7 +42,9 @@ No API key or account is needed. Errors are application/problem+json with a stab
 ## Machine-readable data
 
 - [Developer portal](https://datacentertraining.us/developers/): quickstart, MCP setup, REST tools, errors, rate limits, versioning, and the CLI.
-- [Remote MCP server](https://datacentertraining.us/mcp): Streamable HTTP, no auth, 7 read-only tools.
+- [Remote MCP server](https://datacentertraining.us/mcp): Streamable HTTP, no auth, 7 read-only tools. Setup guide: [Data Center Training MCP Server](https://datacentertraining.us/developers/mcp.html).
+- [Data Center Training CLI](https://datacentertraining.us/developers/cli.html): the `datacentertraining` command-line tool (npm package `datacentertraining`) over the same tools.
+- [Source code on GitHub](https://github.com/LJ-Web-Management/datacentertraining.us): site, MCP server (edge/), and CLI (cli/).
 - [WebMCP / MCP manifest](https://datacentertraining.us/.well-known/mcp.json): 7 read-only tools (list_courses, get_course, compare_bundles, recommend_courses, get_credential_info, answer_faq, list_resources) with JSON Schemas and examples. Also registered in-page via navigator.modelContext.
 - [OpenAPI 3.1](https://datacentertraining.us/openapi.json): typed schemas for every JSON document, tool endpoint, and error.
 - [API index](https://datacentertraining.us/api/v1/index.json), [courses](https://datacentertraining.us/api/v1/courses.json), [bundles](https://datacentertraining.us/api/v1/bundles.json), [roles](https://datacentertraining.us/api/v1/roles.json), [FAQ](https://datacentertraining.us/api/v1/faq.json), [credentials](https://datacentertraining.us/api/v1/credentials.json), [resources](https://datacentertraining.us/api/v1/resources.json)

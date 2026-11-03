@@ -971,6 +971,7 @@ function buildOutputs(d) {
   }));
 
   writeOpenApi(d, s, defs, updated);
+  writeCliEngine();
   writeLlms(d, courses, updated, defs.map((t) => t.name));
   return { manifest, data, fullExamples, updated };
 }
@@ -978,8 +979,6 @@ function buildOutputs(d) {
 function writeOpenApi(d, s, defs, updated) {
   const strip = (schema) => JSON.parse(JSON.stringify(schema, (k, v) => (k === '$schema' ? undefined : v)));
   const ref = (kind, name) => ({ $ref: '#/components/' + kind + '/' + name });
-  const RESPONSE_FOR = { 400: 'BadRequest', 404: 'NotFound', 405: 'MethodNotAllowed', 415: 'UnsupportedMediaType', 429: 'TooManyRequests', 500: 'InternalError', 502: 'BadGateway' };
-  const errors = (...statuses) => Object.fromEntries(statuses.map((st) => [st, ref('responses', RESPONSE_FOR[st])]));
   const rateHeaders = {
     'RateLimit-Policy': ref('headers', 'RateLimit-Policy'),
     RateLimit: ref('headers', 'RateLimit'),
@@ -994,6 +993,25 @@ function writeOpenApi(d, s, defs, updated) {
     headers: Object.assign({}, okHeaders, extraHeaders || {}),
     content: { 'application/problem+json': { schema: ref('schemas', 'Problem') } }
   });
+  // Every 4xx/5xx is written out in place (not through components/responses)
+  // with the Problem schema, plus a default response, so tools that do not
+  // follow response $refs still see one typed error model on every operation.
+  const ERROR_TEXT = {
+    400: ['The request or its input is invalid.'], 404: ['No document, course, or tool at this path.'],
+    405: ['The method is not supported on this path.', { Allow: { description: 'Methods this path accepts.', schema: { type: 'string' } } }],
+    415: ['The request body is not application/json.'], 429: ['Rate limit exceeded.', { 'Retry-After': ref('headers', 'Retry-After') }],
+    500: ['Unexpected error.'], 502: ['The static origin did not answer.']
+  };
+  const errors = (...statuses) => Object.assign(
+    Object.fromEntries(statuses.map((st) => [st, problemResponse(st, ERROR_TEXT[st][0], ERROR_TEXT[st][1])])),
+    { default: { description: 'Any other error, as RFC 9457 problem details.', content: { 'application/problem+json': { schema: ref('schemas', 'Problem') } } } }
+  );
+  const pascal = (name) => name.replace(/(^|_)([a-z])/g, (m, u, c) => c.toUpperCase());
+  const toolSchemas = {};
+  for (const t of defs) {
+    toolSchemas[pascal(t.name) + 'Input'] = strip(t.inputSchema);
+    toolSchemas[pascal(t.name) + 'Output'] = strip(t.outputSchema);
+  }
   const doc = (id, summary, description, schemaRef, extra) => ({
     get: Object.assign({
       operationId: id,
@@ -1006,7 +1024,7 @@ function writeOpenApi(d, s, defs, updated) {
     }, extra || {})
   });
   const text = (id, summary, description, type) => ({
-    get: { operationId: id, summary, description, tags: ['Agent discovery'], responses: Object.assign({ 200: { description: summary, content: { [type]: { schema: { type: 'string' } } } } }, errors(404)) }
+    get: { operationId: id, summary, description, tags: ['Agent discovery'], responses: Object.assign({ 200: { description: summary, content: { [type]: { schema: ref('schemas', type === 'application/xml' ? 'XmlDocument' : 'TextDocument') } } } }, errors(404)) }
   });
   const toolPaths = {};
   for (const t of defs) {
@@ -1019,10 +1037,10 @@ function writeOpenApi(d, s, defs, updated) {
         requestBody: {
           required: true,
           description: 'Tool input. Send {} to use every default.',
-          content: { 'application/json': { schema: strip(t.inputSchema), examples: Object.fromEntries(t.exampleInputs.map((input, i) => ['example' + (i + 1), { value: input }])) } }
+          content: { 'application/json': { schema: ref('schemas', pascal(t.name) + 'Input'), examples: Object.fromEntries(t.exampleInputs.map((input, i) => ['example' + (i + 1), { value: input }])) } }
         },
         responses: Object.assign({
-          200: { description: 'Tool result.', headers: okHeaders, content: { 'application/json': { schema: strip(t.outputSchema) } } }
+          200: { description: 'Tool result.', headers: okHeaders, content: { 'application/json': { schema: ref('schemas', pascal(t.name) + 'Output') } } }
         }, errors(400, 404, 405, 415, 429, 500, 502)),
         'x-mcp-tool': t.name
       }
@@ -1086,7 +1104,7 @@ function writeOpenApi(d, s, defs, updated) {
               required: true,
               content: {
                 'application/json': {
-                  schema: { oneOf: [ref('schemas', 'JsonRpcRequest'), { type: 'array', minItems: 1, items: ref('schemas', 'JsonRpcRequest') }] },
+                  schema: ref('schemas', 'McpRequestBody'),
                   examples: {
                     initialize: { value: { jsonrpc: '2.0', id: 1, method: 'initialize', params: { protocolVersion: v[0], capabilities: {}, clientInfo: { name: 'example-agent', version: '1.0.0' } } } },
                     listTools: { value: { jsonrpc: '2.0', id: 2, method: 'tools/list' } },
@@ -1096,7 +1114,7 @@ function writeOpenApi(d, s, defs, updated) {
               }
             },
             responses: Object.assign({
-              200: { description: 'JSON-RPC response (an array for a batch).', headers: okHeaders, content: { 'application/json': { schema: { oneOf: [ref('schemas', 'JsonRpcResponse'), { type: 'array', items: ref('schemas', 'JsonRpcResponse') }] } } } },
+              200: { description: 'JSON-RPC response (an array for a batch).', headers: okHeaders, content: { 'application/json': { schema: ref('schemas', 'McpResponseBody') } } },
               202: { description: 'Notification or response accepted; no body.', headers: okHeaders }
             }, errors(400, 405, 415, 429, 500))
           }
@@ -1181,6 +1199,10 @@ function writeOpenApi(d, s, defs, updated) {
             }
           }
         },
+        McpRequestBody: { description: 'One JSON-RPC 2.0 message, or a batch.', oneOf: [ref('schemas', 'JsonRpcRequest'), { type: 'array', minItems: 1, items: ref('schemas', 'JsonRpcRequest') }] },
+        McpResponseBody: { description: 'One JSON-RPC 2.0 response, or an array for a batch.', oneOf: [ref('schemas', 'JsonRpcResponse'), { type: 'array', items: ref('schemas', 'JsonRpcResponse') }] },
+        TextDocument: { type: 'string', description: 'Plain-text (Markdown) document.', contentMediaType: 'text/plain' },
+        XmlDocument: { type: 'string', description: 'XML document.', contentMediaType: 'application/xml' },
         JsonRpcRequest: {
           type: 'object', required: ['jsonrpc', 'method'],
           properties: {
@@ -1199,6 +1221,7 @@ function writeOpenApi(d, s, defs, updated) {
             error: { type: 'object', required: ['code', 'message'], properties: { code: { type: 'integer' }, message: { type: 'string' }, data: {} } }
           }
         },
+        ...toolSchemas,
         McpManifest: {
           type: 'object', required: ['name', 'version', 'endpoint', 'transports', 'tools'],
           properties: {
@@ -1238,6 +1261,12 @@ function writeOpenApi(d, s, defs, updated) {
     'x-markdown': 'Every HTML page is available as Markdown: send Accept: text/markdown to the page URL (response has Content-Type: text/markdown and Vary: Accept), or fetch the page URL + .md (index.html.md for directory URLs).'
   };
   write('openapi.json', json(openapi));
+}
+
+// The CLI ships the same tool engine as the site, so it can answer from the
+// static JSON when a host has no tool endpoints (see cli/datacentertraining.mjs).
+function writeCliEngine() {
+  write('cli/engine.cjs', '// GENERATED from js/webmcp.js by scripts/build-site.js. Do not edit.\n' + read('js/webmcp.js'));
 }
 
 function envelopeOf(key, item) {
@@ -1306,7 +1335,9 @@ function writeLlms(d, courses, updated, toolNames) {
     '## Machine-readable data',
     '',
     '- [Developer portal](' + DEV_URL + '): quickstart, MCP setup, REST tools, errors, rate limits, versioning, and the CLI.',
-    '- [Remote MCP server](' + MCP_URL + '): Streamable HTTP, no auth, ' + toolNames.length + ' read-only tools.',
+    '- [Remote MCP server](' + MCP_URL + '): Streamable HTTP, no auth, ' + toolNames.length + ' read-only tools. Setup guide: [Data Center Training MCP Server](' + ORIGIN + '/developers/mcp.html).',
+    '- [Data Center Training CLI](' + ORIGIN + '/developers/cli.html): the `datacentertraining` command-line tool (npm package `datacentertraining`) over the same tools.',
+    '- [Source code on GitHub](https://github.com/LJ-Web-Management/datacentertraining.us): site, MCP server (edge/), and CLI (cli/).',
     '- [WebMCP / MCP manifest](' + ORIGIN + '/.well-known/mcp.json): ' + toolNames.length + ' read-only tools (' + toolNames.join(', ') + ') with JSON Schemas and examples. Also registered in-page via navigator.modelContext.',
     '- [OpenAPI 3.1](' + ORIGIN + '/openapi.json): typed schemas for every JSON document, tool endpoint, and error.',
     '- [API index](' + API + '/index.json), [courses](' + API + '/courses.json), [bundles](' + API + '/bundles.json), [roles](' + API + '/roles.json), [FAQ](' + API + '/faq.json), [credentials](' + API + '/credentials.json), [resources](' + API + '/resources.json)',
@@ -1762,6 +1793,23 @@ function applyCtaSections(html) {
     (m, cls, rest) => (/\bcta-section\b/.test(cls) ? m : '<section class="section' + cls + ' cta-section">' + rest));
 }
 
+// Search words for each row of the course catalog (courses.html), read by
+// js/courses.js, so the catalog search box also finds a course by its summary,
+// module topics, and audience ("lockout", "chiller", "technician"), not only
+// by its title, track, and standard.
+function catalogKeywords(c) {
+  const words = [c.summary, c.track, c.course_type_label, c.audience].concat(c.modules.map((m) => m.title)).join(' ');
+  const seen = new Set();
+  return decode(words).toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9.+/ -]+/g, ' ').split(/\s+/)
+    .map((w) => w.replace(/^[.\-/]+|[.\-/]+$/g, ''))
+    .filter((w) => w.length > 1 && !seen.has(w) && seen.add(w)).join(' ');
+}
+
+function applyCatalogKeywords(html, byId) {
+  return html.replace(/<div class="course-row"([^>]*?)( data-keywords="[^"]*")?>(<div class="course-main"><h3><a href="courses\/([a-z0-9-]+)\.html">)/g,
+    (m, attrs, old, rest, slug) => (byId[slug] ? '<div class="course-row"' + attrs + ' data-keywords="' + esc(catalogKeywords(byId[slug])) + '">' + rest : m));
+}
+
 function applyChrome(rel, html, d) {
   html = html.replace(/<header class="glass-nav">[\s\S]*?<\/header>/, () => chrome.header(rel, d));
   return html.replace(/<footer class="site-footer" id="contact">[\s\S]*?<\/footer>/, () => chrome.footer(rel));
@@ -1934,7 +1982,7 @@ function processPages(d) {
     html = applyBlocks(rel, html, d);
     html = applyIcons(rel, html);
     html = applyCtaSections(html);
-    if (rel === 'developers/index.html') html = applyDevBlocks(html, toolDefs(d).defs);
+    if (rel.startsWith('developers/')) html = applyDevBlocks(html, toolDefs(d).defs);
     searchDocs.push(...pageSearchDocs(rel, html));
 
     const cm = rel.match(/^courses\/([a-z0-9-]+)\.html$/);
@@ -1950,6 +1998,7 @@ function processPages(d) {
       html = replaceLd(html, (x) => x['@type'] === 'Quiz', jsonLd(quizLd(rel, html)));
     }
     if (rel === 'courses.html') {
+      html = applyCatalogKeywords(html, byId);
       html = replaceLd(html, (x) => x['@type'] === 'ItemList', jsonLd({
         '@context': 'https://schema.org',
         '@type': 'ItemList',

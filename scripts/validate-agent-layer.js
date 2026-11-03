@@ -137,9 +137,22 @@ for (const [p, item] of Object.entries(openapi.paths)) {
     opIds.add(op.operationId);
     for (const [status, r] of Object.entries(op.responses)) {
       const res = resolve(r);
-      if (+status >= 400 && !(res.content && res.content['application/problem+json'] && res.content['application/problem+json'].schema.$ref === '#/components/schemas/Problem')) {
+      if ((+status >= 400 || status === 'default') && !(res.content && res.content['application/problem+json'] && res.content['application/problem+json'].schema.$ref === '#/components/schemas/Problem')) {
         fail(method.toUpperCase() + ' ' + p + ' ' + status + ': not a Problem response');
       }
+      // Success bodies are typed through a named component schema, so
+      // function-calling converters get a reusable, documented type.
+      if (+status < 300 && res.content) {
+        for (const [type, media] of Object.entries(res.content)) {
+          const sref = media.schema && media.schema.$ref;
+          if (!sref || !resolve(media.schema)) fail(method.toUpperCase() + ' ' + p + ' ' + status + ' ' + type + ': response schema is not a components/schemas $ref');
+        }
+      }
+    }
+    if (!op.responses.default) fail(method.toUpperCase() + ' ' + p + ': no default (Problem) response');
+    if (op.requestBody) {
+      const body = op.requestBody.content['application/json'];
+      if (!body || !body.schema.$ref || !resolve(body.schema)) fail(method.toUpperCase() + ' ' + p + ': request body schema is not a components/schemas $ref');
     }
   }
 }
@@ -149,8 +162,8 @@ for (const t of manifest.tools) {
   const op = openapi.paths[contract.tools_path + '/' + t.name] && openapi.paths[contract.tools_path + '/' + t.name].post;
   if (!op) { fail('openapi.json has no tool endpoint for ' + t.name); continue; }
   const strip = (x) => JSON.stringify(x, (k, v) => (k === '$schema' ? undefined : v));
-  if (strip(op.requestBody.content['application/json'].schema) !== strip(t.inputSchema)) fail(t.name + ': REST request schema differs from the tool inputSchema');
-  if (strip(op.responses['200'].content['application/json'].schema) !== strip(t.outputSchema)) fail(t.name + ': REST response schema differs from the tool outputSchema');
+  if (strip(resolve(op.requestBody.content['application/json'].schema)) !== strip(t.inputSchema)) fail(t.name + ': REST request schema differs from the tool inputSchema');
+  if (strip(resolve(op.responses['200'].content['application/json'].schema)) !== strip(t.outputSchema)) fail(t.name + ': REST response schema differs from the tool outputSchema');
 }
 
 // Every indexable page has a Markdown copy at <page>.md, linked from its head.
@@ -184,6 +197,32 @@ for (const t of manifest.tools) {
     }
   }
 })('');
+
+// Homepage: every organization-type node with a postal address (the brand's
+// EducationalOrganization and the provider's LocalBusiness) also carries a
+// contactPoint with a contactType and an email or phone, so AI answers to
+// "how do I contact them" have something to cite.
+(function () {
+  const ORG_TYPES = /^(Organization|EducationalOrganization|LocalBusiness|Corporation|ProfessionalService)$/;
+  const html = fs.readFileSync(path.join(ROOT, 'index.html'), 'utf8');
+  let orgs = 0;
+  const visit = (node) => {
+    if (!node || typeof node !== 'object') return;
+    if (Array.isArray(node)) { node.forEach(visit); return; }
+    if (ORG_TYPES.test(node['@type']) && node.address) {
+      orgs++;
+      const cps = [].concat(node.contactPoint || []);
+      if (!cps.length) fail('index.html: ' + node['@type'] + ' "' + node.name + '" has an address but no contactPoint');
+      for (const cp of cps) if (!cp.contactType || !(cp.email || cp.telephone)) fail('index.html: ' + node['@type'] + ' contactPoint needs contactType and email or telephone');
+      if (node.address['@type'] !== 'PostalAddress') fail('index.html: ' + node['@type'] + ' address is not a PostalAddress');
+    }
+    Object.values(node).forEach(visit);
+  };
+  for (const m of html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) {
+    try { visit(JSON.parse(m[1])); } catch (err) { /* reported above */ }
+  }
+  if (!orgs) fail('index.html: no Organization JSON-LD with a PostalAddress');
+})();
 
 if (errors.length) {
   console.error(errors.map((e) => 'ERROR ' + e).join('\n'));

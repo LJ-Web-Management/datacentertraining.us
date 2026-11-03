@@ -38,7 +38,7 @@ if(navigator.modelContext){var m=document.createElement('script');m.src='/js/web
 </script>
 <script src="/js/consent.js" defer></script>
 <!-- /dct:head -->
-<title>Data Center Training API & MCP Developer Portal</title>
+<title>Data Center Training API Documentation | Developer Portal</title>
 <meta name="description" content="Public, read-only API for the Data Center Training catalog: a remote MCP server, REST tool endpoints, versioned JSON, Markdown pages, errors, and rate limits.">
 <meta name="robots" content="index, follow">
 <link rel="icon" href="../favicon.ico" sizes="48x48">
@@ -47,7 +47,7 @@ if(navigator.modelContext){var m=document.createElement('script');m.src='/js/web
 <link rel="canonical" href="https://datacentertraining.us/developers/">
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="Data Center Training API & MCP Developer Portal">
+<meta property="og:title" content="Data Center Training API Documentation | Developer Portal">
 <meta property="og:description" content="Public, read-only API for the Data Center Training catalog: a remote MCP server, REST tool endpoints, versioned JSON, Markdown pages, errors, and rate limits.">
 <meta property="og:url" content="https://datacentertraining.us/developers/">
 <meta property="og:image" content="https://datacentertraining.us/images/og-image.jpg">
@@ -56,7 +56,7 @@ if(navigator.modelContext){var m=document.createElement('script');m.src='/js/web
 <meta property="og:site_name" content="Data Center Training">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@HazwoperOsha">
-<meta name="twitter:title" content="Data Center Training API & MCP Developer Portal">
+<meta name="twitter:title" content="Data Center Training API Documentation | Developer Portal">
 <meta name="twitter:description" content="Public, read-only API for the Data Center Training catalog: a remote MCP server, REST tool endpoints, versioned JSON, Markdown pages, errors, and rate limits.">
 <meta name="twitter:image" content="https://datacentertraining.us/images/og-image.jpg">
 
@@ -231,7 +231,7 @@ if(navigator.modelContext){var m=document.createElement('script');m.src='/js/web
   <section class="hub-hero"><div class="container">
     <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../">Home</a><span>&rsaquo;</span><span aria-current="page">Developers</span></nav>
     <div class="eyebrow"><span class="dot"></span>Developers &amp; AI Agents</div>
-    <h1>Data Center Training Developer Portal</h1>
+    <h1>Data Center Training API Documentation</h1>
     <p class="lede">Build on the Data Center Training catalog of online data center courses, bundles, role guides, FAQ answers, and credential facts. Everything is public and read-only: no API key, no account, and nothing an agent calls can enroll, charge, or submit a form.</p>
   </div></section>
 
@@ -283,7 +283,7 @@ curl -s -H 'Accept: text/markdown' https://datacentertraining.us/</code></pre>
   -d '{"jsonrpc": "2.0", "id": 1, "method": "initialize",
        "params": {"protocolVersion": "2025-06-18", "capabilities": {},
                   "clientInfo": {"name": "my-agent", "version": "1.0.0"}}}'</code></pre>
-      <p>Browser agents get the same tools in the page itself: every page registers them with <code>navigator.modelContext</code> (WebMCP).</p>
+      <p>Full setup guide: <a href="mcp.html">Data Center Training MCP Server</a>. Browser agents get the same tools in the page itself: every page registers them with <code>navigator.modelContext</code> (WebMCP).</p>
 
       <h2 id="tools">REST Tool Endpoints</h2>
       <p>Each MCP tool is also a REST endpoint. POST the tool input as a JSON object (send <code>{}</code> for every default), or use GET with the same fields as query parameters (separate list values with commas). The response is the tool output as JSON. Input and output schemas, with examples, are in the <a href="../openapi.json">OpenAPI spec</a> under <code>/api/v1/tools/</code>.</p>
@@ -386,7 +386,7 @@ npx datacentertraining recommend electrician --budget 500
 npx datacentertraining bundles
 npx datacentertraining faq "Do certificates expire?"
 npx datacentertraining help</code></pre>
-      <p>Add <code>--json</code> to any command for the raw tool output. The same single-file script is published on this site at <a href="../cli/datacentertraining.mjs">/cli/datacentertraining.mjs</a> if you would rather download it than install from npm.</p>
+      <p>Add <code>--json</code> to any command for the raw tool output. The script is also published on this site at <a href="../cli/datacentertraining.mjs">/cli/datacentertraining.mjs</a>, with its tool engine at <a href="../cli/engine.cjs">/cli/engine.cjs</a>, if you would rather download it than install from npm. Full guide: <a href="cli.html">Data Center Training CLI</a>.</p>
 
       <h2 id="sandbox">Sandbox and Local Testing</h2>
       <p>Because every endpoint is read-only, the production API is safe to call while you build: no request can create an order, an account, or a charge, so there is no separate sandbox or test key. To work offline or test changes to the site itself, clone the <a href="https://github.com/LJ-Web-Management/datacentertraining.us" target="_blank" rel="noopener">site repository</a> and run the same edge code locally against the checked-out files:</p>
@@ -511,7 +511,7 @@ node edge/dev-server.js        # http://localhost:8787 (MCP at /mcp)</code></pre
     </div>
     </div>
 
-    <p class="footer-agents"><span>For AI agents:</span> <a href="../developers/">Developer Portal</a> <a href="/llms.txt">llms.txt</a> <a href="/llms-full.txt">llms-full.txt</a> <a href="/.well-known/mcp.json">WebMCP Manifest</a> <a href="/api/v1/index.json">JSON Catalog API</a> <a href="/openapi.json">API Docs (OpenAPI)</a> <a href="/sitemap.xml">Sitemap</a></p>
+    <p class="footer-agents"><span>For AI agents:</span> <a href="../developers/">Developer Portal (API)</a> <a href="../developers/mcp.html">MCP Server</a> <a href="../developers/cli.html">CLI</a> <a href="/llms.txt">llms.txt</a> <a href="/llms-full.txt">llms-full.txt</a> <a href="/.well-known/mcp.json">WebMCP Manifest</a> <a href="/api/v1/index.json">JSON Catalog API</a> <a href="/openapi.json">API Docs (OpenAPI)</a> <a href="/sitemap.xml">Sitemap</a> <a href="https://github.com/LJ-Web-Management/datacentertraining.us" rel="noopener">GitHub</a></p>
   </div>
   <div class="footer-bottom">
     <div class="container">

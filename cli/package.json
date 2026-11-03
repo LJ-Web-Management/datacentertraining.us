@@ -1,6 +1,6 @@
 {
   "name": "datacentertraining",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Official command-line client for the Data Center Training catalog API: search data center courses, compare bundles, get role-based recommendations, answer FAQs, and read site pages as Markdown.",
   "type": "module",
   "bin": {
@@ -9,6 +9,7 @@
   },
   "files": [
     "datacentertraining.mjs",
+    "engine.cjs",
     "README.md"
   ],
   "engines": {
