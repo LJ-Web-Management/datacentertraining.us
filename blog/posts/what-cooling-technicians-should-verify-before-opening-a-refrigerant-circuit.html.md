@@ -138,11 +138,11 @@ September 24, 2026
 
 ### How Data Center Managers Should Test Physical Access During a Maintenance Window
 
-[!\[Data Center Electrical One-Line Review: What Supervisors Should Verify Before Switching\](https://datacentertraining.us/blog/assets/img/posts/data-center-electrical-one-line-review-what-supervisors-should-verify-before-switching.jpg)](https://datacentertraining.us/blog/posts/data-center-electrical-one-line-review-what-supervisors-should-verify-before-switching.html)
+[!\[SOC 2 Physical Controls Walkthrough: What Data Center Facility Teams Should Evidence for a Customer Audit\](https://datacentertraining.us/blog/assets/img/posts/soc-2-physical-controls-walkthrough-what-data-center-facility-teams-should-evidence-for-a-customer-audit.jpg)](https://datacentertraining.us/blog/posts/soc-2-physical-controls-walkthrough-what-data-center-facility-teams-should-evidence-for-a-customer-audit.html)
 
-November 1, 2026
+November 3, 2026
 
-### Data Center Electrical One-Line Review: What Supervisors Should Verify Before Switching
+### SOC 2 Physical Controls Walkthrough: What Data Center Facility Teams Should Evidence for a Customer Audit
 
 [View all posts →](https://datacentertraining.us/blog/)
 

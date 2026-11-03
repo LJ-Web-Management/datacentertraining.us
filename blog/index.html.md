@@ -4,6 +4,12 @@ Data Center Training Blog
 
 Technical guidance, standards updates, and field best practices on power, cooling, electrical safety, operations, and compliance from datacentertraining.us.
 
+[!\[SOC 2 Physical Controls Walkthrough: What Data Center Facility Teams Should Evidence for a Customer Audit\](https://datacentertraining.us/blog/assets/img/posts/soc-2-physical-controls-walkthrough-what-data-center-facility-teams-should-evidence-for-a-customer-audit.jpg)](https://datacentertraining.us/blog/posts/soc-2-physical-controls-walkthrough-what-data-center-facility-teams-should-evidence-for-a-customer-audit.html)
+
+November 3, 2026
+
+## SOC 2 Physical Controls Walkthrough: What Data Center Facility Teams Should Evidence for a Customer Audit
+
 [!\[Data Center Electrical One-Line Review: What Supervisors Should Verify Before Switching\](https://datacentertraining.us/blog/assets/img/posts/data-center-electrical-one-line-review-what-supervisors-should-verify-before-switching.jpg)](https://datacentertraining.us/blog/posts/data-center-electrical-one-line-review-what-supervisors-should-verify-before-switching.html)
 
 November 1, 2026

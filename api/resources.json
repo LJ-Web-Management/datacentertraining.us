@@ -1,8 +1,8 @@
 {
   "publisher": "Data Center Training (datacentertraining.us)",
-  "last_updated": "2026-11-01",
+  "last_updated": "2026-11-03",
   "license": "Public information; quote with attribution and a link to the source URL.",
-  "count": 135,
+  "count": 136,
   "resources": [
     {
       "source": "Data Center Training (first party)",
@@ -1153,6 +1153,19 @@
         "tier"
       ],
       "audience": []
+    },
+    {
+      "type": "blog_post",
+      "title": "SOC 2 Physical Controls Walkthrough: What Data Center Facility Teams Should Evidence for a Customer Audit",
+      "url": "https://datacentertraining.us/blog/posts/soc-2-physical-controls-walkthrough-what-data-center-facility-teams-should-evidence-for-a-customer-audit.html",
+      "description": "When a customer audit asks how a data center protects physical access, facility teams need more than a badge-reader inventory or a security policy.",
+      "topics": [
+        "security",
+        "access"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-11-03"
     },
     {
       "type": "blog_post",

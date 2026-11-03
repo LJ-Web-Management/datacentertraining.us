@@ -830,7 +830,7 @@
   </url>
   <url>
     <loc>https://datacentertraining.us/blog/</loc>
-    <lastmod>2026-11-01</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1083,6 +1083,12 @@
   <url>
     <loc>https://datacentertraining.us/blog/posts/data-center-electrical-one-line-review-what-supervisors-should-verify-before-switching.html</loc>
     <lastmod>2026-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://datacentertraining.us/blog/posts/soc-2-physical-controls-walkthrough-what-data-center-facility-teams-should-evidence-for-a-customer-audit.html</loc>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

@@ -138,6 +138,12 @@ A one-line diagram is valuable only when it agrees with the field lineup, the sw
 
 ## More from the blog
 
+[!\[SOC 2 Physical Controls Walkthrough: What Data Center Facility Teams Should Evidence for a Customer Audit\](https://datacentertraining.us/blog/assets/img/posts/soc-2-physical-controls-walkthrough-what-data-center-facility-teams-should-evidence-for-a-customer-audit.jpg)](https://datacentertraining.us/blog/posts/soc-2-physical-controls-walkthrough-what-data-center-facility-teams-should-evidence-for-a-customer-audit.html)
+
+November 3, 2026
+
+### SOC 2 Physical Controls Walkthrough: What Data Center Facility Teams Should Evidence for a Customer Audit
+
 [!\[Raised Floor Access Readiness: What Data Center Technicians Should Check Before Opening Panels\](https://datacentertraining.us/blog/assets/img/posts/raised-floor-access-readiness-what-data-center-technicians-should-check-before-opening-panels.jpg)](https://datacentertraining.us/blog/posts/raised-floor-access-readiness-what-data-center-technicians-should-check-before-opening-panels.html)
 
 October 31, 2026
