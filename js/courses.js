@@ -45,22 +45,51 @@
     return alts;
   }
 
-  // Each normalized haystack starts and ends with a space, so " term" is a word start.
-  function matches(haystack, query) {
+  function queryWords(query) {
     var q = normalize(query);
     PHRASES.forEach(function (p) { q = q.split(' ' + p[0] + ' ').join(' ' + p[1] + ' '); });
-    var words = q.trim().split(' ').filter(Boolean);
-    // A query of only filler words ("training courses") filters nothing.
-    words = words.filter(function (w) { return !STOPWORDS[w]; });
-    if (!words.length) return true;
-    return words.every(function (word) {
-      return alternatives(word).some(function (alt) {
-        return haystack.indexOf(' ' + alt) !== -1 || haystack.indexOf('/' + alt) !== -1;
-      });
+    // Filler words ("training courses") are dropped.
+    return q.trim().split(' ').filter(Boolean).filter(function (w) { return !STOPWORDS[w]; });
+  }
+
+  // Each normalized haystack starts and ends with a space, so " term" is a word start.
+  function hasWord(haystack, word) {
+    return alternatives(word).some(function (alt) {
+      return haystack.indexOf(' ' + alt) !== -1 || haystack.indexOf('/' + alt) !== -1;
     });
   }
 
-  var api = { normalize: normalize, matches: matches };
+  function matches(haystack, query) {
+    var words = queryWords(query);
+    // A query of only filler words filters nothing.
+    if (!words.length) return true;
+    return words.every(function (word) { return hasWord(haystack, word); });
+  }
+
+  // "Most Relevant" score: a query word found in the course name counts far
+  // more than one found in the standard, track, or keywords, and the whole
+  // query appearing in the name ranks highest. No query scores everything 0,
+  // so the catalog keeps its curated order.
+  var WEIGHTS = { name: 10, standard: 5, category: 3, keywords: 1 };
+  function score(fields, query) {
+    var words = queryWords(query);
+    if (!words.length) return 0;
+    var hay = {};
+    Object.keys(WEIGHTS).forEach(function (k) { hay[k] = normalize(fields[k]); });
+    var total = 0;
+    words.forEach(function (word) {
+      var best = 0;
+      Object.keys(WEIGHTS).forEach(function (k) {
+        if (WEIGHTS[k] > best && hasWord(hay[k], word)) best = WEIGHTS[k];
+      });
+      total += best;
+    });
+    if (words.length > 1 && hay.name.indexOf(' ' + words.join(' ')) !== -1) total += 20;
+    if (hay.name.indexOf(' ' + words[0]) === 0) total += 2;
+    return total;
+  }
+
+  var api = { normalize: normalize, matches: matches, score: score };
   if (typeof module === 'object' && module.exports) module.exports = api;
   else root.DCTCatalogSearch = api;
 })(typeof window !== 'undefined' ? window : this);
@@ -104,10 +133,28 @@ if (typeof document !== 'undefined') document.addEventListener('DOMContentLoaded
     return category === 'all' || row.dataset.category === category;
   }
 
-  function sortRows(rows, sortBy) {
+  // Remember the curated server-rendered order so "Most Relevant" can fall back to it.
+  ['comprehensive', 'modular'].forEach(function (k) {
+    rowsOf(panels[k]).forEach(function (row, i) { row._order = i; });
+  });
+
+  function relevance(row, query) {
+    if (row._scoreQuery !== query) {
+      row._scoreQuery = query;
+      row._score = match.score({
+        name: row.dataset.name, standard: row.dataset.standard,
+        category: row.dataset.category, keywords: row.dataset.keywords
+      }, query);
+    }
+    return row._score;
+  }
+
+  function sortRows(rows, sortBy, query) {
     var sorted = rows.slice();
     sorted.sort(function (a, b) {
       switch (sortBy) {
+        case 'relevance':
+          return (relevance(b, query) - relevance(a, query)) || (a._order - b._order);
         case 'price-asc':
           return parseFloat(a.dataset.price) - parseFloat(b.dataset.price);
         case 'price-desc':
@@ -119,8 +166,9 @@ if (typeof document !== 'undefined') document.addEventListener('DOMContentLoaded
         case 'name-desc':
           return b.dataset.name.localeCompare(a.dataset.name);
         case 'name-asc':
-        default:
           return a.dataset.name.localeCompare(b.dataset.name);
+        default:
+          return a._order - b._order;
       }
     });
     return sorted;
@@ -128,7 +176,7 @@ if (typeof document !== 'undefined') document.addEventListener('DOMContentLoaded
 
   function apply() {
     var query = (searchInput ? searchInput.value.trim().toLowerCase() : '');
-    var sortBy = sortSelect ? sortSelect.value : 'name-asc';
+    var sortBy = sortSelect ? sortSelect.value : 'relevance';
     var tier = tierSelect ? tierSelect.value : 'all';
     var category = categorySelect ? categorySelect.value : 'all';
 
@@ -142,7 +190,7 @@ if (typeof document !== 'undefined') document.addEventListener('DOMContentLoaded
       var visibleCount = 0;
 
       if (showPanel) {
-        var sorted = sortRows(rows, sortBy);
+        var sorted = sortRows(rows, sortBy, query);
         sorted.forEach(function (row) {
           var visible = matchesSearch(row, query) && matchesCategory(row, category);
           row.hidden = !visible;
