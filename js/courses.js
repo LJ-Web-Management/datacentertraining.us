@@ -95,11 +95,8 @@
 })(typeof window !== 'undefined' ? window : this);
 
 if (typeof document !== 'undefined') document.addEventListener('DOMContentLoaded', function () {
-  var panels = {
-    comprehensive: document.getElementById('courseListComprehensive'),
-    modular: document.getElementById('courseListModular')
-  };
-  if (!panels.comprehensive && !panels.modular) return;
+  var panel = document.getElementById('courseList');
+  if (!panel) return;
 
   var searchInput = document.getElementById('courseSearch');
   var sortSelect = document.getElementById('courseSort');
@@ -108,14 +105,7 @@ if (typeof document !== 'undefined') document.addEventListener('DOMContentLoaded
   var resultCount = document.getElementById('courseResultCount');
   var emptyState = document.getElementById('courseEmptyState');
   var requestLink = document.getElementById('courseRequestLink');
-  var subheads = {
-    comprehensive: document.getElementById('courseSubheadComprehensive'),
-    modular: document.getElementById('courseSubheadModular')
-  };
-
-  function rowsOf(panel) {
-    return panel ? Array.prototype.slice.call(panel.querySelectorAll('.course-row')) : [];
-  }
+  var allRows = Array.prototype.slice.call(panel.querySelectorAll('.course-row'));
 
   var match = window.DCTCatalogSearch;
 
@@ -134,9 +124,7 @@ if (typeof document !== 'undefined') document.addEventListener('DOMContentLoaded
   }
 
   // Remember the curated server-rendered order so "Most Relevant" can fall back to it.
-  ['comprehensive', 'modular'].forEach(function (k) {
-    rowsOf(panels[k]).forEach(function (row, i) { row._order = i; });
-  });
+  allRows.forEach(function (row, i) { row._order = i; });
 
   function relevance(row, query) {
     if (row._scoreQuery !== query) {
@@ -182,29 +170,14 @@ if (typeof document !== 'undefined') document.addEventListener('DOMContentLoaded
 
     var totalVisible = 0;
 
-    ['comprehensive', 'modular'].forEach(function (tierKey) {
-      var panel = panels[tierKey];
-      if (!panel) return;
-      var showPanel = tier === 'all' || tier === tierKey;
-      var rows = rowsOf(panel);
-      var visibleCount = 0;
-
-      if (showPanel) {
-        var sorted = sortRows(rows, sortBy, query);
-        sorted.forEach(function (row) {
-          var visible = matchesSearch(row, query) && matchesCategory(row, category);
-          row.hidden = !visible;
-          if (visible) visibleCount++;
-          panel.appendChild(row);
-        });
-      } else {
-        rows.forEach(function (row) { row.hidden = true; });
-      }
-
-      if (subheads[tierKey]) subheads[tierKey].hidden = !showPanel || visibleCount === 0;
-      panel.hidden = !showPanel || visibleCount === 0;
-      totalVisible += visibleCount;
+    sortRows(allRows, sortBy, query).forEach(function (row) {
+      var visible = (tier === 'all' || row.dataset.tier === tier) &&
+        matchesSearch(row, query) && matchesCategory(row, category);
+      row.hidden = !visible;
+      if (visible) totalVisible++;
+      panel.appendChild(row);
     });
+    panel.hidden = totalVisible === 0;
 
     if (resultCount) {
       resultCount.textContent = totalVisible === 1 ? '1 course' : totalVisible + ' courses';
