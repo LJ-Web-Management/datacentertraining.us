@@ -92,10 +92,35 @@ test('page: Markdown through negotiation, and through the .md copy on plain GitH
   assert.equal(missing.code, 1);
 });
 
-test('without the edge Worker, tool commands fail with a clear message', async () => {
-  const r = await run(['courses'], pagesOnly);
-  assert.equal(r.code, 1);
-  assert.match(r.err, /instead of JSON/);
+test('without the edge Worker, tool commands run locally on the static JSON and match the edge', async () => {
+  for (const argv of [
+    ['courses', '--query', 'UPS', '--json'],
+    ['course', 'ups-systems-fundamentals', '--json'],
+    ['recommend', 'electrician', '--budget', '500', '--json'],
+    ['bundles', '--json'],
+    ['credentials', 'expiration', '--json'],
+    ['faq', 'Do certificates expire?', '--json'],
+    ['resources', '--topic', 'generator', '--json']
+  ]) {
+    const edge = await run(argv);
+    const pages = await run(argv, pagesOnly);
+    assert.equal(pages.code, 0, argv.join(' ') + ': ' + pages.err);
+    assert.deepEqual(JSON.parse(pages.out), JSON.parse(edge.out), argv.join(' '));
+  }
+  const unknown = await run(['call', 'nope', '{}'], pagesOnly);
+  assert.equal(unknown.code, 1);
+  assert.match(unknown.err, /unknown_tool/);
+});
+
+test('the bundled engine is the site engine', () => {
+  const engine = readFileSync(fileURLToPath(new URL('../engine.cjs', import.meta.url)), 'utf8');
+  const site = readFileSync(fileURLToPath(new URL('../../js/webmcp.js', import.meta.url)), 'utf8');
+  assert.equal(engine.slice(engine.indexOf('\n') + 1), site);
+});
+
+test('without the edge Worker and without the engine, tool commands fail with a clear message', async () => {
+  const { callTool } = await import('../datacentertraining.mjs');
+  await assert.rejects(callTool(BASE, 'list_courses', {}, pagesOnly, null), /instead of JSON/);
 });
 
 test('runs as an executable', () => {

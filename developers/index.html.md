@@ -1,4 +1,4 @@
-# Data Center Training Developer Portal
+# Data Center Training API Documentation
 
 Developers & AI Agents
 
@@ -73,7 +73,7 @@ curl -s https://datacentertraining.us/mcp \
                   "clientInfo": {"name": "my-agent", "version": "1.0.0"}}}'
 ```
 
-Browser agents get the same tools in the page itself: every page registers them with `navigator.modelContext` (WebMCP).
+Full setup guide: [Data Center Training MCP Server](https://datacentertraining.us/developers/mcp.html). Browser agents get the same tools in the page itself: every page registers them with `navigator.modelContext` (WebMCP).
 
 ## REST Tool Endpoints
 
@@ -193,7 +193,7 @@ npx datacentertraining faq "Do certificates expire?"
 npx datacentertraining help
 ```
 
-Add `--json` to any command for the raw tool output. The same single-file script is published on this site at [/cli/datacentertraining.mjs](https://datacentertraining.us/cli/datacentertraining.mjs) if you would rather download it than install from npm.
+Add `--json` to any command for the raw tool output. The script is also published on this site at [/cli/datacentertraining.mjs](https://datacentertraining.us/cli/datacentertraining.mjs), with its tool engine at [/cli/engine.cjs](https://datacentertraining.us/cli/engine.cjs), if you would rather download it than install from npm. Full guide: [Data Center Training CLI](https://datacentertraining.us/developers/cli.html).
 
 ## Sandbox and Local Testing
 

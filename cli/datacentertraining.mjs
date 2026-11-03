@@ -2,11 +2,17 @@
 // datacentertraining: command-line client for the Data Center Training catalog
 // API (https://datacentertraining.us/developers/). Each command calls one of the
 // read-only REST tool endpoints under /api/v1/tools/; nothing here can enroll,
-// pay, or change anything. Node.js 18+, no dependencies, one file.
+// pay, or change anything. Node.js 18+, no dependencies.
+//
+// If a host has no tool endpoints (plain GitHub Pages, without the edge
+// Worker), the CLI runs the same tool engine the site uses (engine.cjs, a copy
+// of /js/webmcp.js kept in sync by scripts/build-site.js) on the static JSON
+// documents under /api/v1/, so every command still works.
 import { realpathSync } from 'node:fs';
+import { createRequire } from 'node:module';
 import { fileURLToPath } from 'node:url';
 
-const VERSION = '1.0.0';
+const VERSION = '1.1.0';
 const DEFAULT_BASE = 'https://datacentertraining.us';
 
 const HELP = `datacentertraining ${VERSION}: search the Data Center Training course catalog
@@ -120,7 +126,31 @@ export function toRequest(positional, options) {
   }
 }
 
-export async function callTool(base, tool, input, fetchImpl = fetch) {
+function loadEngine() {
+  try { return createRequire(import.meta.url)('./engine.cjs'); } catch (e) { return null; }
+}
+
+// Runs a tool here, on the host's static /api/v1/ JSON documents.
+export async function runToolLocally(base, tool, input, fetchImpl = fetch, engine = loadEngine()) {
+  if (!engine) return null;
+  if (!engine.names.includes(tool)) {
+    throw new ApiError({ code: 'unknown_tool', title: 'Unknown tool', detail: 'No tool named ' + tool + '.', hint: 'Valid tools: ' + engine.names.join(', ') + '.' });
+  }
+  const data = {};
+  for (const file of engine.toolData[tool]) {
+    const url = base + '/api/v1/' + file + '.json';
+    const res = await fetchImpl(url, { headers: { Accept: 'application/json', 'User-Agent': 'datacentertraining-cli/' + VERSION } });
+    if (!res.ok) throw new ApiError({ title: 'Upstream error', detail: url + ' answered ' + res.status + '.' }, res);
+    data[file] = await res.json();
+  }
+  try {
+    return engine.run(tool, input, data);
+  } catch (e) {
+    throw new ApiError({ code: 'invalid_input', title: 'Invalid input', detail: e.message });
+  }
+}
+
+export async function callTool(base, tool, input, fetchImpl = fetch, engine = loadEngine()) {
   const res = await fetchImpl(base + '/api/v1/tools/' + encodeURIComponent(tool), {
     method: 'POST',
     headers: { 'Content-Type': 'application/json', Accept: 'application/json', 'User-Agent': 'datacentertraining-cli/' + VERSION },
@@ -131,6 +161,11 @@ export async function callTool(base, tool, input, fetchImpl = fetch) {
     const body = await res.json();
     if (!res.ok) throw new ApiError(body, res);
     return body;
+  }
+  // No tool endpoint on this host (a static HTML 404 or 405): run it here.
+  if (res.status === 404 || res.status === 405) {
+    const local = await runToolLocally(base, tool, input, fetchImpl, engine);
+    if (local) return local;
   }
   throw new ApiError({ title: 'Unexpected response', detail: base + ' answered ' + res.status + ' ' + (type.split(';')[0] || 'without a content type') + ' instead of JSON.' }, res);
 }

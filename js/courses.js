@@ -2,7 +2,70 @@
 // The course list itself is static, server-rendered HTML (see main.js) so
 // every course link is crawlable without JS; this file only reorders and
 // shows/hides the existing .course-row elements already in the DOM.
-document.addEventListener('DOMContentLoaded', function () {
+
+// Query matching, kept free of the DOM so scripts/catalog-search.test.js can
+// run it in Node. A query matches a course when every word in it (ignoring
+// filler words like "and" or "for") starts a word in the course's name, track,
+// standard, or keywords, either as typed, without a plural ending, or as one of
+// the synonyms below ("loto" finds Lockout/Tagout, "batteries" finds Battery).
+(function (root) {
+  var STOPWORDS = { a: 1, an: 1, and: 1, the: 1, for: 1, of: 1, in: 1, on: 1, to: 1, with: 1, course: 1, courses: 1, training: 1, class: 1, classes: 1 };
+  var SYNONYMS = {
+    ups: ['uninterruptible power'], pue: ['power usage effectiveness', 'energy efficiency'], dcim: ['data center infrastructure management'],
+    bms: ['building management', 'building automation'], bas: ['building automation'], epo: ['emergency power off'],
+    ats: ['automatic transfer', 'transfer switch'], pdu: ['power distribution'], loto: ['lockout', 'tagout'], lockout: ['loto'],
+    tagout: ['loto'], hvac: ['cooling', 'mechanical'], crac: ['cooling'], crah: ['cooling'], chiller: ['chilled water', 'cooling'],
+    cx: ['commissioning'], li: ['lithium'], lithium: ['li ion'], dr: ['disaster recovery'],
+    bc: ['business continuity'], bcdr: ['business continuity', 'disaster recovery'], fire: ['suppression', 'nfpa 75'],
+    electrician: ['electrical'], electric: ['electrical'], generators: ['generator'], genset: ['generator'],
+    ac: ['cooling'], security: ['access control'], badge: ['access control'], ppe: ['protective equipment', 'arc flash'],
+    beginner: ['fundamentals', 'foundational'], beginners: ['fundamentals', 'foundational'], intro: ['fundamentals'],
+    introduction: ['fundamentals'], basics: ['fundamentals'], basic: ['fundamentals'], advanced: ['comprehensive'],
+    tech: ['technician'], techs: ['technician'], efficiency: ['pue'], energy: ['efficiency', 'pue']
+  };
+
+  // Spelled-out terms the catalog abbreviates, replaced before matching word by word.
+  var PHRASES = [
+    ['power usage effectiveness', 'pue'], ['power usage', 'pue'], ['uninterruptible power supply', 'ups'],
+    ['uninterruptible power', 'ups'], ['lockout tagout', 'loto'], ['lock out tag out', 'loto'],
+    ['emergency power off', 'epo'], ['building management system', 'bms'], ['lithium ion', 'lithium']
+  ];
+
+  function normalize(s) {
+    return ' ' + String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
+      .replace(/&/g, ' and ').replace(/[^a-z0-9.+/]+/g, ' ').replace(/\s+/g, ' ').trim() + ' ';
+  }
+
+  function alternatives(word) {
+    var alts = [word];
+    if (word.length > 3 && /ies$/.test(word)) alts.push(word.slice(0, -3) + 'y');
+    else if (word.length > 3 && /(s|x|z|ch|sh)es$/.test(word)) alts.push(word.slice(0, -2));
+    else if (word.length > 3 && /[^s]s$/.test(word)) alts.push(word.slice(0, -1));
+    (SYNONYMS[word] || []).forEach(function (s) { alts.push(normalize(s).trim()); });
+    return alts;
+  }
+
+  // Each normalized haystack starts and ends with a space, so " term" is a word start.
+  function matches(haystack, query) {
+    var q = normalize(query);
+    PHRASES.forEach(function (p) { q = q.split(' ' + p[0] + ' ').join(' ' + p[1] + ' '); });
+    var words = q.trim().split(' ').filter(Boolean);
+    // A query of only filler words ("training courses") filters nothing.
+    words = words.filter(function (w) { return !STOPWORDS[w]; });
+    if (!words.length) return true;
+    return words.every(function (word) {
+      return alternatives(word).some(function (alt) {
+        return haystack.indexOf(' ' + alt) !== -1 || haystack.indexOf('/' + alt) !== -1;
+      });
+    });
+  }
+
+  var api = { normalize: normalize, matches: matches };
+  if (typeof module === 'object' && module.exports) module.exports = api;
+  else root.DCTCatalogSearch = api;
+})(typeof window !== 'undefined' ? window : this);
+
+if (typeof document !== 'undefined') document.addEventListener('DOMContentLoaded', function () {
   var panels = {
     comprehensive: document.getElementById('courseListComprehensive'),
     modular: document.getElementById('courseListModular')
@@ -25,13 +88,16 @@ document.addEventListener('DOMContentLoaded', function () {
     return panel ? Array.prototype.slice.call(panel.querySelectorAll('.course-row')) : [];
   }
 
+  var match = window.DCTCatalogSearch;
+
   function matchesSearch(row, query) {
     if (!query) return true;
-    var haystack = (
-      row.dataset.name + ' ' + row.dataset.category + ' ' + (row.dataset.standard || '')
-    ).toLowerCase();
-    // Every word must appear somewhere, in any order ("ups load test" matches "UPS Operations & Load Testing").
-    return query.split(/\s+/).every(function (word) { return haystack.indexOf(word) !== -1; });
+    if (!row._haystack) {
+      row._haystack = match.normalize([
+        row.dataset.name, row.dataset.category, row.dataset.standard, row.dataset.tier, row.dataset.keywords
+      ].join(' '));
+    }
+    return match.matches(row._haystack, query);
   }
 
   function matchesCategory(row, category) {
