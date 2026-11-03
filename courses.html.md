@@ -2,7 +2,7 @@
 
 Course Catalog
 
-Nine in-depth Comprehensive Programs and thirty-four focused Modular Specializations, covering every discipline from design to daily operations. Search, filter, and sort to find exactly the courses your team needs.
+Online data center courses covering every discipline from design to daily operations. Search, filter, and sort to find exactly the courses your team needs.
 
 43 courses
 
