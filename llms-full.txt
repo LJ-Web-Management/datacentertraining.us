@@ -2,7 +2,7 @@
 
 > Data Center Training (datacentertraining.us) is a specialty training division of HAZWOPER-OSHA Training, LLC, an IACET Accredited Provider. 43 online, self-paced data center courses (192 hours total) in design, operations, power, cooling, security, and facilities management. Every course awards a certificate of completion.
 
-Last updated: 2026-11-03
+Last updated: 2026-11-04
 Canonical source: https://datacentertraining.us/api/v1/courses.json (same records as JSON). Tools: https://datacentertraining.us/.well-known/mcp.json
 
 ## Rules for AI agents
@@ -2144,6 +2144,7 @@ Email info@hazwoper-osha.com or call 1-866-429-6742 and our team can help with c
 - [Data Center PUE Calculator](https://datacentertraining.us/tools/pue-calculator.html) (site page): Free data center PUE calculator. Enter facility and IT load to get PUE, DCiE, overhead energy cost, and the yearly savings from hitting a target PUE.
 - [Build Your Data Center Training Plan](https://datacentertraining.us/tools/training-plan-builder.html) (site page): Build a data center training plan for your role in a minute. Pick your job, experience, topics, and time budget to get a course list, hours, and price.
 - [Uptime & Downtime Calculator](https://datacentertraining.us/tools/uptime-calculator.html) (site page): Convert availability percentages like 99.99% into allowed downtime per year, month, week, and day, or work backward from downtime. Tier figures included.
+- [Data Center Cooling Tower Blowdown Checks: What Facilities Teams Should Verify Before Chemical Service](https://datacentertraining.us/blog/posts/data-center-cooling-tower-blowdown-checks-what-facilities-teams-should-verify-before-chemical-service.html) (blog post, 2026-11-04): Cooling-tower blowdown looks like a routine water-treatment task, but in a data center it can affect chiller performance, condenser-water chemistry, pump…
 - [SOC 2 Physical Controls Walkthrough: What Data Center Facility Teams Should Evidence for a Customer Audit](https://datacentertraining.us/blog/posts/soc-2-physical-controls-walkthrough-what-data-center-facility-teams-should-evidence-for-a-customer-audit.html) (blog post, 2026-11-03): When a customer audit asks how a data center protects physical access, facility teams need more than a badge-reader inventory or a security policy.
 - [Data Center Electrical One-Line Review: What Supervisors Should Verify Before Switching](https://datacentertraining.us/blog/posts/data-center-electrical-one-line-review-what-supervisors-should-verify-before-switching.html) (blog post, 2026-11-01): Before a planned switching event, can the supervisor prove that the one-line diagram, the equipment in front of the crew, and the approved switching procedure…
 - [Raised Floor Access Readiness: What Data Center Technicians Should Check Before Opening Panels](https://datacentertraining.us/blog/posts/raised-floor-access-readiness-what-data-center-technicians-should-check-before-opening-panels.html) (blog post, 2026-10-31): Before a data center technician lifts a raised-floor panel, can the team show that the work area, the panel, the underfloor space, and the equipment below it…

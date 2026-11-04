@@ -1,8 +1,8 @@
 {
   "publisher": "Data Center Training (datacentertraining.us)",
-  "last_updated": "2026-11-03",
+  "last_updated": "2026-11-04",
   "license": "Public information; quote with attribution and a link to the source URL.",
-  "count": 136,
+  "count": 137,
   "resources": [
     {
       "source": "Data Center Training (first party)",
@@ -1153,6 +1153,18 @@
         "tier"
       ],
       "audience": []
+    },
+    {
+      "type": "blog_post",
+      "title": "Data Center Cooling Tower Blowdown Checks: What Facilities Teams Should Verify Before Chemical Service",
+      "url": "https://datacentertraining.us/blog/posts/data-center-cooling-tower-blowdown-checks-what-facilities-teams-should-verify-before-chemical-service.html",
+      "description": "Cooling-tower blowdown looks like a routine water-treatment task, but in a data center it can affect chiller performance, condenser-water chemistry, pump…",
+      "topics": [
+        "cooling"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-11-04"
     },
     {
       "type": "blog_post",

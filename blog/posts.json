@@ -428,5 +428,15 @@
     "date": "2026-11-03",
     "dateDisplay": "November 3, 2026",
     "excerpt": "When a customer audit asks how a data center protects physical access, facility teams need more than a badge-reader inventory or a security policy."
+  },
+  {
+    "title": "Data Center Cooling Tower Blowdown Checks: What Facilities Teams Should Verify Before Chemical Service",
+    "slug": "data-center-cooling-tower-blowdown-checks-what-facilities-teams-should-verify-before-chemical-service",
+    "seoTitle": "Data Center Cooling Tower Blowdown Checks",
+    "description": "Cooling-tower blowdown looks like a routine water-treatment task, but in a data center it can affect chiller performance, condenser-water chemistry, pump…",
+    "image": "assets/img/posts/data-center-cooling-tower-blowdown-checks-what-facilities-teams-should-verify-before-chemical-service.jpg",
+    "date": "2026-11-04",
+    "dateDisplay": "November 4, 2026",
+    "excerpt": "Cooling-tower blowdown looks like a routine water-treatment task, but in a data center it can affect chiller performance, condenser-water chemistry, pump…"
   }
 ]

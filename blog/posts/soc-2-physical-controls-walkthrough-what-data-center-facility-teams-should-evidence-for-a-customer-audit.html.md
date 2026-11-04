@@ -122,6 +122,12 @@ This week, choose one sensitive zone and run a 30-minute control-to-evidence wal
 
 ## More from the blog
 
+[!\[Data Center Cooling Tower Blowdown Checks: What Facilities Teams Should Verify Before Chemical Service\](https://datacentertraining.us/blog/assets/img/posts/data-center-cooling-tower-blowdown-checks-what-facilities-teams-should-verify-before-chemical-service.jpg)](https://datacentertraining.us/blog/posts/data-center-cooling-tower-blowdown-checks-what-facilities-teams-should-verify-before-chemical-service.html)
+
+November 4, 2026
+
+### Data Center Cooling Tower Blowdown Checks: What Facilities Teams Should Verify Before Chemical Service
+
 [!\[Data Center Electrical One-Line Review: What Supervisors Should Verify Before Switching\](https://datacentertraining.us/blog/assets/img/posts/data-center-electrical-one-line-review-what-supervisors-should-verify-before-switching.jpg)](https://datacentertraining.us/blog/posts/data-center-electrical-one-line-review-what-supervisors-should-verify-before-switching.html)
 
 November 1, 2026

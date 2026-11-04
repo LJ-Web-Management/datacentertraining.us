@@ -4,6 +4,12 @@ Data Center Training Blog
 
 Technical guidance, standards updates, and field best practices on power, cooling, electrical safety, operations, and compliance from datacentertraining.us.
 
+[!\[Data Center Cooling Tower Blowdown Checks: What Facilities Teams Should Verify Before Chemical Service\](https://datacentertraining.us/blog/assets/img/posts/data-center-cooling-tower-blowdown-checks-what-facilities-teams-should-verify-before-chemical-service.jpg)](https://datacentertraining.us/blog/posts/data-center-cooling-tower-blowdown-checks-what-facilities-teams-should-verify-before-chemical-service.html)
+
+November 4, 2026
+
+## Data Center Cooling Tower Blowdown Checks: What Facilities Teams Should Verify Before Chemical Service
+
 [!\[SOC 2 Physical Controls Walkthrough: What Data Center Facility Teams Should Evidence for a Customer Audit\](https://datacentertraining.us/blog/assets/img/posts/soc-2-physical-controls-walkthrough-what-data-center-facility-teams-should-evidence-for-a-customer-audit.jpg)](https://datacentertraining.us/blog/posts/soc-2-physical-controls-walkthrough-what-data-center-facility-teams-should-evidence-for-a-customer-audit.html)
 
 November 3, 2026

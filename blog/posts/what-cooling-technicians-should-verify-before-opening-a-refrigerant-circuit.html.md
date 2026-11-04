@@ -138,11 +138,11 @@ September 24, 2026
 
 ### How Data Center Managers Should Test Physical Access During a Maintenance Window
 
-[!\[SOC 2 Physical Controls Walkthrough: What Data Center Facility Teams Should Evidence for a Customer Audit\](https://datacentertraining.us/blog/assets/img/posts/soc-2-physical-controls-walkthrough-what-data-center-facility-teams-should-evidence-for-a-customer-audit.jpg)](https://datacentertraining.us/blog/posts/soc-2-physical-controls-walkthrough-what-data-center-facility-teams-should-evidence-for-a-customer-audit.html)
+[!\[Data Center Cooling Tower Blowdown Checks: What Facilities Teams Should Verify Before Chemical Service\](https://datacentertraining.us/blog/assets/img/posts/data-center-cooling-tower-blowdown-checks-what-facilities-teams-should-verify-before-chemical-service.jpg)](https://datacentertraining.us/blog/posts/data-center-cooling-tower-blowdown-checks-what-facilities-teams-should-verify-before-chemical-service.html)
 
-November 3, 2026
+November 4, 2026
 
-### SOC 2 Physical Controls Walkthrough: What Data Center Facility Teams Should Evidence for a Customer Audit
+### Data Center Cooling Tower Blowdown Checks: What Facilities Teams Should Verify Before Chemical Service
 
 [View all posts →](https://datacentertraining.us/blog/)
 
