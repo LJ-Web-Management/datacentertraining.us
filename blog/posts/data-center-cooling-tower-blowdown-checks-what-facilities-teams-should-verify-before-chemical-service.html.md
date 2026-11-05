@@ -110,6 +110,12 @@ This week, choose one tower cell and walk the complete blowdown path with a mech
 
 ## More from the blog
 
+[!\[Data Center Shift Handover Checklist: What Facility Managers Should Make Visible Before the Next Crew Takes Over\](https://datacentertraining.us/blog/assets/img/posts/data-center-shift-handover-checklist-what-facility-managers-should-make-visible-before-the-next-crew-takes-over.jpg)](https://datacentertraining.us/blog/posts/data-center-shift-handover-checklist-what-facility-managers-should-make-visible-before-the-next-crew-takes-over.html)
+
+November 5, 2026
+
+### Data Center Shift Handover Checklist: What Facility Managers Should Make Visible Before the Next Crew Takes Over
+
 [!\[SOC 2 Physical Controls Walkthrough: What Data Center Facility Teams Should Evidence for a Customer Audit\](https://datacentertraining.us/blog/assets/img/posts/soc-2-physical-controls-walkthrough-what-data-center-facility-teams-should-evidence-for-a-customer-audit.jpg)](https://datacentertraining.us/blog/posts/soc-2-physical-controls-walkthrough-what-data-center-facility-teams-should-evidence-for-a-customer-audit.html)
 
 November 3, 2026

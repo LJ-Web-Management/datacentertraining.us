@@ -138,11 +138,11 @@ September 24, 2026
 
 ### How Data Center Managers Should Test Physical Access During a Maintenance Window
 
-[!\[Data Center Cooling Tower Blowdown Checks: What Facilities Teams Should Verify Before Chemical Service\](https://datacentertraining.us/blog/assets/img/posts/data-center-cooling-tower-blowdown-checks-what-facilities-teams-should-verify-before-chemical-service.jpg)](https://datacentertraining.us/blog/posts/data-center-cooling-tower-blowdown-checks-what-facilities-teams-should-verify-before-chemical-service.html)
+[!\[Data Center Shift Handover Checklist: What Facility Managers Should Make Visible Before the Next Crew Takes Over\](https://datacentertraining.us/blog/assets/img/posts/data-center-shift-handover-checklist-what-facility-managers-should-make-visible-before-the-next-crew-takes-over.jpg)](https://datacentertraining.us/blog/posts/data-center-shift-handover-checklist-what-facility-managers-should-make-visible-before-the-next-crew-takes-over.html)
 
-November 4, 2026
+November 5, 2026
 
-### Data Center Cooling Tower Blowdown Checks: What Facilities Teams Should Verify Before Chemical Service
+### Data Center Shift Handover Checklist: What Facility Managers Should Make Visible Before the Next Crew Takes Over
 
 [View all posts →](https://datacentertraining.us/blog/)
 

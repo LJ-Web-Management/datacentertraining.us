@@ -4,6 +4,12 @@ Data Center Training Blog
 
 Technical guidance, standards updates, and field best practices on power, cooling, electrical safety, operations, and compliance from datacentertraining.us.
 
+[!\[Data Center Shift Handover Checklist: What Facility Managers Should Make Visible Before the Next Crew Takes Over\](https://datacentertraining.us/blog/assets/img/posts/data-center-shift-handover-checklist-what-facility-managers-should-make-visible-before-the-next-crew-takes-over.jpg)](https://datacentertraining.us/blog/posts/data-center-shift-handover-checklist-what-facility-managers-should-make-visible-before-the-next-crew-takes-over.html)
+
+November 5, 2026
+
+## Data Center Shift Handover Checklist: What Facility Managers Should Make Visible Before the Next Crew Takes Over
+
 [!\[Data Center Cooling Tower Blowdown Checks: What Facilities Teams Should Verify Before Chemical Service\](https://datacentertraining.us/blog/assets/img/posts/data-center-cooling-tower-blowdown-checks-what-facilities-teams-should-verify-before-chemical-service.jpg)](https://datacentertraining.us/blog/posts/data-center-cooling-tower-blowdown-checks-what-facilities-teams-should-verify-before-chemical-service.html)
 
 November 4, 2026

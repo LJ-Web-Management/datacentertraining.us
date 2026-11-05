@@ -1,8 +1,8 @@
 {
   "publisher": "Data Center Training (datacentertraining.us)",
-  "last_updated": "2026-11-04",
+  "last_updated": "2026-11-05",
   "license": "Public information; quote with attribution and a link to the source URL.",
-  "count": 137,
+  "count": 138,
   "resources": [
     {
       "source": "Data Center Training (first party)",
@@ -1153,6 +1153,16 @@
         "tier"
       ],
       "audience": []
+    },
+    {
+      "type": "blog_post",
+      "title": "Data Center Shift Handover Checklist: What Facility Managers Should Make Visible Before the Next Crew Takes Over",
+      "url": "https://datacentertraining.us/blog/posts/data-center-shift-handover-checklist-what-facility-managers-should-make-visible-before-the-next-crew-takes-over.html",
+      "description": "A shift handover in a data center is more than passing along a list of open work orders. The next operations crew needs a trustworthy picture of equipment…",
+      "topics": [],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-11-05"
     },
     {
       "type": "blog_post",
