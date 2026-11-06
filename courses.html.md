@@ -1,4 +1,4 @@
-# 43 Courses, 192 Hours, Built for the Data Center Floor
+# 43 Courses, 184 Hours, Built for the Data Center Floor
 
 Course Catalog
 
@@ -45,7 +45,7 @@ $325.99
 
 Security & Compliance · SOC 2 / ISO 27001
 
-16 hrs
+8 hrs
 
 $291.99
 

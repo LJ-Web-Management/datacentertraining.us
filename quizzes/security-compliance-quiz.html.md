@@ -121,7 +121,7 @@ Security & Compliance · Comprehensive Program · SOC 2 / ISO 27001
 
 Build a facility security program that satisfies SOC 2, ISO 27001, and physical audit requirements.
 
-16 hrs
+8 hrs
 
 $291.99
 
@@ -184,7 +184,7 @@ Save 42% with the bundle
 
 Security & Compliance Bundle
 
-5 courses · 27 hours · **$400.99** per seat, instead of ~~$691.95~~ bought separately
+5 courses · 19 hours · **$400.99** per seat, instead of ~~$691.95~~ bought separately
 
 - [Enroll in the Bundle](https://datacentertraining.us/checkout.html?item=bundle-security-compliance)
 - [Compare Bundles](https://datacentertraining.us/bundles.html)

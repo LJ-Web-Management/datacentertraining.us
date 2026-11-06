@@ -289,7 +289,7 @@ Save 52% with the bundle
 
 Complete Data Center Professional Bundle
 
-43 courses · 192 hours · **$2,928.99** per seat, instead of ~~$6,067.57~~ bought separately
+43 courses · 184 hours · **$2,928.99** per seat, instead of ~~$6,067.57~~ bought separately
 
 - [Enroll in the Bundle](https://datacentertraining.us/checkout.html?item=bundle-complete-catalog)
 - [Compare Bundles](https://datacentertraining.us/bundles.html)
@@ -328,7 +328,7 @@ Yes. Every course is online and self-paced, so you can take it from anywhere in 
 
 ### How long does data center training take?
 
-Individual courses run from 1 hour to 16 hours. A focused safety topic such as arc flash awareness takes an afternoon, while a full role track such as the Power & Electrical Systems Bundle takes several weeks of part-time study.
+Individual courses run from 1 hour to 8 hours. A focused safety topic such as arc flash awareness takes an afternoon, while a full role track such as the Power & Electrical Systems Bundle takes several weeks of part-time study.
 
 ### Do your courses give a data center certification?
 

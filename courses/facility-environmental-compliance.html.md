@@ -92,7 +92,7 @@ More training from the Security & Compliance Bundle. [Browse all 43 courses](htt
 
 Security & Compliance · Comprehensive Program
 
-16 hrs
+8 hrs
 
 $291.99
 

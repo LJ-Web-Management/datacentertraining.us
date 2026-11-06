@@ -4,7 +4,7 @@ Comprehensive Program
 
 Build a facility security program that satisfies SOC 2, ISO 27001, and physical audit requirements.
 
-16 hrs · self-paced online Security & Compliance SOC 2 / ISO 27001
+8 hrs · self-paced online Security & Compliance SOC 2 / ISO 27001
 
 Data center security spans two very different disciplines — physical security architecture and facility cybersecurity — and most compliance frameworks expect both to work together. This course covers physical security design (access control, surveillance, perimeter), facility cybersecurity fundamentals, and the regulatory frameworks (SOC 2, ISO 27001, HIPAA, PCI-DSS) that shape audit requirements.
 
@@ -60,7 +60,7 @@ Passing an audit takes more than good equipment. Controls must be designed, oper
 
 - **Track:** Security & Compliance
 - **Course type:** Comprehensive Program
-- **Length:** 16 hrs, self-paced online
+- **Length:** 8 hrs, self-paced online
 - **Standards referenced:** SOC 2 / ISO 27001
 - **Price:** $291.99 per seat, volume pricing for teams
 - **Included in:** [Security & Compliance Bundle](https://datacentertraining.us/bundles.html) and the [Complete Data Center Professional Bundle](https://datacentertraining.us/bundles.html)
@@ -88,7 +88,7 @@ There is no single required one. For people, common choices are ASIS Internation
 
 Auditors check that physical and logical controls exist and work as written: perimeter and building access, visitor and contractor escorts, badge and mantrap logs, CCTV coverage and retention, equipment chain of custody, periodic access reviews and incident records. Frameworks such as SOC 2, ISO/IEC 27001 and PCI DSS (Requirement 9 covers physical access) set the specific criteria.
 
-16 hrs
+8 hrs
 
 6 modules · self-paced online
 
