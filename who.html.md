@@ -58,13 +58,13 @@ Recommended
 
 Security and compliance leads building an audit-ready program should complete this 5-course, 27-hour track.
 
-- Security & Compliance for Data Centers · 16 hrs
+- Security & Compliance for Data Centers · 8 hrs
 - Access Control & Physical Security · 4 hrs
 - Facility Environmental Compliance · 4 hrs
 - Data Center Fire Suppression Safety · 2 hrs
 - + 1 more course
 
-All 5 courses, 27 hrs, in the **Security & Compliance Bundle** for $400.99 — save $291.
+All 5 courses, 19 hrs, in the **Security & Compliance Bundle** for $400.99 — save $291.
 
 [See These Courses](https://datacentertraining.us/courses.html)
 

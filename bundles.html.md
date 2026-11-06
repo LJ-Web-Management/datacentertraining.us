@@ -1,4 +1,4 @@
-# Get the Whole Catalog: 192 Hours, One Enrollment
+# Get the Whole Catalog: 184 Hours, One Enrollment
 
 Save With a Bundle
 
@@ -8,7 +8,7 @@ Everything, One Price
 
 ## Complete Data Center Professional Bundle
 
-192 hrs of training 43 courses
+184 hrs of training 43 courses
 
 Every course in the catalog — all 6 role-based tracks in one enrollment. The single path for a team that wants full coverage across design, power, cooling, security, operations, and monitoring, at the deepest discount we offer.
 
@@ -88,7 +88,7 @@ $830.99 $1,433.90 Save 42%
 
 ## Security & Compliance Bundle
 
-27 hrs of training 5 courses
+19 hrs of training 5 courses
 
 For security and compliance leads building an audit-ready physical security, fire safety, and environmental compliance program.
 

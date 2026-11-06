@@ -262,7 +262,7 @@ Save 52% with the bundle
 
 Complete Data Center Professional Bundle
 
-43 courses · 192 hours · **$2,928.99** per seat, instead of ~~$6,067.57~~ bought separately
+43 courses · 184 hours · **$2,928.99** per seat, instead of ~~$6,067.57~~ bought separately
 
 - [Enroll in the Bundle](https://datacentertraining.us/checkout.html?item=bundle-complete-catalog)
 - [Compare Bundles](https://datacentertraining.us/bundles.html)

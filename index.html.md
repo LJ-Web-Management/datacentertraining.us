@@ -2,12 +2,12 @@
 
 Data Center Training · Online Courses & Bundles
 
-43 online courses and 192 hours of training covering the full data center discipline: **design** and **Tier infrastructure** for engineers, **power** and **cooling systems** for electricians and HVAC techs, **security and compliance** for audit-ready teams, and **operations, DR, and monitoring** for facility managers. Buy courses individually or enroll the whole catalog in one bundle.
+43 online courses and 184 hours of training covering the full data center discipline: **design** and **Tier infrastructure** for engineers, **power** and **cooling systems** for electricians and HVAC techs, **security and compliance** for audit-ready teams, and **operations, DR, and monitoring** for facility managers. Buy courses individually or enroll the whole catalog in one bundle.
 
 - [See All 43 Courses](https://datacentertraining.us/courses.html)
 - [Browse Bundles](https://datacentertraining.us/bundles.html)
 
-- **43 Courses** 192 hrs total
+- **43 Courses** 184 hrs total
 - **1-8 Hrs** self-paced, per course
 - **Instant** certificate
 - **Up to 52%** off with bundles
@@ -23,7 +23,7 @@ Buy exactly the courses your team needs.
 - [Design Fundamentals 8 hrs](https://datacentertraining.us/courses/data-center-design-fundamentals.html)
 - [Power Systems & Electrical Fundamentals 8 hrs](https://datacentertraining.us/courses/power-systems-electrical-fundamentals.html)
 - [Cooling Systems Design & Optimization 8 hrs](https://datacentertraining.us/courses/cooling-systems-design-optimization.html)
-- [Security & Compliance for Data Centers 16 hrs](https://datacentertraining.us/courses/security-compliance-data-centers.html)
+- [Security & Compliance for Data Centers 8 hrs](https://datacentertraining.us/courses/security-compliance-data-centers.html)
 - [UPS Operations & Load Testing 4 hrs](https://datacentertraining.us/courses/ups-operations-load-testing.html)
 
 [See all 43 courses ↓](https://datacentertraining.us/courses.html)
@@ -144,7 +144,7 @@ FAQ
 
 **What's the difference between Comprehensive Programs and Modular Specializations?**
 
-Comprehensive Programs are multi-module courses (8 to 16 hours) covering a full discipline in depth, like data center design or operations management. Modular Specializations are focused 1-8 hour courses on a single skill, like UPS load testing or fiber termination. Many teams combine one comprehensive program with several modular courses for their role, which is exactly how our bundles are put together.
+Comprehensive Programs are multi-module courses (8 hours) covering a full discipline in depth, like data center design or operations management. Modular Specializations are focused 1-8 hour courses on a single skill, like UPS load testing or fiber termination. Many teams combine one comprehensive program with several modular courses for their role, which is exactly how our bundles are put together.
 
 **Can I choose only the courses my team needs?**
 
