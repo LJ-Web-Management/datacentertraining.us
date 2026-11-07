@@ -138,11 +138,11 @@ September 24, 2026
 
 ### How Data Center Managers Should Test Physical Access During a Maintenance Window
 
-[!\[Data Center Shift Handover Checklist: What Facility Managers Should Make Visible Before the Next Crew Takes Over\](https://datacentertraining.us/blog/assets/img/posts/data-center-shift-handover-checklist-what-facility-managers-should-make-visible-before-the-next-crew-takes-over.jpg)](https://datacentertraining.us/blog/posts/data-center-shift-handover-checklist-what-facility-managers-should-make-visible-before-the-next-crew-takes-over.html)
+[!\[Generator Control Panel Alarm Triage: What Data Center Technicians Should Verify Before Escalation\](https://datacentertraining.us/blog/assets/img/posts/generator-control-panel-alarm-triage-what-data-center-technicians-should-verify-before-escalation.jpg)](https://datacentertraining.us/blog/posts/generator-control-panel-alarm-triage-what-data-center-technicians-should-verify-before-escalation.html)
 
-November 5, 2026
+November 7, 2026
 
-### Data Center Shift Handover Checklist: What Facility Managers Should Make Visible Before the Next Crew Takes Over
+### Generator Control Panel Alarm Triage: What Data Center Technicians Should Verify Before Escalation
 
 [View all posts →](https://datacentertraining.us/blog/)
 

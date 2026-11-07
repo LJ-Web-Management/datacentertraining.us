@@ -1,8 +1,8 @@
 {
   "publisher": "Data Center Training (datacentertraining.us)",
-  "last_updated": "2026-11-06",
+  "last_updated": "2026-11-07",
   "license": "Public information; quote with attribution and a link to the source URL.",
-  "count": 138,
+  "count": 139,
   "resources": [
     {
       "source": "Data Center Training (first party)",
@@ -1153,6 +1153,18 @@
         "tier"
       ],
       "audience": []
+    },
+    {
+      "type": "blog_post",
+      "title": "Generator Control Panel Alarm Triage: What Data Center Technicians Should Verify Before Escalation",
+      "url": "https://datacentertraining.us/blog/posts/generator-control-panel-alarm-triage-what-data-center-technicians-should-verify-before-escalation.html",
+      "description": "When a standby generator control panel shows an alarm, the first decision is not whether to silence the horn. It is whether the alarm represents an active…",
+      "topics": [
+        "generator"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-11-07"
     },
     {
       "type": "blog_post",
