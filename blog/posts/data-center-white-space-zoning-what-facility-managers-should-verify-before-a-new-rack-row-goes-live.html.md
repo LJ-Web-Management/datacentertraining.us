@@ -142,6 +142,12 @@ A new rack row is ready when the facility can connect the drawing, the physical 
 
 ## More from the blog
 
+[!\[Data Center Commissioning Test Scripts: What Project Leads Should Review Before Witness Testing\](https://datacentertraining.us/blog/assets/img/posts/data-center-commissioning-test-scripts-what-project-leads-should-review-before-witness-testing.jpg)](https://datacentertraining.us/blog/posts/data-center-commissioning-test-scripts-what-project-leads-should-review-before-witness-testing.html)
+
+November 8, 2026
+
+### Data Center Commissioning Test Scripts: What Project Leads Should Review Before Witness Testing
+
 [!\[Generator Control Panel Alarm Triage: What Data Center Technicians Should Verify Before Escalation\](https://datacentertraining.us/blog/assets/img/posts/generator-control-panel-alarm-triage-what-data-center-technicians-should-verify-before-escalation.jpg)](https://datacentertraining.us/blog/posts/generator-control-panel-alarm-triage-what-data-center-technicians-should-verify-before-escalation.html)
 
 November 7, 2026

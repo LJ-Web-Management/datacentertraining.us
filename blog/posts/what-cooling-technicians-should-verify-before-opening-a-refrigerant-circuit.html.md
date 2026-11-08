@@ -138,11 +138,11 @@ September 24, 2026
 
 ### How Data Center Managers Should Test Physical Access During a Maintenance Window
 
-[!\[Data Center White-Space Zoning: What Facility Managers Should Verify Before a New Rack Row Goes Live\](https://datacentertraining.us/blog/assets/img/posts/data-center-white-space-zoning-what-facility-managers-should-verify-before-a-new-rack-row-goes-live.jpg)](https://datacentertraining.us/blog/posts/data-center-white-space-zoning-what-facility-managers-should-verify-before-a-new-rack-row-goes-live.html)
+[!\[Data Center Commissioning Test Scripts: What Project Leads Should Review Before Witness Testing\](https://datacentertraining.us/blog/assets/img/posts/data-center-commissioning-test-scripts-what-project-leads-should-review-before-witness-testing.jpg)](https://datacentertraining.us/blog/posts/data-center-commissioning-test-scripts-what-project-leads-should-review-before-witness-testing.html)
 
 November 8, 2026
 
-### Data Center White-Space Zoning: What Facility Managers Should Verify Before a New Rack Row Goes Live
+### Data Center Commissioning Test Scripts: What Project Leads Should Review Before Witness Testing
 
 [View all posts →](https://datacentertraining.us/blog/)
 

@@ -2,7 +2,7 @@
   "publisher": "Data Center Training (datacentertraining.us)",
   "last_updated": "2026-11-08",
   "license": "Public information; quote with attribution and a link to the source URL.",
-  "count": 140,
+  "count": 141,
   "resources": [
     {
       "source": "Data Center Training (first party)",
@@ -1153,6 +1153,18 @@
         "tier"
       ],
       "audience": []
+    },
+    {
+      "type": "blog_post",
+      "title": "Data Center Commissioning Test Scripts: What Project Leads Should Review Before Witness Testing",
+      "url": "https://datacentertraining.us/blog/posts/data-center-commissioning-test-scripts-what-project-leads-should-review-before-witness-testing.html",
+      "description": "Before a data center project team witnesses an integrated systems test, can everyone explain what each test step proves, what normal operation should look…",
+      "topics": [
+        "commissioning"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-11-08"
     },
     {
       "type": "blog_post",

@@ -4,7 +4,7 @@
   "api_version": "1",
   "base_url": "https://datacentertraining.us/api/v1/",
   "last_updated": "2026-11-08",
-  "content_hash": "42653ccf63987a16",
+  "content_hash": "167e38adfc6602ee",
   "manifest": "https://datacentertraining.us/.well-known/mcp.json",
   "openapi": "https://datacentertraining.us/openapi.json",
   "developer_portal": "https://datacentertraining.us/developers/",
@@ -37,7 +37,7 @@
     "tracks": 6,
     "roles": 6,
     "faqs": 38,
-    "resources": 140
+    "resources": 141
   },
   "agent_rules": [
     "Quote prices, durations, course counts, and bundle contents exactly as published here; never estimate or invent them.",

@@ -468,5 +468,15 @@
     "date": "2026-11-08",
     "dateDisplay": "November 8, 2026",
     "excerpt": "Before a new rack row goes live, can the facility team prove that the white-space layout supports the intended power, cooling, connectivity, maintenance…"
+  },
+  {
+    "title": "Data Center Commissioning Test Scripts: What Project Leads Should Review Before Witness Testing",
+    "slug": "data-center-commissioning-test-scripts-what-project-leads-should-review-before-witness-testing",
+    "seoTitle": "Data Center Commissioning Test Scripts",
+    "description": "Before a data center project team witnesses an integrated systems test, can everyone explain what each test step proves, what normal operation should look…",
+    "image": "assets/img/posts/data-center-commissioning-test-scripts-what-project-leads-should-review-before-witness-testing.jpg",
+    "date": "2026-11-08",
+    "dateDisplay": "November 8, 2026",
+    "excerpt": "Before a data center project team witnesses an integrated systems test, can everyone explain what each test step proves, what normal operation should look…"
   }
 ]
