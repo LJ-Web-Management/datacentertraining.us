@@ -162,6 +162,12 @@ Generator control-panel alarms are decision points, not just messages to clear. 
 
 ## More from the blog
 
+[!\[Data Center White-Space Zoning: What Facility Managers Should Verify Before a New Rack Row Goes Live\](https://datacentertraining.us/blog/assets/img/posts/data-center-white-space-zoning-what-facility-managers-should-verify-before-a-new-rack-row-goes-live.jpg)](https://datacentertraining.us/blog/posts/data-center-white-space-zoning-what-facility-managers-should-verify-before-a-new-rack-row-goes-live.html)
+
+November 8, 2026
+
+### Data Center White-Space Zoning: What Facility Managers Should Verify Before a New Rack Row Goes Live
+
 [!\[Data Center Shift Handover Checklist: What Facility Managers Should Make Visible Before the Next Crew Takes Over\](https://datacentertraining.us/blog/assets/img/posts/data-center-shift-handover-checklist-what-facility-managers-should-make-visible-before-the-next-crew-takes-over.jpg)](https://datacentertraining.us/blog/posts/data-center-shift-handover-checklist-what-facility-managers-should-make-visible-before-the-next-crew-takes-over.html)
 
 November 5, 2026

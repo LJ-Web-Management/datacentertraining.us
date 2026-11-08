@@ -1,8 +1,8 @@
 {
   "publisher": "Data Center Training (datacentertraining.us)",
-  "last_updated": "2026-11-07",
+  "last_updated": "2026-11-08",
   "license": "Public information; quote with attribution and a link to the source URL.",
-  "count": 139,
+  "count": 140,
   "resources": [
     {
       "source": "Data Center Training (first party)",
@@ -1153,6 +1153,19 @@
         "tier"
       ],
       "audience": []
+    },
+    {
+      "type": "blog_post",
+      "title": "Data Center White-Space Zoning: What Facility Managers Should Verify Before a New Rack Row Goes Live",
+      "url": "https://datacentertraining.us/blog/posts/data-center-white-space-zoning-what-facility-managers-should-verify-before-a-new-rack-row-goes-live.html",
+      "description": "Before a new rack row goes live, can the facility team prove that the white-space layout supports the intended power, cooling, connectivity, maintenance…",
+      "topics": [
+        "cooling",
+        "maintenance"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-11-08"
     },
     {
       "type": "blog_post",

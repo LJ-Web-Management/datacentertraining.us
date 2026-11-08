@@ -458,5 +458,15 @@
     "date": "2026-11-07",
     "dateDisplay": "November 7, 2026",
     "excerpt": "When a standby generator control panel shows an alarm, the first decision is not whether to silence the horn. It is whether the alarm represents an active…"
+  },
+  {
+    "title": "Data Center White-Space Zoning: What Facility Managers Should Verify Before a New Rack Row Goes Live",
+    "slug": "data-center-white-space-zoning-what-facility-managers-should-verify-before-a-new-rack-row-goes-live",
+    "seoTitle": "Data Center White-Space Zoning | Data Center Training",
+    "description": "Before a new rack row goes live, can the facility team prove that the white-space layout supports the intended power, cooling, connectivity, maintenance…",
+    "image": "assets/img/posts/data-center-white-space-zoning-what-facility-managers-should-verify-before-a-new-rack-row-goes-live.jpg",
+    "date": "2026-11-08",
+    "dateDisplay": "November 8, 2026",
+    "excerpt": "Before a new rack row goes live, can the facility team prove that the white-space layout supports the intended power, cooling, connectivity, maintenance…"
   }
 ]
