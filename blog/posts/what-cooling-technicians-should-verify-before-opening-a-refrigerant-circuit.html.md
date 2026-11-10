@@ -138,11 +138,11 @@ September 24, 2026
 
 ### How Data Center Managers Should Test Physical Access During a Maintenance Window
 
-[!\[Data Center Commissioning Test Scripts: What Project Leads Should Review Before Witness Testing\](https://datacentertraining.us/blog/assets/img/posts/data-center-commissioning-test-scripts-what-project-leads-should-review-before-witness-testing.jpg)](https://datacentertraining.us/blog/posts/data-center-commissioning-test-scripts-what-project-leads-should-review-before-witness-testing.html)
+[!\[Data Center Chiller Approach Temperature: A Troubleshooting Checklist for Facilities Teams\](https://datacentertraining.us/blog/assets/img/posts/data-center-chiller-approach-temperature-a-troubleshooting-checklist-for-facilities-teams.jpg)](https://datacentertraining.us/blog/posts/data-center-chiller-approach-temperature-a-troubleshooting-checklist-for-facilities-teams.html)
 
-November 8, 2026
+November 10, 2026
 
-### Data Center Commissioning Test Scripts: What Project Leads Should Review Before Witness Testing
+### Data Center Chiller Approach Temperature: A Troubleshooting Checklist for Facilities Teams
 
 [View all posts →](https://datacentertraining.us/blog/)
 

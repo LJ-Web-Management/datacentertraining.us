@@ -116,6 +116,12 @@ A commissioning test script is a safety and reliability control. It should conne
 
 ## More from the blog
 
+[!\[Data Center Chiller Approach Temperature: A Troubleshooting Checklist for Facilities Teams\](https://datacentertraining.us/blog/assets/img/posts/data-center-chiller-approach-temperature-a-troubleshooting-checklist-for-facilities-teams.jpg)](https://datacentertraining.us/blog/posts/data-center-chiller-approach-temperature-a-troubleshooting-checklist-for-facilities-teams.html)
+
+November 10, 2026
+
+### Data Center Chiller Approach Temperature: A Troubleshooting Checklist for Facilities Teams
+
 [!\[Data Center White-Space Zoning: What Facility Managers Should Verify Before a New Rack Row Goes Live\](https://datacentertraining.us/blog/assets/img/posts/data-center-white-space-zoning-what-facility-managers-should-verify-before-a-new-rack-row-goes-live.jpg)](https://datacentertraining.us/blog/posts/data-center-white-space-zoning-what-facility-managers-should-verify-before-a-new-rack-row-goes-live.html)
 
 November 8, 2026

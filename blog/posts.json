@@ -478,5 +478,15 @@
     "date": "2026-11-08",
     "dateDisplay": "November 8, 2026",
     "excerpt": "Before a data center project team witnesses an integrated systems test, can everyone explain what each test step proves, what normal operation should look…"
+  },
+  {
+    "title": "Data Center Chiller Approach Temperature: A Troubleshooting Checklist for Facilities Teams",
+    "slug": "data-center-chiller-approach-temperature-a-troubleshooting-checklist-for-facilities-teams",
+    "seoTitle": "Data Center Chiller Approach Temperature",
+    "description": "When a data center chiller plant begins using more energy, delivering warmer chilled water, or struggling to meet a cooling target, the first question is not…",
+    "image": "assets/img/posts/data-center-chiller-approach-temperature-a-troubleshooting-checklist-for-facilities-teams.jpg",
+    "date": "2026-11-10",
+    "dateDisplay": "November 10, 2026",
+    "excerpt": "When a data center chiller plant begins using more energy, delivering warmer chilled water, or struggling to meet a cooling target, the first question is not…"
   }
 ]

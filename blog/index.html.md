@@ -4,6 +4,12 @@ Data Center Training Blog
 
 Technical guidance, standards updates, and field best practices on power, cooling, electrical safety, operations, and compliance from datacentertraining.us.
 
+[!\[Data Center Chiller Approach Temperature: A Troubleshooting Checklist for Facilities Teams\](https://datacentertraining.us/blog/assets/img/posts/data-center-chiller-approach-temperature-a-troubleshooting-checklist-for-facilities-teams.jpg)](https://datacentertraining.us/blog/posts/data-center-chiller-approach-temperature-a-troubleshooting-checklist-for-facilities-teams.html)
+
+November 10, 2026
+
+## Data Center Chiller Approach Temperature: A Troubleshooting Checklist for Facilities Teams
+
 [!\[Data Center Commissioning Test Scripts: What Project Leads Should Review Before Witness Testing\](https://datacentertraining.us/blog/assets/img/posts/data-center-commissioning-test-scripts-what-project-leads-should-review-before-witness-testing.jpg)](https://datacentertraining.us/blog/posts/data-center-commissioning-test-scripts-what-project-leads-should-review-before-witness-testing.html)
 
 November 8, 2026

@@ -1,8 +1,8 @@
 {
   "publisher": "Data Center Training (datacentertraining.us)",
-  "last_updated": "2026-11-08",
+  "last_updated": "2026-11-10",
   "license": "Public information; quote with attribution and a link to the source URL.",
-  "count": 141,
+  "count": 142,
   "resources": [
     {
       "source": "Data Center Training (first party)",
@@ -1153,6 +1153,18 @@
         "tier"
       ],
       "audience": []
+    },
+    {
+      "type": "blog_post",
+      "title": "Data Center Chiller Approach Temperature: A Troubleshooting Checklist for Facilities Teams",
+      "url": "https://datacentertraining.us/blog/posts/data-center-chiller-approach-temperature-a-troubleshooting-checklist-for-facilities-teams.html",
+      "description": "When a data center chiller plant begins using more energy, delivering warmer chilled water, or struggling to meet a cooling target, the first question is not…",
+      "topics": [
+        "cooling"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-11-10"
     },
     {
       "type": "blog_post",
