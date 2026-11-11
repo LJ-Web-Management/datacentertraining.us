@@ -1,8 +1,8 @@
 {
   "publisher": "Data Center Training (datacentertraining.us)",
-  "last_updated": "2026-11-10",
+  "last_updated": "2026-11-11",
   "license": "Public information; quote with attribution and a link to the source URL.",
-  "count": 142,
+  "count": 143,
   "resources": [
     {
       "source": "Data Center Training (first party)",
@@ -1153,6 +1153,18 @@
         "tier"
       ],
       "audience": []
+    },
+    {
+      "type": "blog_post",
+      "title": "DCIM Alarm Escalation Drills: What Data Center Operators Should Test Before Relying on Automation",
+      "url": "https://datacentertraining.us/blog/posts/dcim-alarm-escalation-drills-what-data-center-operators-should-test-before-relying-on-automation.html",
+      "description": "When a data center alarm appears in a DCIM platform, can the operations team prove that the right person will receive it, understand it, acknowledge it…",
+      "topics": [
+        "dcim"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-11-11"
     },
     {
       "type": "blog_post",

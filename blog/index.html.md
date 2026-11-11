@@ -4,6 +4,12 @@ Data Center Training Blog
 
 Technical guidance, standards updates, and field best practices on power, cooling, electrical safety, operations, and compliance from datacentertraining.us.
 
+[!\[DCIM Alarm Escalation Drills: What Data Center Operators Should Test Before Relying on Automation\](https://datacentertraining.us/blog/assets/img/posts/dcim-alarm-escalation-drills-what-data-center-operators-should-test-before-relying-on-automation.jpg)](https://datacentertraining.us/blog/posts/dcim-alarm-escalation-drills-what-data-center-operators-should-test-before-relying-on-automation.html)
+
+November 11, 2026
+
+## DCIM Alarm Escalation Drills: What Data Center Operators Should Test Before Relying on Automation
+
 [!\[Data Center Chiller Approach Temperature: A Troubleshooting Checklist for Facilities Teams\](https://datacentertraining.us/blog/assets/img/posts/data-center-chiller-approach-temperature-a-troubleshooting-checklist-for-facilities-teams.jpg)](https://datacentertraining.us/blog/posts/data-center-chiller-approach-temperature-a-troubleshooting-checklist-for-facilities-teams.html)
 
 November 10, 2026

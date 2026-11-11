@@ -488,5 +488,15 @@
     "date": "2026-11-10",
     "dateDisplay": "November 10, 2026",
     "excerpt": "When a data center chiller plant begins using more energy, delivering warmer chilled water, or struggling to meet a cooling target, the first question is not…"
+  },
+  {
+    "title": "DCIM Alarm Escalation Drills: What Data Center Operators Should Test Before Relying on Automation",
+    "slug": "dcim-alarm-escalation-drills-what-data-center-operators-should-test-before-relying-on-automation",
+    "seoTitle": "DCIM Alarm Escalation Drills: What Data Center Operators",
+    "description": "When a data center alarm appears in a DCIM platform, can the operations team prove that the right person will receive it, understand it, acknowledge it…",
+    "image": "assets/img/posts/dcim-alarm-escalation-drills-what-data-center-operators-should-test-before-relying-on-automation.jpg",
+    "date": "2026-11-11",
+    "dateDisplay": "November 11, 2026",
+    "excerpt": "When a data center alarm appears in a DCIM platform, can the operations team prove that the right person will receive it, understand it, acknowledge it…"
   }
 ]

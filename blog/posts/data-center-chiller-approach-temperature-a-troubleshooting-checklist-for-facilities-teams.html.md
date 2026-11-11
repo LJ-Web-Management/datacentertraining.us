@@ -141,6 +141,12 @@ Chiller approach temperature is most useful as a structured comparison, not as a
 
 ## More from the blog
 
+[!\[DCIM Alarm Escalation Drills: What Data Center Operators Should Test Before Relying on Automation\](https://datacentertraining.us/blog/assets/img/posts/dcim-alarm-escalation-drills-what-data-center-operators-should-test-before-relying-on-automation.jpg)](https://datacentertraining.us/blog/posts/dcim-alarm-escalation-drills-what-data-center-operators-should-test-before-relying-on-automation.html)
+
+November 11, 2026
+
+### DCIM Alarm Escalation Drills: What Data Center Operators Should Test Before Relying on Automation
+
 [!\[Data Center Commissioning Test Scripts: What Project Leads Should Review Before Witness Testing\](https://datacentertraining.us/blog/assets/img/posts/data-center-commissioning-test-scripts-what-project-leads-should-review-before-witness-testing.jpg)](https://datacentertraining.us/blog/posts/data-center-commissioning-test-scripts-what-project-leads-should-review-before-witness-testing.html)
 
 November 8, 2026

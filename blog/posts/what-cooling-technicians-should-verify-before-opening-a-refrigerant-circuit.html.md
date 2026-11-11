@@ -138,11 +138,11 @@ September 24, 2026
 
 ### How Data Center Managers Should Test Physical Access During a Maintenance Window
 
-[!\[Data Center Chiller Approach Temperature: A Troubleshooting Checklist for Facilities Teams\](https://datacentertraining.us/blog/assets/img/posts/data-center-chiller-approach-temperature-a-troubleshooting-checklist-for-facilities-teams.jpg)](https://datacentertraining.us/blog/posts/data-center-chiller-approach-temperature-a-troubleshooting-checklist-for-facilities-teams.html)
+[!\[DCIM Alarm Escalation Drills: What Data Center Operators Should Test Before Relying on Automation\](https://datacentertraining.us/blog/assets/img/posts/dcim-alarm-escalation-drills-what-data-center-operators-should-test-before-relying-on-automation.jpg)](https://datacentertraining.us/blog/posts/dcim-alarm-escalation-drills-what-data-center-operators-should-test-before-relying-on-automation.html)
 
-November 10, 2026
+November 11, 2026
 
-### Data Center Chiller Approach Temperature: A Troubleshooting Checklist for Facilities Teams
+### DCIM Alarm Escalation Drills: What Data Center Operators Should Test Before Relying on Automation
 
 [View all posts →](https://datacentertraining.us/blog/)
 
