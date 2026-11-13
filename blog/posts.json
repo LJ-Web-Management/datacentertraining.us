@@ -498,5 +498,15 @@
     "date": "2026-11-11",
     "dateDisplay": "November 11, 2026",
     "excerpt": "When a data center alarm appears in a DCIM platform, can the operations team prove that the right person will receive it, understand it, acknowledge it…"
+  },
+  {
+    "title": "Colocation Power Turn-Up Readiness: What Facilities Teams Should Verify Before Energizing a Customer Suite",
+    "slug": "colocation-power-turn-up-readiness-what-facilities-teams-should-verify-before-energizing-a-customer-suite",
+    "seoTitle": "Colocation Power Turn-Up Readiness Checklist",
+    "description": "A practical colocation checklist for verifying one-lines, protection, labels, permits, and communications before energizing a customer suite.",
+    "image": "assets/img/posts/colocation-power-turn-up-readiness-what-facilities-teams-should-verify-before-energizing-a-customer-suite.jpg",
+    "date": "2026-11-13",
+    "dateDisplay": "November 13, 2026",
+    "excerpt": "A practical colocation checklist for verifying one-lines, protection, labels, permits, and communications before energizing a customer suite."
   }
 ]

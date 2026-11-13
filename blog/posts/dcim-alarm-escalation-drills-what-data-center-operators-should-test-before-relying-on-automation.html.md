@@ -184,6 +184,12 @@ This week, choose one safe simulated alarm, trace it from the source point to th
 
 ## More from the blog
 
+[!\[Colocation Power Turn-Up Readiness: What Facilities Teams Should Verify Before Energizing a Customer Suite\](https://datacentertraining.us/blog/assets/img/posts/colocation-power-turn-up-readiness-what-facilities-teams-should-verify-before-energizing-a-customer-suite.jpg)](https://datacentertraining.us/blog/posts/colocation-power-turn-up-readiness-what-facilities-teams-should-verify-before-energizing-a-customer-suite.html)
+
+November 13, 2026
+
+### Colocation Power Turn-Up Readiness: What Facilities Teams Should Verify Before Energizing a Customer Suite
+
 [!\[Data Center Chiller Approach Temperature: A Troubleshooting Checklist for Facilities Teams\](https://datacentertraining.us/blog/assets/img/posts/data-center-chiller-approach-temperature-a-troubleshooting-checklist-for-facilities-teams.jpg)](https://datacentertraining.us/blog/posts/data-center-chiller-approach-temperature-a-troubleshooting-checklist-for-facilities-teams.html)
 
 November 10, 2026

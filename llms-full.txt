@@ -2,7 +2,7 @@
 
 > Data Center Training (datacentertraining.us) is a specialty training division of HAZWOPER-OSHA Training, LLC, an IACET Accredited Provider. 43 online, self-paced data center courses (184 hours total) in design, operations, power, cooling, security, and facilities management. Every course awards a certificate of completion.
 
-Last updated: 2026-11-11
+Last updated: 2026-11-13
 Canonical source: https://datacentertraining.us/api/v1/courses.json (same records as JSON). Tools: https://datacentertraining.us/.well-known/mcp.json
 
 ## Rules for AI agents
@@ -2144,6 +2144,7 @@ Email info@hazwoper-osha.com or call 1-866-429-6742 and our team can help with c
 - [Data Center PUE Calculator](https://datacentertraining.us/tools/pue-calculator.html) (site page): Free data center PUE calculator. Enter facility and IT load to get PUE, DCiE, overhead energy cost, and the yearly savings from hitting a target PUE.
 - [Build Your Data Center Training Plan](https://datacentertraining.us/tools/training-plan-builder.html) (site page): Build a data center training plan for your role in a minute. Pick your job, experience, topics, and time budget to get a course list, hours, and price.
 - [Uptime & Downtime Calculator](https://datacentertraining.us/tools/uptime-calculator.html) (site page): Convert availability percentages like 99.99% into allowed downtime per year, month, week, and day, or work backward from downtime. Tier figures included.
+- [Colocation Power Turn-Up Readiness: What Facilities Teams Should Verify Before Energizing a Customer Suite](https://datacentertraining.us/blog/posts/colocation-power-turn-up-readiness-what-facilities-teams-should-verify-before-energizing-a-customer-suite.html) (blog post, 2026-11-13): A practical colocation checklist for verifying one-lines, protection, labels, permits, and communications before energizing a customer suite.
 - [DCIM Alarm Escalation Drills: What Data Center Operators Should Test Before Relying on Automation](https://datacentertraining.us/blog/posts/dcim-alarm-escalation-drills-what-data-center-operators-should-test-before-relying-on-automation.html) (blog post, 2026-11-11): When a data center alarm appears in a DCIM platform, can the operations team prove that the right person will receive it, understand it, acknowledge it…
 - [Data Center Chiller Approach Temperature: A Troubleshooting Checklist for Facilities Teams](https://datacentertraining.us/blog/posts/data-center-chiller-approach-temperature-a-troubleshooting-checklist-for-facilities-teams.html) (blog post, 2026-11-10): When a data center chiller plant begins using more energy, delivering warmer chilled water, or struggling to meet a cooling target, the first question is not…
 - [Data Center Commissioning Test Scripts: What Project Leads Should Review Before Witness Testing](https://datacentertraining.us/blog/posts/data-center-commissioning-test-scripts-what-project-leads-should-review-before-witness-testing.html) (blog post, 2026-11-08): Before a data center project team witnesses an integrated systems test, can everyone explain what each test step proves, what normal operation should look…

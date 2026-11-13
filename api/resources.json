@@ -1,8 +1,8 @@
 {
   "publisher": "Data Center Training (datacentertraining.us)",
-  "last_updated": "2026-11-11",
+  "last_updated": "2026-11-13",
   "license": "Public information; quote with attribution and a link to the source URL.",
-  "count": 143,
+  "count": 144,
   "resources": [
     {
       "source": "Data Center Training (first party)",
@@ -1153,6 +1153,16 @@
         "tier"
       ],
       "audience": []
+    },
+    {
+      "type": "blog_post",
+      "title": "Colocation Power Turn-Up Readiness: What Facilities Teams Should Verify Before Energizing a Customer Suite",
+      "url": "https://datacentertraining.us/blog/posts/colocation-power-turn-up-readiness-what-facilities-teams-should-verify-before-energizing-a-customer-suite.html",
+      "description": "A practical colocation checklist for verifying one-lines, protection, labels, permits, and communications before energizing a customer suite.",
+      "topics": [],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-11-13"
     },
     {
       "type": "blog_post",

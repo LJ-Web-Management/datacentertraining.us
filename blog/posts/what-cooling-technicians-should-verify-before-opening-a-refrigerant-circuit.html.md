@@ -138,11 +138,11 @@ September 24, 2026
 
 ### How Data Center Managers Should Test Physical Access During a Maintenance Window
 
-[!\[DCIM Alarm Escalation Drills: What Data Center Operators Should Test Before Relying on Automation\](https://datacentertraining.us/blog/assets/img/posts/dcim-alarm-escalation-drills-what-data-center-operators-should-test-before-relying-on-automation.jpg)](https://datacentertraining.us/blog/posts/dcim-alarm-escalation-drills-what-data-center-operators-should-test-before-relying-on-automation.html)
+[!\[Colocation Power Turn-Up Readiness: What Facilities Teams Should Verify Before Energizing a Customer Suite\](https://datacentertraining.us/blog/assets/img/posts/colocation-power-turn-up-readiness-what-facilities-teams-should-verify-before-energizing-a-customer-suite.jpg)](https://datacentertraining.us/blog/posts/colocation-power-turn-up-readiness-what-facilities-teams-should-verify-before-energizing-a-customer-suite.html)
 
-November 11, 2026
+November 13, 2026
 
-### DCIM Alarm Escalation Drills: What Data Center Operators Should Test Before Relying on Automation
+### Colocation Power Turn-Up Readiness: What Facilities Teams Should Verify Before Energizing a Customer Suite
 
 [View all posts →](https://datacentertraining.us/blog/)
 
