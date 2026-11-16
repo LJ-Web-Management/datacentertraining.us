@@ -82,7 +82,7 @@ $149.99
 - Delivered by an IACET-accredited provider
 - Volume pricing available for teams
 
-This course is part of the **Security & Compliance Bundle** (5 courses). Buy the bundle for $400.99 instead of $791.95 separately — [save $390.96 →](https://datacentertraining.us/checkout.html?item=bundle-security-compliance)
+This course is part of the **Security & Compliance Bundle** (5 courses). Buy the bundle for $458.99 instead of $791.95 separately — [save $332.96 →](https://datacentertraining.us/checkout.html?item=bundle-security-compliance)
 
 ## Related Courses
 

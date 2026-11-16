@@ -476,7 +476,7 @@ Don't see the course you need? [Request a course](https://datacentertraining.us/
 
 ## Prefer a Bundle?
 
-Save up to 58% by enrolling a whole role-based track or the complete catalog in one purchase.
+Save up to 52% by enrolling a whole role-based track or the complete catalog in one purchase.
 
 [Browse Bundles →](https://datacentertraining.us/bundles.html)
 

@@ -87,7 +87,7 @@ $149.99
 - Delivered by an IACET-accredited provider
 - Volume pricing available for teams
 
-This course is part of the **Monitoring & Smart Facility Bundle** (4 courses). Buy the bundle for $333.99 instead of $756.96 separately — [save $422.97 →](https://datacentertraining.us/checkout.html?item=bundle-monitoring-smart-facility)
+This course is part of the **Monitoring & Smart Facility Bundle** (4 courses). Buy the bundle for $437.99 instead of $756.96 separately — [save $318.97 →](https://datacentertraining.us/checkout.html?item=bundle-monitoring-smart-facility)
 
 ## Related Courses
 

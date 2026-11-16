@@ -193,11 +193,11 @@ $307.99
 - [Enroll](https://datacentertraining.us/checkout.html?item=disaster-recovery-business-continuity)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=disaster-recovery-business-continuity)
 
-Save 49% with the bundle
+Save 42% with the bundle
 
 Operations & Reliability Bundle
 
-10 courses · 44 hours · **$830.99** per seat, instead of ~~$1,633.90~~ bought separately
+10 courses · 44 hours · **$946.99** per seat, instead of ~~$1,633.90~~ bought separately
 
 - [Enroll in the Bundle](https://datacentertraining.us/checkout.html?item=bundle-operations-reliability)
 - [Compare Bundles](https://datacentertraining.us/bundles.html)

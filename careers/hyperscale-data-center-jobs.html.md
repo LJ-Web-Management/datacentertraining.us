@@ -258,11 +258,11 @@ $99.99
 - [Enroll](https://datacentertraining.us/checkout.html?item=data-center-physical-security-access-control)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=data-center-physical-security-access-control)
 
-Save 58% with the bundle
+Save 52% with the bundle
 
 Complete Data Center Professional Bundle
 
-42 courses · 182 hours · **$2,928.99** per seat, instead of ~~$6,997.58~~ bought separately
+42 courses · 182 hours · **$3,377.99** per seat, instead of ~~$6,997.58~~ bought separately
 
 - [Enroll in the Bundle](https://datacentertraining.us/checkout.html?item=bundle-complete-catalog)
 - [Compare Bundles](https://datacentertraining.us/bundles.html)

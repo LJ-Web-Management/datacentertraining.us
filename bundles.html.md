@@ -2,7 +2,7 @@
 
 Save With a Bundle
 
-The Complete Data Center Professional Bundle covers all 42 courses and every role-based track for $2,928.99 — the deepest discount we offer. Prefer one track at a time? Six themed bundles below group a Comprehensive Program with the Modular Specializations most relevant to the same role.
+The Complete Data Center Professional Bundle covers all 42 courses and every role-based track for $3,377.99 — the deepest discount we offer. Prefer one track at a time? Six themed bundles below group a Comprehensive Program with the Modular Specializations most relevant to the same role.
 
 Everything, One Price
 
@@ -19,7 +19,7 @@ Every course in the catalog — all 6 role-based tracks in one enrollment. The s
 - Operations 10 courses
 - Design & Planning 4 courses
 
-$2,928.99 $6,997.58 Save 58%
+$3,377.99 $6,997.58 Save 52%
 
 [Enroll the Team](https://datacentertraining.us/checkout.html?item=bundle-complete-catalog)
 
@@ -43,7 +43,7 @@ For electricians and power technicians who own the electrical chain end to end: 
 - [Power Distribution Systems Fundamentals](https://datacentertraining.us/courses/power-distribution-systems-fundamentals.html)
 - [UPS Systems Fundamentals](https://datacentertraining.us/courses/ups-systems-fundamentals.html)
 
-$986.99 $1,853.87 Save 47%
+$1,140.99 $1,853.87 Save 38%
 
 [Enroll the Team](https://datacentertraining.us/checkout.html?item=bundle-power-electrical)
 
@@ -60,7 +60,7 @@ For HVAC and facilities technicians who need both the cooling design fundamental
 - [Data Center Cooling System and Refrigerant Safety Training](https://datacentertraining.us/courses/data-center-cooling-refrigerant-safety.html)
 - [Building Envelope Fundamentals](https://datacentertraining.us/courses/building-envelope-fundamentals.html)
 
-$462.99 $948.94 Save 51%
+$549.99 $948.94 Save 42%
 
 [Enroll the Team](https://datacentertraining.us/checkout.html?item=bundle-cooling-efficiency)
 
@@ -81,7 +81,7 @@ For operations and facility managers who own uptime — daily operations, disast
 - [Server Room Ergonomics and Manual Handling Training](https://datacentertraining.us/courses/server-room-ergonomics-manual-handling.html)
 - [Data Center Raised Floor and Confined Space Awareness Training](https://datacentertraining.us/courses/data-center-raised-floor-confined-space.html)
 
-$830.99 $1,633.90 Save 49%
+$946.99 $1,633.90 Save 42%
 
 [Enroll the Team](https://datacentertraining.us/checkout.html?item=bundle-operations-reliability)
 
@@ -97,7 +97,7 @@ For security and compliance leads building an audit-ready physical security, fir
 - [Data Center Fire Suppression System Safety Training (Clean Agent Systems)](https://datacentertraining.us/courses/data-center-fire-suppression-safety.html)
 - [Data Center Physical Security and Access Control Training](https://datacentertraining.us/courses/data-center-physical-security-access-control.html)
 
-$400.99 $791.95 Save 49%
+$458.99 $791.95 Save 42%
 
 [Enroll the Team](https://datacentertraining.us/checkout.html?item=bundle-security-compliance)
 
@@ -112,7 +112,7 @@ For engineers and project leads taking a facility from design through TIER bench
 - [Infrastructure Commissioning & Startup](https://datacentertraining.us/courses/infrastructure-commissioning-startup.html)
 - [Capacity Planning & Forecasting](https://datacentertraining.us/courses/capacity-planning-forecasting.html)
 
-$557.99 $1,011.96 Save 45%
+$586.99 $1,011.96 Save 42%
 
 [Enroll the Team](https://datacentertraining.us/checkout.html?item=bundle-design-planning)
 
@@ -127,7 +127,7 @@ For teams building out monitoring, DCIM, building automation, and the network ca
 - [Fiber Optics & Network Cabling](https://datacentertraining.us/courses/fiber-optics-network-cabling.html)
 - [Building Automation Systems (BAS) Fundamentals](https://datacentertraining.us/courses/building-automation-systems-fundamentals.html)
 
-$333.99 $756.96 Save 56%
+$437.99 $756.96 Save 42%
 
 [Enroll the Team](https://datacentertraining.us/checkout.html?item=bundle-monitoring-smart-facility)
 

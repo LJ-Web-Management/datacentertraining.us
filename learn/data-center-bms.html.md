@@ -139,11 +139,11 @@ $149.99
 - [Enroll](https://datacentertraining.us/checkout.html?item=dcim-platform-fundamentals)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=dcim-platform-fundamentals)
 
-Save 56% with the bundle
+Save 42% with the bundle
 
 Monitoring & Smart Facility Bundle
 
-4 courses · 22 hours · **$333.99** per seat, instead of ~~$756.96~~ bought separately
+4 courses · 22 hours · **$437.99** per seat, instead of ~~$756.96~~ bought separately
 
 - [Enroll in the Bundle](https://datacentertraining.us/checkout.html?item=bundle-monitoring-smart-facility)
 - [Compare Bundles](https://datacentertraining.us/bundles.html)

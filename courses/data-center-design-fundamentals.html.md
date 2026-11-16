@@ -94,7 +94,7 @@ $312.99
 - Delivered by an IACET-accredited provider
 - Volume pricing available for teams
 
-This course is part of the **Design, Planning & Commissioning Bundle** (4 courses). Buy the bundle for $557.99 instead of $1,011.96 separately — [save $453.97 →](https://datacentertraining.us/checkout.html?item=bundle-design-planning)
+This course is part of the **Design, Planning & Commissioning Bundle** (4 courses). Buy the bundle for $586.99 instead of $1,011.96 separately — [save $424.97 →](https://datacentertraining.us/checkout.html?item=bundle-design-planning)
 
 ## Related Courses
 

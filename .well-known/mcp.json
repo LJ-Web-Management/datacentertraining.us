@@ -864,13 +864,13 @@
                 {
                   "id": "bundle-power-electrical",
                   "name": "Power & Electrical Systems Bundle",
-                  "price_usd": 986.99,
+                  "price_usd": 1140.99,
                   "url": "https://datacentertraining.us/bundles.html"
                 },
                 {
                   "id": "bundle-complete-catalog",
                   "name": "Complete Data Center Professional Bundle",
-                  "price_usd": 2928.99,
+                  "price_usd": 3377.99,
                   "url": "https://datacentertraining.us/bundles.html"
                 }
               ],
@@ -1097,10 +1097,10 @@
                 "id": "bundle-security-compliance",
                 "name": "Security & Compliance Bundle",
                 "track": "Security & Compliance Track",
-                "price_usd": 400.99,
+                "price_usd": 458.99,
                 "list_price_usd": 791.95,
-                "savings_usd": 390.96,
-                "savings_percent": 49,
+                "savings_usd": 332.96,
+                "savings_percent": 42,
                 "course_count": 5,
                 "total_hours": 19,
                 "audience": "For security and compliance leads building an audit-ready physical security, fire safety, and environmental compliance program.",
@@ -1117,10 +1117,10 @@
                 "id": "bundle-complete-catalog",
                 "name": "Complete Data Center Professional Bundle",
                 "track": "All tracks",
-                "price_usd": 2928.99,
+                "price_usd": 3377.99,
                 "list_price_usd": 6997.58,
-                "savings_usd": 4068.59,
-                "savings_percent": 58,
+                "savings_usd": 3619.59,
+                "savings_percent": 52,
                 "course_count": 42,
                 "total_hours": 182,
                 "audience": "Every course in the catalog — all 6 role-based tracks in one enrollment. The single path for a team that wants full coverage across design, power, cooling, security, operations, and monitoring, at the deepest discount we offer.",
@@ -1446,9 +1446,9 @@
             "recommended_bundle": {
               "id": "bundle-cooling-efficiency",
               "name": "Cooling & Facilities Efficiency Bundle",
-              "price_usd": 462.99,
+              "price_usd": 549.99,
               "list_price_usd": 948.94,
-              "savings_usd": 485.95,
+              "savings_usd": 398.95,
               "course_count": 6,
               "total_hours": 24,
               "url": "https://datacentertraining.us/bundles.html"
@@ -1490,8 +1490,7 @@
             ],
             "caveats": [
               "Training guidance only, not legal or compliance advice. Employers decide who is qualified for which duties at their site.",
-              "A certificate of completion documents training; it is not a license or a certification issued by a standards body.",
-              "The full Cooling & Facilities Efficiency Bundle fits this budget and costs less than buying its courses one by one."
+              "A certificate of completion documents training; it is not a license or a certification issued by a standards body."
             ]
           },
           "output_truncated": true

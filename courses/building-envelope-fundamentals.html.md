@@ -82,7 +82,7 @@ $99.99
 - Delivered by an IACET-accredited provider
 - Volume pricing available for teams
 
-This course is part of the **Cooling & Facilities Efficiency Bundle** (6 courses). Buy the bundle for $462.99 instead of $948.94 separately — [save $485.95 →](https://datacentertraining.us/checkout.html?item=bundle-cooling-efficiency)
+This course is part of the **Cooling & Facilities Efficiency Bundle** (6 courses). Buy the bundle for $549.99 instead of $948.94 separately — [save $398.95 →](https://datacentertraining.us/checkout.html?item=bundle-cooling-efficiency)
 
 ## Related Courses
 

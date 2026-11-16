@@ -4,7 +4,7 @@
 
 Last updated: 2026-11-16
 
-Courses start at $99.99 per seat, or enroll the complete 42-course catalog bundle for $2,928.99. 7 bundles save up to 58%. Programs are Comprehensive Programs (8 hrs, full-discipline curriculum) or Modular Specializations (1-8 hrs, focused skills). English only.
+Courses start at $99.99 per seat, or enroll the complete 42-course catalog bundle for $3,377.99. 7 bundles save up to 52%. Programs are Comprehensive Programs (8 hrs, full-discipline curriculum) or Modular Specializations (1-8 hrs, focused skills). English only.
 
 ## When to use this
 
@@ -89,12 +89,12 @@ No API key or account is needed. Errors are application/problem+json with a stab
 
 ## Learning Tracks
 
-- Power & Electrical Systems Track: 13 courses, 45 hrs, bundle $986.99
-- Cooling & Facilities Efficiency Track: 6 courses, 24 hrs, bundle $462.99
-- Operations & Reliability Track: 10 courses, 44 hrs, bundle $830.99
-- Security & Compliance Track: 5 courses, 19 hrs, bundle $400.99
-- Design, Planning & Commissioning Track: 4 courses, 28 hrs, bundle $557.99
-- Monitoring & Smart Facility Track: 4 courses, 22 hrs, bundle $333.99
+- Power & Electrical Systems Track: 13 courses, 45 hrs, bundle $1140.99
+- Cooling & Facilities Efficiency Track: 6 courses, 24 hrs, bundle $549.99
+- Operations & Reliability Track: 10 courses, 44 hrs, bundle $946.99
+- Security & Compliance Track: 5 courses, 19 hrs, bundle $458.99
+- Design, Planning & Commissioning Track: 4 courses, 28 hrs, bundle $586.99
+- Monitoring & Smart Facility Track: 4 courses, 22 hrs, bundle $437.99
 
 ## About
 

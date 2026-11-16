@@ -139,11 +139,11 @@ $99.99
 - [Enroll](https://datacentertraining.us/checkout.html?item=roofing-systems-maintenance-fundamentals)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=roofing-systems-maintenance-fundamentals)
 
-Save 49% with the bundle
+Save 42% with the bundle
 
 Operations & Reliability Bundle
 
-10 courses · 44 hours · **$830.99** per seat, instead of ~~$1,633.90~~ bought separately
+10 courses · 44 hours · **$946.99** per seat, instead of ~~$1,633.90~~ bought separately
 
 - [Enroll in the Bundle](https://datacentertraining.us/checkout.html?item=bundle-operations-reliability)
 - [Compare Bundles](https://datacentertraining.us/bundles.html)

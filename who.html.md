@@ -16,7 +16,7 @@ Electricians and power technicians working on utility interconnection, UPS syste
 - Data Center Electrical Safety Training · 4 hrs
 - + 9 more courses
 
-All 13 courses, 45 hrs, in the **Power & Electrical Systems Bundle** for $986.99 — save $867.
+All 13 courses, 45 hrs, in the **Power & Electrical Systems Bundle** for $1,140.99 — save $713.
 
 [See These Courses](https://datacentertraining.us/courses.html)
 
@@ -32,7 +32,7 @@ HVAC and facilities technicians who need both cooling design fundamentals and ha
 - Mechanical Systems & Equipment Maintenance · 4 hrs
 - + 2 more courses
 
-All 6 courses, 24 hrs, in the **Cooling & Facilities Efficiency Bundle** for $462.99 — save $486.
+All 6 courses, 24 hrs, in the **Cooling & Facilities Efficiency Bundle** for $549.99 — save $399.
 
 [See These Courses](https://datacentertraining.us/courses.html)
 
@@ -48,7 +48,7 @@ Facility and operations managers who own uptime should complete this 10-course, 
 - Incident Response & Troubleshooting · 4 hrs
 - + 6 more courses
 
-All 10 courses, 44 hrs, in the **Operations & Reliability Bundle** for $830.99 — save $803.
+All 10 courses, 44 hrs, in the **Operations & Reliability Bundle** for $946.99 — save $687.
 
 [See These Courses](https://datacentertraining.us/courses.html)
 
@@ -64,7 +64,7 @@ Security and compliance leads building an audit-ready program should complete th
 - Data Center Fire Suppression Safety · 2 hrs
 - + 1 more course
 
-All 5 courses, 19 hrs, in the **Security & Compliance Bundle** for $400.99 — save $391.
+All 5 courses, 19 hrs, in the **Security & Compliance Bundle** for $458.99 — save $333.
 
 [See These Courses](https://datacentertraining.us/courses.html)
 
@@ -79,7 +79,7 @@ Engineers and project leads taking a facility from design through launch should 
 - Infrastructure Commissioning & Startup · 8 hrs
 - Capacity Planning & Forecasting · 4 hrs
 
-All four courses, 28 hrs, in the **Design, Planning & Commissioning Bundle** for $557.99 — save $454.
+All four courses, 28 hrs, in the **Design, Planning & Commissioning Bundle** for $586.99 — save $425.
 
 [See These Courses](https://datacentertraining.us/courses.html)
 
@@ -94,7 +94,7 @@ Teams building out monitoring, DCIM, building automation, and network cabling in
 - Building Automation Systems (BAS) Fundamentals · 6 hrs
 - Fiber Optics & Network Cabling · 4 hrs
 
-All four courses, 22 hrs, in the **Monitoring & Smart Facility Bundle** for $333.99 — save $423.
+All four courses, 22 hrs, in the **Monitoring & Smart Facility Bundle** for $437.99 — save $319.
 
 [See These Courses](https://datacentertraining.us/courses.html)
 

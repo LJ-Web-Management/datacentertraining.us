@@ -149,11 +149,11 @@ $99.99
 - [Enroll](https://datacentertraining.us/checkout.html?item=data-center-cooling-refrigerant-safety)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=data-center-cooling-refrigerant-safety)
 
-Save 51% with the bundle
+Save 42% with the bundle
 
 Cooling & Facilities Efficiency Bundle
 
-6 courses · 24 hours · **$462.99** per seat, instead of ~~$948.94~~ bought separately
+6 courses · 24 hours · **$549.99** per seat, instead of ~~$948.94~~ bought separately
 
 - [Enroll in the Bundle](https://datacentertraining.us/checkout.html?item=bundle-cooling-efficiency)
 - [Compare Bundles](https://datacentertraining.us/bundles.html)
