@@ -8,7 +8,7 @@
       "label": "I'm an electrician or power technician",
       "track": "Power & Electrical Systems Track",
       "bundle_id": "bundle-power-electrical",
-      "description": "Electricians and power technicians working on utility interconnection, UPS systems, generators, batteries, and daily electrical safety should complete this 14-course, 47-hour track.",
+      "description": "Electricians and power technicians working on utility interconnection, UPS systems, generators, batteries, and daily electrical safety should complete this 13-course, 45-hour track.",
       "keywords": [
         "electrician",
         "electrical",
@@ -69,7 +69,7 @@
       "label": "I handle security or compliance",
       "track": "Security & Compliance Track",
       "bundle_id": "bundle-security-compliance",
-      "description": "Security and compliance leads building an audit-ready program should complete this 5-course, 27-hour track.",
+      "description": "Security and compliance leads building an audit-ready program should complete this 5-course, 19-hour track.",
       "keywords": [
         "security",
         "compliance",
@@ -130,7 +130,6 @@
         "power-systems-electrical-fundamentals",
         "ups-operations-load-testing",
         "generator-operations-maintenance",
-        "electrical-safety-best-practices",
         "batteries-dc-circuits",
         "data-center-arc-flash-safety",
         "data-center-electrical-safety",

@@ -245,7 +245,7 @@ Build a 3–5 year capacity plan before you run out of power, cooling, or space.
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=capacity-planning-forecasting)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=capacity-planning-forecasting)
@@ -263,11 +263,11 @@ $307.99
 - [Enroll](https://datacentertraining.us/checkout.html?item=disaster-recovery-business-continuity)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=disaster-recovery-business-continuity)
 
-Save 42% with the bundle
+Save 45% with the bundle
 
 Design, Planning & Commissioning Bundle
 
-4 courses · 28 hours · **$557.99** per seat, instead of ~~$961.96~~ bought separately
+4 courses · 28 hours · **$557.99** per seat, instead of ~~$1,011.96~~ bought separately
 
 - [Enroll in the Bundle](https://datacentertraining.us/checkout.html?item=bundle-design-planning)
 - [Compare Bundles](https://datacentertraining.us/bundles.html)

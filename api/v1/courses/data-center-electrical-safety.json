@@ -8,10 +8,10 @@
   "category": "Power & Electrical",
   "course_type": "modular",
   "course_type_label": "Modular Specialization",
-  "duration_hours": 2,
-  "duration_iso8601": "PT2H",
+  "duration_hours": 4,
+  "duration_iso8601": "PT4H",
   "module_count": 4,
-  "price_usd": 99.99,
+  "price_usd": 149.99,
   "currency": "USD",
   "standards": [],
   "summary": "Foundational electrical safety practices for anyone working around data center power systems.",
@@ -85,10 +85,6 @@
       "answer": "It is the state NFPA 70E defines for equipment that has been disconnected from all energy sources, locked and tagged out, tested to confirm there is no voltage and grounded where necessary. Creating it is the preferred way to protect workers."
     },
     {
-      "question": "How is this course different from Electrical Safety & Best Practices?",
-      "answer": "This course is an awareness-level foundation for anyone who works around data center electrical systems. Electrical Safety & Best Practices goes further into NFPA 70E principles, PPE and emergency procedures for electrical workers and staff who work near energized equipment more regularly."
-    },
-    {
       "question": "Does this course cover switchgear safety?",
       "answer": "It covers the hazard-recognition side: why switchgear, UPS modules, PDUs and remote power panels carry shock and arc flash risk, how safe work distances apply around them, and when to stop and call a qualified electrician. It does not teach switching or operating switchgear; that takes deeper training and your site's switching procedures."
     }
@@ -97,8 +93,8 @@
     "power-systems-electrical-fundamentals",
     "ups-operations-load-testing",
     "generator-operations-maintenance",
-    "electrical-safety-best-practices",
-    "batteries-dc-circuits"
+    "batteries-dc-circuits",
+    "data-center-arc-flash-safety"
   ],
   "last_updated": "2026-11-16"
 }

@@ -238,7 +238,7 @@ Build a 3–5 year capacity plan before you run out of power, cooling, or space.
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=capacity-planning-forecasting)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=capacity-planning-forecasting)
@@ -251,7 +251,7 @@ Hands-on mechanical maintenance — piping, chillers, and vibration diagnostics.
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=mechanical-systems-maintenance)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=mechanical-systems-maintenance)
@@ -277,7 +277,7 @@ Cut operating costs with a measurable PUE optimization roadmap.
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=energy-efficiency-pue-optimization)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=energy-efficiency-pue-optimization)
@@ -295,11 +295,11 @@ $276.99
 - [Enroll](https://datacentertraining.us/checkout.html?item=monitoring-automation-bms-systems)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=monitoring-automation-bms-systems)
 
-Save 52% with the bundle
+Save 58% with the bundle
 
 Complete Data Center Professional Bundle
 
-43 courses · 184 hours · **$2,928.99** per seat, instead of ~~$6,067.57~~ bought separately
+42 courses · 182 hours · **$2,928.99** per seat, instead of ~~$6,997.58~~ bought separately
 
 - [Enroll in the Bundle](https://datacentertraining.us/checkout.html?item=bundle-complete-catalog)
 - [Compare Bundles](https://datacentertraining.us/bundles.html)

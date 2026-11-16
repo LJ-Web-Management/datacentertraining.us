@@ -94,11 +94,11 @@ $276.99
 - Delivered by an IACET-accredited provider
 - Volume pricing available for teams
 
-This course is part of the **Monitoring & Smart Facility Bundle** (4 courses). Buy the bundle for $333.99 instead of $576.96 separately — [save $242.97 →](https://datacentertraining.us/checkout.html?item=bundle-monitoring-smart-facility)
+This course is part of the **Monitoring & Smart Facility Bundle** (4 courses). Buy the bundle for $333.99 instead of $756.96 separately — [save $422.97 →](https://datacentertraining.us/checkout.html?item=bundle-monitoring-smart-facility)
 
 ## Related Courses
 
-More training from the Monitoring & Smart Facility Bundle. [Browse all 43 courses](https://datacentertraining.us/courses.html) or [save with a bundle](https://datacentertraining.us/bundles.html).
+More training from the Monitoring & Smart Facility Bundle. [Browse all 42 courses](https://datacentertraining.us/courses.html) or [save with a bundle](https://datacentertraining.us/bundles.html).
 
 ### [DCIM Platform Fundamentals](https://datacentertraining.us/courses/dcim-platform-fundamentals.html)
 
@@ -106,7 +106,7 @@ Monitoring & Automation · Modular Specialization
 
 4 hrs
 
-$99.99
+$149.99
 
 ### [Fiber Optics & Network Cabling](https://datacentertraining.us/courses/fiber-optics-network-cabling.html)
 
@@ -114,7 +114,7 @@ Monitoring & Automation · Modular Specialization
 
 4 hrs
 
-$99.99
+$149.99
 
 ### [Building Automation Systems (BAS) Fundamentals](https://datacentertraining.us/courses/building-automation-systems-fundamentals.html)
 
@@ -122,7 +122,7 @@ Monitoring & Automation · Modular Specialization
 
 6 hrs
 
-$99.99
+$179.99
 
 ## Ready to Enroll Your Team?
 

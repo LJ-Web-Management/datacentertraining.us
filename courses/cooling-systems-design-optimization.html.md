@@ -94,11 +94,11 @@ $298.99
 - Delivered by an IACET-accredited provider
 - Volume pricing available for teams
 
-This course is part of the **Cooling & Facilities Efficiency Bundle** (6 courses). Buy the bundle for $462.99 instead of $798.94 separately — [save $335.95 →](https://datacentertraining.us/checkout.html?item=bundle-cooling-efficiency)
+This course is part of the **Cooling & Facilities Efficiency Bundle** (6 courses). Buy the bundle for $462.99 instead of $948.94 separately — [save $485.95 →](https://datacentertraining.us/checkout.html?item=bundle-cooling-efficiency)
 
 ## Related Courses
 
-More training from the Cooling & Facilities Efficiency Bundle. [Browse all 43 courses](https://datacentertraining.us/courses.html) or [save with a bundle](https://datacentertraining.us/bundles.html).
+More training from the Cooling & Facilities Efficiency Bundle. [Browse all 42 courses](https://datacentertraining.us/courses.html) or [save with a bundle](https://datacentertraining.us/bundles.html).
 
 ### [HVAC Systems Troubleshooting Essentials](https://datacentertraining.us/courses/hvac-troubleshooting-essentials.html)
 
@@ -106,7 +106,7 @@ Cooling & Efficiency · Modular Specialization
 
 4 hrs
 
-$99.99
+$149.99
 
 ### [Energy Efficiency & PUE Optimization](https://datacentertraining.us/courses/energy-efficiency-pue-optimization.html)
 
@@ -114,7 +114,7 @@ Cooling & Efficiency · Modular Specialization
 
 4 hrs
 
-$99.99
+$149.99
 
 ### [Mechanical Systems & Equipment Maintenance](https://datacentertraining.us/courses/mechanical-systems-maintenance.html)
 
@@ -122,7 +122,7 @@ Cooling & Efficiency · Modular Specialization
 
 4 hrs
 
-$99.99
+$149.99
 
 ### [Data Center Cooling System and Refrigerant Safety Training](https://datacentertraining.us/courses/data-center-cooling-refrigerant-safety.html)
 

@@ -8,15 +8,15 @@ Recommended
 
 ## Power & Electrical Systems Track
 
-Electricians and power technicians working on utility interconnection, UPS systems, generators, batteries, and daily electrical safety should complete this 14-course, 47-hour track.
+Electricians and power technicians working on utility interconnection, UPS systems, generators, batteries, and daily electrical safety should complete this 13-course, 45-hour track.
 
 - Power Systems & Electrical Fundamentals · 8 hrs
 - UPS Operations & Load Testing · 4 hrs
 - Generator Operations & Maintenance · 4 hrs
-- Electrical Safety & Best Practices · 4 hrs
-- + 10 more courses
+- Data Center Electrical Safety Training · 4 hrs
+- + 9 more courses
 
-All 14 courses, 47 hrs, in the **Power & Electrical Systems Bundle** for $986.99 — save $617.
+All 13 courses, 45 hrs, in the **Power & Electrical Systems Bundle** for $986.99 — save $867.
 
 [See These Courses](https://datacentertraining.us/courses.html)
 
@@ -32,7 +32,7 @@ HVAC and facilities technicians who need both cooling design fundamentals and ha
 - Mechanical Systems & Equipment Maintenance · 4 hrs
 - + 2 more courses
 
-All 6 courses, 24 hrs, in the **Cooling & Facilities Efficiency Bundle** for $462.99 — save $336.
+All 6 courses, 24 hrs, in the **Cooling & Facilities Efficiency Bundle** for $462.99 — save $486.
 
 [See These Courses](https://datacentertraining.us/courses.html)
 
@@ -48,7 +48,7 @@ Facility and operations managers who own uptime should complete this 10-course, 
 - Incident Response & Troubleshooting · 4 hrs
 - + 6 more courses
 
-All 10 courses, 44 hrs, in the **Operations & Reliability Bundle** for $830.99 — save $603.
+All 10 courses, 44 hrs, in the **Operations & Reliability Bundle** for $830.99 — save $803.
 
 [See These Courses](https://datacentertraining.us/courses.html)
 
@@ -56,7 +56,7 @@ Recommended
 
 ## Security & Compliance Track
 
-Security and compliance leads building an audit-ready program should complete this 5-course, 27-hour track.
+Security and compliance leads building an audit-ready program should complete this 5-course, 19-hour track.
 
 - Security & Compliance for Data Centers · 8 hrs
 - Access Control & Physical Security · 4 hrs
@@ -64,7 +64,7 @@ Security and compliance leads building an audit-ready program should complete th
 - Data Center Fire Suppression Safety · 2 hrs
 - + 1 more course
 
-All 5 courses, 19 hrs, in the **Security & Compliance Bundle** for $400.99 — save $291.
+All 5 courses, 19 hrs, in the **Security & Compliance Bundle** for $400.99 — save $391.
 
 [See These Courses](https://datacentertraining.us/courses.html)
 
@@ -79,7 +79,7 @@ Engineers and project leads taking a facility from design through launch should 
 - Infrastructure Commissioning & Startup · 8 hrs
 - Capacity Planning & Forecasting · 4 hrs
 
-All four courses, 28 hrs, in the **Design, Planning & Commissioning Bundle** for $557.99 — save $404.
+All four courses, 28 hrs, in the **Design, Planning & Commissioning Bundle** for $557.99 — save $454.
 
 [See These Courses](https://datacentertraining.us/courses.html)
 
@@ -94,7 +94,7 @@ Teams building out monitoring, DCIM, building automation, and network cabling in
 - Building Automation Systems (BAS) Fundamentals · 6 hrs
 - Fiber Optics & Network Cabling · 4 hrs
 
-All four courses, 22 hrs, in the **Monitoring & Smart Facility Bundle** for $333.99 — save $243.
+All four courses, 22 hrs, in the **Monitoring & Smart Facility Bundle** for $333.99 — save $423.
 
 [See These Courses](https://datacentertraining.us/courses.html)
 

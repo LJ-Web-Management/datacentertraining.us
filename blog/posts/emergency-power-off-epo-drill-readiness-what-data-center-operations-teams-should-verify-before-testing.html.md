@@ -126,14 +126,14 @@ Record the tested station, scope, participants, timestamps, alarms, deviations, 
 
 ## Which Training Fits This Situation
 
-The most direct fit is **Data Center Emergency Power Off (EPO) Procedures Training**. It can help a team build shared vocabulary around EPO activation, sequence awareness, communication, and recovery planning. For electricians and power technicians who need broader context, **Power Systems & Electrical Fundamentals**, **Power Distribution Systems Fundamentals**, and **Electrical Safety & Best Practices** can support understanding of the electrical chain around the EPO function.
+The most direct fit is **Data Center Emergency Power Off (EPO) Procedures Training**. It can help a team build shared vocabulary around EPO activation, sequence awareness, communication, and recovery planning. For electricians and power technicians who need broader context, **Power Systems & Electrical Fundamentals**, **Power Distribution Systems Fundamentals**, and **Data Center Electrical Safety Training** can support understanding of the electrical chain around the EPO function.
 
 If the drill exposes gaps in UPS behavior or battery-room response, add **UPS Operations & Load Testing**, **UPS Systems Fundamentals**, or **Data Center UPS and Battery System Safety Training**. If the main weakness is coordination during an abnormal event, **Incident Response & Troubleshooting** and **Data Center Operations Management** are useful complements. The course catalog describes these as knowledge and best-practice training, so managers should pair the learning with site-specific procedures, qualified supervision, and hands-on drills.
 
 For a team rather than one learner, the **Power & Electrical Systems Bundle** is the most natural package because it brings together power architecture, UPS, generators, batteries, EPO procedures, distribution, and electrical work practices. A role-based plan might look like this:
 
 1. Assign EPO Procedures and Operations Management to facility managers, shift leads, and NOC supervisors.
-2. Assign Power Systems & Electrical Fundamentals, Power Distribution Systems Fundamentals, and Electrical Safety & Best Practices to electricians and authorized power technicians.
+2. Assign Power Systems & Electrical Fundamentals, Power Distribution Systems Fundamentals, and Data Center Electrical Safety Training to electricians and authorized power technicians.
 3. Add UPS Operations & Load Testing and UPS or battery safety training for staff who inspect or operate those systems.
 4. Add Incident Response & Troubleshooting for the command center, mechanical lead, and escalation team.
 5. Use a tabletop review and a supervised site drill to connect course concepts to the actual one-line diagram and emergency plan.

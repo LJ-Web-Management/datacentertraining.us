@@ -103,9 +103,9 @@
   "related_course_ids": [
     "ups-operations-load-testing",
     "generator-operations-maintenance",
-    "electrical-safety-best-practices",
     "batteries-dc-circuits",
-    "data-center-arc-flash-safety"
+    "data-center-arc-flash-safety",
+    "data-center-electrical-safety"
   ],
   "last_updated": "2026-11-16"
 }

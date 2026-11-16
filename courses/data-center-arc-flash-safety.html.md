@@ -107,11 +107,11 @@ $99.99
 - Delivered by an IACET-accredited provider
 - Volume pricing available for teams
 
-This course is part of the **Power & Electrical Systems Bundle** (14 courses). Buy the bundle for $986.99 instead of $1,603.86 separately — [save $616.87 →](https://datacentertraining.us/checkout.html?item=bundle-power-electrical)
+This course is part of the **Power & Electrical Systems Bundle** (13 courses). Buy the bundle for $986.99 instead of $1,853.87 separately — [save $866.88 →](https://datacentertraining.us/checkout.html?item=bundle-power-electrical)
 
 ## Related Courses
 
-More training from the Power & Electrical Systems Bundle. [Browse all 43 courses](https://datacentertraining.us/courses.html) or [save with a bundle](https://datacentertraining.us/bundles.html).
+More training from the Power & Electrical Systems Bundle. [Browse all 42 courses](https://datacentertraining.us/courses.html) or [save with a bundle](https://datacentertraining.us/bundles.html).
 
 ### [Power Systems & Electrical Fundamentals](https://datacentertraining.us/courses/power-systems-electrical-fundamentals.html)
 
@@ -127,7 +127,7 @@ Power & Electrical · Modular Specialization
 
 4 hrs
 
-$99.99
+$149.99
 
 ### [Generator Operations & Maintenance](https://datacentertraining.us/courses/generator-operations-maintenance.html)
 
@@ -135,15 +135,7 @@ Power & Electrical · Modular Specialization
 
 4 hrs
 
-$99.99
-
-### [Electrical Safety & Best Practices](https://datacentertraining.us/courses/electrical-safety-best-practices.html)
-
-Power & Electrical · Modular Specialization
-
-4 hrs
-
-$99.99
+$149.99
 
 ### [Batteries and DC Circuits](https://datacentertraining.us/courses/batteries-dc-circuits.html)
 
@@ -157,7 +149,15 @@ $99.99
 
 Power & Electrical · Modular Specialization
 
-2 hrs
+4 hrs
+
+$149.99
+
+### [Data Center Emergency Power Off (EPO) Procedures Training](https://datacentertraining.us/courses/data-center-epo-procedures.html)
+
+Power & Electrical · Modular Specialization
+
+1 hr
 
 $99.99
 

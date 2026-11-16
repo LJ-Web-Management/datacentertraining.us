@@ -272,9 +272,9 @@ Power & Electrical · Modular Specialization
 
 Foundational electrical safety practices for anyone working around data center power systems.
 
-2 hrs
+4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=data-center-electrical-safety)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=data-center-electrical-safety)
@@ -300,7 +300,7 @@ Master UPS operations, battery testing, and load-bank procedures.
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=ups-operations-load-testing)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=ups-operations-load-testing)
@@ -313,7 +313,7 @@ Hands-on troubleshooting skills for CRAC/CRAH systems and common cooling failure
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=hvac-troubleshooting-essentials)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=hvac-troubleshooting-essentials)
@@ -339,7 +339,7 @@ Systematic troubleshooting and root-cause analysis to cut MTTR.
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=incident-response-troubleshooting)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=incident-response-troubleshooting)
@@ -352,16 +352,16 @@ Terminate, test, and troubleshoot data center fiber to ANSI/TIA-942 standards.
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=fiber-optics-network-cabling)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=fiber-optics-network-cabling)
 
-Save 52% with the bundle
+Save 58% with the bundle
 
 Complete Data Center Professional Bundle
 
-43 courses · 184 hours · **$2,928.99** per seat, instead of ~~$6,067.57~~ bought separately
+42 courses · 182 hours · **$2,928.99** per seat, instead of ~~$6,997.58~~ bought separately
 
 - [Enroll in the Bundle](https://datacentertraining.us/checkout.html?item=bundle-complete-catalog)
 - [Compare Bundles](https://datacentertraining.us/bundles.html)

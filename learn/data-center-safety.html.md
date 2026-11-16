@@ -39,7 +39,7 @@ Most serious injuries in critical facilities come from a short list of hazards. 
 | Hazard | Where it shows up | Key controls | Governing standard | Course |
 | --- | --- | --- | --- | --- |
 | Shock and arc flash | Switchgear, UPS, PDUs, panels, busway | De-energize and verify, boundaries, arc-rated PPE, permits | OSHA 1910 Subpart S, NFPA 70E | [Arc Flash Safety](https://datacentertraining.us/courses/data-center-arc-flash-safety.html) |
-| Hazardous energy during service | Breakers, CRAH fans, pumps, chillers | Written procedures, personal locks, verification | OSHA 1910.147 and 1910.333 | [Electrical Safety & Best Practices](https://datacentertraining.us/courses/electrical-safety-best-practices.html) |
+| Hazardous energy during service | Breakers, CRAH fans, pumps, chillers | Written procedures, personal locks, verification | OSHA 1910.147 and 1910.333 | [Data Center Electrical Safety Training](https://datacentertraining.us/courses/data-center-electrical-safety.html) |
 | Battery hazards | UPS battery rooms and cabinets | Ventilation, eyewash, insulated tools, monitoring | NFPA 70E Article 320, NFPA 855 for lithium-ion | [UPS & Battery Safety](https://datacentertraining.us/courses/data-center-ups-battery-safety.html) |
 | Accidental power-off | EPO stations at data hall exits | Covers, labeling, training | NFPA 70 Article 645, NFPA 75 | [EPO Procedures](https://datacentertraining.us/courses/data-center-epo-procedures.html) |
 | Fire suppression discharge | Clean agent and inert gas protected rooms | Pre-discharge alarms, evacuation, controlled re-entry | NFPA 2001, NFPA 72 | [Fire Suppression Safety](https://datacentertraining.us/courses/data-center-fire-suppression-safety.html) |
@@ -197,9 +197,9 @@ Power & Electrical · Modular Specialization
 
 Foundational electrical safety practices for anyone working around data center power systems.
 
-2 hrs
+4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=data-center-electrical-safety)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=data-center-electrical-safety)
@@ -216,19 +216,6 @@ $99.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=data-center-arc-flash-safety)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=data-center-arc-flash-safety)
-
-### [Electrical Safety & Best Practices](https://datacentertraining.us/courses/electrical-safety-best-practices.html)
-
-Power & Electrical · Modular Specialization · NFPA 70E
-
-NFPA 70E-aligned electrical safety fundamentals for facility staff.
-
-4 hrs
-
-$99.99
-
-- [Enroll](https://datacentertraining.us/checkout.html?item=electrical-safety-best-practices)
-- [Add to Cart](https://datacentertraining.us/cart.html?add=electrical-safety-best-practices)
 
 ### [Data Center UPS and Battery System Safety Training](https://datacentertraining.us/courses/data-center-ups-battery-safety.html)
 
@@ -251,7 +238,7 @@ Recognize and respond to lithium-ion battery thermal runaway before it escalates
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=lithium-ion-thermal-runaway-emergency-response)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=lithium-ion-thermal-runaway-emergency-response)
@@ -295,11 +282,11 @@ $99.99
 - [Enroll](https://datacentertraining.us/checkout.html?item=data-center-raised-floor-confined-space)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=data-center-raised-floor-confined-space)
 
-Save 52% with the bundle
+Save 58% with the bundle
 
 Complete Data Center Professional Bundle
 
-43 courses · 184 hours · **$2,928.99** per seat, instead of ~~$6,067.57~~ bought separately
+42 courses · 182 hours · **$2,928.99** per seat, instead of ~~$6,997.58~~ bought separately
 
 - [Enroll in the Bundle](https://datacentertraining.us/checkout.html?item=bundle-complete-catalog)
 - [Compare Bundles](https://datacentertraining.us/bundles.html)

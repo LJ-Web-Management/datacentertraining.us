@@ -155,7 +155,7 @@ Understand DCIM strategy and build the ROI case for implementation.
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=dcim-platform-fundamentals)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=dcim-platform-fundamentals)
@@ -181,7 +181,7 @@ Build a 3–5 year capacity plan before you run out of power, cooling, or space.
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=capacity-planning-forecasting)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=capacity-planning-forecasting)
@@ -212,11 +212,11 @@ $291.99
 - [Enroll](https://datacentertraining.us/checkout.html?item=security-compliance-data-centers)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=security-compliance-data-centers)
 
-Save 42% with the bundle
+Save 56% with the bundle
 
 Monitoring & Smart Facility Bundle
 
-4 courses · 22 hours · **$333.99** per seat, instead of ~~$576.96~~ bought separately
+4 courses · 22 hours · **$333.99** per seat, instead of ~~$756.96~~ bought separately
 
 - [Enroll in the Bundle](https://datacentertraining.us/checkout.html?item=bundle-monitoring-smart-facility)
 - [Compare Bundles](https://datacentertraining.us/bundles.html)

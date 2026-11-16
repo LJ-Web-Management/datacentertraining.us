@@ -90,7 +90,7 @@ The most relevant starting point is **UPS Operations & Load Testing**, because o
 
 Pair that course with **Power Distribution Systems Fundamentals** when the team needs to strengthen its understanding of switchboards, distribution paths, breakers, source separation, and one-line diagrams. A technician who can read the distribution path is better positioned to ask whether the alternate source is truly available, not just energized.
 
-For a broader electrical role, **Electrical Safety & Best Practices**, **Data Center Electrical Safety Training**, and **Data Center Arc Flash Safety Training** can support the site's safety program. These are knowledge and best-practice courses with a certificate of completion. They are not regulatory certifications, licenses, or permission to perform energized work.
+For a broader electrical role, **Data Center Electrical Safety Training** and **Data Center Arc Flash Safety Training** can support the site's safety program. These are knowledge and best-practice courses with a certificate of completion. They are not regulatory certifications, licenses, or permission to perform energized work.
 
 The **Power & Electrical Systems Bundle** can fit a team that needs a role-based path across power architecture, UPS, generators, battery safety, EPO procedures, and daily electrical work practices. A manager does not need every employee to take every course at once. One practical plan might look like this:
 

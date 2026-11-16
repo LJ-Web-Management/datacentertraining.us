@@ -1,10 +1,10 @@
-# 43 Courses, 184 Hours, Built for the Data Center Floor
+# 42 Courses, 182 Hours, Built for the Data Center Floor
 
 Course Catalog
 
 Online data center courses covering every discipline from design to daily operations. Search, filter, and sort to find exactly the courses your team needs.
 
-43 courses
+42 courses
 
 ## All Courses
 
@@ -113,7 +113,7 @@ Cooling & Efficiency
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=hvac-troubleshooting-essentials)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=hvac-troubleshooting-essentials)
@@ -124,7 +124,7 @@ Power & Electrical
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=ups-operations-load-testing)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=ups-operations-load-testing)
@@ -135,7 +135,7 @@ Monitoring & Automation · ANSI/TIA-942
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=fiber-optics-network-cabling)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=fiber-optics-network-cabling)
@@ -146,7 +146,7 @@ Power & Electrical
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=generator-operations-maintenance)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=generator-operations-maintenance)
@@ -157,7 +157,7 @@ Cooling & Efficiency · PUE
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=energy-efficiency-pue-optimization)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=energy-efficiency-pue-optimization)
@@ -168,7 +168,7 @@ Design & Planning
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=capacity-planning-forecasting)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=capacity-planning-forecasting)
@@ -179,7 +179,7 @@ Operations
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=preventive-maintenance-planning)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=preventive-maintenance-planning)
@@ -190,7 +190,7 @@ Security & Compliance
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=facility-environmental-compliance)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=facility-environmental-compliance)
@@ -201,7 +201,7 @@ Operations
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=incident-response-troubleshooting)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=incident-response-troubleshooting)
@@ -212,7 +212,7 @@ Security & Compliance
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=access-control-physical-security)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=access-control-physical-security)
@@ -223,7 +223,7 @@ Monitoring & Automation · DCIM
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=dcim-platform-fundamentals)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=dcim-platform-fundamentals)
@@ -234,21 +234,10 @@ Cooling & Efficiency
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=mechanical-systems-maintenance)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=mechanical-systems-maintenance)
-
-### [Electrical Safety & Best Practices](https://datacentertraining.us/courses/electrical-safety-best-practices.html)
-
-Power & Electrical · NFPA 70E
-
-4 hrs
-
-$99.99
-
-- [Enroll](https://datacentertraining.us/checkout.html?item=electrical-safety-best-practices)
-- [Add to Cart](https://datacentertraining.us/cart.html?add=electrical-safety-best-practices)
 
 ### [Batteries and DC Circuits](https://datacentertraining.us/courses/batteries-dc-circuits.html)
 
@@ -267,7 +256,7 @@ Monitoring & Automation · BMS/BAS
 
 6 hrs
 
-$99.99
+$179.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=building-automation-systems-fundamentals)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=building-automation-systems-fundamentals)
@@ -289,7 +278,7 @@ Operations
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=building-maintenance-fundamentals)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=building-maintenance-fundamentals)
@@ -331,9 +320,9 @@ $99.99
 
 Power & Electrical
 
-2 hrs
+4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=data-center-electrical-safety)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=data-center-electrical-safety)
@@ -399,7 +388,7 @@ Power & Electrical
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=emergency-standby-power-systems-fundamentals)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=emergency-standby-power-systems-fundamentals)
@@ -410,7 +399,7 @@ Operations
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=facility-management-fundamentals)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=facility-management-fundamentals)
@@ -421,7 +410,7 @@ Power & Electrical
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=generator-fundamentals)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=generator-fundamentals)
@@ -432,7 +421,7 @@ Power & Electrical
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=lithium-ion-thermal-runaway-emergency-response)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=lithium-ion-thermal-runaway-emergency-response)
@@ -443,7 +432,7 @@ Power & Electrical
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=power-distribution-systems-fundamentals)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=power-distribution-systems-fundamentals)
@@ -487,7 +476,7 @@ Don't see the course you need? [Request a course](https://datacentertraining.us/
 
 ## Prefer a Bundle?
 
-Save up to 52% by enrolling a whole role-based track or the complete catalog in one purchase.
+Save up to 58% by enrolling a whole role-based track or the complete catalog in one purchase.
 
 [Browse Bundles →](https://datacentertraining.us/bundles.html)
 

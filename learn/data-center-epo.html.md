@@ -133,9 +133,9 @@ Power & Electrical · Modular Specialization
 
 Foundational electrical safety practices for anyone working around data center power systems.
 
-2 hrs
+4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=data-center-electrical-safety)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=data-center-electrical-safety)
@@ -161,7 +161,7 @@ Systematic troubleshooting and root-cause analysis to cut MTTR.
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=incident-response-troubleshooting)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=incident-response-troubleshooting)

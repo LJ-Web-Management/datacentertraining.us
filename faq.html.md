@@ -14,7 +14,7 @@ Comprehensive Programs run 8 hours; Modular Specializations run 1-8 hours. All c
 
 **What topics does the course catalog cover?**
 
-The catalog spans six tracks: Power & Electrical, Cooling & Facilities Efficiency, Operations & Reliability, Security & Compliance, Design, Planning & Commissioning, and Monitoring & Smart Facility. Together they cover 43 courses and 184 hours of training.
+The catalog spans six tracks: Power & Electrical, Cooling & Facilities Efficiency, Operations & Reliability, Security & Compliance, Design, Planning & Commissioning, and Monitoring & Smart Facility. Together they cover 42 courses and 182 hours of training.
 
 **Do I need a background in data center design or operations to take these courses?**
 
@@ -88,7 +88,7 @@ Data Center Training courses are published as online, self-paced courses. HAZWOP
 
 **What's included in a bundle, and how much do I save?**
 
-Each bundle groups a comprehensive program with the modular courses most relevant to the same role — for example, the Power & Electrical Systems Bundle includes 14 courses and 47 hours of training on power systems, UPS, generators, and electrical safety for $986.99. The Complete Data Center Professional Bundle covers all 43 courses and 184 hours for $2,928.99, the deepest discount we offer. Every learner still gets a certificate for each course completed.
+Each bundle groups a comprehensive program with the modular courses most relevant to the same role — for example, the Power & Electrical Systems Bundle includes 13 courses and 45 hours of training on power systems, UPS, generators, and electrical safety for $986.99. The Complete Data Center Professional Bundle covers all 42 courses and 182 hours for $2,928.99, the deepest discount we offer. Every learner still gets a certificate for each course completed.
 
 **Which bundle is the best fit for a facilities generalist?**
 

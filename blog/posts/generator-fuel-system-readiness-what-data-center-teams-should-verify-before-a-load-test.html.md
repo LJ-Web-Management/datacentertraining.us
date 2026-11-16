@@ -98,7 +98,7 @@ The **Power & Electrical Systems Bundle** is a useful fit for electricians and p
 Managers can also create a role-based plan rather than assigning the same learning to everyone:
 
 - A generator or mechanical technician can start with Generator Operations & Maintenance and add facility environmental or maintenance planning content as the role requires.
-- An electrical operator can pair Emergency/Standby Power Systems Fundamentals with Power Systems & Electrical Fundamentals, Electrical Safety & Best Practices, and UPS Operations & Load Testing.
+- An electrical operator can pair Emergency/Standby Power Systems Fundamentals with Power Systems & Electrical Fundamentals, Data Center Electrical Safety Training, and UPS Operations & Load Testing.
 - A facilities manager can use Data Center Operations Management and Preventive Maintenance Planning to connect technical checks to maintenance windows, records, and escalation.
 - A control-room or NOC employee can focus on incident response, alarm interpretation, communications, and the site’s approved test sequence.
 - A contractor coordinator can verify that vendors understand site access, stop-work expectations, emergency contacts, and the boundary between observation and authorized work.

@@ -35,7 +35,6 @@ Key takeaways
 Data Center Training (datacentertraining.us), a division of HAZWOPER OSHA Training, LLC, an IACET Accredited Provider, offers arc flash training online for data center teams. Our arc flash courses are online, self-paced, and built around NFPA 70E, using the equipment you actually find in a data center: medium- and low-voltage switchgear, UPS modules and battery cabinets, PDUs, and remote power panels. Each awards a certificate of completion.
 
 - [Data Center Arc Flash Safety](https://datacentertraining.us/courses/data-center-arc-flash-safety.html) covers what happens in an arc flash, hazard boundaries and labels, PPE selection, safe work practices near energized switchgear and UPS systems, and the equipment conditions that raise risk.
-- [Electrical Safety & Best Practices](https://datacentertraining.us/courses/electrical-safety-best-practices.html) adds core NFPA 70E principles, test equipment, hazard recognition, and emergency procedures.
 - [Data Center Electrical Safety](https://datacentertraining.us/courses/data-center-electrical-safety.html) is the awareness foundation for anyone with floor access.
 
 ### [Data Center Arc Flash Safety Training](https://datacentertraining.us/courses/data-center-arc-flash-safety.html)
@@ -51,28 +50,15 @@ $99.99
 - [Enroll](https://datacentertraining.us/checkout.html?item=data-center-arc-flash-safety)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=data-center-arc-flash-safety)
 
-### [Electrical Safety & Best Practices](https://datacentertraining.us/courses/electrical-safety-best-practices.html)
-
-Power & Electrical · Modular Specialization · NFPA 70E
-
-NFPA 70E-aligned electrical safety fundamentals for facility staff.
-
-4 hrs
-
-$99.99
-
-- [Enroll](https://datacentertraining.us/checkout.html?item=electrical-safety-best-practices)
-- [Add to Cart](https://datacentertraining.us/cart.html?add=electrical-safety-best-practices)
-
 ### [Data Center Electrical Safety Training](https://datacentertraining.us/courses/data-center-electrical-safety.html)
 
 Power & Electrical · Modular Specialization
 
 Foundational electrical safety practices for anyone working around data center power systems.
 
-2 hrs
+4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=data-center-electrical-safety)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=data-center-electrical-safety)
@@ -85,16 +71,16 @@ Core power distribution theory behind PDUs, panels, and branch circuits.
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=power-distribution-systems-fundamentals)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=power-distribution-systems-fundamentals)
 
-Save 38% with the bundle
+Save 47% with the bundle
 
 Power & Electrical Systems Bundle
 
-14 courses · 47 hours · **$986.99** per seat, instead of ~~$1,603.86~~ bought separately
+13 courses · 45 hours · **$986.99** per seat, instead of ~~$1,853.87~~ bought separately
 
 - [Enroll in the Bundle](https://datacentertraining.us/checkout.html?item=bundle-power-electrical)
 - [Compare Bundles](https://datacentertraining.us/bundles.html)

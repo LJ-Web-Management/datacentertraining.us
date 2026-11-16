@@ -78,7 +78,7 @@ Across all three phases, managers should check these evidence points:
 
 ## Which Training Fits This Situation
 
-For a new technician, the best plan is usually a role-based mix rather than every course at once. Start with **Data Center Operations Management** to establish the operating model, shift discipline, maintenance coordination, and critical-facilities context. Pair it with **Electrical Safety & Best Practices** or **Data Center Electrical Safety Training** when the technician will work around switchgear, UPS systems, distribution panels, or electrical rooms. If the role includes battery rooms or UPS maintenance support, **Data Center UPS and Battery System Safety Training** adds focused hazard awareness.
+For a new technician, the best plan is usually a role-based mix rather than every course at once. Start with **Data Center Operations Management** to establish the operating model, shift discipline, maintenance coordination, and critical-facilities context. Pair it with **Data Center Electrical Safety Training** when the technician will work around switchgear, UPS systems, distribution panels, or electrical rooms. If the role includes battery rooms or UPS maintenance support, **Data Center UPS and Battery System Safety Training** adds focused hazard awareness.
 
 Cooling and mechanical hires can begin with **HVAC Systems Troubleshooting Essentials**, then add **Mechanical Systems & Equipment Maintenance** or **Data Center Cooling System and Refrigerant Safety Training** based on the work scope. A controls-oriented technician may benefit from **Monitoring, Automation & BMS Systems** and **DCIM Platform Fundamentals**, with practice on the site’s actual alarm priorities and escalation rules.
 

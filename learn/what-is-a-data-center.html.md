@@ -231,7 +231,7 @@ Core facility management principles for teams running critical infrastructure.
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=facility-management-fundamentals)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=facility-management-fundamentals)
@@ -288,11 +288,11 @@ $298.99
 - [Enroll](https://datacentertraining.us/checkout.html?item=cooling-systems-design-optimization)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=cooling-systems-design-optimization)
 
-Save 52% with the bundle
+Save 58% with the bundle
 
 Complete Data Center Professional Bundle
 
-43 courses · 184 hours · **$2,928.99** per seat, instead of ~~$6,067.57~~ bought separately
+42 courses · 182 hours · **$2,928.99** per seat, instead of ~~$6,997.58~~ bought separately
 
 - [Enroll in the Bundle](https://datacentertraining.us/checkout.html?item=bundle-complete-catalog)
 - [Compare Bundles](https://datacentertraining.us/bundles.html)

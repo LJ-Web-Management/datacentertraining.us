@@ -40,25 +40,12 @@ Power & Electrical · Modular Specialization
 
 Foundational electrical safety practices for anyone working around data center power systems.
 
-2 hrs
+4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=data-center-electrical-safety)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=data-center-electrical-safety)
-
-### [Electrical Safety & Best Practices](https://datacentertraining.us/courses/electrical-safety-best-practices.html)
-
-Power & Electrical · Modular Specialization · NFPA 70E
-
-NFPA 70E-aligned electrical safety fundamentals for facility staff.
-
-4 hrs
-
-$99.99
-
-- [Enroll](https://datacentertraining.us/checkout.html?item=electrical-safety-best-practices)
-- [Add to Cart](https://datacentertraining.us/cart.html?add=electrical-safety-best-practices)
 
 ### [Data Center Arc Flash Safety Training](https://datacentertraining.us/courses/data-center-arc-flash-safety.html)
 
@@ -94,16 +81,16 @@ Understand the standby power systems that carry a facility through a utility out
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=emergency-standby-power-systems-fundamentals)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=emergency-standby-power-systems-fundamentals)
 
-Save 38% with the bundle
+Save 47% with the bundle
 
 Power & Electrical Systems Bundle
 
-14 courses · 47 hours · **$986.99** per seat, instead of ~~$1,603.86~~ bought separately
+13 courses · 45 hours · **$986.99** per seat, instead of ~~$1,853.87~~ bought separately
 
 - [Enroll in the Bundle](https://datacentertraining.us/checkout.html?item=bundle-power-electrical)
 - [Compare Bundles](https://datacentertraining.us/bundles.html)
@@ -140,7 +127,7 @@ Some states run their own OSHA-approved State Plans, which must be at least as e
 OSHA defines a qualified person as one who has received training in, and has demonstrated skills and knowledge in, the construction and operation of electric equipment and installations and the hazards involved. The designation is task-specific: a technician can be qualified to reset a breaker on one panel and unqualified for medium-voltage switching.
 
 - **Unqualified data center staff** (IT technicians, cabling crews, security, cleaning and escorted contractors) need awareness training: what not to touch, safe distances, lockout/tagout rules and how to escalate. The [Data Center Electrical Safety](https://datacentertraining.us/courses/data-center-electrical-safety.html) course is written for them.
-- **Qualified electrical workers** need the full work practice content, PPE selection, test-before-touch, and documented skill demonstrations on site. Start with [Electrical Safety & Best Practices](https://datacentertraining.us/courses/electrical-safety-best-practices.html) and [Data Center Arc Flash Safety](https://datacentertraining.us/courses/data-center-arc-flash-safety.html).
+- **Qualified electrical workers** need the full work practice content, PPE selection, test-before-touch, and documented skill demonstrations on site. Start with [Data Center Arc Flash Safety](https://datacentertraining.us/courses/data-center-arc-flash-safety.html) and [Power Systems & Electrical Fundamentals](https://datacentertraining.us/courses/power-systems-electrical-fundamentals.html).
 
 The [NFPA 70E training page](https://datacentertraining.us/training/nfpa-70e-training.html#who-needs) has a side-by-side table of approach limits and training depth for each group.
 

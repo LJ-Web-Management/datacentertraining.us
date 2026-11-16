@@ -108,19 +108,6 @@ $99.99
 - [Enroll](https://datacentertraining.us/checkout.html?item=batteries-dc-circuits)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=batteries-dc-circuits)
 
-### [Electrical Safety & Best Practices](https://datacentertraining.us/courses/electrical-safety-best-practices.html)
-
-Power & Electrical · Modular Specialization · NFPA 70E
-
-NFPA 70E-aligned electrical safety fundamentals for facility staff.
-
-4 hrs
-
-$99.99
-
-- [Enroll](https://datacentertraining.us/checkout.html?item=electrical-safety-best-practices)
-- [Add to Cart](https://datacentertraining.us/cart.html?add=electrical-safety-best-practices)
-
 ### [Data Center Arc Flash Safety Training](https://datacentertraining.us/courses/data-center-arc-flash-safety.html)
 
 Power & Electrical · Modular Specialization · NFPA 70E
@@ -155,7 +142,7 @@ Recognize and respond to lithium-ion battery thermal runaway before it escalates
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=lithium-ion-thermal-runaway-emergency-response)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=lithium-ion-thermal-runaway-emergency-response)

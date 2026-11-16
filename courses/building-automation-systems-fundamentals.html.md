@@ -51,7 +51,7 @@ BAS platforms also overlap more and more with the BMS, EPMS and DCIM tools on th
 - **Course type:** Modular Specialization
 - **Length:** 6 hrs, self-paced online
 - **Standards referenced:** BMS/BAS
-- **Price:** $99.99 per seat, volume pricing for teams
+- **Price:** $179.99 per seat, volume pricing for teams
 - **Included in:** [Monitoring & Smart Facility Bundle](https://datacentertraining.us/bundles.html) and the [Complete Data Center Professional Bundle](https://datacentertraining.us/bundles.html)
 - **Credential:** Certificate of completion from HAZWOPER OSHA Training, LLC, [verifiable online](https://datacentertraining.us/certifications.html#verify). The company is an [IACET Accredited Provider](https://datacentertraining.us/certifications.html#iacet-scope), but this course does not award IACET CEUs or PDHs.
 
@@ -77,7 +77,7 @@ This course awards a certificate of completion, not a vendor or industry certifi
 
 4 modules · self-paced online
 
-$99.99
+$179.99
 
 - [Enroll Now](https://datacentertraining.us/checkout.html?item=building-automation-systems-fundamentals)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=building-automation-systems-fundamentals)
@@ -87,11 +87,11 @@ $99.99
 - Delivered by an IACET-accredited provider
 - Volume pricing available for teams
 
-This course is part of the **Monitoring & Smart Facility Bundle** (4 courses). Buy the bundle for $333.99 instead of $576.96 separately — [save $242.97 →](https://datacentertraining.us/checkout.html?item=bundle-monitoring-smart-facility)
+This course is part of the **Monitoring & Smart Facility Bundle** (4 courses). Buy the bundle for $333.99 instead of $756.96 separately — [save $422.97 →](https://datacentertraining.us/checkout.html?item=bundle-monitoring-smart-facility)
 
 ## Related Courses
 
-More training from the Monitoring & Smart Facility Bundle. [Browse all 43 courses](https://datacentertraining.us/courses.html) or [save with a bundle](https://datacentertraining.us/bundles.html).
+More training from the Monitoring & Smart Facility Bundle. [Browse all 42 courses](https://datacentertraining.us/courses.html) or [save with a bundle](https://datacentertraining.us/bundles.html).
 
 ### [Monitoring, Automation & BMS Systems](https://datacentertraining.us/courses/monitoring-automation-bms-systems.html)
 
@@ -107,7 +107,7 @@ Monitoring & Automation · Modular Specialization
 
 4 hrs
 
-$99.99
+$149.99
 
 ### [Fiber Optics & Network Cabling](https://datacentertraining.us/courses/fiber-optics-network-cabling.html)
 
@@ -115,7 +115,7 @@ Monitoring & Automation · Modular Specialization
 
 4 hrs
 
-$99.99
+$149.99
 
 ## Ready to Enroll Your Team?
 

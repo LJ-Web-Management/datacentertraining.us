@@ -117,7 +117,7 @@ Systematic troubleshooting and root-cause analysis to cut MTTR.
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=incident-response-troubleshooting)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=incident-response-troubleshooting)
@@ -135,11 +135,11 @@ $325.99
 - [Enroll](https://datacentertraining.us/checkout.html?item=data-center-operations-management)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=data-center-operations-management)
 
-Save 42% with the bundle
+Save 49% with the bundle
 
 Operations & Reliability Bundle
 
-10 courses · 44 hours · **$830.99** per seat, instead of ~~$1,433.90~~ bought separately
+10 courses · 44 hours · **$830.99** per seat, instead of ~~$1,633.90~~ bought separately
 
 - [Enroll in the Bundle](https://datacentertraining.us/checkout.html?item=bundle-operations-reliability)
 - [Compare Bundles](https://datacentertraining.us/bundles.html)

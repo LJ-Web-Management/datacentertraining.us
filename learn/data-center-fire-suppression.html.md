@@ -123,7 +123,7 @@ Recognize and respond to lithium-ion battery thermal runaway before it escalates
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=lithium-ion-thermal-runaway-emergency-response)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=lithium-ion-thermal-runaway-emergency-response)
@@ -136,7 +136,7 @@ Understand the environmental regulations that apply to your facility.
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=facility-environmental-compliance)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=facility-environmental-compliance)

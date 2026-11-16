@@ -11,7 +11,7 @@
   "duration_hours": 4,
   "duration_iso8601": "PT4H",
   "module_count": 4,
-  "price_usd": 99.99,
+  "price_usd": 149.99,
   "currency": "USD",
   "standards": [],
   "summary": "Foundational generator theory to complement hands-on operations and load-bank training.",
@@ -93,8 +93,8 @@
     "power-systems-electrical-fundamentals",
     "ups-operations-load-testing",
     "generator-operations-maintenance",
-    "electrical-safety-best-practices",
-    "batteries-dc-circuits"
+    "batteries-dc-circuits",
+    "data-center-arc-flash-safety"
   ],
   "last_updated": "2026-11-16"
 }
