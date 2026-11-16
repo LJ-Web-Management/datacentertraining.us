@@ -37,7 +37,7 @@ Ten questions on the hazards critical facility teams manage every day: energized
 
    **Show answer**
 
-   **Answer: employer-designated qualified persons.** OSHA and NFPA 70E describe a qualified person by demonstrated skills, knowledge, and safety training for the specific equipment and hazards. The employer makes that determination; a license or a course certificate alone does not. [Electrical Safety & Best Practices](https://datacentertraining.us/courses/electrical-safety-best-practices.html) explains how qualification works.
+   **Answer: employer-designated qualified persons.** OSHA and NFPA 70E describe a qualified person by demonstrated skills, knowledge, and safety training for the specific equipment and hazards. The employer makes that determination; a license or a course certificate alone does not. [Data Center Electrical Safety Training](https://datacentertraining.us/courses/data-center-electrical-safety.html) covers when a task has to go to a qualified electrician.
 4. Question 4 An arc flash label on a switchboard lists an arc flash boundary of 48 inches. What does that mean?
 
    - The equipment door must stay closed whenever anyone is within 48 inches
@@ -121,9 +121,9 @@ Power & Electrical · Modular Specialization
 
 Foundational electrical safety practices for anyone working around data center power systems.
 
-2 hrs
+4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=data-center-electrical-safety)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=data-center-electrical-safety)
@@ -193,11 +193,11 @@ $99.99
 - [Enroll](https://datacentertraining.us/checkout.html?item=data-center-raised-floor-confined-space)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=data-center-raised-floor-confined-space)
 
-Save 52% with the bundle
+Save 58% with the bundle
 
 Complete Data Center Professional Bundle
 
-43 courses · 184 hours · **$2,928.99** per seat, instead of ~~$6,067.57~~ bought separately
+42 courses · 182 hours · **$2,928.99** per seat, instead of ~~$6,997.58~~ bought separately
 
 - [Enroll in the Bundle](https://datacentertraining.us/checkout.html?item=bundle-complete-catalog)
 - [Compare Bundles](https://datacentertraining.us/bundles.html)

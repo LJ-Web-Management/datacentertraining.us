@@ -4,7 +4,7 @@ Modular Specialization
 
 Foundational electrical safety practices for anyone working around data center power systems.
 
-2 hrs · self-paced online Power & Electrical
+4 hrs · self-paced online Power & Electrical
 
 A foundational safety course for anyone who works around data center electrical systems, whether or not electrical work is their primary job. Covers core electrical hazard recognition, safe work distances, and the basic precautions that prevent the majority of electrical incidents.
 
@@ -69,8 +69,8 @@ An online course alone does not make anyone qualified for hazardous work. Under 
 
 - **Track:** Power & Electrical
 - **Course type:** Modular Specialization
-- **Length:** 2 hrs, self-paced online
-- **Price:** $99.99 per seat, volume pricing for teams
+- **Length:** 4 hrs, self-paced online
+- **Price:** $149.99 per seat, volume pricing for teams
 - **Included in:** [Power & Electrical Systems Bundle](https://datacentertraining.us/bundles.html) and the [Complete Data Center Professional Bundle](https://datacentertraining.us/bundles.html)
 - **Credential:** Certificate of completion from HAZWOPER OSHA Training, LLC, [verifiable online](https://datacentertraining.us/certifications.html#verify). The company is an [IACET Accredited Provider](https://datacentertraining.us/certifications.html#iacet-scope), but this course does not award IACET CEUs or PDHs.
 
@@ -84,19 +84,15 @@ Anyone who works near energized equipment, including IT staff who install hardwa
 
 It is the state NFPA 70E defines for equipment that has been disconnected from all energy sources, locked and tagged out, tested to confirm there is no voltage and grounded where necessary. Creating it is the preferred way to protect workers.
 
-### How is this course different from [Electrical Safety & Best Practices](https://datacentertraining.us/courses/electrical-safety-best-practices.html)?
-
-This course is an awareness-level foundation for anyone who works around data center electrical systems. [Electrical Safety & Best Practices](https://datacentertraining.us/courses/electrical-safety-best-practices.html) goes further into NFPA 70E principles, PPE and emergency procedures for electrical workers and staff who work near energized equipment more regularly.
-
 ### Does this course cover switchgear safety?
 
 It covers the hazard-recognition side: why switchgear, UPS modules, PDUs and remote power panels carry shock and arc flash risk, how safe work distances apply around them, and when to stop and call a qualified electrician. It does not teach switching or operating switchgear; that takes deeper training and your site's switching procedures.
 
-2 hrs
+4 hrs
 
 4 modules · self-paced online
 
-$99.99
+$149.99
 
 - [Enroll Now](https://datacentertraining.us/checkout.html?item=data-center-electrical-safety)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=data-center-electrical-safety)
@@ -106,11 +102,11 @@ $99.99
 - Delivered by an IACET-accredited provider
 - Volume pricing available for teams
 
-This course is part of the **Power & Electrical Systems Bundle** (14 courses). Buy the bundle for $986.99 instead of $1,603.86 separately — [save $616.87 →](https://datacentertraining.us/checkout.html?item=bundle-power-electrical)
+This course is part of the **Power & Electrical Systems Bundle** (13 courses). Buy the bundle for $986.99 instead of $1,853.87 separately — [save $866.88 →](https://datacentertraining.us/checkout.html?item=bundle-power-electrical)
 
 ## Related Courses
 
-More training from the Power & Electrical Systems Bundle. [Browse all 43 courses](https://datacentertraining.us/courses.html) or [save with a bundle](https://datacentertraining.us/bundles.html).
+More training from the Power & Electrical Systems Bundle. [Browse all 42 courses](https://datacentertraining.us/courses.html) or [save with a bundle](https://datacentertraining.us/bundles.html).
 
 ### [Power Systems & Electrical Fundamentals](https://datacentertraining.us/courses/power-systems-electrical-fundamentals.html)
 
@@ -126,7 +122,7 @@ Power & Electrical · Modular Specialization
 
 4 hrs
 
-$99.99
+$149.99
 
 ### [Generator Operations & Maintenance](https://datacentertraining.us/courses/generator-operations-maintenance.html)
 
@@ -134,15 +130,7 @@ Power & Electrical · Modular Specialization
 
 4 hrs
 
-$99.99
-
-### [Electrical Safety & Best Practices](https://datacentertraining.us/courses/electrical-safety-best-practices.html)
-
-Power & Electrical · Modular Specialization
-
-4 hrs
-
-$99.99
+$149.99
 
 ### [Batteries and DC Circuits](https://datacentertraining.us/courses/batteries-dc-circuits.html)
 
@@ -157,6 +145,14 @@ $99.99
 Power & Electrical · Modular Specialization
 
 2 hrs
+
+$99.99
+
+### [Data Center Emergency Power Off (EPO) Procedures Training](https://datacentertraining.us/courses/data-center-epo-procedures.html)
+
+Power & Electrical · Modular Specialization
+
+1 hr
 
 $99.99
 

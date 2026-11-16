@@ -234,7 +234,7 @@ Environmental, health, and safety (EHS) managers run the programs that keep work
 - **A typical day:** site walks, auditing LOTO and work permits, reviewing contractor safety plans, investigating incidents and near misses, tracking training records, and preparing environmental reports.
 - **Common backgrounds:** safety professionals, industrial hygiene, environmental science, and construction safety. Some hold credentials offered by the Board of Certified Safety Professionals.
 - **Key skills:** OSHA general industry standards (29 CFR 1910), NFPA 70E, environmental regulations, training design, and influencing people without direct authority.
-- **How to prepare:** [Facility Environmental Compliance](https://datacentertraining.us/courses/facility-environmental-compliance.html), [Electrical Safety & Best Practices](https://datacentertraining.us/courses/electrical-safety-best-practices.html), and [Lithium-Ion Battery Thermal Runaway and Emergency Response](https://datacentertraining.us/courses/lithium-ion-thermal-runaway-emergency-response.html).
+- **How to prepare:** [Facility Environmental Compliance](https://datacentertraining.us/courses/facility-environmental-compliance.html), [Data Center Electrical Safety Training](https://datacentertraining.us/courses/data-center-electrical-safety.html), and [Lithium-Ion Battery Thermal Runaway and Emergency Response](https://datacentertraining.us/courses/lithium-ion-thermal-runaway-emergency-response.html).
 - **Where it can lead:** regional or corporate EHS director.
 
 ## Pay, schedules, and outlook
@@ -259,9 +259,9 @@ Power & Electrical · Modular Specialization
 
 Foundational electrical safety practices for anyone working around data center power systems.
 
-2 hrs
+4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=data-center-electrical-safety)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=data-center-electrical-safety)
@@ -313,7 +313,7 @@ Terminate, test, and troubleshoot data center fiber to ANSI/TIA-942 standards.
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=fiber-optics-network-cabling)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=fiber-optics-network-cabling)
@@ -344,11 +344,11 @@ $267.99
 - [Enroll](https://datacentertraining.us/checkout.html?item=infrastructure-commissioning-startup)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=infrastructure-commissioning-startup)
 
-Save 52% with the bundle
+Save 58% with the bundle
 
 Complete Data Center Professional Bundle
 
-43 courses · 184 hours · **$2,928.99** per seat, instead of ~~$6,067.57~~ bought separately
+42 courses · 182 hours · **$2,928.99** per seat, instead of ~~$6,997.58~~ bought separately
 
 - [Enroll in the Bundle](https://datacentertraining.us/checkout.html?item=bundle-complete-catalog)
 - [Compare Bundles](https://datacentertraining.us/bundles.html)

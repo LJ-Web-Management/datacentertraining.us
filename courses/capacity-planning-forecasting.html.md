@@ -50,7 +50,7 @@ Capacity problems are expensive when discovered late. Adding utility service, sw
 - **Track:** Design & Planning
 - **Course type:** Modular Specialization
 - **Length:** 4 hrs, self-paced online
-- **Price:** $99.99 per seat, volume pricing for teams
+- **Price:** $149.99 per seat, volume pricing for teams
 - **Included in:** [Design, Planning & Commissioning Bundle](https://datacentertraining.us/bundles.html) and the [Complete Data Center Professional Bundle](https://datacentertraining.us/bundles.html)
 - **Credential:** Certificate of completion from HAZWOPER OSHA Training, LLC, [verifiable online](https://datacentertraining.us/certifications.html#verify). The company is an [IACET Accredited Provider](https://datacentertraining.us/certifications.html#iacet-scope), but this course does not award IACET CEUs or PDHs.
 
@@ -72,7 +72,7 @@ Facility and IT planners, capacity managers and engineering leads responsible fo
 
 4 modules · self-paced online
 
-$99.99
+$149.99
 
 - [Enroll Now](https://datacentertraining.us/checkout.html?item=capacity-planning-forecasting)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=capacity-planning-forecasting)
@@ -82,11 +82,11 @@ $99.99
 - Delivered by an IACET-accredited provider
 - Volume pricing available for teams
 
-This course is part of the **Design, Planning & Commissioning Bundle** (4 courses). Buy the bundle for $557.99 instead of $961.96 separately — [save $403.97 →](https://datacentertraining.us/checkout.html?item=bundle-design-planning)
+This course is part of the **Design, Planning & Commissioning Bundle** (4 courses). Buy the bundle for $557.99 instead of $1,011.96 separately — [save $453.97 →](https://datacentertraining.us/checkout.html?item=bundle-design-planning)
 
 ## Related Courses
 
-More training from the Design, Planning & Commissioning Bundle. [Browse all 43 courses](https://datacentertraining.us/courses.html) or [save with a bundle](https://datacentertraining.us/bundles.html).
+More training from the Design, Planning & Commissioning Bundle. [Browse all 42 courses](https://datacentertraining.us/courses.html) or [save with a bundle](https://datacentertraining.us/bundles.html).
 
 ### [Data Center Design Fundamentals](https://datacentertraining.us/courses/data-center-design-fundamentals.html)
 

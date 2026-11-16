@@ -4,7 +4,7 @@
   "api_version": "1",
   "base_url": "https://datacentertraining.us/api/v1/",
   "last_updated": "2026-11-16",
-  "content_hash": "eed4b2194e342473",
+  "content_hash": "25f89b34bee6a463",
   "manifest": "https://datacentertraining.us/.well-known/mcp.json",
   "openapi": "https://datacentertraining.us/openapi.json",
   "developer_portal": "https://datacentertraining.us/developers/",
@@ -32,7 +32,7 @@
     "search": "https://datacentertraining.us/api/v1/search.json"
   },
   "counts": {
-    "courses": 43,
+    "courses": 42,
     "bundles": 7,
     "tracks": 6,
     "roles": 6,

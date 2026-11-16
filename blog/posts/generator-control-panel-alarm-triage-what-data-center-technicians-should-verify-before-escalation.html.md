@@ -122,13 +122,13 @@ This topic sits in the Power & Electrical track because generator alarm triage c
 
 The most direct individual course is **Generator Operations & Maintenance**, which can support a technician's understanding of generator components, routine checks, maintenance coordination, and the difference between a normal test condition and an abnormal operating state. **Emergency/Standby Power Systems Fundamentals** is useful for technicians, supervisors, and NOC partners who need to understand how generators, transfer equipment, emergency distribution, and ride-through systems work together.
 
-For the safety layer, **Electrical Safety & Best Practices** helps frame the boundaries around inspection, switching, isolation, and escalation. A team that works around starting batteries should also consider **Data Center UPS and Battery System Safety Training** when battery rooms and UPS plants are part of the same response path.
+For the safety layer, **Data Center Electrical Safety Training** helps frame the boundaries around inspection, switching, isolation, and escalation. A team that works around starting batteries should also consider **Data Center UPS and Battery System Safety Training** when battery rooms and UPS plants are part of the same response path.
 
 For a role-based plan, a facility manager might assign:
 
 - Generator Operations & Maintenance to mechanical and electrical technicians who inspect or service the sets.
 - Emergency/Standby Power Systems Fundamentals to operations supervisors and NOC staff who interpret source availability.
-- Electrical Safety & Best Practices to anyone who may operate, isolate, or coordinate work around emergency distribution.
+- Data Center Electrical Safety Training to anyone who may operate, isolate, or coordinate work around emergency distribution.
 - Data Center Operations Management to leads who own procedures, logs, handoffs, and readiness reviews.
 
 The **Power & Electrical Systems Bundle** is a practical fit when a team needs coordinated coverage across power architecture, UPS, generators, batteries, EPO procedures, electrical safety, and emergency power. These are self-paced knowledge courses that support a site's training program. They are not certification exams and do not replace site qualification, manufacturer instruction, or authorization to perform a switching or maintenance task. Learners receive a certificate of completion after finishing the course, but the employer still determines whether a person is qualified for a specific duty.

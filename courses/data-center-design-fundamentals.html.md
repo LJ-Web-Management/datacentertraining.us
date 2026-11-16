@@ -94,11 +94,11 @@ $312.99
 - Delivered by an IACET-accredited provider
 - Volume pricing available for teams
 
-This course is part of the **Design, Planning & Commissioning Bundle** (4 courses). Buy the bundle for $557.99 instead of $961.96 separately — [save $403.97 →](https://datacentertraining.us/checkout.html?item=bundle-design-planning)
+This course is part of the **Design, Planning & Commissioning Bundle** (4 courses). Buy the bundle for $557.99 instead of $1,011.96 separately — [save $453.97 →](https://datacentertraining.us/checkout.html?item=bundle-design-planning)
 
 ## Related Courses
 
-More training from the Design, Planning & Commissioning Bundle. [Browse all 43 courses](https://datacentertraining.us/courses.html) or [save with a bundle](https://datacentertraining.us/bundles.html).
+More training from the Design, Planning & Commissioning Bundle. [Browse all 42 courses](https://datacentertraining.us/courses.html) or [save with a bundle](https://datacentertraining.us/bundles.html).
 
 ### [Tier Infrastructure Fundamentals](https://datacentertraining.us/courses/tier-infrastructure-fundamentals.html)
 
@@ -122,7 +122,7 @@ Design & Planning · Modular Specialization
 
 4 hrs
 
-$99.99
+$149.99
 
 ## Ready to Enroll Your Team?
 

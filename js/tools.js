@@ -188,8 +188,8 @@
   var ROLES = {
     electrician: {
       label: 'Electrician or power technician',
-      newbie: ['data-center-electrical-safety', 'electrical-safety-best-practices', 'power-systems-electrical-fundamentals', 'batteries-dc-circuits', 'ups-systems-fundamentals', 'power-distribution-systems-fundamentals', 'generator-fundamentals', 'data-center-arc-flash-safety', 'data-center-ups-battery-safety', 'data-center-epo-procedures', 'emergency-standby-power-systems-fundamentals', 'ups-operations-load-testing', 'generator-operations-maintenance', 'lithium-ion-thermal-runaway-emergency-response'],
-      experienced: ['power-systems-electrical-fundamentals', 'data-center-arc-flash-safety', 'ups-operations-load-testing', 'generator-operations-maintenance', 'emergency-standby-power-systems-fundamentals', 'lithium-ion-thermal-runaway-emergency-response', 'data-center-ups-battery-safety', 'data-center-epo-procedures', 'power-distribution-systems-fundamentals', 'electrical-safety-best-practices', 'data-center-electrical-safety', 'ups-systems-fundamentals', 'generator-fundamentals', 'batteries-dc-circuits']
+      newbie: ['data-center-electrical-safety', 'power-systems-electrical-fundamentals', 'batteries-dc-circuits', 'ups-systems-fundamentals', 'power-distribution-systems-fundamentals', 'generator-fundamentals', 'data-center-arc-flash-safety', 'data-center-ups-battery-safety', 'data-center-epo-procedures', 'emergency-standby-power-systems-fundamentals', 'ups-operations-load-testing', 'generator-operations-maintenance', 'lithium-ion-thermal-runaway-emergency-response'],
+      experienced: ['power-systems-electrical-fundamentals', 'data-center-arc-flash-safety', 'ups-operations-load-testing', 'generator-operations-maintenance', 'emergency-standby-power-systems-fundamentals', 'lithium-ion-thermal-runaway-emergency-response', 'data-center-ups-battery-safety', 'data-center-epo-procedures', 'power-distribution-systems-fundamentals', 'data-center-electrical-safety', 'ups-systems-fundamentals', 'generator-fundamentals', 'batteries-dc-circuits']
     },
     hvac: {
       label: 'HVAC or mechanical technician',

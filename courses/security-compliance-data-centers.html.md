@@ -102,11 +102,11 @@ $291.99
 - Delivered by an IACET-accredited provider
 - Volume pricing available for teams
 
-This course is part of the **Security & Compliance Bundle** (5 courses). Buy the bundle for $400.99 instead of $691.95 separately — [save $290.96 →](https://datacentertraining.us/checkout.html?item=bundle-security-compliance)
+This course is part of the **Security & Compliance Bundle** (5 courses). Buy the bundle for $400.99 instead of $791.95 separately — [save $390.96 →](https://datacentertraining.us/checkout.html?item=bundle-security-compliance)
 
 ## Related Courses
 
-More training from the Security & Compliance Bundle. [Browse all 43 courses](https://datacentertraining.us/courses.html) or [save with a bundle](https://datacentertraining.us/bundles.html).
+More training from the Security & Compliance Bundle. [Browse all 42 courses](https://datacentertraining.us/courses.html) or [save with a bundle](https://datacentertraining.us/bundles.html).
 
 ### [Access Control & Physical Security](https://datacentertraining.us/courses/access-control-physical-security.html)
 
@@ -114,7 +114,7 @@ Security & Compliance · Modular Specialization
 
 4 hrs
 
-$99.99
+$149.99
 
 ### [Facility Environmental Compliance](https://datacentertraining.us/courses/facility-environmental-compliance.html)
 
@@ -122,7 +122,7 @@ Security & Compliance · Modular Specialization
 
 4 hrs
 
-$99.99
+$149.99
 
 ### [Data Center Fire Suppression System Safety Training (Clean Agent Systems)](https://datacentertraining.us/courses/data-center-fire-suppression-safety.html)
 

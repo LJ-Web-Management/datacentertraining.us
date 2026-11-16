@@ -82,7 +82,7 @@ Reduce emergency repairs with a structured preventive maintenance program.
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=preventive-maintenance-planning)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=preventive-maintenance-planning)
@@ -95,7 +95,7 @@ Hands-on mechanical maintenance — piping, chillers, and vibration diagnostics.
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=mechanical-systems-maintenance)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=mechanical-systems-maintenance)
@@ -108,7 +108,7 @@ Core building maintenance fundamentals for facilities teams supporting critical 
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=building-maintenance-fundamentals)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=building-maintenance-fundamentals)
@@ -121,7 +121,7 @@ Size, test, and maintain backup generators with confidence.
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=generator-operations-maintenance)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=generator-operations-maintenance)
@@ -139,11 +139,11 @@ $99.99
 - [Enroll](https://datacentertraining.us/checkout.html?item=roofing-systems-maintenance-fundamentals)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=roofing-systems-maintenance-fundamentals)
 
-Save 42% with the bundle
+Save 49% with the bundle
 
 Operations & Reliability Bundle
 
-10 courses · 44 hours · **$830.99** per seat, instead of ~~$1,433.90~~ bought separately
+10 courses · 44 hours · **$830.99** per seat, instead of ~~$1,633.90~~ bought separately
 
 - [Enroll in the Bundle](https://datacentertraining.us/checkout.html?item=bundle-operations-reliability)
 - [Compare Bundles](https://datacentertraining.us/bundles.html)

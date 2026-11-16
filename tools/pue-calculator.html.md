@@ -115,7 +115,7 @@ Cut operating costs with a measurable PUE optimization roadmap.
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=energy-efficiency-pue-optimization)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=energy-efficiency-pue-optimization)
@@ -159,11 +159,11 @@ $276.99
 - [Enroll](https://datacentertraining.us/checkout.html?item=monitoring-automation-bms-systems)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=monitoring-automation-bms-systems)
 
-Save 42% with the bundle
+Save 51% with the bundle
 
 Cooling & Facilities Efficiency Bundle
 
-6 courses · 24 hours · **$462.99** per seat, instead of ~~$798.94~~ bought separately
+6 courses · 24 hours · **$462.99** per seat, instead of ~~$948.94~~ bought separately
 
 - [Enroll in the Bundle](https://datacentertraining.us/checkout.html?item=bundle-cooling-efficiency)
 - [Compare Bundles](https://datacentertraining.us/bundles.html)

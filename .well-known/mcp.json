@@ -2,7 +2,7 @@
   "schema_version": "2026-06",
   "name": "datacentertraining-us",
   "title": "Data Center Training",
-  "description": "Read-only catalog tools for Data Center Training (datacentertraining.us): 43 online, self-paced data center courses (184 hours), 7 bundles, and 6 role-based learning tracks, delivered by HAZWOPER OSHA Training, LLC, an IACET Accredited Provider.",
+  "description": "Read-only catalog tools for Data Center Training (datacentertraining.us): 42 online, self-paced data center courses (182 hours), 7 bundles, and 6 role-based learning tracks, delivered by HAZWOPER OSHA Training, LLC, an IACET Accredited Provider.",
   "version": "1.1.0",
   "last_updated": "2026-11-16",
   "homepage": "https://datacentertraining.us/",
@@ -327,7 +327,7 @@
             "limit": 3
           },
           "output": {
-            "total_matching": 6,
+            "total_matching": 5,
             "returned": 3,
             "courses": [
               {
@@ -898,8 +898,8 @@
                 "power-systems-electrical-fundamentals",
                 "ups-operations-load-testing",
                 "generator-operations-maintenance",
-                "electrical-safety-best-practices",
-                "batteries-dc-circuits"
+                "batteries-dc-circuits",
+                "data-center-arc-flash-safety"
               ],
               "last_updated": "2026-11-16"
             },
@@ -1098,9 +1098,9 @@
                 "name": "Security & Compliance Bundle",
                 "track": "Security & Compliance Track",
                 "price_usd": 400.99,
-                "list_price_usd": 691.95,
-                "savings_usd": 290.96,
-                "savings_percent": 42,
+                "list_price_usd": 791.95,
+                "savings_usd": 390.96,
+                "savings_percent": 49,
                 "course_count": 5,
                 "total_hours": 19,
                 "audience": "For security and compliance leads building an audit-ready physical security, fire safety, and environmental compliance program.",
@@ -1118,11 +1118,11 @@
                 "name": "Complete Data Center Professional Bundle",
                 "track": "All tracks",
                 "price_usd": 2928.99,
-                "list_price_usd": 6067.57,
-                "savings_usd": 3138.58,
-                "savings_percent": 52,
-                "course_count": 43,
-                "total_hours": 184,
+                "list_price_usd": 6997.58,
+                "savings_usd": 4068.59,
+                "savings_percent": 58,
+                "course_count": 42,
+                "total_hours": 182,
                 "audience": "Every course in the catalog — all 6 role-based tracks in one enrollment. The single path for a team that wants full coverage across design, power, cooling, security, operations, and monitoring, at the deepest discount we offer.",
                 "url": "https://datacentertraining.us/bundles.html",
                 "course_ids": [
@@ -1146,7 +1146,6 @@
                   "data-center-ups-battery-safety",
                   "dcim-platform-fundamentals",
                   "disaster-recovery-business-continuity",
-                  "electrical-safety-best-practices",
                   "emergency-standby-power-systems-fundamentals",
                   "energy-efficiency-pue-optimization",
                   "facility-environmental-compliance",
@@ -1448,8 +1447,8 @@
               "id": "bundle-cooling-efficiency",
               "name": "Cooling & Facilities Efficiency Bundle",
               "price_usd": 462.99,
-              "list_price_usd": 798.94,
-              "savings_usd": 335.95,
+              "list_price_usd": 948.94,
+              "savings_usd": 485.95,
               "course_count": 6,
               "total_hours": 24,
               "url": "https://datacentertraining.us/bundles.html"
@@ -1480,7 +1479,7 @@
                 "category": "Cooling & Efficiency",
                 "course_type": "modular",
                 "duration_hours": 4,
-                "price_usd": 99.99,
+                "price_usd": 149.99,
                 "standards": [
                   "PUE"
                 ],

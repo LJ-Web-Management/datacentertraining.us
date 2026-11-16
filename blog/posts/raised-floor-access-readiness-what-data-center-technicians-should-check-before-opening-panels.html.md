@@ -104,12 +104,12 @@ Raised-floor access is a cross-functional readiness problem. The best plan gives
 
 For technicians and supervisors who need a foundation for floor panels, underfloor pathways, housekeeping, access control, and facility work, **Raised Floor & Confined Space Awareness** is a direct fit. It can support a shared vocabulary for floor systems and restricted areas, but it does not authorize entry or replace the employer's confined-space program.
 
-**Building Maintenance Fundamentals** is useful for facilities staff who coordinate panels, pedestals, access routes, building services, and maintenance planning. **Electrical Safety & Best Practices** is relevant for electricians and multi-trade teams who must understand the relationship between access work, energized equipment, clearances, and the site's electrical safety program. **Data Center Operations Management** helps facility managers connect a small access task to change control, work orders, incident response, documentation, and operational ownership.
+**Building Maintenance Fundamentals** is useful for facilities staff who coordinate panels, pedestals, access routes, building services, and maintenance planning. **Data Center Electrical Safety Training** is relevant for electricians and multi-trade teams who must understand the relationship between access work, energized equipment, clearances, and the site's electrical safety program. **Data Center Operations Management** helps facility managers connect a small access task to change control, work orders, incident response, documentation, and operational ownership.
 
 For a broader operations team, the **Operations & Reliability Bundle** can provide a shared learning layer across operations management, preventive maintenance, incident response, building maintenance, and raised-floor or confined-space awareness. A role-based plan might look like this:
 
 - Assign Raised Floor & Confined Space Awareness and Building Maintenance Fundamentals to technicians who perform routine access and inspection.
-- Assign Electrical Safety & Best Practices and the site's electrical-specific training to electricians and authorized power personnel.
+- Assign Data Center Electrical Safety Training and the site's electrical-specific training to electricians and authorized power personnel.
 - Assign Data Center Operations Management and Preventive Maintenance Planning to facility managers, planners, and shift leads.
 - Add Monitoring, Automation & BMS Systems or DCIM Platform Fundamentals when panel access is triggered by a leak, temperature, or controls alarm.
 - Use a supervised walkdown, a tabletop scenario, and the actual site closeout form to connect course concepts to the facility.

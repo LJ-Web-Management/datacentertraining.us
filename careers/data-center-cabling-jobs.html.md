@@ -165,7 +165,7 @@ Terminate, test, and troubleshoot data center fiber to ANSI/TIA-942 standards.
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=fiber-optics-network-cabling)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=fiber-optics-network-cabling)
@@ -202,9 +202,9 @@ Power & Electrical · Modular Specialization
 
 Foundational electrical safety practices for anyone working around data center power systems.
 
-2 hrs
+4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=data-center-electrical-safety)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=data-center-electrical-safety)
@@ -222,11 +222,11 @@ $99.99
 - [Enroll](https://datacentertraining.us/checkout.html?item=data-center-physical-security-access-control)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=data-center-physical-security-access-control)
 
-Save 42% with the bundle
+Save 56% with the bundle
 
 Monitoring & Smart Facility Bundle
 
-4 courses · 22 hours · **$333.99** per seat, instead of ~~$576.96~~ bought separately
+4 courses · 22 hours · **$333.99** per seat, instead of ~~$756.96~~ bought separately
 
 - [Enroll in the Bundle](https://datacentertraining.us/checkout.html?item=bundle-monitoring-smart-facility)
 - [Compare Bundles](https://datacentertraining.us/bundles.html)

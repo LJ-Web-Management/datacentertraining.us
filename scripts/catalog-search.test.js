@@ -17,7 +17,7 @@ const rows = [...html.matchAll(/<div class="course-row"([^>]*)>/g)].map((m) => {
 const find = (q) => rows.filter((r) => search.matches(r.haystack, q)).map((r) => r.name);
 
 test('every catalog row carries generated search keywords', () => {
-  assert.strictEqual(rows.length, 43);
+  assert.strictEqual(rows.length, 42);
   for (const r of rows) assert.ok(r.keywords.length > 40, r.name + ' has no data-keywords');
 });
 

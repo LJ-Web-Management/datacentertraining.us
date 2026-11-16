@@ -2,19 +2,19 @@
 
 Data Center Training · Online Courses & Bundles
 
-43 online courses and 184 hours of training covering the full data center discipline: **design** and **Tier infrastructure** for engineers, **power** and **cooling systems** for electricians and HVAC techs, **security and compliance** for audit-ready teams, and **operations, DR, and monitoring** for facility managers. Buy courses individually or enroll the whole catalog in one bundle.
+42 online courses and 182 hours of training covering the full data center discipline: **design** and **Tier infrastructure** for engineers, **power** and **cooling systems** for electricians and HVAC techs, **security and compliance** for audit-ready teams, and **operations, DR, and monitoring** for facility managers. Buy courses individually or enroll the whole catalog in one bundle.
 
-- [See All 43 Courses](https://datacentertraining.us/courses.html)
+- [See All 42 Courses](https://datacentertraining.us/courses.html)
 - [Browse Bundles](https://datacentertraining.us/bundles.html)
 
-- **43 Courses** 184 hrs total
+- **42 Courses** 182 hrs total
 - **1-8 Hrs** self-paced, per course
 - **Instant** certificate
-- **Up to 52%** off with bundles
+- **Up to 58%** off with bundles
 
 Free resources: [Knowledge Center](https://datacentertraining.us/learn/) [Training by Topic](https://datacentertraining.us/training/) [Career Quiz](https://datacentertraining.us/quizzes/career-quiz.html) [Calculators](https://datacentertraining.us/tools/) [Careers](https://datacentertraining.us/careers/)
 
-43 Courses, 7 Bundles
+42 Courses, 7 Bundles
 
 Course Snapshot
 
@@ -26,7 +26,7 @@ Buy exactly the courses your team needs.
 - [Security & Compliance for Data Centers 8 hrs](https://datacentertraining.us/courses/security-compliance-data-centers.html)
 - [UPS Operations & Load Testing 4 hrs](https://datacentertraining.us/courses/ups-operations-load-testing.html)
 
-[See all 43 courses ↓](https://datacentertraining.us/courses.html)
+[See all 42 courses ↓](https://datacentertraining.us/courses.html)
 
 Standards referenced, by course:
 
@@ -41,15 +41,15 @@ Training
 
 ## Everything You Need to Plan Your Team's Training
 
-Data Center Training covers 43 courses across six disciplines. Dig into the full catalog, bundle pricing, role-based recommendations, accreditation, or common questions.
+Data Center Training covers 42 courses across six disciplines. Dig into the full catalog, bundle pricing, role-based recommendations, accreditation, or common questions.
 
 ### [Course Catalog](https://datacentertraining.us/courses.html)
 
-Search, sort, and filter all 43 courses by track, duration, or price, starting at $99.99.
+Search, sort, and filter all 42 courses by track, duration, or price, starting at $99.99.
 
 ### [Bundles](https://datacentertraining.us/bundles.html)
 
-Save up to 52% with a role-based track bundle or the Complete Data Center Professional Bundle.
+Save up to 58% with a role-based track bundle or the Complete Data Center Professional Bundle.
 
 ### [Who It's For](https://datacentertraining.us/who.html)
 

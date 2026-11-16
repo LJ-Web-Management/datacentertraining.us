@@ -657,7 +657,7 @@ NFPA 70, the model code for electrical installations in the United States. It be
 
 NFPA 70E
 
-The NFPA standard for electrical safety in the workplace, covering electrically safe work conditions, risk assessment, approach boundaries, arc flash PPE, and training. See [Electrical Safety & Best Practices](https://datacentertraining.us/courses/electrical-safety-best-practices.html).
+The NFPA standard for electrical safety in the workplace, covering electrically safe work conditions, risk assessment, approach boundaries, arc flash PPE, and training. See [Data Center Electrical Safety Training](https://datacentertraining.us/courses/data-center-electrical-safety.html).
 
 NOC (Network Operations Center)
 
@@ -1084,19 +1084,6 @@ $280.99
 - [Enroll](https://datacentertraining.us/checkout.html?item=tier-infrastructure-fundamentals)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=tier-infrastructure-fundamentals)
 
-### [Electrical Safety & Best Practices](https://datacentertraining.us/courses/electrical-safety-best-practices.html)
-
-Power & Electrical · Modular Specialization · NFPA 70E
-
-NFPA 70E-aligned electrical safety fundamentals for facility staff.
-
-4 hrs
-
-$99.99
-
-- [Enroll](https://datacentertraining.us/checkout.html?item=electrical-safety-best-practices)
-- [Add to Cart](https://datacentertraining.us/cart.html?add=electrical-safety-best-practices)
-
 ### [Security & Compliance for Data Centers](https://datacentertraining.us/courses/security-compliance-data-centers.html)
 
 Security & Compliance · Comprehensive Program · SOC 2 / ISO 27001
@@ -1123,11 +1110,11 @@ $276.99
 - [Enroll](https://datacentertraining.us/checkout.html?item=monitoring-automation-bms-systems)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=monitoring-automation-bms-systems)
 
-Save 52% with the bundle
+Save 58% with the bundle
 
 Complete Data Center Professional Bundle
 
-43 courses · 184 hours · **$2,928.99** per seat, instead of ~~$6,067.57~~ bought separately
+42 courses · 182 hours · **$2,928.99** per seat, instead of ~~$6,997.58~~ bought separately
 
 - [Enroll in the Bundle](https://datacentertraining.us/checkout.html?item=bundle-complete-catalog)
 - [Compare Bundles](https://datacentertraining.us/bundles.html)

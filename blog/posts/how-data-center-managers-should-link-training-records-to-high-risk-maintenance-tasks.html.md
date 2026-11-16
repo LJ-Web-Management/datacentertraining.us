@@ -94,7 +94,7 @@ For a new or expanding program, begin with the role and hazard profile. The site
 
 The site’s real course catalog includes several useful building blocks:
 
-- **Data Center Electrical Safety Training** and **Electrical Safety & Best Practices** can support a baseline electrical safety plan for staff who work around energized systems or electrical maintenance boundaries.
+- **Data Center Electrical Safety Training** can support a baseline electrical safety plan for staff who work around energized systems or electrical maintenance boundaries.
 - **Data Center UPS and Battery System Safety Training**, **Batteries and DC Circuits**, and **Lithium-Ion Battery Thermal Runaway and Emergency Response Training** can support role-specific learning for UPS rooms and battery hazards. The site should still add equipment-specific procedures, emergency contacts, and supervised demonstrations.
 - **Data Center Cooling System and Refrigerant Safety Training**, **HVAC Systems Troubleshooting Essentials**, and **Mechanical Systems & Equipment Maintenance** fit mechanical teams whose work includes cooling equipment, maintenance isolation, and refrigerant-related hazards.
 - **Data Center Physical Security and Access Control Training** and **Security & Compliance for Data Centers** can support security leads, facility managers, and contractor coordinators who need consistent access, escort, and evidence practices.

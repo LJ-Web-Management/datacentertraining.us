@@ -1,6 +1,6 @@
 # Data Center Training - Full Catalog
 
-> Data Center Training (datacentertraining.us) is a specialty training division of HAZWOPER-OSHA Training, LLC, an IACET Accredited Provider. 43 online, self-paced data center courses (184 hours total) in design, operations, power, cooling, security, and facilities management. Every course awards a certificate of completion.
+> Data Center Training (datacentertraining.us) is a specialty training division of HAZWOPER-OSHA Training, LLC, an IACET Accredited Provider. 42 online, self-paced data center courses (182 hours total) in design, operations, power, cooling, security, and facilities management. Every course awards a certificate of completion.
 
 Last updated: 2026-11-16
 Canonical source: https://datacentertraining.us/api/v1/courses.json (same records as JSON). Tools: https://datacentertraining.us/.well-known/mcp.json
@@ -77,7 +77,7 @@ Modules:
 - course_type: Modular Specialization
 - duration_hours: 4
 - modules: 4
-- price_usd: 99.99
+- price_usd: 149.99
 - standards_aligned: none named
 - bundles: Power & Electrical Systems Bundle ($986.99); Complete Data Center Professional Bundle ($2928.99)
 - audience: Power technicians responsible for UPS operation and maintenance.
@@ -117,7 +117,7 @@ Modules:
 - course_type: Modular Specialization
 - duration_hours: 4
 - modules: 4
-- price_usd: 99.99
+- price_usd: 149.99
 - standards_aligned: none named
 - bundles: Power & Electrical Systems Bundle ($986.99); Complete Data Center Professional Bundle ($2928.99)
 - audience: Facilities technicians responsible for backup power systems.
@@ -145,46 +145,6 @@ Modules:
 2. Load-Bank Testing Procedures: Proving generator capacity under real load conditions.
 3. Fuel Management & Maintenance: Fuel quality, storage, and maintenance intervals that prevent startup failures.
 4. Emergency Startup Protocols: Cold-start procedures for when it matters most.
-
-### Electrical Safety & Best Practices
-
-- id: electrical-safety-best-practices
-- catalog_number: 433
-- url: https://datacentertraining.us/courses/electrical-safety-best-practices.html
-- api_url: https://datacentertraining.us/api/v1/courses/electrical-safety-best-practices.json
-- track: Power & Electrical Systems Track
-- category: Power & Electrical
-- course_type: Modular Specialization
-- duration_hours: 4
-- modules: 4
-- price_usd: 99.99
-- standards_aligned: NFPA 70E
-- bundles: Power & Electrical Systems Bundle ($986.99); Complete Data Center Professional Bundle ($2928.99)
-- audience: Electrical workers and facilities staff working near energized equipment.
-- prerequisites: No prior certification required. Relevant equipment exposure is helpful.
-- language: English
-- delivery: Online, self-paced, no completion deadline
-- certificate: Certificate of completion from HAZWOPER OSHA Training, LLC; no fixed expiration; follow your employer's refresher policy; verify at https://hazwoper-osha.com/certificate-verification
-- availability: enroll online
-- summary: NFPA 70E-aligned electrical safety fundamentals for facility staff.
-
-Safety fundamentals for electrical workers: NFPA 70E principles, personal protective equipment, and hazard identification. This course covers the core safety knowledge every facility employee working near electrical systems should have. You'll cover lockout/tagout concepts and emergency response procedures, finishing with a solid understanding of electrical workplace safety fundamentals.
-
-Learning outcomes:
-- Apply core NFPA 70E electrical safety principles on the job
-- Select and use appropriate PPE for electrical work
-- Recognize common electrical hazards before they cause injury
-- Follow lockout/tagout and emergency response procedures correctly
-- Certificate of completion on finish
-- Self-paced — start and stop anytime
-- Delivered by an IACET-accredited provider
-- Volume pricing available for teams
-
-Modules:
-1. Electrical Safety Standards: Core NFPA 70E principles every technician should know.
-2. PPE & Equipment: Selecting and using PPE correctly for the hazard level.
-3. Hazard Recognition: Recognizing electrical hazards before they become incidents.
-4. Emergency Procedures: Emergency response when something goes wrong near energized equipment.
 
 ### Batteries and DC Circuits
 
@@ -275,9 +235,9 @@ Modules:
 - track: Power & Electrical Systems Track
 - category: Power & Electrical
 - course_type: Modular Specialization
-- duration_hours: 2
+- duration_hours: 4
 - modules: 4
-- price_usd: 99.99
+- price_usd: 149.99
 - standards_aligned: none named
 - bundles: Power & Electrical Systems Bundle ($986.99); Complete Data Center Professional Bundle ($2928.99)
 - audience: Electricians, facilities technicians, and IT staff working near energized equipment.
@@ -397,7 +357,7 @@ Modules:
 - course_type: Modular Specialization
 - duration_hours: 4
 - modules: 4
-- price_usd: 99.99
+- price_usd: 149.99
 - standards_aligned: none named
 - bundles: Power & Electrical Systems Bundle ($986.99); Complete Data Center Professional Bundle ($2928.99)
 - audience: Facilities technicians responsible for standby and emergency power systems.
@@ -437,7 +397,7 @@ Modules:
 - course_type: Modular Specialization
 - duration_hours: 4
 - modules: 4
-- price_usd: 99.99
+- price_usd: 149.99
 - standards_aligned: none named
 - bundles: Power & Electrical Systems Bundle ($986.99); Complete Data Center Professional Bundle ($2928.99)
 - audience: Facilities technicians who need generator theory before hands-on operations training.
@@ -477,7 +437,7 @@ Modules:
 - course_type: Modular Specialization
 - duration_hours: 4
 - modules: 4
-- price_usd: 99.99
+- price_usd: 149.99
 - standards_aligned: none named
 - bundles: Power & Electrical Systems Bundle ($986.99); Complete Data Center Professional Bundle ($2928.99)
 - audience: Facilities and emergency response staff working near lithium-ion battery installations.
@@ -517,7 +477,7 @@ Modules:
 - course_type: Modular Specialization
 - duration_hours: 4
 - modules: 4
-- price_usd: 99.99
+- price_usd: 149.99
 - standards_aligned: none named
 - bundles: Power & Electrical Systems Bundle ($986.99); Complete Data Center Professional Bundle ($2928.99)
 - audience: Electricians and technicians who need power distribution fundamentals before working on PDU systems.
@@ -642,7 +602,7 @@ Modules:
 - course_type: Modular Specialization
 - duration_hours: 4
 - modules: 4
-- price_usd: 99.99
+- price_usd: 149.99
 - standards_aligned: none named
 - bundles: Cooling & Facilities Efficiency Bundle ($462.99); Complete Data Center Professional Bundle ($2928.99)
 - audience: HVAC technicians working on data center cooling equipment.
@@ -682,7 +642,7 @@ Modules:
 - course_type: Modular Specialization
 - duration_hours: 4
 - modules: 4
-- price_usd: 99.99
+- price_usd: 149.99
 - standards_aligned: PUE
 - bundles: Cooling & Facilities Efficiency Bundle ($462.99); Complete Data Center Professional Bundle ($2928.99)
 - audience: Facility managers accountable for energy costs and sustainability targets.
@@ -722,7 +682,7 @@ Modules:
 - course_type: Modular Specialization
 - duration_hours: 4
 - modules: 4
-- price_usd: 99.99
+- price_usd: 149.99
 - standards_aligned: none named
 - bundles: Cooling & Facilities Efficiency Bundle ($462.99); Complete Data Center Professional Bundle ($2928.99)
 - audience: Mechanical technicians responsible for facility equipment maintenance.
@@ -930,7 +890,7 @@ Modules:
 - course_type: Modular Specialization
 - duration_hours: 4
 - modules: 4
-- price_usd: 99.99
+- price_usd: 149.99
 - standards_aligned: none named
 - bundles: Operations & Reliability Bundle ($830.99); Complete Data Center Professional Bundle ($2928.99)
 - audience: Facilities staff building or improving a maintenance program.
@@ -970,7 +930,7 @@ Modules:
 - course_type: Modular Specialization
 - duration_hours: 4
 - modules: 4
-- price_usd: 99.99
+- price_usd: 149.99
 - standards_aligned: none named
 - bundles: Operations & Reliability Bundle ($830.99); Complete Data Center Professional Bundle ($2928.99)
 - audience: Technicians and engineers responsible for incident response.
@@ -1050,7 +1010,7 @@ Modules:
 - course_type: Modular Specialization
 - duration_hours: 4
 - modules: 4
-- price_usd: 99.99
+- price_usd: 149.99
 - standards_aligned: none named
 - bundles: Operations & Reliability Bundle ($830.99); Complete Data Center Professional Bundle ($2928.99)
 - audience: Facilities technicians responsible for general building systems and upkeep.
@@ -1090,7 +1050,7 @@ Modules:
 - course_type: Modular Specialization
 - duration_hours: 4
 - modules: 4
-- price_usd: 99.99
+- price_usd: 149.99
 - standards_aligned: none named
 - bundles: Operations & Reliability Bundle ($830.99); Complete Data Center Professional Bundle ($2928.99)
 - audience: New and developing facility managers responsible for day-to-day site operations.
@@ -1295,7 +1255,7 @@ Modules:
 - course_type: Modular Specialization
 - duration_hours: 4
 - modules: 4
-- price_usd: 99.99
+- price_usd: 149.99
 - standards_aligned: none named
 - bundles: Security & Compliance Bundle ($400.99); Complete Data Center Professional Bundle ($2928.99)
 - audience: Security and facilities staff operating access control and surveillance systems.
@@ -1335,7 +1295,7 @@ Modules:
 - course_type: Modular Specialization
 - duration_hours: 4
 - modules: 4
-- price_usd: 99.99
+- price_usd: 149.99
 - standards_aligned: none named
 - bundles: Security & Compliance Bundle ($400.99); Complete Data Center Professional Bundle ($2928.99)
 - audience: Facility managers responsible for environmental permits and reporting.
@@ -1586,7 +1546,7 @@ Modules:
 - course_type: Modular Specialization
 - duration_hours: 4
 - modules: 4
-- price_usd: 99.99
+- price_usd: 149.99
 - standards_aligned: none named
 - bundles: Design, Planning & Commissioning Bundle ($557.99); Complete Data Center Professional Bundle ($2928.99)
 - audience: Facility and IT planners responsible for growth forecasting.
@@ -1671,7 +1631,7 @@ Modules:
 - course_type: Modular Specialization
 - duration_hours: 4
 - modules: 5
-- price_usd: 99.99
+- price_usd: 149.99
 - standards_aligned: DCIM
 - bundles: Monitoring & Smart Facility Bundle ($333.99); Complete Data Center Professional Bundle ($2928.99)
 - audience: Facility and IT managers evaluating or implementing a DCIM platform.
@@ -1712,7 +1672,7 @@ Modules:
 - course_type: Modular Specialization
 - duration_hours: 4
 - modules: 4
-- price_usd: 99.99
+- price_usd: 149.99
 - standards_aligned: ANSI/TIA-942
 - bundles: Monitoring & Smart Facility Bundle ($333.99); Complete Data Center Professional Bundle ($2928.99)
 - audience: Network technicians and cabling crews working on data center fiber plant.
@@ -1752,7 +1712,7 @@ Modules:
 - course_type: Modular Specialization
 - duration_hours: 6
 - modules: 4
-- price_usd: 99.99
+- price_usd: 179.99
 - standards_aligned: BMS/BAS
 - bundles: Monitoring & Smart Facility Bundle ($333.99); Complete Data Center Professional Bundle ($2928.99)
 - audience: Facilities engineers and technicians working with or evaluating BAS platforms.
@@ -1790,20 +1750,20 @@ Prices are per seat in USD. Seat-count volume discounts apply at checkout: 2-10 
 - id: bundle-power-electrical
 - track: Power & Electrical Systems Track
 - price_usd: 986.99
-- list_price_usd: 1603.86 (sum of individual course prices)
-- savings: $616.87 (38%)
-- courses: 14, 47 hrs
+- list_price_usd: 1853.87 (sum of individual course prices)
+- savings: $866.88 (47%)
+- courses: 13, 45 hrs
 - audience: For electricians and power technicians who own the electrical chain end to end: from data center-scale power architecture down to UPS, generator, battery safety, and daily electrical work practices.
 - url: https://datacentertraining.us/bundles.html
-- course_ids: power-systems-electrical-fundamentals, ups-operations-load-testing, generator-operations-maintenance, electrical-safety-best-practices, batteries-dc-circuits, data-center-arc-flash-safety, data-center-electrical-safety, data-center-epo-procedures, data-center-ups-battery-safety, emergency-standby-power-systems-fundamentals, generator-fundamentals, lithium-ion-thermal-runaway-emergency-response, power-distribution-systems-fundamentals, ups-systems-fundamentals
+- course_ids: power-systems-electrical-fundamentals, ups-operations-load-testing, generator-operations-maintenance, batteries-dc-circuits, data-center-arc-flash-safety, data-center-electrical-safety, data-center-epo-procedures, data-center-ups-battery-safety, emergency-standby-power-systems-fundamentals, generator-fundamentals, lithium-ion-thermal-runaway-emergency-response, power-distribution-systems-fundamentals, ups-systems-fundamentals
 
 ### Cooling & Facilities Efficiency Bundle
 
 - id: bundle-cooling-efficiency
 - track: Cooling & Facilities Efficiency Track
 - price_usd: 462.99
-- list_price_usd: 798.94 (sum of individual course prices)
-- savings: $335.95 (42%)
+- list_price_usd: 948.94 (sum of individual course prices)
+- savings: $485.95 (51%)
 - courses: 6, 24 hrs
 - audience: For HVAC and facilities technicians who need both the cooling design fundamentals and the hands-on maintenance skills to keep it running efficiently.
 - url: https://datacentertraining.us/bundles.html
@@ -1814,8 +1774,8 @@ Prices are per seat in USD. Seat-count volume discounts apply at checkout: 2-10 
 - id: bundle-operations-reliability
 - track: Operations & Reliability Track
 - price_usd: 830.99
-- list_price_usd: 1433.90 (sum of individual course prices)
-- savings: $602.91 (42%)
+- list_price_usd: 1633.90 (sum of individual course prices)
+- savings: $802.91 (49%)
 - courses: 10, 44 hrs
 - audience: For operations and facility managers who own uptime — daily operations, disaster recovery, preventive maintenance, incident response, and the general facility management skills that hold it all together.
 - url: https://datacentertraining.us/bundles.html
@@ -1826,8 +1786,8 @@ Prices are per seat in USD. Seat-count volume discounts apply at checkout: 2-10 
 - id: bundle-security-compliance
 - track: Security & Compliance Track
 - price_usd: 400.99
-- list_price_usd: 691.95 (sum of individual course prices)
-- savings: $290.96 (42%)
+- list_price_usd: 791.95 (sum of individual course prices)
+- savings: $390.96 (49%)
 - courses: 5, 19 hrs
 - audience: For security and compliance leads building an audit-ready physical security, fire safety, and environmental compliance program.
 - url: https://datacentertraining.us/bundles.html
@@ -1838,8 +1798,8 @@ Prices are per seat in USD. Seat-count volume discounts apply at checkout: 2-10 
 - id: bundle-design-planning
 - track: Design, Planning & Commissioning Track
 - price_usd: 557.99
-- list_price_usd: 961.96 (sum of individual course prices)
-- savings: $403.97 (42%)
+- list_price_usd: 1011.96 (sum of individual course prices)
+- savings: $453.97 (45%)
 - courses: 4, 28 hrs
 - audience: For engineers and project leads taking a facility from design through TIER benchmarking, capacity planning, and commissioning.
 - url: https://datacentertraining.us/bundles.html
@@ -1850,8 +1810,8 @@ Prices are per seat in USD. Seat-count volume discounts apply at checkout: 2-10 
 - id: bundle-monitoring-smart-facility
 - track: Monitoring & Smart Facility Track
 - price_usd: 333.99
-- list_price_usd: 576.96 (sum of individual course prices)
-- savings: $242.97 (42%)
+- list_price_usd: 756.96 (sum of individual course prices)
+- savings: $422.97 (56%)
 - courses: 4, 22 hrs
 - audience: For teams building out monitoring, DCIM, building automation, and the network cabling infrastructure that supports it.
 - url: https://datacentertraining.us/bundles.html
@@ -1862,19 +1822,19 @@ Prices are per seat in USD. Seat-count volume discounts apply at checkout: 2-10 
 - id: bundle-complete-catalog
 - track: All tracks
 - price_usd: 2928.99
-- list_price_usd: 6067.57 (sum of individual course prices)
-- savings: $3138.58 (52%)
-- courses: 43, 184 hrs
+- list_price_usd: 6997.58 (sum of individual course prices)
+- savings: $4068.59 (58%)
+- courses: 42, 182 hrs
 - audience: Every course in the catalog — all 6 role-based tracks in one enrollment. The single path for a team that wants full coverage across design, power, cooling, security, operations, and monitoring, at the deepest discount we offer.
 - url: https://datacentertraining.us/bundles.html
-- course_ids: access-control-physical-security, batteries-dc-circuits, building-automation-systems-fundamentals, building-envelope-fundamentals, building-maintenance-fundamentals, business-continuity-disaster-recovery-planning, capacity-planning-forecasting, cooling-systems-design-optimization, data-center-arc-flash-safety, data-center-cooling-refrigerant-safety, data-center-design-fundamentals, data-center-electrical-safety, data-center-epo-procedures, data-center-fire-suppression-safety, data-center-operations-management, data-center-physical-security-access-control, data-center-raised-floor-confined-space, data-center-ups-battery-safety, dcim-platform-fundamentals, disaster-recovery-business-continuity, electrical-safety-best-practices, emergency-standby-power-systems-fundamentals, energy-efficiency-pue-optimization, facility-environmental-compliance, facility-management-fundamentals, fiber-optics-network-cabling, generator-fundamentals, generator-operations-maintenance, hvac-troubleshooting-essentials, incident-response-troubleshooting, infrastructure-commissioning-startup, lithium-ion-thermal-runaway-emergency-response, mechanical-systems-maintenance, monitoring-automation-bms-systems, power-distribution-systems-fundamentals, power-systems-electrical-fundamentals, preventive-maintenance-planning, roofing-systems-maintenance-fundamentals, security-compliance-data-centers, server-room-ergonomics-manual-handling, tier-infrastructure-fundamentals, ups-operations-load-testing, ups-systems-fundamentals
+- course_ids: access-control-physical-security, batteries-dc-circuits, building-automation-systems-fundamentals, building-envelope-fundamentals, building-maintenance-fundamentals, business-continuity-disaster-recovery-planning, capacity-planning-forecasting, cooling-systems-design-optimization, data-center-arc-flash-safety, data-center-cooling-refrigerant-safety, data-center-design-fundamentals, data-center-electrical-safety, data-center-epo-procedures, data-center-fire-suppression-safety, data-center-operations-management, data-center-physical-security-access-control, data-center-raised-floor-confined-space, data-center-ups-battery-safety, dcim-platform-fundamentals, disaster-recovery-business-continuity, emergency-standby-power-systems-fundamentals, energy-efficiency-pue-optimization, facility-environmental-compliance, facility-management-fundamentals, fiber-optics-network-cabling, generator-fundamentals, generator-operations-maintenance, hvac-troubleshooting-essentials, incident-response-troubleshooting, infrastructure-commissioning-startup, lithium-ion-thermal-runaway-emergency-response, mechanical-systems-maintenance, monitoring-automation-bms-systems, power-distribution-systems-fundamentals, power-systems-electrical-fundamentals, preventive-maintenance-planning, roofing-systems-maintenance-fundamentals, security-compliance-data-centers, server-room-ergonomics-manual-handling, tier-infrastructure-fundamentals, ups-operations-load-testing, ups-systems-fundamentals
 
 ## Roles
 
-- electrician ("I'm an electrician or power technician"): Power & Electrical Systems Track. Electricians and power technicians working on utility interconnection, UPS systems, generators, batteries, and daily electrical safety should complete this 14-course, 47-hour track.
+- electrician ("I'm an electrician or power technician"): Power & Electrical Systems Track. Electricians and power technicians working on utility interconnection, UPS systems, generators, batteries, and daily electrical safety should complete this 13-course, 45-hour track.
 - hvac ("I work on HVAC, cooling, or mechanical systems"): Cooling & Facilities Efficiency Track. HVAC and facilities technicians who need both cooling design fundamentals and hands-on maintenance skills should complete this 6-course, 24-hour track.
 - operations ("I manage daily facility operations and uptime"): Operations & Reliability Track. Facility and operations managers who own uptime should complete this 10-course, 44-hour track covering daily operations, disaster recovery, maintenance, and incident response.
-- security ("I handle security or compliance"): Security & Compliance Track. Security and compliance leads building an audit-ready program should complete this 5-course, 27-hour track.
+- security ("I handle security or compliance"): Security & Compliance Track. Security and compliance leads building an audit-ready program should complete this 5-course, 19-hour track.
 - design ("I design, plan, or commission facilities"): Design, Planning & Commissioning Track. Engineers and project leads taking a facility from design through launch should complete all four of these courses, 28 hours total.
 - it ("I work on monitoring, DCIM, or network cabling"): Monitoring & Smart Facility Track. Teams building out monitoring, DCIM, building automation, and network cabling infrastructure should complete all four of these courses, 22 hours total.
 
@@ -1907,7 +1867,7 @@ Comprehensive Programs run 8 hours; Modular Specializations run 1-8 hours. All c
 
 ### What topics does the course catalog cover?
 
-The catalog spans six tracks: Power &amp; Electrical, Cooling &amp; Facilities Efficiency, Operations &amp; Reliability, Security &amp; Compliance, Design, Planning &amp; Commissioning, and Monitoring &amp; Smart Facility. Together they cover 43 courses and 184 hours of training.
+The catalog spans six tracks: Power &amp; Electrical, Cooling &amp; Facilities Efficiency, Operations &amp; Reliability, Security &amp; Compliance, Design, Planning &amp; Commissioning, and Monitoring &amp; Smart Facility. Together they cover 42 courses and 182 hours of training.
 
 ### Do I need a background in data center design or operations to take these courses?
 
@@ -1975,7 +1935,7 @@ Data Center Training courses are published as online, self-paced courses. HAZWOP
 
 ### What's included in a bundle, and how much do I save?
 
-Each bundle groups a comprehensive program with the modular courses most relevant to the same role — for example, the Power &amp; Electrical Systems Bundle includes 14 courses and 47 hours of training on power systems, UPS, generators, and electrical safety for $986.99. The Complete Data Center Professional Bundle covers all 43 courses and 184 hours for $2,928.99, the deepest discount we offer. Every learner still gets a certificate for each course completed.
+Each bundle groups a comprehensive program with the modular courses most relevant to the same role — for example, the Power &amp; Electrical Systems Bundle includes 13 courses and 45 hours of training on power systems, UPS, generators, and electrical safety for $986.99. The Complete Data Center Professional Bundle covers all 42 courses and 182 hours for $2,928.99, the deepest discount we offer. Every learner still gets a certificate for each course completed.
 
 ### Which bundle is the best fit for a facilities generalist?
 

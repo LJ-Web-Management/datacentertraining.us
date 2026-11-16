@@ -93,13 +93,13 @@ TIA-942 and the Uptime Tier Standard overlap but use different criteria and cert
 | Standard | What it covers | Who uses it | Related course |
 | --- | --- | --- | --- |
 | [NFPA 70, National Electrical Code (NEC)](https://www.nfpa.org/codes-and-standards/nfpa-70-standard-development/70) | Installation requirements for electrical wiring and equipment. Article 645 has special provisions for information technology equipment rooms that meet its conditions, including a disconnecting means for IT equipment and cooling. | Electrical engineers, electricians, electrical inspectors | [Power Distribution Systems Fundamentals](https://datacentertraining.us/courses/power-distribution-systems-fundamentals.html) |
-| [NFPA 70E](https://www.nfpa.org/codes-and-standards/nfpa-70e-standard-development/70e) | Electrical safety in the workplace: electrically safe work conditions, risk assessment, approach boundaries, arc flash PPE, and training. | Employers, electricians, facility technicians | [Electrical Safety & Best Practices](https://datacentertraining.us/courses/electrical-safety-best-practices.html); [Data Center Arc Flash Safety](https://datacentertraining.us/courses/data-center-arc-flash-safety.html) |
+| [NFPA 70E](https://www.nfpa.org/codes-and-standards/nfpa-70e-standard-development/70e) | Electrical safety in the workplace: electrically safe work conditions, risk assessment, approach boundaries, arc flash PPE, and training. | Employers, electricians, facility technicians | [Data Center Electrical Safety Training](https://datacentertraining.us/courses/data-center-electrical-safety.html); [Data Center Arc Flash Safety](https://datacentertraining.us/courses/data-center-arc-flash-safety.html) |
 | [NFPA 70B](https://www.nfpa.org/codes-and-standards/nfpa-70b-standard-development/70b) | Electrical equipment maintenance programs, intervals, and testing. Since its 2023 edition it is a standard with mandatory language rather than a recommended practice. | Facility managers, maintenance and testing contractors | [Preventive Maintenance Planning](https://datacentertraining.us/courses/preventive-maintenance-planning.html) |
 | [NFPA 110](https://www.nfpa.org/codes-and-standards/nfpa-110-standard-development/110) | Emergency and standby power systems: generator performance, installation, fuel, transfer switches, and routine testing and maintenance. | Generator technicians, facility managers, AHJs | [Emergency/Standby Power Systems Fundamentals](https://datacentertraining.us/courses/emergency-standby-power-systems-fundamentals.html); [Generator Operations & Maintenance](https://datacentertraining.us/courses/generator-operations-maintenance.html) |
 | [NFPA 111](https://www.nfpa.org/codes-and-standards/nfpa-111-standard-development/111) | Stored electrical energy emergency and standby power systems, such as UPS and battery systems that serve as the emergency or standby source. | Power engineers, UPS technicians | [UPS Systems Fundamentals](https://datacentertraining.us/courses/ups-systems-fundamentals.html) |
 | [IEEE 1584](https://standards.ieee.org/standard/1584-2018.html) | The guide for performing arc flash hazard calculations, used to find incident energy and arc flash boundaries for equipment labels. | Electrical engineers performing arc flash studies | [Data Center Arc Flash Safety](https://datacentertraining.us/courses/data-center-arc-flash-safety.html) |
 | [OSHA 29 CFR 1910 Subpart S](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910SubpartS) | Federal electrical requirements for general industry, including design safety standards and safety-related work practices (1910.331 to 1910.335). | All U.S. employers with electrical hazards | [Data Center Electrical Safety](https://datacentertraining.us/courses/data-center-electrical-safety.html) |
-| [OSHA 29 CFR 1910.147](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.147) | Control of hazardous energy (lockout/tagout) during servicing and maintenance of machines and equipment. | All employers; every technician who services equipment | [Electrical Safety & Best Practices](https://datacentertraining.us/courses/electrical-safety-best-practices.html) |
+| [OSHA 29 CFR 1910.147](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.147) | Control of hazardous energy (lockout/tagout) during servicing and maintenance of machines and equipment. | All employers; every technician who services equipment | [Data Center Electrical Safety Training](https://datacentertraining.us/courses/data-center-electrical-safety.html) |
 
 One nuance: 1910.147 covers mechanical, hydraulic, thermal, and other energy, but work on or near electrical conductors falls under Subpart S, including the lockout rules in 1910.333. Site LOTO programs usually cover both. The [Data Center Safety Guide](https://datacentertraining.us/learn/data-center-safety.html) and [power guide](https://datacentertraining.us/learn/data-center-power.html) show how these rules play out on the floor.
 
@@ -227,19 +227,6 @@ $280.99
 - [Enroll](https://datacentertraining.us/checkout.html?item=tier-infrastructure-fundamentals)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=tier-infrastructure-fundamentals)
 
-### [Electrical Safety & Best Practices](https://datacentertraining.us/courses/electrical-safety-best-practices.html)
-
-Power & Electrical · Modular Specialization · NFPA 70E
-
-NFPA 70E-aligned electrical safety fundamentals for facility staff.
-
-4 hrs
-
-$99.99
-
-- [Enroll](https://datacentertraining.us/checkout.html?item=electrical-safety-best-practices)
-- [Add to Cart](https://datacentertraining.us/cart.html?add=electrical-safety-best-practices)
-
 ### [Data Center Fire Suppression System Safety Training (Clean Agent Systems)](https://datacentertraining.us/courses/data-center-fire-suppression-safety.html)
 
 Security & Compliance · Modular Specialization · NFPA 2001
@@ -274,7 +261,7 @@ Understand the environmental regulations that apply to your facility.
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=facility-environmental-compliance)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=facility-environmental-compliance)
@@ -287,7 +274,7 @@ Cut operating costs with a measurable PUE optimization roadmap.
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=energy-efficiency-pue-optimization)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=energy-efficiency-pue-optimization)
@@ -305,11 +292,11 @@ $99.99
 - [Enroll](https://datacentertraining.us/checkout.html?item=data-center-raised-floor-confined-space)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=data-center-raised-floor-confined-space)
 
-Save 52% with the bundle
+Save 58% with the bundle
 
 Complete Data Center Professional Bundle
 
-43 courses · 184 hours · **$2,928.99** per seat, instead of ~~$6,067.57~~ bought separately
+42 courses · 182 hours · **$2,928.99** per seat, instead of ~~$6,997.58~~ bought separately
 
 - [Enroll in the Bundle](https://datacentertraining.us/checkout.html?item=bundle-complete-catalog)
 - [Compare Bundles](https://datacentertraining.us/bundles.html)

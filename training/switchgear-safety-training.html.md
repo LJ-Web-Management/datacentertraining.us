@@ -99,9 +99,9 @@ Power & Electrical · Modular Specialization
 
 Foundational electrical safety practices for anyone working around data center power systems.
 
-2 hrs
+4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=data-center-electrical-safety)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=data-center-electrical-safety)
@@ -114,29 +114,16 @@ Core power distribution theory behind PDUs, panels, and branch circuits.
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=power-distribution-systems-fundamentals)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=power-distribution-systems-fundamentals)
 
-### [Electrical Safety & Best Practices](https://datacentertraining.us/courses/electrical-safety-best-practices.html)
-
-Power & Electrical · Modular Specialization · NFPA 70E
-
-NFPA 70E-aligned electrical safety fundamentals for facility staff.
-
-4 hrs
-
-$99.99
-
-- [Enroll](https://datacentertraining.us/checkout.html?item=electrical-safety-best-practices)
-- [Add to Cart](https://datacentertraining.us/cart.html?add=electrical-safety-best-practices)
-
-Save 38% with the bundle
+Save 47% with the bundle
 
 Power & Electrical Systems Bundle
 
-14 courses · 47 hours · **$986.99** per seat, instead of ~~$1,603.86~~ bought separately
+13 courses · 45 hours · **$986.99** per seat, instead of ~~$1,853.87~~ bought separately
 
 - [Enroll in the Bundle](https://datacentertraining.us/checkout.html?item=bundle-power-electrical)
 - [Compare Bundles](https://datacentertraining.us/bundles.html)

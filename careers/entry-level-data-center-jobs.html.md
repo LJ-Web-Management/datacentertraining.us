@@ -170,9 +170,9 @@ Power & Electrical · Modular Specialization
 
 Foundational electrical safety practices for anyone working around data center power systems.
 
-2 hrs
+4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=data-center-electrical-safety)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=data-center-electrical-safety)
@@ -224,7 +224,7 @@ Terminate, test, and troubleshoot data center fiber to ANSI/TIA-942 standards.
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=fiber-optics-network-cabling)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=fiber-optics-network-cabling)
@@ -237,7 +237,7 @@ Core building maintenance fundamentals for facilities teams supporting critical 
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=building-maintenance-fundamentals)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=building-maintenance-fundamentals)
@@ -255,11 +255,11 @@ $99.99
 - [Enroll](https://datacentertraining.us/checkout.html?item=data-center-epo-procedures)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=data-center-epo-procedures)
 
-Save 52% with the bundle
+Save 58% with the bundle
 
 Complete Data Center Professional Bundle
 
-43 courses · 184 hours · **$2,928.99** per seat, instead of ~~$6,067.57~~ bought separately
+42 courses · 182 hours · **$2,928.99** per seat, instead of ~~$6,997.58~~ bought separately
 
 - [Enroll in the Bundle](https://datacentertraining.us/checkout.html?item=bundle-complete-catalog)
 - [Compare Bundles](https://datacentertraining.us/bundles.html)

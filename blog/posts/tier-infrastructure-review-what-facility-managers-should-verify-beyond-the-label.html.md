@@ -76,7 +76,7 @@ For a role-based plan, a facility manager might sequence the learning this way:
 
 - Start the manager or project lead with Tier Infrastructure Fundamentals and Data Center Design Fundamentals.
 - Give operations staff Data Center Operations Management and Preventive Maintenance Planning so the topology is connected to daily control.
-- Give electrical technicians Power Distribution Systems Fundamentals, Electrical Safety & Best Practices, or the more focused Data Center Electrical Safety Training based on their responsibilities.
+- Give electrical technicians Power Distribution Systems Fundamentals or Data Center Electrical Safety Training based on their responsibilities.
 - Give mechanical staff Cooling Systems Design & Optimization, HVAC Systems Troubleshooting Essentials, or Mechanical Systems & Equipment Maintenance.
 - Use Capacity Planning & Forecasting for planners and customer-facing leaders who must explain remaining headroom.
 

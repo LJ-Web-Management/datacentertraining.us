@@ -115,12 +115,12 @@ After the work, verify covers, barriers, labels, doors, settings, housekeeping, 
 
 For a new electrician who needs to understand the hazard before working around switchgear, UPS equipment, panelboards, or PDUs, **Data Center Arc Flash Safety Training** is the most direct starting point. It can establish vocabulary around incident energy, boundaries, labels, PPE, and pre-task planning. It is a knowledge course with a certificate of completion, not a license, regulatory certification, or employer authorization to perform energized work.
 
-Pair that focused course with **Electrical Safety & Best Practices** when the learner needs a broader foundation in safe work practices and the site's role expectations. **Power Systems & Electrical Fundamentals** is a stronger choice for a technician who also needs a wider view of distribution, sources, switching, and data center power architecture. Managers building a power-team pathway can use the **Power & Electrical Systems Bundle** to combine related learning across roles, while still assigning site-specific qualification, supervised practice, and procedure sign-off separately.
+Pair that focused course with **Data Center Electrical Safety Training** when the learner needs a broader foundation in safe work practices and the site's role expectations. **Power Systems & Electrical Fundamentals** is a stronger choice for a technician who also needs a wider view of distribution, sources, switching, and data center power architecture. Managers building a power-team pathway can use the **Power & Electrical Systems Bundle** to combine related learning across roles, while still assigning site-specific qualification, supervised practice, and procedure sign-off separately.
 
 A practical role-based sequence might look like this:
 
 - **New technician:** Power Systems & Electrical Fundamentals, then Data Center Arc Flash Safety Training, followed by a supervised equipment-room walkdown.
-- **Electrical technician moving between sites:** Electrical Safety & Best Practices, then a local review of labels, one-lines, boundaries, and switching procedures.
+- **Electrical technician moving between sites:** Data Center Electrical Safety Training, then a local review of labels, one-lines, boundaries, and switching procedures.
 - **Supervisor or operations manager:** Data Center Arc Flash Safety Training plus a job-briefing exercise that tests source identification, boundary control, and stop-work decisions.
 - **Contractor coordinator:** A focused course for shared terminology, followed by documented site orientation and verification of the contractor's assigned scope and authorization.
 

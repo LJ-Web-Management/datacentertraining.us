@@ -208,7 +208,7 @@ Master UPS operations, battery testing, and load-bank procedures.
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=ups-operations-load-testing)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=ups-operations-load-testing)
@@ -221,7 +221,7 @@ Size, test, and maintain backup generators with confidence.
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=generator-operations-maintenance)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=generator-operations-maintenance)
@@ -239,11 +239,11 @@ $276.99
 - [Enroll](https://datacentertraining.us/checkout.html?item=monitoring-automation-bms-systems)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=monitoring-automation-bms-systems)
 
-Save 42% with the bundle
+Save 45% with the bundle
 
 Design, Planning & Commissioning Bundle
 
-4 courses · 28 hours · **$557.99** per seat, instead of ~~$961.96~~ bought separately
+4 courses · 28 hours · **$557.99** per seat, instead of ~~$1,011.96~~ bought separately
 
 - [Enroll in the Bundle](https://datacentertraining.us/checkout.html?item=bundle-design-planning)
 - [Compare Bundles](https://datacentertraining.us/bundles.html)

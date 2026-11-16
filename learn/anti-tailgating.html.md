@@ -93,7 +93,7 @@ Practical security training for facility staff — access control, surveillance,
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=access-control-physical-security)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=access-control-physical-security)
@@ -124,11 +124,11 @@ $291.99
 - [Enroll](https://datacentertraining.us/checkout.html?item=security-compliance-data-centers)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=security-compliance-data-centers)
 
-Save 42% with the bundle
+Save 49% with the bundle
 
 Security & Compliance Bundle
 
-5 courses · 19 hours · **$400.99** per seat, instead of ~~$691.95~~ bought separately
+5 courses · 19 hours · **$400.99** per seat, instead of ~~$791.95~~ bought separately
 
 - [Enroll in the Bundle](https://datacentertraining.us/checkout.html?item=bundle-security-compliance)
 - [Compare Bundles](https://datacentertraining.us/bundles.html)

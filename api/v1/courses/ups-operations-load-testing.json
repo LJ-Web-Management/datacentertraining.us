@@ -11,7 +11,7 @@
   "duration_hours": 4,
   "duration_iso8601": "PT4H",
   "module_count": 4,
-  "price_usd": 99.99,
+  "price_usd": 149.99,
   "currency": "USD",
   "standards": [],
   "summary": "Master UPS operations, battery testing, and load-bank procedures.",
@@ -96,9 +96,9 @@
   "related_course_ids": [
     "power-systems-electrical-fundamentals",
     "generator-operations-maintenance",
-    "electrical-safety-best-practices",
     "batteries-dc-circuits",
-    "data-center-arc-flash-safety"
+    "data-center-arc-flash-safety",
+    "data-center-electrical-safety"
   ],
   "last_updated": "2026-11-16"
 }

@@ -183,7 +183,7 @@ Cut operating costs with a measurable PUE optimization roadmap.
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=energy-efficiency-pue-optimization)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=energy-efficiency-pue-optimization)
@@ -235,7 +235,7 @@ Understand DCIM strategy and build the ROI case for implementation.
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=dcim-platform-fundamentals)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=dcim-platform-fundamentals)
@@ -248,16 +248,16 @@ Build a 3–5 year capacity plan before you run out of power, cooling, or space.
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=capacity-planning-forecasting)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=capacity-planning-forecasting)
 
-Save 42% with the bundle
+Save 51% with the bundle
 
 Cooling & Facilities Efficiency Bundle
 
-6 courses · 24 hours · **$462.99** per seat, instead of ~~$798.94~~ bought separately
+6 courses · 24 hours · **$462.99** per seat, instead of ~~$948.94~~ bought separately
 
 - [Enroll in the Bundle](https://datacentertraining.us/checkout.html?item=bundle-cooling-efficiency)
 - [Compare Bundles](https://datacentertraining.us/bundles.html)

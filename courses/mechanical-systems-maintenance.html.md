@@ -50,7 +50,7 @@ Water quality and equipment condition cause many mechanical failures. Poor water
 - **Track:** Cooling & Efficiency
 - **Course type:** Modular Specialization
 - **Length:** 4 hrs, self-paced online
-- **Price:** $99.99 per seat, volume pricing for teams
+- **Price:** $149.99 per seat, volume pricing for teams
 - **Included in:** [Cooling & Facilities Efficiency Bundle](https://datacentertraining.us/bundles.html) and the [Complete Data Center Professional Bundle](https://datacentertraining.us/bundles.html)
 - **Credential:** Certificate of completion from HAZWOPER OSHA Training, LLC, [verifiable online](https://datacentertraining.us/certifications.html#verify). The company is an [IACET Accredited Provider](https://datacentertraining.us/certifications.html#iacet-scope), but this course does not award IACET CEUs or PDHs.
 
@@ -72,7 +72,7 @@ By planning around redundancy: confirming the remaining chillers can carry the l
 
 4 modules · self-paced online
 
-$99.99
+$149.99
 
 - [Enroll Now](https://datacentertraining.us/checkout.html?item=mechanical-systems-maintenance)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=mechanical-systems-maintenance)
@@ -82,11 +82,11 @@ $99.99
 - Delivered by an IACET-accredited provider
 - Volume pricing available for teams
 
-This course is part of the **Cooling & Facilities Efficiency Bundle** (6 courses). Buy the bundle for $462.99 instead of $798.94 separately — [save $335.95 →](https://datacentertraining.us/checkout.html?item=bundle-cooling-efficiency)
+This course is part of the **Cooling & Facilities Efficiency Bundle** (6 courses). Buy the bundle for $462.99 instead of $948.94 separately — [save $485.95 →](https://datacentertraining.us/checkout.html?item=bundle-cooling-efficiency)
 
 ## Related Courses
 
-More training from the Cooling & Facilities Efficiency Bundle. [Browse all 43 courses](https://datacentertraining.us/courses.html) or [save with a bundle](https://datacentertraining.us/bundles.html).
+More training from the Cooling & Facilities Efficiency Bundle. [Browse all 42 courses](https://datacentertraining.us/courses.html) or [save with a bundle](https://datacentertraining.us/bundles.html).
 
 ### [Cooling Systems Design & Optimization](https://datacentertraining.us/courses/cooling-systems-design-optimization.html)
 
@@ -102,7 +102,7 @@ Cooling & Efficiency · Modular Specialization
 
 4 hrs
 
-$99.99
+$149.99
 
 ### [Energy Efficiency & PUE Optimization](https://datacentertraining.us/courses/energy-efficiency-pue-optimization.html)
 
@@ -110,7 +110,7 @@ Cooling & Efficiency · Modular Specialization
 
 4 hrs
 
-$99.99
+$149.99
 
 ### [Data Center Cooling System and Refrigerant Safety Training](https://datacentertraining.us/courses/data-center-cooling-refrigerant-safety.html)
 

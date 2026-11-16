@@ -167,7 +167,7 @@ Core facility management principles for teams running critical infrastructure.
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=facility-management-fundamentals)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=facility-management-fundamentals)
@@ -193,7 +193,7 @@ Build a 3–5 year capacity plan before you run out of power, cooling, or space.
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=capacity-planning-forecasting)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=capacity-planning-forecasting)
@@ -206,7 +206,7 @@ Reduce emergency repairs with a structured preventive maintenance program.
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=preventive-maintenance-planning)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=preventive-maintenance-planning)
@@ -224,11 +224,11 @@ $291.99
 - [Enroll](https://datacentertraining.us/checkout.html?item=security-compliance-data-centers)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=security-compliance-data-centers)
 
-Save 42% with the bundle
+Save 49% with the bundle
 
 Operations & Reliability Bundle
 
-10 courses · 44 hours · **$830.99** per seat, instead of ~~$1,433.90~~ bought separately
+10 courses · 44 hours · **$830.99** per seat, instead of ~~$1,633.90~~ bought separately
 
 - [Enroll in the Bundle](https://datacentertraining.us/checkout.html?item=bundle-operations-reliability)
 - [Compare Bundles](https://datacentertraining.us/bundles.html)

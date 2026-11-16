@@ -187,9 +187,9 @@ Power & Electrical · Modular Specialization
 
 Foundational electrical safety practices for anyone working around data center power systems.
 
-2 hrs
+4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=data-center-electrical-safety)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=data-center-electrical-safety)
@@ -206,19 +206,6 @@ $99.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=data-center-arc-flash-safety)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=data-center-arc-flash-safety)
-
-### [Electrical Safety & Best Practices](https://datacentertraining.us/courses/electrical-safety-best-practices.html)
-
-Power & Electrical · Modular Specialization · NFPA 70E
-
-NFPA 70E-aligned electrical safety fundamentals for facility staff.
-
-4 hrs
-
-$99.99
-
-- [Enroll](https://datacentertraining.us/checkout.html?item=electrical-safety-best-practices)
-- [Add to Cart](https://datacentertraining.us/cart.html?add=electrical-safety-best-practices)
 
 ### [Power Systems & Electrical Fundamentals](https://datacentertraining.us/courses/power-systems-electrical-fundamentals.html)
 
@@ -241,7 +228,7 @@ Master UPS operations, battery testing, and load-bank procedures.
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=ups-operations-load-testing)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=ups-operations-load-testing)
@@ -254,7 +241,7 @@ Size, test, and maintain backup generators with confidence.
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=generator-operations-maintenance)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=generator-operations-maintenance)
@@ -267,7 +254,7 @@ Understand the building automation systems that tie HVAC, power, and monitoring 
 
 6 hrs
 
-$99.99
+$179.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=building-automation-systems-fundamentals)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=building-automation-systems-fundamentals)
@@ -285,11 +272,11 @@ $325.99
 - [Enroll](https://datacentertraining.us/checkout.html?item=data-center-operations-management)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=data-center-operations-management)
 
-Save 52% with the bundle
+Save 58% with the bundle
 
 Complete Data Center Professional Bundle
 
-43 courses · 184 hours · **$2,928.99** per seat, instead of ~~$6,067.57~~ bought separately
+42 courses · 182 hours · **$2,928.99** per seat, instead of ~~$6,997.58~~ bought separately
 
 - [Enroll in the Bundle](https://datacentertraining.us/checkout.html?item=bundle-complete-catalog)
 - [Compare Bundles](https://datacentertraining.us/bundles.html)

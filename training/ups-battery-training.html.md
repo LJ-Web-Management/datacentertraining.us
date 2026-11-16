@@ -55,7 +55,7 @@ Master UPS operations, battery testing, and load-bank procedures.
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=ups-operations-load-testing)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=ups-operations-load-testing)
@@ -94,16 +94,16 @@ Recognize and respond to lithium-ion battery thermal runaway before it escalates
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=lithium-ion-thermal-runaway-emergency-response)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=lithium-ion-thermal-runaway-emergency-response)
 
-Save 38% with the bundle
+Save 47% with the bundle
 
 Power & Electrical Systems Bundle
 
-14 courses · 47 hours · **$986.99** per seat, instead of ~~$1,603.86~~ bought separately
+13 courses · 45 hours · **$986.99** per seat, instead of ~~$1,853.87~~ bought separately
 
 - [Enroll in the Bundle](https://datacentertraining.us/checkout.html?item=bundle-power-electrical)
 - [Compare Bundles](https://datacentertraining.us/bundles.html)

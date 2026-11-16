@@ -82,11 +82,11 @@ $99.99
 - Delivered by an IACET-accredited provider
 - Volume pricing available for teams
 
-This course is part of the **Operations & Reliability Bundle** (10 courses). Buy the bundle for $830.99 instead of $1,433.90 separately — [save $602.91 →](https://datacentertraining.us/checkout.html?item=bundle-operations-reliability)
+This course is part of the **Operations & Reliability Bundle** (10 courses). Buy the bundle for $830.99 instead of $1,633.90 separately — [save $802.91 →](https://datacentertraining.us/checkout.html?item=bundle-operations-reliability)
 
 ## Related Courses
 
-More training from the Operations & Reliability Bundle. [Browse all 43 courses](https://datacentertraining.us/courses.html) or [save with a bundle](https://datacentertraining.us/bundles.html).
+More training from the Operations & Reliability Bundle. [Browse all 42 courses](https://datacentertraining.us/courses.html) or [save with a bundle](https://datacentertraining.us/bundles.html).
 
 ### [Data Center Operations Management](https://datacentertraining.us/courses/data-center-operations-management.html)
 
@@ -110,7 +110,7 @@ Operations · Modular Specialization
 
 4 hrs
 
-$99.99
+$149.99
 
 ### [Incident Response & Troubleshooting](https://datacentertraining.us/courses/incident-response-troubleshooting.html)
 
@@ -118,7 +118,7 @@ Operations · Modular Specialization
 
 4 hrs
 
-$99.99
+$149.99
 
 ### [Business Continuity and Disaster Recovery Planning Training](https://datacentertraining.us/courses/business-continuity-disaster-recovery-planning.html)
 
@@ -134,7 +134,7 @@ Operations · Modular Specialization
 
 4 hrs
 
-$99.99
+$149.99
 
 ## Ready to Enroll Your Team?
 

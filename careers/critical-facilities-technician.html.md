@@ -212,7 +212,7 @@ Reduce emergency repairs with a structured preventive maintenance program.
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=preventive-maintenance-planning)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=preventive-maintenance-planning)
@@ -225,7 +225,7 @@ Systematic troubleshooting and root-cause analysis to cut MTTR.
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=incident-response-troubleshooting)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=incident-response-troubleshooting)
@@ -269,11 +269,11 @@ $276.99
 - [Enroll](https://datacentertraining.us/checkout.html?item=monitoring-automation-bms-systems)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=monitoring-automation-bms-systems)
 
-Save 42% with the bundle
+Save 49% with the bundle
 
 Operations & Reliability Bundle
 
-10 courses · 44 hours · **$830.99** per seat, instead of ~~$1,433.90~~ bought separately
+10 courses · 44 hours · **$830.99** per seat, instead of ~~$1,633.90~~ bought separately
 
 - [Enroll in the Bundle](https://datacentertraining.us/checkout.html?item=bundle-operations-reliability)
 - [Compare Bundles](https://datacentertraining.us/bundles.html)

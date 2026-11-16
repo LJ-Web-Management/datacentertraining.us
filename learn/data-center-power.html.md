@@ -178,7 +178,7 @@ Master UPS operations, battery testing, and load-bank procedures.
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=ups-operations-load-testing)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=ups-operations-load-testing)
@@ -191,7 +191,7 @@ Foundational generator theory to complement hands-on operations and load-bank tr
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=generator-fundamentals)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=generator-fundamentals)
@@ -204,7 +204,7 @@ Understand the standby power systems that carry a facility through a utility out
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=emergency-standby-power-systems-fundamentals)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=emergency-standby-power-systems-fundamentals)
@@ -217,7 +217,7 @@ Core power distribution theory behind PDUs, panels, and branch circuits.
 
 4 hrs
 
-$99.99
+$149.99
 
 - [Enroll](https://datacentertraining.us/checkout.html?item=power-distribution-systems-fundamentals)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=power-distribution-systems-fundamentals)
@@ -235,11 +235,11 @@ $99.99
 - [Enroll](https://datacentertraining.us/checkout.html?item=data-center-arc-flash-safety)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=data-center-arc-flash-safety)
 
-Save 38% with the bundle
+Save 47% with the bundle
 
 Power & Electrical Systems Bundle
 
-14 courses · 47 hours · **$986.99** per seat, instead of ~~$1,603.86~~ bought separately
+13 courses · 45 hours · **$986.99** per seat, instead of ~~$1,853.87~~ bought separately
 
 - [Enroll in the Bundle](https://datacentertraining.us/checkout.html?item=bundle-power-electrical)
 - [Compare Bundles](https://datacentertraining.us/bundles.html)
