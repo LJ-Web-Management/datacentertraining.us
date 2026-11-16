@@ -10,7 +10,7 @@ Data Center Training · Online Courses & Bundles
 - **42 Courses** 182 hrs total
 - **1-8 Hrs** self-paced, per course
 - **Instant** certificate
-- **Up to 58%** off with bundles
+- **Up to 52%** off with bundles
 
 Free resources: [Knowledge Center](https://datacentertraining.us/learn/) [Training by Topic](https://datacentertraining.us/training/) [Career Quiz](https://datacentertraining.us/quizzes/career-quiz.html) [Calculators](https://datacentertraining.us/tools/) [Careers](https://datacentertraining.us/careers/)
 
@@ -49,7 +49,7 @@ Search, sort, and filter all 42 courses by track, duration, or price, starting a
 
 ### [Bundles](https://datacentertraining.us/bundles.html)
 
-Save up to 58% with a role-based track bundle or the Complete Data Center Professional Bundle.
+Save up to 52% with a role-based track bundle or the Complete Data Center Professional Bundle.
 
 ### [Who It's For](https://datacentertraining.us/who.html)
 

@@ -102,7 +102,7 @@ $149.99
 - Delivered by an IACET-accredited provider
 - Volume pricing available for teams
 
-This course is part of the **Power & Electrical Systems Bundle** (13 courses). Buy the bundle for $986.99 instead of $1,853.87 separately — [save $866.88 →](https://datacentertraining.us/checkout.html?item=bundle-power-electrical)
+This course is part of the **Power & Electrical Systems Bundle** (13 courses). Buy the bundle for $1,140.99 instead of $1,853.87 separately — [save $712.88 →](https://datacentertraining.us/checkout.html?item=bundle-power-electrical)
 
 ## Related Courses
 

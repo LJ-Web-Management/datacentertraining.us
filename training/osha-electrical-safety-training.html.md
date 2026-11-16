@@ -86,11 +86,11 @@ $149.99
 - [Enroll](https://datacentertraining.us/checkout.html?item=emergency-standby-power-systems-fundamentals)
 - [Add to Cart](https://datacentertraining.us/cart.html?add=emergency-standby-power-systems-fundamentals)
 
-Save 47% with the bundle
+Save 38% with the bundle
 
 Power & Electrical Systems Bundle
 
-13 courses · 45 hours · **$986.99** per seat, instead of ~~$1,853.87~~ bought separately
+13 courses · 45 hours · **$1,140.99** per seat, instead of ~~$1,853.87~~ bought separately
 
 - [Enroll in the Bundle](https://datacentertraining.us/checkout.html?item=bundle-power-electrical)
 - [Compare Bundles](https://datacentertraining.us/bundles.html)

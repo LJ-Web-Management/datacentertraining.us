@@ -4,7 +4,7 @@
   "api_version": "1",
   "base_url": "https://datacentertraining.us/api/v1/",
   "last_updated": "2026-11-16",
-  "content_hash": "25f89b34bee6a463",
+  "content_hash": "167977f12e40494d",
   "manifest": "https://datacentertraining.us/.well-known/mcp.json",
   "openapi": "https://datacentertraining.us/openapi.json",
   "developer_portal": "https://datacentertraining.us/developers/",

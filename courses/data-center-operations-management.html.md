@@ -98,7 +98,7 @@ $325.99
 - Delivered by an IACET-accredited provider
 - Volume pricing available for teams
 
-This course is part of the **Operations & Reliability Bundle** (10 courses). Buy the bundle for $830.99 instead of $1,633.90 separately — [save $802.91 →](https://datacentertraining.us/checkout.html?item=bundle-operations-reliability)
+This course is part of the **Operations & Reliability Bundle** (10 courses). Buy the bundle for $946.99 instead of $1,633.90 separately — [save $686.91 →](https://datacentertraining.us/checkout.html?item=bundle-operations-reliability)
 
 ## Related Courses
 
