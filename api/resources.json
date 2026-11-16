@@ -1,8 +1,8 @@
 {
   "publisher": "Data Center Training (datacentertraining.us)",
-  "last_updated": "2026-11-13",
+  "last_updated": "2026-11-16",
   "license": "Public information; quote with attribution and a link to the source URL.",
-  "count": 144,
+  "count": 145,
   "resources": [
     {
       "source": "Data Center Training (first party)",
@@ -1153,6 +1153,18 @@
         "tier"
       ],
       "audience": []
+    },
+    {
+      "type": "blog_post",
+      "title": "How Data Center Managers Should Link Training Records to High-Risk Maintenance Tasks",
+      "url": "https://datacentertraining.us/blog/posts/how-data-center-managers-should-link-training-records-to-high-risk-maintenance-tasks.html",
+      "description": "When a data center manager reviews a maintenance window, can the team show that each person has the right training for the exact task, equipment, and level…",
+      "topics": [
+        "maintenance"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-11-16"
     },
     {
       "type": "blog_post",

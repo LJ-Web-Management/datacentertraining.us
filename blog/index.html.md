@@ -4,6 +4,12 @@ Data Center Training Blog
 
 Technical guidance, standards updates, and field best practices on power, cooling, electrical safety, operations, and compliance from datacentertraining.us.
 
+[!\[How Data Center Managers Should Link Training Records to High-Risk Maintenance Tasks\](https://datacentertraining.us/blog/assets/img/posts/how-data-center-managers-should-link-training-records-to-high-risk-maintenance-tasks.jpg)](https://datacentertraining.us/blog/posts/how-data-center-managers-should-link-training-records-to-high-risk-maintenance-tasks.html)
+
+November 16, 2026
+
+## How Data Center Managers Should Link Training Records to High-Risk Maintenance Tasks
+
 [!\[Colocation Power Turn-Up Readiness: What Facilities Teams Should Verify Before Energizing a Customer Suite\](https://datacentertraining.us/blog/assets/img/posts/colocation-power-turn-up-readiness-what-facilities-teams-should-verify-before-energizing-a-customer-suite.jpg)](https://datacentertraining.us/blog/posts/colocation-power-turn-up-readiness-what-facilities-teams-should-verify-before-energizing-a-customer-suite.html)
 
 November 13, 2026

@@ -149,6 +149,12 @@ This week, choose one upcoming customer turn-up and run a 30-minute field walk w
 
 ## More from the blog
 
+[!\[How Data Center Managers Should Link Training Records to High-Risk Maintenance Tasks\](https://datacentertraining.us/blog/assets/img/posts/how-data-center-managers-should-link-training-records-to-high-risk-maintenance-tasks.jpg)](https://datacentertraining.us/blog/posts/how-data-center-managers-should-link-training-records-to-high-risk-maintenance-tasks.html)
+
+November 16, 2026
+
+### How Data Center Managers Should Link Training Records to High-Risk Maintenance Tasks
+
 [!\[DCIM Alarm Escalation Drills: What Data Center Operators Should Test Before Relying on Automation\](https://datacentertraining.us/blog/assets/img/posts/dcim-alarm-escalation-drills-what-data-center-operators-should-test-before-relying-on-automation.jpg)](https://datacentertraining.us/blog/posts/dcim-alarm-escalation-drills-what-data-center-operators-should-test-before-relying-on-automation.html)
 
 November 11, 2026
