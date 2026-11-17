@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- dct:head -->
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; object-src 'none'; base-uri 'self'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="theme-color" content="#ffffff">
+<link rel="alternate" type="text/markdown" href="/blog/posts/data-center-airside-economizer-changeover-what-facilities-teams-should-verify-before-switching-modes.html.md" title="Markdown">
+<link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt">
+<link rel="alternate" type="application/json" href="/.well-known/mcp.json" title="WebMCP manifest">
+<link rel="service-desc" type="application/vnd.oai.openapi+json" href="/openapi.json">
+<script>
+/* Analytics, session recording, and chat load for every visitor unless they opt out or send a GPC signal
+   (see /js/consent.js), on the first interaction (scroll, tap, key, mouse move) so they never delay rendering. */
+(function(w,d){
+  w.dataLayer=w.dataLayer||[];w.gtag=function(){w.dataLayer.push(arguments);};
+  w.clarity=w.clarity||function(){(w.clarity.q=w.clarity.q||[]).push(arguments);};
+  w.Tawk_API=w.Tawk_API||{};w.Tawk_API.onLoad=function(){w.Tawk_API.minimize();};
+  var ev=['pointerdown','keydown','touchstart','scroll','mousemove'];
+  function add(src,attrs){var s=d.createElement('script');s.async=true;s.src=src;for(var k in attrs)s.setAttribute(k,attrs[k]);d.head.appendChild(s);}
+  function once(fn){var done=0;return function(now){if(done)return;function go(){if(done)return;done=1;ev.forEach(function(e){w.removeEventListener(e,go,{passive:true});});fn();}
+    if(now)go();else ev.forEach(function(e){w.addEventListener(e,go,{passive:true});});};}
+  w.dctLoad={
+    analytics:once(function(){
+      w.gtag('js',new Date());w.gtag('config','G-0CJ4YTW1J8');
+      add('https://www.googletagmanager.com/gtag/js?id=G-0CJ4YTW1J8');
+      add('https://analytics.ahrefs.com/analytics.js',{'data-key':'tVAd7KxwKax+pAfHx46Zgg'});
+      add('https://www.clarity.ms/tag/ylza43nm4m');
+    }),
+    chat:once(function(){
+      w.Tawk_LoadStart=new Date();add('https://embed.tawk.to/6a5a95a2096ab21d402a762c/1jtoth11r',{charset:'UTF-8',crossorigin:'*'});
+    })
+  };
+})(window,document);
+if(navigator.modelContext){var m=document.createElement('script');m.src='/js/webmcp.js';m.defer=true;document.head.appendChild(m);}
+</script>
+<script src="/js/consent.js" defer></script>
+<!-- /dct:head -->
+<title>Data Center Airside Economizer Changeover</title>
+<meta name="description" content="When outdoor conditions become favorable, should a data center facilities team switch from compressor-based cooling to an airside economizer, and what must be…">
+<meta name="robots" content="index, follow">
+<link rel="icon" href="../../favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="192x192" href="../../images/icon-192.png">
+<link rel="apple-touch-icon" href="../../images/apple-touch-icon.png">
+<link rel="canonical" href="https://datacentertraining.us/blog/posts/data-center-airside-economizer-changeover-what-facilities-teams-should-verify-before-switching-modes.html">
+
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://datacentertraining.us/blog/posts/data-center-airside-economizer-changeover-what-facilities-teams-should-verify-before-switching-modes.html">
+<meta property="og:title" content="Data Center Airside Economizer Changeover: What Facilities Teams Should Verify Before Switching Modes">
+<meta property="og:description" content="When outdoor conditions become favorable, should a data center facilities team switch from compressor-based cooling to an airside economizer, and what must be…">
+<meta property="og:image" content="https://datacentertraining.us/blog/assets/img/posts/data-center-airside-economizer-changeover-what-facilities-teams-should-verify-before-switching-modes.jpg">
+<meta property="og:site_name" content="Data Center Training">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@HazwoperOsha">
+<meta name="twitter:title" content="Data Center Airside Economizer Changeover: What Facilities Teams Should Verify Before Switching Modes">
+<meta name="twitter:description" content="When outdoor conditions become favorable, should a data center facilities team switch from compressor-based cooling to an airside economizer, and what must be…">
+<meta name="twitter:image" content="https://datacentertraining.us/blog/assets/img/posts/data-center-airside-economizer-changeover-what-facilities-teams-should-verify-before-switching-modes.jpg">
+
+<link rel="stylesheet" href="../assets/css/blog.min.css">
+<script src="../../js/nav.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://datacentertraining.us/"},
+        {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://datacentertraining.us/blog/"},
+        {"@type": "ListItem", "position": 3, "name": "Data Center Airside Economizer Changeover: What Facilities Teams Should Verify Before Switching Modes", "item": "https://datacentertraining.us/blog/posts/data-center-airside-economizer-changeover-what-facilities-teams-should-verify-before-switching-modes.html"}
+      ]
+    },
+    {
+      "@type": "BlogPosting",
+      "headline": "Data Center Airside Economizer Changeover: What Facilities Teams Should Verify Before Switching Modes",
+      "image": "https://datacentertraining.us/blog/assets/img/posts/data-center-airside-economizer-changeover-what-facilities-teams-should-verify-before-switching-modes.jpg",
+      "datePublished": "2026-11-17",
+      "dateModified": "2026-11-17",
+      "author": {
+        "@type": "Organization",
+        "name": "Data Center Training",
+        "url": "https://datacentertraining.us/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "HAZWOPER OSHA Training, LLC",
+        "logo": "https://datacentertraining.us/images/icon-512.png"
+      },
+      "description": "When outdoor conditions become favorable, should a data center facilities team switch from compressor-based cooling to an airside economizer, and what must be…"
+    }
+  ]
+}
+</script>
+</head>
+<body class="blog-page">
+
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="glass-nav">
+  <div class="container nav-inner">
+    <a href="../../" class="logo">
+      <img class="logo-img" src="../../images/logo.png" alt="datacentertraining.us" width="537" height="96">
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Main">
+      <div class="nav-item">
+        <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="navMenu-training">Courses<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-4" id="navMenu-training">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Online Training</p>
+            <a href="../../courses.html"><span class="nav-link-title">Course Catalog</span><span class="nav-link-desc">All 42 self-paced courses</span></a>
+            <a href="../../bundles.html"><span class="nav-link-title">Course Bundles</span><span class="nav-link-desc">Role-based bundles, save up to 52%</span></a>
+            <a href="../../who.html"><span class="nav-link-title">Courses by Role</span><span class="nav-link-desc">Find the track for your job</span></a>
+            <a href="../../tools/training-plan-builder.html"><span class="nav-link-title">Training Plan Builder</span><span class="nav-link-desc">Build and price a plan in minutes</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Training by Topic</p>
+            <a href="../../training/"><span class="nav-link-title">All Training Programs</span></a>
+            <a href="../../training/data-center-technician-training.html"><span class="nav-link-title">Data Center Technician Training</span></a>
+            <a href="../../training/data-center-electrical-safety-training.html"><span class="nav-link-title">Data Center Electrical Safety</span></a>
+            <a href="../../training/nfpa-70e-training.html"><span class="nav-link-title">NFPA 70E Training</span></a>
+            <a href="../../training/osha-electrical-safety-training.html"><span class="nav-link-title">OSHA Electrical Safety Training</span></a>
+            <a href="../../training/arc-flash-training.html"><span class="nav-link-title">Arc Flash Training</span></a>
+            <a href="../../training/lockout-tagout-training.html"><span class="nav-link-title">Lockout/Tagout Training</span></a>
+            <a href="../../training/ups-battery-training.html"><span class="nav-link-title">UPS &amp; Battery Training</span></a>
+            <a href="../../training/generator-training.html"><span class="nav-link-title">Generator Training</span></a>
+            <a href="../../training/bms-dcim-training.html"><span class="nav-link-title">BMS &amp; DCIM Training</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Enrolling</p>
+            <a href="../../#teams"><span class="nav-link-title">Team Training</span><span class="nav-link-desc">Seats, progress tracking, PO billing</span></a>
+            <a href="../../certifications.html"><span class="nav-link-title">Certificates &amp; Accreditation</span><span class="nav-link-desc">What your certificate means</span></a>
+            <a href="../../faq.html"><span class="nav-link-title">FAQ</span><span class="nav-link-desc">Pricing, access, and policies</span></a>
+          </div>
+          <a class="nav-feature" href="../../bundles.html"><span class="nav-feature-kicker">Best value</span><span class="nav-feature-title">Complete Data Center Professional Bundle</span><span class="nav-feature-text">42 courses and 182 hours of training in one enrollment. Save 52%.</span><span class="nav-feature-cta">Compare bundles &rarr;</span></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="navMenu-learn">Learn<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-3" id="navMenu-learn">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Start Here</p>
+            <a href="../../learn/"><span class="nav-link-title">Knowledge Center</span><span class="nav-link-desc">Every guide in one place</span></a>
+            <a href="../../learn/what-is-a-data-center.html"><span class="nav-link-title">Data Center 101</span><span class="nav-link-desc">How data centers work</span></a>
+            <a href="../../learn/glossary.html"><span class="nav-link-title">Glossary</span><span class="nav-link-desc">Data center terms, A to Z</span></a>
+            <a href="../../learn/data-center-standards.html"><span class="nav-link-title">Standards &amp; Regulations</span><span class="nav-link-desc">TIA-942, NFPA, OSHA, ASHRAE, ISO</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Systems</p>
+            <a href="../../learn/data-center-power.html"><span class="nav-link-title">Power Systems</span></a>
+            <a href="../../learn/data-center-cooling.html"><span class="nav-link-title">Cooling Systems</span></a>
+            <a href="../../learn/data-center-tiers.html"><span class="nav-link-title">Tier Levels &amp; Redundancy</span></a>
+            <a href="../../learn/energy-efficiency-pue.html"><span class="nav-link-title">Energy Efficiency &amp; PUE</span></a>
+            <a href="../../learn/ai-data-centers.html"><span class="nav-link-title">AI &amp; High-Density Facilities</span></a>
+            <a href="../../learn/800-vdc-data-center-safety.html"><span class="nav-link-title">800 VDC Power Safety</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Operations</p>
+            <a href="../../learn/data-center-safety.html"><span class="nav-link-title">Safety Guide</span></a>
+            <a href="../../learn/data-center-security-compliance.html"><span class="nav-link-title">Security &amp; Compliance</span></a>
+            <a href="../../learn/data-center-operations.html"><span class="nav-link-title">Operations &amp; Maintenance</span></a>
+            <a href="../../learn/data-center-commissioning.html"><span class="nav-link-title">Commissioning (Levels 1-5)</span></a>
+            <a href="../../blog/"><span class="nav-link-title">Blog: Field Guidance</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="navMenu-careers">Careers<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-4" id="navMenu-careers">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Get Started</p>
+            <a href="../../careers/"><span class="nav-link-title">Careers Hub</span><span class="nav-link-desc">Why the industry is hiring</span></a>
+            <a href="../../careers/data-center-technician.html"><span class="nav-link-title">Data Center Technician</span><span class="nav-link-desc">The most common way in</span></a>
+            <a href="../../careers/entry-level-data-center-jobs.html"><span class="nav-link-title">Entry-Level Jobs</span><span class="nav-link-desc">Roles you can get without experience</span></a>
+            <a href="../../careers/how-to-get-into-data-centers.html"><span class="nav-link-title">How to Get Into Data Centers</span><span class="nav-link-desc">A step-by-step starting plan</span></a>
+            <a href="../../careers/data-center-technician-salary.html"><span class="nav-link-title">Salary Guide</span><span class="nav-link-desc">What the pay data shows</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Jobs & Roles</p>
+            <a href="../../careers/data-center-jobs.html"><span class="nav-link-title">All Job Roles Explained</span></a>
+            <a href="../../careers/data-center-electrician.html"><span class="nav-link-title">Data Center Electrician</span></a>
+            <a href="../../careers/critical-facilities-technician.html"><span class="nav-link-title">Critical Facilities Technician</span></a>
+            <a href="../../careers/data-center-engineer.html"><span class="nav-link-title">Data Center Engineer</span></a>
+            <a href="../../careers/data-center-jobs-by-location.html"><span class="nav-link-title">Jobs by Location</span></a>
+            <a href="../../careers/hyperscale-data-center-jobs.html"><span class="nav-link-title">Big Tech Data Center Jobs</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Get Hired</p>
+            <a href="../../careers/data-center-certifications.html"><span class="nav-link-title">Certifications Guide</span></a>
+            <a href="../../careers/data-center-apprenticeships.html"><span class="nav-link-title">Apprenticeships &amp; Programs</span></a>
+            <a href="../../careers/data-center-technician-resume.html"><span class="nav-link-title">Resume Guide</span></a>
+            <a href="../../careers/interview-questions.html"><span class="nav-link-title">Interview Questions</span></a>
+            <a href="../../careers/career-changers.html"><span class="nav-link-title">Career Changers</span></a>
+          </div>
+          <a class="nav-feature" href="../../quizzes/career-quiz.html"><span class="nav-feature-kicker">2-minute quiz</span><span class="nav-feature-title">Which Data Center Career Fits You?</span><span class="nav-feature-text">Answer 10 quick questions and get a matching role and training track.</span><span class="nav-feature-cta">Take the career quiz &rarr;</span></a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <button type="button" class="nav-trigger" aria-expanded="false" aria-controls="navMenu-quizzes">Quizzes &amp; Tools<svg class="nav-chev" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
+        <div class="nav-menu nav-menu-2" id="navMenu-quizzes">
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Quizzes</p>
+            <a href="../../quizzes/"><span class="nav-link-title">All Quizzes</span></a>
+            <a href="../../quizzes/career-quiz.html"><span class="nav-link-title">Career Match Quiz</span></a>
+            <a href="../../quizzes/data-center-basics-quiz.html"><span class="nav-link-title">Data Center Basics</span></a>
+            <a href="../../quizzes/power-electrical-quiz.html"><span class="nav-link-title">Power &amp; Electrical</span></a>
+            <a href="../../quizzes/cooling-quiz.html"><span class="nav-link-title">Cooling &amp; HVAC</span></a>
+            <a href="../../quizzes/safety-quiz.html"><span class="nav-link-title">Safety</span></a>
+            <a href="../../quizzes/security-compliance-quiz.html"><span class="nav-link-title">Security &amp; Compliance</span></a>
+            <a href="../../quizzes/tiers-design-quiz.html"><span class="nav-link-title">Tiers &amp; Design</span></a>
+            <a href="../../quizzes/operations-quiz.html"><span class="nav-link-title">Operations &amp; Monitoring</span></a>
+          </div>
+          <div class="nav-menu-col">
+            <p class="nav-menu-label">Tools</p>
+            <a href="../../tools/"><span class="nav-link-title">All Tools</span></a>
+            <a href="../../tools/training-plan-builder.html"><span class="nav-link-title">Training Plan Builder</span></a>
+            <a href="../../tools/pue-calculator.html"><span class="nav-link-title">PUE Calculator</span></a>
+            <a href="../../tools/uptime-calculator.html"><span class="nav-link-title">Uptime &amp; Downtime Calculator</span></a>
+            <a href="../../tools/cooling-load-calculator.html"><span class="nav-link-title">Cooling Load Calculator</span></a>
+          </div>
+        </div>
+      </div>
+      <a href="../../blog/" class="nav-link active">Blog</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="../../search.html" class="nav-search" data-search-open aria-keyshortcuts="Control+K" title="Search (Ctrl+K)"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg><span class="nav-search-label">Search</span><kbd class="nav-search-kbd">Ctrl K</kbd></a>
+      <a href="../../cart.html" class="nav-cart" aria-label="Cart"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="nav-cart-count" data-cart-count hidden>0</span></a>
+      <a href="../../courses.html" class="btn btn-primary btn-sm nav-cta">View Courses</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="provider-trust-bar" role="region" aria-label="Training provider accreditation">
+  Training delivered by <strong>HAZWOPER OSHA Training, LLC</strong>, an <a href="https://www.iacet.org/affiliates/accredited-providers-list/accredited-provider-overview/?providerID=131618" target="_blank" rel="noopener">IACET-accredited provider &rarr;</a>
+</div>
+
+<main id="main" class="blog-container blog-container-read">
+  <a class="back-link" href="../">&larr; Back to Blog</a>
+  <div class="post-header">
+    <div class="post-date">November 17, 2026</div>
+    <h1>Data Center Airside Economizer Changeover: What Facilities Teams Should Verify Before Switching Modes</h1>
+  </div>
+  <div class="post-featured-image">
+    <img src="../assets/img/posts/data-center-airside-economizer-changeover-what-facilities-teams-should-verify-before-switching-modes.jpg" srcset="../assets/img/posts/data-center-airside-economizer-changeover-what-facilities-teams-should-verify-before-switching-modes-480w.webp 480w, ../assets/img/posts/data-center-airside-economizer-changeover-what-facilities-teams-should-verify-before-switching-modes-800w.webp 800w, ../assets/img/posts/data-center-airside-economizer-changeover-what-facilities-teams-should-verify-before-switching-modes-1200w.webp 1200w" sizes="(max-width: 900px) calc(100vw - 32px), 860px" alt="Data Center Airside Economizer Changeover: What Facilities Teams Should Verify Before Switching Modes" width="1200" height="675" fetchpriority="high">
+  </div>
+  <article class="post-content">
+<h2>The Operational Question</h2>
+<p>When outdoor conditions become favorable, should a data center facilities team switch from compressor-based cooling to an airside economizer, and what must be verified before that change is allowed? The answer is not simply “the outside air is cool.” The team has to confirm that dampers, sensors, filtration, humidity controls, airflow paths, alarms, and fallback cooling will work together while the IT load continues without interruption.</p>
+<p>This decision matters because economizer operation can reduce chiller or compressor runtime, fan energy, and in some designs water use. It can also introduce contaminants, moisture, unstable mixed-air temperatures, or unexpected control interactions if the changeover is treated as a single BAS command. A poorly controlled transition can create rack-inlet temperature drift, nuisance alarms, or a return to mechanical cooling at the worst possible moment.</p>
+<p>This guide gives facility managers, HVAC technicians, controls engineers, and operations leaders a practical way to review an airside economizer changeover. It focuses on the evidence to gather before changing modes, the equipment and trends to watch during the transition, and the training that helps a team make the decision consistently.</p>
+<hr class="post-divider">
+<h2>Who This Affects</h2>
+<p>Airside economizer changeovers affect more than the mechanical team. The work crosses the cooling plant, BAS or DCIM, electrical distribution, operations procedures, and the people responsible for protecting the data hall.</p>
+<ul><li><strong>Enterprise data centers</strong> may use an economizer seasonally while the facilities team balances energy goals with strict indoor-air and humidity requirements.</li><li><strong>Colocation sites</strong> need a controlled method that can be explained to customers whose equipment remains online while the cooling mode changes.</li><li><strong>Hyperscale campuses</strong> may have multiple halls, different air-handler arrangements, and automatic sequences that require a common operating philosophy across shifts.</li><li><strong>Edge facilities</strong> may have smaller packaged units, limited staffing, and less redundancy, making a failed damper actuator or sensor more consequential.</li><li><strong>HVAC and mechanical technicians</strong> verify dampers, filters, fans, coils, temperature sensors, humidity sensors, and actuator response.</li><li><strong>Controls and BMS specialists</strong> validate the sequence, interlocks, alarm priorities, overrides, and trend data.</li><li><strong>Critical facilities operators and NOC staff</strong> monitor rack-inlet conditions, room pressure, alarms, and escalation paths while the change occurs.</li><li><strong>Facility managers and energy managers</strong> decide whether the expected efficiency benefit justifies the operating and contamination controls.</li><li><strong>Commissioning agents and project teams</strong> use the same checks during functional performance testing, seasonal commissioning, or a new-hall handover.</li></ul>
+<p>The exact design may be a direct economizer that brings filtered outdoor air into the space or an indirect arrangement that uses outdoor air across a heat exchanger while keeping data-hall air separate. The controls and risks differ, so the team should begin by identifying which system is installed rather than assuming every “free cooling” mode behaves the same way.</p>
+<hr class="post-divider">
+<h2>What Can Go Wrong</h2>
+<p>The most common failure is not a dramatic equipment breakdown. It is a sequence that appears to work at the BAS screen while the physical conditions in the room move in the wrong direction. A damper can show an open command without reaching its proof position. A sensor can report a plausible value while being out of calibration. A filter can be loaded enough to reduce airflow even though the fan is running.</p>
+<p>The main consequences include:</p>
+<ul><li><strong>Thermal instability.</strong> A sudden increase in outdoor-air fraction can change supply temperature, room pressure, or airflow distribution faster than the controls can respond. Rack-inlet temperatures may rise in a row that is already close to its operating limit.</li><li><strong>Humidity excursions.</strong> Cool outdoor air can be dry or moisture-laden. A control sequence that watches dry-bulb temperature alone may admit air that creates humidification demand, condensation risk, or unstable dewpoint control.</li><li><strong>Contaminant exposure.</strong> Outdoor air can carry dust, smoke, salt, corrosive gases, or other pollutants. Filtration, intake location, differential-pressure monitoring, and maintenance practices must match the local environment and the equipment manufacturer’s requirements.</li><li><strong>Loss of fallback capacity.</strong> If a chiller, DX unit, or chilled-water valve has been left in an abnormal state, the site may not be ready to return to mechanical cooling when the economizer window closes.</li><li><strong>Control conflicts.</strong> A local hand switch, maintenance override, high-limit lockout, fire alarm input, or humidity override may prevent the intended sequence from completing. The BAS can then show an apparently normal command while the system is operating in a degraded mode.</li><li><strong>Fan and electrical stress.</strong> More outdoor-air flow or higher static pressure can increase fan speed and power. The transition may affect motor current, variable-frequency-drive limits, or the electrical margin available to other cooling equipment.</li><li><strong>Operational confusion.</strong> If the shift team cannot tell whether the site is in mechanical, partial economizer, or full economizer mode, an alarm may be acknowledged without understanding the active cooling path.</li></ul>
+<p>The U.S. Department of Energy describes airside economizing as a way to use cool outdoor air instead of mechanical cooling, while also emphasizing climate, filtration, humidity, and contamination considerations. ASHRAE guidance distinguishes direct and indirect airside economizers and highlights the need for careful moisture and air-quality control. Those references provide useful engineering context, but they do not replace the site’s approved sequence of operation, equipment manuals, local code requirements, or the authority of the facility’s qualified personnel.</p>
+<hr class="post-divider">
+<h2>What Managers Should Check</h2>
+<p>Treat the changeover as a controlled operating event with a defined start condition, stop condition, and recovery path. The following framework helps a manager determine whether the site is ready.</p>
+<h3>1. Confirm the mode and the operating window</h3>
+<p>Document whether the installation is direct or indirect, which air handlers participate, and what “economizer enabled” means at that site. The sequence should state the required outdoor-air temperature, enthalpy or dewpoint limits, indoor temperature and humidity limits, minimum outdoor-air position, and the conditions that lock the mode out.</p>
+<p>Do not rely on a generic seasonal calendar. The acceptable window depends on local climate, the data-hall design, filtration, the IT equipment envelope, and the site’s control philosophy. A cold outdoor temperature by itself is not proof that the air is suitable.</p>
+<h3>2. Verify sensors before trusting the sequence</h3>
+<p>Review the most recent calibration or verification records for outdoor-air temperature, return-air temperature, mixed-air temperature, supply-air temperature, rack-inlet sensors, relative humidity, and dewpoint sensors. Walk the sensor locations. A sensor near an exhaust discharge, sunlit wall, leaking damper, or unrepresentative return path can mislead the control loop even when it is calibrated.</p>
+<p>Before the changeover, managers should ask:</p>
+<ul><li>Do BAS values agree with a recently checked handheld instrument or reference sensor?</li><li>Are the sensor timestamps current, and are stale values alarmed?</li><li>Are high and low limits visible to the operator, not just buried in a controller?</li><li>Does the sequence use the measurement that actually matters for the IT inlet condition?</li><li>Are mixed-air and supply-air trends recording fast enough to see the transition?</li></ul>
+<h3>3. Inspect the physical airflow path</h3>
+<p>The team should verify that outdoor-air, return-air, relief-air, and exhaust paths are clear. Inspect damper blades, linkages, seals, actuator couplings, filters, screens, louvers, and access doors. Check for unusual differential pressure across filters and coils. If the design uses an air-to-air heat exchanger, confirm that bypass dampers and wheel or plate sections respond as intended.</p>
+<p>Use a witnessed stroke test where practical. Command the damper to a known position, confirm the physical position or proof signal, and record the response time. A position feedback value that never changes is not acceptable evidence of movement. Note any actuator that hunts, stalls, moves slowly, or requires an unexplained override.</p>
+<h3>4. Review filtration and outdoor-air quality controls</h3>
+<p>The filtration strategy should be explicit. Record the filter type, installation date, differential-pressure limit, spare availability, and who is authorized to change it. Confirm that the intake location and screens are appropriate for the site’s surrounding environment. Facilities teams near traffic, industry, salt air, wildfire smoke, or construction may need additional monitoring or a more conservative lockout strategy.</p>
+<p>For a direct economizer, check that the operating procedure explains what happens when outdoor-air quality deteriorates. For an indirect design, verify that the heat exchanger and seals maintain the intended separation between outdoor air and data-hall air. Include a clear trigger for disabling economizer operation and returning to the approved mechanical mode.</p>
+<h3>5. Prove the transition with a low-risk test</h3>
+<p>Schedule the first seasonal changeover during a staffed maintenance window or other approved operating period. Identify the responsible operator, the controls specialist, the mechanical technician, and the escalation contact. Agree in advance on the stop criteria.</p>
+<p>During the test, record:</p>
+<ol><li>Initial operating mode, outdoor conditions, room conditions, active alarms, fan speeds, and mechanical cooling status.</li><li>The command or condition that enables the economizer.</li><li>Damper positions, actuator proof, mixed-air temperature, supply-air temperature, and fan response.</li><li>Rack-inlet temperature distribution and any localized hot spots.</li><li>Humidity or dewpoint movement, not just dry-bulb temperature.</li><li>Chiller, DX, or reheat response as mechanical cooling stages down or remains available.</li><li>Alarm delivery, acknowledgment, and escalation behavior.</li><li>The time and conditions required to return to mechanical cooling.</li></ol>
+<p>Stop the test if rack-inlet conditions trend outside the approved envelope, if a required sensor becomes unreliable, if pressure control destabilizes, if a damper fails to prove, or if the fallback system cannot be demonstrated. The purpose of the test is to prove readiness, not to maximize economizer hours on the first attempt.</p>
+<h3>6. Verify the fallback path</h3>
+<p>The fallback review should be a separate checklist, not an assumption. Confirm that chillers, DX units, CRAH coils, control valves, pumps, condenser systems, and associated electrical feeders are available in the intended standby arrangement. Check that an economizer lockout does not leave a valve closed, a compressor disabled, or a lead-lag sequence in an unexpected state.</p>
+<p>The operator should be able to answer three questions quickly:</p>
+<ul><li>What condition will force the site back to mechanical cooling?</li><li>Which control point or procedure performs that change?</li><li>How will the team know the fallback succeeded?</li></ul>
+<p>If the answers depend on one person remembering an undocumented workaround, the system is not ready for routine seasonal operation.</p>
+<h3>7. Make the change visible to the whole shift team</h3>
+<p>Update the shift log, operating procedure, alarm response guide, and maintenance calendar. Explain the mode change at the handoff. Include the expected trend shape, the active lockouts, the location of the equipment, and the person who can authorize a return to mechanical cooling.</p>
+<p>For a colocation site, coordinate customer communications according to the approved change process. The message should describe the operational window and monitoring plan without implying that the customer must diagnose facility controls.</p>
+<hr class="post-divider">
+<h2>Which Training Fits This Situation</h2>
+<p>The most relevant foundation is <strong>Cooling Systems Design &amp; Optimization</strong>, an 8-hour comprehensive course in the Cooling &amp; Efficiency track. It gives engineers and facility managers a broader view of cooling-system design, efficiency decisions, and the operating tradeoffs behind economization. It is a useful fit when the person approving the changeover needs to understand why the sequence uses outdoor-air conditions, airflow control, and mechanical backup together.</p>
+<p>For technicians who need a more focused path, <strong>HVAC Systems Troubleshooting Essentials</strong> and <strong>Mechanical Systems &amp; Equipment Maintenance</strong> address the equipment-side work: sensors, fans, coils, dampers, actuators, and maintenance conditions that determine whether the sequence can be trusted. <strong>Energy Efficiency &amp; PUE Optimization</strong> can help managers connect cooling-mode decisions to facility energy performance without reducing the decision to a single PUE number.</p>
+<p>The <strong>Cooling &amp; Facilities Efficiency Bundle</strong> groups six real courses for HVAC and facilities technicians, including Cooling Systems Design &amp; Optimization, HVAC Systems Troubleshooting Essentials, Energy Efficiency &amp; PUE Optimization, Mechanical Systems &amp; Equipment Maintenance, Data Center Cooling System and Refrigerant Safety Training, and Building Envelope Fundamentals. A bundle can make sense for a team that owns cooling across design review, troubleshooting, maintenance, and efficiency. An individual course may be a better fit when a new operator only needs a defined foundation before working under site procedures.</p>
+<p>Training should be assigned by role and task. A controls engineer may need the design and BAS context, while a mechanical technician may need troubleshooting and equipment maintenance. The shift operator needs to recognize the active mode, interpret alarms, and execute the approved fallback procedure. None of these courses replaces site-specific qualification, supervised hands-on work, manufacturer instructions, or the facility’s authorized operating procedures. Learners receive a certificate of completion for the course, which supports a training program but is not a regulatory license or certification.</p>
+<hr class="post-divider">
+<h2>Common Mistakes to Avoid</h2>
+<ul><li>Enabling economizer operation because the outdoor temperature is low while ignoring dewpoint, humidity, air quality, or rack-inlet conditions.</li><li>Treating a BAS command as proof that a damper, actuator, valve, or fan actually moved.</li><li>Testing only at the central plant and failing to review the cold aisle, return path, and localized rack temperatures.</li><li>Leaving a maintenance override active after troubleshooting and then blaming the sequence when seasonal conditions change.</li><li>Skipping filter differential-pressure checks because the filters “look clean” from the access side.</li><li>Changing the operating mode without recording the baseline, so the team cannot tell whether temperatures or fan energy improved.</li><li>Designing a return-to-mechanical procedure that depends on one controls specialist being on call.</li><li>Calling the changeover a commissioning activity once and never rehearsing it again after software, sensor, damper, or equipment changes.</li><li>Buying broad training without assigning a role, a required outcome, and a site-specific supervised practice step.</li></ul>
+<hr class="post-divider">
+<h2>Key Takeaway</h2>
+<p>An airside economizer changeover is a coordinated facilities operation, not a seasonal toggle. The site should prove the mode, sensors, dampers, filtration, humidity controls, alarms, and mechanical fallback as one operating chain before using the sequence routinely. The best efficiency result is the one that preserves stable rack-inlet conditions and gives every shift a clear recovery path.</p>
+<p>This week, walk one economizer air path with a mechanical technician and controls specialist, record the current lockout and fallback conditions, and schedule a witnessed changeover review before the next favorable weather window.</p>
+<hr class="post-divider">
+<h2>Sources</h2>
+<ul class="sources-list"><li><a href="https://www.energy.gov/sites/default/files/2024-07/best-practice-guide-data-center-design.pdf" target="_blank" rel="noopener noreferrer">U.S. Department of Energy, Best Practices Guide for Energy-Efficient Data Center Design</a></li><li><a href="https://handbook.ashrae.org/handbooks/A23/IP/a23_ch20/a23_ch20_ip.aspx" target="_blank" rel="noopener noreferrer">ASHRAE Handbook, Data Centers and Telecommunication Facilities</a></li><li><a href="https://www.energy.gov/cmei/femp/cooling-water-efficiency-opportunities-federal-data-centers" target="_blank" rel="noopener noreferrer">U.S. Department of Energy, Cooling Water Efficiency Opportunities for Federal Data Centers</a></li><li><a href="https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P100Y1A6.TXT" target="_blank" rel="noopener noreferrer">U.S. Environmental Protection Agency, Facilities Manual Volume 2 Architecture and Engineering Guidelines</a></li></ul>
+  </article>
+  <section class="related-posts" aria-labelledby="related-heading">
+    <h2 id="related-heading">More from the blog</h2>
+    <div class="related-grid"><a class="post-card" href="how-data-center-managers-should-link-training-records-to-high-risk-maintenance-tasks.html"><img class="post-card-thumb" src="../assets/img/posts/how-data-center-managers-should-link-training-records-to-high-risk-maintenance-tasks.jpg" srcset="../assets/img/posts/how-data-center-managers-should-link-training-records-to-high-risk-maintenance-tasks-480w.webp 480w, ../assets/img/posts/how-data-center-managers-should-link-training-records-to-high-risk-maintenance-tasks-800w.webp 800w, ../assets/img/posts/how-data-center-managers-should-link-training-records-to-high-risk-maintenance-tasks-1200w.webp 1200w" sizes="(max-width: 640px) calc(100vw - 32px), (max-width: 1024px) 50vw, 380px" alt="How Data Center Managers Should Link Training Records to High-Risk Maintenance Tasks" width="1200" height="675" loading="lazy" decoding="async"><div class="post-card-body"><div class="post-date">November 16, 2026</div><h3>How Data Center Managers Should Link Training Records to High-Risk Maintenance Tasks</h3></div></a><a class="post-card" href="colocation-power-turn-up-readiness-what-facilities-teams-should-verify-before-energizing-a-customer-suite.html"><img class="post-card-thumb" src="../assets/img/posts/colocation-power-turn-up-readiness-what-facilities-teams-should-verify-before-energizing-a-customer-suite.jpg" srcset="../assets/img/posts/colocation-power-turn-up-readiness-what-facilities-teams-should-verify-before-energizing-a-customer-suite-480w.webp 480w, ../assets/img/posts/colocation-power-turn-up-readiness-what-facilities-teams-should-verify-before-energizing-a-customer-suite-800w.webp 800w, ../assets/img/posts/colocation-power-turn-up-readiness-what-facilities-teams-should-verify-before-energizing-a-customer-suite-1200w.webp 1200w" sizes="(max-width: 640px) calc(100vw - 32px), (max-width: 1024px) 50vw, 380px" alt="Colocation Power Turn-Up Readiness: What Facilities Teams Should Verify Before Energizing a Customer Suite" width="1200" height="675" loading="lazy" decoding="async"><div class="post-card-body"><div class="post-date">November 13, 2026</div><h3>Colocation Power Turn-Up Readiness: What Facilities Teams Should Verify Before Energizing a Customer Suite</h3></div></a></div>
+    <a class="related-all" href="../">View all posts &rarr;</a>
+  </section>
+</main>
+
+<footer class="site-footer" id="contact">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="../../" class="logo">
+          <img class="logo-img" src="../../images/logo.png" alt="datacentertraining.us" width="537" height="96" loading="lazy">
+        </a>
+        <p class="footer-legal">Data Center Training is a specialty training division of <a href="https://hazwoper-osha.com/" target="_blank" rel="noopener">HAZWOPER-OSHA Training, LLC</a>, an IACET-accredited provider of professional data center and safety compliance training.</p>
+        <p class="footer-legal" style="margin-top:8px;">HAZWOPER OSHA Training, LLC &middot; 11901 Santa Monica Blvd., Suite #414, Los Angeles, CA 90025</p>
+        <div class="footer-badges">
+          <img src="https://media.hazwoper-osha.com/wp-content/uploads/2023/11/1698821020/IACET-small.webp" alt="IACET Accredited Provider" width="40" height="24" loading="lazy">
+          <img src="https://media.hazwoper-osha.com/wp-content/uploads/2026/07/1784291935/bbb.webp" alt="BBB A+ Rating" width="40" height="24" loading="lazy">
+          <img src="https://media.hazwoper-osha.com/wp-content/uploads/2026/07/1784292027/trust.webp" alt="Google Trust Services" width="141" height="20" loading="lazy" style="height:20px;">
+        </div>
+      </div>
+      <div class="footer-cta">
+        <p class="footer-cta-title">Not sure where to start?</p>
+        <p class="footer-cta-text">Find the data center role that fits you, then get a training plan built around it.</p>
+        <div class="footer-cta-actions">
+          <a href="../../quizzes/career-quiz.html" class="btn btn-primary btn-sm">Take the Career Quiz</a>
+          <a href="../../tools/training-plan-builder.html" class="text-link">Build a training plan &rarr;</a>
+        </div>
+        <div class="footer-contact-links">
+          <a href="tel:18664296742">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            1-866-429-6742
+          </a>
+          <a href="mailto:info@hazwoper-osha.com">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            info@hazwoper-osha.com
+          </a>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/HazwoperOsha/" target="_blank" rel="noopener" aria-label="Facebook"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/hazwoper_osha_training/?hl=en" target="_blank" rel="noopener" aria-label="Instagram"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="https://www.youtube.com/@hazwoper-osha" target="_blank" rel="noopener" aria-label="YouTube"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33zM9.75 15.02V8.48l5.75 3.27z"/></svg></a>
+          <a href="https://x.com/HazwoperOsha" target="_blank" rel="noopener" aria-label="X"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.4 8.4L23 22h-6.6l-5.2-6.8L5.1 22H2l7.9-9L1.6 2h6.8l4.7 6.2z"/></svg></a>
+          <a href="https://www.linkedin.com/company/hazwoper-osha" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zM8.34 18.34V10.1H5.67v8.24zM7.01 8.97a1.55 1.55 0 1 0 0-3.1 1.55 1.55 0 0 0 0 3.1zM18.34 18.34v-4.6c0-2.46-1.31-3.6-3.06-3.6a2.64 2.64 0 0 0-2.39 1.32V10.1H10.2s.04.86 0 8.24h2.68v-4.6c0-.25.02-.5.09-.68a1.5 1.5 0 0 1 1.37-1c.96 0 1.35.73 1.35 1.8v4.48z"/></svg></a>
+          <a href="https://www.pinterest.com/hazwoperosha/" target="_blank" rel="noopener" aria-label="Pinterest"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.64 7.86 6.36 9.32-.09-.79-.17-2.01.03-2.88.19-.79 1.22-5.03 1.22-5.03s-.31-.63-.31-1.55c0-1.45.84-2.54 1.89-2.54.89 0 1.32.67 1.32 1.47 0 .89-.57 2.23-.86 3.47-.25 1.03.52 1.88 1.53 1.88 1.84 0 3.07-2.36 3.07-5.15 0-2.12-1.43-3.71-4.02-3.71-2.93 0-4.76 2.19-4.76 4.63 0 .84.25 1.44.63 1.9.18.21.2.3.14.54-.05.18-.16.63-.21.81-.07.26-.28.35-.51.26-1.44-.59-2.11-2.16-2.11-3.93 0-2.92 2.46-6.43 7.34-6.43 3.92 0 6.5 2.84 6.5 5.89 0 4.03-2.24 7.04-5.55 7.04-1.11 0-2.16-.6-2.51-1.28 0 0-.6 2.36-.73 2.82-.22.8-.66 1.6-1.06 2.22.95.29 1.95.45 3 .45 5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-grid">
+    <div class="footer-col">
+      <h3>Training</h3>
+      <a href="../../courses.html">Course Catalog</a>
+      <a href="../../bundles.html">Course Bundles</a>
+      <a href="../../training/">Training by Topic</a>
+      <a href="../../training/nfpa-70e-training.html">NFPA 70E Training</a>
+      <a href="../../training/arc-flash-training.html">Arc Flash Training</a>
+      <a href="../../who.html">Courses by Role</a>
+      <a href="../../tools/training-plan-builder.html">Training Plan Builder</a>
+      <a href="../../#teams">Team Training</a>
+      <a href="../../certifications.html">Certificates &amp; Accreditation</a>
+      <a href="../../faq.html">FAQ</a>
+    </div>
+    <div class="footer-col">
+      <h3>Learn</h3>
+      <a href="../../learn/">Knowledge Center</a>
+      <a href="../../learn/what-is-a-data-center.html">Data Center 101</a>
+      <a href="../../learn/data-center-power.html">Power Systems</a>
+      <a href="../../learn/data-center-cooling.html">Cooling Systems</a>
+      <a href="../../learn/data-center-tiers.html">Tier Levels</a>
+      <a href="../../learn/data-center-safety.html">Safety Guide</a>
+      <a href="../../learn/data-center-standards.html">Standards Guide</a>
+      <a href="../../learn/glossary.html">Glossary</a>
+      <a href="../../blog/">Blog</a>
+    </div>
+    <div class="footer-col">
+      <h3>Careers</h3>
+      <a href="../../careers/">Careers Hub</a>
+      <a href="../../careers/data-center-technician.html">Data Center Technician</a>
+      <a href="../../careers/data-center-jobs.html">Job Roles Explained</a>
+      <a href="../../careers/entry-level-data-center-jobs.html">Entry-Level Jobs</a>
+      <a href="../../careers/data-center-technician-salary.html">Salary Guide</a>
+      <a href="../../careers/data-center-jobs-by-location.html">Jobs by Location</a>
+      <a href="../../careers/data-center-certifications.html">Certifications Guide</a>
+      <a href="../../careers/interview-questions.html">Interview Questions</a>
+      <a href="../../quizzes/career-quiz.html">Career Match Quiz</a>
+    </div>
+    <div class="footer-col">
+      <h3>Quizzes &amp; Tools</h3>
+      <a href="../../quizzes/">All Quizzes</a>
+      <a href="../../quizzes/data-center-basics-quiz.html">Data Center Basics Quiz</a>
+      <a href="../../tools/">All Tools</a>
+      <a href="../../tools/pue-calculator.html">PUE Calculator</a>
+      <a href="../../tools/uptime-calculator.html">Uptime Calculator</a>
+      <a href="../../tools/cooling-load-calculator.html">Cooling Load Calculator</a>
+      <a href="../../search.html">Search the Site</a>
+    </div>
+    <div class="footer-col">
+      <h3>Company</h3>
+      <a href="../../about.html">About Us</a>
+      <a href="../../contact.html">Contact Us</a>
+      <a href="https://hazwoper-osha.com/" target="_blank" rel="noopener">HAZWOPER-OSHA Training</a>
+      <a href="https://hazwoper-osha.com/certificate-verification" target="_blank" rel="noopener">Verify Certificate</a>
+      <a href="../../privacy.html">Privacy Policy</a>
+      <a href="../../terms.html">Terms of Service</a>
+      <a href="../../accessibility.html">Accessibility</a>
+      <a href="../../privacy.html#choices" data-privacy-choices>Your Privacy Choices</a>
+      <a href="https://hazwoper-osha.com/refund-policy" target="_blank" rel="noopener">Refund Policy</a>
+    </div>
+    </div>
+
+    <p class="footer-agents"><span>For AI agents:</span> <a href="../../developers/">Developer Portal (API)</a> <a href="../../developers/mcp.html">MCP Server</a> <a href="../../developers/cli.html">CLI</a> <a href="/llms.txt">llms.txt</a> <a href="/llms-full.txt">llms-full.txt</a> <a href="/.well-known/mcp.json">WebMCP Manifest</a> <a href="/api/v1/index.json">JSON Catalog API</a> <a href="/openapi.json">API Docs (OpenAPI)</a> <a href="/sitemap.xml">Sitemap</a> <a href="https://github.com/LJ-Web-Management/datacentertraining.us" rel="noopener">GitHub</a></p>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; 2026 HAZWOPER-OSHA Training, LLC. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+<script src="../../js/main.js" defer></script>
+
+</body>
+</html>

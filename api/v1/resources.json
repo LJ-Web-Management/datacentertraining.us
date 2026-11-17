@@ -1,8 +1,8 @@
 {
   "publisher": "Data Center Training (datacentertraining.us)",
-  "last_updated": "2026-11-16",
+  "last_updated": "2026-11-17",
   "license": "Public information; quote with attribution and a link to the source URL.",
-  "count": 145,
+  "count": 146,
   "resources": [
     {
       "source": "Data Center Training (first party)",
@@ -1153,6 +1153,18 @@
         "tier"
       ],
       "audience": []
+    },
+    {
+      "type": "blog_post",
+      "title": "Data Center Airside Economizer Changeover: What Facilities Teams Should Verify Before Switching Modes",
+      "url": "https://datacentertraining.us/blog/posts/data-center-airside-economizer-changeover-what-facilities-teams-should-verify-before-switching-modes.html",
+      "description": "When outdoor conditions become favorable, should a data center facilities team switch from compressor-based cooling to an airside economizer, and what must be…",
+      "topics": [
+        "cooling"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-11-17"
     },
     {
       "type": "blog_post",

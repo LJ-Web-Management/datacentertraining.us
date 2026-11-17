@@ -138,11 +138,11 @@ September 24, 2026
 
 ### How Data Center Managers Should Test Physical Access During a Maintenance Window
 
-[!\[How Data Center Managers Should Link Training Records to High-Risk Maintenance Tasks\](https://datacentertraining.us/blog/assets/img/posts/how-data-center-managers-should-link-training-records-to-high-risk-maintenance-tasks.jpg)](https://datacentertraining.us/blog/posts/how-data-center-managers-should-link-training-records-to-high-risk-maintenance-tasks.html)
+[!\[Data Center Airside Economizer Changeover: What Facilities Teams Should Verify Before Switching Modes\](https://datacentertraining.us/blog/assets/img/posts/data-center-airside-economizer-changeover-what-facilities-teams-should-verify-before-switching-modes.jpg)](https://datacentertraining.us/blog/posts/data-center-airside-economizer-changeover-what-facilities-teams-should-verify-before-switching-modes.html)
 
-November 16, 2026
+November 17, 2026
 
-### How Data Center Managers Should Link Training Records to High-Risk Maintenance Tasks
+### Data Center Airside Economizer Changeover: What Facilities Teams Should Verify Before Switching Modes
 
 [View all posts →](https://datacentertraining.us/blog/)
 

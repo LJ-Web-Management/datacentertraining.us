@@ -4,6 +4,12 @@ Data Center Training Blog
 
 Technical guidance, standards updates, and field best practices on power, cooling, electrical safety, operations, and compliance from datacentertraining.us.
 
+[!\[Data Center Airside Economizer Changeover: What Facilities Teams Should Verify Before Switching Modes\](https://datacentertraining.us/blog/assets/img/posts/data-center-airside-economizer-changeover-what-facilities-teams-should-verify-before-switching-modes.jpg)](https://datacentertraining.us/blog/posts/data-center-airside-economizer-changeover-what-facilities-teams-should-verify-before-switching-modes.html)
+
+November 17, 2026
+
+## Data Center Airside Economizer Changeover: What Facilities Teams Should Verify Before Switching Modes
+
 [!\[How Data Center Managers Should Link Training Records to High-Risk Maintenance Tasks\](https://datacentertraining.us/blog/assets/img/posts/how-data-center-managers-should-link-training-records-to-high-risk-maintenance-tasks.jpg)](https://datacentertraining.us/blog/posts/how-data-center-managers-should-link-training-records-to-high-risk-maintenance-tasks.html)
 
 November 16, 2026

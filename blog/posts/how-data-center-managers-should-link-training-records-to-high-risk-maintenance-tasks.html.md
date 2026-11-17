@@ -133,6 +133,12 @@ This week, choose one high-risk task such as UPS battery maintenance, generator 
 
 ## More from the blog
 
+[!\[Data Center Airside Economizer Changeover: What Facilities Teams Should Verify Before Switching Modes\](https://datacentertraining.us/blog/assets/img/posts/data-center-airside-economizer-changeover-what-facilities-teams-should-verify-before-switching-modes.jpg)](https://datacentertraining.us/blog/posts/data-center-airside-economizer-changeover-what-facilities-teams-should-verify-before-switching-modes.html)
+
+November 17, 2026
+
+### Data Center Airside Economizer Changeover: What Facilities Teams Should Verify Before Switching Modes
+
 [!\[Colocation Power Turn-Up Readiness: What Facilities Teams Should Verify Before Energizing a Customer Suite\](https://datacentertraining.us/blog/assets/img/posts/colocation-power-turn-up-readiness-what-facilities-teams-should-verify-before-energizing-a-customer-suite.jpg)](https://datacentertraining.us/blog/posts/colocation-power-turn-up-readiness-what-facilities-teams-should-verify-before-energizing-a-customer-suite.html)
 
 November 13, 2026
