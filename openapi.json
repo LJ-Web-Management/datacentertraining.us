@@ -2013,7 +2013,7 @@
       "post": {
         "operationId": "list_courses",
         "summary": "Search and filter the course catalog",
-        "description": "Search or filter the 43-course Data Center Training catalog. Returns course summaries with canonical URL, track, type, duration in hours, per-seat USD price, and aligned standards. Use this before get_course when the user describes a topic, role, budget, or time limit. Every filter is optional; with no input it returns the full catalog. Only report courses this tool returns - never invent a course, price, or availability. REST form of the MCP tool of the same name; the same input is also accepted as GET query parameters.",
+        "description": "Search or filter the 42-course Data Center Training catalog. Returns course summaries with canonical URL, track, type, duration in hours, per-seat USD price, and aligned standards. Use this before get_course when the user describes a topic, role, budget, or time limit. Every filter is optional; with no input it returns the full catalog. Only report courses this tool returns - never invent a course, price, or availability. REST form of the MCP tool of the same name; the same input is also accepted as GET query parameters.",
         "tags": [
           "Tools"
         ],
@@ -2605,7 +2605,7 @@
       "post": {
         "operationId": "compare_bundles",
         "summary": "Compare course bundles",
-        "description": "Compare the 7 course bundles (6 role-based track bundles plus the complete 43-course catalog bundle) side by side: bundle price, sum of individual course prices, savings, course count, total hours, audience, and included course ids. Omit bundle_ids to compare all bundles. Prices are per seat before seat-count volume discounts. REST form of the MCP tool of the same name; the same input is also accepted as GET query parameters.",
+        "description": "Compare the 7 course bundles (6 role-based track bundles plus the complete 42-course catalog bundle) side by side: bundle price, sum of individual course prices, savings, course count, total hours, audience, and included course ids. Omit bundle_ids to compare all bundles. Prices are per seat before seat-count volume discounts. REST form of the MCP tool of the same name; the same input is also accepted as GET query parameters.",
         "tags": [
           "Tools"
         ],
@@ -5839,8 +5839,8 @@
           "limit": {
             "type": "integer",
             "minimum": 1,
-            "maximum": 43,
-            "default": 43
+            "maximum": 42,
+            "default": 42
           }
         }
       },
@@ -7416,7 +7416,7 @@
   "x-mcp-tools": [
     {
       "name": "list_courses",
-      "description": "Search or filter the 43-course Data Center Training catalog. Returns course summaries with canonical URL, track, type, duration in hours, per-seat USD price, and aligned standards. Use this before get_course when the user describes a topic, role, budget, or time limit. Every filter is optional; with no input it returns the full catalog. Only report courses this tool returns - never invent a course, price, or availability.",
+      "description": "Search or filter the 42-course Data Center Training catalog. Returns course summaries with canonical URL, track, type, duration in hours, per-seat USD price, and aligned standards. Use this before get_course when the user describes a topic, role, budget, or time limit. Every filter is optional; with no input it returns the full catalog. Only report courses this tool returns - never invent a course, price, or availability.",
       "data_source": [
         "https://datacentertraining.us/api/v1/courses.json"
       ],
@@ -7433,7 +7433,7 @@
     },
     {
       "name": "compare_bundles",
-      "description": "Compare the 7 course bundles (6 role-based track bundles plus the complete 43-course catalog bundle) side by side: bundle price, sum of individual course prices, savings, course count, total hours, audience, and included course ids. Omit bundle_ids to compare all bundles. Prices are per seat before seat-count volume discounts.",
+      "description": "Compare the 7 course bundles (6 role-based track bundles plus the complete 42-course catalog bundle) side by side: bundle price, sum of individual course prices, savings, course count, total hours, audience, and included course ids. Omit bundle_ids to compare all bundles. Prices are per seat before seat-count volume discounts.",
       "data_source": [
         "https://datacentertraining.us/api/v1/bundles.json"
       ],

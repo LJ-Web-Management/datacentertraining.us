@@ -392,7 +392,7 @@ function buildData() {
   const topicWords = ['electrical', 'ups', 'generator', 'cooling', 'refrigerant', 'fire', 'suppression', 'security', 'access', 'commissioning',
     'dcim', 'bms', 'pue', 'battery', 'lithium', 'tier', 'confined', 'raised floor', 'training matrix', 'contractor', 'visitor', 'maintenance'];
   const staticResources = [
-    { type: 'site_page', title: 'Course Catalog', url: ORIGIN + '/courses.html', description: 'All 43 courses with search, sort, and filters by track, type, duration, or price.', topics: ['catalog'], audience: [] },
+    { type: 'site_page', title: 'Course Catalog', url: ORIGIN + '/courses.html', description: 'All ' + courses.length + ' courses with search, sort, and filters by track, type, duration, or price.', topics: ['catalog'], audience: [] },
     { type: 'site_page', title: 'Course Bundles', url: ORIGIN + '/bundles.html', description: 'Seven role-based and complete-catalog bundles with pricing and savings.', topics: ['pricing', 'bundles'], audience: [] },
     { type: 'site_page', title: 'Which Courses Does Your Role Need?', url: ORIGIN + '/who.html', description: 'Role-to-track recommendations for electricians, HVAC techs, operations managers, security leads, engineers, and IT staff.', topics: ['roles'], audience: [] },
     { type: 'site_page', title: 'Certifications & Accreditations', url: ORIGIN + '/certifications.html', description: 'IACET provider accreditation and what a certificate of completion does and does not mean.', topics: ['certificate', 'accreditation', 'credentials'], audience: [] },
@@ -574,7 +574,7 @@ function toolDefs(d) {
     {
       name: 'list_courses',
       title: 'Search and filter the course catalog',
-      description: 'Search or filter the 43-course Data Center Training catalog. Returns course summaries with canonical URL, track, type, duration in hours, per-seat USD price, and aligned standards. Use this before get_course when the user describes a topic, role, budget, or time limit. Every filter is optional; with no input it returns the full catalog. Only report courses this tool returns - never invent a course, price, or availability.',
+      description: 'Search or filter the ' + d.courses.length + '-course Data Center Training catalog. Returns course summaries with canonical URL, track, type, duration in hours, per-seat USD price, and aligned standards. Use this before get_course when the user describes a topic, role, budget, or time limit. Every filter is optional; with no input it returns the full catalog. Only report courses this tool returns - never invent a course, price, or availability.',
       data_source: [API + '/courses.json'],
       inputSchema: {
         $schema: D7, type: 'object', additionalProperties: false,
@@ -590,7 +590,7 @@ function toolDefs(d) {
           max_price_usd: { type: 'number', minimum: 0, maximum: 10000, description: 'Maximum per-seat price in USD.' },
           max_duration_hours: { type: 'number', minimum: 0, maximum: 24, description: 'Maximum course length in hours.' },
           sort: { type: 'string', enum: ['title', 'price_asc', 'price_desc', 'duration_asc', 'duration_desc'], default: 'title' },
-          limit: { type: 'integer', minimum: 1, maximum: 43, default: 43 }
+          limit: { type: 'integer', minimum: 1, maximum: d.courses.length, default: d.courses.length }
         }
       },
       outputSchema: {
@@ -634,7 +634,7 @@ function toolDefs(d) {
     {
       name: 'compare_bundles',
       title: 'Compare course bundles',
-      description: 'Compare the 7 course bundles (6 role-based track bundles plus the complete 43-course catalog bundle) side by side: bundle price, sum of individual course prices, savings, course count, total hours, audience, and included course ids. Omit bundle_ids to compare all bundles. Prices are per seat before seat-count volume discounts.',
+      description: 'Compare the ' + d.bundles.length + ' course bundles (' + d.tracks.length + ' role-based track bundles plus the complete ' + d.courses.length + '-course catalog bundle) side by side: bundle price, sum of individual course prices, savings, course count, total hours, audience, and included course ids. Omit bundle_ids to compare all bundles. Prices are per seat before seat-count volume discounts.',
       data_source: [API + '/bundles.json'],
       inputSchema: {
         $schema: D7, type: 'object', additionalProperties: false,
@@ -866,7 +866,7 @@ function buildOutputs(d) {
     schema_version: '2026-06',
     name: 'datacentertraining-us',
     title: 'Data Center Training',
-    description: 'Read-only catalog tools for Data Center Training (datacentertraining.us): ' + d.courses.length + ' online, self-paced data center courses (' + d.courses.reduce((sum, c) => sum + c.duration_hours, 0) + ' hours), 7 bundles, and 6 role-based learning tracks, delivered by HAZWOPER OSHA Training, LLC, an IACET Accredited Provider.',
+    description: 'Read-only catalog tools for Data Center Training (datacentertraining.us): ' + d.courses.length + ' online, self-paced data center courses (' + d.courses.reduce((sum, c) => sum + c.duration_hours, 0) + ' hours), ' + d.bundles.length + ' bundles, and ' + d.tracks.length + ' role-based learning tracks, delivered by HAZWOPER OSHA Training, LLC, an IACET Accredited Provider.',
     version: MANIFEST_VERSION,
     last_updated: updated,
     homepage: ORIGIN + '/',
@@ -915,8 +915,8 @@ function buildOutputs(d) {
       { uri: ORIGIN + '/llms.txt', name: 'llms.txt', mimeType: 'text/markdown', description: 'Concise site summary and agent rules.' },
       { uri: ORIGIN + '/llms-full.txt', name: 'llms-full.txt', mimeType: 'text/markdown', description: 'Every course, bundle, role, FAQ, and policy as stable records.' },
       { uri: API + '/index.json', name: 'API index', mimeType: 'application/json', description: 'Index of all JSON documents.' },
-      { uri: API + '/courses.json', name: 'Courses', mimeType: 'application/json', description: 'All 43 course records.' },
-      { uri: API + '/bundles.json', name: 'Bundles', mimeType: 'application/json', description: 'All 7 bundles with pricing and savings.' },
+      { uri: API + '/courses.json', name: 'Courses', mimeType: 'application/json', description: 'All ' + d.courses.length + ' course records.' },
+      { uri: API + '/bundles.json', name: 'Bundles', mimeType: 'application/json', description: 'All ' + d.bundles.length + ' bundles with pricing and savings.' },
       { uri: API + '/roles.json', name: 'Roles and tracks', mimeType: 'application/json', description: 'Role-to-track recommendations.' },
       { uri: API + '/faq.json', name: 'FAQ', mimeType: 'application/json', description: 'Published FAQ answers.' },
       { uri: API + '/credentials.json', name: 'Credentials', mimeType: 'application/json', description: 'Certificate and accreditation facts and claims to avoid.' },

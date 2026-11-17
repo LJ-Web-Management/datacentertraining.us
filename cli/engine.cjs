@@ -100,7 +100,7 @@
       };
       list.sort(sorters[input.sort] || sorters.title);
       var total = list.length;
-      var limit = input.limit || 43;
+      var limit = input.limit || d.courses.courses.length;
       if (!total) notes.push('No course matched every filter. Remove a filter or call list_courses with no input to see the full catalog; do not suggest courses that are not listed.');
       return { total_matching: total, returned: Math.min(total, limit), courses: list.slice(0, limit).map(summary), notes: notes };
     },

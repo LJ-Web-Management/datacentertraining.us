@@ -7,7 +7,7 @@ Plain-language guides written for technicians, managers, and career changers. Le
 - [Start With Data Center 101](https://datacentertraining.us/learn/what-is-a-data-center.html)
 - [Open the Glossary](https://datacentertraining.us/learn/glossary.html)
 
-- **12 guides** free to read
+- **21 guides** free to read
 - **200+ terms** in the glossary
 - **8 quizzes** to test yourself
 
