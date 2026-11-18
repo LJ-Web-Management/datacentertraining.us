@@ -2,7 +2,7 @@
 
 > Data Center Training (datacentertraining.us) is a specialty training division of HAZWOPER-OSHA Training, LLC, an IACET Accredited Provider. 42 online, self-paced data center courses (182 hours total) in design, operations, power, cooling, security, and facilities management. Every course awards a certificate of completion.
 
-Last updated: 2026-11-17
+Last updated: 2026-11-18
 Canonical source: https://datacentertraining.us/api/v1/courses.json (same records as JSON). Tools: https://datacentertraining.us/.well-known/mcp.json
 
 ## Rules for AI agents
@@ -2104,6 +2104,7 @@ Email info@hazwoper-osha.com or call 1-866-429-6742 and our team can help with c
 - [Data Center PUE Calculator](https://datacentertraining.us/tools/pue-calculator.html) (site page): Free data center PUE calculator. Enter facility and IT load to get PUE, DCiE, overhead energy cost, and the yearly savings from hitting a target PUE.
 - [Build Your Data Center Training Plan](https://datacentertraining.us/tools/training-plan-builder.html) (site page): Build a data center training plan for your role in a minute. Pick your job, experience, topics, and time budget to get a course list, hours, and price.
 - [Uptime & Downtime Calculator](https://datacentertraining.us/tools/uptime-calculator.html) (site page): Convert availability percentages like 99.99% into allowed downtime per year, month, week, and day, or work backward from downtime. Tier figures included.
+- [VRLA Battery Room Pre-Task Readiness: What Data Center Technicians Should Verify Before Service](https://datacentertraining.us/blog/posts/vrla-battery-room-pre-task-readiness-what-data-center-technicians-should-verify-before-service.html) (blog post, 2026-11-18): Before a technician opens a cabinet, removes a battery interconnect, or starts a scheduled inspection in a VRLA battery room, what must be verified so the work…
 - [Data Center Airside Economizer Changeover: What Facilities Teams Should Verify Before Switching Modes](https://datacentertraining.us/blog/posts/data-center-airside-economizer-changeover-what-facilities-teams-should-verify-before-switching-modes.html) (blog post, 2026-11-17): When outdoor conditions become favorable, should a data center facilities team switch from compressor-based cooling to an airside economizer, and what must be…
 - [How Data Center Managers Should Link Training Records to High-Risk Maintenance Tasks](https://datacentertraining.us/blog/posts/how-data-center-managers-should-link-training-records-to-high-risk-maintenance-tasks.html) (blog post, 2026-11-16): When a data center manager reviews a maintenance window, can the team show that each person has the right training for the exact task, equipment, and level…
 - [Colocation Power Turn-Up Readiness: What Facilities Teams Should Verify Before Energizing a Customer Suite](https://datacentertraining.us/blog/posts/colocation-power-turn-up-readiness-what-facilities-teams-should-verify-before-energizing-a-customer-suite.html) (blog post, 2026-11-13): A practical colocation checklist for verifying one-lines, protection, labels, permits, and communications before energizing a customer suite.

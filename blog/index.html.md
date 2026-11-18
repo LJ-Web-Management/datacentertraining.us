@@ -4,6 +4,12 @@ Data Center Training Blog
 
 Technical guidance, standards updates, and field best practices on power, cooling, electrical safety, operations, and compliance from datacentertraining.us.
 
+[!\[VRLA Battery Room Pre-Task Readiness: What Data Center Technicians Should Verify Before Service\](https://datacentertraining.us/blog/assets/img/posts/vrla-battery-room-pre-task-readiness-what-data-center-technicians-should-verify-before-service.jpg)](https://datacentertraining.us/blog/posts/vrla-battery-room-pre-task-readiness-what-data-center-technicians-should-verify-before-service.html)
+
+November 18, 2026
+
+## VRLA Battery Room Pre-Task Readiness: What Data Center Technicians Should Verify Before Service
+
 [!\[Data Center Airside Economizer Changeover: What Facilities Teams Should Verify Before Switching Modes\](https://datacentertraining.us/blog/assets/img/posts/data-center-airside-economizer-changeover-what-facilities-teams-should-verify-before-switching-modes.jpg)](https://datacentertraining.us/blog/posts/data-center-airside-economizer-changeover-what-facilities-teams-should-verify-before-switching-modes.html)
 
 November 17, 2026

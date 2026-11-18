@@ -138,11 +138,11 @@ September 24, 2026
 
 ### How Data Center Managers Should Test Physical Access During a Maintenance Window
 
-[!\[Data Center Airside Economizer Changeover: What Facilities Teams Should Verify Before Switching Modes\](https://datacentertraining.us/blog/assets/img/posts/data-center-airside-economizer-changeover-what-facilities-teams-should-verify-before-switching-modes.jpg)](https://datacentertraining.us/blog/posts/data-center-airside-economizer-changeover-what-facilities-teams-should-verify-before-switching-modes.html)
+[!\[VRLA Battery Room Pre-Task Readiness: What Data Center Technicians Should Verify Before Service\](https://datacentertraining.us/blog/assets/img/posts/vrla-battery-room-pre-task-readiness-what-data-center-technicians-should-verify-before-service.jpg)](https://datacentertraining.us/blog/posts/vrla-battery-room-pre-task-readiness-what-data-center-technicians-should-verify-before-service.html)
 
-November 17, 2026
+November 18, 2026
 
-### Data Center Airside Economizer Changeover: What Facilities Teams Should Verify Before Switching Modes
+### VRLA Battery Room Pre-Task Readiness: What Data Center Technicians Should Verify Before Service
 
 [View all posts →](https://datacentertraining.us/blog/)
 

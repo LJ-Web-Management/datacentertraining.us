@@ -152,6 +152,12 @@ This week, walk one economizer air path with a mechanical technician and control
 
 ## More from the blog
 
+[!\[VRLA Battery Room Pre-Task Readiness: What Data Center Technicians Should Verify Before Service\](https://datacentertraining.us/blog/assets/img/posts/vrla-battery-room-pre-task-readiness-what-data-center-technicians-should-verify-before-service.jpg)](https://datacentertraining.us/blog/posts/vrla-battery-room-pre-task-readiness-what-data-center-technicians-should-verify-before-service.html)
+
+November 18, 2026
+
+### VRLA Battery Room Pre-Task Readiness: What Data Center Technicians Should Verify Before Service
+
 [!\[How Data Center Managers Should Link Training Records to High-Risk Maintenance Tasks\](https://datacentertraining.us/blog/assets/img/posts/how-data-center-managers-should-link-training-records-to-high-risk-maintenance-tasks.jpg)](https://datacentertraining.us/blog/posts/how-data-center-managers-should-link-training-records-to-high-risk-maintenance-tasks.html)
 
 November 16, 2026
