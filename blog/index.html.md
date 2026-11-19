@@ -4,6 +4,12 @@ Data Center Training Blog
 
 Technical guidance, standards updates, and field best practices on power, cooling, electrical safety, operations, and compliance from datacentertraining.us.
 
+[!\[Clean Agent Fire Suppression Readiness: What Data Center Teams Should Verify Before a Discharge Test\](https://datacentertraining.us/blog/assets/img/posts/clean-agent-fire-suppression-readiness-what-data-center-teams-should-verify-before-a-discharge-test.jpg)](https://datacentertraining.us/blog/posts/clean-agent-fire-suppression-readiness-what-data-center-teams-should-verify-before-a-discharge-test.html)
+
+November 19, 2026
+
+## Clean Agent Fire Suppression Readiness: What Data Center Teams Should Verify Before a Discharge Test
+
 [!\[VRLA Battery Room Pre-Task Readiness: What Data Center Technicians Should Verify Before Service\](https://datacentertraining.us/blog/assets/img/posts/vrla-battery-room-pre-task-readiness-what-data-center-technicians-should-verify-before-service.jpg)](https://datacentertraining.us/blog/posts/vrla-battery-room-pre-task-readiness-what-data-center-technicians-should-verify-before-service.html)
 
 November 18, 2026

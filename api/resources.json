@@ -1,8 +1,8 @@
 {
   "publisher": "Data Center Training (datacentertraining.us)",
-  "last_updated": "2026-11-18",
+  "last_updated": "2026-11-19",
   "license": "Public information; quote with attribution and a link to the source URL.",
-  "count": 147,
+  "count": 148,
   "resources": [
     {
       "source": "Data Center Training (first party)",
@@ -1153,6 +1153,19 @@
         "tier"
       ],
       "audience": []
+    },
+    {
+      "type": "blog_post",
+      "title": "Clean Agent Fire Suppression Readiness: What Data Center Teams Should Verify Before a Discharge Test",
+      "url": "https://datacentertraining.us/blog/posts/clean-agent-fire-suppression-readiness-what-data-center-teams-should-verify-before-a-discharge-test.html",
+      "description": "A planned clean-agent fire suppression test is not just a fire-protection vendor appointment. In a data center, it is an integrated facilities event that can…",
+      "topics": [
+        "fire",
+        "suppression"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-11-19"
     },
     {
       "type": "blog_post",

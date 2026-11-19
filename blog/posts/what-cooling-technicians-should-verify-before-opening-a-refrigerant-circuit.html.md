@@ -138,11 +138,11 @@ September 24, 2026
 
 ### How Data Center Managers Should Test Physical Access During a Maintenance Window
 
-[!\[VRLA Battery Room Pre-Task Readiness: What Data Center Technicians Should Verify Before Service\](https://datacentertraining.us/blog/assets/img/posts/vrla-battery-room-pre-task-readiness-what-data-center-technicians-should-verify-before-service.jpg)](https://datacentertraining.us/blog/posts/vrla-battery-room-pre-task-readiness-what-data-center-technicians-should-verify-before-service.html)
+[!\[Clean Agent Fire Suppression Readiness: What Data Center Teams Should Verify Before a Discharge Test\](https://datacentertraining.us/blog/assets/img/posts/clean-agent-fire-suppression-readiness-what-data-center-teams-should-verify-before-a-discharge-test.jpg)](https://datacentertraining.us/blog/posts/clean-agent-fire-suppression-readiness-what-data-center-teams-should-verify-before-a-discharge-test.html)
 
-November 18, 2026
+November 19, 2026
 
-### VRLA Battery Room Pre-Task Readiness: What Data Center Technicians Should Verify Before Service
+### Clean Agent Fire Suppression Readiness: What Data Center Teams Should Verify Before a Discharge Test
 
 [View all posts →](https://datacentertraining.us/blog/)
 

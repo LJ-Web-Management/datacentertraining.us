@@ -538,5 +538,15 @@
     "date": "2026-11-18",
     "dateDisplay": "November 18, 2026",
     "excerpt": "Before a technician opens a cabinet, removes a battery interconnect, or starts a scheduled inspection in a VRLA battery room, what must be verified so the work…"
+  },
+  {
+    "title": "Clean Agent Fire Suppression Readiness: What Data Center Teams Should Verify Before a Discharge Test",
+    "slug": "clean-agent-fire-suppression-readiness-what-data-center-teams-should-verify-before-a-discharge-test",
+    "seoTitle": "Clean Agent Fire Suppression Readiness",
+    "description": "A planned clean-agent fire suppression test is not just a fire-protection vendor appointment. In a data center, it is an integrated facilities event that can…",
+    "image": "assets/img/posts/clean-agent-fire-suppression-readiness-what-data-center-teams-should-verify-before-a-discharge-test.jpg",
+    "date": "2026-11-19",
+    "dateDisplay": "November 19, 2026",
+    "excerpt": "A planned clean-agent fire suppression test is not just a fire-protection vendor appointment. In a data center, it is an integrated facilities event that can…"
   }
 ]

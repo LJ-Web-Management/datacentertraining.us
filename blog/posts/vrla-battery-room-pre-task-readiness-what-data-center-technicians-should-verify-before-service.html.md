@@ -129,6 +129,12 @@ This week, choose one upcoming battery-room work order and ask the supervisor to
 
 ## More from the blog
 
+[!\[Clean Agent Fire Suppression Readiness: What Data Center Teams Should Verify Before a Discharge Test\](https://datacentertraining.us/blog/assets/img/posts/clean-agent-fire-suppression-readiness-what-data-center-teams-should-verify-before-a-discharge-test.jpg)](https://datacentertraining.us/blog/posts/clean-agent-fire-suppression-readiness-what-data-center-teams-should-verify-before-a-discharge-test.html)
+
+November 19, 2026
+
+### Clean Agent Fire Suppression Readiness: What Data Center Teams Should Verify Before a Discharge Test
+
 [!\[Data Center Airside Economizer Changeover: What Facilities Teams Should Verify Before Switching Modes\](https://datacentertraining.us/blog/assets/img/posts/data-center-airside-economizer-changeover-what-facilities-teams-should-verify-before-switching-modes.jpg)](https://datacentertraining.us/blog/posts/data-center-airside-economizer-changeover-what-facilities-teams-should-verify-before-switching-modes.html)
 
 November 17, 2026
