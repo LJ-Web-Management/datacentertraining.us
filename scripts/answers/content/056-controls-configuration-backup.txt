@@ -1,0 +1,31 @@
+Question: What Should Be Backed Up Before a Controls Configuration Change?
+Slug: controls-configuration-backup
+SEO Title: Controls Configuration Backups Before a Change
+Meta Description: What to capture before changing BMS or controls logic: the current approved configuration, target revision, rollback plan, and validation evidence.
+Track: Monitoring and Smart Facility
+Course: building-automation-systems-fundamentals
+Search phrase: data center BMS configuration backup change control
+Original title: Controls Configuration Backups: What to Capture Before a Change
+Sources: nist128, nist82
+Related posts: bms-alarm-setpoint-changes-a-change-control-checklist-for-data-center-facility-managers
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+Before changing control logic, teams should preserve the current approved configuration, identify the target revision, and define rollback and validation evidence.
+
+## Why this matters
+Without a known baseline, recovery may be slow or the team may restore an unapproved version.
+
+## Practical review points
+- Verify backup completeness and date
+- Record change owner and scope
+- Protect backup access and integrity
+- Test rollback method in an approved context
+
+## Example from operations
+A point mapping change is planned after a sensor replacement. The controls lead captures the current configuration and states how the change will be verified.
+
+## Frequently asked question
+### Is a screenshot enough to back up a control system?
+Usually not; use the system's approved backup and version-control process, with evidence that it can be restored.

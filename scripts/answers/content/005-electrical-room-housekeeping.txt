@@ -1,0 +1,31 @@
+Question: What Does Good Electrical Room Housekeeping Look Like?
+Slug: electrical-room-housekeeping
+SEO Title: Electrical Room Housekeeping: A Data Center Checklist
+Meta Description: What electrical room housekeeping covers in a data center: clear working space, labels, and egress routes, and why it is a condition review, not equipment work.
+Track: Power and Electrical
+Course: data-center-electrical-safety
+Search phrase: data center electrical room housekeeping
+Original title: Data Center Electrical Room Housekeeping: A Practical Safety Review
+Sources: osha303, osha22, osha37
+Related posts: 
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+Electrical-room housekeeping means keeping access, work areas, equipment identification, and emergency routes clear under site rules; it is a routine condition review, not permission to work inside equipment.
+
+## Why this matters
+Clutter can delay access, hide damage, obstruct safe work, and complicate emergency response around energized equipment.
+
+## Practical review points
+- Keep designated access and egress clear
+- Remove only items staff are authorized to handle
+- Report leaks, dust buildup, or damaged enclosures
+- Document recurring storage issues for the room owner
+
+## Example from operations
+A contractor leaves packaging beside a switchboard after delivery. The escort asks the contractor to remove it from the designated area and reports the repeated storage problem.
+
+## Frequently asked question
+### Can general facility staff inspect electrical equipment interiors?
+No. Housekeeping observations from a safe position do not authorize opening enclosures or performing electrical work.

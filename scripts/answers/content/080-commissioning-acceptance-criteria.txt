@@ -1,0 +1,31 @@
+Question: How Do You Write Clear Commissioning Acceptance Criteria?
+Slug: commissioning-acceptance-criteria
+SEO Title: Commissioning Acceptance Criteria: Clear Pass/Fail Rules
+Meta Description: How to write data center commissioning acceptance criteria with the tested condition, expected result, tolerance, required evidence, and deviation authority.
+Track: Design and Planning
+Course: infrastructure-commissioning-startup
+Search phrase: data center commissioning acceptance criteria checklist
+Original title: Commissioning Acceptance Criteria: How to Make Pass and Fail Decisions Clear
+Sources: wbdgcx, tia942
+Related posts: data-center-commissioning-test-scripts-what-project-leads-should-review-before-witness-testing
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+Acceptance criteria should state the tested condition, expected result, tolerance or decision rule, evidence required, and who can accept a deviation before testing begins.
+
+## Why this matters
+If success is defined after the test, teams may interpret the same result differently or close a defect without agreement.
+
+## Practical review points
+- Write measurable criteria before testing
+- Name reviewer and acceptance authority
+- Define treatment of exceptions
+- Link evidence to the test and equipment revision
+
+## Example from operations
+A test reaches the planned load but the report says only “satisfactory.” The commissioning lead reopens it for the agreed acceptance criteria and supporting measurements.
+
+## Frequently asked question
+### Can a passing test be declared without preset criteria?
+It is stronger and more repeatable to define criteria in advance; exceptions should be documented and approved by the designated authority.

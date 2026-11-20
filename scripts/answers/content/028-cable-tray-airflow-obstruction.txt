@@ -1,0 +1,31 @@
+Question: How Can Cable Trays Obstruct Data Center Airflow?
+Slug: cable-tray-airflow-obstruction
+SEO Title: Cable Tray Airflow Obstruction: A Cooling Review
+Meta Description: How cable trays and later installations can block intended airflow paths in a data center, and what a cooling review should check before the change.
+Track: Cooling and Facilities Efficiency
+Course: data-center-design-fundamentals
+Search phrase: data center cable tray airflow obstruction
+Original title: Cable Tray Airflow Obstruction: A Pre-Change Cooling Review
+Sources: doedesign, lbl, tia942
+Related posts: fiber-optic-pathway-readiness-what-data-center-facility-teams-should-verify-before-a-new-hall-goes-live
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+Cable trays and later installations should be checked for unintended obstruction of intended airflow paths, with any change reviewed against the facility's design and safety requirements.
+
+## Why this matters
+An airflow path altered by a later project can create localized hot spots that average room readings fail to show.
+
+## Practical review points
+- Review rack inlet and return-air paths
+- Compare current layout with approved drawings
+- Check impact on containment and sensors
+- Coordinate corrective work with electrical and facilities owners
+
+## Example from operations
+A new overhead tray crosses a planned return path. The project team reviews thermal implications and cable access before approving the route.
+
+## Frequently asked question
+### Can a room-average temperature show whether airflow is blocked at one rack?
+No. Local inlet measurements and airflow-path review may reveal conditions the average hides.

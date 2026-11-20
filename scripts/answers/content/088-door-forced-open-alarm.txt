@@ -1,0 +1,31 @@
+Question: How Should Security and Facilities Handle a Door Forced-Open Alarm?
+Slug: door-forced-open-alarm
+SEO Title: Door Forced-Open Alarms: Security and Facilities Roles
+Meta Description: How security and facilities should coordinate on a door forced-open alarm in a data center: verify the area, dispatch, preserve access logs, and escalate.
+Track: Security and Compliance
+Course: access-control-physical-security
+Search phrase: data center forced door alarm response process
+Original title: Door Forced-Open Alarms: How Security and Facilities Should Coordinate
+Sources: nist53, cisaphys
+Related posts: 
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+A forced-door alarm response should verify the door and area through approved monitoring, dispatch the assigned responder, preserve access logs, and escalate based on observed conditions.
+
+## Why this matters
+A delayed or uncoordinated response can weaken both facility safety and security accountability.
+
+## Practical review points
+- Confirm alarm location and time
+- Follow dispatch and escort rules
+- Keep access records and camera evidence
+- Document door condition and corrective action
+
+## Example from operations
+A door alarm appears during a contractor delivery. Security checks the authorized delivery window and dispatches an escort to confirm the door was secured.
+
+## Frequently asked question
+### Should a facilities technician ignore a forced-door alert if the door closes?
+No. Follow the alarm response and document the verified cause and condition.

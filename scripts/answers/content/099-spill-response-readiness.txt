@@ -1,0 +1,31 @@
+Question: What Does Spill Response Readiness Look Like for a Data Center?
+Slug: spill-response-readiness
+SEO Title: Spill Response Readiness for Data Center Facilities
+Meta Description: What spill response readiness means for data center facilities teams: known materials, trained responders, PPE, reporting rules, and when to isolate the area.
+Track: Security and Compliance
+Course: facility-environmental-compliance
+Search phrase: data center facility spill response readiness checklist
+Original title: Spill Response Readiness for Data Center Facilities Teams
+Sources: osha120, osha1200, epaoil
+Related posts: data-center-environmental-compliance-walkthrough-what-ehs-managers-should-verify-before-an-audit
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+Spill readiness requires knowing the materials present, who is trained to respond, what protective equipment and reporting rules apply, and when the area must be isolated or escalated.
+
+## Why this matters
+An improvised cleanup can increase exposure or spread a release beyond the original area.
+
+## Practical review points
+- Identify materials and accessible safety information
+- Post response contacts and limits
+- Check kit condition and location
+- Practice notification and waste handling route
+
+## Example from operations
+A small fluid release occurs in a mechanical space. The observer keeps others away and contacts the trained responder rather than selecting an unfamiliar cleanup material.
+
+## Frequently asked question
+### Should every employee clean up a small spill?
+No. Follow site policy and respond only within assigned training and equipment limits.

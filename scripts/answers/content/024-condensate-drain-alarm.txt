@@ -1,0 +1,31 @@
+Question: What Is the First Response to a Cooling Unit Condensate Drain Alarm?
+Slug: condensate-drain-alarm
+SEO Title: Condensate Drain Alarm: First Response in a Data Center
+Meta Description: How to respond to a condensate drain alarm on data center cooling equipment: identify the unit, check nearby leak risk, assess cooling impact, and escalate.
+Track: Cooling and Facilities Efficiency
+Course: hvac-troubleshooting-essentials
+Search phrase: data center cooling condensate drain alarm response
+Original title: Condensate Drain Alarms in Data Center Cooling: A First-Response Guide
+Sources: ashraetc99, doedesign
+Related posts: crah-unit-maintenance-readiness-what-data-center-technicians-should-verify-before-service
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+A condensate alarm should prompt teams to identify the affected unit, nearby leak risk, and cooling impact while using the site's escalation and water-management procedures.
+
+## Why this matters
+Overflow or an unrecognized drain issue can damage adjacent equipment and create slip or electrical exposure risks.
+
+## Practical review points
+- Locate the affected unit using approved displays
+- Check for visible water from a safe position
+- Protect nearby loads under site procedures
+- Record alarm and corrective-action owner
+
+## Example from operations
+A unit reports a high condensate level near a customer area. The technician notifies the operations lead and documents the isolation decision made by authorized staff.
+
+## Frequently asked question
+### Should an operator open a cooling unit to clear a drain alarm?
+Only personnel authorized and trained for that task should access the unit; first-response observations should stay within assigned limits.

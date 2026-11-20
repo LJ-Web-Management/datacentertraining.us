@@ -1,0 +1,31 @@
+Question: What Cable Identification Should Operators Get at Design Handover?
+Slug: cable-identification-as-built
+SEO Title: Cable Identification in As-Built Documents
+Meta Description: What cable identification operators need in the as-built set at handover: endpoints, route, purpose, label, and revision for tracing service dependencies.
+Track: Design and Planning
+Course: fiber-optics-network-cabling
+Search phrase: data center cable identification as built documentation
+Original title: Cable Identification at Design Handover: What Operators Need from the As-Built Set
+Sources: tia942, nfpa70
+Related posts: fiber-optic-pathway-readiness-what-data-center-facility-teams-should-verify-before-a-new-hall-goes-live
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+Cable records should connect endpoints, route, purpose, label, and revision so operations can trace service dependencies without relying on individual memory.
+
+## Why this matters
+Poor identification increases troubleshooting time and the chance of disturbing an unrelated or live connection.
+
+## Practical review points
+- Use a consistent label convention
+- Record both endpoints and route changes
+- Reconcile test results with installed links
+- Transfer controlled records at handover
+
+## Example from operations
+A link issue is reported in a new hall, but the rack label does not match the turnover sheet. The project team resolves the mapping before accepting the cabling package.
+
+## Frequently asked question
+### Is labeling one end of a cable enough?
+No. Traceability requires a method to identify both endpoints and the relationship between them.

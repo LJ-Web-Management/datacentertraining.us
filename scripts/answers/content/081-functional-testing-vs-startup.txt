@@ -1,0 +1,31 @@
+Question: What Is the Difference Between Equipment Startup and Functional Testing?
+Slug: functional-testing-vs-startup
+SEO Title: Functional Performance Testing vs. Equipment Startup
+Meta Description: What equipment startup proves versus functional performance testing in data center commissioning, and why a successful startup does not prove integration.
+Track: Design and Planning
+Course: infrastructure-commissioning-startup
+Search phrase: data center functional performance testing versus startup
+Original title: Functional Testing vs. Equipment Startup: What Each Proves
+Sources: wbdgcx, nfpa110
+Related posts: data-center-commissioning-test-scripts-what-project-leads-should-review-before-witness-testing
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+Equipment startup confirms a unit can be placed into service under its procedure; functional testing evaluates whether it responds as intended within a broader operating sequence.
+
+## Why this matters
+Confusing these activities can leave integrated dependencies untested even though individual devices run.
+
+## Practical review points
+- Define objective for each test
+- Identify controls and interfaces included
+- List prerequisites and expected responses
+- Track gaps from component test to integrated test
+
+## Example from operations
+A chiller starts successfully, but no one has tested its response to a BMS demand change. The commissioning plan separates startup evidence from functional sequence testing.
+
+## Frequently asked question
+### Does successful startup prove integrated operation?
+No. It proves a narrower equipment condition; integrated behavior requires tests designed for system interactions.

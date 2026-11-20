@@ -1,0 +1,31 @@
+Question: Who Coordinates the First Response to a Refrigerant Leak Alarm?
+Slug: refrigerant-leak-alarm-response
+SEO Title: Refrigerant Leak Alarm Response: Who Does What?
+Meta Description: How to assign roles for a refrigerant leak alarm in a data center: who acknowledges, who assesses from a safe location, who services, and who notifies people.
+Track: Cooling and Facilities Efficiency
+Course: data-center-cooling-refrigerant-safety
+Search phrase: data center refrigerant leak alarm response roles
+Original title: Refrigerant Leak Alarm Roles: Who Coordinates the First Response?
+Sources: epa608leak, ashrae1534, osha38
+Related posts: what-cooling-technicians-should-verify-before-opening-a-refrigerant-circuit
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+A refrigerant alarm response should define who acknowledges, who assesses from a safe location, who is qualified to service equipment, and how occupants are notified under the emergency plan.
+
+## Why this matters
+Confused roles can expose staff or delay the response to a release or equipment failure.
+
+## Practical review points
+- Use the posted response and notification matrix
+- Keep unqualified staff outside restricted areas
+- Contact trained refrigeration personnel
+- Record alarm, actions, and clearance authority
+
+## Example from operations
+A detector reports a refrigerant condition in a mechanical area. The operator alerts the designated responder and follows occupancy instructions instead of entering to investigate.
+
+## Frequently asked question
+### Should a general operator investigate a refrigerant alarm inside the room?
+No. Follow the site's emergency instructions and leave entry or service to personnel trained and authorized for that hazard.

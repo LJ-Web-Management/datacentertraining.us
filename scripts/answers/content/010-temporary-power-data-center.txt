@@ -1,0 +1,31 @@
+Question: What Should Be Coordinated Before Temporary Power Is Used in a Data Center?
+Slug: temporary-power-data-center
+SEO Title: Temporary Power in Data Centers: Pre-Use Checklist
+Meta Description: Temporary power checklist for data centers: approved source, cable routing, capacity, protection, ownership, and removal, all settled before connection.
+Track: Power and Electrical
+Course: data-center-electrical-safety
+Search phrase: temporary power safety in data centers
+Original title: Temporary Power in Data Centers: A Pre-Use Coordination Checklist
+Sources: osha305, nfpa70, nfpa70e
+Related posts: 
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+Temporary power near critical loads requires an approved plan that defines source, routing, capacity, protection, ownership, and removal before the connection is used.
+
+## Why this matters
+Poorly coordinated temporary power can introduce overload, trip hazards, undocumented dependencies, or unintended single points of failure.
+
+## Practical review points
+- Confirm authorization and load calculation
+- Agree on routing and protection
+- Label the source and responsible owner
+- Set an inspection and removal date
+
+## Example from operations
+A construction crew requests a temporary feed during a fit-out. The facility team reviews the plan with the electrical lead and records the dependency before energization.
+
+## Frequently asked question
+### Can a temporary power cable be routed wherever it is convenient?
+No. Follow site-approved routing, electrical protection, and access rules; convenience does not establish suitability.

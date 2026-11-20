@@ -1,0 +1,31 @@
+Question: What Do Operators Need to Know About Generator Synchronization?
+Slug: generator-synchronization-parallel-operation
+SEO Title: Generator Synchronization and Paralleling Explained
+Meta Description: How generator synchronization and parallel operation work in a data center, which indications operators should understand, and who controls paralleling.
+Track: Power and Electrical
+Course: emergency-standby-power-systems-fundamentals
+Search phrase: data center generator synchronization
+Original title: Generator Synchronization: What Operators Need to Know Before Parallel Operation
+Sources: nfpa110, nfpa70e, osha332
+Related posts: data-center-electrical-one-line-review-what-supervisors-should-verify-before-switching
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+Parallel generator operation depends on coordinated electrical conditions and approved control logic; operators should understand indications and roles without making unauthorized switching decisions.
+
+## Why this matters
+Poorly coordinated switching can stress equipment, interrupt loads, or expose workers to electrical hazards.
+
+## Practical review points
+- Identify who is authorized to parallel units
+- Review the approved sequence and communication roles
+- Confirm relevant alarms are resolved before the event
+- Record the operation and any deviation
+
+## Example from operations
+A planned test requires two units to operate in parallel. The facility manager verifies the approved test plan and assigns one lead for command and one observer for status logging.
+
+## Frequently asked question
+### Who should control generator paralleling?
+The site's designated qualified personnel should control it under the approved operating procedure and manufacturer instructions.

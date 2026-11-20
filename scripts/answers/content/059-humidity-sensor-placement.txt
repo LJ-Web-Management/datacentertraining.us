@@ -1,0 +1,31 @@
+Question: Where Should Humidity Sensors Go in a Data Hall?
+Slug: humidity-sensor-placement
+SEO Title: Data Center Humidity Sensor Placement
+Meta Description: Where to place humidity sensors in a data hall so readings represent the conditions you mean to monitor, and why room averages can hide local problems.
+Track: Monitoring and Smart Facility
+Course: cooling-systems-design-optimization
+Search phrase: data center humidity sensor placement
+Original title: Humidity Sensor Placement: Avoiding Misleading Room Averages
+Sources: ashraethermal, ashraetc99
+Related posts: 
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+Humidity sensors should be placed to represent the conditions the facility intends to monitor, with known location and airflow context; an average may hide local variation.
+
+## Why this matters
+Poor placement can lead teams to adjust systems based on a condition that does not represent equipment exposure.
+
+## Practical review points
+- Map sensors to zones and airflow
+- Review readings against nearby points
+- Document relocation or replacement
+- Use approved criteria for changes
+
+## Example from operations
+A hallway sensor reports stable humidity while a perimeter area changes. The facilities engineer checks placement and zone representation before adjusting humidification.
+
+## Frequently asked question
+### Can one humidity sensor represent a large data hall?
+Only if the design and measurement purpose support that assumption; confirm coverage with engineering.

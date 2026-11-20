@@ -296,6 +296,8 @@ ATS, STS, PDU, RPP, and every other acronym in one place.
 
 Open the glossary →
 
+**Field answers:** short, sourced answers to power and electrical questions, such as [When is an ATS alarm a failed transfer?](https://datacentertraining.us/answers/ats-alarm-failed-transfer.html), [What should a UPS load bank test record include?](https://datacentertraining.us/answers/ups-load-bank-test-record.html), [Why reconcile electrical panel schedules?](https://datacentertraining.us/answers/electrical-panel-schedule.html). [See them all →](https://datacentertraining.us/answers/#power)
+
 This guide is general educational information, not engineering, legal, or compliance advice. Follow your site's procedures, the equipment manufacturer's instructions, and the codes adopted in your jurisdiction.
 
 ## Train Your Team on Data Center Power

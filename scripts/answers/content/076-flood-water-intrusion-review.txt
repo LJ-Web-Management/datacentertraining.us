@@ -1,0 +1,31 @@
+Question: What Should a Data Center Flood and Water Intrusion Review Include?
+Slug: flood-water-intrusion-review
+SEO Title: Data Center Flood and Water Intrusion Risk Review
+Meta Description: What a data center flood and water intrusion review should map: site exposure, drainage paths, vulnerable equipment, detection, access, and response owners.
+Track: Design and Planning
+Course: building-envelope-fundamentals
+Search phrase: data center facility flood water intrusion risk review
+Original title: Flood and Water Intrusion Review: What Site Plans Should Include
+Sources: femaflood, nist53, nist34
+Related posts: 
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+A water-intrusion review should map site exposure, drainage paths, vulnerable equipment, detection, access, and response ownership using the facility's risk assessment.
+
+## Why this matters
+A local leak or external water event can affect power, cooling, access, and business continuity at the same time.
+
+## Practical review points
+- Review site and room water pathways
+- Identify critical equipment elevations and barriers
+- Check detection and notification zones
+- Assign inspection and response actions
+
+## Example from operations
+Heavy rain exposes a drainage issue near an electrical service entrance. The site plan gives facilities and security a shared inspection and escalation route.
+
+## Frequently asked question
+### Does a raised equipment platform eliminate water risk?
+No. Water can enter by several paths; controls should reflect site-specific exposure and response capability.

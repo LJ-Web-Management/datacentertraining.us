@@ -1,0 +1,31 @@
+Question: What Should a Security Incident Handoff to Operations Preserve?
+Slug: security-incident-handoff
+SEO Title: Security Incident Handoffs to Facility Operations
+Meta Description: What a security incident handoff to data center operations should preserve: time, location, affected assets, access evidence, controls, and a follow-up owner.
+Track: Security and Compliance
+Course: security-compliance-data-centers
+Search phrase: data center security incident handoff to operations
+Original title: Security Incident Handoffs: What Facility Operations Should Preserve
+Sources: nist53, cisaphys
+Related posts: data-center-incident-response-handoffs-what-facilities-and-noc-teams-should-confirm-in-the-first-15-minutes
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+A security-to-operations handoff should preserve time, location, affected assets, access evidence, immediate controls, and the person responsible for follow-up without sharing unnecessary sensitive details.
+
+## Why this matters
+Poor handoffs can leave physical controls, equipment condition, or evidence preservation incomplete.
+
+## Practical review points
+- Use a defined notification path
+- Record verified facts separately from assumptions
+- Protect logs and restricted footage
+- Assign action owner and review time
+
+## Example from operations
+A tailgating report involves a maintenance zone. Security informs operations of the location and access restriction while preserving badge events for review.
+
+## Frequently asked question
+### What should be included in a security incident handoff?
+Enough verified information for operations to protect people and infrastructure and follow the incident plan, shared on a need-to-know basis.

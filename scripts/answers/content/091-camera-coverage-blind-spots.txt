@@ -1,0 +1,31 @@
+Question: How Should a Data Center Document Camera Blind Spots?
+Slug: camera-coverage-blind-spots
+SEO Title: Security Camera Coverage Reviews: Blind Spots
+Meta Description: How to review data center security camera coverage: map intended views and blind spots, assign retention and access owners, and add compensating controls.
+Track: Security and Compliance
+Course: access-control-physical-security
+Search phrase: data center security camera coverage review
+Original title: Camera Coverage Reviews: How to Document Blind Spots
+Sources: cisapspg, nist53
+Related posts: 
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+A camera coverage review should map intended views, blind spots, retention and access ownership, and any compensating control needed for critical doors or routes.
+
+## Why this matters
+A camera on a plan does not prove it provides usable coverage in actual lighting, layout, or operating conditions.
+
+## Practical review points
+- Walk the approved camera map
+- Test views for obstruction and lighting
+- Document blind areas and purpose
+- Route repositioning through security change control
+
+## Example from operations
+A new rack blocks a corridor camera's intended view. Security records the gap and coordinates a revised view before the project closes.
+
+## Frequently asked question
+### Does installing a camera eliminate the need for access controls?
+No. Cameras support detection and review but do not replace authorization, barriers, or response procedures.

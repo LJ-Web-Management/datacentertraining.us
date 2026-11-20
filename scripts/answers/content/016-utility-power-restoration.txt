@@ -1,0 +1,31 @@
+Question: How Should a Data Center Coordinate the Return to Utility Power?
+Slug: utility-power-restoration
+SEO Title: Utility Power Restoration: Returning to Normal Power
+Meta Description: How data center teams should coordinate utility restoration after a generator run: source confirmation, command authority, load awareness, and status checks.
+Track: Power and Electrical
+Course: emergency-standby-power-systems-fundamentals
+Search phrase: data center utility power restoration coordination
+Original title: Utility Restoration: How to Coordinate the Return to Normal Power
+Sources: nfpa110, nfpa70e, nist34
+Related posts: 
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+Utility restoration is a controlled transition that requires source confirmation, clear command authority, load awareness, and documented status checks under the facility's approved sequence.
+
+## Why this matters
+A rushed return can create confusion about which source is carrying load and whether standby systems are ready for the next event.
+
+## Practical review points
+- Confirm source stability through approved indicators
+- Assign a single operational lead
+- Coordinate with generator and UPS status owners
+- Record the sequence and final state
+
+## Example from operations
+After a prolonged outage, the utility reports service restored. The facility lead follows the restoration plan and confirms status across the power chain before closing the event.
+
+## Frequently asked question
+### Should teams transfer back as soon as utility power returns?
+Only when the approved criteria and authorized decision process say the source is suitable and the transition is safe.

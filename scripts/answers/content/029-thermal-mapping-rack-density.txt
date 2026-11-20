@@ -1,0 +1,31 @@
+Question: What Should You Measure in Thermal Mapping After Rack Density Changes?
+Slug: thermal-mapping-rack-density
+SEO Title: Thermal Mapping After Rack Density Changes
+Meta Description: What to measure when thermal mapping a data hall after rack density changes: representative rack inlets, operating states, known hot spots, and criteria.
+Track: Cooling and Facilities Efficiency
+Course: cooling-systems-design-optimization
+Search phrase: data center thermal mapping after rack density increase
+Original title: Thermal Mapping After Rack Density Changes: What to Measure
+Sources: ashraethermal, doedesign, lbl
+Related posts: data-center-white-space-zoning-what-facility-managers-should-verify-before-a-new-rack-row-goes-live
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+Thermal mapping after density changes should focus on representative rack inlets, operating states, and known hot spots, then compare results with approved environmental criteria.
+
+## Why this matters
+Sparse or poorly placed sensors can miss localized heat that affects equipment reliability.
+
+## Practical review points
+- Define measurement locations and time window
+- Capture rack-level inlet conditions
+- Include different load and cooling states
+- Document exceptions and follow-up actions
+
+## Example from operations
+A new high-density row is commissioned. The team records inlet temperatures across the row under a representative load before declaring the change complete.
+
+## Frequently asked question
+### Is one sensor at the room return enough to assess thermal conditions?
+Usually not; it may not represent rack inlet conditions across different zones.

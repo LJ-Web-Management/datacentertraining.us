@@ -1,0 +1,31 @@
+Question: What Should Data Center Teams Trend for Phase Imbalance?
+Slug: phase-imbalance-critical-load
+SEO Title: Phase Imbalance on Critical Loads: What to Trend
+Meta Description: How to interpret phase imbalance on data center critical loads, why trend direction matters as much as one reading, and why loads should not be moved ad hoc.
+Track: Power and Electrical
+Course: power-systems-electrical-fundamentals
+Search phrase: data center electrical phase imbalance monitoring
+Original title: Critical Load Phase Imbalance: What Data Center Teams Should Trend
+Sources: nfpa70b, nfpa70e
+Related posts: 
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+Phase loading should be interpreted against equipment design limits, measurement context, and the facility's normal operating range; trend direction matters as much as one reading.
+
+## Why this matters
+Unreviewed imbalance can complicate capacity decisions and signal that loads are being added without coordinated planning.
+
+## Practical review points
+- Use comparable measurement points and time windows
+- Compare trends with load changes
+- Escalate readings outside approved limits
+- Coordinate any redistribution with qualified staff
+
+## Example from operations
+A new server deployment shifts one phase's trend upward. The team compares the change with the rack and circuit plan before authorizing further additions.
+
+## Frequently asked question
+### Should a technician move loads to balance phases immediately?
+No. Any redistribution must be engineered and authorized under site electrical procedures.

@@ -1,0 +1,31 @@
+Question: What Makes a Weekly Generator Readiness Review Useful?
+Slug: generator-weekly-readiness-review
+SEO Title: Generator Readiness Review: A Weekly Checklist
+Meta Description: How to make a weekly generator readiness review actionable: status, alarms, maintenance exceptions, fuel information, and clear corrective-action owners.
+Track: Operations and Reliability
+Course: generator-operations-maintenance
+Search phrase: data center generator readiness review checklist
+Original title: Generator Weekly Readiness Reviews: Making Status Checks Actionable
+Sources: nfpa110, nfpa70b
+Related posts: generator-maintenance-readiness-a-data-center-manager-s-pre-task-checklist, generator-control-panel-alarm-triage-what-data-center-technicians-should-verify-before-escalation
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+A useful generator readiness review combines status, alarms, maintenance exceptions, fuel-support information, and corrective-action ownership rather than relying on a single green indicator.
+
+## Why this matters
+A status light can hide unresolved issues if the team does not connect inspection findings to action and accountability.
+
+## Practical review points
+- Review status and alarm history
+- Confirm open maintenance exceptions
+- Assign owners and due dates
+- Escalate any readiness uncertainty
+
+## Example from operations
+A weekly meeting finds three open generator actions with no assigned owner. The facility manager assigns responsibility and tracks closure evidence.
+
+## Frequently asked question
+### What makes a generator readiness review useful?
+It connects equipment evidence to a clear readiness decision, named owner, and follow-up date.

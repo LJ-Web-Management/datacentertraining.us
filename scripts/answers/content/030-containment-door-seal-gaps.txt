@@ -1,0 +1,31 @@
+Question: Do Small Gaps in Aisle Containment Door Seals Matter?
+Slug: containment-door-seal-gaps
+SEO Title: Hot Aisle Containment Door Seal Gaps: Do They Matter?
+Meta Description: How gaps in hot aisle or cold aisle containment door seals affect airflow, how to assess them, and why repairs must keep access and life safety intact.
+Track: Cooling and Facilities Efficiency
+Course: cooling-systems-design-optimization
+Search phrase: data center hot aisle cold aisle containment door seal gaps
+Original title: Containment Door Seals: Small Gaps, Larger Airflow Questions
+Sources: doedesign, lbl, nfpa75
+Related posts: 
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+Containment gaps should be assessed for airflow impact, location, and the facility's intended pressure and temperature strategy; repairs should preserve access and life-safety requirements.
+
+## Why this matters
+Small bypass paths can mix supply and return air and make cooling performance harder to predict.
+
+## Practical review points
+- Map the gap and affected row
+- Check temperature and pressure trends nearby
+- Use approved materials and fire/life-safety review
+- Recheck conditions after repair
+
+## Example from operations
+A door closer leaves a persistent gap at one end of a row. The facilities lead logs it and checks nearby rack inlet trends before assigning repair.
+
+## Frequently asked question
+### Should every gap be sealed immediately with any available material?
+No. Repair materials and access controls should be compatible with facility, fire, and manufacturer requirements.

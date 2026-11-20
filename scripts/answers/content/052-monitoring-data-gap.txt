@@ -1,0 +1,31 @@
+Question: What Should You Do When a Critical Monitoring Trend Goes Missing?
+Slug: monitoring-data-gap
+SEO Title: Monitoring Data Gaps: When a Critical Trend Goes Missing
+Meta Description: What to do when a critical BMS or DCIM trend goes missing: treat it as a data availability issue, document it, escalate, and never assume conditions are normal.
+Track: Monitoring and Smart Facility
+Course: monitoring-automation-bms-systems
+Search phrase: data center monitoring trend data gap response
+Original title: Monitoring Data Gaps: What to Do When a Critical Trend Goes Missing
+Sources: isa18, nist92
+Related posts: 
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+A missing trend is an instrumentation or data-availability issue to document and escalate; staff should not infer normal conditions from the absence of a reading.
+
+## Why this matters
+A blank chart can conceal a sensor outage precisely when the team needs evidence to make a safe decision.
+
+## Practical review points
+- Identify point and gap duration
+- Check related alarms and redundant measurements
+- Record whether the gap affects a decision
+- Track restoration and data quality review
+
+## Example from operations
+A chilled-water flow trend disappears during a maintenance window. The operator uses approved alternate indicators and notifies the controls owner rather than reading the blank as stable flow.
+
+## Frequently asked question
+### Does no alarm mean a missing trend is normal?
+No. Absence of data is not evidence of a normal condition.

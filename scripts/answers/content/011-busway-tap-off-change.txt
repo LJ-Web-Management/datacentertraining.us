@@ -1,0 +1,31 @@
+Question: What Should Be Resolved Before a Busway Tap-Off Change?
+Slug: busway-tap-off-change
+SEO Title: Busway Tap-Off Changes Before a Rack Expansion
+Meta Description: Questions to resolve before adding or moving a busway tap-off for a rack expansion: capacity, compatibility, work authorization, load impact, and records.
+Track: Power and Electrical
+Course: power-distribution-systems-fundamentals
+Search phrase: data center busway tap off change review
+Original title: Busway Tap-Off Changes: Questions to Resolve Before a Rack Expansion
+Sources: nfpa70, nfpa70e, osha147
+Related posts: data-center-white-space-zoning-what-facility-managers-should-verify-before-a-new-rack-row-goes-live
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+A busway tap-off change should be reviewed for approved capacity, equipment compatibility, work authorization, load impact, and documentation before a qualified team performs the work.
+
+## Why this matters
+A small physical change can affect downstream protection, available capacity, and the accuracy of the facility's power records.
+
+## Practical review points
+- Confirm the exact busway and tap-off rating from approved records
+- Review work authorization and isolation needs
+- Coordinate load and change timing
+- Update labeling and as-built records
+
+## Example from operations
+A new rack row is planned under an existing busway. The project engineer validates the tap-off design with the electrical authority before procurement.
+
+## Frequently asked question
+### Does a spare tap-off position mean spare electrical capacity?
+No. Physical availability does not prove that upstream or downstream capacity and protection are adequate.

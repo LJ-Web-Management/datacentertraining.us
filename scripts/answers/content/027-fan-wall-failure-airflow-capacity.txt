@@ -1,0 +1,31 @@
+Question: How Do You Assess Remaining Airflow After a Fan Wall Failure?
+Slug: fan-wall-failure-airflow-capacity
+SEO Title: Fan Wall Failure: Assessing Remaining Airflow
+Meta Description: What to verify after a fan wall fan fails in a data center: remaining airflow capacity, control response, and whether redundancy is still sufficient.
+Track: Cooling and Facilities Efficiency
+Course: cooling-systems-design-optimization
+Search phrase: data center fan wall failure remaining airflow capacity
+Original title: Fan Wall Failure: How to Assess Remaining Airflow Capacity
+Sources: ashraethermal, doedesign
+Related posts: 
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+After a fan-wall failure, teams should verify the remaining capacity and control response from approved monitoring and operating procedures before assuming redundancy is sufficient.
+
+## Why this matters
+A failed fan can change airflow distribution even if the overall unit remains online.
+
+## Practical review points
+- Identify failed fan and affected section
+- Review total airflow and differential indicators
+- Check alarms and redundancy status
+- Escalate if conditions approach site thresholds
+
+## Example from operations
+A fan alarm appears in a multi-fan unit. Operators monitor relevant trends and notify the mechanical lead while holding new rack load additions.
+
+## Frequently asked question
+### Can a multi-fan unit always run safely with one fan offline?
+Not automatically. Capacity depends on design, loading, controls, and environmental conditions.

@@ -1,0 +1,31 @@
+Question: How Do You Test Whether an Emergency Contact Tree Works?
+Slug: emergency-contact-tree-test
+SEO Title: Emergency Call Tree Testing for Data Centers
+Meta Description: How to test a data center emergency call tree: current contacts, escalation order, alternates, and acknowledgement expectations, then update what fails.
+Track: Operations and Reliability
+Course: disaster-recovery-business-continuity
+Search phrase: data center emergency notification tree test
+Original title: Emergency Contact Trees: How to Test Whether the Right People Answer
+Sources: osha38, nist34, nist84
+Related posts: 
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+An emergency contact tree is useful only when current contacts, escalation order, alternates, and acknowledgement expectations are tested and updated.
+
+## Why this matters
+A stale list can delay decisions at the moment when staffing and utility conditions are changing.
+
+## Practical review points
+- Assign an owner and review date
+- Include alternate roles and coverage windows
+- Test acknowledgement and escalation
+- Track failed contacts to closure
+
+## Example from operations
+A drill reaches an outdated number for the generator lead. The exercise records the gap and assigns an update before the next test.
+
+## Frequently asked question
+### Is maintaining a contact list enough?
+No. Verify that contacts can be reached and know their role in the response.

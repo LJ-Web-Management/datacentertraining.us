@@ -1,0 +1,31 @@
+Question: How Should a Data Center Review a Humidity Excursion?
+Slug: humidity-excursion-review
+SEO Title: Data Center Humidity Excursions: How to Review One
+Meta Description: How to build an evidence-based review of a data center humidity excursion: value, duration, location, sensor condition, operating state, and criteria.
+Track: Cooling and Facilities Efficiency
+Course: cooling-systems-design-optimization
+Search phrase: data center humidity excursion investigation
+Original title: Humidity Excursions: How to Build an Evidence-Based Review
+Sources: ashraethermal, ashraetc99
+Related posts: 
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+A humidity excursion review should capture the value, duration, location, sensor condition, and operating state, then compare them with the facility's chosen equipment criteria.
+
+## Why this matters
+A single snapshot may overstate or understate the actual exposure and can lead to poor corrective action.
+
+## Practical review points
+- Preserve trend interval and sensor identity
+- Compare affected zones and redundant sensors
+- Review door, economizer, and maintenance events
+- Record decision and follow-up threshold
+
+## Example from operations
+One sensor briefly reports low humidity after a door was propped open. The team checks the trend and sensor location before escalating the event as a sustained excursion.
+
+## Frequently asked question
+### Should one short humidity spike trigger a system-wide adjustment?
+Not by itself. Validate the measurement and compare it with approved site criteria first.

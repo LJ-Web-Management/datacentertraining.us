@@ -1,0 +1,31 @@
+Question: Does Completing Training Authorize a Technician to Do the Work?
+Slug: technician-qualification-matrix
+SEO Title: Technician Qualification Matrix vs. Work Authorization
+Meta Description: How a technician qualification matrix separates training records from work authorization by mapping tasks to knowledge, demonstrated skill, and limits.
+Track: Operations and Reliability
+Course: data-center-operations-management
+Search phrase: data center technician qualification matrix work authorization
+Original title: Technician Qualification Matrix: Separating Training Records from Work Authorization
+Sources: osha332, nfpa70e
+Related posts: how-data-center-managers-should-link-training-records-to-high-risk-maintenance-tasks, how-to-build-a-role-based-training-matrix-for-a-colocation-facility
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+A qualification matrix should map each task to required knowledge, demonstrated capability, authorization, limits, and renewal triggers; course completion alone does not establish every work privilege.
+
+## Why this matters
+Confusing course attendance with authorization can assign work beyond a person's verified capability.
+
+## Practical review points
+- List tasks by hazard and equipment
+- Define evidence required for each role
+- Set approval and renewal owner
+- Check matrix before assigning nonroutine work
+
+## Example from operations
+A newly hired technician completes online modules but has not observed a switching task. The supervisor assigns shadowing and evaluation before independent responsibility.
+
+## Frequently asked question
+### Does completing a course authorize a technician to perform every related task?
+No. Employers and site authorities define task authorization and any required qualifications.

@@ -1,0 +1,31 @@
+Question: Should a Data Center Cooling Valve Fail Open or Fail Closed?
+Slug: cooling-valve-fail-position
+SEO Title: Cooling Valve Fail Position: Open or Closed?
+Meta Description: Why a cooling control valve's fail position depends on the system sequence and the failure scenario, and what to review before assuming fail-open is safer.
+Track: Cooling and Facilities Efficiency
+Course: building-automation-systems-fundamentals
+Search phrase: data center cooling valve fail position review
+Original title: Cooling Valve Fail Position: Why the Sequence Matters During Power Loss
+Sources: doecontrols, doedesign
+Related posts: chilled-water-valve-position-a-troubleshooting-checklist-for-data-center-facilities-teams
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+A control valve's fail position should be understood as part of the system sequence and risk analysis; the right behavior depends on the design and the specific failure scenario.
+
+## Why this matters
+Assuming a valve will fail open or closed can misstate cooling behavior during a control or power event.
+
+## Practical review points
+- Check the approved sequence and valve documentation
+- Identify which power or signal loss is considered
+- Confirm alarms and fallback control behavior
+- Document unresolved design assumptions
+
+## Example from operations
+During a controls upgrade, a team discovers conflicting drawings for a valve's fail position. The change is held for engineering review before programming proceeds.
+
+## Frequently asked question
+### Is fail-open always safer for a data center cooling valve?
+No. Safe behavior depends on the system design, process conditions, and documented engineering intent.

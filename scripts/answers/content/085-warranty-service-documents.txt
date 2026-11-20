@@ -1,0 +1,31 @@
+Question: Which Warranty and Service Documents Should Facility Teams Track?
+Slug: warranty-service-documents
+SEO Title: Equipment Warranty and Service Records to Track
+Meta Description: Which equipment warranty and service documents facility teams should track: coverage dates, exclusions, contacts, required maintenance, and proof of service.
+Track: Design and Planning
+Course: facility-management-fundamentals
+Search phrase: data center equipment warranty and service documentation
+Original title: Warranty and Service Documents: What Facility Teams Should Track
+Sources: nfpa70b, wbdgcx
+Related posts: 
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+Warranty and service records should identify equipment, coverage dates, exclusions, response contacts, required maintenance, and the evidence needed to preserve support.
+
+## Why this matters
+A missed service condition or unclear coverage can delay repair and create disputes during a critical failure.
+
+## Practical review points
+- Connect each document to an asset ID
+- Record coverage and expiration dates
+- Track required maintenance evidence
+- Review contacts and escalation path periodically
+
+## Example from operations
+A cooling unit begins recurring alarms near warranty expiration. The asset record gives the manager service terms and the correct support contact.
+
+## Frequently asked question
+### Does a warranty replace a preventive maintenance plan?
+No. Follow the applicable maintenance requirements and track warranty terms separately.

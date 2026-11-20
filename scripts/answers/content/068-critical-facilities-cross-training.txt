@@ -1,0 +1,31 @@
+Question: How Should Critical Facilities Teams Approach Cross-Training?
+Slug: critical-facilities-cross-training
+SEO Title: Cross-Training for Critical Facilities Teams
+Meta Description: How to cross-train critical facilities technicians for useful backup coverage while keeping role limits, supervised practice, and formal work authorization.
+Track: Operations and Reliability
+Course: data-center-operations-management
+Search phrase: data center facilities technician cross training plan
+Original title: Cross-Training for Critical Facilities Teams: Building Useful Coverage
+Sources: osha332, oshashms
+Related posts: how-to-build-a-role-based-training-matrix-for-a-colocation-facility
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+Cross-training is most useful when it builds backup competence for defined tasks while preserving role limits, supervised practice, and formal authorization.
+
+## Why this matters
+Broad but shallow training can create overconfidence without reliable coverage for critical assignments.
+
+## Practical review points
+- Identify single-person knowledge dependencies
+- Prioritize skills by consequence and frequency
+- Pair learning with supervised practice
+- Record limits and authorization status
+
+## Example from operations
+Only one technician understands a monitoring panel's escalation path. The manager creates a supervised backup plan and documents who may act during an absence.
+
+## Frequently asked question
+### Does cross-training mean everyone should be able to perform every task?
+No. It should create defined backup capability within each person's verified limits.

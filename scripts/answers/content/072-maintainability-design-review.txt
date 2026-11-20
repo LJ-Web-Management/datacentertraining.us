@@ -1,0 +1,31 @@
+Question: How Do You Test Whether Redundancy Can Actually Be Maintained?
+Slug: maintainability-design-review
+SEO Title: Maintainability Review: Can Redundancy Be Serviced?
+Meta Description: How a maintainability design review tests whether each component can be isolated for maintenance while critical loads stay within documented limits.
+Track: Design and Planning
+Course: tier-infrastructure-fundamentals
+Search phrase: data center maintainability design review checklist
+Original title: Maintainability Review: How to Test Whether Redundancy Can Be Serviced
+Sources: uptimetiers, tia942
+Related posts: tier-infrastructure-review-what-facility-managers-should-verify-beyond-the-label
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+A maintainability review asks whether planned work can isolate the intended component while required loads continue within the design's documented limits.
+
+## Why this matters
+A design can include spare equipment yet still require disruptive work if isolation boundaries or procedures are incomplete.
+
+## Practical review points
+- Identify the maintenance task and boundary
+- Trace what remains in service
+- Check controls and utility dependencies
+- Record assumptions requiring test or procedure validation
+
+## Example from operations
+A pump is described as maintainable but its isolation plan also removes a shared sensor. The review captures the dependency before turnover.
+
+## Frequently asked question
+### How can a team verify maintainability before operation?
+Review design and procedures together, then validate key assumptions through approved commissioning and operational reviews.

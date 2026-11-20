@@ -1,0 +1,31 @@
+Question: How Should Data Centers Set and Use Rack Inlet Temperature Targets?
+Slug: rack-inlet-temperature-targets
+SEO Title: Rack Inlet Temperature Targets: Using Site Limits
+Meta Description: Where rack inlet temperature targets should come from, why there is no single universal number, and how to monitor them at representative rack locations.
+Track: Cooling and Facilities Efficiency
+Course: energy-efficiency-pue-optimization
+Search phrase: data center rack inlet temperature target setting
+Original title: Rack Inlet Temperature Targets: How to Use Site Limits Correctly
+Sources: ashraethermal, ashraetc99, doeee
+Related posts: 
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+Rack inlet targets should come from the facility's approved environmental policy and equipment requirements, then be monitored at representative locations rather than inferred from room air.
+
+## Why this matters
+A target chosen without equipment and location context can conceal localized overheating or waste cooling capacity.
+
+## Practical review points
+- Use current equipment and site criteria
+- Measure at representative rack inlets
+- Review both high and low excursions
+- Coordinate target changes with engineering and operations
+
+## Example from operations
+A proposal raises a room setpoint to save energy. The manager asks for rack-level evidence and an agreed monitoring window before approving the change.
+
+## Frequently asked question
+### Is there one universal temperature target for every data center rack?
+No. Use the applicable equipment guidance and facility limits for the actual environment.

@@ -1,0 +1,31 @@
+Question: How Do You Find Dormant Badge Access Privileges?
+Slug: badge-access-review-dormant
+SEO Title: Badge Access Reviews: Finding Dormant Privileges
+Meta Description: How to run a data center badge access review that compares active access with job need, sponsorship, contract status, and last use, and records removals.
+Track: Security and Compliance
+Course: security-compliance-data-centers
+Search phrase: data center badge access review dormant accounts
+Original title: Badge Access Reviews: How to Find Dormant Privileges
+Sources: nist53, cisapspg
+Related posts: how-data-center-security-leads-should-audit-contractor-access-controls
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+A badge review should compare active access with current job need, sponsorship, contract status, and last use while keeping a record of approval and removal decisions.
+
+## Why this matters
+Dormant credentials can remain usable after a project ends or a person's role changes.
+
+## Practical review points
+- Set review cadence and accountable owner
+- Compare access to current work scope
+- Investigate unused or conflicting privileges
+- Record approvals and revocations
+
+## Example from operations
+A project badge remains active months after construction. The quarterly review confirms the sponsor has no current need and removes the access through the approved process.
+
+## Frequently asked question
+### Does a badge that has not been used prove there is no risk?
+No. Unused access can still be available; review it against current need and policy.

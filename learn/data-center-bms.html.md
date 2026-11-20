@@ -210,6 +210,8 @@ Shifts, change control, maintenance, and incidents.
 
 Read the guide →
 
+**Field answers:** short, sourced answers to BMS, DCIM, and monitoring questions, such as [How should BMS alarm priorities be set?](https://datacentertraining.us/answers/bms-alarm-priority-levels.html), [What controls apply to alarm shelving?](https://datacentertraining.us/answers/alarm-shelving-controls.html), [What makes a good BMS point naming convention?](https://datacentertraining.us/answers/bms-point-naming-convention.html). [See them all →](https://datacentertraining.us/answers/#monitoring)
+
 This guide is general educational information, not engineering or cybersecurity advice. Follow your site's procedures, change control process, and the system manufacturer's instructions.
 
 ## Train Your Team on BMS and DCIM

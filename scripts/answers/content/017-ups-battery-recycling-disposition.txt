@@ -1,0 +1,31 @@
+Question: How Should a Data Center Control UPS Battery Recycling and Disposal?
+Slug: ups-battery-recycling-disposition
+SEO Title: UPS Battery Recycling and Disposal: A Checklist
+Meta Description: A control checklist for UPS battery recycling and disposition, covering chemistry-specific handling, storage, transport, records, and approved recyclers.
+Track: Power and Electrical
+Course: batteries-dc-circuits
+Search phrase: data center UPS battery recycling disposal process
+Original title: Battery Recycling and Disposition: A Data Center Control Checklist
+Sources: epauw, epali, nfpa855
+Related posts: vrla-vs-lithium-ion-ups-battery-maintenance-what-facility-managers-should-compare-before-standardizing, data-center-environmental-compliance-walkthrough-what-ehs-managers-should-verify-before-an-audit
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+Battery disposition should follow the chemistry-specific handling, storage, transport, and recycling requirements established by the site and applicable authorities.
+
+## Why this matters
+Uncontrolled storage or disposal can create chemical, fire, environmental, and recordkeeping problems.
+
+## Practical review points
+- Identify chemistry and condition before staging
+- Use designated secure storage and labeling
+- Coordinate approved recycler and transport
+- Retain disposition documentation
+
+## Example from operations
+A battery replacement project leaves removed units awaiting pickup. The supervisor verifies segregation, labeling, and the approved collection route before the work area is released.
+
+## Frequently asked question
+### Can all UPS batteries be handled through the same recycling process?
+No. Requirements and hazards vary by chemistry and condition; follow the applicable site and recycler instructions.

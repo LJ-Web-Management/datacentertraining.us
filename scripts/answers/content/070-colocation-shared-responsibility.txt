@@ -1,0 +1,31 @@
+Question: Who Is Responsible for What in a Colocation Data Center?
+Slug: colocation-shared-responsibility
+SEO Title: Colocation Shared Responsibility: Tenant vs. Facility
+Meta Description: How a colocation responsibility matrix should split assets, changes, alarms, approvals, communication, and emergency decisions between tenant and facility.
+Track: Operations and Reliability
+Course: facility-management-fundamentals
+Search phrase: colocation data center shared responsibility facility tenant
+Original title: Colocation Shared Responsibility: Clarifying Tenant and Facility Boundaries
+Sources: nist53, cisaphys
+Related posts: colocation-power-turn-up-readiness-what-facilities-teams-should-verify-before-energizing-a-customer-suite
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+A colocation responsibility matrix should state which party owns each asset, change, alarm, approval, communication, and emergency decision at the boundary between facility and tenant systems.
+
+## Why this matters
+Assumptions about ownership can delay response or lead one party to act on equipment controlled by the other.
+
+## Practical review points
+- Map shared and tenant-owned assets
+- Define alarm routing and response times
+- Set approval rules for changes
+- Review boundary after service or contract changes
+
+## Example from operations
+A tenant sees an environmental alarm before the facility desk does. The matrix identifies who notifies whom and who has authority over the building system.
+
+## Frequently asked question
+### Should the facility operator act on tenant equipment alarms?
+Follow the contract and site procedure; the correct action depends on ownership and delegated authority.

@@ -1,0 +1,31 @@
+Question: Why Must Alarm Log Timestamps Agree Across Systems?
+Slug: alarm-log-clock-synchronization
+SEO Title: Alarm Log Clock Synchronization: Why Time Must Agree
+Meta Description: Why clock synchronization across monitoring systems, controllers, and operator logs matters for event reconstruction, and how to manage time sources.
+Track: Monitoring and Smart Facility
+Course: dcim-platform-fundamentals
+Search phrase: data center alarm log clock synchronization
+Original title: Clock Synchronization for Alarm Logs: Why Timestamps Must Agree
+Sources: nisttime, nist92
+Related posts: 
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+Reliable event reconstruction depends on consistent time across monitoring systems, controllers, and operator records, with known time sources and documented exceptions.
+
+## Why this matters
+Clock drift can make a cause appear after its consequence and complicate incident reviews.
+
+## Practical review points
+- Identify approved time source for each system
+- Compare representative timestamps
+- Record known offsets during investigations
+- Route clock changes through configuration control
+
+## Example from operations
+A UPS log and BMS log show a transfer event in opposite order. The incident reviewer checks clock offsets before assigning causation.
+
+## Frequently asked question
+### Can event order be trusted if system clocks differ?
+Not until offsets are understood; normalize times before drawing conclusions.

@@ -1,0 +1,31 @@
+Question: What Do Non-Electricians Need to Hear in an Electrical Work Boundary Briefing?
+Slug: electrical-work-boundary-briefing
+SEO Title: Electrical Work Boundary Briefings for Non-Electricians
+Meta Description: What an electrical work boundary briefing should tell non-electrical staff: where work is happening, who controls the area, the restrictions, and how to report.
+Track: Power and Electrical
+Course: data-center-electrical-safety
+Search phrase: electrical work boundary briefing for data center staff
+Original title: Electrical Work Boundary Briefings: What Non-Electricians Need to Hear
+Sources: osha335, nfpa70e, osha332
+Related posts: 
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+A boundary briefing tells affected staff where work is occurring, who controls the area, what restrictions apply, and how to report a changing condition.
+
+## Why this matters
+People who do not understand the work zone may enter it, interrupt the task, or miss a changing hazard.
+
+## Practical review points
+- Name the work lead and affected equipment
+- Mark access restrictions clearly
+- Explain alternate routes and contact method
+- Repeat the briefing when scope changes
+
+## Example from operations
+A cleaning crew is scheduled near a switchgear work zone. The supervisor coordinates access timing and routes before the electrical team begins.
+
+## Frequently asked question
+### Does a boundary briefing qualify someone to perform electrical work?
+No. It communicates restrictions; task qualification and authorization remain separate requirements.

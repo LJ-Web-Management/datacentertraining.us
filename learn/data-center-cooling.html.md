@@ -340,6 +340,8 @@ The other half of the critical infrastructure, from utility to rack.
 
 Read the guide →
 
+**Field answers:** short, sourced answers to cooling questions, such as [What facility questions come before a liquid-cooled row?](https://datacentertraining.us/answers/liquid-cooling-facility-readiness.html), [Do containment door seal gaps matter?](https://datacentertraining.us/answers/containment-door-seal-gaps.html), [What causes compressor short cycling?](https://datacentertraining.us/answers/compressor-short-cycling.html). [See them all →](https://datacentertraining.us/answers/#cooling)
+
 This guide is general educational information, not engineering, legal, or compliance advice. Follow your site's procedures, manufacturer instructions, and applicable codes and regulations.
 
 ## Train Your Team on Data Center Cooling

@@ -1,0 +1,31 @@
+Question: What Belongs in a Single Point of Failure Register?
+Slug: single-point-of-failure-register
+SEO Title: Single Point of Failure Register for Data Centers
+Meta Description: What a data center single point of failure (SPOF) register should record: the component or path, affected load, detection, consequence, and mitigation.
+Track: Design and Planning
+Course: tier-infrastructure-fundamentals
+Search phrase: data center single point of failure register
+Original title: Single Points of Failure Register: How to Keep Design Reviews Concrete
+Sources: uptimetiers, tia942
+Related posts: tier-infrastructure-review-what-facility-managers-should-verify-beyond-the-label
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+A single-point-of-failure register should identify the component or path, the load it affects, how failure is detected, the consequence, and the approved mitigation or acceptance decision.
+
+## Why this matters
+A vague “redundant” label can conceal a shared dependency that maintenance or failure can take out.
+
+## Practical review points
+- Trace dependencies across power, cooling, controls, and communications
+- Identify shared components and bypasses
+- Assign an owner to each unresolved exposure
+- Revalidate after design or configuration changes
+
+## Example from operations
+A project reports redundant cooling but both trains share one control panel. The reviewer adds the dependency to the register and requests an engineering disposition.
+
+## Frequently asked question
+### Does a redundant component automatically eliminate a single point of failure?
+No. Shared controls, paths, utilities, or human processes may still be common dependencies.

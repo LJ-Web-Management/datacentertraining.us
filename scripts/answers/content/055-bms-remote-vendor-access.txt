@@ -1,0 +1,31 @@
+Question: How Should Remote Vendor Access to a BMS Be Controlled?
+Slug: bms-remote-vendor-access
+SEO Title: BMS Remote Vendor Access: Change-Control Checklist
+Meta Description: How to control remote vendor access to a building management system: approval, scope, time limits, individual accounts, monitoring, and closing access after.
+Track: Monitoring and Smart Facility
+Course: security-compliance-data-centers
+Search phrase: BMS remote vendor access data center controls
+Original title: BMS Remote Vendor Access: A Facility Change-Control Checklist
+Sources: nist82, nist53
+Related posts: 
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+Remote vendor access should be approved, scoped, time-bounded, attributable to an individual, monitored, and closed after the support need ends.
+
+## Why this matters
+Shared or persistent access can expose control systems to unauthorized changes and make actions hard to trace.
+
+## Practical review points
+- Confirm sponsor and business purpose
+- Use individual and least-privilege access
+- Define session window and monitoring
+- Revoke access and preserve logs after work
+
+## Example from operations
+A vendor requests a standing remote account to support a BAS. The facility and security owners define a time-limited support method with named accountability.
+
+## Frequently asked question
+### Should a vendor keep access between service calls for convenience?
+No. Retain only access that is approved and necessary under the organization's security process.

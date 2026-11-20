@@ -1,0 +1,31 @@
+Question: What Should a Data Center Roof Drainage and Penetration Review Cover?
+Slug: roof-drainage-penetrations
+SEO Title: Data Center Roof Drainage and Penetration Review
+Meta Description: How to review data center roof drains, penetrations, flashing, and access controls so defects are reported and fixed before water reaches critical space.
+Track: Design and Planning
+Course: roofing-systems-maintenance-fundamentals
+Search phrase: data center roof drainage penetration inspection
+Original title: Roof Drainage and Penetrations: A Data Center Envelope Review
+Sources: osha28, nrca
+Related posts: data-center-roof-maintenance-planning-how-facility-managers-can-protect-uptime-during-exterior-work
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+A roof review should connect drains, penetrations, flashing, access controls, and interior leak indicators so defects can be reported and prioritized before water reaches critical areas.
+
+## Why this matters
+A small roof defect may remain invisible until it threatens equipment or interrupts operations.
+
+## Practical review points
+- Use the approved roof access process
+- Check drains and visible penetrations from safe areas
+- Compare observations with interior leak alerts
+- Document location and route repair to qualified contractors
+
+## Example from operations
+A ceiling sensor alarms after a rooftop project. Facilities compares the alarm location with the roof work record and routes inspection to the authorized roofing contractor.
+
+## Frequently asked question
+### Should facility operators climb onto a roof to investigate every leak alarm?
+No. Use the site's access and fall-protection controls and qualified personnel for roof work.

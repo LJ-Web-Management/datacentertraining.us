@@ -1,0 +1,31 @@
+Question: What Should a Grounding and Bonding Review Record?
+Slug: grounding-bonding-inspection-records
+SEO Title: Grounding and Bonding Inspection: What to Record
+Meta Description: What a data center grounding and bonding review should document, who should perform it, and why a visual check alone cannot confirm electrical integrity.
+Track: Power and Electrical
+Course: power-systems-electrical-fundamentals
+Search phrase: data center grounding and bonding inspection
+Original title: Grounding and Bonding Reviews in Critical Facilities: What to Record
+Sources: nfpa70b, nfpa70, osha332
+Related posts: 
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+Grounding and bonding reviews should use qualified personnel, approved criteria, and traceable records; visual observations alone cannot establish electrical integrity.
+
+## Why this matters
+Incomplete records or assumptions about bonding can mask gaps in protection and make future changes harder to assess.
+
+## Practical review points
+- Use current drawings and acceptance criteria
+- Identify the equipment and connection points reviewed
+- Record test method and instrument details when applicable
+- Route anomalies to the electrical authority
+
+## Example from operations
+A rack relocation changes the bonding path. The project lead updates the drawing package and has the designated qualified person verify the installation before closeout.
+
+## Frequently asked question
+### Can a visual check confirm a grounding connection is adequate?
+No. Visual review can identify obvious damage, but adequacy must be determined using approved methods by qualified personnel.

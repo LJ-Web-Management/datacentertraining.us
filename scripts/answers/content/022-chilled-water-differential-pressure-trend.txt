@@ -1,0 +1,31 @@
+Question: When Can You Trust a Chilled Water Differential Pressure Trend?
+Slug: chilled-water-differential-pressure-trend
+SEO Title: Chilled Water Differential Pressure Sensor Trends
+Meta Description: When a chilled water differential pressure trend can be trusted, what to compare it with, and how sensor location and control sequence change its meaning.
+Track: Cooling and Facilities Efficiency
+Course: cooling-systems-design-optimization
+Search phrase: data center chilled water differential pressure sensor trend
+Original title: Cooling Water Differential Pressure: When to Trust the Sensor Trend
+Sources: doecontrols, doedesign
+Related posts: chilled-water-valve-position-a-troubleshooting-checklist-for-data-center-facilities-teams
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+A differential-pressure trend is useful only when the sensor location, operating state, and control sequence are understood; compare the reading with independent indicators before treating it as a system problem.
+
+## Why this matters
+A bad sensor or changed operating mode can drive unnecessary adjustments and distract teams from the actual restriction or control fault.
+
+## Practical review points
+- Confirm the sensor location and current mode
+- Compare with a known reference or nearby measurements
+- Review recent maintenance and setpoint changes
+- Escalate readings outside the approved operating envelope
+
+## Example from operations
+A pressure trend falls after a valve project. The technician checks the sensor impulse line and sequence history before the team changes pump settings.
+
+## Frequently asked question
+### What should a technician check before acting on a pressure reading?
+Verify what the sensor measures, whether its input is plausible, and what operating condition existed when it was recorded.

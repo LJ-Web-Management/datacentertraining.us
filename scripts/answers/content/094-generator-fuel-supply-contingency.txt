@@ -1,0 +1,31 @@
+Question: What Fuel Supply Questions Go Beyond the Generator's On-Site Tank?
+Slug: generator-fuel-supply-contingency
+SEO Title: Generator Fuel Supply Contingency Planning
+Meta Description: Generator fuel supply questions beyond the on-site tank: consumption assumptions, delivery access, supplier dependencies, contract terms, and triggers.
+Track: Operations and Reliability
+Course: emergency-standby-power-systems-fundamentals
+Search phrase: data center generator fuel supply continuity plan
+Original title: Generator Fuel Supply Contingency: Questions Beyond the On-Site Tank
+Sources: nfpa110, nfpa30, nist34
+Related posts: generator-fuel-system-readiness-what-data-center-teams-should-verify-before-a-load-test
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+Fuel continuity planning should examine consumption assumptions, delivery access, supplier dependencies, contract terms, testing, and escalation triggers in the context of the site's resilience plan.
+
+## Why this matters
+On-site inventory does not guarantee replenishment during a regional disruption or blocked delivery route.
+
+## Practical review points
+- Document consumption and reserve assumptions
+- Confirm supplier and after-hours contact
+- Review access and delivery constraints
+- Define escalation thresholds and decision owner
+
+## Example from operations
+A regional storm affects the normal delivery route. The facility plan identifies alternate contacts and the person who can authorize contingency actions.
+
+## Frequently asked question
+### Does a full tank guarantee generator fuel continuity?
+No. The plan should also account for duration, replenishment, access, and supplier availability.

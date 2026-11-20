@@ -1,0 +1,31 @@
+Question: How Do You Set Preventive Maintenance Frequency?
+Slug: preventive-maintenance-frequency
+SEO Title: Preventive Maintenance Frequency: OEM vs. Site Evidence
+Meta Description: How to set preventive maintenance frequency by reconciling OEM guidance, applicable requirements, duty conditions, failure history, and redundancy.
+Track: Operations and Reliability
+Course: preventive-maintenance-planning
+Search phrase: data center preventive maintenance interval review
+Original title: Preventive Maintenance Frequency: How to Reconcile OEM Guidance and Site Evidence
+Sources: nfpa70b, nfpa110
+Related posts: preventive-maintenance-backlog-triage-how-data-center-facility-managers-should-rank-critical-work-orders
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+Maintenance frequency should reconcile manufacturer guidance, applicable requirements, duty conditions, failure history, redundancy, and the site's risk-based maintenance policy.
+
+## Why this matters
+Blindly extending or shortening intervals can increase risk or create unnecessary interventions.
+
+## Practical review points
+- Record the basis for each interval
+- Review condition and failure trends
+- Assess impact of taking equipment out of service
+- Approve interval changes through governance
+
+## Example from operations
+A team proposes delaying inspections because a unit has run without alarms. The planner compares OEM guidance and condition evidence before approving any interval change.
+
+## Frequently asked question
+### Can a quiet alarm history justify extending maintenance intervals?
+Not by itself; use a documented risk review and applicable manufacturer and regulatory information.

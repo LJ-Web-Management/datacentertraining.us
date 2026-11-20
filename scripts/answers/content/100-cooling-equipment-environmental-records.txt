@@ -1,0 +1,31 @@
+Question: Which Environmental Records Should Be Kept for Cooling Equipment?
+Slug: cooling-equipment-environmental-records
+SEO Title: Environmental Records for Cooling Equipment
+Meta Description: How to reconcile environmental records for data center cooling equipment: equipment identity, service events, refrigerants, vendors, and corrective actions.
+Track: Security and Compliance
+Course: facility-environmental-compliance
+Search phrase: data center cooling equipment environmental record review
+Original title: Environmental Records for Cooling Equipment: What to Reconcile
+Sources: epa608, epa608leak, epahfc
+Related posts: data-center-environmental-compliance-walkthrough-what-ehs-managers-should-verify-before-an-audit
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+Environmental records should connect equipment identity, service events, applicable materials, vendors, required documentation, and corrective actions so the facility can retrieve a coherent history.
+
+## Why this matters
+Dispersed records can make it difficult to verify what work occurred or whether follow-up was completed.
+
+## Practical review points
+- Assign equipment and record identifiers
+- Collect vendor service documentation
+- Track open issues and required reports
+- Review access and retention with the compliance owner
+
+## Example from operations
+A facility audit asks for service history on a cooling asset. The equipment register links work orders, vendor reports, and environmental documentation.
+
+## Frequently asked question
+### Should every service record be stored only in an email inbox?
+No. Use the organization's controlled recordkeeping system and assign an accountable owner.

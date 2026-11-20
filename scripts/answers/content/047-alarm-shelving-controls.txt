@@ -1,0 +1,31 @@
+Question: What Controls Should Apply When an Alarm Is Shelved?
+Slug: alarm-shelving-controls
+SEO Title: Alarm Shelving Controls for Critical Facilities
+Meta Description: The controls alarm shelving needs in a critical facility: authorization, visibility, reason codes, time limits, and an owner who confirms the alarm is restored.
+Track: Monitoring and Smart Facility
+Course: monitoring-automation-bms-systems
+Search phrase: data center alarm shelving controls policy
+Original title: Alarm Shelving in Critical Facilities: Controls for Temporary Suppression
+Sources: isa18, nist82
+Related posts: dcim-alarm-escalation-drills-what-data-center-operators-should-test-before-relying-on-automation
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+Alarm shelving should be temporary, authorized, visible, reason-coded, and time-limited, with a defined owner who confirms the condition is restored or the suppression is removed.
+
+## Why this matters
+Untracked shelving can hide a developing issue across shifts and create false confidence in monitoring coverage.
+
+## Practical review points
+- Require reason and approver
+- Set an expiry or review time
+- Display shelved status to operators
+- Verify unshelving and closure evidence
+
+## Example from operations
+A nuisance alarm is shelved during a scheduled test. The shift log records the test window and the person responsible for restoring normal monitoring.
+
+## Frequently asked question
+### Should an alarm remain shelved after a test ends?
+No. The owner should verify the condition and restore normal alarm handling under the procedure.

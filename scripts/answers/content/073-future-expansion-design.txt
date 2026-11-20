@@ -1,0 +1,31 @@
+Question: What Should a Data Center Design Preserve for Future Expansion?
+Slug: future-expansion-design
+SEO Title: Data Center Future Expansion: What to Preserve
+Meta Description: What a data center design should preserve for future expansion beyond floor space: power, cooling, cable routes, access, controls capacity, and sequencing.
+Track: Design and Planning
+Course: capacity-planning-forecasting
+Search phrase: data center infrastructure future expansion path planning
+Original title: Future Expansion Paths: What to Preserve in a Data Center Design
+Sources: tia942, doedesign
+Related posts: how-data-center-facility-managers-should-review-a-capacity-plan-before-adding-a-new-load
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+An expansion plan should reserve not just floor space but also power, cooling, cable routes, access, controls capacity, and work sequencing needed to add future loads safely.
+
+## Why this matters
+A physical expansion can be blocked by an overlooked upstream constraint or force rework near live equipment.
+
+## Practical review points
+- Map future demand against upstream capacity
+- Reserve maintainable routes and work zones
+- Document trigger points for investment
+- Recheck assumptions when load forecasts change
+
+## Example from operations
+A planned rack row fits on the floor plan but exceeds the available distribution path. Capacity review catches the constraint before procurement.
+
+## Frequently asked question
+### Should floor-space availability be treated as deployable capacity?
+No. Electrical, mechanical, access, and operational constraints also determine usable capacity.

@@ -1,0 +1,31 @@
+Question: How Do You Keep Commissioning Issues from Disappearing at Handover?
+Slug: commissioning-issue-log
+SEO Title: Commissioning Issue Logs: Tracking Defects to Closure
+Meta Description: What a commissioning issue log needs so defects survive handover: unique ID, location, consequence, owner, due date, closure evidence, and accepting authority.
+Track: Design and Planning
+Course: infrastructure-commissioning-startup
+Search phrase: data center commissioning issue log deficiency tracking
+Original title: Commissioning Issue Logs: How to Prevent Defects from Disappearing at Handover
+Sources: wbdgcx
+Related posts: data-center-commissioning-handover-checklist-what-facilities-managers-should-verify-before-operations-takeover
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+An issue log should include unique ID, location, consequence, owner, due date, evidence needed for closure, and acceptance authority, with open items visible through handover.
+
+## Why this matters
+A defect described only in meeting notes can lose ownership or be accepted without a verified fix.
+
+## Practical review points
+- Use one controlled issue register
+- Prioritize by consequence and dependency
+- Require evidence and reviewer for closure
+- Transfer remaining limitations to operations explicitly
+
+## Example from operations
+A sensor mapping issue is repeatedly discussed but not assigned. The commissioning manager adds an owner and closeout test before the system is accepted.
+
+## Frequently asked question
+### Can an issue be closed because the contractor says it is fixed?
+No. Closure should follow verification against the agreed requirement and recorded evidence.
