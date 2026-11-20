@@ -1,0 +1,31 @@
+Question: What Makes a Good BMS Point Naming Convention?
+Slug: bms-point-naming-convention
+SEO Title: BMS Point Naming Conventions That Make Alarms Searchable
+Meta Description: How a BMS point naming convention should identify system, location, equipment, and function consistently so operators can search and read alarms quickly.
+Track: Monitoring and Smart Facility
+Course: monitoring-automation-bms-systems
+Search phrase: data center BMS point naming convention
+Original title: BMS Point Naming Standards: Making Alarms Searchable
+Sources: isa18, nist82
+Related posts: 
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+A point name should identify the system, location, equipment, and measured or commanded function consistently enough for operators to search and interpret it.
+
+## Why this matters
+Ambiguous names slow response and increase the chance that staff act on the wrong equipment.
+
+## Practical review points
+- Define a naming pattern and owner
+- Include physical location and asset identity
+- Avoid unexplained abbreviations
+- Test names with operators who receive alarms
+
+## Example from operations
+Two sensors appear as “Temp 1” in different areas. The project team revises naming before turnover so operators can distinguish zone and rack location.
+
+## Frequently asked question
+### Should naming conventions be designed only by controls engineers?
+No. Operators and maintenance staff should verify that names support real troubleshooting tasks.

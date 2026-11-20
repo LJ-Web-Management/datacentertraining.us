@@ -1,0 +1,31 @@
+Question: How Do You Keep DCIM Capacity Dashboards from Overpromising?
+Slug: dcim-capacity-assumptions
+SEO Title: DCIM Capacity Assumptions: Keeping Dashboards Honest
+Meta Description: Why a DCIM capacity dashboard is only as good as its assumptions for rated limits, reserve margins, dependencies, and update frequency, and how to expose them.
+Track: Monitoring and Smart Facility
+Course: capacity-planning-forecasting
+Search phrase: DCIM capacity planning assumptions data center
+Original title: DCIM Capacity Assumptions: How to Keep Dashboards from Overpromising
+Sources: uptimetiers, doeee
+Related posts: how-data-center-facility-managers-should-review-a-capacity-plan-before-adding-a-new-load
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+A capacity dashboard is only as reliable as its assumptions for rated limits, reserve margins, dependencies, and update frequency; teams should make those assumptions visible.
+
+## Why this matters
+A misleading utilization percentage can approve a load that the physical system cannot safely support.
+
+## Practical review points
+- Document source and date for limits
+- Separate nameplate from usable capacity
+- Show reserve and constraint assumptions
+- Reconcile dashboard with approved engineering review
+
+## Example from operations
+A dashboard reports spare capacity while a maintenance restriction reduces available redundancy. The planner adds the constraint to the review before approving new load.
+
+## Frequently asked question
+### Does a green DCIM capacity indicator guarantee a new deployment is acceptable?
+No. Confirm constraints and dependencies with the responsible engineering and operations owners.

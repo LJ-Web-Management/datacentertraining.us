@@ -336,6 +336,8 @@ Turn availability percentages into minutes of downtime.
 
 Open the calculator →
 
+**Field answers:** short, sourced answers to operations and maintenance questions, such as [What is a method of procedure (MOP)?](https://datacentertraining.us/answers/method-of-procedure-mop.html), [SOP vs. MOP vs. EOP](https://datacentertraining.us/answers/sop-mop-eop-difference.html), [What should a work order closeout record?](https://datacentertraining.us/answers/work-order-closeout-evidence.html). [See them all →](https://datacentertraining.us/answers/#operations)
+
 This guide is general educational information, not engineering, legal, or compliance advice. Follow your site's procedures, the equipment manufacturer's instructions, and the codes adopted in your jurisdiction.
 
 ## Train Your Team on Data Center Operations

@@ -1,0 +1,31 @@
+Question: How Do You Verify a Replacement Sensor Is Ready for Service?
+Slug: sensor-replacement-acceptance
+SEO Title: Sensor Replacement Acceptance Testing
+Meta Description: How to accept a replacement sensor into service: verify identity, placement, scaling, alarm logic, and trend continuity, and compare it with a reference.
+Track: Monitoring and Smart Facility
+Course: monitoring-automation-bms-systems
+Search phrase: data center sensor replacement acceptance testing
+Original title: Sensor Replacement Acceptance: How to Verify a New Point Is Ready
+Sources: nisttrace, wbdgcx
+Related posts: 
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+Sensor acceptance should verify identity, placement, scaling, alarm logic, trend continuity, and comparison with a suitable reference before the point is treated as operational.
+
+## Why this matters
+A physically installed sensor can still be mis-scaled, mapped to the wrong point, or placed where it does not represent the intended condition.
+
+## Practical review points
+- Confirm point mapping and units
+- Check placement against approved design
+- Compare readings against a reference
+- Test alarm and trending behavior
+
+## Example from operations
+A new rack inlet sensor reports a plausible number but is mapped to the adjacent rack in DCIM. Acceptance review catches the error before the dashboard is relied upon.
+
+## Frequently asked question
+### Does a plausible reading prove correct sensor installation?
+No. Validate mapping, units, placement, and control behavior as part of acceptance.

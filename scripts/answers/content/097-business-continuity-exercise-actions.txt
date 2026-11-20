@@ -1,0 +1,31 @@
+Question: How Do You Turn Business Continuity Exercise Findings into Action?
+Slug: business-continuity-exercise-actions
+SEO Title: After-Action Review: Turning BC Exercise Findings Into Fixes
+Meta Description: How to run an after-action review of a business continuity exercise: separate facts from assumptions, assign owners and due dates, and verify each fix.
+Track: Operations and Reliability
+Course: business-continuity-disaster-recovery-planning
+Search phrase: data center business continuity exercise after action review
+Original title: Business Continuity Exercise Lessons: Turning Findings into Corrective Actions
+Sources: nist84, nist34
+Related posts: disaster-recovery-runbook-testing-for-data-center-facilities-teams
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+An exercise review should distinguish observed facts from assumptions, assign corrective-action owners, set due dates, and verify that changes improve the plan or response capability.
+
+## Why this matters
+Without follow-up, an exercise can reveal the same weakness repeatedly without reducing exposure.
+
+## Practical review points
+- Capture decisions and delays
+- Compare actions with intended plan
+- Assign owner and completion evidence
+- Retest material changes in a later exercise
+
+## Example from operations
+A tabletop reveals confusion about who notifies a customer after a power event. The review adds a role-specific action and tests the contact path later.
+
+## Frequently asked question
+### When is an exercise finding really closed?
+When the agreed correction is implemented and the organization has evidence that it works as intended.

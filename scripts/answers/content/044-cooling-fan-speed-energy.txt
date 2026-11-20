@@ -1,0 +1,31 @@
+Question: Is Lower Fan Speed Always a Cooling Efficiency Win?
+Slug: cooling-fan-speed-energy
+SEO Title: Cooling Fan Speed vs. Energy Use: What to Compare
+Meta Description: What to compare before lowering cooling fan speeds to save energy: airflow distribution, rack inlet conditions, equipment limits, and stability across loads.
+Track: Cooling and Facilities Efficiency
+Course: energy-efficiency-pue-optimization
+Search phrase: data center cooling fan speed optimization review
+Original title: Cooling Fan Speed vs. Energy Use: What to Compare Before Changing Controls
+Sources: doecontrols, doeee, ashraethermal
+Related posts: how-facilities-managers-can-use-pue-trends-to-separate-cooling-waste-from-it-load-growth
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+Fan speed optimization should compare energy use with airflow distribution, rack inlet conditions, equipment limits, and stability across representative loads.
+
+## Why this matters
+Reducing fan speed based on energy alone can create a hidden cooling deficit at distant or high-density racks.
+
+## Practical review points
+- Establish baseline power and thermal readings
+- Include farthest and highest-density racks
+- Set stop criteria before a trial
+- Compare equivalent load conditions
+
+## Example from operations
+A controls team proposes a lower fan-speed limit. Operations requests an instrumented trial with rack inlet monitoring and a defined rollback trigger.
+
+## Frequently asked question
+### Is lower fan speed always a cooling efficiency improvement?
+No. The change must preserve required airflow and stable thermal conditions across the served area.

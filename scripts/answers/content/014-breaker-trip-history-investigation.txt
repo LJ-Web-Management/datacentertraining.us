@@ -1,0 +1,31 @@
+Question: How Should Repeated Breaker Trips Be Investigated?
+Slug: breaker-trip-history-investigation
+SEO Title: Breaker Trip History: Investigating Repeat Trips
+Meta Description: How to turn repeated breaker trips into a useful investigation: what event data to preserve, why resetting is not a fix, and who should assess the cause.
+Track: Power and Electrical
+Course: incident-response-troubleshooting
+Search phrase: data center circuit breaker trip history analysis
+Original title: Breaker Trip History: Turning Repeated Events into a Useful Investigation
+Sources: osha334, nfpa70b, nfpa70e
+Related posts: 
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+Repeated breaker trips should be treated as evidence to investigate, not as a nuisance to reset; preserve event data and have qualified staff assess the cause.
+
+## Why this matters
+Repeatedly restoring a circuit without identifying the cause can expose equipment and workers to recurring fault conditions.
+
+## Practical review points
+- Capture trip time and affected load
+- Correlate with recent changes and alarms
+- Prevent unapproved repeated resets
+- Route findings to the electrical authority
+
+## Example from operations
+A circuit trips twice during a shift after a rack addition. The operator records timing and the change ticket and escalates rather than attempting another reset.
+
+## Frequently asked question
+### What information helps investigate a breaker trip?
+The circuit identity, event time, load context, related alarms, recent work, and actions already taken.

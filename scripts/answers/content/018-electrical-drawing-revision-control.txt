@@ -1,0 +1,31 @@
+Question: How Do You Keep Electrical Work from Using Stale Drawings?
+Slug: electrical-drawing-revision-control
+SEO Title: Electrical Drawing Revision Control for Data Centers
+Meta Description: How revision control keeps electrical work on current drawings, why field markups need a path back into approved records, and who owns the drawing set.
+Track: Design and Planning
+Course: data-center-design-fundamentals
+Search phrase: data center electrical drawing revision control
+Original title: Electrical Drawings Revision Control: Preventing Work from Using Stale Information
+Sources: nfpa70e, nfpa70b, osha333
+Related posts: data-center-electrical-one-line-review-what-supervisors-should-verify-before-switching
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+Electrical work should use a controlled, current drawing set with a clear revision, owner, and change history; field markups need a defined path back into approved records.
+
+## Why this matters
+Stale drawings can misidentify sources and create unsafe assumptions during maintenance or future projects.
+
+## Practical review points
+- Verify revision before planning work
+- Compare changes against field conditions
+- Capture redlines with location and date
+- Assign closeout owner for as-built updates
+
+## Example from operations
+A contractor arrives with a printed one-line from an earlier project phase. The project lead checks the current controlled set before the pre-task briefing.
+
+## Frequently asked question
+### Are marked-up drawings automatically approved as as-builts?
+No. Markups are evidence for updating records, but they require review and acceptance through document control.

@@ -1,0 +1,31 @@
+Question: Who Must Know Before a Data Center Maintenance Window Begins?
+Slug: maintenance-window-communication
+SEO Title: Maintenance Window Communication: Who Must Know?
+Meta Description: Who to notify before a data center maintenance window, from affected teams and tenants to decision authorities, plus status checkpoints and change contacts.
+Track: Operations and Reliability
+Course: data-center-operations-management
+Search phrase: data center maintenance window stakeholder notification plan
+Original title: Maintenance Window Communication: Who Must Know Before Work Begins?
+Sources: nfpa70b, nist34
+Related posts: 
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+A maintenance window plan should identify affected teams, customer or tenant notices, decision authority, status checkpoints, and a contact path if scope or timing changes.
+
+## Why this matters
+Late or incomplete communication can leave dependent teams unprepared for an expected constraint or unexpected delay.
+
+## Practical review points
+- List all affected service and facility owners
+- Specify start, hold, and end notifications
+- Provide a change escalation contact
+- Confirm acknowledgements for critical dependencies
+
+## Example from operations
+A cooling maintenance window shifts by two hours. The coordinator uses the contact list and approval path rather than relying on an informal chat message.
+
+## Frequently asked question
+### Who should receive a maintenance window notice?
+Everyone whose work, service, access, or risk may be affected, as defined by the site's communication plan.

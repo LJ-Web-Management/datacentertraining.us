@@ -1,0 +1,31 @@
+Question: How Should a Data Center Control UPS Operating Mode Changes?
+Slug: ups-operating-mode-change
+SEO Title: UPS Operating Mode Changes: Controlling the Risk
+Meta Description: Why a UPS operating mode change should be handled as a controlled change, with an owner, impact review, communication plan, and verified return to normal.
+Track: Power and Electrical
+Course: ups-systems-fundamentals
+Search phrase: UPS operating mode change management
+Original title: UPS Operating Mode Changes: How to Control Configuration Risk
+Sources: nfpa70e, osha333, nfpa70b
+Related posts: 
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+A UPS mode change should be treated as a controlled operational change with an authorized owner, understood impact, communication plan, and verified return condition.
+
+## Why this matters
+Unreviewed mode changes can alter protection, redundancy, or maintenance assumptions even when the display shows no immediate alarm.
+
+## Practical review points
+- Identify the reason and approver
+- Assess affected loads and redundancy
+- Communicate before the change
+- Record the expected and verified final mode
+
+## Example from operations
+A technician proposes a mode change to investigate an alarm. The shift lead checks the approved procedure, maintenance window, and rollback criteria before authorizing action.
+
+## Frequently asked question
+### Should an operator change UPS mode to clear an alarm?
+No. Diagnose and escalate under approved procedures; an alarm reset or mode change must not substitute for understanding the cause.

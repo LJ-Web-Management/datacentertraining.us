@@ -1,0 +1,31 @@
+Question: Which Dependencies Belong in an Integrated Systems Testing Scenario?
+Slug: integrated-systems-testing-scenarios
+SEO Title: Integrated Systems Testing: Choosing the Scenarios
+Meta Description: How to choose integrated systems testing (IST) scenarios that exercise power, cooling, controls, alarms, and people, within approved safety boundaries.
+Track: Design and Planning
+Course: infrastructure-commissioning-startup
+Search phrase: data center integrated systems testing scenario planning
+Original title: Integrated Systems Testing: Which Dependencies Should Be in the Scenario?
+Sources: wbdgcx, nfpa110, nfpa72
+Related posts: data-center-fire-alarm-cause-and-effect-testing-what-commissioning-teams-should-verify-before-handover
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+Integrated testing should exercise documented interactions among power, cooling, controls, alarms, and people using approved scenarios and safety boundaries.
+
+## Why this matters
+A component may pass independently while a cross-system response fails or produces an unexpected consequence.
+
+## Practical review points
+- Start from credible failure scenarios
+- Map system and human dependencies
+- Define stop conditions and command roles
+- Capture expected and actual sequence
+
+## Example from operations
+A utility event scenario includes a generator start, UPS response, and cooling control transition. The test plan assigns one person to command and another to log events.
+
+## Frequently asked question
+### Should integrated testing try every conceivable failure at once?
+No. Use engineered, approved scenarios with clear objectives, controls, and stop criteria.

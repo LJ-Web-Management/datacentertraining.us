@@ -167,6 +167,12 @@ ANSI/TIA-942, Uptime Tiers, NFPA 70E and 75, OSHA, ASHRAE, ISO 27001, SOC 2, and
 
 Read the guide →
 
+### [Field Answers](https://datacentertraining.us/answers/)
+
+Short, sourced answers to operator questions: alarms, MOPs, testing, records, and handover, each on its own page.
+
+Browse the answers →
+
 - [UPS](https://datacentertraining.us/learn/glossary.html#term-ups)
 - [PUE](https://datacentertraining.us/learn/glossary.html#term-pue)
 - [ATS](https://datacentertraining.us/learn/glossary.html#term-ats)

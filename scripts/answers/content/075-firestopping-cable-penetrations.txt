@@ -1,0 +1,31 @@
+Question: What Should Firestopping Closeout Show for Cable Penetrations?
+Slug: firestopping-cable-penetrations
+SEO Title: Firestopping Cable Penetrations: Closeout Evidence
+Meta Description: What firestopping closeout records should show for data center cable penetrations: location, approved system, installer, inspection, and change restrictions.
+Track: Design and Planning
+Course: facility-environmental-compliance
+Search phrase: data center cable penetration firestop inspection records
+Original title: Firestopping for Data Center Cable Penetrations: What Closeout Should Show
+Sources: nfpa75, nfpa101
+Related posts: data-center-fire-door-walkthrough-what-facility-managers-should-verify-before-a-critical-facilities-audit
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+Penetration closeout should identify the location, approved system, installer or responsible party, inspection evidence, and any future maintenance restriction required by the facility.
+
+## Why this matters
+Unrecorded or altered firestopping can compromise fire compartmentation and make later cable additions difficult to control.
+
+## Practical review points
+- Map each penetration to a unique location
+- Match installed system to approved submittal
+- Record inspection and repair evidence
+- Require review before later cable changes
+
+## Example from operations
+A new fiber route uses an existing sleeve. The project lead verifies capacity and approved firestop restoration and updates the penetration record.
+
+## Frequently asked question
+### Can a team add cable through a sealed penetration without a new review?
+No. Follow the approved system and facility's change process; restore and document protection as required.

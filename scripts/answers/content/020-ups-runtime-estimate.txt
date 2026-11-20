@@ -1,0 +1,31 @@
+Question: How Accurate Is a UPS Runtime Estimate?
+Slug: ups-runtime-estimate
+SEO Title: UPS Runtime Estimates: What the Display Really Means
+Meta Description: Why a displayed UPS runtime is an estimate, not a guarantee, and how load, battery condition, and approved response criteria should shape how teams use it.
+Track: Power and Electrical
+Course: ups-systems-fundamentals
+Search phrase: data center UPS runtime estimate accuracy
+Original title: UPS Runtime Estimates: How to Explain the Limits of a Displayed Number
+Sources: nfpa70b, nist34
+Related posts: 
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+A displayed UPS runtime is an estimate based on current system inputs and assumptions, not a guaranteed duration; teams should interpret it with load, battery condition, and approved response criteria.
+
+## Why this matters
+Treating one estimate as a promise can create false confidence during a power event.
+
+## Practical review points
+- Record timestamp and load context
+- Compare with current battery health information
+- Use site-defined thresholds and escalation
+- Avoid extrapolating beyond validated conditions
+
+## Example from operations
+During a utility event, runtime estimates change as load shifts. The incident lead reports the trend and follows the site's response triggers rather than quoting one number as certain.
+
+## Frequently asked question
+### Is the UPS runtime display an exact prediction?
+No. It is an estimate that depends on conditions and should be interpreted using approved operational criteria.

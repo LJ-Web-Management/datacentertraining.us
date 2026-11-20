@@ -1,0 +1,31 @@
+Question: How Long Should Data Center Teams Keep Operational Trend Data?
+Slug: trend-data-retention
+SEO Title: Trend Data Retention: How Long to Keep Facility Data
+Meta Description: How to set retention periods for data center operational trend data based on troubleshooting, maintenance, compliance, customer, and capacity needs.
+Track: Monitoring and Smart Facility
+Course: dcim-platform-fundamentals
+Search phrase: data center operational trend retention policy
+Original title: Trend Retention: How Long Should Data Center Teams Keep Operational Data?
+Sources: nist92, nist53
+Related posts: 
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+Trend retention should reflect troubleshooting, maintenance, compliance, customer, and capacity-planning needs, with ownership and time synchronization defined by policy.
+
+## Why this matters
+Short retention can erase evidence before an incident is reviewed; excessive retention without governance can create cost and access issues.
+
+## Practical review points
+- List decisions that require historical data
+- Set retention by data class and purpose
+- Confirm access and backup ownership
+- Test retrieval before a real incident
+
+## Example from operations
+A cooling investigation begins after a monthly report flags a drift. The team discovers the detailed trend was overwritten, prompting a retention review.
+
+## Frequently asked question
+### Is there one mandatory retention period for all facility trends?
+Not universally. Requirements depend on applicable rules, contracts, policy, and operational purpose.

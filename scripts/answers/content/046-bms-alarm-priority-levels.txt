@@ -1,0 +1,31 @@
+Question: How Should BMS Alarm Priority Levels Be Set?
+Slug: bms-alarm-priority-levels
+SEO Title: BMS Alarm Priority Levels: Matching Operational Risk
+Meta Description: How to set BMS alarm priority levels by operational consequence, required response time, and the person responsible, as part of disciplined alarm management.
+Track: Monitoring and Smart Facility
+Course: building-automation-systems-fundamentals
+Search phrase: data center BMS alarm priority classification
+Original title: BMS Alarm Priority Levels: How to Make Them Match Operational Risk
+Sources: isa18, nist82
+Related posts: dcim-alarm-escalation-drills-what-data-center-operators-should-test-before-relying-on-automation, dcim-vs-bms-alarm-dashboards-what-data-center-operations-teams-should-verify
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+Alarm priority should reflect operational consequence, required response time, and the person responsible for action, not simply how alarming the message sounds.
+
+## Why this matters
+Poor priority design creates alarm fatigue and can bury conditions that require prompt attention.
+
+## Practical review points
+- Define severity criteria and response owner
+- Review examples with operators
+- Separate advisory and action-required messages
+- Reassess priority after incidents or changes
+
+## Example from operations
+Operators receive frequent high-priority alarms for nonurgent status points. The controls lead reviews the priority matrix with the people who respond at night.
+
+## Frequently asked question
+### What makes an alarm high priority?
+A documented consequence and response requirement, not a dramatic label or color alone.

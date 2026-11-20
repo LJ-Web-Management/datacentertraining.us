@@ -1,0 +1,31 @@
+Question: What Facility Questions Come Before a Liquid-Cooled Compute Row?
+Slug: liquid-cooling-facility-readiness
+SEO Title: Liquid Cooling Data Center Readiness Checklist
+Meta Description: Facility questions before a liquid cooling deployment: heat rejection, coolant interfaces, leak detection, maintenance ownership, and emergency response.
+Track: Cooling and Facilities Efficiency
+Course: cooling-systems-design-optimization
+Search phrase: data center liquid cooling facility readiness checklist
+Original title: Liquid Cooling Readiness: Facility Questions Before a New Compute Row
+Sources: lblliquid, ashraetc99, doeee
+Related posts: 
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+A liquid-cooled deployment needs facility review of heat rejection, water or coolant interfaces, leak detection, maintenance ownership, emergency response, and monitoring before the row is accepted.
+
+## Why this matters
+A rack can be ready while the facility loop, alarms, or maintenance responsibilities are not.
+
+## Practical review points
+- Map facility and IT boundaries
+- Verify monitoring and leak response ownership
+- Review fluid quality and service responsibilities
+- Document commissioning and operating limits
+
+## Example from operations
+A compute vendor declares a row ready but the facility has no agreed alarm recipient for secondary-loop leak detection. Handover stays open until ownership is assigned.
+
+## Frequently asked question
+### Does a liquid-cooled rack only require IT-side readiness?
+No. Facility infrastructure, monitoring, maintenance, and response arrangements are part of readiness.

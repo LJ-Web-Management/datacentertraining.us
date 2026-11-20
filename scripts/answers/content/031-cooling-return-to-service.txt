@@ -1,0 +1,31 @@
+Question: What Should Be Verified Before Cooling Equipment Returns to Service?
+Slug: cooling-return-to-service
+SEO Title: Cooling Equipment Return to Service: What to Verify
+Meta Description: What to verify before cooling equipment returns to service after maintenance: closeout, control mode, alarms, flow or airflow evidence, and operator acceptance.
+Track: Cooling and Facilities Efficiency
+Course: mechanical-systems-maintenance
+Search phrase: data center cooling system return to service verification
+Original title: Cooling System Return to Service: What to Verify After Maintenance
+Sources: osha147, doecontrols
+Related posts: crah-unit-maintenance-readiness-what-data-center-technicians-should-verify-before-service
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+Returning cooling equipment to service requires confirming maintenance closeout, control mode, alarms, flow or airflow evidence, and the responsible operator's acceptance under site procedure.
+
+## Why this matters
+A unit can appear running while controls, valves, or downstream conditions remain incorrect after work.
+
+## Practical review points
+- Review work completion and permits
+- Confirm the approved operating mode
+- Check alarms and available performance indicators
+- Record acceptance and any temporary limitations
+
+## Example from operations
+A technician finishes a valve actuator replacement. Before closing the ticket, operations confirms command and feedback agree and the unit has returned to the documented sequence.
+
+## Frequently asked question
+### Does a green run indicator prove equipment is ready for service?
+No. Confirm operating state and relevant system response, not only a single status point.

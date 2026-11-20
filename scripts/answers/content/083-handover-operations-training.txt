@@ -1,0 +1,31 @@
+Question: What Should Operators Be Taught Before the Project Team Leaves?
+Slug: handover-operations-training
+SEO Title: Operations Training at Project Handover
+Meta Description: What to teach data center operators at project handover: normal operation, alarms, dependencies, maintenance boundaries, unusual conditions, and vendor support.
+Track: Design and Planning
+Course: infrastructure-commissioning-startup
+Search phrase: data center project handover operator training checklist
+Original title: Operations Training at Handover: What to Teach Before the Project Team Leaves
+Sources: wbdgcx, osha332
+Related posts: what-data-center-facility-managers-should-verify-before-commissioning-handover
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+Handover training should explain normal operation, alarms, dependencies, maintenance boundaries, unusual conditions, vendor support, and the controlled documents operators will use.
+
+## Why this matters
+A facility can be technically complete while the receiving team lacks practical knowledge to operate or maintain it.
+
+## Practical review points
+- Identify each equipment owner and user role
+- Include abnormal and recovery scenarios
+- Capture questions and unresolved limits
+- Confirm training materials match installed configuration
+
+## Example from operations
+A controls contractor conducts a generic demonstration using an earlier point map. The owner requests a session based on the final installed configuration.
+
+## Frequently asked question
+### Is a vendor demonstration enough for operational handover?
+Not by itself. Confirm it covers the site's roles, procedures, current configuration, and evidence needs.

@@ -1,0 +1,31 @@
+Question: How Should a Data Center Plan for a Cooling Water Interruption?
+Slug: cooling-water-interruption-plan
+SEO Title: Cooling Water Interruption: Data Center Contingency
+Meta Description: How to plan for a utility water interruption: which cooling systems depend on water, reserve or alternate modes, decision authority, and notification needs.
+Track: Operations and Reliability
+Course: disaster-recovery-business-continuity
+Search phrase: data center cooling water interruption contingency plan
+Original title: Cooling Water Interruption: How to Plan for a Utility-Service Event
+Sources: nist34, doedesign
+Related posts: 
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+A water-interruption plan should identify which systems depend on water, available reserve or alternate modes, decision authority, notification requirements, and the conditions for load protection.
+
+## Why this matters
+A building may retain electrical power yet lose cooling capacity or a service required for safe operation.
+
+## Practical review points
+- Map water-dependent equipment and limits
+- Confirm vendor and utility notifications
+- Define operational triggers and priorities
+- Exercise the communication path
+
+## Example from operations
+A municipal notice announces a planned water interruption. Operations checks cooling dependencies and confirms the response with the site owner before the work date.
+
+## Frequently asked question
+### Can a data center continue normally if electrical power is available during a water outage?
+Not necessarily; evaluate all utility and cooling dependencies against the facility plan.

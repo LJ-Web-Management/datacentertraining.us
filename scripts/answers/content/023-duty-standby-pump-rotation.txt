@@ -1,0 +1,31 @@
+Question: How Should a Duty-Standby Pump Changeover Be Reviewed?
+Slug: duty-standby-pump-rotation
+SEO Title: Duty-Standby Pump Rotation: Reviewing a Changeover
+Meta Description: How to review a duty-standby pump rotation against the control sequence, equipment status, and system response, and why equal run hours prove little.
+Track: Cooling and Facilities Efficiency
+Course: mechanical-systems-maintenance
+Search phrase: data center chilled water pump duty standby rotation
+Original title: Duty-Standby Pump Rotation: How to Review a Changeover
+Sources: doecontrols, doedesign
+Related posts: 
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+Pump rotation should be evaluated against the control sequence, equipment status, maintenance limits, and verified system response rather than changed solely to equalize runtime hours.
+
+## Why this matters
+An automatic changeover can reveal a latent fault or shift load in an unexpected way if operators do not know the sequence.
+
+## Practical review points
+- Identify lead-lag logic and rotation interval
+- Review alarms and run-hour imbalance
+- Verify standby readiness indicators
+- Record observed response after an authorized change
+
+## Example from operations
+A scheduled rotation starts the standby pump but a flow alarm appears. The operator follows the alarm procedure and records the sequence instead of repeatedly cycling the pumps.
+
+## Frequently asked question
+### Does equal runtime prove two pumps are equally healthy?
+No. Runtime is one indicator; condition, alarms, capacity, and verified performance also matter.

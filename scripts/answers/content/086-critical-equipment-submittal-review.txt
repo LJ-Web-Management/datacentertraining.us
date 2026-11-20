@@ -1,0 +1,31 @@
+Question: What Should a Critical Equipment Submittal Review Check?
+Slug: critical-equipment-submittal-review
+SEO Title: Submittal Review for Critical Equipment
+Meta Description: What a critical equipment submittal review should check beyond capacity: design basis, operating limits, maintainability, controls, and documentation.
+Track: Design and Planning
+Course: data-center-design-fundamentals
+Search phrase: data center critical equipment submittal review checklist
+Original title: Submittal Review for Critical Equipment: Questions Before Approval
+Sources: wbdgcx, tia942
+Related posts: ansi-tia-942-design-review-what-data-center-facility-teams-should-verify-before-construction
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+A submittal review should compare proposed equipment and interfaces with the design basis, operating limits, maintainability, controls, and documentation requirements before procurement.
+
+## Why this matters
+A late mismatch can cause costly redesign or create a system that operations cannot support as planned.
+
+## Practical review points
+- Check ratings and interface assumptions
+- Review service clearances and replacement path
+- Confirm alarms and control points
+- Record deviations and approval conditions
+
+## Example from operations
+A proposed unit meets the headline capacity but requires more service clearance than the room provides. The reviewer identifies the conflict before release.
+
+## Frequently asked question
+### Is matching the equipment capacity enough to approve a submittal?
+No. Interfaces, serviceability, controls, and project requirements also need review.

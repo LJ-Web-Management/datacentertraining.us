@@ -1,0 +1,31 @@
+Question: How Should Removed Batteries Be Stored and Segregated?
+Slug: removed-battery-storage-segregation
+SEO Title: Removed Battery Storage: Keeping Units Segregated
+Meta Description: How to store removed UPS batteries in a data center: identify, protect, and segregate them by chemistry and condition until the approved disposition process.
+Track: Power and Electrical
+Course: data-center-ups-battery-safety
+Search phrase: data center removed battery storage housekeeping
+Original title: Battery Storage Area Housekeeping: Keeping Removed Units Segregated
+Sources: nfpa855, epauw, osha151
+Related posts: vrla-battery-room-pre-task-readiness-what-data-center-technicians-should-verify-before-service, lithium-ion-battery-thermal-runaway-what-data-center-teams-should-rehearse-before-an-incident
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+Removed batteries should be identified, protected, and segregated according to chemistry, condition, site rules, and the approved disposition process.
+
+## Why this matters
+Damaged or mixed batteries can create handling, fire, chemical, and recycling risks.
+
+## Practical review points
+- Label chemistry and condition
+- Keep damaged units in designated handling path
+- Prevent contact with incompatible materials
+- Track pickup and disposition records
+
+## Example from operations
+A replacement project stages used units in a corridor. The supervisor redirects them to the approved storage area and records the condition for the recycler.
+
+## Frequently asked question
+### Can damaged batteries be stored with routine removed units?
+Use the site's specific damaged-battery procedure; do not assume routine storage is appropriate.

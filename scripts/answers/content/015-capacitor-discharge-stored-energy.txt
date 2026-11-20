@@ -1,0 +1,31 @@
+Question: Is Switching Off Equipment Enough to Make Capacitors Safe?
+Slug: capacitor-discharge-stored-energy
+SEO Title: Capacitor Discharge and Stored Energy Safety
+Meta Description: Why capacitors can hold hazardous stored energy after equipment is switched off, and how isolation, waiting, testing, and verification belong in service plans.
+Track: Power and Electrical
+Course: data-center-electrical-safety
+Search phrase: data center capacitor stored energy safety
+Original title: Capacitor Discharge and Stored Energy: Safe Planning for Electrical Service
+Sources: osha147, osha333, nfpa70e
+Related posts: 
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+Capacitors can retain hazardous energy after equipment is switched off; service planning must follow equipment-specific isolation, waiting, testing, and verification procedures.
+
+## Why this matters
+Assuming that off means de-energized can lead to shock or arc hazards during maintenance.
+
+## Practical review points
+- Identify stored-energy sources in the equipment documentation
+- Use the approved energy-control procedure
+- Require qualified verification before exposure
+- Keep unauthorized personnel outside the work area
+
+## Example from operations
+A maintenance scope includes a power conversion assembly. The work planner identifies capacitor energy in the equipment documentation and confirms the required controls with the qualified lead.
+
+## Frequently asked question
+### Is switching off equipment enough to make capacitors safe?
+No. Stored energy and verification requirements depend on the equipment and approved procedure.

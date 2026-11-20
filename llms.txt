@@ -2,7 +2,7 @@
 
 > Data Center Training (datacentertraining.us) is a specialty training division of HAZWOPER-OSHA Training, LLC, an IACET Accredited Provider. 42 online, self-paced data center courses (182 hours total) in design, operations, power, cooling, security, and facilities management. Every course awards a certificate of completion.
 
-Last updated: 2026-11-19
+Last updated: 2026-11-20
 
 Courses start at $99.99 per seat, or enroll the complete 42-course catalog bundle for $3,377.99. 7 bundles save up to 52%. Programs are Comprehensive Programs (8 hrs, full-discipline curriculum) or Modular Specializations (1-8 hrs, focused skills). English only.
 
@@ -61,6 +61,7 @@ No API key or account is needed. Errors are application/problem+json with a stab
 - [FAQ](https://datacentertraining.us/faq.html): programs, pricing, certificates, and policies.
 - [Blog](https://datacentertraining.us/blog/): field guidance for data center teams.
 - [Knowledge Center](https://datacentertraining.us/learn/): guides to data center power, cooling, Tier levels, safety, security, operations, commissioning, energy efficiency, standards, and a glossary.
+- [Field Answers](https://datacentertraining.us/answers/): one page per operator question (alarms, procedures, testing, records, handover), each with a short answer, a checklist, an example, sources, and the related course.
 - [Training Programs](https://datacentertraining.us/training/): data center training by topic: technician, NFPA 70E, arc flash, lockout/tagout, safety, UPS and battery, generator, and BMS/DCIM training.
 - [Careers](https://datacentertraining.us/careers/): data center job roles (technician, electrician, HVAC, critical facilities, engineer, manager, security), entry-level jobs, jobs by location, how to get started, career changers, and interview questions.
 - [Data Center Technician Salary Guide](https://datacentertraining.us/careers/data-center-technician-salary.html): U.S. Bureau of Labor Statistics pay data for comparable occupations.

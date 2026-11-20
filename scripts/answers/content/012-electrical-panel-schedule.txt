@@ -1,0 +1,31 @@
+Question: Why Should Facilities Teams Reconcile Electrical Panel Schedules?
+Slug: electrical-panel-schedule
+SEO Title: Electrical Panel Schedule Accuracy in Data Centers
+Meta Description: Why an electrical panel schedule must match field conditions and current drawings, how to log discrepancies, and who should correct circuit labels.
+Track: Power and Electrical
+Course: power-distribution-systems-fundamentals
+Search phrase: data center electrical panel schedule verification
+Original title: Electrical Panel Schedule Accuracy: Why Facilities Teams Should Reconcile Labels
+Sources: osha303, nfpa70, nfpa70b
+Related posts: data-center-electrical-one-line-review-what-supervisors-should-verify-before-switching
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+A panel schedule is useful only when it matches verified field conditions and the current approved drawing set; discrepancies should be logged and resolved by authorized personnel.
+
+## Why this matters
+Incorrect circuit identification can delay isolation, misdirect maintenance, and undermine capacity planning.
+
+## Practical review points
+- Compare labels to controlled drawings
+- Flag unknown or conflicting circuits
+- Use qualified personnel for verification
+- Record revision and approval date
+
+## Example from operations
+A maintenance request names a panel circuit that conflicts with the field label. The work is paused for an authorized verification instead of guessing from an old spreadsheet.
+
+## Frequently asked question
+### Can staff simply relabel a circuit based on a rack name?
+No. Labels should follow verified circuit identity and the site's document-control process.

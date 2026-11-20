@@ -1,0 +1,31 @@
+Question: How Should Teams Use CRAH Filter Differential Pressure?
+Slug: crah-filter-differential-pressure
+SEO Title: CRAH Filter Differential Pressure: When to Change
+Meta Description: How to read CRAH filter differential pressure with manufacturer criteria, airflow conditions, and sensor reliability to decide when filters need service.
+Track: Cooling and Facilities Efficiency
+Course: hvac-troubleshooting-essentials
+Search phrase: CRAH filter differential pressure maintenance
+Original title: CRAH Filter Differential Pressure: How to Use It Without Guessing
+Sources: doedesign, ashraetc99, lbl
+Related posts: crah-unit-maintenance-readiness-what-data-center-technicians-should-verify-before-service
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+Filter differential pressure can help indicate loading, but teams should compare it with the manufacturer's criteria, airflow conditions, sensor reliability, and the unit's maintenance history.
+
+## Why this matters
+Replacing filters based on one unexplained value can waste resources or leave an airflow issue unresolved.
+
+## Practical review points
+- Confirm sensor and filter identification
+- Compare trend with airflow and alarm data
+- Use approved replacement criteria
+- Document filter change and post-maintenance response
+
+## Example from operations
+A pressure alarm occurs shortly after a filter replacement. The technician checks installation direction and sensor tubing before ordering another filter.
+
+## Frequently asked question
+### Does high filter differential pressure always mean the filter must be replaced?
+No. Confirm the measurement and use the equipment's approved criteria before deciding.

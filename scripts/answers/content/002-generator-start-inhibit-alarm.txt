@@ -1,0 +1,31 @@
+Question: What Should Operators Verify When a Generator Start Inhibit Alarm Appears?
+Slug: generator-start-inhibit-alarm
+SEO Title: Generator Start Inhibit Alarm: What to Verify
+Meta Description: What a generator start inhibit alarm means for standby coverage, what data center operators should verify first, and who can clear an inhibit safely.
+Track: Power and Electrical
+Course: generator-operations-maintenance
+Search phrase: generator start inhibit alarm
+Original title: Generator Start Inhibit Alarms: What Facility Operators Should Verify
+Sources: nfpa110, osha147
+Related posts: generator-control-panel-alarm-triage-what-data-center-technicians-should-verify-before-escalation
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+A start inhibit means an expected automatic start may be blocked; operators should identify the active inhibit, confirm standby coverage, and escalate before relying on that generator.
+
+## Why this matters
+A generator that appears available but cannot start may reduce the site's real standby capacity during an outage.
+
+## Practical review points
+- Record the exact inhibit and time
+- Check the approved equipment status source
+- Confirm alternate capacity and escalation ownership
+- Do not bypass an inhibit without authorization
+
+## Example from operations
+A weekly status review finds one unit marked ready while its controller displays an inhibit. The operator flags the mismatch for qualified maintenance and updates the shift record.
+
+## Frequently asked question
+### Can an operator clear a generator start inhibit?
+Only personnel authorized by the site's procedure should investigate or clear an inhibit; never bypass protective logic to make a status screen appear normal.

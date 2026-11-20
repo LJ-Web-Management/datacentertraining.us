@@ -1,0 +1,31 @@
+Question: How Do You Match Perforated Floor Tiles to Rack Demand?
+Slug: perforated-floor-tiles
+SEO Title: Perforated Floor Tiles: Matching Airflow to Racks
+Meta Description: How to place and select perforated floor tiles to match supply air to rack demand, and why swapping tiles informally can make data center cooling worse.
+Track: Cooling and Facilities Efficiency
+Course: cooling-systems-design-optimization
+Search phrase: data center perforated floor tile selection airflow
+Original title: Perforated Floor Tiles: How to Match Supply Air to Rack Demand
+Sources: doedesign, lbl, ashraethermal
+Related posts: 
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+Floor tile selection should follow the cooling design and measured rack demand; tile placement and open area should not be changed informally to solve a local temperature issue.
+
+## Why this matters
+Unplanned tile changes can divert supply air from other racks and create new hot spots.
+
+## Practical review points
+- Check the approved airflow plan
+- Review rack inlet data before moving tiles
+- Coordinate changes with facilities control owner
+- Measure again after the approved adjustment
+
+## Example from operations
+A team moves a high-flow tile toward one rack without recording the original pattern. A later survey finds a neighboring rack warmer, so the layout is returned to engineering review.
+
+## Frequently asked question
+### Does a higher-open-area tile always improve cooling?
+No. It changes distribution and can reduce supply to nearby locations if not evaluated as part of the system.

@@ -1,0 +1,31 @@
+Question: How Should a Cooling Plant Be Staged for Redundancy and Efficiency?
+Slug: cooling-plant-staging
+SEO Title: Chiller Plant Staging: Redundancy vs. Efficiency
+Meta Description: How to evaluate chiller and cooling plant staging against current load, equipment limits, redundancy requirements, and the approved sequence, not energy alone.
+Track: Cooling and Facilities Efficiency
+Course: cooling-systems-design-optimization
+Search phrase: data center cooling plant staging sequence review
+Original title: Cooling Plant Staging: How to Balance Redundancy and Efficiency
+Sources: doecontrols, doedesign, uptimetiers
+Related posts: data-center-chiller-approach-temperature-a-troubleshooting-checklist-for-facilities-teams
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+Plant staging should be evaluated against current load, equipment operating limits, redundancy requirements, and the approved control sequence rather than energy use alone.
+
+## Why this matters
+An efficiency change that reduces available reserve can increase outage risk or cause unstable operation.
+
+## Practical review points
+- Review load and equipment status
+- Confirm minimum redundancy criteria
+- Compare sequence with observed response
+- Require change approval and rollback plan
+
+## Example from operations
+A control proposal delays starting a chiller to reduce low-load cycling. The operations team checks the reserve requirement and temperature response before approving a trial.
+
+## Frequently asked question
+### Should the most energy-efficient staging sequence always be used?
+No. Efficiency must be balanced with reliability, operating limits, and the facility's design criteria.

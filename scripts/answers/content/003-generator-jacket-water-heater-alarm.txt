@@ -1,0 +1,31 @@
+Question: Does a Generator Jacket Water Heater Alarm Affect Standby Readiness?
+Slug: generator-jacket-water-heater-alarm
+SEO Title: Generator Jacket Water Heater Alarm: Readiness Risk
+Meta Description: Why a jacket water heater alarm can change a standby generator's readiness, what data center teams should check, and how to route the maintenance response.
+Track: Power and Electrical
+Course: generator-fundamentals
+Search phrase: data center generator jacket water heater alarm
+Original title: Generator Jacket-Water Heater Alarms: Why Standby Readiness Can Change
+Sources: nfpa110, nfpa70b
+Related posts: generator-maintenance-readiness-a-data-center-manager-s-pre-task-checklist
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+A jacket-water heater alarm can indicate a condition that affects engine temperature and readiness, so teams should verify the alarm, unit status, and maintenance response through approved controls.
+
+## Why this matters
+A cold engine or failed heater may affect start performance; ignoring the alarm can create a false impression of readiness.
+
+## Practical review points
+- Log alarm and affected unit
+- Check redundancy and current readiness status
+- Notify the responsible generator technician
+- Track repair and retest evidence
+
+## Example from operations
+A night-shift alarm appears on one generator while the remaining units show normal status. The operator documents the equipment affected and follows the site notification matrix.
+
+## Frequently asked question
+### Does a heater alarm mean the generator cannot start?
+Not by itself; it signals a condition requiring assessment. Use manufacturer guidance and site procedures to determine readiness rather than assuming either failure or normal operation.

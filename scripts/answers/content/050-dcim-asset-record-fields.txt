@@ -1,0 +1,31 @@
+Question: Which DCIM Asset Record Fields Help During a Power Event?
+Slug: dcim-asset-record-fields
+SEO Title: DCIM Asset Records: Fields That Help in a Power Event
+Meta Description: Which DCIM asset management fields help staff during a power event: identity, location, owner, dependencies, capacity context, and maintenance state.
+Track: Monitoring and Smart Facility
+Course: dcim-platform-fundamentals
+Search phrase: DCIM asset record fields for data center equipment
+Original title: DCIM Asset Records: Which Fields Help During a Power Event?
+Sources: nist53, nist128
+Related posts: 
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+A useful DCIM record connects an asset identity to location, owner, dependencies, capacity context, maintenance state, and current documentation so staff can act from one trusted reference.
+
+## Why this matters
+Incomplete records slow response and can cause teams to miss the dependencies behind an apparently local issue.
+
+## Practical review points
+- Use consistent asset identifiers
+- Assign owner and criticality
+- Link current drawings and work history
+- Review fields when equipment moves or changes
+
+## Example from operations
+A technician searches a panel by nickname and finds multiple assets. The team standardizes identifiers so tickets, alarms, and drawings point to the same equipment.
+
+## Frequently asked question
+### Should a DCIM record replace controlled engineering documents?
+No. It can point users to controlled documents but should not become an uncontrolled substitute.

@@ -1,0 +1,31 @@
+Question: What Should a Temperature Sensor Calibration Record Include?
+Slug: temperature-sensor-calibration-records
+SEO Title: Temperature Sensor Calibration: A Traceability Checklist
+Meta Description: What a data center temperature sensor calibration record should include, from sensor ID and reference standard to tolerance, result, and corrective action.
+Track: Monitoring and Smart Facility
+Course: monitoring-automation-bms-systems
+Search phrase: data center temperature sensor calibration records
+Original title: Data Center Temperature Sensor Calibration: A Traceability Checklist
+Sources: nisttrace, ashraethermal
+Related posts: 
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+A calibration record should identify the sensor, method, reference, date, result, tolerance, and corrective action so trend users know whether readings are trustworthy.
+
+## Why this matters
+Untraceable sensor data can undermine thermal decisions and make disagreements between dashboards difficult to resolve.
+
+## Practical review points
+- Assign each sensor a unique identifier
+- Record method and reference instrument
+- Document as-found and as-left results
+- Flag out-of-tolerance readings for impact review
+
+## Example from operations
+A rack inlet sensor is replaced after a drift alert. The controls owner records the new device identity and checks whether historical trend comparisons remain valid.
+
+## Frequently asked question
+### Why does a calibration record need the sensor identifier?
+It links the measurement evidence to the specific point operators and engineers rely on.

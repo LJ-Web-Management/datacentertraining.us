@@ -1,0 +1,31 @@
+Question: How Should Manual Control Overrides Be Tracked Across Shifts?
+Slug: manual-override-tracking
+SEO Title: Manual Control Overrides: Tracking Across Shifts
+Meta Description: How to track BMS manual control overrides across shifts with an owner, reason, affected point, expected duration, risk review, and a visible handback check.
+Track: Monitoring and Smart Facility
+Course: building-automation-systems-fundamentals
+Search phrase: BMS manual control point override tracking
+Original title: Manual Control Points: How to Track Overrides Across Shifts
+Sources: nist82, nist128
+Related posts: bas-manual-override-review-what-data-center-operators-should-verify-before-returning-a-control-point-to-auto, data-center-shift-handover-checklist-what-facility-managers-should-make-visible-before-the-next-crew-takes-over
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+A manual override should have an owner, reason, affected control point, expected duration, risk review, and a handback check visible to operations.
+
+## Why this matters
+An override that outlives its intended purpose can silently defeat automatic response and confuse later troubleshooting.
+
+## Practical review points
+- Record point, value, and reason
+- Set an expiry and owner
+- Show override status to every shift
+- Verify return to intended control mode
+
+## Example from operations
+A technician holds a damper command during diagnostics. The shift handover lists the point, planned expiry, and criteria for returning it to automatic control.
+
+## Frequently asked question
+### Can an operator assume an override was removed when the work ticket closes?
+No. Verify the actual point status and document the handback.

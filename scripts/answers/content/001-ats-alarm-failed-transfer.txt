@@ -1,0 +1,31 @@
+Question: When Is an ATS Alarm a Failed Transfer?
+Slug: ats-alarm-failed-transfer
+SEO Title: ATS Alarm Response: When Is It a Failed Transfer?
+Meta Description: How data center operators should treat an automatic transfer switch (ATS) alarm, what to confirm about source, switch position, and load, and when to escalate.
+Track: Power and Electrical
+Course: emergency-standby-power-systems-fundamentals
+Search phrase: data center ATS alarm response
+Original title: When Should a Data Center Team Treat an ATS Alarm as a Failed Transfer?
+Sources: nfpa110, nfpa70e, osha333
+Related posts: static-transfer-switch-alarm-response-what-data-center-operators-should-verify-before-a-load-transfer, data-center-electrical-one-line-review-what-supervisors-should-verify-before-switching
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+Treat an ATS alarm as a possible failed or incomplete transfer until qualified staff confirm source status, switch position, load condition, and event sequence using approved procedures.
+
+## Why this matters
+An unverified transfer can leave critical loads on an unstable source or create conflicting operator actions during a power event.
+
+## Practical review points
+- Capture the alarm timestamp and sequence
+- Confirm normal and alternate source indications through approved displays
+- Compare switch position with downstream power status
+- Escalate mismatches to the designated electrical authority
+
+## Example from operations
+During a utility disturbance, the ATS reports a transfer attempt but downstream monitoring does not match the expected source. The team records the event and follows the site escalation plan rather than issuing repeated commands.
+
+## Frequently asked question
+### What should operators do when ATS indications disagree?
+Pause discretionary actions, preserve alarm and event data, notify the authorized electrical lead, and follow the site's approved response procedure.

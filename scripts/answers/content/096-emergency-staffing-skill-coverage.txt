@@ -1,0 +1,31 @@
+Question: How Do You Plan Emergency Staffing Coverage by Skill?
+Slug: emergency-staffing-skill-coverage
+SEO Title: Emergency Staffing Coverage: Planning by Skill
+Meta Description: How to plan data center emergency staffing by skill rather than headcount: minimum roles, alternates, callout triggers, site access, and safe coverage limits.
+Track: Operations and Reliability
+Course: facility-management-fundamentals
+Search phrase: data center emergency staffing skill coverage plan
+Original title: Emergency Staffing Coverage: Planning for Skills Across Shifts
+Sources: osha38, nist34
+Related posts: 
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+Emergency staffing plans should identify minimum roles, required skills, alternates, callout triggers, access arrangements, and how one person can safely cover duties during a disruption.
+
+## Why this matters
+A roster can be full while critical decision or response skills are absent on a particular shift.
+
+## Practical review points
+- Map essential roles by scenario
+- Identify qualified alternates and limits
+- Review callout and access logistics
+- Practice escalation when staffing is below plan
+
+## Example from operations
+An overnight illness leaves no controls specialist on site. The supervisor follows the staffing contingency and remote escalation path rather than assigning an unqualified substitute.
+
+## Frequently asked question
+### Can headcount alone show whether a shift is ready?
+No. Verify role coverage, competency limits, and escalation support.

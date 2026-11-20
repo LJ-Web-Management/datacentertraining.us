@@ -1,0 +1,31 @@
+Question: Is a Cooling Pressure Alarm a Sensor Fault or a Real Process Change?
+Slug: cooling-pressure-alarm-sensor-fault
+SEO Title: Cooling Pressure Alarm: Sensor Fault or Real Problem?
+Meta Description: How to tell whether a cooling system pressure alarm is a sensor fault or a real process change by comparing related points, unit mode, and recent work.
+Track: Cooling and Facilities Efficiency
+Course: hvac-troubleshooting-essentials
+Search phrase: data center cooling system pressure alarm troubleshooting
+Original title: Cooling Pressure Alarm: How to Separate Sensor Fault from Process Change
+Sources: doecontrols, epa608
+Related posts: 
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+A pressure alarm should be compared with related points, unit mode, and recent work before diagnosing a process fault or sensor problem.
+
+## Why this matters
+An unverified pressure value can prompt inappropriate valve or pump adjustments.
+
+## Practical review points
+- Record the alarm and unit state
+- Compare related supply and return readings
+- Review sensor maintenance and recent changes
+- Escalate any limit breach under site procedure
+
+## Example from operations
+A pressure alarm appears after maintenance while adjacent sensors remain stable. The technician reports the discrepancy and avoids changing the control sequence without approval.
+
+## Frequently asked question
+### What makes a pressure alarm more likely to be a sensor issue?
+A mismatch with independent indicators may be a clue, but qualified review is needed to confirm the cause.

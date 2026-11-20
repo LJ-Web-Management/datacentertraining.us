@@ -230,7 +230,7 @@ function parseRoles(trackOf) {
 }
 
 // Knowledge Center, training, careers, quiz, and tool pages (listed in api/resources.json).
-const HUB_DIRS = ['learn', 'training', 'careers', 'quizzes', 'tools'];
+const HUB_DIRS = ['learn', 'answers', 'training', 'careers', 'quizzes', 'tools'];
 
 function hubPages() {
   const out = [];
@@ -405,7 +405,7 @@ function buildData() {
     { type: 'standard_reference', title: 'Uptime Institute Tier Classification System', url: 'https://uptimeinstitute.com/tiers', description: 'Tier I-IV infrastructure topology framework referenced by the Tier Infrastructure Fundamentals course.', topics: ['tier', 'design'], audience: ['design', 'engineer'], source: 'Uptime Institute' },
     { type: 'standard_reference', title: 'ASHRAE TC 9.9 - Mission Critical Facilities, Data Centers, Technology Spaces and Electronic Equipment', url: 'https://tc0909.ashraetcs.org/', description: 'ASHRAE technical committee behind the data center thermal guidelines referenced in cooling courses.', topics: ['cooling', 'thermal', 'ashrae'], audience: ['hvac'], source: 'ASHRAE' }
   ];
-  const hubTopic = { learn: 'guide', training: 'training', careers: 'careers', quizzes: 'quiz', tools: 'tool' };
+  const hubTopic = { learn: 'guide', answers: 'answer', training: 'training', careers: 'careers', quizzes: 'quiz', tools: 'tool' };
   const hubResources = hubPages().map((p) => {
     const hay = (p.title + ' ' + p.description).toLowerCase();
     return { type: 'site_page', title: p.title, url: p.url, description: p.description, topics: [hubTopic[p.dir]].concat(topicWords.filter((w) => hay.includes(w))), audience: [] };
@@ -1354,6 +1354,7 @@ function writeLlms(d, courses, updated, toolNames) {
     '- [FAQ](' + ORIGIN + '/faq.html): programs, pricing, certificates, and policies.',
     '- [Blog](' + ORIGIN + '/blog/): field guidance for data center teams.',
     '- [Knowledge Center](' + ORIGIN + '/learn/): guides to data center power, cooling, Tier levels, safety, security, operations, commissioning, energy efficiency, standards, and a glossary.',
+    '- [Field Answers](' + ORIGIN + '/answers/): one page per operator question (alarms, procedures, testing, records, handover), each with a short answer, a checklist, an example, sources, and the related course.',
     '- [Training Programs](' + ORIGIN + '/training/): data center training by topic: technician, NFPA 70E, arc flash, lockout/tagout, safety, UPS and battery, generator, and BMS/DCIM training.',
     '- [Careers](' + ORIGIN + '/careers/): data center job roles (technician, electrician, HVAC, critical facilities, engineer, manager, security), entry-level jobs, jobs by location, how to get started, career changers, and interview questions.',
     '- [Data Center Technician Salary Guide](' + ORIGIN + '/careers/data-center-technician-salary.html): U.S. Bureau of Labor Statistics pay data for comparable occupations.',
@@ -1839,7 +1840,7 @@ function clip(s, n) {
 }
 
 function searchType(rel) {
-  if (rel.startsWith('learn/') || rel.startsWith('training/')) return 'Guide';
+  if (rel.startsWith('learn/') || rel.startsWith('answers/') || rel.startsWith('training/')) return 'Guide';
   if (rel.startsWith('careers/')) return 'Careers';
   if (rel.startsWith('quizzes/')) return 'Quiz';
   if (rel.startsWith('tools/')) return 'Tool';

@@ -278,6 +278,8 @@ The people who keep audits on track and evidence in order.
 
 See the role →
 
+**Field answers:** short, sourced answers to security and compliance questions, such as [How do you find dormant badge access?](https://datacentertraining.us/answers/badge-access-review-dormant.html), [Who handles a door forced-open alarm?](https://datacentertraining.us/answers/door-forced-open-alarm.html), [How should camera blind spots be documented?](https://datacentertraining.us/answers/camera-coverage-blind-spots.html). [See them all →](https://datacentertraining.us/answers/#security)
+
 This guide is general educational information, not legal, compliance, or engineering advice. Requirements depend on your contracts, the frameworks you are audited against, and the laws and codes in your jurisdiction.
 
 ## Train Your Team on Security & Compliance

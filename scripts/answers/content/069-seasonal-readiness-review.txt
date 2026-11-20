@@ -1,0 +1,31 @@
+Question: What Should a Data Center Recheck Before the Seasons Change?
+Slug: seasonal-readiness-review
+SEO Title: Seasonal Readiness Review for Data Centers
+Meta Description: What a data center seasonal readiness review should recheck before weather changes: site exposure, equipment dependencies, staffing, contractors, and contacts.
+Track: Operations and Reliability
+Course: facility-management-fundamentals
+Search phrase: data center seasonal facility readiness review
+Original title: Seasonal Readiness Review: What to Recheck Before Weather Changes
+Sources: osha38, nist34
+Related posts: 
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+Seasonal readiness should focus on site-specific exposure, equipment dependencies, staffing, contractor coverage, utility arrangements, and emergency communication before conditions change.
+
+## Why this matters
+A plan that worked in one season may miss different cooling, drainage, access, or fuel constraints in another.
+
+## Practical review points
+- Review site hazard and weather scenarios
+- Check equipment and service dependencies
+- Verify contact and staffing coverage
+- Assign action owners before the season starts
+
+## Example from operations
+Before a severe-weather period, a facility manager reviews roof access, fuel support, and staff callout coverage with the responsible teams.
+
+## Frequently asked question
+### Is a generic seasonal checklist enough for every data center?
+No. Adapt the review to local hazards, design, contracts, and site response plans.

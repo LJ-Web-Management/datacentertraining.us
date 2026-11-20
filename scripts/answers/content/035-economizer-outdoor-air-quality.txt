@@ -1,0 +1,31 @@
+Question: What Should Teams Monitor About Outdoor Air for Economizer Operation?
+Slug: economizer-outdoor-air-quality
+SEO Title: Economizer Operation and Outdoor Air Quality
+Meta Description: What data center teams should monitor about outdoor air before using an economizer, and why cooler outside air alone does not decide the operating mode.
+Track: Cooling and Facilities Efficiency
+Course: cooling-systems-design-optimization
+Search phrase: data center economizer outdoor air quality monitoring
+Original title: Outdoor Air Quality and Economizer Operation: What Teams Should Monitor
+Sources: ashraetc99, doedesign, doeee
+Related posts: data-center-airside-economizer-changeover-what-facilities-teams-should-verify-before-switching-modes
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+Economizer operation should account for the designed operating envelope and relevant outdoor conditions, with control decisions based on approved sensors and site-specific risk criteria.
+
+## Why this matters
+Outdoor conditions can change thermal performance and may introduce contaminants or moisture concerns depending on the system design.
+
+## Practical review points
+- Review permitted operating conditions
+- Verify sensor location and data quality
+- Check filtration and maintenance status
+- Trend indoor conditions during mode changes
+
+## Example from operations
+An economizer enters a new mode during a dusty weather event. The facility team checks the approved environmental criteria and verifies the response through monitoring.
+
+## Frequently asked question
+### Can outside air be used whenever it is cooler than return air?
+No. Temperature is only one consideration; the design's environmental and equipment limits control.

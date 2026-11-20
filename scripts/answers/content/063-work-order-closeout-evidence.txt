@@ -1,0 +1,31 @@
+Question: What Should a Maintenance Work Order Closeout Record?
+Slug: work-order-closeout-evidence
+SEO Title: Work Order Closeout: Evidence That Makes Records Useful
+Meta Description: What a work order closeout should record: work done, asset, procedure, findings, parts, measurements, deviations, and who accepted the return to service.
+Track: Operations and Reliability
+Course: preventive-maintenance-planning
+Search phrase: data center maintenance work order closeout evidence
+Original title: Work Order Closeout Evidence: How to Make Maintenance Records Useful
+Sources: nfpa70b, osha147
+Related posts: preventive-maintenance-backlog-triage-how-data-center-facility-managers-should-rank-critical-work-orders
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+A strong closeout records what was done, the asset and procedure used, findings, parts, measurements where required, deviations, and the person who accepted return to service.
+
+## Why this matters
+A vague “complete” status gives future planners little evidence about equipment condition or repeated defects.
+
+## Practical review points
+- Identify asset and work scope
+- Record findings and deviations
+- Attach required measurement or test evidence
+- Name the acceptance owner and remaining actions
+
+## Example from operations
+A work order notes “pump serviced” but omits the seal observation. The reliability lead reopens it for the evidence needed to plan the next inspection.
+
+## Frequently asked question
+### What should a maintenance closeout always identify?
+At minimum, the asset, scope, result, deviations, and unresolved follow-up, based on the site's record requirements.

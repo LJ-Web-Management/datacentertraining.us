@@ -1,0 +1,31 @@
+Question: Who Should Have Access to a Data Center Electrical Room?
+Slug: electrical-room-access-control
+SEO Title: Electrical Room Access Control: Who Needs Entry?
+Meta Description: How to decide who gets electrical room access in a data center, how escorts and visitors should be handled, and why a badge is not a work qualification.
+Track: Security and Compliance
+Course: access-control-physical-security
+Search phrase: data center electrical room access control
+Original title: Electrical Room Access Control: Who Needs Entry and Why
+Sources: osha303, nfpa70e, nist53
+Related posts: 
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+Electrical room access should be limited to people whose role and authorization require it, with visitors controlled under the facility's access and escort process.
+
+## Why this matters
+Uncontrolled entry can expose unqualified people to hazards and weaken accountability during maintenance or incidents.
+
+## Practical review points
+- Define approved roles and access duration
+- Verify identity and work purpose
+- Record escort and entry events
+- Remove access when assignments end
+
+## Example from operations
+A vendor requests a badge for repeated visits but has no scheduled work order. The coordinator confirms the sponsor and scope before granting time-limited access.
+
+## Frequently asked question
+### Does a facility badge make someone qualified to work on electrical equipment?
+No. Physical access and task qualification are separate controls; verify both through site processes.

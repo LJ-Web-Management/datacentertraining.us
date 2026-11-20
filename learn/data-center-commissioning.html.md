@@ -302,6 +302,8 @@ Chillers, CRAHs, and containment, the systems behind the temperature criteria.
 
 Read the guide →
 
+**Field answers:** short, sourced answers to design and commissioning questions, such as [Which dependencies belong in an IST scenario?](https://datacentertraining.us/answers/integrated-systems-testing-scenarios.html), [How do you keep commissioning issues from disappearing?](https://datacentertraining.us/answers/commissioning-issue-log.html), [What belongs in a single point of failure register?](https://datacentertraining.us/answers/single-point-of-failure-register.html). [See them all →](https://datacentertraining.us/answers/#design)
+
 This guide is general educational information, not engineering, legal, or compliance advice. Commissioning scope, terms, and acceptance criteria vary by owner and project; follow your project's commissioning plan, the manufacturer's instructions, and the codes adopted in your jurisdiction.
 
 ## Train Your Team on Commissioning and Design

@@ -1,0 +1,31 @@
+Question: When Should Repeated Equipment Failures Get a Root Cause Review?
+Slug: repeated-failure-root-cause-review
+SEO Title: Repeated Equipment Failures: When to Do Root Cause Analysis
+Meta Description: When repeated equipment failures should move from resetting to root cause analysis, and what timeline, history, and control logic the review should examine.
+Track: Operations and Reliability
+Course: incident-response-troubleshooting
+Search phrase: data center recurring equipment failure root cause review
+Original title: Repeated Equipment Failures: When to Move from Resetting to Root-Cause Review
+Sources: nfpa70b, oshashms
+Related posts: 
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+Repeated failures warrant a structured review of timeline, operating context, maintenance history, control logic, and contributing conditions instead of treating each reset as an isolated event.
+
+## Why this matters
+A pattern of repeated resets can normalize a fault and allow risk to accumulate.
+
+## Practical review points
+- Define recurrence threshold for review
+- Preserve comparable event data
+- Separate confirmed cause from hypothesis
+- Track corrective actions to verified closure
+
+## Example from operations
+The same fan alarm returns every weekend. A cross-shift review finds the timing coincides with a scheduled sequence change and assigns a controls investigation.
+
+## Frequently asked question
+### When should a repeated alarm trigger a root-cause review?
+When recurrence, consequence, or uncertainty exceeds the facility's escalation threshold; the threshold should be defined in policy.

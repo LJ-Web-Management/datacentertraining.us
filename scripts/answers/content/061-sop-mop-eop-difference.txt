@@ -1,0 +1,31 @@
+Question: What Is the Difference Between an SOP, MOP, and EOP?
+Slug: sop-mop-eop-difference
+SEO Title: SOP vs. MOP vs. EOP: Data Center Procedures Explained
+Meta Description: The difference between an SOP, MOP, and EOP in data center operations: normal work, controlled changes, and emergency response, and how local terms vary.
+Track: Operations and Reliability
+Course: data-center-operations-management
+Search phrase: SOP MOP EOP data center procedures difference
+Original title: SOP, MOP, and EOP: How Data Center Teams Should Distinguish Them
+Sources: osha38, nfpa70b
+Related posts: 
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+An SOP describes repeatable normal work, an MOP controls a defined change or maintenance task, and an EOP guides response to an abnormal or emergency condition; local terminology may vary.
+
+## Why this matters
+Using the wrong document type can leave responders without the decision points or approvals their situation requires.
+
+## Practical review points
+- Define document types in site policy
+- Label current approved version clearly
+- Match review rigor to task risk
+- Train staff where the documents are stored
+
+## Example from operations
+A routine filter check is mistakenly attached to an emergency response plan. The document owner separates routine steps from abnormal-condition actions.
+
+## Frequently asked question
+### Are these procedure names universal across all operators?
+No. Organizations may use different terms, so the site's document-control definitions govern.

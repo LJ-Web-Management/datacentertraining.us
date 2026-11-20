@@ -1,0 +1,31 @@
+Question: How Should Secondary Cooling Loop Strainer Service Be Planned?
+Slug: secondary-loop-strainer-service
+SEO Title: Liquid Cooling Loop Strainer Service: Work Planning
+Meta Description: How to plan strainer service on a secondary or technology cooling loop: isolation, stored pressure, fluid handling, affected loads, and qualified staff.
+Track: Cooling and Facilities Efficiency
+Course: mechanical-systems-maintenance
+Search phrase: data center liquid cooling strainer maintenance planning
+Original title: Secondary Cooling Loop Strainer Service: Planning the Work Boundary
+Sources: osha147, lblliquid
+Related posts: 
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+Strainer service on a secondary cooling loop should be planned around isolation, stored pressure, fluid handling, affected loads, and qualified personnel using the approved equipment procedure.
+
+## Why this matters
+A maintenance task that looks small can introduce leakage, contamination, or cooling interruption.
+
+## Practical review points
+- Identify the correct loop and isolation points
+- Confirm maintenance scope and load impact
+- Plan fluid containment and cleanliness controls
+- Verify return-to-service evidence
+
+## Example from operations
+A differential pressure trend suggests a strainer may need service. The planner coordinates the work window with IT load owners before any isolation is scheduled.
+
+## Frequently asked question
+### Can a technician clean a strainer while the loop is still supporting live loads?
+Only if an approved engineered procedure explicitly allows it and authorized personnel confirm the controls.

@@ -1,0 +1,31 @@
+Question: How Do You Keep Construction Separate from Live Data Center Operations?
+Slug: construction-site-access-separation
+SEO Title: Construction Access in Live Data Centers
+Meta Description: How to separate construction work from live data center operations: defined zones, routes, escort rules, delivery coordination, and emergency egress.
+Track: Design and Planning
+Course: facility-management-fundamentals
+Search phrase: data center construction access separation plan
+Original title: Site Access During Construction: Keeping Critical Operations Separated
+Sources: osha37, nfpa101, cisaphys
+Related posts: data-center-visitor-access-a-practical-checklist-for-escorting-maintenance-contractors
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+Construction access planning should separate work zones from live operations, define routes and escort requirements, and coordinate deliveries, tools, and emergency egress.
+
+## Why this matters
+Poorly managed construction traffic can expose live equipment, block response routes, or create security and safety gaps.
+
+## Practical review points
+- Map approved work and delivery routes
+- Define barriers and escort points
+- Check egress and emergency access
+- Review route changes at daily coordination
+
+## Example from operations
+A material delivery route crosses an occupied white space. The coordinator changes the delivery window and route before authorizing the move.
+
+## Frequently asked question
+### Can construction teams use the nearest doorway for convenience?
+Only if that route is approved and does not compromise safety, security, or ongoing operations.

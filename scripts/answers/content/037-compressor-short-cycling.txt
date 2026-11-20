@@ -1,0 +1,31 @@
+Question: Which Trends Help Find the Cause of Compressor Short Cycling?
+Slug: compressor-short-cycling
+SEO Title: Compressor Short Cycling: Trends That Find the Cause
+Meta Description: How to investigate compressor short cycling in data center cooling using run history, load, control calls, and alarms, instead of repeatedly resetting it.
+Track: Cooling and Facilities Efficiency
+Course: hvac-troubleshooting-essentials
+Search phrase: data center chiller compressor short cycling trend review
+Original title: Compressor Short Cycling: Which Trends Help Find the Cause?
+Sources: doecontrols, epa608
+Related posts: 
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+Short cycling is a symptom to investigate through operating history, load, control calls, alarm events, and manufacturer criteria rather than a reason to repeatedly reset the equipment.
+
+## Why this matters
+Repeated starts may stress equipment and conceal control, sensor, or load issues.
+
+## Practical review points
+- Capture start-stop timing and active alarms
+- Compare load and control demand
+- Review recent sequence or setpoint changes
+- Escalate to the qualified service provider
+
+## Example from operations
+A chiller starts and stops several times overnight. The technician exports the trend and notes changes in demand before requesting a controls review.
+
+## Frequently asked question
+### Can changing a setpoint stop short cycling safely?
+Not without understanding the cause and following authorized engineering and control procedures.

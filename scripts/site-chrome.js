@@ -49,7 +49,7 @@ function targetFile(target) {
 function sectionOf(rel) {
   const p = pagePath(rel);
   if (/^(courses\.html|courses\/|bundles\.html|who\.html|certifications\.html|faq\.html|checkout\.html|training\/)/.test(p)) return 'training';
-  if (p.startsWith('learn/')) return 'learn';
+  if (p.startsWith('learn/') || p.startsWith('answers/')) return 'learn';
   if (p.startsWith('careers/')) return 'careers';
   if (p.startsWith('quizzes/') || p.startsWith('tools/')) return 'quizzes';
   if (p.startsWith('blog/')) return 'blog';
@@ -110,6 +110,7 @@ function navData(d) {
             { href: 'learn/', title: 'Knowledge Center', desc: 'Every guide in one place' },
             { href: 'learn/what-is-a-data-center.html', title: 'Data Center 101', desc: 'How data centers work' },
             { href: 'learn/glossary.html', title: 'Glossary', desc: 'Data center terms, A to Z' },
+            { href: 'answers/', title: 'Field Answers', desc: 'Short answers to operator questions' },
             { href: 'learn/data-center-standards.html', title: 'Standards & Regulations', desc: 'TIA-942, NFPA, OSHA, ASHRAE, ISO' }
           ]
         },
@@ -294,6 +295,7 @@ function footerData() {
         ['learn/data-center-safety.html', 'Safety Guide'],
         ['learn/data-center-standards.html', 'Standards Guide'],
         ['learn/glossary.html', 'Glossary'],
+        ['answers/', 'Field Answers'],
         ['blog/', 'Blog']
       ]
     },

@@ -1,0 +1,31 @@
+Question: What Should Sit Next to a Data Hall?
+Slug: critical-space-adjacency-review
+SEO Title: Data Hall Adjacency Review: What Sits Next Door
+Meta Description: How to review the rooms and routes next to a data hall for water, heat, fire, access, vibration, and maintenance risks to critical data center functions.
+Track: Design and Planning
+Course: data-center-design-fundamentals
+Search phrase: data center critical space adjacency risk review
+Original title: Critical Space Adjacencies: How to Review What Sits Next to the Data Hall
+Sources: tia942, nfpa75
+Related posts: ansi-tia-942-design-review-what-data-center-facility-teams-should-verify-before-construction
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+A space adjacency review checks whether nearby rooms or routes introduce water, heat, fire, access, vibration, or maintenance risks to critical data center functions.
+
+## Why this matters
+An internal layout can create exposures even when the data hall itself meets its design criteria.
+
+## Practical review points
+- Map neighboring rooms and services
+- Review shared walls, doors, drains, and penetrations
+- Assess access and maintenance interactions
+- Assign mitigation owner for material risks
+
+## Example from operations
+A janitorial sink is proposed beside a low-voltage room. The design reviewer checks leak pathways and access controls before accepting the layout.
+
+## Frequently asked question
+### Should adjacency risk be reviewed only during initial design?
+No. Renovations and use changes can introduce new neighboring hazards later.

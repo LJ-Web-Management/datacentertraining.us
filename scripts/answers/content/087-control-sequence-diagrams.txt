@@ -1,0 +1,31 @@
+Question: What Makes a Control Sequence Diagram Reviewable?
+Slug: control-sequence-diagrams
+SEO Title: Sequence of Operations Diagrams You Can Review
+Meta Description: How to make sequence of operations and control sequence diagrams reviewable: initiating conditions, actions, feedback, alarms, fallback, and operator roles.
+Track: Design and Planning
+Course: building-automation-systems-fundamentals
+Search phrase: data center control sequence diagram review
+Original title: Control Sequence Diagrams: Making Operating Logic Reviewable
+Sources: doecontrols, wbdgcx, nist82
+Related posts: 
+Published: 2026-11-20
+Updated: 2026-11-20
+
+## The direct answer
+A sequence diagram should show initiating conditions, control actions, expected feedback, alarms, fallback behavior, and operator responsibilities in a form that can be reviewed against actual operation.
+
+## Why this matters
+Ambiguous logic makes commissioning, troubleshooting, and training harder and can hide competing commands.
+
+## Practical review points
+- Identify triggers and state transitions
+- Show feedback and failure response
+- Review with operators and maintainers
+- Version-control approved sequence changes
+
+## Example from operations
+A drawing shows a pump command but not how flow failure is handled. Operations asks for the missing response before approving the sequence.
+
+## Frequently asked question
+### Should an operator infer missing control behavior from the code?
+No. The approved sequence and responsible controls authority should define expected behavior.

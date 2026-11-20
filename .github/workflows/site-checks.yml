@@ -36,11 +36,12 @@ jobs:
       - name: Regenerate and commit (main only)
         if: github.event_name != 'pull_request'
         run: |
+          node scripts/build-answers.js
           node scripts/build-site.js
           if [ -n "$(git status --porcelain)" ]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add -A api .well-known cli/engine.cjs llms.txt llms-full.txt openapi.json css/site.min.css blog/assets/css/blog.min.css '*.html' '*.html.md'
+            git add -A api .well-known cli/engine.cjs llms.txt llms-full.txt openapi.json css/site.min.css blog/assets/css/blog.min.css sitemap.xml '*.html' '*.html.md'
             git commit -m "Regenerate AI-agent layer and CSS bundle"
             for attempt in 1 2 3 4 5; do
               git push && break
@@ -63,3 +64,10 @@ jobs:
 
       - name: SEO audit
         run: python3 scripts/audit_site.py
+
+      # Runs last: it rebuilds the site in the workspace.
+      - name: Field Answers pages match scripts/answers/content
+        run: |
+          node scripts/build-answers.js
+          node scripts/build-site.js
+          git diff --exit-code -- answers sitemap.xml
