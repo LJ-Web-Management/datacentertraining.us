@@ -16,6 +16,14 @@ body {
 img { max-width: 100%; display: block; }
 a { color: inherit; }
 
+/* ── Scroll-reveal (progressive enhancement — content is fully visible
+   with no JS or with prefers-reduced-motion; JS only adds the entrance) ── */
+.reveal { opacity: 0; transform: translateY(16px); transition: opacity .6s var(--ease-out-quart), transform .6s var(--ease-out-quart); transition-delay: calc(var(--reveal-i, 0) * 45ms); }
+.reveal.in-view { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+}
+
 .skip-link {
   position: absolute; left: -9999px; top: 0; z-index: 100;
   background: var(--text); color: #fff; padding: 10px 16px; border-radius: var(--r-chip);
@@ -252,8 +260,17 @@ html.nav-hidden .glass-nav { transform: translateY(-100%); box-shadow: none; }
   transition: transform .15s var(--ease-out-quart), box-shadow .15s, background .15s, opacity .15s;
   white-space: nowrap;
 }
-.btn-primary { background: var(--accent); color: #fff; box-shadow: 0 1px 2px rgba(0,0,0,0.08); }
+.btn-primary {
+  position: relative; overflow: hidden; background: var(--accent); color: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+}
+.btn-primary::before {
+  content: ""; position: absolute; inset: 0; border-radius: inherit;
+  background: linear-gradient(115deg, transparent 20%, rgba(255,255,255,0.28) 45%, transparent 70%);
+  background-size: 220% 100%; background-position: 120% 0; transition: background-position .5s var(--ease-out-quart);
+}
 .btn-primary:hover { background: var(--accent-link); transform: translateY(-1px); }
+.btn-primary:hover::before { background-position: -20% 0; }
 .btn-secondary { background: rgba(255,255,255,0.8); border: 1px solid rgba(0,0,0,0.08); color: var(--text); box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
 .btn-secondary:hover { background: #fff; transform: translateY(-1px); }
 .btn-dark { background: var(--text); color: #fff; }
@@ -274,16 +291,31 @@ html.nav-hidden .glass-nav { transform: translateY(-100%); box-shadow: none; }
 .provider-trust-bar a { color: var(--accent-solid, #f2b90c); font-weight: 700; text-decoration: none; }
 .provider-trust-bar a:hover { text-decoration: underline; }
 
-/* ── Hero — dark two-column split ── */
+/* ── Hero — dark two-column split, with a quiet brand-blue/amber glow mesh
+   and film-grain texture. All CSS/SVG — zero extra image or font requests. ── */
 .hero {
-  background: linear-gradient(165deg, #1d1d1f 0%, #2c2c2e 55%, #1d1d1f 100%);
+  position: relative;
+  background: var(--grad-ink);
   color: #fff; padding: clamp(48px, 8vw, 84px) 0; overflow: hidden;
 }
-.hero-inner { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: clamp(28px, 5vw, 52px); align-items: center; text-align: left; }
-.hero h1 {
-  margin-top: 12px; font-size: clamp(30px, 4.6vw, 50px); font-weight: 700; letter-spacing: -0.03em; line-height: 1.08; color: #fff;
+.hero::after {
+  content: ""; position: absolute; inset: 0; background-image: var(--grain);
+  opacity: 0.05; mix-blend-mode: overlay; pointer-events: none;
 }
-.hero h1 .accent-text { display: block; color: #a78bfa; font-size: 1em; margin-top: 0.1em; }
+.hero-grid {
+  position: absolute; inset: 0; width: 100%; height: 100%; z-index: 0; pointer-events: none;
+  -webkit-mask-image: linear-gradient(200deg, rgba(0,0,0,0.9) 0%, transparent 65%);
+  mask-image: linear-gradient(200deg, rgba(0,0,0,0.9) 0%, transparent 65%);
+}
+.hero-inner { position: relative; z-index: 1; display: grid; grid-template-columns: 1.15fr 0.85fr; gap: clamp(28px, 5vw, 52px); align-items: center; text-align: left; }
+.hero h1 {
+  margin-top: 12px; font-size: clamp(32px, 5vw, 54px); font-weight: 800; letter-spacing: -0.035em; line-height: 1.05; color: #fff;
+}
+.hero h1 .accent-text {
+  display: block; font-size: 1em; margin-top: 0.1em;
+  background: linear-gradient(100deg, #b4b0ff 0%, #a78bfa 55%, #f0c572 100%);
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
 .hero p.lede { margin: 16px 0 0; max-width: 560px; font-size: clamp(15px, 2vw, 17px); color: #c7c7cc; line-height: 1.7; }
 .hero-ctas { display: flex; align-items: center; justify-content: flex-start; gap: 12px; margin-top: 26px; flex-wrap: wrap; }
 /* One button and a plain text link: two pill buttons side by side read as a toggle. */
@@ -297,7 +329,19 @@ html.nav-hidden .glass-nav { transform: translateY(-100%); box-shadow: none; }
 .hero-links a { color: #fff; font-weight: 600; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.3); }
 .hero-links a:hover { border-bottom-color: #fff; }
 
-.hero-card { background: var(--surface); color: var(--text); border-radius: var(--r-panel); padding: 24px; box-shadow: var(--sh-overlay); position: relative; }
+.hero-card {
+  background: var(--surface); color: var(--text); border-radius: var(--r-panel); padding: 24px;
+  box-shadow: var(--sh-overlay); position: relative;
+  transition: transform .4s var(--ease-spring);
+}
+/* Rounded only at the top corners (not overflow:hidden) so it doesn't clip
+   .hero-card-badge, which intentionally pokes out above the card. */
+.hero-card::before {
+  content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  border-radius: var(--r-panel) var(--r-panel) 0 0;
+  background: linear-gradient(90deg, var(--accent) 0%, var(--indigo) 60%, var(--amber) 100%);
+}
+@media (hover: hover) and (pointer: fine) { .hero-card:hover { transform: translateY(-4px); } }
 .hero-card-badge {
   position: absolute; top: -14px; left: 22px; background: var(--accent); color: #fff;
   font-size: 11.5px; font-weight: 650; padding: 6px 13px; border-radius: var(--r-pill); box-shadow: var(--sh-card);
@@ -357,8 +401,11 @@ html.nav-hidden .glass-nav { transform: translateY(-100%); box-shadow: none; }
 /* ── Grid feature cards (who it's for) ── */
 .feature-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
 .feature-grid.feature-grid-4 { grid-template-columns: repeat(4, 1fr); }
-.feature-card { background: var(--surface); border-radius: var(--r-card); box-shadow: var(--sh-card); padding: 22px; transition: transform .2s, box-shadow .2s; }
-.feature-card:hover { transform: translateY(-3px); box-shadow: var(--sh-lift); }
+.feature-card {
+  background: var(--surface); border-radius: var(--r-card); box-shadow: var(--sh-card); padding: 22px;
+  border: 1px solid transparent; transition: transform .25s var(--ease-out-quart), box-shadow .25s, border-color .25s;
+}
+.feature-card:hover { transform: translateY(-3px); box-shadow: var(--sh-lift); border-color: var(--hairline); }
 .feature-icon { width: 44px; height: 44px; border-radius: var(--r-thumb); background: var(--accent-tint); color: var(--accent); display: flex; align-items: center; justify-content: center; }
 .feature-icon svg, .topic-card-icon svg { width: 22px; height: 22px; }
 .feature-card h3 { margin-top: 14px; font-size: 16px; font-weight: 650; letter-spacing: -0.01em; }
@@ -507,7 +554,7 @@ html.nav-hidden .glass-nav { transform: translateY(-100%); box-shadow: none; }
   background: var(--grad-cta); box-shadow: var(--sh-cta); text-align: center;
 }
 .cta-block::before { content: ""; position: absolute; width: 300px; height: 300px; border-radius: 50%; background: rgba(255,255,255,0.16); filter: blur(50px); top: -100px; left: -60px; }
-.cta-block::after { content: ""; position: absolute; width: 240px; height: 240px; border-radius: 50%; background: rgba(120,80,255,0.5); filter: blur(56px); bottom: -100px; right: 10%; }
+.cta-block::after { content: ""; position: absolute; width: 240px; height: 240px; border-radius: 50%; background: rgba(232,150,10,0.45); filter: blur(56px); bottom: -100px; right: 10%; }
 .cta-block > * { position: relative; z-index: 1; }
 .cta-block h2 { font-size: clamp(22px, 4vw, 32px); font-weight: 700; color: #fff; letter-spacing: -0.02em; }
 /* As a full-width band (build-site.js adds .cta-section to the block's section). */
@@ -598,7 +645,14 @@ html.nav-hidden .glass-nav { transform: translateY(-100%); box-shadow: none; }
 .course-audience strong { color: var(--text); }
 
 .course-sidebar { position: sticky; top: calc(var(--nav-offset) + 24px); }
-.course-sidebar-card { background: var(--surface); border-radius: var(--r-panel); box-shadow: var(--sh-panel); padding: 24px; }
+.course-sidebar-card {
+  background: var(--surface); border-radius: var(--r-panel); box-shadow: var(--sh-panel); padding: 24px;
+  position: relative; overflow: hidden;
+}
+.course-sidebar-card::before {
+  content: ""; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  background: linear-gradient(90deg, var(--accent) 0%, var(--indigo) 60%, var(--amber) 100%);
+}
 .course-sidebar-hours { font-size: 30px; font-weight: 700; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
 .course-sidebar-modules { font-size: 13px; color: var(--text-3); margin: 4px 0 10px; }
 .course-sidebar-price { font-size: 15px; font-weight: 650; color: var(--text-2); margin-bottom: 18px; }

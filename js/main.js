@@ -72,4 +72,33 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   });
+
+  // Scroll-reveal entrance for hero/feature/bundle cards (see .reveal in
+  // style.css). Pure progressive enhancement: elements only get `.reveal`
+  // (opacity:0) if this runs AND they start off-screen, so content stays
+  // visible with JS disabled/blocked, or if it's already in the first paint.
+  if (!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) && 'IntersectionObserver' in window) {
+    var revealEls = document.querySelectorAll('.feature-card, .bundle-card, .hero-card, .role-picker-btn');
+    if (revealEls.length) {
+      var revealIo = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in-view');
+            revealIo.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+      var vh = window.innerHeight;
+      var revealCount = 0;
+      revealEls.forEach(function (el) {
+        var rect = el.getBoundingClientRect();
+        if (rect.top < vh && rect.bottom > 0) return; // already visible — no entrance needed
+        el.classList.add('reveal');
+        el.style.setProperty('--reveal-i', revealCount % 8);
+        revealCount++;
+        revealIo.observe(el);
+      });
+    }
+  }
 });
