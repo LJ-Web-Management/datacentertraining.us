@@ -108,6 +108,12 @@ Clean-agent suppression readiness is an owner-controlled coordination problem as
 
 ## More from the blog
 
+[!\[Data Center Maintenance Window Readiness: How Operations Managers Should Sequence Critical Work\](https://datacentertraining.us/blog/assets/img/posts/data-center-maintenance-window-readiness-how-operations-managers-should-sequence-critical-work.jpg)](https://datacentertraining.us/blog/posts/data-center-maintenance-window-readiness-how-operations-managers-should-sequence-critical-work.html)
+
+November 20, 2026
+
+### Data Center Maintenance Window Readiness: How Operations Managers Should Sequence Critical Work
+
 [!\[VRLA Battery Room Pre-Task Readiness: What Data Center Technicians Should Verify Before Service\](https://datacentertraining.us/blog/assets/img/posts/vrla-battery-room-pre-task-readiness-what-data-center-technicians-should-verify-before-service.jpg)](https://datacentertraining.us/blog/posts/vrla-battery-room-pre-task-readiness-what-data-center-technicians-should-verify-before-service.html)
 
 November 18, 2026

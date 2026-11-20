@@ -2,7 +2,7 @@
   "publisher": "Data Center Training (datacentertraining.us)",
   "last_updated": "2026-11-20",
   "license": "Public information; quote with attribution and a link to the source URL.",
-  "count": 249,
+  "count": 250,
   "resources": [
     {
       "source": "Data Center Training (first party)",
@@ -2354,6 +2354,20 @@
         "tier"
       ],
       "audience": []
+    },
+    {
+      "type": "blog_post",
+      "title": "Data Center Maintenance Window Readiness: How Operations Managers Should Sequence Critical Work",
+      "url": "https://datacentertraining.us/blog/posts/data-center-maintenance-window-readiness-how-operations-managers-should-sequence-critical-work.html",
+      "description": "When a data center maintenance window includes electrical switching, cooling work, controls changes, and vendor activity, the hard part is often not…",
+      "topics": [
+        "electrical",
+        "cooling",
+        "maintenance"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-11-20"
     },
     {
       "type": "blog_post",

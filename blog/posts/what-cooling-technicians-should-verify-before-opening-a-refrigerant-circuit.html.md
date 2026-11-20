@@ -138,11 +138,11 @@ September 24, 2026
 
 ### How Data Center Managers Should Test Physical Access During a Maintenance Window
 
-[!\[Clean Agent Fire Suppression Readiness: What Data Center Teams Should Verify Before a Discharge Test\](https://datacentertraining.us/blog/assets/img/posts/clean-agent-fire-suppression-readiness-what-data-center-teams-should-verify-before-a-discharge-test.jpg)](https://datacentertraining.us/blog/posts/clean-agent-fire-suppression-readiness-what-data-center-teams-should-verify-before-a-discharge-test.html)
+[!\[Data Center Maintenance Window Readiness: How Operations Managers Should Sequence Critical Work\](https://datacentertraining.us/blog/assets/img/posts/data-center-maintenance-window-readiness-how-operations-managers-should-sequence-critical-work.jpg)](https://datacentertraining.us/blog/posts/data-center-maintenance-window-readiness-how-operations-managers-should-sequence-critical-work.html)
 
-November 19, 2026
+November 20, 2026
 
-### Clean Agent Fire Suppression Readiness: What Data Center Teams Should Verify Before a Discharge Test
+### Data Center Maintenance Window Readiness: How Operations Managers Should Sequence Critical Work
 
 [View all posts →](https://datacentertraining.us/blog/)
 

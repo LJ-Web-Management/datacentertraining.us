@@ -4,6 +4,12 @@ Data Center Training Blog
 
 Technical guidance, standards updates, and field best practices on power, cooling, electrical safety, operations, and compliance from datacentertraining.us.
 
+[!\[Data Center Maintenance Window Readiness: How Operations Managers Should Sequence Critical Work\](https://datacentertraining.us/blog/assets/img/posts/data-center-maintenance-window-readiness-how-operations-managers-should-sequence-critical-work.jpg)](https://datacentertraining.us/blog/posts/data-center-maintenance-window-readiness-how-operations-managers-should-sequence-critical-work.html)
+
+November 20, 2026
+
+## Data Center Maintenance Window Readiness: How Operations Managers Should Sequence Critical Work
+
 [!\[Clean Agent Fire Suppression Readiness: What Data Center Teams Should Verify Before a Discharge Test\](https://datacentertraining.us/blog/assets/img/posts/clean-agent-fire-suppression-readiness-what-data-center-teams-should-verify-before-a-discharge-test.jpg)](https://datacentertraining.us/blog/posts/clean-agent-fire-suppression-readiness-what-data-center-teams-should-verify-before-a-discharge-test.html)
 
 November 19, 2026

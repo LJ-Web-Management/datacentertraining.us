@@ -548,5 +548,15 @@
     "date": "2026-11-19",
     "dateDisplay": "November 19, 2026",
     "excerpt": "A planned clean-agent fire suppression test is not just a fire-protection vendor appointment. In a data center, it is an integrated facilities event that can…"
+  },
+  {
+    "title": "Data Center Maintenance Window Readiness: How Operations Managers Should Sequence Critical Work",
+    "slug": "data-center-maintenance-window-readiness-how-operations-managers-should-sequence-critical-work",
+    "seoTitle": "Data Center Maintenance Window Readiness",
+    "description": "When a data center maintenance window includes electrical switching, cooling work, controls changes, and vendor activity, the hard part is often not…",
+    "image": "assets/img/posts/data-center-maintenance-window-readiness-how-operations-managers-should-sequence-critical-work.jpg",
+    "date": "2026-11-20",
+    "dateDisplay": "November 20, 2026",
+    "excerpt": "When a data center maintenance window includes electrical switching, cooling work, controls changes, and vendor activity, the hard part is often not…"
   }
 ]
