@@ -547,3 +547,94 @@
     padding: 18px 18px 22px;
   }
 }
+
+/* ============ FEWER CARDS ============
+   Posts are listed as image + headline on the page itself, and the article
+   reads straight on the page, not inside a white box. */
+.search-input,
+.sort-select {
+  box-shadow: none;
+  border-color: rgba(0,0,0,0.1);
+}
+
+#posts-list {
+  gap: 36px 28px;
+}
+
+.post-card {
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  overflow: visible;
+}
+
+.post-card:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.post-card-thumb {
+  border-radius: var(--r-card);
+}
+
+.post-card-body,
+.related-grid .post-card-body {
+  padding: 14px 0 0;
+}
+
+.post-card-thumb--empty {
+  position: static;
+  margin-bottom: 4px;
+}
+
+.post-card:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+  border-radius: var(--r-card);
+}
+
+.related-grid {
+  gap: 28px 20px;
+}
+
+.post-content {
+  background: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+}
+
+.post-content blockquote {
+  background: none;
+  border-radius: 0;
+  padding: 2px 0 2px 20px;
+}
+
+.empty-state {
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+  border-top: 1px solid var(--hairline);
+  border-bottom: 1px solid var(--hairline);
+}
+
+@media (max-width: 640px) {
+  .post-content {
+    padding: 0;
+  }
+
+  .post-card-body {
+    padding: 12px 0 0;
+  }
+
+  #posts-list {
+    gap: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .back-link,
+  .related-all {
+    padding: 4px 0;
+  }
+}
