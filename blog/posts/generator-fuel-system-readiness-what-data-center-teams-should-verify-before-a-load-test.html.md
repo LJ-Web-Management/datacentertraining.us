@@ -126,7 +126,7 @@ A generator load test is only as useful as the readiness checks behind it. A fac
 - [NFPA 110, Standard for Emergency and Standby Power Systems](https://www.nfpa.org/codes-and-standards/nfpa-110-standard-development/110)
 - [OSHA, The Control of Hazardous Energy (Lockout/Tagout), 29 CFR 1910.147](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.147)
 - [OSHA, Hazard Communication, 29 CFR 1910.1200](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.1200)
-- [U.S. EPA, Spill Prevention, Control, and Countermeasure (SPCC) Rule](https://www.epa.gov/oil-spills-prevention-and-preparedness-regulations/spill-prevention-control-and-countermeasure-spcc-rule)
+- [U.S. EPA, Oil Spill Prevention and Preparedness Regulations](https://www.epa.gov/oil-spills-prevention-and-preparedness-regulations)
 
 ## More from the blog
 

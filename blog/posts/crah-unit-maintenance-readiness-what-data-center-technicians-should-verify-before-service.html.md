@@ -137,7 +137,7 @@ CRAH maintenance readiness is a coordination skill as much as a mechanical skill
 - [OSHA, Control of Hazardous Energy (Lockout/Tagout)](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.147)
 - [ASHRAE, Thermal Guidelines for Data Processing Environments](https://www.ashrae.org/technical-resources/bookstore/thermal-guidelines-for-data-processing-environments)
 - [U.S. Environmental Protection Agency, Section 608 Refrigerant Management Requirements](https://www.epa.gov/section608)
-- [U.S. Department of Energy, Best Practices for Data Center Cooling](https://www.energy.gov/eere/femp/data-center-energy-efficiency)
+- [U.S. Department of Energy, Best Practices Guide for Energy-Efficient Data Center Design](https://www.energy.gov/cmei/femp/articles/best-practices-guide-energy-efficient-data-center-design)
 
 ## More from the blog
 

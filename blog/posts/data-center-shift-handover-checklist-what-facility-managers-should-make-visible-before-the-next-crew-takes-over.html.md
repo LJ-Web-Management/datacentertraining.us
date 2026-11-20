@@ -167,7 +167,7 @@ This week, observe one real shift change and ask the incoming operator to identi
 
 - [Occupational Safety and Health Administration, The Control of Hazardous Energy (Lockout/Tagout), 29 CFR 1910.147](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.147)
 - [National Institute of Standards and Technology, Contingency Planning Guide for Federal Information Systems, SP 800-34 Rev. 1](https://csrc.nist.gov/publications/detail/sp/800-34/rev-1/final)
-- [U.S. Department of Energy, Operations and Maintenance Best Practices Guide: Release 3.0](https://www.energy.gov/eere/femp/operations-and-maintenance-best-practices-guide)
+- [U.S. Department of Energy, Operations and Maintenance Best Practices Guide: Release 3.0](https://www.energy.gov/cmei/femp/articles/operations-and-maintenance-best-practices-guide-achieving-operational-efficiency)
 
 ## More from the blog
 

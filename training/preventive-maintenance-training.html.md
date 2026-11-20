@@ -172,7 +172,7 @@ Yes. Planning methods, scheduling, frequencies, and equipment fundamentals are w
 
 ## Sources
 
-- U.S. Department of Energy, [Operations and Maintenance Best Practices Guide](https://www.energy.gov/femp/operations-and-maintenance-best-practices-guide).
+- U.S. Department of Energy, [Operations and Maintenance Best Practices Guide](https://www.energy.gov/cmei/femp/articles/operations-and-maintenance-best-practices-guide-achieving-operational-efficiency).
 - Society for Maintenance & Reliability Professionals, [CMRP certification](https://smrp.org/).
 - NFPA, [NFPA 70B, Standard for Electrical Equipment Maintenance](https://www.nfpa.org/codes-and-standards/nfpa-70b-standard-development/70b).
 

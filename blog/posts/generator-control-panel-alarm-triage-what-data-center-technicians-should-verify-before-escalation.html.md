@@ -157,7 +157,7 @@ Generator control-panel alarms are decision points, not just messages to clear. 
 - [Occupational Safety and Health Administration: The control of hazardous energy (lockout/tagout), 29 CFR 1910.147](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.147)
 - [Occupational Safety and Health Administration: Electrical safety-related work practices, 29 CFR 1910.333](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.333)
 - [NFPA: NFPA 110, Standard for Emergency and Standby Power Systems](https://www.nfpa.org/codes-and-standards/nfpa-110-standard-development/110)
-- [U.S. Department of Energy: Operations and Maintenance Best Practices Guide](https://www.energy.gov/femp/operations-and-maintenance-best-practices-guide)
+- [U.S. Department of Energy: Operations and Maintenance Best Practices Guide](https://www.energy.gov/cmei/femp/articles/operations-and-maintenance-best-practices-guide-achieving-operational-efficiency)
 - [HAZWOPER OSHA Training, LLC: Data Center Training Course Catalog](https://datacentertraining.us/courses.html)
 
 ## More from the blog

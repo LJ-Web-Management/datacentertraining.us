@@ -113,7 +113,7 @@ This week, choose one CRAH or air-handler valve assembly, walk through the check
 
 - [OSHA, The Control of Hazardous Energy (Lockout/Tagout), 29 CFR 1910.147](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.147)
 - [ASHRAE, Datacom Series and Thermal Guidelines Resources](https://www.ashrae.org/technical-resources/bookstore/datacom-series)
-- [U.S. Department of Energy, Cooling Water Efficiency Opportunities for Data Centers](https://www.energy.gov/femp/data-center-energy-efficiency)
+- [U.S. Department of Energy, Cooling Water Efficiency Opportunities for Federal Data Centers](https://www.energy.gov/cmei/femp/cooling-water-efficiency-opportunities-federal-data-centers)
 
 ## More from the blog
 

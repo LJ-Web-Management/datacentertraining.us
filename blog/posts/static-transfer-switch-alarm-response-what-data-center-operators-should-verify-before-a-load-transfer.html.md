@@ -123,7 +123,7 @@ This week, walk one STS procedure with a control-room operator and an electrical
 
 - [OSHA, Electrical Safety-Related Work Practices](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.269)
 - [NFPA, NFPA 70E Standard for Electrical Safety in the Workplace](https://www.nfpa.org/codes-and-standards/nfpa-70e-standard-development/70e)
-- [U.S. Department of Energy, Operations and Maintenance Best Practices Guide](https://www.energy.gov/eere/femp/operations-and-maintenance-best-practices-guide)
+- [U.S. Department of Energy, Operations and Maintenance Best Practices Guide](https://www.energy.gov/cmei/femp/articles/operations-and-maintenance-best-practices-guide-achieving-operational-efficiency)
 
 ## More from the blog
 

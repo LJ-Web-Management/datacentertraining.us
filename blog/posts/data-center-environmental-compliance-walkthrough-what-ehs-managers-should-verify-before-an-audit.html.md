@@ -128,7 +128,7 @@ This week, choose one asset group, such as refrigerant equipment or generator fu
 
 - [United States Environmental Protection Agency, Stationary Refrigeration and Air Conditioning](https://www.epa.gov/section608)
 - [United States Environmental Protection Agency, Managing Used Oil: Answers to Frequent Questions for Businesses](https://www.epa.gov/hw/managing-used-oil-answers-frequent-questions-businesses)
-- [United States Environmental Protection Agency, Spill Prevention, Control, and Countermeasure (SPCC) Rule](https://www.epa.gov/oil-spills-prevention-and-preparedness-regulations/spill-prevention-control-and-countermeasure-spcc-rule)
+- [United States Environmental Protection Agency, Oil Spill Prevention and Preparedness Regulations](https://www.epa.gov/oil-spills-prevention-and-preparedness-regulations)
 - [Occupational Safety and Health Administration, Hazard Communication Standard](https://www.osha.gov/hazcom)
 - [Occupational Safety and Health Administration, Emergency Eyewash and Shower Equipment](https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.151)
 

@@ -151,7 +151,7 @@ Use PUE trends to frame the investigation, not to declare the cause. A sound rev
 
 ## Sources
 
-- [U.S. Department of Energy, Data Center Energy Efficiency](https://www.energy.gov/cmei/femp/data-center-energy-efficiency)
+- [U.S. Department of Energy, Energy Efficiency in Data Centers](https://www.energy.gov/cmei/femp/energy-efficiency-data-centers)
 - [The Green Grid, Power Usage Effectiveness (PUE)](https://www.thegreengrid.org/en/resources/library-and-tools/237-PUE%3A%20A%20Comprehensive%20Examination%20of%20the%20Metric)
 - [ASHRAE, Thermal Guidelines for Data Processing Environments](https://www.ashrae.org/technical-resources/bookstore/thermal-guidelines-for-data-processing-environments)
 - [U.S. Environmental Protection Agency, ENERGY STAR Portfolio Manager Data Center Metrics](https://www.energystar.gov/buildings/tools-and-resources/energy-star-portfolio-manager)

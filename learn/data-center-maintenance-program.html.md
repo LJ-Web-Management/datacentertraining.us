@@ -208,7 +208,7 @@ Rank every item by risk, separate safety-critical work, group tasks that share a
 - NFPA, [NFPA 70B, Standard for Electrical Equipment Maintenance](https://www.nfpa.org/codes-and-standards/nfpa-70b-standard-development/70b).
 - NFPA, [NFPA 110, Standard for Emergency and Standby Power Systems](https://www.nfpa.org/codes-and-standards/nfpa-110-standard-development/110).
 - IEEE, [IEEE 450, maintenance, testing, and replacement of vented lead-acid batteries](https://standards.ieee.org/ieee/450/7247/).
-- U.S. Department of Energy, [Operations and Maintenance Best Practices Guide](https://www.energy.gov/femp/operations-and-maintenance-best-practices-guide).
+- U.S. Department of Energy, [Operations and Maintenance Best Practices Guide](https://www.energy.gov/cmei/femp/articles/operations-and-maintenance-best-practices-guide-achieving-operational-efficiency).
 
 ## Keep learning
 

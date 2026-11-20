@@ -154,7 +154,7 @@ DCIM and BMS dashboards can complement each other, but they should not compete t
 - [NIST SP 800-53 Rev. 5, Security and Privacy Controls for Information Systems and Organizations](https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final)
 - [NIST SP 800-34 Rev. 1, Contingency Planning Guide for Federal Information Systems](https://csrc.nist.gov/pubs/sp/800/34/r1/final)
 - [ASHRAE TC 9.9, Datacom Series and Thermal Guidelines Resources](https://www.ashrae.org/technical-resources/bookstore/datacom-series)
-- [U.S. Department of Energy, Federal Energy Management Program, Operations and Maintenance Best Practices](https://www.energy.gov/femp/operations-and-maintenance-best-practices-guide-achieving-operational-efficiency)
+- [U.S. Department of Energy, Federal Energy Management Program, Operations and Maintenance Best Practices](https://www.energy.gov/cmei/femp/articles/operations-and-maintenance-best-practices-guide-achieving-operational-efficiency)
 
 ## More from the blog
 

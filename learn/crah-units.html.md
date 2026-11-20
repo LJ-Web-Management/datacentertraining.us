@@ -184,7 +184,7 @@ Not for work on chilled water CRAHs, which contain no refrigerant. Anyone who op
 
 - ASHRAE TC 9.9, [Thermal Guidelines for Data Processing Environments](https://www.ashrae.org/technical-resources/bookstore/datacom-series) (Datacom Series).
 - U.S. EPA, [Section 608 technician certification](https://www.epa.gov/section608).
-- U.S. Department of Energy, [Federal Energy Management Program: data center energy efficiency](https://www.energy.gov/femp/data-center-energy-efficiency).
+- U.S. Department of Energy, [Federal Energy Management Program: Energy Efficiency in Data Centers](https://www.energy.gov/cmei/femp/energy-efficiency-data-centers).
 
 ## Keep learning
 
