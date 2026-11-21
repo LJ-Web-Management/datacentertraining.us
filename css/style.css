@@ -1214,11 +1214,12 @@ body.search-open { overflow: hidden; }
 .prose > ul.checklist > li + li { margin-top: 8px; }
 .checklist-box { position: absolute; left: 0; top: 0; font-size: 19px; line-height: 1.45; color: var(--text-2); }
 
-/* ── Only links are cards ──
-   A raised white card tells people "this is clickable". Blocks that are not
-   links (stats, explanations, steps, comparisons, notes) sit flat on the page
-   so the real cards stand out. Cards stay for links, forms, tools, quizzes,
-   tables, the course purchase box, and menus. */
+/* ── Cards only where people buy or interact ──
+   A raised white card is reserved for the few things a visitor operates: the
+   course purchase box, bundle pricing, the homepage course snapshot, quizzes,
+   calculators, the cart and checkout, menus, and search. Everything else
+   (link grids, course lists, FAQs, tables, notes, upsells, blog posts) sits
+   flat on the page, separated by hairlines, so the real cards stand out. */
 div.feature-card { background: none; box-shadow: none; border-radius: 0; padding: 0; }
 div.feature-card:hover { transform: none; box-shadow: none; }
 .feature-grid:has(> div.feature-card) { gap: 28px 32px; }
@@ -1246,3 +1247,146 @@ div.feature-card:hover { transform: none; box-shadow: none; }
 .course-pill { background: none; border: 0; box-shadow: none; border-radius: 0; padding: 0; color: var(--text-2); font-weight: 550; }
 .course-pill + .course-pill::before { content: "\00B7"; margin: 0 10px; color: var(--text-4); }
 .disclosure-banner { background: none; color: var(--text-2); padding: 0; font-weight: 450; }
+
+/* Link grids (Knowledge Center, careers, training, answers, related links):
+   a ruled grid instead of a wall of white boxes. Each item starts on a
+   hairline, so a short last row reads as the end of a list, not a gap. */
+.card-grid { gap: 0 32px; }
+.topic-card, a.feature-card {
+  background: none; box-shadow: none; border-radius: 0;
+  padding: 20px 0 24px; border-top: 1px solid var(--hairline);
+}
+a.topic-card:hover, a.feature-card:hover { transform: none; box-shadow: none; }
+a.topic-card:hover h2, a.topic-card:hover h3, a.feature-card:hover h3 { color: var(--accent-link); }
+a.topic-card:focus-visible, a.feature-card:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: var(--r-chip); }
+.topic-card h2, .topic-card h3, a.feature-card h3 { transition: color .15s; }
+.topic-card-icon, .feature-icon { width: 36px; height: 36px; margin-bottom: 12px; }
+.topic-card-icon svg, .feature-icon svg { width: 18px; height: 18px; }
+a.feature-card h3 { margin-top: 0; }
+.topic-card-cta { padding-top: 10px; }
+.feature-grid:has(> a.feature-card) { gap: 0 32px; }
+
+/* Certifications: a ruled row of links, left-aligned like the other grids. */
+.cert-grid { gap: 0 32px; background: none; border-radius: 0; overflow: visible; box-shadow: none; }
+.cert-box { background: none; text-align: left; padding: 20px 0 24px; border-top: 1px solid var(--hairline); }
+.cert-box:hover { background: none; }
+.cert-box:hover h2, .cert-box:hover h3 { color: var(--accent-link); }
+
+/* Lists in a panel (course lists, FAQs, the catalog, the cart): ruled rows. */
+.panel { background: none; box-shadow: none; border-radius: 0; overflow: visible; border-top: 1px solid var(--hairline); border-bottom: 1px solid var(--hairline); }
+.panel .course-row { padding-left: 0; padding-right: 0; }
+.panel .course-row:hover { background: none; }
+.panel .course-row:hover .course-main h3 a { color: var(--accent-link); }
+.panel .faq-q { padding-left: 0; padding-right: 0; font: inherit; font-size: 15.5px; font-weight: 600; letter-spacing: -0.01em; }
+.panel .faq-a-inner { padding-left: 0; padding-right: 0; }
+.panel.prose-panel { padding-left: 0; padding-right: 0; border: 0; }
+.cart-list .cart-item { padding-left: 0; padding-right: 0; }
+.cart-empty.panel { border: 0; }
+/* These stay cards: the order summary and the request form are things you fill in or act on. */
+.cart-summary.panel, .request-form.panel, .request-sent.panel {
+  background: var(--surface); border: 0; border-radius: var(--r-panel); box-shadow: var(--sh-panel); overflow: visible;
+}
+.faq-q { font-family: inherit; }
+
+/* Tables: flat, ruled top and bottom. */
+.table-panel { background: none; box-shadow: none; border-radius: 0; border-top: 1px solid var(--hairline); border-bottom: 1px solid var(--hairline); }
+.table-panel .data-table th { background: none; }
+.table-panel .data-table caption { padding-left: 0; padding-right: 0; }
+.table-panel .data-table th:first-child, .table-panel .data-table td:first-child { padding-left: 0; }
+.table-panel .data-table th:last-child, .table-panel .data-table td:last-child { padding-right: 0; }
+
+/* Notes: a colored rule on the left instead of a filled box. */
+.callout { background: none; border-radius: 0; border-left: 3px solid var(--accent); padding: 2px 0 2px 18px; }
+.callout-safety { background: none; border-left-color: var(--heat); }
+.callout-tip { background: none; border-left-color: #30a14e; }
+
+/* In-page calls to action and bundle upsells: ruled blocks, not boxes. */
+.inline-cta { background: none; border: 0; border-top: 1px solid var(--hairline); border-bottom: 1px solid var(--hairline); border-radius: 0; box-shadow: none; padding: 18px 0; }
+.bundle-offer { background: none; color: var(--text); border-radius: 0; box-shadow: none; padding: 20px 0; border-top: 1px solid var(--hairline); border-bottom: 1px solid var(--hairline); }
+.bundle-offer-kicker { color: #1b7a3d; }
+.bundle-offer-meta { color: var(--text-2); }
+.bundle-offer-meta strong { color: var(--text); }
+.bundle-offer-meta s { color: var(--text-3); }
+.bundle-offer .btn-primary { background: var(--accent); color: #fff; }
+.bundle-offer .btn-primary:hover { background: var(--accent-link); }
+.bundle-offer .btn-secondary { background: rgba(255,255,255,0.8); border-color: rgba(0,0,0,0.08); color: var(--text); box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
+.bundle-offer .btn-secondary:hover { background: #fff; }
+
+/* Smaller boxes that don't need to be raised. */
+.badge { box-shadow: none; }
+.badge:hover { box-shadow: none; transform: none; }
+.role-picker-btn { box-shadow: none; }
+.role-picker-btn:hover, .role-picker-btn.active { box-shadow: none; transform: none; }
+.catalog-toolbar { background: none; box-shadow: none; border-radius: 0; padding: 0; }
+.catalog-toolbar-search input, .catalog-toolbar select { background-color: var(--surface); border-color: rgba(0,0,0,0.1); }
+.glossary-tools .catalog-toolbar { padding: 0; }
+.prose pre.code-block { box-shadow: none; border: 1px solid var(--hairline); }
+.search-page-bar .tool-input-wrap { box-shadow: none; }
+.search-page-results { gap: 0; border-top: 1px solid var(--hairline); }
+.search-page-results .search-hit { background: none; box-shadow: none; border-radius: 0; padding: 16px 0; border-bottom: 1px solid var(--hairline); }
+.search-page-results .search-hit:hover { background: none; box-shadow: none; }
+.search-page-results .search-hit:hover .search-hit-title { color: var(--accent-link); }
+.not-found-links { gap: 0 24px; }
+.not-found-links a { background: none; box-shadow: none; border-radius: 0; padding: 14px 0; border-top: 1px solid var(--hairline); }
+@media (max-width: 960px) {
+  .guide-toc { background: none; box-shadow: none; border-radius: 0; padding: 14px 0; border-top: 1px solid var(--hairline); border-bottom: 1px solid var(--hairline); }
+}
+
+/* ── Layout fixes found in the all-devices pass ── */
+body { overflow-wrap: break-word; }
+/* Wide tables scroll sideways inside their panel on phones instead of running off the page. */
+.panel.table-scroll { overflow-x: auto; }
+/* A status dot sits inline with its label, so a label that wraps stays centered with it. */
+.eyebrow:has(> .dot) { display: block; }
+.eyebrow > .dot { display: inline-block; vertical-align: middle; margin: -2px 8px 0 0; }
+/* The homepage course snapshot keeps its rows left-aligned when the hero centers on tablets and phones. */
+.hero-card { text-align: left; }
+.hero-card-title, .hero-card-sub { text-align: center; }
+/* Bundle cards list every course instead of a small scroll box that cuts a name in half. */
+.bundle-card-courses { max-height: none; overflow: visible; }
+/* Course pages: space between a list and the note under it; the audience line sits flush. */
+.course-scope ul + p, .course-scope p + p { margin-top: 12px; }
+.course-audience { background: none; padding: 0; border-radius: 0; }
+/* Page titles that inherited the body's 1.6 line height. */
+.cart-title, .request-title, .legal-page h1, .not-found h1 { line-height: 1.15; }
+.legal-page h2 { line-height: 1.3; }
+.guide-toc .guide-toc-cta { background: none; padding: 12px 0 0 0; border-top: 1px solid var(--hairline); border-radius: 0; }
+.guide-toc .guide-toc-cta:hover { background: none; }
+/* Category label above course and answer titles: plain accent text, not a pill. */
+.course-hero-eyebrow { background: none; padding: 0; border-radius: 0; }
+@media (max-width: 600px) {
+  /* Meta line ("2 min read, track, updated"): no separator dot left dangling at the start of a wrapped line. */
+  .course-pills { gap: 2px 16px; }
+  .course-pill + .course-pill::before { content: none; }
+  /* Long button labels wrap inside the screen instead of being cut off. */
+  .btn { white-space: normal; height: auto; min-height: 44px; padding-top: 10px; padding-bottom: 10px; line-height: 1.3; text-align: center; max-width: 100%; flex-shrink: 0; }
+  .btn-sm { min-height: 36px; padding-top: 7px; padding-bottom: 7px; }
+  /* Four hero figures as a 2 x 2 grid, not three and one. */
+  .hero-meta:has(> li:nth-child(4):last-child) { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px 20px; width: 100%; max-width: 360px; margin-left: auto; margin-right: auto; text-align: center; }
+  /* Standards pills that wrap to two lines read as rounded tags. */
+  .badge { border-radius: var(--r-thumb); }
+}
+@media (max-width: 768px) {
+  /* Finger-sized targets (24px or more) for standalone text links. */
+  .text-link, .footer-col a, .footer-contact-links a { padding-top: 4px; padding-bottom: 4px; }
+  .footer-col a { margin-bottom: 4px; }
+}
+@media (max-width: 640px) {
+  /* Two- and three-column tables fit the phone screen; wider tables still scroll sideways,
+     with a soft shadow at the edge that has more to see. */
+  .data-table:not(:has(tr > :nth-child(4))), .standards-table:not(:has(tr > :nth-child(4))) { min-width: 0; }
+  .data-table { font-size: 13.5px; }
+  .data-table th { white-space: normal; }
+  .data-table td, .standards-table td { -webkit-hyphens: auto; hyphens: auto; }
+  .standards-table { font-size: 13.5px; }
+  .standards-table th, .standards-table td { padding: 8px 6px; }
+  .standards-table th:first-child, .standards-table td:first-child { padding-left: 0; }
+  .table-panel .data-table th, .table-panel .data-table td { padding: 10px 12px; }
+  .table-panel, .table-scroll {
+    background:
+      linear-gradient(to right, var(--bg) 30%, rgba(245,245,247,0)) left center / 40px 100% no-repeat local,
+      linear-gradient(to left, var(--bg) 30%, rgba(245,245,247,0)) right center / 40px 100% no-repeat local,
+      radial-gradient(farthest-side at 0 50%, rgba(0,0,0,0.14), rgba(0,0,0,0)) left center / 12px 100% no-repeat scroll,
+      radial-gradient(farthest-side at 100% 50%, rgba(0,0,0,0.14), rgba(0,0,0,0)) right center / 12px 100% no-repeat scroll;
+  }
+}
