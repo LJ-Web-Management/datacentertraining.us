@@ -138,11 +138,11 @@ September 24, 2026
 
 ### How Data Center Managers Should Test Physical Access During a Maintenance Window
 
-[!\[Data Center Maintenance Window Readiness: How Operations Managers Should Sequence Critical Work\](https://datacentertraining.us/blog/assets/img/posts/data-center-maintenance-window-readiness-how-operations-managers-should-sequence-critical-work.jpg)](https://datacentertraining.us/blog/posts/data-center-maintenance-window-readiness-how-operations-managers-should-sequence-critical-work.html)
+[!\[DCIM Asset Mapping Readiness: What Data Center Teams Should Verify Before a Dashboard Rollout\](https://datacentertraining.us/blog/assets/img/posts/dcim-asset-mapping-readiness-what-data-center-teams-should-verify-before-a-dashboard-rollout.jpg)](https://datacentertraining.us/blog/posts/dcim-asset-mapping-readiness-what-data-center-teams-should-verify-before-a-dashboard-rollout.html)
 
-November 20, 2026
+November 21, 2026
 
-### Data Center Maintenance Window Readiness: How Operations Managers Should Sequence Critical Work
+### DCIM Asset Mapping Readiness: What Data Center Teams Should Verify Before a Dashboard Rollout
 
 [View all posts →](https://datacentertraining.us/blog/)
 

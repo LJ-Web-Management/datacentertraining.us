@@ -110,6 +110,12 @@ A safe, reliable maintenance window is a sequence of verified facility states, n
 
 ## More from the blog
 
+[!\[DCIM Asset Mapping Readiness: What Data Center Teams Should Verify Before a Dashboard Rollout\](https://datacentertraining.us/blog/assets/img/posts/dcim-asset-mapping-readiness-what-data-center-teams-should-verify-before-a-dashboard-rollout.jpg)](https://datacentertraining.us/blog/posts/dcim-asset-mapping-readiness-what-data-center-teams-should-verify-before-a-dashboard-rollout.html)
+
+November 21, 2026
+
+### DCIM Asset Mapping Readiness: What Data Center Teams Should Verify Before a Dashboard Rollout
+
 [!\[Clean Agent Fire Suppression Readiness: What Data Center Teams Should Verify Before a Discharge Test\](https://datacentertraining.us/blog/assets/img/posts/clean-agent-fire-suppression-readiness-what-data-center-teams-should-verify-before-a-discharge-test.jpg)](https://datacentertraining.us/blog/posts/clean-agent-fire-suppression-readiness-what-data-center-teams-should-verify-before-a-discharge-test.html)
 
 November 19, 2026

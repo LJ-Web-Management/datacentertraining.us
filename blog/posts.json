@@ -558,5 +558,15 @@
     "date": "2026-11-20",
     "dateDisplay": "November 20, 2026",
     "excerpt": "When a data center maintenance window includes electrical switching, cooling work, controls changes, and vendor activity, the hard part is often not…"
+  },
+  {
+    "title": "DCIM Asset Mapping Readiness: What Data Center Teams Should Verify Before a Dashboard Rollout",
+    "slug": "dcim-asset-mapping-readiness-what-data-center-teams-should-verify-before-a-dashboard-rollout",
+    "seoTitle": "DCIM Asset Mapping Readiness: What Data Center Teams Should",
+    "description": "A data center dashboard can look complete while its underlying asset map is wrong. If a UPS is attached to the wrong room, a CRAH unit has an outdated…",
+    "image": "assets/img/posts/dcim-asset-mapping-readiness-what-data-center-teams-should-verify-before-a-dashboard-rollout.jpg",
+    "date": "2026-11-21",
+    "dateDisplay": "November 21, 2026",
+    "excerpt": "A data center dashboard can look complete while its underlying asset map is wrong. If a UPS is attached to the wrong room, a CRAH unit has an outdated…"
   }
 ]

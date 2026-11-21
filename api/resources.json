@@ -1,8 +1,8 @@
 {
   "publisher": "Data Center Training (datacentertraining.us)",
-  "last_updated": "2026-11-20",
+  "last_updated": "2026-11-21",
   "license": "Public information; quote with attribution and a link to the source URL.",
-  "count": 250,
+  "count": 251,
   "resources": [
     {
       "source": "Data Center Training (first party)",
@@ -2354,6 +2354,19 @@
         "tier"
       ],
       "audience": []
+    },
+    {
+      "type": "blog_post",
+      "title": "DCIM Asset Mapping Readiness: What Data Center Teams Should Verify Before a Dashboard Rollout",
+      "url": "https://datacentertraining.us/blog/posts/dcim-asset-mapping-readiness-what-data-center-teams-should-verify-before-a-dashboard-rollout.html",
+      "description": "A data center dashboard can look complete while its underlying asset map is wrong. If a UPS is attached to the wrong room, a CRAH unit has an outdated…",
+      "topics": [
+        "ups",
+        "dcim"
+      ],
+      "audience": [],
+      "source": "Data Center Training (first party)",
+      "published": "2026-11-21"
     },
     {
       "type": "blog_post",
